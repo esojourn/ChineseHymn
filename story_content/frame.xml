@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxnanbnsnfns00000000101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00000000101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10110000101" font="Arial" controllayout="npnxnanbsnfns10110000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="pxabnsnfns10110000101" font="Arial" controllayout="pxabnsnfns10110000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="npxnabnsnfns10110000101" font="Arial" controllayout="npxnabnsnfns10110000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="npnxnanbnsnfns10110000101" font="Arial" controllayout="npnxnanbnsnfns10110000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="pxabnsnfns10110000100" font="Arial" controllayout="pxabnsnfns10110000100" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="npnxnanbnsnfns00000000101" font="Arial" controllayout="npnxnanbnsnfns00000000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
-    <layout name="npnxabnsnfns10110000101" font="Arial" controllayout="npnxabnsnfns10110000101" colorscheme="npnxnanbnsnfns00000000101" string_table="npnxnanbnsnfns00000000101" />
+    <layout name="npnxnanbsnfns10110000101" font="Arial" controllayout="npnxnanbsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="pxabnsnfns10110000101" font="Arial" controllayout="pxabnsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npxnabnsnfns10110000101" font="Arial" controllayout="npxnabnsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npnxnanbnsnfns10110000101" font="Arial" controllayout="npnxnanbnsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="pxabnsnfns10110000100" font="Arial" controllayout="pxabnsnfns10110000100" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npxnabnsnfns00000000101" font="Arial" controllayout="npxnabnsnfns00000000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="pnxanbnsnfns10110000101" font="Arial" controllayout="pnxanbnsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
+    <layout name="npnxabnsnfns10110000101" font="Arial" controllayout="npnxabnsnfns10110000101" colorscheme="npxnabnsnfns00000000101" string_table="npxnabnsnfns00000000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -197,15 +198,38 @@
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns00000000101">
+    <control_layout name="npxnabnsnfns00000000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
       <control name="pauseplay" enabled="false" />
       <control name="logo" enabled="false" />
       <control name="previous" enabled="false" />
-      <control name="next" enabled="false" />
+      <control name="next" enabled="true" />
       <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pnxanbnsnfns10110000101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="true" />
+      <control name="replay" enabled="true" />
+      <control name="pauseplay" enabled="true" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="false" />
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
@@ -245,7 +269,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npnxnanbnsnfns00000000101">
+    <colorscheme name="npxnabnsnfns00000000101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1151,7 +1175,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npnxnanbnsnfns00000000101">
+    <string_table name="npxnabnsnfns00000000101">
       <string id="transcript">注释</string>
       <string id="acc_play">播放</string>
       <string id="outline">菜单</string>
@@ -1215,6 +1239,8 @@
         <slidelink slideid="_player.5kMgy4tTyjy" displaytext="目录" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5kMgy4tTyjy.5qx0KCEtD3u" displaytext="目录一" expand="false" type="slide" />
+            <slidelink slideid="_player.5kMgy4tTyjy.6KmgTQDxV9c" displaytext="无标题幻灯片" expand="false" type="slide" />
+            <slidelink slideid="_player.5kMgy4tTyjy.5eQzWxhiSg3" displaytext="无标题幻灯片" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6Ed4cosYfUV" displaytext="目录一" expand="true" type="slide">

@@ -1,0 +1,53 @@
+.audio{
+    margin-bottom: 10px;
+    min-height: 20px;
+    /*background-color: blue;*/
+}
+img {
+    width: 95%;
+    height: auto;
+}
+audio {
+   min-height: 20px;
+   /*background-color: #ddaacc;*/
+   float: none;
+}
+.img{
+    /*background-color: yellow;*/
+    max-width: 100%;
+    -webkit-box-sizing: border-box!important;
+    word-wrap: break-word!important;
+    overflow: hidden;
+}
+
+
+div.main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#mytable tr.odd{
+    
+}
+#mytable td{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "." ;
+    display: block ;
+    height: 0 ;
+    clear: both ;
+    visibility: hidden ;
+}
+.clearfix{ display: inline-block; }
+/* Hides from IE-mac */
+*html .clearfix{ height:1%; }
+.clearfix{ display:block; }
+/* End hide from IE-mac */
+
+    

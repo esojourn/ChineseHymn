@@ -1,6 +1,7 @@
 .audio{
     margin-bottom: 10px;
     min-height: 20px;
+    text-align: center;
     /*background-color: blue;*/
 }
 img {
@@ -12,12 +13,17 @@ audio {
    /*background-color: #ddaacc;*/
    float: none;
 }
-.img{
+div.text, 
+div.text pre{
     /*background-color: yellow;*/
     max-width: 100%;
     -webkit-box-sizing: border-box!important;
     word-wrap: break-word!important;
     overflow: hidden;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', SimHei, Arial, sans-serif;
+    text-align: center;
 }
 
 
@@ -35,6 +41,16 @@ div.main{
     line-height: 30px;
     padding-left: 20px;
     text-decoration: none;
+}
+
+div.footer{
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.return{
+    font-size: 20px;
 }
 
 .clearfix:after {

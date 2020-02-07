@@ -156,6 +156,7 @@ EOL;
 
 function print_html_footer(){
     echo <<<EOL
+    <div style="text-align: center; padding-top: 10px;"> <a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
     </body>
 </html>
 EOL;

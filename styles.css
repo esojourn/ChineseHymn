@@ -17,24 +17,25 @@ div.text,
 div.text pre{
     /*background-color: yellow;*/
     max-width: 100%;
-    -webkit-box-sizing: border-box!important;
+    /*-webkit-box-sizing: border-box!important;*/
     word-wrap: break-word!important;
     overflow: hidden;
     font-size: 20px;
     line-height: 30px;
     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', SimHei, Arial, sans-serif;
-    text-align: center;
 }
-
 
 div.main{
     max-width: 700px;
     margin: 0 auto;
 }
 
-#mytable tr.odd{
-    
+.text-inner{
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
 }
+
 #mytable td{
     font-weight: bold;
     font-size: 20px;

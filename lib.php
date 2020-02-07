@@ -3,7 +3,6 @@
  * 根据目录中所有文件，整理出格式化的数组。
 */
 function get_name_array($value, $path){
-
     $filesTxt[] = $value;
     preg_match("/^[0-9]{2}-[0-9]{2,3}/", $value, $arr);
     $id = $arr[0];
@@ -21,13 +20,11 @@ function get_name_array($value, $path){
     return $name;
 }
 
-
 /*
  * 建立表格字符串。同时更新数组内 matched 字段信息。
 */
 function get_html_contenttable(&$name, $audio){
     $output = '<table id="mytable"><thead><tr><th>诗歌</th></tr></thead><tbody>';
-
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
             if($name[$k1]['id']==$audio[$k2]['id']){  //如果txt文件有对应的mp3，则更新matched为true
@@ -40,31 +37,32 @@ function get_html_contenttable(&$name, $audio){
         if ($name[$k1]['matched'] == TRUE) {
             $output .= '<a href="?n='.$v1['id'].'">' .$v1['name']."</a>\n";
         }else{
-            $output .= $v1['name']." - 无伴奏\n";
+            $output .= '<a href="?n='.$v1['id'].'">' .$v1['name']."</a> - 无伴奏\n";
         }
         $output .= "</td></tr>\n";
     }
     $output .= '</tbody></table>';
     $output .= <<<EOL
-<script type="text/javascript">
-$(document).ready( function () {
-    $('#mytable').DataTable({
-        "language": {
-            "search": "搜索：",
-            "lengthMenu":     "每页显示 _MENU_ 首",
-            "info": "显示第 _START_ 至 _END_ 首。共 _TOTAL_ 首",
-                "paginate": {
-                "first":      "首页",
-                "last":       "末页",
-                "next":       "向后",
-                "previous":   "向前"
-            },
-        }
-    });
-} );
-</script>
+    <script type="text/javascript">
+    $(document).ready( function () {
+        $('#mytable').DataTable({
+            "aLengthMenu": [ [10, 20, 50, 100, -1], [10, 20, 50, 100, "All"] ],
+            "iDisplayLength": 20,
+            "language": {
+                "search": "搜索：",
+                "lengthMenu":     "每页显示 _MENU_ 首",
+                "info": "显示第 _START_ 至 _END_ 首。共 _TOTAL_ 首",
+                    "paginate": {
+                    "first":      "首页",
+                    "last":       "末页",
+                    "next":       "向后",
+                    "previous":   "向前"
+                },
+            }
+        });
+    } );
+    </script>
 EOL;
-
     return $output;
 }
 
@@ -100,8 +98,8 @@ function print_html_header(){
 EOL;
 }
 
-function PageURL() 
-{
+
+function get_page_url() {
   $pageURL = 'http';
   if(isset($_SERVER["HTTPS"])){
        if ($_SERVER["HTTPS"] == "on") 
@@ -109,9 +107,7 @@ function PageURL()
         $pageURL .= "s";
       }
   }
-
   $pageURL .= "://";
- 
   if ($_SERVER["SERVER_PORT"] != "80") 
   {
     $pageURL .= $_SERVER["SERVER_NAME"] . ":" . $_SERVER["SERVER_PORT"] . $_SERVER["REQUEST_URI"];
@@ -125,9 +121,9 @@ function PageURL()
 
 function print_html_player($name){
     //var_dump($name);
-    $mp3 = $name["mp3"];
+    $mp3 = isset($name["mp3"]) ? $name["mp3"] : '';
     $id = $name["id"];
-    $pageURL = PageURL() ;
+    $pageURL = get_page_url() ;
 
     $file = file_get_contents($name["path"]);
 
@@ -146,9 +142,9 @@ function print_html_player($name){
         </audio>  
     </div>
 
-    <div class='text'><pre>
+    <div class='text'><div class='text-inner'><pre>
         $file
-        </pre>
+        </pre></div>
         <br>
         
         <div class='footer'>
@@ -158,4 +154,61 @@ function print_html_player($name){
     </div>
     </div>
 EOL;
+}
+
+function print_html_footer(){
+    echo <<<EOL
+    </body>
+</html>
+EOL;
+}
+
+
+
+function check_duplication($arrays) {
+    echo "<pre>find completely identical arrays\n";
+    foreach ($arrays as $current_key => $current_array) {
+        $search_key = array_search($current_array, $arrays);
+        //echo "current key: $current_key \n";
+        //echo "search key: $search_key \n";
+        if ($current_key != $search_key) {
+            echo "duplicate found for item $current_key\n";
+        }
+        //echo "\n";
+    }
+    
+    echo "\n\nfind arrays with duplicate value for 'name'\n";
+    
+    foreach ($arrays as $current_key => $current_array) {
+        
+        foreach ($arrays as $search_key => $search_array) {
+            if ($search_array['name'] == $current_array['name']) {
+                if ($search_key != $current_key) {
+                    echo "value: " . $search_array['id'] . ' - ' . $search_array['name']. "\n";
+                    echo "current key: $current_key\n";
+                    echo "duplicate found: $search_key\n";
+                }
+            }
+
+        }
+        //echo "\n";
+    }
+
+    echo "\n\nfind arrays with duplicate value for 'id'\n";
+    
+    foreach ($arrays as $current_key => $current_array) {
+        
+        foreach ($arrays as $search_key => $search_array) {
+            if ($search_array['id'] == $current_array['id']) {
+                if ($search_key != $current_key) {
+                    echo "value: " . $search_array['id'] . ' - ' . $search_array['name']. "\n";
+                    echo "current key: $current_key\n";
+                    echo "duplicate found: $search_key\n";
+                }
+            }
+
+        }
+        //echo "\n";
+    }
+    echo "</pre>";
 }

@@ -12,10 +12,8 @@ $data = scandir($path);
 //Following code will remove . and .. from the returned array from scandir:
 $data = array_diff(scandir($path), array('.', '..'));
 
-
 $name = array();
 $audio = array();
-//['folder']['num']['name'] 
 
 foreach ($data as $key => $value) {
     $filesAll[] = $value;
@@ -34,13 +32,13 @@ foreach ($data as $key => $value) {
 
 $output = get_html_contenttable($name, $audio);
 
-echo '<pre>';
+//echo '<pre>';
 //var_dump($name);
 //var_dump($audio);
-echo '</pre>';
+//echo '</pre>';
 
 if (isset($_GET["n"])){
-    $n=htmlspecialchars($_GET["n"]);
+    $n=htmlspecialchars(strip_tags($_GET["n"]));
 }else{
     $n='';
 }
@@ -57,10 +55,11 @@ if($n=='index' || $n=='i' || $n==''){
     echo '</div>';
 }elseif($playkey !== FALSE){ //如果ID符合格式
     print_html_player($name[$playkey]);
+}elseif($n=='check'){
+    check_duplication($name);
 }else{
     echo '<h1>无权访问</h1>';
 }
-?>
 
-</body>  
-</html> 
+print_html_footer();
+?>

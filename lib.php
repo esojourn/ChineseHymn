@@ -132,8 +132,6 @@ function print_html_player($name){
         $file = mb_convert_encoding($file, 'UTF-8', $encode);
     }
 
-    
-
     echo <<<EOL
     <div class='main'>
         <div class='audio clearfix'>
@@ -163,8 +161,6 @@ function print_html_footer(){
 EOL;
 }
 
-
-
 function check_duplication($arrays) {
     echo "<pre>find completely identical arrays\n";
     foreach ($arrays as $current_key => $current_array) {
@@ -178,7 +174,6 @@ function check_duplication($arrays) {
     }
     
     echo "\n\nfind arrays with duplicate value for 'name'\n";
-    
     foreach ($arrays as $current_key => $current_array) {
         
         foreach ($arrays as $search_key => $search_array) {
@@ -195,9 +190,7 @@ function check_duplication($arrays) {
     }
 
     echo "\n\nfind arrays with duplicate value for 'id'\n";
-    
     foreach ($arrays as $current_key => $current_array) {
-        
         foreach ($arrays as $search_key => $search_array) {
             if ($search_array['id'] == $current_array['id']) {
                 if ($search_key != $current_key) {

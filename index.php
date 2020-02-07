@@ -32,10 +32,10 @@ foreach ($data as $key => $value) {
 
 $output = get_html_contenttable($name, $audio);
 
-//echo '<pre>';
-//var_dump($name);
-//var_dump($audio);
-//echo '</pre>';
+// echo '<pre>';
+// var_dump($name);
+// var_dump($audio);
+// echo '</pre>';
 
 if (isset($_GET["n"])){
     $n=htmlspecialchars(strip_tags($_GET["n"]));

@@ -46,8 +46,8 @@ function get_html_contenttable(&$name, $audio){
     <script type="text/javascript">
     $(document).ready( function () {
         $('#mytable').DataTable({
-            "aLengthMenu": [ [10, 20, 50, 100, -1], [10, 20, 50, 100, "All"] ],
-            "iDisplayLength": 20,
+            "aLengthMenu": [ [15, 20, 50, 100, -1], [10, 20, 50, 100, "All"] ],
+            "iDisplayLength": 15,
             "language": {
                 "search": "搜索：",
                 "lengthMenu":     "每页显示 _MENU_ 首",
@@ -84,7 +84,7 @@ function print_html_header(){
     <html lang="zh-CN" class="no-js">
     <head>  
         <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.8, minimum-scale=0.8, user-scalable=yes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.8, user-scalable=yes"/>
 
 
         <title>敬拜赞美</title>  

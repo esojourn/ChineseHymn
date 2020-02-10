@@ -84,7 +84,9 @@ function print_html_header(){
     <html lang="zh-CN" class="no-js">
     <head>  
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.8, minimum-scale=0.8, user-scalable=yes"/>
+
+
         <title>敬拜赞美</title>  
 
         <link rel="stylesheet" type="text/css" href="styles.css"/>     

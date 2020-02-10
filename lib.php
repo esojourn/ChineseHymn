@@ -46,7 +46,7 @@ function get_html_contenttable(&$name, $audio){
     <script type="text/javascript">
     $(document).ready( function () {
         $('#mytable').DataTable({
-            "aLengthMenu": [ [15, 20, 50, 100, -1], [10, 20, 50, 100, "All"] ],
+            "aLengthMenu": [ [15, 25, 50, 100, -1], [15, 25, 50, 100, "All"] ],
             "iDisplayLength": 15,
             "language": {
                 "search": "搜索：",

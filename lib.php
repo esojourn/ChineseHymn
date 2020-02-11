@@ -24,7 +24,7 @@ function get_name_array($value, $path){
  * 建立表格字符串。同时更新数组内 matched 字段信息。
 */
 function get_html_contenttable(&$name, $audio){
-    $output = '<table id="mytable"><thead><tr><th>诗歌</th></tr></thead><tbody>';
+    $output = '<table id="mytable"><thead><tr><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
             if($name[$k1]['id']==$audio[$k2]['id']){  //如果txt文件有对应的mp3，则更新matched为true
@@ -32,8 +32,21 @@ function get_html_contenttable(&$name, $audio){
                 $name[$k1]['matched'] =TRUE;
             }
         }
+        $output .= "<tr>\n";
+
+        // $output .= "<td>";
+        // $output .= $v1['id'];
+        // $output .= "</td>\n";
+
+        $output .= "<td>";
+        $output .= $v1['folder'];
+        $output .= "</td>\n";
+
+        $output .= "<td>";
+        $output .= $v1['num'];
+        $output .= "</td>\n";
         
-        $output .= "<tr><td>\n";
+        $output .= "<td>\n";
         if ($name[$k1]['matched'] == TRUE) {
             $output .= '<a href="?n='.$v1['id'].'">' .$v1['name']."</a>\n";
         }else{

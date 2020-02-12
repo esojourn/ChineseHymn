@@ -8,6 +8,8 @@ img {
     width: 98%;
     height: auto;
 }
+.hidden{display:none;}
+
 audio {
    min-height: 20px;
    /*background-color: #ddaacc;*/
@@ -21,9 +23,7 @@ div.text pre{
     word-wrap: break-word!important;
     /* overflow: hidden; */
     font-size: 20px;
-    font-size: 5vw;    
     line-height: 30px;
-    line-height: 9vw;
     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', SimHei, Arial, sans-serif;
 }
 
@@ -41,23 +41,19 @@ div.main{
 #mytable td{
     font-weight: bold;
     font-size: 20px;
-    font-size: 5vw;    
     line-height: 30px;
-    line-height: 9vw;
     padding-left: 20px;
     text-decoration: none;
 }
 
 div.footer{
     font-size: 14px;
-    font-size: 3vw;    
     margin: 0 auto;
     text-align: center;
 }
 
 .return{
     font-size: 20px;
-    font-size: 5vw; 
 }
 
 .clearfix:after {
@@ -72,5 +68,26 @@ div.footer{
 *html .clearfix{ height:1%; }
 .clearfix{ display:block; }
 /* End hide from IE-mac */
+
+@media only screen and (max-width: 498px) {
+    #mytable td{
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+
+    div.text, 
+    div.text pre{
+        font-size: 5vw;    
+        line-height: 9vw;
+    }
+    div.footer{
+        font-size: 3vw;    
+    }
+
+    .return{
+        font-size: 5vw; 
+    }
+    
+  }
 
     

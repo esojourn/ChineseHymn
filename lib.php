@@ -27,7 +27,7 @@ function get_name_array($value, $path)
 */
 function get_html_contenttable(&$name, $audio)
 {
-    $output = '<table id="mytable"><thead><tr><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
+    $output = '<table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
             if ($name[$k1]['id'] == $audio[$k2]['id']) {  //如果txt文件有对应的mp3，则更新matched为true
@@ -40,6 +40,10 @@ function get_html_contenttable(&$name, $audio)
         // $output .= "<td>";
         // $output .= $v1['id'];
         // $output .= "</td>\n";
+
+        $output .= "<td class='hidden'>";
+        $output .= $v1['folder'] . $v1['num'];
+        $output .= "</td>\n";
 
         $output .= "<td>";
         $output .= $v1['folder'];
@@ -74,6 +78,13 @@ function get_html_contenttable(&$name, $audio)
                     "next":       "向后",
                     "previous":   "向前"
                 },
+                "columnDefs": [
+                    {
+                        "targets": 0,
+                        "visible": false,
+                        "searchable": true
+                    }
+                ]
             }
         });
     } );

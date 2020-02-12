@@ -5,7 +5,7 @@
     /*background-color: blue;*/
 }
 img {
-    width: 95%;
+    width: 98%;
     height: auto;
 }
 audio {
@@ -16,17 +16,19 @@ audio {
 div.text, 
 div.text pre{
     /*background-color: yellow;*/
-    max-width: 100%;
+    /* max-width: 100%; */
     /*-webkit-box-sizing: border-box!important;*/
     word-wrap: break-word!important;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 20px;
+    font-size: 5vw;    
     line-height: 30px;
+    line-height: 9vw;
     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', SimHei, Arial, sans-serif;
 }
 
 div.main{
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: 0 auto;
 }
 
@@ -39,19 +41,23 @@ div.main{
 #mytable td{
     font-weight: bold;
     font-size: 20px;
+    font-size: 5vw;    
     line-height: 30px;
+    line-height: 9vw;
     padding-left: 20px;
     text-decoration: none;
 }
 
 div.footer{
     font-size: 14px;
+    font-size: 3vw;    
     margin: 0 auto;
     text-align: center;
 }
 
 .return{
     font-size: 20px;
+    font-size: 5vw; 
 }
 
 .clearfix:after {

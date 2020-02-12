@@ -46,6 +46,10 @@ div.main{
     text-decoration: none;
 }
 
+#mytable td.folder, #mytable td.num{
+    text-align: center;
+}
+
 div.footer{
     font-size: 14px;
     margin: 0 auto;
@@ -54,6 +58,7 @@ div.footer{
 
 .return{
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .clearfix:after {
@@ -69,7 +74,7 @@ div.footer{
 .clearfix{ display:block; }
 /* End hide from IE-mac */
 
-@media only screen and (max-width: 498px) {
+@media only screen and (max-width: 479px) {
     #mytable td{
         font-size: 5vw;
         line-height: 9vw;

@@ -45,11 +45,11 @@ function get_html_contenttable(&$name, $audio)
         $output .= $v1['folder'] . $v1['num'];
         $output .= "</td>\n";
 
-        $output .= "<td>";
+        $output .= "<td class='folder'>";
         $output .= $v1['folder'];
         $output .= "</td>\n";
 
-        $output .= "<td>";
+        $output .= "<td class='num'>";
         $output .= $v1['num'];
         $output .= "</td>\n";
 
@@ -179,8 +179,8 @@ EOL;
         <br>
         
         <div class='footer'>
-            <div class='link'>本首链接：$pageURL</div>
             <div class='return'><a href='?n=i'>回目录</a></div>
+            <div class='link'>本首链接：$pageURL</div>
         </div>
     </div>
     </div>
@@ -190,8 +190,8 @@ EOL;
         echo <<<EOL
         <div class='text'><div class='text-inner'><img src=$file />
             <div class='footer'>
-                <div class='link'>本首链接：$pageURL</div>
                 <div class='return'><a href='?n=i'>回目录</a></div>
+                <div class='link'>本首链接：$pageURL</div>
             </div>
         </div>
         </div>
@@ -202,7 +202,7 @@ EOL;
 function print_html_footer()
 {
     echo <<<EOL
-    <div style="text-align: center; padding: 10px 0 20px 0;"> <a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
+    <div class="footer"><a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
     </body>
 </html>
 EOL;

@@ -27,7 +27,7 @@ function get_name_array($value, $path)
 */
 function get_html_contenttable(&$name, $audio)
 {
-    $output = '<table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
+    $output = '<form class="pure-form"><table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
             if ($name[$k1]['id'] == $audio[$k2]['id']) {  //如果txt文件有对应的mp3，则更新matched为true
@@ -61,7 +61,7 @@ function get_html_contenttable(&$name, $audio)
         }
         $output .= "</td></tr>\n";
     }
-    $output .= '</tbody></table>';
+    $output .= '</tbody></table></form>';
     $output .= <<<EOL
     <script type="text/javascript">
     $(document).ready( function () {
@@ -113,11 +113,17 @@ function print_html_header()
     <head>  
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
-        <title>敬拜赞美</title>  
+        <title>敬拜赞美</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>     
-        <link rel="stylesheet" type="text/css" href="DataTables-1.10.20/css/jquery.dataTables.min.css"/>
+
+<!--        <link rel="stylesheet" type="text/css" href="DataTables-1.10.20/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+-->
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+        <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+
+        <link rel="stylesheet" href="pure-min.css">
     </head>  
     <body>
 EOL;

@@ -114,14 +114,15 @@ function print_html_header()
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         <title>敬拜赞美</title>
-        <link rel="stylesheet" type="text/css" href="styles.css"/>     
 
         <link rel="stylesheet" type="text/css" href="DataTables-1.10.20/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
 
-
         <link rel="stylesheet" href="pure-min.css">
+
+        <link rel="stylesheet" type="text/css" href="styles.css"/>     
+
     </head>  
     <body>
 EOL;

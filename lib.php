@@ -14,7 +14,7 @@ function get_name_array($value, $path)
         'folder' => $subid[0],
         'num' => $subid[1],
         'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
-        'path' => $path . '/' . $value,
+        'path' => '/hymn/' . $path . '/' . $value,
         'matched' => FALSE,
         'format' => substr(mb_strtolower($value), -3),
     ];
@@ -115,13 +115,13 @@ function print_html_header()
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         <title>敬拜赞美</title>
 
-        <link rel="stylesheet" type="text/css" href="DataTables-1.10.20/css/jquery.dataTables.min.css"/>
-        <script type="text/javascript" src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/hymn/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
+        <script type="text/javascript" src="/hymn/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/hymn/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
 
-        <link rel="stylesheet" href="pure-min.css">
+        <link rel="stylesheet" href="/hymn/css/pure-min.css">
 
-        <link rel="stylesheet" type="text/css" href="styles.css"/>     
+        <link rel="stylesheet" type="text/css" href="/hymn/css/styles.css"/>     
 
     </head>  
     <body>
@@ -148,6 +148,7 @@ function get_page_url()
 
 function print_html_player($name)
 {
+    global $serverroot;
     //var_dump($name);
     $mp3 = isset($name["mp3"]) ? $name["mp3"] : '';
     $id = $name["id"];
@@ -168,7 +169,7 @@ function print_html_player($name)
 EOL;
 
     if ($name["format"] == 'txt') {
-        $file = file_get_contents($name["path"]);
+        $file = file_get_contents($serverroot . $name["path"]);
 
         $encode = mb_detect_encoding($file, array("ASCII", 'UTF-8', "GB2312", "GBK", 'BIG5', 'LATIN1'));
         if ($encode != 'UTF-8') {

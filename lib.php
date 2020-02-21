@@ -156,7 +156,7 @@ function print_html_player($name)
     $loop = '';
 
     if($name['folder'] == '05'){
-        $loop = 'loop';
+       // $loop = 'loop';
     }
 
     echo <<<EOL

@@ -36,10 +36,10 @@ foreach ($data as $key => $value) {
 
 $output = get_html_contenttable($name, $audio);
 
-// echo '<pre>';
-//var_dump($name);
+ echo '<pre>';
+ //var_dump($name);
 // var_dump($audio);
-// echo '</pre>';
+ echo '</pre>';
 
 if (isset($_GET["n"])) {
     $n = htmlspecialchars(strip_tags($_GET["n"]));
@@ -54,13 +54,10 @@ $playkey = is_valid_id($name, $n);
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);
 
 if ($n == 'index' || $n == 'i' || $n == '') {
-    $mode = 'content';
-    //print_html_menu();
     echo '<div class="main">';
     echo $output;
     echo '</div>';
 } elseif ($playkey !== FALSE) { //如果ID符合格式
-    $mode = 'player';
     print_html_player($name[$playkey]);
 } elseif ($n == 'check') {
     check_duplication($name);

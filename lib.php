@@ -121,13 +121,10 @@ function print_html_header()
 
         <link rel="stylesheet" href="/hymn/css/pure-min.css">
 
-        <link rel="stylesheet" type="text/css" href="/hymn/css/styles.css"/>
-
-        <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+        <link rel="stylesheet" type="text/css" href="/hymn/css/styles.css"/>     
 
     </head>  
     <body>
-    <div class="layout">
 EOL;
 }
 
@@ -197,7 +194,7 @@ EOL;
     } elseif ($name["format"] == 'jpg') {
         $file = $name["path"];
         echo <<<EOL
-        <div class='text'><div class='text-inner'><img class='lyric' src=$file />
+        <div class='text'><div class='text-inner'><img src=$file />
             <div class='footer'>
                 <div class='return'><a href='?n=i'>回目录</a></div>
                 <div class='link'>本首链接：$pageURL</div>
@@ -210,14 +207,8 @@ EOL;
 
 function print_html_footer()
 {
-    global $mode;
-    if($mode=='content'){
-      //  $output = get_html_menu();
-    }
     echo <<<EOL
     <div class="footer"><a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
-    </div>
-    $output
     </body>
 </html>
 EOL;
@@ -265,23 +256,4 @@ function check_duplication($arrays)
         //echo "\n";
     }
     echo "</pre>";
-}
-
-function get_html_menu(){
-    return '
-    <header id="luxbar" class="luxbar-static">
-    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
-    <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
-        <ul class="luxbar-navigation">
-            <li class="luxbar-header">
-                <a href="#" class="luxbar-brand"><img src="css/settings.png" height="30px" width="30px" /></a>
-                <label class="luxbar-hamburger luxbar-hamburger-spin" 
-                id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
-            </li>
-            <li class="luxbar-item"><a href="#">Item 3</a></li>
-            <li class="luxbar-item"><a href="#">12</a></li>
-            <li class="luxbar-item"><a href="#">55</a></li>
-        </ul>
-    </div>
-</header>';
 }

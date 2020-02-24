@@ -141,7 +141,7 @@ function get_page_url()
         }
     }
     $pageURL .= "://";
-    if ($_SERVER["SERVER_PORT"] != "80") {
+    if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
         $pageURL .= $_SERVER["SERVER_NAME"] . ":" . $_SERVER["SERVER_PORT"] . $_SERVER["REQUEST_URI"];
     } else {
         $pageURL .= $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
@@ -159,7 +159,7 @@ function print_html_player($name)
     $loop = '';
 
     if($name['folder'] == '05'){
-        $loop = 'loop';
+       // $loop = 'loop';
     }
 
     echo <<<EOL

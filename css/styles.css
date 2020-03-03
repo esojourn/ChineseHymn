@@ -8,6 +8,13 @@ img {
     width: 98%;
     height: auto;
 }
+
+a{
+    color:#2c77e4;
+}
+a:hover, a:active{
+    color:#0a69aa;
+}
 .hidden{display:none;}
 
 audio {
@@ -74,6 +81,77 @@ div.footer{
 .clearfix{ display:block; }
 /* End hide from IE-mac */
 
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #42494f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+  }
+
+  .sidenav .content{
+      margin: 0 20px 20px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d1d1d1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #fff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    font-size: 56px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    /* .sidenav {padding-top: 15px;} */
+    .sidenav a {font-size: 18px;}
+  }
+
+.menu-button{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.menu-button:hover, .menu-button:active{
+    color: #5d5d5d;
+}
+
+.dataTables_length{
+    margin-left: 50px;
+}
+
+.mask{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms ease-out;
+    transition: opacity 200ms ease-out;
+}
+@media screen and (max-width: 640px){
+    .dataTables_length{
+        margin-left: 0;
+    }
+}
+
 @media only screen and (max-width: 479) {
     #mytable td{
         font-size: 5vw;
@@ -105,3 +183,60 @@ div.footer{
 .pure-form select{
     height: auto;
 }
+
+
+/* checkbox / radio 定制样式 开始 */
+  .checkboxes-and-radios {
+      color:#d1d1d1;
+  }
+  .checkboxes-and-radios input {
+    display: none;
+  }
+  .checkboxes-and-radios label {
+    cursor: pointer;
+    padding-right: 35px;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  .checkboxes-and-radios input[type="checkbox"],
+  .checkboxes-and-radios input[type="radio"] {
+    position: absolute;
+    visibility: hidden !important;
+  }
+  .checkboxes-and-radios input[type="checkbox"] + label:before,
+  .checkboxes-and-radios input[type="radio"] + label:before,
+  .checkboxes-and-radios input[type="checkbox"] + label:after,
+  .checkboxes-and-radios input[type="radio"] + label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -7.5px;
+    box-sizing: border-box;
+  }
+  .checkboxes-and-radios input[type="checkbox"] + label:before,
+  .checkboxes-and-radios input[type="radio"] + label:before {
+    width: 30px;
+    height: 16px;
+    right: 0px;
+    /* background: #fff; */
+    border: 2px solid #e4e3e1;
+    border-radius: 20px;
+  }
+  .checkboxes-and-radios input[type="checkbox"] + label:after,
+  .checkboxes-and-radios input[type="radio"] + label:after {
+    width: 16px;
+    height: 16px;
+    right: 16px;
+    background: #BDBDBD;
+    border-radius: 50%;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+  .checkboxes-and-radios input[type="checkbox"]:checked + label:after,
+  .checkboxes-and-radios input[type="radio"]:checked + label:after {
+    right: 0px;
+    background: #00BCD4;
+  }
+  /* checkbox / radio 定制样式 结束 */

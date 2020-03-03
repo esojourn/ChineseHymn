@@ -54,7 +54,7 @@ $playkey = is_valid_id($name, $n);
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);
 
 if ($n == 'index' || $n == 'i' || $n == '') {
-    echo '<div class="main">';
+    echo '<div class="main" id="main">';
     echo $output;
     echo '</div>';
 } elseif ($playkey !== FALSE) { //如果ID符合格式
@@ -64,5 +64,5 @@ if ($n == 'index' || $n == 'i' || $n == '') {
 } else {
     echo '<h1>无权访问</h1>';
 }
-
+print_html_menu();
 print_html_footer();

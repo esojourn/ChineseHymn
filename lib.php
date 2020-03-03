@@ -205,10 +205,49 @@ EOL;
     }
 }
 
+function print_html_menu()
+{
+    echo <<<EOL
+    <div id="mask" class="mask" onclick="closeNav()"></div>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="content">
+            <div class="checkboxes-and-radios">
+                <h2>曲目</h2>
+                <input type="checkbox" name="checkbox-cats[]" id="checkbox-1" value="1" checked>
+                <label for="checkbox-1">经典圣诗</label>
+                <input type="checkbox" name="checkbox-cats[]" id="checkbox-2" value="2">
+                <label for="checkbox-2">红本400首</label>
+                <input type="checkbox" name="checkbox-cats[]" id="checkbox-3" value="3">
+                <label for="checkbox-3">歌曲欣赏</label>
+                
+                <h2>设置</h2>
+                <input type="checkbox" name="checkbox-sets[]" id="set-1" value="1" checked>
+                <label for="set-1">自动播放</label>
+                <input type="checkbox" name="checkbox-sets[]" id="set-2" value="2">
+                <label for="set-2">单曲循环</label>
+            <!--<h2>曲目</h2>
+                <input type="radio" name="radio-cats" id="radio-1" value="1" checked>
+                <label for="radio-1">Radio Label 1</label>
+                <input type="radio" name="radio-cats" id="radio-2" value="2">
+                <label for="radio-2">Radio Label 2</label>
+                <input type="radio" name="radio-cats" id="radio-3" value="3" checked>
+                <label for="radio-3">Radio Label 3</label>
+                -->
+            </div>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-button">&#9776;</span>
+
+
+EOL;
+}
+
 function print_html_footer()
 {
     echo <<<EOL
-    <div class="footer"><a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
+    <div class="footer"><!--<a href="https://jinshuju.net/f/bQvJ9p">故障报告</a>--></div>
+    <script type="text/javascript" src="css/scripts.js"></script>
     </body>
 </html>
 EOL;

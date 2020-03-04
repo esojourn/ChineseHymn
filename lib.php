@@ -4,6 +4,7 @@
 */
 function get_name_array($value, $path)
 {
+    global $pathroot;
     $filesTxt[] = $value;
     preg_match("/^[0-9]{2}-[0-9]{1,3}/", $value, $arr);
     $id = $arr[0];
@@ -14,7 +15,7 @@ function get_name_array($value, $path)
         'folder' => $subid[0],
         'num' => $subid[1],
         'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
-        'path' => '/hymn/' . $path . '/' . $value,
+        'path' => $pathroot. '/' . $path . '/' . $value,
         'matched' => FALSE,
         'format' => substr(mb_strtolower($value), -3),
     ];
@@ -107,6 +108,7 @@ function is_valid_id($name, $n)
 
 function print_html_header()
 {
+    global $pathroot;
     echo <<<EOL
     <!DOCTYPE html>  
     <html lang="zh-CN" class="no-js">
@@ -115,13 +117,13 @@ function print_html_header()
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         <title>敬拜赞美</title>
 
-        <link rel="stylesheet" type="text/css" href="/hymn/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
-        <script type="text/javascript" src="/hymn/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="/hymn/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
+        <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        
+        <link rel="stylesheet" href="$pathroot/css/pure-min.css">
 
-        <link rel="stylesheet" href="/hymn/css/pure-min.css">
-
-        <link rel="stylesheet" type="text/css" href="/hymn/css/styles.css"/>     
+        <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>     
 
     </head>  
     <body>

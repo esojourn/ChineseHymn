@@ -71,6 +71,7 @@ function get_html_contenttable(&$name, $audio)
             "iDisplayLength": 15,
             "language": {
                 "search": "搜索：",
+                "infoFiltered": "",
                 "lengthMenu":     "每页显示 _MENU_ 首",
                 "info": "显示第 _START_ 至 _END_ 首。共 _TOTAL_ 首",
                     "paginate": {

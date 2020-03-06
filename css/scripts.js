@@ -128,6 +128,7 @@ $(function () {
         });
     } else if (Cookies.get('visited') != "true") {
         var sets = ["set3"];
+        $("input:checkbox[id=set1]").prop("checked", true); //无cookie时，设置默认值 autoplay
         $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
     }
     //  sets = Cookies.get(setsClass).split(",");
@@ -141,6 +142,8 @@ $(function () {
 
     changeCats(null, catsClass);
     changeTable(catsClass);
+    setCookie(catsClass);
+    setCookie(setsClass);
 
     $("input:checkbox").click(function () {
         changeCats($(this).attr('id'), catsClass);

@@ -117,17 +117,12 @@ function print_html_header()
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         <title>敬拜赞美</title>
-
         <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="$pathroot/css/js.cookie-2.2.1.min.js"></script>
-        
-
         <link rel="stylesheet" href="$pathroot/css/pure-min.css">
-
         <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>     
-
     </head>  
     <body>
 EOL;
@@ -161,17 +156,18 @@ function print_html_player($name)
 
     if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) {  //设置为空，但重复访问时，应重新进入判断。
 
-        $settings = explode(',', $_COOKIE[$cookie_name]);
-
-        if (in_array("set1", $settings)) {
-            $autoplay = 'autoplay';
-        } else {
-            $autoplay = '';
-        }
-        if (in_array("set2", $settings)) {
-            $loop = 'loop';
-        } else {
-            $loop = '';
+        if (isset($_COOKIE[$cookie_name])) {
+            $settings = explode(',', $_COOKIE[$cookie_name]);
+            if (in_array("set1", $settings)) {
+                $autoplay = 'autoplay';
+            } else {
+                $autoplay = '';
+            }
+            if (in_array("set2", $settings)) {
+                $loop = 'loop';
+            } else {
+                $loop = '';
+            }
         }
     }
 
@@ -227,12 +223,14 @@ EOL;
 
 function print_html_menu()
 {
+    global $pathroot;
     echo <<<EOL
     <div id="mask" class="mask" onclick="closeNav()"></div>
     <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="content">
             <div class="checkboxes-and-radios">
+                <h2><a href="$pathroot">首页</a></h2>
                 <h2>曲目</h2>
                 <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat0" value="all">
                 <label for="cat0">全部分类</label>

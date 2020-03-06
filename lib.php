@@ -15,7 +15,7 @@ function get_name_array($value, $path)
         'folder' => $subid[0],
         'num' => $subid[1],
         'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
-        'path' => $pathroot. '/' . $path . '/' . $value,
+        'path' => $pathroot . '/' . $path . '/' . $value,
         'matched' => FALSE,
         'format' => substr(mb_strtolower($value), -3),
     ];
@@ -156,11 +156,11 @@ function print_html_player($name)
     //var_dump($name);
     $mp3 = isset($name["mp3"]) ? $name["mp3"] : '';
     $id = $name["id"];
-    $pageURL = get_page_url();
+    $pageURL = preg_replace("/&.*$/U", '', get_page_url());
     $loop = '';
 
-    if($name['folder'] == '05'){
-       // $loop = 'loop';
+    if ($name['folder'] == '05') {
+        // $loop = 'loop';
     }
 
     echo <<<EOL

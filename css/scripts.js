@@ -71,18 +71,36 @@ function changeTable(className) {
     $("input:checkbox[class='" + className + "']:checked").each(function () {
         idArray.push(this.value);
     });
+
     searchStr = idArray.join("|");
-    console.log(searchStr);
+
+    //console.log(searchStr);
 
     table.column(1)
-        .search(searchStr, true, false)
-        .draw();
+        .search(searchStr, true, false);
+
+    if (!$("input:checkbox[id=set3]").is(":checked")) {
+        table.column(3)
+            .search("^(?!.*(无伴奏)).*$", true, false);
+    } else {
+        table.column(3)
+            .search("", true, false);
+    }
+    table.draw();
+}
+
+function removeCookies() {
+    //console.log(Cookies.get());
+    Cookies.remove("checkbox-cats");
+    Cookies.remove("checkbox-sets");
+    Cookies.remove("visited");
+    Cookies.remove("name");
+    //console.log(Cookies.get());
 }
 
 $(function () {
     //console.log("ready!");
-    console.log(Cookies.get());
-    Cookies.set('name', 'value');
+    //console.log(Cookies.get());
 
     //console.log(Cookies.get('name'));
     var catsClass = "checkbox-cats",
@@ -95,32 +113,42 @@ $(function () {
         cats.forEach(function (item, index, array) {
             $("input:checkbox[id=" + item + "]").prop("checked", true);
         });
-    } else { // if no cookie, set to all cats
+    } else if (Cookies.get('visited') != "true") { // if no cookie, set to all cats
         var cats = [];
         $("input:checkbox[class='" + catsClass + "']").each(function () {
-            cats.push(this.id)
+            cats.push(this.id);
+            $(this).prop("checked", true);
         });
+
     }
     if (Cookies.get(setsClass)) { //according to cookie, update "checked" status of sets 
         var sets = Cookies.get(setsClass).split(",");
         sets.forEach(function (item, index, array) {
             $("input:checkbox[id=" + item + "]").prop("checked", true);
         });
-    } else {
-        var sets = [];
+    } else if (Cookies.get('visited') != "true") {
+        var sets = ["set3"];
+        $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
     }
     //  sets = Cookies.get(setsClass).split(",");
+    
+    Cookies.set('visited', true);
 
-    console.log(cats);
-    console.log(sets);
+    //$("input:checkbox[id=set3]").prop("checked", true); 
 
+    //console.log(cats);
+    //console.log(sets);
 
     changeCats(null, catsClass);
+    changeTable(catsClass);
 
     $("input:checkbox").click(function () {
         changeCats($(this).attr('id'), catsClass);
         setCookie(catsClass);
         setCookie(setsClass);
         changeTable(catsClass);
+    });
+    $("a[id=removeCookies]").click(function () {
+        removeCookies();
     });
 });

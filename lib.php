@@ -229,9 +229,9 @@ function print_html_menu()
                 
                 <h2>设置</h2>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
-                <label for="set1">自动播放</label>
+                <label for="set1">自动播放（开发中）</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set2" value="2">
-                <label for="set2">单曲循环</label>
+                <label for="set2">单曲循环（开发中）</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
                 <label for="set3">显示无伴奏诗歌</label>
 
@@ -243,6 +243,7 @@ function print_html_menu()
                 <input type="radio" name="radio-cats" id="radio-3" value="3" checked>
                 <label for="radio-3">Radio Label 3</label>
                 -->
+                <a id="removeCookies">删除cookies</a>
             </div>
         </div>
     </div>

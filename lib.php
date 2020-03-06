@@ -230,7 +230,6 @@ function print_html_menu()
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="content">
             <div class="checkboxes-and-radios">
-                <h2><a href="$pathroot">首页</a></h2>
                 <h2>曲目</h2>
                 <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat0" value="all">
                 <label for="cat0">全部分类</label>
@@ -258,7 +257,10 @@ function print_html_menu()
                 <label for="radio-3">Radio Label 3</label>
                 -->
             </div>
-            <div class="sidebarfooter"><a id="removeCookies">删除cookies</a></div>
+            <div class="sidebarfooter">
+                <a href="$pathroot">回目录</a><br><br>
+                <a id="removeCookies">删除cookies</a>
+            </div>
         </div>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-button">&#9776;</span>

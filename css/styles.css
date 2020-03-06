@@ -108,6 +108,11 @@ div.footer{
     text-decoration: none;
   }
 
+  .sidenav > .content > .sidebarfooter > a:hover,
+  .sidenav > .content > .sidebarfooter > a:active{
+    color: #fff;    
+  }
+
   .sidenav > .content{
       margin: 0 20px 20px;
   }

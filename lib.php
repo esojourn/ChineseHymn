@@ -259,7 +259,7 @@ function print_html_menu()
             </div>
             <div class="sidebarfooter">
                 <a href="$pathroot">回目录</a><br><br>
-                <a id="removeCookies">删除cookies</a>
+                <a id="removeCookies" style="font-size: 12px;">删除cookies</a>
             </div>
         </div>
     </div>

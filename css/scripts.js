@@ -3,15 +3,12 @@ function openNav() {
     //document.getElementById("main").style.marginLeft = "250px";
     //document.getElementById("main").style.opacity = "0.2";
     //document.body.style.backgroundColor = "rgba(0,0,0,1)";
-        
 
     $(".mask").css({
         "height": $(document).height() + "px",
         "width": $(window).width() + "px",
         "opacity": "0.8"
     });
-
-    
 }
 
 function closeNav() {
@@ -19,28 +16,111 @@ function closeNav() {
     //document.getElementById("main").style.marginLeft = "0";
     //document.getElementById("main").style.opacity = "1";
     //document.body.style.backgroundColor = "white";
-    $(".mask").css({ "width": "0", "height": "0", "opacity": "0"});
+    $(".mask").css({ "width": "0", "height": "0", "opacity": "0" });
 
 }
 
-$(function () {
-    console.log("ready!");
-    Cookies.set('name', 'value');
-    console.log(Cookies.get('name'));
 
-    $("input:checkbox[name='checkbox-cats[]']").each(function () {
-        this.css({
-                background: "yellow",
-                border: "3px red solid"
-            });
-    });
-    $('#checkbox1').val(this.checked);
-
-    $('#checkbox1').change(function() {
-        if(this.checked) {
-            var returnVal = confirm("Are you sure?");
-            $(this).prop("checked", returnVal);
+/*
+* 逻辑处理，更新按钮状态，选all时，自动全选等等。。
+*/
+function changeCats(clickedID, catsClass) {
+    var cat0 = $("input:checkbox[id=cat0]"),
+        cat1 = $("input:checkbox[id=cat1]"),
+        cat2 = $("input:checkbox[id=cat2]"),
+        cat3 = $("input:checkbox[id=cat3]")
+        ;
+    //    console.log('changCats, status0: ' + cat0.is(":checked"));
+    //    console.log(clickedID);
+    //    console.log(catsClass);
+    if (clickedID == "cat0") {
+        if (cat0.is(":checked")) {
+            cat1.prop("checked", true);
+            cat2.prop("checked", true);
+            cat3.prop("checked", true);
         }
-        $('#textbox1').val(this.checked);        
+        if (!cat0.is(":checked")) {
+            cat1.prop("checked", false);
+            cat2.prop("checked", false);
+            cat3.prop("checked", false);
+        }
+    }
+    if (clickedID != "cat0" && clickedID != null) {
+        if (cat1.is(":checked") && cat2.is(":checked") && cat3.is(":checked")) {
+            cat0.prop("checked", true);
+        } else if (!cat1.is(":checked") || !cat2.is(":checked") || !cat3.is(":checked")) {
+            cat0.prop("checked", false);
+        }
+    }
+}
+
+function setCookie(className) {
+    var idArray = [];
+    $("input:checkbox[class='" + className + "']:checked").each(function () {
+        idArray.push(this.id);
+    });
+    Cookies.set(className, idArray.join(","));
+    //console.log(idArray.join(","));
+}
+
+function changeTable(className) {
+    var table = $('#mytable').DataTable();
+    var idArray = [],
+        searchStr = '';
+
+    $("input:checkbox[class='" + className + "']:checked").each(function () {
+        idArray.push(this.value);
+    });
+    searchStr = idArray.join("|");
+    console.log(searchStr);
+
+    table.column(1)
+        .search(searchStr, true, false)
+        .draw();
+}
+
+$(function () {
+    //console.log("ready!");
+    console.log(Cookies.get());
+    Cookies.set('name', 'value');
+
+    //console.log(Cookies.get('name'));
+    var catsClass = "checkbox-cats",
+        setsClass = "checkbox-sets";
+
+    //Cookies.remove(setsClass);
+    // update cats / sets check status
+    if (Cookies.get(catsClass)) { //according to cookie, update "checked" status of cats 
+        var cats = Cookies.get(catsClass).split(",");
+        cats.forEach(function (item, index, array) {
+            $("input:checkbox[id=" + item + "]").prop("checked", true);
+        });
+    } else { // if no cookie, set to all cats
+        var cats = [];
+        $("input:checkbox[class='" + catsClass + "']").each(function () {
+            cats.push(this.id)
+        });
+    }
+    if (Cookies.get(setsClass)) { //according to cookie, update "checked" status of sets 
+        var sets = Cookies.get(setsClass).split(",");
+        sets.forEach(function (item, index, array) {
+            $("input:checkbox[id=" + item + "]").prop("checked", true);
+        });
+    } else {
+        var sets = [];
+    }
+    //  sets = Cookies.get(setsClass).split(",");
+
+    console.log(cats);
+    console.log(sets);
+
+
+    changeCats(null, catsClass);
+
+    $("input:checkbox").click(function () {
+        changeCats($(this).attr('id'), catsClass);
+        setCookie(catsClass);
+        setCookie(setsClass);
+        changeTable(catsClass);
     });
 });

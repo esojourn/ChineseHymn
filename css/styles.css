@@ -240,6 +240,11 @@ div.footer{
   .checkboxes-and-radios input[type="checkbox"]:checked + label:after,
   .checkboxes-and-radios input[type="radio"]:checked + label:after {
     right: 0px;
-    background: #03a9f4;
+    background: #fff;
+  }
+  .checkboxes-and-radios input[type="checkbox"]:checked + label:before,
+  .checkboxes-and-radios input[type="radio"]:checked + label:before {
+    border: 2px solid #03a9f4;
+    background: #03a9f4; 
   }
   /* checkbox / radio 定制样式 结束 */

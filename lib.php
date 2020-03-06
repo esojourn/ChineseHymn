@@ -120,7 +120,9 @@ function print_html_header()
         <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="$pathroot/css/js.cookie-2.2.1.min.js"></script>
         
+
         <link rel="stylesheet" href="$pathroot/css/pure-min.css">
 
         <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>     
@@ -216,18 +218,23 @@ function print_html_menu()
         <div class="content">
             <div class="checkboxes-and-radios">
                 <h2>曲目</h2>
-                <input type="checkbox" name="checkbox-cats[]" id="checkbox-1" value="1" checked>
-                <label for="checkbox-1">经典圣诗</label>
-                <input type="checkbox" name="checkbox-cats[]" id="checkbox-2" value="2">
-                <label for="checkbox-2">红本400首</label>
-                <input type="checkbox" name="checkbox-cats[]" id="checkbox-3" value="3">
-                <label for="checkbox-3">歌曲欣赏</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat0" value="all">
+                <label for="cat0">全部分类</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat1" value="01|02|03|04">
+                <label for="cat1">经典圣诗</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat2" value="05">
+                <label for="cat2">红本400首</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat3" value="06">
+                <label for="cat3">诗歌欣赏</label>
                 
                 <h2>设置</h2>
-                <input type="checkbox" name="checkbox-sets[]" id="set-1" value="1" checked>
-                <label for="set-1">自动播放</label>
-                <input type="checkbox" name="checkbox-sets[]" id="set-2" value="2">
-                <label for="set-2">单曲循环</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
+                <label for="set1">自动播放</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set2" value="2">
+                <label for="set2">单曲循环</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
+                <label for="set3">显示无伴奏诗歌</label>
+
             <!--<h2>曲目</h2>
                 <input type="radio" name="radio-cats" id="radio-1" value="1" checked>
                 <label for="radio-1">Radio Label 1</label>

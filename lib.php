@@ -4,6 +4,7 @@
 */
 function get_name_array($value, $path)
 {
+    global $pathroot;
     $filesTxt[] = $value;
     preg_match("/^[0-9]{2}-[0-9]{1,3}/", $value, $arr);
     $id = $arr[0];
@@ -14,7 +15,7 @@ function get_name_array($value, $path)
         'folder' => $subid[0],
         'num' => $subid[1],
         'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
-        'path' => '/hymn/' . $path . '/' . $value,
+        'path' => $pathroot. '/' . $path . '/' . $value,
         'matched' => FALSE,
         'format' => substr(mb_strtolower($value), -3),
     ];
@@ -107,6 +108,7 @@ function is_valid_id($name, $n)
 
 function print_html_header()
 {
+    global $pathroot;
     echo <<<EOL
     <!DOCTYPE html>  
     <html lang="zh-CN" class="no-js">
@@ -115,13 +117,15 @@ function print_html_header()
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         <title>敬拜赞美</title>
 
-        <link rel="stylesheet" type="text/css" href="/hymn/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
-        <script type="text/javascript" src="/hymn/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="/hymn/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
+        <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="$pathroot/css/js.cookie-2.2.1.min.js"></script>
+        
 
-        <link rel="stylesheet" href="/hymn/css/pure-min.css">
+        <link rel="stylesheet" href="$pathroot/css/pure-min.css">
 
-        <link rel="stylesheet" type="text/css" href="/hymn/css/styles.css"/>     
+        <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>     
 
     </head>  
     <body>
@@ -205,10 +209,55 @@ EOL;
     }
 }
 
+function print_html_menu()
+{
+    echo <<<EOL
+    <div id="mask" class="mask" onclick="closeNav()"></div>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="content">
+            <div class="checkboxes-and-radios">
+                <h2>曲目</h2>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat0" value="all">
+                <label for="cat0">全部分类</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat1" value="01|02|03|04">
+                <label for="cat1">经典圣诗</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat2" value="05">
+                <label for="cat2">红本400首</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat3" value="06">
+                <label for="cat3">诗歌欣赏</label>
+                
+                <h2>设置</h2>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
+                <label for="set1">自动播放（开发中）</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set2" value="2">
+                <label for="set2">单曲循环（开发中）</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
+                <label for="set3">显示无伴奏诗歌</label>
+
+            <!--<h2>曲目</h2>
+                <input type="radio" name="radio-cats" id="radio-1" value="1" checked>
+                <label for="radio-1">Radio Label 1</label>
+                <input type="radio" name="radio-cats" id="radio-2" value="2">
+                <label for="radio-2">Radio Label 2</label>
+                <input type="radio" name="radio-cats" id="radio-3" value="3" checked>
+                <label for="radio-3">Radio Label 3</label>
+                -->
+                <a id="removeCookies">删除cookies</a>
+            </div>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-button">&#9776;</span>
+
+
+EOL;
+}
+
 function print_html_footer()
 {
     echo <<<EOL
-    <div class="footer"><a href="https://jinshuju.net/f/bQvJ9p">故障报告</a></div>
+    <div class="footer"><!--<a href="https://jinshuju.net/f/bQvJ9p">故障报告</a>--></div>
+    <script type="text/javascript" src="css/scripts.js"></script>
     </body>
 </html>
 EOL;

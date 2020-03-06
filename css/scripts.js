@@ -100,7 +100,7 @@ function removeCookies() {
 
 $(function () {
     //console.log("ready!");
-    //console.log(Cookies.get());
+    console.log(Cookies.get());
 
     //console.log(Cookies.get('name'));
     var catsClass = "checkbox-cats",

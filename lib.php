@@ -154,23 +154,38 @@ function get_page_url()
 function print_html_player($name)
 {
     global $serverroot;
-    //var_dump($name);
+    $cookie_name = "checkbox-sets";
+    $cookie_visited = "visited";
+    $loop = '';
+    $autoplay = 'autoplay';
+
+    if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) {  //设置为空，但重复访问时，应重新进入判断。
+
+        $settings = explode(',', $_COOKIE[$cookie_name]);
+
+        if (in_array("set1", $settings)) {
+            $autoplay = 'autoplay';
+        } else {
+            $autoplay = '';
+        }
+        if (in_array("set2", $settings)) {
+            $loop = 'loop';
+        } else {
+            $loop = '';
+        }
+    }
+
     $mp3 = isset($name["mp3"]) ? $name["mp3"] : '';
     $id = $name["id"];
     $pageURL = preg_replace("/&.*$/U", '', get_page_url());
-    $loop = '';
-
-    if ($name['folder'] == '05') {
-        // $loop = 'loop';
-    }
 
     echo <<<EOL
     <div class='main'>
     <div class='audio clearfix'>
-    <audio controls autoplay $loop>  
+    <audio controls $autoplay $loop>  
         <source src="$mp3" type="audio/mpeg">  
     </audio>  
-</div>
+    </div>
 EOL;
 
     if ($name["format"] == 'txt') {
@@ -230,9 +245,9 @@ function print_html_menu()
                 
                 <h2>设置</h2>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
-                <label for="set1">自动播放（开发中）</label>
+                <label for="set1">自动播放</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set2" value="2">
-                <label for="set2">单曲循环（开发中）</label>
+                <label for="set2">单曲循环</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
                 <label for="set3">显示无伴奏诗歌</label>
 
@@ -244,8 +259,8 @@ function print_html_menu()
                 <input type="radio" name="radio-cats" id="radio-3" value="3" checked>
                 <label for="radio-3">Radio Label 3</label>
                 -->
-                <a id="removeCookies">删除cookies</a>
             </div>
+            <div class="sidebarfooter"><a id="removeCookies">删除cookies</a></div>
         </div>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-button">&#9776;</span>

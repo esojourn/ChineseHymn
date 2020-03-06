@@ -98,7 +98,11 @@ div.footer{
     padding-top: 70px;
   }
 
-  .sidenav .content{
+  .sidenav > .content > .sidebarfooter{
+    margin-top: 40px;
+  }
+
+  .sidenav > .content{
       margin: 0 20px 20px;
   }
   

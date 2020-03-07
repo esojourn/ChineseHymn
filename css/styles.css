@@ -183,6 +183,11 @@ div.footer {
   transition: opacity 200ms ease-out;
 }
 
+.footer>.link {
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
 @media screen and (max-width: 640px) {
   .dataTables_length {
     margin-left: 0;

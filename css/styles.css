@@ -132,9 +132,9 @@ div.footer{
   
   .sidenav .closebtn {
     position: absolute;
-    top: 2px;
+    top: 6px;
     left: 15px;
-    font-size: 56px;
+    font-size: 45px;
   }
   
   @media screen and (max-height: 450px) {
@@ -160,7 +160,7 @@ div.footer{
     position: absolute;
     top: 0; left: 0;
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.6;
     -webkit-transition: opacity 200ms ease-out;
     transition: opacity 200ms ease-out;
 }

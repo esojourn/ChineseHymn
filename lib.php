@@ -106,17 +106,44 @@ function is_valid_id($name, $n)
     return FALSE;
 }
 
+function get_hymn_title($name, $is_front)
+{
+    global $serverroot;
 
-function print_html_header()
+    if ($name["format"] == 'txt' && !$is_front) {
+        $file = file_get_contents($serverroot . $name["path"]);
+
+        $encode = mb_detect_encoding($file, array("ASCII", 'UTF-8', "GB2312", "GBK", 'BIG5', 'LATIN1'));
+        if ($encode != 'UTF-8') {
+            $file = mb_convert_encoding($file, 'UTF-8', $encode);
+        }
+        $file = trim($file);
+
+        $hymntitle = substr($file, 0, strpos($file, "\r"));
+        $hymntitle = preg_replace('/ |[0-9]|\t|\n|\r*/', '', $hymntitle);
+    } else {
+        $hymntitle = '';
+    }
+    return $hymntitle;
+}
+
+function print_html_header($hymntitle)
 {
     global $pathroot;
+
+    if ($hymntitle != '') {
+        $hymntitle = '<title>' . $hymntitle . ' - 敬拜赞美</title>';
+    } else {
+        $hymntitle = '<title>敬拜赞美</title>';
+    }
+
     echo <<<EOL
     <!DOCTYPE html>  
     <html lang="zh-CN" class="no-js">
     <head>  
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
-        <title>敬拜赞美</title>
+        $hymntitle
         <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
@@ -146,9 +173,9 @@ function get_page_url()
     return $pageURL;
 }
 
-function print_html_player($name)
+function print_html_player($name, $hymntitle)
 {
-    global $serverroot;
+    global $serverroot, $pathroot;
     $cookie_name = "checkbox-sets";
     $cookie_visited = "visited";
     $loop = '';
@@ -191,28 +218,26 @@ EOL;
         if ($encode != 'UTF-8') {
             $file = mb_convert_encoding($file, 'UTF-8', $encode);
         }
+        $file = preg_replace('/\ |\t*/', '', $file);
+        $file = preg_replace('/\n\n\n|\r\n\r\n\r\n|\r\r\rt*/', "\n\n", $file);
 
         echo <<<EOL
-
-
-    <div class='text'><div class='text-inner'><pre>
-        $file
-        </pre></div>
-        <br>
-        
-        <div class='footer'>
-            <div class='return'><a href='?n=i'>回目录</a></div>
-            <div class='link'>本首链接：$pageURL</div>
+        <div class='text'><div class='text-inner'>
+        <pre>$file</pre>
         </div>
-    </div>
-    </div>
+        <div class='footer'>
+            <div class='return'><a href='$pathroot'>回目录</a></div>
+            <div class='link'>本首链接：$hymntitle<br>$pageURL</div>
+        </div>
+        </div>
+        </div>
 EOL;
     } elseif ($name["format"] == 'jpg') {
         $file = $name["path"];
         echo <<<EOL
         <div class='text'><div class='text-inner'><img src=$file />
             <div class='footer'>
-                <div class='return'><a href='?n=i'>回目录</a></div>
+                <div class='return'><a href='$pathroot'>回目录</a></div>
                 <div class='link'>本首链接：$pageURL</div>
             </div>
         </div>

@@ -1,13 +1,11 @@
 <?php
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-$serverroot=$_SERVER["DOCUMENT_ROOT"].'/';
-$pathroot='/hymn';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+$serverroot = $_SERVER["DOCUMENT_ROOT"] . '/';
+$pathroot = '/hymn';
 
 include 'lib.php';
-
-print_html_header();
 
 $path    = 'data';
 $data = scandir($path);
@@ -36,29 +34,35 @@ foreach ($data as $key => $value) {
 
 $output = get_html_contenttable($name, $audio);
 
- echo '<pre>';
- //var_dump($name);
+echo '<pre>';
+//var_dump($name);
 // var_dump($audio);
- echo '</pre>';
+echo '</pre>';
 
 if (isset($_GET["n"])) {
     $n = htmlspecialchars(strip_tags($_GET["n"]));
+    $is_front = false;
 } else {
     $n = '';
+    $is_front = true;
 }
 //$n=(isset($_GET["n"])) ? htmlspecialchars($_GET["n"]) : NULL;
 
 $playkey = is_valid_id($name, $n);
 //var_dump($playkey);
 
+$hymntitle = get_hymn_title($name[$playkey], $is_front);
+
+print_html_header($hymntitle);
+
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);
 
-if ($n == 'index' || $n == 'i' || $n == '') {
+if ($is_front) {
     echo '<div class="main" id="main">';
     echo $output;
     echo '</div>';
 } elseif ($playkey !== FALSE) { //如果ID符合格式
-    print_html_player($name[$playkey]);
+    print_html_player($name[$playkey], $hymntitle);
 } elseif ($n == 'check') {
     check_duplication($name);
 } else {

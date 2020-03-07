@@ -132,7 +132,7 @@ $(function () {
         $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
     }
     //  sets = Cookies.get(setsClass).split(",");
-    
+
     Cookies.set('visited', true);
 
     //$("input:checkbox[id=set3]").prop("checked", true); 

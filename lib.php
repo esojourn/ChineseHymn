@@ -119,7 +119,7 @@ function get_hymn_title($name, $is_front)
         }
         $file = trim($file);
 
-        $hymntitle = substr($file, 0, strpos($file, "\n"));        
+        $hymntitle = substr($file, 0, strpos($file, "\n"));
         $hymntitle = preg_replace('/ |[0-9]|\t|\n|\r*/', '', $hymntitle);
     } else {
         $hymntitle = '';
@@ -218,7 +218,8 @@ EOL;
         if ($encode != 'UTF-8') {
             $file = mb_convert_encoding($file, 'UTF-8', $encode);
         }
-        $file = preg_replace('/\ |\t*/', '', $file);
+        //$file = preg_replace('/\ |\t*/', '', $file);
+        $file = trim($file);
         $file = preg_replace('/\n\n\n|\r\n\r\n\r\n|\r\r\rt*/', "\n\n", $file);
 
         echo <<<EOL

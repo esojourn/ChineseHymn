@@ -119,7 +119,7 @@ function get_hymn_title($name, $is_front)
         }
         $file = trim($file);
 
-        $hymntitle = substr($file, 0, strpos($file, "\r"));
+        $hymntitle = substr($file, 0, strpos($file, "\n"));        
         $hymntitle = preg_replace('/ |[0-9]|\t|\n|\r*/', '', $hymntitle);
     } else {
         $hymntitle = '';

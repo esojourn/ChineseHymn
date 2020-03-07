@@ -52,7 +52,6 @@ $playkey = is_valid_id($name, $n);
 //var_dump($playkey);
 
 $hymntitle = get_hymn_title($name[$playkey], $is_front);
-
 print_html_header($hymntitle);
 
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);

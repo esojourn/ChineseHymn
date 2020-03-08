@@ -119,7 +119,11 @@ function get_hymn_title($name, $is_front)
         }
         $file = trim($file);
         $hymntitle = substr($file, 0, strpos($file, "\n"));
-        $hymntitle = preg_replace('/[0-9]|\t|\n|\r*/', '', $hymntitle);
+        $hymntitle = str_replace('（', '(', $hymntitle);
+        $hymntitle = str_replace('）', ')', $hymntitle);
+        //$hymntitle = preg_replace('/[0-9]|\t|\n|\r*/', '', $hymntitle);
+        $hymntitle = preg_replace('/((\()([^0-9][^\)]+)(\d+)([^0-9][^\)]+)(\)))|[0-9]|\t|\n|\r*/', '', $hymntitle);
+        //1. 替换 (AAA 1 BBB)，2. 替换数字、\t \r等
     } else {
         $hymntitle = '';
     }

@@ -59,7 +59,7 @@ function setCookie(className) {
     $("input:checkbox[class='" + className + "']:checked").each(function () {
         idArray.push(this.id);
     });
-    Cookies.set(className, idArray.join(","));
+    Cookies.set(className, idArray.join(","), { expires: 60 });
     //console.log(idArray.join(","));
 }
 
@@ -133,7 +133,7 @@ $(function () {
     }
     //  sets = Cookies.get(setsClass).split(",");
 
-    Cookies.set('visited', true);
+    Cookies.set('visited', true, { expires: 60 });
 
     //$("input:checkbox[id=set3]").prop("checked", true); 
 

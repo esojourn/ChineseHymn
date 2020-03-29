@@ -17,6 +17,7 @@ function get_name_array($value, $path)
         'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
         'path' => $pathroot . '/' . $path . '/' . $value,
         'matched' => FALSE,
+        'lead' => FALSE,
         'format' => substr(mb_strtolower($value), -3),
     ];
     unset($arr, $subid, $id);
@@ -24,18 +25,39 @@ function get_name_array($value, $path)
 }
 
 /*
- * 建立表格字符串。同时更新数组内 matched 字段信息。
+ * 操作$name，加入对应的mp3, mp3-lead信息
 */
-function get_html_contenttable(&$name, $audio)
+function get_audio_info(&$name, $audio)
 {
-    $output = '<form class="pure-form"><table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
             if ($name[$k1]['id'] == $audio[$k2]['id']) {  //如果txt文件有对应的mp3，则更新matched为true
-                $name[$k1]['mp3'] = $audio[$k2]['path'];
-                $name[$k1]['matched'] = TRUE;
+                if ($name[$k1]['name'] == $audio[$k2]['name']) { // 有名字一样的
+                    $name[$k1]['mp3'] = $audio[$k2]['path'];
+                    $name[$k1]['matched'] = TRUE;
+                }
+                if ($name[$k1]['name'] . '-领唱' == $audio[$k2]['name']) { // 有名字带‘领唱’的
+                    $name[$k1]['mp3-lead'] = $audio[$k2]['path'];
+                    $name[$k1]['lead'] = TRUE;
+                    $name[$k1]['matched'] = TRUE;
+                }
             }
         }
+    }
+}
+
+
+/*
+ * 建立表格字符串。同时更新数组内 matched 字段信息。
+*/
+function get_html_contenttable($name)
+{
+    $music_status = '';
+    $lead_status = '';
+    $title_status = '';
+    $output = '<form class="pure-form"><table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
+    foreach ($name as $k1 => $v1) {
+
         $output .= "<tr>\n";
 
         // $output .= "<td>";
@@ -55,13 +77,29 @@ function get_html_contenttable(&$name, $audio)
         $output .= "</td>\n";
 
         $output .= "<td>\n";
-        if ($name[$k1]['matched'] == TRUE) {
-            $output .= '<a href="?n=' . $v1['id'] . '">' . $v1['name'] . "</a>\n";
-        } else {
-            $output .= '<a href="?n=' . $v1['id'] . '">' . $v1['name'] . "</a> - 无伴奏\n";
+
+
+        if ($name[$k1]['matched'] == FALSE) {
+            $music_status = '无伴奏';
         }
+        if ($name[$k1]['lead'] == TRUE) {
+            $lead_status = '领唱';
+        }
+
+        if ($music_status != '' || $lead_status != '') {
+            $title_status = ' - ' . $lead_status . ' ' . $music_status;
+        }
+
+        $output .= '<a href="?n=' . $v1['id'] . '">' . $v1['name'] . "</a>$title_status\n";
         $output .= "</td></tr>\n";
+
+        $music_status = '';
+        $lead_status = '';
+        $title_status = ''; //清除状态
     }
+    // echo '<pre>';
+    // var_dump($name);
+    // echo '</pre>';
     $output .= '</tbody></table></form>';
     $output .= <<<EOL
     <script type="text/javascript">
@@ -192,6 +230,7 @@ function print_html_player($name, $hymntitle)
     $cookie_name = "checkbox-sets";
     $cookie_visited = "visited";
     $loop = '';
+    $lead = true;
     $autoplay = 'autoplay';
 
     if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) {  //设置为空，但重复访问时，应重新进入判断。
@@ -208,10 +247,33 @@ function print_html_player($name, $hymntitle)
             } else {
                 $loop = '';
             }
+
+            if (in_array("set4", $settings)) {
+                $lead = true;
+            } else {
+                $lead = false;
+            }
         }
     }
+    // echo '<pre>';
+    // var_dump($name);
+    // echo '</pre>';
 
-    $mp3 = isset($name["mp3"]) ? $name["mp3"] : '';
+    if ($name['matched'] == true) { //判断mp3使用哪个版本。
+
+        //$lead 是cookie开关。$name['mp3-lead'] 或 $name['mp3']是音乐路径。
+        if ($lead == true && array_key_exists('mp3-lead', $name)) {
+            $mp3 = $name["mp3-lead"];
+        } elseif ($lead == true && array_key_exists('mp3', $name)) {
+            $mp3 = $name["mp3"];
+        } elseif ($lead == false && array_key_exists('mp3', $name)) {
+            $mp3 = $name["mp3"];
+        } elseif ($lead == false && array_key_exists('mp3-lead', $name)) {
+            $mp3 = $name["mp3-lead"];
+        }
+    } else { //无伴奏
+        $mp3 = '';
+    }
     $id = $name["id"];
     $pageURL = preg_replace("/&.*$/U", '', get_page_url());
 
@@ -286,6 +348,8 @@ function print_html_menu()
                 <label for="set2">单曲循环</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
                 <label for="set3">显示无伴奏诗歌</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set4" value="4">
+                <label for="set4">优先使用领唱</label>
 
             <!--<h2>曲目</h2>
                 <input type="radio" name="radio-cats" id="radio-1" value="1" checked>

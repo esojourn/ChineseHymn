@@ -31,13 +31,13 @@ foreach ($data as $key => $value) {
     }
 }
 
+get_audio_info($name, $audio);
 
-$output = get_html_contenttable($name, $audio);
 
-echo '<pre>';
-//var_dump($name);
+// echo '<pre>';
+// var_dump($name);
 // var_dump($audio);
-echo '</pre>';
+// echo '</pre>';
 
 if (isset($_GET["n"])) {
     $n = htmlspecialchars(strip_tags($_GET["n"]));
@@ -57,6 +57,7 @@ print_html_header($hymntitle);
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);
 
 if ($is_front) {
+    $output = get_html_contenttable($name);
     echo '<div class="main" id="main">';
     echo $output;
     echo '</div>';

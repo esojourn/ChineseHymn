@@ -130,6 +130,7 @@ $(function () {
         var sets = ["set3"];
         $("input:checkbox[id=set1]").prop("checked", true); //无cookie时，设置默认值 autoplay
         $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
+        $("input:checkbox[id=set4]").prop("checked", true); //无cookie时，设置默认值，领唱版优先
     }
     //  sets = Cookies.get(setsClass).split(",");
 
@@ -155,3 +156,5 @@ $(function () {
         removeCookies();
     });
 });
+
+//TODO 单曲循环 和 领唱 需要 修改DOM

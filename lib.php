@@ -376,7 +376,7 @@ function print_html_footer()
 {
     echo <<<EOL
     <div class="footer"><!--<a href="https://jinshuju.net/f/bQvJ9p">故障报告</a>-->
-    <a href="https://github.com/esojourn/ChineseHymn" target="_blank">source code: github</a></div>
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.1.1</a></div>
     <script type="text/javascript" src="css/scripts.js"></script>
     </body>
 </html>

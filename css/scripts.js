@@ -98,9 +98,30 @@ function removeCookies() {
     //console.log(Cookies.get());
 }
 
+function refreshPage(clickedID, catsClass) {
+    console.log(clickedID);
+    var n = getQueryVariable("n");
+    console.log(n);
+    if (n != false) {
+        if (clickedID == 'set1' || clickedID == 'set2' || clickedID == 'set4') {
+            location.reload();
+        }
+    }
+}
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
+    }
+    return (false);
+}
+
 $(function () {
     //console.log("ready!");
-    console.log(Cookies.get());
+    //console.log(Cookies.get());
 
     //console.log(Cookies.get('name'));
     var catsClass = "checkbox-cats",
@@ -151,10 +172,12 @@ $(function () {
         setCookie(catsClass);
         setCookie(setsClass);
         changeTable(catsClass);
+        refreshPage($(this).attr('id'), setsClass);
+        //TODO 单曲循环 和 领唱 需要 修改DOM
+
     });
     $("a[id=removeCookies]").click(function () {
         removeCookies();
     });
 });
 
-//TODO 单曲循环 和 领唱 需要 修改DOM

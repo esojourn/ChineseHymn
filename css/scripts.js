@@ -148,7 +148,7 @@ $(function () {
             $("input:checkbox[id=" + item + "]").prop("checked", true);
         });
     } else if (Cookies.get('visited') != "true") {
-        var sets = ["set3"];
+        
         $("input:checkbox[id=set1]").prop("checked", true); //无cookie时，设置默认值 autoplay
         $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
         $("input:checkbox[id=set4]").prop("checked", true); //无cookie时，设置默认值，领唱版优先

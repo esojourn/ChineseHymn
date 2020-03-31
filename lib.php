@@ -232,6 +232,7 @@ function print_html_player($name, $hymntitle)
     $loop = '';
     $lead = true;
     $autoplay = 'autoplay';
+    $play = '';
 
     if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) {  //设置为空，但重复访问时，应重新进入判断。
 
@@ -264,12 +265,14 @@ function print_html_player($name, $hymntitle)
         //$lead 是cookie开关。$name['mp3-lead'] 或 $name['mp3']是音乐路径。
         if ($lead == true && array_key_exists('mp3-lead', $name)) {
             $mp3 = $name["mp3-lead"];
+            $play = '领';
         } elseif ($lead == true && array_key_exists('mp3', $name)) {
             $mp3 = $name["mp3"];
         } elseif ($lead == false && array_key_exists('mp3', $name)) {
             $mp3 = $name["mp3"];
         } elseif ($lead == false && array_key_exists('mp3-lead', $name)) {
             $mp3 = $name["mp3-lead"];
+            $play = '领';
         }
     } else { //无伴奏
         $mp3 = '';
@@ -296,6 +299,9 @@ EOL;
         //$file = preg_replace('/\ |\t*/', '', $file);
         $file = trim($file);
         $file = preg_replace('/\n\n\n|\r\n\r\n\r\n|\r\r\rt*/', "\n\n", $file);
+        if($play != ''){
+            $file = "($play) - " . $file;
+        }
 
         echo <<<EOL
         <div class='text'><div class='text-inner'>
@@ -310,8 +316,11 @@ EOL;
 EOL;
     } elseif ($name["format"] == 'jpg') {
         $file = $name["path"];
+        if($play != ''){
+            $play = '领唱版<br />';
+        }
         echo <<<EOL
-        <div class='text'><div class='text-inner'><img src=$file />
+        <div class='text'><div class='text-inner'>$play<img src=$file />
             <div class='footer'>
                 <div class='return'><a href='$pathroot'>回目录</a></div>
                 <div class='link'>本首链接：$pageURL</div>

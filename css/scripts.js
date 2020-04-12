@@ -103,7 +103,7 @@ function refreshPage(clickedID, catsClass) {
     var n = getQueryVariable("n");
     console.log(n);
     if (n != false) {
-        if (clickedID == 'set1' || clickedID == 'set2' || clickedID == 'set4') {
+        if (clickedID == 'set2' || clickedID == 'set4') {
             location.reload();
         }
     }

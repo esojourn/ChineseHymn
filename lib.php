@@ -371,7 +371,7 @@ function print_html_menu()
             </div>
             <div class="sidebarfooter">
                 <a href="$pathroot">回目录</a><br><br>
-                <a id="removeCookies" style="font-size: 12px;">删除cookies</a>
+                <!--<a id="removeCookies" style="font-size: 12px;">删除cookies</a>-->
             </div>
         </div>
     </div>
@@ -384,8 +384,9 @@ EOL;
 function print_html_footer()
 {
     echo <<<EOL
-    <div class="footer"><!--<a href="https://jinshuju.net/f/bQvJ9p">故障报告</a>-->
-    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.1.1</a></div>
+    <div class="footer">
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.1.2</a>
+    </div>
     <script type="text/javascript" src="css/scripts.js"></script>
     </body>
 </html>

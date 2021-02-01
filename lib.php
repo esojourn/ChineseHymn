@@ -200,14 +200,13 @@ function print_html_header($hymntitle)
         </script>
 
         <script>
-        function copyText(mode) {
+        function copyTextFunc(mode) {
             console.log(mode);
             if(mode == "link"){
                 var copyText = document.getElementById("copyLink");
             }else{
                 var copyText = document.getElementById("copyText");
             }
-            
             copyText.select();
             copyText.setSelectionRange(0, 9999)
             document.execCommand("copy");
@@ -324,10 +323,10 @@ EOL;
             <div class='return'><a href='$pathroot'>回目录</a></div>
             <form class="pure-form">
             <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
-            <input type="text" value="$pageURL" id="copyLink" class="hidden">
+            <input type="text" value="$pageURL" id="copyLink"  class="hidden2">
             <br>
-            <a onclick="copyText('link')" class="smallfont pure-button">拷贝链接</a>
-            <a onclick="copyText()" class="smallfont pure-button">歌名+链接</a>
+            <a onclick="copyTextFunc('link')" class="smallfont pure-button">拷贝链接</a>
+            <a onclick="copyTextFunc()" class="smallfont pure-button">歌名+链接</a>
             </form>
         </div>
         </div>
@@ -343,8 +342,11 @@ EOL;
             <div class='footer'>
                 <div class='return'><a href='$pathroot'>回目录</a></div>
                 <form class="pure-form">
-                    <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
-                    <a onclick="copyText()" class="smallfont pure-button">拷贝链接</a>
+                <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
+                <input type="text" value="$pageURL" id="copyLink" class="hidden2">
+                <br>
+                <a onclick="copyTextFunc('link')" class="smallfont pure-button">拷贝链接</a>
+                <a onclick="copyTextFunc()" class="smallfont pure-button">歌名+链接</a>
                 </form>
             </div>
         </div>

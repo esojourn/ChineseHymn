@@ -30,6 +30,12 @@ a:hover, a:active {
   display: none;
 }
 
+.hidden2 {
+  position: absolute; 
+  left: -1000px; 
+  top: -1000px;
+}
+
 audio {
   min-height: 20px;
   /*background-color: #ddaacc;*/
@@ -301,3 +307,7 @@ div.footer {
 }
 
 /* checkbox / radio 定制样式 结束 */
+
+#copyText{
+  display: inline-block;
+}

@@ -36,7 +36,7 @@ get_audio_info($name, $audio);
 
 // echo '<pre>';
 // var_dump($name);
-// var_dump($audio);
+// //var_dump($audio);
 // echo '</pre>';
 
 if (isset($_GET["n"])) {

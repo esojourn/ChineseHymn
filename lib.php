@@ -1,7 +1,7 @@
 <?php
 /*
  * 根据目录中所有文件，整理出格式化的数组。
-*/
+ */
 function get_name_array($value, $path)
 {
     global $pathroot;
@@ -14,10 +14,10 @@ function get_name_array($value, $path)
         'id' => $id,
         'folder' => $subid[0],
         'num' => $subid[1],
-        'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)),  // ltrim 去掉$id， preg_replace去掉扩展名
+        'name' => preg_replace('/\.[a-z|A-Z|0-9]{3}$/', '', ltrim($value, $id)), // ltrim 去掉$id， preg_replace去掉扩展名
         'path' => $pathroot . '/' . $path . '/' . $value,
-        'matched' => FALSE,
-        'lead' => FALSE,
+        'matched' => false,
+        'lead' => false,
         'format' => substr(mb_strtolower($value), -3),
     ];
     unset($arr, $subid, $id);
@@ -26,30 +26,29 @@ function get_name_array($value, $path)
 
 /*
  * 操作$name，加入对应的mp3, mp3-lead信息
-*/
+ */
 function get_audio_info(&$name, $audio)
 {
     foreach ($name as $k1 => $v1) {
         foreach ($audio as $k2 => $v2) {
-            if ($name[$k1]['id'] == $audio[$k2]['id']) {  //如果txt文件有对应的mp3，则更新matched为true
+            if ($name[$k1]['id'] == $audio[$k2]['id']) { //如果txt文件有对应的mp3，则更新matched为true
                 if ($name[$k1]['name'] == $audio[$k2]['name']) { // 有名字一样的
                     $name[$k1]['mp3'] = $audio[$k2]['path'];
-                    $name[$k1]['matched'] = TRUE;
+                    $name[$k1]['matched'] = true;
                 }
                 if ($name[$k1]['name'] . '-领唱' == $audio[$k2]['name']) { // 有名字带‘领唱’的
                     $name[$k1]['mp3-lead'] = $audio[$k2]['path'];
-                    $name[$k1]['lead'] = TRUE;
-                    $name[$k1]['matched'] = TRUE;
+                    $name[$k1]['lead'] = true;
+                    $name[$k1]['matched'] = true;
                 }
             }
         }
     }
 }
 
-
 /*
  * 建立表格字符串。同时更新数组内 matched 字段信息。
-*/
+ */
 function get_html_contenttable($name)
 {
     $music_status = '';
@@ -78,11 +77,10 @@ function get_html_contenttable($name)
 
         $output .= "<td>\n";
 
-
-        if ($name[$k1]['matched'] == FALSE) {
+        if ($name[$k1]['matched'] == false) {
             $music_status = '无伴奏';
         }
-        if ($name[$k1]['lead'] == TRUE) {
+        if ($name[$k1]['lead'] == true) {
             $lead_status = '领唱';
         }
 
@@ -133,7 +131,6 @@ EOL;
     return $output;
 }
 
-
 function is_valid_id($name, $n)
 {
     foreach ($name as $key => $value) {
@@ -141,7 +138,7 @@ function is_valid_id($name, $n)
             return $key;
         }
     }
-    return FALSE;
+    return false;
 }
 
 function get_hymn_title($name, $is_front)
@@ -179,9 +176,9 @@ function print_html_header($hymntitle)
     }
 
     echo <<<EOL
-    <!DOCTYPE html>  
+    <!DOCTYPE html>
     <html lang="zh-CN" class="no-js">
-    <head>  
+    <head>
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         $hymntitle
@@ -191,7 +188,7 @@ function print_html_header($hymntitle)
         <script type="text/javascript" src="$pathroot/css/js.cookie-2.2.1.min.js"></script>
         <link rel="stylesheet" href="$pathroot/css/pure-min.css">
         <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>
-        
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVK44GKC2E"></script>
         <script>
@@ -201,11 +198,27 @@ function print_html_header($hymntitle)
 
         gtag('config', 'G-EVK44GKC2E');
         </script>
-    </head>  
+
+        <script>
+        function copyText(mode) {
+            console.log(mode);
+            if(mode == "link"){
+                var copyText = document.getElementById("copyLink");
+            }else{
+                var copyText = document.getElementById("copyText");
+            }
+            
+            copyText.select();
+            copyText.setSelectionRange(0, 9999)
+            document.execCommand("copy");
+            alert("已经拷贝：" + copyText.value);
+        }
+        </script>
+
+    </head>
     <body>
 EOL;
 }
-
 
 function get_page_url()
 {
@@ -234,7 +247,7 @@ function print_html_player($name, $hymntitle)
     $autoplay = 'autoplay';
     $play = '';
 
-    if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) {  //设置为空，但重复访问时，应重新进入判断。
+    if (isset($_COOKIE[$cookie_name]) || isset($_COOKIE[$cookie_visited])) { //设置为空，但重复访问时，应重新进入判断。
 
         if (isset($_COOKIE[$cookie_name])) {
             $settings = explode(',', $_COOKIE[$cookie_name]);
@@ -283,9 +296,9 @@ function print_html_player($name, $hymntitle)
     echo <<<EOL
     <div class='main'>
     <div class='audio clearfix'>
-    <audio controls $autoplay $loop>  
-        <source src="$mp3" type="audio/mpeg">  
-    </audio>  
+    <audio controls $autoplay $loop>
+        <source src="$mp3" type="audio/mpeg">
+    </audio>
     </div>
 EOL;
 
@@ -299,7 +312,7 @@ EOL;
         //$file = preg_replace('/\ |\t*/', '', $file);
         $file = trim($file);
         $file = preg_replace('/\n\n\n|\r\n\r\n\r\n|\r\r\rt*/', "\n\n", $file);
-        if($play != ''){
+        if ($play != '') {
             $file = "($play) - " . $file;
         }
 
@@ -309,21 +322,30 @@ EOL;
         </div>
         <div class='footer'>
             <div class='return'><a href='$pathroot'>回目录</a></div>
-            <div class='link'>本首链接：$hymntitle<br>$pageURL</div>
-        </div>
+            <form class="pure-form">
+            <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
+            <input type="text" value="$pageURL" id="copyLink" class="hidden">
+            <br>
+            <a onclick="copyText('link')" class="smallfont pure-button">拷贝链接</a>
+            <a onclick="copyText()" class="smallfont pure-button">歌名+链接</a>
+            </form>
         </div>
         </div>
 EOL;
     } elseif ($name["format"] == 'jpg') {
         $file = $name["path"];
-        if($play != ''){
+        $hymntitle = $name["name"];
+        if ($play != '') {
             $play = '领唱版<br />';
         }
         echo <<<EOL
         <div class='text'><div class='text-inner'>$play<img src=$file />
             <div class='footer'>
                 <div class='return'><a href='$pathroot'>回目录</a></div>
-                <div class='link'>本首链接：$pageURL</div>
+                <form class="pure-form">
+                    <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
+                    <a onclick="copyText()" class="smallfont pure-button">拷贝链接</a>
+                </form>
             </div>
         </div>
         </div>
@@ -349,7 +371,7 @@ function print_html_menu()
                 <label for="cat2">红本400首</label>
                 <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat3" value="06">
                 <label for="cat3">诗歌欣赏</label>
-                
+
                 <h2>设置</h2>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
                 <label for="set1">自动播放</label>
@@ -385,7 +407,7 @@ function print_html_footer()
 {
     echo <<<EOL
     <div class="footer">
-    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.1.4</a>
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.2.1</a>
     </div>
     <script type="text/javascript" src="css/scripts.js"></script>
     </body>

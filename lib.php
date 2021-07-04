@@ -104,7 +104,7 @@ function get_html_contenttable($name)
     $(document).ready( function () {
         $('#mytable').DataTable({
             "aLengthMenu": [ [15, 25, 50, 100, -1], [15, 25, 50, 100, "All"] ],
-            "iDisplayLength": 15,
+            "iDisplayLength": -1,
             "language": {
                 "search": "搜索：",
                 "infoFiltered": "",
@@ -210,7 +210,7 @@ function print_html_header($hymntitle)
             copyText.select();
             copyText.setSelectionRange(0, 9999)
             document.execCommand("copy");
-            alert("已经拷贝：" + copyText.value);
+            // alert("已经拷贝：" + copyText.value);
         }
         </script>
 

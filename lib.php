@@ -54,7 +54,7 @@ function get_html_contenttable($name)
     $music_status = '';
     $lead_status = '';
     $title_status = '';
-    $output = '<form class="pure-form"><table id="mytable"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
+    $output = '<form class="pure-form"><table id="mytable" class="responsive"><thead><tr><th class="hidden">ID</th><th>目录</th><th>编号</th><th>诗歌</th></tr></thead><tbody>';
     foreach ($name as $k1 => $v1) {
 
         $output .= "<tr>\n";

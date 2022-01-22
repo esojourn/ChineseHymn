@@ -64,9 +64,7 @@ function setCookie(className) {
 }
 
 function changeTable(className) {
-    var table = $('#mytable').DataTable(
-        {responsive: true}
-    );
+    var table = $('#mytable').DataTable();
     var idArray = [],
         searchStr = '';
 

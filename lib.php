@@ -104,6 +104,7 @@ function get_html_contenttable($name)
     $(document).ready( function () {
         $('#mytable').DataTable({
             "aLengthMenu": [ [15, 25, 50, 100, -1], [15, 25, 50, 100, "All"] ],
+            "responsive": true,
             "iDisplayLength": -1,
             "language": {
                 "search": "搜索：",

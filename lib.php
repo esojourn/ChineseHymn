@@ -103,6 +103,7 @@ function get_html_contenttable($name)
     <script type="text/javascript">
     $(document).ready( function () {
         $('#mytable').DataTable({
+            "paging": false,
             "aLengthMenu": [ [15, 25, 50, 100, -1], [15, 25, 50, 100, "All"] ],
             "responsive": true,
             "iDisplayLength": -1,

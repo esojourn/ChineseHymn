@@ -185,6 +185,7 @@ $(function () {
     $("div[id=mytable_filter]").addClass("tableHeader");
     //$(".tableHeader").wrapAll("<div class='tableHeaderWrap clearfix'><div class='container'></div></div>");
     $(".tableHeader").wrapAll("<div class='tableHeaderWrap'></div>");
-    
+    $("table[id=mytable]").css("width", "100%");
+    $("table[id=mytable]").addClass("responsive");
 });
 

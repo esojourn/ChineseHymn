@@ -224,12 +224,23 @@ div.footer {
   }
   .pure-form input[type=search] {
     display: inline !important;
+    width: 180px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   audio {
     max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  audio {
+    max-width: 200px;
+  }
+  .pure-form input[type=search] {
+    display: inline !important;
+    width: 140px;
   }
 }
 
@@ -325,4 +336,5 @@ div.footer {
 #mytable_filter{
   margin-right:1.5em;
   margin-top: 0.5em;
+  margin-left:2.5em;
 }

@@ -170,9 +170,9 @@ div.footer {
 }
 
 .menu-button {
-  position: absolute;
+  position: fixed;
   left: 20px;
-  top: 30px;
+  top: 17px;
 }
 
 .menu-button:hover, .menu-button:active {
@@ -224,12 +224,23 @@ div.footer {
   }
   .pure-form input[type=search] {
     display: inline !important;
+    width: 180px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   audio {
     max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  audio {
+    max-width: 200px;
+  }
+  .pure-form input[type=search] {
+    display: inline !important;
+    width: 140px;
   }
 }
 
@@ -310,4 +321,20 @@ div.footer {
 
 #copyText{
   display: inline-block;
+}
+
+
+.tableHeaderWrap{
+  background-color: #fff;
+  min-height: 50px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding-top: 10px;
+}
+
+#mytable_filter{
+  margin-right:1.5em;
+  margin-top: 0.5em;
+  margin-left:2.5em;
 }

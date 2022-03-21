@@ -179,5 +179,13 @@ $(function () {
     $("a[id=removeCookies]").click(function () {
         removeCookies();
     });
+
+    //增加table header div，用于固定图层
+    $("div[id=mytable_length]").addClass("tableHeader");
+    $("div[id=mytable_filter]").addClass("tableHeader");
+    //$(".tableHeader").wrapAll("<div class='tableHeaderWrap clearfix'><div class='container'></div></div>");
+    $(".tableHeader").wrapAll("<div class='tableHeaderWrap'></div>");
+    $("table[id=mytable]").css("width", "100%");
+    $("table[id=mytable]").addClass("responsive");
 });
 

@@ -103,7 +103,9 @@ function get_html_contenttable($name)
     <script type="text/javascript">
     $(document).ready( function () {
         $('#mytable').DataTable({
+            "paging": false,
             "aLengthMenu": [ [15, 25, 50, 100, -1], [15, 25, 50, 100, "All"] ],
+            "responsive": true,
             "iDisplayLength": -1,
             "language": {
                 "search": "搜索：",
@@ -409,7 +411,7 @@ function print_html_footer()
 {
     echo <<<EOL
     <div class="footer">
-    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.2.1</a>
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.3.1</a>
     </div>
     <script type="text/javascript" src="css/scripts.js"></script>
     </body>

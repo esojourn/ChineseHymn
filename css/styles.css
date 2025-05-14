@@ -338,3 +338,8 @@ div.footer {
   margin-top: 0.5em;
   margin-left:2.5em;
 }
+
+/* 菜单按钮样式 */
+span.menu-button {
+    transition: opacity 0.8s ease, visibility 0.8s ease; /* 将过渡时间从 0.3s 增加到 0.8s */
+}

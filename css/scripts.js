@@ -150,7 +150,7 @@ $(function () {
     } else if (Cookies.get('visited') != "true") {
         
         $("input:checkbox[id=set1]").prop("checked", true); //无cookie时，设置默认值 autoplay
-        $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示“无伴奏”诗歌
+        $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示"无伴奏"诗歌
         $("input:checkbox[id=set4]").prop("checked", true); //无cookie时，设置默认值，领唱版优先
     }
     //  sets = Cookies.get(setsClass).split(",");
@@ -188,4 +188,68 @@ $(function () {
     $("table[id=mytable]").css("width", "100%");
     $("table[id=mytable]").addClass("responsive");
 });
+
+// 获取菜单按钮元素
+var menuButton = document.querySelector("span.menu-button");
+// 上次滚动的位置
+var lastScrollTop = 0;
+
+// 鼠标移动检测相关变量
+let mouseTimer = null;
+const MOUSE_TIMEOUT = 3000; // 3秒
+let isMouseInCorner = false;
+
+// 监听鼠标移动
+document.addEventListener('mousemove', function(e) {
+    // 检查鼠标是否在左上角区域（例如：左上角 100x100 像素的区域）
+    const cornerX = 100;
+    const cornerY = 100;
+    isMouseInCorner = (e.clientX <= cornerX && e.clientY <= cornerY);
+
+    // 如果鼠标在左上角区域，显示按钮
+    if (isMouseInCorner && menuButton) {
+        menuButton.style.opacity = "1";
+        menuButton.style.visibility = "visible";
+    }
+
+    // 清除之前的定时器
+    if (mouseTimer) {
+        clearTimeout(mouseTimer);
+    }
+
+    // 设置新的定时器
+    mouseTimer = setTimeout(function() {
+        // 如果鼠标不在左上角区域，则隐藏按钮
+        if (!isMouseInCorner && menuButton) {
+            menuButton.style.opacity = "0";
+            menuButton.style.visibility = "hidden";
+        }
+    }, MOUSE_TIMEOUT);
+});
+
+// 监听滚动事件
+window.onscroll = function() {scrollFunction()};
+
+// 修改原有的滚动函数，增加对鼠标位置的判断
+function scrollFunction() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (menuButton) {
+        if (scrollTop > lastScrollTop && !isMouseInCorner) {
+            // 向下滚动且鼠标不在左上角区域时，淡出按钮
+            menuButton.style.opacity = "0";
+            menuButton.style.visibility = "hidden";
+        } else if (scrollTop <= lastScrollTop || isMouseInCorner) {
+            // 向上滚动或鼠标在左上角区域时，淡入按钮
+            menuButton.style.opacity = "1";
+            menuButton.style.visibility = "visible";
+        }
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}
+
+// 初始化时，如果页面没有滚动，则显示按钮
+if (menuButton && window.pageYOffset === 0) {
+    menuButton.style.opacity = "1";
+    menuButton.style.visibility = "visible";
+}
 

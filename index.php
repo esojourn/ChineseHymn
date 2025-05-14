@@ -4,6 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $serverroot = $_SERVER["DOCUMENT_ROOT"] . '/';
 $pathroot = '/hymn';
+// $pathroot = '';
 
 include 'lib.php';
 

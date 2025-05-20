@@ -411,7 +411,7 @@ function print_html_footer()
 {
     echo <<<EOL
     <div class="footer">
-    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.4.0</a>
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.4.1</a>
     </div>
     <script type="text/javascript" src="css/scripts.js"></script>
     </body>

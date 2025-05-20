@@ -108,7 +108,7 @@ function get_html_contenttable($name)
             "responsive": true,
             "iDisplayLength": -1,
             "language": {
-                "search": "搜索：",
+                "search": "",
                 "infoFiltered": "",
                 "lengthMenu":     "每页显示 _MENU_ 首",
                 "info": "显示第 _START_ 至 _END_ 首。共 _TOTAL_ 首",

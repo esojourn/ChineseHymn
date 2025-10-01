@@ -1,0 +1,16 @@
+{
+  "name": "chinese-hymn",
+  "version": "2.0.0",
+  "description": "中文赞美诗歌在线播放",
+  "scripts": {
+    "update-files": "node update-files.js",
+    "serve": "npx http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "hymn",
+    "chinese",
+    "music"
+  ],
+  "author": "",
+  "license": "MIT"
+}

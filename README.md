@@ -9,9 +9,29 @@
 
 演示地址 https://dingxuan.info/hymn/
 
-# 安装说明
-开发环境 PHP 7
-Web服务器需要中文支持。
+v2  更新为JS版本，不再依赖PHP
+
+  本地开发测试
+
+  npm run serve
+  然后访问 http://localhost:8080
+
+  添加新歌曲后
+
+  npm run update-files
+  这会重新扫描 data 目录并更新 files.json
+
+  技术特点
+
+  - ✅ 零后端依赖 - 纯静态HTML/JS，可部署到任何静态服务器
+  - ✅ 轻量级 - 只使用已有的 jQuery 和 DataTables，无其他依赖
+  - ✅ 保留所有功能 - 目录列表、播放器、Cookie设置、领唱版切换等
+  - ✅ 保持原有UI - 使用相同的CSS和布局
+
+  与PHP版本的区别
+
+  唯一的区别是文件列表现在从 data/files.json 读取，而不是动态扫描文件系统。每次添加新文件后运行 npm run update-files
+   即可更新列表。
 
 # 版本更新
 v1.1.1 找回49首纯伴奏

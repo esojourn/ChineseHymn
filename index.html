@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
+    <title>敬拜赞美</title>
+    <link rel="stylesheet" type="text/css" href="DataTables-1.10.20/css/jquery.dataTables.min.css"/>
+    <script type="text/javascript" src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="css/js.cookie-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVK44GKC2E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EVK44GKC2E');
+    </script>
+
+    <script>
+    function copyTextFunc(mode) {
+        console.log(mode);
+        if(mode == "link"){
+            var copyText = document.getElementById("copyLink");
+        }else{
+            var copyText = document.getElementById("copyText");
+        }
+        copyText.select();
+        copyText.setSelectionRange(0, 9999)
+        document.execCommand("copy");
+    }
+    </script>
+</head>
+<body>
+    <div class="main" id="main"></div>
+
+    <div id="mask" class="mask" onclick="closeNav()"></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="content">
+            <div class="checkboxes-and-radios">
+                <h2>曲目</h2>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat0" value="all">
+                <label for="cat0">全部分类</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat1" value="01|02|03|04">
+                <label for="cat1">经典圣诗</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat2" value="05">
+                <label for="cat2">红本400首</label>
+                <input type="checkbox" name="cats[]" class="checkbox-cats" id="cat3" value="06">
+                <label for="cat3">诗歌欣赏</label>
+
+                <h2>设置</h2>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set1" value="1">
+                <label for="set1">自动播放</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set2" value="2">
+                <label for="set2">单曲循环</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set3" value="3">
+                <label for="set3">显示无伴奏诗歌</label>
+                <input type="checkbox" name="sets[]" class="checkbox-sets" id="set4" value="4">
+                <label for="set4">优先使用领唱</label>
+            </div>
+            <div class="sidebarfooter">
+                <a href="index.html">回目录</a><br><br>
+            </div>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu-button">&#9776;</span>
+
+    <div class="footer">
+        <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v2.0.0</a>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="css/scripts.js"></script>
+</body>
+</html>

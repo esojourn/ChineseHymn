@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "中文赞美诗歌在线播放",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "update-files": "node update-files.js",
     "serve": "npx http-server -p 8080 -c-1"
   },
@@ -12,5 +15,14 @@
     "music"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "datatables.net": "^2.3.4",
+    "datatables.net-dt": "^2.3.4",
+    "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5"
+  }
 }

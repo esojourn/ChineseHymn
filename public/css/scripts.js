@@ -142,13 +142,13 @@ $(function () {
         });
 
     }
-    if (Cookies.get(setsClass)) { //according to cookie, update "checked" status of sets 
+    if (Cookies.get(setsClass)) { //according to cookie, update "checked" status of sets
         var sets = Cookies.get(setsClass).split(",");
         sets.forEach(function (item, index, array) {
             $("input:checkbox[id=" + item + "]").prop("checked", true);
         });
     } else if (Cookies.get('visited') != "true") {
-        
+
         $("input:checkbox[id=set1]").prop("checked", true); //无cookie时，设置默认值 autoplay
         $("input:checkbox[id=set3]").prop("checked", true); //无cookie时，设置默认值，显示"无伴奏"诗歌
         $("input:checkbox[id=set4]").prop("checked", true); //无cookie时，设置默认值，领唱版优先
@@ -157,15 +157,21 @@ $(function () {
 
     Cookies.set('visited', true, { expires: 60 });
 
-    //$("input:checkbox[id=set3]").prop("checked", true); 
+    //$("input:checkbox[id=set3]").prop("checked", true);
 
     //console.log(cats);
     //console.log(sets);
 
     changeCats(null, catsClass);
     changeTable(catsClass);
-    setCookie(catsClass);
-    setCookie(setsClass);
+
+    // 只在首次访问或没有 cookie 时才初始化保存
+    if (!Cookies.get(catsClass)) {
+        setCookie(catsClass);
+    }
+    if (!Cookies.get(setsClass)) {
+        setCookie(setsClass);
+    }
 
     $("input:checkbox").click(function () {
         changeCats($(this).attr('id'), catsClass);

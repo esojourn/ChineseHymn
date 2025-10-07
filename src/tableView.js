@@ -2,6 +2,7 @@
 import $ from 'jquery';
 import 'datatables.net';
 import 'datatables.net-dt/css/dataTables.dataTables.min.css';
+import { initSidebarCheckboxes, initMenuButton } from './sidebar.js';
 
 /**
  * 生成目录表格HTML
@@ -74,4 +75,11 @@ export function renderTableView(data) {
     const tableHtml = generateTableHtml(data);
     document.getElementById('main').innerHTML = tableHtml;
     initDataTable();
+
+    // 初始化侧边栏checkbox状态管理
+    // 使用setTimeout确保DataTable完全初始化后再绑定事件
+    setTimeout(() => {
+        initSidebarCheckboxes();
+        initMenuButton();
+    }, 100);
 }

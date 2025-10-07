@@ -3,6 +3,12 @@ import './style.css';
 import { loadHymnData, getUrlParam, findItemById } from './dataLoader.js';
 import { renderTableView } from './tableView.js';
 import { renderPlayer } from './player.js';
+import { openNav, closeNav, copyTextFunc } from './sidebar.js';
+
+// 将函数暴露到全局作用域，供index.html中的内联事件处理器使用
+window.openNav = openNav;
+window.closeNav = closeNav;
+window.copyTextFunc = copyTextFunc;
 
 /**
  * 主初始化函数

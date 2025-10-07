@@ -1,6 +1,7 @@
 // 播放器模块
 import Cookies from 'js-cookie';
 import { loadLyrics, getHymnTitle } from './dataLoader.js';
+import { initSidebarCheckboxes, initMenuButton } from './sidebar.js';
 
 /**
  * 渲染播放器页面
@@ -82,4 +83,11 @@ export async function renderPlayer(item) {
     }
 
     document.getElementById('main').innerHTML = html;
+
+    // 初始化侧边栏checkbox状态管理和菜单按钮
+    // 使用setTimeout确保DOM完全加载后再绑定事件
+    setTimeout(() => {
+        initSidebarCheckboxes();
+        initMenuButton();
+    }, 100);
 }

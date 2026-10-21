@@ -293,13 +293,14 @@ function print_html_player($name, $hymntitle)
     }
     $id = $name["id"];
     print_sync_config($name, $mp3);
+    $audio_url = htmlspecialchars(audio_url($mp3), ENT_QUOTES, 'UTF-8');
     $pageURL = preg_replace("/&.*$/U", '', get_page_url());
 
     echo <<<EOL
     <div class='main'>
     <div class='audio clearfix'>
     <audio controls $autoplay $loop>
-        <source src="$mp3" type="audio/mpeg">
+        <source src="$audio_url" type="audio/mpeg">
     </audio>
     </div>
 EOL;
@@ -357,6 +358,12 @@ EOL;
     }
 }
 
+function audio_url($mp3)
+{
+    global $pathroot;
+    return $mp3 === '' ? '' : $pathroot . '/audio.php?file=' . rawurlencode(basename($mp3));
+}
+
 function print_sync_config($name, $mp3)
 {
     global $pathroot;
@@ -369,7 +376,7 @@ function print_sync_config($name, $mp3)
         'sourceFile' => $source_file,
         'audioFile' => $audio_file,
         'sourceUrl' => $name['path'],
-        'audioUrl' => $mp3,
+        'audioUrl' => audio_url($mp3),
         'manifest' => $pathroot . '/data/sync/' . rawurlencode($source_file) . '.json',
     ];
     if (is_file($manifest_file)) {

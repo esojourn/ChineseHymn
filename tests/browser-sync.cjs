@@ -315,6 +315,29 @@ const server = http.createServer((req, res) => {
         console.log('PASS: Ctrl+arrows seek real audio by 10 seconds, clamp bounds and preserve text editing');
 
         if (process.env.PHP_BASE_URL) {
+            // Exercise the actual PHP audio URL, not a fully downloaded Blob.
+            await page.goto(process.env.PHP_BASE_URL + '/index.php?n=01-131');
+            await page.waitForFunction(() => Number.isFinite(document.querySelector('audio').duration));
+            assert.match(await page.locator('audio source').getAttribute('src'), /audio\.php\?file=/);
+            await page.evaluate(() => new Promise(resolve => {
+                const audio = document.querySelector('audio'); audio.pause(); audio.loop = false;
+                audio.addEventListener('seeked', resolve, { once: true }); audio.currentTime = 40;
+            }));
+            await page.keyboard.press('Control+ArrowRight');
+            await page.waitForFunction(() => !document.querySelector('audio').seeking);
+            assert.ok(Math.abs(await audioTime() - 50) < 0.2);
+            await page.keyboard.press('Control+ArrowLeft');
+            await page.waitForFunction(() => !document.querySelector('audio').seeking);
+            assert.ok(Math.abs(await audioTime() - 40) < 0.2);
+            await page.evaluate(() => new Promise(resolve => {
+                const audio = document.querySelector('audio'); audio.style.width = '600px';
+                audio.addEventListener('seeked', resolve, { once: true }); audio.currentTime = 0;
+            }));
+            await page.locator('audio').scrollIntoViewIfNeeded();
+            const audioBox = await page.locator('audio').boundingBox();
+            await page.mouse.click(audioBox.x + audioBox.width * 0.55, audioBox.y + audioBox.height / 2);
+            await page.waitForFunction(() => document.querySelector('audio').currentTime > 20 && !document.querySelector('audio').seeking);
+            console.log('PASS: actual PHP audio URL supports forward/backward shortcuts and native timeline clicks');
             for (const query of ['', '?n=01-040', '?n=05-001', '?n=invalid']) {
                 await page.goto(process.env.PHP_BASE_URL + '/index.php' + query);
                 await page.waitForTimeout(150);

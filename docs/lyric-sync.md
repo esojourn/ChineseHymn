@@ -20,7 +20,7 @@
 php -S localhost:8080
 ```
 
-PHP 需要 `mbstring`。路径现在根据 `SCRIPT_NAME` 自动计算，可运行在站点根目录或 `/hymn/`。访问 `http://localhost:8080/index.php` 播放歌曲，访问 `http://localhost:8080/tools/sync-editor.html` 校准。
+PHP 需要 `mbstring`。音频通过根目录 `audio.php` 提供，支持 `Range` 分段读取和 `206 Partial Content` 响应，使原生进度条和快捷键能直接定位。部署时需一并发布该文件；接口只读取 `data/` 内的 MP3。路径现在根据 `SCRIPT_NAME` 自动计算，可运行在站点根目录或 `/hymn/`。访问 `http://localhost:8080/index.php` 播放歌曲，访问 `http://localhost:8080/tools/sync-editor.html` 校准。
 
 也可用 `npm run serve` 单独运行校准工具；静态服务器不能执行 PHP，首页保留跳转到 PHP 的行为。校准页使用浏览器 File API，不向服务器上传或写入素材。请通过 localhost 或 HTTPS 使用，以便计算 SHA-256。
 
@@ -92,3 +92,5 @@ php -l lib.php
 另开本地 PHP 服务后，可用 `PHP_BASE_URL=http://localhost:8080 npm run test:browser` 同时检查真实 PHP 目录页、文本/图片页、无效歌曲编号和手机菜单可见性。
 
 试点素材检查见 [试点记录](sync-pilot.md)。自动生成后默认启用；质量目标是无段落跳错、长间奏平滑过渡、边界误差不超过 ±1 秒，可通过抽查各音轨进一步校准。记录每首自动处理耗时、人工修订耗时和原始边界误差，再决定批量处理范围。
+
+音频接口回归：启动 PHP 服务后执行 `PHP_BASE_URL=http://localhost:8080 python3 -m unittest discover -s tests -p 'test_*.py'`，检查分段内容、HEAD、越界响应及文件路径限制。带 `PHP_BASE_URL` 的浏览器测试还会直接访问 PHP 播放页，验证前后跳转和点击原生进度条，不使用 Blob 替代音频地址。

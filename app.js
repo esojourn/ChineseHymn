@@ -247,10 +247,10 @@
 
         if (item.format === 'txt') {
             const lyrics = await loadLyrics(item.path);
-            const displayText = playMark ? `(${playMark}) - ${lyrics}` : lyrics;
+            const displayText = lyrics.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
             html += '<div class="text"><div class="text-inner">';
-            html += `<pre>${displayText}</pre>`;
+            html += `${playMark ? '<div>领唱版</div>' : ''}<pre>${displayText}</pre>`;
             html += '</div><div class="footer">';
             html += '<div class="return"><a href="index.html">回目录</a></div>';
             html += '<form class="pure-form">';
@@ -277,6 +277,16 @@
         }
 
         document.getElementById('main').innerHTML = html;
+        if (window.HymnSync) {
+            window.HymnSync.mount({
+                songId: item.id,
+                sourceFile: item.path.split('/').pop(),
+                audioFile: mp3Path.split('/').pop(),
+                sourceUrl: item.path,
+                audioUrl: mp3Path,
+                manifest: 'data/sync/' + encodeURIComponent(item.path.split('/').pop()) + '.json'
+            });
+        }
     }
 
     // 查找指定ID的项目

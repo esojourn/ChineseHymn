@@ -292,6 +292,7 @@ function print_html_player($name, $hymntitle)
         $mp3 = '';
     }
     $id = $name["id"];
+    print_sync_config($name, $mp3);
     $pageURL = preg_replace("/&.*$/U", '', get_page_url());
 
     echo <<<EOL
@@ -313,16 +314,15 @@ EOL;
         //$file = preg_replace('/\ |\t*/', '', $file);
         $file = trim($file);
         $file = preg_replace('/\n\n\n|\r\n\r\n\r\n|\r\r\rt*/', "\n\n", $file);
-        if ($play != '') {
-            $file = "($play) - " . $file;
-        }
+        $file = htmlspecialchars($file, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $play_label = $play != '' ? '<div>领唱版</div>' : '';
 
         echo <<<EOL
         <div class='text'><div class='text-inner'>
-        <pre>$file</pre>
+        $play_label<pre>$file</pre>
         </div>
         <div class='footer'>
-            <div class='return'><a href='$pathroot'>回目录</a></div>
+            <div class='return'><a href='$pathroot/'>回目录</a></div>
             <form class="pure-form">
             <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
             <input type="text" value="$pageURL" id="copyLink"  class="hidden2">
@@ -340,9 +340,9 @@ EOL;
             $play = '领唱版<br />';
         }
         echo <<<EOL
-        <div class='text'><div class='text-inner'>$play<img src=$file />
+        <div class='text'><div class='text-inner'>$play<img src="$file" alt="诗歌曲谱" />
             <div class='footer'>
-                <div class='return'><a href='$pathroot'>回目录</a></div>
+                <div class='return'><a href='$pathroot/'>回目录</a></div>
                 <form class="pure-form">
                 <input type="text" value="$hymntitle - $pageURL" id="copyText" class="smallfont">
                 <input type="text" value="$pageURL" id="copyLink" class="hidden2">
@@ -355,6 +355,30 @@ EOL;
         </div>
 EOL;
     }
+}
+
+function print_sync_config($name, $mp3)
+{
+    global $pathroot;
+    // Hash only when a sidecar exists; ordinary playback incurs no audio hashing.
+    $source_file = basename($name['path']);
+    $audio_file = basename($mp3);
+    $manifest_file = __DIR__ . '/data/sync/' . $source_file . '.json';
+    $sync_config = [
+        'songId' => $name['id'],
+        'sourceFile' => $source_file,
+        'audioFile' => $audio_file,
+        'sourceUrl' => $name['path'],
+        'audioUrl' => $mp3,
+        'manifest' => $pathroot . '/data/sync/' . rawurlencode($source_file) . '.json',
+    ];
+    if (is_file($manifest_file)) {
+        $sync_config['sourceHash'] = hash_file('sha256', __DIR__ . '/data/' . $source_file);
+        if ($audio_file !== '' && is_file(__DIR__ . '/data/' . $audio_file)) {
+            $sync_config['audioHash'] = hash_file('sha256', __DIR__ . '/data/' . $audio_file);
+        }
+    }
+    echo '<script>window.hymnSyncConfig = ' . json_encode($sync_config, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) . ';</script>';
 }
 
 function print_html_menu()
@@ -385,6 +409,9 @@ function print_html_menu()
                 <label for="set3">显示无伴奏诗歌</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set4" value="4">
                 <label for="set4">优先使用领唱</label>
+                <input type="checkbox" id="auto-scroll" aria-describedby="auto-scroll-status">
+                <label for="auto-scroll">自动滚动</label>
+                <p id="auto-scroll-status" class="smallfont" role="status">有同步数据的歌曲可自动跟随</p>
 
             <!--<h2>曲目</h2>
                 <input type="radio" name="radio-cats" id="radio-1" value="1" checked>
@@ -396,7 +423,7 @@ function print_html_menu()
                 -->
             </div>
             <div class="sidebarfooter">
-                <a href="$pathroot">回目录</a><br><br>
+                <a href="$pathroot/">回目录</a><br><br>
                 <!--<a id="removeCookies" style="font-size: 12px;">删除cookies</a>-->
             </div>
         </div>
@@ -414,6 +441,8 @@ function print_html_footer()
     <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.4.1</a>
     </div>
     <script type="text/javascript" src="css/scripts.js"></script>
+    <script src="css/lyric-sync-core.js"></script>
+    <script src="css/lyric-sync.js"></script>
     </body>
 </html>
 EOL;

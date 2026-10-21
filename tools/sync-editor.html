@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>歌词滚动校准</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body { margin: 0; background: #faf9f5; font-family: system-ui, sans-serif; }
+        aside { position: fixed; inset: 0 auto 0 0; width: 310px; padding: 16px; overflow: auto; background: #fff; border-right: 1px solid #ddd; z-index: 10; }
+        main { margin: 30px 24px 70vh 365px; }
+        h1 { font-size: 22px; margin-top: 0; }
+        h2 { font-size: 16px; }
+        label { display: block; margin: 10px 0; }
+        input:not([type=checkbox]), select, button { box-sizing: border-box; max-width: 100%; padding: 6px; }
+        input[type=number] { width: 100px; }
+        input[type=text], select { width: 100%; }
+        button { margin: 3px 2px 3px 0; cursor: pointer; }
+        audio { width: 100%; }
+        summary { cursor: pointer; padding: 8px 0; font-weight: bold; }
+        #message { white-space: pre-wrap; font-size: 14px; color: #355d4b; }
+        .hint { font-size: 13px; color: #555; line-height: 1.6; }
+        .sync-line { cursor: crosshair; }
+        .sync-line.selected { background: #e0ecd8; }
+        .image-wrap { position: relative; }
+        #content img { width: 100%; display: block; user-select: none; }
+        #selection { position: absolute; left: 0; right: 0; pointer-events: none; background: #47956d33; border: 2px solid #47956d; box-sizing: border-box; }
+        #selection[hidden] { display: none; }
+        @media(max-width: 700px) {
+            aside { width: auto; right: 0; bottom: auto; max-height: 42vh; border-bottom: 1px solid #ddd; }
+            main { margin: 46vh 12px 70vh; }
+            .sync-editor-preview aside { max-height: 110px; }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sync-editor-controls">
+        <h1>歌词滚动校准</h1>
+        <p class="hint">素材只在当前浏览器中读取；导出后放入仓库。先标记阅读区域，再边听边记录到达时间。</p>
+        <details open>
+            <summary>1. 选择素材</summary>
+            <label>歌词 TXT 或 JPG <input id="source-file" type="file" accept=".txt,.jpg,.jpeg"></label>
+            <label>音频（可同时选择伴奏与领唱）<input id="audio-files" type="file" accept=".mp3" multiple></label>
+            <button id="new-draft">建立草稿</button>
+            <label>导入同步 JSON <input id="import-file" type="file" accept=".json"></label>
+        </details>
+        <label>试听版本 <select id="track"></select></label>
+        <audio id="audio" controls preload="metadata"></audio>
+        <div id="clock">0.00 秒</div>
+        <label>此版起点偏移（秒）<input id="offset" type="number" step="0.01" value="0"></label>
+        <label><input id="independent" type="checkbox"> 当前版本使用独立时间轴</label>
+        <details open>
+            <summary>2. 阅读区域</summary>
+            <p class="hint">文本点击首行，再 Shift＋点击末行。图片点击上边界，再 Shift＋点击下边界（手机可用下方数值调整）。</p>
+            <label>已存区域 <select id="region-list"></select></label>
+            <label>区域编号 <input id="region-id" type="text" placeholder="verse1-top"></label>
+            <label><span id="start-label">首行（从 0 开始）</span> <input id="region-start" type="number" min="0" step="1" value="0"></label>
+            <label><span id="end-label">末行</span> <input id="region-end" type="number" min="0" step="1" value="0"></label>
+            <button id="save-region">保存区域</button><button id="delete-region">删除区域</button>
+        </details>
+        <details open>
+            <summary>3. 时间与过渡</summary>
+            <label>已存时间点 <select id="cue-list"></select></label>
+            <label>段落说明 <input id="cue-label" type="text" placeholder="第二段 / 副歌"></label>
+            <label>到达时间（秒）<input id="cue-at" type="number" min="0" step="0.01" value="0"></label>
+            <button id="mark-arrival">记为到达时间（A）</button>
+            <label>移动开始（留空则在到达时间开始短过渡）<input id="cue-start" type="number" min="0" step="0.01"></label>
+            <button id="mark-start">记为移动开始（I）</button>
+            <label>过渡类型 <select id="cue-kind"><option value="reading">阅读推进</option><option value="intro">前奏</option><option value="interlude">间奏</option><option value="return">换段回滚</option></select></label>
+            <button id="save-cue">新增时间点</button><button id="update-cue">更新选中点</button><button id="delete-cue">删除选中点</button>
+            <button id="seek-cue">试听选中点前 3 秒</button>
+        </details>
+        <label><input id="preview" type="checkbox"> 自动滚动预览（手动滚动即停止）</label>
+        <details open>
+            <summary>4. 审核与导出</summary>
+            <label><input id="review-track" type="checkbox"> 已完整试听当前版本，确认段落、间奏和回滚正确</label>
+            <p class="hint">修改区域、时间点或偏移会清除审核。切换版本后分别审核；只有审核过的版本会对听众启用。</p>
+            <button id="export-draft">导出草稿</button><button id="export-reviewed">导出已审核数据</button>
+        </details>
+        <p id="message" role="status">请选择歌词和对应音频。</p>
+    </aside>
+    <main><div id="content" class="text-inner"></div></main>
+    <script src="../css/lyric-sync-core.js"></script>
+    <script src="../css/lyric-sync.js"></script>
+    <script src="sync-editor.js"></script>
+</body>
+</html>

@@ -62,6 +62,9 @@
                 <label for="set3">显示无伴奏诗歌</label>
                 <input type="checkbox" name="sets[]" class="checkbox-sets" id="set4" value="4">
                 <label for="set4">优先使用领唱</label>
+                <input type="checkbox" id="auto-scroll" aria-describedby="auto-scroll-status">
+                <label for="auto-scroll">自动滚动</label>
+                <p id="auto-scroll-status" class="smallfont" role="status">有同步数据的歌曲可自动跟随</p>
             </div>
             <div class="sidebarfooter">
                 <a href="index.html">回目录</a><br><br>
@@ -74,6 +77,8 @@
         <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v2.0.0</a>
     </div>
 
+    <script src="css/lyric-sync-core.js"></script>
+    <script src="css/lyric-sync.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="css/scripts.js"></script>
 </body>

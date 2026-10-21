@@ -64,6 +64,7 @@ function setCookie(className) {
 }
 
 function changeTable(className) {
+    if (!document.getElementById('mytable') || !$.fn.dataTable.isDataTable('#mytable')) return;
     var table = $('#mytable').DataTable();
     var idArray = [],
         searchStr = '';
@@ -167,7 +168,7 @@ $(function () {
     setCookie(catsClass);
     setCookie(setsClass);
 
-    $("input:checkbox").click(function () {
+    $("input.checkbox-cats, input.checkbox-sets").click(function () {
         changeCats($(this).attr('id'), catsClass);
         setCookie(catsClass);
         setCookie(setsClass);

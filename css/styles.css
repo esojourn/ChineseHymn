@@ -2,6 +2,27 @@ body {
   color: #333;
 }
 
+.sync-line {
+  display: block;
+  white-space: pre-wrap;
+  min-height: 1em;
+}
+
+/* Keep the follow switch reachable after automatic or manual scrolling. */
+.sync-player .menu-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sync-player {
+  overflow-anchor: none;
+}
+
+#auto-scroll-status {
+  max-width: 210px;
+  line-height: 1.5;
+}
+
 .smallfont{
   font-size: 70%;
 }

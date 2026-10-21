@@ -3,8 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $serverroot = $_SERVER["DOCUMENT_ROOT"] . '/';
-$pathroot = '/hymn';
-// $pathroot = '';
+$pathroot = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/.');
 
 include 'lib.php';
 
@@ -52,7 +51,7 @@ if (isset($_GET["n"])) {
 $playkey = is_valid_id($name, $n);
 //var_dump($playkey);
 
-$hymntitle = get_hymn_title($name[$playkey], $is_front);
+$hymntitle = $playkey !== FALSE ? get_hymn_title($name[$playkey], $is_front) : '';
 print_html_header($hymntitle);
 
 preg_match("/^[0-9]{2}-[0-9]{2,3}/", $n);

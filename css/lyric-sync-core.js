@@ -110,12 +110,5 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
-    function textReadingTarget(current, next, bottom, viewport, progress) {
-        // Approach the following passage while keeping the current ending readable.
-        // Backward repeats require an authored transition, never an early return.
-        const limit = Math.max(current, Math.min(next, bottom - viewport * 0.3));
-        return current + (limit - current) * ease(progress);
-    }
-
-    return { normalizeText, validate, ease, locate, regionTarget, textTarget, textReadingTarget };
+    return { normalizeText, validate, ease, locate, regionTarget, textTarget };
 });

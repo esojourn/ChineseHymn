@@ -59,7 +59,6 @@
             const maximum = Math.max(0, document.documentElement.scrollHeight - height);
             let previous = window.scrollY;
             this.origin = previous;
-            this.bottoms = [];
             this.positions = this.data.cues.map(cue => {
                 const region = this.data.regions[cue.region];
                 let top, bottom;
@@ -75,7 +74,6 @@
                     top = rect.top + window.scrollY + region.top * rect.height;
                     bottom = rect.top + window.scrollY + region.bottom * rect.height;
                 }
-                this.bottoms.push(bottom);
                 previous = region.kind === 'text'
                     ? Core.textTarget(top, bottom, height, maximum)
                     : Core.regionTarget(top, bottom, height, previous, maximum);
@@ -140,14 +138,6 @@
             let target = this.positions[state.from] + (this.positions[state.to] - this.positions[state.from]) * state.progress;
             const first = this.data.cues[0];
             const songTime = time - this.track.offset;
-            const current = this.data.cues[state.from];
-            const next = this.data.cues[state.from + 1];
-            if (this.data.source.type === 'text' && !state.moving && next &&
-                next.moveStart === undefined && songTime >= current.at) {
-                target = Core.textReadingTarget(target, this.positions[state.from + 1],
-                    this.bottoms[state.from], window.innerHeight,
-                    (songTime - current.at) / (next.at - current.at));
-            }
             if (songTime < first.at && first.moveStart !== undefined && first.moveStart < first.at) {
                 target = this.origin + (this.positions[0] - this.origin) * Core.ease((songTime - first.moveStart) / (first.at - first.moveStart));
             }
@@ -189,7 +179,7 @@
         document.body.classList.add('sync-player');
         const lineCount = content.querySelector('pre') ? renderText(content.querySelector('pre')) : undefined;
         let controller;
-        toggle.checked = window.Cookies?.get('hymn-auto-scroll') === '1';
+        toggle.checked = window.Cookies?.get('hymn-auto-scroll') !== '0';
         toggle.disabled = true;
         status.textContent = '正在检查自动滚动数据…';
         toggle.addEventListener('change', () => {
@@ -241,7 +231,7 @@
         else {
             const toggle = document.getElementById('auto-scroll');
             if (toggle && !document.querySelector('audio')) {
-                toggle.checked = window.Cookies?.get('hymn-auto-scroll') === '1';
+                toggle.checked = window.Cookies?.get('hymn-auto-scroll') !== '0';
                 toggle.addEventListener('change', () => window.Cookies?.set('hymn-auto-scroll', toggle.checked ? '1' : '0', { expires: 60, path: '/' }));
             }
         }

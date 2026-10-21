@@ -98,13 +98,13 @@ test('all transition samples stay in bounds and progress monotonically', () => {
     assert.equal(Core.ease(2), 1);
 });
 
-test('text centers visible passages and approaches the next passage during singing', () => {
+test('text centers four-line passages and stays still until the next cue', () => {
     assert.equal(Core.textTarget(600, 800, 700, 3000), 350);
-    assert.equal(Core.textReadingTarget(350, 550, 800, 700, 0.5), 450);
-    assert.equal(Core.textReadingTarget(350, 550, 800, 700, 1), 550);
-    // A distant next passage must not pull the current ending off screen.
-    assert.equal(Core.textReadingTarget(350, 2000, 800, 700, 1), 590);
-    assert.equal(Core.textReadingTarget(350, 0, 800, 700, 0.5), 350);
+    const cues = [{ at: 10, region: 'verse1' }, { at: 34, region: 'verse2' }];
+    for (const time of [10, 15, 22, 33.99]) {
+        assert.deepEqual(Core.locate(cues, time), { from: 0, to: 0, progress: 1, moving: false });
+    }
+    assert.equal(Core.locate(cues, 34).from, 1);
     assert.equal(Core.textTarget(0, 100, 700, 3000), 0);
     assert.equal(Core.textTarget(3000, 3100, 700, 2200), 2200);
     assert.equal(Core.textTarget(600, 1600, 700, 3000), 460);

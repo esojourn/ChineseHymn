@@ -197,14 +197,32 @@ const server = http.createServer((req, res) => {
         await page.waitForTimeout(700);
         assert.equal(await page.locator('#auto-scroll').isDisabled(), false);
         assert.equal(await page.locator('#auto-scroll').isChecked(), true, 'auto scrolling defaults on without a saved preference');
+        assert.equal(await page.locator('#resume-auto-scroll').isVisible(), false);
         assert.ok(await page.evaluate(() => scrollY) > 1000, 'reviewed timeline restores enabled preference');
         await page.mouse.move(800, 500);
         await page.mouse.wheel(0, 100);
         await page.waitForTimeout(100);
         assert.equal(await page.locator('#auto-scroll').isChecked(), false);
         assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '0');
+        const resume = page.getByRole('button', { name: '继续自动滚动' });
+        assert.equal(await resume.isVisible(), true, 'manual scrolling reveals resume control');
+        await page.setViewportSize({ width: 390, height: 844 });
+        const resumeBox = await resume.boundingBox();
+        assert.ok(resumeBox.x > 300 && resumeBox.y > 750 && resumeBox.x + resumeBox.width <= 390 && resumeBox.y + resumeBox.height <= 844);
+        const manualPosition = await page.evaluate(() => scrollY);
+        await resume.focus();
+        await page.keyboard.press('Enter');
+        assert.equal(await page.locator('#auto-scroll').isChecked(), true);
+        assert.equal(await resume.isVisible(), false, 'resume hides once following is restored');
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1');
+        assert.equal(await page.evaluate(() => document.querySelector('audio').paused), true, 'resume affects scrolling, not audio playback');
+        assert.ok(Math.abs(await page.evaluate(() => scrollY) - manualPosition) < 100, 'resume does not immediately jump');
+        await page.waitForTimeout(700);
+        await page.locator('#auto-scroll').uncheck();
+        assert.equal(await resume.isVisible(), false, 'explicit menu disable does not offer an interruption resume');
         await page.locator('#auto-scroll').check();
         assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1');
+        await page.setViewportSize({ width: 1000, height: 700 });
         await page.goto(base + '/fixture');
         await page.evaluate(() => {
             Cookies.set('hymn-auto-scroll', '0', { path: '/' });
@@ -213,6 +231,7 @@ const server = http.createServer((req, res) => {
         });
         assert.equal(await page.locator('#auto-scroll').isChecked(), false, 'saved manual preference overrides the default');
         assert.equal(await page.locator('#auto-scroll').isDisabled(), true);
+        assert.equal(await page.locator('#resume-auto-scroll').isVisible(), false);
         assert.match(await page.locator('#auto-scroll-status').textContent(), /素材已更新/);
         console.log('PASS: reviewed data gating, cookie persistence, manual switch state and stale hashes');
 

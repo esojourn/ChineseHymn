@@ -361,6 +361,28 @@ div.footer {
 }
 
 /* 菜单按钮样式 */
+.sync-resume {
+    position: fixed;
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(100, 115, 125, 0.18);
+    border-radius: 50%;
+    color: #76838b;
+    background: rgba(248, 250, 251, 0.82);
+    cursor: pointer;
+}
+
+.sync-resume[hidden] { display: none; }
+.sync-resume:hover { color: #4b5d68; background: #f8fafb; }
+.sync-resume:focus-visible { outline: 2px solid #76838b; outline-offset: 3px; }
+
 span.menu-button {
     transition: opacity 0.8s ease, visibility 0.8s ease; /* 将过渡时间从 0.3s 增加到 0.8s */
 }

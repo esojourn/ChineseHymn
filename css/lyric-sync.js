@@ -180,10 +180,25 @@
         document.body.classList.add('sync-player');
         const lineCount = content.querySelector('pre') ? renderText(content.querySelector('pre')) : undefined;
         let controller;
+        const resume = document.createElement('button');
+        resume.type = 'button';
+        resume.id = 'resume-auto-scroll';
+        resume.className = 'sync-resume';
+        resume.hidden = true;
+        resume.title = '继续自动滚动';
+        resume.setAttribute('aria-label', '继续自动滚动');
+        resume.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>';
+        document.body.appendChild(resume);
+        resume.addEventListener('click', () => {
+            if (!controller || toggle.disabled) return;
+            toggle.checked = true;
+            toggle.dispatchEvent(new Event('change'));
+        });
         toggle.checked = window.Cookies?.get('hymn-auto-scroll') !== '0';
         toggle.disabled = true;
         status.textContent = '正在检查自动滚动数据…';
         toggle.addEventListener('change', () => {
+            resume.hidden = true;
             window.Cookies?.set('hymn-auto-scroll', toggle.checked ? '1' : '0', { expires: 60, path: '/' });
             controller?.setEnabled(toggle.checked);
             status.textContent = toggle.checked ? '自动跟随中；手动滚动可接管' : '已关闭，可随时重新开启';
@@ -207,12 +222,14 @@
             controller = new Controller(audio, content, data, track, () => {
                 toggle.checked = false;
                 window.Cookies?.set('hymn-auto-scroll', '0', { expires: 60, path: '/' });
-                status.textContent = '已手动接管，打开开关恢复跟随';
+                resume.hidden = toggle.disabled;
+                status.textContent = '已手动接管，点击右下角继续按钮或打开开关恢复跟随';
             });
             const checkDuration = () => {
                 if (Number.isFinite(audio.duration) && Math.abs(audio.duration - track.duration) > 1) {
                     controller.setEnabled(false);
                     toggle.disabled = true;
+                    resume.hidden = true;
                     status.textContent = '音频时长与同步数据不符，待重新校准';
                 }
             };
@@ -222,6 +239,7 @@
             audio.addEventListener('loadedmetadata', checkDuration);
             if (!toggle.disabled) controller.setEnabled(toggle.checked);
         } catch (error) {
+            resume.hidden = true;
             status.textContent = /[\u3400-\u9fff]/.test(error.message) ? error.message : '自动滚动数据无法读取，仍可手动阅读';
         }
     }

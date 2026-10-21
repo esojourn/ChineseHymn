@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "songId": "05-066",
+  "status": "draft",
+  "source": {
+    "file": "05-066以马内利来临歌.jpg",
+    "sha256": "a8711ee3fa0b543761d84381f7822c42ffbdde74f772274c3eb2c9e8c551123d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-066以马内利来临歌-领唱.mp3",
+      "sha256": "208649aebc6b72dac39d117b4d27e0e987b6e109a8c031fb615598873c516301",
+      "duration": 167.928,
+      "offset": 0,
+      "reviewed": false
+    },
+    {
+      "file": "05-066以马内利来临歌.mp3",
+      "sha256": "e2d4b602d913a05571530ad517003093aa1aa668ca1dd1417d3cad13e540b448",
+      "duration": 147.432,
+      "offset": 0,
+      "reviewed": false,
+      "cues": [
+        {
+          "at": 7.8,
+          "region": "system1",
+          "label": "第1段：第一谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 16.8,
+          "region": "system2",
+          "label": "第1段：第二谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 28.66,
+          "region": "system3",
+          "label": "第1段：第三谱行及副歌“欢欣”",
+          "transition": "reading"
+        },
+        {
+          "at": 40.4,
+          "region": "chorus-end",
+          "label": "第1段：副歌末行",
+          "transition": "reading"
+        },
+        {
+          "at": 52.54,
+          "region": "system1",
+          "label": "第2段：第一谱行",
+          "transition": "return",
+          "moveStart": 51.28
+        },
+        {
+          "at": 61.68,
+          "region": "system2",
+          "label": "第2段：第二谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 73.32,
+          "region": "system3",
+          "label": "第2段：第三谱行及副歌“欢欣”",
+          "transition": "reading"
+        },
+        {
+          "at": 84.7,
+          "region": "chorus-end",
+          "label": "第2段：副歌末行",
+          "transition": "reading"
+        },
+        {
+          "at": 96.72,
+          "region": "system1",
+          "label": "第3段：第一谱行",
+          "transition": "return",
+          "moveStart": 95.64
+        },
+        {
+          "at": 106.06,
+          "region": "system2",
+          "label": "第3段：第二谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 117.62,
+          "region": "system3",
+          "label": "第3段：第三谱行及副歌“欢欣”",
+          "transition": "reading"
+        },
+        {
+          "at": 129.52,
+          "region": "chorus-end",
+          "label": "第3段：副歌末行",
+          "transition": "reading"
+        }
+      ]
+    }
+  ],
+  "regions": {
+    "system1": {
+      "kind": "image",
+      "top": 0.19,
+      "bottom": 0.355
+    },
+    "system2": {
+      "kind": "image",
+      "top": 0.37,
+      "bottom": 0.539
+    },
+    "system3": {
+      "kind": "image",
+      "top": 0.59,
+      "bottom": 0.764
+    },
+    "chorus-end": {
+      "kind": "image",
+      "top": 0.78,
+      "bottom": 0.88
+    }
+  },
+  "cues": [
+    {
+      "at": 18.6,
+      "region": "system1",
+      "label": "第1段：第一谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.8,
+      "region": "system2",
+      "label": "第1段：第二谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.96,
+      "region": "system3",
+      "label": "第1段：第三谱行及副歌“欢欣”",
+      "transition": "reading"
+    },
+    {
+      "at": 55.1,
+      "region": "chorus-end",
+      "label": "第1段：副歌末行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.44,
+      "region": "system1",
+      "label": "第2段：第一谱行",
+      "transition": "return",
+      "moveStart": 67.18
+    },
+    {
+      "at": 78.88,
+      "region": "system2",
+      "label": "第2段：第二谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.92,
+      "region": "system3",
+      "label": "第2段：第三谱行及副歌“欢欣”",
+      "transition": "reading"
+    },
+    {
+      "at": 104.7,
+      "region": "chorus-end",
+      "label": "第2段：副歌末行",
+      "transition": "reading"
+    },
+    {
+      "at": 118.22,
+      "region": "system1",
+      "label": "第3段：第一谱行",
+      "transition": "return",
+      "moveStart": 117.04
+    },
+    {
+      "at": 128.56,
+      "region": "system2",
+      "label": "第3段：第二谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 141.42,
+      "region": "system3",
+      "label": "第3段：第三谱行及副歌“欢欣”",
+      "transition": "reading"
+    },
+    {
+      "at": 154.72,
+      "region": "chorus-end",
+      "label": "第3段：副歌末行",
+      "transition": "reading"
+    }
+  ],
+  "provenance": {
+    "date": "2026-10-21",
+    "method": "Known-lyrics forced alignment (faster-whisper medium/int8), score geometry inspection, and chroma DTW between recordings.",
+    "review": "Machine-assisted timing draft; full listening review pending. Boundary precision is not established by alignment residuals.",
+    "notes": [
+      "Three verses follow system1 → system2 → system3 (including first chorus phrase) → chorus-end, returning to system1 for each new verse. Original interleaved image is preserved.",
+      "Verse return windows 67.18–68.44 s and 117.04–118.22 s are provisional: overlapping forced alignments disagree about the preceding sustained syllable ending. Listen before approval.",
+      "Lead first onset 18.60 s is estimated; no separate sung Amen boundary is claimed. Hold final chorus region through the ending.",
+      "Instrumental uses independent cue times from pitch-adjusted chroma DTW (instrumental chroma rolled +7 semitones). Body 18–166 s fits instrumental time ≈ 0.894558 × lead time − 8.959927; 95% mapping residual about 0.12 s, not lyric boundary error. Intro and tail are excluded from that fit."
+    ]
+  }
+}

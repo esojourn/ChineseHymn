@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "songId": "01-131",
+  "status": "draft",
+  "source": {
+    "file": "01-131听哪千万声音雷鸣.txt",
+    "sha256": "acdc6315586175d153dc32f6bda1c5dd3aaf839cbd3766e73fdabc837881c314",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-131听哪千万声音雷鸣-领唱.mp3",
+      "sha256": "66a86b9037e4dad3752b8d52522461fe9657dea90acf4af893d870b47cc6ed6a",
+      "duration": 167.209796,
+      "offset": 0,
+      "reviewed": false
+    },
+    {
+      "file": "01-131听哪千万声音雷鸣.mp3",
+      "sha256": "2726e3a7c3e226b1671fd22fc83747b813f261f9fa3cfa4d5996d193d20fbb85",
+      "duration": 169.195102,
+      "offset": -0.7,
+      "reviewed": false
+    }
+  ],
+  "regions": {
+    "verse1-1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "verse1-2": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 5
+    },
+    "verse2-1": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "verse2-2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "verse3-1": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 13
+    },
+    "verse3-2": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    },
+    "verse4-1": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "verse4-2": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 20
+    },
+    "verse5-1": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 23
+    },
+    "verse5-2": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 25
+    },
+    "verse6-1": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28
+    },
+    "verse6-2": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 30
+    },
+    "verse7-1": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 33
+    },
+    "verse7-2": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 35
+    }
+  },
+  "cues": [
+    {
+      "at": 11.6,
+      "region": "verse1-1",
+      "label": "第1段，第1—2句",
+      "transition": "intro",
+      "moveStart": 0.7
+    },
+    {
+      "at": 22.64,
+      "region": "verse1-2",
+      "label": "第1段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 33.76,
+      "region": "verse2-1",
+      "label": "第2段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 44.9,
+      "region": "verse2-2",
+      "label": "第2段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 55.84,
+      "region": "verse3-1",
+      "label": "第3段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 67.04,
+      "region": "verse3-2",
+      "label": "第3段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 78.18,
+      "region": "verse4-1",
+      "label": "第4段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 89.06,
+      "region": "verse4-2",
+      "label": "第4段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 100.32,
+      "region": "verse5-1",
+      "label": "第5段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 111.3,
+      "region": "verse5-2",
+      "label": "第5段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 122.06,
+      "region": "verse6-1",
+      "label": "第6段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 133.5,
+      "region": "verse6-2",
+      "label": "第6段，第3—4句",
+      "transition": "reading"
+    },
+    {
+      "at": 144.3,
+      "region": "verse7-1",
+      "label": "第7段，第1—2句",
+      "transition": "reading"
+    },
+    {
+      "at": 155.66,
+      "region": "verse7-2",
+      "label": "第7段，第3—4句",
+      "transition": "reading"
+    }
+  ],
+  "provenance": {
+    "date": "2026-10-21",
+    "method": "Known-lyrics forced alignment (faster-whisper medium/int8), score geometry inspection, and chroma DTW between recordings.",
+    "review": "Machine-assisted timing draft; full listening review pending. Boundary precision is not established by alignment residuals.",
+    "notes": [
+      "Seven verses, two reading regions each. No long instrumental gap assumed between verses; normal 0.6 s transition at boundaries.",
+      "Lead first onset 11.60 s is estimated from repeated melody and following syllables; prioritize listening review.",
+      "Instrumental shares the lead timeline at offset -0.70 s. Chroma DTW body 5–164 s fits slope 1.000028 and intercept -0.701533 s; 95% residual about 0.003 s on a 0.1 s grid, not an acoustic boundary accuracy estimate."
+    ]
+  }
+}

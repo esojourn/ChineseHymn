@@ -72,10 +72,10 @@
         </details>
         <label><input id="preview" type="checkbox"> 自动滚动预览（手动滚动即停止）</label>
         <details open>
-            <summary>4. 审核与导出</summary>
-            <label><input id="review-track" type="checkbox"> 已完整试听当前版本，确认段落、间奏和回滚正确</label>
-            <p class="hint">修改区域、时间点或偏移会清除审核。切换版本后分别审核；只有审核过的版本会对听众启用。</p>
-            <button id="export-draft">导出草稿</button><button id="export-reviewed">导出已审核数据</button>
+            <summary>4. 导出</summary>
+            <label><input id="review-track" type="checkbox"> 当前版本启用状态（导出时自动设置）</label>
+            <p class="hint">默认导出可直接启用的数据，无需逐曲勾选审核。也可选择导出草稿暂不启用。</p>
+            <button id="export-reviewed">导出并启用</button><button id="export-draft">导出草稿</button>
         </details>
         <p id="message" role="status">请选择歌词和对应音频。</p>
     </aside>

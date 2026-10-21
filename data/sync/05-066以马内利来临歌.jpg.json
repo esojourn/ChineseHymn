@@ -1,7 +1,7 @@
 {
   "version": 1,
   "songId": "05-066",
-  "status": "draft",
+  "status": "reviewed",
   "source": {
     "file": "05-066以马内利来临歌.jpg",
     "sha256": "a8711ee3fa0b543761d84381f7822c42ffbdde74f772274c3eb2c9e8c551123d",
@@ -13,14 +13,14 @@
       "sha256": "208649aebc6b72dac39d117b4d27e0e987b6e109a8c031fb615598873c516301",
       "duration": 167.928,
       "offset": 0,
-      "reviewed": false
+      "reviewed": true
     },
     {
       "file": "05-066以马内利来临歌.mp3",
       "sha256": "e2d4b602d913a05571530ad517003093aa1aa668ca1dd1417d3cad13e540b448",
       "duration": 147.432,
       "offset": 0,
-      "reviewed": false,
+      "reviewed": true,
       "cues": [
         {
           "at": 7.8,
@@ -202,12 +202,16 @@
   "provenance": {
     "date": "2026-10-21",
     "method": "Known-lyrics forced alignment (faster-whisper medium/int8), score geometry inspection, and chroma DTW between recordings.",
-    "review": "Machine-assisted timing draft; full listening review pending. Boundary precision is not established by alignment residuals.",
+    "review": "Enabled automatically at user request; machine-assisted timing, not a claim of completed listening review.",
     "notes": [
       "Three verses follow system1 → system2 → system3 (including first chorus phrase) → chorus-end, returning to system1 for each new verse. Original interleaved image is preserved.",
       "Verse return windows 67.18–68.44 s and 117.04–118.22 s are provisional: overlapping forced alignments disagree about the preceding sustained syllable ending. Listen before approval.",
       "Lead first onset 18.60 s is estimated; no separate sung Amen boundary is claimed. Hold final chorus region through the ending.",
       "Instrumental uses independent cue times from pitch-adjusted chroma DTW (instrumental chroma rolled +7 semitones). Body 18–166 s fits instrumental time ≈ 0.894558 × lead time − 8.959927; 95% mapping residual about 0.12 s, not lyric boundary error. Intro and tail are excluded from that fit."
     ]
+  },
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
   }
 }

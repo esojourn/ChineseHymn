@@ -101,7 +101,10 @@
     function regionTarget(top, bottom, viewport, current, maximum) {
         const margin = Math.min(60, viewport * 0.1);
         if (top >= current + margin && bottom <= current + viewport - margin) return current;
-        return Math.max(0, Math.min(maximum, top - viewport * 0.2));
+        // Move only far enough to reveal the next system, preserving visual context.
+        const target = bottom - top > viewport - 2 * margin ? top - margin
+            : Math.max(bottom - viewport + margin, Math.min(current, top - margin));
+        return Math.max(0, Math.min(maximum, target));
     }
 
     function textTarget(top, bottom, viewport, maximum) {

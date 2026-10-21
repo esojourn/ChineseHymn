@@ -82,7 +82,7 @@ test('text normalization is stable across BOM, CRLF and extra blank lines', () =
 
 test('visible content stays still, oversized regions align at top and bottom is clamped', () => {
     assert.equal(Core.regionTarget(160, 400, 600, 100, 2000), 100);
-    assert.equal(Core.regionTarget(1000, 1700, 600, 100, 2000), 880);
+    assert.equal(Core.regionTarget(1000, 1700, 600, 100, 2000), 940);
     assert.equal(Core.regionTarget(3000, 3100, 600, 100, 2200), 2200);
     assert.equal(Core.regionTarget(0, 100, 600, 100, 2200), 0);
 });
@@ -108,4 +108,11 @@ test('text centers four-line passages and stays still until the next cue', () =>
     assert.equal(Core.textTarget(0, 100, 700, 3000), 0);
     assert.equal(Core.textTarget(3000, 3100, 700, 2200), 2200);
     assert.equal(Core.textTarget(600, 1600, 700, 3000), 460);
+});
+
+test('image systems move only enough to enter the viewport and then hold', () => {
+    const target = Core.regionTarget(500, 750, 600, 100, 2000);
+    assert.equal(target, 210);
+    assert.equal(Core.regionTarget(500, 750, 600, target, 2000), target);
+    assert.equal(Core.regionTarget(200, 400, 600, 500, 2000), 140);
 });

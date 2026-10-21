@@ -144,8 +144,9 @@
             if (this.join) {
                 // A user-requested rejoin can finish while paused; media-driven transitions cannot.
                 if (active || this.audio.paused) this.join.elapsed += elapsed;
-                target = this.join.from + (target - this.join.from) * Core.ease(this.join.elapsed / 0.6);
-                if (this.join.elapsed >= 0.6) this.join = null;
+                const duration = this.data.source.type === 'image' ? 1.2 : 0.6;
+                target = this.join.from + (target - this.join.from) * Core.ease(this.join.elapsed / duration);
+                if (this.join.elapsed >= duration) this.join = null;
             }
             if (active || this.join || this.audio.paused) {
                 this.expected = Math.max(0, Math.min(document.documentElement.scrollHeight - window.innerHeight, target));
@@ -191,7 +192,7 @@
             const response = await fetch(config.manifest);
             if (!response.ok) throw new Error('本曲暂无自动滚动数据');
             const data = await response.json();
-            if (Core.validate(data, { reviewed: true, lineCount }).length) throw new Error('本曲暂无已审核的自动滚动数据');
+            if (Core.validate(data, { reviewed: true, lineCount }).length) throw new Error('本曲暂无已启用的自动滚动数据');
             if (data.source.type !== (lineCount === undefined ? 'image' : 'text')) throw new Error('同步数据与歌词格式不符');
             const track = data.tracks.find(item => item.file === config.audioFile && item.reviewed);
             if (!track || data.source.file !== config.sourceFile || data.songId !== config.songId) throw new Error('当前版本暂无自动滚动数据');

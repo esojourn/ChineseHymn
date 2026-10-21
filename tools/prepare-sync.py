@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate unreviewed sidecars. Model dependencies are optional and loaded lazily."""
+"""Generate enabled sidecars when timing exists; optionally keep drafts. Models are optional."""
 import argparse
 import difflib
 import hashlib
@@ -77,7 +77,7 @@ def clean(text):
 
 
 def candidate_cues(order, segments, minimum=0.6):
-    """Map aligned ASR characters to known lyrics in performance order. Never publish them."""
+    """Map aligned ASR characters to known lyrics in performance order."""
     expected = ""
     spans = []
     for item in order:
@@ -138,6 +138,13 @@ def align(path, model_name, device):
     return whisperx.align(result["segments"], acoustic, metadata, waveform, device, return_char_alignments=False)
 
 
+def set_activation(data, draft_only=False):
+    for track in data["tracks"]:
+        track["reviewed"] = not draft_only and bool(track.get("cues", data["cues"]))
+    data["status"] = "reviewed" if any(track["reviewed"] for track in data["tracks"]) else "draft"
+    data["activation"] = {"policy": "draft" if draft_only else "automatic", "listeningReviewRequired": False}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path, help="data/ 内的 TXT 或 JPG")
@@ -147,6 +154,7 @@ def main():
     parser.add_argument("--alignment", type=Path, help="复用已有 WhisperX JSON，免去模型推理")
     parser.add_argument("--order", type=Path, help='演唱顺序 JSON：[{"region":"r1","text":"歌词","label":"第一段"}]')
     parser.add_argument("--draft", type=Path, help="复用校准页面导出的区域草稿")
+    parser.add_argument("--draft-only", action="store_true", help="仅生成不启用的草稿；默认有时间点即启用")
     parser.add_argument("--device", choices=["cpu", "cuda"], default="cpu")
     parser.add_argument("--model", default="large-v3")
     args = parser.parse_args()
@@ -178,7 +186,7 @@ def main():
     data = {"version": 1, "songId": match[0], "status": "draft",
             "source": {"file": source.name, "type": kind, "sha256": checksum(source)},
             "tracks": tracks, "regions": regions, "cues": [],
-            "preparation": {"warnings": ["自动结果未经试听审核，不会启用。", "时长相同不代表段落已同步；每个音频版本需要审核。"]}}
+            "preparation": {"warnings": ["时间点默认启用；自动生成不代表已试听。", "时长相同不代表段落已同步，可在校准页调整各音轨。"]}}
     if len(tracks) > 1:
         data["preparation"]["durationDifference"] = round(max(t["duration"] for t in tracks) - min(t["duration"] for t in tracks), 3)
     if args.align or args.alignment:
@@ -206,6 +214,7 @@ def main():
                 data["preparation"]["warnings"].append(track["file"] + " 短于候选时间轴；已生成截断的独立草稿，请核对编排并重新标注。")
         data["preparation"]["alignment"] = diagnostics
         data["preparation"]["warnings"].append("人声空隙仅为间奏候选；检查漏唱、拖腔和重复副歌。")
+    set_activation(data, args.draft_only)
     args.output.mkdir(parents=True, exist_ok=True)
     with output.open("x", encoding="utf-8") as stream:
         json.dump(data, stream, ensure_ascii=False, indent=2)

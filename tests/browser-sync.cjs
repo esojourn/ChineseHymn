@@ -156,10 +156,10 @@ const server = http.createServer((req, res) => {
             controller = new HymnSync.Controller(document.querySelector('audio'), content, syncData, syncData.tracks[0]);
             controller.setEnabled(true);
         });
-        await page.waitForTimeout(700);
+        await page.waitForTimeout(1300);
         const largeImageY = await page.evaluate(() => scrollY);
         await page.evaluate(() => { document.querySelector('.text-inner').style.width = '300px'; window.dispatchEvent(new Event('resize')); });
-        await page.waitForTimeout(700);
+        await page.waitForTimeout(1300);
         const smallImageY = await page.evaluate(() => scrollY);
         assert.ok(smallImageY < largeImageY && smallImageY > 0);
         assert.equal(await page.evaluate(() => controller.enabled), true);
@@ -231,8 +231,11 @@ const server = http.createServer((req, res) => {
         await page.locator('#cue-start').fill('0');
         await page.locator('#save-cue').click();
         assert.equal(await page.locator('#cue-list option').count(), 1);
+        const enabledDownload = page.waitForEvent('download');
         await page.locator('#export-reviewed').click();
-        assert.match(await page.locator('#message').textContent(), /没有审核通过/);
+        const enabled = JSON.parse(fs.readFileSync(await (await enabledDownload).path(), 'utf8'));
+        assert.equal(enabled.status, 'reviewed');
+        assert.ok(enabled.tracks.every(track => track.reviewed), 'export enables both tracks without manual approval');
         const downloadPromise = page.waitForEvent('download');
         await page.locator('#export-draft').click();
         const download = await downloadPromise;

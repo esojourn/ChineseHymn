@@ -28,7 +28,7 @@ for (const file of files) {
             }
         }
         if (path.basename(file) !== data.source.file + '.json') throw new Error('文件名必须为 ' + data.source.file + '.json');
-        console.log(`${data.status === 'reviewed' ? '已审核' : '草稿（不会启用）'} ${file}`);
+        console.log(`${data.status === 'reviewed' ? '已启用' : '草稿（不会启用）'} ${file}`);
     } catch (error) {
         failed++;
         console.error(`${file}: ${error.message}`);

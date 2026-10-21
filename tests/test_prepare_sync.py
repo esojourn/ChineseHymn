@@ -8,6 +8,19 @@ spec.loader.exec_module(prepare)
 
 
 class PreparationTests(unittest.TestCase):
+    def test_default_activation_and_optional_draft(self):
+        data = {"cues": [{"at": 10, "region": "r1"}], "tracks": [{}, {"cues": []}]}
+        prepare.set_activation(data)
+        self.assertEqual(data["status"], "reviewed")
+        self.assertTrue(data["tracks"][0]["reviewed"])
+        self.assertFalse(data["tracks"][1]["reviewed"])
+        prepare.set_activation(data, True)
+        self.assertEqual(data["status"], "draft")
+        self.assertFalse(any(t["reviewed"] for t in data["tracks"]))
+        data["cues"] = []
+        prepare.set_activation(data)
+        self.assertEqual(data["status"], "draft")
+
     def test_line_numbers_preserve_blank_lines_and_bound_long_stanzas(self):
         regions = prepare.text_regions("标题\r\n\r\n一\n二\n三\n四\n五\n\n副歌")
         self.assertEqual(regions["r2"]["startLine"], 2)

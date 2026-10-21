@@ -1,7 +1,7 @@
 {
   "version": 1,
   "songId": "01-131",
-  "status": "draft",
+  "status": "reviewed",
   "source": {
     "file": "01-131听哪千万声音雷鸣.txt",
     "sha256": "acdc6315586175d153dc32f6bda1c5dd3aaf839cbd3766e73fdabc837881c314",
@@ -13,14 +13,14 @@
       "sha256": "66a86b9037e4dad3752b8d52522461fe9657dea90acf4af893d870b47cc6ed6a",
       "duration": 167.209796,
       "offset": 0,
-      "reviewed": false
+      "reviewed": true
     },
     {
       "file": "01-131听哪千万声音雷鸣.mp3",
       "sha256": "2726e3a7c3e226b1671fd22fc83747b813f261f9fa3cfa4d5996d193d20fbb85",
       "duration": 169.195102,
       "offset": -0.7,
-      "reviewed": false
+      "reviewed": true
     }
   ],
   "regions": {
@@ -108,11 +108,15 @@
   "provenance": {
     "date": "2026-10-21",
     "method": "Known-lyrics forced alignment (faster-whisper medium/int8), score geometry inspection, and chroma DTW between recordings.",
-    "review": "Machine-assisted timing draft; full listening review pending. Boundary precision is not established by alignment residuals.",
+    "review": "Enabled automatically at user request; machine-assisted timing, not a claim of completed listening review.",
     "notes": [
       "Seven verses, one four-line reading region each. Hold position during each verse; use a 0.6 s smooth transition at the next verse boundary.",
       "Lead first onset 11.60 s is estimated from repeated melody and following syllables; prioritize listening review.",
       "Instrumental shares the lead timeline at offset -0.70 s. Chroma DTW body 5–164 s fits slope 1.000028 and intercept -0.701533 s; 95% residual about 0.003 s on a 0.1 s grid, not an acoustic boundary accuracy estimate."
     ]
+  },
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
   }
 }

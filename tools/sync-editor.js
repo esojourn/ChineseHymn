@@ -274,14 +274,16 @@
 
     function exportFile(reviewed) {
         required();
-        const output = { ...data, status: reviewed ? 'reviewed' : 'draft' };
+        const output = { ...data, status: reviewed ? 'reviewed' : 'draft',
+            tracks: data.tracks.map(item => ({ ...item, reviewed: reviewed && (item.cues || data.cues).length > 0 })),
+            activation: { policy: reviewed ? 'automatic' : 'draft', listeningReviewRequired: false } };
         const errors = Core.validate(output, { reviewed, lineCount });
         if (errors.length) throw new Error(errors.join('\n'));
         const url = URL.createObjectURL(new Blob([JSON.stringify(output, null, 2) + '\n'], { type: 'application/json' }));
         const link = document.createElement('a');
         link.href = url; link.download = data.source.file + '.json'; link.click();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
-        message(reviewed ? '已导出。放入 data/sync/ 后运行 npm run sync:validate，再提交发布。' : '草稿已导出，未经审核的草稿不会对听众启用。');
+        message(reviewed ? '已导出。放入 data/sync/ 后运行 npm run sync:validate，再提交发布。' : '草稿已导出，不会对听众启用。');
     }
     $('export-draft').onclick = attempt(() => exportFile(false));
     $('export-reviewed').onclick = attempt(() => exportFile(true));

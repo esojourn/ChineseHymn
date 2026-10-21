@@ -278,6 +278,42 @@ const server = http.createServer((req, res) => {
         assert.deepEqual(errors, []);
         console.log('PASS: real MP3 metadata, two-version editor, draft export and review invalidation');
 
+        await page.goto(base + '/fixture');
+        await page.evaluate(async () => {
+            const audio = document.querySelector('audio');
+            const response = await fetch('/data/01-040父啊儿女称颂你名.mp3');
+            audio.src = URL.createObjectURL(await response.blob());
+            await new Promise(resolve => audio.addEventListener('loadedmetadata', resolve, { once: true }));
+            await new Promise(resolve => {
+                audio.addEventListener('seeked', resolve, { once: true });
+                audio.currentTime = 40;
+            });
+        });
+        const audioTime = () => page.evaluate(() => document.querySelector('audio').currentTime);
+        await page.keyboard.press('Control+ArrowLeft');
+        assert.ok(Math.abs(await audioTime() - 30) < 0.1, 'backward seek actual: ' + await audioTime());
+        await page.keyboard.press('Control+ArrowRight');
+        assert.ok(Math.abs(await audioTime() - 40) < 0.1);
+        assert.equal(await page.evaluate(() => document.querySelector('audio').paused), true);
+        await page.evaluate(() => new Promise(resolve => { const audio = document.querySelector('audio'); audio.addEventListener('seeked', resolve, { once: true }); audio.currentTime = 3; }));
+        await page.keyboard.press('Control+ArrowLeft');
+        assert.equal(await audioTime(), 0);
+        await page.evaluate(() => new Promise(resolve => { const audio = document.querySelector('audio'); audio.addEventListener('seeked', resolve, { once: true }); audio.currentTime = audio.duration - 3; }));
+        await page.keyboard.press('Control+ArrowRight');
+        // MP3 metadata duration may exceed the final decodable frame slightly.
+        assert.ok(await page.evaluate(() => {
+            const audio = document.querySelector('audio');
+            return audio.currentTime <= audio.duration && audio.duration - audio.currentTime < 0.3;
+        }));
+        await page.evaluate(() => {
+            document.querySelector('audio').currentTime = 40;
+            const input = document.createElement('input'); input.type = 'text'; document.body.appendChild(input); input.focus();
+        });
+        await page.keyboard.press('Control+ArrowLeft');
+        assert.ok(Math.abs(await audioTime() - 40) < 0.1, 'text editing retains its keyboard shortcuts');
+        assert.deepEqual(errors, []);
+        console.log('PASS: Ctrl+arrows seek real audio by 10 seconds, clamp bounds and preserve text editing');
+
         if (process.env.PHP_BASE_URL) {
             for (const query of ['', '?n=01-040', '?n=05-001', '?n=invalid']) {
                 await page.goto(process.env.PHP_BASE_URL + '/index.php' + query);

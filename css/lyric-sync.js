@@ -2,6 +2,18 @@
     'use strict';
     const Core = window.HymnSyncCore;
 
+    window.addEventListener('keydown', event => {
+        if (event.defaultPrevented || event.isComposing || !event.ctrlKey || event.altKey || event.shiftKey || event.metaKey ||
+            !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+        const target = event.target;
+        if (target instanceof Element && (target.closest('input, textarea, select') || target.isContentEditable)) return;
+        const audio = document.querySelector('audio');
+        if (!audio || !Number.isFinite(audio.duration)) return;
+        event.preventDefault();
+        audio.currentTime = Math.max(0, Math.min(audio.duration,
+            audio.currentTime + (event.key === 'ArrowRight' ? 10 : -10)));
+    });
+
     function renderText(pre) {
         const lines = Core.normalizeText(pre.textContent).split('\n');
         pre.replaceChildren(...lines.map((line, index) => {

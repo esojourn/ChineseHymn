@@ -108,6 +108,36 @@ const server = http.createServer((req, res) => {
         assert.equal(await page.evaluate(() => controller.enabled), false);
         console.log('PASS: text transitions, interlude return, pause/buffering, manual takeover, seek and loop');
 
+        await page.evaluate(() => {
+            controller.destroy();
+            media.time = 0; media.paused = false;
+            const textData = { ...syncData,
+                regions: { a: { kind: 'text', startLine: 4, endLine: 5 }, b: { kind: 'text', startLine: 6, endLine: 7 } },
+                cues: [{ at: 0, region: 'a' }, { at: 20, region: 'b' }] };
+            controller = new HymnSync.Controller(document.querySelector('audio'), document.querySelector('.text-inner'), textData, textData.tracks[0]);
+            controller.setEnabled(true);
+        });
+        await page.waitForTimeout(700);
+        const centered = await page.evaluate(() => {
+            const first = document.querySelector('[data-line="4"]').getBoundingClientRect();
+            const last = document.querySelector('[data-line="5"]').getBoundingClientRect();
+            return (first.top + last.bottom) / 2;
+        });
+        assert.ok(Math.abs(centered - 350) < 2, 'current text centers even when it was already visible');
+        const readingStart = await page.evaluate(() => scrollY);
+        await page.evaluate(() => { media.time = 10; });
+        await page.waitForTimeout(100);
+        const readingMiddle = await page.evaluate(() => scrollY);
+        assert.ok(readingMiddle > readingStart, 'text advances before the next passage begins');
+        await page.evaluate(() => { media.time = 19.99; });
+        await page.waitForTimeout(100);
+        const readingEnd = await page.evaluate(() => scrollY);
+        assert.ok(readingEnd > readingMiddle);
+        await page.evaluate(() => { media.time = 20; });
+        await page.waitForTimeout(700);
+        assert.ok(Math.abs(await page.evaluate(() => scrollY) - readingEnd) < 3, 'adjacent passages cross without a page-sized jump');
+        console.log('PASS: text centering, gradual reading movement and continuous passage boundary');
+
         // Image geometry must follow the displayed image, not source pixel dimensions.
         await page.evaluate(async () => {
             controller.destroy(); scrollTo(0, 0);

@@ -97,3 +97,15 @@ test('all transition samples stay in bounds and progress monotonically', () => {
     assert.equal(Core.ease(-1), 0);
     assert.equal(Core.ease(2), 1);
 });
+
+test('text centers visible passages and approaches the next passage during singing', () => {
+    assert.equal(Core.textTarget(600, 800, 700, 3000), 350);
+    assert.equal(Core.textReadingTarget(350, 550, 800, 700, 0.5), 450);
+    assert.equal(Core.textReadingTarget(350, 550, 800, 700, 1), 550);
+    // A distant next passage must not pull the current ending off screen.
+    assert.equal(Core.textReadingTarget(350, 2000, 800, 700, 1), 590);
+    assert.equal(Core.textReadingTarget(350, 0, 800, 700, 0.5), 350);
+    assert.equal(Core.textTarget(0, 100, 700, 3000), 0);
+    assert.equal(Core.textTarget(3000, 3100, 700, 2200), 2200);
+    assert.equal(Core.textTarget(600, 1600, 700, 3000), 460);
+});

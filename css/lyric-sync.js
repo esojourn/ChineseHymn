@@ -59,6 +59,7 @@
             const maximum = Math.max(0, document.documentElement.scrollHeight - height);
             let previous = window.scrollY;
             this.origin = previous;
+            this.bottoms = [];
             this.positions = this.data.cues.map(cue => {
                 const region = this.data.regions[cue.region];
                 let top, bottom;
@@ -74,7 +75,10 @@
                     top = rect.top + window.scrollY + region.top * rect.height;
                     bottom = rect.top + window.scrollY + region.bottom * rect.height;
                 }
-                previous = Core.regionTarget(top, bottom, height, previous, maximum);
+                this.bottoms.push(bottom);
+                previous = region.kind === 'text'
+                    ? Core.textTarget(top, bottom, height, maximum)
+                    : Core.regionTarget(top, bottom, height, previous, maximum);
                 return previous;
             });
         }
@@ -136,6 +140,14 @@
             let target = this.positions[state.from] + (this.positions[state.to] - this.positions[state.from]) * state.progress;
             const first = this.data.cues[0];
             const songTime = time - this.track.offset;
+            const current = this.data.cues[state.from];
+            const next = this.data.cues[state.from + 1];
+            if (this.data.source.type === 'text' && !state.moving && next &&
+                next.moveStart === undefined && songTime >= current.at) {
+                target = Core.textReadingTarget(target, this.positions[state.from + 1],
+                    this.bottoms[state.from], window.innerHeight,
+                    (songTime - current.at) / (next.at - current.at));
+            }
             if (songTime < first.at && first.moveStart !== undefined && first.moveStart < first.at) {
                 target = this.origin + (this.positions[0] - this.origin) * Core.ease((songTime - first.moveStart) / (first.at - first.moveStart));
             }

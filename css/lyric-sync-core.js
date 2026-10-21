@@ -104,5 +104,18 @@
         return Math.max(0, Math.min(maximum, top - viewport * 0.2));
     }
 
-    return { normalizeText, validate, ease, locate, regionTarget };
+    function textTarget(top, bottom, viewport, maximum) {
+        // Oversized passages begin near the top rather than hiding their opening lines.
+        const target = bottom - top > viewport * 0.6 ? top - viewport * 0.2 : (top + bottom - viewport) / 2;
+        return Math.max(0, Math.min(maximum, target));
+    }
+
+    function textReadingTarget(current, next, bottom, viewport, progress) {
+        // Approach the following passage while keeping the current ending readable.
+        // Backward repeats require an authored transition, never an early return.
+        const limit = Math.max(current, Math.min(next, bottom - viewport * 0.3));
+        return current + (limit - current) * ease(progress);
+    }
+
+    return { normalizeText, validate, ease, locate, regionTarget, textTarget, textReadingTarget };
 });

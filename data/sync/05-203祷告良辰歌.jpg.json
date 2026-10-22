@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-203",
+  "status": "reviewed",
+  "source": {
+    "file": "05-203祷告良辰歌.jpg",
+    "sha256": "6237be457e4412587ecb45ffba4fe3d1412f38eebedd0e4c453abc42d4f4cdf3",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-203祷告良辰歌.mp3",
+      "sha256": "db3b0b2c5b30f170a873fa80358b61ef17b61d7b617f7fa6220a96af7e71057c",
+      "duration": 164.85877551020408,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.17828,
+      "bottom": 0.261926
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.214296,
+      "bottom": 0.297941
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.249749,
+      "bottom": 0.333957
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.342039,
+      "bottom": 0.425684
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.377492,
+      "bottom": 0.460575
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.412945,
+      "bottom": 0.49659
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.503547,
+      "bottom": 0.58663
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.539,
+      "bottom": 0.62152
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.574453,
+      "bottom": 0.657536
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.828814,
+      "bottom": 0.911896
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.864267,
+      "bottom": 0.947349
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.89972,
+      "bottom": 0.983365
+    }
+  },
+  "cues": [
+    {
+      "at": 11.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 22.65,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.35,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.65,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.75,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.45,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.75,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 122.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.55,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 144.85,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "祷告良辰，祷告良辰，召我离开世",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "事操心，引我到父施恩宝座，将我心",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "愿向父说明。每逢痛苦忧愁时节，我",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "网，全亏有此祷告良辰。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "祷告良辰，祷告良辰，何等快乐！何",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "等欢欣！世界多少火热之心，盼望良",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "辰时刻再临！今向救主显示之处，我",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "立，静候再逢祷告良辰。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "祷告良辰，祷告良辰，如有双翼向",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主飞升，携我衷曲，宛转敷陈，主爱永",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "恒，有求必应。主既召我时常入觐，赖",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "担，静候再逢祷告良辰。（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-203祷告良辰歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

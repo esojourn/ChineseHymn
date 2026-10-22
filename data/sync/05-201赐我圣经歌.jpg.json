@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-201",
+  "status": "reviewed",
+  "source": {
+    "file": "05-201赐我圣经歌.jpg",
+    "sha256": "f51d5e3204a461bfd9c721f6f14fa8b9577e0c0a7b7dabe3e10c6e35dc8f95d8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-201赐我圣经歌.mp3",
+      "sha256": "ea5144a521a543300dc85485d275fd4f4a1bf7d6a38527707ac2e6a9713bc0ca",
+      "duration": 143.88244897959183,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.0,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 21.8,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 32.8,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 43.6,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 54.5,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 65.4,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 76.4,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 87.3,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 98.3,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 109.1,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 120.0,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 130.9,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-201赐我圣经歌-领唱.mp3",
+      "sha256": "bc3c74565acf0980d6130b2df6cb31dff5c588c0f9035ac702fbff342d417e74",
+      "duration": 154.656,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.222915,
+      "bottom": 0.318922
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.274921,
+      "bottom": 0.370928
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.326927,
+      "bottom": 0.422934
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.451741,
+      "bottom": 0.547748
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.49186,
+      "bottom": 0.587124
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.531978,
+      "bottom": 0.6265
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.685767,
+      "bottom": 0.780289
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.804638,
+      "bottom": 0.899902
+    }
+  },
+  "cues": [
+    {
+      "at": 22.8,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.7,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.6,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.8,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.7,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.6,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.7,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.6,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "求赐我圣经，如晨星放光芒，孤独漂泊者 藉此得欢畅；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "耶稣已经来寻找迷路之羊，再没有云雾能遮盖此光。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求赐我圣经，就是主的恩光，教训和应许，仁爱和典章；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因为我知道主必要引导我，走平安道路，前程永辉煌。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "求赐我圣经，在我危急之时，因罪忧愁使我心悲伤；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "耶稣的宝训，我当终身仰望，救主必再来，我们要发光。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求赐我圣经，就是主的恩光，教训和应许，仁爱和典章；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因为我知道主必要引导我，走平安道路，前程永辉煌。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "求赐我圣经，就是永生之灯，虽面临坟墓，我也不惊慌，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "经死亡冷波，主必使我复活，上升到天家，得享大荣光。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求赐我圣经，就是主的恩光，教训和应许，仁爱和典章；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因为我知道主必要引导我，走平安道路，前程永辉煌。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-201赐我圣经歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

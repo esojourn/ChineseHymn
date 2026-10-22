@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-161",
+  "status": "reviewed",
+  "source": {
+    "file": "05-161天上欢乐歌.jpg",
+    "sha256": "93090c0ba6c8173fd5741ab07f548a35e848ae9df111d5042dad8940937eae34",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-161天上欢乐歌.mp3",
+      "sha256": "9fa6e58a70d83098c5e8a5cef6fbf0098ed2155a865a49da75fce8caa0a05592",
+      "duration": 153.696,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.180904,
+      "bottom": 0.265686
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.23114,
+      "bottom": 0.315922
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.281967,
+      "bottom": 0.36734
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.407262,
+      "bottom": 0.492044
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.457498,
+      "bottom": 0.54228
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.507734,
+      "bottom": 0.591925
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.667898,
+      "bottom": 0.752681
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.793784,
+      "bottom": 0.879157
+    }
+  },
+  "cues": [
+    {
+      "at": 22.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.8,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.05,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 54.85,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.85,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.7,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.75,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "天上今有欢声，那里有喜乐，因为有人离开罪恶路；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "慈父亲自迎接，欢然来相会，因为有人归向主耶稣。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，天使高声唱！哈利路亚，琴声多悠扬！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "蒙救赎的圣徒列队向前行，高唱得胜诗歌多亮！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "天上今有欢声，那里有喜乐，因有罪人与上帝和好；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "他蒙天父饶恕已离开罪恶，从此常行仁义永生道。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，天使高声唱！哈利路亚，琴声多悠扬！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "蒙救赎的圣徒列队向前行，高唱得胜诗歌多亮！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "天上今有欢声，筵席已预备，天使欣喜歌唱同赞美；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "宣告喜乐信息 到处都传开，因有人获重生得恩惠。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，天使高声唱！哈利路亚，琴声多悠扬！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "蒙救赎的圣徒列队向前行，高唱得胜诗歌多亮！",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-161天上欢乐歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

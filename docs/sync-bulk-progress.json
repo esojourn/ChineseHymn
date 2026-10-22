@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 72,
+    "published": 78,
     "existing": 8,
     "needs-calibration": 72,
+    "ready-to-verify": 67,
     "missing-audio": 2,
-    "pending": 173,
-    "ready-to-verify": 70,
+    "pending": 170,
     "missing-lyrics": 23
   },
   "songs": [
@@ -107,11 +107,10 @@
       "songId": "01-157",
       "source": "01-157求圣灵降临.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "01-157求圣灵降临.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
+      ]
     },
     {
       "songId": "01-167",
@@ -374,7 +373,7 @@
       "songId": "01-446",
       "source": "01-446神的应许不能废去.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "01-446神的应许不能废去.mp3",
         "01-446神的应许不能废去-领唱.mp3"
@@ -714,7 +713,7 @@
       "songId": "02-190",
       "source": "02-190万古磐石为我开.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-190万古磐石为我开.mp3",
         "02-190万古磐石为我开-领唱.mp3"
@@ -1155,7 +1154,7 @@
       "songId": "02-447",
       "source": "02-447欢欣感谢.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-447欢欣感谢.mp3"
       ]
@@ -2620,7 +2619,7 @@
       "songId": "05-159",
       "source": "05-159快乐日歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-159快乐日歌.mp3"
       ]
@@ -2629,7 +2628,7 @@
       "songId": "05-161",
       "source": "05-161天上欢乐歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-161天上欢乐歌.mp3"
       ]
@@ -2638,7 +2637,7 @@
       "songId": "05-162",
       "source": "05-162许愿歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-162许愿歌-领唱.mp3"
       ]
@@ -2657,16 +2656,17 @@
       "songId": "05-169",
       "source": "05-169领受饼杯歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "needs-calibration",
       "tracks": [
         "05-169领受饼杯歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-197",
       "source": "05-197生命之道歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-197生命之道歌-领唱.mp3"
       ]
@@ -2675,7 +2675,7 @@
       "songId": "05-201",
       "source": "05-201赐我圣经歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-201赐我圣经歌.mp3",
         "05-201赐我圣经歌-领唱.mp3"
@@ -2685,7 +2685,7 @@
       "songId": "05-203",
       "source": "05-203祷告良辰歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-203祷告良辰歌.mp3"
       ]

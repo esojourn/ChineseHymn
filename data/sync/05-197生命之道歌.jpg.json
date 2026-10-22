@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "songId": "05-197",
+  "status": "reviewed",
+  "source": {
+    "file": "05-197生命之道歌.jpg",
+    "sha256": "a90132d0711fe577afde41cffca9731437ab94143a296b1f3b58615a6b5745d6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-197生命之道歌-领唱.mp3",
+      "sha256": "2bb808c58f120f2cf852598c94eec00ce5ca2dc2f68cbeeba932ece5ac8d0448",
+      "duration": 189.67466666666667,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.193234,
+      "bottom": 0.279374
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.232532,
+      "bottom": 0.318672
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.271831,
+      "bottom": 0.357971
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.311734,
+      "bottom": 0.397874
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.415119,
+      "bottom": 0.500654
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.454417,
+      "bottom": 0.539953
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.493111,
+      "bottom": 0.579251
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.532409,
+      "bottom": 0.61734
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.67207,
+      "bottom": 0.758815
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.776664,
+      "bottom": 0.863409
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.881863,
+      "bottom": 0.968608
+    }
+  },
+  "cues": [
+    {
+      "at": 24.8,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.05,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.8,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.6,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.75,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 74.25,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 82.0,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.8,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.95,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 107.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 123.3,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.1,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 140.25,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 148.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 156.75,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.5,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 173.3,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 181.45,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "圣经都是真神言语，证明耶稣基督，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "道成肉身钉十字架，流血洗我罪污。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "生命之道极奇妙，我今笃信不动摇。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙；",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙。阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "真神应许尽在圣经，备及今世来生，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "是我产业，成我诗歌，作我暗处明，灯。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "生命之道极奇妙，我今笃信不动摇。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙；",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙。阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "真神言语满有能力，主必亲自成全，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "比金更宝，比蜜更甜，永远安定在天。，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "生命之道极奇妙，我今笃信不动摇。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙；",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙。阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我愿天天考查圣经，昼夜思想遵行，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "真理圣灵开导我心，使我识主更真。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "生命之道极奇妙，我今笃信不动摇。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙；",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "美哉主道，奇哉主道，生命之道奇妙。阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-197生命之道歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

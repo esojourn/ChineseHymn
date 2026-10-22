@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-162",
+  "status": "reviewed",
+  "source": {
+    "file": "05-162许愿歌.jpg",
+    "sha256": "7bc479752af78d5535d7e191592ed65326b19f3633fd8bc9bd21b618d1ab5c18",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-162许愿歌-领唱.mp3",
+      "sha256": "15aaad748ebdc287f2c74e70b286cb5d5e729026a328e6cb59bd55d0dcc7ad5b",
+      "duration": 173.248,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.163259,
+      "bottom": 0.247162
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.196028,
+      "bottom": 0.279365
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.228796,
+      "bottom": 0.312133
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.260999,
+      "bottom": 0.345467
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.346309,
+      "bottom": 0.429647
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.378512,
+      "bottom": 0.462415
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.411281,
+      "bottom": 0.495183
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.444049,
+      "bottom": 0.527386
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.527099,
+      "bottom": 0.611002
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.559867,
+      "bottom": 0.64377
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.592635,
+      "bottom": 0.677103
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.625403,
+      "bottom": 0.709306
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.710149,
+      "bottom": 0.794616
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.743482,
+      "bottom": 0.82795
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.77625,
+      "bottom": 0.860718
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.809583,
+      "bottom": 0.893486
+    }
+  },
+  "cues": [
+    {
+      "at": 4.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 25.95,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.9,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 57.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 67.95,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.9,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.95,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.9,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.05,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 141.7,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.05,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 163.0,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣啊，我曾应许，永远服事我主；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我主啊，我的朋友，常求与我相聚；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "主若时常在我旁，我将奋斗不惧；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "主若时常前引路，我便随从无虑。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我既生存在世间，容我知主邻近；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我见迷乱的景物，听见诱惑声音；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我生身外同心内，常有仇敌相侵；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "但望耶稣与我亲，将我灵魂保存。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "永发慈悲语音啊，容我清楚听闻；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "狂情火欲风涛上，浮有刚之音；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "请用圣言印证我，使我进退遵循；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "护持我灵的主啊，你声使我听闻。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "耶稣啊，主曾应许，一切随从的人，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "主在何处得荣耀，何处有主仆人；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "耶稣啊，我曾应许，永远服事殷勤；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "我主啊，我的朋友，赐我恩惠依循。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-162许愿歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "songId": "05-159",
+  "status": "reviewed",
+  "source": {
+    "file": "05-159快乐日歌.jpg",
+    "sha256": "af25c68299de6deaa122045eccb72462423f1d1ffbb6a3be1df466ccaded7343",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-159快乐日歌.mp3",
+      "sha256": "cc71002513ce35e4574b9cdeb41306852b05ce302dad437262d9df90a7eabeac",
+      "duration": 268.608,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.153657,
+      "bottom": 0.239853
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.194485,
+      "bottom": 0.280106
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.235887,
+      "bottom": 0.320359
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.276715,
+      "bottom": 0.361762
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.376197,
+      "bottom": 0.461244
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.41645,
+      "bottom": 0.501496
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.457278,
+      "bottom": 0.541749
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.496955,
+      "bottom": 0.581427
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.620014,
+      "bottom": 0.70506
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.718921,
+      "bottom": 0.804542
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.818978,
+      "bottom": 0.904599
+    }
+  },
+  "cues": [
+    {
+      "at": 34.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.4,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.65,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.75,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.9,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.15,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 140.25,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 163.15,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.4,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.65,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 198.75,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 210.1,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 221.75,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 234.0,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 245.25,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 257.35,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "前有一日我意立定，信靠耶稣救赎我灵，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "那时心中实在高兴，愿到四方传扬主名。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "心里清洁，极大欢喜，这日永远不能忘记。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣舍命激励我爱，故此奉献全身全心，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "愿主悦纳，愿主保守，今立此愿，求主垂听。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "心里清洁，极大欢喜，这日永远不能忘记。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我与耶稣相爱相亲，他为我主，我为他民，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "一切罪恶都得赦免，行走天路 听他指引。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "心里清洁，极大欢喜，这日永远不能忘记。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "至高天父听我誓言，愿此誓言日益贞坚，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "及我渡过世上流年，永赖此约与主系连。·",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "心里清洁，极大欢喜，这日永远不能忘记。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "快乐日，快乐日，救主洗净我众罪孽。",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-159快乐日歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

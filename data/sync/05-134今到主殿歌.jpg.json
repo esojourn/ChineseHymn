@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-134",
+  "status": "reviewed",
+  "source": {
+    "file": "05-134今到主殿歌.jpg",
+    "sha256": "8df687a8c0eeb6bf102a75c91437099087db650bb3cfd69e8d00c87d996e9b6d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-134今到主殿歌.mp3",
+      "sha256": "55c9f2d89abe30170a395c9539e21e882a2569eda9c6a2fa95aa421ab703e8f3",
+      "duration": 156.048,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.275882,
+      "bottom": 0.367109
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.312742,
+      "bottom": 0.404652
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.349602,
+      "bottom": 0.440829
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.385779,
+      "bottom": 0.477006
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.505232,
+      "bottom": 0.595777
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.542092,
+      "bottom": 0.632637
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.578952,
+      "bottom": 0.669497
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.615812,
+      "bottom": 0.707039
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.761886,
+      "bottom": 0.852431
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.863592,
+      "bottom": 0.954137
+    }
+  },
+  "cues": [
+    {
+      "at": 17.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.85,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.7,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.45,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.3,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.8,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 129.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.55,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.4,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我今来到主的圣殿，赞美歌声上云天；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "心灵诚实，虔诚崇拜，心中何等甘甜！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！赞美主恩；哈利路亚！赞美主爱。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今来到主的圣殿，永远与主同在。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我今来到主的圣殿，俯伏施恩宝座前；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "灵里 相交，爱中相 连，瞻 仰恩主荣 面。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！赞美主恩；哈利路亚！赞美主爱。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今来到主的圣殿，永远与主同在。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我今来到主的圣殿，聆听恩主宝贵言；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "解我 饥渴，作我灵 粮，充 满生命能 力。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！赞美主恩；哈利路亚！赞美主爱。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今来到主的圣殿，永远与主同在。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我今来到主的圣殿，心被恩感乐无限；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "热心事奉，爱主爱人，一生完全奉献。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！赞美主恩；哈利路亚！赞美主爱。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今来到主的圣殿，永远与主同在。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-134今到主殿歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

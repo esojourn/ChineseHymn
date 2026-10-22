@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-136",
+  "status": "reviewed",
+  "source": {
+    "file": "05-136聚会归主名下歌.jpg",
+    "sha256": "f9cf1d6a9fc42252c0076cf50dbf72a64c8e4fc2daf3e354e136aab466357928",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-136聚会归主名下歌.mp3",
+      "sha256": "c17ec199da70df2997e9f5b17d37dd973f1bbb39cb258eab2edb1527815f1d53",
+      "duration": 168.17632653061224,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.162366,
+      "bottom": 0.250287
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.193758,
+      "bottom": 0.280538
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.224008,
+      "bottom": 0.31193
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.254829,
+      "bottom": 0.342751
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.350717,
+      "bottom": 0.438068
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.380968,
+      "bottom": 0.468318
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.411218,
+      "bottom": 0.498569
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.442039,
+      "bottom": 0.52939
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.535644,
+      "bottom": 0.622424
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.566465,
+      "bottom": 0.653245
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.596716,
+      "bottom": 0.684067
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.627537,
+      "bottom": 0.714888
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.72685,
+      "bottom": 0.8142
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.758242,
+      "bottom": 0.845592
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.789063,
+      "bottom": 0.876414
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.819884,
+      "bottom": 0.907235
+    }
+  },
+  "cues": [
+    {
+      "at": 3.6,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 13.55,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 23.65,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.65,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 54.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.75,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.75,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.95,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.95,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.0,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 136.95,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.05,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 157.05,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "恩主我们在此，聚会归你名下，切愿你赐恩慈，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "将我们接纳。照你所赐应许，你与我们同在，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "灵里彼此相遇，交通无阻碍。照你所赐应·许，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "你与我们同在，灵里彼此相遇，交通无阻碍。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我们同来敬拜，以灵以诚为祭，不分此宗彼派，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "主里合为一。教导我们祷告，符合我主心愿，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "求主此刻开导，你旨得成全。教导我们祷告，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "符合我主心愿，求主此刻开导，你旨得成全。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "今天所传信息，求主加上祝福，吗哪灵粮充饥，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "信众得饱足。今天倘有迷羊，至今徘徊等待，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "但愿你话放光，照亮他回来。今天倘有迷羊，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "至今徘徊等待，但愿你话放光，照亮他回来。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "创始成终基督，惟你作主带领，生命亮光鼓舞，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "全由你供应。教我谨守真道，生活益人荣神，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "垂听我们祷告，奉主名，阿们。教我谨守真道，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "生活益人荣神，垂听我们祷告，奉主名，阿们。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-136聚会归主名下歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

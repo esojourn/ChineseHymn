@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "songId": "05-141",
+  "status": "reviewed",
+  "source": {
+    "file": "05-141高唱主名歌.jpg",
+    "sha256": "a20dd4777837adefee2e688bcde44e54462267a21ef2744ace53a8596707bf12",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-141高唱主名歌-领唱.mp3",
+      "sha256": "c26ca883d9d0706ffc0034055d89079d4a96c5b4606f6195018b06fc98047684",
+      "duration": 142.848,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.21418,
+      "bottom": 0.307098
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.261281,
+      "bottom": 0.353475
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.307657,
+      "bottom": 0.400576
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.354034,
+      "bottom": 0.447677
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.476497,
+      "bottom": 0.57014
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.522874,
+      "bottom": 0.615068
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.568525,
+      "bottom": 0.661444
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.614902,
+      "bottom": 0.707096
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.780843,
+      "bottom": 0.873037
+    }
+  },
+  "cues": [
+    {
+      "at": 10.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 22.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.25,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.5,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 55.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.25,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 87.9,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.15,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.9,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.15,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "内心坦白的人，应当感奋前行！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "高扬宝架，高擎圣旗，高唱，感谢，欢欣！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "高唱！高唱！高唱，感谢，欢欣！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "天上千万天军，地上圣·众纷纷，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "一同齐唱快乐圣歌，欢声遥遏层云！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "高唱！高唱！高唱，感谢，欢欣！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "圣众欢声汹涌，·如风疾卷云涛！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "颂神奇妙，奇妙恩惠，神名尊大崇高。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "高唱！高唱！高唱，感谢，欢欣！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "直到行完路程，劳人获得安宁，．",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "一同在新耶路撒冷，永远称颂主名。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "高唱！高唱！高唱，感谢，欢欣！",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-141高唱主名歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-139",
+  "status": "reviewed",
+  "source": {
+    "file": "05-139平安佳日歌.jpg",
+    "sha256": "6b1c8414cab9ce66a42085141c27c46c91ff22a02af6a44c1e286675a7dbed04",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-139平安佳日歌-领唱.mp3",
+      "sha256": "4a63b42202db221ad5ccd13d9caa94760296a3c0efd67fddd99c6bf17a900092",
+      "duration": 143.872,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.228826,
+      "bottom": 0.320906
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.269442,
+      "bottom": 0.361522
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.309358,
+      "bottom": 0.401438
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.418602,
+      "bottom": 0.510681
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.458518,
+      "bottom": 0.549897
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.497033,
+      "bottom": 0.589113
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.606276,
+      "bottom": 0.698356
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.646192,
+      "bottom": 0.738272
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.686808,
+      "bottom": 0.778188
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.796752,
+      "bottom": 0.889532
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.836668,
+      "bottom": 0.928748
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.875884,
+      "bottom": 0.968664
+    }
+  },
+  "cues": [
+    {
+      "at": 6.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.0,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.55,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.05,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 63.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.55,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.15,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 109.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.1,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.65,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "欢乐平安之佳日，辉煌快乐良辰，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "劳苦忧愁的安慰，无边美丽光明；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "万国万民齐歌唱，万世乐声谐应，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "唱“圣哉，圣哉，圣哉！\"赞美三一至尊。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "此日上主行创造，光明奉命而生；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "此日救主曾复活，救赎世界罪人；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "此日得胜之救主，从天降下圣灵；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "惟赖此日之光荣，主赐三种光明。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "不绝赐来新恩典，安息之日欢欣，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我灵希望享安息，永远蒙福天庭。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "教会众人称颂主，圣父、圣子、圣灵；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "一致同声高歌唱，赞美三一至尊。（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-139平安佳日歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

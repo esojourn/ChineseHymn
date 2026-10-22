@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "songId": "02-209",
+  "status": "reviewed",
+  "source": {
+    "file": "02-209主耶稣救罪人.txt",
+    "sha256": "13e9fa6dcf581b89ee3cc5c42476a0afa1d6c6cb0e664e28536d1b5158fdabb5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-209主耶稣救罪人.mp3",
+      "sha256": "288aa68c5adbec6e1528df6bf0c2f3e9ca6f5d5f391e35f742b5b10f8671b405",
+      "duration": 95.55591836734693,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.02,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 35.78,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 64.66,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-209主耶稣救罪人-领唱.mp3",
+      "sha256": "bee91d33dfeafdc8f2207ef13b72934d7b6285ad4a5fb03e66a00fb4e5173f71",
+      "duration": 95.92163265306122,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    }
+  },
+  "cues": [
+    {
+      "at": 8.52,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.28,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.16,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我听见欢乐声音：主耶稣救罪人！ 到各处传扬救恩：主耶稣救罪人！ 将福音传至万邦，攀过山岭越重洋， 遵主命继续传扬：主耶稣救罪人。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "渡洋海传播佳音：主耶稣救罪人！ 去告诉远近罪人：主耶稣救罪人！ 众海岛应当歌唱，诸岩洞也当回响， 全世界快乐颂扬：主耶稣救罪人。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "战场上高唱佳音：主耶稣救罪人！ 借其受死与复活，主耶稣救罪人！ 经幽谷柔声歌唱，仰望主施恩无量， 胜坟墓欢然颂扬：主耶稣救罪人！",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-209主耶稣救罪人.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

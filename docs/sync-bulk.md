@@ -23,6 +23,19 @@
 
 批次 01 已通过素材哈希、时间范围、同步结构与 JS/Python 单元测试。实际 PHP 播放页完成 7 个音轨、三种视口下的 252 个区域位置检查与 75 次关键跳转，等待动画完成后核对，无页面脚本错误；结果见 [浏览器记录](sync-bulk-evidence/batch-01-browser.json)。原有 8 份同步文件字节不变。
 
+## 批次 02
+
+| 曲目 | 形式 | 启用音轨 | 每版时间点 |
+| --- | --- | ---: | ---: |
+| [01-122 每逢思念奇妙十架](http://localhost:8080/index.php?n=01-122) | TXT | 领唱、伴奏 | 5 |
+| [05-020 荣耀大君王歌](http://localhost:8080/index.php?n=05-020) | JPG | 伴奏 | 12 |
+| [05-023 赞美歌](http://localhost:8080/index.php?n=05-023) | JPG | 伴奏 | 9 |
+| [05-027 天父世界](http://localhost:8080/index.php?n=05-027) | JPG | 伴奏 | 9 |
+| [05-028 万福泉源歌](http://localhost:8080/index.php?n=05-028) | JPG | 领唱 | 12 |
+| [05-029 愿仍高唱歌](http://localhost:8080/index.php?n=05-029) | JPG | 伴奏 | 24 |
+
+共 6 首、7 个音轨、76 个时间点。对《愿仍高唱歌》中只印在第一段旁边的共同副歌续句，后续段落保留整块副歌可见，避免隐藏公共歌词。已通过同步校验及 228 项浏览器区域位置、78 次实际跳转检查，无页面脚本错误；见 [浏览器记录](sync-bulk-evidence/batch-02-browser.json)。
+
 ## 断点续跑
 
 基础依赖及模型安装到独立环境；浏览器播放不需要这些依赖。
@@ -35,9 +48,14 @@ python tools/batch-sync.py --stage align --cache /tmp/chinese-hymn-bulk \
     --model-dir /tmp/chinese-hymn-models --songs 01-040 --workers 1 --threads 2
 python tools/batch-sync.py --stage score --cache /tmp/chinese-hymn-bulk \
     --songs 05-001 05-002 --workers 1 --threads 1
+python tools/batch-sync.py --stage publish --cache /tmp/chinese-hymn-bulk \
+    --songs 05-020 05-023
+python tools/batch-sync.py --stage report --cache /tmp/chinese-hymn-bulk
 ```
 
-模型必须已缓存，程序不自动下载模型。`transcribe` 阶段可额外生成普通语音转写供诊断，不是发布条件。原图、MP3 和 TXT 不修改；已有同步文件自动跳过。缓存保存原素材 SHA-256，素材变化后重新计算。候选写入缓存的 `ready/`，经同步校验和浏览器位置检查后分批放入 `data/sync/`，同时保存对应机器复核记录并提交推送。
+模型必须已缓存，程序不自动下载模型。`transcribe` 阶段可额外生成普通语音转写供诊断，不是发布条件。原图、MP3 和 TXT 不修改；已有同步文件自动跳过。缓存保存原素材 SHA-256，素材变化后重新计算。候选写入缓存的 `ready/`；`publish` 仅接收显式指定的本批曲目，核对当前素材及全部音轨，再将候选和复核记录放入仓库，拒绝覆盖已有文件。随后运行同步校验和浏览器位置检查，通过后提交推送。`report` 更新全库进度，包括待校准及待音轨匹配的曲目。
+
+`--retry` 可重试失败候选，优先复用已保存的音频窗口。只有至少两个独立窗口组已确认相同音乐相位、重复音乐足够相似，且冲突候选中有一个得到相位佐证时，才丢弃冲突窗口；无声学依据的边界不靠音乐相位补造。
 
 ```sh
 npm run sync:validate

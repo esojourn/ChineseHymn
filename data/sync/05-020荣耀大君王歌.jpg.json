@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-020",
+  "status": "reviewed",
+  "source": {
+    "file": "05-020荣耀大君王歌.jpg",
+    "sha256": "4a9fcf089c55a4d1967e1466d39158b4a393639b6f844d889bc6c047f075b3a2",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-020荣耀大君王歌.mp3",
+      "sha256": "eb3764d22c3262cab575a06760ad0b64e9b25853139ed68bc90a656afdaff2b9",
+      "duration": 139.59836734693877,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.210173,
+      "bottom": 0.2988
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.255784,
+      "bottom": 0.345103
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.302778,
+      "bottom": 0.390023
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.34839,
+      "bottom": 0.436326
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.480387,
+      "bottom": 0.568323
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.525999,
+      "bottom": 0.614626
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.572301,
+      "bottom": 0.659547
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.617222,
+      "bottom": 0.704467
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.73678,
+      "bottom": 0.824716
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.783082,
+      "bottom": 0.871019
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.828694,
+      "bottom": 0.915939
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.874997,
+      "bottom": 0.963624
+    }
+  },
+  "cues": [
+    {
+      "at": 8.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 31.9,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 52.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.3,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 84.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 96.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.45,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.2,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 129.0,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "齐当俯伏拜，荣耀大君王！主权力仁慈，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "须同心颂扬！主亘古如盾牌，护我免灾害，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "荣光罩若宫帷，颂声环如带。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "大地浮空间，满藏珍与宝，全归主能力，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "不绝施创造；主命-全爱，全权-万物即建立，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "主使碧海苍波周围绕大地。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "人舌何能述我主关切心.主使风吹拂，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主使光生明；主使高山泉源下注遍平壤，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "主使甘霖时雨润泽各地方。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "权能无限量！慈爱深莫测！天使在天上。",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "歌颂声不息；地上众生赞美，随从众天军，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "尽力！尽心！尽意！赞美主荣名。（阿们）",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-020荣耀大君王歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

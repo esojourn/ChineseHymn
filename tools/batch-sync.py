@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +38,75 @@ def inventory(root=ROOT):
                       'reference': (lead or tracks[0]).name if tracks else None,
                       'existing': (root / 'data/sync' / (source.name + '.json')).exists()})
     return songs
+
+
+def progress(songs, cache):
+    from collections import Counter
+    items = []
+    for song in songs:
+        destination = ROOT / 'data/sync' / (song['source'] + '.json')
+        data = json.loads(destination.read_text()) if destination.exists() else None
+        status = ('published' if data.get('provenance', {}).get('batch') == 'bulk-2026-10' else 'existing') if data else 'missing-audio' if not song['tracks'] else 'pending'
+        item = {'songId': song['songId'], 'source': song['source'], 'type': song['type'], 'status': status,
+                'tracks': [track['file'] for track in song['tracks']]}
+        if data and any(not track['reviewed'] for track in data['tracks']):
+            item['status'] = 'partially-published'
+            item['pendingTracks'] = [track['file'] for track in data['tracks'] if not track['reviewed']]
+        if not data and song['tracks']:
+            ready = cache / 'ready' / (song['source'] + '.json')
+            if ready.exists():
+                candidate = json.loads(ready.read_text())
+                item['status'] = 'ready-to-verify' if all(track['reviewed'] for track in candidate['tracks']) else 'needs-track-alignment'
+            else:
+                for directory in ['score-alignment', 'alignment']:
+                    evidence = cache / directory / (song['source'] + '.json')
+                    if evidence.exists():
+                        result = json.loads(evidence.read_text())
+                        if result.get('sourceHash') == song['sha256'] and result['status'] == 'needs-calibration':
+                            item['status'] = 'needs-calibration'
+                            item['reason'] = result['reason'][:250]
+                            break
+        items.append(item)
+    report = {'date': time.strftime('%Y-%m-%d'), 'totalSources': len(items),
+              'counts': dict(Counter(item['status'] for item in items)), 'songs': items}
+    save(ROOT / 'docs/sync-bulk-progress.json', report)
+    return report['counts']
+
+
+def publish(song, cache):
+    candidate = cache / 'ready' / (song['source'] + '.json')
+    data = json.loads(candidate.read_text())
+    if data['source']['sha256'] != song['sha256'] or any(not track['reviewed'] for track in data['tracks']):
+        raise ValueError('素材哈希不匹配，或仍有未校准的音轨')
+    if sorted((track['file'], track['sha256']) for track in data['tracks']) != sorted((track['file'], track['sha256']) for track in song['tracks']):
+        raise ValueError('音频素材与候选制作时不一致')
+    # Recompute geometry from the current OCR rules; timing arrays remain untouched.
+    if song['type'] == 'image':
+        from sync_batch_sources import image_source
+        definition = image_source(json.loads((cache / 'ocr' / candidate.name).read_text()))
+        if set(definition['regions']) != set(data['regions']):
+            raise ValueError('阅读区域发生结构变化，需重新匹配时间轴')
+        data['regions'] = definition['regions']
+    script = "const fs=require('node:fs'),c=require('./css/lyric-sync-core');const e=c.validate(JSON.parse(fs.readFileSync(0,'utf8')));if(e.length){console.error(e);process.exit(1)}"
+    subprocess.run(['node', '-e', script], cwd=ROOT, input=json.dumps(data), text=True, check=True)
+    directory = 'score-alignment' if data['provenance']['evidence'].endswith('.score.json') else 'alignment'
+    evidence = json.loads((cache / directory / candidate.name).read_text())
+    if evidence['status'] != 'ready' or evidence['sourceHash'] != song['sha256']:
+        raise ValueError('缺少匹配当前素材的成功复核记录')
+    targets = [(ROOT / data['provenance']['evidence'], evidence), (ROOT / 'data/sync' / candidate.name, data)]
+    if any(path.exists() for path, value in targets):
+        raise ValueError('拒绝覆盖已有同步文件或复核记录')
+    created = []
+    try:
+        for path, value in targets:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with path.open('x', encoding='utf-8') as stream:
+                created.append(path)
+                stream.write(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
+    except Exception:
+        for path in created:
+            path.unlink()
+        raise
 
 
 _model = None
@@ -130,16 +200,29 @@ def recognize_image(job):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--stage', choices=['inventory', 'ocr', 'transcribe', 'align', 'score'], required=True)
+    parser.add_argument('--stage', choices=['inventory', 'ocr', 'transcribe', 'align', 'score', 'publish', 'report'], required=True)
     parser.add_argument('--cache', type=Path, required=True)
     parser.add_argument('--model-dir', default='/tmp/chinese-hymn-models')
     parser.add_argument('--model', default='small')
     parser.add_argument('--workers', type=int, default=2)
     parser.add_argument('--threads', type=int, default=2)
     parser.add_argument('--songs', nargs='*')
+    parser.add_argument('--retry', action='store_true', help='重新处理失败候选；先尝试用已有窗口及音乐复核解决冲突')
     args = parser.parse_args()
     songs = inventory()
     save(args.cache / 'inventory.json', songs)
+    if args.stage == 'report':
+        print(json.dumps(progress(songs, args.cache), ensure_ascii=False))
+        return
+    if args.stage == 'publish':
+        if not args.songs:
+            parser.error('分批发布必须用 --songs 显式指定曲号')
+        for song in songs:
+            if song['songId'] in args.songs:
+                publish(song, args.cache)
+                print('Prepared for browser verification: ' + song['source'], flush=True)
+        print(json.dumps(progress(inventory(), args.cache), ensure_ascii=False))
+        return
     if args.stage == 'inventory':
         print(json.dumps({'sources': len(songs), 'existing': sum(song['existing'] for song in songs),
                           'withAudio': sum(bool(song['tracks']) for song in songs)}, ensure_ascii=False))
@@ -154,7 +237,7 @@ def main():
     else:
         worker = recognize_image if args.stage == 'ocr' else transcribe
     jobs = [(song, str(args.cache), args.threads) if args.stage == 'ocr' else
-            (song, str(args.cache), args.model_dir, args.threads, args.stage) if args.stage in ('align', 'score') else
+            (song, str(args.cache), args.model_dir, args.threads, args.stage, args.retry) if args.stage in ('align', 'score') else
             (song, str(args.cache), args.model_dir, args.model, args.threads) for song in selected]
     with ProcessPoolExecutor(max_workers=args.workers) as pool:
         tasks = {pool.submit(worker, job): job[0] for job in jobs}

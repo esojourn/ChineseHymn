@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "songId": "05-027",
+  "status": "reviewed",
+  "source": {
+    "file": "05-027天父世界.jpg",
+    "sha256": "b909a0d51a2e827beaafdc2a7ee83ed263265530ccbd7c9ca8200070d912fb11",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-027天父世界.mp3",
+      "sha256": "49871f116167f288d20cfe272f77b5ac42da5a5701e8f63c4d4db5392be24d54",
+      "duration": 131.41333333333333,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.176696,
+      "bottom": 0.260076
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.217549,
+      "bottom": 0.300928
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.257809,
+      "bottom": 0.341189
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.360829,
+      "bottom": 0.444208
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.401089,
+      "bottom": 0.484469
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.44135,
+      "bottom": 0.524729
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.725542,
+      "bottom": 0.809513
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.765802,
+      "bottom": 0.850366
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.807247,
+      "bottom": 0.891218
+    }
+  },
+  "cues": [
+    {
+      "at": 5.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.25,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.35,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.35,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "这是天父世界，孩童侧耳要听，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "宇宙唱歌四 围响应,星辰作乐同 声。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "树木花草，苍天碧海，述说天父全能。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "这是天父世界，小鸟长翅飞鸣，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "清晨明亮，好 花美丽，证明天理精 深。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "风吹之草，将 他表现，天父充满世间。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "这是天父世界，求主叫我不忘，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "罪恶虽然好 像得胜，天父却仍掌 管。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "上帝是王，天地同唱，歌声充满万方。",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-027天父世界.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

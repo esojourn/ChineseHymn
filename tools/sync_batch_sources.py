@@ -67,14 +67,18 @@ def text_source(path, language='zh'):
 def image_source(ocr):
     rows = ocr['rows']
     systems, current = [], None
+    chorus = False
     for row in rows:
         text = row['text']
+        if CHORUS.match(text):
+            chorus = True
+            continue
         chinese = len(re.findall(r'[\u3400-\u9fff]', text))
         digits = len(re.findall('[1-7]', text))
         if chinese == 0 and digits >= 4 and row['top'] > .07:
             if current and current['lyrics']:
                 systems.append(current)
-            current = {'notes': row, 'lyrics': []}
+            current = {'notes': row, 'lyrics': [], 'chorus': chorus}
         elif current and chinese >= 4 and not CHORUS.match(text) and row['confidence'] >= .45:
             current['lyrics'].append(row)
     if current and current['lyrics']:
@@ -99,7 +103,13 @@ def image_source(ocr):
             region_id = f's{index + 1}_v{verse + 1}' if numbered else f's{index + 1}_chorus'
             # Protect the sung lyric row even when many printed stanzas make a system taller than a screen.
             top = max(system['notes']['top'] - .008, lyric['top'] - .04)
-            regions[region_id] = {'kind': 'image', 'top': round(top, 6), 'bottom': round(min(1, lyric['bottom'] + .012), 6)}
+            bottom = min(1, lyric['bottom'] + .012)
+            if system['chorus'] and numbered:
+                # The continuation of a common chorus may be printed only beside verse 1.
+                # Retain the entire chorus system instead of hiding that shared text.
+                top = max(0, system['notes']['top'] - .008)
+                bottom = min(1, max(row['bottom'] for row in system['lyrics']) + .012)
+            regions[region_id] = {'kind': 'image', 'top': round(top, 6), 'bottom': round(bottom, 6)}
             verses[verse].append({'region': region_id, 'text': VERSE.sub('', lyric['text']),
                                   'label': f'第{verse + 1}段：第{index + 1}谱行'})
     return {'regions': regions, 'verses': verses, 'language': 'zh', 'systems': systems}

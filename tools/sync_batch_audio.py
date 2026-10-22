@@ -108,7 +108,8 @@ def map_recordings(reference, target, cue_times, cache):
         raise ValueError('录音过短，不能可靠匹配')
     similarity, shift, lag = max(candidates)
     cost = np.ascontiguousarray(1 - a.T @ np.roll(b, shift, axis=0), dtype=np.float32)
-    path = constrained_path(cost, lag, max(150, abs(n - m) + 20))
+    # Include both endpoints even if the lag search favors a later musical repeat.
+    path = constrained_path(cost, lag, max(150, abs(n - m) + 20, abs(lag) + 20))
     if not len(path):
         raise ValueError('未找到连续的音乐对应路径')
     mapping = np.full(n, np.nan)

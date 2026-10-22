@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "songId": "05-029",
+  "status": "reviewed",
+  "source": {
+    "file": "05-029愿仍高唱歌.jpg",
+    "sha256": "ae10f51764c08fcbb367f309dfe252e921364457b0977c31ad67a17de7e5e5a6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-029愿仍高唱歌.mp3",
+      "sha256": "b9a89dd93d28b8bdd7050e52fe657e60601503d160965bff4fe51340c18f8433",
+      "duration": 222.54934240362812,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.162801,
+      "bottom": 0.244493
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.195854,
+      "bottom": 0.276986
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.228347,
+      "bottom": 0.310039
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.261401,
+      "bottom": 0.343653
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.347115,
+      "bottom": 0.428807
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.380168,
+      "bottom": 0.4613
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.412661,
+      "bottom": 0.493793
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.445154,
+      "bottom": 0.526286
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.548303,
+      "bottom": 0.733569
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.548303,
+      "bottom": 0.733569
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.548303,
+      "bottom": 0.733569
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.548303,
+      "bottom": 0.733569
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.738151,
+      "bottom": 0.820403
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.826106,
+      "bottom": 0.907798
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.912941,
+      "bottom": 0.995193
+    }
+  },
+  "cues": [
+    {
+      "at": 26.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.15,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.1,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.15,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 84.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.15,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.1,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 117.15,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 124.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 133.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.4,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.15,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 158.1,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 166.15,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 173.9,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 182.6,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 191.4,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 200.15,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 207.1,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 215.15,
+      "region": "s6_chorus",
+      "label": "第4段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "昔日所唱诗歌今日我愿仍高唱，荣耀归神，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "哈利路亚！颂主奇妙救恩慈爱浩大真无量，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "荣耀归神，哈利路亚！我众圣徒速兴起，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "环绕宝座齐歌唱，因主圣手常引导，前途",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "愈走愈明亮，踊跃欢欣向前行，父家隐隐已在",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "望，荣耀归神，哈利路亚！（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "因主救赎大爱使我常感激欢欣，荣耀归神，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "哈利路亚！甘心奉献身心毕生服役我大君，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "荣耀归神，哈利路亚！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "环绕宝座齐歌唱，因主圣手常引导，前途",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "愈走愈明亮，踊跃欢欣向前行，父家隐隐已在",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "望，荣耀归神，哈利路亚！（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我愿欢欣奔赴天上荣耀美家乡，荣耀归神，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "哈利路亚！目睹大君威荣，我必欢呼乐无央，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "荣耀归神，哈利路亚！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "环绕宝座齐歌唱，因主圣手常引导，前途",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "愈走愈明亮，踊跃欢欣向前行，父家隐隐已在",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "望，荣耀归神，哈利路亚！（阿们）",
+        "label": "第3段：第6谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "在彼同唱新歌赞美救主赎罪功， 荣耀归神。",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "哈利路亚！蒙救赎之群众齐声歌颂主恩洪，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "荣耀归神．哈利路亚！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "环绕宝座齐歌唱，因主圣手常引导，前途",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "愈走愈明亮，踊跃欢欣向前行，父家隐隐已在",
+        "label": "第4段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "望，荣耀归神，哈利路亚！（阿们）",
+        "label": "第4段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-029愿仍高唱歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

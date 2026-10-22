@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "01-122",
+  "status": "reviewed",
+  "source": {
+    "file": "01-122每逢思念奇妙十架.txt",
+    "sha256": "0b7f5173a45badb67e4ce53bfdaf291a7e67aa5f4216200d549cc38aed38ecd4",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-122每逢思念奇妙十架.mp3",
+      "sha256": "c7256a9d7d567dedbd044f319d48a2b9f1c17dbae85f91ed67c50f2d6b703e03",
+      "duration": 149.57714285714286,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 3.57,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.32,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 61.22,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 90.06,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 118.68,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-122每逢思念奇妙十架-领唱.mp3",
+      "sha256": "de8435011c731c31c1b69327ea06b569e944c7fa11b1fc6ebf79eaab52b6125c",
+      "duration": 153.86122448979592,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    }
+  },
+  "cues": [
+    {
+      "at": 7.47,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.22,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.12,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 93.96,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.58,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "每逢思念奇妙十架， 荣耀救主在上悬挂， 从前名利富足矜夸， 我看如土完全撇下。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求主禁我别有所夸， 只夸救主舍身十架， 前所珍爱虚空荣华， 今为他血情愿丢下。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "看从他头！他脚！他手！ 忧情慈爱和血同流！ 哪有爱忧如此交织， 荆棘编成如此冕旒？",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "看他全身满披水血， 如同穿上朱红衣饰； 因此我与世界断绝， 世界向我也像已死。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "假若宇宙都归我手， 尽以奉主仍觉可羞； 爱既如此奇妙深厚， 愿献我心、我命、所有。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-122每逢思念奇妙十架.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

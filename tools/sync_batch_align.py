@@ -14,7 +14,7 @@ def context(text, language, tail=False):
         words = text.split()
         return ' '.join(words[-4:] if tail else words[:10])
     value = clean(text, language)
-    return value[-6:] if tail else value[:16]
+    return value[-6:] if tail else value[:10]
 
 
 def align_windows(model, tokenizer, audio, definitions, estimates, language):
@@ -27,7 +27,7 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language):
             preceding = context(definitions[index - 1]['text'], language, True) if index else ''
             current = context(definitions[index]['text'], language)
             text = preceding + (' ' if language == 'en' else '') + current
-            for window, (before, after) in enumerate([(6, 13), (4, 10)]):
+            for window, (before, after) in enumerate([(6, 16), (4, 14)]):
                 start, end = max(0, estimates[index] - before), min(duration, estimates[index] + after)
                 if end <= start:
                     continue
@@ -64,9 +64,51 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language):
     return observations
 
 
+def confirm_boundaries(verses, music, observations):
+    accepted, decisions, first_indices, slots = {}, [], [], {}
+    cursor = 0
+    for verse_index, verse in enumerate(verses):
+        first_indices.append(cursor)
+        for slot, item in enumerate(verse):
+            slots[cursor + slot] = (slot, len(verse), verse_index)
+        cursor += len(verse)
+    for index in range(cursor):
+        pair = [row for row in observations if row['index'] == index]
+        if len(pair) == 2 and all(row['valid'] for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
+            accepted[index] = round((pair[0]['at'] + pair[1]['at']) / 2, 2)
+    # Two independent acoustic anchors must establish a phase before music can resolve
+    # a conflicting window. Music alone never invents an unrecognized lyric boundary.
+    for index in range(1, cursor):
+        if index in accepted:
+            continue
+        slot, count, verse_index = slots[index]
+        phases = [at - music['shifts'][slots[other][2]] for other, at in accepted.items()
+                  if slots[other][:2] == (slot, count)]
+        if len(phases) < 2 or max(phases) - min(phases) > .6 or music['similarity'] < .9:
+            continue
+        expected = float(np.median(phases)) + music['shifts'][verse_index]
+        corroborated = [row for row in observations if row['index'] == index and row['valid'] and abs(row['at'] - expected) <= .45]
+        if corroborated:
+            chosen = min(corroborated, key=lambda row: abs(row['at'] - expected))
+            accepted[index] = round(chosen['at'], 2)
+            decisions.append({'index': index, 'musicPhaseAt': round(expected, 3), 'chosenWindow': chosen['window'],
+                              'at': accepted[index], 'method': 'two independent acoustic phase anchors corroborate one window; conflicting window discarded'})
+    failed = [index for index in range(1, cursor) if index not in accepted]
+    if failed:
+        raise ValueError('两个窗口及重复音乐未能共同确认时间点：' + ','.join(map(str, failed)))
+    phases = [accepted[index] - shift for index, shift in zip(first_indices[1:], music['shifts'][1:]) if index in accepted]
+    if not phases or max(phases) - min(phases) > 1:
+        raise ValueError('各段起点与重复音乐位置不一致')
+    accepted[0] = round(float(np.median(phases)), 2)
+    cue_times = [accepted[index] for index in range(cursor)]
+    if cue_times[0] < 0 or any(a + .5 >= b for a, b in zip(cue_times, cue_times[1:])):
+        raise ValueError('候选时间点不递增')
+    return cue_times, first_indices, decisions
+
+
 def generate(job):
     global _model
-    song, cache_name, model_dir, threads, method = job
+    song, cache_name, model_dir, threads, method, retry = job
     import importlib.util
     spec = importlib.util.spec_from_file_location('batch_io', Path(__file__).with_name('batch-sync.py'))
     batch = importlib.util.module_from_spec(spec)
@@ -76,7 +118,7 @@ def generate(job):
     if evidence_path.exists():
         old = json.loads(evidence_path.read_text())
         valid_algorithm = method != 'score' or old.get('scoreMatching', {}).get('algorithmVersion') == 2
-        if valid_algorithm and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
+        if not retry and valid_algorithm and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
             return song['songId'], old['status'] + ' (cached)'
     start_time = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'], 'trackHashes': song['tracks']}
@@ -90,17 +132,19 @@ def generate(job):
             definitions = [item for verse in source['verses'] for item in verse]
             first_indices = list(range(0, len(definitions), len(source['systems'])))
         else:
-            source, definitions, cue_times, first_indices = vocal_times(song, root, cache, model_dir, threads, evidence)
+            source, definitions, cue_times, first_indices = vocal_times(song, root, cache, model_dir, threads, evidence, retry)
         return export_result(song, root, cache, evidence_path, evidence, start_time, source, definitions, cue_times, first_indices)
     except (ValueError, FileNotFoundError, KeyError) as error:
         evidence['status'] = 'needs-calibration'
         evidence['reason'] = str(error)
+        if hasattr(error, 'evidence'):
+            evidence['scoreMatching'] = error.evidence
     evidence['elapsedSeconds'] = round(time.monotonic() - start_time, 3)
     batch.save(evidence_path, evidence)
     return song['songId'], evidence['status'] + (': ' + evidence['reason'] if 'reason' in evidence else '')
 
 
-def vocal_times(song, root, cache, model_dir, threads, evidence):
+def vocal_times(song, root, cache, model_dir, threads, evidence, retry):
     global _model
     reference = root / 'data' / song['reference']
     if song['type'] == 'image':
@@ -122,6 +166,15 @@ def vocal_times(song, root, cache, model_dir, threads, evidence):
             definitions.append(item)
             # Estimates only select audio windows. Published times come from acoustic alignment.
             estimates.append(music['initialOnsetEstimate'] + shift + music['period'] * float(weight))
+    previous_path = cache / 'alignment' / (song['source'] + '.json')
+    previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
+    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks']:
+        try:
+            cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'])
+            evidence.update(windows=previous['windows'], estimates=previous['estimates'], music=music, phaseDecisions=decisions)
+            return source, definitions, cue_times, first_indices
+        except ValueError:
+            pass
     if _model is None:
         from faster_whisper import WhisperModel
         _model = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads,
@@ -134,26 +187,8 @@ def vocal_times(song, root, cache, model_dir, threads, evidence):
     observations = align_windows(_model, tokenizer, audio, definitions, estimates, language)
     evidence['windows'] = observations
     evidence['estimates'] = estimates
-    accepted, failed = {}, []
-    for index in range(len(definitions)):
-        pair = [row for row in observations if row['index'] == index]
-        if len(pair) == 2 and all(row['valid'] for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
-            accepted[index] = round((pair[0]['at'] + pair[1]['at']) / 2, 2)
-        elif index:
-            failed.append(index)
-    if failed:
-        raise ValueError('两个窗口未能共同确认时间点：' + ','.join(map(str, failed)))
-    first_indices, cursor = [], 0
-    for verse in verses:
-        first_indices.append(cursor)
-        cursor += len(verse)
-    phases = [accepted[index] - shift for index, shift in zip(first_indices[1:], music['shifts'][1:]) if index in accepted]
-    if not phases or max(phases) - min(phases) > 1:
-        raise ValueError('各段起点与重复音乐位置不一致')
-    accepted[0] = round(float(np.median(phases)), 2)
-    cue_times = [accepted[index] for index in range(len(definitions))]
-    if cue_times[0] < 0 or any(a + .5 >= b for a, b in zip(cue_times, cue_times[1:])):
-        raise ValueError('候选时间点不递增')
+    cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations)
+    evidence['phaseDecisions'] = decisions
     return source, definitions, cue_times, first_indices
 
 

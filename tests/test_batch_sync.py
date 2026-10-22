@@ -10,6 +10,10 @@ from unittest.mock import patch
 TOOLS = Path(__file__).parents[1] / 'tools'
 sys.path.insert(0, str(TOOLS))
 import sync_batch_sources as sources
+try:
+    from sync_batch_align import confirm_boundaries
+except ImportError:
+    confirm_boundaries = None
 
 spec = importlib.util.spec_from_file_location('batch_sync', TOOLS / 'batch-sync.py')
 batch = importlib.util.module_from_spec(spec)
@@ -66,6 +70,55 @@ class BatchTests(unittest.TestCase):
             batch.save(path, {'text': '中文', 'at': 13})
             self.assertNotEqual(batch.checksum(path), old)
             self.assertEqual(list(path.parent.glob('*.tmp')), [])
+
+    def test_publishing_rejects_stale_sources_and_preserves_existing_sidecars(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            cache = root / 'cache'
+            song = {'source': '01-001示例.txt', 'sha256': 'a' * 64,
+                    'tracks': [{'file': '01-001示例.mp3', 'sha256': 'b' * 64}], 'type': 'text'}
+            candidate = {'source': {'sha256': 'c' * 64}, 'tracks': [{**song['tracks'][0], 'reviewed': True}],
+                         'provenance': {'evidence': 'docs/evidence/01-001示例.txt.json'}}
+            path = cache / 'ready' / (song['source'] + '.json')
+            batch.save(path, candidate)
+            with patch.object(batch, 'ROOT', root), self.assertRaises(ValueError):
+                batch.publish(song, cache)
+            candidate['source']['sha256'] = song['sha256']
+            batch.save(path, candidate)
+            batch.save(cache / 'alignment' / path.name, {'sourceHash': song['sha256'], 'status': 'ready'})
+            existing = root / 'data/sync' / path.name
+            batch.save(existing, {'preserved': True})
+            with patch.object(batch, 'ROOT', root), patch.object(batch.subprocess, 'run'), self.assertRaises(ValueError):
+                batch.publish(song, cache)
+            self.assertEqual(json.loads(existing.read_text()), {'preserved': True})
+
+    def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
+        def row(top, text):
+            return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}
+        definition = sources.image_source({'rows': [row(.1, '11335566'), row(.15, '1.第一段的歌词'),
+            row(.2, '2.第二段的歌词'), row(.3, '（副歌）'), row(.4, '33355566'),
+            row(.45, '1.哈利路亚共同歌词只印一次'), row(.5, '2.哈利路亚')]})
+        self.assertEqual(definition['regions']['s2_v1'], definition['regions']['s2_v2'])
+        self.assertLess(definition['regions']['s2_v2']['top'], .45)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_music_resolves_a_conflict_only_after_two_independent_acoustic_anchors(self):
+        verses = [[{'region': 'r' + str(i)}] for i in range(5)]
+        music = {'shifts': [0, 24.7, 49.4, 74.1, 98.8], 'similarity': .97}
+        rows = []
+        for index, pair in enumerate([(1, 3), (31.66, 33.2), (57.98, 58.02), (82.7, 82.72), (107.26, 106.48)]):
+            for window, at in enumerate(pair):
+                rows.append({'index': index, 'window': window, 'at': at, 'valid': index > 0})
+        times, first_indices, decisions = confirm_boundaries(verses, music, rows)
+        self.assertAlmostEqual(times[0], 8.55, delta=.1)
+        self.assertEqual(times[1], 33.2)
+        self.assertEqual(times[4], 107.26)
+        self.assertEqual([row['index'] for row in decisions], [1, 4])
+        for row in rows:
+            if row['index'] == 3:
+                row['valid'] = False
+        with self.assertRaises(ValueError):
+            confirm_boundaries(verses, music, rows)
 
 
 if __name__ == '__main__':

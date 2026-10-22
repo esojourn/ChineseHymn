@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "songId": "05-023",
+  "status": "reviewed",
+  "source": {
+    "file": "05-023赞美歌.jpg",
+    "sha256": "31ef63e4c72803b678ebb86842c6436a9c5046aafcb53e41d1793ce5fc2d8802",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-023赞美歌.mp3",
+      "sha256": "efef32fa506311501bd08ea8da6c0ad594f9544cf068a8c3100c108875080edf",
+      "duration": 101.64244897959183,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.211288,
+      "bottom": 0.309005
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.25568,
+      "bottom": 0.354176
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.300071,
+      "bottom": 0.397789
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.427796,
+      "bottom": 0.525513
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.469851,
+      "bottom": 0.567569
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.511907,
+      "bottom": 0.608845
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.620939,
+      "bottom": 0.718657
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.662995,
+      "bottom": 0.761491
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.70505,
+      "bottom": 0.803547
+    }
+  },
+  "cues": [
+    {
+      "at": 7.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.25,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.35,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 48.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.95,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 79.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.65,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "赞美上帝，为我们完成了救赎，我众来到",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "主面前，献上礼物；虔诚供奉主前，屈",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "膝敬拜不止，来感谢主圣名，欢唱赞美",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "先贤之神，恳求你听我们倾诉，蒙主引导",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "经试炼，风波安渡；每当患难临头，主",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "必引领出险，生活能够得胜，全靠主帮",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "敬献颂赞，有救主为我们引路，真诚感谢",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "颂扬主，我众欢呼；因主在我身旁，有",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "主膀臂护卫，我们感谢歌唱，永远赞美",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-023赞美歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

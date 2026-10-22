@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-028",
+  "status": "reviewed",
+  "source": {
+    "file": "05-028万福泉源歌.jpg",
+    "sha256": "8a72705d28f4f762dfd8cee6db4b7a9afd83b31d51658a5dbb0ae1153f40b317",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-028万福泉源歌-领唱.mp3",
+      "sha256": "4f44fd1a92283dc4e2ebce5a66e73c6865166ba85b703b884c1025ad01e4cf6a",
+      "duration": 109.06122448979592,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.181757,
+      "bottom": 0.267761
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.221401,
+      "bottom": 0.307406
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.261638,
+      "bottom": 0.347642
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.361637,
+      "bottom": 0.447642
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.401282,
+      "bottom": 0.487287
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.440927,
+      "bottom": 0.52634
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.539743,
+      "bottom": 0.625156
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.578796,
+      "bottom": 0.6648
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.619032,
+      "bottom": 0.705037
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.71844,
+      "bottom": 0.804444
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.758676,
+      "bottom": 0.844681
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.798321,
+      "bottom": 0.884917
+    }
+  },
+  "cues": [
+    {
+      "at": 5.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 13.55,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 22.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.95,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 48.15,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.55,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "全能上帝，万福泉源，恳求垂听我赞美。",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "上帝 恩典似水 长流,我们 高声颂恩 惠。 ",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "愿主 教我唱诗 和谐,犹如 天使颂主前。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "上帝 恩典实无穷尽，主的慈爱不变迁。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我的 一生 有主 引导,时时 刻刻蒙主 恩。 ",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "只求上帝永不离我，直到进入天家门。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "有时 如羊迷失正路，主如 牧者来找寻。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "救我 脱离一切危险，为我流血舍性命。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "救主鸿恩实在 高深，万分 之中难报一。",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "慈悲 救主恳求 助我，侍奉上帝尽我力。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我深知道我心软弱，容易离开我上帝。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "今将身心献为活祭，恳求收纳莫丢弃。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-028万福泉源歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

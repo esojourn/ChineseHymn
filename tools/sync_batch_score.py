@@ -10,6 +10,12 @@ from sync_batch_sources import image_source
 _ocr = None
 
 
+class ScoreMismatch(ValueError):
+    def __init__(self, message, evidence):
+        super().__init__(message)
+        self.evidence = evidence
+
+
 def note_rows(source, recognition, cache):
     global _ocr
     destination = cache / 'notes' / (recognition['source'] + '.json')
@@ -159,9 +165,9 @@ def score_times(source, audio, recognition, cache):
     evidence = {'algorithmVersion': 2, 'method': 'numbered-score melody/chroma matching', 'music': music,
                 'rows': rows, 'spatialTemplate': one, 'rhythmTemplate': two}
     if one['best']['key'] != two['best']['key'] or max(abs(a - b) for a, b in zip(starts_a, starts_b)) > 1:
-        raise ValueError('两组谱面节奏模板的定位不一致：' + json.dumps(evidence, ensure_ascii=False))
-    if one['best']['cost'] > .5 or one['runnerUp']['cost'] - one['best']['cost'] < .035:
-        raise ValueError('谱面旋律与实际录音匹配不足：' + json.dumps(evidence, ensure_ascii=False))
+        raise ScoreMismatch('两组谱面节奏模板的定位不一致', evidence)
+    if one['best']['cost'] > .35 or one['runnerUp']['cost'] - one['best']['cost'] < .06:
+        raise ScoreMismatch('谱面旋律与实际录音匹配不足', evidence)
     phase = [(a + b) / 2 for a, b in zip(starts_a, starts_b)]
     cue_times = [round(at + shift, 2) for shift in music['shifts'] for at in phase]
     return definition, cue_times, evidence

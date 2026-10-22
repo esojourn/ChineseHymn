@@ -2,10 +2,13 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 6,
+    "published": 12,
     "existing": 8,
-    "pending": 404,
-    "missing-audio": 2
+    "needs-calibration": 4,
+    "needs-track-alignment": 1,
+    "pending": 373,
+    "missing-audio": 2,
+    "ready-to-verify": 20
   },
   "songs": [
     {
@@ -52,17 +55,18 @@
       "songId": "01-084",
       "source": "01-084他不能救自己.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-084他不能救自己.mp3",
         "01-084他不能救自己-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口未能共同确认时间点：2,4,6"
     },
     {
       "songId": "01-119",
       "source": "01-119哎呀！救主真曾流血.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "01-119哎呀！救主真曾流血.mp3",
         "01-119哎呀！救主真曾流血-领唱.mp3"
@@ -72,7 +76,7 @@
       "songId": "01-122",
       "source": "01-122每逢思念奇妙十架.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-122每逢思念奇妙十架.mp3",
         "01-122每逢思念奇妙十架-领唱.mp3"
@@ -1964,10 +1968,11 @@
       "songId": "05-015",
       "source": "05-015称谢歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-015称谢歌.mp3"
-      ]
+      ],
+      "reason": "第 3 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-016",
@@ -1982,7 +1987,7 @@
       "songId": "05-020",
       "source": "05-020荣耀大君王歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "05-020荣耀大君王歌.mp3"
       ]
@@ -1991,16 +1996,17 @@
       "songId": "05-021",
       "source": "05-021赞父奇爱.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-021赞父奇爱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致：{\"algorithmVersion\": 2, \"method\": \"numbered-score melody/chroma matching\", \"music\": {\"period\": 40.3, \"similarity\": 0.9944853782653809, \"initialOnsetEstimate\": 7.276, \"shifts\": [0.0, 40.3, 80.6, 120.9]}, \"rows\": [{\"text\": \"3.*231|5.*453"
     },
     {
       "songId": "05-023",
       "source": "05-023赞美歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "05-023赞美歌.mp3"
       ]
@@ -2009,7 +2015,7 @@
       "songId": "05-027",
       "source": "05-027天父世界.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "05-027天父世界.mp3"
       ]
@@ -2018,7 +2024,7 @@
       "songId": "05-028",
       "source": "05-028万福泉源歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "05-028万福泉源歌-领唱.mp3"
       ]
@@ -2027,7 +2033,7 @@
       "songId": "05-029",
       "source": "05-029愿仍高唱歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "05-029愿仍高唱歌.mp3"
       ]
@@ -2036,7 +2042,7 @@
       "songId": "05-033",
       "source": "05-033赞主权能.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-033赞主权能.mp3"
       ]
@@ -2045,7 +2051,7 @@
       "songId": "05-036",
       "source": "05-036贺他为王歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-036贺他为王歌.mp3",
         "05-036贺他为王歌-领唱.mp3"
@@ -2055,16 +2061,17 @@
       "songId": "05-037",
       "source": "05-037美哉羔羊歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-037美哉羔羊歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-038",
       "source": "05-038赞美耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-038赞美耶稣歌.mp3"
       ]
@@ -2073,7 +2080,7 @@
       "songId": "05-039",
       "source": "05-039拥戴歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-039拥戴歌.mp3"
       ]
@@ -2082,7 +2089,7 @@
       "songId": "05-040",
       "source": "05-040荣耀归主名歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-040荣耀归主名歌.mp3"
       ]
@@ -2091,7 +2098,7 @@
       "songId": "05-041",
       "source": "05-041颂赞主圣名歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-041颂赞主圣名歌.mp3"
       ]
@@ -2100,7 +2107,7 @@
       "songId": "05-042",
       "source": "05-042尊贵名歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-042尊贵名歌.mp3"
       ]
@@ -2109,7 +2116,7 @@
       "songId": "05-044",
       "source": "05-044主配受赞美.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-044主配受赞美.mp3",
         "05-044主配受赞美-领唱.mp3"
@@ -2119,7 +2126,7 @@
       "songId": "05-046",
       "source": "05-046赞美不尽歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-046赞美不尽歌.mp3",
         "05-046赞美不尽歌-领唱.mp3"
@@ -2129,7 +2136,7 @@
       "songId": "05-047",
       "source": "05-047颂主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-047颂主歌.mp3",
         "05-047颂主歌-领唱.mp3"
@@ -2139,7 +2146,7 @@
       "songId": "05-048",
       "source": "05-048道路真理生命歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-048道路真理生命歌.mp3",
         "05-048道路真理生命歌-领唱.mp3"
@@ -2149,7 +2156,7 @@
       "songId": "05-049",
       "source": "05-049主名甜美歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-049主名甜美歌.mp3"
       ]
@@ -2158,7 +2165,7 @@
       "songId": "05-053",
       "source": "05-053奇妙救主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-053奇妙救主歌.mp3",
         "05-053奇妙救主歌-领唱.mp3"
@@ -2168,7 +2175,7 @@
       "songId": "05-054",
       "source": "05-054心向主宝座歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-054心向主宝座歌.mp3"
       ]
@@ -2177,7 +2184,7 @@
       "songId": "05-055",
       "source": "05-055赞美主恩歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-055赞美主恩歌.mp3"
       ]
@@ -2186,7 +2193,7 @@
       "songId": "05-058",
       "source": "05-058生命活水歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-058生命活水歌.mp3"
       ]
@@ -2195,7 +2202,7 @@
       "songId": "05-060",
       "source": "05-060圣灵光照歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-060圣灵光照歌.mp3"
       ]
@@ -2204,7 +2211,7 @@
       "songId": "05-064",
       "source": "05-064主行新事歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-064主行新事歌.mp3"
       ]
@@ -2213,7 +2220,7 @@
       "songId": "05-065",
       "source": "05-065求充满我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-065求充满我歌.mp3",
         "05-065求充满我歌-领唱.mp3"
@@ -2233,7 +2240,7 @@
       "songId": "05-073",
       "source": "05-073圣诞佳音歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-073圣诞佳音歌.mp3",
         "05-073圣诞佳音歌-领唱.mp3"

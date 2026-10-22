@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "songId": "05-129",
+  "status": "reviewed",
+  "source": {
+    "file": "05-129信徒相爱歌.jpg",
+    "sha256": "0bdfe3bd39effb657367ace6887305f0fca98acfc7f113065a60e0eaa95e6ae1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-129信徒相爱歌.mp3",
+      "sha256": "b3d0a63f0eb882e97185c2e900969cd97d242953171395e0ef8b71cb4012cfd5",
+      "duration": 231.82145124716553,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 21.65,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.08,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 42.1,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 53.85,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 63.65,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 74.15,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 84.1,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 95.85,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 105.75,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 116.25,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 126.2,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 137.9,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 147.65,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 158.15,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 168.2,
+          "region": "s3_chorus",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 179.95,
+          "region": "s4_chorus",
+          "label": "第4段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 189.75,
+          "region": "s1_v5",
+          "label": "第5段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 200.25,
+          "region": "s2_v5",
+          "label": "第5段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 210.2,
+          "region": "s3_chorus",
+          "label": "第5段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 221.95,
+          "region": "s4_chorus",
+          "label": "第5段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-129信徒相爱歌-领唱.mp3",
+      "sha256": "95dd758094ebe199b0ea198b891319a965012ecd83ec4eee27eacce53c11b8fd",
+      "duration": 231.528,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.192906,
+      "bottom": 0.280287
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.226553,
+      "bottom": 0.315115
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.260791,
+      "bottom": 0.349352
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.295029,
+      "bottom": 0.38359
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.329266,
+      "bottom": 0.417237
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.457953,
+      "bottom": 0.545924
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.4916,
+      "bottom": 0.579571
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.525247,
+      "bottom": 0.613218
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.558895,
+      "bottom": 0.646866
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.592542,
+      "bottom": 0.681103
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.759598,
+      "bottom": 0.846979
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.888285,
+      "bottom": 0.976256
+    }
+  },
+  "cues": [
+    {
+      "at": 21.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.8,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.8,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.95,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.9,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.65,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.45,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 157.95,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 167.9,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 179.65,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 189.45,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 199.95,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 209.9,
+      "region": "s3_chorus",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 221.65,
+      "region": "s4_chorus",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "1同蒙天召姊妹兄弟，主内彼此团契；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "以 灵相通，以 爱相系，大 家连为一体。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "灵风吹煦，灵雨，滋润，气",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候温和最宜人，同沐主恩无尽（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "一主、一信、一洗、一神，莫非灵界中人；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "同 气连枝，心 心相印，胜于骨肉之亲。，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "灵风吹煦，灵雨，滋润，气",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候温和最宜人，同沐主恩无尽（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "情谊深厚，和睦同居，共表友爱精神；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "忧患相关，互 相体恤，喜乐由心入心。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "灵风吹煦，灵雨，滋润，气",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候温和最宜人，同沐主恩无尽（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "经筵圣会时聚主前，深蒙圣父恩春；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "饱餐灵食，满我心愿，滋味何能言宣！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "灵风吹煦，灵雨，滋润，气",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候温和最宜人，同沐主恩无尽（阿们）",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "灵内相聚，永不分散，无分时间、空间；",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "福 乐美满，在 地如天，欣 感主恩无边。",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "灵风吹煦，灵雨，滋润，气",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候温和最宜人，同沐主恩无尽（阿们）",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-129信徒相爱歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

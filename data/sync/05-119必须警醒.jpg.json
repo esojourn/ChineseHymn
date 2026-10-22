@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-119",
+  "status": "reviewed",
+  "source": {
+    "file": "05-119必须警醒.jpg",
+    "sha256": "dad63a5bff933fd5ded0da01ce712ce8849156d050c1d4de2f2b723cfef2c409",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-119必须警醒.mp3",
+      "sha256": "af721940f1c914a4b0b48d7159d8e38af1648c5d34df6fbdc20f27bf26d2bbc9",
+      "duration": 198.44133333333335,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.175513,
+      "bottom": 0.264398
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.217874,
+      "bottom": 0.306118
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.258952,
+      "bottom": 0.347838
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.301314,
+      "bottom": 0.3902
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.41107,
+      "bottom": 0.499313
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.452789,
+      "bottom": 0.541033
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.493868,
+      "bottom": 0.582111
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.535587,
+      "bottom": 0.623189
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.683854,
+      "bottom": 0.772097
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.793609,
+      "bottom": 0.882495
+    }
+  },
+  "cues": [
+    {
+      "at": 22.6,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.5,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.4,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.5,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.4,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.5,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.5,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.4,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.6,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 165.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 176.5,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 187.4,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣再来奖赏他众仆人，或在正午或夜间，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "你我可曾时刻做醒等候，灯盏明亮油满添？",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "你能否说：“生啊，我已预备，光明天家我能进！”",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主来时候我们是否醒，欢喜等候迎接主来临？",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "若主耶稣降临时在清晨，一一呼唤我众人，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "所有工程都要向主面陈，但愿主夸“好仆人”！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "你能否说：“生啊，我已预备，光明天家我能进！”",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主来时候我们是否醒，欢喜等候迎接主来临？",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主所托付各样大小事情，我们是否尽忠心？",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "若我作工存着无亏良心，就能享永久安宁。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "你能否说：“生啊，我已预备，光明天家我能进！”",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主来时候我们是否醒，欢喜等候迎接主来临？",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "时常等候主的必有福份，得进入荣耀欢欣，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "主来时候无论半夜黎明，我们能否常醒？",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "你能否说：“生啊，我已预备，光明天家我能进！”",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主来时候我们是否醒，欢喜等候迎接主来临？",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-119必须警醒.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

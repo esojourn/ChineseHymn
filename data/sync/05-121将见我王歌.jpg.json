@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-121",
+  "status": "reviewed",
+  "source": {
+    "file": "05-121将见我王歌.jpg",
+    "sha256": "cac1312d250de128044a118f516d3d3088f0059203b7542aab3198ed72b567b0",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-121将见我王歌.mp3",
+      "sha256": "18a49cbd5c54b8e338cc890fbfaddd77ae801e215ddaff385f1622e63c42499d",
+      "duration": 147.384,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.195935,
+      "bottom": 0.279393
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.235257,
+      "bottom": 0.31932
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.275185,
+      "bottom": 0.359852
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.407066,
+      "bottom": 0.490524
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.446388,
+      "bottom": 0.529846
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.485711,
+      "bottom": 0.569774
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.653285,
+      "bottom": 0.736743
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.783956,
+      "bottom": 0.868019
+    }
+  },
+  "cues": [
+    {
+      "at": 21.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.25,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.2,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.8,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.25,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.2,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.8,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.35,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.3,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 135.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我所行的天路虽有时稀旷，将快看见我君王；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "在那赐福之日天空要开朗，将快看见我君王。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "将快看见我君王，将快高声同颂扬；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主必赏赐冠冕，信徒有荣光，将快看见我君王。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "一切痛苦逆境皆成为既往，将快看见我君王；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "人若忍耐到底可得永福享，将快看见我君王。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "将快看见我君王，将快高声同颂扬；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主必赏赐冠冕，信徒有荣光，将快看见我君王。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "古今真实信徒相爱为总纲，将快看见我君王；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "忧愁永远停止，福乐永久长，将快看见我君王。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "将快看见我君王，将快高声同颂扬；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主必赏赐冠冕，信徒有荣光，将快看见我君王。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-121将见我王歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

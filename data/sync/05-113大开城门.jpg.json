@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "songId": "05-113",
+  "status": "reviewed",
+  "source": {
+    "file": "05-113大开城门.jpg",
+    "sha256": "ba44e267e51829d3cc43f93095cdf10630670e729cf8e46f8ae05ca04de29337",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-113大开城门.mp3",
+      "sha256": "5454a8b44930f927bdf0ea53d67f5e027e76ad876b5e639bd30ff4657ed20971",
+      "duration": 147.52,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 65.2,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 79.6,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 89.75,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 102.35,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 113.1,
+          "region": "s5_v1",
+          "label": "第1段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 124.65,
+          "region": "s6_chorus",
+          "label": "第1段：第6谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 135.1,
+          "region": "s7_chorus",
+          "label": "第1段：第7谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-113大开城门-领唱.mp3",
+      "sha256": "bd09f98366fda23de502e08c2ca1dc3c0067d8b380764580c99c6c5eaed06cfe",
+      "duration": 148.92,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.128994,
+      "bottom": 0.207895
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.158226,
+      "bottom": 0.238281
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.248696,
+      "bottom": 0.328518
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.278389,
+      "bottom": 0.358444
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.367939,
+      "bottom": 0.4473
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.396711,
+      "bottom": 0.477226
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.485567,
+      "bottom": 0.566082
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.515492,
+      "bottom": 0.596007
+    },
+    "s5_v1": {
+      "kind": "image",
+      "top": 0.634734,
+      "bottom": 0.715249
+    },
+    "s5_v2": {
+      "kind": "image",
+      "top": 0.66466,
+      "bottom": 0.745175
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.769862,
+      "bottom": 0.849684
+    },
+    "s7_chorus": {
+      "kind": "image",
+      "top": 0.846748,
+      "bottom": 0.92611
+    }
+  },
+  "cues": [
+    {
+      "at": 65.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 80.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.45,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.05,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 113.8,
+      "region": "s5_v1",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.35,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 135.8,
+      "region": "s7_chorus",
+      "label": "第1段：第7谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "众城门哪，把你头抬！永久门户请开！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "荣耀的王凯旋归来,齐来欢迎敬拜！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "荣耀的王，你说是谁？这么威武、尊贵！．",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "他是救主，大能作为，胜过地狱、魔鬼，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_v1",
+        "text": "他是救主，大能作为，胜过地狱、魔鬼。",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "哈利路亚！哈利路亚！哈利路亚！哈利路亚！",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s7_chorus",
+        "text": "哈利路亚！阿们！阿们！阿们！",
+        "label": "第1段：第7谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-113大开城门.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

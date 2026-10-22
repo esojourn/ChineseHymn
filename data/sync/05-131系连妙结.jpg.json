@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-131",
+  "status": "reviewed",
+  "source": {
+    "file": "05-131系连妙结.jpg",
+    "sha256": "abeb315d65ef184e79b7388fd1de023c71c8c8089dc501b7dc9464d87a5bf80a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-131系连妙结-领唱.mp3",
+      "sha256": "d819b692660e214a34fa7b1f48938b4d2f3c256e5965ef55c3b682fe21709d07",
+      "duration": 134.002375,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.250033,
+      "bottom": 0.346554
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.287845,
+      "bottom": 0.38369
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.326331,
+      "bottom": 0.421501
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.364143,
+      "bottom": 0.459313
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.402629,
+      "bottom": 0.497124
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.530243,
+      "bottom": 0.625413
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.568729,
+      "bottom": 0.664574
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.607216,
+      "bottom": 0.702386
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.646378,
+      "bottom": 0.740872
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.684189,
+      "bottom": 0.779359
+    }
+  },
+  "cues": [
+    {
+      "at": 6.25,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 31.85,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 43.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 69.15,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.15,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 94.85,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 108.75,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.45,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "福哉系连妙结，在主爱中同心；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "教会圣徒心灵团契，在地如在天庭。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "信众在父座前，同心虔诚祈祷；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "同一艰难、安乐、关心，同一希望、目标。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "大家分当忧患，大家分肩重担；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "大家共洒同情之泪，大家休戚相关。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "信众生离死别，不像世人哀痛；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "天上人间藉主同心，离别终必重逢。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "脱离忧、劳、苦、罪，我们共享自由；",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "完全友爱统治人天，经过万古千秋。",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-131系连妙结.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-122",
+  "status": "reviewed",
+  "source": {
+    "file": "05-122教会根基.jpg",
+    "sha256": "bf02e18793d9830b27e2def1314eed64e5926fdd799eb7058b62e4a95e543dbf",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-122教会根基.mp3",
+      "sha256": "c5d63133d0653daf662b80ab20a6bd2e66f160139a2f49e98957f89abd6c0b9f",
+      "duration": 166.35733333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.156836,
+      "bottom": 0.240561
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.193732,
+      "bottom": 0.277457
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.230629,
+      "bottom": 0.314353
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.267525,
+      "bottom": 0.351249
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.351084,
+      "bottom": 0.434265
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.387437,
+      "bottom": 0.470619
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.423791,
+      "bottom": 0.507515
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.460144,
+      "bottom": 0.543869
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.543161,
+      "bottom": 0.626342
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.580057,
+      "bottom": 0.663238
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.61641,
+      "bottom": 0.699592
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.652764,
+      "bottom": 0.737031
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.737951,
+      "bottom": 0.82059
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.774304,
+      "bottom": 0.858028
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.8112,
+      "bottom": 0.894382
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.847554,
+      "bottom": 0.931278
+    }
+  },
+  "cues": [
+    {
+      "at": 5.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.35,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 25.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.15,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 55.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.45,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.9,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.65,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.25,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 136.15,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 146.2,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.95,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "教会惟一的根基，是主耶稣基督；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "圣水圣言所造成，是主的新创作；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "主从上天来求她，为主圣洁新妇；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "舍身流血求得她，建立万年基础。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "虽从万邦选出来，信徒却成一体。",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "教会救恩的凭证，一主、一信、一洗；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "同尊惟一的圣名，同餐惟一天粮，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "同 怀惟一的 希望，同蒙恩爱久长。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "她在争战喧声里,艰难劳苦之中，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "她却深信有平安，安心静待成功；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "直至欲穿的望眼，看见光荣远象，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "到 时凯旋的 教会，得 享永憩无 疆。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "她虽在地却联合真神三位一体，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "已享安息圣众的神秘甜蜜团契；，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "恳求救主使我们，能象快乐圣众，，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "同 样温柔又谦虚，永在主前供奉。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-122教会根基.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

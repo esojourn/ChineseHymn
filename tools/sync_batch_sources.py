@@ -7,7 +7,8 @@ from pathlib import Path
 spec = importlib.util.spec_from_file_location('sync_prepare', Path(__file__).with_name('prepare-sync.py'))
 prepare = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(prepare)
-VERSE = re.compile(r'^\s*(\d{1,2})\s*[.．、)]\s*')
+VERSE = re.compile(r'^\s*(\d{1,2})(?:\s*[.．、)]\s*|\s+(?=\D))')
+CHINESE_VERSE = re.compile(r'^\s*[（(]([一二三四五六七八九十])[）)]\s*')
 CHORUS = re.compile(r'^\s*(?:[（(]?副(?:歌)?[）)]?\s*[:：]?|chorus\s*[:：]?)$', re.I)
 
 
@@ -23,9 +24,21 @@ def clean(text, language='zh'):
     return ''.join(re.findall(pattern, text))
 
 
+def verse_number(text):
+    match = VERSE.match(text)
+    if match:
+        return int(match[1])
+    match = CHINESE_VERSE.match(text)
+    return '一二三四五六七八九十'.index(match[1]) + 1 if match else None
+
+
+def strip_verse(text):
+    return CHINESE_VERSE.sub('', VERSE.sub('', text))
+
+
 def text_source(path, language='zh'):
     lines = prepare.read_text(path).split('\n')
-    numbered = [i for i, line in enumerate(lines) if VERSE.match(line) and int(VERSE.match(line)[1]) == 1]
+    numbered = [i for i, line in enumerate(lines) if verse_number(line) == 1]
     first = numbered[0] if numbered else next((i + 1 for i, line in enumerate(lines) if not line.strip()), 1)
     regions, verses = {}, {}
     verse, block, pending = 1, 1, []
@@ -35,7 +48,7 @@ def text_source(path, language='zh'):
         if not pending:
             return
         region_id = f'r{len(regions) + 1}'
-        text = ' '.join(VERSE.sub('', lines[i]) for i in pending if clean(VERSE.sub('', lines[i]), language))
+        text = ' '.join(strip_verse(lines[i]) for i in pending if clean(strip_verse(lines[i]), language))
         if clean(text, language):
             regions[region_id] = {'kind': 'text', 'startLine': pending[0], 'endLine': pending[-1]}
             verses.setdefault(verse if has_numbers else block, []).append(
@@ -44,11 +57,11 @@ def text_source(path, language='zh'):
 
     for i in range(first, len(lines)):
         line = lines[i].strip()
-        match = VERSE.match(line)
-        if match and int(match[1]) != verse:
+        number = verse_number(line)
+        if number and number != verse:
             flush()
-            verse = int(match[1])
-        if not line or CHORUS.match(line) or (match and not clean(VERSE.sub('', line), language)):
+            verse = number
+        if not line or CHORUS.match(line) or (number and not clean(strip_verse(line), language)):
             flush()
             if not has_numbers and not line:
                 block += 1

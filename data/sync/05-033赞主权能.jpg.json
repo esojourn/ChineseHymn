@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-033",
+  "status": "reviewed",
+  "source": {
+    "file": "05-033赞主权能.jpg",
+    "sha256": "5be0e199cd0ea9c4f001093c80abf1b4c6d5bf80f7d7c754fee73ced5175d8be",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-033赞主权能.mp3",
+      "sha256": "ac3ced9cd92abbc74494e33917974e5114d438a7fa167588c5730f3fae65a1ee",
+      "duration": 197.908,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.194687,
+      "bottom": 0.281504
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.239175,
+      "bottom": 0.324701
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.282373,
+      "bottom": 0.368544
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.326215,
+      "bottom": 0.412387
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.450006,
+      "bottom": 0.534888
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.493204,
+      "bottom": 0.578731
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.536402,
+      "bottom": 0.622574
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.578956,
+      "bottom": 0.664482
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.749168,
+      "bottom": 0.83534
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.878117,
+      "bottom": 0.965578
+    }
+  },
+  "cues": [
+    {
+      "at": 22.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.2,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.65,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.3,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.1,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.0,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.45,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.1,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 165.1,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.9,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 187.35,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "感谢至高真神，赞美主大慈爱，．",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "万君之君独尊，万古千秋主宰。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩主权永远常在，主恩主权永远常在，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞感谢，直到万代。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "太初创造天地，高悬日月众星，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "昼夜光照普世， 年、月、日、时分 清。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩主权永远常在，主恩主权永远常在，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞感谢，直到万代。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "垂怜万方百姓，无法自赎罪忿，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "差遣爱子舍命，救我得升于天。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩主权永远常在，主恩主权永远常在，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞感谢，直到万代。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主特摆设筵席，要喂养我心灵，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "天下九州四海，当传拯救鸿恩。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩主权永远常在，主恩主权永远常在，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞感谢，直到万代。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-033赞主权能.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

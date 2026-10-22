@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-041",
+  "status": "reviewed",
+  "source": {
+    "file": "05-041颂赞主圣名歌.jpg",
+    "sha256": "8d0e7954182adc825a429c44ca108bc1a08096c80b4787ecb85adb32d4b20f95",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-041颂赞主圣名歌.mp3",
+      "sha256": "b5e21d0de1504f58e4eb4652d3c836116f2abec1233945fbe16ea4151bac3fbf",
+      "duration": 189.95201814058956,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.169107,
+      "bottom": 0.252558
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.207139,
+      "bottom": 0.291708
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.245729,
+      "bottom": 0.329739
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.28432,
+      "bottom": 0.36833
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.410718,
+      "bottom": 0.494168
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.449308,
+      "bottom": 0.5322
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.48678,
+      "bottom": 0.569672
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.524811,
+      "bottom": 0.607144
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.687004,
+      "bottom": 0.771573
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.815079,
+      "bottom": 0.899089
+    }
+  },
+  "cues": [
+    {
+      "at": 22.75,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.85,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.35,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.85,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.35,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.45,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 148.85,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 157.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 168.95,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 179.45,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "颂赞归与耶稣圣名，至高！至圣！至尊！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "天上地下歌颂主名，歌声昼夜不停。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣圣名满有权能，使魔鬼都逃遁；·",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "能 使罪人出死入生，得到天堂福份。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主名称为奇妙、策士、全能和平之君；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "万 膝跪拜，万口承认，荣耀永归主名。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主名何等佳美馨香！普遍宇宙穹苍；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "主名超乎万名之上，配受一切颂扬。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "颂赞主圣名，颂赞主圣名，颂赞荣耀归主圣名！",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-041颂赞主圣名歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

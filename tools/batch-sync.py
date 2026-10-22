@@ -32,10 +32,17 @@ def inventory(root=ROOT):
             continue
         tracks = [path for path in [source.with_suffix('.mp3'), source.with_name(source.stem + '-领唱.mp3')] if path.exists()]
         lead = next((path for path in tracks if path.stem.endswith('-领唱')), None)
+        lyrics_available = True
+        if source.suffix == '.txt':
+            from sync_batch_sources import prepare
+            lines = prepare.read_text(source).split('\n')
+            body = '\n'.join(line for line in lines[1:] if not re.match(r'^\s*(?:https?://|歌词整理中)', line))
+            lyrics_available = len(re.findall(r'[\u3400-\u9fffA-Za-z]', body)) >= 12
         songs.append({'songId': re.match(r'\d{2}-\d{1,3}', source.name)[0], 'source': source.name,
                       'sha256': checksum(source), 'type': 'text' if source.suffix == '.txt' else 'image',
                       'tracks': [{'file': path.name, 'sha256': checksum(path)} for path in tracks],
                       'reference': (lead or tracks[0]).name if tracks else None,
+                      'lyricsAvailable': lyrics_available,
                       'existing': (root / 'data/sync' / (source.name + '.json')).exists()})
     return songs
 
@@ -46,13 +53,13 @@ def progress(songs, cache):
     for song in songs:
         destination = ROOT / 'data/sync' / (song['source'] + '.json')
         data = json.loads(destination.read_text()) if destination.exists() else None
-        status = ('published' if data.get('provenance', {}).get('batch') == 'bulk-2026-10' else 'existing') if data else 'missing-audio' if not song['tracks'] else 'pending'
+        status = ('published' if data.get('provenance', {}).get('batch') == 'bulk-2026-10' else 'existing') if data else 'missing-audio' if not song['tracks'] else 'missing-lyrics' if not song['lyricsAvailable'] else 'pending'
         item = {'songId': song['songId'], 'source': song['source'], 'type': song['type'], 'status': status,
                 'tracks': [track['file'] for track in song['tracks']]}
         if data and any(not track['reviewed'] for track in data['tracks']):
             item['status'] = 'partially-published'
             item['pendingTracks'] = [track['file'] for track in data['tracks'] if not track['reviewed']]
-        if not data and song['tracks']:
+        if not data and song['tracks'] and song['lyricsAvailable']:
             ready = cache / 'ready' / (song['source'] + '.json')
             if ready.exists():
                 candidate = json.loads(ready.read_text())
@@ -228,6 +235,8 @@ def main():
                           'withAudio': sum(bool(song['tracks']) for song in songs)}, ensure_ascii=False))
         return
     selected = [song for song in songs if not song['existing'] and (not args.songs or song['songId'] in args.songs)]
+    if args.stage == 'align':
+        selected = [song for song in selected if song['lyricsAvailable']]
     selected = [song for song in selected if song['type'] == 'image'] if args.stage == 'ocr' else [song for song in selected if song['reference']]
     if args.stage in ('align', 'score'):
         from sync_batch_align import generate

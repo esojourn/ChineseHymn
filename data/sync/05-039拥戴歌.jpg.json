@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-039",
+  "status": "reviewed",
+  "source": {
+    "file": "05-039拥戴歌.jpg",
+    "sha256": "f19e8072101719076528df8c8796d4dc41cb8a90895c9b8327bf87a1de2c0a62",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-039拥戴歌.mp3",
+      "sha256": "11fbacc950a7ea700dbe16458276eacf5ce764d064698d3b6204b2043125ed7a",
+      "duration": 174.78399092970523,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.14802,
+      "bottom": 0.236224
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.181352,
+      "bottom": 0.269557
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.214684,
+      "bottom": 0.302333
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.247461,
+      "bottom": 0.335665
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.338568,
+      "bottom": 0.426217
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.371345,
+      "bottom": 0.458994
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.404121,
+      "bottom": 0.49177
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.437454,
+      "bottom": 0.525102
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.526339,
+      "bottom": 0.613988
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.559671,
+      "bottom": 0.64732
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.593003,
+      "bottom": 0.680652
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.626335,
+      "bottom": 0.713429
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.716332,
+      "bottom": 0.804536
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.750219,
+      "bottom": 0.837868
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.783551,
+      "bottom": 0.8712
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.816884,
+      "bottom": 0.904532
+    }
+  },
+  "cues": [
+    {
+      "at": 6.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.45,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.8,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.7,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.8,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 79.7,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.7,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.45,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 142.55,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.9,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 163.8,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "快来拥戴为王，圣羔在宝座上，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "听啊！好乐传遍诸天，和声压倒群响；·",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "醒啊!我心同唱，颂他救恩浩荡，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "欢呼为你受死之主，千秋万岁无疆。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "快来拥戴为王，圣洁至尊神子，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "跟他的人快乐拥戴，因他亦是人子；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "尘世千万忧伤，一切经他亲尝，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "因他决心担负诸累，群生得享安康。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "快来拥戴为王，独-一生命之王，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "万邦民众都蒙救渡，因他消灭死亡；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "快来歌颂欢欣，谢他特殊宏恩，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "因他一死战胜万死，永生普及群生。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "快来拥戴为王，永建和平之王，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "普天之下战争止息，干戈化为颂扬；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "主治万国万方，主权地久天久，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "宝血所滋，生命花放，蔚成异彩天香。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-039拥戴歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

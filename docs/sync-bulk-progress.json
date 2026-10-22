@@ -2,13 +2,13 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 12,
+    "published": 18,
     "existing": 8,
-    "needs-calibration": 4,
-    "needs-track-alignment": 1,
-    "pending": 373,
+    "needs-calibration": 11,
+    "ready-to-verify": 29,
+    "pending": 329,
     "missing-audio": 2,
-    "ready-to-verify": 20
+    "missing-lyrics": 23
   },
   "songs": [
     {
@@ -60,13 +60,13 @@
         "01-084他不能救自己.mp3",
         "01-084他不能救自己-领唱.mp3"
       ],
-      "reason": "两个窗口未能共同确认时间点：2,4,6"
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4,6"
     },
     {
       "songId": "01-119",
       "source": "01-119哎呀！救主真曾流血.txt",
       "type": "text",
-      "status": "needs-track-alignment",
+      "status": "ready-to-verify",
       "tracks": [
         "01-119哎呀！救主真曾流血.mp3",
         "01-119哎呀！救主真曾流血-领唱.mp3"
@@ -96,11 +96,12 @@
       "songId": "01-133",
       "source": "01-133金琴在天响起.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-133金琴在天响起.mp3",
         "01-133金琴在天响起-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,4,5"
     },
     {
       "songId": "01-157",
@@ -1630,11 +1631,12 @@
       "songId": "04-184",
       "source": "04-184歌颂救赎主.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-184歌颂救赎主.mp3",
         "04-184歌颂救赎主-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "04-369",
@@ -2000,7 +2002,7 @@
       "tracks": [
         "05-021赞父奇爱.mp3"
       ],
-      "reason": "两组谱面节奏模板的定位不一致：{\"algorithmVersion\": 2, \"method\": \"numbered-score melody/chroma matching\", \"music\": {\"period\": 40.3, \"similarity\": 0.9944853782653809, \"initialOnsetEstimate\": 7.276, \"shifts\": [0.0, 40.3, 80.6, 120.9]}, \"rows\": [{\"text\": \"3.*231|5.*453"
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-023",
@@ -2042,7 +2044,7 @@
       "songId": "05-033",
       "source": "05-033赞主权能.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-033赞主权能.mp3"
       ]
@@ -2051,7 +2053,7 @@
       "songId": "05-036",
       "source": "05-036贺他为王歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-036贺他为王歌.mp3",
         "05-036贺他为王歌-领唱.mp3"
@@ -2071,7 +2073,7 @@
       "songId": "05-038",
       "source": "05-038赞美耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-038赞美耶稣歌.mp3"
       ]
@@ -2080,7 +2082,7 @@
       "songId": "05-039",
       "source": "05-039拥戴歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-039拥戴歌.mp3"
       ]
@@ -2089,7 +2091,7 @@
       "songId": "05-040",
       "source": "05-040荣耀归主名歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-040荣耀归主名歌.mp3"
       ]
@@ -2098,7 +2100,7 @@
       "songId": "05-041",
       "source": "05-041颂赞主圣名歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-041颂赞主圣名歌.mp3"
       ]
@@ -2250,7 +2252,7 @@
       "songId": "05-074",
       "source": "05-074新生王歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-074新生王歌-领唱.mp3"
       ]
@@ -2259,17 +2261,18 @@
       "songId": "05-075",
       "source": "05-075普世欢腾歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-075普世欢腾歌.mp3",
         "05-075普世欢腾歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-076",
       "source": "05-076齐来崇拜歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-076齐来崇拜歌.mp3"
       ]
@@ -2278,7 +2281,7 @@
       "songId": "05-078",
       "source": "05-078马槽歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-078马槽歌.mp3",
         "05-078马槽歌-领唱.mp3"
@@ -2288,7 +2291,7 @@
       "songId": "05-085",
       "source": "05-085扬声赞美歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-085扬声赞美歌.mp3",
         "05-085扬声赞美歌-领唱.mp3"
@@ -2298,7 +2301,7 @@
       "songId": "05-090",
       "source": "05-090耶稣独自祷告.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-090耶稣独自祷告.mp3"
       ]
@@ -2307,16 +2310,17 @@
       "songId": "05-091",
       "source": "05-091父旨成全歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-091父旨成全歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-093",
       "source": "05-093十架永存.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-093十架永存.mp3",
         "05-093十架永存-领唱.mp3"
@@ -2326,7 +2330,7 @@
       "songId": "05-094",
       "source": "05-094领到各各他歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-094领到各各他歌.mp3",
         "05-094领到各各他歌-领唱.mp3"
@@ -2336,27 +2340,29 @@
       "songId": "05-096",
       "source": "05-096在十字架.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-096在十字架.mp3",
         "05-096在十字架-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-098",
       "source": "05-098奇妙十架歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-098奇妙十架歌.mp3",
         "05-098奇妙十架歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-099",
       "source": "05-099宝架清影.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-099宝架清影.mp3"
       ]
@@ -2365,7 +2371,7 @@
       "songId": "05-100",
       "source": "05-100万古磐石.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-100万古磐石.mp3",
         "05-100万古磐石-领唱.mp3"
@@ -2375,7 +2381,7 @@
       "songId": "05-102",
       "source": "05-102宝架歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-102宝架歌.mp3"
       ]
@@ -2384,7 +2390,7 @@
       "songId": "05-103",
       "source": "05-103我信主耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-103我信主耶稣歌.mp3",
         "05-103我信主耶稣歌-领唱.mp3"
@@ -2394,7 +2400,7 @@
       "songId": "05-104",
       "source": "05-104复活良辰.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-104复活良辰.mp3"
       ]
@@ -2403,7 +2409,7 @@
       "songId": "05-106",
       "source": "05-106基督复生歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-106基督复生歌.mp3"
       ]
@@ -2412,7 +2418,7 @@
       "songId": "05-107",
       "source": "05-107大启乐园歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-107大启乐园歌.mp3"
       ]
@@ -2421,11 +2427,12 @@
       "songId": "05-108",
       "source": "05-108主复活.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-108主复活.mp3",
         "05-108主复活-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-113",
@@ -3685,7 +3692,7 @@
       "songId": "06-015",
       "source": "06-015不是我，乃是基督在我里面活.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-015不是我，乃是基督在我里面活.mp3"
       ]
@@ -3766,7 +3773,7 @@
       "songId": "06-024",
       "source": "06-024Amazing Grace.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-024Amazing Grace.mp3"
       ]
@@ -3775,7 +3782,7 @@
       "songId": "06-025",
       "source": "06-025Away In A Manger.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-025Away In A Manger.mp3"
       ]
@@ -3784,7 +3791,7 @@
       "songId": "06-026",
       "source": "06-026Just As I Am.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-026Just As I Am.mp3"
       ]
@@ -3793,7 +3800,7 @@
       "songId": "06-027",
       "source": "06-027O Come, All Ye Faithful.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-027O Come, All Ye Faithful.mp3"
       ]
@@ -3802,7 +3809,7 @@
       "songId": "06-028",
       "source": "06-028Away in a Manger - Benjamin.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-028Away in a Manger - Benjamin.mp3"
       ]
@@ -3811,7 +3818,7 @@
       "songId": "06-029",
       "source": "06-029Abide with me - Chris Dodd.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-029Abide with me - Chris Dodd.mp3"
       ]
@@ -3820,7 +3827,7 @@
       "songId": "06-030",
       "source": "06-030Yet Not I but Through Christ in Me.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-030Yet Not I but Through Christ in Me.mp3"
       ]
@@ -3829,7 +3836,7 @@
       "songId": "06-031",
       "source": "06-031Jesus, Strong and Kind.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-031Jesus, Strong and Kind.mp3"
       ]
@@ -3838,7 +3845,7 @@
       "songId": "06-032",
       "source": "06-032Facing A Task Unfinished.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-032Facing A Task Unfinished.mp3"
       ]
@@ -3847,7 +3854,7 @@
       "songId": "06-033",
       "source": "06-033He Will Hold Me Fast.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-033He Will Hold Me Fast.mp3"
       ]
@@ -3856,7 +3863,7 @@
       "songId": "06-034",
       "source": "06-034His Mercy Is More.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-034His Mercy Is More.mp3"
       ]
@@ -3865,7 +3872,7 @@
       "songId": "06-035",
       "source": "06-035Holy, Holy, Holy Lord God Almighty (Live).txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-035Holy, Holy, Holy Lord God Almighty (Live).mp3"
       ]
@@ -3874,7 +3881,7 @@
       "songId": "06-036",
       "source": "06-036Holy, Holy, Holy.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-036Holy, Holy, Holy.mp3"
       ]
@@ -3883,7 +3890,7 @@
       "songId": "06-037",
       "source": "06-037How Great Thou Art.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-037How Great Thou Art.mp3"
       ]
@@ -3892,7 +3899,7 @@
       "songId": "06-038",
       "source": "06-038In Christ Alone.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-038In Christ Alone.mp3"
       ]
@@ -3901,7 +3908,7 @@
       "songId": "06-039",
       "source": "06-039Jesus Paid It All.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-039Jesus Paid It All.mp3"
       ]
@@ -3910,7 +3917,7 @@
       "songId": "06-040",
       "source": "06-040The Lord Is My Salvation.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-040The Lord Is My Salvation.mp3"
       ]
@@ -3919,7 +3926,7 @@
       "songId": "06-041",
       "source": "06-041This Is My Father's World.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-041This Is My Father's World.mp3"
       ]
@@ -3928,7 +3935,7 @@
       "songId": "06-042",
       "source": "06-042I Will Wait For You (Psalm 130).txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-042I Will Wait For You (Psalm 130).mp3"
       ]
@@ -3937,7 +3944,7 @@
       "songId": "06-043",
       "source": "06-043Psalm 121 (I Lift My Eyes).txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-043Psalm 121 (I Lift My Eyes).mp3"
       ]
@@ -3946,7 +3953,7 @@
       "songId": "06-044",
       "source": "06-044Amazing Grace (Live).txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-044Amazing Grace (Live).mp3"
       ]
@@ -3955,7 +3962,7 @@
       "songId": "06-045",
       "source": "06-045Joy to the World.txt",
       "type": "text",
-      "status": "pending",
+      "status": "missing-lyrics",
       "tracks": [
         "06-045Joy to the World.mp3"
       ]

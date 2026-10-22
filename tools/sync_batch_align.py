@@ -151,7 +151,12 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry):
         ocr = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
         source = image_source(ocr)
     else:
-        source = text_source(root / 'data' / song['source'])
+        path = root / 'data' / song['source']
+        from sync_batch_sources import prepare
+        import re
+        text = prepare.read_text(path)
+        language = 'en' if song['songId'].startswith('06-') and len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
+        source = text_source(path, language)
     verses = source['verses']
     if not verses or any(not verse for verse in verses):
         raise ValueError('歌词段落不完整')

@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-040",
+  "status": "reviewed",
+  "source": {
+    "file": "05-040荣耀归主名歌.jpg",
+    "sha256": "f31be1b1f6df2bc8cdb2f6d856b85789d3e5b193055842bc2306d2c8acd30b53",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-040荣耀归主名歌.mp3",
+      "sha256": "a69b9920531f9e426b424bdaccbdabfcb9d7358e4c24ed5581268505df4df765",
+      "duration": 148.3946485260771,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.225006,
+      "bottom": 0.310851
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.268429,
+      "bottom": 0.353635
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.310575,
+      "bottom": 0.397696
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.452976,
+      "bottom": 0.53882
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.49576,
+      "bottom": 0.581604
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.538544,
+      "bottom": 0.62375
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.733946,
+      "bottom": 0.819152
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.875709,
+      "bottom": 0.961553
+    }
+  },
+  "cues": [
+    {
+      "at": 22.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.2,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.65,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 54.15,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.65,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 96.15,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.3,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.75,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.25,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "在十架上我救主舍命，靠主十架我罪得洗净，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "除我重担安慰我伤心，荣耀归主名。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "荣耀归主名，荣耀归主名，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主宝贝血将我罪洗净，荣耀归主名。阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我今靠主脱离罪权势，有主时常住在我心内，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "如此蒙恩我实在不配，荣耀归主名。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "荣耀归主名，荣耀归主名，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主宝贝血将我罪洗净，荣耀归主名。阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主宝贝血将我全释放，靠主恩典我心甚快乐，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "赞美我主时常洁净我， 荣耀归主名。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "荣耀归主名，荣耀归主名，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主宝贝血将我罪洗净，荣耀归主名。阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-040荣耀归主名歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "songId": "05-038",
+  "status": "reviewed",
+  "source": {
+    "file": "05-038赞美耶稣歌.jpg",
+    "sha256": "5f0802e7d561c47db7132d0d383f6e8a18a02f006412d4182185c821dbcad679",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-038赞美耶稣歌.mp3",
+      "sha256": "18ca9ac9e8b5283755ba39df9dde0c06c33202073184b10e2fd040ba4e908b11",
+      "duration": 188.88533333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.154998,
+      "bottom": 0.240947
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.187995,
+      "bottom": 0.273385
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.220993,
+      "bottom": 0.306383
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.311036,
+      "bottom": 0.396985
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.344033,
+      "bottom": 0.429423
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.376471,
+      "bottom": 0.461861
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.465956,
+      "bottom": 0.551346
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.498394,
+      "bottom": 0.584343
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.531391,
+      "bottom": 0.616781
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.620316,
+      "bottom": 0.705147
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.653313,
+      "bottom": 0.738703
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.686311,
+      "bottom": 0.771701
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.901073,
+      "bottom": 0.986463
+    }
+  },
+  "cues": [
+    {
+      "at": 15.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 25.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.9,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.4,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.65,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 83.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.9,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.4,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.65,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 141.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.0,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 163.5,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 174.75,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "赞美！赞美！耶稣我亲爱的救主，全地歌唱",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "主的妙爱显明。 天使、天军高声赞美慈悲",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "救主，尊贵、荣耀都归我主圣名！耶稣引导，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "如同牧人领小羊，因主终日怀抱他众子民。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远歌唱，颂扬主名万代！（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "赞美！赞美！耶稣我慈悲的救主，为人罪过",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "受苦流血舍身。主是磐石，我心所爱慕的",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "救主,赞美!赞美!十架救赎洪恩。高声 歌唱，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "因主担当我愁闷，无限慈悲，奇妙爱何等深！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远歌唱，颂扬主名万代！（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "赞美！赞美！耶稣我永远的羔羊，天上圣众",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "和散那高声唱！耶稣救主做我们和平的",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "君王，加冕于主，先知祭司君王。基督再来，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "万民屈膝恭敬拜，荣耀权能都归我主我王。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远歌唱，颂扬主名万代！（阿们）",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-038赞美耶稣歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -12,6 +12,7 @@ sys.path.insert(0, str(TOOLS))
 import sync_batch_sources as sources
 try:
     from sync_batch_align import confirm_boundaries
+    from sync_batch_audio import alignment_band
 except ImportError:
     confirm_boundaries = None
 
@@ -48,6 +49,26 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(definition['regions']['r1'], {'kind': 'text', 'startLine': 2, 'endLine': 5})
             self.assertEqual(definition['regions']['r2'], {'kind': 'text', 'startLine': 6, 'endLine': 7})
             self.assertEqual(definition['verses'][1][0]['text'], '庚 辛 壬 癸')
+
+    def test_english_and_chinese_verse_headings_do_not_create_fictitious_stanzas(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '06-001示例.txt'
+            path.write_text('标题\n\n1 Lord I come\n主我来到\n\n2 Give me strength\n赐我力量', encoding='utf-8')
+            with patch.object(sources, 'clean', lambda text, language='zh': ''.join(re.findall('[A-Za-z]' if language == 'en' else '[\u3400-\u9fff]', text))):
+                definition = sources.text_source(path, 'en')
+                self.assertEqual([len(verse) for verse in definition['verses']], [1, 1])
+                self.assertEqual(definition['verses'][0][0]['text'], 'Lord I come')
+                path.write_text('标题\n\n（一）\n第一段歌词\n\n第二组歌词\n\n（二）\n另一段歌词', encoding='utf-8')
+                definition = sources.text_source(path)
+                self.assertEqual([len(verse) for verse in definition['verses']], [2, 1])
+
+    def test_inventory_identifies_title_only_and_placeholder_lyrics(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            (root / 'data/06-024Amazing Grace.txt').write_text('Alan Jackson - Amazing Grace')
+            (root / 'data/06-015示例.txt').write_text('标题\n\n歌词整理中。。。\nhttps://example.com/song')
+            self.assertTrue(all(not item['lyricsAvailable'] for item in batch.inventory(root)))
 
     def test_image_order_crosses_printed_rows_and_repeats_the_shared_chorus(self):
         def row(top, text):
@@ -119,6 +140,13 @@ class BatchTests(unittest.TestCase):
                 row['valid'] = False
         with self.assertRaises(ValueError):
             confirm_boundaries(verses, music, rows)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_alignment_search_includes_both_ends_for_longer_and_shorter_arrangements(self):
+        for n, m, lag in [(1000, 500, 200), (500, 1000, -200), (1000, 900, -200)]:
+            band = alignment_band(n, m, lag)
+            self.assertLess(abs(lag), band)
+            self.assertLess(abs(m - n - lag), band)
 
 
 if __name__ == '__main__':

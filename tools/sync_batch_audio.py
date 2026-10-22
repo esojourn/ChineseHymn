@@ -64,6 +64,10 @@ def repeated_verses(path, count, cache):
     return {'period': round(period, 4), 'similarity': similarity, 'initialOnsetEstimate': round(intro, 3), 'shifts': shifts}
 
 
+def alignment_band(n, m, lag):
+    return max(150, abs(lag) + 20, abs(m - n - lag) + 20)
+
+
 @njit(cache=True)
 def constrained_path(cost, lag, band):
     n, m = cost.shape
@@ -109,7 +113,7 @@ def map_recordings(reference, target, cue_times, cache):
     similarity, shift, lag = max(candidates)
     cost = np.ascontiguousarray(1 - a.T @ np.roll(b, shift, axis=0), dtype=np.float32)
     # Include both endpoints even if the lag search favors a later musical repeat.
-    path = constrained_path(cost, lag, max(150, abs(n - m) + 20, abs(lag) + 20))
+    path = constrained_path(cost, lag, alignment_band(n, m, lag))
     if not len(path):
         raise ValueError('未找到连续的音乐对应路径')
     mapping = np.full(n, np.nan)

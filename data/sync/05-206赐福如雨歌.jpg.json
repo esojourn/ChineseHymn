@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-206",
+  "status": "reviewed",
+  "source": {
+    "file": "05-206赐福如雨歌.jpg",
+    "sha256": "2819579ea6b47cffc53db88e20d2d9582fc9b84d9b1aaf2f7eba1d0bc4904c29",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-206赐福如雨歌.mp3",
+      "sha256": "89721d4461804bf89e46e29abab1a2ff8ff817026115ccfdc43c28d50cb9aeca",
+      "duration": 167.47102040816327,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.228812,
+      "bottom": 0.332163
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.278101,
+      "bottom": 0.382288
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.328226,
+      "bottom": 0.431578
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.377516,
+      "bottom": 0.480867
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.477766,
+      "bottom": 0.578611
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.521208,
+      "bottom": 0.622053
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.563814,
+      "bottom": 0.664659
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.607256,
+      "bottom": 0.707265
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.770997,
+      "bottom": 0.871842
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.892133,
+      "bottom": 0.992978
+    }
+  },
+  "cues": [
+    {
+      "at": 9.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.15,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.7,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.6,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 97.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.5,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 136.1,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 145.95,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.5,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主必赐福如雨大降，是主应许大慈爱；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "既得福雨神清气壮，救主在上赐下来。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赐福如雨下，福雨我们正需要，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "真神慈爱逐滴降下，大雨是从我祷告。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主必赐福如雨大降，教会复兴有见证；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "经过山岭溪谷诸地，甘霖沛雨我闻声。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赐福如雨下，福雨我们正需要，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "真神慈爱逐滴降下，大雨是从我祷告。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主必赐福如雨大降，求主赏我更丰盛；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "恳赐我们心灵舒畅，全来尊敬主命令。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赐福如雨下，福雨我们正需要，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "真神慈爱逐滴降下，大雨是从我祷告。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主必赐福如雨大降，盼望此刻自天倾；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "如今同认父在天上，专心求告耶稣名。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赐福如雨下，福雨我们正需要，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "真神慈爱逐滴降下，大雨是从我祷告。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-206赐福如雨歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

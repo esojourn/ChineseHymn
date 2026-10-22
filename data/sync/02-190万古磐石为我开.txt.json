@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "02-190",
+  "status": "reviewed",
+  "source": {
+    "file": "02-190万古磐石为我开.txt",
+    "sha256": "b824f436d8c57ce781c7957ccd32e7a3a5287933a889e2157fea54f129115cec",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-190万古磐石为我开.mp3",
+      "sha256": "53071583bbf2ac4191568191c5c061458a889236b76dfdc31c86ddd270833275",
+      "duration": 120.39836734693877,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 4.7,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 33.1,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 61.5,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 90.0,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-190万古磐石为我开-领唱.mp3",
+      "sha256": "32d7589d8ae2cce957f479f7632633119d84f49e544534676a1e1b1b2da89cf4",
+      "duration": 119.95733333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 5.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.2,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 62.6,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 91.0,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "万古磐石为我开，容我藏身在主怀，    愿因主流水和血，洗我一生诸罪孽，    使我免干主怒责，使我污浊成清洁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "纵使辛劳直到死，纵使流泪永不止，    依旧不能赎罪过，惟有耶稣能救我，    两手空空无代价，只靠救主十字架。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "毫无可夸到主前，只有紧依十架边，    赤身求主赐衣服，无依靠望主恩助，    污秽奔至活泉旁，求主洗我免灭亡。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "当我呼吸余一息，当我临终目垂闭，    当我诞登新世界，到主座前恭敬拜，    万古磐石为我开，容我藏身在主怀。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-190万古磐石为我开.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

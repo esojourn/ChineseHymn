@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "02-447",
+  "status": "reviewed",
+  "source": {
+    "file": "02-447欢欣感谢.txt",
+    "sha256": "5e20a792cd6713fc5624db7c915d1831fa8f7ad88c88b79713a0df6eebb98719",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-447欢欣感谢.mp3",
+      "sha256": "402b43dc1b26af93bb38a91c2a4e6efb90e1c72e54b4ae2550113bd0ccf70040",
+      "duration": 89.65224489795918,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 4.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.75,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 59.45,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "请新人当欢欣，快乐感谢歌唱； 基督十架为你旌旗，高举随风飘扬。 欢欣，欢欣，歌唱感谢欢欣。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "活泼少男少女，须眉斑白老翁， 都当欢欣高声歌唱，颂主奇恩丰盛。 欢欣，欢欣，歌唱感谢欢欣。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "奔跑人生长路，不论遇祸遇福， 从幼到老，黑夜白昼，都当赞美欢呼。 欢欣，欢欣，歌唱感谢欢欣。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-447欢欣感谢.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

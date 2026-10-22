@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-205",
+  "status": "reviewed",
+  "source": {
+    "file": "05-205不住祈祷歌.jpg",
+    "sha256": "a8fc2825c2ee28f89dfb4f4cae4cf8ef5621664d3b953306ee5e9cce57316d6e",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-205不住祈祷歌.mp3",
+      "sha256": "2e4ef99eeccceb5f2b94d1b0e0982ca9a29343acfeb69c5414211cace524b841",
+      "duration": 119.95428571428572,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.245513,
+      "bottom": 0.346403
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.295729,
+      "bottom": 0.396619
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.345945,
+      "bottom": 0.446835
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.396161,
+      "bottom": 0.497917
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.446378,
+      "bottom": 0.548133
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.576247,
+      "bottom": 0.678002
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.626463,
+      "bottom": 0.727353
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.675813,
+      "bottom": 0.777569
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.72603,
+      "bottom": 0.826919
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.77538,
+      "bottom": 0.87627
+    }
+  },
+  "cues": [
+    {
+      "at": 5.75,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 39.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 62.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.55,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 84.7,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 96.05,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 107.2,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "不住祈祷因主是近，不住祈祷主全要听；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "真神应许决不失信， 不住 祈祷主必应 允。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "不住祈祷凡百所需，不住祈祷主必赐予；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "无一求告主看太小，不住祈祷主都明了。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "不住祈祷遇试探时，不住祈祷必能站立；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主曾受试凡事体恤，不住祈祷主扶你。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "不住祈祷若遇忧“愁，不住祈祷必蒙拯救；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "你心苦楚真神知道，不住祈祷主安排好。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "不住祈祷当有信心，不住祈祷是最要紧；",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "信心能除忧愁伤心，不住祈祷主必答应。",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-205不住祈祷歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

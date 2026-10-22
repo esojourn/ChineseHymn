@@ -1,0 +1,422 @@
+{
+  "songId": "01-157",
+  "source": "01-157求圣灵降临.txt",
+  "sourceHash": "fb82db0fb99bfc26285191dc09ef1c5b375d0f7912a8120b840d3d993b4007ef",
+  "trackHashes": [
+    {
+      "file": "01-157求圣灵降临.mp3",
+      "sha256": "06284ea0f5a3f10d16efcd453fbfe19faef1aa00b37208b75412b5396a6b6ee8"
+    }
+  ],
+  "referenceMatching": {
+    "profile": {
+      "mode": "verse-cycle",
+      "targetSha256": "fb82db0fb99bfc26285191dc09ef1c5b375d0f7912a8120b840d3d993b4007ef",
+      "referenceSong": "05-246",
+      "referenceSha256": "bd35c320166b6db7c32e122ab63a91053f52cd956125bbcd31d975c8e63c3995",
+      "verseCount": 4,
+      "referenceVerseCount": 5,
+      "referenceCuesPerVerse": 2,
+      "referenceSlots": [
+        0
+      ],
+      "formReview": "每段全文为单个不超过四行的文字阅读区域，以同曲参考的首个歌词起点定位。不同译词或同曲填词不作为逐字识别；参考前两个实际乐段分别核对每个目标段落。"
+    },
+    "algorithmVersion": 1,
+    "referenceSync": {
+      "version": 1,
+      "songId": "05-246",
+      "status": "reviewed",
+      "source": {
+        "file": "05-246慕主歌.jpg",
+        "sha256": "bd35c320166b6db7c32e122ab63a91053f52cd956125bbcd31d975c8e63c3995",
+        "type": "image"
+      },
+      "tracks": [
+        {
+          "file": "05-246慕主歌-领唱.mp3",
+          "sha256": "dfd3e62d4370ad44623819103c00df4814f5d4278ee8f63c1b6647f5ced66f07",
+          "duration": 138.60266666666666,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "s1_v1": {
+          "kind": "image",
+          "top": 0.224793,
+          "bottom": 0.333259
+        },
+        "s1_v2": {
+          "kind": "image",
+          "top": 0.273164,
+          "bottom": 0.3807
+        },
+        "s1_v3": {
+          "kind": "image",
+          "top": 0.320606,
+          "bottom": 0.428142
+        },
+        "s1_v4": {
+          "kind": "image",
+          "top": 0.368977,
+          "bottom": 0.477443
+        },
+        "s1_v5": {
+          "kind": "image",
+          "top": 0.416418,
+          "bottom": 0.524885
+        },
+        "s2_v1": {
+          "kind": "image",
+          "top": 0.577346,
+          "bottom": 0.685813
+        },
+        "s2_v2": {
+          "kind": "image",
+          "top": 0.625718,
+          "bottom": 0.735114
+        },
+        "s2_v3": {
+          "kind": "image",
+          "top": 0.674089,
+          "bottom": 0.783486
+        },
+        "s2_v4": {
+          "kind": "image",
+          "top": 0.723391,
+          "bottom": 0.831857
+        },
+        "s2_v5": {
+          "kind": "image",
+          "top": 0.771762,
+          "bottom": 0.879298
+        }
+      },
+      "cues": [
+        {
+          "at": 6.1,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 19.5,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 32.5,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 45.9,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 59.0,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 72.4,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 85.4,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 98.8,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 111.9,
+          "region": "s1_v5",
+          "label": "第5段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 125.3,
+          "region": "s2_v5",
+          "label": "第5段：第2谱行",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+        "performanceOrder": [
+          {
+            "region": "s1_v1",
+            "text": "耶稣，每逢想念着主，愉快充满心怀，",
+            "label": "第1段：第1谱行"
+          },
+          {
+            "region": "s2_v1",
+            "text": "若能到主面前安息，那是更加愉快！",
+            "label": "第1段：第2谱行"
+          },
+          {
+            "region": "s1_v2",
+            "text": "有声难唱，有心难拟，记忆之中难寻，",
+            "label": "第2段：第1谱行"
+          },
+          {
+            "region": "s2_v2",
+            "text": "能比人类救主圣名，更加甜蜜的名。",
+            "label": "第2段：第2谱行"
+          },
+          {
+            "region": "s1_v3",
+            "text": "痛悔之心得着希望，柔和之心得恩，",
+            "label": "第3段：第1谱行"
+          },
+          {
+            "region": "s2_v3",
+            "text": "倾跌之人如何蒙爱，寻者如何相逢！",
+            "label": "第3段：第2谱行"
+          },
+          {
+            "region": "s1_v4",
+            "text": "寻着之人到底如何，笔墨何能描写！",
+            "label": "第4段：第1谱行"
+          },
+          {
+            "region": "s2_v4",
+            "text": "耶稣之爱究竟如何，惟有爱心了解。",
+            "label": "第4段：第2谱行"
+          },
+          {
+            "region": "s1_v5",
+            "text": "耶稣是我惟一快乐，是我将来赏赐，",
+            "label": "第5段：第1谱行"
+          },
+          {
+            "region": "s2_v5",
+            "text": "现在荣光惟有我主，直到无穷尽时。，",
+            "label": "第5段：第2谱行"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/05-246慕主歌.jpg.score.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+      },
+      "imageLayout": {
+        "mode": "center-preview",
+        "previewFraction": 1
+      }
+    },
+    "cueIndices": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "referenceAudio": "05-246慕主歌-领唱.mp3",
+    "referenceTimes": [
+      6.1,
+      32.5,
+      59.0,
+      85.4,
+      111.9
+    ],
+    "mappedTimes": [
+      6.75,
+      31.95,
+      57.15,
+      82.35
+    ],
+    "recordingMap": {
+      "method": "two complete score-referenced audio cycles; subsequence chroma-DTW",
+      "referenceMusic": {
+        "period": 26.4,
+        "similarity": 0.9666277766227722,
+        "initialOnsetEstimate": 4.588,
+        "shifts": [
+          0.0,
+          26.4,
+          52.9,
+          79.3,
+          105.8
+        ]
+      },
+      "matches": [
+        [
+          {
+            "best": {
+              "cost": 0.2002093299986824,
+              "key": 2,
+              "at": 6.8,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5897778102329799,
+              "key": 9,
+              "at": 7.5,
+              "span": 19.0
+            }
+          },
+          {
+            "best": {
+              "cost": 0.2137729705326141,
+              "key": 2,
+              "at": 6.7,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5910855247860863,
+              "key": 9,
+              "at": 7.6,
+              "span": 18.9
+            }
+          }
+        ],
+        [
+          {
+            "best": {
+              "cost": 0.19884394085596477,
+              "key": 2,
+              "at": 32.0,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.591104234967913,
+              "key": 9,
+              "at": 32.8,
+              "span": 18.9
+            }
+          },
+          {
+            "best": {
+              "cost": 0.2134610130673363,
+              "key": 2,
+              "at": 31.9,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5894803243970114,
+              "key": 9,
+              "at": 32.8,
+              "span": 18.9
+            }
+          }
+        ],
+        [
+          {
+            "best": {
+              "cost": 0.19939272744315012,
+              "key": 2,
+              "at": 57.2,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5911200387137276,
+              "key": 9,
+              "at": 58.0,
+              "span": 18.9
+            }
+          },
+          {
+            "best": {
+              "cost": 0.21369831145755827,
+              "key": 2,
+              "at": 57.1,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5889544411311074,
+              "key": 9,
+              "at": 58.0,
+              "span": 18.9
+            }
+          }
+        ],
+        [
+          {
+            "best": {
+              "cost": 0.19819479140024338,
+              "key": 2,
+              "at": 82.4,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5925239684089781,
+              "key": 9,
+              "at": 83.1,
+              "span": 18.9
+            }
+          },
+          {
+            "best": {
+              "cost": 0.21257780468653117,
+              "key": 2,
+              "at": 82.3,
+              "span": 25.1
+            },
+            "runnerUp": {
+              "cost": 0.5909236726306734,
+              "key": 9,
+              "at": 83.1,
+              "span": 18.9
+            }
+          }
+        ]
+      ]
+    },
+    "music": {
+      "period": 25.2,
+      "similarity": 0.9750433564186096,
+      "initialOnsetEstimate": 7.184,
+      "shifts": [
+        0.0,
+        25.2,
+        50.4,
+        75.6
+      ]
+    },
+    "phaseDecisions": []
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "恳求圣灵如鸽彰显，施展激励大能， 求你燃点主爱火焰，融我冷淡之心。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "可叹我们昏庸愚昧，贪爱浮华世俗， 我灵无法高升长进，错失永恒喜乐。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "主啊，我们岂能这样，永远冷淡不振， 主爱浩大，长阔高深，我们岂可冷淡。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "恳求圣灵如鸽彰显，施展激励大能， 浇灌救主伟大的爱，激发我们爱心。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.986
+}

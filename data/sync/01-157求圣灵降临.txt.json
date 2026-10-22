@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "01-157",
+  "status": "reviewed",
+  "source": {
+    "file": "01-157求圣灵降临.txt",
+    "sha256": "fb82db0fb99bfc26285191dc09ef1c5b375d0f7912a8120b840d3d993b4007ef",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-157求圣灵降临.mp3",
+      "sha256": "06284ea0f5a3f10d16efcd453fbfe19faef1aa00b37208b75412b5396a6b6ee8",
+      "duration": 110.00163265306122,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 6.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.95,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.15,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.35,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "恳求圣灵如鸽彰显，施展激励大能， 求你燃点主爱火焰，融我冷淡之心。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "可叹我们昏庸愚昧，贪爱浮华世俗， 我灵无法高升长进，错失永恒喜乐。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "主啊，我们岂能这样，永远冷淡不振， 主爱浩大，长阔高深，我们岂可冷淡。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "恳求圣灵如鸽彰显，施展激励大能， 浇灌救主伟大的爱，激发我们爱心。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-157求圣灵降临.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

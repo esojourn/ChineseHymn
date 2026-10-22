@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-021",
+  "status": "reviewed",
+  "source": {
+    "file": "05-021赞父奇爱.jpg",
+    "sha256": "819aaf72c62e7062aca884d47de265f1c989d9f8144fd4919303765db08b1033",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-021赞父奇爱.mp3",
+      "sha256": "4bf53bb0d2c278b4768daa757f5add75ab8b75bb3bd8dfb2ed6f7420fec13a70",
+      "duration": 171.62533333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.165146,
+      "bottom": 0.251802
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.203141,
+      "bottom": 0.289796
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.241135,
+      "bottom": 0.32724
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.278579,
+      "bottom": 0.366336
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.377696,
+      "bottom": 0.463801
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.41569,
+      "bottom": 0.501795
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.452584,
+      "bottom": 0.53979
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.490578,
+      "bottom": 0.577234
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.588043,
+      "bottom": 0.675249
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.625487,
+      "bottom": 0.713244
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.664032,
+      "bottom": 0.750688
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.700926,
+      "bottom": 0.788683
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.801144,
+      "bottom": 0.887799
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.833632,
+      "bottom": 0.920287
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.867221,
+      "bottom": 0.953326
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.90026,
+      "bottom": 0.986916
+    }
+  },
+  "cues": [
+    {
+      "at": 10.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.35,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.55,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.3,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.85,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.6,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.95,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.15,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.9,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.35,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 141.25,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.45,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 162.2,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "父啊，久在创世之前，你选我们爱难述；，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "这爱深厚、激励、甘甜吸引我们归耶稣。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "还用恩典，还用恩典，保守我们永稳固。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "保守我们永稳固。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "虽然宇宙逐渐改变，但是我神永坚定；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "他的爱心同他恩言时刻在前常引领。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "奇恩无边，奇恩无边，我们应当赞他名！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "我们应当赞他名！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "神的怜是我诗歌，我口颂扬心感激；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "十架代刑，慈爱莫测，深得我心满我意。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "救恩白舍，救恩白舍，连他爱子都不惜！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "愛3.连他層爱子都不層惜！個",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "慈爱父神！我们现在同心赞美爱无量；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "直到永世，万载、亿载，我们仍是要颂扬！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "但愿敬拜，但愿敬拜，永远归神和羔羊！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "永远归神和羔羊！（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-021赞父奇爱.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 102,
+    "published": 108,
     "existing": 8,
-    "needs-calibration": 72,
+    "needs-calibration": 69,
     "missing-audio": 2,
-    "pending": 166,
-    "ready-to-verify": 47,
+    "pending": 164,
+    "ready-to-verify": 46,
     "missing-lyrics": 23
   },
   "songs": [
@@ -424,10 +424,11 @@
       "songId": "01-504",
       "source": "01-504新年许愿.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-504新年许愿.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
     },
     {
       "songId": "01-518",
@@ -793,7 +794,7 @@
       "songId": "02-261",
       "source": "02-261向万邦传福音.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-261向万邦传福音.mp3",
         "02-261向万邦传福音-领唱.mp3"
@@ -2021,7 +2022,7 @@
       "songId": "05-021",
       "source": "05-021赞父奇爱.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-021赞父奇爱.mp3"
       ]
@@ -2480,11 +2481,10 @@
       "songId": "05-117",
       "source": "05-117号筒吹响歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-117号筒吹响歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-119",
@@ -2613,7 +2613,7 @@
       "tracks": [
         "05-153夕阳西沉歌.mp3"
       ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      "reason": "谱面旋律与实际录音匹配不足"
     },
     {
       "songId": "05-159",
@@ -2917,7 +2917,7 @@
       "songId": "05-238",
       "source": "05-238神圣纯爱歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-238神圣纯爱歌.mp3"
       ]
@@ -2936,7 +2936,7 @@
       "songId": "05-240",
       "source": "05-240主更宝贵歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-240主更宝贵歌.mp3"
       ]
@@ -2945,7 +2945,7 @@
       "songId": "05-243",
       "source": "05-243唯独耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-243唯独耶稣歌.mp3",
         "05-243唯独耶稣歌-领唱.mp3"
@@ -2955,7 +2955,7 @@
       "songId": "05-244",
       "source": "05-244我要耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-244我要耶稣歌.mp3",
         "05-244我要耶稣歌-领唱.mp3"
@@ -2965,18 +2965,17 @@
       "songId": "05-245",
       "source": "05-245今要主自己.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-245今要主自己.mp3",
         "05-245今要主自己-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-246",
       "source": "05-246慕主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-246慕主歌-领唱.mp3"
       ]
@@ -3357,11 +3356,10 @@
       "songId": "05-303",
       "source": "05-303平安赞美歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-303平安赞美歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-304",
@@ -3486,7 +3484,7 @@
       "tracks": [
         "05-336为你离天歌-领唱.mp3"
       ],
-      "reason": "谱面旋律与实际录音匹配不足"
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-337",
@@ -3595,12 +3593,11 @@
       "songId": "05-416",
       "source": "05-416神啊求你鉴察我.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-416神啊求你鉴察我.mp3",
         "05-416神啊求你鉴察我-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-417",

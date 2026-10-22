@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "songId": "05-240",
+  "status": "reviewed",
+  "source": {
+    "file": "05-240主更宝贵歌.jpg",
+    "sha256": "e27ec0159a64b9aff583de39b6ae857b7b85744ffad3562b0e5df2dc146d64f9",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-240主更宝贵歌.mp3",
+      "sha256": "f5340d1d1a83c5f6b973ccc091b4f3f32dbca99f74213ba3cd072e5adf741517",
+      "duration": 257.72408163265305,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.272146,
+      "bottom": 0.351081
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.299763,
+      "bottom": 0.379143
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.327825,
+      "bottom": 0.40676
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.403549,
+      "bottom": 0.482483
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.431611,
+      "bottom": 0.510545
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.459673,
+      "bottom": 0.538162
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.534506,
+      "bottom": 0.61344
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.562568,
+      "bottom": 0.641057
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.589739,
+      "bottom": 0.668228
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.698353,
+      "bottom": 0.774241
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.770584,
+      "bottom": 0.849073
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.846308,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 46.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 55.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.5,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.0,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.9,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.7,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 128.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.5,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.4,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 169.2,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 193.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 202.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 211.4,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 220.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 233.8,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 242.6,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我必全心全意爱他，依靠他丰富恩惠；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我本来象迷失亡羊，流离圈外游荡；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "善牧耶稣来寻找我，领我归回他身旁。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "耶稣，耶稣，比一切更宝贵！耶稣，耶稣，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "乃我全心所归！无论主领我往何处，",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "或福或祸永随；等到我路程走完毕，在天与我主相会。（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "各各他山主流宝血，死在十架为我罪，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "由死复活得胜魔鬼，以后升上高天，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "不久乘云迎接圣徒，天家同住乐无边。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "耶稣，耶稣，比一切更宝贵！耶稣，耶稣，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "乃我全心所归！无论主领我往何处，",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "或福或祸永随；等到我路程走完毕，在天与我主相会。（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣是我生命粮食，又是明亮的晨星；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "耶稣是我永远产业，是我平安洪福；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我有耶稣还怕什么？有他我满心知足。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "耶稣，耶稣，比一切更宝贵！耶稣，耶稣，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "乃我全心所归！无论主领我往何处，",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "或福或祸永随；等到我路程走完毕，在天与我主相会。（阿们）",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-240主更宝贵歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

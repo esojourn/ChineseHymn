@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-238",
+  "status": "reviewed",
+  "source": {
+    "file": "05-238神圣纯爱歌.jpg",
+    "sha256": "0ffdba1510c013b7d8f4d48393415d523aff288df51496e0985419eed2c6a103",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-238神圣纯爱歌.mp3",
+      "sha256": "9e2de2a75f8e788c3927a90ee5ca6d3d852c518f8e3300babceb68a460e44bff",
+      "duration": 181.08081632653062,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.157663,
+      "bottom": 0.241965
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.188049,
+      "bottom": 0.272352
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.218988,
+      "bottom": 0.303291
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.249927,
+      "bottom": 0.33423
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.349374,
+      "bottom": 0.433124
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.379761,
+      "bottom": 0.464063
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.410147,
+      "bottom": 0.49445
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.440534,
+      "bottom": 0.524836
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.538876,
+      "bottom": 0.623178
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.569262,
+      "bottom": 0.653565
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.600201,
+      "bottom": 0.683951
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.630588,
+      "bottom": 0.71489
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.730035,
+      "bottom": 0.81489
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.760974,
+      "bottom": 0.845276
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.79136,
+      "bottom": 0.876768
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.822299,
+      "bottom": 0.907155
+    }
+  },
+  "cues": [
+    {
+      "at": 6.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.75,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.5,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.1,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.0,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.9,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.85,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 148.55,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 159.3,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 170.9,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "神圣纯爱，超乎万爱，天上欢乐降人间！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "恳求屈尊居我心中，超过寻常恩万般；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "耶稣，主是万爱结晶，怜悯慈悲集大成；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "求携救恩惠然来临，进入颗颗战栗心。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "悬求主将爱的精神，吹入每颗烦恼心；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "主所应许甜蜜安息，但愿人人得继承；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "恳求去掉爱罪心怀，成全我灵始与终；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "信的结果，美如开端，自由释放我心衷。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "全能神啊，求来救拯，容我接受主生命；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我心主殿，愿主忽临，永不，永不离我心；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "但愿时常颂主事主，犹如天上众天军，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "祈祷赞扬，永无停止，完全爱里永欢欣。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "求主完成再造深恩，使我洁清无瑕疵；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "使我能见宏大救恩，再得归回主爱里；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "愿从光荣再进光荣，身列天班长供奉，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "到时免冠，主前抛掷，忘形爱颂惊奇中。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-238神圣纯爱歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

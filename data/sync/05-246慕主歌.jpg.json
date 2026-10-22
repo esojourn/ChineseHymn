@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-246",
+  "status": "reviewed",
+  "source": {
+    "file": "05-246慕主歌.jpg",
+    "sha256": "bd35c320166b6db7c32e122ab63a91053f52cd956125bbcd31d975c8e63c3995",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-246慕主歌-领唱.mp3",
+      "sha256": "dfd3e62d4370ad44623819103c00df4814f5d4278ee8f63c1b6647f5ced66f07",
+      "duration": 138.60266666666666,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.224793,
+      "bottom": 0.333259
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.273164,
+      "bottom": 0.3807
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.320606,
+      "bottom": 0.428142
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.368977,
+      "bottom": 0.477443
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.416418,
+      "bottom": 0.524885
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.577346,
+      "bottom": 0.685813
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.625718,
+      "bottom": 0.735114
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.674089,
+      "bottom": 0.783486
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.723391,
+      "bottom": 0.831857
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.771762,
+      "bottom": 0.879298
+    }
+  },
+  "cues": [
+    {
+      "at": 6.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.5,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 45.9,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 59.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 98.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.9,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.3,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣，每逢想念着主，愉快充满心怀，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "若能到主面前安息，那是更加愉快！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "有声难唱，有心难拟，记忆之中难寻，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "能比人类救主圣名，更加甜蜜的名。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "痛悔之心得着希望，柔和之心得恩，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "倾跌之人如何蒙爱，寻者如何相逢！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "寻着之人到底如何，笔墨何能描写！",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "耶稣之爱究竟如何，惟有爱心了解。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "耶稣是我惟一快乐，是我将来赏赐，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "现在荣光惟有我主，直到无穷尽时。，",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-246慕主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -11,7 +11,7 @@ import time
 import numpy as np
 from sync_batch_transcript import lexical_positions
 from sync_batch_sources import clean, prepare, text_source
-from sync_batch_align import align_windows, export_result
+from sync_batch_align import align_windows, context, export_result
 
 spec = importlib.util.spec_from_file_location('batch_io', Path(__file__).with_name('batch-sync.py'))
 batch = importlib.util.module_from_spec(spec)
@@ -48,6 +48,7 @@ def match_order(definitions, words, language, partial=False):
         anchors.append({'index': index, 'region': definitions[index]['region'],
                         'matchedFraction': round(ratio, 3), 'matchedCharacters': len(positions),
                         'at': float(locations[positions[0]]['start']),
+                        'firstWord': clean(locations[positions[0]]['word'], language),
                         'firstWordEnd': float(locations[positions[0]]['end']),
                         'end': float(locations[positions[-1]]['end'])})
     return anchors, len(heard)
@@ -87,7 +88,7 @@ def performed_order(definitions, segments, language):
     return order, estimates, diagnostics
 
 
-def confirm_transcript_windows(observations, estimates, anchor_ranges=None):
+def confirm_transcript_windows(observations, estimates, anchor_ranges=None, anchor_words=None):
     confirmed, edge_decisions = [], []
     for index, estimate in enumerate(estimates):
         pair = [row for row in observations if row['index'] == index]
@@ -102,13 +103,22 @@ def confirm_transcript_windows(observations, estimates, anchor_ranges=None):
             if at_start and not row['valid']:
                 edge_decisions.append({'index': 0, 'window': row['window'], 'reason': '转写与声学均从音频首帧起唱'})
         lo, hi = anchor_ranges[index] if anchor_ranges is not None else (estimate, estimate)
+        def held_word(row):
+            return (anchor_words is not None and row.get('firstWord') == anchor_words[index] and
+                    row.get('firstWordProbability', 0) >= .12 and
+                    row.get('firstWordEnd', 0) - row.get('firstWordStart', 0) >= .04 and
+                    row['at'] <= lo <= row.get('firstWordEnd', 0) and abs(row.get('firstWordEnd', 0) - hi) <= .5)
         choices = [(abs(left['at'] - right['at']), (left['at'] + right['at']) / 2)
                    for first, left in enumerate(accepted) for right in accepted[first + 1:]
                    if left['window'] != right['window'] and abs(left['at'] - right['at']) <= .5 and
-                   lo - 1.5 <= (left['at'] + right['at']) / 2 <= hi + 1.5]
+                   (lo - 1.5 <= (left['at'] + right['at']) / 2 <= hi + 1.5 or held_word(left) and held_word(right))]
         if not choices or max(at for delta, at in choices) - min(at for delta, at in choices) > .5:
             raise ValueError(f'第 {index + 1} 个歌词起点未通过转写及双窗口核对')
-        confirmed.append(round(min(choices)[1], 2))
+        at = round(min(choices)[1], 2)
+        confirmed.append(at)
+        if not lo - 1.5 <= at <= hi + 1.5:
+            edge_decisions.append({'index': index, 'at': at, 'reason': '两个窗口的同一延音首词词尾与转写相符',
+                                   'word': anchor_words[index], 'asrWordRange': [lo, hi]})
     if any(a + .5 >= b for a, b in zip(confirmed, confirmed[1:])):
         raise ValueError('核对后的歌词起点未递增')
     return confirmed, edge_decisions
@@ -119,7 +129,7 @@ def generate(song, cache, model_dir, threads):
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 2, 'model': 'medium/int8'}}
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 3, 'model': 'medium/int8'}}
     try:
         text = prepare.read_text(batch.ROOT / 'data' / song['source'])
         language = 'en' if len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
@@ -134,6 +144,7 @@ def generate(song, cache, model_dir, threads):
         evidence.update(performanceOrder=definitions, estimates=estimates)
         preceding = [definitions[index - 1]['text'] if index else '' for index in range(len(definitions))]
         anchor_ranges = [(row['at'], row['firstWordEnd']) for row in diagnostics]
+        anchor_words = [row['firstWord'] for row in diagnostics]
         evidence['transcriptMatching'].update(transcript=transcript, diagnostics=diagnostics, language=language)
         if _model is None:
             from faster_whisper import WhisperModel
@@ -163,11 +174,19 @@ def generate(song, cache, model_dir, threads):
         save_windows = lambda rows: batch.save(checkpoint, {'signature': signature, 'windows': rows})
         observations = align_windows(_model, tokenizer, audio, definitions, estimates, language,
             resume, save_windows, preceding_texts=preceding)
+        for row in observations:
+            if 'firstWordEnd' not in row and row.get('words'):
+                offset = len(clean(context(preceding[row['index']], language, True), language))
+                letters = [word for word in row['words'] for character in clean(word['word'], language)]
+                if offset < len(letters):
+                    word = letters[offset]
+                    row.update(firstWord=clean(word['word'], language), firstWordStart=word['start'] + row['bounds'][0],
+                               firstWordEnd=word['end'] + row['bounds'][0], firstWordProbability=float(word['probability']))
         for index, estimate in enumerate(estimates):
             for window, bounds in enumerate([(8, 18), (10, 16)], 2):
                 pair = [{**row, 'index': 0} for row in observations if row['index'] == index]
                 try:
-                    confirm_transcript_windows(pair, [estimate], [anchor_ranges[index]])
+                    confirm_transcript_windows(pair, [estimate], [anchor_ranges[index]], [anchor_words[index]])
                     break
                 except ValueError:
                     pass
@@ -178,8 +197,8 @@ def generate(song, cache, model_dir, threads):
                 observations.extend({**row, 'index': index, 'window': window} for row in additional)
                 save_windows(observations)
         evidence['windows'] = observations
-        times, decisions = confirm_transcript_windows(observations, estimates, anchor_ranges)
-        evidence['transcriptMatching']['edgeDecisions'] = decisions
+        times, decisions = confirm_transcript_windows(observations, estimates, anchor_ranges, anchor_words)
+        evidence['transcriptMatching']['boundaryDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
         evidence['returnIndices'] = [index for index in range(1, len(definitions))
                                     if starts[definitions[index]['region']] < starts[definitions[index - 1]['region']]]

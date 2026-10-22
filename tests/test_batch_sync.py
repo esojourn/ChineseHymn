@@ -306,6 +306,18 @@ class BatchTests(unittest.TestCase):
         result = align_windows(Model(), None, np.zeros(16000 * 20), [{'text': '天地'}], [5], 'zh', rows)
         self.assertEqual(result, rows)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_held_first_word_requires_two_matching_word_ends_and_identity(self):
+        rows = [{'index': 0, 'window': window, 'at': 159.76, 'valid': True, 'firstWord': 'i',
+                 'firstWordStart': 159.76, 'firstWordEnd': 163.06, 'firstWordProbability': probability}
+                for window, probability in enumerate([.27, .51])]
+        times, decisions = transcript.confirm_transcript_windows(rows, [161.48], [(161.48, 162.88)], ['i'])
+        self.assertEqual(times, [159.76])
+        self.assertEqual(decisions[0]['word'], 'i')
+        rows[1]['firstWord'] = 'you'
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [161.48], [(161.48, 162.88)], ['i'])
+
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_midi_templates_follow_tempo_changes_and_exclude_percussion(self):
         import mido

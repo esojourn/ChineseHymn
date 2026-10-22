@@ -64,6 +64,8 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
             at = phrase[0]['start']
             valid = positive >= .65 and probability >= .12 and at > start + .1 and at < end - 1
             observations.append({'index': index, 'window': window, 'at': at, 'valid': valid,
+                                 'firstWord': clean(phrase[0]['word'], language), 'firstWordStart': phrase[0]['start'],
+                                 'firstWordEnd': phrase[0]['end'], 'firstWordProbability': phrase[0]['probability'],
                                  'positiveDurationFraction': round(positive, 3), 'meanProbability': round(probability, 4),
                                  'bounds': [round(start, 3), round(end, 3)], 'words': words})
         if on_chunk:

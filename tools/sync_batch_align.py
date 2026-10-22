@@ -215,6 +215,24 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
     return source, definitions, cue_times, first_indices
 
 
+def recording_cues(definitions, cue_times, regions, duration, return_indices):
+    if len(cue_times) != len(definitions) or not cue_times or not all(np.isfinite(at) for at in cue_times):
+        raise ValueError('谱行数量与完整时间轴不一致')
+    if cue_times[0] < 0 or cue_times[-1] >= duration or any(a + .5 >= b for a, b in zip(cue_times, cue_times[1:])):
+        raise ValueError('时间点未递增或超出实际录音')
+    if any(item['region'] not in regions for item in definitions):
+        raise ValueError('独立音轨引用了不存在的阅读区域')
+    cues = []
+    for index, (at, item) in enumerate(zip(cue_times, definitions)):
+        cue = {'at': at, 'region': item['region'], 'label': item['label'], 'transition': 'reading'}
+        if not index:
+            cue.update(moveStart=0, transition='intro')
+        elif index in return_indices:
+            cue['transition'] = 'return'
+        cues.append(cue)
+    return cues
+
+
 def export_result(song, root, cache, evidence_path, evidence, start_time, source, definitions, cue_times, first_indices):
     import importlib.util
     spec = importlib.util.spec_from_file_location('batch_export_io', Path(__file__).with_name('batch-sync.py'))
@@ -224,18 +242,10 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
     from mutagen.mp3 import MP3
     if len(cue_times) != len(definitions) or not cue_times or not all(np.isfinite(at) for at in cue_times):
         raise ValueError('谱行数量与完整时间轴不一致')
-    if cue_times[0] < 0 or cue_times[-1] >= MP3(reference).info.length or any(a + .5 >= b for a, b in zip(cue_times, cue_times[1:])):
-        raise ValueError('时间点未递增或超出实际录音')
-    cues = []
-    for index, (at, item) in enumerate(zip(cue_times, definitions)):
-        cue = {'at': at, 'region': item['region'], 'label': item['label'], 'transition': 'reading'}
-        if not index:
-            cue.update(moveStart=0, transition='intro')
-        elif index in evidence.get('returnIndices', []):
-            cue['transition'] = 'return'
-        elif song['type'] == 'image' and index in first_indices:
-            cue['transition'] = 'return'
-        cues.append(cue)
+    return_indices = set(evidence.get('returnIndices', []))
+    if song['type'] == 'image':
+        return_indices.update(first_indices)
+    cues = recording_cues(definitions, cue_times, source['regions'], MP3(reference).info.length, return_indices)
     tracks = []
     for item in song['tracks']:
         file = root / 'data' / item['file']
@@ -245,12 +255,37 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         else:
             try:
                 mapped, metrics = map_recordings(reference, file, cue_times, cache)
-                track['cues'] = [{**cue, 'at': at} for cue, at in zip(cues, mapped)]
+                track['cues'] = recording_cues(definitions, mapped, source['regions'], track['duration'], return_indices)
                 evidence.setdefault('recordingMaps', {})[item['file']] = metrics
                 track['reviewed'] = True
             except ValueError as error:
                 track['cues'] = []
-                evidence.setdefault('trackExceptions', {})[item['file']] = str(error)
+                failure = str(error)
+                if song['type'] == 'image' and 'scoreMatching' in evidence:
+                    # An arrangement can perform fewer complete verses. Match
+                    # this recording against the same score with both rhythm
+                    # templates, rather than forcing a one-to-one recording map.
+                    from sync_batch_score import score_times
+                    try:
+                        recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
+                        independent, times, metrics = score_times(root / 'data' / song['source'], file, recognition, cache)
+                        if independent['regions'] != source['regions']:
+                            raise ValueError('独立音轨的谱面阅读区域已变化')
+                        order = [entry for verse in independent['verses'] for entry in verse]
+                        starts, cursor = [], 0
+                        for verse in independent['verses']:
+                            starts.append(cursor)
+                            cursor += len(verse)
+                        track['cues'] = recording_cues(order, times, source['regions'], track['duration'], starts)
+                        track['reviewed'] = True
+                        evidence.setdefault('recordingScores', {})[item['file']] = metrics
+                        evidence.setdefault('recordingMapFallbacks', {})[item['file']] = failure
+                    except (ValueError, FileNotFoundError, KeyError) as score_error:
+                        failure += '; 独立谱面匹配：' + str(score_error)
+                        if hasattr(score_error, 'evidence'):
+                            evidence.setdefault('recordingScoreExceptions', {})[item['file']] = score_error.evidence
+                if not track['reviewed']:
+                    evidence.setdefault('trackExceptions', {})[item['file']] = failure
         tracks.append(track)
     method_description = ('Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
                           if 'transcriptMatching' in evidence else

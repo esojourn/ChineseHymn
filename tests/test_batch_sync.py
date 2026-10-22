@@ -442,6 +442,45 @@ class BatchTests(unittest.TestCase):
             self.assertFalse((root / 'evidence.json').exists())
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_shorter_image_recording_requires_its_own_complete_score_match(self):
+        from types import SimpleNamespace
+        from time import monotonic
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            song = {'songId': '05-001', 'source': '05-001示例.jpg', 'sha256': 'a' * 64,
+                    'type': 'image', 'reference': 'lead.mp3',
+                    'tracks': [{'file': 'lead.mp3'}, {'file': 'short.mp3'}]}
+            first = [{'region': 'a', 'label': '一'}, {'region': 'b', 'label': '二'}]
+            second = [{'region': 'c', 'label': '三'}, {'region': 'd', 'label': '四'}]
+            regions = {key: {'kind': 'image', 'top': i * .1, 'bottom': (i + 1) * .1}
+                       for i, key in enumerate('abcd')}
+            source = {'regions': regions, 'verses': [first, second]}
+            (root / 'ocr').mkdir()
+            (root / 'ocr' / (song['source'] + '.json')).write_text('{}')
+            for independent_times, success in [([5, 20], True), ([5], False), ([5, 101], False)]:
+                evidence = {'scoreMatching': {'algorithmVersion': 3}}
+                with patch('mutagen.mp3.MP3', return_value=SimpleNamespace(info=SimpleNamespace(length=100))), \
+                     patch('sync_batch_align.map_recordings', side_effect=ValueError('反复段数不同')), \
+                     patch('sync_batch_score.score_times', return_value=(
+                         {'regions': regions, 'verses': [first]}, independent_times, {'dualTemplates': 'checked'})):
+                    export_result(song, root, root, root / 'evidence.json', evidence, monotonic(),
+                                  source, first + second, [5, 20, 45, 60], [0, 2])
+                candidate = json.loads((root / 'ready' / (song['source'] + '.json')).read_text())
+                self.assertEqual(len(candidate['cues']), 4)
+                self.assertEqual(candidate['cues'][2]['transition'], 'return')
+                short = candidate['tracks'][1]
+                self.assertEqual(short['reviewed'], success)
+                if success:
+                    self.assertEqual([cue['at'] for cue in short['cues']], [5, 20])
+                    self.assertEqual([cue['region'] for cue in short['cues']], ['a', 'b'])
+                    self.assertEqual(short['cues'][0]['moveStart'], 0)
+                    self.assertIn('short.mp3', evidence['recordingScores'])
+                    self.assertNotIn('trackExceptions', evidence)
+                else:
+                    self.assertEqual(short['cues'], [])
+                    self.assertIn('short.mp3', evidence['trackExceptions'])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_window_checkpoint_resumes_completed_chunks_without_duplicate_alignment(self):
         import numpy as np
         class Model:

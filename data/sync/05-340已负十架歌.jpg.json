@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-340",
+  "status": "reviewed",
+  "source": {
+    "file": "05-340已负十架歌.jpg",
+    "sha256": "3071b1c490b5f92234741090c812a2cd8184601e51d3e6381736e1709a0601b6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-340已负十架歌.mp3",
+      "sha256": "69310192049f23e38561795373669a29addc49db884d8f7e24dccdac4e1a2a91",
+      "duration": 182.256,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.142173,
+      "bottom": 0.224256
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.176156,
+      "bottom": 0.257682
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.209025,
+      "bottom": 0.291666
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.242451,
+      "bottom": 0.325092
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.337716,
+      "bottom": 0.419799
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.371142,
+      "bottom": 0.452669
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.404011,
+      "bottom": 0.486095
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.43688,
+      "bottom": 0.518964
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.531588,
+      "bottom": 0.613114
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.564457,
+      "bottom": 0.64654
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.597883,
+      "bottom": 0.679409
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.630752,
+      "bottom": 0.712836
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.726574,
+      "bottom": 0.8081
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.76,
+      "bottom": 0.842084
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.792869,
+      "bottom": 0.874953
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.826852,
+      "bottom": 0.908379
+    }
+  },
+  "cues": [
+    {
+      "at": 7.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.95,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 61.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.3,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.85,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 105.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.85,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.9,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 149.3,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.2,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.75,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣，我已负起十架，撇下一切随主行；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "愿受饥寒、困贫、离弃，爱主贯彻我终身。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "舍了从前诸般奢望，凡所寻求凡所欲；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "主与天堂，仍为我有，我的境遇何富足！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "万一有人给我忧愁，便是驱我到主前；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "万一境遇使我艰难，天堂安乐更加添。．",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "有了主的慈悲恩爱，艰难痛苦都无妨；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "喜乐若非主所赐给，不能使我心欢畅。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我灵应当接受救恩，脱离罪恶免忧惊；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "无论处于何等境遇，欣然从主向前行。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "当思圣灵将你感化，天父向你显慈容，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "救主牺牲，将你救赎，何可抱怨在心中？",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "当从恩典奔向光荣，祈祷为翼，信为盾；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "永生光明照你面前，上主亲手引你行。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "转眼完了世间本分，过了旅客短时光，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "望变欢欣，祷变颂扬，信变见主，爱永长。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-340已负十架歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

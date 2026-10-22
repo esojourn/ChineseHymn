@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-377",
+  "status": "reviewed",
+  "source": {
+    "file": "05-377乐进天国歌.jpg",
+    "sha256": "c6b2460137538db6145c5cc8c1f71477e2d8a4da48223cf0e0e6755b08375292",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-377乐进天国歌.mp3",
+      "sha256": "2cd61b97c4e125c08765950785d0fa1d72054c50d530ebc0f1acd25913fbac17",
+      "duration": 127.47755102040816,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.178553,
+      "bottom": 0.265634
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.219304,
+      "bottom": 0.306384
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.259407,
+      "bottom": 0.347134
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.388126,
+      "bottom": 0.475206
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.42823,
+      "bottom": 0.51531
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.468333,
+      "bottom": 0.55606
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.628747,
+      "bottom": 0.71518
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.757466,
+      "bottom": 0.844546
+    }
+  },
+  "cues": [
+    {
+      "at": 10.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.35,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.45,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.25,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.85,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 96.65,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.15,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.25,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "歌颂耶稣权能仁爱，天家恩门为我开；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "在那光明荣耀天上，主为我预备地方。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我们都要回天家，今默想如到那日真快乐！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我们要见救主，我们要高唱得胜歌。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我今如同旅客行路，有时黑云盖前途；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "等我到那荣华福地，就无愁苦无叹息。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我们都要回天家，今默想如到那日真快乐！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我们要见救主，我们要高唱得胜歌。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我们应当坚心忍耐，醒祈祷等主来；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "日日靠主勤作圣工，高举主名为主用。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我们都要回天家，今默想如到那日真快乐！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我们要见救主，我们要高唱得胜歌。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-377乐进天国歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

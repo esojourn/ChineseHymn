@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 162,
+    "published": 168,
     "existing": 8,
-    "needs-calibration": 80,
+    "needs-calibration": 81,
     "missing-audio": 2,
-    "pending": 136,
-    "ready-to-verify": 9,
+    "pending": 135,
+    "ready-to-verify": 3,
     "missing-lyrics": 23
   },
   "songs": [
@@ -884,10 +884,11 @@
       "songId": "02-290",
       "source": "02-290一生在主手中.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-290一生在主手中.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-294",
@@ -3509,7 +3510,7 @@
       "songId": "05-340",
       "source": "05-340已负十架歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-340已负十架歌.mp3"
       ]
@@ -3518,7 +3519,7 @@
       "songId": "05-343",
       "source": "05-343一切献上歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-343一切献上歌.mp3"
       ]
@@ -3527,7 +3528,7 @@
       "songId": "05-346",
       "source": "05-346奉献身心歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-346奉献身心歌.mp3"
       ]
@@ -3556,7 +3557,7 @@
       "songId": "05-349",
       "source": "05-349遵命有福歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-349遵命有福歌.mp3",
         "05-349遵命有福歌-领唱.mp3"
@@ -3576,7 +3577,7 @@
       "songId": "05-366",
       "source": "05-366光照小地方.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-366光照小地方.mp3"
       ]
@@ -3585,7 +3586,7 @@
       "songId": "05-377",
       "source": "05-377乐进天国歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-377乐进天国歌.mp3"
       ]

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-349",
+  "status": "reviewed",
+  "source": {
+    "file": "05-349遵命有福歌.jpg",
+    "sha256": "f4ca8fe7eff8459d6a6e11787de7145d84e00968f025f14e71abd767100cb9e5",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-349遵命有福歌.mp3",
+      "sha256": "e9c57276cb54ebfda55b9ddf8d01ffe5b15c385456ad496b64dcf60984663e54",
+      "duration": 153.2865306122449,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 22.3,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 33.2,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 44.25,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 55.25,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 66.3,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 77.2,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 88.18,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 99.25,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 110.2,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 121.1,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 132.15,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 143.15,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-349遵命有福歌-领唱.mp3",
+      "sha256": "0e0fe41e180f32939f800d02f31e5cddc77c8e399077bf923ceeab5017e61a84",
+      "duration": 155.904,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.183942,
+      "bottom": 0.276081
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.225418,
+      "bottom": 0.318206
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.266247,
+      "bottom": 0.359034
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.39651,
+      "bottom": 0.489297
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.437986,
+      "bottom": 0.529477
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.478167,
+      "bottom": 0.570954
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.640833,
+      "bottom": 0.732972
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.772392,
+      "bottom": 0.865179
+    }
+  },
+  "cues": [
+    {
+      "at": 24.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.05,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.05,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 79.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.05,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 122.9,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 144.95,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "听救主永生的诫命，他的命令不变更，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "守诫信道是我本分，主说遵命有福分。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "遵诚命的人是有福，诚哉，他们是有福，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "遵诫命的人是有福，有福，有福属他们。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主命令若听而不行，虽应许无益我身，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "听而惧怕仍无功效，主赐福遵行的人。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "遵诚命的人是有福，诚哉，他们是有福，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "遵诫命的人是有福，有福，有福属他们。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "遵行的人能进圣城，无罪孽、忧愁、纷争，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "那里永远圣洁荣耀，生命果子必有分。，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "遵诚命的人是有福，诚哉，他们是有福，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "遵诫命的人是有福，有福，有福属他们。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-349遵命有福歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

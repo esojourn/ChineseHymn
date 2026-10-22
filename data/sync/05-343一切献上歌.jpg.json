@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-343",
+  "status": "reviewed",
+  "source": {
+    "file": "05-343一切献上歌.jpg",
+    "sha256": "698d4d0490ab1e1960f3b59a44962469a694b1632dd511932ae4c8658931aee0",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-343一切献上歌.mp3",
+      "sha256": "a08f65623d848e4e2d3d64f0b4b3ef36fdf7d6294f7ca87424c27cc80c7c983a",
+      "duration": 189.0742857142857,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.238189,
+      "bottom": 0.332988
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.279342,
+      "bottom": 0.374963
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.32214,
+      "bottom": 0.416938
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.363292,
+      "bottom": 0.458914
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.490041,
+      "bottom": 0.58484
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.532016,
+      "bottom": 0.625992
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.573169,
+      "bottom": 0.667967
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.614321,
+      "bottom": 0.708296
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.783045,
+      "bottom": 0.875374
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.906502,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 21.3,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.0,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.45,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 74.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.1,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 116.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.1,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.55,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 158.2,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 168.2,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 178.65,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主啊！我今完全献上，一切所有都归你；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我要永远爱你靠你，日日与你不分离。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一切全献上，一切全献上，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我将所有全归耶稣，一切全献上。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主啊！我今完全献上，在你脚前俯伏拜；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "世上荣华已经丢弃，因蒙救主召我来。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一切全献上，一切全献上，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我将所有全归耶稣，一切全献上。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主啊！我今完全献上，心灵身体都归你；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "圣灵感化常在我心，使我真知我属你。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一切全献上，一切全献上，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我将所有全归耶稣，一切全献上。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主啊！我今完全献上，祭坛爱火燃我心；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "救恩喜乐何等丰盛，荣耀、荣耀归主名。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一切全献上，一切全献上，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我将所有全归耶稣，一切全献上。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-343一切献上歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "songId": "05-366",
+  "status": "reviewed",
+  "source": {
+    "file": "05-366光照小地方.jpg",
+    "sha256": "ba97307b80bc097eae0cc2d543438bb914fb07d42ba9b9d6c3244424e331a8fa",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-366光照小地方.mp3",
+      "sha256": "d127f41c8bf2d812019002b11c676ca0dfb7bd857e4d47e81e567f8c7d306adc",
+      "duration": 163.488,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.161338,
+      "bottom": 0.245577
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.199659,
+      "bottom": 0.283898
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.236764,
+      "bottom": 0.321611
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.355377,
+      "bottom": 0.438399
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.39309,
+      "bottom": 0.475504
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.429586,
+      "bottom": 0.512608
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.568642,
+      "bottom": 0.732195
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.568642,
+      "bottom": 0.732195
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.568642,
+      "bottom": 0.732195
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.765353,
+      "bottom": 0.849591
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.882749,
+      "bottom": 0.96638
+    }
+  },
+  "cues": [
+    {
+      "at": 23.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.75,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.4,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 78.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.55,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.35,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 108.2,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.5,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 134.35,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 146.15,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.0,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "不要等到能做大事，才来发大光，不要等到光能",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "照远方，眼前便有许多责任，你能尽力量，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "光照你所在小地方。光照你所在小地方，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "光照你所在小地方。海面有船等你光照，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "平安好进港，光照你所在小地方。阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "拨开当初愁云迷雾，正要你相帮，慢道力微，不肯",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "来担当，纵使只有一人听见，也值得歌唱，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "光照你所在小地方。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "光照你所在小地方。海面有船等你光照，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "平安好进港，光照你所在小地方。阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "这里象你这样才能，总有事帮忙，就在这里，返照",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "晨星光。 就在一双卑微手中，也好施天粮，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "光照你所在小地方。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "光照你所在小地方。海面有船等你光照，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "平安好进港，光照你所在小地方。阿们）",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-366光照小地方.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

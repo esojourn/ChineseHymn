@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "songId": "05-301",
+  "status": "reviewed",
+  "source": {
+    "file": "05-301谷中百合花.jpg",
+    "sha256": "bec64558b3fb41d52becbf0116dc7b0a7196ec82ea42babf68abf8bf5009ebf6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-301谷中百合花.mp3",
+      "sha256": "4c8d379f26dc4ee1e9ed603114c7fdbe14edc96540c0b2ff108fcccf769126e6",
+      "duration": 148.40163265306123,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.8,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 14.0,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 23.35,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 32.3,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 40.65,
+          "region": "s5_chorus",
+          "label": "第1段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 49.15,
+          "region": "s6_chorus",
+          "label": "第1段：第6谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 52.7,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 60.8,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 70.15,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 79.2,
+          "region": "s4_v2",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 87.45,
+          "region": "s5_chorus",
+          "label": "第2段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 96.05,
+          "region": "s6_chorus",
+          "label": "第2段：第6谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 99.5,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 107.6,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 117.05,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 126.1,
+          "region": "s4_v3",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 134.35,
+          "region": "s5_chorus",
+          "label": "第3段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 142.85,
+          "region": "s6_chorus",
+          "label": "第3段：第6谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-301谷中百合花-领唱.mp3",
+      "sha256": "6373734dbc8add56fd016167c71f1ef72eb19f1a4ffe3d70b2505c9559d84e49",
+      "duration": 165.52533333333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.165818,
+      "bottom": 0.25188
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.199466,
+      "bottom": 0.285528
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.233113,
+      "bottom": 0.319766
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.322841,
+      "bottom": 0.408903
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.355898,
+      "bottom": 0.442551
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.389546,
+      "bottom": 0.475608
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.478092,
+      "bottom": 0.564155
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.51115,
+      "bottom": 0.597212
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.544207,
+      "bottom": 0.629679
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.632163,
+      "bottom": 0.718226
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.665221,
+      "bottom": 0.751873
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.698869,
+      "bottom": 0.785521
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.825785,
+      "bottom": 0.911848
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.914332,
+      "bottom": 0.999804
+    }
+  },
+  "cues": [
+    {
+      "at": 13.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.15,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.0,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.95,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.15,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.05,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.9,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.85,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.05,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 114.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 123.7,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.95,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.8,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.75,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 161.95,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我有一位最好朋友，他就是主耶稣，他使饥渴心灵",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "常能得安慰。好比山谷中百合花，洁白、纯净、芳香，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "惟有救主耶稣圣名最完美。痛苦悲伤他怜悯，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "忧患时他安慰，他对我说，他永住在我心内。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "他是山谷中百合花，灿烂明亮晨星，他使饥渴心灵",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "常能得安慰。（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "他除去我一切烦恼，担当患难忧伤，战胜试探，他作",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我坚固保障。为他我愿舍去一切，抛弃心中偶像，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "他用全能臂膀保守我安康。  纵使亲朋离弃我，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "撒但试探引诱，依靠耶稣，心中平安有希望。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "他是山谷中百合花，灿烂明亮晨星，他使饥渴心灵",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "常能得安慰。（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "他必永远不离开我，时常陪伴身旁，我必信靠耶稣，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "效法主榜样。他是磐石给我力量，使软弱变刚强，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "心灵饥渴，他赐吗哪作灵粮。将来升天见主面，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "同享极大荣光，到达快乐彼岸，生命水流长。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "他是山谷中百合花，灿烂明亮晨星，他使饥渴心灵",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "常能得安慰。（阿们）",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-301谷中百合花.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

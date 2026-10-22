@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "songId": "05-265",
+  "status": "reviewed",
+  "source": {
+    "file": "05-265愿跟随主歌.jpg",
+    "sha256": "4eaf4afe6bdbdf3682f7ef1f99e3470fcd45a84c79c28c4441482affe9d4b3d6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-265愿跟随主歌-领唱.mp3",
+      "sha256": "2d02ccc5361d6dff98fc2b23d2ed06d3c79cbe1d2549de02c9f2bcd611ca59f8",
+      "duration": 161.46285714285713,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.169983,
+      "bottom": 0.259051
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.204356,
+      "bottom": 0.293424
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.238729,
+      "bottom": 0.327161
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.3323,
+      "bottom": 0.420732
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.366673,
+      "bottom": 0.454468
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.401046,
+      "bottom": 0.488204
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.501619,
+      "bottom": 0.59005
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.535355,
+      "bottom": 0.624423
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.570365,
+      "bottom": 0.658796
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.689397,
+      "bottom": 0.777828
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.78997,
+      "bottom": 0.878401
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.884177,
+      "bottom": 0.972608
+    }
+  },
+  "cues": [
+    {
+      "at": 23.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.35,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.3,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.6,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.1,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.7,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.7,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.2,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.8,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 123.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.4,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.7,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.2,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.8,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我愿意跟随耶稣走平坦道路，或在花木茂盛",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "清水常流之处；既有救主在前引导，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我愿跟随主，一路走到天上，紧跟主脚步。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "跟随，跟随，我愿跟随耶稣，无论往何地方，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "我愿跟随主；跟随，跟随，我愿跟随耶稣，",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "只望耶稣引导,我愿跟随主！（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我愿意跟随耶稣走崎岖道路，或遭风雨交作，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "黑云把路拦阻，既有救主在前引导，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我永不惊慌，总不惧怕危险，因有主相助。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "跟随，跟随，我愿跟随耶稣，无论往何地方，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "我愿跟随主；跟随，跟随，我愿跟随耶稣，",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "只望耶稣引导,我愿跟随主！（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我愿意跟随耶稣走任何道路，我愿与主同行，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "时常蒙主保护；如今我所走的路程，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "主早已经过，主必领我进那应许光明处。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "跟随，跟随，我愿跟随耶稣，无论往何地方，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "我愿跟随主；跟随，跟随，我愿跟随耶稣，",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "只望耶稣引导,我愿跟随主！（阿们）",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-265愿跟随主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

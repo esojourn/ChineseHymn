@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "songId": "05-302",
+  "status": "reviewed",
+  "source": {
+    "file": "05-302恩友歌.jpg",
+    "sha256": "ba2fc5eb88b47b86200ae6b600c54fee2234c5cccd8d0f7e6f869c2352d01ee8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-302恩友歌.mp3",
+      "sha256": "3e6fd718d5fadfc1af8717e7240b4b81ce29e5dc2c7a4ea109bdccb24eb9b7f1",
+      "duration": 134.84408163265306,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.45,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 19.8,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 30.6,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 40.35,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 51.55,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 60.6,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 71.5,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 81.15,
+          "region": "s4_v2",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 92.6,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 101.5,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 112.4,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 122.15,
+          "region": "s4_v3",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-302恩友歌-领唱.mp3",
+      "sha256": "7b4f567d10bc5ded94a9c1e0d2fa6ef8bc6608a30b146e8abac9f36aa2ab0c93",
+      "duration": 132.264,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.178539,
+      "bottom": 0.268346
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.215916,
+      "bottom": 0.30511
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.253293,
+      "bottom": 0.342487
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.359909,
+      "bottom": 0.44849
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.396673,
+      "bottom": 0.485867
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.433437,
+      "bottom": 0.522019
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.538215,
+      "bottom": 0.626797
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.574367,
+      "bottom": 0.662948
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.610518,
+      "bottom": 0.699713
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.716522,
+      "bottom": 0.805716
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.753286,
+      "bottom": 0.84248
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.790663,
+      "bottom": 0.879857
+    }
+  },
+  "cues": [
+    {
+      "at": 6.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.3,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.25,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.3,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 79.25,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.4,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.35,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "何等恩友慈仁救主，负我罪孽担我忧；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "何等权利能将万事，来到耶稣座前求！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "多少平安我们坐失，多少痛苦冤枉受，，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "都是因为未将万事，来 到耶稣座前求。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我们有无试探引诱？有无难过苦关头？",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "决不应当因此灰心，仍当到主座前求！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "何处能寻这般良友，同尝一切苦与愁？",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "我们弱点主都知道，放心到主座前求。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我们是否软弱多愁，千斤重担压肩头？",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主仍做我避难处所，奔向耶稣座前求！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "你若真逢友叛亲离，好向耶稣座前求！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "到他怀中他必保护，有他安慰便无忧。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-302恩友歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

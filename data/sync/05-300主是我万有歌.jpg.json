@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-300",
+  "status": "reviewed",
+  "source": {
+    "file": "05-300主是我万有歌.jpg",
+    "sha256": "eaf1427a2756031c8720e339518c2acaf0b761b544704cad898e4f11a4caaef9",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-300主是我万有歌.mp3",
+      "sha256": "9336533c710c3c489e6b2018a299c4b33e42a0472471801c3b3809b20c64fb16",
+      "duration": 171.23265306122448,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.155491,
+      "bottom": 0.239288
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.18938,
+      "bottom": 0.272621
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.222158,
+      "bottom": 0.305399
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.256046,
+      "bottom": 0.339287
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.348824,
+      "bottom": 0.430954
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.381602,
+      "bottom": 0.464287
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.41438,
+      "bottom": 0.497065
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.447157,
+      "bottom": 0.530398
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.538824,
+      "bottom": 0.622065
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.572157,
+      "bottom": 0.655398
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.604935,
+      "bottom": 0.688176
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.637713,
+      "bottom": 0.720954
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.731601,
+      "bottom": 0.814287
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.764379,
+      "bottom": 0.84762
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.797712,
+      "bottom": 0.880398
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.831046,
+      "bottom": 0.913731
+    }
+  },
+  "cues": [
+    {
+      "at": 10.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.85,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.35,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 59.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.85,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.35,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.5,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.85,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.35,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.0,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 139.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 149.85,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.35,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣是我所有一切，生命、喜乐、荣耀，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "主是我的随时力量，离主我必跌倒；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "当我愁苦来就耶稣，无人似主如此安抚，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "使我欢欣，解我心忧，主是我友。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣是我所有一切，急难之时良友，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "恩上加恩，难以计算，因我向主祈求；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "主赐日光又施甘霖，主使禾田金谷丰盈，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "日光甘霖，大好收成，主是我友。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣是我所有一切，我要忠诚待主，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我主于我何等信实，我又何忍负主！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "步主后尘，我才安心，仰望十架时刻做醒，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "跟随主行，或夜或明，主是我友。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "耶稣是我所有一切，乃我全心爱慕；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "我信靠主，时刻靠主，无论遇福受苦；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "得此良友慰我一生，与主亲近喜乐日增，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "永生喜乐，无穷无尽，主是我友。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-300主是我万有歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

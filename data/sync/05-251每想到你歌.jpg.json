@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-251",
+  "status": "reviewed",
+  "source": {
+    "file": "05-251每想到你歌.jpg",
+    "sha256": "0102028495eba60b84f4fe953c2f7fc14ce57c69e02b30bcbaf6b733a2e47d7a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-251每想到你歌.mp3",
+      "sha256": "4b5d456808ee190ec366e20886bed6e62b5daa53a468d455de880f8f4b680965",
+      "duration": 233.9265306122449,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.19261,
+      "bottom": 0.284251
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.230755,
+      "bottom": 0.322396
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.269648,
+      "bottom": 0.361289
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.308542,
+      "bottom": 0.406914
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.419985,
+      "bottom": 0.511626
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.458878,
+      "bottom": 0.549771
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.497023,
+      "bottom": 0.588664
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.535168,
+      "bottom": 0.626809
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.692984,
+      "bottom": 0.789113
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.802932,
+      "bottom": 0.894573
+    }
+  },
+  "cues": [
+    {
+      "at": 36.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.8,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.95,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.4,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.45,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 97.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 122.2,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 134.25,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 146.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 158.55,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.0,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 183.05,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 195.2,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 207.35,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 219.8,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主耶稣啊，每想到你，心中便觉甜蜜；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "深愿我能早日见你，与你永在一起。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主！你是园中的凤仙花，你是谷中的百合花，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "你是沙仑的玫瑰花，我心岂能舍下？",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "世上并无一个声音，能把你恩唱尽；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "人间也无一颗慧心，能道你爱何殷！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主！你是园中的凤仙花，你是谷中的百合花，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "你是沙仑的玫瑰花，我心岂能舍下？",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "最能满足我的心怀，尚非你恩你爱；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "乃你自己和你神采，最能使我畅快。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主！你是园中的凤仙花，你是谷中的百合花，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "你是沙仑的玫瑰花，我心岂能舍下？",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "你爱多么长阔深高，没有人能知晓；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "蒙爱的人只能说道：哦，你的爱奇妙！”",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主！你是园中的凤仙花，你是谷中的百合花，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "你是沙仑的玫瑰花，我心岂能舍下？",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-251每想到你歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

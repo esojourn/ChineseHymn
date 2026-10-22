@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 144,
+    "published": 150,
     "existing": 8,
-    "needs-calibration": 73,
+    "needs-calibration": 77,
     "missing-audio": 2,
-    "pending": 144,
-    "ready-to-verify": 26,
+    "ready-to-verify": 21,
+    "pending": 139,
     "missing-lyrics": 23
   },
   "songs": [
@@ -514,7 +514,7 @@
       "songId": "02-005",
       "source": "02-005因你与我同行.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-005因你与我同行.mp3",
         "02-005因你与我同行-领唱.mp3"
@@ -554,10 +554,11 @@
       "songId": "02-009",
       "source": "02-009爱的真谛.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-009爱的真谛-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.520"
     },
     {
       "songId": "02-012",
@@ -3021,7 +3022,7 @@
       "songId": "05-251",
       "source": "05-251每想到你歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-251每想到你歌.mp3"
       ]
@@ -3108,7 +3109,7 @@
       "songId": "05-265",
       "source": "05-265愿跟随主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-265愿跟随主歌-领唱.mp3"
       ]
@@ -3288,7 +3289,7 @@
       "songId": "05-292",
       "source": "05-292我灵镇静歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-292我灵镇静歌-领唱.mp3"
       ]
@@ -3336,7 +3337,7 @@
       "songId": "05-300",
       "source": "05-300主是我万有歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-300主是我万有歌.mp3"
       ]
@@ -3345,7 +3346,7 @@
       "songId": "05-301",
       "source": "05-301谷中百合花.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-301谷中百合花.mp3",
         "05-301谷中百合花-领唱.mp3"
@@ -3355,7 +3356,7 @@
       "songId": "05-302",
       "source": "05-302恩友歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-302恩友歌.mp3",
         "05-302恩友歌-领唱.mp3"
@@ -3627,10 +3628,11 @@
       "songId": "06-001",
       "source": "06-001我虽软弱但你强壮.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-001我虽软弱但你强壮.mp3"
-      ]
+      ],
+      "reason": "第 5 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-002",
@@ -3691,10 +3693,11 @@
       "songId": "06-008",
       "source": "06-008我心灵得安宁.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-008我心灵得安宁.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-009",
@@ -3826,10 +3829,11 @@
       "songId": "06-023",
       "source": "06-023-他必保守我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-023-他必保守我.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-024",

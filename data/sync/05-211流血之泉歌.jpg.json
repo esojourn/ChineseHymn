@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-211",
+  "status": "reviewed",
+  "source": {
+    "file": "05-211流血之泉歌.jpg",
+    "sha256": "686588f5504573a8c9e6b18eb5abf712dff55bb52fcfebf27d197532e9111086",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-211流血之泉歌-领唱.mp3",
+      "sha256": "74625cee8ce9bb4d03d0be16c933e45e6cf2f0f94301e73b475448697fe7b372",
+      "duration": 188.96979591836734,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.173031,
+      "bottom": 0.265994
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.214978,
+      "bottom": 0.307941
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.256925,
+      "bottom": 0.349271
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.298255,
+      "bottom": 0.391218
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.407441,
+      "bottom": 0.499787
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.448772,
+      "bottom": 0.541118
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.489485,
+      "bottom": 0.581831
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.530198,
+      "bottom": 0.622544
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.678247,
+      "bottom": 0.77121
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.787433,
+      "bottom": 0.879779
+    }
+  },
+  "cues": [
+    {
+      "at": 21.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.6,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.5,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.05,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.6,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.5,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.15,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.7,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.6,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.15,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 157.6,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 167.7,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 178.6,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "今有-一处流血之泉，从主身上发源，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "罪人只要在此一洗，能去全身罪。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我真相信，我定相信，耶稣为我受害，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "天父爱子这样钉死，真是难报的爱！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "亲爱救主，你宝贝血永世决不失效，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "直 到天父所赎众民，罪 恶一概洗掉。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我真相信，我定相信，耶稣为我受害，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "天父爱子这样钉死，真是难报的爱！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "自我因信见主流血所成赎罪泉源，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "赎 罪妙恩我常传扬，至 终仍然要传。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我真相信，我定相信，耶稣为我受害，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "天父爱子这样钉死，真是难报的爱！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "直到临终拙嘴笨舌，无声在坟墓中，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "在 天还要放声赞美，颂 主救赎大功。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我真相信，我定相信，耶稣为我受害，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "天父爱子这样钉死，真是难报的爱！",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-211流血之泉歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "songId": "05-207",
+  "status": "reviewed",
+  "source": {
+    "file": "05-207凭主旨意行.jpg",
+    "sha256": "8441542b1455e981bac460c4f427beb378564c92e2eb31f1864d7cbc5e49aaa6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-207凭主旨意行.mp3",
+      "sha256": "9c788809ecc409f5bb7a76e18e16f01c34c568ea669ed6f907a484a056e48cca",
+      "duration": 123.55918367346939,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.45,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 23.7,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 33.7,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 40.8,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 50.7,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 60.7,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 67.8,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 77.7,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 87.7,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 94.8,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 104.7,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 114.7,
+          "region": "s3_v4",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-207凭主旨意行-领唱.mp3",
+      "sha256": "b53b4abb304111a5ce4778755df4aacfbf86bab1a83293d48fb2142c22dd7b17",
+      "duration": 144.512,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.188298,
+      "bottom": 0.294564
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.235512,
+      "bottom": 0.342722
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.283671,
+      "bottom": 0.390881
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.331829,
+      "bottom": 0.439039
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.469694,
+      "bottom": 0.576904
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.517852,
+      "bottom": 0.626007
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.567899,
+      "bottom": 0.674165
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.616058,
+      "bottom": 0.723268
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.753923,
+      "bottom": 0.860189
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.802081,
+      "bottom": 0.908347
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.850239,
+      "bottom": 0.956505
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.898398,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 4.25,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.9,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 52.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 87.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.1,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.55,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 122.9,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.2,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "凭主旨意“行，凭主意行，因主是窑匠，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我是泥土；陶我与造我，照主旨意，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我在此等待，敬候我主。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "凭主旨意行，凭主意行，鉴察试验我，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "就在今天；求主洗涤我，洁白如雪，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我谦卑跪下，在主足前。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "凭主旨意行，凭主意行，悲伤与疲倦，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "求主扶助；权柄众权柄，全是主的，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "抚摸并医治，惟靠救主。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "凭主旨意行，凭主意行，管理我动作，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "全听指挥；圣灵充满我，显然可见，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "惟独有耶稣，居我心内。（阿们）",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-207凭主旨意行.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

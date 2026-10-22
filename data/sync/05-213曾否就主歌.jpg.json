@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-213",
+  "status": "reviewed",
+  "source": {
+    "file": "05-213曾否就主歌.jpg",
+    "sha256": "30dc0a91f2b5314a6b21f0de5b0e661f4fe12591597d91839f051d0c1649a135",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-213曾否就主歌-领唱.mp3",
+      "sha256": "2cb723b348332f4b987e354ddd9b175d19cc044a4cb3742874723376851b11b2",
+      "duration": 146.9126530612245,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.173794,
+      "bottom": 0.260292
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.214078,
+      "bottom": 0.299984
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.255547,
+      "bottom": 0.340861
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.3764,
+      "bottom": 0.462306
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.416684,
+      "bottom": 0.502591
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.457561,
+      "bottom": 0.543467
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.629954,
+      "bottom": 0.715268
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.765025,
+      "bottom": 0.850931
+    }
+  },
+  "cues": [
+    {
+      "at": 20.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.8,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.9,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.9,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.0,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 104.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.9,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.0,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "你曾否靠耶稣宝血洗净罪？曾否洗于救主宝血泉？",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "确实倚赖救主施恩免众罪，曾否洗于救主宝血泉？",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "在主血必要洗，洗净罪，方可以成完全；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "成为圣洁，毫无瑕疵无斑点，必要洗于救主宝血",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "你愿日日顺从救主行福路，曾否洗于救主宝血泉？",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "望主引导，一心倚赖他保护，曾否洗于救主宝血泉？",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "在主血必要洗，洗净罪，方可以成完全；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "成为圣洁，毫无瑕疵无斑点，必要洗于救主宝血",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "新郎再来，你所穿洁白衣服，曾否洗于救主宝血泉？",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "圣徒被接，是否愿去享天福，曾否洗于救主宝血泉？",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "在主血必要洗，洗净罪，方可以成完全；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "成为圣洁，毫无瑕疵无斑点，必要洗于救主宝血",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-213曾否就主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-212",
+  "status": "reviewed",
+  "source": {
+    "file": "05-212宝贵血泉歌.jpg",
+    "sha256": "6d6423b58cba56bdfd5dbfa22b6a80441b7512cd8f04bceb04c321cdf0ed10bd",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-212宝贵血泉歌.mp3",
+      "sha256": "a7e5a6c4b93cfe78d84572e830cb1f34e9d0b7e170b2d795d315b7dc8169dae6",
+      "duration": 155.88266666666667,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 22.95,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 33.4,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 44.85,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 56.4,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 67.55,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 78.0,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 89.45,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 101.0,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 112.25,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 122.9,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 134.15,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 145.7,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-212宝贵血泉歌-领唱.mp3",
+      "sha256": "245986cc9f00ac6f459d7b50c089a6b8a5667274d0fe60a4afd1435b0a6f4d9d",
+      "duration": 156.888,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.176707,
+      "bottom": 0.260789
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.216659,
+      "bottom": 0.301346
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.257215,
+      "bottom": 0.341298
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.37707,
+      "bottom": 0.460547
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.417022,
+      "bottom": 0.500499
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.456973,
+      "bottom": 0.54045
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.639177,
+      "bottom": 0.723259
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.771743,
+      "bottom": 0.85522
+    }
+  },
+  "cues": [
+    {
+      "at": 23.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.8,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.25,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.8,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 67.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 78.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.85,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.4,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 123.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 134.55,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 146.1,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "当我见那宝贵血泉，要洗我一切罪孽，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "心中隐闻圣灵微声，问说：你愿否清洁？",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赞美耶稣！赞美耶稣！赞美主为罪人死。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "万民当将荣耀归主，因主血能洗净众罪污。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "颂扬永归耶稣圣名，主喜欢收纳罪人，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "白白赦我一切罪恶，洗净我的污秽心。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赞美耶稣！赞美耶稣！赞美主为罪人死。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "万民当将荣耀归主，因主血能洗净众罪污。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "荣耀、荣耀归于圣父，荣耀、荣耀归圣子，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "荣耀、荣耀归于圣灵， 荣耀归于三一主。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "赞美耶稣！赞美耶稣！赞美主为罪人死。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "万民当将荣耀归主，因主血能洗净众罪污。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-212宝贵血泉歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-377",
+  "status": "reviewed",
+  "source": {
+    "file": "02-377兴起为耶稣.txt",
+    "sha256": "59bf176a58ae32debe5f1c689a2bf24ce09f535fa3828efe1a858ceabe99e647",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-377兴起为耶稣.mp3",
+      "sha256": "2a886e14defb052d72ccca00a71882b076702073f2de3bb1fff824d261c08b46",
+      "duration": 150.33469387755102,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 17.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 52.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.3,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.2,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "兴起兴起为耶稣，十架忠勇精兵， 高举基督君王旗，莫损我主威名； 得胜不断的得胜，因主统领全军， 直到仇敌皆消灭，惟主基督是君。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "兴起兴起为耶稣，遵从号角军令， 今天是主荣耀日，快向敌阵进攻； 同心服役主旗下，勇抗仇敌万千， 危险时胆量更壮，力量必大增添。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "兴起兴起为耶稣，只靠主救大能， 血气之勇难依靠，己力不能得胜； 穿上福音的盔甲，虔诚祷告警醒， 危险重任不畏惧，靠主必能得胜。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "兴起兴起为耶稣，争战不会久长， 今日虽有干戈声，明日凯歌高唱； 忠心奋勇得胜者，必得生命冠冕， 并与荣耀大君王掌权直到永远。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-377兴起为耶稣.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 84,
+    "published": 90,
     "existing": 8,
-    "needs-calibration": 72,
+    "needs-calibration": 73,
     "missing-audio": 2,
-    "pending": 169,
-    "ready-to-verify": 62,
+    "pending": 167,
+    "ready-to-verify": 57,
     "missing-lyrics": 23
   },
   "songs": [
@@ -404,10 +404,11 @@
       "songId": "01-493",
       "source": "01-493像长江大河.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-493像长江大河.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "01-500",
@@ -782,7 +783,7 @@
       "songId": "02-259",
       "source": "02-259往普天下去传福音.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-259往普天下去传福音.mp3",
         "02-259往普天下去传福音-领唱.mp3"
@@ -958,7 +959,7 @@
       "songId": "02-377",
       "source": "02-377兴起为耶稣.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-377兴起为耶稣.mp3"
       ]
@@ -2712,7 +2713,7 @@
       "songId": "05-207",
       "source": "05-207凭主旨意行.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-207凭主旨意行.mp3",
         "05-207凭主旨意行-领唱.mp3"
@@ -2733,7 +2734,7 @@
       "songId": "05-211",
       "source": "05-211流血之泉歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-211流血之泉歌-领唱.mp3"
       ]
@@ -2742,7 +2743,7 @@
       "songId": "05-212",
       "source": "05-212宝贵血泉歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-212宝贵血泉歌.mp3",
         "05-212宝贵血泉歌-领唱.mp3"
@@ -2752,7 +2753,7 @@
       "songId": "05-213",
       "source": "05-213曾否就主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-213曾否就主歌-领唱.mp3"
       ]
@@ -2761,7 +2762,7 @@
       "songId": "05-214",
       "source": "05-214依傍十架歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-214依傍十架歌.mp3",
         "05-214依傍十架歌-领唱.mp3"

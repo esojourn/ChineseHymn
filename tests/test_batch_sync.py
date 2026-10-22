@@ -16,6 +16,9 @@ try:
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
     transfer_spec.loader.exec_module(transfer)
+    transcript_spec = importlib.util.spec_from_file_location('transcript_sync', TOOLS / 'align-transcript-sync.py')
+    transcript = importlib.util.module_from_spec(transcript_spec)
+    transcript_spec.loader.exec_module(transcript)
 except ImportError:
     confirm_boundaries = None
 
@@ -219,6 +222,39 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(weights, [.375, 3, .5])
         self.assertEqual(diagnostics[0]['beams'], 2)
         self.assertFalse(diagnostics[1]['dot'])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_transcript_order_includes_an_actually_recognized_final_reprise(self):
+        definitions = [{'region': 'r1', 'text': 'Morning voices sing the beauty of creation'},
+                       {'region': 'r2', 'text': 'Evening praises rise in thanks unto our King'},
+                       {'region': 'r3', 'text': 'Forever mercy shines with everlasting love'}]
+        words = []
+        for definition in definitions + definitions[:2]:
+            for word in definition['text'].split():
+                at = len(words) * .5
+                words.append({'word': word, 'start': at, 'end': at + .4})
+        order, estimates, diagnostics = transcript.performed_order(definitions, [{'words': words}], 'en')
+        self.assertEqual([item['region'] for item in order], ['r1', 'r2', 'r3', 'r1', 'r2'])
+        self.assertEqual(len(estimates), 5)
+        with self.assertRaisesRegex(ValueError, '全部正文'):
+            transcript.performed_order(definitions, [{'words': words[:8]}], 'en')
+        with self.assertRaisesRegex(ValueError, '尾部'):
+            extra = [{'word': 'unrelated material absent from all documented verses completely',
+                      'start': words[-1]['end'] + 1, 'end': words[-1]['end'] + 2}]
+            transcript.performed_order(definitions, [{'words': words[:24] + extra}], 'en')
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_transcript_confirmation_requires_two_windows_and_a_nearby_lexical_anchor(self):
+        rows = [{'index': index, 'window': window, 'at': estimate + window * .1,
+                 'valid': index > 0, 'positiveDurationFraction': .9, 'meanProbability': .6}
+                for index, estimate in enumerate([0, 10, 20]) for window in range(2)]
+        times, decisions = transcript.confirm_transcript_windows(rows, [0, 10, 20])
+        self.assertEqual(times, [.05, 10.05, 20.05])
+        self.assertEqual(len(decisions), 2)
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows[:-1], [0, 10, 20])
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [0, 5, 20])
 
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):

@@ -18,7 +18,7 @@ def context(text, language, tail=False):
     return value[-6:] if tail else value[:10]
 
 
-def align_windows(model, tokenizer, audio, definitions, estimates, language, resume=None, on_chunk=None):
+def align_windows(model, tokenizer, audio, definitions, estimates, language, resume=None, on_chunk=None, preceding_texts=None):
     observations = list(resume or [])
     from faster_whisper.audio import pad_or_trim
     duration = len(audio) / 16000
@@ -27,7 +27,8 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
         for index in range(first, min(first + 4, len(definitions))):
             if len([row for row in observations if row['index'] == index]) == 2:
                 continue
-            preceding = context(definitions[index - 1]['text'], language, True) if index else ''
+            previous = preceding_texts[index] if preceding_texts is not None else definitions[index - 1]['text'] if index else ''
+            preceding = context(previous, language, True)
             current = context(definitions[index]['text'], language)
             text = preceding + (' ' if language == 'en' else '') + current
             for window, (before, after) in enumerate([(6, 16), (4, 14)]):
@@ -227,6 +228,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         cue = {'at': at, 'region': item['region'], 'label': item['label'], 'transition': 'reading'}
         if not index:
             cue.update(moveStart=0, transition='intro')
+        elif index in evidence.get('returnIndices', []):
+            cue['transition'] = 'return'
         elif song['type'] == 'image' and index in first_indices:
             cue['transition'] = 'return'
         cues.append(cue)
@@ -246,11 +249,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 track['cues'] = []
                 evidence.setdefault('trackExceptions', {})[item['file']] = str(error)
         tracks.append(track)
-    method_description = ('Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'
+    method_description = ('Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
+                          if 'transcriptMatching' in evidence else
+                          'Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'
                           if 'referenceMatching' in evidence else
                           'Numbered-score melody/chroma matching with two rhythm templates and measured repeats.' if 'scoreMatching' in evidence else
                           'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.')
-    evidence_suffix = '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
+    evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},
             'tracks': tracks, 'regions': source['regions'], 'cues': cues,

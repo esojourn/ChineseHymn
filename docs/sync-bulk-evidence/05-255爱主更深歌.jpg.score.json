@@ -1,0 +1,735 @@
+{
+  "songId": "05-255",
+  "source": "05-255爱主更深歌.jpg",
+  "sourceHash": "d515f5b1e75847d9dc21b5407f09d7e0f8b81d91b43baeccec004e384594a688",
+  "trackHashes": [
+    {
+      "file": "05-255爱主更深歌-领唱.mp3",
+      "sha256": "204dfc4130f5686bce80e2bc28acba57ba8cf952cf3f38b93ebe30725f751c30"
+    }
+  ],
+  "scoreMatching": {
+    "algorithmVersion": 3,
+    "method": "numbered-score melody/chroma matching; optical beams/dots/dashes and printed accidentals",
+    "music": {
+      "period": 38.7,
+      "similarity": 0.9714269042015076,
+      "initialOnsetEstimate": 6.304,
+      "shifts": [
+        0.0,
+        38.7,
+        77.4,
+        116.1
+      ]
+    },
+    "rows": [
+      {
+        "text": "5-6511.23-13-21—2--0",
+        "confidence": 0.8190706476569176,
+        "notes": [
+          5,
+          6,
+          5,
+          1,
+          1,
+          2,
+          3,
+          1,
+          3,
+          2,
+          1,
+          2,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09375,
+          0.18229166666666666,
+          0.22916666666666666,
+          0.2708333333333333,
+          0.3072916666666667,
+          0.3802083333333333,
+          0.4270833333333333,
+          0.5104166666666666,
+          0.5572916666666666,
+          0.6458333333333334,
+          0.7083333333333334,
+          0.7916666666666666,
+          0.9270833333333334
+        ],
+        "spatialWeights": [
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.5,
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "rhythmWeights": [
+          2.0,
+          1.0,
+          1.0,
+          1,
+          1.0,
+          0.5,
+          2.0,
+          1,
+          2.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0
+        ],
+        "ocrRhythmWeights": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": false
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": false
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 2
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          }
+        ]
+      },
+      {
+        "text": "5-651.23-|2-1711--01",
+        "confidence": 0.8402329675853253,
+        "notes": [
+          5,
+          6,
+          5,
+          1,
+          2,
+          3,
+          2,
+          1,
+          7,
+          1,
+          0,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09137055837563451,
+          0.18274111675126903,
+          0.22842639593908629,
+          0.3096446700507614,
+          0.38071065989847713,
+          0.4263959390862944,
+          0.5583756345177665,
+          0.6446700507614214,
+          0.7055837563451777,
+          0.7969543147208121,
+          0.9289340101522843,
+          0.9695431472081218
+        ],
+        "spatialWeights": [
+          1.0,
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          1.5,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          0.5
+        ],
+        "rhythmWeights": [
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          1
+        ],
+        "ocrRhythmWeights": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 2
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": false
+          }
+        ]
+      },
+      {
+        "text": "4-4414.33-2-2212.11-",
+        "confidence": 0.9287390887737275,
+        "notes": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09405940594059406,
+          0.18316831683168316,
+          0.22772277227722773,
+          0.3069306930693069,
+          0.3811881188118812,
+          0.42574257425742573,
+          0.5594059405940595,
+          0.6435643564356436,
+          0.6881188118811881,
+          0.7326732673267327,
+          0.7673267326732673,
+          0.8415841584158416,
+          0.8811881188118812
+        ],
+        "spatialWeights": [
+          1.5,
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          2.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          1.0
+        ],
+        "rhythmWeights": [
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1,
+          1.0,
+          0.5,
+          2.0
+        ],
+        "ocrRhythmWeights": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": false
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          }
+        ]
+      },
+      {
+        "text": "6-66|1--02-171--01---|1---",
+        "confidence": 0.9122152190942031,
+        "notes": [
+          6,
+          6,
+          6,
+          1,
+          0,
+          2,
+          1,
+          7,
+          1,
+          0,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09644670050761421,
+          0.16751269035532995,
+          0.20812182741116753,
+          0.27411167512690354,
+          0.3553299492385787,
+          0.40609137055837563,
+          0.47715736040609136,
+          0.5228426395939086,
+          0.5736040609137056,
+          0.6548223350253807,
+          0.7258883248730964,
+          0.8578680203045685
+        ],
+        "spatialWeights": [
+          1.0,
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          2.0,
+          1.0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          2.0,
+          1.0,
+          0.5,
+          3.0,
+          1.0,
+          4.0,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          2,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          1,
+          3,
+          1,
+          4,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 2
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 2
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      }
+    ],
+    "spatialTemplate": {
+      "best": {
+        "cost": 0.24008330510260215,
+        "key": 2,
+        "starts": [
+          9.800000190734863,
+          19.899999618530273,
+          29.100000381469727,
+          39.099998474121094
+        ]
+      },
+      "runnerUp": {
+        "cost": 0.4365192580900759,
+        "key": 9,
+        "starts": [
+          5.0,
+          15.899999618530273,
+          25.399999618530273,
+          33.0
+        ]
+      }
+    },
+    "rhythmTemplate": {
+      "best": {
+        "cost": 0.21971116571155322,
+        "key": 2,
+        "starts": [
+          10.0,
+          19.5,
+          29.700000762939453,
+          39.20000076293945
+        ]
+      },
+      "runnerUp": {
+        "cost": 0.42380612395530526,
+        "key": 9,
+        "starts": [
+          5.099999904632568,
+          12.600000381469727,
+          20.100000381469727,
+          26.899999618530273
+        ]
+      }
+    }
+  },
+  "status": "ready",
+  "cueCount": 16,
+  "elapsedSeconds": 4.366
+}

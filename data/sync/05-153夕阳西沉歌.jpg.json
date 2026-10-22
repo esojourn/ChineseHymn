@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "songId": "05-153",
+  "status": "reviewed",
+  "source": {
+    "file": "05-153夕阳西沉歌.jpg",
+    "sha256": "b4ae9bd60894673490501c8e0219b71276a761f6cf2f4899a766cc29e2a862c8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-153夕阳西沉歌.mp3",
+      "sha256": "e6c70f776fb753e910008ad4d9e49aa87fe01a91ef3e84bb2f9f005e0ff169d5",
+      "duration": 190.48489795918368,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.157869,
+      "bottom": 0.240163
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.185122,
+      "bottom": 0.267415
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.21293,
+      "bottom": 0.295224
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.240739,
+      "bottom": 0.323032
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.268547,
+      "bottom": 0.350841
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.350304,
+      "bottom": 0.432598
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.377557,
+      "bottom": 0.45985
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.404809,
+      "bottom": 0.487103
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.432061,
+      "bottom": 0.514355
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.459314,
+      "bottom": 0.541051
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.540515,
+      "bottom": 0.622808
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.567767,
+      "bottom": 0.65006
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.595019,
+      "bottom": 0.677313
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.622272,
+      "bottom": 0.705121
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.65008,
+      "bottom": 0.731817
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.732393,
+      "bottom": 0.814687
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.760202,
+      "bottom": 0.842495
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.78801,
+      "bottom": 0.869748
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.815263,
+      "bottom": 0.897556
+    },
+    "s4_v5": {
+      "kind": "image",
+      "top": 0.842515,
+      "bottom": 0.924808
+    }
+  },
+  "cues": [
+    {
+      "at": 9.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.9,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.0,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 53.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.8,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.9,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 89.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.7,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 107.8,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.75,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.65,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 134.6,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.7,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.65,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 161.55,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 170.5,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 179.6,
+      "region": "s4_v5",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "夕阳西沉，求主与我同居，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "黑暗渐深，求主与我同居；：",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "求助无门，安慰也无求处，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "常助孤苦之神，与我同居。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "渺小浮生，飘向生涯尽处，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "欢娱好景，转瞬都成往事；·",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "变化无常，环境何能留住？",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "恳求不变之神，与我同居。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我深需主，时刻需主眷顾，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "除却主恩，试探何能驱除？：",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "谁能如主，时常导引扶持？",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "无论风雨晦明，恳求同居。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "有主赐福，仇敌何须畏惧？",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "泪消苦意，病痛也无足虑；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "坟墓威权，锋芒今在何处？",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "我仍欣然得胜，主若同居。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "示我宝架，双眸垂闭之时，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "照彻昏幽，指我直上天衢；",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "阴飞逝，欣看天光破曙，",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_v5",
+        "text": "·5.无论天上人间，恳求同居。",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-153夕阳西沉歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

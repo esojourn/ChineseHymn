@@ -2,13 +2,13 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 179,
+    "published": 185,
     "existing": 8,
-    "needs-calibration": 142,
+    "needs-calibration": 138,
     "missing-audio": 2,
-    "needs-track-alignment": 2,
-    "pending": 55,
-    "ready-to-verify": 9,
+    "needs-track-alignment": 3,
+    "pending": 53,
+    "ready-to-verify": 8,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1619,7 +1619,7 @@
       "songId": "03-029",
       "source": "03-029将最好献主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "03-029将最好献主.mp3",
         "03-029将最好献主-领唱.mp3"
@@ -1639,11 +1639,12 @@
       "songId": "03-031",
       "source": "03-031亲爱主，牵我手.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-031亲爱主，牵我手.mp3",
         "03-031亲爱主，牵我手-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
     },
     {
       "songId": "03-032",
@@ -2699,7 +2700,7 @@
       "songId": "05-153",
       "source": "05-153夕阳西沉歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-153夕阳西沉歌.mp3"
       ]
@@ -2745,7 +2746,7 @@
       "songId": "05-169",
       "source": "05-169领受饼杯歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-169领受饼杯歌.mp3"
       ]
@@ -2943,7 +2944,7 @@
       "songId": "05-230",
       "source": "05-230荣耀释放歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-230荣耀释放歌.mp3",
         "05-230荣耀释放歌-领唱.mp3"
@@ -3009,7 +3010,7 @@
       "songId": "05-239",
       "source": "05-239耶稣爱我歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-239耶稣爱我歌-领唱.mp3"
       ]
@@ -3121,7 +3122,7 @@
       "songId": "05-255",
       "source": "05-255爱主更深歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-255爱主更深歌-领唱.mp3"
       ]
@@ -3216,7 +3217,7 @@
       "songId": "05-273",
       "source": "05-273神的应许歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-273神的应许歌.mp3",
         "05-273神的应许歌-领唱.mp3"
@@ -3384,11 +3385,10 @@
       "songId": "05-295",
       "source": "05-295享受平安歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-295享受平安歌.mp3"
-      ],
-      "reason": "实际录音段数与歌词不匹配"
+      ]
     },
     {
       "songId": "05-296",
@@ -3534,11 +3534,10 @@
       "songId": "05-326",
       "source": "05-326万民奋兴歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-326万民奋兴歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 4 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-327",
@@ -3553,11 +3552,10 @@
       "songId": "05-336",
       "source": "05-336为你离天歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-336为你离天歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-337",
@@ -3609,11 +3607,10 @@
       "songId": "05-348",
       "source": "05-348任主差遣歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-348任主差遣歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-349",
@@ -3694,11 +3691,10 @@
       "songId": "06-001",
       "source": "06-001我虽软弱但你强壮.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "06-001我虽软弱但你强壮.mp3"
-      ],
-      "reason": "第 2 个歌词起点未通过转写及双窗口核对"
+      ]
     },
     {
       "songId": "06-002",

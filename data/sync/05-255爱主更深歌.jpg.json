@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-255",
+  "status": "reviewed",
+  "source": {
+    "file": "05-255爱主更深歌.jpg",
+    "sha256": "d515f5b1e75847d9dc21b5407f09d7e0f8b81d91b43baeccec004e384594a688",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-255爱主更深歌-领唱.mp3",
+      "sha256": "204dfc4130f5686bce80e2bc28acba57ba8cf952cf3f38b93ebe30725f751c30",
+      "duration": 164.23183673469387,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.170174,
+      "bottom": 0.258778
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.20497,
+      "bottom": 0.293574
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.239766,
+      "bottom": 0.3278
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.274562,
+      "bottom": 0.363167
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.379521,
+      "bottom": 0.466985
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.413747,
+      "bottom": 0.501781
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.447402,
+      "bottom": 0.536007
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.482198,
+      "bottom": 0.570232
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.584305,
+      "bottom": 0.67291
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.619101,
+      "bottom": 0.707706
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.653897,
+      "bottom": 0.741931
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.688123,
+      "bottom": 0.776157
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.793652,
+      "bottom": 0.882257
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.828448,
+      "bottom": 0.916483
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.863245,
+      "bottom": 0.951279
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.89747,
+      "bottom": 0.986075
+    }
+  },
+  "cues": [
+    {
+      "at": 9.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.15,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.1,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.85,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 97.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.55,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.0,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 135.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 145.5,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.25,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "切愿爱主更深，更深爱称！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我今屈膝求恳，成此心意。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "这是衷心渴慕，爱你更深，我主，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": ".爱主更深！爱主更深！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "前我追求荣禄、安闲、逍遥，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "今只寻求基督，福份上好。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "这是惟-渴慕，爱你更深，我主，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "爱主更深！爱主更深！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "忧伤尽可施威，横加苦痛；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "但你使者何美，带来歌颂，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "与我同声唱出，爱你更深，我主，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "爱主更深！爱主更深！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "至终呼吸短促，歌声轻微，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "我心仍要发出祷告赞美。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "我心仍是渴慕，爱你更深，我主，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "爱主更深！爱主更深！（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-255爱主更深歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-239",
+  "status": "reviewed",
+  "source": {
+    "file": "05-239耶稣爱我歌.jpg",
+    "sha256": "771019c8d9ef0d7d1fa4add8aca6e384a84990e0096192efee109cc8abf9751e",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-239耶稣爱我歌-领唱.mp3",
+      "sha256": "044f478977779049445dc876fe3f859613e45233c131c83ffd25d175958541c7",
+      "duration": 166.92244897959185,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.220762,
+      "bottom": 0.316845
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.260791,
+      "bottom": 0.356874
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.300821,
+      "bottom": 0.396162
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.340109,
+      "bottom": 0.436192
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.472799,
+      "bottom": 0.568141
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.512087,
+      "bottom": 0.607429
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.551375,
+      "bottom": 0.647458
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.590663,
+      "bottom": 0.686746
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.771537,
+      "bottom": 0.866137
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.902745,
+      "bottom": 0.998086
+    }
+  },
+  "cues": [
+    {
+      "at": 19.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.25,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.8,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.45,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 65.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.15,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 82.7,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 102.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.15,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.7,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.35,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 139.3,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 148.05,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 156.6,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣爱我万不错，因有圣书告诉我；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "凡属我主众小羊，虽然软弱主强壮。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主耶稣爱我，主耶稣爱我，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣爱我，圣书上告诉我。’（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣爱我舍性命，将我罪恶洗干净；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "天堂荣门替我开，把他小羊引进来。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主耶稣爱我，主耶稣爱我，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣爱我，圣书上告诉我。’（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣爱我永不忘，永不离开他小羊；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "白日遭难主搭救，黑夜睡觉主看守。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主耶稣爱我，主耶稣爱我，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣爱我，圣书上告诉我。’（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "耶稣爱我爱到底，爱我罪人真希奇；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "倘若生前我爱他，死后领我到他家。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主耶稣爱我，主耶稣爱我，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣爱我，圣书上告诉我。’（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-239耶稣爱我歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

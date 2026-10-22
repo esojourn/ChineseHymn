@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-273",
+  "status": "reviewed",
+  "source": {
+    "file": "05-273神的应许歌.jpg",
+    "sha256": "258c20db49df94e8054cfdaca446e2b9cad67c39aa03c906b1f330f2c1bb9576",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-273神的应许歌.mp3",
+      "sha256": "d373aa8cf1066d91f9fae12c83fed0c05cd194bd9c0593154b1891ce3845c6b9",
+      "duration": 147.1738775510204,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.2,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 22.35,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 33.5,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 44.5,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 55.9,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 66.95,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 78.1,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 89.2,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 100.5,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 111.55,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 122.7,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 133.8,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-273神的应许歌-领唱.mp3",
+      "sha256": "61a324f9b153c6e77595fa7b2c0956dfee071d1eb7e2faa94a4f8f0b60c30241",
+      "duration": 148.08,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.243276,
+      "bottom": 0.335795
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.279312,
+      "bottom": 0.371137
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.314655,
+      "bottom": 0.40648
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.412368,
+      "bottom": 0.5035
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.447017,
+      "bottom": 0.538843
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.483053,
+      "bottom": 0.573492
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.631354,
+      "bottom": 0.72318
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.72976,
+      "bottom": 0.821585
+    }
+  },
+  "cues": [
+    {
+      "at": 22.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.45,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.9,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.4,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 74.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.0,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.5,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.1,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 116.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.0,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.5,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "神未曾应许：天色常蓝，人生的路途花香常漫；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "神未曾应许：常晴无雨，常乐无痛苦，常安无虞。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "神却曾应许：生活有力，行路有光亮，作工得息，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "试炼得恩助，危难有赖，无限的体谅，不尽的爱。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "神未曾应许：不遇试探、懊恼和忧虑、不幸悲叹；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "神未曾应许：不负重担、繁忙的事务、周折、困难。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "神却曾应许：生活有力，行路有光亮，作工得息，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "试炼得恩助，危难有赖，无限的体谅，不尽的爱。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "神未曾应许：路常平坦，任意地奔跑，毫无阻拦，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "没有深水阻，汪洋一片，没有大山挡，高薄云天。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "神却曾应许：生活有力，行路有光亮，作工得息，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "试炼得恩助，危难有赖，无限的体谅，不尽的爱。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-273神的应许歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

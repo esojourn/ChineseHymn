@@ -171,6 +171,7 @@ const server = http.createServer((req, res) => {
             return HymnSync.mount({ manifest: '/not-found.json' });
         });
         assert.equal(await page.locator('#auto-scroll').isDisabled(), true);
+        assert.equal(await page.locator('#resume-auto-scroll').isVisible(), false);
         assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1');
         assert.match(await page.locator('#auto-scroll-status').textContent(), /暂无/);
         console.log('PASS: missing timeline does not clear preference or break playback');
@@ -185,8 +186,7 @@ const server = http.createServer((req, res) => {
         await page.route('**/timeline.json', route => route.fulfill({ json: mountedData }));
         await page.goto(base + '/fixture');
         await page.screenshot();
-        await page.evaluate(async () => {
-            Cookies.remove('hymn-auto-scroll', { path: '/' });
+        const mountTimeline = () => page.evaluate(async () => {
             const audio = document.querySelector('audio');
             Object.defineProperty(audio, 'currentTime', { get: () => 25 });
             Object.defineProperty(audio, 'duration', { get: () => 120 });
@@ -194,6 +194,8 @@ const server = http.createServer((req, res) => {
                 audioFile: '01-001测试.mp3', sourceHash: 'a'.repeat(64), audioHash: 'b'.repeat(64) };
             await HymnSync.mount(mountConfig);
         });
+        await page.evaluate(() => Cookies.remove('hymn-auto-scroll', { path: '/' }));
+        await mountTimeline();
         await page.waitForTimeout(700);
         assert.equal(await page.locator('#auto-scroll').isDisabled(), false);
         assert.equal(await page.locator('#auto-scroll').isChecked(), true, 'auto scrolling defaults on without a saved preference');
@@ -203,8 +205,8 @@ const server = http.createServer((req, res) => {
         await page.mouse.wheel(0, 100);
         await page.waitForTimeout(100);
         assert.equal(await page.locator('#auto-scroll').isChecked(), false);
-        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '0');
-        const resume = page.getByRole('button', { name: '继续自动滚动' });
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), undefined, 'manual interruption preserves the unsaved default');
+        const resume = page.getByRole('button', { name: '启用自动滚动' });
         assert.equal(await resume.isVisible(), true, 'manual scrolling reveals resume control');
         await page.setViewportSize({ width: 390, height: 844 });
         const resumeBox = await resume.boundingBox();
@@ -214,14 +216,35 @@ const server = http.createServer((req, res) => {
         await page.keyboard.press('Enter');
         assert.equal(await page.locator('#auto-scroll').isChecked(), true);
         assert.equal(await resume.isVisible(), false, 'resume hides once following is restored');
-        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1');
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), undefined, 'resume does not save a menu preference');
         assert.equal(await page.evaluate(() => document.querySelector('audio').paused), true, 'resume affects scrolling, not audio playback');
         assert.ok(Math.abs(await page.evaluate(() => scrollY) - manualPosition) < 100, 'resume does not immediately jump');
         await page.waitForTimeout(700);
         await page.locator('#auto-scroll').uncheck();
-        assert.equal(await resume.isVisible(), false, 'explicit menu disable does not offer an interruption resume');
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '0', 'menu disable saves the preference');
+        assert.equal(await resume.isVisible(), true, 'menu disable offers the enable button');
+        await page.goto(base + '/fixture');
+        await mountTimeline();
+        assert.equal(await page.locator('#auto-scroll').isChecked(), false, 'menu disable survives navigation');
+        assert.equal(await resume.isVisible(), true, 'saved off preference still offers the enable button');
+        await resume.click();
+        assert.equal(await page.locator('#auto-scroll').isChecked(), true);
+        assert.equal(await resume.isVisible(), false);
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '0', 'button enables only this visit');
+        await page.goto(base + '/fixture');
+        await mountTimeline();
+        assert.equal(await page.locator('#auto-scroll').isChecked(), false, 'temporary enable does not overwrite the saved off preference');
         await page.locator('#auto-scroll').check();
         assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1');
+        await page.waitForTimeout(700);
+        await page.evaluate(() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'PageDown', bubbles: true })));
+        assert.equal(await page.locator('#auto-scroll').isChecked(), false);
+        assert.equal(await resume.isVisible(), true);
+        assert.equal(await page.evaluate(() => Cookies.get('hymn-auto-scroll')), '1', 'manual interruption preserves the saved on preference');
+        await page.goto(base + '/fixture');
+        await mountTimeline();
+        assert.equal(await page.locator('#auto-scroll').isChecked(), true, 'saved on preference resumes after navigation');
+        assert.equal(await resume.isVisible(), false);
         await page.setViewportSize({ width: 1000, height: 700 });
         await page.goto(base + '/fixture');
         await page.evaluate(() => {
@@ -229,7 +252,7 @@ const server = http.createServer((req, res) => {
             return HymnSync.mount({ songId: '01-001', manifest: '/timeline.json', sourceFile: '01-001测试.txt',
                 audioFile: '01-001测试.mp3', sourceHash: 'f'.repeat(64), audioHash: 'b'.repeat(64) });
         });
-        assert.equal(await page.locator('#auto-scroll').isChecked(), false, 'saved manual preference overrides the default');
+        assert.equal(await page.locator('#auto-scroll').isChecked(), false, 'saved menu preference overrides the default');
         assert.equal(await page.locator('#auto-scroll').isDisabled(), true);
         assert.equal(await page.locator('#resume-auto-scroll').isVisible(), false);
         assert.match(await page.locator('#auto-scroll-status').textContent(), /素材已更新/);

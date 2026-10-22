@@ -203,23 +203,26 @@
         resume.id = 'resume-auto-scroll';
         resume.className = 'sync-resume';
         resume.hidden = true;
-        resume.title = '继续自动滚动';
-        resume.setAttribute('aria-label', '继续自动滚动');
+        resume.title = '启用自动滚动';
+        resume.setAttribute('aria-label', '启用自动滚动');
         resume.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>';
         document.body.appendChild(resume);
         resume.addEventListener('click', () => {
             if (!controller || toggle.disabled) return;
-            toggle.checked = true;
-            toggle.dispatchEvent(new Event('change'));
+            setFollowing(true);
         });
+        const setFollowing = (enabled, message) => {
+            toggle.checked = enabled;
+            controller?.setEnabled(enabled);
+            resume.hidden = toggle.disabled || enabled;
+            status.textContent = message || (enabled ? '自动跟随中；手动滚动可接管' : '已关闭，点击右下角按钮或打开开关启用');
+        };
         toggle.checked = window.Cookies?.get('hymn-auto-scroll') !== '0';
         toggle.disabled = true;
         status.textContent = '正在检查自动滚动数据…';
         toggle.addEventListener('change', () => {
-            resume.hidden = true;
             window.Cookies?.set('hymn-auto-scroll', toggle.checked ? '1' : '0', { expires: 60, path: '/' });
-            controller?.setEnabled(toggle.checked);
-            status.textContent = toggle.checked ? '自动跟随中；手动滚动可接管' : '已关闭，可随时重新开启';
+            setFollowing(toggle.checked);
         });
         try {
             const response = await fetch(config.manifest);
@@ -238,10 +241,7 @@
             if (img) await img.decode();
             if (document.fonts) await document.fonts.ready;
             controller = new Controller(audio, content, data, track, () => {
-                toggle.checked = false;
-                window.Cookies?.set('hymn-auto-scroll', '0', { expires: 60, path: '/' });
-                resume.hidden = toggle.disabled;
-                status.textContent = '已手动接管，点击右下角继续按钮或打开开关恢复跟随';
+                setFollowing(false, '已手动接管，点击右下角按钮或打开开关恢复跟随');
             });
             const checkDuration = () => {
                 if (Number.isFinite(audio.duration) && Math.abs(audio.duration - track.duration) > 1) {
@@ -252,10 +252,9 @@
                 }
             };
             toggle.disabled = false;
-            status.textContent = toggle.checked ? '自动跟随中；手动滚动可接管' : '打开后随歌曲平滑移动';
             checkDuration();
             audio.addEventListener('loadedmetadata', checkDuration);
-            if (!toggle.disabled) controller.setEnabled(toggle.checked);
+            if (!toggle.disabled) setFollowing(toggle.checked);
         } catch (error) {
             resume.hidden = true;
             status.textContent = /[\u3400-\u9fff]/.test(error.message) ? error.message : '自动滚动数据无法读取，仍可手动阅读';

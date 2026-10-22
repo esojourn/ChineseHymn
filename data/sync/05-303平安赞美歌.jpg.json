@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "songId": "05-303",
+  "status": "reviewed",
+  "source": {
+    "file": "05-303平安赞美歌.jpg",
+    "sha256": "e4187b70e001252a51c0ec5951e2537caa0835f6055561f91d38e459d3862604",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-303平安赞美歌.mp3",
+      "sha256": "c08b30609b1f560f29074d529c27344c9e3c683e6e5bfadd46d94633d8c1102c",
+      "duration": 170.5795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.180593,
+      "bottom": 0.275562
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.222521,
+      "bottom": 0.318126
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.265085,
+      "bottom": 0.360054
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.308284,
+      "bottom": 0.403253
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.350847,
+      "bottom": 0.445817
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.461385,
+      "bottom": 0.55699
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.503313,
+      "bottom": 0.598918
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.545877,
+      "bottom": 0.640846
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.58717,
+      "bottom": 0.682139
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.629098,
+      "bottom": 0.725338
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.740907,
+      "bottom": 0.835876
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.78347,
+      "bottom": 0.87844
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.826669,
+      "bottom": 0.921003
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.868598,
+      "bottom": 0.963567
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.910526,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 15.3,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.75,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 56.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.35,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 87.3,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.05,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 107.2,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.9,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 129.65,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.9,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 148.6,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.35,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣，我心所有平安，除主以外，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "无人能给；休息之乐，无扰之安，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "蒙爱的人才能获得。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "疲倦的灵，蒙主施恩，患难化成",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "甜蜜安宁；在主恩臂蔽荫之间，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我灵不怕风浪敌人。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "寂寞旷野，心无畏怯，汪洋大海，“",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "稳渡无惊；前程方向，我不担心，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "因我终身与主同行。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "基督是我终身向导，多愁夜里",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "保惠之师，孤独期间真挚良友，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "是我救主、光明、策士。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "力量光阴，愿献于主；内心行动，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "愿依圣意；愿在平安、赞美中间，",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "静待我主永恒时期。（阿们）",
+        "label": "第5段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-303平安赞美歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

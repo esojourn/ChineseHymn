@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-313",
+  "status": "reviewed",
+  "source": {
+    "file": "05-313我愿像主歌.jpg",
+    "sha256": "a944447749864e8ca52b4f6ba22fe5606c1a3428e475d6118a3b618e4b13a4d8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-313我愿像主歌.mp3",
+      "sha256": "791297ddf775962ed3268aba549f65c7e5f83cfe5b76aa9083dca84dc2788d96",
+      "duration": 165.59020408163266,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.186134,
+      "bottom": 0.279144
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.230392,
+      "bottom": 0.323402
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.274008,
+      "bottom": 0.367018
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.404217,
+      "bottom": 0.496585
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.447833,
+      "bottom": 0.540202
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.490809,
+      "bottom": 0.583819
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.665917,
+      "bottom": 0.758927
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.795484,
+      "bottom": 0.888494
+    }
+  },
+  "cues": [
+    {
+      "at": 23.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.2,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.75,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.8,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.15,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 118.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 130.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 141.5,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 153.85,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主，我愿象你，荣耀的救主！这是我所求，是我所慕；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我甘愿舍弃一切的虚浮，只要能披戴我主基督。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主，我愿象你！主，我愿象你！荣耀的救主，洁净象你；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "愿象你甘甜，愿象你完全，将你的荣形深印心里。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主，我愿象你，我恳切祈求，圣洁又谦卑，跟随你行；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "愿将我自己和一切所有，完全献给你，永远相亲。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主，我愿象你！主，我愿象你！荣耀的救主，洁净象你；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "愿象你甘甜，愿象你完全，将你的荣形深印心里。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主，我愿象你，求赐下圣灵，将你的慈爱充满我心；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我 愿作主殿，求你来 居住，使我的生命与你相印。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主，我愿象你！主，我愿象你！荣耀的救主，洁净象你；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "愿象你甘甜，愿象你完全，将你的荣形深印心里。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-313我愿像主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

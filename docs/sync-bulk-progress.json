@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 150,
+    "published": 156,
     "existing": 8,
-    "needs-calibration": 77,
+    "needs-calibration": 78,
     "missing-audio": 2,
-    "ready-to-verify": 21,
-    "pending": 139,
+    "pending": 138,
+    "ready-to-verify": 15,
     "missing-lyrics": 23
   },
   "songs": [
@@ -514,7 +514,7 @@
       "songId": "02-005",
       "source": "02-005因你与我同行.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-005因你与我同行.mp3",
         "02-005因你与我同行-领唱.mp3"
@@ -545,10 +545,11 @@
       "songId": "02-008",
       "source": "02-008主坚强仁慈.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-008主坚强仁慈-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,6,7"
     },
     {
       "songId": "02-009",
@@ -3366,7 +3367,7 @@
       "songId": "05-303",
       "source": "05-303平安赞美歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-303平安赞美歌.mp3"
       ]
@@ -3375,7 +3376,7 @@
       "songId": "05-304",
       "source": "05-304生命路上歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-304生命路上歌.mp3"
       ]
@@ -3384,7 +3385,7 @@
       "songId": "05-308",
       "source": "05-308主是我磐石歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-308主是我磐石歌.mp3"
       ]
@@ -3393,7 +3394,7 @@
       "songId": "05-313",
       "source": "05-313我愿像主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-313我愿像主歌.mp3"
       ]
@@ -3402,7 +3403,7 @@
       "songId": "05-315",
       "source": "05-315助我进深歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-315助我进深歌.mp3"
       ]

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-304",
+  "status": "reviewed",
+  "source": {
+    "file": "05-304生命路上歌.jpg",
+    "sha256": "8af26811ced0cec026c1c777ba3484150bbb8a7a9ed0fcebcf8ed1bc262f740d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-304生命路上歌.mp3",
+      "sha256": "85d59fb6300f44272ac71d4fe7777487042d145cd102930d4322f4d5f1fa6348",
+      "duration": 150.0734693877551,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.200263,
+      "bottom": 0.29495
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.248082,
+      "bottom": 0.342066
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.295902,
+      "bottom": 0.389886
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.343018,
+      "bottom": 0.437705
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.468895,
+      "bottom": 0.562879
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.516011,
+      "bottom": 0.609292
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.563127,
+      "bottom": 0.657111
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.610243,
+      "bottom": 0.703524
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.779017,
+      "bottom": 0.873705
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.904191,
+      "bottom": 0.998176
+    }
+  },
+  "cues": [
+    {
+      "at": 8.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.65,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.0,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.85,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 51.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.9,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.75,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 86.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.8,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 104.65,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.9,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.35,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.7,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.55,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我心依靠救主耶稣，没有忧愁苦难；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "主钉十架为我受苦，他背负我重担。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "如今我走生命路上，主当颂赞，主当颂赞；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "如今我走生命路上，因主耶稣挑我重担。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "每日我所经过事情，主说不要惧怕；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "若有惧怕，祷告诚心，平安主必赐下。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "如今我走生命路上，主当颂赞，主当颂赞；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "如今我走生命路上，因主耶稣挑我重担。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "他告诉我天父的爱，他眼晴不困倦；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "他是我主，永不更改，要补足我完全。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "如今我走生命路上，主当颂赞，主当颂赞；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "如今我走生命路上，因主耶稣挑我重担。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "无论何时来到主前，他应许不改变；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "他大能力为我周全，情愿挑我重担。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "如今我走生命路上，主当颂赞，主当颂赞；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "如今我走生命路上，因主耶稣挑我重担。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-304生命路上歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

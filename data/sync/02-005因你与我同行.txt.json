@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-005",
+  "status": "reviewed",
+  "source": {
+    "file": "02-005因你与我同行.txt",
+    "sha256": "a25f62c27b53cbde03e8e16e08c4451e5fb3bd5ecf236f40ba3885838705e934",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-005因你与我同行.mp3",
+      "sha256": "9c5b2d25e03988bcd85785f7f70d4b8153e195d73c5b8fa690431901bb783bd1",
+      "duration": 139.80746875,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.17,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.58,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 55.91,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.27,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.64,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 118.9,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-005因你与我同行-领唱.mp3",
+      "sha256": "92200b9b4bc2e036600ba13720fd55977e36be5389a5e6d89ae588413c519070",
+      "duration": 140.13146875,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    }
+  },
+  "cues": [
+    {
+      "at": 10.17,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.58,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.91,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.27,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 100.64,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 118.9,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "因你与我同行，我就不会孤寂， 欢笑时你同喜，忧伤时你共泣。 因你是我力量，我就不会绝望， 困乏软弱中有你赐恩，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我就得刚强。 经风暴，过黑夜， 度阡陌，越洋海， 有你手牵引我，我就勇往向前。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "愿我所行路径，愿我所历际遇， 处处留下有你同在的恩典痕迹。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "因主与我同行，我就不会孤寂， 欢笑时祂同喜，忧伤时祂共泣。 因主是我力量，我就不会绝望， 困乏软弱中有祂赐恩，",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我就得刚强。 经风暴，过黑夜， 度阡陌，越洋海， 有主手牵引我，我就勇往向前。",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "愿我所行路径，愿我所历际遇， 处处留下有主同在的恩典痕迹。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-005因你与我同行.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

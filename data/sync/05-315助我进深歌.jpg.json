@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-315",
+  "status": "reviewed",
+  "source": {
+    "file": "05-315助我进深歌.jpg",
+    "sha256": "ba5329d5fa906a484e4a775c9dcf21f59d1aed603969347369680f1adbad1f88",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-315助我进深歌.mp3",
+      "sha256": "a1bddb22b005b4e428f6401f26e5f2c5ec90443e810b8a0bfa1c33445404c405",
+      "duration": 175.512,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.185885,
+      "bottom": 0.275007
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.228424,
+      "bottom": 0.317547
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.272234,
+      "bottom": 0.360721
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.315408,
+      "bottom": 0.403895
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.434137,
+      "bottom": 0.522625
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.477312,
+      "bottom": 0.565164
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.519216,
+      "bottom": 0.608338
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.56239,
+      "bottom": 0.650243
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.735723,
+      "bottom": 0.823575
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.86842,
+      "bottom": 0.956908
+    }
+  },
+  "cues": [
+    {
+      "at": 6.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.6,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.85,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.25,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.2,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.45,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.95,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.7,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.95,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.35,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 141.55,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.3,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 161.55,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "进深！进深！入主仁爱深渊，每日更进深；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "登高！登高！效主智慧完全，更知主恩深。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求主助我进深！我愿登峰造极！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赐我聪明智慧，领我进入真理。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "进深！进深！直趋保惠恩师，时刻受启示；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "生命必需与主合而为一，实行他旨意。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求主助我进深！我愿登峰造极！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赐我聪明智慧，领我进入真理。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "进深！进深！虽经艰难试炼，还向标竿行；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "根深蒂固在主圣洁中间，结果好收成。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求主助我进深！我愿登峰造极！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赐我聪明智慧，领我进入真理。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "进深！登高！每日跟主脚步，行走得胜路；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "全身满有耶稣荣耀形状，真为基督徒。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "求主助我进深！我愿登峰造极！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赐我聪明智慧，领我进入真理。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-315助我进深歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -18,20 +18,21 @@ def context(text, language, tail=False):
     return value[-6:] if tail else value[:10]
 
 
-def align_windows(model, tokenizer, audio, definitions, estimates, language, resume=None, on_chunk=None, preceding_texts=None):
+def align_windows(model, tokenizer, audio, definitions, estimates, language, resume=None, on_chunk=None, preceding_texts=None, window_bounds=None):
     observations = list(resume or [])
+    bounds = window_bounds or [(6, 16), (4, 14)]
     from faster_whisper.audio import pad_or_trim
     duration = len(audio) / 16000
     for first in range(0, len(definitions), 4):
         features, frame_counts, tokens, items = [], [], [], []
         for index in range(first, min(first + 4, len(definitions))):
-            if len([row for row in observations if row['index'] == index]) == 2:
+            if all(any(row['index'] == index and row['window'] == window for row in observations) for window in range(len(bounds))):
                 continue
             previous = preceding_texts[index] if preceding_texts is not None else definitions[index - 1]['text'] if index else ''
             preceding = context(previous, language, True)
             current = context(definitions[index]['text'], language)
             text = preceding + (' ' if language == 'en' else '') + current
-            for window, (before, after) in enumerate([(6, 16), (4, 14)]):
+            for window, (before, after) in enumerate(bounds):
                 start, end = max(0, estimates[index] - before), min(duration, estimates[index] + after)
                 if end <= start:
                     continue

@@ -59,6 +59,11 @@ def text_source(path, language='zh'):
 
     for i in range(first, len(lines)):
         line = lines[i].strip()
+        if re.fullmatch('-{2,}', line):
+            trailing = [value.strip() for value in lines[i + 1:] if value.strip()]
+            if len(trailing) == 1 and ' - ' in trailing[0] and not verse_number(trailing[0]):
+                flush()
+                break
         if CREDITS.match(line):
             flush()
             continue

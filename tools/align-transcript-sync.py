@@ -8,6 +8,8 @@ import json
 from pathlib import Path
 import re
 import time
+import numpy as np
+from sync_batch_transcript import lexical_positions
 from sync_batch_sources import clean, prepare, text_source
 from sync_batch_align import align_windows, export_result
 
@@ -17,7 +19,7 @@ spec.loader.exec_module(batch)
 _model = None
 
 
-def match_order(definitions, words, language):
+def match_order(definitions, words, language, partial=False):
     expected, spans = '', []
     for definition in definitions:
         text = clean(definition['text'], language)
@@ -29,9 +31,14 @@ def match_order(definitions, words, language):
         heard += text
         locations.extend([word] * len(text))
     matched = {}
-    for block in difflib.SequenceMatcher(None, expected, heard, autojunk=False).get_matching_blocks():
-        for offset in range(block.size):
-            matched[block.a + offset] = block.b + offset
+    if partial:
+        for block in difflib.SequenceMatcher(None, expected, heard, autojunk=False).get_matching_blocks():
+            for offset in range(block.size):
+                matched[block.a + offset] = block.b + offset
+    else:
+        positions = lexical_positions(np.array([ord(char) for char in expected], dtype=np.int32),
+                                      np.array([ord(char) for char in heard], dtype=np.int32))
+        matched = {index: int(position) for index, position in enumerate(positions) if position >= 0}
     anchors = []
     for index, (start, end) in enumerate(spans):
         positions = [matched[position] for position in range(start, end) if position in matched]
@@ -41,6 +48,7 @@ def match_order(definitions, words, language):
         anchors.append({'index': index, 'region': definitions[index]['region'],
                         'matchedFraction': round(ratio, 3), 'matchedCharacters': len(positions),
                         'at': float(locations[positions[0]]['start']),
+                        'firstWordEnd': float(locations[positions[0]]['end']),
                         'end': float(locations[positions[-1]]['end'])})
     return anchors, len(heard)
 
@@ -50,7 +58,9 @@ def performed_order(definitions, segments, language):
              if 'start' in word and 'end' in word and clean(word['word'], language)]
     anchors, count = match_order(definitions, words, language)
     if [anchor['index'] for anchor in anchors] != list(range(len(definitions))):
-        raise ValueError('转写尚未覆盖全部正文阅读区域')
+        anchors, count = match_order(definitions, words, language, partial=True)
+        if [anchor['index'] for anchor in anchors] != list(range(len(definitions))):
+            raise ValueError('转写尚未覆盖全部正文阅读区域')
     order, diagnostics = list(definitions), list(anchors)
     cursor = max(anchor['end'] for anchor in anchors)
     for repeat in range(4):
@@ -58,7 +68,7 @@ def performed_order(definitions, segments, language):
         remaining = sum(len(clean(word['word'], language)) for word in tail)
         if remaining < (35 if language == 'en' else 15):
             break
-        additional, count = match_order(definitions, tail, language)
+        additional, count = match_order(definitions, tail, language, partial=True)
         indices = [anchor['index'] for anchor in additional]
         if (not indices or indices != list(range(len(indices))) or
                 sum(anchor['matchedCharacters'] for anchor in additional) / max(1, count) < .75):
@@ -77,23 +87,28 @@ def performed_order(definitions, segments, language):
     return order, estimates, diagnostics
 
 
-def confirm_transcript_windows(observations, estimates):
+def confirm_transcript_windows(observations, estimates, anchor_ranges=None):
     confirmed, edge_decisions = [], []
     for index, estimate in enumerate(estimates):
         pair = [row for row in observations if row['index'] == index]
-        if len(pair) != 2:
+        if len(pair) < 2:
             raise ValueError(f'第 {index + 1} 个歌词起点缺少两组声学核对')
         accepted = []
         for row in pair:
             at_start = (index == 0 and 0 <= estimate <= .1 and 0 <= row.get('at', 1) <= .1 and
                         row.get('positiveDurationFraction', 0) >= .65 and row.get('meanProbability', 0) >= .12)
-            accepted.append(row['valid'] or at_start)
+            if row['valid'] or at_start:
+                accepted.append(row)
             if at_start and not row['valid']:
                 edge_decisions.append({'index': 0, 'window': row['window'], 'reason': '转写与声学均从音频首帧起唱'})
-        if (not all(accepted) or abs(pair[0]['at'] - pair[1]['at']) > .5 or
-                abs((pair[0]['at'] + pair[1]['at']) / 2 - estimate) > 1.5):
+        lo, hi = anchor_ranges[index] if anchor_ranges is not None else (estimate, estimate)
+        choices = [(abs(left['at'] - right['at']), (left['at'] + right['at']) / 2)
+                   for first, left in enumerate(accepted) for right in accepted[first + 1:]
+                   if left['window'] != right['window'] and abs(left['at'] - right['at']) <= .5 and
+                   lo - 1.5 <= (left['at'] + right['at']) / 2 <= hi + 1.5]
+        if not choices or max(at for delta, at in choices) - min(at for delta, at in choices) > .5:
             raise ValueError(f'第 {index + 1} 个歌词起点未通过转写及双窗口核对')
-        confirmed.append(round((pair[0]['at'] + pair[1]['at']) / 2, 2))
+        confirmed.append(round(min(choices)[1], 2))
     if any(a + .5 >= b for a, b in zip(confirmed, confirmed[1:])):
         raise ValueError('核对后的歌词起点未递增')
     return confirmed, edge_decisions
@@ -104,7 +119,7 @@ def generate(song, cache, model_dir, threads):
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 1, 'model': 'medium/int8'}}
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 2, 'model': 'medium/int8'}}
     try:
         text = prepare.read_text(batch.ROOT / 'data' / song['source'])
         language = 'en' if len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
@@ -117,8 +132,8 @@ def generate(song, cache, model_dir, threads):
         original = [item for verse in source['verses'] for item in verse]
         definitions, estimates, diagnostics = performed_order(original, transcript['segments'], language)
         evidence.update(performanceOrder=definitions, estimates=estimates)
-        preceding = [definitions[index - 1]['text'] if index and estimate - diagnostics[index - 1]['end'] <= 3.5 else ''
-                     for index, estimate in enumerate(estimates)]
+        preceding = [definitions[index - 1]['text'] if index else '' for index in range(len(definitions))]
+        anchor_ranges = [(row['at'], row['firstWordEnd']) for row in diagnostics]
         evidence['transcriptMatching'].update(transcript=transcript, diagnostics=diagnostics, language=language)
         if _model is None:
             from faster_whisper import WhisperModel
@@ -129,15 +144,41 @@ def generate(song, cache, model_dir, threads):
         tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
         audio = decode_audio(str(reference), sampling_rate=16000)
         checkpoint = cache / 'transcript-windows' / (song['source'] + '.json')
-        signature = hashlib.sha256(json.dumps({'source': song['sha256'], 'tracks': song['tracks'],
-            'definitions': definitions, 'estimates': estimates, 'preceding': preceding, 'language': language, 'windowVersion': 1},
-            sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        parameters = {'source': song['sha256'], 'tracks': song['tracks'], 'definitions': definitions,
+                      'estimates': estimates, 'preceding': preceding, 'language': language,
+                      'windowVersion': 2, 'extraWindows': [(8, 18), (10, 16)]}
+        fingerprint = lambda value: hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        signature = fingerprint(parameters)
         old = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
+        resume = old.get('windows', []) if old.get('signature') == signature else []
+        # Retain only windows whose actual token context is unchanged by the
+        # previous gap-handling rule; source/audio/sequence signatures still match.
+        if not resume and old.get('windows'):
+            legacy_context = [definitions[index - 1]['text'] if index and estimate - diagnostics[index - 1]['end'] <= 3.5 else ''
+                              for index, estimate in enumerate(estimates)]
+            legacy = {**parameters, 'preceding': legacy_context, 'windowVersion': 1}
+            legacy.pop('extraWindows')
+            if old.get('signature') == fingerprint(legacy):
+                resume = [row for row in old['windows'] if legacy_context[row['index']] == preceding[row['index']]]
+        save_windows = lambda rows: batch.save(checkpoint, {'signature': signature, 'windows': rows})
         observations = align_windows(_model, tokenizer, audio, definitions, estimates, language,
-            old.get('windows', []) if old.get('signature') == signature else [],
-            lambda rows: batch.save(checkpoint, {'signature': signature, 'windows': rows}), preceding_texts=preceding)
+            resume, save_windows, preceding_texts=preceding)
+        for index, estimate in enumerate(estimates):
+            for window, bounds in enumerate([(8, 18), (10, 16)], 2):
+                pair = [{**row, 'index': 0} for row in observations if row['index'] == index]
+                try:
+                    confirm_transcript_windows(pair, [estimate], [anchor_ranges[index]])
+                    break
+                except ValueError:
+                    pass
+                if any(row['index'] == index and row['window'] == window for row in observations):
+                    continue
+                additional = align_windows(_model, tokenizer, audio, [definitions[index]], [estimate], language,
+                    preceding_texts=[preceding[index]], window_bounds=[bounds])
+                observations.extend({**row, 'index': index, 'window': window} for row in additional)
+                save_windows(observations)
         evidence['windows'] = observations
-        times, decisions = confirm_transcript_windows(observations, estimates)
+        times, decisions = confirm_transcript_windows(observations, estimates, anchor_ranges)
         evidence['transcriptMatching']['edgeDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
         evidence['returnIndices'] = [index for index in range(1, len(definitions))

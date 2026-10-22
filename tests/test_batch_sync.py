@@ -91,6 +91,11 @@ class BatchTests(unittest.TestCase):
             definition = sources.text_source(path, 'en')
             self.assertEqual(len(definition['regions']), 1)
             self.assertEqual(definition['verses'][0][0]['text'], 'He will hold me fast For my Savior loves me so')
+            path.write_text('Title\n\n1 He will hold me fast\nFor my Savior loves me so\n\n--\nArtist Name - Album Title')
+            definition = sources.text_source(path, 'en')
+            self.assertEqual(len(definition['regions']), 1)
+            path.write_text('Title\n\n1 He will hold me fast\n--\n2 Jesus - my Savior forever')
+            self.assertEqual(len(sources.text_source(path, 'en')['verses']), 2)
 
     def test_image_order_crosses_printed_rows_and_repeats_the_shared_chorus(self):
         def row(top, text):
@@ -258,6 +263,48 @@ class BatchTests(unittest.TestCase):
             transcript.confirm_transcript_windows(rows[:-1], [0, 10, 20])
         with self.assertRaises(ValueError):
             transcript.confirm_transcript_windows(rows, [0, 5, 20])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_edit_alignment_keeps_two_imperfect_choruses_as_separate_performances(self):
+        chorus = 'He will hold me fast He will hold me fast For my Savior loves me so He will hold me fast'
+        definitions = [{'region': 'r1', 'text': chorus}, {'region': 'r2', 'text': chorus}]
+        first = 'He will hold me back He will hold me back Oh must you hold me so He will hold me back'.split()
+        second = 'He will hold me back He will hold me back For my Savior loves me so He will hold me fair'.split()
+        words = [{'word': word, 'start': index * .5, 'end': index * .5 + .4}
+                 for index, word in enumerate(first + second)]
+        anchors, count = transcript.match_order(definitions, words, 'en')
+        self.assertEqual([anchor['index'] for anchor in anchors], [0, 1])
+        self.assertAlmostEqual(anchors[1]['at'], len(first) * .5, delta=1)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_additional_window_resolves_one_disagreement_but_rejects_two_distinct_clusters(self):
+        rows = [{'index': 0, 'window': window, 'at': at, 'valid': True}
+                for window, at in enumerate([10, 10.7, 10.75])]
+        times, decisions = transcript.confirm_transcript_windows(rows, [10.5])
+        self.assertAlmostEqual(times[0], 10.72)
+        rows = [{'index': 0, 'window': window, 'at': at, 'valid': True}
+                for window, at in enumerate([10, 10.1, 13, 13.1])]
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [11.4], [(11.4, 11.7)])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_lexical_word_interval_accounts_for_silence_in_its_initial_timestamp(self):
+        rows = [{'index': 0, 'window': window, 'at': 22 + window * .1, 'valid': True}
+                for window in range(2)]
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [20])
+        times, decisions = transcript.confirm_transcript_windows(rows, [20], [(20, 22.4)])
+        self.assertAlmostEqual(times[0], 22.05)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_extra_cached_windows_do_not_recompute_already_saved_original_windows(self):
+        import numpy as np
+        class Model:
+            def feature_extractor(self, samples):
+                raise AssertionError('completed windows must be reused')
+        rows = [{'index': 0, 'window': window, 'at': 5, 'valid': True} for window in range(3)]
+        result = align_windows(Model(), None, np.zeros(16000 * 20), [{'text': '天地'}], [5], 'zh', rows)
+        self.assertEqual(result, rows)
 
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_midi_templates_follow_tempo_changes_and_exclude_percussion(self):

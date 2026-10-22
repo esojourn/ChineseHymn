@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "songId": "05-011",
+  "status": "reviewed",
+  "source": {
+    "file": "05-011荣归天父歌.jpg",
+    "sha256": "bdd80ec7414922beba25f6ff31d28aa218cca595c22a904a31c1c131035b266d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-011荣归天父歌.mp3",
+      "sha256": "e0fdd8209b5ef0e3bd220a68d7268febbe355c313d6ebe2f1b289c5673873896",
+      "duration": 196.0887074829932,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.155524,
+      "bottom": 0.246764
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.18819,
+      "bottom": 0.279983
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.221409,
+      "bottom": 0.312649
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.311655,
+      "bottom": 0.402895
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.344321,
+      "bottom": 0.43556
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.376987,
+      "bottom": 0.468226
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.466125,
+      "bottom": 0.557365
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.498791,
+      "bottom": 0.589477
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.530903,
+      "bottom": 0.622142
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.651046,
+      "bottom": 0.742286
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.741292,
+      "bottom": 0.833639
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.831538,
+      "bottom": 0.922778
+    }
+  },
+  "cues": [
+    {
+      "at": 8.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.75,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.25,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.85,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.2,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 79.3,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.05,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.15,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.5,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 140.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.35,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.85,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 170.45,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 180.8,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "荣耀归于天父！他爱怜普世，为救我们",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "罪人赐下独生子；主也甘心情愿为",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我们舍命，开天上恩门，使我们得生。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赞美主！赞美主！全地当尊他名！赞美主！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "赞美主！万民都当欢欣！藉着圣子耶稣得",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "亲近天父，他已成功救赎，荣耀归天父！",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "父神赦罪恩典因主临我们，凡信主的",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "人们靠主得永生；你虽罪恶深重，当",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "信主耶稣，就立时蒙救免，永远得救赎。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赞美主！赞美主！全地当尊他名！赞美主！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "赞美主！万民都当欢欣！藉着圣子耶稣得",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "亲近天父，他已成功救赎，荣耀归天父！",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "救主已经为我成就了大事，今日得享",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "安乐全靠主赏赐；直等我的眼晴得",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "见主荣形，那时我的福乐更无穷无尽。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "赞美主！赞美主！全地当尊他名！赞美主！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "赞美主！万民都当欢欣！藉着圣子耶稣得",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "亲近天父，他已成功救赎，荣耀归天父！",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-011荣归天父歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

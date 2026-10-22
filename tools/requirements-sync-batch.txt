@@ -1,0 +1,9 @@
+-r requirements-sync.txt
+# Offline recognition and music correspondence; not website runtime dependencies.
+faster-whisper==1.2.1
+numpy==2.5.4
+scipy==1.18.1
+Pillow==13.0.0
+rapidocr-onnxruntime==1.4.4
+numba==0.68.0
+opencc-python-reimplemented==0.1.7

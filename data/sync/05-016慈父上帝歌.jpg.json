@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-016",
+  "status": "reviewed",
+  "source": {
+    "file": "05-016慈父上帝歌.jpg",
+    "sha256": "1d713969995eeb92fe96f0d4cb56958f25c0f8a1cb785198109cc0c0f233a5ea",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-016慈父上帝歌.mp3",
+      "sha256": "891fb2d6396f529411b8f9a2def4895f0794f03f8618dada8ef819daa1cb2b3d",
+      "duration": 126.5714375,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.137387,
+      "bottom": 0.2185
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.169885,
+      "bottom": 0.251675
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.20306,
+      "bottom": 0.283496
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.312742,
+      "bottom": 0.394532
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.34524,
+      "bottom": 0.42703
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.377739,
+      "bottom": 0.459529
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.486066,
+      "bottom": 0.567856
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.519242,
+      "bottom": 0.600355
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.550386,
+      "bottom": 0.632176
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.834069,
+      "bottom": 0.913828
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.86589,
+      "bottom": 0.945649
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.898389,
+      "bottom": 0.979502
+    }
+  },
+  "cues": [
+    {
+      "at": 6.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 23.85,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.45,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 54.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.65,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.25,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 93.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.55,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "上帝待我有洪恩，真是我慈爱父",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "亲。体贴我软弱，安慰我伤心，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "昼夜保佑不离我的身。常蒙引领，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "至宝至尊。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "自有永有活上帝，赐我生命奇妙",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "神。忧愁变喜乐，患难得安宁，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "疑是无路自有光明门。哈利路亚！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "福乐来临。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "上帝应许有万千，在基督里都成",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "全。祈求就得着，寻找就寻见，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "叩门就开一点不迟延。你若能信，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "意外平安。（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-016慈父上帝歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

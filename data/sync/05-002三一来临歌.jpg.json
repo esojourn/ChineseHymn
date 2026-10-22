@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-002",
+  "status": "reviewed",
+  "source": {
+    "file": "05-002三一来临歌.jpg",
+    "sha256": "1333ccbfa4963392e814eb1384c4fb5872d39b35605590ec34662ed44b0bbf06",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-002三一来临歌.mp3",
+      "sha256": "5949539214bae25d14674f26ab37f6c9d053c84ed23beffe1972aaad2ce6e693",
+      "duration": 126.95510204081633,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.186956,
+      "bottom": 0.273808
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.222114,
+      "bottom": 0.30839
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.256696,
+      "bottom": 0.343548
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.292431,
+      "bottom": 0.37813
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.390989,
+      "bottom": 0.476688
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.425571,
+      "bottom": 0.510694
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.460153,
+      "bottom": 0.545852
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.494735,
+      "bottom": 0.579858
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.592141,
+      "bottom": 0.67784
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.626723,
+      "bottom": 0.711845
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.660728,
+      "bottom": 0.746427
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.694734,
+      "bottom": 0.780433
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.796174,
+      "bottom": 0.878991
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.829027,
+      "bottom": 0.914726
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.864762,
+      "bottom": 0.948732
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.898191,
+      "bottom": 0.983314
+    }
+  },
+  "cues": [
+    {
+      "at": 7.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 25.8,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.1,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 46.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.2,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.5,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.5,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.9,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.7,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.9,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 114.0,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.3,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "恳求圣父来临，助我赞美主",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "名，敬献心声！惟主无上尊荣，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "惟主完全得胜，求主统治我们，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "万古之神！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "悬求圣子来临，彰显威严大",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "能，垂听呼声！施恩与众子民，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "使主圣道振兴，建立善义公平，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "救主良廣朋財",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "恳求圣灵来临，显出神圣见",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "证，感化众人！惟主全能至尊，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "恳求统治众心，永不离开我们，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "大能圣層灵！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "圣父圣子、圣灵，当受万民颂",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "称，世世无尽！但愿我众齐来，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "欢然瞻仰圣明，虔诚亲爱崇敬，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "直到永恒。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-002三一来临歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

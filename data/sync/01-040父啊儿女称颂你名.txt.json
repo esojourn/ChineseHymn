@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "01-040",
+  "status": "reviewed",
+  "source": {
+    "file": "01-040父啊儿女称颂你名.txt",
+    "sha256": "611912a8e0b86921c2464b099a680c99d6016fce823c1c6d656392d4ae0ff319",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-040父啊儿女称颂你名.mp3",
+      "sha256": "5680007d220a15a176724894b9a25e799ca5a4ee76f8f0c6e5f18d0a872c0c60",
+      "duration": 134.81795918367348,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.21,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 30.6,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 51.02,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 71.43,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 89.6,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 92.1,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        },
+        {
+          "at": 112.42,
+          "region": "r7",
+          "label": "第7段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-040父啊儿女称颂你名-领唱.mp3",
+      "sha256": "86ca8d13f85fd52b6ef8f1fa2c78a996e87e15369153670dbb83d1397ee01222",
+      "duration": 155.41658333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 24
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 11.01,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 51.82,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 72.23,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.73,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.16,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 133.62,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "父阿，儿女称颂祢名， 是受恩典的教训； 我们欢乐，因祢生命已使我们归羊群。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "所给的得救证实， 远超我们的赞美； 我们的心现在直指祢在天上的座位。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "因在那里，他为我们 预备永远的居所； 你将生命分给罪人，他为罪人谋解脱。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "永世虽久，不过就是： 显明祢恩的丰富； 好叫那些因祢儿子为儿女者，来称祝。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我们现虽未见早晨， 却仍安心历世途； 等候祂来提接我们，脱离死亡和坟墓。",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "我们欢乐，因祢自己就是我们的“永分”, 像祢儿子，同祂一起， 享受光明的早晨！",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "哦，求圣父因祂慈名， 保守我们在这里； 无忧、无虑,随祂而行,直到同乐在那地.",
+        "label": "第7段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-040父啊儿女称颂你名.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "songId": "05-004",
+  "status": "reviewed",
+  "source": {
+    "file": "05-004赞我天父歌.jpg",
+    "sha256": "a74dcddb96a927472d1fc207f08da49465c9080dae4e54ff3cea33d744b73176",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-004赞我天父歌.mp3",
+      "sha256": "412d974a40d51629f967a5c87af59e8b13850d80d8084a0431709bfa6cc319ee",
+      "duration": 181.248,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.170392,
+      "bottom": 0.255989
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.205671,
+      "bottom": 0.29066
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.240343,
+      "bottom": 0.32594
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.275623,
+      "bottom": 0.36122
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.310902,
+      "bottom": 0.397108
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.416133,
+      "bottom": 0.501122
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.450805,
+      "bottom": 0.535794
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.485476,
+      "bottom": 0.570465
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.520148,
+      "bottom": 0.605137
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.554819,
+      "bottom": 0.639808
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.697155,
+      "bottom": 0.782144
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.79752,
+      "bottom": 0.883117
+    }
+  },
+  "cues": [
+    {
+      "at": 16.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.55,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.05,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 57.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.45,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.95,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 82.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 90.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.45,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.95,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 123.7,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.35,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.85,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 148.5,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 156.7,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.35,
+      "region": "s3_chorus",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 172.85,
+      "region": "s4_chorus",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "赞美我天父，因他差遣爱子，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "降生来到这世界，为罪人受死。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，荣耀归主，哈利路亚，阿们！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "哈利路亚，荣耀归主，主 使我复生。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "赞美主耶稣，因他从天降下，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "甘受逼追并羞辱，钉 死在十架。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，荣耀归主，哈利路亚，阿们！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "哈利路亚，荣耀归主，主 使我复生。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "赞美主耶稣，他从死里复活，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "魔鬼权柄尽消灭，死亡已胜过。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，荣耀归主，哈利路亚，阿们！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "哈利路亚，荣耀归主，主 使我复生。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "赞美主耶稣，今坐天父右边，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "我众今靠主功劳，罪欲得赦免。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，荣耀归主，哈利路亚，阿们！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "哈利路亚，荣耀归主，主 使我复生。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "赞美保惠师，奉主差遣降临，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "特为开导并照亮，又感化我心。",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚，荣耀归主，哈利路亚，阿们！",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "哈利路亚，荣耀归主，主 使我复生。",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-004赞我天父歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

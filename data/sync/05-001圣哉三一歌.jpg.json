@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "05-001",
+  "status": "reviewed",
+  "source": {
+    "file": "05-001圣哉三一歌.jpg",
+    "sha256": "49eecdbcf69483f0ee4dbf47894e4cc0914b7bc22071c61e2b6781114822f9f7",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-001圣哉三一歌.mp3",
+      "sha256": "50dc7bcdc9094c6501bfa386c2bb6e7cf0efd77a41a229d292ed54b25a21059a",
+      "duration": 41.325714285714284,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.154229,
+      "bottom": 0.238513
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.186802,
+      "bottom": 0.271086
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.219918,
+      "bottom": 0.304202
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.253034,
+      "bottom": 0.336775
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.350753,
+      "bottom": 0.434495
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.383326,
+      "bottom": 0.466525
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.415899,
+      "bottom": 0.499098
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.447929,
+      "bottom": 0.531671
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.54402,
+      "bottom": 0.628304
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.576593,
+      "bottom": 0.660335
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.608623,
+      "bottom": 0.692365
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.640654,
+      "bottom": 0.724938
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.738373,
+      "bottom": 0.822114
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.771489,
+      "bottom": 0.855773
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.804062,
+      "bottom": 0.887803
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.836092,
+      "bottom": 0.919834
+    }
+  },
+  "cues": [
+    {
+      "at": 0.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 8.35,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 17.45,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.25,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "圣哉，圣哉，圣哉！全权的神明！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "清晨我众歌声,穿云上达至尊；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "圣哉，圣哉，圣哉！慈悲与全能，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "荣耀与赞美，归三一妙身。",
+        "label": "第1段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-001圣哉三一歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

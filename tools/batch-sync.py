@@ -226,6 +226,7 @@ def main():
     parser.add_argument('--workers', type=int, default=2)
     parser.add_argument('--threads', type=int, default=2)
     parser.add_argument('--songs', nargs='*')
+    parser.add_argument('--kind', choices=['text', 'image'], help='仅处理指定的歌词形式')
     parser.add_argument('--retry', action='store_true', help='重新处理失败候选；先尝试用已有窗口及音乐复核解决冲突')
     args = parser.parse_args()
     songs = inventory()
@@ -247,6 +248,8 @@ def main():
                           'withAudio': sum(bool(song['tracks']) for song in songs)}, ensure_ascii=False))
         return
     selected = [song for song in songs if not song['existing'] and (not args.songs or song['songId'] in args.songs)]
+    if args.kind:
+        selected = [song for song in selected if song['type'] == args.kind]
     if args.stage == 'align':
         selected = [song for song in selected if song['lyricsAvailable']]
     selected = [song for song in selected if song['type'] == 'image'] if args.stage == 'ocr' else [song for song in selected if song['reference']]

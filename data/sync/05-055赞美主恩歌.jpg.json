@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "songId": "05-055",
+  "status": "reviewed",
+  "source": {
+    "file": "05-055赞美主恩歌.jpg",
+    "sha256": "5b4b3f1bd2048efe17aeea093c84123d6bbe434d57557ebb1b233ad14a4d3a93",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-055赞美主恩歌.mp3",
+      "sha256": "ac265961d9c6886f2f7c8b886ab09e43eab47029c1bfb670b2043fafe610f4ca",
+      "duration": 150.18666666666667,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.189124,
+      "bottom": 0.281651
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.231411,
+      "bottom": 0.323938
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.273698,
+      "bottom": 0.366847
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.316607,
+      "bottom": 0.408512
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.454039,
+      "bottom": 0.546567
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.496326,
+      "bottom": 0.588232
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.537991,
+      "bottom": 0.629897
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.579035,
+      "bottom": 0.67094
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.77057,
+      "bottom": 0.863719
+    }
+  },
+  "cues": [
+    {
+      "at": 12.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.6,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.2,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 93.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 104.8,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.3,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 127.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.4,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我心要赞美主，称颂主尊名，不可忘记主慈爱与恩深。",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "赦免我众罪孽，医治我疾病，救赎我命免死亡而得生。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩爱之高大，如天离地；远除去我众罪，如东离西。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "以慈爱为冠冕，加于我头上，厚赐美物，令我心得安享。",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "使我有如飞，返老而还童，因仰望主，新能力倍加增。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩爱之高大，如天离地；远除去我众罪，如东离西。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶和华最公义，为吾人辩屈，大有慈爱，乐于宽容饶恕。",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "不肯常责备人，不永远怀怒，怜爱我们如父亲爱子女。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩爱之高大，如天离地；远除去我众罪，如东离西。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主既赐我多恩，将何以报主，惟愿举起救恩杯乐称祝。",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "大能众圣天使，皆虔诚拜伏，愿受造者俱各称颂欢呼。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主恩爱之高大，如天离地；远除去我众罪，如东离西。",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-055赞美主恩歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

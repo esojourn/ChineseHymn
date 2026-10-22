@@ -11,7 +11,7 @@ TOOLS = Path(__file__).parents[1] / 'tools'
 sys.path.insert(0, str(TOOLS))
 import sync_batch_sources as sources
 try:
-    from sync_batch_align import confirm_boundaries, export_result
+    from sync_batch_align import align_windows, confirm_boundaries, export_result
     from sync_batch_audio import alignment_band
 except ImportError:
     confirm_boundaries = None
@@ -171,6 +171,44 @@ class BatchTests(unittest.TestCase):
                 export_result({'reference': 'missing.mp3'}, root, root, root / 'evidence.json', {},
                               0, {}, [{'region': 'a'}, {'region': 'b'}], [10], [0])
             self.assertFalse((root / 'evidence.json').exists())
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_window_checkpoint_resumes_completed_chunks_without_duplicate_alignment(self):
+        import numpy as np
+        class Model:
+            calls = 0
+            fail_second = True
+
+            def feature_extractor(self, samples):
+                return np.zeros((80, 100))
+
+            def encode(self, features):
+                self.calls += 1
+                if self.fail_second and self.calls == 2:
+                    raise InterruptedError('simulated interruption')
+                return features
+
+            def find_alignment(self, tokenizer, tokens, encoded, frames):
+                return [[{'word': chr(token), 'tokens': [token], 'start': .2 + i * .1,
+                          'end': .3 + i * .1, 'probability': .9} for i, token in enumerate(row)] for row in tokens]
+
+        class Tokenizer:
+            def encode(self, text):
+                return [ord(char) for char in text]
+
+        definitions = [{'text': '天地'}] * 5
+        saved = []
+        model = Model()
+        with self.assertRaises(InterruptedError):
+            align_windows(model, Tokenizer(), np.zeros(16000 * 40), definitions, [5, 10, 15, 20, 25],
+                          'zh', on_chunk=lambda rows: saved.append(list(rows)))
+        self.assertEqual(len(saved[-1]), 8)
+        resumed = Model()
+        resumed.fail_second = False
+        rows = align_windows(resumed, Tokenizer(), np.zeros(16000 * 40), definitions, [5, 10, 15, 20, 25], 'zh', saved[-1])
+        self.assertEqual(resumed.calls, 1)
+        self.assertEqual(len(rows), 10)
+        self.assertEqual(len({(row['index'], row['window']) for row in rows}), 10)
 
 
 if __name__ == '__main__':

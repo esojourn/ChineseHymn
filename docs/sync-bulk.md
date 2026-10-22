@@ -62,6 +62,19 @@
 
 共 6 首、11 个音轨、118 个时间点。已通过同步校验及 354 项浏览器区域位置、126 次实际跳转检查，无页面脚本错误；见 [浏览器记录](sync-bulk-evidence/batch-04-browser.json)。批处理已补充相邻印刷歌词行粘连的拆分识别、曲调参考页脚排除，以及谱行数量变化时禁止截断时间轴的检查。
 
+## 批次 05
+
+| 曲目 | 启用音轨 | 每版时间点 |
+| --- | ---: | ---: |
+| [05-015 称谢歌](http://localhost:8080/index.php?n=05-015) | 伴奏 | 12 |
+| [05-049 主名甜美歌](http://localhost:8080/index.php?n=05-049) | 伴奏 | 10 |
+| [05-053 奇妙救主歌](http://localhost:8080/index.php?n=05-053) | 领唱、伴奏 | 16 |
+| [05-054 心向主宝座歌](http://localhost:8080/index.php?n=05-054) | 伴奏 | 20 |
+| [05-055 赞美主恩歌](http://localhost:8080/index.php?n=05-055) | 伴奏 | 12 |
+| [05-058 生命活水歌](http://localhost:8080/index.php?n=05-058) | 伴奏 | 20 |
+
+共 6 首、7 个音轨、106 个时间点。已通过同步校验及 318 项浏览器区域位置、84 次实际跳转检查，无页面脚本错误；见 [浏览器记录](sync-bulk-evidence/batch-05-browser.json)。另对前五批全部 39 个音轨完成 1467 项区域位置检查，并确认 830 处空间足够的图片阅读位置完整露出下一句，见 [预读复核](sync-bulk-evidence/batches-01-05-geometry.json)。文字音频窗口新增逐块断点保存，中断后可复用已完成窗口。
+
 清单另标记 `missing-lyrics`：目前有 23 份 TXT 只有歌名，或含“歌词整理中”和链接，不能制作正文对应的阅读区域；原文件保留，不把标题冒充歌词正文。`missing-audio` 为原素材没有配套 MP3 的 2 首：`01-330 我舍一切而要耶稣`、`05-379 诗篇二十三`。
 
 ## 断点续跑
@@ -74,6 +87,8 @@ python tools/batch-sync.py --stage inventory --cache /tmp/chinese-hymn-bulk
 python tools/batch-sync.py --stage ocr --cache /tmp/chinese-hymn-bulk --workers 2 --threads 2
 python tools/batch-sync.py --stage align --cache /tmp/chinese-hymn-bulk \
     --model-dir /tmp/chinese-hymn-models --songs 01-040 --workers 1 --threads 2
+python tools/batch-sync.py --stage align --kind text --cache /tmp/chinese-hymn-bulk \
+    --model-dir /tmp/chinese-hymn-models --workers 2 --threads 2
 python tools/batch-sync.py --stage score --cache /tmp/chinese-hymn-bulk \
     --songs 05-001 05-002 --workers 1 --threads 1
 python tools/batch-sync.py --stage publish --cache /tmp/chinese-hymn-bulk \
@@ -84,6 +99,8 @@ python tools/batch-sync.py --stage report --cache /tmp/chinese-hymn-bulk
 模型必须已缓存，程序不自动下载模型。`transcribe` 阶段可额外生成普通语音转写供诊断，不是发布条件。原图、MP3 和 TXT 不修改；已有同步文件自动跳过。缓存保存原素材 SHA-256，素材变化后重新计算。候选写入缓存的 `ready/`；`publish` 仅接收显式指定的本批曲目，核对当前素材及全部音轨，再将候选和复核记录放入仓库，拒绝覆盖已有文件。随后运行同步校验和浏览器位置检查，通过后提交推送。`report` 更新全库进度，包括待校准及待音轨匹配的曲目。
 
 `--retry` 可重试失败候选，优先复用已保存的音频窗口。只有至少两个独立窗口组已确认相同音乐相位、重复音乐足够相似，且冲突候选中有一个得到相位佐证时，才丢弃冲突窗口；无声学依据的边界不靠音乐相位补造。
+
+音频窗口按原素材哈希、演唱顺序、语言及窗口参数保存断点；每完成一组即写入缓存。任务中断后重启同一命令，已完成的匹配窗口不会重复计算。`--kind text` 或 `--kind image` 可限定处理形式。
 
 ```sh
 npm run sync:validate

@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-015",
+  "status": "reviewed",
+  "source": {
+    "file": "05-015称谢歌.jpg",
+    "sha256": "a50dad627addbf5d403f13929989d7e9716ee9b808f6295e7fd4dedbd4816026",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-015称谢歌.mp3",
+      "sha256": "02257230e66ca2147c5ca68082aecd23490989fa9d7fb5f7f520f38d30476fb3",
+      "duration": 131.2426875,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.201061,
+      "bottom": 0.310328
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.245319,
+      "bottom": 0.354586
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.289577,
+      "bottom": 0.399664
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.334654,
+      "bottom": 0.444742
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.453495,
+      "bottom": 0.562763
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.497753,
+      "bottom": 0.607021
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.542831,
+      "bottom": 0.653738
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.588728,
+      "bottom": 0.698815
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.708388,
+      "bottom": 0.817656
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.753466,
+      "bottom": 0.862734
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.798543,
+      "bottom": 0.907811
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.843621,
+      "bottom": 0.952889
+    }
+  },
+  "cues": [
+    {
+      "at": 10.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.75,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 52.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.05,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.25,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.2,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 112.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 123.55,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "普天之下，万族万民，俱当向主欢",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "呼颂扬，乐意事奉，虔诚称颂，来",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "到主前高声歌唱。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "当知主是独一真神，不藉人力创",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "造万人，赐人身心，赐人粮食，招",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "收万众进他羊群。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "大家踊跃来到主门，欢欣快乐进",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主院庭，同心同意感谢真神，高",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "歌颂扬，赞美主名。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我主我神本是善良，我主慈爱永",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "远长存，我主信实亘古不变，我",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "主恩德万世永恒。（阿们）",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-015称谢歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

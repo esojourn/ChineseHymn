@@ -1,5 +1,6 @@
 """Known-lyric contextual alignment with two independent windows and musical checks."""
 import json
+import hashlib
 from pathlib import Path
 import time
 import numpy as np
@@ -17,13 +18,15 @@ def context(text, language, tail=False):
     return value[-6:] if tail else value[:10]
 
 
-def align_windows(model, tokenizer, audio, definitions, estimates, language):
-    observations = []
+def align_windows(model, tokenizer, audio, definitions, estimates, language, resume=None, on_chunk=None):
+    observations = list(resume or [])
     from faster_whisper.audio import pad_or_trim
     duration = len(audio) / 16000
     for first in range(0, len(definitions), 4):
         features, frame_counts, tokens, items = [], [], [], []
         for index in range(first, min(first + 4, len(definitions))):
+            if len([row for row in observations if row['index'] == index]) == 2:
+                continue
             preceding = context(definitions[index - 1]['text'], language, True) if index else ''
             current = context(definitions[index]['text'], language)
             text = preceding + (' ' if language == 'en' else '') + current
@@ -61,6 +64,9 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language):
             observations.append({'index': index, 'window': window, 'at': at, 'valid': valid,
                                  'positiveDurationFraction': round(positive, 3), 'meanProbability': round(probability, 4),
                                  'bounds': [round(start, 3), round(end, 3)], 'words': words})
+        if on_chunk:
+            on_chunk(observations)
+        print(f'Acoustic windows saved: {min(first + 4, len(definitions))}/{len(definitions)} boundaries', flush=True)
     return observations
 
 
@@ -132,7 +138,7 @@ def generate(job):
             definitions = [item for verse in source['verses'] for item in verse]
             first_indices = list(range(0, len(definitions), len(source['systems'])))
         else:
-            source, definitions, cue_times, first_indices = vocal_times(song, root, cache, model_dir, threads, evidence, retry)
+            source, definitions, cue_times, first_indices = vocal_times(song, root, cache, model_dir, threads, evidence, retry, batch.save)
         return export_result(song, root, cache, evidence_path, evidence, start_time, source, definitions, cue_times, first_indices)
     except (ValueError, FileNotFoundError, KeyError) as error:
         evidence['status'] = 'needs-calibration'
@@ -144,7 +150,7 @@ def generate(job):
     return song['songId'], evidence['status'] + (': ' + evidence['reason'] if 'reason' in evidence else '')
 
 
-def vocal_times(song, root, cache, model_dir, threads, evidence, retry):
+def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
     global _model
     reference = root / 'data' / song['reference']
     if song['type'] == 'image':
@@ -189,7 +195,14 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry):
     language = source['language']
     tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
     audio = decode_audio(str(reference), sampling_rate=16000)
-    observations = align_windows(_model, tokenizer, audio, definitions, estimates, language)
+    checkpoint = cache / 'windows' / (song['source'] + '.json')
+    signature = hashlib.sha256(json.dumps({'source': song['sha256'], 'tracks': song['tracks'],
+        'definitions': definitions, 'estimates': estimates, 'language': language,
+        'windowVersion': 1}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    previous_windows = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
+    resume = previous_windows.get('windows', []) if previous_windows.get('signature') == signature else []
+    observations = align_windows(_model, tokenizer, audio, definitions, estimates, language, resume,
+        lambda rows: save(checkpoint, {'signature': signature, 'windows': rows}))
     evidence['windows'] = observations
     evidence['estimates'] = estimates
     cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations)

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 24,
+    "published": 30,
     "existing": 8,
-    "needs-calibration": 48,
-    "pending": 207,
+    "needs-calibration": 49,
+    "ready-to-verify": 103,
+    "pending": 205,
     "missing-audio": 2,
-    "ready-to-verify": 108,
     "missing-lyrics": 23
   },
   "songs": [
@@ -107,16 +107,17 @@
       "songId": "01-157",
       "source": "01-157求圣灵降临.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-157求圣灵降临.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "01-167",
       "source": "01-167佳美主言.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "01-167佳美主言.mp3",
         "01-167佳美主言-领唱.mp3"
@@ -1970,7 +1971,7 @@
       "songId": "05-015",
       "source": "05-015称谢歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-015称谢歌.mp3"
       ]
@@ -2157,7 +2158,7 @@
       "songId": "05-049",
       "source": "05-049主名甜美歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-049主名甜美歌.mp3"
       ]
@@ -2166,7 +2167,7 @@
       "songId": "05-053",
       "source": "05-053奇妙救主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-053奇妙救主歌.mp3",
         "05-053奇妙救主歌-领唱.mp3"
@@ -2176,7 +2177,7 @@
       "songId": "05-054",
       "source": "05-054心向主宝座歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-054心向主宝座歌.mp3"
       ]
@@ -2185,7 +2186,7 @@
       "songId": "05-055",
       "source": "05-055赞美主恩歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-055赞美主恩歌.mp3"
       ]
@@ -2194,7 +2195,7 @@
       "songId": "05-058",
       "source": "05-058生命活水歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-058生命活水歌.mp3"
       ]

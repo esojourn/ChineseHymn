@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "songId": "05-054",
+  "status": "reviewed",
+  "source": {
+    "file": "05-054心向主宝座歌.jpg",
+    "sha256": "9db66602953878f3dfb80e4ae6130483cc86c8b5a1e24ba98fe3bcddd4b83e20",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-054心向主宝座歌.mp3",
+      "sha256": "33900a463ec8e1e08a3cfe960a960fec37bb18468bd6e187a98e504e3ba71ca7",
+      "duration": 200.2560090702948,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.158158,
+      "bottom": 0.244153
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.192868,
+      "bottom": 0.278312
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.227578,
+      "bottom": 0.313023
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.26284,
+      "bottom": 0.347733
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.346585,
+      "bottom": 0.430927
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.380744,
+      "bottom": 0.465638
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.414904,
+      "bottom": 0.500348
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.450165,
+      "bottom": 0.533956
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.555442,
+      "bottom": 0.744422
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.555442,
+      "bottom": 0.744422
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.555442,
+      "bottom": 0.744422
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.555442,
+      "bottom": 0.744422
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.744376,
+      "bottom": 0.829269
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.82757,
+      "bottom": 0.995107
+    }
+  },
+  "cues": [
+    {
+      "at": 24.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.55,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.9,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.8,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.9,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.8,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.7,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 144.8,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 156.2,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.55,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 172.7,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 180.9,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 188.8,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "哦，主耶稣！我的心向着宝座，何等喜乐，向你",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "感谢赞美！因着蒙福，我敬拜，我也述说，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "承认惟你真是配受赞美。主配受赞美，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主配受赞美，因为惟有你真配受赞美！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "因着蒙福，我敬拜，我也述说，赞你荣耀，因你配受赞美。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "你这神人，是真神，又是真人，完成救赎，为我",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "们作牺牲；女人后裔，曾如何亲临世尘，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "败坏古蛇，伤其头踏其身！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主配受赞美，因为惟有你真配受赞美！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "因着蒙福，我敬拜，我也述说，赞你荣耀，因你配受赞美。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "创造的主被受造的人钉死，在十字架，你是",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "何等降卑！你不自救，被神弃又被人恨！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "你不退缩，经黑暗，喝苦杯！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主配受赞美，因为惟有你真配受赞美！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "因着蒙福，我敬拜，我也述说，赞你荣耀，因你配受赞美。（阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "面对死亡，你如何败其猖狂？荣耀得胜，全得",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "胜，大得胜！思念及此，怎能不高声欢唱！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "阴府的门，到如今全溃崩。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主配受赞美，因为惟有你真配受赞美！",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "因着蒙福，我敬拜，我也述说，赞你荣耀，因你配受赞美。（阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-054心向主宝座歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-049",
+  "status": "reviewed",
+  "source": {
+    "file": "05-049主名甜美歌.jpg",
+    "sha256": "3bfbeffb4ed396ee49219f37f1b68a11ce794257c36bb4de6dd8dd1fc8e9ca27",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-049主名甜美歌.mp3",
+      "sha256": "6f1df3c9a06e1a17f93dfee74b8c786737f3a7c17bb22d381a5dd9b2c4f9082f",
+      "duration": 138.49600907029478,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.244472,
+      "bottom": 0.343284
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.300742,
+      "bottom": 0.399554
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.356208,
+      "bottom": 0.454216
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.411675,
+      "bottom": 0.51129
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.467141,
+      "bottom": 0.565149
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.615854,
+      "bottom": 0.713058
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.67132,
+      "bottom": 0.768525
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.726787,
+      "bottom": 0.823991
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.782253,
+      "bottom": 0.879457
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.838523,
+      "bottom": 0.936531
+    }
+  },
+  "cues": [
+    {
+      "at": 7.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.85,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 47.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.25,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.4,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.55,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.7,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "美哉！妙哉！神的爱子，作我宝贵救主；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "为我降生、受 死、复活、再临,永 远同住。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣，这名甜美、芬芳，慰我愁苦心灵；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我心欢乐,我口歌唱这个宝贵的名。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣乃是生命、亮光，乃是真理、道路；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "今在我心作主作王，将我引导安抚。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "宝贵救主远胜奇珍，时刻满足我心；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "解我愁苦，消我烦闷，永远与我相亲。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "荣哉！乐哉！耶稣我主，永是我的荣耀；",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "荣耀之名乃是耶稣，我要永远称道。（阿们）",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-049主名甜美歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "songId": "05-058",
+  "status": "reviewed",
+  "source": {
+    "file": "05-058生命活水歌.jpg",
+    "sha256": "a7b390be4af4d88b99caa29cb11377caa213820c05565eec2936c94e0fd41f5c",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-058生命活水歌.mp3",
+      "sha256": "75efaeb93738fbe28b3a8d85a3045a5edf2fbc43af821bdc53764ae674558e9d",
+      "duration": 198.18666666666667,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.164972,
+      "bottom": 0.248828
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.197677,
+      "bottom": 0.281532
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.229827,
+      "bottom": 0.314237
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.262532,
+      "bottom": 0.346942
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.370625,
+      "bottom": 0.453372
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.402775,
+      "bottom": 0.486077
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.434926,
+      "bottom": 0.517673
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.466522,
+      "bottom": 0.549824
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.584442,
+      "bottom": 0.778758
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.584442,
+      "bottom": 0.778758
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.584442,
+      "bottom": 0.778758
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.584442,
+      "bottom": 0.778758
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.803549,
+      "bottom": 0.88685
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.911087,
+      "bottom": 0.994388
+    }
+  },
+  "cues": [
+    {
+      "at": 22.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.2,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.3,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 59.2,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.2,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.3,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.2,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 119.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.2,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.3,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.2,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.7,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 163.0,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.2,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 181.3,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 191.2,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "今到救恩泉源欢然汲灵水，解我灵性乾渴，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "心神极快慰。·灵泉自心涌起，永流而不息，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "一直流到永生里。生命活水永远",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "长流，生命活水自长流；生命活水",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远长流，生命活水永远自长流。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我心流出泉源愈流而愈涌，主恩藉我溢出，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "表显于无穷。多少困惫心灵因我而苏醒，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "同得丰盛之生命。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "长流，生命活水自长流；生命活水",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远长流，生命活水永远自长流。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "时或因有罪欲将灵源杜塞，生命日益枯萎，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "将河流阻隔。 望主赐我清洁、正直的心灵，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "始不至亏欠主荣。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "长流，生命活水自长流；生命活水",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远长流，生命活水永远自长流。（阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "幸我已就恩主尽量饮活泉，腹中流出江河，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "灵恩日彰显。主在我身显大，生命极美满，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "欣颂主恩乐无边。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "长流，生命活水自长流；生命活水",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "永远长流，生命活水永远自长流。（阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-058生命活水歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

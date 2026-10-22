@@ -25,12 +25,21 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
             for (const track of data.tracks.filter(track => track.reviewed)) {
                 const cues = track.cues || data.cues;
                 await page.context().addCookies([
+                    { name: 'visited', value: 'true', url: base },
                     { name: 'checkbox-sets', value: track.file.includes('-领唱') ? 'set4' : '', url: base },
                     { name: 'hymn-auto-scroll', value: '1', url: base }
                 ]);
-                await page.goto(base + '/index.php?n=' + data.songId);
-                await page.waitForFunction(() => !document.querySelector('#auto-scroll').disabled &&
-                    Number.isFinite(document.querySelector('audio').duration));
+                await page.goto(base + '/index.php?n=' + data.songId, { waitUntil: 'commit' });
+                await page.bringToFront();
+                await page.waitForFunction(() => {
+                    const toggle = document.querySelector('#auto-scroll');
+                    const status = document.querySelector('#auto-scroll-status');
+                    const audio = document.querySelector('audio');
+                    return toggle && status && audio && !toggle.disabled &&
+                        status.textContent.includes('自动跟随中') && Number.isFinite(audio.duration);
+                }, null, { polling: 50 });
+                // Start the compositor before checking media-driven requestAnimationFrame transitions.
+                await page.screenshot();
                 assert.equal(await page.evaluate(() => hymnSyncConfig.audioFile), track.file);
                 await page.locator('audio').evaluate(audio => audio.pause());
                 await page.evaluate(({ data, track }) => {

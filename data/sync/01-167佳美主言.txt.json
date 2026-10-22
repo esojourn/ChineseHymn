@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "songId": "01-167",
+  "status": "reviewed",
+  "source": {
+    "file": "01-167佳美主言.txt",
+    "sha256": "bad9e2dceeea7900eb9320617e85064b224ec0dd31b7e9f68ef47e35a4257284",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-167佳美主言.mp3",
+      "sha256": "1f4f9620b06c64123d43ad58d682d005765ea8ab3a8a88564ea515919b359eb8",
+      "duration": 75.93795918367347,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 4.79,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 27.82,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 50.55,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-167佳美主言-领唱.mp3",
+      "sha256": "c957301edd17c62e29985fe2a84fda1cd86765a19a3c8a133502d8a26d781573",
+      "duration": 74.68408163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    }
+  },
+  "cues": [
+    {
+      "at": 5.09,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.22,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 50.95,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主，你话语是我所爱，是我永久产业； 我灵雀跃欢欣奋起，我心热切思念。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "让我细看主慈爱事，立志遵主律法， 深悉我主一切应许，内心喜乐涌流。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "圣经好比丰富宝藏，生命活水滔滔， 播下永恒祝福道种，贮藏万般荣耀。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-167佳美主言.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

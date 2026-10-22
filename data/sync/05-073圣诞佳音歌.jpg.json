@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "songId": "05-073",
+  "status": "reviewed",
+  "source": {
+    "file": "05-073圣诞佳音歌.jpg",
+    "sha256": "ddda249eb520380eb541e1b2f3457c17b2a52631febdfa8dec2ef645d4460be0",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-073圣诞佳音歌.mp3",
+      "sha256": "f42fa828c40945b705ad79e0fb42b564ce772c40553d922bfdac3bb81e0035c9",
+      "duration": 242.13333333333333,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 15.25,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 26.85,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 38.05,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 45.65,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 53.95,
+          "region": "s5_chorus",
+          "label": "第1段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 60.55,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 72.15,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 83.35,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 90.95,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 99.25,
+          "region": "s5_chorus",
+          "label": "第2段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 105.95,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 117.55,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 128.75,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 136.35,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 144.65,
+          "region": "s5_chorus",
+          "label": "第3段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 151.25,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 162.85,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 174.05,
+          "region": "s3_v4",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 181.65,
+          "region": "s4_chorus",
+          "label": "第4段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 189.95,
+          "region": "s5_chorus",
+          "label": "第4段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 196.55,
+          "region": "s1_v5",
+          "label": "第5段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 208.15,
+          "region": "s2_v5",
+          "label": "第5段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 219.35,
+          "region": "s3_v5",
+          "label": "第5段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 226.95,
+          "region": "s4_chorus",
+          "label": "第5段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 235.25,
+          "region": "s5_chorus",
+          "label": "第5段：第5谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-073圣诞佳音歌-领唱.mp3",
+      "sha256": "bcdd5d5ec3e87e39a36a2f0d4eab62543711db4d09e8cbbd4f92b9c18c2cdad4",
+      "duration": 242.00533333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.166227,
+      "bottom": 0.255004
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.197264,
+      "bottom": 0.286041
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.228866,
+      "bottom": 0.317642
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.259903,
+      "bottom": 0.34868
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.29094,
+      "bottom": 0.379717
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.377844,
+      "bottom": 0.466057
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.408882,
+      "bottom": 0.497658
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.439919,
+      "bottom": 0.528695
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.470956,
+      "bottom": 0.559168
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.501993,
+      "bottom": 0.590205
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.587769,
+      "bottom": 0.675417
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.61937,
+      "bottom": 0.707582
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.649843,
+      "bottom": 0.738055
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.68088,
+      "bottom": 0.769657
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.711917,
+      "bottom": 0.801258
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.825909,
+      "bottom": 0.912992
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.911684,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 15.15,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.75,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.95,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.85,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.45,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.05,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.25,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.85,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.15,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.65,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.25,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 144.55,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.15,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 162.75,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 173.95,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 181.55,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 189.85,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 196.45,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 208.05,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 219.25,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 226.85,
+      "region": "s4_chorus",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 235.15,
+      "region": "s5_chorus",
+      "label": "第5段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "天使初报圣诞佳音，先向田间",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "贫苦牧人；牧人正当看守羊群，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "严冬方冷，长夜已深。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "欢欣，欢欣，欢欣，欢欣，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "天国君王今日降生。阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "牧人抬头见一景星，远在东方，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "灿烂晶明，发出奇光，照耀世尘，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "不分昼夜，光彩永恒。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "欢欣，欢欣，欢欣，欢欣，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "天国君王今日降生。阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "博士三人，因见星光，远道而来，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "离别家乡，专心一意，寻求君王，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "追随景星，不问路长。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "欢欣，欢欣，欢欣，欢欣，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "天国君王今日降生。阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "景星导引，渡漠越荒，到伯利恒，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "停留其上；景星射照，马棚光芒，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "婴孩耶稣马槽为床。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "欢欣，欢欣，欢欣，欢欣，",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "天国君王今日降生。阿们）",
+        "label": "第4段：第5谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "博士三人，大家走进，屈膝敬拜，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "虔诚虚心，敬将礼物奉献尊君，",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "乳香、没药，又有黄金。",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "欢欣，欢欣，欢欣，欢欣，",
+        "label": "第5段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "天国君王今日降生。阿们）",
+        "label": "第5段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-073圣诞佳音歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

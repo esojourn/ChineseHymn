@@ -9,7 +9,7 @@ prepare = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(prepare)
 VERSE = re.compile(r'^\s*(\d{1,2})(?:\s*[.．、)]\s*|\s+(?=\D))')
 CHINESE_VERSE = re.compile(r'^\s*[（(]([一二三四五六七八九十])[）)]\s*')
-CHORUS = re.compile(r'^\s*(?:[（(]?副(?:歌)?[）)]?\s*[:：]?|chorus\s*[:：]?)$', re.I)
+CHORUS = re.compile(r'^\s*[（(\[]?(?:副(?:歌)?|chorus)[）)\]]?\s*[:：.．]?\s*$', re.I)
 
 
 @lru_cache(maxsize=1)

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-064",
+  "status": "reviewed",
+  "source": {
+    "file": "05-064主行新事歌.jpg",
+    "sha256": "c7bdc4153b8ae60321b5948c5ee4cf6144d6a82352a1c11a2b5ac1f11bf13982",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-064主行新事歌.mp3",
+      "sha256": "e5b0280d981ef10ba6859346b6a62176ddba93a8adce60496f08e6b48ddb46ea",
+      "duration": 189.20533333333333,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.206178,
+      "bottom": 0.294982
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.24693,
+      "bottom": 0.335733
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.288309,
+      "bottom": 0.377112
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.329688,
+      "bottom": 0.418491
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.436896,
+      "bottom": 0.525073
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.477648,
+      "bottom": 0.565824
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.517773,
+      "bottom": 0.605949
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.557898,
+      "bottom": 0.646074
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.703977,
+      "bottom": 0.792781
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.81244,
+      "bottom": 0.900616
+    }
+  },
+  "cues": [
+    {
+      "at": 21.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.95,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.2,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.05,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.3,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.05,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.05,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.3,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 157.15,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 168.15,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 178.4,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "干渴人哪！不要再叹息，我主已经行新事；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "活水江河流在沙漠地，主真是行了新事。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！灵恩充溢，江河流在沙漠地；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "这是我主所行新事，渴者来饮莫迟疑。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "旷野开花馨香又美丽，乃是因主行新事；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "山地改变荣美如迦密，莫非因主行新事。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！灵恩充溢，江河流在沙漠地；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "这是我主所行新事，渴者来饮莫迟疑。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "奇哉，江河自我心涌起，全因主行了新事；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "整个人生成了大神迹，皆因主行了新事。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！灵恩充溢，江河流在沙漠地；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "这是我主所行新事，渴者来饮莫迟疑。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "看啊主在多少沙漠地，既已经行了新事；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "愿我信徒同得此福气，各地让主行新事。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！灵恩充溢，江河流在沙漠地；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "这是我主所行新事，渴者来饮莫迟疑。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-064主行新事歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

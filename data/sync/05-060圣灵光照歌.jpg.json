@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-060",
+  "status": "reviewed",
+  "source": {
+    "file": "05-060圣灵光照歌.jpg",
+    "sha256": "ee4e8f9759fc2fc361b726a1d57171910415b885a21fd6d30d5c15245176c9a1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-060圣灵光照歌.mp3",
+      "sha256": "8c3f8842fa59ca223710d76c65e71869fe86abb476eba238f5e6e454251c22a0",
+      "duration": 142.05866666666665,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.206755,
+      "bottom": 0.304359
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.253533,
+      "bottom": 0.351904
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.299545,
+      "bottom": 0.397916
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.346324,
+      "bottom": 0.443161
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.472857,
+      "bottom": 0.571228
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.518102,
+      "bottom": 0.618774
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.566415,
+      "bottom": 0.665553
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.613961,
+      "bottom": 0.711565
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.742794,
+      "bottom": 0.840398
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.791107,
+      "bottom": 0.88641
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.837119,
+      "bottom": 0.933189
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.882364,
+      "bottom": 0.979968
+    }
+  },
+  "cues": [
+    {
+      "at": 8.85,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.25,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 54.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 67.1,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 88.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.5,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.05,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.9,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "恳求慈悲圣灵降下，·赐我安慰，光",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "照我灵，保我身心，指我方向，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "管我所作—切事情。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "但愿赐光照我昏昧，能认主名，能",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "行主路，时时心存谦恭敬畏，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "—刻不敢离开天父。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "领我从主永生道路，非行此路，不",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "能归父，领我一心遵主诫命，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "不离我主妄行—步。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "但愿时常居我心中，令我得着天",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "上永福，在世给我平安喜乐，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "在天永远心满意足。（阿们）",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-060圣灵光照歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

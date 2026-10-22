@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "songId": "05-074",
+  "status": "reviewed",
+  "source": {
+    "file": "05-074新生王歌.jpg",
+    "sha256": "514896b1beb09608fe116722c7007e814fdb342607b60b186c1576b9d785eb02",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-074新生王歌-领唱.mp3",
+      "sha256": "408bfae366a888340f2b7cec2cae1bce232731a104c433e4cf9fead92c7f97ff",
+      "duration": 168.36266666666666,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.168225,
+      "bottom": 0.251432
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.20094,
+      "bottom": 0.283602
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.23311,
+      "bottom": 0.315772
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.345978,
+      "bottom": 0.42864
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.378148,
+      "bottom": 0.460265
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.410318,
+      "bottom": 0.492435
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.52046,
+      "bottom": 0.602576
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.55263,
+      "bottom": 0.634746
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.584254,
+      "bottom": 0.667462
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.696577,
+      "bottom": 0.778694
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.729292,
+      "bottom": 0.811409
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.762008,
+      "bottom": 0.843579
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.897231,
+      "bottom": 0.979348
+    }
+  },
+  "cues": [
+    {
+      "at": 11.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.3,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 31.5,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.35,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.8,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 73.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.85,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.3,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.55,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 126.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 136.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.45,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 157.9,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "听啊！天使高声唱：“荣耀归与新生王！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "天人从此长融洽，恩宠平安被万方!”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "起啊!万国众生灵，响应诸天歌颂声，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "加入天军传喜信：“基督生于伯利恒！”",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "听啊！天使高声唱：“荣耀归与新生王！”阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "基督，诸天同颂扬，基督，千古永生王！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "大展群心求临格，普世恩光，万众望！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "真神披上血肉体，圣道化身降尘世，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "甘与常人同起居，大哉我以马内利！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "听啊！天使高声唱：“荣耀归与新生王！”阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "欢迎，天降和平王！欢迎，辉煌公义光！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "他赐世人新生命，他消痛苦治创伤；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "舍弃荣华离天上，降生奋斗灭死亡，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "消灭死亡赐再生，再生宏福万古长！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "听啊！天使高声唱：“荣耀归与新生王！”阿们）",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-074新生王歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

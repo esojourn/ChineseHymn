@@ -179,7 +179,8 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
             estimates.append(music['initialOnsetEstimate'] + shift + music['period'] * float(weight))
     previous_path = cache / 'alignment' / (song['source'] + '.json')
     previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
-    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks']:
+    evidence['performanceOrder'] = definitions
+    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions:
         try:
             cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'])
             evidence.update(windows=previous['windows'], estimates=previous['estimates'], music=music, phaseDecisions=decisions)

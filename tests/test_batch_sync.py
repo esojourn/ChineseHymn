@@ -22,6 +22,11 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    def test_chorus_headings_with_punctuation_are_not_sung_lyrics(self):
+        for heading in ['副歌.', '副歌：', '副：', '（副歌）', '[Chorus]', 'Chorus:']:
+            self.assertTrue(sources.CHORUS.fullmatch(heading), heading)
+        self.assertFalse(sources.CHORUS.fullmatch('我们同唱副歌'))
+
     def test_inventory_keeps_missing_media_and_never_treats_existing_data_as_work(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

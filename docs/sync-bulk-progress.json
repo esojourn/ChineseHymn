@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 114,
+    "published": 120,
     "existing": 8,
-    "needs-calibration": 70,
+    "needs-calibration": 71,
     "missing-audio": 2,
-    "pending": 163,
-    "ready-to-verify": 40,
+    "pending": 162,
+    "ready-to-verify": 34,
     "missing-lyrics": 23
   },
   "songs": [
@@ -805,11 +805,12 @@
       "songId": "02-262",
       "source": "02-262对我述说耶稣故事.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-262对我述说耶稣故事.mp3",
         "02-262对我述说耶稣故事-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,4"
     },
     {
       "songId": "02-264",
@@ -3022,7 +3023,7 @@
       "songId": "05-252",
       "source": "05-252主爱说不尽歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-252主爱说不尽歌.mp3",
         "05-252主爱说不尽歌-领唱.mp3"
@@ -3032,7 +3033,7 @@
       "songId": "05-254",
       "source": "05-254如今更爱主.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-254如今更爱主.mp3"
       ]
@@ -3061,7 +3062,7 @@
       "songId": "05-258",
       "source": "05-258耶稣领我歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-258耶稣领我歌.mp3",
         "05-258耶稣领我歌-领唱.mp3"
@@ -3071,7 +3072,7 @@
       "songId": "05-259",
       "source": "05-259一路引导歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-259一路引导歌.mp3"
       ]
@@ -3090,7 +3091,7 @@
       "songId": "05-264",
       "source": "05-264跟随我歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-264跟随我歌.mp3",
         "05-264跟随我歌-领唱.mp3"
@@ -3110,7 +3111,7 @@
       "songId": "05-267",
       "source": "05-267闻主召我歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-267闻主召我歌.mp3"
       ]

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-267",
+  "status": "reviewed",
+  "source": {
+    "file": "05-267闻主召我歌.jpg",
+    "sha256": "308c820769722198422a8f60ae60fa3f0bef856cf86a6ef1e504aa536e6fc160",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-267闻主召我歌.mp3",
+      "sha256": "50952b6f4b1f48796205684daedcc0f7fb59ad641385b35141c9089eb676994d",
+      "duration": 197.87755102040816,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.198971,
+      "bottom": 0.290676
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.236471,
+      "bottom": 0.328176
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.274706,
+      "bottom": 0.365676
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.311471,
+      "bottom": 0.403912
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.426176,
+      "bottom": 0.517147
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.463676,
+      "bottom": 0.553912
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.501176,
+      "bottom": 0.591412
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.538676,
+      "bottom": 0.628912
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.692353,
+      "bottom": 0.782588
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.805588,
+      "bottom": 0.896559
+    }
+  },
+  "cues": [
+    {
+      "at": 21.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.75,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 54.3,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.45,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.3,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.75,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.3,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 153.45,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.4,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.75,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.3,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "今已明闻救主招呼，今已明闻救主招呼，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "今已明闻救主招呼：“须背十架随我行一路。”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣领我，我必跟随，任领何往，我仍跟随，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "福也，苦也，终必跟随，踊跃随主随主行一路。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我必时时求主帮扶，我必时时求主帮扶，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我必时时求主帮扶，我必随主随主行一路。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣领我，我必跟随，任领何往，我仍跟随，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "福也，苦也，终必跟随，踊跃随主随主行一路。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我必身心专献耶稣，我必身心专献耶稣，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我必身心专献耶稣，我必随主随主行一路。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣领我，我必跟随，任领何往，我仍跟随，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "福也，苦也，终必跟随，踊跃随主随主行一路。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主必赐我恩宠光荣，主必赐我恩宠光荣，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "主必赐我恩宠光荣，主必同我，同我行一路。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣领我，我必跟随，任领何往，我仍跟随，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "福也，苦也，终必跟随，踊跃随主随主行一路。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-267闻主召我歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-264",
+  "status": "reviewed",
+  "source": {
+    "file": "05-264跟随我歌.jpg",
+    "sha256": "67f830f323b09770e51d337b72c7b50a3e948a91a04a648ae59e7c800f9e6519",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-264跟随我歌.mp3",
+      "sha256": "8cb110db1f148a868137886e7166d06a98b45a9c1c9954f54d27cf87bd0a764e",
+      "duration": 159.84326530612245,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 24.0,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 34.05,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 45.75,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 56.55,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 69.4,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 79.45,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 91.15,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 101.95,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 114.8,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 124.85,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 136.55,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 147.35,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-264跟随我歌-领唱.mp3",
+      "sha256": "4e082e4cb517651f1b2f4d0bf1406ec08f5bd14edddacacd9c3c2fd1a34063be",
+      "duration": 160.704,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.223546,
+      "bottom": 0.325776
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.269078,
+      "bottom": 0.370449
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.313752,
+      "bottom": 0.415982
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.434026,
+      "bottom": 0.536256
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.479558,
+      "bottom": 0.581788
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.524232,
+      "bottom": 0.626462
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.663406,
+      "bottom": 0.766495
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.782821,
+      "bottom": 0.884192
+    }
+  },
+  "cues": [
+    {
+      "at": 24.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.65,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.45,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 80.35,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.85,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.45,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 148.25,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我听复活救主召唤：“跟随我！跟随我！跟随我！”",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "终日呼唤口渴舌干：“跟随我！跟随我！跟随我！”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "“为救你，我撇弃一切，为救你，我流出宝血，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "尝尽苦杯，经过苦穴，跟随我！跟随我！跟随我！”“",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "“你虽犯罪，我必赦免！跟随我！跟随我！跟随我！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "去旧换新，使你完全，跟随我！跟随我！跟随我！”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "“为救你，我撇弃一切，为救你，我流出宝血，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "尝尽苦杯，经过苦穴，跟随我！跟随我！跟随我！”“",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "“放下你的一切忧虑，跟随我！跟随我！跟随我！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我必使你福杯满溢，跟随我！跟随我！跟随我！”",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "“为救你，我撇弃一切，为救你，我流出宝血，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "尝尽苦杯，经过苦穴，跟随我！跟随我！跟随我！”“",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-264跟随我歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

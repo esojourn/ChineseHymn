@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "songId": "05-259",
+  "status": "reviewed",
+  "source": {
+    "file": "05-259一路引导歌.jpg",
+    "sha256": "d8ba25ac3f7b1543352310fb365548d5f0cef56f7e2ae60726d77479610a76b0",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-259一路引导歌.mp3",
+      "sha256": "aea5a8baad70d7b5c910cc003bcf4e5dc374602b3aae0a4c57a96965b741c425",
+      "duration": 127.47755102040816,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.16989,
+      "bottom": 0.25156
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.200659,
+      "bottom": 0.28233
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.231429,
+      "bottom": 0.313099
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.322088,
+      "bottom": 0.403758
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.352857,
+      "bottom": 0.434527
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.383077,
+      "bottom": 0.465297
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.472637,
+      "bottom": 0.554308
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.502857,
+      "bottom": 0.583978
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.533626,
+      "bottom": 0.614747
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.622637,
+      "bottom": 0.704308
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.653407,
+      "bottom": 0.734527
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.684176,
+      "bottom": 0.765297
+    },
+    "s5_v1": {
+      "kind": "image",
+      "top": 0.774835,
+      "bottom": 0.856505
+    },
+    "s5_v2": {
+      "kind": "image",
+      "top": 0.805604,
+      "bottom": 0.886725
+    },
+    "s5_v3": {
+      "kind": "image",
+      "top": 0.835824,
+      "bottom": 0.917495
+    }
+  },
+  "cues": [
+    {
+      "at": 3.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 11.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 20.5,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.65,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.8,
+      "region": "s5_v1",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 53.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.8,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.95,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.1,
+      "region": "s5_v2",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.15,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 94.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.0,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.3,
+      "region": "s5_v3",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我一路蒙救主引导，舍此外我复何求？",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "毕生时刻作我前导，奇妙爱古今未有；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "天上平安，属灵福乐，凭信心享受无涯，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "因我知无论遭何事，主所作尽美尽佳。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_v1",
+        "text": "因我知无论遭何事，主所作尽美尽佳。",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我一路蒙救主引导，艰难时赐我安康，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "试炼中有丰盛恩惠，赐灵食充我饥肠；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "虽我行路有时倾跌，我心灵干渴难名，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "在我前磐石涌活泉，喜乐如水常丰盈。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_v2",
+        "text": "在我前磐石涌活泉，喜乐如水常丰盈。",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我一路蒙救主引导，主大爱何等完全！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "曾应许赐我永安息，在天家何等美满！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "时日且至，我将变化，见主面与主相亲，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "到永远我唱此美歌，主曾一路引我行。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_v3",
+        "text": "到永远我唱此美歌，主曾一路引我行。",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-259一路引导歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

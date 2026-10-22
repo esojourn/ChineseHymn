@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-254",
+  "status": "reviewed",
+  "source": {
+    "file": "05-254如今更爱主.jpg",
+    "sha256": "959f0da33fd933099bb20bcd2736eb6ead445cb5326d1c3db2315f6488045a4b",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-254如今更爱主.mp3",
+      "sha256": "f804e3cc29d4eda80a5ab7ad3e18d6f184455168706dcb2a33c08e70783d4c65",
+      "duration": 174.54933333333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.174515,
+      "bottom": 0.25953
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.210379,
+      "bottom": 0.294796
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.245047,
+      "bottom": 0.329464
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.280313,
+      "bottom": 0.365328
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.386111,
+      "bottom": 0.46993
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.420181,
+      "bottom": 0.505196
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.455447,
+      "bottom": 0.539864
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.490115,
+      "bottom": 0.573935
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.59412,
+      "bottom": 0.678537
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.62819,
+      "bottom": 0.713803
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.664054,
+      "bottom": 0.747874
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.698125,
+      "bottom": 0.783139
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.803922,
+      "bottom": 0.888937
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.839188,
+      "bottom": 0.924203
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.873857,
+      "bottom": 0.958871
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.909122,
+      "bottom": 0.99354
+    }
+  },
+  "cues": [
+    {
+      "at": 6.15,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.45,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.05,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.15,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 59.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.45,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.05,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.25,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 101.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.55,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 122.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.25,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 143.2,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 153.55,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.15,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我主，我爱主，因感主甚爱我，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "为主，我甘心离有罪之逸乐；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "惟主，我救主，曾将我罪救赎；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "昔我曾爱主，我如今更爱主。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "如今我爱主，因为主曾爱我，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "因主救赎我，舍圣身，经万苦；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "因主哀怜·我，戴荆冠，受欺侮；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "昔我曾爱主，我如今更爱主。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "无论生与死，我爱主常如此，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我生有——息，更高歌称扬主，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "临死声虽微，赞美声终不止；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "昔我曾爱主，我如今更爱主。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我既登天堂，立在主宝座旁，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "永远敬拜主，赞美主，声悠扬；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "头戴黄金冕，与众圣常欢聚；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "昔我曾爱主，我如今更爱主。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-254如今更爱主.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

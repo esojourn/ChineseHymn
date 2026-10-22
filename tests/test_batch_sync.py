@@ -280,6 +280,17 @@ class BatchTests(unittest.TestCase):
             row(.3, '冏3211---1-1-'), row(.35, '最后一行的歌词')]})
         self.assertEqual(len(definition['systems']), 2)
 
+    def test_short_lyric_rows_and_missing_number_punctuation_remain_in_all_stanzas(self):
+        def row(top, text):
+            return {'top': top, 'bottom': top + .02, 'text': text, 'confidence': .99}
+        recognition = {'rows': [row(.1, '12345566'), row(.15, '1.第一段歌词'),
+            row(.2, '2.第二段歌词'), row(.3, '53344333'), row(.35, '我来。'), row(.4, "'2我来。") ]}
+        definition = sources.image_source(recognition)
+        self.assertEqual(len(definition['systems']), 2)
+        self.assertEqual(len(definition['verses']), 2)
+        self.assertEqual(definition['verses'][0][-1]['text'], '我来。')
+        self.assertEqual(definition['verses'][1][-1]['text'], '我来。')
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_music_resolves_a_conflict_only_after_two_independent_acoustic_anchors(self):
         verses = [[{'region': 'r' + str(i)}] for i in range(5)]

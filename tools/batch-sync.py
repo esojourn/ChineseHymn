@@ -199,7 +199,7 @@ def recognize_image(job):
     inverse = cv2.invertAffineTransform(matrix)
     gray = np.mean(image, axis=2)
     projection = (gray[:, int(width * .06):int(width * .97)] < 150).sum(axis=1)
-    mask = binary_closing(projection > width * .03, structure=np.ones(max(2, round(height * .004))))
+    mask = binary_closing(projection > width * .06, structure=np.ones(max(2, round(height * .004))))
     labels, count = label(mask)
     bands = []
     for index in range(1, count + 1):
@@ -228,7 +228,7 @@ def recognize_image(job):
                          'recognitionBand': [top, bottom],
                          'text': text, 'confidence': float(confidence)})
     save(destination, {'source': song['source'], 'sha256': song['sha256'], 'width': width, 'height': height,
-                       'recognizerVersion': 3, 'recognitionAngle': angle,
+                       'recognizerVersion': 4, 'recognitionAngle': angle,
                        'rows': rows, 'elapsedSeconds': round(time.monotonic() - start, 3)})
     return song['songId'], f'{len(rows)} rows, {round(time.monotonic() - start, 1)} s'
 

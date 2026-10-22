@@ -11,6 +11,7 @@ VERSE = re.compile(r'^\s*(\d{1,2})(?:\s*[.．、)]\s*|\s+(?=\D))')
 CHINESE_VERSE = re.compile(r'^\s*[（(]([一二三四五六七八九十])[）)]\s*')
 CHORUS = re.compile(r'^\s*[（(\[]?(?:副(?:歌)?|chorus)[）)\]]?\s*[:：.．]?\s*$', re.I)
 CREDITS = re.compile(r'^(?:歌手|演唱|作词|作詞|作曲|词曲|詞曲|编曲|編曲|lyrics\s+by|music\s+by|performed\s+by)\s*[:：]', re.I)
+IMAGE_VERSE = re.compile(r'''^\s*['’‘“"]?(\d{1,2})(?:\s*[.．、)]\s*|\s*)(?=[\u3400-\u9fff“‘（"'(])''')
 
 
 @lru_cache(maxsize=1)
@@ -98,18 +99,18 @@ def image_source(ocr):
             if current and current['lyrics']:
                 systems.append(current)
             current = {'notes': row, 'lyrics': [], 'chorus': chorus}
-        elif current and chinese >= 4 and not CHORUS.match(text) and row['confidence'] >= .45:
+        elif current and chinese >= 2 and not CHORUS.match(text) and row['confidence'] >= .45:
             current['lyrics'].append(row)
     if current and current['lyrics']:
         systems.append(current)
     if not systems:
         raise ValueError('未识别出谱行及对应横排歌词')
     verse_count = max([int(match[1]) for system in systems for row in system['lyrics']
-                       if (match := VERSE.match(row['text'])) and int(match[1]) < 15] or [1])
+                       if (match := IMAGE_VERSE.match(row['text'])) and int(match[1]) < 15] or [1])
     regions, verses = {}, [[] for _ in range(verse_count)]
     for index, system in enumerate(systems):
         lyrics = system['lyrics']
-        numbered = {int(match[1]): row for row in lyrics if (match := VERSE.match(row['text']))}
+        numbered = {int(match[1]): row for row in lyrics if (match := IMAGE_VERSE.match(row['text']))}
         if len(lyrics) == verse_count and verse_count > 1:
             numbered = {i + 1: row for i, row in enumerate(lyrics)}
         if not numbered and len(lyrics) > 1:
@@ -129,6 +130,6 @@ def image_source(ocr):
                 top = max(0, system['notes']['top'] - .008)
                 bottom = min(1, max(row['bottom'] for row in system['lyrics']) + .012)
             regions[region_id] = {'kind': 'image', 'top': round(top, 6), 'bottom': round(bottom, 6)}
-            verses[verse].append({'region': region_id, 'text': VERSE.sub('', lyric['text']),
+            verses[verse].append({'region': region_id, 'text': IMAGE_VERSE.sub('', lyric['text']),
                                   'label': f'第{verse + 1}段：第{index + 1}谱行'})
     return {'regions': regions, 'verses': verses, 'language': 'zh', 'systems': systems}

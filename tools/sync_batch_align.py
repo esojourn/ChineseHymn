@@ -246,12 +246,17 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 track['cues'] = []
                 evidence.setdefault('trackExceptions', {})[item['file']] = str(error)
         tracks.append(track)
+    method_description = ('Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'
+                          if 'referenceMatching' in evidence else
+                          'Numbered-score melody/chroma matching with two rhythm templates and measured repeats.' if 'scoreMatching' in evidence else
+                          'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.')
+    evidence_suffix = '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},
             'tracks': tracks, 'regions': source['regions'], 'cues': cues,
             'activation': {'policy': 'automatic', 'listeningReviewRequired': False},
-            'provenance': {'batch': 'bulk-2026-10', 'method': 'Numbered-score melody/chroma matching with two rhythm templates and measured repeats.' if 'scoreMatching' in evidence else 'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.',
-                           'performanceOrder': definitions, 'evidence': 'docs/sync-bulk-evidence/' + song['source'] + ('.score.json' if 'scoreMatching' in evidence else '.json'),
+            'provenance': {'batch': 'bulk-2026-10', 'method': method_description,
+                           'performanceOrder': definitions, 'evidence': 'docs/sync-bulk-evidence/' + song['source'] + evidence_suffix,
                            'review': 'Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.'}}
     if song['type'] == 'image':
         # These regions focus the performed lyric row, rather than all printed

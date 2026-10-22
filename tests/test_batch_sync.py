@@ -13,6 +13,9 @@ import sync_batch_sources as sources
 try:
     from sync_batch_align import align_windows, confirm_boundaries, export_result
     from sync_batch_audio import alignment_band
+    transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
+    transfer = importlib.util.module_from_spec(transfer_spec)
+    transfer_spec.loader.exec_module(transfer)
 except ImportError:
     confirm_boundaries = None
 
@@ -142,6 +145,27 @@ class BatchTests(unittest.TestCase):
                 song['tracks'][0]['sha256'] = 'b' * 64
                 song['sha256'] = 'd' * 64
                 self.assertEqual(batch.progress([song], cache), {'needs-calibration': 1})
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_same_tune_reference_recovers_only_first_pickup_from_multiple_later_anchors(self):
+        mapped = [12.8, 28.2, 47.2, 65.8, 85.0, 103.5, 122.6, 141.1]
+        music = {'shifts': [0, 37.6, 75.3, 112.9], 'similarity': .97, 'initialOnsetEstimate': 8.6}
+        times, decisions = transfer.consistent_phases(mapped, music, 4, 2)
+        self.assertAlmostEqual(times[0], 9.7)
+        self.assertEqual(times[1:], mapped[1:])
+        self.assertEqual(decisions[0]['originalAt'], 12.8)
+        with self.assertRaises(ValueError):
+            transfer.consistent_phases(mapped, {**music, 'similarity': .94}, 4, 2)
+        with self.assertRaises(ValueError):
+            transfer.consistent_phases(mapped[:4], {**music, 'shifts': [0, 37.6]}, 2, 2)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_same_tune_reference_rejects_disagreement_at_later_passages_and_missing_verses(self):
+        music = {'shifts': [0, 40, 80], 'similarity': .99, 'initialOnsetEstimate': 10}
+        with self.assertRaises(ValueError):
+            transfer.consistent_phases([10, 30, 50, 70, 90, 112], music, 3, 2)
+        with self.assertRaises(ValueError):
+            transfer.consistent_phases([10, 30, 50, 70], music, 3, 2)
 
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):

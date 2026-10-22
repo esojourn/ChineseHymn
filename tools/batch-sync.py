@@ -25,6 +25,11 @@ def save(path, data):
     temporary.replace(path)
 
 
+def evidence_directory(candidate):
+    name = candidate['provenance']['evidence']
+    return 'reference-alignment' if name.endswith('.reference.json') else 'score-alignment' if name.endswith('.score.json') else 'alignment'
+
+
 def inventory(root=ROOT):
     songs = []
     for source in sorted((root / 'data').iterdir()):
@@ -63,7 +68,7 @@ def progress(songs, cache):
             ready = cache / 'ready' / (song['source'] + '.json')
             if ready.exists():
                 candidate = json.loads(ready.read_text())
-                directory = 'score-alignment' if candidate['provenance']['evidence'].endswith('.score.json') else 'alignment'
+                directory = evidence_directory(candidate)
                 evidence_path = cache / directory / ready.name
                 evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}
                 current = (candidate['source']['sha256'] == song['sha256'] and
@@ -76,7 +81,7 @@ def progress(songs, cache):
                     item['status'] = 'needs-calibration'
                     item['reason'] = evidence.get('reason', '候选或复核记录已失效，需重新匹配当前素材')[:250]
             else:
-                for directory in ['score-alignment', 'alignment']:
+                for directory in ['reference-alignment', 'score-alignment', 'alignment']:
                     evidence = cache / directory / (song['source'] + '.json')
                     if evidence.exists():
                         result = json.loads(evidence.read_text())
@@ -107,7 +112,7 @@ def publish(song, cache):
         data['regions'] = definition['regions']
     script = "const fs=require('node:fs'),c=require('./css/lyric-sync-core');const e=c.validate(JSON.parse(fs.readFileSync(0,'utf8')));if(e.length){console.error(e);process.exit(1)}"
     subprocess.run(['node', '-e', script], cwd=ROOT, input=json.dumps(data), text=True, check=True)
-    directory = 'score-alignment' if data['provenance']['evidence'].endswith('.score.json') else 'alignment'
+    directory = evidence_directory(data)
     evidence = json.loads((cache / directory / candidate.name).read_text())
     if evidence['status'] != 'ready' or evidence['sourceHash'] != song['sha256']:
         raise ValueError('缺少匹配当前素材的成功复核记录')

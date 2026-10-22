@@ -98,7 +98,10 @@ def confirm_transcript_windows(observations, estimates, anchor_ranges=None, anch
         for row in pair:
             at_start = (index == 0 and 0 <= estimate <= .1 and 0 <= row.get('at', 1) <= .1 and
                         row.get('positiveDurationFraction', 0) >= .65 and row.get('meanProbability', 0) >= .12)
-            if row['valid'] or at_start:
+            first_word_valid = ('firstWordProbability' not in row or
+                                row['firstWordProbability'] >= .12 and
+                                row.get('firstWordEnd', 0) - row.get('firstWordStart', 0) >= .04)
+            if row['valid'] and first_word_valid or at_start:
                 accepted.append(row)
             if at_start and not row['valid']:
                 edge_decisions.append({'index': 0, 'window': row['window'], 'reason': '转写与声学均从音频首帧起唱'})

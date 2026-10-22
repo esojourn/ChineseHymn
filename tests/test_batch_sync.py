@@ -318,6 +318,17 @@ class BatchTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             transcript.confirm_transcript_windows(rows, [161.48], [(161.48, 162.88)], ['i'])
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_phrase_confidence_cannot_hide_an_unaligned_first_word(self):
+        rows = [{'index': 0, 'window': window, 'at': 10, 'valid': True,
+                 'firstWordStart': 10, 'firstWordEnd': 10.4, 'firstWordProbability': probability}
+                for window, probability in enumerate([.8, .01])]
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [10])
+        rows[1].update(firstWordProbability=.8, firstWordEnd=10)
+        with self.assertRaises(ValueError):
+            transcript.confirm_transcript_windows(rows, [10])
+
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_midi_templates_follow_tempo_changes_and_exclude_percussion(self):
         import mido

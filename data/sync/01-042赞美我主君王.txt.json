@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "songId": "01-042",
+  "status": "reviewed",
+  "source": {
+    "file": "01-042赞美我主君王.txt",
+    "sha256": "37fb754aac7c6ddda761e7f52321694a809fa695bf67fa4aa114d54acc523b4c",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-042赞美我主君王-领唱.mp3",
+      "sha256": "d34fdfb220680d73e3bd0d4b1a5b90190a1d608ec82b6cdf524f236992b2e14f",
+      "duration": 126.98122448979592,
+      "offset": 0,
+      "reviewed": true
+    },
+    {
+      "file": "01-042赞美我主君王.mp3",
+      "sha256": "54f91189f487f6bb16efff181961d2b9606d208c8178e313755093b62eed831b",
+      "duration": 126.79836734693878,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 4.79,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 25.22,
+          "region": "r3",
+          "label": "第1段（后半）",
+          "transition": "reading"
+        },
+        {
+          "at": 34.69,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 55.25,
+          "region": "r5",
+          "label": "第2段（后半）",
+          "transition": "reading"
+        },
+        {
+          "at": 64.76,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 85.19,
+          "region": "r7",
+          "label": "第3段（后半）",
+          "transition": "reading"
+        },
+        {
+          "at": 94.63,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 114.94,
+          "region": "r9",
+          "label": "第4段（后半）",
+          "transition": "reading"
+        }
+      ]
+    }
+  ],
+  "regions": {
+    "r2": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5,
+      "candidateText": "1.我灵赞美天上君王，主前俯伏献我心，既蒙赦免医治拯救，当永远歌唱颂扬："
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7,
+      "candidateText": "哈利路亚！哈利路亚！高声赞美永生王。"
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12,
+      "candidateText": "2.赞美上主慈爱深恩，怜悯列祖解苦困；赞美上主永不改变，不断容忍常施恩："
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14,
+      "candidateText": "哈利路亚！哈利路亚！颂主信实大慈仁。"
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19,
+      "candidateText": "3.主如慈父怜恤眷顾，知我软弱无能力，主以慈手温柔护佑，救我脱离众仇敌，"
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21,
+      "candidateText": "哈利路亚！哈利路亚！颂主恩广大无比。"
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26,
+      "candidateText": "4.天上天使同心敬拜，时常瞻仰主荣面，日月星辰俯伏敬拜，普世万民颂声同，"
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28,
+      "candidateText": "哈利路亚！哈利路亚！齐来赞美主恩宏。"
+    }
+  },
+  "cues": [
+    {
+      "at": 5.09,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 25.62,
+      "region": "r3",
+      "label": "第1段（后半）",
+      "transition": "reading"
+    },
+    {
+      "at": 35.09,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.65,
+      "region": "r5",
+      "label": "第2段（后半）",
+      "transition": "reading"
+    },
+    {
+      "at": 65.16,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.59,
+      "region": "r7",
+      "label": "第3段（后半）",
+      "transition": "reading"
+    },
+    {
+      "at": 95.03,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.34,
+      "region": "r9",
+      "label": "第4段（后半）",
+      "transition": "reading"
+    }
+  ],
+  "provenance": {
+    "date": "2026-10-22",
+    "batch": "pilot-01",
+    "method": "Known Chinese lyrics aligned in two independent contextual windows using local faster-whisper medium/int8; repeated-music phase corroboration; chroma DTW between recordings.",
+    "review": "Enabled for user preview. Machine timing checks completed; full human listening review and measured lyric-boundary error have not been completed. Bulk processing awaits user confirmation.",
+    "evidence": "docs/sync-batch-01-evidence.json",
+    "notes": [
+      "Original lyrics, scores and MP3 files are unchanged.",
+      "No inferred vocal gap is labelled as an instrumental interlude. Verse returns use the normal short transition at the new verse boundary.",
+      "The instrumental recording uses an independently mapped cue sequence; no total-duration rescaling is used."
+    ],
+    "musicAlignment": {
+      "semitoneShift": 0,
+      "meanPathCost": 0.1202,
+      "bodyFitSlope": 1.0,
+      "bodyFitOffset": -0.4,
+      "bodyFitResidualP95Seconds": 0.0
+    },
+    "performanceOrder": [
+      {
+        "region": "r2",
+        "text": "我灵赞美天上君王，主前俯伏献我心，既蒙赦免医治拯救，当永远歌唱颂扬：",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "哈利路亚！哈利路亚！高声赞美永生王。",
+        "label": "第1段（后半）"
+      },
+      {
+        "region": "r4",
+        "text": "赞美上主慈爱深恩，怜悯列祖解苦困；赞美上主永不改变，不断容忍常施恩：",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "哈利路亚！哈利路亚！颂主信实大慈仁。",
+        "label": "第2段（后半）"
+      },
+      {
+        "region": "r6",
+        "text": "主如慈父怜恤眷顾，知我软弱无能力，主以慈手温柔护佑，救我脱离众仇敌，",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "哈利路亚！哈利路亚！颂主恩广大无比。",
+        "label": "第3段（后半）"
+      },
+      {
+        "region": "r8",
+        "text": "天上天使同心敬拜，时常瞻仰主荣面，日月星辰俯伏敬拜，普世万民颂声同，",
+        "label": "第4段"
+      },
+      {
+        "region": "r9",
+        "text": "哈利路亚！哈利路亚！齐来赞美主恩宏。",
+        "label": "第4段（后半）"
+      }
+    ]
+  },
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  }
+}

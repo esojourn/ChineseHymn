@@ -1,0 +1,2449 @@
+{
+  "batch": "pilot-01",
+  "completedDate": "2026-10-22",
+  "scope": "Three text hymns and three score-image hymns; both lead and instrumental. Bulk generation awaits user confirmation.",
+  "listeningReview": "No complete human listening review or measured lyric-boundary error is claimed. Machine checks are recorded separately.",
+  "songs": {
+    "01-042": {
+      "source": {
+        "file": "01-042赞美我主君王.txt",
+        "sha256": "37fb754aac7c6ddda761e7f52321694a809fa695bf67fa4aa114d54acc523b4c",
+        "type": "text"
+      },
+      "trackFiles": [
+        "01-042赞美我主君王-领唱.mp3",
+        "01-042赞美我主君王.mp3"
+      ],
+      "cueCountPerTrack": 8,
+      "repeatedMusic": {
+        "coarseFirstOnset": 5,
+        "coarsePeriod": 30,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              30.0,
+              60.0,
+              90.0
+            ],
+            "similarities": [
+              1,
+              0.97812,
+              0.97485,
+              0.9713
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              30.0,
+              60.0,
+              90.0
+            ],
+            "similarities": [
+              1,
+              0.99587,
+              0.99561,
+              0.99563
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "method": "repeated-music phase from aligned later stanzas; first region is already displayed during intro",
+          "at": 5.09
+        },
+        {
+          "index": 1,
+          "window1At": 25.62,
+          "window2At": 25.62,
+          "windowDifference": 0.0,
+          "musicPhaseAt": 25.605,
+          "at": 25.62,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 2,
+          "window1At": 35.22,
+          "window2At": 32.02,
+          "windowDifference": 3.2,
+          "musicPhaseAt": 35.095,
+          "at": 35.09,
+          "method": "repeated-music phase; conflicting window discarded"
+        },
+        {
+          "index": 3,
+          "window1At": 55.7,
+          "window2At": 55.6,
+          "windowDifference": 0.1,
+          "musicPhaseAt": 55.605,
+          "at": 55.65,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 4,
+          "window1At": 65.14,
+          "window2At": 65.18,
+          "windowDifference": 0.04,
+          "musicPhaseAt": 65.095,
+          "at": 65.16,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 5,
+          "window1At": 85.6,
+          "window2At": 85.58,
+          "windowDifference": 0.02,
+          "musicPhaseAt": 85.605,
+          "at": 85.59,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 6,
+          "window1At": 95.1,
+          "window2At": 94.96,
+          "windowDifference": 0.14,
+          "musicPhaseAt": 95.095,
+          "at": 95.03,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 7,
+          "window1At": 115.28,
+          "window2At": 115.4,
+          "windowDifference": 0.12,
+          "musicPhaseAt": 115.605,
+          "at": 115.34,
+          "method": "two-window contextual alignment"
+        }
+      ]
+    },
+    "01-043": {
+      "source": {
+        "file": "01-043永颂上主.txt",
+        "sha256": "0b6158a59afc77b928a0f2ec212b8f419ce90e2372b59db42793938972321ac7",
+        "type": "text"
+      },
+      "trackFiles": [
+        "01-043永颂上主-领唱.mp3",
+        "01-043永颂上主.mp3"
+      ],
+      "cueCountPerTrack": 8,
+      "repeatedMusic": {
+        "coarseFirstOnset": 9.8,
+        "coarsePeriod": 43,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              43.0,
+              85.95,
+              128.95
+            ],
+            "similarities": [
+              1,
+              0.97827,
+              0.97184,
+              0.97741
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              43.0,
+              85.95,
+              128.95
+            ],
+            "similarities": [
+              1,
+              0.992,
+              0.98908,
+              0.99531
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "method": "repeated-music phase from aligned later stanzas; first region is already displayed during intro",
+          "at": 9.93
+        },
+        {
+          "index": 1,
+          "window1At": 31.34,
+          "window2At": 31.34,
+          "windowDifference": 0.0,
+          "musicPhaseAt": 31.355,
+          "at": 31.34,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 2,
+          "window1At": 52.92,
+          "window2At": 52.94,
+          "windowDifference": 0.02,
+          "musicPhaseAt": 52.93,
+          "at": 52.93,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 3,
+          "window1At": 74.28,
+          "window2At": 74.44,
+          "windowDifference": 0.16,
+          "musicPhaseAt": 74.355,
+          "at": 74.36,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 4,
+          "window1At": 95.94,
+          "window2At": 95.92,
+          "windowDifference": 0.02,
+          "musicPhaseAt": 95.88,
+          "at": 95.93,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 5,
+          "window1At": 117.36,
+          "window2At": 117.38,
+          "windowDifference": 0.02,
+          "musicPhaseAt": 117.305,
+          "at": 117.37,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 6,
+          "window1At": 138.4,
+          "window2At": 138.58,
+          "windowDifference": 0.18,
+          "musicPhaseAt": 138.88,
+          "at": 138.49,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 7,
+          "window1At": 160.32,
+          "window2At": 160.28,
+          "windowDifference": 0.04,
+          "musicPhaseAt": 160.305,
+          "at": 160.3,
+          "method": "two-window contextual alignment"
+        }
+      ]
+    },
+    "01-044": {
+      "source": {
+        "file": "01-044父神阿你在羔羊里.txt",
+        "sha256": "2894ac9be6bd1ff311e65fb2608d86e3e60b45951dc80cde6a9ee90572933ab8",
+        "type": "text"
+      },
+      "trackFiles": [
+        "01-044父神阿你在羔羊里-领唱.mp3",
+        "01-044父神阿你在羔羊里.mp3"
+      ],
+      "cueCountPerTrack": 5,
+      "repeatedMusic": {
+        "coarseFirstOnset": 12.7,
+        "coarsePeriod": 26.3,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              26.2,
+              52.35,
+              78.55,
+              104.7
+            ],
+            "similarities": [
+              1,
+              0.92531,
+              0.92009,
+              0.90768,
+              0.91463
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              26.2,
+              52.35,
+              78.55,
+              104.75
+            ],
+            "similarities": [
+              1,
+              0.98863,
+              0.9916,
+              0.99364,
+              0.98526
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "method": "repeated-music phase from aligned later stanzas; first region is already displayed during intro",
+          "at": 13.11
+        },
+        {
+          "index": 1,
+          "window1At": 38.94,
+          "window2At": 38.84,
+          "windowDifference": 0.1,
+          "musicPhaseAt": 39.31,
+          "at": 38.89,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 2,
+          "window1At": 65.48,
+          "window2At": 65.48,
+          "windowDifference": 0.0,
+          "musicPhaseAt": 65.46,
+          "at": 65.48,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 3,
+          "window1At": 91.64,
+          "window2At": 91.64,
+          "windowDifference": 0.0,
+          "musicPhaseAt": 91.66,
+          "at": 91.64,
+          "method": "two-window contextual alignment"
+        },
+        {
+          "index": 4,
+          "window1At": 117.94,
+          "window2At": 117.96,
+          "windowDifference": 0.02,
+          "musicPhaseAt": 117.81,
+          "at": 117.95,
+          "method": "two-window contextual alignment"
+        }
+      ]
+    },
+    "03-037": {
+      "source": {
+        "file": "03-037罪债全还清.jpg",
+        "sha256": "af271f5a77c72754373f79286f5f69e711ec225c3fbca5181c7efa379fe56853",
+        "type": "image"
+      },
+      "trackFiles": [
+        "03-037罪债全还清-领唱.mp3",
+        "03-037罪债全还清.mp3"
+      ],
+      "cueCountPerTrack": 16,
+      "repeatedMusic": {
+        "coarseFirstOnset": 9.8,
+        "coarsePeriod": 41.7,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              41.75,
+              83.5,
+              125.2
+            ],
+            "similarities": [
+              1,
+              0.93922,
+              0.92723,
+              0.92836
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              41.75,
+              83.5,
+              125.2
+            ],
+            "similarities": [
+              1,
+              0.99395,
+              0.98899,
+              0.99119
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "rawWordAlignmentAt": 9.28,
+          "scoreMatchedInstrumentalAt": 9.525,
+          "at": 9.82,
+          "instrumentalAt": 9.52,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 1,
+          "rawWordAlignmentAt": 20.06,
+          "scoreMatchedInstrumentalAt": 19.977,
+          "at": 20.16,
+          "instrumentalAt": 19.96,
+          "scoreRepeatDifference": 0.017,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 2,
+          "rawWordAlignmentAt": 31.36,
+          "scoreMatchedInstrumentalAt": 31.25,
+          "at": 31.42,
+          "instrumentalAt": 31.22,
+          "scoreRepeatDifference": 0.03,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 3,
+          "rawWordAlignmentAt": 41.9,
+          "scoreMatchedInstrumentalAt": 41.702,
+          "at": 42.0,
+          "instrumentalAt": 41.7,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 4,
+          "rawWordAlignmentAt": 51.52,
+          "scoreMatchedInstrumentalAt": 51.275,
+          "at": 51.47,
+          "instrumentalAt": 51.27,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 5,
+          "rawWordAlignmentAt": 61.82,
+          "scoreMatchedInstrumentalAt": 61.702,
+          "at": 62.01,
+          "instrumentalAt": 61.71,
+          "scoreRepeatDifference": 0.008,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 6,
+          "rawWordAlignmentAt": 73.08,
+          "scoreMatchedInstrumentalAt": 72.95,
+          "at": 73.17,
+          "instrumentalAt": 72.97,
+          "scoreRepeatDifference": 0.02,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 7,
+          "rawWordAlignmentAt": 83.64,
+          "scoreMatchedInstrumentalAt": 83.452,
+          "at": 83.65,
+          "instrumentalAt": 83.45,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 8,
+          "rawWordAlignmentAt": 93.24,
+          "scoreMatchedInstrumentalAt": 93.025,
+          "at": 93.23,
+          "instrumentalAt": 93.03,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 9,
+          "rawWordAlignmentAt": 103.58,
+          "scoreMatchedInstrumentalAt": 103.452,
+          "at": 103.76,
+          "instrumentalAt": 103.46,
+          "scoreRepeatDifference": 0.008,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 10,
+          "rawWordAlignmentAt": 115.02,
+          "scoreMatchedInstrumentalAt": 114.7,
+          "at": 114.92,
+          "instrumentalAt": 114.72,
+          "scoreRepeatDifference": 0.02,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 11,
+          "rawWordAlignmentAt": 125.4,
+          "scoreMatchedInstrumentalAt": 125.177,
+          "at": 125.4,
+          "instrumentalAt": 125.2,
+          "scoreRepeatDifference": 0.023,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 12,
+          "rawWordAlignmentAt": 135.0,
+          "scoreMatchedInstrumentalAt": 134.725,
+          "at": 135.02,
+          "instrumentalAt": 134.72,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 13,
+          "rawWordAlignmentAt": 145.3,
+          "scoreMatchedInstrumentalAt": 145.177,
+          "at": 145.46,
+          "instrumentalAt": 145.16,
+          "scoreRepeatDifference": 0.017,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 14,
+          "rawWordAlignmentAt": 156.76,
+          "scoreMatchedInstrumentalAt": 156.45,
+          "at": 156.63,
+          "instrumentalAt": 156.43,
+          "scoreRepeatDifference": 0.02,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 15,
+          "rawWordAlignmentAt": 167.08,
+          "scoreMatchedInstrumentalAt": 166.902,
+          "at": 167.1,
+          "instrumentalAt": 166.9,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        }
+      ],
+      "scoreMatching": {
+        "best": [
+          0.4424709677696228,
+          9,
+          9.475000000000014,
+          0.871,
+          [
+            0.44319650530815125,
+            0.4423026144504547,
+            0.44175466895103455,
+            0.4426300525665283
+          ]
+        ],
+        "top": [
+          [
+            0.4424709677696228,
+            9,
+            9.475000000000014,
+            0.871,
+            [
+              0.44319650530815125,
+              0.4423026144504547,
+              0.44175466895103455,
+              0.4426300525665283
+            ]
+          ],
+          [
+            0.4420164227485657,
+            9,
+            9.525000000000015,
+            0.869,
+            [
+              0.4425482153892517,
+              0.4417209327220917,
+              0.441432923078537,
+              0.44236359000205994
+            ]
+          ],
+          [
+            0.4417758285999298,
+            9,
+            9.500000000000014,
+            0.87,
+            [
+              0.442142128944397,
+              0.4417206645011902,
+              0.44129541516304016,
+              0.44194507598876953
+            ]
+          ],
+          [
+            0.4416952133178711,
+            9,
+            9.525000000000015,
+            0.87,
+            [
+              0.4425530433654785,
+              0.44094955921173096,
+              0.43997472524642944,
+              0.443303644657135
+            ]
+          ],
+          [
+            0.4416746497154236,
+            9,
+            9.550000000000015,
+            0.868,
+            [
+              0.44217756390571594,
+              0.4412755072116852,
+              0.4411472976207733,
+              0.4420982599258423
+            ]
+          ],
+          [
+            0.4416520297527313,
+            9,
+            9.550000000000015,
+            0.869,
+            [
+              0.44239187240600586,
+              0.44094792008399963,
+              0.43998637795448303,
+              0.44328203797340393
+            ]
+          ],
+          [
+            0.4411669671535492,
+            9,
+            9.450000000000014,
+            0.872,
+            [
+              0.4417649209499359,
+              0.4411672353744507,
+              0.44042277336120605,
+              0.4413129389286041
+            ]
+          ],
+          [
+            0.4408811628818512,
+            9,
+            9.500000000000014,
+            0.871,
+            [
+              0.441702276468277,
+              0.4399717152118683,
+              0.43876901268959045,
+              0.4430816173553467
+            ]
+          ],
+          [
+            0.44085949659347534,
+            9,
+            9.575000000000015,
+            0.868,
+            [
+              0.441513329744339,
+              0.44018667936325073,
+              0.4392234981060028,
+              0.4425143897533417
+            ]
+          ],
+          [
+            0.4408271312713623,
+            9,
+            9.600000000000016,
+            0.867,
+            [
+              0.4416293203830719,
+              0.4399957060813904,
+              0.43904542922973633,
+              0.44263800978660583
+            ]
+          ],
+          [
+            0.4408154785633087,
+            9,
+            9.500000000000014,
+            0.869,
+            [
+              0.4412911832332611,
+              0.440860390663147,
+              0.4410908818244934,
+              0.4400194585323334
+            ]
+          ],
+          [
+            0.4407312870025635,
+            9,
+            9.600000000000016,
+            0.866,
+            [
+              0.4412466585636139,
+              0.4404015839099884,
+              0.44045910239219666,
+              0.44081786274909973
+            ]
+          ],
+          [
+            0.4403681755065918,
+            9,
+            9.475000000000014,
+            0.87,
+            [
+              0.4409399926662445,
+              0.4405567944049835,
+              0.4408210217952728,
+              0.43915489315986633
+            ]
+          ],
+          [
+            0.44009730219841003,
+            9,
+            9.525000000000015,
+            0.868,
+            [
+              0.4404827654361725,
+              0.4402010142803192,
+              0.4404304623603821,
+              0.43927493691444397
+            ]
+          ],
+          [
+            0.4398060441017151,
+            9,
+            9.550000000000015,
+            0.87,
+            [
+              0.4409980773925781,
+              0.43878117203712463,
+              0.4362688362598419,
+              0.44317615032196045
+            ]
+          ]
+        ],
+        "otherKey": [
+          0.2420356422662735,
+          4,
+          9.600000000000016,
+          0.865,
+          [
+            0.24313539266586304,
+            0.24238792061805725,
+            0.24074740707874298,
+            0.24187184870243073
+          ]
+        ],
+        "otherPhase": [
+          0.35499826073646545,
+          9,
+          9.87500000000002,
+          0.865,
+          [
+            0.3575759530067444,
+            0.3516209125518799,
+            0.34496697783470154,
+            0.365829199552536
+          ]
+        ],
+        "rowBeatLengths": [
+          12.0,
+          13.0,
+          12.0,
+          11.0
+        ],
+        "rows": [
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              5,
+              3,
+              1,
+              1,
+              2,
+              2,
+              1,
+              2,
+              3
+            ],
+            [
+              0.5,
+              0.5,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              2,
+              1,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              5,
+              6,
+              5,
+              3,
+              1,
+              1,
+              2,
+              3,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              0.5,
+              0.5,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              2,
+              0.5,
+              0.5,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              3
+            ]
+          ],
+          [
+            [
+              5,
+              6,
+              5,
+              3,
+              1,
+              5,
+              6,
+              5,
+              3,
+              2
+            ],
+            [
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              3,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              3
+            ]
+          ],
+          [
+            [
+              5,
+              6,
+              5,
+              3,
+              1,
+              7,
+              6,
+              1,
+              3,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              0.5,
+              0.5,
+              1,
+              1,
+              1.5,
+              0.5,
+              0.5,
+              0.5,
+              2
+            ]
+          ]
+        ],
+        "verification": [
+          {
+            "verse": 1,
+            "row": 1,
+            "instrumentalAt": 9.525,
+            "expected": 9.475,
+            "score": 0.4615
+          },
+          {
+            "verse": 1,
+            "row": 2,
+            "instrumentalAt": 19.977,
+            "expected": 19.927,
+            "score": 0.4359
+          },
+          {
+            "verse": 1,
+            "row": 3,
+            "instrumentalAt": 31.25,
+            "expected": 31.25,
+            "score": 0.3936
+          },
+          {
+            "verse": 1,
+            "row": 4,
+            "instrumentalAt": 41.702,
+            "expected": 41.702,
+            "score": 0.493
+          },
+          {
+            "verse": 2,
+            "row": 1,
+            "instrumentalAt": 51.275,
+            "expected": 51.225,
+            "score": 0.4634
+          },
+          {
+            "verse": 2,
+            "row": 2,
+            "instrumentalAt": 61.702,
+            "expected": 61.677,
+            "score": 0.4336
+          },
+          {
+            "verse": 2,
+            "row": 3,
+            "instrumentalAt": 72.95,
+            "expected": 73.0,
+            "score": 0.392
+          },
+          {
+            "verse": 2,
+            "row": 4,
+            "instrumentalAt": 83.452,
+            "expected": 83.452,
+            "score": 0.4895
+          },
+          {
+            "verse": 3,
+            "row": 1,
+            "instrumentalAt": 93.025,
+            "expected": 92.975,
+            "score": 0.4615
+          },
+          {
+            "verse": 3,
+            "row": 2,
+            "instrumentalAt": 103.452,
+            "expected": 103.427,
+            "score": 0.4339
+          },
+          {
+            "verse": 3,
+            "row": 3,
+            "instrumentalAt": 114.7,
+            "expected": 114.75,
+            "score": 0.3906
+          },
+          {
+            "verse": 3,
+            "row": 4,
+            "instrumentalAt": 125.177,
+            "expected": 125.202,
+            "score": 0.4922
+          },
+          {
+            "verse": 4,
+            "row": 1,
+            "instrumentalAt": 134.725,
+            "expected": 134.675,
+            "score": 0.4668
+          },
+          {
+            "verse": 4,
+            "row": 2,
+            "instrumentalAt": 145.177,
+            "expected": 145.127,
+            "score": 0.4377
+          },
+          {
+            "verse": 4,
+            "row": 3,
+            "instrumentalAt": 156.45,
+            "expected": 156.45,
+            "score": 0.3924
+          },
+          {
+            "verse": 4,
+            "row": 4,
+            "instrumentalAt": 166.902,
+            "expected": 166.902,
+            "score": 0.49
+          }
+        ],
+        "bestMatch": {
+          "meanPitchScore": 0.4424709677696228,
+          "tonicPitchClass": 9,
+          "firstInstrumentalOnsetSeconds": 9.475000000000014,
+          "quarterNoteSeconds": 0.871,
+          "perVersePitchScores": [
+            0.44319650530815125,
+            0.4423026144504547,
+            0.44175466895103455,
+            0.4426300525665283
+          ]
+        }
+      }
+    },
+    "04-749": {
+      "source": {
+        "file": "04-749开我的眼.jpg",
+        "sha256": "e2db037e0cec91717493ad4a0e3781c50cb22b0b619122f9934439766f06a6f2",
+        "type": "image"
+      },
+      "trackFiles": [
+        "04-749开我的眼-领唱.mp3",
+        "04-749开我的眼.mp3"
+      ],
+      "cueCountPerTrack": 12,
+      "repeatedMusic": {
+        "coarseFirstOnset": 11.9,
+        "coarsePeriod": 48.2,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              48.0,
+              96.0
+            ],
+            "similarities": [
+              1,
+              0.96776,
+              0.96297
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              48.0,
+              96.0
+            ],
+            "similarities": [
+              1,
+              0.99578,
+              0.99769
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "rawWordAlignmentAt": 11.42,
+          "scoreMatchedInstrumentalAt": 11.825,
+          "at": 12.15,
+          "instrumentalAt": 11.85,
+          "scoreRepeatDifference": 0.025,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 1,
+          "rawWordAlignmentAt": 24.14,
+          "scoreMatchedInstrumentalAt": 23.875,
+          "at": 24.15,
+          "instrumentalAt": 23.85,
+          "scoreRepeatDifference": 0.025,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 2,
+          "rawWordAlignmentAt": 35.82,
+          "scoreMatchedInstrumentalAt": 35.925,
+          "at": 36.2,
+          "instrumentalAt": 35.9,
+          "scoreRepeatDifference": 0.025,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 3,
+          "rawWordAlignmentAt": 46.46,
+          "scoreMatchedInstrumentalAt": 48.025,
+          "at": 48.3,
+          "instrumentalAt": 48.0,
+          "scoreRepeatDifference": 0.025,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 4,
+          "rawWordAlignmentAt": 58.54,
+          "scoreMatchedInstrumentalAt": 59.875,
+          "at": 60.15,
+          "instrumentalAt": 59.85,
+          "scoreRepeatDifference": 0.025,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 5,
+          "rawWordAlignmentAt": 72.16,
+          "scoreMatchedInstrumentalAt": 71.85,
+          "at": 72.15,
+          "instrumentalAt": 71.85,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 6,
+          "rawWordAlignmentAt": 83.28,
+          "scoreMatchedInstrumentalAt": 83.9,
+          "at": 84.2,
+          "instrumentalAt": 83.9,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 7,
+          "rawWordAlignmentAt": 95.84,
+          "scoreMatchedInstrumentalAt": 96.0,
+          "at": 96.3,
+          "instrumentalAt": 96.0,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 8,
+          "rawWordAlignmentAt": 106.54,
+          "scoreMatchedInstrumentalAt": 107.85,
+          "at": 108.15,
+          "instrumentalAt": 107.85,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 9,
+          "rawWordAlignmentAt": 120.18,
+          "scoreMatchedInstrumentalAt": 119.85,
+          "at": 120.15,
+          "instrumentalAt": 119.85,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 10,
+          "rawWordAlignmentAt": 132.18,
+          "scoreMatchedInstrumentalAt": 131.9,
+          "at": 132.2,
+          "instrumentalAt": 131.9,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 11,
+          "rawWordAlignmentAt": 148.28,
+          "scoreMatchedInstrumentalAt": 144.0,
+          "at": 144.3,
+          "instrumentalAt": 144.0,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        }
+      ],
+      "scoreMatching": {
+        "keyPitchClass": 6,
+        "firstInstrumentalOnset": 11.9,
+        "rowDuration": 12,
+        "verseDuration": 48,
+        "rows": [
+          {
+            "verse": 1,
+            "row": 1,
+            "instrumentalAt": 11.825,
+            "expected": 11.9,
+            "score": 0.454
+          },
+          {
+            "verse": 1,
+            "row": 2,
+            "instrumentalAt": 23.875,
+            "expected": 23.9,
+            "score": 0.3265
+          },
+          {
+            "verse": 1,
+            "row": 3,
+            "instrumentalAt": 35.925,
+            "expected": 35.9,
+            "score": 0.4257
+          },
+          {
+            "verse": 1,
+            "row": 4,
+            "instrumentalAt": 48.025,
+            "expected": 47.9,
+            "score": 0.3143
+          },
+          {
+            "verse": 2,
+            "row": 1,
+            "instrumentalAt": 59.875,
+            "expected": 59.9,
+            "score": 0.4514
+          },
+          {
+            "verse": 2,
+            "row": 2,
+            "instrumentalAt": 71.85,
+            "expected": 71.9,
+            "score": 0.3257
+          },
+          {
+            "verse": 2,
+            "row": 3,
+            "instrumentalAt": 83.9,
+            "expected": 83.9,
+            "score": 0.4234
+          },
+          {
+            "verse": 2,
+            "row": 4,
+            "instrumentalAt": 96.0,
+            "expected": 95.9,
+            "score": 0.3135
+          },
+          {
+            "verse": 3,
+            "row": 1,
+            "instrumentalAt": 107.85,
+            "expected": 107.9,
+            "score": 0.4509
+          },
+          {
+            "verse": 3,
+            "row": 2,
+            "instrumentalAt": 119.85,
+            "expected": 119.9,
+            "score": 0.3269
+          },
+          {
+            "verse": 3,
+            "row": 3,
+            "instrumentalAt": 131.9,
+            "expected": 131.9,
+            "score": 0.4223
+          },
+          {
+            "verse": 3,
+            "row": 4,
+            "instrumentalAt": 144.0,
+            "expected": 143.9,
+            "score": 0.3139
+          }
+        ]
+      },
+      "scoreTemplate": {
+        "degrees": [
+          1,
+          7,
+          6,
+          5,
+          6,
+          6,
+          5,
+          5,
+          2,
+          7,
+          6,
+          5,
+          7,
+          6,
+          5,
+          5,
+          5.5,
+          4.5,
+          5,
+          6,
+          6,
+          7,
+          6,
+          7,
+          1,
+          6,
+          7,
+          1,
+          2,
+          7,
+          7,
+          6,
+          5,
+          1,
+          7,
+          6,
+          5,
+          6,
+          6,
+          5,
+          5,
+          2,
+          7,
+          6,
+          5,
+          7,
+          6,
+          5,
+          5,
+          3,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          6,
+          5,
+          2,
+          1,
+          1,
+          1
+        ],
+        "durationsSeconds": [
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          1,
+          0.5,
+          1,
+          0.5,
+          1.5,
+          1.5,
+          0.5,
+          1,
+          1.5,
+          1.5
+        ],
+        "matchedKeyPitchClass": 6
+      }
+    },
+    "04-695": {
+      "source": {
+        "file": "04-695主，我相信.jpg",
+        "sha256": "8462f80400ef7ecc4ece8d010649afaf90bb9af8957f18caa28bed144a84b32e",
+        "type": "image"
+      },
+      "trackFiles": [
+        "04-695主，我相信-领唱.mp3",
+        "04-695主，我相信.mp3"
+      ],
+      "cueCountPerTrack": 25,
+      "repeatedMusic": {
+        "coarseFirstOnset": 11.4,
+        "coarsePeriod": 42.6,
+        "tracks": {
+          "lead": {
+            "verseShifts": [
+              0,
+              42.6,
+              85.15,
+              127.75,
+              170.3
+            ],
+            "similarities": [
+              1,
+              0.94998,
+              0.95228,
+              0.94817,
+              0.94535
+            ]
+          },
+          "instrumental": {
+            "verseShifts": [
+              0,
+              42.6,
+              85.15,
+              127.75,
+              170.3
+            ],
+            "similarities": [
+              1,
+              0.99277,
+              0.99507,
+              0.99547,
+              0.9918
+            ]
+          }
+        }
+      },
+      "boundaryChecks": [
+        {
+          "index": 0,
+          "rawWordAlignmentAt": 11.42,
+          "scoreMatchedInstrumentalAt": 10.225,
+          "at": 11.52,
+          "instrumentalAt": 10.22,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 1,
+          "rawWordAlignmentAt": 20.08,
+          "scoreMatchedInstrumentalAt": 18.668,
+          "at": 19.97,
+          "instrumentalAt": 18.67,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 2,
+          "rawWordAlignmentAt": 27.76,
+          "scoreMatchedInstrumentalAt": 26.8,
+          "at": 28.1,
+          "instrumentalAt": 26.8,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 3,
+          "rawWordAlignmentAt": 38.52,
+          "scoreMatchedInstrumentalAt": 37.326,
+          "at": 38.63,
+          "instrumentalAt": 37.33,
+          "scoreRepeatDifference": 0.004,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 4,
+          "rawWordAlignmentAt": 45.88,
+          "scoreMatchedInstrumentalAt": 45.033,
+          "at": 46.33,
+          "instrumentalAt": 45.03,
+          "scoreRepeatDifference": 0.003,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 5,
+          "rawWordAlignmentAt": 51.06,
+          "scoreMatchedInstrumentalAt": 52.8,
+          "at": 54.12,
+          "instrumentalAt": 52.82,
+          "scoreRepeatDifference": 0.02,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 6,
+          "rawWordAlignmentAt": 62.92,
+          "scoreMatchedInstrumentalAt": 61.218,
+          "at": 62.57,
+          "instrumentalAt": 61.27,
+          "scoreRepeatDifference": 0.052,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 7,
+          "rawWordAlignmentAt": 67.1,
+          "scoreMatchedInstrumentalAt": 69.4,
+          "at": 70.7,
+          "instrumentalAt": 69.4,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 8,
+          "rawWordAlignmentAt": 78.48,
+          "scoreMatchedInstrumentalAt": 79.926,
+          "at": 81.23,
+          "instrumentalAt": 79.93,
+          "scoreRepeatDifference": 0.004,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 9,
+          "rawWordAlignmentAt": 86.1,
+          "scoreMatchedInstrumentalAt": 87.633,
+          "at": 88.93,
+          "instrumentalAt": 87.63,
+          "scoreRepeatDifference": 0.003,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 10,
+          "rawWordAlignmentAt": 94.24,
+          "scoreMatchedInstrumentalAt": 95.375,
+          "at": 96.68,
+          "instrumentalAt": 95.38,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 11,
+          "rawWordAlignmentAt": 102.68,
+          "scoreMatchedInstrumentalAt": 103.818,
+          "at": 105.12,
+          "instrumentalAt": 103.82,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 12,
+          "rawWordAlignmentAt": 113.06,
+          "scoreMatchedInstrumentalAt": 111.95,
+          "at": 113.25,
+          "instrumentalAt": 111.95,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 13,
+          "rawWordAlignmentAt": 123.04,
+          "scoreMatchedInstrumentalAt": 122.501,
+          "at": 123.78,
+          "instrumentalAt": 122.48,
+          "scoreRepeatDifference": 0.021,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 14,
+          "rawWordAlignmentAt": 128.88,
+          "scoreMatchedInstrumentalAt": 130.233,
+          "at": 131.48,
+          "instrumentalAt": 130.18,
+          "scoreRepeatDifference": 0.053,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 15,
+          "rawWordAlignmentAt": 138.22,
+          "scoreMatchedInstrumentalAt": 137.975,
+          "at": 139.27,
+          "instrumentalAt": 137.97,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 16,
+          "rawWordAlignmentAt": 148.62,
+          "scoreMatchedInstrumentalAt": 146.418,
+          "at": 147.72,
+          "instrumentalAt": 146.42,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 17,
+          "rawWordAlignmentAt": 155.94,
+          "scoreMatchedInstrumentalAt": 154.55,
+          "at": 155.85,
+          "instrumentalAt": 154.55,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 18,
+          "rawWordAlignmentAt": 165.74,
+          "scoreMatchedInstrumentalAt": 165.076,
+          "at": 166.38,
+          "instrumentalAt": 165.08,
+          "scoreRepeatDifference": 0.004,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 19,
+          "rawWordAlignmentAt": 171.3,
+          "scoreMatchedInstrumentalAt": 172.783,
+          "at": 174.08,
+          "instrumentalAt": 172.78,
+          "scoreRepeatDifference": 0.003,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 20,
+          "rawWordAlignmentAt": 179.14,
+          "scoreMatchedInstrumentalAt": 180.525,
+          "at": 181.83,
+          "instrumentalAt": 180.53,
+          "scoreRepeatDifference": 0.005,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 21,
+          "rawWordAlignmentAt": 190.62,
+          "scoreMatchedInstrumentalAt": 188.968,
+          "at": 190.27,
+          "instrumentalAt": 188.97,
+          "scoreRepeatDifference": 0.002,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 22,
+          "rawWordAlignmentAt": 197.68,
+          "scoreMatchedInstrumentalAt": 197.1,
+          "at": 198.4,
+          "instrumentalAt": 197.1,
+          "scoreRepeatDifference": 0.0,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 23,
+          "rawWordAlignmentAt": 205.92,
+          "scoreMatchedInstrumentalAt": 207.676,
+          "at": 208.93,
+          "instrumentalAt": 207.63,
+          "scoreRepeatDifference": 0.046,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        },
+        {
+          "index": 24,
+          "rawWordAlignmentAt": 216.22,
+          "scoreMatchedInstrumentalAt": 215.383,
+          "at": 216.63,
+          "instrumentalAt": 215.33,
+          "scoreRepeatDifference": 0.053,
+          "method": "original score melody matched to actual instrumental audio, checked independently at every system and verse; music mapping to lead"
+        }
+      ],
+      "scoreMatching": {
+        "best": [
+          0.47915148735046387,
+          10,
+          10.175000000000015,
+          0.661,
+          [
+            0.4790414869785309,
+            0.4789746403694153,
+            0.4794074594974518,
+            0.47970402240753174,
+            0.4786299169063568
+          ]
+        ],
+        "top": [
+          [
+            0.47915148735046387,
+            10,
+            10.175000000000015,
+            0.661,
+            [
+              0.4790414869785309,
+              0.4789746403694153,
+              0.4794074594974518,
+              0.47970402240753174,
+              0.4786299169063568
+            ]
+          ],
+          [
+            0.47909125685691833,
+            10,
+            10.175000000000015,
+            0.662,
+            [
+              0.4789220690727234,
+              0.47798648476600647,
+              0.4798886775970459,
+              0.4791184663772583,
+              0.47954052686691284
+            ]
+          ],
+          [
+            0.47890591621398926,
+            10,
+            10.225000000000016,
+            0.66,
+            [
+              0.47880908846855164,
+              0.47816646099090576,
+              0.48000818490982056,
+              0.4781307578086853,
+              0.47941499948501587
+            ]
+          ],
+          [
+            0.4786913990974426,
+            10,
+            10.250000000000016,
+            0.66,
+            [
+              0.47842690348625183,
+              0.47685959935188293,
+              0.4800727367401123,
+              0.47864750027656555,
+              0.4794502854347229
+            ]
+          ],
+          [
+            0.47862109541893005,
+            10,
+            10.125000000000014,
+            0.663,
+            [
+              0.478412389755249,
+              0.47770026326179504,
+              0.4795541763305664,
+              0.47897738218307495,
+              0.4784611761569977
+            ]
+          ],
+          [
+            0.4782479405403137,
+            10,
+            10.225000000000016,
+            0.661,
+            [
+              0.4780155122280121,
+              0.47575294971466064,
+              0.4800051152706146,
+              0.4779094159603119,
+              0.479556679725647
+            ]
+          ],
+          [
+            0.47809043526649475,
+            10,
+            10.150000000000015,
+            0.662,
+            [
+              0.4775400161743164,
+              0.47717615962028503,
+              0.47902071475982666,
+              0.47825267910957336,
+              0.47846266627311707
+            ]
+          ],
+          [
+            0.47805100679397583,
+            10,
+            10.200000000000015,
+            0.66,
+            [
+              0.47777989506721497,
+              0.47870585322380066,
+              0.4778129458427429,
+              0.47873958945274353,
+              0.47721657156944275
+            ]
+          ],
+          [
+            0.47774559259414673,
+            10,
+            10.200000000000015,
+            0.661,
+            [
+              0.47729116678237915,
+              0.4769420325756073,
+              0.47867000102996826,
+              0.4778323769569397,
+              0.4779922664165497
+            ]
+          ],
+          [
+            0.4776948392391205,
+            10,
+            10.100000000000014,
+            0.664,
+            [
+              0.47735917568206787,
+              0.47673165798187256,
+              0.47868239879608154,
+              0.4774883985519409,
+              0.4782125651836395
+            ]
+          ],
+          [
+            0.47741833329200745,
+            10,
+            10.125000000000014,
+            0.662,
+            [
+              0.47715654969215393,
+              0.4785139858722687,
+              0.4772145748138428,
+              0.4782811105251312,
+              0.47592541575431824
+            ]
+          ],
+          [
+            0.47740286588668823,
+            10,
+            10.175000000000015,
+            0.663,
+            [
+              0.4774377942085266,
+              0.47511693835258484,
+              0.4789004325866699,
+              0.4769666790962219,
+              0.4785926043987274
+            ]
+          ],
+          [
+            0.4772800803184509,
+            10,
+            10.100000000000014,
+            0.663,
+            [
+              0.4768586754798889,
+              0.4772644639015198,
+              0.47775697708129883,
+              0.47788524627685547,
+              0.47663506865501404
+            ]
+          ],
+          [
+            0.4771660268306732,
+            10,
+            10.175000000000015,
+            0.66,
+            [
+              0.4772586226463318,
+              0.47867298126220703,
+              0.4767615497112274,
+              0.47726964950561523,
+              0.47586748003959656
+            ]
+          ],
+          [
+            0.4771176278591156,
+            10,
+            10.150000000000015,
+            0.663,
+            [
+              0.4770081043243408,
+              0.4751725196838379,
+              0.4783521294593811,
+              0.47671329975128174,
+              0.47834208607673645
+            ]
+          ]
+        ],
+        "otherKey": [
+          0.12201452255249023,
+          5,
+          9.77500000000001,
+          0.663,
+          [
+            0.12333949655294418,
+            0.12293823808431625,
+            0.12130682170391083,
+            0.12148531526327133,
+            0.12100276350975037
+          ]
+        ],
+        "otherPhase": [
+          0.44952601194381714,
+          10,
+          9.77500000000001,
+          0.67,
+          [
+            0.4496704041957855,
+            0.45191821455955505,
+            0.4496401250362396,
+            0.45071354508399963,
+            0.4456878900527954
+          ]
+        ],
+        "rowBeatLengths": [
+          13.0,
+          12.0,
+          16.0,
+          12.0,
+          11.0
+        ],
+        "rows": [
+          [
+            [
+              1,
+              3,
+              3,
+              2,
+              1,
+              3,
+              5,
+              1,
+              1,
+              6,
+              5,
+              4,
+              3,
+              3,
+              2,
+              1,
+              3,
+              3
+            ],
+            [
+              1,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              1.5,
+              0.5,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25
+            ]
+          ],
+          [
+            [
+              2,
+              2,
+              3,
+              2,
+              1,
+              3,
+              3,
+              2,
+              1,
+              3,
+              5,
+              1,
+              1,
+              6,
+              5,
+              5
+            ],
+            [
+              1,
+              0.75,
+              0.25,
+              1.5,
+              0.5,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              1.5,
+              0.5
+            ]
+          ],
+          [
+            [
+              4.5,
+              4.5,
+              3,
+              2,
+              1,
+              1,
+              7,
+              6,
+              6,
+              5,
+              3,
+              2,
+              3,
+              1,
+              5,
+              3,
+              5,
+              1
+            ],
+            [
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              1,
+              0.75,
+              0.25,
+              2,
+              1,
+              0.75,
+              0.25,
+              2,
+              1,
+              0.75,
+              0.25,
+              2
+            ]
+          ],
+          [
+            [
+              6,
+              7,
+              1,
+              6,
+              5,
+              6,
+              5,
+              3,
+              2,
+              3,
+              4,
+              3,
+              2,
+              5,
+              3,
+              2,
+              3,
+              1
+            ],
+            [
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              1,
+              1,
+              1,
+              0.75,
+              0.25,
+              2
+            ]
+          ],
+          [
+            [
+              5,
+              3,
+              5,
+              1,
+              6,
+              7,
+              1,
+              6,
+              5,
+              3,
+              1,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0.75,
+              0.25,
+              2,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              0.75,
+              0.25,
+              2,
+              1
+            ]
+          ]
+        ],
+        "verification": [
+          {
+            "verse": 1,
+            "row": 1,
+            "instrumentalAt": 10.225,
+            "expected": 10.175,
+            "score": 0.52
+          },
+          {
+            "verse": 1,
+            "row": 2,
+            "instrumentalAt": 18.668,
+            "expected": 18.768,
+            "score": 0.4927
+          },
+          {
+            "verse": 1,
+            "row": 3,
+            "instrumentalAt": 26.8,
+            "expected": 26.7,
+            "score": 0.454
+          },
+          {
+            "verse": 1,
+            "row": 4,
+            "instrumentalAt": 37.326,
+            "expected": 37.276,
+            "score": 0.5086
+          },
+          {
+            "verse": 1,
+            "row": 5,
+            "instrumentalAt": 45.033,
+            "expected": 45.208,
+            "score": 0.5175
+          },
+          {
+            "verse": 2,
+            "row": 1,
+            "instrumentalAt": 52.8,
+            "expected": 52.775,
+            "score": 0.5179
+          },
+          {
+            "verse": 2,
+            "row": 2,
+            "instrumentalAt": 61.218,
+            "expected": 61.368,
+            "score": 0.4933
+          },
+          {
+            "verse": 2,
+            "row": 3,
+            "instrumentalAt": 69.4,
+            "expected": 69.3,
+            "score": 0.4526
+          },
+          {
+            "verse": 2,
+            "row": 4,
+            "instrumentalAt": 79.926,
+            "expected": 79.876,
+            "score": 0.5078
+          },
+          {
+            "verse": 2,
+            "row": 5,
+            "instrumentalAt": 87.633,
+            "expected": 87.808,
+            "score": 0.5184
+          },
+          {
+            "verse": 3,
+            "row": 1,
+            "instrumentalAt": 95.375,
+            "expected": 95.325,
+            "score": 0.523
+          },
+          {
+            "verse": 3,
+            "row": 2,
+            "instrumentalAt": 103.818,
+            "expected": 103.918,
+            "score": 0.4994
+          },
+          {
+            "verse": 3,
+            "row": 3,
+            "instrumentalAt": 111.95,
+            "expected": 111.85,
+            "score": 0.4527
+          },
+          {
+            "verse": 3,
+            "row": 4,
+            "instrumentalAt": 122.501,
+            "expected": 122.426,
+            "score": 0.5062
+          },
+          {
+            "verse": 3,
+            "row": 5,
+            "instrumentalAt": 130.233,
+            "expected": 130.358,
+            "score": 0.5152
+          },
+          {
+            "verse": 4,
+            "row": 1,
+            "instrumentalAt": 137.975,
+            "expected": 137.925,
+            "score": 0.5187
+          },
+          {
+            "verse": 4,
+            "row": 2,
+            "instrumentalAt": 146.418,
+            "expected": 146.518,
+            "score": 0.4913
+          },
+          {
+            "verse": 4,
+            "row": 3,
+            "instrumentalAt": 154.55,
+            "expected": 154.45,
+            "score": 0.4559
+          },
+          {
+            "verse": 4,
+            "row": 4,
+            "instrumentalAt": 165.076,
+            "expected": 165.026,
+            "score": 0.5062
+          },
+          {
+            "verse": 4,
+            "row": 5,
+            "instrumentalAt": 172.783,
+            "expected": 172.958,
+            "score": 0.5168
+          },
+          {
+            "verse": 5,
+            "row": 1,
+            "instrumentalAt": 180.525,
+            "expected": 180.475,
+            "score": 0.521
+          },
+          {
+            "verse": 5,
+            "row": 2,
+            "instrumentalAt": 188.968,
+            "expected": 189.068,
+            "score": 0.4958
+          },
+          {
+            "verse": 5,
+            "row": 3,
+            "instrumentalAt": 197.1,
+            "expected": 197.0,
+            "score": 0.4543
+          },
+          {
+            "verse": 5,
+            "row": 4,
+            "instrumentalAt": 207.676,
+            "expected": 207.576,
+            "score": 0.5064
+          },
+          {
+            "verse": 5,
+            "row": 5,
+            "instrumentalAt": 215.383,
+            "expected": 215.508,
+            "score": 0.5151
+          }
+        ],
+        "bestMatch": {
+          "meanPitchScore": 0.47915148735046387,
+          "tonicPitchClass": 10,
+          "firstInstrumentalOnsetSeconds": 10.175000000000015,
+          "quarterNoteSeconds": 0.661,
+          "perVersePitchScores": [
+            0.4790414869785309,
+            0.4789746403694153,
+            0.4794074594974518,
+            0.47970402240753174,
+            0.4786299169063568
+          ]
+        }
+      }
+    }
+  },
+  "qualityCheckDefinitions": {
+    "wordWindowDifference": "Difference between independent forced-alignment windows; model agreement alone is not a measurement of lyric timing error.",
+    "scoreRepeatDifference": "Difference between the independently matched score system and its median position across repeated verses; not a measurement of lyric timing error.",
+    "repeatedMusicResolutionSeconds": 0.05,
+    "bodyFitResidual": "Residual of music-to-music time mapping, not lyric boundary error.",
+    "scoreMatchingSearchStepSeconds": 0.025,
+    "chromaFrameStepSeconds": 0.05
+  },
+  "artifactAudit": {
+    "totalTracks": 12,
+    "totalCuePoints": 148,
+    "songs": {
+      "01-042": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 8,
+        "instrumentalMinusLeadCueOffsets": [
+          -0.3,
+          -0.4,
+          -0.4,
+          -0.4,
+          -0.4,
+          -0.4,
+          -0.4,
+          -0.4
+        ]
+      },
+      "01-043": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 8,
+        "instrumentalMinusLeadCueOffsets": [
+          -1.8,
+          -1.94,
+          -2.0,
+          -1.9,
+          -1.9,
+          -1.9,
+          -1.9,
+          -1.9
+        ]
+      },
+      "01-044": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 5,
+        "instrumentalMinusLeadCueOffsets": [
+          -0.7,
+          -0.7,
+          -0.7,
+          -0.7,
+          -0.7
+        ]
+      },
+      "03-037": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 16,
+        "instrumentalMinusLeadCueOffsets": [
+          -0.3,
+          -0.2,
+          -0.2,
+          -0.3,
+          -0.2,
+          -0.3,
+          -0.2,
+          -0.2,
+          -0.2,
+          -0.3,
+          -0.2,
+          -0.2,
+          -0.3,
+          -0.3,
+          -0.2,
+          -0.2
+        ]
+      },
+      "04-749": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 12,
+        "instrumentalMinusLeadCueOffsets": [
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3,
+          -0.3
+        ]
+      },
+      "04-695": {
+        "decodedAudioMatchesAlignmentInput": true,
+        "completeLyricRegionCoverage": true,
+        "cueCountPerTrack": 25,
+        "instrumentalMinusLeadCueOffsets": [
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3,
+          -1.3
+        ]
+      }
+    }
+  },
+  "browserAudit": {
+    "date": "2026-10-22",
+    "status": "passed",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 844,
+        "height": 390
+      }
+    ],
+    "actualAudioTracksLoadedAndStarted": 12,
+    "actualMediaSeekChecks": 444,
+    "calibrationImports": 6,
+    "calibrationTrackPreviews": 12,
+    "settledImageRegionAndVerseReturnChecks": 75,
+    "pageScriptErrors": 0,
+    "notes": [
+      "Every cue was sought on both recordings in all three viewports.",
+      "Additional image geometry checks waited for the complete 1.2-second rejoin animation before measuring visibility.",
+      "Browser checks verify playback, data integration and layout; they do not replace human listening review."
+    ]
+  }
+}

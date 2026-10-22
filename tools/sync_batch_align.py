@@ -251,11 +251,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         tracks.append(track)
     method_description = ('Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
                           if 'transcriptMatching' in evidence else
+                          'Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.'
+                          if 'midiMatching' in evidence else
                           'Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'
                           if 'referenceMatching' in evidence else
                           'Numbered-score melody/chroma matching with two rhythm templates and measured repeats.' if 'scoreMatching' in evidence else
                           'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.')
-    evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
+    evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},
             'tracks': tracks, 'regions': source['regions'], 'cues': cues,

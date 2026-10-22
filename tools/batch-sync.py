@@ -27,7 +27,11 @@ def save(path, data):
 
 def evidence_directory(candidate):
     name = candidate['provenance']['evidence']
-    return 'transcript-alignment' if name.endswith('.transcript.json') else 'reference-alignment' if name.endswith('.reference.json') else 'score-alignment' if name.endswith('.score.json') else 'alignment'
+    for suffix, directory in [('.transcript.json', 'transcript-alignment'), ('.midi.json', 'midi-alignment'),
+                              ('.reference.json', 'reference-alignment'), ('.score.json', 'score-alignment')]:
+        if name.endswith(suffix):
+            return directory
+    return 'alignment'
 
 
 def inventory(root=ROOT):
@@ -81,7 +85,7 @@ def progress(songs, cache):
                     item['status'] = 'needs-calibration'
                     item['reason'] = evidence.get('reason', '候选或复核记录已失效，需重新匹配当前素材')[:250]
             else:
-                for directory in ['transcript-alignment', 'reference-alignment', 'score-alignment', 'alignment']:
+                for directory in ['transcript-alignment', 'midi-alignment', 'reference-alignment', 'score-alignment', 'alignment']:
                     evidence = cache / directory / (song['source'] + '.json')
                     if evidence.exists():
                         result = json.loads(evidence.read_text())

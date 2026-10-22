@@ -39,7 +39,7 @@ def consistent_phases(mapped, music, verse_count, slots):
     return corrected, decisions
 
 
-def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset):
+def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset, cue_offset=.4):
     from sync_batch_score import subsequence_path
     reference_times, reference_chroma = reference_features
     times, chroma = target_features
@@ -57,7 +57,7 @@ def match_cycle(reference_features, target_features, reference_start, reference_
         shifted = np.roll(query, key, axis=0)
         cost = np.ascontiguousarray(np.maximum(0, 1 - shifted.T @ chroma[:, lo:hi]), dtype=np.float32)
         value, path = subsequence_path(cost)
-        frame = round(.4 / reference_period * length)
+        frame = round(cue_offset / reference_period * length)
         positions = path[path[:, 0] == frame, 1]
         candidates.append({'cost': float(value), 'key': key,
                            'at': round(float(times[lo + int(np.median(positions))]), 3),

@@ -19,6 +19,9 @@ try:
     transcript_spec = importlib.util.spec_from_file_location('transcript_sync', TOOLS / 'align-transcript-sync.py')
     transcript = importlib.util.module_from_spec(transcript_spec)
     transcript_spec.loader.exec_module(transcript)
+    midi_spec = importlib.util.spec_from_file_location('midi_sync', TOOLS / 'midi-sync.py')
+    midi_sync = importlib.util.module_from_spec(midi_spec)
+    midi_spec.loader.exec_module(midi_sync)
 except ImportError:
     confirm_boundaries = None
 
@@ -255,6 +258,41 @@ class BatchTests(unittest.TestCase):
             transcript.confirm_transcript_windows(rows[:-1], [0, 10, 20])
         with self.assertRaises(ValueError):
             transcript.confirm_transcript_windows(rows, [0, 5, 20])
+
+    @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
+    def test_midi_templates_follow_tempo_changes_and_exclude_percussion(self):
+        import mido
+        import numpy as np
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'reference.mid'
+            score = mido.MidiFile(ticks_per_beat=480)
+            tempo = mido.MidiTrack([mido.MetaMessage('set_tempo', tempo=500000),
+                                   mido.MetaMessage('set_tempo', tempo=1000000, time=480)])
+            melody = mido.MidiTrack([mido.Message('note_on', note=60, velocity=90),
+                mido.Message('note_off', note=60, time=960), mido.Message('note_on', note=64, velocity=90),
+                mido.Message('note_off', note=64, time=480)])
+            drums = mido.MidiTrack([mido.Message('note_on', channel=9, note=90, velocity=120),
+                                    mido.Message('note_off', channel=9, note=90, time=1440)])
+            score.tracks.extend([tempo, melody, drums])
+            score.save(path)
+            duration, (times, harmony), row = midi_sync.midi_features(path)
+            self.assertAlmostEqual(duration, 2.5)
+            self.assertEqual(row['pitchOffsets'][14], 0)
+            self.assertEqual(row['pitchOffsets'][16], 4)
+            self.assertEqual(int(np.argmax(harmony[:, 1])), 0)
+            self.assertEqual(int(np.argmax(harmony[:, 16])), 4)
+
+    @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
+    def test_percussion_only_midi_cannot_be_a_lyric_melody_reference(self):
+        import mido
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'drums.mid'
+            score = mido.MidiFile(ticks_per_beat=480)
+            score.tracks.append(mido.MidiTrack([mido.Message('note_on', channel=9, note=60),
+                mido.Message('note_off', channel=9, note=60, time=2400)]))
+            score.save(path)
+            with self.assertRaisesRegex(ValueError, '打击乐'):
+                midi_sync.midi_features(path)
 
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):

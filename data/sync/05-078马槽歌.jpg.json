@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "songId": "05-078",
+  "status": "reviewed",
+  "source": {
+    "file": "05-078马槽歌.jpg",
+    "sha256": "6f1845eaeea0d51a37763bd2818160c2f16729272a15ab1fc67239129042f595",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-078马槽歌.mp3",
+      "sha256": "66f9d4dc97f3c176e51b2fdd5ed02150e7ddf46a78d380cbd725b6671a0eb402",
+      "duration": 122.16,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.0,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 13.2,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 21.55,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 30.45,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 44.0,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 52.2,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 60.55,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 70.85,
+          "region": "s4_v2",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 82.9,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 91.0,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 99.45,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 108.25,
+          "region": "s4_v3",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-078马槽歌-领唱.mp3",
+      "sha256": "2728f47aa8ac6a2814a10e367c43de5063f350f07308d09c4470e9a979d0ea09",
+      "duration": 99.6,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.17951,
+      "bottom": 0.267847
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.220289,
+      "bottom": 0.308625
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.261067,
+      "bottom": 0.349404
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.364535,
+      "bottom": 0.452872
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.405314,
+      "bottom": 0.492433
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.445483,
+      "bottom": 0.53382
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.547125,
+      "bottom": 0.634853
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.587295,
+      "bottom": 0.675023
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.628074,
+      "bottom": 0.716411
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.730324,
+      "bottom": 0.818661
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.771103,
+      "bottom": 0.85944
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.81249,
+      "bottom": 0.900827
+    }
+  },
+  "cues": [
+    {
+      "at": 5.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 12.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 20.25,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.45,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 44.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.85,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.05,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.1,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.35,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.55,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "远远在马槽里，无枕也无床，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "小小的主耶稣，睡觉很安康；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "众明星都望着主睡的地方！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "小小的主耶稣，睡在干草上。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "众畜鸣呜叫，圣婴忽惊醒，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "小小的主耶稣，却无啼哭声。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我真爱小耶稣，敬求近我身，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "靠近我小床边，守我到天明。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "恭敬求主耶稣，靠近我身旁，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "爱护我，接受我，做主的小羊；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "也保护众‘孩童，一齐都安康，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "教 我们都 能够跟主到天堂。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-078马槽歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

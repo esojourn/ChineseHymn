@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "songId": "05-076",
+  "status": "reviewed",
+  "source": {
+    "file": "05-076齐来崇拜歌.jpg",
+    "sha256": "34ad9c325ec11395eb1a1f9ac0d328fd2d75254e3a59a5f74ce95beb29c9d07e",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-076齐来崇拜歌.mp3",
+      "sha256": "5d5cbf5c147668e6234063a93d649d5393cdc0135987fba6d9f023d98d00a007",
+      "duration": 222.25066666666666,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.162805,
+      "bottom": 0.250769
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.198346,
+      "bottom": 0.286913
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.23449,
+      "bottom": 0.323057
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.270634,
+      "bottom": 0.359202
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.364609,
+      "bottom": 0.453176
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.400753,
+      "bottom": 0.488718
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.436295,
+      "bottom": 0.52426
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.471837,
+      "bottom": 0.560404
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.564606,
+      "bottom": 0.652571
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.600148,
+      "bottom": 0.688113
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.63569,
+      "bottom": 0.724257
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.671834,
+      "bottom": 0.759798
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.804362,
+      "bottom": 0.893532
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.898939,
+      "bottom": 0.987506
+    }
+  },
+  "cues": [
+    {
+      "at": 20.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.55,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.35,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.65,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 81.3,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.95,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.75,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.05,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 131.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 141.25,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.05,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 162.35,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 172.0,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 182.0,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 191.65,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 202.45,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 212.75,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "齐来，宗主信徒，快乐又欢欣，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "齐来，一齐来，大家上伯利恒；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "来朝见圣婴，天使王已降生；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "齐来虔诚同崇拜，齐来虔诚同崇拜，齐",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "来虔诚同崇拜，主基督。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "由上主的上主，光明這的光明，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "虚心并不嫌童贞女胎中生；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "真主的真主，是生成，非造成；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "齐来虔诚同崇拜，齐来虔诚同崇拜，齐",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "来虔诚同崇拜，主基督。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "天使结成乐队，欢然同歌唱，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "光明众天军来高声同赞扬；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "至高的处所，荣耀归与君王；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "齐来虔诚同崇拜，齐来虔诚同崇拜，齐",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "来虔诚同崇拜，主基督。（阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "救主生于今晨，我众来欢迎；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "天人诸荣耀，完全归主一身；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "大哉！父真道，藉肉体来显明；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "齐来虔诚同崇拜，齐来虔诚同崇拜，齐",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "来虔诚同崇拜，主基督。（阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-076齐来崇拜歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

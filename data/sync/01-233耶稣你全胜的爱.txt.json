@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "01-233",
+  "status": "reviewed",
+  "source": {
+    "file": "01-233耶稣你全胜的爱.txt",
+    "sha256": "e99da690e850a6366c842b06145bca6ad6dbc5ad473cf389161f01fb514c2c68",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-233耶稣你全胜的爱.mp3",
+      "sha256": "6c5e21f21081ba4cf4cbf23de323dba4ea49e8acab95a1fbe66d2734afa2e274",
+      "duration": 195.44816326530614,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 20.32,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 54.55,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 88.91,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 123.14,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 157.29,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-233耶稣你全胜的爱-领唱.mp3",
+      "sha256": "7d518b89671fab4e99b2554e0230f564309f7e29863ddb369d25a96a51ba5823",
+      "duration": 193.55733333333333,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 21.12,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 55.45,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.81,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.96,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.19,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "耶稣，祢的全胜的爱，已经浇灌我心； 我心就不再会摇摆， 就能生根于神，就能生根于神。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "但愿圣火今在我心，就已发旺不休； 烧掉所有卑情下品， 并使高山镕流，并使高山镕流。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "祢曾赐下祭坛火炭，求祢烧掉我罪； 我向焚烧的灵呼喊， 圣灵满我心内，圣灵满我心内。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我心要接锻炼的火，照亮我魂光耀； 散布生命在每角落， 并使全人圣洁，并使全人圣洁。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "摇动的心求祢扶掖，使它变成坚崖； 基督成为我的世界， 我的全心成爱，我的全心成爱。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-233耶稣你全胜的爱.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

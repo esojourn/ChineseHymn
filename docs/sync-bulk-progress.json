@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 36,
+    "published": 42,
     "existing": 8,
-    "needs-calibration": 62,
-    "ready-to-verify": 99,
+    "needs-calibration": 65,
     "missing-audio": 2,
-    "pending": 190,
+    "ready-to-verify": 95,
+    "pending": 185,
     "missing-lyrics": 23
   },
   "songs": [
@@ -159,7 +159,7 @@
       "songId": "01-233",
       "source": "01-233耶稣你全胜的爱.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-233耶稣你全胜的爱.mp3",
         "01-233耶稣你全胜的爱-领唱.mp3"
@@ -179,7 +179,7 @@
       "songId": "01-256",
       "source": "01-256吩咐磐石.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-256吩咐磐石.mp3",
         "01-256吩咐磐石-领唱.mp3"
@@ -281,7 +281,7 @@
       "songId": "01-357",
       "source": "01-357时常喜乐.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-357时常喜乐.mp3",
         "01-357时常喜乐-领唱.mp3"
@@ -302,35 +302,38 @@
       "songId": "01-378",
       "source": "01-378我是否要背负十架.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-378我是否要背负十架.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "01-403",
       "source": "01-403我今属主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-403我今属主.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "01-407",
       "source": "01-407他为我死.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-407他为我死.mp3",
         "01-407他为我死-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,5,7"
     },
     {
       "songId": "01-419",
       "source": "01-419一直走十架窄路.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "01-419一直走十架窄路.mp3",
         "01-419一直走十架窄路-领唱.mp3"
@@ -2285,7 +2288,7 @@
       "songId": "05-076",
       "source": "05-076齐来崇拜歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-076齐来崇拜歌.mp3"
       ]
@@ -2294,7 +2297,7 @@
       "songId": "05-078",
       "source": "05-078马槽歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-078马槽歌.mp3",
         "05-078马槽歌-领唱.mp3"
@@ -2304,7 +2307,7 @@
       "songId": "05-085",
       "source": "05-085扬声赞美歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-085扬声赞美歌.mp3",
         "05-085扬声赞美歌-领唱.mp3"

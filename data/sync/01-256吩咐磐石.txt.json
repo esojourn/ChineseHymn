@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "songId": "01-256",
+  "status": "reviewed",
+  "source": {
+    "file": "01-256吩咐磐石.txt",
+    "sha256": "fd54ea587f22eace421b2095f9d4ce55ae44b5e4a24de086d88184a408caeaa1",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-256吩咐磐石.mp3",
+      "sha256": "241b7563194cb73ec455d6ebdedfd98e2175fd8c16751f5c01702e260197a42b",
+      "duration": 164.02285714285713,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 1.4,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 17.89,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 29.86,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.88,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 77.71,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 83.76,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 107.89,
+          "region": "r7",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 131.62,
+          "region": "r8",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 137.82,
+          "region": "r9",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-256吩咐磐石-领唱.mp3",
+      "sha256": "d1bf41a094c0a50e1658394d89ef9bceadf78b6cb89ebe7a838b694c8b4cc623",
+      "duration": 172.05658333333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 29
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 31,
+      "endLine": 34
+    }
+  },
+  "cues": [
+    {
+      "at": 5.98,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 23.99,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 35.96,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 59.98,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 83.81,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.86,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.99,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 137.72,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.92,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "在旷野加低斯， 有神的选民，因干渴快要死； 忽听见声音： “吩咐盘石，发出活水来！”",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "不是要击打，不是要等待；  只要吩咐，活水就流开。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "神的圣灵已住你心间， 为何到如今不见活水流？ 一切的丰盛，等候你接受， 你用信相信，必享他富有。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "主耶稣的圣名，是信心根据， 神永远的圣灵，已住你深处； 祂今发问：挣扎果为何？ 联合是事实，为何仍干渴？",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "约但河上，仍旧有圣鸽。",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "神的圣灵已住你心间， 为何到如今不见活水流？ 一切的丰盛，等候你接受， 你用信相信，必享他富有。",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "但愿心意简单，完全的相信！ 但愿心思平安，不再苦苦寻！ 如同婴孩，静卧主怀间， 向世界断奶，认识主爱甜，",
+        "label": "第3段"
+      },
+      {
+        "region": "r8",
+        "text": "享祂丰富，顺服祂差遣。",
+        "label": "第3段"
+      },
+      {
+        "region": "r9",
+        "text": "神的圣灵已住你心间， 为何到如今不见活水流？ 一切的丰盛，等候你接受， 你用信相信，必享他富有。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-256吩咐磐石.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

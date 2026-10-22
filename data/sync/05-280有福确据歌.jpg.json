@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-280",
+  "status": "reviewed",
+  "source": {
+    "file": "05-280有福确据歌.jpg",
+    "sha256": "54c1f461a03b6c12c359dbbcade8d3d866a28d197701540d1fd7d09004859401",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-280有福确据歌.mp3",
+      "sha256": "cb4b751da25c74c252925ea2c609e098bc163fe69f94614f536cc630b14b4ce3",
+      "duration": 165.56408163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.1997,
+      "bottom": 0.294237
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.24206,
+      "bottom": 0.336597
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.283664,
+      "bottom": 0.378201
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.403179,
+      "bottom": 0.498473
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.444783,
+      "bottom": 0.540833
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.487899,
+      "bottom": 0.582436
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.654314,
+      "bottom": 0.750363
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.775342,
+      "bottom": 0.870636
+    }
+  },
+  "cues": [
+    {
+      "at": 23.85,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.75,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.4,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 59.05,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.15,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 83.05,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.7,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.35,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 118.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 130.35,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.0,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 153.65,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "有福的确据，耶稣属我，何等的荣耀向我显明，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "被救主赎回，为神后嗣，藉宝血洗罪，圣灵重生。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "这是我信息，或讲或唱，赞美我救主，心里欢畅。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "常讲主慈爱，并颂主恩，赞美我救主，昼夜不分。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "完全顺服主，我灵欢喜，天堂的荣耀显于我心，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "仿佛有天使由天降临，报明主慈爱，并主怜悯。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "这是我信息，或讲或唱，赞美我救主，心里欢畅。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "常讲主慈爱，并颂主恩，赞美我救主，昼夜不分。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "完全献与主，万事安宁，荣耀的圣灵充满我心，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "时刻仰望主，醒等候，不住地祈祷，到主再临。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "这是我信息，或讲或唱，赞美我救主，心里欢畅。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "常讲主慈爱，并颂主恩，赞美我救主，昼夜不分。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-280有福确据歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

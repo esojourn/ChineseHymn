@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-270",
+  "status": "reviewed",
+  "source": {
+    "file": "05-270天父看顾歌.jpg",
+    "sha256": "b27da77fb4bc3a7b5d2e6033e52a8f84e5bf92b37cf12657acbea1189cba8854",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-270天父看顾歌.mp3",
+      "sha256": "04a9293a507ac06b35eb17c34bded7a92642d7954ec03755d40f4d18b5e54073",
+      "duration": 198.47836734693877,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.192978,
+      "bottom": 0.284035
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.23907,
+      "bottom": 0.330127
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.285162,
+      "bottom": 0.375551
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.330586,
+      "bottom": 0.421643
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.465522,
+      "bottom": 0.556578
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.510946,
+      "bottom": 0.602002
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.556369,
+      "bottom": 0.646758
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.601125,
+      "bottom": 0.691514
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.778813,
+      "bottom": 0.86987
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.899053,
+      "bottom": 0.990777
+    }
+  },
+  "cues": [
+    {
+      "at": 22.85,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.85,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.0,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.75,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.9,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.75,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.65,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.65,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.65,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.8,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "任遭何事不要惊怕，天父必看顾你；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "必将你藏他恩翅下，天父必看顾你。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "天父必看顾你，时时看顾，处处看顾，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "他必要看顾你，天父必看顾你。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "有时劳苦心中失望，天父必看顾你；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "危险临到无处躲藏，天父必看顾你。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "天父必看顾你，时时看顾，处处看顾，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "他必要看顾你，天父必看顾你。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "凡你所需他必预备，天父必看顾你；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "凡你所求他不推，天父必看顾你。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "天父必看顾你，时时看顾，处处看顾，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "他必要看顾你，天父必看顾你。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "无论经过何等试炼，天父必看顾你；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "你虽软弱靠他胸前，天父必看顾你。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "天父必看顾你，时时看顾，处处看顾，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "他必要看顾你，天父必看顾你。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-270天父看顾歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

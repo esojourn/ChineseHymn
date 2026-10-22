@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-277",
+  "status": "reviewed",
+  "source": {
+    "file": "05-277我知所信歌.jpg",
+    "sha256": "482f3a2660d71377aff5d4981bdcfa3b3ad0f82a6990bbe5145148fd7c6aacb1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-277我知所信歌.mp3",
+      "sha256": "ff94c074436b040d351d14c97c140fe3a3ce5ecf22a66c8475f56d34e422db2f",
+      "duration": 200.07183673469387,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.179136,
+      "bottom": 0.263235
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.220494,
+      "bottom": 0.304593
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.261235,
+      "bottom": 0.345951
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.302593,
+      "bottom": 0.387309
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.410617,
+      "bottom": 0.494716
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.451975,
+      "bottom": 0.535457
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.492716,
+      "bottom": 0.576198
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.53284,
+      "bottom": 0.616938
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.679136,
+      "bottom": 0.763235
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.78716,
+      "bottom": 0.871877
+    }
+  },
+  "cues": [
+    {
+      "at": 6.15,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.85,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.0,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 54.15,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 66.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.85,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.0,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.15,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 114.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.85,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.0,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.15,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 162.0,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 173.85,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.0,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "不知何以上主恩惠，竟然临到我身；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "不堪如我亦蒙选召，何等奇妙主恩！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "惟我深知所信的是谁，并且也深信他能保全我，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "也保全我交付他的，都全备，直到那日。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "不知何以因信得救，恩门向我敬开；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "不知何以一信主话，平安便满心怀！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "惟我深知所信的是谁，并且也深信他能保全我，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "也保全我交付他的，都全备，直到那日。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "不知如何圣灵感动，使我承认罪污；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "由圣经中显 明耶稣，引人信靠救 主。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "惟我深知所信的是谁，并且也深信他能保全我，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "也保全我交付他的，都全备，直到那日。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "不知明日将遇何事，前途或顺或逆；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "但主慈爱永 不更改，主必抚养到 底。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "惟我深知所信的是谁，并且也深信他能保全我，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "也保全我交付他的，都全备，直到那日。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-277我知所信歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

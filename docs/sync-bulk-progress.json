@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 120,
+    "published": 126,
     "existing": 8,
-    "needs-calibration": 71,
+    "needs-calibration": 70,
     "missing-audio": 2,
-    "pending": 162,
-    "ready-to-verify": 34,
+    "ready-to-verify": 31,
+    "pending": 160,
     "missing-lyrics": 23
   },
   "songs": [
@@ -435,7 +435,7 @@
       "songId": "01-518",
       "source": "01-518救我恩典.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "01-518救我恩典.mp3",
         "01-518救我恩典-领唱.mp3"
@@ -816,10 +816,11 @@
       "songId": "02-264",
       "source": "02-264我要去传福音.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-264我要去传福音.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-277",
@@ -2791,11 +2792,10 @@
       "songId": "05-217",
       "source": "05-217主寻亡羊歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-217主寻亡羊歌-领唱.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-220",
@@ -2830,11 +2830,10 @@
       "songId": "05-225",
       "source": "05-225我来就主歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-225我来就主歌-领唱.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 5 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-228",
@@ -3120,7 +3119,7 @@
       "songId": "05-270",
       "source": "05-270天父看顾歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-270天父看顾歌.mp3"
       ]
@@ -3150,7 +3149,7 @@
       "songId": "05-274",
       "source": "05-274耶稣同在歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-274耶稣同在歌.mp3",
         "05-274耶稣同在歌-领唱.mp3"
@@ -3160,7 +3159,7 @@
       "songId": "05-275",
       "source": "05-275求主带领歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-275求主带领歌.mp3"
       ]
@@ -3169,7 +3168,7 @@
       "songId": "05-276",
       "source": "05-276信靠依顺歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-276信靠依顺歌.mp3"
       ]
@@ -3178,7 +3177,7 @@
       "songId": "05-277",
       "source": "05-277我知所信歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-277我知所信歌.mp3"
       ]
@@ -3187,16 +3186,17 @@
       "songId": "05-279",
       "source": "05-279主不改变歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "needs-calibration",
       "tracks": [
         "05-279主不改变歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-280",
       "source": "05-280有福确据歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-280有福确据歌.mp3"
       ]
@@ -3443,11 +3443,10 @@
       "songId": "05-322",
       "source": "05-322信徒精兵歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-322信徒精兵歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-325",

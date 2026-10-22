@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-274",
+  "status": "reviewed",
+  "source": {
+    "file": "05-274耶稣同在歌.jpg",
+    "sha256": "446972464c2fc119bbb58f17d93129da7c19a39266970918544eccc4b7fadd7f",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-274耶稣同在歌.mp3",
+      "sha256": "8839b9c911d06657bba0d813bdc33b5d8d9ceaa1949e01f988a12f60651c3569",
+      "duration": 133.4857142857143,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 19.0,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 28.4,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 38.05,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 49.15,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 57.3,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 66.6,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 76.25,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 87.35,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 95.3,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 104.75,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 114.25,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 125.45,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-274耶稣同在歌-领唱.mp3",
+      "sha256": "f03d06e1ea3cf83d71b7d13a01c7b60f5aa022f62d844164c340f5c79ac37a1b",
+      "duration": 133.59020408163266,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.256164,
+      "bottom": 0.353659
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.298091,
+      "bottom": 0.39737
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.342694,
+      "bottom": 0.441081
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.472935,
+      "bottom": 0.569538
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.516646,
+      "bottom": 0.615033
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.560357,
+      "bottom": 0.658744
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.746798,
+      "bottom": 0.844293
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.875254,
+      "bottom": 0.973641
+    }
+  },
+  "cues": [
+    {
+      "at": 19.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.5,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.05,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.25,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 66.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.25,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.45,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 114.35,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.55,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主释放我洗尽罪污，在地如天终日欢呼；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "世上难免忧愁困苦，认识耶稣天堂正路。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！真是天堂！罪蒙救免真是天堂；无论岸",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "上，无论海洋，耶稣同在就是天堂。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "从前天堂和我隔开，感谢耶稣显出慈爱；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "如今天堂在我心怀，永永远远不会更改。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！真是天堂！罪蒙救免真是天堂；无论岸",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "上，无论海洋，耶稣同在就是天堂。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "无论我往何处地方，高山、平地、沙漠、草场，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "或居大屋，或住小棚，耶稣同在就是天堂。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "哈利路亚！真是天堂！罪蒙救免真是天堂；无论岸",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "上，无论海洋，耶稣同在就是天堂。（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-274耶稣同在歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

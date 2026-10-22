@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "05-275",
+  "status": "reviewed",
+  "source": {
+    "file": "05-275求主带领歌.jpg",
+    "sha256": "30deca60f6b9ede13edf23db298aa50539c5ebbb69246b5d26cf56c2a5ebf54b",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-275求主带领歌.mp3",
+      "sha256": "058fd3e6208266f87a644d4c59cb84e3ab906e5cc40dcd43fff954ee7aadbc07",
+      "duration": 151.4318367346939,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.166939,
+      "bottom": 0.252397
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.21031,
+      "bottom": 0.295767
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.252441,
+      "bottom": 0.337279
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.364585,
+      "bottom": 0.450042
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.406716,
+      "bottom": 0.492173
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.449467,
+      "bottom": 0.533685
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.588654,
+      "bottom": 0.769745
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.588654,
+      "bottom": 0.769745
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.588654,
+      "bottom": 0.769745
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.796431,
+      "bottom": 0.882508
+    }
+  },
+  "cues": [
+    {
+      "at": 15.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.8,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.1,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.2,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.5,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.5,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "切莫听从试探，中了魔鬼计，一次战胜敌人，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "下次更容易；努力向前战争，克服势与利；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "时常仰望耶稣，带领你到底。 敬求救主帮助你，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "安慰勉励、看顾你；主真愿意帮助你，主必领你到底。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "远避不良同伴，决不出恶声；尊敬主的圣名，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "决不可妄称；终身诚恳深思，热心奉真理；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "时常仰望耶稣，带领你到底。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "安慰勉励、看顾你；主真愿意帮助你，主必领你到底。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主必手捧金冠，赏赐得胜兵；我们虽然软弱，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "赖信可得胜；主是我的救主，加添我力气；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "时常仰望耶稣，带领你到底。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "安慰勉励、看顾你；主真愿意帮助你，主必领你到底。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-275求主带领歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

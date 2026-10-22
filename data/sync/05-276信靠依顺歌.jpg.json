@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "songId": "05-276",
+  "status": "reviewed",
+  "source": {
+    "file": "05-276信靠依顺歌.jpg",
+    "sha256": "4cd203af71bcbc465d724bc785b886326c71f8b2aff7d6b1eeda42c6dd283506",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-276信靠依顺歌.mp3",
+      "sha256": "67558f19b501eaa0d6c72ca00f173d4d4a695315e05f934c4c8d10221756c93b",
+      "duration": 188.13387755102042,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.161696,
+      "bottom": 0.248554
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.194356,
+      "bottom": 0.281214
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.227016,
+      "bottom": 0.313874
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.259082,
+      "bottom": 0.346534
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.363593,
+      "bottom": 0.450452
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.395659,
+      "bottom": 0.482518
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.427725,
+      "bottom": 0.515178
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.459792,
+      "bottom": 0.547244
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.563116,
+      "bottom": 0.649974
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.595182,
+      "bottom": 0.68204
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.627841,
+      "bottom": 0.7147
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.659908,
+      "bottom": 0.746766
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.803017,
+      "bottom": 0.889875
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.906935,
+      "bottom": 0.993793
+    }
+  },
+  "cues": [
+    {
+      "at": 8.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.0,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.0,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 48.6,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.55,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.5,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.5,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.1,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 97.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.95,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.0,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.0,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.6,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 141.55,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 149.45,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 159.5,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 170.5,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 182.1,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我与救主同行，行于光明福音，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "，1.何等荣耀照亮我路程；当我听主命令，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "主便与我同行，信靠顺服者，主必同行。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "信靠顺服，此外别法全无，若要得耶稣喜乐，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "惟有信靠顺服。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "没有黑影幽暗，也无云雾迷漫，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我主笑容使云雾消散；没有疑感畏惧，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "也无叹息忧虑，信靠顺服者，主必同行。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "信靠顺服，此外别法全无，若要得耶稣喜乐，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "惟有信靠顺服。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "不要背负重担，不要愁闷哀叹，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "一切劳苦者主赐平安；再无忧伤哭泣，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "再无怨恨怒气，信靠顺服者，主必同行。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "信靠顺服，此外别法全无，若要得耶稣喜乐，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "惟有信靠顺服。（阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主与我作朋友，我可常向主求，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "救主携我手一路同走；主吩咐我就听，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "主差遣我就行，信靠顺服者，主必同行。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "信靠顺服，此外别法全无，若要得耶稣喜乐，",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "惟有信靠顺服。（阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-276信靠依顺歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

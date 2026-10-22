@@ -167,6 +167,23 @@ class BatchTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             transfer.consistent_phases([10, 30, 50, 70], music, 3, 2)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_complete_cycle_locates_actual_transposed_music_start(self):
+        import numpy as np
+        generator = np.random.default_rng(17)
+        melody = np.repeat(generator.integers(0, 12, 24), 10)
+        query = np.eye(12, dtype=np.float32)[:, melody]
+        query -= query.mean(axis=0)
+        query /= np.linalg.norm(query, axis=0)
+        target = np.zeros((12, 400), dtype=np.float32)
+        target[:, 30:270] = np.roll(query, 5, axis=0)
+        match = transfer.match_cycle((np.arange(240) * .1, query),
+                                     (np.arange(400) * .1, target), 0, 24, 24, 4)
+        self.assertEqual(match['best']['key'], 5)
+        self.assertAlmostEqual(match['best']['at'], 3.4, delta=.1)
+        self.assertLess(match['best']['cost'], .01)
+        self.assertGreater(match['runnerUp']['cost'] - match['best']['cost'], .08)
+
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

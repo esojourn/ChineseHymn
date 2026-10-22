@@ -78,6 +78,14 @@ class BatchTests(unittest.TestCase):
             (root / 'data/06-015示例.txt').write_text('标题\n\n歌词整理中。。。\nhttps://example.com/song')
             self.assertTrue(all(not item['lyricsAvailable'] for item in batch.inventory(root)))
 
+    def test_artist_and_songwriting_credits_are_not_english_lyric_regions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '06-001示例.txt'
+            path.write_text('Title\n\n1 He will hold me fast\nFor my Savior loves me so\n\n歌手：Keith & Kristyn Getty\n作词 : Ada Habershon/Matt Merker')
+            definition = sources.text_source(path, 'en')
+            self.assertEqual(len(definition['regions']), 1)
+            self.assertEqual(definition['verses'][0][0]['text'], 'He will hold me fast For my Savior loves me so')
+
     def test_image_order_crosses_printed_rows_and_repeats_the_shared_chorus(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

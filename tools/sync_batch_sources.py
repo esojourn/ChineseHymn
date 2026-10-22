@@ -10,6 +10,7 @@ spec.loader.exec_module(prepare)
 VERSE = re.compile(r'^\s*(\d{1,2})(?:\s*[.．、)]\s*|\s+(?=\D))')
 CHINESE_VERSE = re.compile(r'^\s*[（(]([一二三四五六七八九十])[）)]\s*')
 CHORUS = re.compile(r'^\s*[（(\[]?(?:副(?:歌)?|chorus)[）)\]]?\s*[:：.．]?\s*$', re.I)
+CREDITS = re.compile(r'^(?:歌手|演唱|作词|作詞|作曲|词曲|詞曲|编曲|編曲|lyrics\s+by|music\s+by|performed\s+by)\s*[:：]', re.I)
 
 
 @lru_cache(maxsize=1)
@@ -57,6 +58,9 @@ def text_source(path, language='zh'):
 
     for i in range(first, len(lines)):
         line = lines[i].strip()
+        if CREDITS.match(line):
+            flush()
+            continue
         number = verse_number(line)
         if number and number != verse:
             flush()

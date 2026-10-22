@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "songId": "05-228",
+  "status": "reviewed",
+  "source": {
+    "file": "05-228求主洁净我心歌.jpg",
+    "sha256": "4ad1b5fa0cf81679ba341785d765f3d550ec4fea0a35b9080bbf923e7d4ed681",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-228求主洁净我心歌.mp3",
+      "sha256": "adb6a5782d6cde233e747fb247f1298b6ca0f257c4ecca1fe8f0914de909008d",
+      "duration": 126.27591836734693,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.55,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 20.5,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 35.4,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 45.85,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 60.8,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 75.7,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 86.15,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 101.1,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 116.0,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-228求主洁净我心歌-领唱.mp3",
+      "sha256": "ec3e2f384ca4e7c69188e9ffc2db7e3d1114e0aee79670bf0f2bd116e7ec6d77",
+      "duration": 126.19755102040817,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.28435,
+      "bottom": 0.388323
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.338248,
+      "bottom": 0.442221
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.392146,
+      "bottom": 0.496119
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.538441,
+      "bottom": 0.643376
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.593301,
+      "bottom": 0.698237
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.648162,
+      "bottom": 0.752135
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.794456,
+      "bottom": 0.898429
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.848354,
+      "bottom": 0.952327
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.902252,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 5.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.3,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.6,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 101.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.9,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "求主洁净我心，除去一切罪，宝血洗涤污秽，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "罪孽主全救免；耶稣赐我永生，心中充满平安，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "主必保守导引，直到见主那天。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "求主洁净我心，使我常想主言，脚前明灯永亮，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "生命吗哪日添；我要醒祈祷，在世作光作盐，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "主必保守导引，直到见主那天。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "求主洁净我心，我心为主圣殿，恳求永居其间，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "保守圣洁完全；终身荣神益人，直到见主那天，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "主必保守导引，直到见主那天。（阿们）",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-228求主洁净我心歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

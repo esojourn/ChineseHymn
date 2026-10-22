@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-221",
+  "status": "reviewed",
+  "source": {
+    "file": "05-221主敲心门歌.jpg",
+    "sha256": "9f34f25aa77059070386b26e1caa960ed126d29cf7a826d3eb78c28ebade8331",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-221主敲心门歌-领唱.mp3",
+      "sha256": "9944a2d88966f305cf6e869d7fe86afaff3b0f3b41c466fe49aa00c12ae2ad2c",
+      "duration": 131.05632653061224,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.172768,
+      "bottom": 0.262302
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.216219,
+      "bottom": 0.305753
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.25967,
+      "bottom": 0.349204
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.390643,
+      "bottom": 0.480178
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.434094,
+      "bottom": 0.523008
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.476925,
+      "bottom": 0.56708
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.605416,
+      "bottom": 0.694329
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.648867,
+      "bottom": 0.73778
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.692938,
+      "bottom": 0.781852
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.817084,
+      "bottom": 0.906618
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.860535,
+      "bottom": 0.95069
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.905228,
+      "bottom": 0.994762
+    }
+  },
+  "cues": [
+    {
+      "at": 5.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.65,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.2,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.8,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 57.65,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.2,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.8,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.3,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.9,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣啊，依然站立，紧闭心门之外，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "依然虚心，仍忍耐，希望跨进门来。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我众枉作主门徒，枉负救主名号，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "可羞，可羞，可羞极，尽他久立心焦！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣啊，依然敲门，手中血迹犹新，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "头上依旧戴荆冠，慈容仍满泪痕。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "人智难量的深爱，如此耐心久待！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "可恨无边的罪孽，长在门前阻碍！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣啊，依然低声殷勤苦劝开门，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "“我曾为你舍生命，你竟如此忍心？”",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "听罢忧惭相交并，我便大开心门；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "亲爱的主，请进来，与我永远相亲！（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-221主敲心门歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

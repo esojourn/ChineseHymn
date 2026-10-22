@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-216",
+  "status": "reviewed",
+  "source": {
+    "file": "05-216近主十架歌.jpg",
+    "sha256": "7847b3004a1e54becac4089289ad2cef27208c3a60a6875ff2b760b791eb77f8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-216近主十架歌.mp3",
+      "sha256": "1efe969fce0dd4f904a98a43c0107dd3c361b6383aa0babeb55d1c1e691afee3",
+      "duration": 196.93714285714285,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.173428,
+      "bottom": 0.269471
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.208701,
+      "bottom": 0.304744
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.245508,
+      "bottom": 0.341551
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.280782,
+      "bottom": 0.376824
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.397338,
+      "bottom": 0.49338
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.432611,
+      "bottom": 0.528654
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.469418,
+      "bottom": 0.563927
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.504691,
+      "bottom": 0.600734
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.658054,
+      "bottom": 0.754097
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.782278,
+      "bottom": 0.876787
+    }
+  },
+  "cues": [
+    {
+      "at": 16.8,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.25,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.2,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.85,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.8,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.1,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.3,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.55,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.5,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.8,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 162.0,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 173.25,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 184.2,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我心依傍主十架，在彼有生命泉，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "基督宝血已流出，洗我万众罪您。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "十字架，十字架，永是我的荣耀，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我众罪都洗清洁，惟靠耶稣宝血。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "十架旁我信虽小，救主总不丢弃，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "他赐下圣灵亮光，照我昏昧心里。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "十字架，十字架，永是我的荣耀，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我众罪都洗清洁，惟靠耶稣宝血。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "十架旁我祈求主，默念羔羊宏恩，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "每日不论往何处，靠主十架指引。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "十字架，十字架，永是我的荣耀，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我众罪都洗清洁，惟靠耶稣宝血。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "十架旁我心仰望，时刻做醒祈祷，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "敬虔等候主再来，同得天上荣耀。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "十字架，十字架，永是我的荣耀，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我众罪都洗清洁，惟靠耶稣宝血。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-216近主十架歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

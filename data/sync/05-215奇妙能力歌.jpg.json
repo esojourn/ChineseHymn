@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "songId": "05-215",
+  "status": "reviewed",
+  "source": {
+    "file": "05-215奇妙能力歌.jpg",
+    "sha256": "ce5bb0e646d4c45329706abdd6ebb6cea370bc33222788b51e9953dd7897940a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-215奇妙能力歌.mp3",
+      "sha256": "c39a60186a694f5a8773bf376835306f555aae47838ab31cc5aff5dfae71e6a2",
+      "duration": 148.89795918367346,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.1723,
+      "bottom": 0.256234
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.213105,
+      "bottom": 0.297038
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.253909,
+      "bottom": 0.337843
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.375139,
+      "bottom": 0.459073
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.415943,
+      "bottom": 0.498694
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.456156,
+      "bottom": 0.54009
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.628244,
+      "bottom": 0.712177
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.763075,
+      "bottom": 0.847009
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.897907,
+      "bottom": 0.98184
+    }
+  },
+  "cues": [
+    {
+      "at": 12.0,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 22.75,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.8,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.4,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.3,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 67.95,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 79.0,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.6,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.5,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 113.15,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 124.2,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.8,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 140.7,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我救主舍身流宝血，洗净我灵，洗净我灵。",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "现在仍靠他的活泉，使我成为圣洁。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "奇妙的大能力，荣耀的大能力，我必要住在救主",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "丰富宝贝血里面。奇妙的大能力，荣耀的大能",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "力，主血使我成圣。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "走正直路我力太微，如何可能？如何可能？",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "主却怜惜我的疲 弱，用他大爱救我。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "奇妙的大能力，荣耀的大能力，我必要住在救主",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "丰富宝贝血里面。奇妙的大能力，荣耀的大能",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "力，主血使我成圣。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我得拯救惟一方法，靠主宝血，靠主宝血。",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我灵魂他已经救赎，永远赞美主名。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "奇妙的大能力，荣耀的大能力，我必要住在救主",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "丰富宝贝血里面。奇妙的大能力，荣耀的大能",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "力，主血使我成圣。（阿们）",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-215奇妙能力歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

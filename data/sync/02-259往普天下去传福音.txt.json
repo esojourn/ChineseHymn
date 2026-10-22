@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "02-259",
+  "status": "reviewed",
+  "source": {
+    "file": "02-259往普天下去传福音.txt",
+    "sha256": "6da645d78c51697019f5bf5857465c2845903235995901e503c0264453424db0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-259往普天下去传福音.mp3",
+      "sha256": "d261955ecf055f5d8aa7fa101412c412349a2a772b05cf4102e63b6177567982",
+      "duration": 198.60897959183674,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.45,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 34.63,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 57.75,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 80.9,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 103.99,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 127.18,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 150.08,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 173.41,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-259往普天下去传福音-领唱.mp3",
+      "sha256": "d578a253f467506a68cbe111a3c0c1d7022661f773729c935d6729be2a800c9d",
+      "duration": 197.32897959183674,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 36,
+      "endLine": 39
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    }
+  },
+  "cues": [
+    {
+      "at": 11.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.03,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 58.15,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.3,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 104.39,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.58,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 150.48,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 173.81,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "遥远地方，黑暗笼罩之异邦， 千万灵魂，将要永远沦亡； 谁愿前往，将得救福音传扬， 仰望耶稣，不论代价高昂？",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "“所有权柄已赐给我， 所有权柄已赐给我， 你们要往普天下去，传扬福音， 我必常与你们同在。”",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "看全世界，福音之门仍大开， 基督精兵，快进入莫等待！ 信徒醒起，集中你一切力量， 解脱罪链，快把福音传扬。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "“所有权柄已赐给我， 所有权柄已赐给我， 你们要往普天下去，传扬福音， 我必常与你们同在。”",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "“为何死亡？”这是上主呼唤声， “为何死亡？”奉主圣名响应； 耶稣舍命，要救人脱离死亡， 快快传扬，生命救恩之方。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "“所有权柄已赐给我， 所有权柄已赐给我， 你们要往普天下去，传扬福音， 我必常与你们同在。”",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "那日快来！圣徒从万国万方， “荣耀归神！”得胜凯旋高唱： 蒙救赎者，救恩中快乐欢畅， 高唱“哈里路亚，我主为王。”",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "“所有权柄已赐给我， 所有权柄已赐给我， 你们要往普天下去，传扬福音， 我必常与你们同在。”",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-259往普天下去传福音.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

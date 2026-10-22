@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "songId": "05-220",
+  "status": "reviewed",
+  "source": {
+    "file": "05-220感谢主恩歌.jpg",
+    "sha256": "c8320fbddf24b9f69d5c0edd9705ae3c2dc25aa3c341619c63d4b8b2a4ebff69",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-220感谢主恩歌.mp3",
+      "sha256": "0cab33927c8af8e1fa62d549e097c82bdbdcd71b2e846040b4dd5de6ae4bf629",
+      "duration": 90.67102040816326,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.45,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 18.25,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 28.8,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 35.35,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 46.15,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 56.7,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 63.25,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 74.05,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 84.6,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-220感谢主恩歌-领唱.mp3",
+      "sha256": "f7ec6a73b21e1ac4998ef4d39d31967254bd89a000cc5952125d2f8f8fa0a854",
+      "duration": 90.61877551020409,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.271595,
+      "bottom": 0.381804
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.322345,
+      "bottom": 0.433495
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.374976,
+      "bottom": 0.485185
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.525348,
+      "bottom": 0.636497
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.577038,
+      "bottom": 0.689127
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.629669,
+      "bottom": 0.740818
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.780981,
+      "bottom": 0.89025
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.827972,
+      "bottom": 0.938181
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.875903,
+      "bottom": 0.986113
+    }
+  },
+  "cues": [
+    {
+      "at": 7.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.25,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.8,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 46.15,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.25,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 74.05,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主啊，我从前风闻有你，现在我亲眼",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "看见了你。因此我更觉自己卑，微，不",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "配在你面前站立。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主啊，你恩典漫过我身，你大爱何等",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "长阔高深。你的恩典我述说不完，我",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "心赞美感谢主恩。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主啊，你为我流尽宝血，洗净我身心",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "一切罪孽。我愿今后多为你发光，见",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "证你名，得你喜悦。（阿们）",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-220感谢主恩歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "songId": "05-322",
+  "status": "reviewed",
+  "source": {
+    "file": "05-322信徒精兵歌.jpg",
+    "sha256": "cf470ce45e7e089e968130855a708c1059edade3465be94926c9723dde03ac1a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-322信徒精兵歌.mp3",
+      "sha256": "006b736798caa407f8fa29a90f4a5fac6e9bf8ca9f9bbf6f8cee5b3243a02516",
+      "duration": 242.07673469387754,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.134391,
+      "bottom": 0.214174
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.16163,
+      "bottom": 0.242435
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.190435,
+      "bottom": 0.269609
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.218152,
+      "bottom": 0.298413
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.302935,
+      "bottom": 0.382652
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.330652,
+      "bottom": 0.410913
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.358913,
+      "bottom": 0.439174
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.38663,
+      "bottom": 0.466348
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.471348,
+      "bottom": 0.5495
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.4975,
+      "bottom": 0.577761
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.525761,
+      "bottom": 0.605478
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.552935,
+      "bottom": 0.633196
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.637652,
+      "bottom": 0.716348
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.664348,
+      "bottom": 0.744609
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.693152,
+      "bottom": 0.77287
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.72087,
+      "bottom": 0.800587
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.832283,
+      "bottom": 0.912543
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.92087,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 19.8,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.2,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.1,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.45,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.05,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.35,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 84.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.9,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.25,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.85,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 124.15,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 139.9,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 149.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 159.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 168.75,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 180.05,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 187.3,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 195.7,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 205.6,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 214.95,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 224.55,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 235.85,
+      "region": "s6_chorus",
+      "label": "第4段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "信徒如同精兵，奋勇向前行，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "十字架为旗号，先路导我程！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "基督乃是君王，领我向前方；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "故当仰望魔旗，前行入战场。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "信徒如同精兵，奋勇向前行，十字架为",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "旗号，先路导我程！（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "赖此旗号必胜，攻退撒但军；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我为基督精兵，追敌要勤奋！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "地狱根基震动，因闻大声颂；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "弟兄皆当欢呼，赞美声须洪。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "信徒如同精兵，奋勇向前行，十字架为",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "旗号，先路导我程！（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "教会在此寰宇，行动犹军旅，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "弟兄奋力前趋，紧跟先圣步；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我众原非分裂，我众是一体，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "希望信仰无二，爱心亦惟—。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "信徒如同精兵，奋勇向前行，十字架为",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "旗号，先路导我程！（阿们）",
+        "label": "第3段：第6谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "惟愿主民心坚，联步齐向前！",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "大家均须同声，高歌庆凯旋！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "但愿荣光赞美，均归主圣名；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "天使世人→致，歌声永不停。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "信徒如同精兵，奋勇向前行，十字架为",
+        "label": "第4段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "旗号，先路导我程！（阿们）",
+        "label": "第4段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-322信徒精兵歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

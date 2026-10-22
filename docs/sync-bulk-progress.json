@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 156,
+    "published": 162,
     "existing": 8,
-    "needs-calibration": 78,
+    "needs-calibration": 80,
     "missing-audio": 2,
-    "pending": 138,
-    "ready-to-verify": 15,
+    "pending": 136,
+    "ready-to-verify": 9,
     "missing-lyrics": 23
   },
   "songs": [
@@ -565,21 +565,23 @@
       "songId": "02-012",
       "source": "02-012你真伟大.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-012你真伟大.mp3",
         "02-012你真伟大-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2"
     },
     {
       "songId": "02-013",
       "source": "02-013你是荣耀君王.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-013你是荣耀君王.mp3",
         "02-013你是荣耀君王-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-014",
@@ -3422,7 +3424,7 @@
       "songId": "05-317",
       "source": "05-317谦卑随主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-317谦卑随主歌.mp3",
         "05-317谦卑随主歌-领唱.mp3"
@@ -3442,7 +3444,7 @@
       "songId": "05-320",
       "source": "05-320往前走歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-320往前走歌.mp3"
       ]
@@ -3451,7 +3453,7 @@
       "songId": "05-322",
       "source": "05-322信徒精兵歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-322信徒精兵歌.mp3"
       ]
@@ -3460,7 +3462,7 @@
       "songId": "05-325",
       "source": "05-325奋起歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-325奋起歌.mp3"
       ]
@@ -3479,7 +3481,7 @@
       "songId": "05-327",
       "source": "05-327坚固保障歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-327坚固保障歌.mp3"
       ]
@@ -3498,7 +3500,7 @@
       "songId": "05-337",
       "source": "05-337无我唯主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-337无我唯主歌.mp3"
       ]

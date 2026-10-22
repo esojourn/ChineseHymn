@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-325",
+  "status": "reviewed",
+  "source": {
+    "file": "05-325奋起歌.jpg",
+    "sha256": "2cdb23e3052bdab24ddd249242897cf312a3f1363efb3da0d0da75cee3292482",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-325奋起歌.mp3",
+      "sha256": "795bdccf72978ee5f07c1f4e667e9a012d9f8acd3b5b31c6097a891daf256950",
+      "duration": 166.34775510204082,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.14593,
+      "bottom": 0.230233
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.179094,
+      "bottom": 0.263398
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.212259,
+      "bottom": 0.296562
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.244861,
+      "bottom": 0.329727
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.337609,
+      "bottom": 0.421913
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.370774,
+      "bottom": 0.455077
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.403376,
+      "bottom": 0.487118
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.435979,
+      "bottom": 0.520282
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.527041,
+      "bottom": 0.610782
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.560205,
+      "bottom": 0.643946
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.592807,
+      "bottom": 0.677673
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.625972,
+      "bottom": 0.709713
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.718158,
+      "bottom": 0.803024
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.751323,
+      "bottom": 0.836188
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.785049,
+      "bottom": 0.86879
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.817652,
+      "bottom": 0.901955
+    }
+  },
+  "cues": [
+    {
+      "at": 5.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.55,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 25.55,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.7,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 55.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.85,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.0,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 96.05,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.05,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.2,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.25,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 136.35,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 146.35,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 156.5,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "奋起，奋起，为耶稣！十架忠勇精兵！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "高举尊严的大旗，莫损我主威名。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "一阵一阵的战胜，主自统率全军；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "直到敌人都消灭，基督确实为·君。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "奋起，奋起，为耶稣！号角传来军令；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "今天是主光荣日，快向前方猛进。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "大家同归主魔下，抵抗无数敌人；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "临险之时见胆量，勇气百倍加增。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "奋起，奋起，为耶稣！但凭救主大能；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "血气之勇难持久，不敢依赖自身。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "披上福音的盔甲，警醒，祈祷，虔诚；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "面临责任或艰险，有备自操必胜。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "奋起，奋起，为耶稣！交战不会久长；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "今日战场声喧嚣，明日凯歌悠扬。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "立功之人蒙赏戴生命冠冕辉煌；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "追随荣耀的君王，统治悠久无疆。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-325奋起歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "songId": "05-320",
+  "status": "reviewed",
+  "source": {
+    "file": "05-320往前走歌.jpg",
+    "sha256": "c93681a86218ceb6dccde624302a930bd442c4cc55c1295db96851abea52ea7d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-320往前走歌.mp3",
+      "sha256": "72a4cf90939df92d9f464167509c950798ccd7a19dfdb6060aac22df8def67cf",
+      "duration": 137.2995918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.234741,
+      "bottom": 0.341243
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.27788,
+      "bottom": 0.385245
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.321882,
+      "bottom": 0.429247
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.455613,
+      "bottom": 0.562978
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.498752,
+      "bottom": 0.606979
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.544479,
+      "bottom": 0.651844
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.679073,
+      "bottom": 0.7873
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.723074,
+      "bottom": 0.830439
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.767076,
+      "bottom": 0.874441
+    }
+  },
+  "cues": [
+    {
+      "at": 5.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 64.15,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 108.05,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "一心信靠我恩主，往前走，往前走！永往直前",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "不退后，往前走！不住祷告祈求主，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "殷勤诵读主圣书；这样信心能坚固，往前走！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "一心信靠我恩主，往前走，往前走！主在前面",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "引我路，往前走！言语行为效法主，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "为主作工勤服务；这样努力跟主行，往前走！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "一心信靠我恩主，往前走，往前走！行路时常",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "想念主，往前走！应当永与主同心，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "欢喜常听主声音；不停行走真欢欣，往前走！",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-320往前走歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

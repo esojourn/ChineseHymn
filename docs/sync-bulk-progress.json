@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 66,
+    "published": 72,
     "existing": 8,
-    "needs-calibration": 70,
+    "needs-calibration": 72,
     "missing-audio": 2,
-    "pending": 175,
-    "ready-to-verify": 76,
+    "pending": 173,
+    "ready-to-verify": 70,
     "missing-lyrics": 23
   },
   "songs": [
@@ -384,11 +384,12 @@
       "songId": "01-456",
       "source": "01-456永不灰心.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-456永不灰心.mp3",
         "01-456永不灰心-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,6"
     },
     {
       "songId": "01-486",
@@ -772,10 +773,11 @@
       "songId": "02-234",
       "source": "02-234虔守主餐.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-234虔守主餐.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-259",
@@ -857,7 +859,7 @@
       "songId": "02-289",
       "source": "02-289主是磐石.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-289主是磐石.mp3"
       ]
@@ -1106,7 +1108,7 @@
       "songId": "02-424",
       "source": "02-424靠主膀臂.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-424靠主膀臂.mp3"
       ]
@@ -1900,7 +1902,7 @@
       "songId": "04-848",
       "source": "04-848闻主召我.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "04-848闻主召我.mp3"
       ]
@@ -2581,7 +2583,7 @@
       "songId": "05-142",
       "source": "05-142耶稣普治歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-142耶稣普治歌.mp3"
       ]
@@ -2590,7 +2592,7 @@
       "songId": "05-145",
       "source": "05-145复兴主工歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-145复兴主工歌.mp3"
       ]
@@ -2599,7 +2601,7 @@
       "songId": "05-151",
       "source": "05-151清早敬拜歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-151清早敬拜歌.mp3"
       ]

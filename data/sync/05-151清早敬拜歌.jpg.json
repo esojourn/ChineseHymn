@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "songId": "05-151",
+  "status": "reviewed",
+  "source": {
+    "file": "05-151清早敬拜歌.jpg",
+    "sha256": "ed35536f3e9ebdfa555e4c7d4a2b51e17c7c6abade79bd6299f0ed243c83fbc1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-151清早敬拜歌.mp3",
+      "sha256": "63c6542789c4999e8e2da57f4fe433266df94756fbcade15187f026788752906",
+      "duration": 163.10857142857142,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.152278,
+      "bottom": 0.25063
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.195756,
+      "bottom": 0.293331
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.237681,
+      "bottom": 0.336033
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.280382,
+      "bottom": 0.378734
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.323083,
+      "bottom": 0.420659
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.441871,
+      "bottom": 0.540222
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.484572,
+      "bottom": 0.582924
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.527273,
+      "bottom": 0.625625
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.569974,
+      "bottom": 0.669879
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.614228,
+      "bottom": 0.713357
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.733792,
+      "bottom": 0.83292
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.77727,
+      "bottom": 0.876398
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.820747,
+      "bottom": 0.919099
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.863449,
+      "bottom": 0.961801
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.90615,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 10.6,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.35,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 50.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.65,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 80.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.95,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 111.05,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.25,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.9,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 141.45,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.65,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "清早敬拜神，周围皆安宁，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "鲜花欲开放，天色正微明，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "灵修境界好，与主交谈亲。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "聆听主恩言，内心涌激情，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "主话路上光，主语脚前灯，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "照我心明亮，导我步履正。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "轻轻唱圣诗，鸟雀齐和鸣，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "甜美又温柔，欢欣又热诚，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "口唱心亦和，颂声主喜听。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "俯伏主足前，思量爱丰盛，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "赐我生命泉，信心力量增，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "但愿寸草心，常念天父情。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "朝阳照行程，喜乐溢我灵，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "恩主常扶持，生活能得胜，",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "爱神又爱人，善果好收成。（阿们）",
+        "label": "第5段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-151清早敬拜歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

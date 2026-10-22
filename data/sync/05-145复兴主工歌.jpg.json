@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-145",
+  "status": "reviewed",
+  "source": {
+    "file": "05-145复兴主工歌.jpg",
+    "sha256": "c72e3efadf6e1858bbb2bdce8ceaf99a8ddc5ad29ecd96235791be668bb5033d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-145复兴主工歌.mp3",
+      "sha256": "ffffe7e22017e34df8c731b100f228dcd32f0965baa21be87073989195b26916",
+      "duration": 177.55428571428573,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.19403,
+      "bottom": 0.282213
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.231212,
+      "bottom": 0.319395
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.268394,
+      "bottom": 0.357229
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.305576,
+      "bottom": 0.39441
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.418426,
+      "bottom": 0.506608
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.454955,
+      "bottom": 0.543137
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.491484,
+      "bottom": 0.580319
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.528666,
+      "bottom": 0.617501
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.680003,
+      "bottom": 0.768185
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.786329,
+      "bottom": 0.875164
+    }
+  },
+  "cues": [
+    {
+      "at": 10.05,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.8,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 61.45,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.1,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.85,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 102.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 113.4,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 123.15,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.95,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 144.05,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.7,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.45,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "恳求复兴主工！向众门徒显现，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "用主大能唤起各心，使主子民听见！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "恳求复兴主工！我众拜跪主前；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "恳 求恩主此刻便临，赏赐我们恩典。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "恳求复兴主工！高举宝贵圣名！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "但愿主爱在人心中，如火热烈光明。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "恳求复兴主工！我众拜跪主前；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "恳 求恩主此刻便临，赏赐我们恩典。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "恳求复兴主工！向众启示圣言！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "愿 主清洁圣 明真理，信心都能看见。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "恳求复兴主工！我众拜跪主前；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "恳 求恩主此刻便临，赏赐我们恩典。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "恳求复兴主工！沛降圣灵恩霖！",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "但 愿荣耀永 归与 主,平安临到世人。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "恳求复兴主工！我众拜跪主前；",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "恳 求恩主此刻便临，赏赐我们恩典。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-145复兴主工歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

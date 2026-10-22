@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "songId": "05-142",
+  "status": "reviewed",
+  "source": {
+    "file": "05-142耶稣普治歌.jpg",
+    "sha256": "9c5d245e43b07ad69da2a5b229f126d846f3d169077d011b11ba3911c153cdb1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-142耶稣普治歌.mp3",
+      "sha256": "29c1d249148f1cd5a1ef0d4c01164c27a3bad995c8754941676c0a4d7eda7c55",
+      "duration": 175.85632653061225,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.131229,
+      "bottom": 0.214772
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.160783,
+      "bottom": 0.244863
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.190874,
+      "bottom": 0.274417
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.220427,
+      "bottom": 0.30397
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.249981,
+      "bottom": 0.334061
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.332731,
+      "bottom": 0.416274
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.362284,
+      "bottom": 0.445827
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.391301,
+      "bottom": 0.475381
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.420854,
+      "bottom": 0.504397
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.450408,
+      "bottom": 0.533951
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.532083,
+      "bottom": 0.615089
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.5611,
+      "bottom": 0.64518
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.590653,
+      "bottom": 0.674733
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.620744,
+      "bottom": 0.704287
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.650298,
+      "bottom": 0.733303
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.733585,
+      "bottom": 0.817128
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.763139,
+      "bottom": 0.846682
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.792692,
+      "bottom": 0.876235
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.822246,
+      "bottom": 0.905789
+    },
+    "s4_v5": {
+      "kind": "image",
+      "top": 0.8518,
+      "bottom": 0.935342
+    }
+  },
+  "cues": [
+    {
+      "at": 8.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.65,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 24.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.15,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.55,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 49.75,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.8,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.25,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 90.9,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.35,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 107.75,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.95,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 124.0,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.45,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 140.85,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 149.05,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 157.1,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 165.55,
+      "region": "s4_v5",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "日月所照万国万方，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "耶稣必为统治君王；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "東1.南北西东，主治普及，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "千秋万古，悠久无疆。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "不這绝祷声這向他這奉献，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "无量颂歌成他冠冕；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "到处圣名好比馨香，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "随.同晨祭，上升于天。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "万方、万国、万族、万民，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "不停颂赞妙爱奇恩；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "婴孩亦将同声歌唱，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "及早颂扬救主圣名。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "在主治下人個人多個福：",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "罪人跳出捆绑束缚，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "劳人获得永恒難安難乐，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "贫人获得丰盈富足。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "受造群生這皆当兴起，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "特殊荣耀向主献呈；",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "天使再来高声歌唱，",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_v5",
+        "text": "地上万民同应“阿们”。",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-142耶稣普治歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

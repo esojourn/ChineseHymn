@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-424",
+  "status": "reviewed",
+  "source": {
+    "file": "02-424靠主膀臂.txt",
+    "sha256": "19d0b9d1106142b1565fd3d4d6cb571b168fe4ce600bb667e59e8f20c10135b5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-424靠主膀臂.mp3",
+      "sha256": "0a7257897cbfa712d2c84575719d3a44545eb1a5badcfce73e6d5c46f4a85261",
+      "duration": 126.79836734693878,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 9.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.75,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.1,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.15,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.5,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "1何等的深交，何等的欢喜， 倚靠主耶稣永远膀臂， 何等的平安，何等的福气， 倚靠主耶稣永远膀臂。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "倚靠，倚靠，平安稳妥，恐惧平息， 倚靠，倚靠，倚靠主耶稣永远膀臂。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "2何等的甜美，行走这天路， 倚靠主耶稣永远膀臂， 何等大荣光，照亮我旅途， 倚靠主耶稣永远膀臂。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "倚靠，倚靠，平安稳妥，恐惧平息， 倚靠，倚靠，倚靠主耶稣永远膀臂。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "3我何用畏惧，我何用惊慌， 倚靠主耶稣永远膀臂， 主在我身旁，我满有平安， 倚靠主耶稣永远膀臂。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "倚靠，倚靠，平安稳妥，恐惧平息， 倚靠，倚靠，倚靠主耶稣永远膀臂。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-424靠主膀臂.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

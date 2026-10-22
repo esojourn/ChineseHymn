@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "04-848",
+  "status": "reviewed",
+  "source": {
+    "file": "04-848闻主召我.txt",
+    "sha256": "decad7131402c558f6118e8d6a0f8db4b7540baed961dde1eeed52ccce53c9fc",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-848闻主召我.mp3",
+      "sha256": "f1bb8a1a152f524e07228e6a3258a9dba2f957cb2aac3dad1a147a061ccd2c0d",
+      "duration": 174.21061224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 8.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 29.45,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 49.25,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.85,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.65,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 110.25,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 130.05,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 150.65,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "今已明闻救主招呼， 今已明闻救主招呼， 今已明闻救主招呼， “须背十架，随我行一路”。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "耶稣领我，我必跟随， 任领何往，我仍跟随， 福也苦也终必跟随， 踊跃随主，随主行一路。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我必时时求主帮扶， 我必时时求主帮扶， 我必时时求主帮扶， 我必随主，随主行一路。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "耶稣领我，我必跟随， 任领何往，我仍跟随， 福也苦也终必跟随， 踊跃随主，随主行一路。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我将身心专献耶稣， 我将身心专献耶稣， 我将身心专献耶稣， 我必随主，随主行一路。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "耶稣领我，我必跟随， 任领何往，我仍跟随， 福也苦也终必跟随， 踊跃随主，随主行一路。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "主必赐我恩宠光荣， 主必赐我恩宠光荣， 主必赐我恩宠光荣， 主必同我，同我行一路。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "耶稣领我，我必跟随， 任领何往，我仍跟随， 福也苦也终必跟随， 踊跃随主，随主行一路。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-848闻主召我.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "02-289",
+  "status": "reviewed",
+  "source": {
+    "file": "02-289主是磐石.txt",
+    "sha256": "26929b0eea8e413c9eb861970b831655cc0ee62be5e74354a66b2763c5df6182",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-289主是磐石.mp3",
+      "sha256": "fe631ba05903c81f398dec8358e41f99a3fd766d6d6ff537c1b9440f0c42d5af",
+      "duration": 161.9591836734694,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.2,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.2,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.0,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.5,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.6,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.1,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主是磐石，容我藏躲， 暴风雨中之避难所； 灾祸来临我得稳妥， 暴风雨中之避难所。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主耶稣是磐石，我的避难所， 如沙漠地，有荫凉所； 主耶稣是磐石，我的避难所， 暴风雨中之避难所。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "日间遮荫，夜间保护， 暴风雨中之避难所； 无事可惊，无敌可怖， 暴风雨中之避难所。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "主耶稣是磐石，我的避难所， 如沙漠地，有荫凉所； 主耶稣是磐石，我的避难所， 暴风雨中之避难所。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "惊涛骇浪虽环绕我， 暴风雨中之避难所； 我永不离这安稳所， 暴风雨中之避难所。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "主耶稣是磐石，我的避难所， 如沙漠地，有荫凉所； 主耶稣是磐石，我的避难所， 暴风雨中之避难所。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "神圣磐石容我藏身， 暴风雨中之避难所； 时刻扶助永远亲近， 暴风雨中之避难所。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "主耶稣是磐石，我的避难所， 如沙漠地，有荫凉所； 主耶稣是磐石，我的避难所， 暴风雨中之避难所。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-289主是磐石.txt.reference.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

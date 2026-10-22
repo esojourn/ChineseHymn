@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "songId": "05-249",
+  "status": "reviewed",
+  "source": {
+    "file": "05-249专爱耶稣歌.jpg",
+    "sha256": "019f4c15882333194615d8e7856f8f6185c62fcf25a5902892259917fcdad289",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-249专爱耶稣歌.mp3",
+      "sha256": "b822b3ec7a2df533a67a56bfe78bc8c048d2690ea9ef2b921b677241f58d6848",
+      "duration": 136.256,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.148241,
+      "bottom": 0.235328
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.182922,
+      "bottom": 0.268854
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.216448,
+      "bottom": 0.302957
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.250551,
+      "bottom": 0.337061
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.338411,
+      "bottom": 0.424921
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.372515,
+      "bottom": 0.458446
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.406619,
+      "bottom": 0.491972
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.440144,
+      "bottom": 0.526076
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.52627,
+      "bottom": 0.61278
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.560374,
+      "bottom": 0.646305
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.593899,
+      "bottom": 0.680409
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.628003,
+      "bottom": 0.714512
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.715285,
+      "bottom": 0.802372
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.749967,
+      "bottom": 0.836476
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.784648,
+      "bottom": 0.871158
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.818174,
+      "bottom": 0.904683
+    }
+  },
+  "cues": [
+    {
+      "at": 37.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 45.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.95,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.85,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 78.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.95,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.85,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 111.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 119.95,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.85,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "惜哉，忧哉，罪人违逆，何等愚因我罪辜！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我曾对主狂妄言日：“专爱已，不爱耶稣；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "专爱己，不爱耶稣；专爱己，不爱耶稣。”",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "我曾对主狂妄言日：“专爱已，不爱耶稣。”",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "何等恩惠，罪人见主，悬苦架救我罪奴；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "心微动矣，低声言日：“虽爱已，也爱耶稣；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "虽爱己，也爱耶稣；虽爱己，也爱耶稣。”",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "心微动矣，低声言日：“虽爱己，也爱耶稣。”",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "日兮月兮，主恒爱我，医我心，指引扶助，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "使我谦逊，悔改言日：“少爱己，多爱耶稣；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "少爱己，多爱耶稣；少爱已己，多爱耶稣。”",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "使我谦逊，悔改言日：“少爱己，多爱耶稣。”",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-249专爱耶稣歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

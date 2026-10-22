@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-248",
+  "status": "reviewed",
+  "source": {
+    "file": "05-248与主同去歌.jpg",
+    "sha256": "1646bd77cfd5b73bd4206450b1332d1e584e33a1f28585df6a2b6f81a7c562af",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-248与主同去歌.mp3",
+      "sha256": "50261eaf0e9afd2464b7d47ba9be4304a5988aff5403a8b3d3e41760787c20fa",
+      "duration": 202.73066666666668,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.231875,
+      "bottom": 0.323719
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.270156,
+      "bottom": 0.362781
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.31,
+      "bottom": 0.401844
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.427187,
+      "bottom": 0.519812
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.46625,
+      "bottom": 0.558875
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.505312,
+      "bottom": 0.597938
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.675625,
+      "bottom": 0.76825
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.793594,
+      "bottom": 0.885437
+    }
+  },
+  "cues": [
+    {
+      "at": 29.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 43.55,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.05,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 101.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.05,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 130.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 145.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 159.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 174.05,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 188.55,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "冬天已往，雨水已止，百花开放，百鸟鸣啼，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "何必等待，何必迟疑，“我的佳偶，与我同去。”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣我主，我爱所归，我身我灵永属于你。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "幽谷之中，思你心切；与你同去，今又春回！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "求你容我得见你面，求你容我闻你低语，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "你声柔和，你貌秀美，“我的鸽子，与我同去。”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣我主，我爱所归，我身我灵永属于你。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "幽谷之中，思你心切；与你同去，今又春回！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我的良人，我跟从你，离开陡岩隐密之地，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "百鸟声中，百花丛里，随你脚踪，与你同去。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "耶稣我主，我爱所归，我身我灵永属于你。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "幽谷之中，思你心切；与你同去，今又春回！",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-248与主同去歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

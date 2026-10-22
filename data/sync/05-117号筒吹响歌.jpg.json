@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "songId": "05-117",
+  "status": "reviewed",
+  "source": {
+    "file": "05-117号筒吹响歌.jpg",
+    "sha256": "d67420dba8f3d3075e458639d75a6f5c8e4e4579a516624cdd0f27275f719ee8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-117号筒吹响歌.mp3",
+      "sha256": "b478c672230a971344ca89e95021a074b7cedf6b6adc365740d560bd2305f46b",
+      "duration": 155.112,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.171218,
+      "bottom": 0.250504
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.201536,
+      "bottom": 0.280823
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.231854,
+      "bottom": 0.311141
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.322809,
+      "bottom": 0.401591
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.352623,
+      "bottom": 0.431909
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.382941,
+      "bottom": 0.461722
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.473391,
+      "bottom": 0.551666
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.502698,
+      "bottom": 0.581985
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.533017,
+      "bottom": 0.611798
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.623972,
+      "bottom": 0.702753
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.65429,
+      "bottom": 0.733577
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.684608,
+      "bottom": 0.763895
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.808914,
+      "bottom": 0.8882
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.902395,
+      "bottom": 0.982187
+    }
+  },
+  "cues": [
+    {
+      "at": 23.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.35,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.05,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.0,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 67.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 72.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.35,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.05,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.0,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 116.7,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.45,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.15,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 144.1,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主耶稣再临那日必要吹起号简高声，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "那永远光明清新美丽早晨，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "凡世上得救的人必在那边一同相会，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "在那边点名，我亦必在其内。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "在那边点名的时候，在那边点名的时候，",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "在那边点名的时候，在那边点名我亦必在其内。",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "凡信主而死的人都必在那早晨复活，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "大荣耀光辉灿烂何等快乐！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "蒙拣选得胜的人都在天空一同相会，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "在那边点名我亦必在其内。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "在那边点名的时候，在那边点名的时候，",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "在那边点名的时候，在那边点名我亦必在其内。",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "故我们应当从早到晚为主殷勤作工，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "欢喜传扬主耶稣奇妙恩功，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我完成救主所派职分在他面前无愧，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "在那边点名我亦必在其内。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "在那边点名的时候，在那边点名的时候，",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "在那边点名的时候，在那边点名我亦必在其内。",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-117号筒吹响歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

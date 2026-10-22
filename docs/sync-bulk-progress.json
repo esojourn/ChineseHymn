@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 108,
+    "published": 114,
     "existing": 8,
-    "needs-calibration": 69,
+    "needs-calibration": 70,
     "missing-audio": 2,
-    "pending": 164,
-    "ready-to-verify": 46,
+    "pending": 163,
+    "ready-to-verify": 40,
     "missing-lyrics": 23
   },
   "songs": [
@@ -414,11 +414,12 @@
       "songId": "01-500",
       "source": "01-500加利利人耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-500加利利人耶稣.mp3",
         "01-500加利利人耶稣-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,5"
     },
     {
       "songId": "01-504",
@@ -794,7 +795,7 @@
       "songId": "02-261",
       "source": "02-261向万邦传福音.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-261向万邦传福音.mp3",
         "02-261向万邦传福音-领唱.mp3"
@@ -2481,7 +2482,7 @@
       "songId": "05-117",
       "source": "05-117号筒吹响歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-117号筒吹响歌.mp3"
       ]
@@ -2965,7 +2966,7 @@
       "songId": "05-245",
       "source": "05-245今要主自己.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-245今要主自己.mp3",
         "05-245今要主自己-领唱.mp3"
@@ -2984,7 +2985,7 @@
       "songId": "05-248",
       "source": "05-248与主同去歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-248与主同去歌.mp3"
       ]
@@ -2993,7 +2994,7 @@
       "songId": "05-249",
       "source": "05-249专爱耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-249专爱耶稣歌.mp3"
       ]
@@ -3002,7 +3003,7 @@
       "songId": "05-250",
       "source": "05-250我属耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-250我属耶稣歌.mp3"
       ]

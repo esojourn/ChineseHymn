@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "05-250",
+  "status": "reviewed",
+  "source": {
+    "file": "05-250我属耶稣歌.jpg",
+    "sha256": "39bb922fa829f1fe9e0635b79b21247f4752d0a2a43d2ef0e9d81952511dcf74",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-250我属耶稣歌.mp3",
+      "sha256": "720c90365542680d52def34fc65adfb2872f0e342484c68767826e8b1ee3f3ff",
+      "duration": 214.7265306122449,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.17898,
+      "bottom": 0.27415
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.220514,
+      "bottom": 0.316304
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.263288,
+      "bottom": 0.358459
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.305443,
+      "bottom": 0.401233
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.417028,
+      "bottom": 0.512198
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.459182,
+      "bottom": 0.554352
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.501336,
+      "bottom": 0.596507
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.542871,
+      "bottom": 0.638041
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.69537,
+      "bottom": 0.789921
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.801996,
+      "bottom": 0.897166
+    }
+  },
+  "cues": [
+    {
+      "at": 52.75,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 64.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.95,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.7,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.05,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 149.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.25,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.0,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我乃属耶稣，我听闻主声，主恩爱充满我心；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "今求赐信心，靠赖主膀臂，常与主相近相亲。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "更亲近主，亲近我恩主，来到主受死圣架！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "更亲近主，近主，亲近我恩主，到主流血宝架",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "今归主为圣，专为主所用，每日蒙新赐天恩；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "信望爱日增，口不住称颂，按主旨意度一生。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "更亲近主，亲近我恩主，来到主受死圣架！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "更亲近主，近主，亲近我恩主，到主流血宝架",
+        "label": "第2段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-250我属耶稣歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

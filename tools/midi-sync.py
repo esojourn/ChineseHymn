@@ -100,18 +100,19 @@ def generate(song, profile, cache):
         music = repeated_verses(reference, len(source['verses']), cache)
         target = features(reference, cache)
         mapped, matches = [], []
+        evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
         for shift in music['shifts']:
             onset = music['initialOnsetEstimate'] + shift
             harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], onset, cue_offset=0)
             melodic = match_template([melody], target[1], target[0], music['period'], onset, 'spatialWeights')
             one, two = harmonic['best'], melodic['best']
+            matches.append({'harmony': harmonic, 'melody': melodic})
             if (one['cost'] > .35 or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                     not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
                     two['cost'] > .35 or melodic['runnerUp']['cost'] - two['cost'] < .06 or
                     one['key'] != two['key'] or abs(one['at'] - two['starts'][0]) > .5):
                 raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
             mapped.append(round((one['at'] + two['starts'][0]) / 2, 2))
-            matches.append({'harmony': harmonic, 'melody': melodic})
         corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), 1)
         # Both symbolic templates already locate every verse independently.
         if decisions:

@@ -22,6 +22,9 @@
         if (!/^\d{2}-\d{1,3}$/.test(data.songId || '')) errors.push('歌曲编号无效');
         if (!data.source || !filename(data.source.file) || !hash(data.source.sha256) ||
             !['text', 'image'].includes(data.source.type)) errors.push('歌词素材信息无效');
+        if (data.imageLayout !== undefined && (data.source?.type !== 'image' ||
+            data.imageLayout?.mode !== 'center-preview' || !finite(data.imageLayout.previewFraction) ||
+            data.imageLayout.previewFraction < 0 || data.imageLayout.previewFraction > 1)) errors.push('图片预读设置无效');
         const tracks = Array.isArray(data.tracks) ? data.tracks : [];
         if (!tracks.length) errors.push('没有音频版本');
         const files = new Set();
@@ -113,5 +116,15 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
-    return { normalizeText, validate, ease, locate, regionTarget, textTarget };
+    function imageTarget(top, bottom, previewBottom, viewport, maximum) {
+        const margin = Math.min(60, viewport * 0.1);
+        // Center the current system. Reveal more of the following system if space permits,
+        // but never push the current system above the reading margin to do so.
+        let target = (top + bottom - viewport) / 2;
+        if (previewBottom !== undefined) target = Math.max(target, previewBottom - viewport + margin);
+        target = Math.min(target, top - margin);
+        return Math.max(0, Math.min(maximum, target));
+    }
+
+    return { normalizeText, validate, ease, locate, regionTarget, textTarget, imageTarget };
 });

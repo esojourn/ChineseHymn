@@ -1,4 +1,5 @@
 import importlib.util
+import copy
 from pathlib import Path
 import unittest
 
@@ -8,6 +9,20 @@ spec.loader.exec_module(prepare)
 
 
 class PreparationTests(unittest.TestCase):
+    def test_image_reframing_preserves_all_timelines_and_text_is_untouched(self):
+        data = {"source": {"type": "image"}, "regions": {"a": {"top": 0.1, "bottom": 0.3}},
+                "cues": [{"at": 10, "region": "a", "moveStart": 0}],
+                "tracks": [{"cues": [{"at": 11, "region": "a"}], "offset": 1}],
+                "status": "reviewed", "preparation": {"method": "score matching"}}
+        before = copy.deepcopy(data)
+        prepare.set_image_layout(data)
+        self.assertEqual(data.pop("imageLayout"), {"mode": "center-preview", "previewFraction": 0.65})
+        self.assertEqual(data, before)
+        data["source"]["type"] = "text"
+        before = copy.deepcopy(data)
+        prepare.set_image_layout(data)
+        self.assertEqual(data, before)
+
     def test_default_activation_and_optional_draft(self):
         data = {"cues": [{"at": 10, "region": "r1"}], "tracks": [{}, {"cues": []}]}
         prepare.set_activation(data)

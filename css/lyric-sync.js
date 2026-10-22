@@ -71,9 +71,9 @@
             const maximum = Math.max(0, document.documentElement.scrollHeight - height);
             let previous = window.scrollY;
             this.origin = previous;
-            this.positions = this.data.cues.map(cue => {
+            this.positions = this.data.cues.map((cue, index) => {
                 const region = this.data.regions[cue.region];
-                let top, bottom;
+                let top, bottom, previewBottom;
                 if (region.kind === 'text') {
                     const start = this.content.querySelector('[data-line="' + region.startLine + '"]');
                     const end = this.content.querySelector('[data-line="' + region.endLine + '"]');
@@ -85,9 +85,15 @@
                     const rect = img.getBoundingClientRect();
                     top = rect.top + window.scrollY + region.top * rect.height;
                     bottom = rect.top + window.scrollY + region.bottom * rect.height;
+                    const next = this.data.regions[this.data.cues[index + 1]?.region];
+                    if (this.data.imageLayout && next && next.top >= region.bottom) {
+                        previewBottom = rect.top + window.scrollY + rect.height *
+                            (next.top + (next.bottom - next.top) * this.data.imageLayout.previewFraction);
+                    }
                 }
                 previous = region.kind === 'text'
                     ? Core.textTarget(top, bottom, height, maximum)
+                    : this.data.imageLayout ? Core.imageTarget(top, bottom, previewBottom, height, maximum)
                     : Core.regionTarget(top, bottom, height, previous, maximum);
                 return previous;
             });

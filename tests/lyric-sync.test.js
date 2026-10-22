@@ -116,3 +116,29 @@ test('image systems move only enough to enter the viewport and then hold', () =>
     assert.equal(Core.regionTarget(500, 750, 600, target, 2000), target);
     assert.equal(Core.regionTarget(200, 400, 600, 500, 2000), 140);
 });
+
+test('image preview centers the current system and reveals the following lyrics when space permits', () => {
+    // Previously this system sat at the bottom (target 210), hiding the following lyrics.
+    assert.equal(Core.imageTarget(500, 750, 900, 600, 2000), 360);
+    assert.equal(Core.imageTarget(500, 750, undefined, 600, 2000), 325);
+    // Small screens protect the current system even when the preview cannot fit.
+    assert.equal(Core.imageTarget(500, 750, 1000, 390, 2000), 461);
+    assert.equal(Core.imageTarget(500, 1200, 1400, 390, 2000), 461);
+    assert.equal(Core.imageTarget(0, 100, 200, 600, 2000), 0);
+    assert.equal(Core.imageTarget(3000, 3100, undefined, 600, 2200), 2200);
+});
+
+test('image preview settings are optional and rejected for text or invalid fractions', () => {
+    const data = fixture();
+    data.imageLayout = { mode: 'center-preview', previewFraction: 0.65 };
+    assert.deepEqual(Core.validate(data), []);
+    for (const value of [-1, 1.1, NaN, '0.65']) {
+        data.imageLayout.previewFraction = value;
+        assert.ok(Core.validate(data).length);
+    }
+    data.imageLayout = null;
+    assert.ok(Core.validate(data).length);
+    data.imageLayout = { mode: 'center-preview', previewFraction: 0.65 };
+    data.source.type = 'text';
+    assert.ok(Core.validate(data).length);
+});

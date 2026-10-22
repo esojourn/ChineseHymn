@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "songId": "05-217",
+  "status": "reviewed",
+  "source": {
+    "file": "05-217主寻亡羊歌.jpg",
+    "sha256": "f1cda93b8733e35b4ddbe7e5a0a421a169e51c7be77627d89e3eff24b64184f0",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-217主寻亡羊歌-领唱.mp3",
+      "sha256": "9779443d605787a9c5e9b3ac29ba1e07e6b773e9d723e1a9ded31fe784d70395",
+      "duration": 192.18285714285713,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.150421,
+      "bottom": 0.238277
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.17838,
+      "bottom": 0.266784
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.206888,
+      "bottom": 0.294743
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.235943,
+      "bottom": 0.323799
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.263902,
+      "bottom": 0.352306
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.363129,
+      "bottom": 0.450437
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.391088,
+      "bottom": 0.478944
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.419047,
+      "bottom": 0.506903
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.448102,
+      "bottom": 0.53541
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.476061,
+      "bottom": 0.563917
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.573644,
+      "bottom": 0.6615
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.601603,
+      "bottom": 0.689459
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.63011,
+      "bottom": 0.717966
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.658617,
+      "bottom": 0.746473
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.687124,
+      "bottom": 0.77498
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.785803,
+      "bottom": 0.873111
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.81431,
+      "bottom": 0.90107
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.842269,
+      "bottom": 0.929577
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.870228,
+      "bottom": 0.957536
+    },
+    "s4_v5": {
+      "kind": "image",
+      "top": 0.898736,
+      "bottom": 0.986043
+    }
+  },
+  "cues": [
+    {
+      "at": 5.85,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.2,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.45,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.55,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.15,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 53.5,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.75,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.85,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.45,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 90.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.05,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.15,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 117.75,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 128.1,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.35,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 149.45,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.05,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 165.4,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.65,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.75,
+      "region": "s4_v5",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "一百只羊，有九十九，在主栏中安眠；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "但有一只远离金门，迷路群山之间；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "远在荒山空谷徘徊，远离良牧照顾慈怀，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "远离良牧照顾慈怀。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "“此间主有九十九只，难道还嫌不够？”",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "良牧回答：“那只迷羊，本来是我所有；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "路径虽然高低不平，旷野虽远，我必去寻，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "旷野虽远，我必去寻。”",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "得救之羊，从未知道，路中山高水深；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "不知长夜何等黑暗，寻羊何等艰辛。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "旷野之中，救主遥闻迷羊失望垂死哀鸣，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "迷羊失望垂死哀鸣。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "问主：“山径沿途血迹，到底从何面来？”",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "主说：“牧人必须流血，迷羊才救得回。”",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "问主：“双手因何伤裂？”主说：“因为路多荆棘，”",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "主说：“因为路多荆棘。”",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "远从迅雷轰破之山，穿过危崖绝壁，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "牧人呼声直达天门：“乐哉，亡羊已得。”",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "围绕宝座天使和唱：“乐哉，主已觅得亡羊！",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_v5",
+        "text": "乐哉，主已觅得亡羊!”（阿们）",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-217主寻亡羊歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

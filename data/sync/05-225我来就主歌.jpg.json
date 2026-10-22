@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-225",
+  "status": "reviewed",
+  "source": {
+    "file": "05-225我来就主歌.jpg",
+    "sha256": "86a2d7182a982006849724d7836d64db36903435c1fd96b402b2ef69cd704825",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-225我来就主歌-领唱.mp3",
+      "sha256": "cbe61730823863a010ea72bc414a5d6eac3767ad2bceeaf37454a2f711e313f5",
+      "duration": 185.67836734693878,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.179093,
+      "bottom": 0.27347
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.218795,
+      "bottom": 0.313172
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.258497,
+      "bottom": 0.352047
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.297372,
+      "bottom": 0.39175
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.336247,
+      "bottom": 0.430625
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.461971,
+      "bottom": 0.556348
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.501673,
+      "bottom": 0.59605
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.540548,
+      "bottom": 0.635753
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.581078,
+      "bottom": 0.676282
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.90862,
+      "bottom": 0.998035
+    }
+  },
+  "cues": [
+    {
+      "at": 6.15,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 22.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.25,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 94.3,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 114.55,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 130.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.65,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 166.6,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "就是这样，无善可陈，但因我主流血深恩，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "又因我主召我亲近，上主羔羊，我来，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "就是这样，不必等待自己洗除一点微罪，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "因主宝血能消万秽，上主羔羊，我来，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "就是这样，心灵不安，多少冲突，多少疑难，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我心内外不断争战，上主羔羊，我来，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "就是这样，主肯收留，欢迎、洗罪、饶恕、拯救，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "因主应许必能成就，上主羔羊，我来，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "就是这样，深恩妙爱，打破一切艰难阻碍，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "我来。（阿们）",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-225我来就主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

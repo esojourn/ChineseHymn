@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "01-518",
+  "status": "reviewed",
+  "source": {
+    "file": "01-518救我恩典.txt",
+    "sha256": "fb6cff8af3942372878cca8888ba08ba2f94bd5a466fb3dacb6c1207ae9990da",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-518救我恩典.mp3",
+      "sha256": "6531ee02effa59c985d69a174c278f97422d46a5ffd9b24a1f3281d4e5ab6c6a",
+      "duration": 145.37142857142857,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.33,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 25.1,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 41.8,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 58.57,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 75.33,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 92.0,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 108.83,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.45,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-518救我恩典-领唱.mp3",
+      "sha256": "f9b71d8486a1a6d06e7e19d8a31da040fa34679275eca73e76f5b580d7c1b624",
+      "duration": 145.412,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.63,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 43.1,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 59.87,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.63,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 93.33,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 110.13,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.85,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "有日银链将要折断， 我就不再如此歌唱， 但我醒来何等喜欢， 竟然得以面见我王。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我要看见祂面对面， 我要述说救我恩典， 我要看见祂面对面， 我要述说救我恩典。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "有日地上帐棚倾覆， 我也不知是在何年， 但我确知有个住处， 为我预备在主那边。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我要看见祂面对面， 我要述说救我恩典， 我要看见祂面对面， 我要述说救我恩典。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "有日斜阳就要西沉， 地上工作从此完毕， 得主称许“忠心仆人”， 我要进入永远安息。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "我要看见祂面对面， 我要述说救我恩典， 我要看见祂面对面， 我要述说救我恩典。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "有日，所以我要准备， 把灯剔亮，儆醒守待， 有日主来召我归回， 我魂就要飞投主怀。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "我要看见祂面对面， 我要述说救我恩典， 我要看见祂面对面， 我要述说救我恩典。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-518救我恩典.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

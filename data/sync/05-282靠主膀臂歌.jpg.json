@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-282",
+  "status": "reviewed",
+  "source": {
+    "file": "05-282靠主膀臂歌.jpg",
+    "sha256": "98d0e876c618673a8a8665636881964c9cb8b038c9d4ac597136b4a56e99ad36",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-282靠主膀臂歌-领唱.mp3",
+      "sha256": "7fe30be19e656920d8824e0103415b8876f33eb69d3af78f0a0ff226865a7c21",
+      "duration": 154.25306122448978,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.210014,
+      "bottom": 0.308015
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.25014,
+      "bottom": 0.348141
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.290265,
+      "bottom": 0.38748
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.411429,
+      "bottom": 0.50943
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.451555,
+      "bottom": 0.549556
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.49168,
+      "bottom": 0.590468
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.666345,
+      "bottom": 0.765133
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.789082,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 22.35,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.2,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.3,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.2,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.35,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.3,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.2,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.3,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.2,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "何等大快乐，何等深情谊，依靠在这永远膀臂上；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "何等深平安，何等大福气，依靠在这永远膀臂.上。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "依靠，依靠，安定稳妥一无惊慌；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "依靠，依靠，依靠在这永远膀臂上。阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我心真甜蜜，行走天路程，依靠在这永远膀臂上；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "越走越光明，日日向前行，依靠在这永远膀臂上。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "依靠，依靠，安定稳妥一无惊慌；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "依靠，依靠，依靠在这永远膀臂上。阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我有何所惧，我又何所惊，依靠在这永远膀臂上；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "蒙福得平安，与我主亲近，依靠在这永远膀臂上。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "依靠，依靠，安定稳妥一无惊慌；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "依靠，依靠，依靠在这永远膀臂上。阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-282靠主膀臂歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

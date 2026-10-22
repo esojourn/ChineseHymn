@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 126,
+    "published": 132,
     "existing": 8,
-    "needs-calibration": 70,
+    "needs-calibration": 73,
     "missing-audio": 2,
-    "ready-to-verify": 31,
-    "pending": 160,
+    "pending": 157,
+    "ready-to-verify": 25,
     "missing-lyrics": 23
   },
   "songs": [
@@ -435,7 +435,7 @@
       "songId": "01-518",
       "source": "01-518救我恩典.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-518救我恩典.mp3",
         "01-518救我恩典-领唱.mp3"
@@ -445,20 +445,22 @@
       "songId": "01-666",
       "source": "01-666谁是在主这边.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-666谁是在主这边.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7,8,9"
     },
     {
       "songId": "01-667",
       "source": "01-667十字架是我的福分.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-667十字架是我的福分.mp3",
         "01-667十字架是我的福分-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：3"
     },
     {
       "songId": "01-668",
@@ -473,11 +475,12 @@
       "songId": "02-001",
       "source": "02-001主必保守我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-001主必保守我.mp3",
         "02-001主必保守我-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.554"
     },
     {
       "songId": "02-002",
@@ -2792,7 +2795,7 @@
       "songId": "05-217",
       "source": "05-217主寻亡羊歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-217主寻亡羊歌-领唱.mp3"
       ]
@@ -2830,7 +2833,7 @@
       "songId": "05-225",
       "source": "05-225我来就主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-225我来就主歌-领唱.mp3"
       ]
@@ -3205,7 +3208,7 @@
       "songId": "05-282",
       "source": "05-282靠主膀臂歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-282靠主膀臂歌-领唱.mp3"
       ]
@@ -3214,7 +3217,7 @@
       "songId": "05-283",
       "source": "05-283耶稣我来歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-283耶稣我来歌.mp3"
       ]
@@ -3223,7 +3226,7 @@
       "songId": "05-284",
       "source": "05-284时刻需主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-284时刻需主歌.mp3",
         "05-284时刻需主歌-领唱.mp3"

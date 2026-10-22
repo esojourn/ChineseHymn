@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-283",
+  "status": "reviewed",
+  "source": {
+    "file": "05-283耶稣我来歌.jpg",
+    "sha256": "2b52ce9a34f60f69008ad415549003cf7ade2d7140bb21127fc9291e350af9c1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-283耶稣我来歌.mp3",
+      "sha256": "12a5375ef53997f95118154df1e4709e686f7d05066cd779c1025923377bb8b5",
+      "duration": 214.4130612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.140959,
+      "bottom": 0.227943
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.172087,
+      "bottom": 0.25907
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.20377,
+      "bottom": 0.290198
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.234342,
+      "bottom": 0.321325
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.335507,
+      "bottom": 0.421934
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.366635,
+      "bottom": 0.453062
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.397207,
+      "bottom": 0.48419
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.428334,
+      "bottom": 0.514762
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.527276,
+      "bottom": 0.614259
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.558403,
+      "bottom": 0.645386
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.589531,
+      "bottom": 0.676514
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.620659,
+      "bottom": 0.707086
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.721268,
+      "bottom": 0.808251
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.752395,
+      "bottom": 0.839378
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.784079,
+      "bottom": 0.870506
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.814651,
+      "bottom": 0.901634
+    }
+  },
+  "cues": [
+    {
+      "at": 12.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.6,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.0,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 74.95,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.1,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 125.05,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.8,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.2,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 162.8,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 175.15,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 187.9,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 200.3,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "脱离捆绑、忧愁与黑影，耶稣，我来！耶稣，我来！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "进入自由、喜乐与光明，耶稣，我来就你！，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "脱离疾病，进入你完全；脱离贫乏，进入你丰满；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "脱离罪恶，得见你圣颜，耶稣,我来就你！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "脱离羞耻、失败与亏欠，耶稣，我来！耶稣，我来！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "进入十架荣耀的恩泉，耶稣，我来就你！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "脱离痛苦，进入你安宁；脱离风波，进入你平静；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "脱离怨叹，进入你欢欣，耶稣，我来就你！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "脱离狂傲、不平的血气，耶稣，我来！耶稣，我来！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "进入完全、有福的旨意，耶稣，我来就你！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "脱离自己，住在你爱里；脱离绝望，等候你来提，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "离地上腾，如鹰展双翼，耶稣，我来就你！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "脱离幽暗阴府的可怕，耶稣，我来！耶稣，我来！",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "进入欢乐、光明的父家，耶稣，我来就你！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "脱离败坏、无底的深渊，进入护庇、安歇的羊圈，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "永永远远瞻仰你荣颜，耶稣，我来就你！",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-283耶稣我来歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

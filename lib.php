@@ -167,9 +167,22 @@ function get_hymn_title($name, $is_front)
     return $hymntitle;
 }
 
-function print_html_header($hymntitle)
+function asset_url($path)
 {
     global $pathroot;
+    // Content hashes also work when deployment preserves file modification times.
+    $version = hash_file('sha256', __DIR__ . '/' . $path);
+    return htmlspecialchars($pathroot . '/' . $path . '?v=' . $version, ENT_QUOTES, 'UTF-8');
+}
+
+function print_html_header($hymntitle)
+{
+    $datatables_css = asset_url('DataTables-1.10.20/css/jquery.dataTables.min.css');
+    $jquery_js = asset_url('jQuery-3.3.1/jquery-3.3.1.min.js');
+    $datatables_js = asset_url('DataTables-1.10.20/js/jquery.dataTables.min.js');
+    $cookies_js = asset_url('css/js.cookie-2.2.1.min.js');
+    $pure_css = asset_url('css/pure-min.css');
+    $styles_css = asset_url('css/styles.css');
 
     if ($hymntitle != '') {
         $hymntitle = '<title>' . $hymntitle . ' - 敬拜赞美</title>';
@@ -184,12 +197,12 @@ function print_html_header($hymntitle)
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.6, user-scalable=yes"/>
         $hymntitle
-        <link rel="stylesheet" type="text/css" href="$pathroot/DataTables-1.10.20/css/jquery.dataTables.min.css"/>
-        <script type="text/javascript" src="$pathroot/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="$pathroot/DataTables-1.10.20/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="$pathroot/css/js.cookie-2.2.1.min.js"></script>
-        <link rel="stylesheet" href="$pathroot/css/pure-min.css">
-        <link rel="stylesheet" type="text/css" href="$pathroot/css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="$datatables_css"/>
+        <script type="text/javascript" src="$jquery_js"></script>
+        <script type="text/javascript" src="$datatables_js"></script>
+        <script type="text/javascript" src="$cookies_js"></script>
+        <link rel="stylesheet" href="$pure_css">
+        <link rel="stylesheet" type="text/css" href="$styles_css"/>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVK44GKC2E"></script>
@@ -443,13 +456,16 @@ EOL;
 
 function print_html_footer()
 {
+    $scripts_js = asset_url('css/scripts.js');
+    $sync_core_js = asset_url('css/lyric-sync-core.js');
+    $sync_js = asset_url('css/lyric-sync.js');
     echo <<<EOL
     <div class="footer">
     <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.4.1</a>
     </div>
-    <script type="text/javascript" src="css/scripts.js"></script>
-    <script src="css/lyric-sync-core.js"></script>
-    <script src="css/lyric-sync.js"></script>
+    <script type="text/javascript" src="$scripts_js"></script>
+    <script src="$sync_core_js"></script>
+    <script src="$sync_js"></script>
     </body>
 </html>
 EOL;

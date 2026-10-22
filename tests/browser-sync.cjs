@@ -33,6 +33,17 @@ const server = http.createServer((req, res) => {
         const page = await browser.newPage({ viewport: { width: 1000, height: 700 } });
         const errors = [];
         page.on('pageerror', error => errors.push(error.message));
+        // An old cached stylesheet has no .sync-line rule. Lyrics must still break into lines.
+        await page.route('**/css/styles.css', route => route.fulfill({ contentType: 'text/css', body: '' }));
+        await page.goto(base + '/fixture');
+        const lineTops = await page.evaluate(() => {
+            HymnSync.renderText(document.querySelector('pre'));
+            return Array.from(document.querySelectorAll('.sync-line'), line => line.getBoundingClientRect().top);
+        });
+        assert.ok(lineTops.length > 1 && lineTops.every((top, index) => index === 0 || top > lineTops[index - 1]),
+            'lyrics must retain line breaks with a cached pre-sync stylesheet');
+        await page.unroute('**/css/styles.css');
+        console.log('PASS: lyric line breaks survive stale stylesheets');
         await page.goto(base + '/fixture');
         await page.bringToFront();
         // Complete the first paint before measuring animation progress in headless Chromium.

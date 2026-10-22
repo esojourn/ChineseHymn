@@ -19,6 +19,8 @@
         pre.replaceChildren(...lines.map((line, index) => {
             const span = document.createElement('span');
             span.className = 'sync-line';
+            // Preserve line breaks even if an older stylesheet is still cached.
+            span.style.display = 'block';
             span.dataset.line = index;
             span.textContent = line || '\u00a0';
             return span;

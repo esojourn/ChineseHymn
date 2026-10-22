@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "songId": "05-103",
+  "status": "reviewed",
+  "source": {
+    "file": "05-103我信主耶稣歌.jpg",
+    "sha256": "97a76fe6cf2769781db1fbf79cf1a65f8805b6a237cce18148a22d837e24d381",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-103我信主耶稣歌.mp3",
+      "sha256": "cde9257775bba8941e230d02267f8829d1780d4b006c7eb16220c8389c7d3898",
+      "duration": 142.56,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 38.95,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 47.65,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 56.5,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 73.45,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 82.15,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 91.0,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 107.95,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 116.65,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 125.5,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-103我信主耶稣歌-领唱.mp3",
+      "sha256": "9d7048fc623253f37b85b0ac663f84ae1fb33d7d2b17d2d76c8f25e0e023faa5",
+      "duration": 142.728,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.18189,
+      "bottom": 0.26499
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.217177,
+      "bottom": 0.300278
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.252464,
+      "bottom": 0.335565
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.287751,
+      "bottom": 0.37145
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.592775,
+      "bottom": 0.675876
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.627464,
+      "bottom": 0.711163
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.662751,
+      "bottom": 0.745852
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.69744,
+      "bottom": 0.780541
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.799115,
+      "bottom": 0.882215
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.835,
+      "bottom": 0.917502
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.869689,
+      "bottom": 0.952789
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.90378,
+      "bottom": 0.987478
+    }
+  },
+  "cues": [
+    {
+      "at": 39.15,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 47.85,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 56.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 73.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.35,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.2,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 108.15,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 116.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.7,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我主耶稣，为我钉死十架，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "十架，十架，神爱浩大！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我信，我信，尽我全生！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我主耶稣，为我埋于坟墓，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "埋葬，埋葬，神子受苦！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我信，我信，终必凯旋！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我主耶稣，为我死里复活，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "得胜，得胜，神权掌握！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我信，我信，靠主刚强！",
+        "label": "第3段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-103我信主耶稣歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

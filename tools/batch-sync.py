@@ -63,7 +63,18 @@ def progress(songs, cache):
             ready = cache / 'ready' / (song['source'] + '.json')
             if ready.exists():
                 candidate = json.loads(ready.read_text())
-                item['status'] = 'ready-to-verify' if all(track['reviewed'] for track in candidate['tracks']) else 'needs-track-alignment'
+                directory = 'score-alignment' if candidate['provenance']['evidence'].endswith('.score.json') else 'alignment'
+                evidence_path = cache / directory / ready.name
+                evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}
+                current = (candidate['source']['sha256'] == song['sha256'] and
+                           sorted((track['file'], track['sha256']) for track in candidate['tracks']) ==
+                           sorted((track['file'], track['sha256']) for track in song['tracks']) and
+                           evidence.get('status') == 'ready' and evidence.get('sourceHash') == song['sha256'])
+                if current:
+                    item['status'] = 'ready-to-verify' if all(track['reviewed'] for track in candidate['tracks']) else 'needs-track-alignment'
+                else:
+                    item['status'] = 'needs-calibration'
+                    item['reason'] = evidence.get('reason', '候选或复核记录已失效，需重新匹配当前素材')[:250]
             else:
                 for directory in ['score-alignment', 'alignment']:
                     evidence = cache / directory / (song['source'] + '.json')

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 48,
+    "published": 54,
     "existing": 8,
-    "needs-calibration": 66,
+    "needs-calibration": 69,
     "missing-audio": 2,
-    "ready-to-verify": 90,
-    "pending": 183,
+    "pending": 180,
+    "ready-to-verify": 84,
     "missing-lyrics": 23
   },
   "songs": [
@@ -343,7 +343,7 @@
       "songId": "01-420",
       "source": "01-420从死亡得生命.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-420从死亡得生命.mp3",
         "01-420从死亡得生命-领唱.mp3"
@@ -363,11 +363,12 @@
       "songId": "01-429",
       "source": "01-429祂不误事因祂是神.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-429祂不误事因祂是神.mp3",
         "01-429祂不误事因祂是神-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,5"
     },
     {
       "songId": "01-446",
@@ -731,19 +732,21 @@
       "songId": "02-206",
       "source": "02-206求主施恩.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-206求主施恩.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.385"
     },
     {
       "songId": "02-208",
       "source": "02-208只要信祂.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-208只要信祂.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-209",
@@ -2398,7 +2401,7 @@
       "songId": "05-102",
       "source": "05-102宝架歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-102宝架歌.mp3"
       ]
@@ -2407,7 +2410,7 @@
       "songId": "05-103",
       "source": "05-103我信主耶稣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-103我信主耶稣歌.mp3",
         "05-103我信主耶稣歌-领唱.mp3"
@@ -2417,7 +2420,7 @@
       "songId": "05-104",
       "source": "05-104复活良辰.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-104复活良辰.mp3"
       ]
@@ -2426,7 +2429,7 @@
       "songId": "05-106",
       "source": "05-106基督复生歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-106基督复生歌.mp3"
       ]
@@ -2435,7 +2438,7 @@
       "songId": "05-107",
       "source": "05-107大启乐园歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-107大启乐园歌.mp3"
       ]

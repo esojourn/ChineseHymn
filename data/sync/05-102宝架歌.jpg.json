@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "songId": "05-102",
+  "status": "reviewed",
+  "source": {
+    "file": "05-102宝架歌.jpg",
+    "sha256": "df0292c609095c545be85322ed206a2b01d8cfacf08391dc8d572ce285939d65",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-102宝架歌.mp3",
+      "sha256": "05b6e4c6e5275eab8f701523b3a587a56c03d26fae146a51322b1704337f8ca3",
+      "duration": 152.496,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.154397,
+      "bottom": 0.249325
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.198449,
+      "bottom": 0.292643
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.242502,
+      "bottom": 0.33743
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.286555,
+      "bottom": 0.381482
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.329873,
+      "bottom": 0.424801
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.443676,
+      "bottom": 0.539338
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.488462,
+      "bottom": 0.582656
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.531781,
+      "bottom": 0.627443
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.576568,
+      "bottom": 0.671495
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.62062,
+      "bottom": 0.717016
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.735891,
+      "bottom": 0.830085
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.779209,
+      "bottom": 0.873403
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.823996,
+      "bottom": 0.917456
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.867315,
+      "bottom": 0.961508
+    },
+    "s3_v5": {
+      "kind": "image",
+      "top": 0.911367,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 7.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 29.4,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 47.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.4,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.4,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.95,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 105.4,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.4,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 123.95,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 134.4,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 145.4,
+      "region": "s3_v5",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "基督宝架我所夸耀，巍然永立",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "宇宙间；一切圣迹光华普照，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "庄严灿烂亿万年。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "生之颠危时来侵我，常多忧惧，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "多失望，主之宝架永不弃我，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "常赐喜乐，赐安康。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "生命真光时常辉耀，爱如好花",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "满蹊径，加上宝架光华荣耀，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "引我欣喜向前行。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "灾难、幸福、痛苦、欢愉，皆因宝架·",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "成为圣，此中平安何可言喻，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "欢欣快乐永充盈。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "基督宝架我所夸耀，巍然永立",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "宇宙间；一切圣迹光华普照，",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_v5",
+        "text": "庄严灿烂亿万年。（阿们）",
+        "label": "第5段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-102宝架歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

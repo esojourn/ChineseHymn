@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-106",
+  "status": "reviewed",
+  "source": {
+    "file": "05-106基督复生歌.jpg",
+    "sha256": "3cbef900fc9718d8cad411f5aa7b5bbb49f77d3f25554bf35f4a6750560a0838",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-106基督复生歌.mp3",
+      "sha256": "ae5570be4ca2eb17c859719d09f2e9f2e1fc459921b0fe9ba96d6f2c49ecbac4",
+      "duration": 175.464,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.142154,
+      "bottom": 0.228135
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.176439,
+      "bottom": 0.26185
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.211296,
+      "bottom": 0.296135
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.24501,
+      "bottom": 0.329849
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.338724,
+      "bottom": 0.423563
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.372438,
+      "bottom": 0.457277
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.406152,
+      "bottom": 0.490991
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.440438,
+      "bottom": 0.525277
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.532437,
+      "bottom": 0.616705
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.56558,
+      "bottom": 0.65099
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.599865,
+      "bottom": 0.684704
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.634151,
+      "bottom": 0.71899
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.727293,
+      "bottom": 0.812132
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.761579,
+      "bottom": 0.846989
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.796436,
+      "bottom": 0.881846
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.830721,
+      "bottom": 0.916131
+    }
+  },
+  "cues": [
+    {
+      "at": 7.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.2,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.6,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.3,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.7,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 102.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 122.7,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 133.75,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 144.1,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.4,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.8,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "今朝基督正复生，哈利路亚！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "凯旋圣日众欢欣，哈利路亚！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "基督一回十架钉，哈利路亚！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "受死原为救万民。哈利路亚！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "普世万民齐赞扬，哈利路亚！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "赞美基督天上王，哈利路亚！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "十架受死坟中葬，哈利路亚！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "救赎罪人出死亡。哈利路亚！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "因主身受重创伤，哈利路亚！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "万众救恩乃永长，哈利路亚！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "今日天上主为王，哈利路亚！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "天使天军共赞扬。哈利路亚！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我众赞美天上神，哈利路亚！",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "歌声与主爱共恒，哈利路亚！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "天上万军当同声，哈利路亚：",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "赞美父、子与圣灵。哈 利路亚！",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-106基督复生歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

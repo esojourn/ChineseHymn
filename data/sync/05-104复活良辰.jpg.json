@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-104",
+  "status": "reviewed",
+  "source": {
+    "file": "05-104复活良辰.jpg",
+    "sha256": "1741be4f4a2abe6f8a20aa3b72f1294a9cee0c3dc9ccb8294f1d2d8f480e10fd",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-104复活良辰.mp3",
+      "sha256": "822f56fb7d9382febdb9ae95a287a1c0f726c155753c71cea349af3b613318ee",
+      "duration": 131.62666666666667,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.172842,
+      "bottom": 0.257541
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.212081,
+      "bottom": 0.296185
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.250725,
+      "bottom": 0.33483
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.359524,
+      "bottom": 0.443034
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.397574,
+      "bottom": 0.481679
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.435624,
+      "bottom": 0.519729
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.543234,
+      "bottom": 0.626744
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.58069,
+      "bottom": 0.664794
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.619334,
+      "bottom": 0.703439
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.727539,
+      "bottom": 0.811049
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.765589,
+      "bottom": 0.850288
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.804828,
+      "bottom": 0.888932
+    }
+  },
+  "cues": [
+    {
+      "at": 5.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.2,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.1,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.2,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 79.1,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.3,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.2,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "救主复活之良辰！普世快同传述；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "喜乐欢欣逾越节，上帝的逾越节；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "主在得胜歌声中，已经超拔我们，·",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "离死进入了永生，离地升上天庭。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "恳求洗涤我心胸，除尽罪孽迷蒙，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "愿能清楚地瞻仰复活光里圣容；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "愿能倾听主声音，清爽、温柔、镇静，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "低言“愿你们平安”，使我加倍欢腾。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "但愿诸天同喜乐，但愿大地高歌，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "但愿世界与万有，欢声四下应和；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "有形无形之万物，齐发音乐之声，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "因主基督已复生，我众欢乐永恒。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-104复活良辰.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

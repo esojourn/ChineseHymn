@@ -118,6 +118,31 @@ class BatchTests(unittest.TestCase):
                 batch.publish(song, cache)
             self.assertEqual(json.loads(existing.read_text()), {'preserved': True})
 
+    def test_progress_does_not_report_old_ready_candidate_after_failed_retry_or_asset_change(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            cache = root / 'cache'
+            song = {'songId': '01-001', 'source': '01-001示例.txt', 'sha256': 'a' * 64,
+                    'tracks': [{'file': '01-001示例.mp3', 'sha256': 'b' * 64}],
+                    'type': 'text', 'lyricsAvailable': True}
+            candidate = {'source': {'sha256': song['sha256']},
+                         'tracks': [{**song['tracks'][0], 'reviewed': True}],
+                         'provenance': {'evidence': 'docs/sync-bulk-evidence/01-001示例.txt.json'}}
+            ready = cache / 'ready' / (song['source'] + '.json')
+            evidence = cache / 'alignment' / ready.name
+            batch.save(ready, candidate)
+            batch.save(evidence, {'sourceHash': song['sha256'], 'status': 'ready'})
+            with patch.object(batch, 'ROOT', root):
+                self.assertEqual(batch.progress([song], cache), {'ready-to-verify': 1})
+                batch.save(evidence, {'sourceHash': song['sha256'], 'status': 'needs-calibration', 'reason': '重试未通过'})
+                self.assertEqual(batch.progress([song], cache), {'needs-calibration': 1})
+                batch.save(evidence, {'sourceHash': song['sha256'], 'status': 'ready'})
+                song['tracks'][0]['sha256'] = 'c' * 64
+                self.assertEqual(batch.progress([song], cache), {'needs-calibration': 1})
+                song['tracks'][0]['sha256'] = 'b' * 64
+                song['sha256'] = 'd' * 64
+                self.assertEqual(batch.progress([song], cache), {'needs-calibration': 1})
+
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

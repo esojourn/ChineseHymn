@@ -123,7 +123,7 @@ def generate(job):
     evidence_path = cache / ('score-alignment' if method == 'score' else 'alignment') / (song['source'] + '.json')
     if evidence_path.exists():
         old = json.loads(evidence_path.read_text())
-        valid_algorithm = method != 'score' or old.get('scoreMatching', {}).get('algorithmVersion') == 2
+        valid_algorithm = method != 'score' or old.get('scoreMatching', {}).get('algorithmVersion', 0) >= 2
         if not retry and valid_algorithm and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
             return song['songId'], old['status'] + ' (cached)'
     start_time = time.monotonic()

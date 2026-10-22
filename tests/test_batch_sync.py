@@ -192,6 +192,34 @@ class BatchTests(unittest.TestCase):
         self.assertLess(match['best']['cost'], .01)
         self.assertGreater(match['runnerUp']['cost'] - match['best']['cost'], .08)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_score_accidentals_are_kept_separate_from_scale_degrees(self):
+        from sync_batch_score import accidental_offsets
+        text = '3.*2 3 | b6 ♮6 #4'
+        characters = [(char, index) for index, char in enumerate(text)]
+        indices = [index for index, char in enumerate(text) if char.isdigit()]
+        self.assertEqual(accidental_offsets(characters, indices), [0, 1, 0, -1, 0, 1])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_optical_rhythm_distinguishes_beams_dots_holds_and_bar_lines(self):
+        import numpy as np
+        from sync_batch_score import optical_rhythm
+        ink = np.zeros((60, 160), dtype=np.uint8)
+        for x in (20, 70, 130):
+            ink[10:34, x:x + 10] = 1
+        ink[38:40, 15:36] = 1
+        ink[44:46, 15:36] = 1
+        ink[20:23, 35:38] = 1
+        ink[38:41, 74:77] = 1  # Octave dot is below the glyph, not a duration dot.
+        ink[22:24, 85:94] = 1
+        ink[22:24, 105:114] = 1
+        ink[5:53, 120:122] = 1
+        ink[38:40, 125:146] = 1
+        weights, diagnostics = optical_rhythm(ink, [25 / 160, 75 / 160, 135 / 160], 50, [1, 4, 2])
+        self.assertEqual(weights, [.375, 3, .5])
+        self.assertEqual(diagnostics[0]['beams'], 2)
+        self.assertFalse(diagnostics[1]['dot'])
+
     def test_shared_chorus_continuation_stays_visible_for_every_printed_verse(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

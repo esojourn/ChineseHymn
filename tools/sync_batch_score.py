@@ -16,13 +16,55 @@ class ScoreMismatch(ValueError):
         self.evidence = evidence
 
 
+def accidental_offsets(characters, indices):
+    offsets = []
+    for position, index in enumerate(indices):
+        start = indices[position - 1] + 1 if position else 0
+        prefix = ''.join(char for char, x in characters[start:index]).strip()
+        offsets.append(1 if prefix.endswith(('#', '♯', '*')) else -1 if prefix.endswith(('b', '♭')) else 0)
+    return offsets
+
+
+def optical_rhythm(ink, positions, original_height, fallback):
+    import cv2
+    count, labels, stats, centroids = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
+    components = stats[1:]
+    glyphs = [s for s in components if original_height * .25 < s[3] < original_height * .95 and
+              3 <= s[2] < s[3] * 1.8 and s[1] < original_height]
+    weights, diagnostics = [], []
+    height, width = ink.shape
+    for x, old in zip(positions, fallback):
+        candidates = [s for s in glyphs if abs(s[0] + s[2] / 2 - x * width) < original_height * .7]
+        if not candidates:
+            weights.append(old)
+            diagnostics.append({'glyphFound': False})
+            continue
+        glyph = min(candidates, key=lambda s: abs(s[0] + s[2] / 2 - x * width))
+        gx, gy, gw, gh, area = map(int, glyph)
+        center, baseline = gx + gw // 2, gy + gh
+        stripe = ink[baseline + 2:min(height, baseline + round(gh * .55)),
+                     max(0, center - round(gh * .2)):min(width, center + round(gh * .2) + 1)]
+        rows = np.flatnonzero(stripe.mean(axis=1) > .55) if stripe.size else np.array([])
+        beams = min(2, sum(index == 0 or row - rows[index - 1] > 1 for index, row in enumerate(rows)))
+        dots = [s for s in components if 1 < s[2] < gh * .3 and 1 < s[3] < gh * .3 and
+                gx + gw + 2 < s[0] < gx + gw + gh * .8 and gy + gh * .2 < s[1] < gy + gh * .85]
+        following = next((p * width for p in positions if p * width > center + gh * .5), width)
+        dashes = [s for s in components if s[2] >= gh * .3 and s[3] <= gh * .25 and
+                  gx + gw + 2 < s[0] and s[0] + s[2] < following and
+                  gy + gh * .25 < s[1] < gy + gh * .75]
+        value = (1 + len(dashes)) / (2 ** beams) * (1.5 if dots else 1)
+        weights.append(value)
+        diagnostics.append({'glyphFound': True, 'beams': int(beams), 'dot': bool(dots), 'dashes': len(dashes)})
+    return weights, diagnostics
+
+
 def note_rows(source, recognition, cache):
     global _ocr
     definition = image_source(recognition)
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
-        if data['sha256'] == recognition['sha256'] and data.get('version') == 1 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
+        if data['sha256'] == recognition['sha256'] and data.get('version') == 2 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
             return data['rows']
     import cv2
     from PIL import Image
@@ -67,10 +109,18 @@ def note_rows(source, recognition, cache):
             end = char_indices[i + 1] if i + 1 < len(char_indices) else len(characters)
             suffix = ''.join(char for char, x in characters[index + 1:end])
             rhythm.append(1 + len(re.findall('[-—]', suffix)))
+        # Recognition bands usually omit short beams below the digit baseline.
+        # Read those pixels up to (but not into) the first printed lyric row.
+        lyric_bands = [row['recognitionBand'][0] - 2 for row in system['lyrics'] if 'recognitionBand' in row]
+        analysis_bottom = max(band[1], min(lyric_bands or [band[1] + round(crop.shape[0] * .6)]))
+        ink = np.mean(image[band[0]:analysis_bottom], axis=2) < 150
+        optical, diagnostics = optical_rhythm(ink, positions, crop.shape[0], rhythm)
         rows.append({'text': text, 'confidence': float(confidence), 'notes': notes,
-                     'x': positions, 'spatialWeights': spatial, 'rhythmWeights': rhythm})
+                     'pitchOffsets': accidental_offsets(characters, char_indices),
+                     'x': positions, 'spatialWeights': spatial, 'rhythmWeights': optical,
+                     'ocrRhythmWeights': rhythm, 'opticalDiagnostics': diagnostics})
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps({'version': 1, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+    destination.write_text(json.dumps({'version': 2, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
     return rows
 
 
@@ -112,14 +162,16 @@ def match_template(rows, chroma, times, period, onset_estimate, weight_key):
     length = round(ends[-1])
     indices = np.minimum(np.searchsorted(ends, np.arange(length)), len(notes) - 1)
     scale = np.array([-1, 0, 2, 4, 5, 7, 9, 11])
-    pitches = scale[np.array(notes)[indices]]
+    offsets = np.array([value for row in rows for value in row.get('pitchOffsets', [0] * len(row['notes']))])
+    pitches = (scale[np.array(notes)] + offsets)[indices]
+    rests = np.array(notes)[indices] == 0
     frame_labels = np.array(labels)[indices]
     lo = max(0, round((onset_estimate - 15) / step))
     hi = min(chroma.shape[1], round((onset_estimate + period + 12) / step))
     candidates = []
     for key in range(12):
         score = chroma[(pitches + key) % 12, lo:hi]
-        score[pitches == -1, :] = 0
+        score[rests, :] = 0
         cost = np.ascontiguousarray(np.maximum(.05, .65 - score), dtype=np.float32)
         value, path = subsequence_path(cost)
         starts = []
@@ -162,7 +214,7 @@ def score_times(source, audio, recognition, cache):
     definition['verses'] = definition['verses'][:performed]
     two = match_template(rows, chroma, times, music['period'], music['initialOnsetEstimate'], 'rhythmWeights')
     starts_a, starts_b = one['best']['starts'], two['best']['starts']
-    evidence = {'algorithmVersion': 2, 'method': 'numbered-score melody/chroma matching', 'music': music,
+    evidence = {'algorithmVersion': 3, 'method': 'numbered-score melody/chroma matching; optical beams/dots/dashes and printed accidentals', 'music': music,
                 'rows': rows, 'spatialTemplate': one, 'rhythmTemplate': two}
     if one['best']['key'] != two['best']['key'] or max(abs(a - b) for a, b in zip(starts_a, starts_b)) > 1:
         raise ScoreMismatch('两组谱面节奏模板的定位不一致', evidence)

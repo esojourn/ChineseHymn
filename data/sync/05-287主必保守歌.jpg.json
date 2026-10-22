@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-287",
+  "status": "reviewed",
+  "source": {
+    "file": "05-287主必保守歌.jpg",
+    "sha256": "57e7b3b9d4b58c82cd79e3e25be0e2b6e3da7f0ff7c4c6753d51bdbebf9b1d6a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-287主必保守歌-领唱.mp3",
+      "sha256": "abc67673f8b51cc68eee37779d4df5a4aab1ab81523a7a94ec7a318bdaeb1c9c",
+      "duration": 197.7730612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.172962,
+      "bottom": 0.262688
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.215845,
+      "bottom": 0.304949
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.258107,
+      "bottom": 0.347833
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.30099,
+      "bottom": 0.390716
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.41348,
+      "bottom": 0.502585
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.455742,
+      "bottom": 0.544847
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.498004,
+      "bottom": 0.587108
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.540265,
+      "bottom": 0.62937
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.692532,
+      "bottom": 0.781636
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.805023,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 21.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.3,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 54.75,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 76.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.3,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.75,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.7,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.3,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.75,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 154.05,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 176.4,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 186.85,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "有时我怕信心软弱，主能保守我；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "有时甚难抵挡诱惑，主能保守我。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主必保守我，主必保守我，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因我救主如此爱我，主必保守我。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "自己不能站立稳妥，主仍保守我；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我的爱心时常冷漠，主仍保守我。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主必保守我，主必保守我，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因我救主如此爱我，主必保守我。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我在主前犹如珍宝，主要保守我；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "得蒙救赎无上美好，主要保守我。。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主必保守我，主必保守我，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因我救主如此爱我，主必保守我。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "他不愿我灵魂失丧，主必保守我；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "如此重价，他爱深广，主必保守我。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主必保守我，主必保守我，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "因我救主如此爱我，主必保守我。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-287主必保守歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

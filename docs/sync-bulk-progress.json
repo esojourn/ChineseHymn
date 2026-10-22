@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 132,
+    "published": 138,
     "existing": 8,
-    "needs-calibration": 73,
+    "needs-calibration": 71,
     "missing-audio": 2,
-    "pending": 157,
-    "ready-to-verify": 25,
+    "ready-to-verify": 32,
+    "pending": 146,
     "missing-lyrics": 23
   },
   "songs": [
@@ -290,12 +290,11 @@
       "songId": "01-362",
       "source": "01-362与我同住.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "01-362与我同住.mp3",
         "01-362与我同住-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：4"
+      ]
     },
     {
       "songId": "01-378",
@@ -305,7 +304,7 @@
       "tracks": [
         "01-378我是否要背负十架.mp3"
       ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-403",
@@ -352,22 +351,20 @@
       "songId": "01-421",
       "source": "01-421主你启示一个奥秘.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "01-421主你启示一个奥秘.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
+      ]
     },
     {
       "songId": "01-429",
       "source": "01-429祂不误事因祂是神.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "01-429祂不误事因祂是神.mp3",
         "01-429祂不误事因祂是神-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,5"
+      ]
     },
     {
       "songId": "01-446",
@@ -466,10 +463,11 @@
       "songId": "01-668",
       "source": "01-668四周墙垣坚而固.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-668四周墙垣坚而固.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-001",
@@ -486,7 +484,7 @@
       "songId": "02-002",
       "source": "02-002唯一最爱是你.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-002唯一最爱是你-领唱.mp3"
       ]
@@ -495,20 +493,22 @@
       "songId": "02-003",
       "source": "02-003但我知道.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-003但我知道-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,4,6"
     },
     {
       "songId": "02-004",
       "source": "02-004天父的爱深越海洋.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-004天父的爱深越海洋.mp3",
         "02-004天父的爱深越海洋-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.339"
     },
     {
       "songId": "02-005",
@@ -524,10 +524,11 @@
       "songId": "02-006",
       "source": "02-006感恩的泪.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-006感恩的泪.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.526"
     },
     {
       "songId": "02-007",
@@ -748,11 +749,10 @@
       "songId": "02-208",
       "source": "02-208只要信祂.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "02-208只要信祂.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
+      ]
     },
     {
       "songId": "02-209",
@@ -829,29 +829,32 @@
       "songId": "02-277",
       "source": "02-277坚固磐石.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-277坚固磐石.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-282",
       "source": "02-282我知谁掌管明天.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-282我知谁掌管明天.mp3",
         "02-282我知谁掌管明天-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-284",
       "source": "02-284等候倚靠.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-284等候倚靠.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-285",
@@ -1216,10 +1219,11 @@
       "songId": "02-470",
       "source": "02-470活着为耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-470活着为耶稣.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-473",
@@ -1307,11 +1311,12 @@
       "songId": "03-001",
       "source": "03-001你是我异象.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-001你是我异象.mp3",
         "03-001你是我异象-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.443"
     },
     {
       "songId": "03-002",
@@ -1574,11 +1579,12 @@
       "songId": "03-033",
       "source": "03-033我知道我的救赎主活着.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-033我知道我的救赎主活着.mp3",
         "03-033我知道我的救赎主活着-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "03-034",
@@ -2823,11 +2829,10 @@
       "songId": "05-222",
       "source": "05-222妙爱找我歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-222妙爱找我歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-225",
@@ -2852,12 +2857,11 @@
       "songId": "05-229",
       "source": "05-229白超乎雪歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-229白超乎雪歌.mp3",
         "05-229白超乎雪歌-领唱.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-230",
@@ -3015,11 +3019,10 @@
       "songId": "05-251",
       "source": "05-251每想到你歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-251每想到你歌.mp3"
-      ],
-      "reason": "第 2 谱行缺少第 4 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-252",
@@ -3103,11 +3106,10 @@
       "songId": "05-265",
       "source": "05-265愿跟随主歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-265愿跟随主歌-领唱.mp3"
-      ],
-      "reason": "第 2 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-267",
@@ -3236,7 +3238,7 @@
       "songId": "05-285",
       "source": "05-285一心靠赖歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-285一心靠赖歌.mp3"
       ]
@@ -3255,7 +3257,7 @@
       "songId": "05-287",
       "source": "05-287主必保守歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-287主必保守歌-领唱.mp3"
       ]
@@ -3264,7 +3266,7 @@
       "songId": "05-288",
       "source": "05-288时刻靠主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-288时刻靠主歌.mp3",
         "05-288时刻靠主歌-领唱.mp3"
@@ -3274,7 +3276,7 @@
       "songId": "05-290",
       "source": "05-290平稳安静歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-290平稳安静歌.mp3",
         "05-290平稳安静歌-领唱.mp3"
@@ -3284,11 +3286,10 @@
       "songId": "05-292",
       "source": "05-292我灵镇静歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-292我灵镇静歌-领唱.mp3"
-      ],
-      "reason": "未识别出谱行及对应横排歌词"
+      ]
     },
     {
       "songId": "05-293",
@@ -3314,16 +3315,17 @@
       "songId": "05-295",
       "source": "05-295享受平安歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "needs-calibration",
       "tracks": [
         "05-295享受平安歌.mp3"
-      ]
+      ],
+      "reason": "实际录音段数与歌词不匹配"
     },
     {
       "songId": "05-296",
       "source": "05-296紧靠上主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-296紧靠上主歌-领唱.mp3"
       ]
@@ -3416,12 +3418,11 @@
       "songId": "05-317",
       "source": "05-317谦卑随主歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-317谦卑随主歌.mp3",
         "05-317谦卑随主歌-领唱.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-319",
@@ -3474,11 +3475,10 @@
       "songId": "05-327",
       "source": "05-327坚固保障歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-327坚固保障歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-336",
@@ -3512,21 +3512,19 @@
       "songId": "05-343",
       "source": "05-343一切献上歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-343一切献上歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-346",
       "source": "05-346奉献身心歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-346奉献身心歌.mp3"
-      ],
-      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-347",
@@ -3566,7 +3564,7 @@
       "tracks": [
         "05-365活出基督歌.mp3"
       ],
-      "reason": "第 3 谱行缺少第 3 段歌词，需核对 OCR"
+      "reason": "第 3 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-366",

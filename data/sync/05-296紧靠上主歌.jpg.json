@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "songId": "05-296",
+  "status": "reviewed",
+  "source": {
+    "file": "05-296紧靠上主歌.jpg",
+    "sha256": "0b57c5b104654fc7ff2136d7dd0b2ad5d4dba0a118b253408fb23716547e325c",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-296紧靠上主歌-领唱.mp3",
+      "sha256": "4e915a5e30fb3cb9a721fa6f7804255e3ee0535a3afb4ad9dbbabc152bbc8985",
+      "duration": 117.05469387755102,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.277159,
+      "bottom": 0.38762
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.32904,
+      "bottom": 0.439502
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.380922,
+      "bottom": 0.490366
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.432804,
+      "bottom": 0.542248
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.588449,
+      "bottom": 0.697893
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.639313,
+      "bottom": 0.749775
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.691195,
+      "bottom": 0.800639
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.742059,
+      "bottom": 0.851504
+    }
+  },
+  "cues": [
+    {
+      "at": 6.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.55,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 48.3,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 62.05,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.65,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 103.4,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "但愿紧靠上主身旁，心性镇静温良，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "此乃照路真理之光，引我就主羔羊。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "圣洁之鸽，平安之使，恳求千万归来，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我恨罪恶，使主忧伤，使主与我分开。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "凡我所有心爱偶像，无论是何形状，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "求主助我拆毁消除，使我惟主是向。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "因此我能靠主身旁，心性镇静温良，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "因此纯洁真理之光，引我就主羔羊。",
+        "label": "第4段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-296紧靠上主歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

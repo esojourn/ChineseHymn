@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "songId": "05-285",
+  "status": "reviewed",
+  "source": {
+    "file": "05-285一心靠赖歌.jpg",
+    "sha256": "dfb8034fb5af099f670a73fb5a089aaec6262a44c334fdc79cf66c71f4f5f0a6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-285一心靠赖歌.mp3",
+      "sha256": "87de02cf4446174a65d5e9f32c53fd953ff72a7af9faddd45919f0d12104842b",
+      "duration": 190.17142857142858,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.162463,
+      "bottom": 0.248997
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.197902,
+      "bottom": 0.283256
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.232752,
+      "bottom": 0.318696
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.268191,
+      "bottom": 0.354136
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.303041,
+      "bottom": 0.389575
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.408179,
+      "bottom": 0.494123
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.443619,
+      "bottom": 0.529563
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.477877,
+      "bottom": 0.564412
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.513317,
+      "bottom": 0.59867
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.547575,
+      "bottom": 0.63352
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.689925,
+      "bottom": 0.77646
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.796245,
+      "bottom": 0.986146
+    }
+  },
+  "cues": [
+    {
+      "at": 18.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.45,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.25,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.6,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 52.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.65,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.0,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.25,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.05,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 111.4,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 129.65,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.45,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 145.8,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.8,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.05,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.85,
+      "region": "s3_chorus",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 180.2,
+      "region": "s4_chorus",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "凡我疑惑，全交耶稣，因我曾闻主应许，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "说“你永不抱愧蒙羞”我今信靠此言语。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应 许。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应许。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "凡我罪恶，全交耶稣，主血洗净全无瑕，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我因靠他，得成圣洁，主必接我到父家。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应 许。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应许。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "凡我畏惧，全交耶稣，我灵疲乏得依靠；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我虽经过黑暗路途，有主同在蒙光照。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应 许。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应许。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "凡我快乐，全交耶稣，只因万福在主内，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "世界万有皆属救主，凡我所需主预备。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应 许。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应许。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "我将自已全交耶稣，身体灵魂求保全，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "凡我所有，凡我所望，全交我主到永远。",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应 许。",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "我今 靠赖，一心 靠赖，我惟靠赖主应许。",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-285一心靠赖歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "01-362",
+  "status": "reviewed",
+  "source": {
+    "file": "01-362与我同住.txt",
+    "sha256": "ecb79becf5c49208de41fef84990e409667c67f0fbd35c60dae2ac3094d9f9a3",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-362与我同住.mp3",
+      "sha256": "768b266f6ff9397586a43366eca04349a96b6c782977003268c04f9255cd6ebc",
+      "duration": 220.70857142857142,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.75,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 43.65,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 78.55,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.45,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 148.35,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 183.25,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-362与我同住-领唱.mp3",
+      "sha256": "76ca1fd112875901c4ad27c777de7288522825af7e5f90e119d0e1575c5231e7",
+      "duration": 218.88,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 31,
+      "endLine": 34
+    }
+  },
+  "cues": [
+    {
+      "at": 9.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 44.05,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 78.95,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.85,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 148.75,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 183.65,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "与我同住，夕阳西沉迅速， 黑暗渐深，求主与我同住； 安慰消逝，其他帮助俱无， 无助之助，求祢与我同住。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "人生短日，转瞬就已昏暮， 我乐渐残，我的荣耀渐枯； 四境所见尽是变迁朽腐， 永不变者，求来与我同住。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "莫带威严，有如王中之王， 只带慈惠，并祢施医翅膀； 泪来洗忧，心来听我求诉， 罪人之友，请来与我同住。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "祢的同在，时时我都需要， 除祢恩典，何能使魔败逃； 有谁像祢，将我引导扶助， 或阴或晴，求祢与我同住。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "有祢赐福，我就不怕受攻， 病而不苦，流泪也不酸痛； 甚么毒钩！甚么死亡坟墓！ 依然胜过，若祢与我同住。",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "我正闭目，愿祢在我身边， 照明幽地，指我向着诸天； 天晨破晓，夜影消散尽无， 或生或死，求主与我同住。",
+        "label": "第6段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-362与我同住.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

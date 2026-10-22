@@ -319,15 +319,22 @@ class BatchTests(unittest.TestCase):
             transcript.confirm_transcript_windows(rows, [161.48], [(161.48, 162.88)], ['i'])
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
-    def test_phrase_confidence_cannot_hide_an_unaligned_first_word(self):
+    def test_zero_duration_first_word_cannot_determine_a_boundary(self):
         rows = [{'index': 0, 'window': window, 'at': 10, 'valid': True,
                  'firstWordStart': 10, 'firstWordEnd': 10.4, 'firstWordProbability': probability}
                 for window, probability in enumerate([.8, .01])]
-        with self.assertRaises(ValueError):
-            transcript.confirm_transcript_windows(rows, [10])
+        self.assertEqual(transcript.confirm_transcript_windows(rows, [10])[0], [10])
         rows[1].update(firstWordProbability=.8, firstWordEnd=10)
         with self.assertRaises(ValueError):
             transcript.confirm_transcript_windows(rows, [10])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_overlapping_held_vowel_onsets_form_one_compact_cluster(self):
+        rows = [{'index': 0, 'window': window, 'at': at, 'valid': True, 'firstWord': 'all',
+                 'firstWordStart': at, 'firstWordEnd': 202.42, 'firstWordProbability': probability}
+                for window, (at, probability) in enumerate([(200.32, .148), (200.94, .046), (200.02, .121), (200.48, .089)])]
+        times, decisions = transcript.confirm_transcript_windows(rows, [201.84], [(201.84, 202.32)], ['all'])
+        self.assertEqual(times, [200.4])
 
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_midi_templates_follow_tempo_changes_and_exclude_percussion(self):

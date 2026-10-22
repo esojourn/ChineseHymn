@@ -98,9 +98,10 @@ def confirm_transcript_windows(observations, estimates, anchor_ranges=None, anch
         for row in pair:
             at_start = (index == 0 and 0 <= estimate <= .1 and 0 <= row.get('at', 1) <= .1 and
                         row.get('positiveDurationFraction', 0) >= .65 and row.get('meanProbability', 0) >= .12)
-            first_word_valid = ('firstWordProbability' not in row or
-                                row['firstWordProbability'] >= .12 and
-                                row.get('firstWordEnd', 0) - row.get('firstWordStart', 0) >= .04)
+            # Decoder token likelihood is not an onset confidence. A word must
+            # still have an actual span before its start can support a boundary.
+            first_word_valid = ('firstWordStart' not in row or
+                                row.get('firstWordEnd', 0) - row['firstWordStart'] >= .04)
             if row['valid'] and first_word_valid or at_start:
                 accepted.append(row)
             if at_start and not row['valid']:
@@ -111,13 +112,15 @@ def confirm_transcript_windows(observations, estimates, anchor_ranges=None, anch
                     row.get('firstWordProbability', 0) >= .12 and
                     row.get('firstWordEnd', 0) - row.get('firstWordStart', 0) >= .04 and
                     row['at'] <= lo <= row.get('firstWordEnd', 0) and abs(row.get('firstWordEnd', 0) - hi) <= .5)
-        choices = [(abs(left['at'] - right['at']), (left['at'] + right['at']) / 2)
+        choices = [(abs(left['at'] - right['at']), (left['at'] + right['at']) / 2, left, right)
                    for first, left in enumerate(accepted) for right in accepted[first + 1:]
                    if left['window'] != right['window'] and abs(left['at'] - right['at']) <= .5 and
                    (lo - 1.5 <= (left['at'] + right['at']) / 2 <= hi + 1.5 or held_word(left) and held_word(right))]
-        if not choices or max(at for delta, at in choices) - min(at for delta, at in choices) > .5:
+        supported = sorted({row['at'] for delta, at, left, right in choices for row in (left, right)})
+        if (not supported or supported[-1] - supported[0] > 1 or
+                any(right - left > .5 for left, right in zip(supported, supported[1:]))):
             raise ValueError(f'第 {index + 1} 个歌词起点未通过转写及双窗口核对')
-        at = round(min(choices)[1], 2)
+        at = round(min(choices, key=lambda choice: (choice[0], choice[1]))[1], 2)
         confirmed.append(at)
         if not lo - 1.5 <= at <= hi + 1.5:
             edge_decisions.append({'index': index, 'at': at, 'reason': '两个窗口的同一延音首词词尾与转写相符',
@@ -132,7 +135,7 @@ def generate(song, cache, model_dir, threads):
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 3, 'model': 'medium/int8'}}
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 4, 'model': 'medium/int8'}}
     try:
         text = prepare.read_text(batch.ROOT / 'data' / song['source'])
         language = 'en' if len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'

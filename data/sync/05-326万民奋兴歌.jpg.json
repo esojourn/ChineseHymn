@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-326",
+  "status": "reviewed",
+  "source": {
+    "file": "05-326万民奋兴歌.jpg",
+    "sha256": "37d38e3ced11caf1ca4d7fd7db85c1ff151445b7b8b3c7e485a2da952a37bf95",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-326万民奋兴歌.mp3",
+      "sha256": "e079092c097e5699f015151291196c0762e622a1222cc7807bd312d47836a5f3",
+      "duration": 134.84408163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.159617,
+      "bottom": 0.247815
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.195268,
+      "bottom": 0.283466
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.230334,
+      "bottom": 0.318532
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.344884,
+      "bottom": 0.433082
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.37995,
+      "bottom": 0.467564
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.414432,
+      "bottom": 0.50263
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.527814,
+      "bottom": 0.615427
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.562296,
+      "bottom": 0.650493
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.597946,
+      "bottom": 0.68556
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.710743,
+      "bottom": 0.798941
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.745809,
+      "bottom": 0.834592
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.782045,
+      "bottom": 0.870827
+    }
+  },
+  "cues": [
+    {
+      "at": 10.25,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.2,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 30.5,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.9,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.05,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 61.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.3,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 81.7,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 91.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 101.9,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 112.2,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 122.6,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "清晨之光渐放射，黑暗渐行消灭，’",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "大地人民正醒来，痛悔从前罪孽；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "吹过海面的和风，带到远方消息，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "报道万民都奋兴，预备邹城克敌。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "待看万民同敬拜我众所爱之神，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "万心如香渐上升，大家感激主恩；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "待看罪人都认罪，大家顺从福音，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "寻求救主的福佑，服事惟一至尊。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "但愿救恩如川流，滔滔滚滚前行，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "流遍五洲的万国，丰满与日俱增；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "直到卑贱的人民，得胜回归家庭；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "直到圣洁的人民，都说“上主已临”！",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-326万民奋兴歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

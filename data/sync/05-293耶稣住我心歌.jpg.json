@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-293",
+  "status": "reviewed",
+  "source": {
+    "file": "05-293耶稣住我心歌.jpg",
+    "sha256": "b41bd04abc1094579a06d4537897490f6b9edfb067d8e1cc8053cac863245b84",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-293耶稣住我心歌.mp3",
+      "sha256": "079e9feb24f4b396da5edc98b8a8a10176e0d2dcc0232008a745719c991fca46",
+      "duration": 198.97469387755103,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.189437,
+      "bottom": 0.278234
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.226234,
+      "bottom": 0.31503
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.26303,
+      "bottom": 0.352548
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.300548,
+      "bottom": 0.389345
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.413824,
+      "bottom": 0.503342
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.45062,
+      "bottom": 0.54086
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.487417,
+      "bottom": 0.577657
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.524214,
+      "bottom": 0.613732
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.687273,
+      "bottom": 0.776069
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.80127,
+      "bottom": 0.891509
+    }
+  },
+  "cues": [
+    {
+      "at": 22.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.05,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 44.75,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.25,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 66.8,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 77.15,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.85,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.35,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.25,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.95,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.45,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 155.0,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 165.35,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 177.05,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 187.55,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我生命有何等奇异的大改变！自耶稣来住在我心；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我久慕的亮光照耀我灵里面，自耶稣来住在我心。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "自耶稣来住在我心，自耶稣来住在我心，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "喜乐潮溢我魂，如海涛之滚滚，自耶稣来住在我心。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我不再入迷途，愿与主常亲近，自耶稣来住在我心；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我的罪虽众多，主宝血已洗净，自耶稣来住在我心。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "自耶稣来住在我心，自耶稣来住在我心，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "喜乐潮溢我魂，如海涛之滚滚，自耶稣来住在我心。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我今有大盼望，又确实，又稳固，自耶稣来住在我心；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "无疑云与凄雾来遮蔽我道路，白耶稣来住在我心。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "自耶稣来住在我心，自耶稣来住在我心，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "喜乐潮溢我魂，如海涛之滚滚，自耶稣来住在我心。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "虽经过死荫谷，亦有光来照我，自耶稣来住在我心；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "我因信能望见那美丽的城廓，自耶稣来住在我心。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "自耶稣来住在我心，自耶稣来住在我心，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "喜乐潮溢我魂，如海涛之滚滚，自耶稣来住在我心。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-293耶稣住我心歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

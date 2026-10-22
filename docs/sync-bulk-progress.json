@@ -2,13 +2,13 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 185,
+    "published": 191,
     "existing": 8,
-    "needs-calibration": 138,
+    "needs-calibration": 139,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "pending": 53,
-    "ready-to-verify": 8,
+    "ready-to-verify": 3,
+    "pending": 51,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1650,7 +1650,7 @@
       "songId": "03-032",
       "source": "03-032让耶稣进入心中.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "03-032让耶稣进入心中.mp3",
         "03-032让耶稣进入心中-领唱.mp3"
@@ -1671,11 +1671,12 @@
       "songId": "03-034",
       "source": "03-034先求他的国.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-034先求他的国.mp3",
         "03-034先求他的国-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4"
     },
     {
       "songId": "03-035",
@@ -3264,7 +3265,7 @@
       "songId": "05-279",
       "source": "05-279主不改变歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-279主不改变歌.mp3"
       ]
@@ -3319,7 +3320,7 @@
       "songId": "05-286",
       "source": "05-286靠主有福歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-286靠主有福歌.mp3"
       ]
@@ -3366,7 +3367,7 @@
       "songId": "05-293",
       "source": "05-293耶稣住我心歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-293耶稣住我心歌.mp3"
       ]
@@ -3385,7 +3386,7 @@
       "songId": "05-295",
       "source": "05-295享受平安歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-295享受平安歌.mp3"
       ]
@@ -3534,7 +3535,7 @@
       "songId": "05-326",
       "source": "05-326万民奋兴歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-326万民奋兴歌.mp3"
       ]
@@ -3552,7 +3553,7 @@
       "songId": "05-336",
       "source": "05-336为你离天歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-336为你离天歌-领唱.mp3"
       ]

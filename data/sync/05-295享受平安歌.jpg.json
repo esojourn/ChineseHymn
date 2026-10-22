@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-295",
+  "status": "reviewed",
+  "source": {
+    "file": "05-295享受平安歌.jpg",
+    "sha256": "9d5bc8e78251f07f81f6347299e7f728ed0d8b77a427a45152211fc39fa73261",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-295享受平安歌.mp3",
+      "sha256": "6403d4108bbc3caaaef0b7cf5d2d37ff048ea077b42d654ab714081fa0ee9edb",
+      "duration": 125.57061224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.175188,
+      "bottom": 0.261536
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.212901,
+      "bottom": 0.299248
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.251221,
+      "bottom": 0.337569
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.352802,
+      "bottom": 0.438542
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.391123,
+      "bottom": 0.476254
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.428228,
+      "bottom": 0.513967
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.528592,
+      "bottom": 0.614332
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.566305,
+      "bottom": 0.652044
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.604017,
+      "bottom": 0.689757
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.70499,
+      "bottom": 0.790729
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.742094,
+      "bottom": 0.82905
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.781024,
+      "bottom": 0.866763
+    }
+  },
+  "cues": [
+    {
+      "at": 5.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 25.35,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 35.35,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 45.6,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 55.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.55,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.55,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.9,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.85,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.85,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我闻耶稣有声说道：“就我享受平安；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "劳苦之人都当休息，低头靠我怀‘间。”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我本劳苦，疲倦，忧愁，我既前来就主；",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "在 主爱中快 乐欢欣，觅 得安身之处。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我闻耶稣有声说道：“我有活水灵泉；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "可让渴者自由取饮，生活力量加添。”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我闻主言既来就主，畅饮澄清活水；",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "苦 渴顿消,灵 魂重苏,怡 然活在主怀。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我闻耶稣有声说道：“我乃暗中明光；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "向我仰望，我是太阳，终日照耀辉煌。”",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我闻主言，向主仰望，得见红日明星；",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "我 必藉主生 命光明，行 完一世路程。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-295享受平安歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

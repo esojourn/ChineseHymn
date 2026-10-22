@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "songId": "05-286",
+  "status": "reviewed",
+  "source": {
+    "file": "05-286靠主有福歌.jpg",
+    "sha256": "8f99fc160c2e5bbe3c50615c3ac1d0033a44ae8cb0842f28b34335cfac0b6154",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-286靠主有福歌.mp3",
+      "sha256": "afc39690177d8a462826f7c524499db44c39bff7822e6fc7e728b1228ad9e20d",
+      "duration": 306.8865306122449,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.145261,
+      "bottom": 0.232079
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.174018,
+      "bottom": 0.260292
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.202232,
+      "bottom": 0.288506
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.230445,
+      "bottom": 0.317263
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.328651,
+      "bottom": 0.415468
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.356865,
+      "bottom": 0.443682
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.385079,
+      "bottom": 0.471353
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.41275,
+      "bottom": 0.499567
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.54568,
+      "bottom": 0.631412
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.63846,
+      "bottom": 0.725277
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.732868,
+      "bottom": 0.819143
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.826191,
+      "bottom": 0.913008
+    }
+  },
+  "cues": [
+    {
+      "at": 43.85,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 54.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.5,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.55,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 87.1,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.55,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 109.75,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 120.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.4,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 142.45,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 153.0,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 164.45,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 186.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 197.4,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 208.45,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 219.0,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 230.45,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 241.65,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 252.5,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 263.3,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 274.35,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 284.9,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 296.35,
+      "region": "s6_chorus",
+      "label": "第4段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "倚靠耶和华的人真有福，因他必随时蒙扶助，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "若要承受所应许的赏赐，必紧紧跟随主脚步。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "倚靠耶和华的人真有福，不离开主安排正路，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "忍耐坚守所承认的指望，主必定保守他脚步。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "蒙天父扶助的人真有福，主耶稣要与他为友，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "他不惊慌也不灰心丧胆，因我主常保护拯救。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第3段：第6谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "行在主道中的人真有福，他日日向前又向上，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "因信行走在恩主慈爱中，他所需天父必供养。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "要倚靠主，专心靠主，在一",
+        "label": "第4段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "切事上要认定主，主必指引你的路。",
+        "label": "第4段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-286靠主有福歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

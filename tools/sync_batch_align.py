@@ -203,6 +203,11 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
     batch = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(batch)
     reference = root / 'data' / song['reference']
+    from mutagen.mp3 import MP3
+    if len(cue_times) != len(definitions) or not cue_times or not all(np.isfinite(at) for at in cue_times):
+        raise ValueError('谱行数量与完整时间轴不一致')
+    if cue_times[0] < 0 or cue_times[-1] >= MP3(reference).info.length or any(a + .5 >= b for a, b in zip(cue_times, cue_times[1:])):
+        raise ValueError('时间点未递增或超出实际录音')
     cues = []
     for index, (at, item) in enumerate(zip(cue_times, definitions)):
         cue = {'at': at, 'region': item['region'], 'label': item['label'], 'transition': 'reading'}
@@ -211,7 +216,6 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         elif song['type'] == 'image' and index in first_indices:
             cue['transition'] = 'return'
         cues.append(cue)
-    from mutagen.mp3 import MP3
     tracks = []
     for item in song['tracks']:
         file = root / 'data' / item['file']

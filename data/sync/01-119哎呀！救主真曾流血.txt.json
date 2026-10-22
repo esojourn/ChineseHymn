@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "01-119",
+  "status": "reviewed",
+  "source": {
+    "file": "01-119哎呀！救主真曾流血.txt",
+    "sha256": "67da1f99f658ce2a9a9112a992c230a43b7c999d18e40783c4e02969870208a1",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-119哎呀！救主真曾流血.mp3",
+      "sha256": "2ba75390a3c62bed89c2f5712701c09a6c86c1526f9abf5ae41f56693439b868",
+      "duration": 154.968,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.85,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 39.7,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 66.09,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 93.61,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 120.6,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-119哎呀！救主真曾流血-领唱.mp3",
+      "sha256": "be45584e30dcb20d6319db4e2cd2ed6619a4400d26f7e8375601f389a4088ead",
+      "duration": 133.30285714285714,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 8.55,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.2,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.99,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.71,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.26,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "哎呀！救主真曾流血？真曾舍命亡躬？ 他肯牺牲他的超越，为我这个小虫？",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他在木上那样哀叹，可是为我罪愆？ 怜悯何满！慈爱何泛！恩典何其无边！",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "难怪太阳立变暗乌，隐藏一切荣光， 当神基督造物的主，为人担罪而亡。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "当我看见他十字架，也当隐藏羞脸， 心当融化发出感嗟，眼当流泪自贬。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "但这满腔忧伤，不能稍还主爱的债； 惟献自己身心于主，一生永不更改。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-119哎呀！救主真曾流血.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

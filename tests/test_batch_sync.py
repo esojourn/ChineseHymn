@@ -11,7 +11,7 @@ TOOLS = Path(__file__).parents[1] / 'tools'
 sys.path.insert(0, str(TOOLS))
 import sync_batch_sources as sources
 try:
-    from sync_batch_align import confirm_boundaries
+    from sync_batch_align import confirm_boundaries, export_result
     from sync_batch_audio import alignment_band
 except ImportError:
     confirm_boundaries = None
@@ -122,6 +122,21 @@ class BatchTests(unittest.TestCase):
         self.assertEqual(definition['regions']['s2_v1'], definition['regions']['s2_v2'])
         self.assertLess(definition['regions']['s2_v2']['top'], .45)
 
+    def test_tune_reference_footer_is_not_a_fifth_lyric_row(self):
+        def row(top, text):
+            return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}
+        definition = sources.image_source({'rows': [row(.1, '11335566'), row(.15, '第一段实际歌词'),
+            row(.2, '2.第二段实际歌词'), row(.3, '通用调399三一颂')]})
+        self.assertEqual(len(definition['verses']), 2)
+        self.assertEqual(definition['verses'][0][0]['text'], '第一段实际歌词')
+
+    def test_one_misrecognized_bar_symbol_does_not_hide_the_last_music_system(self):
+        def row(top, text):
+            return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .95}
+        definition = sources.image_source({'rows': [row(.1, '11335566'), row(.15, '第一谱行的歌词'),
+            row(.3, '冏3211---1-1-'), row(.35, '最后一行的歌词')]})
+        self.assertEqual(len(definition['systems']), 2)
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_music_resolves_a_conflict_only_after_two_independent_acoustic_anchors(self):
         verses = [[{'region': 'r' + str(i)}] for i in range(5)]
@@ -147,6 +162,15 @@ class BatchTests(unittest.TestCase):
             band = alignment_band(n, m, lag)
             self.assertLess(abs(lag), band)
             self.assertLess(abs(m - n - lag), band)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_changed_system_count_cannot_silently_truncate_the_performance_order(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with self.assertRaisesRegex(ValueError, '谱行数量'):
+                export_result({'reference': 'missing.mp3'}, root, root, root / 'evidence.json', {},
+                              0, {}, [{'region': 'a'}, {'region': 'b'}], [10], [0])
+            self.assertFalse((root / 'evidence.json').exists())
 
 
 if __name__ == '__main__':

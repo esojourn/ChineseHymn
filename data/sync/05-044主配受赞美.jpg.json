@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "songId": "05-044",
+  "status": "reviewed",
+  "source": {
+    "file": "05-044主配受赞美.jpg",
+    "sha256": "826fbbc9996dee920b49846aba07249078c3ff251bd088affca9a6a3c9548450",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-044主配受赞美.mp3",
+      "sha256": "3f83cabb573f4b164befa75dc6912da8156f2484ebec30f3a3cfa1b69ab54bd0",
+      "duration": 117.48267573696145,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.65,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 18.6,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 29.65,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 40.6,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 51.65,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 62.6,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 73.65,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 84.6,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 95.65,
+          "region": "s1_v5",
+          "label": "第5段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 106.6,
+          "region": "s2_v5",
+          "label": "第5段：第2谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-044主配受赞美-领唱.mp3",
+      "sha256": "278fe7ad60ca72497c0a0238539218453342f8a555bb41137a966a0bf43e2e5a",
+      "duration": 116.544,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.260414,
+      "bottom": 0.361415
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.317777,
+      "bottom": 0.417922
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.376852,
+      "bottom": 0.475285
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.433359,
+      "bottom": 0.53436
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.491578,
+      "bottom": 0.591723
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.643119,
+      "bottom": 0.743264
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.701338,
+      "bottom": 0.802339
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.759557,
+      "bottom": 0.860559
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.817776,
+      "bottom": 0.918778
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.875995,
+      "bottom": 0.977853
+    }
+  },
+  "cues": [
+    {
+      "at": 6.65,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 39.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.65,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 61.6,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.65,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 83.6,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.65,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 105.6,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我主耶稣，惟你是配永永远远受赞美；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "因你爱心恩典、善良，远超我们所能想。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我们满心感激不尽，前来称颂你尊名；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "一生一世满被恩惠，到处 述说你宝贵。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我们所拜救主耶稣，满有恩典何宽恕；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "你的爱心和你能力，永无限量永无已。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "耶稣，你是首先末后，你要领我到永久；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "因着已往，我赞美你，为着将来，我靠你。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "赞他！赞他！赞我恩人，圣徒们哪，当高声！",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "赞他！赞他！直到天上，赞美完全，赞久长。阿们）",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-044主配受赞美.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

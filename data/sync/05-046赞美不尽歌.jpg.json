@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "songId": "05-046",
+  "status": "reviewed",
+  "source": {
+    "file": "05-046赞美不尽歌.jpg",
+    "sha256": "36b9dd705f6fcc6702a53e415a5211dc9e9a7636c841b89be081d7ff2f2b6299",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-046赞美不尽歌.mp3",
+      "sha256": "82478a5e25cb587083e80fba7a1089e4598e3a03a4631308494a3b8f80decf13",
+      "duration": 137.71755102040817,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.4,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 21.1,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 31.2,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 41.25,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 52.2,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 62.9,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 72.9,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 82.95,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 93.9,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 104.7,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 114.6,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 124.75,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-046赞美不尽歌-领唱.mp3",
+      "sha256": "fbe2fe4c8bbf2011015164bfc18addaf986ccc9a8b0d235797edc1e48d0b2371",
+      "duration": 148.392,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.18774,
+      "bottom": 0.276839
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.230993,
+      "bottom": 0.318802
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.272955,
+      "bottom": 0.362055
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.428539,
+      "bottom": 0.516347
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.470501,
+      "bottom": 0.559601
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.513109,
+      "bottom": 0.601563
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.720984,
+      "bottom": 0.809438
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.876567,
+      "bottom": 0.965021
+    }
+  },
+  "cues": [
+    {
+      "at": 22.3,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.2,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.35,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 64.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.2,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.35,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.4,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 117.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 127.3,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.45,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "赞美不尽赞美，赞美救主恩深；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "感佩无限感佩，感佩救主舍身。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "看哪！神子在各各他，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "为你和我钉十字架。．（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主爱远胜父母，远胜最好朋友；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "蒙恩罪人欢呼主爱直到永久。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "看哪！神子在各各他，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "为你和我钉十字架。．（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "罪人今已蒙恩，魔鬼今已失败；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "谁能再使我们离开基督的爱！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "看哪！神子在各各他，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "为你和我钉十字架。．（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-046赞美不尽歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "songId": "05-048",
+  "status": "reviewed",
+  "source": {
+    "file": "05-048道路真理生命歌.jpg",
+    "sha256": "5091e0dd1ceb5ede7570a0c9201aac859b471a0e8481f749a342de50c1bad4df",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-048道路真理生命歌.mp3",
+      "sha256": "1e77237c79c3f0ba93ffd15dd7748ab210e43600d7d279d8e8e8c147328c189c",
+      "duration": 93.85795918367347,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.35,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 17.2,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 28.35,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 39.2,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 50.35,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 61.2,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 72.35,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 83.2,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-048道路真理生命歌-领唱.mp3",
+      "sha256": "e64b6b222c8445ea123577cd96afa699a0f572a4d0a119fda251862a51b36b9f",
+      "duration": 93.432,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.301542,
+      "bottom": 0.409719
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.369474,
+      "bottom": 0.476652
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.436407,
+      "bottom": 0.543585
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.504339,
+      "bottom": 0.612516
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.683159,
+      "bottom": 0.789339
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.750092,
+      "bottom": 0.857271
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.816026,
+      "bottom": 0.924204
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.883958,
+      "bottom": 0.991137
+    }
+  },
+  "cues": [
+    {
+      "at": 5.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.8,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.95,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 38.8,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.95,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.95,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主是道路，从主而行，方能出死入生；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "无论何人寻求天父，当从主路而行。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主是真理，惟主圣言能赐智慧聪明；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "惟主多方教导我心,使我心地洁清。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主是生命，已裂之坟证明胜死权能；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "人能诚心信托我主，定免地狱忧惊。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主是道路、真理、生命，求使认识路程；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "坚守真理，获得生命，永远快乐安宁。（阿们）",
+        "label": "第4段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-048道路真理生命歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "05-042",
+  "status": "reviewed",
+  "source": {
+    "file": "05-042尊贵名歌.jpg",
+    "sha256": "0ab48631f5326a3e43dae1f33c2893af89045ab6cd5314a87e5d549068635c7a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-042尊贵名歌.mp3",
+      "sha256": "321d2e9f0ac4196813b232247ad4936aaf37940a5acbb43bb4278eaebf4056ab",
+      "duration": 192.96,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.192795,
+      "bottom": 0.277111
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.234087,
+      "bottom": 0.318403
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.274782,
+      "bottom": 0.359696
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.316673,
+      "bottom": 0.401587
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.452519,
+      "bottom": 0.536835
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.493214,
+      "bottom": 0.57753
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.533908,
+      "bottom": 0.618224
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.574602,
+      "bottom": 0.65832
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.763112,
+      "bottom": 0.848026
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.899557,
+      "bottom": 0.984472
+    }
+  },
+  "cues": [
+    {
+      "at": 22.8,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.25,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 43.05,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.85,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.5,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 75.95,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 108.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 118.65,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 128.45,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 141.25,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 150.9,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 161.35,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.15,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 183.95,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "忧苦弟兄内心软弱，该常记念耶稣名；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "靠着救主犹如磐石，忧虑就全变安稳。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "尊贵名，何等美！地所望与天所爱。尊贵名，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "何等美！地所望与天所爱。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "常用耶稣名字思念，可当盾牌保护心。",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "魔鬼万般引诱危险， 祷告耶稣全得胜。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "尊贵名，何等美！地所望与天所爱。尊贵名，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "何等美！地所望与天所爱。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣名字真是奇珍，使我灵魂大高兴。",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "主伸爱手来接罪人，应该歌唱主圣名。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "尊贵名，何等美！地所望与天所爱。尊贵名，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "何等美！地所望与天所爱。（阿们）",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "听得主名全要跪拜，在主脚下俯伏身；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "天地主宰永远赞美，救主永远受尊称。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "尊贵名，何等美！地所望与天所爱。尊贵名，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "何等美！地所望与天所爱。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-042尊贵名歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

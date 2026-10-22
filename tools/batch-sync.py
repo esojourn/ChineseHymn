@@ -150,11 +150,12 @@ def transcribe(job):
 
 def recognize_image(job):
     global _ocr
-    song, cache, threads = job
+    song, cache, threads, *options = job
+    retry = bool(options and options[0])
     destination = Path(cache) / 'ocr' / (song['source'] + '.json')
     if destination.exists():
         previous = json.loads(destination.read_text())
-        if previous.get('sha256') == song['sha256'] and previous.get('recognizerVersion') == 2:
+        if not retry and previous.get('sha256') == song['sha256'] and previous.get('recognizerVersion', 0) >= 2:
             return song['songId'], 'cached'
     if _ocr is None:
         from rapidocr_onnxruntime import RapidOCR
@@ -184,12 +185,23 @@ def recognize_image(job):
     projection = (gray[:, int(width * .06):int(width * .97)] < 150).sum(axis=1)
     mask = binary_closing(projection > width * .03, structure=np.ones(max(2, round(height * .004))))
     labels, count = label(mask)
-    rows = []
+    bands = []
     for index in range(1, count + 1):
         ys = np.flatnonzero(labels == index)
         if len(ys) < height * .004:
             continue
         top, bottom = max(0, int(ys[0]) - 4), min(height, int(ys[-1]) + 5)
+        bands.append((top, bottom))
+    # Touching glyphs can join two or three printed lyric rows into one projection band.
+    ordinary = sorted(bottom - top for top, bottom in bands if height * .012 <= bottom - top <= height * .04)
+    line_height = ordinary[round((len(ordinary) - 1) * .75)] if ordinary else height * .025
+    split = []
+    for top, bottom in bands:
+        pieces = max(1, round((bottom - top) / line_height)) if bottom - top > line_height * 1.65 else 1
+        edges = np.linspace(top, bottom, pieces + 1).round().astype(int)
+        split.extend(zip(edges[:-1].tolist(), edges[1:].tolist()))
+    rows = []
+    for top, bottom in split:
         # Recognize horizontal bands explicitly: whole-page OCR often merges verses into vertical columns.
         result, _ = _ocr(image[top:bottom], use_det=False, use_cls=False)
         if result:
@@ -200,7 +212,7 @@ def recognize_image(job):
                          'recognitionBand': [top, bottom],
                          'text': text, 'confidence': float(confidence)})
     save(destination, {'source': song['source'], 'sha256': song['sha256'], 'width': width, 'height': height,
-                       'recognizerVersion': 2, 'recognitionAngle': angle,
+                       'recognizerVersion': 3, 'recognitionAngle': angle,
                        'rows': rows, 'elapsedSeconds': round(time.monotonic() - start, 3)})
     return song['songId'], f'{len(rows)} rows, {round(time.monotonic() - start, 1)} s'
 
@@ -245,7 +257,7 @@ def main():
             selected = [song for song in selected if song['type'] == 'image']
     else:
         worker = recognize_image if args.stage == 'ocr' else transcribe
-    jobs = [(song, str(args.cache), args.threads) if args.stage == 'ocr' else
+    jobs = [(song, str(args.cache), args.threads, args.retry) if args.stage == 'ocr' else
             (song, str(args.cache), args.model_dir, args.threads, args.stage, args.retry) if args.stage in ('align', 'score') else
             (song, str(args.cache), args.model_dir, args.model, args.threads) for song in selected]
     with ProcessPoolExecutor(max_workers=args.workers) as pool:

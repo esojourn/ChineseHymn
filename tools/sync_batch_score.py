@@ -18,10 +18,11 @@ class ScoreMismatch(ValueError):
 
 def note_rows(source, recognition, cache):
     global _ocr
+    definition = image_source(recognition)
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
-        if data['sha256'] == recognition['sha256'] and data.get('version') == 1:
+        if data['sha256'] == recognition['sha256'] and data.get('version') == 1 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
             return data['rows']
     import cv2
     from PIL import Image
@@ -32,7 +33,6 @@ def note_rows(source, recognition, cache):
     h, w = image.shape[:2]
     matrix = cv2.getRotationMatrix2D((w / 2, h / 2), recognition.get('recognitionAngle', 0), 1)
     image = cv2.warpAffine(image, matrix, (w, h), borderValue=(255, 255, 255))
-    definition = image_source(recognition)
     rows = []
     for system in definition['systems']:
         band = system['notes'].get('recognitionBand')
@@ -70,7 +70,7 @@ def note_rows(source, recognition, cache):
         rows.append({'text': text, 'confidence': float(confidence), 'notes': notes,
                      'x': positions, 'spatialWeights': spatial, 'rhythmWeights': rhythm})
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps({'version': 1, 'sha256': recognition['sha256'], 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+    destination.write_text(json.dumps({'version': 1, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
     return rows
 
 

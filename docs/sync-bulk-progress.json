@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 18,
+    "published": 24,
     "existing": 8,
-    "needs-calibration": 11,
-    "ready-to-verify": 29,
-    "pending": 329,
+    "needs-calibration": 48,
+    "pending": 207,
     "missing-audio": 2,
+    "ready-to-verify": 108,
     "missing-lyrics": 23
   },
   "songs": [
@@ -66,7 +66,7 @@
       "songId": "01-119",
       "source": "01-119哎呀！救主真曾流血.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-119哎呀！救主真曾流血.mp3",
         "01-119哎呀！救主真曾流血-领唱.mp3"
@@ -1970,11 +1970,10 @@
       "songId": "05-015",
       "source": "05-015称谢歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-015称谢歌.mp3"
-      ],
-      "reason": "第 3 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-016",
@@ -2109,7 +2108,7 @@
       "songId": "05-042",
       "source": "05-042尊贵名歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-042尊贵名歌.mp3"
       ]
@@ -2118,7 +2117,7 @@
       "songId": "05-044",
       "source": "05-044主配受赞美.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-044主配受赞美.mp3",
         "05-044主配受赞美-领唱.mp3"
@@ -2128,7 +2127,7 @@
       "songId": "05-046",
       "source": "05-046赞美不尽歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-046赞美不尽歌.mp3",
         "05-046赞美不尽歌-领唱.mp3"
@@ -2138,7 +2137,7 @@
       "songId": "05-047",
       "source": "05-047颂主歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-047颂主歌.mp3",
         "05-047颂主歌-领唱.mp3"
@@ -2148,7 +2147,7 @@
       "songId": "05-048",
       "source": "05-048道路真理生命歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-048道路真理生命歌.mp3",
         "05-048道路真理生命歌-领唱.mp3"
@@ -2438,7 +2437,7 @@
       "songId": "05-113",
       "source": "05-113大开城门.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-113大开城门.mp3",
         "05-113大开城门-领唱.mp3"
@@ -2448,25 +2447,27 @@
       "songId": "05-114",
       "source": "05-114同声欢呼歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-114同声欢呼歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-117",
       "source": "05-117号筒吹响歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-117号筒吹响歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-119",
       "source": "05-119必须警醒.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-119必须警醒.mp3"
       ]
@@ -2475,7 +2476,7 @@
       "songId": "05-121",
       "source": "05-121将见我王歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-121将见我王歌.mp3"
       ]
@@ -2484,7 +2485,7 @@
       "songId": "05-122",
       "source": "05-122教会根基.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-122教会根基.mp3"
       ]
@@ -2493,7 +2494,7 @@
       "songId": "05-129",
       "source": "05-129信徒相爱歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-129信徒相爱歌.mp3",
         "05-129信徒相爱歌-领唱.mp3"
@@ -2503,7 +2504,7 @@
       "songId": "05-131",
       "source": "05-131系连妙结.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-131系连妙结-领唱.mp3"
       ]
@@ -2512,7 +2513,7 @@
       "songId": "05-133",
       "source": "05-133安静近主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-133安静近主歌.mp3",
         "05-133安静近主歌-领唱.mp3"
@@ -2522,7 +2523,7 @@
       "songId": "05-134",
       "source": "05-134今到主殿歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-134今到主殿歌.mp3"
       ]
@@ -2531,7 +2532,7 @@
       "songId": "05-136",
       "source": "05-136聚会归主名下歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-136聚会归主名下歌.mp3"
       ]
@@ -2540,7 +2541,7 @@
       "songId": "05-139",
       "source": "05-139平安佳日歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-139平安佳日歌-领唱.mp3"
       ]
@@ -2549,7 +2550,7 @@
       "songId": "05-141",
       "source": "05-141高唱主名歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-141高唱主名歌-领唱.mp3"
       ]
@@ -2558,7 +2559,7 @@
       "songId": "05-142",
       "source": "05-142耶稣普治歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-142耶稣普治歌.mp3"
       ]
@@ -2567,7 +2568,7 @@
       "songId": "05-145",
       "source": "05-145复兴主工歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-145复兴主工歌.mp3"
       ]
@@ -2576,7 +2577,7 @@
       "songId": "05-151",
       "source": "05-151清早敬拜歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-151清早敬拜歌.mp3"
       ]
@@ -2585,16 +2586,17 @@
       "songId": "05-153",
       "source": "05-153夕阳西沉歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-153夕阳西沉歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-159",
       "source": "05-159快乐日歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-159快乐日歌.mp3"
       ]
@@ -2603,7 +2605,7 @@
       "songId": "05-161",
       "source": "05-161天上欢乐歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-161天上欢乐歌.mp3"
       ]
@@ -2612,7 +2614,7 @@
       "songId": "05-162",
       "source": "05-162许愿歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-162许愿歌-领唱.mp3"
       ]
@@ -2621,16 +2623,17 @@
       "songId": "05-165",
       "source": "05-165擘开生命饼歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-165擘开生命饼歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-169",
       "source": "05-169领受饼杯歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-169领受饼杯歌.mp3"
       ]
@@ -2639,7 +2642,7 @@
       "songId": "05-197",
       "source": "05-197生命之道歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-197生命之道歌-领唱.mp3"
       ]
@@ -2648,7 +2651,7 @@
       "songId": "05-201",
       "source": "05-201赐我圣经歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-201赐我圣经歌.mp3",
         "05-201赐我圣经歌-领唱.mp3"
@@ -2658,7 +2661,7 @@
       "songId": "05-203",
       "source": "05-203祷告良辰歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-203祷告良辰歌.mp3"
       ]
@@ -2667,7 +2670,7 @@
       "songId": "05-205",
       "source": "05-205不住祈祷歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-205不住祈祷歌.mp3"
       ]
@@ -2676,7 +2679,7 @@
       "songId": "05-206",
       "source": "05-206赐福如雨歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-206赐福如雨歌.mp3"
       ]
@@ -2685,7 +2688,7 @@
       "songId": "05-207",
       "source": "05-207凭主旨意行.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-207凭主旨意行.mp3",
         "05-207凭主旨意行-领唱.mp3"
@@ -2695,17 +2698,18 @@
       "songId": "05-210",
       "source": "05-210宝血宏恩歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-210宝血宏恩歌.mp3",
         "05-210宝血宏恩歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-211",
       "source": "05-211流血之泉歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-211流血之泉歌-领唱.mp3"
       ]
@@ -2714,7 +2718,7 @@
       "songId": "05-212",
       "source": "05-212宝贵血泉歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-212宝贵血泉歌.mp3",
         "05-212宝贵血泉歌-领唱.mp3"
@@ -2724,7 +2728,7 @@
       "songId": "05-213",
       "source": "05-213曾否就主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-213曾否就主歌-领唱.mp3"
       ]
@@ -2733,7 +2737,7 @@
       "songId": "05-214",
       "source": "05-214依傍十架歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-214依傍十架歌.mp3",
         "05-214依傍十架歌-领唱.mp3"
@@ -2743,7 +2747,7 @@
       "songId": "05-215",
       "source": "05-215奇妙能力歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-215奇妙能力歌.mp3"
       ]
@@ -2752,7 +2756,7 @@
       "songId": "05-216",
       "source": "05-216近主十架歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-216近主十架歌.mp3"
       ]
@@ -2761,16 +2765,17 @@
       "songId": "05-217",
       "source": "05-217主寻亡羊歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-217主寻亡羊歌-领唱.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-220",
       "source": "05-220感谢主恩歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-220感谢主恩歌.mp3",
         "05-220感谢主恩歌-领唱.mp3"
@@ -2780,7 +2785,7 @@
       "songId": "05-221",
       "source": "05-221主敲心门歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-221主敲心门歌-领唱.mp3"
       ]
@@ -2789,25 +2794,27 @@
       "songId": "05-222",
       "source": "05-222妙爱找我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-222妙爱找我歌.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-225",
       "source": "05-225我来就主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-225我来就主歌-领唱.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 5 段歌词，需核对 OCR"
     },
     {
       "songId": "05-228",
       "source": "05-228求主洁净我心歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-228求主洁净我心歌.mp3",
         "05-228求主洁净我心歌-领唱.mp3"
@@ -2817,27 +2824,29 @@
       "songId": "05-229",
       "source": "05-229白超乎雪歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-229白超乎雪歌.mp3",
         "05-229白超乎雪歌-领唱.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
     },
     {
       "songId": "05-230",
       "source": "05-230荣耀释放歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-230荣耀释放歌.mp3",
         "05-230荣耀释放歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-231",
       "source": "05-231求来我心歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-231求来我心歌-领唱.mp3"
       ]
@@ -2846,7 +2855,7 @@
       "songId": "05-234",
       "source": "05-234主爱越久越深.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-234主爱越久越深.mp3"
       ]
@@ -2855,7 +2864,7 @@
       "songId": "05-235",
       "source": "05-235主恩更多歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-235主恩更多歌.mp3",
         "05-235主恩更多歌-领唱.mp3"
@@ -2865,7 +2874,7 @@
       "songId": "05-236",
       "source": "05-236时刻蒙恩歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-236时刻蒙恩歌.mp3",
         "05-236时刻蒙恩歌-领唱.mp3"
@@ -2875,7 +2884,7 @@
       "songId": "05-237",
       "source": "05-237数算主恩歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-237数算主恩歌.mp3"
       ]
@@ -2884,7 +2893,7 @@
       "songId": "05-238",
       "source": "05-238神圣纯爱歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-238神圣纯爱歌.mp3"
       ]
@@ -2893,16 +2902,17 @@
       "songId": "05-239",
       "source": "05-239耶稣爱我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-239耶稣爱我歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-240",
       "source": "05-240主更宝贵歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-240主更宝贵歌.mp3"
       ]
@@ -2911,7 +2921,7 @@
       "songId": "05-243",
       "source": "05-243唯独耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-243唯独耶稣歌.mp3",
         "05-243唯独耶稣歌-领唱.mp3"
@@ -2921,7 +2931,7 @@
       "songId": "05-244",
       "source": "05-244我要耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-244我要耶稣歌.mp3",
         "05-244我要耶稣歌-领唱.mp3"
@@ -2931,17 +2941,18 @@
       "songId": "05-245",
       "source": "05-245今要主自己.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-245今要主自己.mp3",
         "05-245今要主自己-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-246",
       "source": "05-246慕主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-246慕主歌-领唱.mp3"
       ]
@@ -2950,7 +2961,7 @@
       "songId": "05-248",
       "source": "05-248与主同去歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-248与主同去歌.mp3"
       ]
@@ -2959,7 +2970,7 @@
       "songId": "05-249",
       "source": "05-249专爱耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-249专爱耶稣歌.mp3"
       ]
@@ -2968,7 +2979,7 @@
       "songId": "05-250",
       "source": "05-250我属耶稣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-250我属耶稣歌.mp3"
       ]
@@ -2977,16 +2988,17 @@
       "songId": "05-251",
       "source": "05-251每想到你歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-251每想到你歌.mp3"
-      ]
+      ],
+      "reason": "第 2 谱行缺少第 4 段歌词，需核对 OCR"
     },
     {
       "songId": "05-252",
       "source": "05-252主爱说不尽歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-252主爱说不尽歌.mp3",
         "05-252主爱说不尽歌-领唱.mp3"
@@ -2996,7 +3008,7 @@
       "songId": "05-254",
       "source": "05-254如今更爱主.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-254如今更爱主.mp3"
       ]
@@ -3005,25 +3017,27 @@
       "songId": "05-255",
       "source": "05-255爱主更深歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-255爱主更深歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-256",
       "source": "05-256爱的诗歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-256爱的诗歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-258",
       "source": "05-258耶稣领我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-258耶稣领我歌.mp3",
         "05-258耶稣领我歌-领唱.mp3"
@@ -3033,7 +3047,7 @@
       "songId": "05-259",
       "source": "05-259一路引导歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-259一路引导歌.mp3"
       ]
@@ -3042,16 +3056,17 @@
       "songId": "05-263",
       "source": "05-263主意尽美歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-263主意尽美歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-264",
       "source": "05-264跟随我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-264跟随我歌.mp3",
         "05-264跟随我歌-领唱.mp3"
@@ -3061,16 +3076,17 @@
       "songId": "05-265",
       "source": "05-265愿跟随主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-265愿跟随主歌-领唱.mp3"
-      ]
+      ],
+      "reason": "第 2 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-267",
       "source": "05-267闻主召我歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-267闻主召我歌.mp3"
       ]
@@ -3079,7 +3095,7 @@
       "songId": "05-270",
       "source": "05-270天父看顾歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-270天父看顾歌.mp3"
       ]
@@ -3088,26 +3104,28 @@
       "songId": "05-272",
       "source": "05-272虹霓雨点歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-272虹霓雨点歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-273",
       "source": "05-273神的应许歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-273神的应许歌.mp3",
         "05-273神的应许歌-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-274",
       "source": "05-274耶稣同在歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-274耶稣同在歌.mp3",
         "05-274耶稣同在歌-领唱.mp3"
@@ -3117,7 +3135,7 @@
       "songId": "05-275",
       "source": "05-275求主带领歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-275求主带领歌.mp3"
       ]
@@ -3126,7 +3144,7 @@
       "songId": "05-276",
       "source": "05-276信靠依顺歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-276信靠依顺歌.mp3"
       ]
@@ -3135,7 +3153,7 @@
       "songId": "05-277",
       "source": "05-277我知所信歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-277我知所信歌.mp3"
       ]
@@ -3144,7 +3162,7 @@
       "songId": "05-279",
       "source": "05-279主不改变歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-279主不改变歌.mp3"
       ]
@@ -3153,7 +3171,7 @@
       "songId": "05-280",
       "source": "05-280有福确据歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-280有福确据歌.mp3"
       ]
@@ -3162,7 +3180,7 @@
       "songId": "05-282",
       "source": "05-282靠主膀臂歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-282靠主膀臂歌-领唱.mp3"
       ]
@@ -3171,7 +3189,7 @@
       "songId": "05-283",
       "source": "05-283耶稣我来歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-283耶稣我来歌.mp3"
       ]
@@ -3180,7 +3198,7 @@
       "songId": "05-284",
       "source": "05-284时刻需主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-284时刻需主歌.mp3",
         "05-284时刻需主歌-领唱.mp3"
@@ -3190,7 +3208,7 @@
       "songId": "05-285",
       "source": "05-285一心靠赖歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-285一心靠赖歌.mp3"
       ]
@@ -3199,16 +3217,17 @@
       "songId": "05-286",
       "source": "05-286靠主有福歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-286靠主有福歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-287",
       "source": "05-287主必保守歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-287主必保守歌-领唱.mp3"
       ]
@@ -3217,7 +3236,7 @@
       "songId": "05-288",
       "source": "05-288时刻靠主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-288时刻靠主歌.mp3",
         "05-288时刻靠主歌-领唱.mp3"
@@ -3227,7 +3246,7 @@
       "songId": "05-290",
       "source": "05-290平稳安静歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-290平稳安静歌.mp3",
         "05-290平稳安静歌-领唱.mp3"
@@ -3237,34 +3256,37 @@
       "songId": "05-292",
       "source": "05-292我灵镇静歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-292我灵镇静歌-领唱.mp3"
-      ]
+      ],
+      "reason": "未识别出谱行及对应横排歌词"
     },
     {
       "songId": "05-293",
       "source": "05-293耶稣住我心歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-293耶稣住我心歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-294",
       "source": "05-294平安在我心歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-294平安在我心歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-295",
       "source": "05-295享受平安歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-295享受平安歌.mp3"
       ]
@@ -3273,7 +3295,7 @@
       "songId": "05-296",
       "source": "05-296紧靠上主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-296紧靠上主歌-领唱.mp3"
       ]
@@ -3282,7 +3304,7 @@
       "songId": "05-300",
       "source": "05-300主是我万有歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-300主是我万有歌.mp3"
       ]
@@ -3291,7 +3313,7 @@
       "songId": "05-301",
       "source": "05-301谷中百合花.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-301谷中百合花.mp3",
         "05-301谷中百合花-领唱.mp3"
@@ -3301,7 +3323,7 @@
       "songId": "05-302",
       "source": "05-302恩友歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-302恩友歌.mp3",
         "05-302恩友歌-领唱.mp3"
@@ -3311,16 +3333,17 @@
       "songId": "05-303",
       "source": "05-303平安赞美歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-303平安赞美歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-304",
       "source": "05-304生命路上歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-304生命路上歌.mp3"
       ]
@@ -3329,7 +3352,7 @@
       "songId": "05-308",
       "source": "05-308主是我磐石歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-308主是我磐石歌.mp3"
       ]
@@ -3338,7 +3361,7 @@
       "songId": "05-313",
       "source": "05-313我愿像主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-313我愿像主歌.mp3"
       ]
@@ -3347,7 +3370,7 @@
       "songId": "05-315",
       "source": "05-315助我进深歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-315助我进深歌.mp3"
       ]
@@ -3356,35 +3379,38 @@
       "songId": "05-316",
       "source": "05-316助我进深歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-316助我进深歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-317",
       "source": "05-317谦卑随主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-317谦卑随主歌.mp3",
         "05-317谦卑随主歌-领唱.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
     },
     {
       "songId": "05-319",
       "source": "05-319荣美福地歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-319荣美福地歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-320",
       "source": "05-320往前走歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-320往前走歌.mp3"
       ]
@@ -3393,16 +3419,17 @@
       "songId": "05-322",
       "source": "05-322信徒精兵歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-322信徒精兵歌.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-325",
       "source": "05-325奋起歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-325奋起歌.mp3"
       ]
@@ -3411,34 +3438,37 @@
       "songId": "05-326",
       "source": "05-326万民奋兴歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-326万民奋兴歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-327",
       "source": "05-327坚固保障歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-327坚固保障歌.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-336",
       "source": "05-336为你离天歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-336为你离天歌-领唱.mp3"
-      ]
+      ],
+      "reason": "谱面旋律与实际录音匹配不足"
     },
     {
       "songId": "05-337",
       "source": "05-337无我唯主歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-337无我唯主歌.mp3"
       ]
@@ -3447,7 +3477,7 @@
       "songId": "05-340",
       "source": "05-340已负十架歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-340已负十架歌.mp3"
       ]
@@ -3456,43 +3486,47 @@
       "songId": "05-343",
       "source": "05-343一切献上歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-343一切献上歌.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 1 段歌词，需核对 OCR"
     },
     {
       "songId": "05-346",
       "source": "05-346奉献身心歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-346奉献身心歌.mp3"
-      ]
+      ],
+      "reason": "第 1 谱行缺少第 2 段歌词，需核对 OCR"
     },
     {
       "songId": "05-347",
       "source": "05-347爱传福音歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-347爱传福音歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-348",
       "source": "05-348任主差遣歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-348任主差遣歌.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-349",
       "source": "05-349遵命有福歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-349遵命有福歌.mp3",
         "05-349遵命有福歌-领唱.mp3"
@@ -3502,16 +3536,17 @@
       "songId": "05-365",
       "source": "05-365活出基督歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-365活出基督歌.mp3"
-      ]
+      ],
+      "reason": "第 3 谱行缺少第 3 段歌词，需核对 OCR"
     },
     {
       "songId": "05-366",
       "source": "05-366光照小地方.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-366光照小地方.mp3"
       ]
@@ -3520,7 +3555,7 @@
       "songId": "05-377",
       "source": "05-377乐进天国歌.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-377乐进天国歌.mp3"
       ]
@@ -3536,17 +3571,18 @@
       "songId": "05-416",
       "source": "05-416神啊求你鉴察我.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "05-416神啊求你鉴察我.mp3",
         "05-416神啊求你鉴察我-领唱.mp3"
-      ]
+      ],
+      "reason": "两组谱面节奏模板的定位不一致"
     },
     {
       "songId": "05-417",
       "source": "05-417我当完全属主.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-417我当完全属主.mp3",
         "05-417我当完全属主-领唱.mp3"
@@ -3556,7 +3592,7 @@
       "songId": "05-437",
       "source": "05-437信心加上德行.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "05-437信心加上德行.mp3",
         "05-437信心加上德行-领唱.mp3"
@@ -3575,10 +3611,11 @@
       "songId": "06-002",
       "source": "06-002所有美善的力量.jpg",
       "type": "image",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-002所有美善的力量.mp3"
-      ]
+      ],
+      "reason": "未识别出谱行及对应横排歌词"
     },
     {
       "songId": "06-003",

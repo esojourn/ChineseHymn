@@ -83,12 +83,14 @@ def image_source(ocr):
     chorus = False
     for row in rows:
         text = row['text']
+        if re.match(r'^(?:通用调|同用调|注[:：]|词[:：]|曲[:：]|译[:：])', text.strip()):
+            continue
         if CHORUS.match(text):
             chorus = True
             continue
         chinese = len(re.findall(r'[\u3400-\u9fff]', text))
         digits = len(re.findall('[1-7]', text))
-        if chinese == 0 and digits >= 4 and row['top'] > .07:
+        if chinese <= 1 and digits >= 4 and row['top'] > .07:
             if current and current['lyrics']:
                 systems.append(current)
             current = {'notes': row, 'lyrics': [], 'chorus': chorus}

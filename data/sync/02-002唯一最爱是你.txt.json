@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "songId": "02-002",
+  "status": "reviewed",
+  "source": {
+    "file": "02-002唯一最爱是你.txt",
+    "sha256": "0a81321ada15d6d75b1b6abd301a895296facc54c75f61fa08d94c94b7bb7ec5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-002唯一最爱是你-领唱.mp3",
+      "sha256": "94a404d4d22de2129b25ff1fa6b5e3ced1911d4f8e7f07a1dbb7b1abf5a87628",
+      "duration": 324.1795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 21,
+      "endLine": 24
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 40,
+      "endLine": 43
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 44,
+      "endLine": 47
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 49,
+      "endLine": 52
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 53,
+      "endLine": 56
+    }
+  },
+  "cues": [
+    {
+      "at": 12.66,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 38.3,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.79,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.52,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.06,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 140.43,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 166.26,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 191.89,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 217.47,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 243.46,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 268.56,
+      "region": "r11",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 294.31,
+      "region": "r12",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶稣，你是我至爱， 我全心归你无别依； 天地间有何能与你比拟？ 神而人者，你最美丽！",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "真渴望消失在你里， 当你柔声入我心底； 前我所眷恋，今欢然撇弃， 只愿爱你─全心全意。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "世上有谁像你如此美丽？ 人间有何与你爱情能比？ 哦，圣中之圣，你竟住我里； 主耶稣，我深深爱你！",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "不愿再自欺，不愿再任意； 惟愿脱自己，只被你充溢； 你以外，哦，让一切都绝迹； 我惟一的最爱是你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "主耶稣，你是我至爱， 虽我曾顽梗又悖逆， 今放下一切，你面前侍立， 只愿像你那样无己。",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "真渴望活着就是你， 顺从神旨，不凭己意； 与你心合拍，只要你所喜； 挣扎全停，尽是安息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "世上有谁像你如此美丽？ 人间有何与你爱情能比？ 哦，圣中之圣，你竟住我里； 主耶稣，我深深爱你！",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "不愿再自欺，不愿再任意； 惟愿脱自己，只被你充溢； 你以外，哦，让一切都绝迹； 我惟一的最爱是你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "主耶稣，你是我至爱， 你与我永远不分离； 你同在是我气息、 我动力，你的笑脸是我欣喜。",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "真渴望你前吐心意， 爱你、事你，联结依依； 亲爱主，我的永分就是你， 你的来临是我所期。",
+        "label": "第3段"
+      },
+      {
+        "region": "r11",
+        "text": "世上有谁像你如此美丽？ 人间有何与你爱情能比？ 哦，圣中之圣，你竟住我里； 主耶稣，我深深爱你！",
+        "label": "第3段"
+      },
+      {
+        "region": "r12",
+        "text": "不愿再自欺，不愿再任意； 惟愿脱自己，只被你充溢； 你以外，哦，让一切都绝迹； 我惟一的最爱是你。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-002唯一最爱是你.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

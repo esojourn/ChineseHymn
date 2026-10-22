@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "songId": "05-222",
+  "status": "reviewed",
+  "source": {
+    "file": "05-222妙爱找我歌.jpg",
+    "sha256": "3addad96efd94e6bef1c862a38e6182e15f65f181709b80d4f858cc96f5d0438",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-222妙爱找我歌.mp3",
+      "sha256": "5a37fdea8eb7f54296047cfdac481111a26e8dd3de8d6c615c49586f5c9a8556",
+      "duration": 220.608,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.16157,
+      "bottom": 0.245842
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.189607,
+      "bottom": 0.274428
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.218194,
+      "bottom": 0.301916
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.246231,
+      "bottom": 0.330502
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.340787,
+      "bottom": 0.425058
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.368824,
+      "bottom": 0.452546
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.396861,
+      "bottom": 0.480583
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.424348,
+      "bottom": 0.509169
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.517255,
+      "bottom": 0.601527
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.545292,
+      "bottom": 0.629564
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.573329,
+      "bottom": 0.657601
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.601916,
+      "bottom": 0.686187
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.732206,
+      "bottom": 0.817027
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.821814,
+      "bottom": 0.991846
+    }
+  },
+  "cues": [
+    {
+      "at": 22.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.7,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.3,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.6,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 61.2,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.25,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 80.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.3,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.9,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 121.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 130.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.6,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 149.9,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 160.5,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 171.55,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 179.7,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 188.3,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 199.6,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 210.2,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主大慈爱寻找我，我正疲倦可怜；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "他显大力怀抱我，安放羊群里边。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "此恩激动天使欢唱，甚至歌声满天回 响。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "爱何大！寻找我；血何宝！洗净我；恩何宽！",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "领我归回羊群；恩何宽!领我归回羊群。（阿）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "主看见我有创伤，用油和酒包裹；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "又以恩言安慰说：“从此你永属我。”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "我未听过如此佳音，能叫我心满足欢欣。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "爱何大！寻找我；血何宝！洗净我；恩何宽！",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "领我归回羊群；恩何宽!领我归回羊群。（阿）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主指我看钉痕手，宝血为我流出；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "人用荆棘作冠冕，戏弄而且凌辱。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "我真希奇，为我罪人，主竟受苦如此之深！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "爱何大！寻找我；血何宝！洗净我；恩何宽！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "领我归回羊群；恩何宽!领我归回羊群。（阿）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我今安坐他面前，蒙他光照赐恩；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "满心敬爱我救主，希奇他恩何深！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "我虽能赞他到永远，不足说尽他恩无限。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "爱何大！寻找我；血何宝！洗净我；恩何宽！",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "领我归回羊群；恩何宽!领我归回羊群。（阿）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-222妙爱找我歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

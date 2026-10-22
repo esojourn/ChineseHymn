@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 138,
+    "published": 144,
     "existing": 8,
-    "needs-calibration": 71,
+    "needs-calibration": 73,
     "missing-audio": 2,
-    "ready-to-verify": 32,
-    "pending": 146,
+    "pending": 144,
+    "ready-to-verify": 26,
     "missing-lyrics": 23
   },
   "songs": [
@@ -351,7 +351,7 @@
       "songId": "01-421",
       "source": "01-421主你启示一个奥秘.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-421主你启示一个奥秘.mp3"
       ]
@@ -360,7 +360,7 @@
       "songId": "01-429",
       "source": "01-429祂不误事因祂是神.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-429祂不误事因祂是神.mp3",
         "01-429祂不误事因祂是神-领唱.mp3"
@@ -484,7 +484,7 @@
       "songId": "02-002",
       "source": "02-002唯一最爱是你.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-002唯一最爱是你-领唱.mp3"
       ]
@@ -534,11 +534,12 @@
       "songId": "02-007",
       "source": "02-007我心等候你_诗130.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-007我心等候你_诗130.mp3",
         "02-007我心等候你_诗130-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.530"
     },
     {
       "songId": "02-008",
@@ -749,7 +750,7 @@
       "songId": "02-208",
       "source": "02-208只要信祂.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-208只要信祂.mp3"
       ]
@@ -860,10 +861,11 @@
       "songId": "02-285",
       "source": "02-285基督满足我心.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-285基督满足我心.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-289",
@@ -2829,7 +2831,7 @@
       "songId": "05-222",
       "source": "05-222妙爱找我歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-222妙爱找我歌.mp3"
       ]
@@ -2857,7 +2859,7 @@
       "songId": "05-229",
       "source": "05-229白超乎雪歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-229白超乎雪歌.mp3",
         "05-229白超乎雪歌-领唱.mp3"

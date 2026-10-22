@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-208",
+  "status": "reviewed",
+  "source": {
+    "file": "02-208只要信祂.txt",
+    "sha256": "9a8b2460339191f65f3d317d73dc220117d557ba0d9f279afe9bf01eeba020af",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-208只要信祂.mp3",
+      "sha256": "797dcc97c17294a8a6bdbea6bed06fb61dbcf768b1310a92476feb69b23433a3",
+      "duration": 165.19836734693877,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 9.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.05,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.45,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.85,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "被罪压伤的人，快来接受恩主爱怜， 祂要救你，安你心怀，只要信他恩言。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "耶稣为你曾流宝血，赐下恩典丰盛， 快来投入此宝血泉，必白如雪洁净。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "耶稣就是道路，真理，愿你进入安息， 快信靠祂勿再迟疑，必得永生福气。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "请来加入这圣洁队，同往荣耀天乡， 美丽天城无忧无泪，永享福乐无疆。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-208只要信祂.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "02-394",
+  "status": "reviewed",
+  "source": {
+    "file": "02-394求主监察.txt",
+    "sha256": "097f6d7310bb298afc66fbbfce4460397995b5f3fc365c9649b54bb7d5ce8604",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-394求主监察.mp3",
+      "sha256": "e50e785a3457d8f9b3524fe74dad94444b7c707534d20f8dada5cafcc09973c8",
+      "duration": 213.12,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.19,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 49.66,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 88.97,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 128.57,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 167.41,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-394求主监察-领唱.mp3",
+      "sha256": "20bd03bb4244c25bf9343c7089e7b3d584ebce6f09509360991b7e3a09ed963d",
+      "duration": 168.55466666666666,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 8.09,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 40.06,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 71.97,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 104.17,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 136.11,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "求主鉴察，知道我心实情，试我验我，将我隐秘显明； 清洁我心，使我成圣像主，引导我走永远生命道路。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你不改变，今日昨日一样，愿主生命继续借我显彰； 除去我心一切属世事物，引导我走永远生命道路。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "求主将我软弱变为坚固，使我专心寻求永存事物； 将我心弦紧紧系于上主，引导我走永远生命道路。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "求主使我积财宝于天仓，求主教我寻求属天盼望； 为我预备天家永远财富，引导我走永远生命道路。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我的工作深愿救主引导，倒试验日不至如芥如草； 求主助我在磐石上建屋，引导我走永远生命道路。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-394求主监察.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

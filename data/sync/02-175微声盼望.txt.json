@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-175",
+  "status": "reviewed",
+  "source": {
+    "file": "02-175微声盼望.txt",
+    "sha256": "66aa69a39113f5a3333846097c3f569a962d3429a00db6d2f59aa64a8ea32063",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-175微声盼望.mp3",
+      "sha256": "20c74c74f9c89b8cd8fb4977e28568de2e341fe8bb0b61dd6279c1200f491fde",
+      "duration": 214.9877551020408,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 21,
+      "endLine": 24
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 6.07,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 54.58,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.22,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.72,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 144.21,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 192.82,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "烦忙人生的时光中，疲倦寂寞多感喟; 你心灵饥渴与虚空，却无法得着安慰; 听，这声音何等美妙，是真实温柔言词, 听，慈爱声向你呼召，带来好信息与你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "世界一切浮华宴乐，全是欺骗与束缚; 真实与不变的珍宝，世间上永找不到; 来，你要向高山举目，你心灵必得满足, 来，饮于生命活水泉，必可享宁静平安。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "希望如锚抛牢稳妥，将心灵黑幕冲破; 主已进入我的内心，解除坟墓的幽禁; 来，盼望实现的欢欣，进入我愁苦的心, 来，有福荣耀的盼望，永不离开我心房。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-175微声盼望.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

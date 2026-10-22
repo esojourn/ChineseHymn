@@ -1,0 +1,287 @@
+{
+  "songId": "01-200",
+  "source": "01-200愿我前来赞美救主.txt",
+  "sourceHash": "e873136cb84563facfb0bce46114fc5d8dff1eeab844a6f7a21ce474e0765f7b",
+  "trackHashes": [
+    {
+      "file": "01-200愿我前来赞美救主.mp3",
+      "sha256": "ee0d6d88cd71b6b1999e514aeeb5384c5ca71669e0c4836ac9c776fce5b4f6df"
+    },
+    {
+      "file": "01-200愿我前来赞美救主-领唱.mp3",
+      "sha256": "736c4fa59da8275c14e362b153442349fa54af4d1a93df5ef3234f5dd87c9760"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 1,
+    "profile": {
+      "targetSha256": "e873136cb84563facfb0bce46114fc5d8dff1eeab844a6f7a21ce474e0765f7b",
+      "file": "hymnary200.mid",
+      "sha256": "4cc9acf0d46d3a049bcf78ede875d5e277e34b789f714792668f3b4da840a6f3",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary200.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary200.htm",
+      "verseCount": 6,
+      "firstVerseTrigramOverlap": 0.8076923,
+      "formReview": "经首段正文核对的诗歌参考；每段正文为一个不超过四行的阅读区域。实际录音另须通过和声及旋律两组模板，不用音符数推算字词时间。"
+    },
+    "referencePeriod": 23.875,
+    "music": {
+      "period": 25.0,
+      "similarity": 0.9413679242134094,
+      "initialOnsetEstimate": 5.4,
+      "shifts": [
+        0.0,
+        25.0,
+        50.1,
+        75.1,
+        100.2,
+        125.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.30970480346679685,
+            "key": 8,
+            "at": 6.3,
+            "span": 24.7
+          },
+          "runnerUp": {
+            "cost": 0.5979650268554687,
+            "key": 3,
+            "at": 3.0,
+            "span": 19.8
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.149117431640625,
+            "key": 8,
+            "starts": [
+              6.199999809265137
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3623670959472656,
+            "key": 3,
+            "starts": [
+              17.0
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2960958251953125,
+            "key": 8,
+            "at": 31.4,
+            "span": 24.7
+          },
+          "runnerUp": {
+            "cost": 0.5928882446289062,
+            "key": 3,
+            "at": 23.9,
+            "span": 20.3
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.145226318359375,
+            "key": 8,
+            "starts": [
+              31.200000762939453
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3623670959472656,
+            "key": 3,
+            "starts": [
+              17.0
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3013297424316406,
+            "key": 8,
+            "at": 56.3,
+            "span": 24.8
+          },
+          "runnerUp": {
+            "cost": 0.6050965576171875,
+            "key": 3,
+            "at": 49.0,
+            "span": 20.2
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14640522766113281,
+            "key": 8,
+            "starts": [
+              56.20000076293945
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3671989440917969,
+            "key": 3,
+            "starts": [
+              65.0999984741211
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.29989248657226564,
+            "key": 8,
+            "at": 81.4,
+            "span": 24.8
+          },
+          "runnerUp": {
+            "cost": 0.6007472534179688,
+            "key": 3,
+            "at": 74.1,
+            "span": 19.5
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14917170715332032,
+            "key": 8,
+            "starts": [
+              81.19999694824219
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3637117919921875,
+            "key": 3,
+            "starts": [
+              92.0999984741211
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3020345458984375,
+            "key": 8,
+            "at": 106.4,
+            "span": 24.8
+          },
+          "runnerUp": {
+            "cost": 0.5946118774414062,
+            "key": 3,
+            "at": 99.1,
+            "span": 20.2
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14911093139648438,
+            "key": 8,
+            "starts": [
+              106.30000305175781
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3637117919921875,
+            "key": 3,
+            "starts": [
+              92.0999984741211
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3059924011230469,
+            "key": 8,
+            "at": 131.5,
+            "span": 24.7
+          },
+          "runnerUp": {
+            "cost": 0.6004441528320312,
+            "key": 3,
+            "at": 124.1,
+            "span": 20.2
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14855812072753907,
+            "key": 8,
+            "starts": [
+              131.3000030517578
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3671352233886719,
+            "key": 3,
+            "starts": [
+              115.5999984741211
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "哦，愿我有千言万语，前来赞美救主； 说祂恩典何等深厚，荣耀何等丰富。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "耶稣这名，慰我心情，驱尽我的惊怯； 是我安息，是我生命，成为我的音乐。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "祂因爱我，竟愿经历人世所有苦楚 打破罪的捆绑能力，释放罪的囚徒。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我每静念救我的爱，立即感觉不配； 不知祂为什么恩待我这人中罪魁。",
+      "label": "第4段"
+    },
+    {
+      "region": "r5",
+      "text": "我今作祂爱的俘虏，甘心作到永久 因祂为我受死、受辱，使我得以自由。",
+      "label": "第5段"
+    },
+    {
+      "region": "r6",
+      "text": "我既从你可爱的名，知你待我美意； 假若我有千万的心，也当一一归你。",
+      "label": "第6段"
+    }
+  ],
+  "recordingMaps": {
+    "01-200愿我前来赞美救主.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.826447069644928,
+      "meanPathCost": 0.14700686931610107,
+      "cueWindowCosts": [
+        0.2345932573080063,
+        0.19287531077861786,
+        0.18565818667411804,
+        0.1920691281557083,
+        0.19049234688282013,
+        0.18241877853870392
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 5.207
+}

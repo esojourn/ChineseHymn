@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "songId": "02-428",
+  "status": "reviewed",
+  "source": {
+    "file": "02-428祷告心声.txt",
+    "sha256": "4dc859e148527b92a0d135ccc5f5286ce6e0a730a92468142cbfbd0008967be2",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-428祷告心声.mp3",
+      "sha256": "6ba135fc0e9a465a735f08b92fcea8d047c04838701254153fecebf783a8ecf9",
+      "duration": 121.99183673469388,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 4.55,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 43.02,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.48,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-428祷告心声-领唱.mp3",
+      "sha256": "8dc249ebb1411007428a75e2b8486b5f9246c43e63a56b3512d530935cdb0431",
+      "duration": 121.83510204081632,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 5.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 44.12,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.58,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "厚赐恩惠世人的父，我灵隐密朋友； 统管宇宙，我心的主，我要向你祈求。 我尚未曾张开嘴唇，你已赏赐恩惠； 生活见证，理想追求，即你所爱祷告。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "心中筹算，一切意念，无论隐藏显露； 所有思想，不论好坏，上主完全知道。 恳求洁净我们祷告，与主心意相通； 直到我们努力不懈，实践主前所求。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "遵行主道，显主荣形，是最美好人生； 专心爱主，安静等候，我得听主声音。 不凭己意，歪曲主旨，我心与主合一， 不作强求，只要在世活出我主生命。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-428祷告心声.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

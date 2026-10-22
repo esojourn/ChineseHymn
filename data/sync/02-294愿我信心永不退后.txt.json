@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "02-294",
+  "status": "reviewed",
+  "source": {
+    "file": "02-294愿我信心永不退后.txt",
+    "sha256": "4f5c7d7e45f4be97f05685a287576df0302b1bdb40a423569473212e3c420a45",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-294愿我信心永不退后-领唱.mp3",
+      "sha256": "365cfba25722bbad1a393b670832313f31b02346ba2987c999df207eca0c0bb2",
+      "duration": 108.27755102040817,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 6.63,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.58,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 46.56,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.68,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.75,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "愿我信心永不退后，仇敌压迫不慌， 纵有苦难灾祸当前，心中亦不惊惶。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "倘因管教遭受责打，心中毫无怨言， 倘遇痛苦或是忧伤，紧靠父神胸前。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "每遇狂风暴雨来侵，愿我信心加增， 黑暗之中疑惑不生，临危全无恐惊。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "世人厌弃心不动摇，讥笑也不在意， 烦恼苦海不能淹没，不中撒旦诡计。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "求主赐我无比信心，任遭何事不畏， 虽在今世亦能尝到，永生天恩滋味。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-294愿我信心永不退后.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

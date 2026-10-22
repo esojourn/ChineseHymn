@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "01-200",
+  "status": "reviewed",
+  "source": {
+    "file": "01-200愿我前来赞美救主.txt",
+    "sha256": "e873136cb84563facfb0bce46114fc5d8dff1eeab844a6f7a21ce474e0765f7b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-200愿我前来赞美救主.mp3",
+      "sha256": "ee0d6d88cd71b6b1999e514aeeb5384c5ca71669e0c4836ac9c776fce5b4f6df",
+      "duration": 158.53714285714287,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.75,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 30.8,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 55.85,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 80.9,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.95,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 130.9,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-200愿我前来赞美救主-领唱.mp3",
+      "sha256": "736c4fa59da8275c14e362b153442349fa54af4d1a93df5ef3234f5dd87c9760",
+      "duration": 157.35466666666667,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    }
+  },
+  "cues": [
+    {
+      "at": 6.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.3,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 56.25,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.3,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 106.35,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.4,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "哦，愿我有千言万语，前来赞美救主； 说祂恩典何等深厚，荣耀何等丰富。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "耶稣这名，慰我心情，驱尽我的惊怯； 是我安息，是我生命，成为我的音乐。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "祂因爱我，竟愿经历人世所有苦楚 打破罪的捆绑能力，释放罪的囚徒。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我每静念救我的爱，立即感觉不配； 不知祂为什么恩待我这人中罪魁。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我今作祂爱的俘虏，甘心作到永久 因祂为我受死、受辱，使我得以自由。",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "我既从你可爱的名，知你待我美意； 假若我有千万的心，也当一一归你。",
+        "label": "第6段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-200愿我前来赞美救主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 171,
+    "published": 176,
     "existing": 8,
-    "needs-calibration": 106,
+    "needs-calibration": 142,
     "missing-audio": 2,
-    "ready-to-verify": 2,
-    "pending": 108,
+    "ready-to-verify": 1,
+    "pending": 68,
     "missing-lyrics": 23
   },
   "songs": [
@@ -147,12 +147,11 @@
       "songId": "01-200",
       "source": "01-200愿我前来赞美救主.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "01-200愿我前来赞美救主.mp3",
         "01-200愿我前来赞美救主-领唱.mp3"
-      ],
-      "reason": "各段起点与重复音乐位置不一致"
+      ]
     },
     {
       "songId": "01-233",
@@ -707,7 +706,7 @@
       "songId": "02-175",
       "source": "02-175微声盼望.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-175微声盼望.mp3"
       ]
@@ -908,7 +907,7 @@
       "songId": "02-294",
       "source": "02-294愿我信心永不退后.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-294愿我信心永不退后-领唱.mp3"
       ]
@@ -1038,43 +1037,47 @@
       "songId": "02-383",
       "source": "02-383时代的挑战.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-383时代的挑战.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "02-384",
       "source": "02-384求主扶持.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-384求主扶持.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-385",
       "source": "02-385效圣徒尽忠.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-385效圣徒尽忠.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
     },
     {
       "songId": "02-386",
       "source": "02-386高举主旗.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-386高举主旗.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-394",
       "source": "02-394求主监察.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-394求主监察.mp3",
         "02-394求主监察-领唱.mp3"
@@ -1084,67 +1087,74 @@
       "songId": "02-395",
       "source": "02-395主前省察.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-395主前省察.mp3",
         "02-395主前省察-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-396",
       "source": "02-396凭信而活.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-396凭信而活.mp3",
         "02-396凭信而活-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：5,9,12,13"
     },
     {
       "songId": "02-407",
       "source": "02-407主常常顾念我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-407主常常顾念我.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-409",
       "source": "02-409神竟愿爱我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-409神竟愿爱我.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-411",
       "source": "02-411我原是迷路羊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-411我原是迷路羊.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-412",
       "source": "02-412罪皆脱落.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-412罪皆脱落.mp3"
-      ]
+      ],
+      "reason": "第3段音乐对应不足：0.517"
     },
     {
       "songId": "02-421",
       "source": "02-421奇妙的主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-421奇妙的主.mp3",
         "02-421奇妙的主-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,5,6,7"
     },
     {
       "songId": "02-424",
@@ -1159,16 +1169,17 @@
       "songId": "02-426",
       "source": "02-426主祷文.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-426主祷文.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-428",
       "source": "02-428祷告心声.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-428祷告心声.mp3",
         "02-428祷告心声-领唱.mp3"
@@ -1178,20 +1189,22 @@
       "songId": "02-440",
       "source": "02-440求主赦免.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-440求主赦免.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-443",
       "source": "02-443感恩歌.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-443感恩歌.mp3",
         "02-443感恩歌-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.312"
     },
     {
       "songId": "02-447",
@@ -1206,46 +1219,51 @@
       "songId": "02-452",
       "source": "02-452更深认识耶穌.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-452更深认识耶穌.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-457",
       "source": "02-457献己归主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-457献己归主.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "02-459",
       "source": "02-459完全的奉献.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-459完全的奉献.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-467",
       "source": "02-467救主牺牲的爱.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-467救主牺牲的爱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-468",
       "source": "02-468当尽本分.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-468当尽本分.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-470",
@@ -1261,83 +1279,92 @@
       "songId": "02-473",
       "source": "02-473殷勤作工.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-473殷勤作工.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "02-474",
       "source": "02-474黑夜将临快作工.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-474黑夜将临快作工.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "02-475",
       "source": "02-475找迷羊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-475找迷羊.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-476",
       "source": "02-476预备.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-476预备.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-492",
       "source": "02-492求主今天引导管理.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-492求主今天引导管理.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
     },
     {
       "songId": "02-496",
       "source": "02-496晨昏颂祷.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-496晨昏颂祷.mp3",
         "02-496晨昏颂祷-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-498",
       "source": "02-498我灵之光.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-498我灵之光.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-503",
       "source": "02-503新年颂主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-503新年颂主.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-517",
       "source": "02-517主耶稣真奇妙.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-517主耶稣真奇妙.mp3"
-      ]
+      ],
+      "reason": "单段或无法识别段数，需要语音或谱面独立定位"
     },
     {
       "songId": "03-001",
@@ -1354,7 +1381,7 @@
       "songId": "03-002",
       "source": "03-002耶和华是我的牧者.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "03-002耶和华是我的牧者.mp3",
         "03-002耶和华是我的牧者-领唱.mp3"
@@ -1364,70 +1391,77 @@
       "songId": "03-003",
       "source": "03-003除你以外.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-003除你以外.mp3",
         "03-003除你以外-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.462"
     },
     {
       "songId": "03-004",
       "source": "03-004祢的话.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-004祢的话.mp3",
         "03-004祢的话-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.506"
     },
     {
       "songId": "03-005",
       "source": "03-005全然圣洁主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-005全然圣洁主.mp3",
         "03-005全然圣洁主-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.429"
     },
     {
       "songId": "03-006",
       "source": "03-006惟有基督.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-006惟有基督.mp3",
         "03-006惟有基督-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "03-007",
       "source": "03-007我的神我要敬拜你.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-007我的神我要敬拜你.mp3",
         "03-007我的神我要敬拜你-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.579"
     },
     {
       "songId": "03-008",
       "source": "03-008我的心你要称颂耶和华.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-008我的心你要称颂耶和华.mp3",
         "03-008我的心你要称颂耶和华-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.513"
     },
     {
       "songId": "03-009",
       "source": "03-009我对撒但总是说不.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-009我对撒但总是说不-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.581"
     },
     {
       "songId": "03-010",
@@ -1443,21 +1477,23 @@
       "songId": "03-011",
       "source": "03-011因祂十架.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-011因祂十架.mp3",
         "03-011因祂十架-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.398"
     },
     {
       "songId": "03-012",
       "source": "03-012最知心的朋友.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-012最知心的朋友.mp3",
         "03-012最知心的朋友-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.416"
     },
     {
       "songId": "03-013",
@@ -1705,7 +1741,7 @@
         "04-184歌颂救赎主.mp3",
         "04-184歌颂救赎主-领唱.mp3"
       ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      "reason": "谱面旋律与实际录音匹配不足"
     },
     {
       "songId": "04-369",
@@ -3501,7 +3537,7 @@
       "tracks": [
         "05-326万民奋兴歌.mp3"
       ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      "reason": "第 1 谱行缺少第 4 段歌词，需核对 OCR"
     },
     {
       "songId": "05-327",
@@ -3661,7 +3697,7 @@
       "tracks": [
         "06-001我虽软弱但你强壮.mp3"
       ],
-      "reason": "第 5 个歌词起点未通过转写及双窗口核对"
+      "reason": "第 13 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-002",

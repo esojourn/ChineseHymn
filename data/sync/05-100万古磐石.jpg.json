@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "songId": "05-100",
+  "status": "reviewed",
+  "source": {
+    "file": "05-100万古磐石.jpg",
+    "sha256": "b049d5d025c0bb6f1bd85482a8ac1b741853bf06473d93c3e3557974db25bb3e",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-100万古磐石.mp3",
+      "sha256": "26242dc16be95db5aaa12dccaf105e85d08be2039aae887721d3b836c21a361f",
+      "duration": 109.60979591836735,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 30.6,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 43.85,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 74.4,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 83.0,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 92.05,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 100.5,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-100万古磐石-领唱.mp3",
+      "sha256": "0b3cac61d96f2a12ceb812a003ec09ef8578505908801699720365b00c1d52c4",
+      "duration": 86.568,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.226192,
+      "bottom": 0.32842
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.27248,
+      "bottom": 0.374707
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.319566,
+      "bottom": 0.421793
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.454439,
+      "bottom": 0.55507
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.500727,
+      "bottom": 0.602156
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.547015,
+      "bottom": 0.649242
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.680291,
+      "bottom": 0.781721
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.726579,
+      "bottom": 0.828008
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.772867,
+      "bottom": 0.874296
+    }
+  },
+  "cues": [
+    {
+      "at": 32.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 41.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.2,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 59.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 68.35,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 77.4,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "万古磐石为我开，容我藏身在主怀；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "愿因主流水和血，洗我一生诸罪孽，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "使我免干主怒责，使我污浊成清洁。．",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "纵使辛劳直到死，纵使流泪永不止，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "依旧不能赎罪过,惟有耶稣能救我；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "两手空空无代价，只靠救主十字架。",
+        "label": "第2段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-100万古磐石.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

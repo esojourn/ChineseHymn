@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-099",
+  "status": "reviewed",
+  "source": {
+    "file": "05-099宝架清影.jpg",
+    "sha256": "53aebcc7777ea8aff1593681e168b9af68cb85c3ffb062bd56241f5b72ef96de",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-099宝架清影.mp3",
+      "sha256": "2d863e0f1358b26fd92cbb8ec1667d3033568098a8d95636cdc127ba146b7401",
+      "duration": 131.73333333333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.181238,
+      "bottom": 0.267571
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.221168,
+      "bottom": 0.3075
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.261097,
+      "bottom": 0.347429
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.365618,
+      "bottom": 0.45195
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.405547,
+      "bottom": 0.491292
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.444889,
+      "bottom": 0.531221
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.548235,
+      "bottom": 0.634568
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.587578,
+      "bottom": 0.67391
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.627507,
+      "bottom": 0.713252
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.732028,
+      "bottom": 0.81836
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.771957,
+      "bottom": 0.858289
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.811886,
+      "bottom": 0.898806
+    }
+  },
+  "cues": [
+    {
+      "at": 5.7,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 26.55,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 36.95,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.7,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.15,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.55,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 78.95,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.7,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.15,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.55,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.95,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "在主宝架清影中,欢然立定脚跟，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "好似盛暑远行辛苦,来进磐石之荫；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "好似旷野欣逢居处,长途喜见凉亭，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "到此得息肩头重担,养力奔赴前程。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "神圣庄严之十架,我常抬头瞻仰，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "双眼如见宝血倾流，为我舍身之像；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "热泪满眶，寸心如裂，两事仔细思量：",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "思量我身不配受恩，思量主爱非常。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "愿在宝架清影中，事主，爱人，行道；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我不寻求旭日光华，因有慈光普照；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "世界荣华,不足贪图，得失无关重要，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "但将罪恶看为羞耻,宝架看为荣耀。",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-099宝架清影.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

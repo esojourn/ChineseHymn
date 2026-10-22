@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 42,
+    "published": 48,
     "existing": 8,
-    "needs-calibration": 65,
+    "needs-calibration": 66,
     "missing-audio": 2,
-    "ready-to-verify": 95,
-    "pending": 185,
+    "ready-to-verify": 90,
+    "pending": 183,
     "missing-lyrics": 23
   },
   "songs": [
@@ -333,7 +333,7 @@
       "songId": "01-419",
       "source": "01-419一直走十架窄路.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-419一直走十架窄路.mp3",
         "01-419一直走十架窄路-领唱.mp3"
@@ -343,7 +343,7 @@
       "songId": "01-420",
       "source": "01-420从死亡得生命.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "01-420从死亡得生命.mp3",
         "01-420从死亡得生命-领唱.mp3"
@@ -353,10 +353,11 @@
       "songId": "01-421",
       "source": "01-421主你启示一个奥秘.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-421主你启示一个奥秘.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "01-429",
@@ -2317,7 +2318,7 @@
       "songId": "05-090",
       "source": "05-090耶稣独自祷告.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-090耶稣独自祷告.mp3"
       ]
@@ -2336,7 +2337,7 @@
       "songId": "05-093",
       "source": "05-093十架永存.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-093十架永存.mp3",
         "05-093十架永存-领唱.mp3"
@@ -2346,7 +2347,7 @@
       "songId": "05-094",
       "source": "05-094领到各各他歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-094领到各各他歌.mp3",
         "05-094领到各各他歌-领唱.mp3"
@@ -2378,7 +2379,7 @@
       "songId": "05-099",
       "source": "05-099宝架清影.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-099宝架清影.mp3"
       ]
@@ -2387,7 +2388,7 @@
       "songId": "05-100",
       "source": "05-100万古磐石.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-100万古磐石.mp3",
         "05-100万古磐石-领唱.mp3"

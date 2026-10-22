@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-090",
+  "status": "reviewed",
+  "source": {
+    "file": "05-090耶稣独自祷告.jpg",
+    "sha256": "12f3a9b6200f295a74a95fb912c89cb0f167d8115df99ce015b960f91654f1d8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-090耶稣独自祷告.mp3",
+      "sha256": "15cf3da632b0ce245c499f115d111f8a703a53fca7450faf2f1d6ea9e280331f",
+      "duration": 161.96266666666668,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.196126,
+      "bottom": 0.284219
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.239771,
+      "bottom": 0.328507
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.284059,
+      "bottom": 0.372152
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.401517,
+      "bottom": 0.488969
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.445162,
+      "bottom": 0.533256
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.488808,
+      "bottom": 0.576902
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.646703,
+      "bottom": 0.734154
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.762877,
+      "bottom": 0.850971
+    }
+  },
+  "cues": [
+    {
+      "at": 23.5,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 46.1,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.1,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.5,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 80.9,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 92.1,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 103.1,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 127.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 138.2,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 149.2,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "耶稣独自为我祷告，在客西马尼园，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "他已为我独尝苦杯，面上汗流如血。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "为我！为我！他为我钉十架！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "舍身流血还我罪债，他伤心是为我！为我！为",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣独自为我受审，在彼拉多庭前，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "他独自戴荆棘冠冕，为世人所轻看。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "为我！为我！他为我钉十架！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "舍身流血还我罪债，他伤心是为我！为我！为",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "耶稣独自为我受死，在各各他山上，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "听他口中高声呼喊：“成了！成了！成了！”",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "为我！为我！他为我钉十架！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "舍身流血还我罪债，他伤心是为我！为我！为",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-090耶稣独自祷告.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

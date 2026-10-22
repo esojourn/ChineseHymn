@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "songId": "05-091",
+  "status": "reviewed",
+  "source": {
+    "file": "05-091父旨成全歌.jpg",
+    "sha256": "000c5d0f7e7908eafe3b4df287f9e77129cb11b3fc8eb31a472f352c9506bee4",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-091父旨成全歌.mp3",
+      "sha256": "c4ed08130b867e200a0166d880a8782bdc2cc293c3c52522f253b98cc73ede76",
+      "duration": 269.12,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.183816,
+      "bottom": 0.268325
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.222388,
+      "bottom": 0.308048
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.262112,
+      "bottom": 0.34662
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.300684,
+      "bottom": 0.386344
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.411794,
+      "bottom": 0.496879
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.450366,
+      "bottom": 0.535451
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.489514,
+      "bottom": 0.574598
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.528086,
+      "bottom": 0.612595
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.680647,
+      "bottom": 0.765156
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.792333,
+      "bottom": 0.877993
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.904019,
+      "bottom": 0.989104
+    }
+  },
+  "cues": [
+    {
+      "at": 35.55,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 59.2,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.65,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 85.1,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.15,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 105.55,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 117.8,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.25,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.7,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 164.15,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 176.4,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 189.85,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 202.3,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 211.25,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 222.65,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 234.9,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 248.35,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 260.8,
+      "region": "s5_chorus",
+      "label": "第4段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "在那寂静漆黑的晚间，主耶稣钉十架以前，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "他屈膝在客西马尼园，祈祷：“愿父美意成全。”",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "父神美意我愿全遵行，在神面前等",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候安静；父神美意，我愿全遵行，",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "任神面前等候安静。（阿们）",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "耶稣疲倦伤痛的泪眼，不看环境只望着天，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "十架苦杯虽然极难饮，然而他说：“父意成全。”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "父神美意我愿全遵行，在神面前等",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候安静；父神美意，我愿全遵行，",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "任神面前等候安静。（阿们）",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "主阿！你专以父事为念，虽至死亡也不改变；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "我也愿意实行主圣言，顺服父旨忍受试炼。，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "父神美意我愿全遵行，在神面前等",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候安静；父神美意，我愿全遵行，",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "任神面前等候安静。（阿们）",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "不论前程苦痛或甘甜，总愿意你替我拣选，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "不随自己厌恶或喜欢，总说：“愿父美意成全。”",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "父神美意我愿全遵行，在神面前等",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "候安静；父神美意，我愿全遵行，",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "任神面前等候安静。（阿们）",
+        "label": "第4段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-091父旨成全歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

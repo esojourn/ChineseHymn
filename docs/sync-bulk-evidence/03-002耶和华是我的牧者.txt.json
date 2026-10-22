@@ -1,0 +1,1558 @@
+{
+  "songId": "03-002",
+  "source": "03-002耶和华是我的牧者.txt",
+  "sourceHash": "29996e4bc8f0d51375223f55f02fc62e29d477e855f7f0094ee4d6536699875f",
+  "trackHashes": [
+    {
+      "file": "03-002耶和华是我的牧者.mp3",
+      "sha256": "2a8e07c33d7f27bc1469d800fe625186134dde89ca452ea8cc08262eec54e7fb"
+    },
+    {
+      "file": "03-002耶和华是我的牧者-领唱.mp3",
+      "sha256": "8b7740b3713d62de2027d08feef1f7981a56c081df01b78efc9a02fad5c7a713"
+    }
+  ],
+  "music": {
+    "period": 25.2,
+    "similarity": 0.9197148084640503,
+    "initialOnsetEstimate": 11.084,
+    "shifts": [
+      0.0,
+      25.2,
+      50.4,
+      75.6,
+      100.8
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "主耶和华是我的牧者，我必不至缺乏， 使我躺卧在青草地，领我安歇水边。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "他使我灵得着苏醒，为着自己的名， 他引导我行走义路，引导我行义路。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "虽然行过死荫幽谷，我也不怕遭害， 你杖你杆都安慰我，因你与我同在。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "在敌面前你又为我，摆设美好宴席， 你用油膏膏我的头，使我福杯满溢。",
+      "label": "第4段"
+    },
+    {
+      "region": "r5",
+      "text": "我主恩惠我主慈爱，一生一世不离， 我必居住在主殿中，直到永永远远。",
+      "label": "第5段"
+    }
+  ],
+  "windows": [
+    {
+      "index": 0,
+      "window": 0,
+      "at": 5.084,
+      "valid": false,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.4252,
+      "bounds": [
+        5.084,
+        27.084
+      ],
+      "words": [
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.0,
+          "end": 8.12,
+          "probability": 0.029030630365014076
+        },
+        {
+          "word": "耶",
+          "tokens": [
+            22143
+          ],
+          "start": 8.12,
+          "end": 9.02,
+          "probability": 0.0302034430205822
+        },
+        {
+          "word": "和",
+          "tokens": [
+            12565
+          ],
+          "start": 9.02,
+          "end": 9.46,
+          "probability": 0.9458461999893188
+        },
+        {
+          "word": "华",
+          "tokens": [
+            5322,
+            236
+          ],
+          "start": 9.46,
+          "end": 10.02,
+          "probability": 0.17364691849797964
+        },
+        {
+          "word": "是",
+          "tokens": [
+            1541
+          ],
+          "start": 10.02,
+          "end": 11.18,
+          "probability": 0.31686580181121826
+        },
+        {
+          "word": "我的",
+          "tokens": [
+            14200
+          ],
+          "start": 11.18,
+          "end": 12.24,
+          "probability": 0.41379693150520325
+        },
+        {
+          "word": "牧",
+          "tokens": [
+            6935,
+            100
+          ],
+          "start": 12.24,
+          "end": 13.34,
+          "probability": 0.4871331602334976
+        },
+        {
+          "word": "者",
+          "tokens": [
+            12444
+          ],
+          "start": 13.34,
+          "end": 14.44,
+          "probability": 0.9821486473083496
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 14.44,
+          "end": 15.46,
+          "probability": 0.45994648337364197
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 1,
+      "at": 7.084,
+      "valid": false,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3667,
+      "bounds": [
+        7.084,
+        25.084
+      ],
+      "words": [
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.0,
+          "end": 6.12,
+          "probability": 0.02660600282251835
+        },
+        {
+          "word": "耶",
+          "tokens": [
+            22143
+          ],
+          "start": 6.12,
+          "end": 7.04,
+          "probability": 0.03635673224925995
+        },
+        {
+          "word": "和",
+          "tokens": [
+            12565
+          ],
+          "start": 7.04,
+          "end": 7.46,
+          "probability": 0.9535937905311584
+        },
+        {
+          "word": "华",
+          "tokens": [
+            5322,
+            236
+          ],
+          "start": 7.46,
+          "end": 7.9,
+          "probability": 0.10285134287551045
+        },
+        {
+          "word": "是",
+          "tokens": [
+            1541
+          ],
+          "start": 7.9,
+          "end": 9.14,
+          "probability": 0.06069425493478775
+        },
+        {
+          "word": "我的",
+          "tokens": [
+            14200
+          ],
+          "start": 9.14,
+          "end": 10.34,
+          "probability": 0.2759106159210205
+        },
+        {
+          "word": "牧",
+          "tokens": [
+            6935,
+            100
+          ],
+          "start": 10.34,
+          "end": 11.34,
+          "probability": 0.46459258906543255
+        },
+        {
+          "word": "者",
+          "tokens": [
+            12444
+          ],
+          "start": 11.34,
+          "end": 12.48,
+          "probability": 0.9841518402099609
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 12.48,
+          "end": 13.52,
+          "probability": 0.4864473342895508
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 0,
+      "at": 37.484,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.442,
+      "bounds": [
+        30.284,
+        52.284
+      ],
+      "words": [
+        {
+          "word": "领",
+          "tokens": [
+            12501,
+            228
+          ],
+          "start": 0.0,
+          "end": 2.46,
+          "probability": 0.15979906808934174
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 2.46,
+          "end": 2.96,
+          "probability": 0.006345563102513552
+        },
+        {
+          "word": "安",
+          "tokens": [
+            16206
+          ],
+          "start": 2.96,
+          "end": 4.1,
+          "probability": 0.002515507163479924
+        },
+        {
+          "word": "歇",
+          "tokens": [
+            4287,
+            229
+          ],
+          "start": 4.1,
+          "end": 5.42,
+          "probability": 0.7798317074775696
+        },
+        {
+          "word": "水",
+          "tokens": [
+            15590
+          ],
+          "start": 5.42,
+          "end": 6.14,
+          "probability": 0.47635170817375183
+        },
+        {
+          "word": "边",
+          "tokens": [
+            40503
+          ],
+          "start": 6.14,
+          "end": 7.2,
+          "probability": 0.9053173661231995
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 7.2,
+          "end": 8.08,
+          "probability": 0.08815301954746246
+        },
+        {
+          "word": "使",
+          "tokens": [
+            22982
+          ],
+          "start": 8.08,
+          "end": 9.08,
+          "probability": 0.045301903039216995
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 9.08,
+          "end": 9.82,
+          "probability": 0.8675640821456909
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 9.82,
+          "end": 10.9,
+          "probability": 0.5121516725048423
+        },
+        {
+          "word": "得",
+          "tokens": [
+            5916
+          ],
+          "start": 10.9,
+          "end": 11.62,
+          "probability": 0.6379706263542175
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 11.62,
+          "end": 12.68,
+          "probability": 0.16338147222995758
+        },
+        {
+          "word": "苏",
+          "tokens": [
+            13736,
+            237
+          ],
+          "start": 12.68,
+          "end": 13.3,
+          "probability": 0.5891712009906769
+        },
+        {
+          "word": "醒",
+          "tokens": [
+            40796
+          ],
+          "start": 13.3,
+          "end": 14.44,
+          "probability": 0.7721136808395386
+        },
+        {
+          "word": "为",
+          "tokens": [
+            13992
+          ],
+          "start": 14.44,
+          "end": 15.24,
+          "probability": 0.6166961193084717
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 15.24,
+          "end": 16.28,
+          "probability": 0.1276136040687561
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 1,
+      "at": 37.504,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.4614,
+      "bounds": [
+        32.284,
+        50.284
+      ],
+      "words": [
+        {
+          "word": "领",
+          "tokens": [
+            12501,
+            228
+          ],
+          "start": 0.0,
+          "end": 0.68,
+          "probability": 0.27511488150412333
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.68,
+          "end": 1.44,
+          "probability": 0.5123766660690308
+        },
+        {
+          "word": "安",
+          "tokens": [
+            16206
+          ],
+          "start": 1.44,
+          "end": 2.06,
+          "probability": 0.0013792390236631036
+        },
+        {
+          "word": "歇",
+          "tokens": [
+            4287,
+            229
+          ],
+          "start": 2.06,
+          "end": 3.42,
+          "probability": 0.6483821868896484
+        },
+        {
+          "word": "水",
+          "tokens": [
+            15590
+          ],
+          "start": 3.42,
+          "end": 4.14,
+          "probability": 0.3776973783969879
+        },
+        {
+          "word": "边",
+          "tokens": [
+            40503
+          ],
+          "start": 4.14,
+          "end": 5.22,
+          "probability": 0.8854420185089111
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 5.22,
+          "end": 6.12,
+          "probability": 0.06232621520757675
+        },
+        {
+          "word": "使",
+          "tokens": [
+            22982
+          ],
+          "start": 6.12,
+          "end": 7.08,
+          "probability": 0.08331965655088425
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 7.08,
+          "end": 7.72,
+          "probability": 0.9466626644134521
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 7.72,
+          "end": 8.84,
+          "probability": 0.5110897654667497
+        },
+        {
+          "word": "得",
+          "tokens": [
+            5916
+          ],
+          "start": 8.84,
+          "end": 9.66,
+          "probability": 0.6868153810501099
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 9.66,
+          "end": 10.66,
+          "probability": 0.36836227774620056
+        },
+        {
+          "word": "苏",
+          "tokens": [
+            13736,
+            237
+          ],
+          "start": 10.66,
+          "end": 11.32,
+          "probability": 0.5833546742796898
+        },
+        {
+          "word": "醒",
+          "tokens": [
+            40796
+          ],
+          "start": 11.32,
+          "end": 12.44,
+          "probability": 0.7233041524887085
+        },
+        {
+          "word": "为",
+          "tokens": [
+            13992
+          ],
+          "start": 12.44,
+          "end": 13.3,
+          "probability": 0.5312710404396057
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 13.3,
+          "end": 14.28,
+          "probability": 0.11699893325567245
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 0,
+      "at": 62.624,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5425,
+      "bounds": [
+        55.484,
+        77.484
+      ],
+      "words": [
+        {
+          "word": "引",
+          "tokens": [
+            41301
+          ],
+          "start": 0.0,
+          "end": 1.06,
+          "probability": 0.0035348900128155947
+        },
+        {
+          "word": "导",
+          "tokens": [
+            4510,
+            120
+          ],
+          "start": 1.06,
+          "end": 3.66,
+          "probability": 0.5431049391627312
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 3.66,
+          "end": 4.32,
+          "probability": 0.7276994585990906
+        },
+        {
+          "word": "行",
+          "tokens": [
+            8082
+          ],
+          "start": 4.32,
+          "end": 5.16,
+          "probability": 0.21676333248615265
+        },
+        {
+          "word": "义",
+          "tokens": [
+            2930,
+            231
+          ],
+          "start": 5.16,
+          "end": 6.18,
+          "probability": 0.3676490396610461
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 6.18,
+          "end": 7.14,
+          "probability": 0.1352386474609375
+        },
+        {
+          "word": "虽",
+          "tokens": [
+            12026,
+            121
+          ],
+          "start": 7.14,
+          "end": 8.1,
+          "probability": 0.8403169810771942
+        },
+        {
+          "word": "然",
+          "tokens": [
+            5823
+          ],
+          "start": 8.1,
+          "end": 9.14,
+          "probability": 0.975786030292511
+        },
+        {
+          "word": "行",
+          "tokens": [
+            8082
+          ],
+          "start": 9.14,
+          "end": 9.92,
+          "probability": 0.17928346991539001
+        },
+        {
+          "word": "过",
+          "tokens": [
+            16866
+          ],
+          "start": 9.92,
+          "end": 10.86,
+          "probability": 0.09045927971601486
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 10.86,
+          "end": 11.66,
+          "probability": 0.016002191230654716
+        },
+        {
+          "word": "荫",
+          "tokens": [
+            31409,
+            104
+          ],
+          "start": 11.66,
+          "end": 12.8,
+          "probability": 0.3171871745507815
+        },
+        {
+          "word": "幽",
+          "tokens": [
+            3509,
+            121
+          ],
+          "start": 12.8,
+          "end": 13.42,
+          "probability": 0.5261030234396458
+        },
+        {
+          "word": "谷",
+          "tokens": [
+            8897,
+            115
+          ],
+          "start": 13.42,
+          "end": 14.48,
+          "probability": 0.6244183480739594
+        },
+        {
+          "word": "我也",
+          "tokens": [
+            27761
+          ],
+          "start": 14.48,
+          "end": 16.06,
+          "probability": 0.9278168082237244
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 1,
+      "at": 62.604,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5277,
+      "bounds": [
+        57.484,
+        75.484
+      ],
+      "words": [
+        {
+          "word": "引",
+          "tokens": [
+            41301
+          ],
+          "start": 0.0,
+          "end": 0.74,
+          "probability": 0.0033614696003496647
+        },
+        {
+          "word": "导",
+          "tokens": [
+            4510,
+            120
+          ],
+          "start": 0.74,
+          "end": 1.68,
+          "probability": 0.5642867460846901
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 1.68,
+          "end": 2.44,
+          "probability": 0.8107525110244751
+        },
+        {
+          "word": "行",
+          "tokens": [
+            8082
+          ],
+          "start": 2.44,
+          "end": 3.16,
+          "probability": 0.06642016023397446
+        },
+        {
+          "word": "义",
+          "tokens": [
+            2930,
+            231
+          ],
+          "start": 3.16,
+          "end": 4.24,
+          "probability": 0.3410267324652523
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 4.24,
+          "end": 5.12,
+          "probability": 0.06679337471723557
+        },
+        {
+          "word": "虽",
+          "tokens": [
+            12026,
+            121
+          ],
+          "start": 5.12,
+          "end": 6.08,
+          "probability": 0.8418311476707458
+        },
+        {
+          "word": "然",
+          "tokens": [
+            5823
+          ],
+          "start": 6.08,
+          "end": 7.1,
+          "probability": 0.9799373745918274
+        },
+        {
+          "word": "行",
+          "tokens": [
+            8082
+          ],
+          "start": 7.1,
+          "end": 7.94,
+          "probability": 0.14897437393665314
+        },
+        {
+          "word": "过",
+          "tokens": [
+            16866
+          ],
+          "start": 7.94,
+          "end": 8.84,
+          "probability": 0.09623951464891434
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 8.84,
+          "end": 9.68,
+          "probability": 0.011620571836829185
+        },
+        {
+          "word": "荫",
+          "tokens": [
+            31409,
+            104
+          ],
+          "start": 9.68,
+          "end": 10.78,
+          "probability": 0.30042680182668846
+        },
+        {
+          "word": "幽",
+          "tokens": [
+            3509,
+            121
+          ],
+          "start": 10.78,
+          "end": 11.46,
+          "probability": 0.4976521711796522
+        },
+        {
+          "word": "谷",
+          "tokens": [
+            8897,
+            115
+          ],
+          "start": 11.46,
+          "end": 12.52,
+          "probability": 0.5672943592071533
+        },
+        {
+          "word": "我也",
+          "tokens": [
+            27761
+          ],
+          "start": 12.52,
+          "end": 13.68,
+          "probability": 0.9166802763938904
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 0,
+      "at": 87.984,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8133,
+      "bounds": [
+        80.684,
+        102.684
+      ],
+      "words": [
+        {
+          "word": "因",
+          "tokens": [
+            8698
+          ],
+          "start": 0.0,
+          "end": 0.5,
+          "probability": 0.0020701333414763212
+        },
+        {
+          "word": "你",
+          "tokens": [
+            2166
+          ],
+          "start": 0.5,
+          "end": 3.56,
+          "probability": 0.8685309290885925
+        },
+        {
+          "word": "与",
+          "tokens": [
+            940,
+            236
+          ],
+          "start": 3.56,
+          "end": 4.16,
+          "probability": 0.7101763784885406
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 4.16,
+          "end": 5.36,
+          "probability": 0.9961785078048706
+        },
+        {
+          "word": "同",
+          "tokens": [
+            13089
+          ],
+          "start": 5.36,
+          "end": 6.06,
+          "probability": 0.817604660987854
+        },
+        {
+          "word": "在",
+          "tokens": [
+            3581
+          ],
+          "start": 6.06,
+          "end": 7.3,
+          "probability": 0.9704185128211975
+        },
+        {
+          "word": "在",
+          "tokens": [
+            3581
+          ],
+          "start": 7.3,
+          "end": 7.96,
+          "probability": 0.7687682509422302
+        },
+        {
+          "word": "敌",
+          "tokens": [
+            7017,
+            234
+          ],
+          "start": 7.96,
+          "end": 9.16,
+          "probability": 0.3855864383513108
+        },
+        {
+          "word": "面",
+          "tokens": [
+            8833
+          ],
+          "start": 9.16,
+          "end": 9.68,
+          "probability": 0.9753983020782471
+        },
+        {
+          "word": "前",
+          "tokens": [
+            8945
+          ],
+          "start": 9.68,
+          "end": 10.86,
+          "probability": 0.920529842376709
+        },
+        {
+          "word": "你",
+          "tokens": [
+            2166
+          ],
+          "start": 10.86,
+          "end": 11.74,
+          "probability": 0.6473553776741028
+        },
+        {
+          "word": "又",
+          "tokens": [
+            17047
+          ],
+          "start": 11.74,
+          "end": 12.8,
+          "probability": 0.9727688431739807
+        },
+        {
+          "word": "为",
+          "tokens": [
+            13992
+          ],
+          "start": 12.8,
+          "end": 13.4,
+          "probability": 0.9774150252342224
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 13.4,
+          "end": 14.54,
+          "probability": 0.9961659908294678
+        },
+        {
+          "word": "摆",
+          "tokens": [
+            34783,
+            228
+          ],
+          "start": 14.54,
+          "end": 15.12,
+          "probability": 0.5206652246415615
+        },
+        {
+          "word": "设",
+          "tokens": [
+            7422,
+            122
+          ],
+          "start": 15.12,
+          "end": 21.98,
+          "probability": 0.968418300151825
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 1,
+      "at": 87.944,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8126,
+      "bounds": [
+        82.684,
+        100.684
+      ],
+      "words": [
+        {
+          "word": "因",
+          "tokens": [
+            8698
+          ],
+          "start": 0.0,
+          "end": 0.44,
+          "probability": 0.008076569065451622
+        },
+        {
+          "word": "你",
+          "tokens": [
+            2166
+          ],
+          "start": 0.44,
+          "end": 1.64,
+          "probability": 0.9248644113540649
+        },
+        {
+          "word": "与",
+          "tokens": [
+            940,
+            236
+          ],
+          "start": 1.64,
+          "end": 2.18,
+          "probability": 0.6684394329786301
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 2.18,
+          "end": 3.4,
+          "probability": 0.9987136125564575
+        },
+        {
+          "word": "同",
+          "tokens": [
+            13089
+          ],
+          "start": 3.4,
+          "end": 4.1,
+          "probability": 0.9461188912391663
+        },
+        {
+          "word": "在",
+          "tokens": [
+            3581
+          ],
+          "start": 4.1,
+          "end": 5.26,
+          "probability": 0.964966356754303
+        },
+        {
+          "word": "在",
+          "tokens": [
+            3581
+          ],
+          "start": 5.26,
+          "end": 5.94,
+          "probability": 0.7557513117790222
+        },
+        {
+          "word": "敌",
+          "tokens": [
+            7017,
+            234
+          ],
+          "start": 5.94,
+          "end": 7.12,
+          "probability": 0.4002061945357127
+        },
+        {
+          "word": "面",
+          "tokens": [
+            8833
+          ],
+          "start": 7.12,
+          "end": 7.68,
+          "probability": 0.9895564913749695
+        },
+        {
+          "word": "前",
+          "tokens": [
+            8945
+          ],
+          "start": 7.68,
+          "end": 8.72,
+          "probability": 0.937576949596405
+        },
+        {
+          "word": "你",
+          "tokens": [
+            2166
+          ],
+          "start": 8.72,
+          "end": 9.72,
+          "probability": 0.6692625284194946
+        },
+        {
+          "word": "又",
+          "tokens": [
+            17047
+          ],
+          "start": 9.72,
+          "end": 10.8,
+          "probability": 0.9680097699165344
+        },
+        {
+          "word": "为",
+          "tokens": [
+            13992
+          ],
+          "start": 10.8,
+          "end": 11.28,
+          "probability": 0.993328332901001
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 11.28,
+          "end": 12.52,
+          "probability": 0.9975119829177856
+        },
+        {
+          "word": "摆",
+          "tokens": [
+            34783,
+            228
+          ],
+          "start": 12.52,
+          "end": 13.2,
+          "probability": 0.5056127412244678
+        },
+        {
+          "word": "设",
+          "tokens": [
+            7422,
+            122
+          ],
+          "start": 13.2,
+          "end": 17.98,
+          "probability": 0.9093726277351379
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 0,
+      "at": 113.284,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6038,
+      "bounds": [
+        105.884,
+        127.884
+      ],
+      "words": [
+        {
+          "word": "使",
+          "tokens": [
+            22982
+          ],
+          "start": 0.0,
+          "end": 2.4,
+          "probability": 0.0008811129373498261
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 2.4,
+          "end": 3.52,
+          "probability": 0.9048990607261658
+        },
+        {
+          "word": "福",
+          "tokens": [
+            33952
+          ],
+          "start": 3.52,
+          "end": 4.1,
+          "probability": 0.014782804064452648
+        },
+        {
+          "word": "杯",
+          "tokens": [
+            45458
+          ],
+          "start": 4.1,
+          "end": 5.44,
+          "probability": 0.003289466258138418
+        },
+        {
+          "word": "满",
+          "tokens": [
+            15868,
+            94
+          ],
+          "start": 5.44,
+          "end": 6.3,
+          "probability": 0.6572544425725937
+        },
+        {
+          "word": "溢",
+          "tokens": [
+            16084,
+            95
+          ],
+          "start": 6.3,
+          "end": 7.4,
+          "probability": 0.5016910112462938
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 7.4,
+          "end": 8.04,
+          "probability": 0.5845239758491516
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 8.04,
+          "end": 9.12,
+          "probability": 0.12309091538190842
+        },
+        {
+          "word": "恩",
+          "tokens": [
+            47638
+          ],
+          "start": 9.12,
+          "end": 9.74,
+          "probability": 0.006442636717110872
+        },
+        {
+          "word": "惠",
+          "tokens": [
+            4799,
+            254
+          ],
+          "start": 9.74,
+          "end": 10.88,
+          "probability": 0.8936414122581482
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 10.88,
+          "end": 11.58,
+          "probability": 0.8788458108901978
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 11.58,
+          "end": 12.86,
+          "probability": 0.9751281142234802
+        },
+        {
+          "word": "慈",
+          "tokens": [
+            12358,
+            230
+          ],
+          "start": 12.86,
+          "end": 13.48,
+          "probability": 0.5827509015798569
+        },
+        {
+          "word": "爱",
+          "tokens": [
+            27324
+          ],
+          "start": 13.48,
+          "end": 14.52,
+          "probability": 0.0555185042321682
+        },
+        {
+          "word": "一",
+          "tokens": [
+            2257
+          ],
+          "start": 14.52,
+          "end": 15.3,
+          "probability": 0.9513922333717346
+        },
+        {
+          "word": "生",
+          "tokens": [
+            8244
+          ],
+          "start": 15.3,
+          "end": 16.26,
+          "probability": 0.986397922039032
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 1,
+      "at": 113.244,
+      "valid": true,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5639,
+      "bounds": [
+        107.884,
+        125.884
+      ],
+      "words": [
+        {
+          "word": "使",
+          "tokens": [
+            22982
+          ],
+          "start": 0.0,
+          "end": 0.68,
+          "probability": 0.03293528035283089
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.68,
+          "end": 1.5,
+          "probability": 0.9698977470397949
+        },
+        {
+          "word": "福",
+          "tokens": [
+            33952
+          ],
+          "start": 1.5,
+          "end": 2.1,
+          "probability": 0.01715599186718464
+        },
+        {
+          "word": "杯",
+          "tokens": [
+            45458
+          ],
+          "start": 2.1,
+          "end": 3.44,
+          "probability": 0.004263388458639383
+        },
+        {
+          "word": "满",
+          "tokens": [
+            15868,
+            94
+          ],
+          "start": 3.44,
+          "end": 4.28,
+          "probability": 0.733360692858696
+        },
+        {
+          "word": "溢",
+          "tokens": [
+            16084,
+            95
+          ],
+          "start": 4.28,
+          "end": 5.36,
+          "probability": 0.5016711973585188
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 5.36,
+          "end": 6.04,
+          "probability": 0.3843068778514862
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 6.04,
+          "end": 7.1,
+          "probability": 0.09600155055522919
+        },
+        {
+          "word": "恩",
+          "tokens": [
+            47638
+          ],
+          "start": 7.1,
+          "end": 7.8,
+          "probability": 0.010173875838518143
+        },
+        {
+          "word": "惠",
+          "tokens": [
+            4799,
+            254
+          ],
+          "start": 7.8,
+          "end": 8.86,
+          "probability": 0.8671741783618927
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 8.86,
+          "end": 9.58,
+          "probability": 0.7193312048912048
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 9.58,
+          "end": 10.76,
+          "probability": 0.9530142545700073
+        },
+        {
+          "word": "慈",
+          "tokens": [
+            12358,
+            230
+          ],
+          "start": 10.76,
+          "end": 11.36,
+          "probability": 0.629862517118454
+        },
+        {
+          "word": "爱",
+          "tokens": [
+            27324
+          ],
+          "start": 11.36,
+          "end": 12.52,
+          "probability": 0.03059219941496849
+        },
+        {
+          "word": "一",
+          "tokens": [
+            2257
+          ],
+          "start": 12.52,
+          "end": 13.32,
+          "probability": 0.9605002999305725
+        },
+        {
+          "word": "生",
+          "tokens": [
+            8244
+          ],
+          "start": 13.32,
+          "end": 14.3,
+          "probability": 0.988122284412384
+        }
+      ]
+    }
+  ],
+  "estimates": [
+    11.084,
+    36.284,
+    61.483999999999995,
+    86.684,
+    111.884
+  ],
+  "phaseDecisions": [],
+  "recordingMaps": {
+    "03-002耶和华是我的牧者.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8469401001930237,
+      "meanPathCost": 0.15802527964115143,
+      "cueWindowCosts": [
+        0.09837372601032257,
+        0.1688757985830307,
+        0.15213234722614288,
+        0.20910394191741943,
+        0.1856539100408554
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 5,
+  "elapsedSeconds": 176.345
+}

@@ -2,12 +2,13 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 176,
+    "published": 179,
     "existing": 8,
     "needs-calibration": 142,
     "missing-audio": 2,
-    "ready-to-verify": 1,
-    "pending": 68,
+    "needs-track-alignment": 2,
+    "pending": 55,
+    "ready-to-verify": 9,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1381,7 +1382,7 @@
       "songId": "03-002",
       "source": "03-002耶和华是我的牧者.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "03-002耶和华是我的牧者.mp3",
         "03-002耶和华是我的牧者-领唱.mp3"
@@ -1467,11 +1468,12 @@
       "songId": "03-010",
       "source": "03-010我在拿撒勒人耶稣面前.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-010我在拿撒勒人耶稣面前.mp3",
         "03-010我在拿撒勒人耶稣面前-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,7,9"
     },
     {
       "songId": "03-011",
@@ -1499,47 +1501,51 @@
       "songId": "03-013",
       "source": "03-013十架七言-第一言-父啊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-013十架七言-第一言-父啊.mp3",
         "03-013十架七言-第一言-父啊-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "03-014",
       "source": "03-014十架七言-第二言-在乐园.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-014十架七言-第二言-在乐园.mp3",
         "03-014十架七言-第二言-在乐园-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,4,5"
     },
     {
       "songId": "03-015",
       "source": "03-015十架七言-第三言-母亲看.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-015十架七言-第三言-母亲看.mp3",
         "03-015十架七言-第三言-母亲看-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2"
     },
     {
       "songId": "03-016",
       "source": "03-016十架七言-第四言-为何离弃我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-016十架七言-第四言-为何离弃我.mp3",
         "03-016十架七言-第四言-为何离弃我-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1"
     },
     {
       "songId": "03-017",
       "source": "03-017十架七言-第五言-我渴了.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "03-017十架七言-第五言-我渴了.mp3",
         "03-017十架七言-第五言-我渴了-领唱.mp3"
@@ -1549,47 +1555,51 @@
       "songId": "03-018",
       "source": "03-018十架七言-第六言-成了.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-018十架七言-第六言-成了.mp3",
         "03-018十架七言-第六言-成了-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1"
     },
     {
       "songId": "03-019",
       "source": "03-019十架七言-第七言-我将灵魂.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-019十架七言-第七言-我将灵魂.mp3",
         "03-019十架七言-第七言-我将灵魂-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2"
     },
     {
       "songId": "03-020",
       "source": "03-020主如明亮晨星.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-020主如明亮晨星.mp3",
         "03-020主如明亮晨星-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.398"
     },
     {
       "songId": "03-025",
       "source": "03-025宝血大权能.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-025宝血大权能.mp3",
         "03-025宝血大权能-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：4,6"
     },
     {
       "songId": "03-026",
       "source": "03-026复活得胜主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "03-026复活得胜主.mp3",
         "03-026复活得胜主-领唱.mp3"
@@ -1599,10 +1609,11 @@
       "songId": "03-028",
       "source": "03-028何等爱耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-028何等爱耶稣.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "03-029",
@@ -1618,10 +1629,11 @@
       "songId": "03-030",
       "source": "03-030渴慕耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-030渴慕耶稣.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "03-031",
@@ -1736,12 +1748,11 @@
       "songId": "04-184",
       "source": "04-184歌颂救赎主.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "needs-track-alignment",
       "tracks": [
         "04-184歌颂救赎主.mp3",
         "04-184歌颂救赎主-领唱.mp3"
-      ],
-      "reason": "谱面旋律与实际录音匹配不足"
+      ]
     },
     {
       "songId": "04-369",
@@ -2413,11 +2424,10 @@
       "songId": "05-091",
       "source": "05-091父旨成全歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-091父旨成全歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-093",
@@ -2689,11 +2699,10 @@
       "songId": "05-153",
       "source": "05-153夕阳西沉歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-153夕阳西沉歌.mp3"
-      ],
-      "reason": "谱面旋律与实际录音匹配不足"
+      ]
     },
     {
       "songId": "05-159",
@@ -2736,11 +2745,10 @@
       "songId": "05-169",
       "source": "05-169领受饼杯歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-169领受饼杯歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-197",
@@ -2935,12 +2943,11 @@
       "songId": "05-230",
       "source": "05-230荣耀释放歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-230荣耀释放歌.mp3",
         "05-230荣耀释放歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-231",
@@ -3002,11 +3009,10 @@
       "songId": "05-239",
       "source": "05-239耶稣爱我歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-239耶稣爱我歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-240",
@@ -3115,11 +3121,10 @@
       "songId": "05-255",
       "source": "05-255爱主更深歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-255爱主更深歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-256",
@@ -3211,12 +3216,11 @@
       "songId": "05-273",
       "source": "05-273神的应许歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-273神的应许歌.mp3",
         "05-273神的应许歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-274",
@@ -3259,11 +3263,10 @@
       "songId": "05-279",
       "source": "05-279主不改变歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-279主不改变歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-280",
@@ -3315,11 +3318,10 @@
       "songId": "05-286",
       "source": "05-286靠主有福歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-286靠主有福歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-287",
@@ -3363,11 +3365,10 @@
       "songId": "05-293",
       "source": "05-293耶稣住我心歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-293耶稣住我心歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-294",
@@ -3697,7 +3698,7 @@
       "tracks": [
         "06-001我虽软弱但你强壮.mp3"
       ],
-      "reason": "第 13 个歌词起点未通过转写及双窗口核对"
+      "reason": "第 2 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-002",

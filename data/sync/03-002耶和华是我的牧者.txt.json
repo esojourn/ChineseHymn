@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "03-002",
+  "status": "reviewed",
+  "source": {
+    "file": "03-002耶和华是我的牧者.txt",
+    "sha256": "29996e4bc8f0d51375223f55f02fc62e29d477e855f7f0094ee4d6536699875f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-002耶和华是我的牧者.mp3",
+      "sha256": "2a8e07c33d7f27bc1469d800fe625186134dde89ca452ea8cc08262eec54e7fb",
+      "duration": 140.06857142857143,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.93,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.09,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 62.21,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 87.56,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 112.86,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-002耶和华是我的牧者-领唱.mp3",
+      "sha256": "8b7740b3713d62de2027d08feef1f7981a56c081df01b78efc9a02fad5c7a713",
+      "duration": 139.1281632653061,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    }
+  },
+  "cues": [
+    {
+      "at": 12.33,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.49,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 62.61,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.96,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.26,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶和华是我的牧者，我必不至缺乏， 使我躺卧在青草地，领我安歇水边。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他使我灵得着苏醒，为着自己的名， 他引导我行走义路，引导我行义路。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "虽然行过死荫幽谷，我也不怕遭害， 你杖你杆都安慰我，因你与我同在。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "在敌面前你又为我，摆设美好宴席， 你用油膏膏我的头，使我福杯满溢。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我主恩惠我主慈爱，一生一世不离， 我必居住在主殿中，直到永永远远。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-002耶和华是我的牧者.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

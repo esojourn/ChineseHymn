@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-017",
+  "status": "reviewed",
+  "source": {
+    "file": "03-017十架七言-第五言-我渴了.txt",
+    "sha256": "036b85a077e9b313549fee83d12f79d444510b6fcfef83e04a63b373a99c756e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-017十架七言-第五言-我渴了.mp3",
+      "sha256": "67fcf7d7a574fe5b980f7370403ab05e65e4a35a02e353ca9c4992552e43c6f4",
+      "duration": 158.19755102040816,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 2.18,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 42.89,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 80.38,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 121.35,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-017十架七言-第五言-我渴了-领唱.mp3",
+      "sha256": "84b9370299da7675222fcee7937e1ed4584f281bfa5344784b597a72acc77c68",
+      "duration": 158.27591836734695,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 3.18,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 43.79,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.28,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.35,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "得赎的人无一了解完全， 主用重价赎我回归羊圈， 为赎我罪竟然受伤如此， 轻轻声音，他说我渴了。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主啊使我渐渐能明白， 你为我付出救赎大爱， 让我完全明白你爱不变， 也使我知道对你的亏欠。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "口中干渴虽然十分痛苦， 心灵饥渴远超所能描述， 内心深处发出沉重呼声， 从他口中，他诉说我渴了。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "主啊使我渐渐能明白， 你为我付出救赎大爱， 让我完全明白你爱不变， 也使我知道对你的亏欠。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-017十架七言-第五言-我渴了.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 168,
+    "published": 171,
     "existing": 8,
-    "needs-calibration": 81,
+    "needs-calibration": 106,
     "missing-audio": 2,
-    "pending": 135,
-    "ready-to-verify": 3,
+    "ready-to-verify": 2,
+    "pending": 108,
     "missing-lyrics": 23
   },
   "songs": [
@@ -587,116 +587,127 @@
       "songId": "02-014",
       "source": "02-014基督是生命之光.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-014基督是生命之光.mp3",
         "02-014基督是生命之光-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：5"
     },
     {
       "songId": "02-015",
       "source": "02-015你的名在全地何其美.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-015你的名在全地何其美.mp3",
         "02-015你的名在全地何其美-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,7,8,9"
     },
     {
       "songId": "02-018",
       "source": "02-018你的信实广大.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-018你的信实广大.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-020",
       "source": "02-020认识你，耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-020认识你，耶稣.mp3",
         "02-020认识你，耶稣-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.573"
     },
     {
       "songId": "02-021",
       "source": "02-021耶和华你是我的神.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-021耶和华你是我的神.mp3",
         "02-021耶和华你是我的神-领唱.mp3"
-      ]
+      ],
+      "reason": "第6段音乐对应不足：0.312"
     },
     {
       "songId": "02-022",
       "source": "02-022更新我心意.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-022更新我心意.mp3",
         "02-022更新我心意-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.240"
     },
     {
       "songId": "02-023",
       "source": "02-023耶稣是我的一切.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-023耶稣是我的一切.mp3",
         "02-023耶稣是我的一切-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.572"
     },
     {
       "songId": "02-025",
       "source": "02-025求主使我成长.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-025求主使我成长.mp3",
         "02-025求主使我成长-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：3,6"
     },
     {
       "songId": "02-026",
       "source": "02-026惟有至圣洁神.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-026惟有至圣洁神.mp3",
         "02-026惟有至圣洁神-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.542"
     },
     {
       "songId": "02-028",
       "source": "02-028在高天真神宝座前.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-028在高天真神宝座前.mp3",
         "02-028在高天真神宝座前-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.543"
     },
     {
       "songId": "02-174",
       "source": "02-174耶稣奇妙的救恩.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-174耶稣奇妙的救恩.mp3",
         "02-174耶稣奇妙的救恩-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4,8"
     },
     {
       "songId": "02-175",
       "source": "02-175微声盼望.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-175微声盼望.mp3"
       ]
@@ -705,21 +716,23 @@
       "songId": "02-176",
       "source": "02-176我所信有根基.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-176我所信有根基.mp3",
         "02-176我所信有根基-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "02-178",
       "source": "02-178奇异的爱.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-178奇异的爱.mp3",
         "02-178奇异的爱-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：3,5,7,8,9"
     },
     {
       "songId": "02-190",
@@ -735,10 +748,11 @@
       "songId": "02-199",
       "source": "02-199仰望真神羔羊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-199仰望真神羔羊.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "02-206",
@@ -894,7 +908,7 @@
       "songId": "02-294",
       "source": "02-294愿我信心永不退后.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-294愿我信心永不退后-领唱.mp3"
       ]
@@ -903,74 +917,82 @@
       "songId": "02-296",
       "source": "02-296信心仰望.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-296信心仰望.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-332",
       "source": "02-332真神永远膀臂.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-332真神永远膀臂.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-352",
       "source": "02-352我要忠诚1.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-352我要忠诚1.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-353",
       "source": "02-353我要忠诚2.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-353我要忠诚2.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-361",
       "source": "02-361我宁愿有耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-361我宁愿有耶稣.mp3",
         "02-361我宁愿有耶稣-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-370",
       "source": "02-370更亲近恩主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-370更亲近恩主.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-374",
       "source": "02-374更像我恩主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-374更像我恩主.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-375",
       "source": "02-375精兵兴起.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-375精兵兴起.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "02-377",
@@ -985,29 +1007,32 @@
       "songId": "02-380",
       "source": "02-380坚守阵地.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-380坚守阵地.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-381",
       "source": "02-381基督精兵前进.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-381基督精兵前进.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-382",
       "source": "02-382万世战争.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-382万世战争.mp3",
         "02-382万世战争-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1"
     },
     {
       "songId": "02-383",
@@ -3602,7 +3627,7 @@
       "songId": "05-416",
       "source": "05-416神啊求你鉴察我.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-416神啊求你鉴察我.mp3",
         "05-416神啊求你鉴察我-领唱.mp3"
@@ -3612,7 +3637,7 @@
       "songId": "05-417",
       "source": "05-417我当完全属主.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-417我当完全属主.mp3",
         "05-417我当完全属主-领唱.mp3"
@@ -3622,7 +3647,7 @@
       "songId": "05-437",
       "source": "05-437信心加上德行.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-437信心加上德行.mp3",
         "05-437信心加上德行-领唱.mp3"

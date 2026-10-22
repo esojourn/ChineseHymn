@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "05-416",
+  "status": "reviewed",
+  "source": {
+    "file": "05-416神啊求你鉴察我.jpg",
+    "sha256": "50ca43f398adbd10e62dc0aacead1593c4dcc4d2e50fbd0b50b84d04150de5a6",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-416神啊求你鉴察我.mp3",
+      "sha256": "c0484c8f5d9aa07621cfdc1196f68bded4cd75362e0f279aaf42dc0aa0d61a07",
+      "duration": 82.07673469387755,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.3,
+          "region": "s1_chorus",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 20.7,
+          "region": "s2_chorus",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 33.8,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-416神啊求你鉴察我-领唱.mp3",
+      "sha256": "065cf631aad63a9571fe0823cc9b9e7d8a8ece7622fb4c714b7c3dccffddb7c3",
+      "duration": 81.6065306122449,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_chorus": {
+      "kind": "image",
+      "top": 0.396663,
+      "bottom": 0.503246
+    },
+    "s2_chorus": {
+      "kind": "image",
+      "top": 0.605726,
+      "bottom": 0.711279
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.812729,
+      "bottom": 0.918282
+    }
+  },
+  "cues": [
+    {
+      "at": 4.8,
+      "region": "s1_chorus",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.2,
+      "region": "s2_chorus",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 33.3,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_chorus",
+        "text": "神啊！求你鉴察我，知道我的心思，试炼",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_chorus",
+        "text": "我,知道我的意念；看在我里面有什么",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "恶行没有，引导我走永生的道路。",
+        "label": "第1段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-416神啊求你鉴察我.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

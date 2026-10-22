@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "songId": "05-417",
+  "status": "reviewed",
+  "source": {
+    "file": "05-417我当完全属主.jpg",
+    "sha256": "ccb096e334eb8af2de1d9ef270885d1817b6d137a47da7699416fdbf90411ad8",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-417我当完全属主.mp3",
+      "sha256": "e3155c6dac0eb95fc3d337d9f0124c63cca8a31d2b255dcbd7765c1cbe7ead63",
+      "duration": 82.18122448979592,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.8,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 19.75,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 31.4,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 45.35,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 57.0,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 70.95,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-417我当完全属主-领唱.mp3",
+      "sha256": "5e68dabcd0f87faf548c03657c57233f2babec7172ae8b6883e67e0cd2d1a43e",
+      "duration": 85.23755102040816,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.346839,
+      "bottom": 0.47403
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.421836,
+      "bottom": 0.546755
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.495697,
+      "bottom": 0.620615
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.728643,
+      "bottom": 0.853561
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.802504,
+      "bottom": 0.926286
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.875228,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 6.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.35,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.0,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 45.95,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.6,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 71.55,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我已蒙主救赎，我当完全属主，因他把",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我从罪中救起，使我心灵复苏。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我有主在心里，我当受主管理，求他改",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "变我旧人生命，助我结果顺利。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我是耶稣的人，我当靠主大能，照他旨",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "意去殷勤作工，将来领受福分。",
+        "label": "第3段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-417我当完全属主.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

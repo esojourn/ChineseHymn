@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "songId": "05-437",
+  "status": "reviewed",
+  "source": {
+    "file": "05-437信心加上德行.jpg",
+    "sha256": "c718092cbdc0afdba3593b0e74baba73db2e3c249e5edae504017c307ad08f32",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-437信心加上德行.mp3",
+      "sha256": "0ddd77f014ffdbd34b667befe5bc199f1682988f45afbde311595db7f74e4a8e",
+      "duration": 95.544,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.1,
+          "region": "s1_chorus",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 18.7,
+          "region": "s2_chorus",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 29.6,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 40.0,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-437信心加上德行-领唱.mp3",
+      "sha256": "e6ad61c54a5c82a93d60f0ba12d3bc37f427c827bdda8b8fec73e0071880b2f4",
+      "duration": 94.44,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_chorus": {
+      "kind": "image",
+      "top": 0.272761,
+      "bottom": 0.38014
+    },
+    "s2_chorus": {
+      "kind": "image",
+      "top": 0.436046,
+      "bottom": 0.545559
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.599331,
+      "bottom": 0.708844
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.761548,
+      "bottom": 0.869994
+    }
+  },
+  "cues": [
+    {
+      "at": 6.0,
+      "region": "s1_chorus",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.6,
+      "region": "s2_chorus",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.5,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.9,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_chorus",
+        "text": "有了信心，又要加上德行；有了德行，又要加上知识；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_chorus",
+        "text": "有了知识，又要加上节制；有了节制，又要加上忍耐；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "有了忍耐，又要加上虔敬；有了虔敬，又要加上爱弟",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "兄的心;有了爱弟兄的心，又要加上爱众人的心。",
+        "label": "第1段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-437信心加上德行.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

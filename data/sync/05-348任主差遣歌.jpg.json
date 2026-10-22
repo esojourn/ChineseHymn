@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "songId": "05-348",
+  "status": "reviewed",
+  "source": {
+    "file": "05-348任主差遣歌.jpg",
+    "sha256": "5723c59a7383f51425d9fb2737a4ed54931ae745af0e37edb9f29b401cbaff02",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-348任主差遣歌.mp3",
+      "sha256": "88dc23b0ebbb69a4edaf0184578971d34fa722acc96c168c6ebdbd991f4df116",
+      "duration": 209.832,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.145076,
+      "bottom": 0.227041
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.175041,
+      "bottom": 0.256418
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.203831,
+      "bottom": 0.285208
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.290787,
+      "bottom": 0.372165
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.320165,
+      "bottom": 0.401542
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.349542,
+      "bottom": 0.430331
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.435323,
+      "bottom": 0.517288
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.4647,
+      "bottom": 0.54549
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.49349,
+      "bottom": 0.57428
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.578684,
+      "bottom": 0.660061
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.608061,
+      "bottom": 0.689438
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.636851,
+      "bottom": 0.71764
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.749072,
+      "bottom": 0.830449
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.836028,
+      "bottom": 0.917405
+    }
+  },
+  "cues": [
+    {
+      "at": 20.75,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.95,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 41.7,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 51.8,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.0,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.7,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 83.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 93.85,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 104.6,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 114.7,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.9,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 135.6,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 146.55,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 156.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 167.5,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 177.6,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 188.8,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 198.5,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主愿用我事他之处，未必是隔重洋，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "未必是在 荒山僻路，艰难 危险战场。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "但闻救主微声招呼，特意提我微名，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "我拉主手，欣 然应答：命我何往必听。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "差我何往，我必前往；命我何言，必言；",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "派我何事，我乐担当，身心甘献主前。",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "如今有主恩爱之语，耶稣愿我传告，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "如若有人行走错路，耶稣愿我寻找。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "主肯前引，前途光明，虽行幽暗之中，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "既闻主命，愿 随主步，叫我何言必从。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "差我何往，我必前往；命我何言，必言；",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "派我何事，我乐担当，身心甘献主前。",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我知有我作工之处，在世广大禾田，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "一生时日 不再虚度，全为 荣主在天。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "今将所有全交我主，报主莫大恩情，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "遵主美旨，我乐顺服，派我何事必行。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "差我何往，我必前往；命我何言，必言；",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "派我何事，我乐担当，身心甘献主前。",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-348任主差遣歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

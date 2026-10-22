@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "03-032",
+  "status": "reviewed",
+  "source": {
+    "file": "03-032让耶稣进入心中.txt",
+    "sha256": "959e4f7b7cd93cc9cbc980066dbdcc53a2c74fa8618b35514260a16b3ab2d6a8",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-032让耶稣进入心中.mp3",
+      "sha256": "159026a35ade5f8994b29bfd2cae83e4ecd9e17943f992a093b99a62b38bc1d3",
+      "duration": 167.592,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.96,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 24.95,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 47.1,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 64.64,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 86.46,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 104.03,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.64,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.47,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-032让耶稣进入心中-领唱.mp3",
+      "sha256": "697f3cbe42b8bf8f349bec414319bda3429d8e979f8aa55280975a273ed3bfda",
+      "duration": 164.07510204081632,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.56,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.75,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.0,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.14,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.36,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.43,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.74,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.87,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你若背负罪担困倦莫名， 让耶稣进入你心中！ 你若是渴慕要得新生命， 让耶稣进入你心中！",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "副歌：现在不要再怀疑， 现在不要再推辞， 现在将心门敞开， 让耶稣进入你心怀。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "你若未得洁净因此叹息， 让耶稣进入你心中！ 洗罪活泉即在身边涌溢， 让耶稣进入你心中！",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "副歌：现在不要再怀疑， 现在不要再推辞， 现在将心门敞开， 让耶稣进入你心怀。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你若心有风波己力难平， 让耶稣进入你心中！ 若有虚空世界无计填充， 让耶稣进入你心中！",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "副歌：现在不要再怀疑， 现在不要再推辞， 现在将心门敞开， 让耶稣进入你心怀。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "你若要同得赎圣民歌颂， 让耶稣进入你心中！ 若要进入天上安乐明宫， 让耶稣进入你心中！",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "副歌：现在不要再怀疑， 现在不要再推辞， 现在将心门敞开， 让耶稣进入你心怀。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-032让耶稣进入心中.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

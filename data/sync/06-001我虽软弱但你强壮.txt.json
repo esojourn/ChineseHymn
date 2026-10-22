@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "songId": "06-001",
+  "status": "reviewed",
+  "source": {
+    "file": "06-001我虽软弱但你强壮.txt",
+    "sha256": "de386e081420d73cc00cc135113f03f7b7ad13fd460e2b7ebf553a1383faee8e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-001我虽软弱但你强壮.mp3",
+      "sha256": "73fd49284c5001f0b894d0eb7a0f590e1ab433f18c942031dec102d24e599759",
+      "duration": 229.401768707483,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 7
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 36,
+      "endLine": 39
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 45,
+      "endLine": 48
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 50,
+      "endLine": 51
+    }
+  },
+  "cues": [
+    {
+      "at": 0.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 14.52,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 28.47,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 42.78,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.28,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 80.17,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 93.41,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 106.92,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.03,
+      "region": "r9",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.86,
+      "region": "r10",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 159.76,
+      "region": "r11",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 186.37,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "return"
+    },
+    {
+      "at": 200.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 215.4,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Lord I come with nothing to offer you In my hands no gift bring",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "All I have is my pride and my selfishness All I want is you as my king",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "In my weakness now, I come, Lord Be my strength and be my song",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "In my need I seek your help Lord I am weak but you are strong",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "Give me strength,dear Lord,to obey your word As I take the shield of faith",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "I receive your gift of salvation I rejoice in the gift of your grace",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "In my weakness now, I come, Lord Be my strength and be my song",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "In my need I seek your help Lord I am weak but you are strong",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "In my weakness now, I come, Lord Be my strength and be my song",
+        "label": "第2段"
+      },
+      {
+        "region": "r10",
+        "text": "In my need I seek your help Lord I am weak but you are strong",
+        "label": "第2段"
+      },
+      {
+        "region": "r11",
+        "text": "I am weak but you are strong",
+        "label": "第2段"
+      },
+      {
+        "region": "r1",
+        "text": "Lord I come with nothing to offer you In my hands no gift bring",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "All I have is my pride and my selfishness All I want is you as my king",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "In my weakness now, I come, Lord Be my strength and be my song",
+        "label": "第1段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-001我虽软弱但你强壮.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

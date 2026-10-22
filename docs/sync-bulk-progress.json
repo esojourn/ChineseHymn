@@ -2,13 +2,12 @@
   "date": "2026-10-22",
   "totalSources": 420,
   "counts": {
-    "published": 191,
+    "published": 194,
     "existing": 8,
-    "needs-calibration": 139,
+    "needs-calibration": 140,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "ready-to-verify": 3,
-    "pending": 51,
+    "pending": 50,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1650,7 +1649,7 @@
       "songId": "03-032",
       "source": "03-032让耶稣进入心中.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "03-032让耶稣进入心中.mp3",
         "03-032让耶稣进入心中-领唱.mp3"
@@ -1682,11 +1681,12 @@
       "songId": "03-035",
       "source": "03-035信徒每逢受试炼.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-035信徒每逢受试炼.mp3",
         "03-035信徒每逢受试炼-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "03-036",
@@ -3608,7 +3608,7 @@
       "songId": "05-348",
       "source": "05-348任主差遣歌.jpg",
       "type": "image",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "05-348任主差遣歌.mp3"
       ]
@@ -3692,7 +3692,7 @@
       "songId": "06-001",
       "source": "06-001我虽软弱但你强壮.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "06-001我虽软弱但你强壮.mp3"
       ]

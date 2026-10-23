@@ -285,7 +285,41 @@
         ]
       }
     ],
-    "formReview": "已目视核对原发布者中文简谱，使用 Emmelar 曲调。正文前四行对应前半段；后四行从第三谱行中段的“从”起唱，不能将该谱行最左边、仍在延续前段“应”的长音当成新区域起点。新区域开头音为1,1,6,6,7，对应F调MIDI高声部索引30开始的音高类5,5,2,2,4，偏移18秒；首句3,4,5,5,6也逐项核对。不是另一版英文 Aurelia 曲调，实际每段两个区域仍须和声、旋律独立匹配和反复相位核对。"
+    "formReview": "已目视核对原发布者中文简谱，使用 Emmelar 曲调。正文前四行对应前半段；后四行从第三谱行中段的“从”起唱，不能将该谱行最左边、仍在延续前段“应”的长音当成新区域起点。新区域开头音为1,1,6,6,7，对应F调MIDI高声部索引30开始的音高类5,5,2,2,4，偏移18秒；首句3,4,5,5,6也逐项核对。不是另一版英文 Aurelia 曲调，实际每段两个区域仍须和声、旋律独立匹配和反复相位核对。",
+    "opticalReference": {
+      "svgFile": "reference/external/live-out-numbered.svg",
+      "imageFile": "printed-text-references/data/live-out-numbered.png",
+      "recognitionFile": "printed-text-references/ocr/live-out-numbered.png.json",
+      "imageSha256": "c1aefbe20ac34ac01fb94e346b8e5182faa0ab8332915424b4cd64d9732ce57a",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 3,
+      "rowsSha256": "4c9d58fe5d7397d9dbf61aee9576b345afd0c48cd17236c7cbae91416becf231",
+      "noteRanges": {
+        "0": [
+          0.1,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/cn/hymn/ch/304",
+      "renderReview": "已目视复核，首谱行左侧3/2拍号不属旋律，正文后四行从第三谱行的第二个1“从”开始；其前一个1仍延续“应”。 保留原谱内部休止、连音及节奏；完整音符序列与固定MIDI通过所有最优对应核对。和声仅留诊断，各录音仍须独立通过旋律、光学节奏、调性、起点、完整跨度及反复相位检查。"
+    }
   },
   "01-403": {
     "targetSha256": "d0321f209a895760e677c1864d32c900a90153823acb58b1474f8ddfb01356ff",
@@ -2713,8 +2747,8 @@
     "sha256": "4c46210e79e6beedb28e4b44212f1d503dcd3bff2ca30849a03156acb0b07c3b",
     "url": "https://chinatownministry.org/Hymnal/Midi/hymnary490.mid",
     "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary490.htm",
-    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Safe_in_the_Arms_of_Jesus/Safe_in_the_Arms_of_Jesus.xml",
-    "scoreReferenceSha256": "e07a784df63d177c5f3b0acb0bc1d911fa9d61d34e0f94eff43a3b521cf27862",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Chinese/svg/c0501_cn_n.svg",
+    "scoreReferenceSha256": "b65df83efce2108ffa90e9126661aaf05c44537ba044b352d1ae59b22af3a529",
     "verseCount": 3,
     "regionOpenings": [
       [
@@ -2793,7 +2827,43 @@
     "performedScoreMeasures": [
       "1-16",
       "1-8"
-    ]
+    ],
+    "symbolicScoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Safe_in_the_Arms_of_Jesus/Safe_in_the_Arms_of_Jesus.xml",
+    "symbolicScoreReferenceSha256": "e07a784df63d177c5f3b0acb0bc1d911fa9d61d34e0f94eff43a3b521cf27862",
+    "opticalReference": {
+      "svgFile": "reference/external/safe-arms-numbered.svg",
+      "imageFile": "printed-text-references/data/safe-arms-numbered.png",
+      "recognitionFile": "printed-text-references/ocr/safe-arms-numbered.png.json",
+      "imageSha256": "919c627769751874bd7c9e390480fb6fca8ee314ae7d1f7bf025bea5d17706f0",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 3,
+      "rowsSha256": "b7b0b4a09440cddeba759eccf846ff1f9f6c1dda41c31da079e5c445cb6f6719",
+      "noteRanges": {
+        "0": [
+          0.1,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/cn/hymn/ch/501",
+      "renderReview": "已目视复核，首谱行左侧4/4拍号不属旋律，正文后两行副歌从第五谱行首个3“安”开始。 保留原谱内部休止、连音及节奏；完整音符序列与固定MIDI通过所有最优对应核对。和声仅留诊断，各录音仍须独立通过旋律、光学节奏、调性、起点、完整跨度及反复相位检查。"
+    }
   },
   "02-384": {
     "targetSha256": "0c67b24772cf7cba60cae1be005624df9d33a04b1165e21c934a2db1a2b185be",

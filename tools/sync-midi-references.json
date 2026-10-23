@@ -188,5 +188,103 @@
       }
     ],
     "formReview": "核对同曲公开 MusicXML 的歌词与高声部：前八个英文长句对应正文前四行，最后两次应许句对应正文第五行（第二阅读区域）。该区域从第19小节第一音 They 开始，MusicXML高声部起音索引51，前五音的音高类10,8,8,7,8与MIDI起音索引59逐项一致（25.714272秒），首阅读区域前五音同样逐项核对。乐谱首句有反复及不同结尾，不按文字或音符比例推算区域时间；每段实际录音另须通过和声、旋律的独立定位及重复相位检查。"
+  },
+  "01-298": {
+    "targetSha256": "da6de3503d5a42377fc829485662ed711bc804ecbfe76bf2f39a22bad10c1241",
+    "file": "hymnary558.mid",
+    "sha256": "28d7e1165892756b2c0b873cebb4716a03162434170526550c0cc450ea4515ad",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary558.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary558.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/C/Close_to_Thee/Close_to_Thee.xml",
+    "scoreReferenceSha256": "47aaf6775445c5c6f46d28483fda00fa4b0e9663856e3e74b945c34d6252ab5a",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "主是我永远的福分",
+        "靠近主靠近主靠近"
+      ],
+      [
+        "我不求世界的欢乐",
+        "靠近主靠近主靠近"
+      ],
+      [
+        "带领我经黑暗幽谷",
+        "靠近主靠近主靠近"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          7,
+          11,
+          7,
+          6
+        ]
+      },
+      {
+        "onsetIndex": 30,
+        "pitches": [
+          6,
+          7,
+          9,
+          0,
+          6
+        ]
+      }
+    ],
+    "formReview": "同曲 Close to Thee，公开MusicXML中主歌第1至10小节对应正文前四行，副歌从第11小节 Close 开始，对应正文后四行。副歌之后D.S.重唱主歌后半段，与正文副歌后两行对应。副歌起句五音的音高类6,7,9,0,6与MIDI索引30逐项对应，偏移13.846152秒；首句同样核对，并保留原谱连音，不以字符数推算边界。各段两个正文区域仍须和声、旋律独立确认及重复相位核对。"
+  },
+  "01-314": {
+    "targetSha256": "9b59112765197219e00622d612850024d4ff943f0a71a84b16d81a5838979196",
+    "file": "hymnary314.mid",
+    "sha256": "5980f43b315c0b22fca49e55e8a619a7d172065f551dffdcc3950863e41fb035",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary314.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary314.htm",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Chinese/svg/c0304_cn_n.svg",
+    "scoreReferenceSha256": "1ec22e3c72b396efe59e3b58f9c1fa257183ba6c522a6d26b2f6880bc7ecb31c",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "从我活出你的自己",
+        "从我活出你的自己"
+      ],
+      [
+        "殿宇今已完全奉献",
+        "全地现在都当肃穆"
+      ],
+      [
+        "所有肢体每个时刻",
+        "约束没有不安追求"
+      ],
+      [
+        "乃是柔软安静安息",
+        "从我活出你的自己"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          10,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 30,
+        "pitches": [
+          5,
+          5,
+          2,
+          2,
+          4
+        ]
+      }
+    ],
+    "formReview": "已目视核对原发布者中文简谱，使用 Emmelar 曲调。正文前四行对应前半段；后四行从第三谱行中段的“从”起唱，不能将该谱行最左边、仍在延续前段“应”的长音当成新区域起点。新区域开头音为1,1,6,6,7，对应F调MIDI高声部索引30开始的音高类5,5,2,2,4，偏移18秒；首句3,4,5,5,6也逐项核对。不是另一版英文 Aurelia 曲调，实际每段两个区域仍须和声、旋律独立匹配和反复相位核对。"
   }
 }

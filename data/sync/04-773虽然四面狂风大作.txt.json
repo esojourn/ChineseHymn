@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "04-773",
+  "status": "reviewed",
+  "source": {
+    "file": "04-773虽然四面狂风大作.txt",
+    "sha256": "a245caa08cf9863aea46ccd4bed647996244cf2cfbbe95eafe34b516349b773c",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-773虽然四面狂风大作.mp3",
+      "sha256": "3e605dad9a5f31a88279d5ec7f12f00d4ad116ad22ac3241c21dccc938eaa1c2",
+      "duration": 140.27755102040817,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.97,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.0,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 62.04,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 87.1,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 112.13,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-773虽然四面狂风大作-领唱.mp3",
+      "sha256": "b9fc4c3d373fc64222bb469b8698e2f7ec371ada15daace02879c11f73d17d31",
+      "duration": 138.03102040816327,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    }
+  },
+  "cues": [
+    {
+      "at": 12.37,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 62.44,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.5,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 112.53,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "虽然四面狂风大作， 身旁涌起苦难洪波， 却有平安避难之所， 就是天上施恩宝座。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "在彼圣所，平静稳妥， 主以喜乐恩油膏我， 何等甘美，何等欢乐， 主血所洒施恩宝座。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "危时援助从何而得？ 魔鬼试探何以胜过？ 忧惧、消沉又将如何？ 唯有靠近施恩宝座。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "在彼圣所，以灵会合； 圣徒情谊亲密谐和； 身虽相隔凭信联络； 同心汇集施恩宝座。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "在彼如鹰展翅腾博， 远离尘世罪恶网罗， 欣然涵涌天上喜乐， 荣耀显于施恩宝座。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-773虽然四面狂风大作.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

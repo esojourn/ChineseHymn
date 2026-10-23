@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-694",
+  "status": "reviewed",
+  "source": {
+    "file": "04-694我怎能离得开你.txt",
+    "sha256": "9081431cc352adb357bc92e59143028fc0d467f71207b21d26948c358aca1966",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-694我怎能离得开你.mp3",
+      "sha256": "fe3dbc939cdfc528d55f529795945b8918b929d2c463d988f9b9bd5a08691061",
+      "duration": 157.91020408163266,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.97,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 27.44,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 45.57,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 63.61,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 82.06,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.44,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 118.77,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 136.56,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-694我怎能离得开你-领唱.mp3",
+      "sha256": "d6444fd89946109a10854e16facac31dbdb25652f018fbda55b110cf2a282a42",
+      "duration": 156.63020408163266,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 9.27,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 27.74,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 45.87,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 64.01,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.36,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 100.74,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.07,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 136.96,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我怎能离得开你， 我主我的救主， 你大爱拯救了我， 以如此大代价。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你是公义是宽恕， 你的宝血定是， 我唯一的希望、安慰， 是荣耀，是恳求。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我怎能离得开你， 我渺小与卑微， 我无力也无益处， 我乃愚钝不开。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "但你是我的救主， 赐我聪颖智慧， 将软弱化为刚强， 只要依靠救主。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我怎能离得开你， 他人不能明白， 圣灵的内心感召， 不知圣灵所望。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "每当我陷入低潮， 你赐予我安慰， 赐我内心的平静， 主真配得赞美。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "我怎能离得开你， 岁月飞逝如梭， 韶华荏苒付水流， 但你永不离我。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "虽然有浪击冲天， 你就在我身边， 在我耳边告诉我， 我就在你身边。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-694我怎能离得开你.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

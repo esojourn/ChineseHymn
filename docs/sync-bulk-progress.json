@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 212,
+    "published": 214,
     "existing": 8,
-    "pending": 155,
+    "pending": 152,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "needs-calibration": 17,
+    "needs-calibration": 18,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1808,7 +1808,7 @@
       "songId": "04-694",
       "source": "04-694我怎能离得开你.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "04-694我怎能离得开你.mp3",
         "04-694我怎能离得开你-领唱.mp3"
@@ -1838,17 +1838,18 @@
       "songId": "04-768",
       "source": "04-768奇妙平安由神而来.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-768奇妙平安由神而来.mp3",
         "04-768奇妙平安由神而来-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4,6"
     },
     {
       "songId": "04-773",
       "source": "04-773虽然四面狂风大作.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "04-773虽然四面狂风大作.mp3",
         "04-773虽然四面狂风大作-领唱.mp3"

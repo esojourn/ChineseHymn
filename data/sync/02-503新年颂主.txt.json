@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-503",
+  "status": "reviewed",
+  "source": {
+    "file": "02-503新年颂主.txt",
+    "sha256": "78a3e3d911fe9edf22ac4cdd9d456ad2f494083537ea12b02befd5d699e23b97",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-503新年颂主.mp3",
+      "sha256": "46e5bf011dd6dc35e2b15c4c8eb585f6f176efb95f57c0bd93306bd294c2abdd",
+      "duration": 118.56979591836735,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 6.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.3,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 61.7,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.15,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "伟大真神，我们颂扬大能圣臂扶我坚立； 岁首开始你爱显明，直到年终恩眷不移。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "不论日夜，在家，在外，你常看顾保守恩待； 不断领受丰富供应，蒙主箴言步步引领。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "感谢上主过去扶持，未来一切虽难预知， 但交主手必蒙看顾，主前交托，安奔前途。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "颓丧，得意，任何情况，你是我们喜乐平安； 你的恩手高举希望，应受敬拜，日无间断。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-503新年颂主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

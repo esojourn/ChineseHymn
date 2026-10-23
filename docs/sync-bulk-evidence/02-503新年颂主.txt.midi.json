@@ -1,0 +1,286 @@
+{
+  "songId": "02-503",
+  "source": "02-503新年颂主.txt",
+  "sourceHash": "78a3e3d911fe9edf22ac4cdd9d456ad2f494083537ea12b02befd5d699e23b97",
+  "trackHashes": [
+    {
+      "file": "02-503新年颂主.mp3",
+      "sha256": "46e5bf011dd6dc35e2b15c4c8eb585f6f176efb95f57c0bd93306bd294c2abdd"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "78a3e3d911fe9edf22ac4cdd9d456ad2f494083537ea12b02befd5d699e23b97",
+      "file": "hymnary318.mid",
+      "sha256": "597bbeb386f8de214906d72091078320f6943ef0a00a7e2cdf461f286024a9a9",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary318.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary318.htm",
+      "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Chinese/svg/c0345_cn_n.svg",
+      "scoreReferenceSha256": "9344629e90284fab8f0fa48baf84f76a82c5ff286ae5b6a4a10f74f32056b2ed",
+      "verseCount": 4,
+      "printedScoreReview": {
+        "entry": 345,
+        "title": "我当如何爱我的主",
+        "numberedRows": [
+          "5 1 7 1 2 5 6 7 1",
+          "1 7 6 2 7 7 6 5 #4 5 5",
+          "5 1 1 7 6 5 3 3 2 1",
+          "7 4 4 3 2 1 2 7 1"
+        ],
+        "pitchProofRelativeToTonicC": true
+      },
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 39,
+        "midiNoteCount": 39,
+        "editCost": 0,
+        "runnerUpCost": 29,
+        "semitoneShift": 10,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 9,
+            "possibleMidiNoteIndices": [
+              9
+            ],
+            "at": 6.0
+          },
+          {
+            "scoreNoteIndex": 20,
+            "possibleMidiNoteIndices": [
+              20
+            ],
+            "at": 12.0
+          },
+          {
+            "scoreNoteIndex": 30,
+            "possibleMidiNoteIndices": [
+              30
+            ],
+            "at": 18.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          6.0,
+          12.0,
+          18.0
+        ]
+      },
+      "formReview": "《新年颂主》为同曲填词，每段两行覆盖完整四个乐句，为一个阅读区域。已目视核对中文第345首《我当如何爱我的主》原谱，完整最高旋律和四条谱行均通过全部最优音符序列对齐，起点唯一；参考歌词不同，不能当作本曲原文。每个实际段落仍须通过和声、旋律、起点、调性及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 23.875,
+    "music": {
+      "period": 27.4,
+      "similarity": 0.9758557081222534,
+      "initialOnsetEstimate": 6.808,
+      "shifts": [
+        0.0,
+        27.4,
+        54.9,
+        82.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20137207699518134,
+            "key": 5,
+            "at": 7.4,
+            "span": 27.2,
+            "starts": [
+              6.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5492081468122719,
+            "key": 0,
+            "at": 10.3,
+            "span": 22.2,
+            "starts": [
+              10.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10363702008323948,
+            "key": 5,
+            "starts": [
+              6.800000190734863
+            ],
+            "span": 27.299999237060547
+          },
+          "runnerUp": {
+            "cost": 0.40861619824040546,
+            "key": 0,
+            "starts": [
+              18.299999237060547
+            ],
+            "span": 26.200000762939453
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20000019212708856,
+            "key": 5,
+            "at": 34.8,
+            "span": 27.2,
+            "starts": [
+              34.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5500968877416458,
+            "key": 0,
+            "at": 37.8,
+            "span": 22.2,
+            "starts": [
+              37.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1048293566181712,
+            "key": 5,
+            "starts": [
+              34.29999923706055
+            ],
+            "span": 27.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.4106610708863196,
+            "key": 0,
+            "starts": [
+              19.200000762939453
+            ],
+            "span": 25.299999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20348885807677777,
+            "key": 5,
+            "at": 62.2,
+            "span": 27.2,
+            "starts": [
+              61.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.550087810432824,
+            "key": 0,
+            "at": 65.2,
+            "span": 22.2,
+            "starts": [
+              65.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10140486529273708,
+            "key": 5,
+            "starts": [
+              61.70000076293945
+            ],
+            "span": 27.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.4061272057303547,
+            "key": 0,
+            "starts": [
+              73.0999984741211
+            ],
+            "span": 26.300003051757812
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20391086940347714,
+            "key": 5,
+            "at": 89.7,
+            "span": 27.2,
+            "starts": [
+              89.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5501883847870096,
+            "key": 0,
+            "at": 92.6,
+            "span": 22.2,
+            "starts": [
+              92.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10327726210990962,
+            "key": 5,
+            "starts": [
+              89.0999984741211
+            ],
+            "span": 27.300003051757812
+          },
+          "runnerUp": {
+            "cost": 0.4080885170149977,
+            "key": 0,
+            "starts": [
+              74.0999984741211
+            ],
+            "span": 25.300003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "伟大真神，我们颂扬大能圣臂扶我坚立； 岁首开始你爱显明，直到年终恩眷不移。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "不论日夜，在家，在外，你常看顾保守恩待； 不断领受丰富供应，蒙主箴言步步引领。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "感谢上主过去扶持，未来一切虽难预知， 但交主手必蒙看顾，主前交托，安奔前途。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "颓丧，得意，任何情况，你是我们喜乐平安； 你的恩手高举希望，应受敬拜，日无间断。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.439
+}

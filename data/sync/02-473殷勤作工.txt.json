@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "02-473",
+  "status": "reviewed",
+  "source": {
+    "file": "02-473殷勤作工.txt",
+    "sha256": "f3fd7453c30def9c2c7e871861da16580effdd11d8790c119455afb129f7b58b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-473殷勤作工.mp3",
+      "sha256": "5bebb760dc7c373d0a481a90fedaf973dee2933f6bb1b5147ab9c7854a3e7c27",
+      "duration": 183.3012244897959,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 10.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.05,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.35,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.7,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.05,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 117.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.75,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 160.05,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "来作工，来作工，作主仆要尽忠，  要遵循主路径，要跟随主脚踪， 主训言润心灵，我力量得加增， 要殷勤作主工，要尽力贯始终。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "来作工，来作工， 使饥者得饱足， 领倦者到活泉， 解乾渴蒙恩福，  十字架是旗号， 永远是我荣耀， 向人人速宣告，可白白蒙恩召。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "来作工，来作工，每个人要投入， 魔鬼权黑暗势，不多时要倾覆， 使万人尊主名，使罪人归向神， 快高声传佳音，人人来得救恩。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "来作工，来作工，主能力才可靠， 工完毕领奖赏，戴华冠穿义袍， 凡忠心到底者，必在天亲近神， 在那日与众圣，同声颂主救恩。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-473殷勤作工.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "02-178",
+  "status": "reviewed",
+  "source": {
+    "file": "02-178奇异的爱.txt",
+    "sha256": "f30fbf696e303cfc40332eef626f1f581aeaa6bb7f025b12fb562e8819dea82b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-178奇异的爱.mp3",
+      "sha256": "df50e26f5d6da53cf812ece0e3a1d52734c555e4083a09c97fec98936542240f",
+      "duration": 306.192,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.45,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 51.45,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 66.65,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 110.05,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.25,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 168.65,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 183.7,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 227.3,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 242.45,
+          "region": "r9",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 286.2,
+          "region": "r10",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-178奇异的爱-领唱.mp3",
+      "sha256": "d9c345c7a3f67e48df9c21f4000e72c4fed01f0c00856a1ccaf542d18b165f38",
+      "duration": 277.89061224489797,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 21,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 26
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 28
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 31,
+      "endLine": 33
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 35,
+      "endLine": 35
+    }
+  },
+  "cues": [
+    {
+      "at": 7.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 47.35,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 61.25,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.45,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.35,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 155.55,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 169.4,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 209.6,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 223.45,
+      "region": "r9",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 263.7,
+      "region": "r10",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "怎能如此，像我这样罪人，也蒙宝血救赎大恩？ 主为我受痛苦鞭伤，也为我死在十架上？ 奇异的爱，怎能如此，我主我神为我受死？",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "何等奇妙！永生主竟受死！有谁能解释这奥秘？ 神圣之爱，广阔深长，最高天使也难测量， 上主怜悯，超过猜想，世人都当敬拜敬仰。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我主离开，天上宝座荣华。无量恩惠白白赐下， 谦卑虚已，显彰慈爱，流血救赎亚当后代， 恩典怜爱，无边无涯，罪人像我，竟蒙厚爱。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "我灵受困，多年在牢狱中；被罪包围，黑暗重重； 主眼发出复活荣光，我灵苏醒，满室光明！ 枷锁脱落，心灵获释，我就起来跟随主行。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+        "label": "第4段"
+      },
+      {
+        "region": "r9",
+        "text": "不再定罪，心中除尽忧愁，我拥有主并祂所有。 主内生活，让祂居首，穿起义袍，圣洁无垢； 坦然无惧到宝座前，借主救赎获得冠冕。",
+        "label": "第5段"
+      },
+      {
+        "region": "r10",
+        "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-178奇异的爱.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

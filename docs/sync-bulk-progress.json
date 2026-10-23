@@ -2,13 +2,13 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 232,
+    "published": 236,
     "existing": 8,
     "pending": 103,
-    "needs-calibration": 45,
+    "needs-calibration": 44,
     "missing-audio": 2,
-    "ready-to-verify": 4,
     "needs-track-alignment": 3,
+    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -424,7 +424,7 @@
       "songId": "01-666",
       "source": "01-666谁是在主这边.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "01-666谁是在主这边.mp3"
       ]
@@ -685,7 +685,7 @@
       "songId": "02-178",
       "source": "02-178奇异的爱.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-178奇异的爱.mp3",
         "02-178奇异的爱-领唱.mp3"
@@ -918,7 +918,7 @@
       "songId": "02-374",
       "source": "02-374更像我恩主.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-374更像我恩主.mp3"
       ]
@@ -1197,7 +1197,7 @@
       "songId": "02-473",
       "source": "02-473殷勤作工.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "02-473殷勤作工.mp3"
       ]
@@ -1727,12 +1727,11 @@
       "songId": "04-471",
       "source": "04-471这世界非我家.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "04-471这世界非我家.mp3",
         "04-471这世界非我家-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
+      ]
     },
     {
       "songId": "04-473",

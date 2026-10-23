@@ -1,0 +1,342 @@
+{
+  "songId": "02-473",
+  "source": "02-473殷勤作工.txt",
+  "sourceHash": "f3fd7453c30def9c2c7e871861da16580effdd11d8790c119455afb129f7b58b",
+  "trackHashes": [
+    {
+      "file": "02-473殷勤作工.mp3",
+      "sha256": "5bebb760dc7c373d0a481a90fedaf973dee2933f6bb1b5147ab9c7854a3e7c27"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "f3fd7453c30def9c2c7e871861da16580effdd11d8790c119455afb129f7b58b",
+      "file": "hymnary638.mid",
+      "sha256": "06dcf0d5460643eeb022c6e4cb6f6c04a453a09d969e38efcf30e5f36691b716",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary638.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary638.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/To_the_Work/To_the_Work.xml",
+      "scoreReferenceSha256": "6c50a62d7b1479009ec155a485307a6094b789fd36d480884413bdd45b56fb2a",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "来作工来作工作主",
+          "当殷勤当忠心当殷"
+        ],
+        [
+          "来作工来作工使饥",
+          "当殷勤当忠心当殷"
+        ],
+        [
+          "来作工来作工每个",
+          "当殷勤当忠心当殷"
+        ],
+        [
+          "来作工来作工主能",
+          "当殷勤当忠心当殷"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            8,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "onsetIndex": 48,
+          "pitches": [
+            7,
+            8,
+            10,
+            3,
+            7
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 74,
+        "midiNoteCount": 78,
+        "editCost": 4,
+        "runnerUpCost": 59,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 48,
+            "possibleMidiNoteIndices": [
+              48
+            ],
+            "at": 16.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndex": 48
+      },
+      "formReview": "正文前四行对应主歌；副歌从第11小节 Toiling 起，对应“当殷勤，当忠心”区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.416666666666664,
+    "music": {
+      "period": 42.7,
+      "similarity": 0.9657995104789734,
+      "initialOnsetEstimate": 9.084,
+      "shifts": [
+        0.0,
+        42.7,
+        85.3,
+        128.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15314133440861938,
+            "key": 7,
+            "at": 11.3,
+            "span": 43.0,
+            "starts": [
+              10.8,
+              32.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5323105394421472,
+            "key": 2,
+            "at": 27.7,
+            "span": 10.3,
+            "starts": [
+              27.4,
+              29.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11382514363987943,
+            "key": 7,
+            "starts": [
+              10.699999809265137,
+              32.0
+            ],
+            "span": 43.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.42446735033665106,
+            "key": 2,
+            "starts": [
+              26.700000762939453,
+              46.79999923706055
+            ],
+            "span": 37.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1531064571764765,
+            "key": 7,
+            "at": 53.9,
+            "span": 43.0,
+            "starts": [
+              53.4,
+              74.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5318444138109265,
+            "key": 2,
+            "at": 70.3,
+            "span": 9.8,
+            "starts": [
+              70.1,
+              72.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1135206289537059,
+            "key": 7,
+            "starts": [
+              53.29999923706055,
+              74.69999694824219
+            ],
+            "span": 43.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4264582470931828,
+            "key": 2,
+            "starts": [
+              69.30000305175781,
+              89.5
+            ],
+            "span": 37.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15235502435116913,
+            "key": 7,
+            "at": 96.6,
+            "span": 43.0,
+            "starts": [
+              96.1,
+              117.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5273787344367499,
+            "key": 2,
+            "at": 105.3,
+            "span": 17.3,
+            "starts": [
+              105.3,
+              114.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11561485308394778,
+            "key": 7,
+            "starts": [
+              96.0,
+              117.4000015258789
+            ],
+            "span": 43.100006103515625
+          },
+          "runnerUp": {
+            "cost": 0.42899663777764563,
+            "key": 2,
+            "starts": [
+              112.0,
+              132.10000610351562
+            ],
+            "span": 37.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15368218165091665,
+            "key": 7,
+            "at": 139.3,
+            "span": 43.0,
+            "starts": [
+              138.8,
+              160.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5271992024548997,
+            "key": 2,
+            "at": 155.7,
+            "span": 9.8,
+            "starts": [
+              155.4,
+              157.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11119830022092725,
+            "key": 7,
+            "starts": [
+              138.6999969482422,
+              160.0
+            ],
+            "span": 43.100006103515625
+          },
+          "runnerUp": {
+            "cost": 0.4584592153651932,
+            "key": 2,
+            "starts": [
+              122.0999984741211,
+              133.5
+            ],
+            "span": 28.400001525878906
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      16.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "来作工，来作工，作主仆要尽忠，  要遵循主路径，要跟随主脚踪， 主训言润心灵，我力量得加增， 要殷勤作主工，要尽力贯始终。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "来作工，来作工， 使饥者得饱足， 领倦者到活泉， 解乾渴蒙恩福，  十字架是旗号， 永远是我荣耀， 向人人速宣告，可白白蒙恩召。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "来作工，来作工，每个人要投入， 魔鬼权黑暗势，不多时要倾覆， 使万人尊主名，使罪人归向神， 快高声传佳音，人人来得救恩。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "来作工，来作工，主能力才可靠， 工完毕领奖赏，戴华冠穿义袍， 凡忠心到底者，必在天亲近神， 在那日与众圣，同声颂主救恩。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "当殷勤，当忠心，当殷勤，当忠心； 要仰望，要警醒，忠心作工直到主临。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.25
+}

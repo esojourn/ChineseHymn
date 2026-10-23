@@ -1,0 +1,401 @@
+{
+  "songId": "01-666",
+  "source": "01-666谁是在主这边.txt",
+  "sourceHash": "fa08d99809a220f83fab51fa0d494463f19cb3e1682fe607cdfda1fb0d5cf31f",
+  "trackHashes": [
+    {
+      "file": "01-666谁是在主这边.mp3",
+      "sha256": "82edfc8c8ee970fda22b6b4d4cc5effdbe72a3279e89edea92992f947249caa5"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "fa08d99809a220f83fab51fa0d494463f19cb3e1682fe607cdfda1fb0d5cf31f",
+      "file": "hymnary666.mid",
+      "sha256": "1af63349fdcda662c3b2489402119b2dd775b1a99c7736b1c2e621d12e4b9607",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary666.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary666.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/W/Who_Is_on_the_Lords_Side/Who_Is_on_the_Lords_Side_2.xml",
+      "scoreReferenceSha256": "e5ea36e2bb11f8d21383f39f5acffda1f119baf0541a9072de016de3a521c31d",
+      "verseCount": 5,
+      "regionOpenings": [
+        [
+          "谁是在主这边谁要",
+          "借着袮的救赎并藉"
+        ],
+        [
+          "参加主的军队欢乐",
+          "借着袮的救赎并藉"
+        ],
+        [
+          "袮已将我救赎作袮",
+          "借着袮的救赎并藉"
+        ],
+        [
+          "战争虽会凶猛仇敌",
+          "借着袮的救赎并藉"
+        ],
+        [
+          "蒙主选为兵丁在今",
+          "借着袮的救赎并藉"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            4,
+            2,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 44,
+          "pitches": [
+            0,
+            7,
+            4,
+            0,
+            9
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 66,
+        "midiNoteCount": 66,
+        "editCost": 1,
+        "runnerUpCost": 51,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 44,
+            "possibleMidiNoteIndices": [
+              44
+            ],
+            "at": 32.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          32.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndex": 44
+      },
+      "formReview": "正文主歌对应前16小节，后段从第17小节 By Thy call 起，对应每段末尾两行。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 47.875,
+    "music": {
+      "period": 55.4,
+      "similarity": 0.990409791469574,
+      "initialOnsetEstimate": 16.4,
+      "shifts": [
+        0.0,
+        55.4,
+        110.8,
+        166.2,
+        221.5
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2768833422058326,
+            "key": 7,
+            "at": 19.0,
+            "span": 53.5,
+            "starts": [
+              18.5,
+              55.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6008140481336022,
+            "key": 0,
+            "at": 47.8,
+            "span": 32.8,
+            "starts": [
+              47.3,
+              72.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2694400553238521,
+            "key": 7,
+            "starts": [
+              18.399999618530273,
+              55.5
+            ],
+            "span": 55.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4196786157490975,
+            "key": 2,
+            "starts": [
+              27.100000381469727,
+              61.20000076293945
+            ],
+            "span": 47.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2786980639295888,
+            "key": 7,
+            "at": 74.4,
+            "span": 55.1,
+            "starts": [
+              73.9,
+              110.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5976313511817464,
+            "key": 0,
+            "at": 103.2,
+            "span": 32.8,
+            "starts": [
+              102.7,
+              126.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2718749889828238,
+            "key": 7,
+            "starts": [
+              73.9000015258789,
+              110.80000305175781
+            ],
+            "span": 55.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4208057004191815,
+            "key": 2,
+            "starts": [
+              82.5,
+              116.5999984741211
+            ],
+            "span": 47.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2797585773123731,
+            "key": 7,
+            "at": 129.8,
+            "span": 55.1,
+            "starts": [
+              129.3,
+              166.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5995198053573443,
+            "key": 0,
+            "at": 158.5,
+            "span": 32.8,
+            "starts": [
+              158.1,
+              181.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2715034622577984,
+            "key": 7,
+            "starts": [
+              129.1999969482422,
+              166.1999969482422
+            ],
+            "span": 55.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.41816408453435244,
+            "key": 2,
+            "starts": [
+              137.8000030517578,
+              172.0
+            ],
+            "span": 47.899993896484375
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.27643593467960287,
+            "key": 7,
+            "at": 185.1,
+            "span": 55.2,
+            "starts": [
+              184.6,
+              221.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5999747045634025,
+            "key": 0,
+            "at": 213.9,
+            "span": 32.9,
+            "starts": [
+              213.4,
+              238.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2722418058650158,
+            "key": 7,
+            "starts": [
+              184.60000610351562,
+              221.60000610351562
+            ],
+            "span": 55.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4185129158763679,
+            "key": 2,
+            "starts": [
+              193.1999969482422,
+              227.39999389648438
+            ],
+            "span": 47.90000915527344
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2755184517870741,
+            "key": 7,
+            "at": 240.5,
+            "span": 55.2,
+            "starts": [
+              240.0,
+              276.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6153914248469935,
+            "key": 0,
+            "at": 269.3,
+            "span": 27.6,
+            "starts": [
+              268.8,
+              290.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26971496141344203,
+            "key": 7,
+            "starts": [
+              240.0,
+              277.0
+            ],
+            "span": 55.20001220703125
+          },
+          "runnerUp": {
+            "cost": 0.4280137705888989,
+            "key": 2,
+            "starts": [
+              248.60000610351562,
+              282.79998779296875
+            ],
+            "span": 48.0
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      32.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "谁是在主这边？谁要跟随主？ 谁要为主活着，走祂的道路？ 谁要撇开世界，去为主争战？ 谁是在主这边，跟随主向前？",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "参加主的军队，欢乐去争战， 不是为着荣耀，不是为冠冕； 乃是因着主爱激励我向前， 我既蒙祂恩待，该在祂这边。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "袮已将我救赎，作袮的子民， 乃是用袮宝血，不是用金银； 凡来跟从袮者，得福都无限， 袮使我们甘愿且自由向前。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "战争虽会凶猛，仇敌也强悍， 但是主的军队，无人能击散； 在祂大纛之下，必定能得胜， 因祂真实、不变，奏凯已确定。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+      "label": "第4段"
+    },
+    {
+      "region": "r9",
+      "text": "蒙主选为兵丁，在今世争战， 我当完全忠心，随元帅向前； 如此服事我王，切勿变冷淡， 守住高贵身位，忠贞又勇敢。",
+      "label": "第5段"
+    },
+    {
+      "region": "r10",
+      "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+      "label": "第5段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 10,
+  "elapsedSeconds": 0.554
+}

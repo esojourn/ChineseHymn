@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "songId": "01-666",
+  "status": "reviewed",
+  "source": {
+    "file": "01-666谁是在主这边.txt",
+    "sha256": "fa08d99809a220f83fab51fa0d494463f19cb3e1682fe607cdfda1fb0d5cf31f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-666谁是在主这边.mp3",
+      "sha256": "82edfc8c8ee970fda22b6b4d4cc5effdbe72a3279e89edea92992f947249caa5",
+      "duration": 297.43020408163267,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 35
+    }
+  },
+  "cues": [
+    {
+      "at": 18.45,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 55.45,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.9,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 110.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 129.25,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 166.2,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 184.6,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 221.6,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 240.0,
+      "region": "r9",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 276.95,
+      "region": "r10",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "谁是在主这边？谁要跟随主？ 谁要为主活着，走祂的道路？ 谁要撇开世界，去为主争战？ 谁是在主这边，跟随主向前？",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "参加主的军队，欢乐去争战， 不是为着荣耀，不是为冠冕； 乃是因着主爱激励我向前， 我既蒙祂恩待，该在祂这边。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "袮已将我救赎，作袮的子民， 乃是用袮宝血，不是用金银； 凡来跟从袮者，得福都无限， 袮使我们甘愿且自由向前。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "战争虽会凶猛，仇敌也强悍， 但是主的军队，无人能击散； 在祂大纛之下，必定能得胜， 因祂真实、不变，奏凯已确定。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+        "label": "第4段"
+      },
+      {
+        "region": "r9",
+        "text": "蒙主选为兵丁，在今世争战， 我当完全忠心，随元帅向前； 如此服事我王，切勿变冷淡， 守住高贵身位，忠贞又勇敢。",
+        "label": "第5段"
+      },
+      {
+        "region": "r10",
+        "text": "借着袮的救赎，并藉袮恩典， 可爱、荣耀救主，我在袮这边。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-666谁是在主这边.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "songId": "02-178",
+  "source": "02-178奇异的爱.txt",
+  "sourceHash": "f30fbf696e303cfc40332eef626f1f581aeaa6bb7f025b12fb562e8819dea82b",
+  "trackHashes": [
+    {
+      "file": "02-178奇异的爱.mp3",
+      "sha256": "df50e26f5d6da53cf812ece0e3a1d52734c555e4083a09c97fec98936542240f"
+    },
+    {
+      "file": "02-178奇异的爱-领唱.mp3",
+      "sha256": "d9c345c7a3f67e48df9c21f4000e72c4fed01f0c00856a1ccaf542d18b165f38"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "f30fbf696e303cfc40332eef626f1f581aeaa6bb7f025b12fb562e8819dea82b",
+      "file": "hymnary179.mid",
+      "sha256": "78d356c56b8c444fd1df460b5885dc49b08cf76577ff14a926a79e22405793b4",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary179.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary179.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/And_Can_It_Be/And_Can_It_Be.xml",
+      "scoreReferenceSha256": "295b4164631a5b014f1653479fbab3813cfe310133ed13afecfad85c7ab37edf",
+      "verseCount": 5,
+      "regionOpenings": [
+        [
+          "怎能如此像我这样",
+          "奇异的爱怎能如此"
+        ],
+        [
+          "何等奇妙永生主竟",
+          "奇异的爱怎能如此"
+        ],
+        [
+          "我主离开天上宝座",
+          "奇异的爱怎能如此"
+        ],
+        [
+          "我灵受困多年在牢",
+          "奇异的爱怎能如此"
+        ],
+        [
+          "不再定罪心中除尽",
+          "奇异的爱怎能如此"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            9,
+            11,
+            2
+          ]
+        },
+        {
+          "onsetIndex": 67,
+          "pitches": [
+            7,
+            11,
+            11,
+            9,
+            9
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 84,
+        "midiNoteCount": 84,
+        "editCost": 0,
+        "runnerUpCost": 60,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 67,
+            "possibleMidiNoteIndices": [
+              67
+            ],
+            "at": 47.5
+          }
+        ],
+        "offsets": [
+          0.0,
+          47.5
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndex": 67
+      },
+      "formReview": "正文前三行涵盖主歌及其结尾的奇异大爱句；独立副歌从明确标注 Refrain 的第25小节起，不与第17小节主歌中的同句混淆。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 64.0,
+    "music": {
+      "period": 54.1,
+      "similarity": 0.9718330502510071,
+      "initialOnsetEstimate": 3.4,
+      "shifts": [
+        0.0,
+        54.1,
+        108.2,
+        162.3,
+        216.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.13703718203052795,
+            "key": 8,
+            "at": 7.5,
+            "span": 54.0,
+            "starts": [
+              7.2,
+              47.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5659815987465342,
+            "key": 3,
+            "at": 11.7,
+            "span": 39.2,
+            "starts": [
+              11.4,
+              40.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08997873105315315,
+            "key": 8,
+            "starts": [
+              7.099999904632568,
+              47.29999923706055
+            ],
+            "span": 54.0
+          },
+          "runnerUp": {
+            "cost": 0.41002326443543496,
+            "key": 3,
+            "starts": [
+              3.299999952316284,
+              35.599998474121094
+            ],
+            "span": 44.29999923706055
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1364467712515163,
+            "key": 8,
+            "at": 61.6,
+            "span": 54.0,
+            "starts": [
+              61.3,
+              101.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5653644780354667,
+            "key": 3,
+            "at": 73.4,
+            "span": 31.6,
+            "starts": [
+              73.1,
+              94.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.083633796564973,
+            "key": 8,
+            "starts": [
+              61.20000076293945,
+              101.4000015258789
+            ],
+            "span": 53.999996185302734
+          },
+          "runnerUp": {
+            "cost": 0.3991413786318738,
+            "key": 3,
+            "starts": [
+              57.900001525878906,
+              89.5999984741211
+            ],
+            "span": 43.79999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15350089364043004,
+            "key": 8,
+            "at": 115.7,
+            "span": 54.0,
+            "starts": [
+              115.4,
+              155.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5628199550889557,
+            "key": 3,
+            "at": 127.5,
+            "span": 31.6,
+            "starts": [
+              127.2,
+              148.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.0784727227004751,
+            "key": 8,
+            "starts": [
+              115.30000305175781,
+              155.5
+            ],
+            "span": 54.0
+          },
+          "runnerUp": {
+            "cost": 0.39797412357577117,
+            "key": 3,
+            "starts": [
+              112.0,
+              143.6999969482422
+            ],
+            "span": 43.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1443538842051395,
+            "key": 8,
+            "at": 169.7,
+            "span": 54.0,
+            "starts": [
+              169.4,
+              209.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5576452230569836,
+            "key": 3,
+            "at": 174.0,
+            "span": 39.2,
+            "starts": [
+              173.7,
+              202.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.07897402751027105,
+            "key": 8,
+            "starts": [
+              169.39999389648438,
+              209.60000610351562
+            ],
+            "span": 54.0
+          },
+          "runnerUp": {
+            "cost": 0.3982899607660149,
+            "key": 3,
+            "starts": [
+              166.10000610351562,
+              197.8000030517578
+            ],
+            "span": 43.79998779296875
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.13631231903809496,
+            "key": 8,
+            "at": 223.8,
+            "span": 54.0,
+            "starts": [
+              223.5,
+              263.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5638295735977934,
+            "key": 3,
+            "at": 228.1,
+            "span": 39.2,
+            "starts": [
+              227.8,
+              256.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08226302282647152,
+            "key": 8,
+            "starts": [
+              223.39999389648438,
+              263.70001220703125
+            ],
+            "span": 54.100006103515625
+          },
+          "runnerUp": {
+            "cost": 0.39933032249126327,
+            "key": 3,
+            "starts": [
+              220.10000610351562,
+              251.89999389648438
+            ],
+            "span": 43.79998779296875
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      47.5
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "怎能如此，像我这样罪人，也蒙宝血救赎大恩？ 主为我受痛苦鞭伤，也为我死在十架上？ 奇异的爱，怎能如此，我主我神为我受死？",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "何等奇妙！永生主竟受死！有谁能解释这奥秘？ 神圣之爱，广阔深长，最高天使也难测量， 上主怜悯，超过猜想，世人都当敬拜敬仰。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "我主离开，天上宝座荣华。无量恩惠白白赐下， 谦卑虚已，显彰慈爱，流血救赎亚当后代， 恩典怜爱，无边无涯，罪人像我，竟蒙厚爱。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "我灵受困，多年在牢狱中；被罪包围，黑暗重重； 主眼发出复活荣光，我灵苏醒，满室光明！ 枷锁脱落，心灵获释，我就起来跟随主行。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+      "label": "第4段"
+    },
+    {
+      "region": "r9",
+      "text": "不再定罪，心中除尽忧愁，我拥有主并祂所有。 主内生活，让祂居首，穿起义袍，圣洁无垢； 坦然无惧到宝座前，借主救赎获得冠冕。",
+      "label": "第5段"
+    },
+    {
+      "region": "r10",
+      "text": "奇异的爱，怎能如此，我主我神竟为我死。",
+      "label": "第5段"
+    }
+  ],
+  "recordingMaps": {
+    "02-178奇异的爱.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.32477203011512756,
+      "meanPathCost": 0.284390389919281,
+      "cueWindowCosts": [
+        0.40728622674942017,
+        0.2807982265949249,
+        0.25159722566604614,
+        0.2755967378616333,
+        0.25798624753952026,
+        0.26804468035697937,
+        0.23508460819721222,
+        0.24558691680431366,
+        0.22304825484752655,
+        0.2302325963973999
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 10,
+  "elapsedSeconds": 1.698
+}

@@ -1,0 +1,283 @@
+{
+  "songId": "02-374",
+  "source": "02-374更像我恩主.txt",
+  "sourceHash": "083603b5473d095c1bc0dd69cd215cf29345179311515ab2ebe814bfd487ca8a",
+  "trackHashes": [
+    {
+      "file": "02-374更像我恩主.mp3",
+      "sha256": "08165a3ddef62286e116acf2293b2794b21926eedfd7e297feababec619a9a30"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "083603b5473d095c1bc0dd69cd215cf29345179311515ab2ebe814bfd487ca8a",
+      "file": "hymnary290.mid",
+      "sha256": "ff408adad8a2f1ccec6a64777f609c9d680e80888f3943b8d51c64dab4d6d7a5",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary290.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary290.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/M/More_Like_the_Master/More_Like_the_Master.xml",
+      "scoreReferenceSha256": "c6d6179dab978e9a850d7b22feb5bf0bb99a1de7a36ad0afecfdce20cbf19f89",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "更像我恩主时刻像",
+          "求主悦纳我心单独"
+        ],
+        [
+          "更像我恩主我每日",
+          "求主悦纳我心单独"
+        ],
+        [
+          "更像我恩主灵命日",
+          "求主悦纳我心单独"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            9,
+            11,
+            9,
+            9,
+            6
+          ]
+        },
+        {
+          "onsetIndex": 42,
+          "pitches": [
+            2,
+            1,
+            11,
+            6,
+            9
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 83,
+        "midiNoteCount": 83,
+        "editCost": 0,
+        "runnerUpCost": 61,
+        "semitoneShift": 1,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 42,
+            "possibleMidiNoteIndices": [
+              42
+            ],
+            "at": 20.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          20.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndex": 42
+      },
+      "formReview": "正文主歌对应前16小节，副歌从第17小节 Take Thou my heart 起，对应“求主悦纳”区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 39.791603,
+    "music": {
+      "period": 48.0,
+      "similarity": 0.9963637590408325,
+      "initialOnsetEstimate": 3.86,
+      "shifts": [
+        0.0,
+        48.0,
+        96.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19751766522725422,
+            "key": 6,
+            "at": 6.5,
+            "span": 47.6,
+            "starts": [
+              6.0,
+              30.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5546862284342448,
+            "key": 11,
+            "at": 14.0,
+            "span": 41.7,
+            "starts": [
+              13.5,
+              33.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16117804845174152,
+            "key": 6,
+            "starts": [
+              6.0,
+              30.0
+            ],
+            "span": 47.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4336817423502604,
+            "key": 11,
+            "starts": [
+              8.100000381469727,
+              33.29999923706055
+            ],
+            "span": 49.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.197651735941569,
+            "key": 6,
+            "at": 54.5,
+            "span": 47.6,
+            "starts": [
+              54.0,
+              78.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5547943751017252,
+            "key": 11,
+            "at": 62.0,
+            "span": 41.7,
+            "starts": [
+              61.5,
+              81.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16114199956258138,
+            "key": 6,
+            "starts": [
+              54.0,
+              78.0
+            ],
+            "span": 47.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.43362401326497396,
+            "key": 11,
+            "starts": [
+              56.099998474121094,
+              81.30000305175781
+            ],
+            "span": 49.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.198128604888916,
+            "key": 6,
+            "at": 102.5,
+            "span": 47.6,
+            "starts": [
+              102.0,
+              126.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5639353434244792,
+            "key": 11,
+            "at": 110.0,
+            "span": 41.6,
+            "starts": [
+              109.5,
+              129.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16174503962198894,
+            "key": 6,
+            "starts": [
+              102.0,
+              126.0
+            ],
+            "span": 47.600006103515625
+          },
+          "runnerUp": {
+            "cost": 0.4493146578470866,
+            "key": 11,
+            "starts": [
+              104.0999984741211,
+              129.1999969482422
+            ],
+            "span": 47.00000762939453
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.999968
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "更像我恩主，时刻像我主； 更有他温柔，更谦和忠恕； 更热心工作，更如勇敢忠诚； 更乐意奉献，完成恩主使命。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "更像我恩主，我每日祈求； 更多有力量，背我十架走； 更尽心竭力，使主国早降临； 更充满灵力，去寻找失丧人。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "更像我恩主，灵命日增长； 更充满主爱，在人前表扬； 更愿意舍己，像主客园祈祷； 更像我恩主，直到永永远远。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.238
+}

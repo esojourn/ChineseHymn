@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-374",
+  "status": "reviewed",
+  "source": {
+    "file": "02-374更像我恩主.txt",
+    "sha256": "083603b5473d095c1bc0dd69cd215cf29345179311515ab2ebe814bfd487ca8a",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-374更像我恩主.mp3",
+      "sha256": "08165a3ddef62286e116acf2293b2794b21926eedfd7e297feababec619a9a30",
+      "duration": 151.6930612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 6.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.0,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 78.0,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 102.0,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.0,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "更像我恩主，时刻像我主； 更有他温柔，更谦和忠恕； 更热心工作，更如勇敢忠诚； 更乐意奉献，完成恩主使命。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "更像我恩主，我每日祈求； 更多有力量，背我十架走； 更尽心竭力，使主国早降临； 更充满灵力，去寻找失丧人。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "更像我恩主，灵命日增长； 更充满主爱，在人前表扬； 更愿意舍己，像主客园祈祷； 更像我恩主，直到永永远远。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "求主悦纳，我心单独属你；求主悦纳，我心完全属你； 恳求恩主洗除我众愆尤，洁净保守我，永属你所有。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-374更像我恩主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -170,7 +170,7 @@ def check_extra_cycle(harmony, melody_rows, target, period, music, last, limits)
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 5, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 6, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:
@@ -185,6 +185,30 @@ def generate(song, profile, cache):
             raise ValueError('MIDI 参考哈希不匹配')
         period, harmony, melody = midi_features(path, profile.get('referenceCycle'))
         offsets, melody_rows = reading_rows(source, profile, melody)
+        if 'opticalReference' in profile:
+            from sync_batch_reference_score import reference_rows
+            optical_rows, optical_evidence = reference_rows(profile, cache, offsets, melody)
+            image_spec = importlib.util.spec_from_file_location('printed_reference_alignment',
+                Path(__file__).with_name('midi-image-sync.py'))
+            image_alignment = importlib.util.module_from_spec(image_spec)
+            image_spec.loader.exec_module(image_alignment)
+            definitions = [item for verse in source['verses'] for item in verse]
+            first_indices = list(range(0, len(definitions), len(offsets)))
+            timelines, recordings = {}, {}
+            evidence['independentTimelines'] = timelines
+            evidence['midiMatching'].update(mode='text-symbolic-with-optical',
+                opticalReference=optical_evidence, referencePeriod=period, readingOffsets=offsets,
+                recordings=recordings)
+            for track in song['tracks']:
+                recordings[track['file']] = {}
+                times, _ = image_alignment.image_recording_times(batch.ROOT / 'data' / track['file'],
+                    source, period, harmony, melody_rows, offsets, cache,
+                    reference_key=optical_evidence['symbolicRows']['semitoneShift'],
+                    evidence=recordings[track['file']], optical_rows=optical_rows)
+                timelines[track['file']] = {'definitions': definitions, 'times': times, 'returnIndices': []}
+            evidence['performanceOrder'] = definitions
+            return export_result(song, batch.ROOT, cache, destination, evidence, start, source, definitions,
+                timelines[song['reference']]['times'], first_indices)
         reference = batch.ROOT / 'data' / song['reference']
         music = repeated_verses(reference, len(source['verses']), cache)
         target = features(reference, cache)

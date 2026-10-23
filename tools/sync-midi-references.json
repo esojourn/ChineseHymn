@@ -3216,7 +3216,49 @@
         21.9
       ]
     },
-    "formReview": "已目视核对中文第306首《哦耶稣我主我救主》：第1至7小节加第8小节首音为主歌；副歌从第8小节休止符之后的弱起“哦”开始。正文前两行对应主歌，后两行对应副歌。完整69个非连结延续起音与固定MIDI核对，只差一个重复音，所有谱行与阅读区域的起点均唯一。 逐行核对完整旋律，省略同音连结延续；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查，不从字数或总时长推算。"
+    "formReview": "已目视核对中文第306首《哦耶稣我主我救主》：第1至7小节加第8小节首音为主歌；副歌从第8小节休止符之后的弱起“哦”开始。正文前两行对应主歌，后两行对应副歌。完整69个非连结延续起音与固定MIDI核对，只差一个重复音，所有谱行与阅读区域的起点均唯一。 逐行核对完整旋律，省略同音连结延续；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查，不从字数或总时长推算。",
+    "opticalReference": {
+      "svgFile": "reference/external/died-for-me-numbered.svg",
+      "imageFile": "printed-text-references/data/died-for-me-numbered.png",
+      "recognitionFile": "printed-text-references/ocr/died-for-me-numbered.png.json",
+      "imageSha256": "8aad48c37e95d784fbb100c65c765eea0201aa4652054c312f4f0abf39fc67db",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 3,
+      "rowsSha256": "8f60582b2d45340e77022f18fc4cc2d01a7d383a64de932e36e753ee5bba734a",
+      "noteRanges": {
+        "0": [
+          0.1,
+          1
+        ],
+        "1": [
+          0,
+          0.9
+        ],
+        "2": [
+          0.1,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "renderReview": "已目视核对公开原谱SVG与其渲染图。音符范围仅排除拍号；不改写任何旋律音。开头休止在第一歌词音之前，不作为演唱起点；谱行内部弱起按原谱位置分割。完整光学音符序列、每个阅读首音和MIDI模板均须通过唯一性检查。",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1300,
+          "height": 2000
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/cn/hymn/ch/306"
+    }
   },
   "02-217": {
     "targetSha256": "d6de008ebc99cec6f63ba6cc9c79521ec309d522bb587dd64283154b26926288",
@@ -3522,7 +3564,41 @@
         24.5
       ]
     },
-    "formReview": "已目视核对中文原谱第91首，完整四谱行和所有区域起点均经最优音符序列对齐核对。正文前四行覆盖前三谱行；最后独立短句重唱上一句歌词，对应第四谱行的变奏，必须从独立首音开始，不能误用前一谱行同句歌词的起点。每个实际段落仍须独立通过和声、旋律、起点、调性及反复相位检查。"
+    "formReview": "已目视核对中文原谱第91首，完整四谱行和所有区域起点均经最优音符序列对齐核对。正文前四行覆盖前三谱行；最后独立短句重唱上一句歌词，对应第四谱行的变奏，必须从独立首音开始，不能误用前一谱行同句歌词的起点。每个实际段落仍须独立通过和声、旋律、起点、调性及反复相位检查。",
+    "opticalReference": {
+      "svgFile": "reference/external/himself-numbered.svg",
+      "imageFile": "printed-text-references/data/himself-numbered.png",
+      "recognitionFile": "printed-text-references/ocr/himself-numbered.png.json",
+      "imageSha256": "7b0ecead841dea8c76cb4870ef088b6fd1f27e3864bb57487a5d39bcc36fd50e",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 3,
+      "rowsSha256": "288fee1da184466b7b7f44f160303a6e6539d41019d1088588ad0a4872e92c0e",
+      "noteRanges": {
+        "0": [
+          0.1,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "renderReview": "已目视核对公开原谱SVG与其渲染图。音符范围仅排除拍号；不改写任何旋律音。开头休止在第一歌词音之前，不作为演唱起点；谱行内部弱起按原谱位置分割。完整光学音符序列、每个阅读首音和MIDI模板均须通过唯一性检查。",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/cn/hymn/ch/91"
+    }
   },
   "02-503": {
     "targetSha256": "78a3e3d911fe9edf22ac4cdd9d456ad2f494083537ea12b02befd5d699e23b97",
@@ -3656,7 +3732,37 @@
         33.75
       ]
     },
-    "formReview": "已核对原文 O Christ, in Thee my soul hath found、四段译文及相同副歌。公开参考第327首为另一译文，对应中文谱本258首；原谱四行最高旋律完整匹配，逐行首音在全部最优对齐中唯一。本文每段四行覆盖完整主歌和副歌，为一个阅读区域。每个实际段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不从时长平均分段。"
+    "formReview": "已核对原文 O Christ, in Thee my soul hath found、四段译文及相同副歌。公开参考第327首为另一译文，对应中文谱本258首；原谱四行最高旋律完整匹配，逐行首音在全部最优对齐中唯一。本文每段四行覆盖完整主歌和副歌，为一个阅读区域。每个实际段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不从时长平均分段。",
+    "opticalReference": {
+      "svgFile": "reference/external/christ-satisfies.svg",
+      "imageFile": "printed-text-references/data/christ-satisfies.png",
+      "recognitionFile": "printed-text-references/ocr/christ-satisfies.png.json",
+      "imageSha256": "6651c4cb47085749b1dc843267b8e7aa37b334f285803bda41d29e55b89d71b9",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 3,
+      "rowsSha256": "f5347b670c69c14d5d663fbdb251d732e7caf7bb789318916f8be1c397b263e2",
+      "noteRanges": {
+        "0": [
+          0.1,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ]
+      ],
+      "renderReview": "已目视核对公开原谱SVG与其渲染图。音符范围仅排除拍号；不改写任何旋律音。开头休止在第一歌词音之前，不作为演唱起点；谱行内部弱起按原谱位置分割。完整光学音符序列、每个阅读首音和MIDI模板均须通过唯一性检查。",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/cn/hymn/ch/258"
+    }
   },
   "01-254": {
     "targetSha256": "dbf3540186f388f7bc107f2e3fb6126d362d2f525d36864dd9bf90063ed86f16",

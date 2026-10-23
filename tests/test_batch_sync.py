@@ -43,6 +43,55 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_reference_score_crops_meter_and_preserves_rests_at_an_interior_pickup(self):
+        from sync_batch_reference_score import group_reference_rows
+        rows = [{'notes': [4, 0, 1, 2, 3, 4], 'pitchOffsets': [0] * 6,
+                 'rhythmWeights': [1, 4, .5, .5, 1, 2], 'x': [.05, .15, .3, .4, .5, .6]},
+                {'notes': [5, 0, 6, 7, 1], 'pitchOffsets': [0, 0, 1, 0, 0],
+                 'rhythmWeights': [2, 1, .5, .5, 3], 'x': [.1, .2, .3, .4, .5]}]
+        grouped = group_reference_rows(rows, {'0': [.1, 1]}, [[0, 0], [1, 2]])
+        self.assertEqual(grouped[0]['notes'], [1, 2, 3, 4, 5, 0])
+        self.assertEqual(grouped[0]['rhythmWeights'], [.5, .5, 1, 2, 2, 1])
+        self.assertEqual(grouped[1], {'notes': [6, 7, 1], 'pitchOffsets': [1, 0, 0],
+                                     'rhythmWeights': [.5, .5, 3]})
+        for starts in [[[0, 0], [1, 1]], [[0, 0], [0, 0]], [[0, 0], [2, 0]], [[1, 0]]]:
+            with self.assertRaises(ValueError):
+                group_reference_rows(rows, {'0': [.1, 1]}, starts)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_reference_score_rejects_changed_source_render_and_cached_notes(self):
+        import hashlib
+        import sync_batch_reference_score as reference_score
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            (cache / 'score.svg').write_bytes(b'<svg/>')
+            (cache / 'score.png').write_bytes(b'rendered image')
+            digest = hashlib.sha256(b'rendered image').hexdigest()
+            (cache / 'ocr.json').write_text(json.dumps({'source': 'score.png', 'sha256': digest,
+                                                      'recognizerVersion': 5}))
+            profile = {'scoreReferenceSha256': hashlib.sha256(b'<svg/>').hexdigest(),
+                       'opticalReference': {'svgFile': 'score.svg', 'imageFile': 'score.png',
+                           'recognitionFile': 'ocr.json', 'imageSha256': digest, 'recognizerVersion': 5,
+                           'rowsSha256': reference_score.score_rows_hash([]), 'readingStarts': [[0, 0]]}}
+            with patch.object(reference_score, 'note_rows', return_value=[{'changed': True}]):
+                with self.assertRaisesRegex(ValueError, '音符或节奏已改变'):
+                    reference_score.reference_rows(profile, cache, [0], {})
+            (cache / 'score.png').write_bytes(b'changed image')
+            with patch.object(reference_score, 'note_rows') as read:
+                with self.assertRaisesRegex(ValueError, '渲染图片已改变'):
+                    reference_score.reference_rows(profile, cache, [0], {})
+                read.assert_not_called()
+            (cache / 'score.svg').write_bytes(b'changed source')
+            with self.assertRaisesRegex(ValueError, '独立原谱'):
+                reference_score.reference_rows(profile, cache, [0], {})
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_retrieved_score_cannot_bypass_stronger_audio_limits_through_optical_mode(self):
+        from sync_batch_reference_score import reference_rows
+        with self.assertRaisesRegex(ValueError, '严格录音检查'):
+            reference_rows({'referenceDiscovery': {'file': 'proposed.mid'}}, Path('/missing'), [], {})
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_onset_tolerance_includes_float32_half_second_and_rejects_larger_errors(self):
         import numpy as np

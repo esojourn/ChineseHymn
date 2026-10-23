@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "01-193",
+  "status": "reviewed",
+  "source": {
+    "file": "01-193耶稣今日召你.txt",
+    "sha256": "dca4dd27c664126821f3e9d6df4eb2026f5bee4e6dd0c4584cd82224154b1fb1",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-193耶稣今日召你.mp3",
+      "sha256": "a2656e8df1f0745b5fbddee4452f2574dd0f9de08e7b51b4298d909f46ad76f7",
+      "duration": 183.3795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 10.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.95,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.3,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.65,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 117.3,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.6,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 159.95,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "耶稣正柔声呼召你回家， 今日召你，今日召你； 为何远离主慈爱的恩光？ 越走越与主相离。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "耶稣今呼召劳苦者得安， 今日召你，今日召你； 可将重担托主替你承担， 他必定不拒绝你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "耶稣今正等待盼你回来， 今正等待，今正等待； 谦卑认罪伏在救主脚前， 快来不要再耽延。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "耶稣正呼召，请听他慈声， 现在当听，现在当听； 谁愿信他尊名，必得喜乐， 不要再迟疑不决。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-193耶稣今日召你.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

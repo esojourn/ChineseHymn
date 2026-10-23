@@ -1,0 +1,285 @@
+{
+  "songId": "02-386",
+  "source": "02-386高举主旗.txt",
+  "sourceHash": "e25e0a7f9caff55ce127827c76ad655113bfdbcee84d4c8c63d937d4443a0e6a",
+  "trackHashes": [
+    {
+      "file": "02-386高举主旗.mp3",
+      "sha256": "7a7535175e6a769fed5f3ea2612971cfaf30692a6916d3fb1c12c4b263543f52"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "e25e0a7f9caff55ce127827c76ad655113bfdbcee84d4c8c63d937d4443a0e6a",
+      "file": "timeless-The_Banner_of_the_Cross.mid",
+      "sha256": "5e6549ce7d6664fe2c9a938ddedcad961500a8bd6ef17ff554e30773826f6392",
+      "url": "https://library.timelesstruths.org/library/music/T/The_Banner_of_the_Cross/The_Banner_of_the_Cross.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/The_Banner_of_the_Cross/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/The_Banner_of_the_Cross/The_Banner_of_the_Cross.xml",
+      "scoreReferenceSha256": "e54f5197c8bb334833f4f544e0b988935eea4372df3996f8d48fe2cb77d76b19",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "主基督众军兵齐昂"
+        ],
+        [
+          "仇敌虽然凶猛如洪"
+        ],
+        [
+          "越过海洋陆地到天"
+        ],
+        [
+          "荣耀黎明已近主国"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            2,
+            3,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 65,
+        "midiNoteCount": 65,
+        "editCost": 0,
+        "runnerUpCost": 48,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "The Banner of the Cross / Royal Banner，正文四行已包含完整主歌及副歌，为单个阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 38.40234375,
+    "music": {
+      "period": 39.6,
+      "similarity": 0.9744464159011841,
+      "initialOnsetEstimate": 8.632,
+      "shifts": [
+        0.0,
+        39.6,
+        79.2,
+        118.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20399477024271032,
+            "key": 6,
+            "at": 10.3,
+            "span": 39.5,
+            "starts": [
+              9.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.483752819022747,
+            "key": 11,
+            "at": 33.0,
+            "span": 21.3,
+            "starts": [
+              32.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12108077424945253,
+            "key": 6,
+            "starts": [
+              9.899999618530273
+            ],
+            "span": 39.5
+          },
+          "runnerUp": {
+            "cost": 0.3634079056556779,
+            "key": 1,
+            "starts": [
+              15.5
+            ],
+            "span": 38.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20681377372356377,
+            "key": 6,
+            "at": 49.9,
+            "span": 39.4,
+            "starts": [
+              49.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4849949461041075,
+            "key": 11,
+            "at": 72.6,
+            "span": 21.3,
+            "starts": [
+              72.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12143474155002171,
+            "key": 6,
+            "starts": [
+              49.29999923706055
+            ],
+            "span": 39.70000076293945
+          },
+          "runnerUp": {
+            "cost": 0.36258543380583175,
+            "key": 1,
+            "starts": [
+              55.099998474121094
+            ],
+            "span": 38.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20687475108137035,
+            "key": 6,
+            "at": 89.5,
+            "span": 39.4,
+            "starts": [
+              89.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4829966997859454,
+            "key": 11,
+            "at": 112.2,
+            "span": 21.3,
+            "starts": [
+              111.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12123568371088818,
+            "key": 6,
+            "starts": [
+              88.9000015258789
+            ],
+            "span": 39.70000457763672
+          },
+          "runnerUp": {
+            "cost": 0.3631486218385022,
+            "key": 1,
+            "starts": [
+              94.69999694824219
+            ],
+            "span": 38.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2063941377581972,
+            "key": 6,
+            "at": 129.1,
+            "span": 39.5,
+            "starts": [
+              128.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.508746715507122,
+            "key": 11,
+            "at": 151.8,
+            "span": 18.8,
+            "starts": [
+              151.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12211562647964015,
+            "key": 6,
+            "starts": [
+              128.5
+            ],
+            "span": 39.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.40061704076901833,
+            "key": 1,
+            "starts": [
+              134.3000030517578
+            ],
+            "span": 35.899993896484375
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "主基督众军兵，齐昂首仰望，主所赐旌旗飘扬； 凡蒙救赎之人，当高举此旗，真理师旅齐歌唱： 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "仇敌虽然凶猛，如洪水冲至，主旌旗仍当举起； 在主旗下军兵，抗敌要奋勇，为真理壮胆尽忠。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "越过海洋陆地，到天涯地极，传报此荣耀佳音； 告各处居民知，主血染旌旗，主救恩临其子民。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "荣耀黎明已近，主国快临世，一日更近过一日； 当救主显现时，仇敌尽消逝，十字架统治全地。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.228
+}

@@ -1,0 +1,285 @@
+{
+  "songId": "02-353",
+  "source": "02-353我要忠诚2.txt",
+  "sourceHash": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+  "trackHashes": [
+    {
+      "file": "02-353我要忠诚2.mp3",
+      "sha256": "8e5186bb480e955f758969120677b379d2123279618f43de52bd6b871dcfa197"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+      "file": "timeless-I_Would_Be_True.mid",
+      "sha256": "ddeae036c2a9605e9ee7178f4e86ee27ac156bd51e72823c5a5aec4d46a04314",
+      "url": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/I_Would_Be_True/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.xml",
+      "scoreReferenceSha256": "05fa0e305ad10e518a8e1ba93295bb8c9d8655d7cbf55775e85d839be127a4a9",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "我要忠诚因别人对"
+        ],
+        [
+          "我要爱人爱敌也爱"
+        ],
+        [
+          "因主忠诚对我他也"
+        ],
+        [
+          "我主爱人爱敌也爱"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            5,
+            3,
+            10,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 52,
+        "midiNoteCount": 52,
+        "editCost": 0,
+        "runnerUpCost": 37,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "I Would Be True / Peek，第二录音版单独定位，不能复用02-352起点；每段四行覆盖完整乐段及末句谱面重唱。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 48.002343749999994,
+    "music": {
+      "period": 35.3,
+      "similarity": 0.9895250797271729,
+      "initialOnsetEstimate": 5.776,
+      "shifts": [
+        0.0,
+        35.3,
+        70.6,
+        105.9
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17493279865037956,
+            "key": 9,
+            "at": 7.4,
+            "span": 35.2,
+            "starts": [
+              7.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5827475053392794,
+            "key": 2,
+            "at": 27.4,
+            "span": 12.1,
+            "starts": [
+              27.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09524095227292848,
+            "key": 9,
+            "starts": [
+              7.0
+            ],
+            "span": 35.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4304534652753187,
+            "key": 2,
+            "starts": [
+              17.200000762939453
+            ],
+            "span": 28.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17530845447572702,
+            "key": 9,
+            "at": 42.7,
+            "span": 35.2,
+            "starts": [
+              42.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5844490116108578,
+            "key": 2,
+            "at": 62.9,
+            "span": 11.9,
+            "starts": [
+              62.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09505580437419772,
+            "key": 9,
+            "starts": [
+              42.29999923706055
+            ],
+            "span": 35.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.42987760808582687,
+            "key": 2,
+            "starts": [
+              52.5
+            ],
+            "span": 28.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17863544323626726,
+            "key": 9,
+            "at": 78.0,
+            "span": 35.2,
+            "starts": [
+              77.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5831212376062322,
+            "key": 2,
+            "at": 98.0,
+            "span": 12.1,
+            "starts": [
+              97.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09407719944421698,
+            "key": 9,
+            "starts": [
+              77.5999984741211
+            ],
+            "span": 35.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.430486317059136,
+            "key": 2,
+            "starts": [
+              87.80000305175781
+            ],
+            "span": 28.399993896484375
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17644742798197371,
+            "key": 9,
+            "at": 113.3,
+            "span": 35.2,
+            "starts": [
+              113.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5855282791613181,
+            "key": 2,
+            "at": 133.3,
+            "span": 12.1,
+            "starts": [
+              133.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09217846359814869,
+            "key": 9,
+            "starts": [
+              112.9000015258789
+            ],
+            "span": 35.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.4367864246746636,
+            "key": 2,
+            "starts": [
+              97.9000015258789
+            ],
+            "span": 27.29999542236328
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我要忠诚，因别人对我信赖； 我要纯洁，因为有人关怀， 我要坚强，人间痛苦才能当， 我要胆壮，才能抵挡强敌，",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "我要爱人，爱敌也爱孤苦者； 我要施赠，不求任何酬谢； 我要谦卑，不忘我身多弱点； 我要仰望欢笑，博爱互助。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "因主忠诚，对我祂也愿信赖； 因主圣洁，对我祂也关怀； 基督坚强，一切痛苦祂担当； 向我彰显至圣大爱无量。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我主爱人，爱敌也爱孤苦者； 祂施恩惠，永不吝啬施赠； 我主谦卑，为我们成为软弱； 我主仰望欢笑，博爱扶助。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.216
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-353",
+  "status": "reviewed",
+  "source": {
+    "file": "02-353我要忠诚2.txt",
+    "sha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-353我要忠诚2.mp3",
+      "sha256": "8e5186bb480e955f758969120677b379d2123279618f43de52bd6b871dcfa197",
+      "duration": 149.76,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    }
+  },
+  "cues": [
+    {
+      "at": 7.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.35,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 77.65,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 112.95,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我要忠诚，因别人对我信赖； 我要纯洁，因为有人关怀， 我要坚强，人间痛苦才能当， 我要胆壮，才能抵挡强敌，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我要爱人，爱敌也爱孤苦者； 我要施赠，不求任何酬谢； 我要谦卑，不忘我身多弱点； 我要仰望欢笑，博爱互助。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "因主忠诚，对我祂也愿信赖； 因主圣洁，对我祂也关怀； 基督坚强，一切痛苦祂担当； 向我彰显至圣大爱无量。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我主爱人，爱敌也爱孤苦者； 祂施恩惠，永不吝啬施赠； 我主谦卑，为我们成为软弱； 我主仰望欢笑，博爱扶助。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-353我要忠诚2.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

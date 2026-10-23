@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 266,
+    "published": 269,
     "existing": 8,
-    "needs-calibration": 40,
-    "pending": 78,
+    "needs-calibration": 44,
+    "pending": 70,
     "missing-audio": 2,
-    "needs-track-alignment": 3,
+    "needs-track-alignment": 4,
     "missing-lyrics": 23
   },
   "songs": [
@@ -135,7 +135,7 @@
       "songId": "01-193",
       "source": "01-193耶稣今日召你.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-193耶稣今日召你.mp3"
       ]
@@ -290,10 +290,11 @@
       "songId": "01-378",
       "source": "01-378我是否要背负十架.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-378我是否要背负十架.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-403",
@@ -883,16 +884,17 @@
       "songId": "02-352",
       "source": "02-352我要忠诚1.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-352我要忠诚1.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-353",
       "source": "02-353我要忠诚2.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-353我要忠诚2.mp3"
       ]
@@ -1002,7 +1004,7 @@
       "songId": "02-386",
       "source": "02-386高举主旗.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-386高举主旗.mp3"
       ]
@@ -1244,7 +1246,7 @@
       "songId": "02-496",
       "source": "02-496晨昏颂祷.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "02-496晨昏颂祷.mp3",
         "02-496晨昏颂祷-领唱.mp3"
@@ -1281,11 +1283,12 @@
       "songId": "03-001",
       "source": "03-001你是我异象.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-001你是我异象.mp3",
         "03-001你是我异象-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.443"
     },
     {
       "songId": "03-002",
@@ -1371,11 +1374,12 @@
       "songId": "03-010",
       "source": "03-010我在拿撒勒人耶稣面前.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-010我在拿撒勒人耶稣面前.mp3",
         "03-010我在拿撒勒人耶稣面前-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "03-011",

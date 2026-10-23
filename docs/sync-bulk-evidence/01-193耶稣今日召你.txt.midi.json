@@ -1,0 +1,345 @@
+{
+  "songId": "01-193",
+  "source": "01-193耶稣今日召你.txt",
+  "sourceHash": "dca4dd27c664126821f3e9d6df4eb2026f5bee4e6dd0c4584cd82224154b1fb1",
+  "trackHashes": [
+    {
+      "file": "01-193耶稣今日召你.mp3",
+      "sha256": "a2656e8df1f0745b5fbddee4452f2574dd0f9de08e7b51b4298d909f46ad76f7"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "dca4dd27c664126821f3e9d6df4eb2026f5bee4e6dd0c4584cd82224154b1fb1",
+      "file": "timeless-Jesus_Is_Tenderly_Calling.mid",
+      "sha256": "b7350036cef38a9c8d32a9a7977fe4c9a3531796077641fa55f1d75d7c81ed1b",
+      "url": "https://library.timelesstruths.org/library/music/J/Jesus_Is_Tenderly_Calling/Jesus_Is_Tenderly_Calling.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Jesus_Is_Tenderly_Calling/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/J/Jesus_Is_Tenderly_Calling/Jesus_Is_Tenderly_Calling.xml",
+      "scoreReferenceSha256": "652537dc5c211131c4880438134d05e62e6d22a7d5b69977734b14ca5188f8f8",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "耶稣正柔声呼召你",
+          "今日召你今日召你"
+        ],
+        [
+          "耶稣今呼召劳苦者",
+          "今日召你今日召你"
+        ],
+        [
+          "耶稣今正等待盼你",
+          "今日召你今日召你"
+        ],
+        [
+          "耶稣正呼召请听他",
+          "今日召你今日召你"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            7,
+            7,
+            4
+          ]
+        },
+        {
+          "onsetIndex": 35,
+          "pitches": [
+            0,
+            11,
+            9,
+            11,
+            2
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 56,
+        "midiNoteCount": 56,
+        "editCost": 0,
+        "runnerUpCost": 41,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 35,
+            "possibleMidiNoteIndices": [
+              35
+            ],
+            "at": 18.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          18.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          35
+        ]
+      },
+      "formReview": "Jesus Is Tenderly Calling，前四行主歌对应原谱第1至8小节，末两行为第9小节Calling起的副歌。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 35.6279296875,
+    "music": {
+      "period": 42.7,
+      "similarity": 0.9815242886543274,
+      "initialOnsetEstimate": 9.184,
+      "shifts": [
+        0.0,
+        42.7,
+        85.3,
+        128.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.34493625471128514,
+            "key": 6,
+            "at": 11.1,
+            "span": 42.2,
+            "starts": [
+              10.6,
+              32.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5614784472999305,
+            "key": 1,
+            "at": 26.8,
+            "span": 18.4,
+            "starts": [
+              26.7,
+              36.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26370380410545047,
+            "key": 6,
+            "starts": [
+              10.699999809265137,
+              31.899999618530273
+            ],
+            "span": 42.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4270701352550498,
+            "key": 1,
+            "starts": [
+              6.5,
+              26.200000762939453
+            ],
+            "span": 32.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3463042569662983,
+            "key": 6,
+            "at": 53.8,
+            "span": 42.2,
+            "starts": [
+              53.3,
+              74.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5645928840726544,
+            "key": 1,
+            "at": 69.6,
+            "span": 18.4,
+            "starts": [
+              69.3,
+              78.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26364460929495387,
+            "key": 6,
+            "starts": [
+              53.29999923706055,
+              74.5999984741211
+            ],
+            "span": 42.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4283630585502964,
+            "key": 1,
+            "starts": [
+              48.5,
+              68.9000015258789
+            ],
+            "span": 32.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3491363168041935,
+            "key": 6,
+            "at": 96.4,
+            "span": 42.2,
+            "starts": [
+              95.9,
+              117.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5608578398300278,
+            "key": 1,
+            "at": 112.3,
+            "span": 18.4,
+            "starts": [
+              112.0,
+              121.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26461373894220214,
+            "key": 6,
+            "starts": [
+              96.0,
+              117.30000305175781
+            ],
+            "span": 42.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.428495992262972,
+            "key": 1,
+            "starts": [
+              91.9000015258789,
+              111.5
+            ],
+            "span": 32.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3440592138214469,
+            "key": 6,
+            "at": 139.1,
+            "span": 42.2,
+            "starts": [
+              138.6,
+              160.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5599461361172607,
+            "key": 1,
+            "at": 154.9,
+            "span": 18.4,
+            "starts": [
+              154.7,
+              164.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.262267816262167,
+            "key": 6,
+            "starts": [
+              138.60000610351562,
+              159.89999389648438
+            ],
+            "span": 42.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.42863582280536444,
+            "key": 1,
+            "starts": [
+              133.8000030517578,
+              154.1999969482422
+            ],
+            "span": 32.80000305175781
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "耶稣正柔声呼召你回家， 今日召你，今日召你； 为何远离主慈爱的恩光？ 越走越与主相离。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "耶稣今呼召劳苦者得安， 今日召你，今日召你； 可将重担托主替你承担， 他必定不拒绝你。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "耶稣今正等待盼你回来， 今正等待，今正等待； 谦卑认罪伏在救主脚前， 快来不要再耽延。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "耶稣正呼召，请听他慈声， 现在当听，现在当听； 谁愿信他尊名，必得喜乐， 不要再迟疑不决。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "今日召你，今日召你，耶稣召你， 他今日以温柔声召你。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.548
+}

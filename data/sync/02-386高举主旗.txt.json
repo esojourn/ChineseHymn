@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-386",
+  "status": "reviewed",
+  "source": {
+    "file": "02-386高举主旗.txt",
+    "sha256": "e25e0a7f9caff55ce127827c76ad655113bfdbcee84d4c8c63d937d4443a0e6a",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-386高举主旗.mp3",
+      "sha256": "7a7535175e6a769fed5f3ea2612971cfaf30692a6916d3fb1c12c4b263543f52",
+      "duration": 170.2138775510204,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 9.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 49.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.0,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 128.6,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主基督众军兵，齐昂首仰望，主所赐旌旗飘扬； 凡蒙救赎之人，当高举此旗，真理师旅齐歌唱： 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "仇敌虽然凶猛，如洪水冲至，主旌旗仍当举起； 在主旗下军兵，抗敌要奋勇，为真理壮胆尽忠。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "越过海洋陆地，到天涯地极，传报此荣耀佳音； 告各处居民知，主血染旌旗，主救恩临其子民。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "荣耀黎明已近，主国快临世，一日更近过一日； 当救主显现时，仇敌尽消逝，十字架统治全地。 向前进，向前进，为基督万事看成空； 尊基督为王，齐欢唱！十架旗下同效忠。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-386高举主旗.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

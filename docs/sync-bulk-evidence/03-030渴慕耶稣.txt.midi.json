@@ -1,0 +1,310 @@
+{
+  "songId": "03-030",
+  "source": "03-030渴慕耶稣.txt",
+  "sourceHash": "88b8a9bcc621e4a9dcf030510b36b2412a11a56768efe77c92ab1b140cda92b7",
+  "trackHashes": [
+    {
+      "file": "03-030渴慕耶稣.mp3",
+      "sha256": "f2f2b13fbb886cb6b4b3c604f74ad1934ab785bb7d3e092bcd4dbb58edf4b189"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "88b8a9bcc621e4a9dcf030510b36b2412a11a56768efe77c92ab1b140cda92b7",
+      "file": "hymnary563.mid",
+      "sha256": "0a04aa7833c99f31832cb196242b7f7efd2b433ffcacce4ded1296ee542d7017",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary563.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary563.htm",
+      "scoreReferenceUrl": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf",
+      "scoreReferenceSha256": "7d17e5b89e90866094ecf9b6023f3d605975512692410cded82437d3a8e4eb16",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "我心中饥渴地爱慕",
+          "心中渴慕着耶稣我"
+        ],
+        [
+          "我心中渴望能够追",
+          "心中渴慕着耶稣我"
+        ],
+        [
+          "你也许并不知道谁",
+          "心中渴慕着耶稣我"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            6,
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "onsetIndex": 42,
+          "pitches": [
+            7,
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "printedScoreReview": {
+        "book": "颂主新歌 / New Songs of Praise",
+        "entry": 425,
+        "printedPage": 323,
+        "pdfPageIndex": 342,
+        "title": "渴慕耶稣 / Longing for Jesus",
+        "composer": "Richard D. Baker",
+        "numberedRows": [
+          "5 #4 4 3 #2 3 5 3 #2 1 6 1 7 6 5 #4 5 6 5 3",
+          "2 5 #4 4 3 #2 3 5 3 #2 1 6 1 7 6 5 3 1 4 3 2 1",
+          "5 3 1 1 1 1 6 1 7 6 5 #4 5 6 5 3 2 5 5 5",
+          "5 3 1 1 1 1 6 1 7 6 5 6 7 1 1 7 1"
+        ],
+        "tiedContinuationsExcluded": true,
+        "accidentalsApplyThroughMeasure": true,
+        "chorusSystem": 3
+      },
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 79,
+        "midiNoteCount": 79,
+        "editCost": 0,
+        "runnerUpCost": 62,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 20,
+            "possibleMidiNoteIndices": [
+              20
+            ],
+            "at": 7.3636
+          },
+          {
+            "scoreNoteIndex": 42,
+            "possibleMidiNoteIndices": [
+              42
+            ],
+            "at": 18.2727
+          },
+          {
+            "scoreNoteIndex": 62,
+            "possibleMidiNoteIndices": [
+              62
+            ],
+            "at": 27.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          7.3636,
+          18.2727,
+          27.0
+        ]
+      },
+      "formReview": "已目视核对公开中文谱本第425首《渴慕耶稣》：前两谱行对应主歌四句，第三谱行明确标注副歌。逐行抄录最高旋律简谱，省略同音连结延续，升号在本小节内保持有效。完整79音与固定MIDI逐音完全一致；四个谱行起点在所有最优序列对齐中均唯一。正文两个阅读区域分别从MIDI索引0和42开始；每个实际段落还须通过独立和声、旋律、起点、调性与反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 34.4999655,
+    "music": {
+      "period": 42.7,
+      "similarity": 0.9854007363319397,
+      "initialOnsetEstimate": 8.684,
+      "shifts": [
+        0.0,
+        42.7,
+        85.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18478171998499707,
+            "key": 6,
+            "at": 11.2,
+            "span": 42.0,
+            "starts": [
+              10.7,
+              33.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6908788033335773,
+            "key": 1,
+            "at": 7.7,
+            "span": 26.4,
+            "starts": [
+              7.2,
+              20.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21609355917579956,
+            "key": 6,
+            "starts": [
+              10.600000381469727,
+              33.099998474121094
+            ],
+            "span": 42.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.46946326798521665,
+            "key": 11,
+            "starts": [
+              12.600000381469727,
+              34.70000076293945
+            ],
+            "span": 40.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18171263076103264,
+            "key": 6,
+            "at": 53.9,
+            "span": 42.0,
+            "starts": [
+              53.4,
+              75.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.690732218900944,
+            "key": 1,
+            "at": 50.4,
+            "span": 26.5,
+            "starts": [
+              49.9,
+              63.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21462119323587528,
+            "key": 6,
+            "starts": [
+              53.29999923706055,
+              75.69999694824219
+            ],
+            "span": 42.10000228881836
+          },
+          "runnerUp": {
+            "cost": 0.46837071010044645,
+            "key": 11,
+            "starts": [
+              55.20000076293945,
+              77.80000305175781
+            ],
+            "span": 40.999996185302734
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1830629442558914,
+            "key": 6,
+            "at": 96.5,
+            "span": 42.1,
+            "starts": [
+              96.0,
+              118.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6877234858707186,
+            "key": 1,
+            "at": 93.0,
+            "span": 26.4,
+            "starts": [
+              92.5,
+              106.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21718004213283995,
+            "key": 6,
+            "starts": [
+              96.0,
+              118.4000015258789
+            ],
+            "span": 42.0
+          },
+          "runnerUp": {
+            "cost": 0.4682083308557157,
+            "key": 11,
+            "starts": [
+              97.9000015258789,
+              120.0
+            ],
+            "span": 40.900001525878906
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.272709
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我心中饥渴地爱慕着耶稣，  我心中饥渴地爱慕着祂；  虽然我知道祂常在我身旁，  我仍要渴望见着祂的面。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "我心中渴望能够追随耶稣，  我心中渴望祂亲手提挈；  使我感到祂亲自带领着我，  感到祂的爱永远不离开。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你也许并不知道谁是耶稣，  你还没享受人生大喜乐；  哦，你能否接受祂作你救主，  领受祂丰盛无量的恩典？",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.6
+}

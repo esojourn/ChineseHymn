@@ -1,0 +1,367 @@
+{
+  "songId": "04-777",
+  "source": "04-777你孤单么.txt",
+  "sourceHash": "d44197b48d53855d1f5861624fc5535260c602c9cb943a7740679d85c02be394",
+  "trackHashes": [
+    {
+      "file": "04-777你孤单么.mp3",
+      "sha256": "85c501e87313be7d39eaee0008b14ffaf3d5fa151f815930a11c3ce2b161f7f9"
+    },
+    {
+      "file": "04-777你孤单么-领唱.mp3",
+      "sha256": "10c0e148a0249149b8b2e58d633dcf4d6177c9745bb1713c62fe949982175e16"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "d44197b48d53855d1f5861624fc5535260c602c9cb943a7740679d85c02be394",
+      "file": "hymnary485.mid",
+      "sha256": "e5b7266dd4a3e5a45c2aec8071124cfde033eaef0f3b3d37e30e8c483cb4399a",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary485.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary485.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/P/Precious_Promise/Precious_Promise.xml",
+      "scoreReferenceSha256": "b920775ea012b03c71770018bae729654090b335d2e89ade72dacee6f4ac1eb3",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "你孤单么真孤单么",
+          "他曾孤单在城里面"
+        ],
+        [
+          "你困倦么真困倦么",
+          "他曾困倦在那晚间"
+        ],
+        [
+          "你贫穷么真贫穷么",
+          "从未安身走遍乡城"
+        ],
+        [
+          "你担重么真担重么",
+          "他曾亲身背负重担"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            2,
+            4,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 38,
+          "pitches": [
+            2,
+            0,
+            11,
+            11,
+            9
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 76,
+        "midiNoteCount": 76,
+        "editCost": 0,
+        "runnerUpCost": 52,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 38,
+            "possibleMidiNoteIndices": [
+              38
+            ],
+            "at": 18.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          18.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          38
+        ]
+      },
+      "formReview": "《你孤单么》采用 Precious Promise 同曲填词，不将参考诗歌的歌词当作本曲原文。MusicXML第1至10小节为主歌四句，第11小节 I will 起为后半四句，分别对应正文两个阅读区域。完整76个主旋律起音与固定MIDI逐音完全一致，两个阅读区域起点均唯一；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 36.125,
+    "music": {
+      "period": 43.2,
+      "similarity": 0.9589951634407043,
+      "initialOnsetEstimate": 8.444,
+      "shifts": [
+        0.0,
+        43.2,
+        86.4,
+        129.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11292941481978805,
+            "key": 7,
+            "at": 12.2,
+            "span": 42.9,
+            "starts": [
+              11.7,
+              33.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5247964505796079,
+            "key": 2,
+            "at": 17.6,
+            "span": 27.2,
+            "starts": [
+              17.1,
+              31.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21291768109356915,
+            "key": 7,
+            "starts": [
+              11.699999809265137,
+              33.29999923706055
+            ],
+            "span": 42.89999771118164
+          },
+          "runnerUp": {
+            "cost": 0.3823240774649161,
+            "key": 2,
+            "starts": [
+              9.600000381469727,
+              28.100000381469727
+            ],
+            "span": 34.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11382580686498571,
+            "key": 7,
+            "at": 55.4,
+            "span": 42.9,
+            "starts": [
+              54.9,
+              76.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5363987110279225,
+            "key": 2,
+            "at": 60.8,
+            "span": 27.2,
+            "starts": [
+              60.3,
+              74.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21409499203717267,
+            "key": 7,
+            "starts": [
+              54.900001525878906,
+              76.5
+            ],
+            "span": 42.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.37077836637143735,
+            "key": 2,
+            "starts": [
+              41.70000076293945,
+              63.0
+            ],
+            "span": 37.89999771118164
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11524177480626989,
+            "key": 7,
+            "at": 98.6,
+            "span": 42.9,
+            "starts": [
+              98.1,
+              119.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5361876311125578,
+            "key": 0,
+            "at": 84.8,
+            "span": 30.0,
+            "starts": [
+              84.8,
+              98.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21211809582180446,
+            "key": 7,
+            "starts": [
+              98.0999984741211,
+              119.69999694824219
+            ],
+            "span": 42.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.3710272400467484,
+            "key": 2,
+            "starts": [
+              84.9000015258789,
+              106.19999694824219
+            ],
+            "span": 34.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11871465930232296,
+            "key": 7,
+            "at": 141.8,
+            "span": 42.9,
+            "starts": [
+              141.3,
+              162.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5356120710019712,
+            "key": 2,
+            "at": 147.2,
+            "span": 27.2,
+            "starts": [
+              146.7,
+              161.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21111009739063405,
+            "key": 7,
+            "starts": [
+              141.3000030517578,
+              162.89999389648438
+            ],
+            "span": 42.899993896484375
+          },
+          "runnerUp": {
+            "cost": 0.37307308338306566,
+            "key": 2,
+            "starts": [
+              128.10000610351562,
+              149.39999389648438
+            ],
+            "span": 37.69999694824219
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "你孤单么？真孤单么？ 耶稣比你更孤单！ 他曾降生成为人子， 受尽凌辱苦难堪！",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "他曾孤单在城里面， 曾孤单在加略山。 未见一人与他同行， 试想他心何凄惨！",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "你困倦么？真困倦么？ 耶稣比你更困倦！ 当他即将走完世路， 犹背苦架挨熬煎！",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "他曾困倦在那晚间， 他曾困倦不能眠； 大声祈祷汗如血点， 跪在客西马尼园。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你贫穷么？真贫穷么？ 耶稣比你更贫穷！ 飞鸟有巢，狐狸有洞， 惟有他常奔西东。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "从未安身走遍乡城， 宣传天道人不听； 想他生在客店马棚， 葬在他人坟墓中。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "你担重么？真担重么？ 耶稣比你担更重！ 他能担当你我忧伤， 安慰你我苦心衷！",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "他曾亲身背负重担， 带荆棘冕历忧痛； 十字架上他曾被悬， 为救你我进天宫。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "04-777你孤单么.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.9114121198654175,
+      "meanPathCost": 0.10744182020425797,
+      "cueWindowCosts": [
+        0.12873342633247375,
+        0.09602691233158112,
+        0.10127913951873779,
+        0.10076639801263809,
+        0.10600651055574417,
+        0.10138626396656036,
+        0.11228545755147934,
+        0.10266833007335663
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 1.166
+}

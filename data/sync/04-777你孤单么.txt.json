@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-777",
+  "status": "reviewed",
+  "source": {
+    "file": "04-777你孤单么.txt",
+    "sha256": "d44197b48d53855d1f5861624fc5535260c602c9cb943a7740679d85c02be394",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-777你孤单么.mp3",
+      "sha256": "85c501e87313be7d39eaee0008b14ffaf3d5fa151f815930a11c3ce2b161f7f9",
+      "duration": 185.6,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.35,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 75.55,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 97.2,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 118.75,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 140.4,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 161.95,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-777你孤单么-领唱.mp3",
+      "sha256": "10c0e148a0249149b8b2e58d633dcf4d6177c9745bb1713c62fe949982175e16",
+      "duration": 184.6595918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 11.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.25,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.9,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.45,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 98.1,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.65,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.3,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.85,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你孤单么？真孤单么？ 耶稣比你更孤单！ 他曾降生成为人子， 受尽凌辱苦难堪！",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他曾孤单在城里面， 曾孤单在加略山。 未见一人与他同行， 试想他心何凄惨！",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "你困倦么？真困倦么？ 耶稣比你更困倦！ 当他即将走完世路， 犹背苦架挨熬煎！",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "他曾困倦在那晚间， 他曾困倦不能眠； 大声祈祷汗如血点， 跪在客西马尼园。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你贫穷么？真贫穷么？ 耶稣比你更贫穷！ 飞鸟有巢，狐狸有洞， 惟有他常奔西东。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "从未安身走遍乡城， 宣传天道人不听； 想他生在客店马棚， 葬在他人坟墓中。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "你担重么？真担重么？ 耶稣比你担更重！ 他能担当你我忧伤， 安慰你我苦心衷！",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "他曾亲身背负重担， 带荆棘冕历忧痛； 十字架上他曾被悬， 为救你我进天宫。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-777你孤单么.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "03-030",
+  "status": "reviewed",
+  "source": {
+    "file": "03-030渴慕耶稣.txt",
+    "sha256": "88b8a9bcc621e4a9dcf030510b36b2412a11a56768efe77c92ab1b140cda92b7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-030渴慕耶稣.mp3",
+      "sha256": "f2f2b13fbb886cb6b4b3c604f74ad1934ab785bb7d3e092bcd4dbb58edf4b189",
+      "duration": 140.22530612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    }
+  },
+  "cues": [
+    {
+      "at": 10.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.05,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.35,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.7,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.0,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 118.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我心中饥渴地爱慕着耶稣，  我心中饥渴地爱慕着祂；  虽然我知道祂常在我身旁，  我仍要渴望见着祂的面。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我心中渴望能够追随耶稣，  我心中渴望祂亲手提挈；  使我感到祂亲自带领着我，  感到祂的爱永远不离开。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你也许并不知道谁是耶稣，  你还没享受人生大喜乐；  哦，你能否接受祂作你救主，  领受祂丰盛无量的恩典？",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "心中渴慕着耶稣，  我心中饥渴地爱慕耶稣； 但求接近祂，常与祂同在，  我心中饥渴地爱慕耶稣。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-030渴慕耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

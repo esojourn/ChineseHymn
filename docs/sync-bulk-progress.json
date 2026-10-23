@@ -2,13 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 242,
+    "published": 244,
     "existing": 8,
     "pending": 99,
-    "needs-calibration": 42,
+    "needs-calibration": 41,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1517,7 +1516,7 @@
       "songId": "03-030",
       "source": "03-030渴慕耶稣.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "03-030渴慕耶稣.mp3"
       ]
@@ -1862,12 +1861,11 @@
       "songId": "04-777",
       "source": "04-777你孤单么.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-777你孤单么.mp3",
         "04-777你孤单么-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,5"
+      ]
     },
     {
       "songId": "04-779",

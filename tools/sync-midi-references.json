@@ -94,5 +94,99 @@
       "allPitchesAgree": true,
       "refrainFirstOnsetIndex": 44
     }
+  },
+  "01-133": {
+    "targetSha256": "234e93b751f3b608dd3ff4171d5ee5f8f2150767e0aaf607aeb53b5ff05b35db",
+    "file": "hymnary133.mid",
+    "sha256": "88a67977405137479ec7800a1fd7dd653248bcfd954fc67ead608167e91272f1",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary133.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary133.htm",
+    "scoreReferenceUrl": "https://www.smallchurchmusic.com/Score_PDF/GoldenHarpsAreSounding-Hermas.pdf",
+    "scoreReferenceSha256": "079a31877be0da5fae0efb4d1355de270efe2d1a5e64853676153d8b8623519c",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "金琴在天响起",
+        "祂的大工告成"
+      ],
+      [
+        "祂来流血、受死",
+        "祂的大工告成"
+      ],
+      [
+        "祂在有福境界",
+        "祂的大工告成"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          0,
+          0,
+          10,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 46,
+        "pitches": [
+          0,
+          0,
+          0,
+          10,
+          8
+        ]
+      }
+    ],
+    "formReview": "目视核对公开 Hermas 四声部乐谱，共24个4/4小节；双小节线前16小节为主歌，后8小节为副歌。正文每段前四行对应主歌，后两行对应副歌。副歌第17小节起音（MIDI索引46、32秒），首句五音与主歌同为33321，公开谱G调、参考MIDI降A调。对照页与MIDI文件哈希固定，每个实际乐段的两个区域仍须独立通过和声、旋律定位与重复相位核对。"
+  },
+  "01-171": {
+    "targetSha256": "b464bc82e099e4068f4cec4f27ae445eba2bab827c5823b956b87b2e3ea8c4f7",
+    "file": "hymnary604.mid",
+    "sha256": "716726b3b397f59b4b898b89c7923fbb537098006d9676b8c1b498f117da62b1",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary604.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary604.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/Though_Your_Sins_Be_as_Scarlet/Though_Your_Sins_Be_as_Scarlet.xml",
+    "scoreReferenceSha256": "05fe34f8f2425d18a0821e51267df1a737ea0ef4722dc6a772d2ed5642eb9d00",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "你的罪虽像朱红主",
+        "主必使它白如雪主"
+      ],
+      [
+        "请听主慈爱呼声快",
+        "快回转归向真神快"
+      ],
+      [
+        "你的罪主必赦免从",
+        "从今后不再记念从"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          3,
+          3,
+          0,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 59,
+        "pitches": [
+          10,
+          8,
+          8,
+          7,
+          8
+        ]
+      }
+    ],
+    "formReview": "核对同曲公开 MusicXML 的歌词与高声部：前八个英文长句对应正文前四行，最后两次应许句对应正文第五行（第二阅读区域）。该区域从第19小节第一音 They 开始，MusicXML高声部起音索引51，前五音的音高类10,8,8,7,8与MIDI起音索引59逐项一致（25.714272秒），首阅读区域前五音同样逐项核对。乐谱首句有反复及不同结尾，不按文字或音符比例推算区域时间；每段实际录音另须通过和声、旋律的独立定位及重复相位检查。"
   }
 }

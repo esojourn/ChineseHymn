@@ -1,0 +1,435 @@
+{
+  "songId": "04-554",
+  "source": "04-554宝贵祷告良辰.txt",
+  "sourceHash": "66cabeb145195b1476bb12e634165452ce3750115570ed284e862ece3ac04340",
+  "trackHashes": [
+    {
+      "file": "04-554宝贵祷告良辰.mp3",
+      "sha256": "91727cdd064d8d8d6e5b709fbf85f1948917c0edfef3f245793d6687bd8b853c"
+    },
+    {
+      "file": "04-554宝贵祷告良辰-领唱.mp3",
+      "sha256": "289a6dc3fdc9a60e41d9279a777353b3057b4c55e85ae581bd0700499ac403c7"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "66cabeb145195b1476bb12e634165452ce3750115570ed284e862ece3ac04340",
+      "file": "hymnary547.mid",
+      "sha256": "f8f1de26a6fa8b06890797583d36c7b26bc341480e1335ee3196040ec50d7b24",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary547.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary547.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/Tis_the_Blessed_Hour_of_Prayer/Tis_the_Blessed_Hour_of_Prayer.xml",
+      "scoreReferenceSha256": "ed61b4f7b63c6c3811d628ea84d9f24bef0f960b81cb05c450772552ddc45f90",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "是宝贵祷告良辰我",
+          "凭信心来到主前得",
+          "是祷告良辰是宝贵"
+        ],
+        [
+          "是宝贵祷告良辰与",
+          "当将你一切重担在",
+          "是祷告良辰是宝贵"
+        ],
+        [
+          "是宝贵祷告良辰当",
+          "主有深切同情心必",
+          "是祷告良辰是宝贵"
+        ],
+        [
+          "是宝贵祷告良辰表",
+          "只要诚信全信靠便",
+          "是祷告良辰是宝贵"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            5,
+            7,
+            6,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 25,
+          "pitches": [
+            3,
+            5,
+            7,
+            6,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 52,
+          "pitches": [
+            7,
+            10,
+            10,
+            3,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 77,
+        "midiNoteCount": 78,
+        "editCost": 2,
+        "runnerUpCost": 60,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 25,
+            "possibleMidiNoteIndices": [
+              25
+            ],
+            "at": 12.0
+          },
+          {
+            "scoreNoteIndex": 52,
+            "possibleMidiNoteIndices": [
+              52
+            ],
+            "at": 24.5
+          }
+        ],
+        "offsets": [
+          0.0,
+          12.0,
+          24.5
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          25,
+          52
+        ]
+      },
+      "formReview": "第一阅读区域到第10小节 friend 为止；第二区域从同小节 If 起，对应“凭信心来到主前”；第三区域从第20小节副歌 Bless 起。MusicXML第15小节Segno，第19小节Fine，第24小节D.S. al Fine，需完整展开为1至24小节、再15至19小节；副歌阅读区域包含回唱主歌末两句。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。",
+      "performedScoreMeasures": [
+        "1-24",
+        "15-19"
+      ]
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 36.875,
+    "music": {
+      "period": 48.0,
+      "similarity": 0.9664732813835144,
+      "initialOnsetEstimate": 14.96,
+      "shifts": [
+        0.0,
+        48.0,
+        96.0,
+        144.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14279006322224935,
+            "key": 7,
+            "at": 18.0,
+            "span": 48.4,
+            "starts": [
+              17.5,
+              33.6,
+              49.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5961407979329427,
+            "key": 2,
+            "at": 32.6,
+            "span": 20.4,
+            "starts": [
+              32.2,
+              33.1,
+              41.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26246825853983563,
+            "key": 7,
+            "starts": [
+              17.5,
+              33.599998474121094,
+              49.5
+            ],
+            "span": 48.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.403393809000651,
+            "key": 0,
+            "starts": [
+              30.799999237060547,
+              45.79999923706055,
+              58.79999923706055
+            ],
+            "span": 41.29999923706055
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14138387044270834,
+            "key": 7,
+            "at": 66.1,
+            "span": 48.3,
+            "starts": [
+              65.6,
+              81.6,
+              97.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5982200622558593,
+            "key": 2,
+            "at": 80.6,
+            "span": 23.2,
+            "starts": [
+              80.2,
+              92.3,
+              98.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.27123374938964845,
+            "key": 7,
+            "starts": [
+              65.5,
+              81.5,
+              97.5
+            ],
+            "span": 48.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4071863810221354,
+            "key": 0,
+            "starts": [
+              76.19999694824219,
+              90.30000305175781,
+              106.5
+            ],
+            "span": 43.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.13625828425089517,
+            "key": 7,
+            "at": 114.0,
+            "span": 48.4,
+            "starts": [
+              113.5,
+              129.6,
+              145.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6010967890421549,
+            "key": 2,
+            "at": 128.5,
+            "span": 23.2,
+            "starts": [
+              128.2,
+              136.4,
+              146.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2663204352060954,
+            "key": 7,
+            "starts": [
+              113.5,
+              129.5,
+              145.5
+            ],
+            "span": 48.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4066449801127116,
+            "key": 0,
+            "starts": [
+              124.19999694824219,
+              138.3000030517578,
+              154.8000030517578
+            ],
+            "span": 43.90000915527344
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1407464027404785,
+            "key": 7,
+            "at": 162.1,
+            "span": 47.8,
+            "starts": [
+              161.6,
+              177.6,
+              193.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5957690556844075,
+            "key": 2,
+            "at": 176.5,
+            "span": 23.2,
+            "starts": [
+              176.2,
+              188.4,
+              194.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2776640892028809,
+            "key": 7,
+            "starts": [
+              161.5,
+              177.5,
+              193.5
+            ],
+            "span": 48.0
+          },
+          "runnerUp": {
+            "cost": 0.41641788482666015,
+            "key": 0,
+            "starts": [
+              154.1999969482422,
+              169.5,
+              186.5
+            ],
+            "span": 45.90000915527344
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      12.0,
+      24.5
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "是宝贵祷告良辰， 我心谦卑等候， 同聚会敬拜耶稣， 救主我良友；",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "凭信心来到主前， 得享主恩眷顾， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "是祷告良辰，是宝贵良辰， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第1段"
+    },
+    {
+      "region": "r4",
+      "text": "是宝贵祷告良辰， 与主亲密灵交， 他以怜悯与慈爱， 听儿女祈祷；",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "当将你一切重担， 在主座前卸除， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第2段"
+    },
+    {
+      "region": "r6",
+      "text": "是祷告良辰，是宝贵良辰， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第2段"
+    },
+    {
+      "region": "r7",
+      "text": "是宝贵祷告良辰， 当我遭遇试探， 来到主前靠主爱， 心中得坦然；",
+      "label": "第3段"
+    },
+    {
+      "region": "r8",
+      "text": "主有深切同情心， 必然看顾保护， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第3段"
+    },
+    {
+      "region": "r9",
+      "text": "是祷告良辰，是宝贵良辰， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第3段"
+    },
+    {
+      "region": "r10",
+      "text": "是宝贵祷告良辰， 表示信托之心， 他深知我们需要， 必按时供应；",
+      "label": "第4段"
+    },
+    {
+      "region": "r11",
+      "text": "只要诚信全信靠， 便能尽除愁苦， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第4段"
+    },
+    {
+      "region": "r12",
+      "text": "是祷告良辰，是宝贵良辰， 是劳倦者的良药， 何等甜美之处。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "04-554宝贵祷告良辰.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 11,
+      "initialSimilarity": 0.37546059489250183,
+      "meanPathCost": 0.40118134021759033,
+      "cueWindowCosts": [
+        0.3351036012172699,
+        0.4523164629936218,
+        0.44933804869651794,
+        0.34982118010520935,
+        0.4703372120857239,
+        0.4583660662174225,
+        0.43331000208854675,
+        0.424837589263916,
+        0.398057222366333,
+        0.35886141657829285,
+        0.4651491641998291,
+        0.41737231612205505
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 12,
+  "elapsedSeconds": 0.936
+}

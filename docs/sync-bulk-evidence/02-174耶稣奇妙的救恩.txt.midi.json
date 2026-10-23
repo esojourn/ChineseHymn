@@ -1,0 +1,359 @@
+{
+  "songId": "02-174",
+  "source": "02-174耶稣奇妙的救恩.txt",
+  "sourceHash": "62f06ebeb62a1847cb95443fb08e71b19ba9a099420f5dda4ed08e845a4e8ebb",
+  "trackHashes": [
+    {
+      "file": "02-174耶稣奇妙的救恩.mp3",
+      "sha256": "d3534c9be4f787a63fd68779e487e86503dc45979dcc2fe81fb17d48a42fda59"
+    },
+    {
+      "file": "02-174耶稣奇妙的救恩-领唱.mp3",
+      "sha256": "187241d739c0f489fee684a0c009af8f8c472ae570556a50c747bbe831e81518"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "62f06ebeb62a1847cb95443fb08e71b19ba9a099420f5dda4ed08e845a4e8ebb",
+      "file": "hymnary099.mid",
+      "sha256": "9c7b19d09c2e680efe7a01fa84fc84569bfc7f8d65d46227867fea111de4e8c1",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary099.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary099.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/W/Wonderful_Grace_of_Jesus/Wonderful_Grace_of_Jesus.xml",
+      "scoreReferenceSha256": "d468dea0f67a7abea0c9c903cac3c49c8ea5195bacea4ee39f76d8e23cf4f8a5",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "耶稣奇妙的救恩超",
+          "主耶稣奇妙无比的",
+          "阔过我一生所行的"
+        ],
+        [
+          "耶稣奇妙的救恩临",
+          "主耶稣奇妙无比的",
+          "阔过我一生所行的"
+        ],
+        [
+          "耶稣奇妙的救恩临",
+          "主耶稣奇妙无比的",
+          "阔过我一生所行的"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "onsetIndex": 54,
+          "pitches": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "onsetIndex": 100,
+          "pitches": [
+            1,
+            3,
+            5,
+            6,
+            8
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 126,
+        "midiNoteCount": 133,
+        "editCost": 9,
+        "runnerUpCost": 108,
+        "semitoneShift": 1,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 52,
+            "possibleMidiNoteIndices": [
+              54
+            ],
+            "at": 32.0
+          },
+          {
+            "scoreNoteIndex": 93,
+            "possibleMidiNoteIndices": [
+              100
+            ],
+            "at": 48.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          32.0,
+          48.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          52,
+          93
+        ]
+      },
+      "formReview": "主歌第1至16小节，副歌第17至24小节对应“主耶稣奇妙无比的救恩”区域，第25小节 Broad 起对应“阔过我一生所行的过犯”区域。副歌有对位声部，取最高主旋律核对，不把较低声部插入旋律。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 63.869791666666664,
+    "music": {
+      "period": 76.8,
+      "similarity": 0.9372884631156921,
+      "initialOnsetEstimate": 6.5,
+      "shifts": [
+        0.0,
+        76.8,
+        153.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23985121647516885,
+            "key": 5,
+            "at": 10.6,
+            "span": 76.3,
+            "starts": [
+              10.1,
+              48.6,
+              67.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6536307334899902,
+            "key": 0,
+            "at": 10.0,
+            "span": 51.7,
+            "starts": [
+              9.9,
+              34.8,
+              46.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1431820591290792,
+            "key": 5,
+            "starts": [
+              10.0,
+              48.5,
+              67.69999694824219
+            ],
+            "span": 76.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.44361333052317303,
+            "key": 0,
+            "starts": [
+              52.20000076293945,
+              74.19999694824219,
+              80.5999984741211
+            ],
+            "span": 41.29999923706055
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23343386252721152,
+            "key": 5,
+            "at": 87.4,
+            "span": 76.2,
+            "starts": [
+              86.9,
+              125.4,
+              144.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6599583625793457,
+            "key": 0,
+            "at": 83.8,
+            "span": 55.1,
+            "starts": [
+              83.3,
+              111.4,
+              123.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13947494824727377,
+            "key": 5,
+            "starts": [
+              86.80000305175781,
+              125.30000305175781,
+              144.5
+            ],
+            "span": 76.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.448819359143575,
+            "key": 0,
+            "starts": [
+              112.0999984741211,
+              136.6999969482422,
+              148.39999389648438
+            ],
+            "span": 53.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.22607664267222086,
+            "key": 5,
+            "at": 164.2,
+            "span": 76.0,
+            "starts": [
+              163.7,
+              202.2,
+              221.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6547133127848307,
+            "key": 0,
+            "at": 160.5,
+            "span": 55.2,
+            "starts": [
+              160.0,
+              187.7,
+              199.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13927561044692993,
+            "key": 5,
+            "starts": [
+              163.60000610351562,
+              202.10000610351562,
+              221.3000030517578
+            ],
+            "span": 76.09999084472656
+          },
+          "runnerUp": {
+            "cost": 0.4526808261871338,
+            "key": 0,
+            "starts": [
+              145.10000610351562,
+              178.10000610351562,
+              187.89999389648438
+            ],
+            "span": 60.399993896484375
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      32.0,
+      48.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "耶稣奇妙的救恩，超过我众过犯； 我口舌怎能述说，更将从何颂赞？ 祂除我罪担忧愁，使我心灵自由； 耶稣奇妙的救恩使我得拯救。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "主耶稣奇妙无比的救恩， 深过波浪滚滚的海洋； 高过最高山岭，美如闪耀泉源， 奇妙救恩足够我需用。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "阔过我一生所行的过犯， 大过我一切罪污羞耻， 我要称扬主圣名，我要赞美主圣名！",
+      "label": "第1段"
+    },
+    {
+      "region": "r4",
+      "text": "耶稣奇妙的救恩，临到失丧之人， 藉救恩我得赦免，并使我得完全， 主为我解脱捆绑，使我得着释放； 耶稣奇妙的救恩使我得拯救。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "主耶稣奇妙无比的救恩， 深过波浪滚滚的海洋； 高过最高山岭，美如闪耀泉源， 奇妙救恩足够我需用。",
+      "label": "第2段"
+    },
+    {
+      "region": "r6",
+      "text": "阔过我一生所行的过犯， 大过我一切罪污羞耻， 我要称扬主圣名，我要赞美主圣名！",
+      "label": "第2段"
+    },
+    {
+      "region": "r7",
+      "text": "耶稣奇妙的救恩，临及最大罪人， 借主感化的大能，使成为主子民， 蒙主赐平安满足，得享天堂永福； 耶稣奇妙的救恩使我得拯救。",
+      "label": "第3段"
+    },
+    {
+      "region": "r8",
+      "text": "主耶稣奇妙无比的救恩， 深过波浪滚滚的海洋； 高过最高山岭，美如闪耀泉源， 奇妙救恩足够我需用。",
+      "label": "第3段"
+    },
+    {
+      "region": "r9",
+      "text": "阔过我一生所行的过犯， 大过我一切罪污羞耻， 我要称扬主圣名，我要赞美主圣名！",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "02-174耶稣奇妙的救恩.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8473226428031921,
+      "meanPathCost": 0.16109640896320343,
+      "cueWindowCosts": [
+        0.20365890860557556,
+        0.25648945569992065,
+        0.1552063524723053,
+        0.21342654526233673,
+        0.2614560127258301,
+        0.15249775350093842,
+        0.21686458587646484,
+        0.27134308218955994,
+        0.1433088183403015
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 9,
+  "elapsedSeconds": 1.741
+}

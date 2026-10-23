@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "03-028",
+  "status": "reviewed",
+  "source": {
+    "file": "03-028何等爱耶稣.txt",
+    "sha256": "51850543b2e32e08de633c7cf00d48165298ff3e51e80d22558f6cd3e7d722db",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-028何等爱耶稣.mp3",
+      "sha256": "f60a0171c0459c965605bf04f11c94c9982eb01f2bfd9623e8f0ad867c1079a3",
+      "duration": 164.85877551020408,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.2,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.8,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.6,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.0,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.6,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.4,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 144.0,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我最喜爱唯一美名， 歌颂其价无比； 此名似乐悦耳动听， 此名美冠天地。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "此名使我能知主爱， 舍命偿我罪债； 知主流血为我受害， 罪人唯此倚赖。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "此名使我知道父神， 每天赐福丰盈； 我行之路虽然阴森， 有主恩光引领。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "此名示我主爱深长， 能知我心痛苦； 担我忧愁分我悲伤， 世间无人比主。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-028何等爱耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "songId": "03-025",
+  "source": "03-025宝血大权能.txt",
+  "sourceHash": "86a2a9a366c2eb8db7d4cec241d980235e1671b7b9a6b3dd68384e109de9aa86",
+  "trackHashes": [
+    {
+      "file": "03-025宝血大权能.mp3",
+      "sha256": "25edae94cfba8c4a7170704cf3af9d0908bacdf2cac6dcfb4cf4ba7f92d32dd7"
+    },
+    {
+      "file": "03-025宝血大权能-领唱.mp3",
+      "sha256": "68932a937562736799523e369790589466e83a096a291fd433e2bf5bad84674f"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "86a2a9a366c2eb8db7d4cec241d980235e1671b7b9a6b3dd68384e109de9aa86",
+      "file": "hymnary091.mid",
+      "sha256": "be95badb51a6a797d58ff20dc256f0a3631bbfa34ab414cd74c5c59bf37abf48",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary091.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary091.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/There_Is_Power_in_the_Blood/There_Is_Power_in_the_Blood.xml",
+      "scoreReferenceSha256": "53f34466297f0d8c8d8d0065e976d9b2dddfc2a986faa0d47f3791d138bf8f67",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "你愿将你的罪担释",
+          "大有权能奇妙大权"
+        ],
+        [
+          "你愿从骄傲私欲释",
+          "大有权能奇妙大权"
+        ],
+        [
+          "你愿被洁净比雪还",
+          "大有权能奇妙大权"
+        ],
+        [
+          "你愿为主你君王做",
+          "大有权能奇妙大权"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "onsetIndex": 38,
+          "pitches": [
+            5,
+            10,
+            2,
+            2,
+            0
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 69,
+        "midiNoteCount": 70,
+        "editCost": 1,
+        "runnerUpCost": 49,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 37,
+            "possibleMidiNoteIndices": [
+              38
+            ],
+            "at": 15.5
+          }
+        ],
+        "offsets": [
+          0.0,
+          15.5
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          37
+        ]
+      },
+      "formReview": "前四行主歌对应第1至8小节；独立副歌明确从第9小节 There is 起，对应“大有权能”。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 31.875,
+    "music": {
+      "period": 40.4,
+      "similarity": 0.9420695900917053,
+      "initialOnsetEstimate": 7.868,
+      "shifts": [
+        0.0,
+        40.4,
+        80.8,
+        121.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.21868783176535428,
+            "key": 7,
+            "at": 10.9,
+            "span": 40.1,
+            "starts": [
+              10.4,
+              29.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.61256741061069,
+            "key": 2,
+            "at": 14.4,
+            "span": 23.2,
+            "starts": [
+              14.2,
+              17.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15986701285484994,
+            "key": 7,
+            "starts": [
+              10.300000190734863,
+              29.899999618530273
+            ],
+            "span": 40.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4393556047194075,
+            "key": 0,
+            "starts": [
+              28.299999237060547,
+              47.099998474121094
+            ],
+            "span": 29.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.22266006469726562,
+            "key": 7,
+            "at": 51.3,
+            "span": 40.2,
+            "starts": [
+              50.8,
+              70.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6336218956673499,
+            "key": 2,
+            "at": 45.0,
+            "span": 33.3,
+            "starts": [
+              44.5,
+              58.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15337539899467242,
+            "key": 7,
+            "starts": [
+              50.70000076293945,
+              70.4000015258789
+            ],
+            "span": 40.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4400594352495552,
+            "key": 0,
+            "starts": [
+              68.80000305175781,
+              87.5
+            ],
+            "span": 29.79999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1960388410209429,
+            "key": 7,
+            "at": 91.7,
+            "span": 40.2,
+            "starts": [
+              91.2,
+              110.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6312348016417852,
+            "key": 2,
+            "at": 85.8,
+            "span": 32.7,
+            "starts": [
+              85.5,
+              98.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15878154263638034,
+            "key": 7,
+            "starts": [
+              91.0999984741211,
+              110.80000305175781
+            ],
+            "span": 40.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.4385584085294516,
+            "key": 0,
+            "starts": [
+              73.80000305175781,
+              87.5
+            ],
+            "span": 31.199996948242188
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2272070327607712,
+            "key": 7,
+            "at": 132.1,
+            "span": 40.2,
+            "starts": [
+              131.6,
+              151.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6275558471679688,
+            "key": 2,
+            "at": 126.3,
+            "span": 32.8,
+            "starts": [
+              125.9,
+              139.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1505072848631604,
+            "key": 7,
+            "starts": [
+              131.5,
+              151.1999969482422
+            ],
+            "span": 40.100006103515625
+          },
+          "runnerUp": {
+            "cost": 0.4401171844784576,
+            "key": 0,
+            "starts": [
+              114.19999694824219,
+              127.9000015258789
+            ],
+            "span": 31.300003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      15.5
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "你愿将你的罪担释放么？ 在主宝血内大有权能； 你愿胜过一切恶性情么？ 耶稣宝血大有权能。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "大有权能！奇妙大权能！ 在羔羊宝血内； 大有权能！奇妙大权能！ 在圣洁羔羊宝血内。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "你愿从骄傲私欲释放么？ 在主宝血内大有权能； 各各他血泉内，洁净罪过， 耶稣宝血大有权能。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "大有权能！奇妙大权能！ 在羔羊宝血内； 大有权能！奇妙大权能！ 在圣洁羔羊宝血内。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你愿被洁净比雪还白么？ 在主宝血内大有权能； 这生命泉能洁净你罪恶， 耶稣宝血大有权能。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "大有权能！奇妙大权能！ 在羔羊宝血内； 大有权能！奇妙大权能！ 在圣洁羔羊宝血内。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "你愿为主你君王做工么？ 在主宝血内大有权能； 你愿日日唱得胜凯歌么？ 耶稣宝血大有权能。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "大有权能！奇妙大权能！ 在羔羊宝血内； 大有权能！奇妙大权能！ 在圣洁羔羊宝血内。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "03-025宝血大权能.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.7629300951957703,
+      "meanPathCost": 0.20786790549755096,
+      "cueWindowCosts": [
+        0.21147294342517853,
+        0.156141459941864,
+        0.21753625571727753,
+        0.1511736661195755,
+        0.20355060696601868,
+        0.12961091101169586,
+        0.20550589263439178,
+        0.1573663204908371
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.714
+}

@@ -1,0 +1,345 @@
+{
+  "songId": "03-028",
+  "source": "03-028何等爱耶稣.txt",
+  "sourceHash": "51850543b2e32e08de633c7cf00d48165298ff3e51e80d22558f6cd3e7d722db",
+  "trackHashes": [
+    {
+      "file": "03-028何等爱耶稣.mp3",
+      "sha256": "f60a0171c0459c965605bf04f11c94c9982eb01f2bfd9623e8f0ad867c1079a3"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "51850543b2e32e08de633c7cf00d48165298ff3e51e80d22558f6cd3e7d722db",
+      "file": "hymnary231.mid",
+      "sha256": "6d4afb1f5d657b6a253eab987d3d1a051f224bb1b11ab085e8d18c55da5e825b",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary231.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary231.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/O/Oh_How_I_Love_Jesus/Oh_How_I_Love_Jesus.xml",
+      "scoreReferenceSha256": "e2f46479528555614f61c9f591e5532547817577bd51a0b153330e86cece2d7d",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "我最喜爱唯一美名",
+          "我何等爱耶稣我何"
+        ],
+        [
+          "此名使我能知主爱",
+          "我何等爱耶稣我何"
+        ],
+        [
+          "此名使我知道父神",
+          "我何等爱耶稣我何"
+        ],
+        [
+          "此名示我主爱深长",
+          "我何等爱耶稣我何"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            8,
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "onsetIndex": 33,
+          "pitches": [
+            0,
+            0,
+            10,
+            0,
+            8
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 59,
+        "midiNoteCount": 60,
+        "editCost": 1,
+        "runnerUpCost": 44,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 33,
+            "possibleMidiNoteIndices": [
+              33
+            ],
+            "at": 12.25
+          }
+        ],
+        "offsets": [
+          0.0,
+          12.25
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          33
+        ]
+      },
+      "formReview": "前四行主歌对应第1至10小节；独立副歌明确从第11小节 Oh 起，对应“我何等爱耶稣”。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 24.182291666666664,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9996901750564575,
+      "initialOnsetEstimate": 8.228,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8,
+        115.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1548559069633484,
+            "key": 4,
+            "at": 9.8,
+            "span": 38.6,
+            "starts": [
+              9.2,
+              28.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.557812770207723,
+            "key": 9,
+            "at": 25.0,
+            "span": 19.6,
+            "starts": [
+              24.8,
+              38.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16591957211494446,
+            "key": 4,
+            "starts": [
+              9.199999809265137,
+              28.700000762939453
+            ],
+            "span": 38.5
+          },
+          "runnerUp": {
+            "cost": 0.44632867972056073,
+            "key": 11,
+            "starts": [
+              0.0,
+              19.0
+            ],
+            "span": 37.20000076293945
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15475645661354065,
+            "key": 4,
+            "at": 48.2,
+            "span": 38.6,
+            "starts": [
+              47.6,
+              67.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5577985048294067,
+            "key": 9,
+            "at": 63.5,
+            "span": 19.6,
+            "starts": [
+              63.2,
+              76.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16583756605784097,
+            "key": 4,
+            "starts": [
+              47.599998474121094,
+              67.0999984741211
+            ],
+            "span": 38.5
+          },
+          "runnerUp": {
+            "cost": 0.44624459743499756,
+            "key": 11,
+            "starts": [
+              38.900001525878906,
+              57.400001525878906
+            ],
+            "span": 36.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15512406826019287,
+            "key": 4,
+            "at": 86.6,
+            "span": 38.6,
+            "starts": [
+              86.0,
+              105.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5576558510462443,
+            "key": 9,
+            "at": 101.8,
+            "span": 19.6,
+            "starts": [
+              101.6,
+              115.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16577435533205667,
+            "key": 4,
+            "starts": [
+              86.0,
+              105.5
+            ],
+            "span": 38.5
+          },
+          "runnerUp": {
+            "cost": 0.4469776153564453,
+            "key": 11,
+            "starts": [
+              77.30000305175781,
+              95.80000305175781
+            ],
+            "span": 36.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1549615760644277,
+            "key": 4,
+            "at": 125.0,
+            "span": 38.6,
+            "starts": [
+              124.4,
+              144.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5580958525339762,
+            "key": 9,
+            "at": 140.3,
+            "span": 19.6,
+            "starts": [
+              140.0,
+              153.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1661482552687327,
+            "key": 4,
+            "starts": [
+              124.4000015258789,
+              143.89999389648438
+            ],
+            "span": 38.49999237060547
+          },
+          "runnerUp": {
+            "cost": 0.44636015097300213,
+            "key": 11,
+            "starts": [
+              115.69999694824219,
+              134.1999969482422
+            ],
+            "span": 36.69999694824219
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      12.25
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我最喜爱唯一美名， 歌颂其价无比； 此名似乐悦耳动听， 此名美冠天地。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "此名使我能知主爱， 舍命偿我罪债； 知主流血为我受害， 罪人唯此倚赖。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "此名使我知道父神， 每天赐福丰盈； 我行之路虽然阴森， 有主恩光引领。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "此名示我主爱深长， 能知我心痛苦； 担我忧愁分我悲伤， 世间无人比主。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "我何等爱耶稣， 我何等爱耶稣， 我何等爱耶稣， 因耶稣先爱我。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.203
+}

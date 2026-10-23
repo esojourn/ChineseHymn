@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "04-935",
+  "status": "reviewed",
+  "source": {
+    "file": "04-935赞慕福地.txt",
+    "sha256": "762cce30eacae19cb4efabd6c514d418653e3c99bc6a1245fb0a658cede74b76",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-935赞慕福地.mp3",
+      "sha256": "7f90a4708ad6b759010854856074a2af4773c654bc40636df1904c080d98e15a",
+      "duration": 126.27591836734693,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 9.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.25,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.4,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.65,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.8,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.05,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "有一地比白日更光彩， 虽遥远我因信望得见， 我天父在那地常等待， 已为我备安宅于里边。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我必随众圣徒到福地， 声和谐唱新诗颂扬主， 心快乐得永远的生命， 再无惧也无忧更无苦。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我圣父在高天何慈爱， 将至尊独生子降世间， 开福源一直流至万代， 我终身要赞美主恩典。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-935赞慕福地.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

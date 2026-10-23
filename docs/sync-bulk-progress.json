@@ -2,12 +2,13 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 237,
+    "published": 242,
     "existing": 8,
-    "pending": 103,
-    "needs-calibration": 44,
+    "pending": 99,
+    "needs-calibration": 42,
     "missing-audio": 2,
     "needs-track-alignment": 3,
+    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -655,7 +656,7 @@
       "songId": "02-174",
       "source": "02-174耶稣奇妙的救恩.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-174耶稣奇妙的救恩.mp3",
         "02-174耶稣奇妙的救恩-领唱.mp3"
@@ -1477,7 +1478,7 @@
       "songId": "03-025",
       "source": "03-025宝血大权能.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "03-025宝血大权能.mp3",
         "03-025宝血大权能-领唱.mp3"
@@ -1497,7 +1498,7 @@
       "songId": "03-028",
       "source": "03-028何等爱耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "03-028何等爱耶稣.mp3"
       ]
@@ -1516,7 +1517,7 @@
       "songId": "03-030",
       "source": "03-030渴慕耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "03-030渴慕耶稣.mp3"
       ]
@@ -1778,12 +1779,11 @@
       "songId": "04-554",
       "source": "04-554宝贵祷告良辰.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-554宝贵祷告良辰.mp3",
         "04-554宝贵祷告良辰-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,6,9"
+      ]
     },
     {
       "songId": "04-627",
@@ -1943,11 +1943,10 @@
       "songId": "04-935",
       "source": "04-935赞慕福地.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-935赞慕福地.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
+      ]
     },
     {
       "songId": "05-001",

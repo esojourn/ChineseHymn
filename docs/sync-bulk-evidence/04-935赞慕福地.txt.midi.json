@@ -1,0 +1,286 @@
+{
+  "songId": "04-935",
+  "source": "04-935赞慕福地.txt",
+  "sourceHash": "762cce30eacae19cb4efabd6c514d418653e3c99bc6a1245fb0a658cede74b76",
+  "trackHashes": [
+    {
+      "file": "04-935赞慕福地.mp3",
+      "sha256": "7f90a4708ad6b759010854856074a2af4773c654bc40636df1904c080d98e15a"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "762cce30eacae19cb4efabd6c514d418653e3c99bc6a1245fb0a658cede74b76",
+      "file": "hymnary542.mid",
+      "sha256": "70dfb35242f69e43584dd1de620fc973f047549b09c074055dd17d02c716088d",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary542.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary542.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/In_the_Sweet_By_and_By/In_the_Sweet_By_and_By.xml",
+      "scoreReferenceSha256": "d09801ed1227465fbc4a2de532f7a88961ceea1d102c34aace036e1fadd4f38f",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "有一地比白日更光",
+          "到那日乐无边同众"
+        ],
+        [
+          "我必随众圣徒到福",
+          "到那日乐无边同众"
+        ],
+        [
+          "我圣父在高天何慈",
+          "到那日乐无边同众"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            9,
+            11,
+            9,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 36,
+          "pitches": [
+            11,
+            0,
+            2,
+            2,
+            11
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 66,
+        "midiNoteCount": 66,
+        "editCost": 0,
+        "runnerUpCost": 46,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 36,
+            "possibleMidiNoteIndices": [
+              36
+            ],
+            "at": 16.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          36
+        ]
+      },
+      "formReview": "前四行主歌对应第1至10小节；第11小节副歌 In 起对应“到那日，乐无边”。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.416666666666664,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9997586011886597,
+      "initialOnsetEstimate": 8.028,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2036710778872172,
+            "key": 8,
+            "at": 9.5,
+            "span": 38.6,
+            "starts": [
+              9.0,
+              28.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5563014348347982,
+            "key": 3,
+            "at": 14.6,
+            "span": 26.7,
+            "starts": [
+              14.1,
+              26.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.30338184038798016,
+            "key": 8,
+            "starts": [
+              9.0,
+              28.200000762939453
+            ],
+            "span": 38.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.40738431612650555,
+            "key": 3,
+            "starts": [
+              3.5999999046325684,
+              23.399999618530273
+            ],
+            "span": 36.60000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20372140407562256,
+            "key": 8,
+            "at": 47.9,
+            "span": 38.6,
+            "starts": [
+              47.4,
+              66.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5571004152297974,
+            "key": 3,
+            "at": 53.0,
+            "span": 26.7,
+            "starts": [
+              52.5,
+              64.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.3036012848218282,
+            "key": 8,
+            "starts": [
+              47.400001525878906,
+              66.5999984741211
+            ],
+            "span": 38.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4068148136138916,
+            "key": 3,
+            "starts": [
+              42.0,
+              61.79999923706055
+            ],
+            "span": 36.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20290392637252808,
+            "key": 8,
+            "at": 86.3,
+            "span": 38.8,
+            "starts": [
+              85.8,
+              105.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5559143225351969,
+            "key": 3,
+            "at": 91.4,
+            "span": 26.7,
+            "starts": [
+              90.9,
+              103.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.30187644561131793,
+            "key": 8,
+            "starts": [
+              85.80000305175781,
+              105.0
+            ],
+            "span": 38.79999542236328
+          },
+          "runnerUp": {
+            "cost": 0.40686877568562824,
+            "key": 3,
+            "starts": [
+              80.4000015258789,
+              100.19999694824219
+            ],
+            "span": 36.599998474121094
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      16.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "有一地比白日更光彩， 虽遥远我因信望得见， 我天父在那地常等待， 已为我备安宅于里边。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "我必随众圣徒到福地， 声和谐唱新诗颂扬主， 心快乐得永远的生命， 再无惧也无忧更无苦。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "我圣父在高天何慈爱， 将至尊独生子降世间， 开福源一直流至万代， 我终身要赞美主恩典。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "到那日，乐无边， 同众圣得聚会在福地。 到那日，乐无比， 同众圣得聚会在福地。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.162
+}

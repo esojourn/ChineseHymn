@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "01-323",
+  "status": "reviewed",
+  "source": {
+    "file": "01-323主耶和华求你领我.txt",
+    "sha256": "4281657c36c0ca963015047e0ed61fef6f9b848fedb8e841ce67ef51a48336f5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-323主耶和华求你领我.mp3",
+      "sha256": "46385d6840fc202ce6a12dea5ce0995b77369752f4791a26a5aff6f9c06c6cef",
+      "duration": 110.23673469387755,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.4,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 28.2,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 42.35,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 61.2,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 75.25,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 94.1,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-323主耶和华求你领我-领唱.mp3",
+      "sha256": "8b42f726f63ee98b07bb5e71adbf1fdb80c7b88fa50d70034565f299b517b695",
+      "duration": 108.85224489795918,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 24
+    }
+  },
+  "cues": [
+    {
+      "at": 9.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.5,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 42.65,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 61.5,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.55,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶和华求祢领我， 走过今世旷野路， 我无力量主有能力， 愿主圣手常保护。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "天上吗哪，天上吗哪， 求主时常赐给我， 求主时常赐给我。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "求主开通永生泉源， 使我路中不干渴， 求主做我云柱火柱， 引我前路不走错。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "全能救主，全能救主， 做我盾牌保护我， 做我盾牌保护我。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "当我走到约旦河畔， 烦恼惊慌全消散， 救主已经胜过死权， 我靠救主也得胜。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "赞美歌颂，赞美歌颂， 我要高唱永不停， 我要高唱永不停。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-323主耶和华求你领我.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

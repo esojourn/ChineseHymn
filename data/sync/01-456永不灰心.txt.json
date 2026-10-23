@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "01-456",
+  "status": "reviewed",
+  "source": {
+    "file": "01-456永不灰心.txt",
+    "sha256": "0ae5a314c61444175468b409c7fcf6eb3500871d314d27388fa70fee26f91f60",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-456永不灰心.mp3",
+      "sha256": "41c079299b4447a698af5af21aa1b23b789c2c62db42ccbd0d56e871f1cf58f8",
+      "duration": 191.3469387755102,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.65,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 22.75,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.25,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 68.15,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 98.65,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.65,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 144.1,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 159.05,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-456永不灰心-领唱.mp3",
+      "sha256": "d97080bfbaaf5f6c49176b012d5ee4d6086f70e555d8e14ee2c019e44218ead5",
+      "duration": 206.1061224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 31
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    }
+  },
+  "cues": [
+    {
+      "at": 8.45,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.95,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.85,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.25,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.25,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.65,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 156.6,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 173.05,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "永不灰心，永不沮丧，相信主是你盼望， 将所需求陈明祂前，必领受够用恩典。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "虽你有重担压心头，虽你生活满苦忧， 仰望主必得祂恩光，求主开路可前往。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "永不灰心，永不沮丧，黑夜过必露晨光， 不久在荣光照耀处，你要与主永同住。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "永不灰心，永不沮丧，主膀臂是你依傍， 常在主深恩中躲藏，直等那日得奖赏。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-456永不灰心.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

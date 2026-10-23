@@ -1,0 +1,303 @@
+{
+  "songId": "01-323",
+  "source": "01-323主耶和华求你领我.txt",
+  "sourceHash": "4281657c36c0ca963015047e0ed61fef6f9b848fedb8e841ce67ef51a48336f5",
+  "trackHashes": [
+    {
+      "file": "01-323主耶和华求你领我.mp3",
+      "sha256": "46385d6840fc202ce6a12dea5ce0995b77369752f4791a26a5aff6f9c06c6cef"
+    },
+    {
+      "file": "01-323主耶和华求你领我-领唱.mp3",
+      "sha256": "8b42f726f63ee98b07bb5e71adbf1fdb80c7b88fa50d70034565f299b517b695"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "4281657c36c0ca963015047e0ed61fef6f9b848fedb8e841ce67ef51a48336f5",
+      "file": "hymnary474.mid",
+      "sha256": "0bc9b28413b428d86cdd3494c1fa45b6df43350d51f94c9efa3d0cdbc35922b3",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary474.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary474.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/G/Guide_Me_O_Thou_Great_Jehovah/Guide_Me_O_Thou_Great_Jehovah.xml",
+      "scoreReferenceSha256": "82748399d56a94bb20cfd7811f15f9b1c2d3292706a1171c027a280205a34e9e",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "主耶和华求你领我",
+          "天上吗哪天上吗哪"
+        ],
+        [
+          "求主开通永生泉源",
+          "全能救主全能救主"
+        ],
+        [
+          "当我走到约旦河畔",
+          "赞美歌颂赞美歌颂"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            2,
+            4,
+            2,
+            7,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 35,
+          "pitches": [
+            9,
+            11,
+            0,
+            9,
+            11
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 59,
+        "midiNoteCount": 59,
+        "editCost": 0,
+        "runnerUpCost": 42,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 35,
+            "possibleMidiNoteIndices": [
+              35
+            ],
+            "at": 18.4615
+          }
+        ],
+        "offsets": [
+          0.0,
+          18.4615
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndex": 35
+      },
+      "formReview": "主歌对应正文前四行，副歌从第9小节 Bread 起，对应“天上吗哪”阅读区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.307688,
+    "music": {
+      "period": 32.9,
+      "similarity": 0.9178087711334229,
+      "initialOnsetEstimate": 7.568,
+      "shifts": [
+        0.0,
+        32.9,
+        65.9
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1687325938494372,
+            "key": 8,
+            "at": 10.1,
+            "span": 32.8,
+            "starts": [
+              9.7,
+              28.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5456359306729673,
+            "key": 3,
+            "at": 27.3,
+            "span": 20.4,
+            "starts": [
+              26.9,
+              41.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09799128245437762,
+            "key": 8,
+            "starts": [
+              9.699999809265137,
+              28.5
+            ],
+            "span": 32.89999771118164
+          },
+          "runnerUp": {
+            "cost": 0.3871138320505438,
+            "key": 3,
+            "starts": [
+              13.0,
+              28.399999618530273
+            ],
+            "span": 25.200000762939453
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16897945925819838,
+            "key": 8,
+            "at": 43.1,
+            "span": 32.8,
+            "starts": [
+              42.7,
+              61.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5398989042612558,
+            "key": 3,
+            "at": 60.3,
+            "span": 20.3,
+            "starts": [
+              59.9,
+              74.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09409073710803928,
+            "key": 8,
+            "starts": [
+              42.599998474121094,
+              61.5
+            ],
+            "span": 32.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.39318606483900076,
+            "key": 3,
+            "starts": [
+              45.900001525878906,
+              61.400001525878906
+            ],
+            "span": 25.79999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16916601998465403,
+            "key": 8,
+            "at": 76.0,
+            "span": 32.8,
+            "starts": [
+              75.6,
+              94.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5502164429081972,
+            "key": 3,
+            "at": 86.9,
+            "span": 17.3,
+            "starts": [
+              86.5,
+              100.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08795061082463133,
+            "key": 8,
+            "starts": [
+              75.5,
+              94.4000015258789
+            ],
+            "span": 33.0
+          },
+          "runnerUp": {
+            "cost": 0.39213112132527544,
+            "key": 3,
+            "starts": [
+              78.9000015258789,
+              94.30000305175781
+            ],
+            "span": 25.099998474121094
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.461536
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "主耶和华求祢领我， 走过今世旷野路， 我无力量主有能力， 愿主圣手常保护。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "天上吗哪，天上吗哪， 求主时常赐给我， 求主时常赐给我。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "求主开通永生泉源， 使我路中不干渴， 求主做我云柱火柱， 引我前路不走错。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "全能救主，全能救主， 做我盾牌保护我， 做我盾牌保护我。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "当我走到约旦河畔， 烦恼惊慌全消散， 救主已经胜过死权， 我靠救主也得胜。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "赞美歌颂，赞美歌颂， 我要高唱永不停， 我要高唱永不停。",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "01-323主耶和华求你领我.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.885648787021637,
+      "meanPathCost": 0.11797051131725311,
+      "cueWindowCosts": [
+        0.0976097583770752,
+        0.10843519121408463,
+        0.11070029437541962,
+        0.11134574562311172,
+        0.11383195221424103,
+        0.12153279781341553
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.927
+}

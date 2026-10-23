@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "songId": "05-098",
+  "status": "reviewed",
+  "source": {
+    "file": "05-098奇妙十架歌.jpg",
+    "sha256": "ee2287d3117bbeb7c26bef20185ca938578249dd3addd892c72c48689c52b11d",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-098奇妙十架歌.mp3",
+      "sha256": "c35c90079df999f576995c4b106a18f8e16699adb0bcfc42d3a16600704e4002",
+      "duration": 152.064,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.6,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 17.65,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 26.25,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 35.05,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 43.4,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 52.28,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 60.85,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 69.65,
+          "region": "s4_v2",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 78.1,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 86.95,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 95.45,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 104.25,
+          "region": "s4_v3",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 112.6,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 121.75,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 130.15,
+          "region": "s3_v4",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 139.05,
+          "region": "s4_v4",
+          "label": "第4段：第4谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-098奇妙十架歌-领唱.mp3",
+      "sha256": "53a79a03a39188fbce5c3a17417a45c6047c0d6f1a36afbeddc3e8dd4ffc9091",
+      "duration": 133.224,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.174389,
+      "bottom": 0.257515
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.209626,
+      "bottom": 0.293359
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.244862,
+      "bottom": 0.328596
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.280707,
+      "bottom": 0.364441
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.382772,
+      "bottom": 0.466506
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.418009,
+      "bottom": 0.501136
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.452639,
+      "bottom": 0.53698
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.488483,
+      "bottom": 0.572217
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.588118,
+      "bottom": 0.67246
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.623963,
+      "bottom": 0.708304
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.659807,
+      "bottom": 0.743541
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.695044,
+      "bottom": 0.778778
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.797717,
+      "bottom": 0.882058
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.834169,
+      "bottom": 0.916688
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.868798,
+      "bottom": 0.95314
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.904035,
+      "bottom": 0.988984
+    }
+  },
+  "cues": [
+    {
+      "at": 8.1,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.05,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 23.95,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 31.85,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 39.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 47.25,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.15,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.05,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 78.45,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 86.35,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.25,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 101.8,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 109.75,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 117.65,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.55,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "每逢思想奇妙十架，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "铭感救恩，虔诚顶礼；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "从前所慕势利虚荣，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "如今愿意完全抛弃。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "觐见宝架，仰瞻圣范，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "愛2.寸心了解救恩浩大；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "莫容我为别事矜夸，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "生死安危，惟夸十架。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "试问众生曾否時见过，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "長3.忧層愁慈層爱和層血傘并層流？層",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "愛3.愁層爱可層曾層如層此層相層接？層",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "荆棘可曾化作冕？",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "救主慈爱，无·限高深，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "尽献所有，难报主恩；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "愿负十架，学主栖牲，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "喝主苦杯，效主求仁。（阿们）",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-098奇妙十架歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

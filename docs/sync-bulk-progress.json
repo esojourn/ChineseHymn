@@ -2,11 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 221,
+    "published": 227,
     "existing": 8,
-    "pending": 120,
-    "needs-calibration": 43,
+    "pending": 109,
+    "needs-calibration": 45,
     "missing-audio": 2,
+    "ready-to-verify": 3,
     "needs-track-alignment": 3,
     "missing-lyrics": 23
   },
@@ -297,7 +298,7 @@
       "songId": "01-403",
       "source": "01-403我今属主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-403我今属主.mp3"
       ]
@@ -789,7 +790,7 @@
       "songId": "02-264",
       "source": "02-264我要去传福音.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-264我要去传福音.mp3"
       ]
@@ -862,7 +863,7 @@
       "songId": "02-296",
       "source": "02-296信心仰望.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-296信心仰望.mp3"
       ]
@@ -944,7 +945,7 @@
       "songId": "02-380",
       "source": "02-380坚守阵地.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-380坚守阵地.mp3"
       ]
@@ -1018,11 +1019,12 @@
       "songId": "02-395",
       "source": "02-395主前省察.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-395主前省察.mp3",
         "02-395主前省察-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-396",
@@ -1038,7 +1040,7 @@
       "songId": "02-407",
       "source": "02-407主常常顾念我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-407主常常顾念我.mp3"
       ]
@@ -1047,7 +1049,7 @@
       "songId": "02-409",
       "source": "02-409神竟愿爱我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-409神竟愿爱我.mp3"
       ]
@@ -1140,7 +1142,7 @@
       "songId": "02-452",
       "source": "02-452更深认识耶穌.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-452更深认识耶穌.mp3"
       ]
@@ -1167,10 +1169,11 @@
       "songId": "02-467",
       "source": "02-467救主牺牲的爱.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-467救主牺牲的爱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-468",
@@ -1230,7 +1233,7 @@
       "songId": "02-492",
       "source": "02-492求主今天引导管理.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-492求主今天引导管理.mp3"
       ]
@@ -1249,7 +1252,7 @@
       "songId": "02-498",
       "source": "02-498我灵之光.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-498我灵之光.mp3"
       ]

@@ -1,0 +1,238 @@
+{
+  "songId": "01-403",
+  "source": "01-403我今属主.txt",
+  "sourceHash": "d0321f209a895760e677c1864d32c900a90153823acb58b1474f8ddfb01356ff",
+  "trackHashes": [
+    {
+      "file": "01-403我今属主.mp3",
+      "sha256": "54ad120e6c2ba30d5bc79514ab87471668ff15d5d6573c27f39f3a484d08d03c"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "d0321f209a895760e677c1864d32c900a90153823acb58b1474f8ddfb01356ff",
+      "file": "hymnary391.mid",
+      "sha256": "2938f3fd95bf39b81acdf3f4bb435b29187f16d735a8e7fae98652c23c182454",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary391.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary391.htm",
+      "verseCount": 3,
+      "referenceDiscovery": {
+        "songId": "01-403",
+        "source": "01-403我今属主.txt",
+        "sourceHash": "d0321f209a895760e677c1864d32c900a90153823acb58b1474f8ddfb01356ff",
+        "audio": "01-403我今属主.mp3",
+        "audioHash": "54ad120e6c2ba30d5bc79514ab87471668ff15d5d6573c27f39f3a484d08d03c",
+        "diagnosticOnly": true,
+        "templateSignature": "fb60bfea5318b6fd6729f8ba99c83a7809a3b49ee70b8af1305c8ee77f075645",
+        "music": {
+          "period": 36.0,
+          "similarity": 0.9933447241783142,
+          "initialOnsetEstimate": 5.12,
+          "shifts": [
+            0.0,
+            36.0,
+            72.0
+          ]
+        },
+        "matches": [
+          {
+            "file": "hymnary391.mid",
+            "similarity": 0.76306,
+            "key": 8,
+            "cyclicPhase": 12
+          },
+          {
+            "file": "hymnary618.mid",
+            "similarity": 0.64773,
+            "key": 8,
+            "cyclicPhase": 5
+          },
+          {
+            "file": "hymnary382.mid",
+            "similarity": 0.52568,
+            "key": 8,
+            "cyclicPhase": 110
+          },
+          {
+            "file": "hymnary324.mid",
+            "similarity": 0.5216,
+            "key": 6,
+            "cyclicPhase": 73
+          },
+          {
+            "file": "hymnary543.mid",
+            "similarity": 0.52079,
+            "key": 1,
+            "cyclicPhase": 61
+          }
+        ]
+      },
+      "formReview": "实际录音的循环和声检索提出同曲候选，检索相似度不作为发布时间轴。每段正文均为单个不超过四行的阅读区域，只使用完整乐段首音定位；同曲填词或译词不同不作为逐字识别。发布须在每个实际段落独立通过更严格的和声代价0.25、旋律代价0.20、调性区分、起点0.5秒、完整乐段跨度与反复相位检查；额外完整同曲乐段必须另核对顺序。参考与源素材、录音哈希固定，未通过任何一项均继续待校准。"
+    },
+    "maximumCosts": {
+      "harmony": 0.25,
+      "melody": 0.2
+    },
+    "referencePeriod": 35.875,
+    "music": {
+      "period": 36.0,
+      "similarity": 0.9933447241783142,
+      "initialOnsetEstimate": 5.12,
+      "shifts": [
+        0.0,
+        36.0,
+        72.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23157003190782335,
+            "key": 8,
+            "at": 6.4,
+            "span": 35.8,
+            "starts": [
+              6.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5805079142252604,
+            "key": 3,
+            "at": 10.3,
+            "span": 25.3,
+            "starts": [
+              10.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10212474399142796,
+            "key": 8,
+            "starts": [
+              6.0
+            ],
+            "span": 35.79999923706055
+          },
+          "runnerUp": {
+            "cost": 0.42321014404296875,
+            "key": 3,
+            "starts": [
+              4.0
+            ],
+            "span": 34.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2317928738064236,
+            "key": 8,
+            "at": 42.4,
+            "span": 35.8,
+            "starts": [
+              42.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5810684627956815,
+            "key": 1,
+            "at": 33.4,
+            "span": 22.5,
+            "starts": [
+              33.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10223875045776368,
+            "key": 8,
+            "starts": [
+              42.0
+            ],
+            "span": 35.80000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4288868798149957,
+            "key": 3,
+            "starts": [
+              40.0
+            ],
+            "span": 34.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2310826619466146,
+            "key": 8,
+            "at": 78.4,
+            "span": 35.8,
+            "starts": [
+              78.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5812956915961371,
+            "key": 1,
+            "at": 69.4,
+            "span": 22.4,
+            "starts": [
+              69.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10225390328301323,
+            "key": 8,
+            "starts": [
+              78.0
+            ],
+            "span": 35.80000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4279442257351346,
+            "key": 3,
+            "starts": [
+              76.0
+            ],
+            "span": 34.400001525878906
+          }
+        }
+      }
+    ],
+    "trailingCycle": {
+      "checked": false,
+      "reason": "没有额外完整乐段的音频范围"
+    },
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "主耶稣，我今属祢，因为祢将我买赎， 圣洁主无瑕羔羊，甘为我流血受辱， 我愿完全为祢活，我心向祢永归属。 ",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "我曾事奉别的主，但如今惟尊主名， 我每时每天所求，只听从祢慈爱声， 在天上我还有谁，能使我快乐高兴。 ",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "主耶稣，我今属祢，使我忠诚靠近祢， 愿彰显祢大荣光，灵程中使我欢畅， 在祢脚前我俯首，祢是我一切所有。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 3,
+  "elapsedSeconds": 0.473
+}

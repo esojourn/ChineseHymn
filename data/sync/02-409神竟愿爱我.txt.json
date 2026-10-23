@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "02-409",
+  "status": "reviewed",
+  "source": {
+    "file": "02-409神竟愿爱我.txt",
+    "sha256": "c7e8f32380b2ac9d67b5bbe72ac394e72f80e54604c7efe91f34a9b4c9787d6e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-409神竟愿爱我.mp3",
+      "sha256": "eb047c98ab83eb04753c2a154a1fa6177a5f2c9589da71dae8c3adaf0e6b79cc",
+      "duration": 174.86367346938775,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 13.35,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 66.65,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.0,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我真惊奇，神竟愿这样爱我，尽是羞耻，充满各样罪过； 使我与主，一同走属天路程，我得洁净，靠主救赎圣名。 我真惊奇，神竟愿这样爱我，只有十架能除去我罪愆； 藉信靠主，祂赐我永远生命，祂居我心，从今直到永远。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我真惊奇，神竟愿赐福给我，为神后嗣，承受丰富大恩； 将来与主，同享更完全福乐，主要赏赐，凡寻求祂的人。 我真惊奇，神竟愿这样爱我，只有十架能除去我罪愆； 藉信靠主，祂赐我永远生命，祂居我心，从今直到永远。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我真惊奇，神乐意赐下救恩，不仅救我，也救求告的人； 永远生命，要赐给万国万邦，这好信息，我们赶快传扬。 我真惊奇，神竟愿这样爱我，只有十架能除去我罪愆； 藉信靠主，祂赐我永远生命，祂居我心，从今直到永远。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-409神竟愿爱我.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-296",
+  "status": "reviewed",
+  "source": {
+    "file": "02-296信心仰望.txt",
+    "sha256": "0c8e09a8d4bd3b4f2e21cf6d53b39e3e3cba3eb28791404af561fa24beb11209",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-296信心仰望.mp3",
+      "sha256": "add62c0594744f493ad8c3135b4817466e5ed57daba0e6b6f8e638c866dd33f4",
+      "duration": 139.15428571428572,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 9.1,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 41.1,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.1,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.1,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我以信心仰望十字架上羔羊，神圣救主！ 求主听我祈求，除去我众罪尤，使我从今以后， 完全属主。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求主厚赐宏恩，壮我微弱之心，激发热忱！ 主曾为我舍己，我愿深切爱你，爱心如火燃起， 纯洁不熄。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "行过人生迷阵，黑暗痛苦满布，求主引路！ 为我化暗为明，将我眼泪擦净，免我再入迷途， 离主孤行。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "人生如梦快过，死河涌起寒波，要淹没我； 到时求主恩领，消除疑惑忧惊，施恩救我灵魂， 安进天庭。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-296信心仰望.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

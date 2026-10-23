@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "01-403",
+  "status": "reviewed",
+  "source": {
+    "file": "01-403我今属主.txt",
+    "sha256": "d0321f209a895760e677c1864d32c900a90153823acb58b1474f8ddfb01356ff",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-403我今属主.mp3",
+      "sha256": "54ad120e6c2ba30d5bc79514ab87471668ff15d5d6573c27f39f3a484d08d03c",
+      "duration": 116.00979591836735,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 6.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.0,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 78.0,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶稣，我今属祢，因为祢将我买赎， 圣洁主无瑕羔羊，甘为我流血受辱， 我愿完全为祢活，我心向祢永归属。 ",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我曾事奉别的主，但如今惟尊主名， 我每时每天所求，只听从祢慈爱声， 在天上我还有谁，能使我快乐高兴。 ",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "主耶稣，我今属祢，使我忠诚靠近祢， 愿彰显祢大荣光，灵程中使我欢畅， 在祢脚前我俯首，祢是我一切所有。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-403我今属主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

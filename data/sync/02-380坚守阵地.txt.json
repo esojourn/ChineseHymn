@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-380",
+  "status": "reviewed",
+  "source": {
+    "file": "02-380坚守阵地.txt",
+    "sha256": "93d657ef7e60339153fee3ebca937a8a7e71736fe08ed35c67741e847ed5a8fc",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-380坚守阵地.mp3",
+      "sha256": "07c7e164273a974ea17394eea352d0e2cb4a5d566bef4b81a8d2ae02fbc3aece",
+      "duration": 125.04816326530612,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 7.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.3,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.4,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.5,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我众弟兄，看那旗号在天空找展！ 救援军兵经已出现，胜利在目前。 “我快再来，坚守阵地！”这是主命令。 我愿向主坚守定回应：“比靠恩尽忠！”",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "看那魔军大队来攻，撒旦作先锋， 四围勇士经已动摇，勇气几全消。 “我快再来，坚守阵地！”这是主命令。 我愿向主坚守定回应：“比靠恩尽忠！”",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "搏斗猛烈，长期苦战，援军已出现， 基督元帅亲临统领，弟兄快振兴。 “我快再来，坚守阵地！”这是主命令。 我愿向主坚守定回应：“比靠恩尽忠！”",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "荣耀旗帜随风飘扬，号角今吹响， 藉我主统帅威名，必大大得胜。 “我快再来，坚守阵地！”这是主命令。 我愿向主坚守定回应：“比靠恩尽忠！”",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-380坚守阵地.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

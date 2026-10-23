@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "songId": "05-272",
+  "status": "reviewed",
+  "source": {
+    "file": "05-272虹霓雨点歌.jpg",
+    "sha256": "5ee643eb8fa3303ad142edf6e611be79b57f8ddd238726058333d5cbe998be56",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-272虹霓雨点歌.mp3",
+      "sha256": "aa3ef4400d37428db77638ffdc160fffc9a6b32954946b4749dea8e065264cee",
+      "duration": 161.9591836734694,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.264991,
+      "bottom": 0.365974
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.31305,
+      "bottom": 0.414033
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.361109,
+      "bottom": 0.462092
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.540407,
+      "bottom": 0.642314
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.588466,
+      "bottom": 0.689449
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.636525,
+      "bottom": 0.736584
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.77146,
+      "bottom": 0.873368
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.90732,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 24.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.3,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.5,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 81.95,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.3,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.6,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.5,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 128.0,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 139.4,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.65,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed optical rhythm; full symbolic pitch-sequence verification; every row independently matched in each performed verse; harmony comparison retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "虽有暴风乌云天空弥漫，生活中常有痛苦重担；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "基督为我领港引导在前，他差遣虹霓和雨点。他差遣",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "虹霓，美丽的虹霓，他差遣虹霓和雨点。他差遣日光，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "照亮全地面，他差遣虹霓和雨点。（阿们）",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "朵朵白云如银淡雅素美，灿烂的日光时明时晦；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "不要忧愁不要灰心抱怨，他差遣虹霓和雨点。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "虹霓，美丽的虹霓，他差遣虹霓和雨点。他差遣日光，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "照亮全地面，他差遣虹霓和雨点。（阿们）",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "曙光破晓美丽青天出现，基督我救主来到面前；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "那时与主同在欢乐无限，他差遣虹霓和雨点。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "虹霓，美丽的虹霓，他差遣虹霓和雨点。他差遣日光，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "照亮全地面，他差遣虹霓和雨点。（阿们）",
+        "label": "第3段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-272虹霓雨点歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

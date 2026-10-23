@@ -955,5 +955,515 @@
       ]
     },
     "formReview": "实际录音的循环和声检索提出同曲候选，检索相似度不作为发布时间轴。每段正文均为单个不超过四行的阅读区域，只使用完整乐段首音定位；同曲填词或译词不同不作为逐字识别。发布须在每个实际段落独立通过更严格的和声代价0.25、旋律代价0.20、调性区分、起点0.5秒、完整乐段跨度与反复相位检查；额外完整同曲乐段必须另核对顺序。参考与源素材、录音哈希固定，未通过任何一项均继续待校准。"
+  },
+  "01-323": {
+    "targetSha256": "4281657c36c0ca963015047e0ed61fef6f9b848fedb8e841ce67ef51a48336f5",
+    "file": "hymnary474.mid",
+    "sha256": "0bc9b28413b428d86cdd3494c1fa45b6df43350d51f94c9efa3d0cdbc35922b3",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary474.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary474.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/G/Guide_Me_O_Thou_Great_Jehovah/Guide_Me_O_Thou_Great_Jehovah.xml",
+    "scoreReferenceSha256": "82748399d56a94bb20cfd7811f15f9b1c2d3292706a1171c027a280205a34e9e",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "主耶和华求你领我",
+        "天上吗哪天上吗哪"
+      ],
+      [
+        "求主开通永生泉源",
+        "全能救主全能救主"
+      ],
+      [
+        "当我走到约旦河畔",
+        "赞美歌颂赞美歌颂"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          4,
+          2,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 35,
+        "pitches": [
+          9,
+          11,
+          0,
+          9,
+          11
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 59,
+      "midiNoteCount": 59,
+      "editCost": 0,
+      "runnerUpCost": 42,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 35,
+          "possibleMidiNoteIndices": [
+            35
+          ],
+          "at": 18.4615
+        }
+      ],
+      "offsets": [
+        0.0,
+        18.4615
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 35
+    },
+    "formReview": "主歌对应正文前四行，副歌从第9小节 Bread 起，对应“天上吗哪”阅读区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "01-456": {
+    "targetSha256": "0ae5a314c61444175468b409c7fcf6eb3500871d314d27388fa70fee26f91f60",
+    "file": "hymnary456.mid",
+    "sha256": "c57ebd9d7b5fb8ccca801d08e9ff5cad420b1cf9ccda547283444dee92666e5e",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary456.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary456.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/N/Never_Give_Up/Never_Give_Up.xml",
+    "scoreReferenceSha256": "63ba377ece040ead85cf0e5d4dfdaa825da76d5341a6473f2c281897adf78b83",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "永不灰心永不沮丧",
+        "永不灰心永不灰心"
+      ],
+      [
+        "虽你有重担压心头",
+        "永不灰心永不灰心"
+      ],
+      [
+        "永不灰心永不沮丧",
+        "永不灰心永不灰心"
+      ],
+      [
+        "永不灰心永不沮丧",
+        "永不灰心永不灰心"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          5,
+          5,
+          7,
+          5
+        ]
+      },
+      {
+        "onsetIndex": 31,
+        "pitches": [
+          2,
+          1,
+          2,
+          10,
+          5
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 77,
+      "midiNoteCount": 80,
+      "editCost": 3,
+      "runnerUpCost": 61,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            31
+          ],
+          "at": 12.3077
+        }
+      ],
+      "offsets": [
+        0.0,
+        12.3077
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 30
+    },
+    "formReview": "正文主歌对应前8小节，副歌从第9小节 Never give up 起，复用各段“永不灰心”区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "01-666": {
+    "targetSha256": "fa08d99809a220f83fab51fa0d494463f19cb3e1682fe607cdfda1fb0d5cf31f",
+    "file": "hymnary666.mid",
+    "sha256": "1af63349fdcda662c3b2489402119b2dd775b1a99c7736b1c2e621d12e4b9607",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary666.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary666.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/W/Who_Is_on_the_Lords_Side/Who_Is_on_the_Lords_Side_2.xml",
+    "scoreReferenceSha256": "e5ea36e2bb11f8d21383f39f5acffda1f119baf0541a9072de016de3a521c31d",
+    "verseCount": 5,
+    "regionOpenings": [
+      [
+        "谁是在主这边谁要",
+        "借着袮的救赎并藉"
+      ],
+      [
+        "参加主的军队欢乐",
+        "借着袮的救赎并藉"
+      ],
+      [
+        "袮已将我救赎作袮",
+        "借着袮的救赎并藉"
+      ],
+      [
+        "战争虽会凶猛仇敌",
+        "借着袮的救赎并藉"
+      ],
+      [
+        "蒙主选为兵丁在今",
+        "借着袮的救赎并藉"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          7,
+          4,
+          2,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 44,
+        "pitches": [
+          0,
+          7,
+          4,
+          0,
+          9
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 66,
+      "midiNoteCount": 66,
+      "editCost": 1,
+      "runnerUpCost": 51,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 44,
+          "possibleMidiNoteIndices": [
+            44
+          ],
+          "at": 32.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        32.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 44
+    },
+    "formReview": "正文主歌对应前16小节，后段从第17小节 By Thy call 起，对应每段末尾两行。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "02-374": {
+    "targetSha256": "083603b5473d095c1bc0dd69cd215cf29345179311515ab2ebe814bfd487ca8a",
+    "file": "hymnary290.mid",
+    "sha256": "ff408adad8a2f1ccec6a64777f609c9d680e80888f3943b8d51c64dab4d6d7a5",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary290.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary290.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/M/More_Like_the_Master/More_Like_the_Master.xml",
+    "scoreReferenceSha256": "c6d6179dab978e9a850d7b22feb5bf0bb99a1de7a36ad0afecfdce20cbf19f89",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "更像我恩主时刻像",
+        "求主悦纳我心单独"
+      ],
+      [
+        "更像我恩主我每日",
+        "求主悦纳我心单独"
+      ],
+      [
+        "更像我恩主灵命日",
+        "求主悦纳我心单独"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          11,
+          9,
+          9,
+          6
+        ]
+      },
+      {
+        "onsetIndex": 42,
+        "pitches": [
+          2,
+          1,
+          11,
+          6,
+          9
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 83,
+      "midiNoteCount": 83,
+      "editCost": 0,
+      "runnerUpCost": 61,
+      "semitoneShift": 1,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 42,
+          "possibleMidiNoteIndices": [
+            42
+          ],
+          "at": 20.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        20.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 42
+    },
+    "formReview": "正文主歌对应前16小节，副歌从第17小节 Take Thou my heart 起，对应“求主悦纳”区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "02-473": {
+    "targetSha256": "f3fd7453c30def9c2c7e871861da16580effdd11d8790c119455afb129f7b58b",
+    "file": "hymnary638.mid",
+    "sha256": "06dcf0d5460643eeb022c6e4cb6f6c04a453a09d969e38efcf30e5f36691b716",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary638.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary638.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/To_the_Work/To_the_Work.xml",
+    "scoreReferenceSha256": "6c50a62d7b1479009ec155a485307a6094b789fd36d480884413bdd45b56fb2a",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "来作工来作工作主",
+        "当殷勤当忠心当殷"
+      ],
+      [
+        "来作工来作工使饥",
+        "当殷勤当忠心当殷"
+      ],
+      [
+        "来作工来作工每个",
+        "当殷勤当忠心当殷"
+      ],
+      [
+        "来作工来作工主能",
+        "当殷勤当忠心当殷"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          8,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 48,
+        "pitches": [
+          7,
+          8,
+          10,
+          3,
+          7
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 74,
+      "midiNoteCount": 78,
+      "editCost": 4,
+      "runnerUpCost": 59,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 48,
+          "possibleMidiNoteIndices": [
+            48
+          ],
+          "at": 16.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        16.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 48
+    },
+    "formReview": "正文前四行对应主歌；副歌从第11小节 Toiling 起，对应“当殷勤，当忠心”区域。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "02-178": {
+    "targetSha256": "f30fbf696e303cfc40332eef626f1f581aeaa6bb7f025b12fb562e8819dea82b",
+    "file": "hymnary179.mid",
+    "sha256": "78d356c56b8c444fd1df460b5885dc49b08cf76577ff14a926a79e22405793b4",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary179.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary179.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/And_Can_It_Be/And_Can_It_Be.xml",
+    "scoreReferenceSha256": "295b4164631a5b014f1653479fbab3813cfe310133ed13afecfad85c7ab37edf",
+    "verseCount": 5,
+    "regionOpenings": [
+      [
+        "怎能如此像我这样",
+        "奇异的爱怎能如此"
+      ],
+      [
+        "何等奇妙永生主竟",
+        "奇异的爱怎能如此"
+      ],
+      [
+        "我主离开天上宝座",
+        "奇异的爱怎能如此"
+      ],
+      [
+        "我灵受困多年在牢",
+        "奇异的爱怎能如此"
+      ],
+      [
+        "不再定罪心中除尽",
+        "奇异的爱怎能如此"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          7,
+          9,
+          11,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 67,
+        "pitches": [
+          7,
+          11,
+          11,
+          9,
+          9
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 84,
+      "midiNoteCount": 84,
+      "editCost": 0,
+      "runnerUpCost": 60,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 67,
+          "possibleMidiNoteIndices": [
+            67
+          ],
+          "at": 47.5
+        }
+      ],
+      "offsets": [
+        0.0,
+        47.5
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndex": 67
+    },
+    "formReview": "正文前三行涵盖主歌及其结尾的奇异大爱句；独立副歌从明确标注 Refrain 的第25小节起，不与第17小节主歌中的同句混淆。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
   }
 }

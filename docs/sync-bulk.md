@@ -534,7 +534,7 @@ python tools/transfer-sync.py --cache sync-drafts/bulk --songs 04-848 02-289 02-
 
 ## MIDI 参考与扫描识别修订
 
-单段正文不超过四行、每段只需一个阅读区域的文字歌，可使用已经核对同名的 MIDI 参考定位各段起点。已用《与我同住》《主你启示一个奥秘》《祂不误事因祂是神》《只要信祂》等曲核对；参考链接和固定 SHA-256 见 `tools/sync-midi-references.json`，来源为[圣徒诗歌目录](https://chinatownministry.org/Hymns.php)。参考文件缓存到 `CACHE/midi/`，不自动下载。程序按实际 MIDI 速度变化构建和声、主旋律两组模板，在每段实际音频中独立匹配，再核对调性、起点、相位、匹配代价和乐段长度；不以音符数推算字词时间，不声称歌词在 MP3 第 0 秒起唱。
+单段正文不超过四行、每段只需一个阅读区域的文字歌，可使用已经核对同名的 MIDI 参考定位各段起点。已用《与我同住》《主你启示一个奥秘》《祂不误事因祂是神》《只要信祂》等曲核对；参考链接和固定 SHA-256 见 `tools/sync-midi-references.json`，来源为[圣徒诗歌目录](https://chinatownministry.org/Hymns.php)。参考文件缓存到 `CACHE/midi/`，不自动下载。 多个正文阅读区域须额外提供逐段起句与已核对的 MIDI 音符起点，每个起点至少核验五个旋律音，不使用区域长度推算。《像长江大河》的分句另核对公开 MusicXML：44 个主歌音符加 22 个副歌音符与参考 MIDI 全部一致，副歌从第 44 号起音开始；和声、旋律模板须独立确认每段的每个阅读区域。程序按实际 MIDI 速度变化构建和声、主旋律两组模板，在每段实际音频中独立匹配，再核对调性、起点、相位、匹配代价和乐段长度；不以音符数推算字词时间，不声称歌词在 MP3 第 0 秒起唱。
 
 ```sh
 python tools/midi-sync.py --cache sync-drafts/bulk --songs 01-362 01-421 01-429

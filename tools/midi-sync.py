@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify single-passage text verses against documented MIDI harmony and melody."""
+"""Verify text reading regions against documented MIDI harmony and melody."""
 import argparse
 import importlib.util
 import json
@@ -98,21 +98,54 @@ def midi_features(path):
     return duration, (times, harmony), row
 
 
+def reading_rows(source, profile, melody):
+    boundaries = profile.get('readingBoundaries')
+    if boundaries is None:
+        if any(len(verse) != 1 for verse in source['verses']):
+            raise ValueError('多个文字阅读区域需要已经核对的 MIDI 分句配置')
+        return [0], [melody]
+    if (not boundaries or any(len(verse) != len(boundaries) for verse in source['verses']) or
+            len(profile.get('regionOpenings', [])) != len(source['verses'])):
+        raise ValueError('MIDI 分句配置与正文阅读区域数量不一致')
+    from sync_batch_sources import clean
+    for verse, openings in zip(source['verses'], profile['regionOpenings']):
+        if len(openings) != len(verse) or any(len(clean(text)) < 4 or not clean(item['text']).startswith(clean(text))
+                                            for item, text in zip(verse, openings)):
+            raise ValueError('MIDI 分句配置与正文起句不一致')
+    offsets, previous = [], -1
+    for boundary in boundaries:
+        index, pitches = boundary['onsetIndex'], boundary['pitches']
+        if (not isinstance(index, int) or index <= previous or len(pitches) < 5 or index < 0 or
+                melody['onsetPitches'][index:index + len(pitches)] != pitches):
+            raise ValueError('MIDI 分句首音与已核对的旋律不一致')
+        offsets.append(melody['onsetTimes'][index])
+        previous = index
+    if offsets[0] > .1:
+        raise ValueError('MIDI 首个阅读区域没有从首音开始')
+    cuts = [round(at / .1) for at in offsets] + [len(melody['notes'])]
+    rows = [{key: melody[key][a:b] for key in ['notes', 'pitchOffsets', 'spatialWeights']}
+            for a, b in zip(cuts, cuts[1:])]
+    if any(not row['notes'] for row in rows):
+        raise ValueError('MIDI 阅读区域缺少完整旋律')
+    return offsets, rows
+
+
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 2, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 3, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:
             raise ValueError('文字素材与已经核对的 MIDI 配置不一致')
         source = text_source(batch.ROOT / 'data' / song['source'])
-        if len(source['verses']) != profile['verseCount'] or any(len(verse) != 1 for verse in source['verses']):
-            raise ValueError('MIDI 起点参考仅适用于每段单个文字阅读区域')
+        if len(source['verses']) != profile['verseCount']:
+            raise ValueError('MIDI 参考与正文段数不一致')
         path = cache / 'midi' / profile['file']
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')
         period, harmony, melody = midi_features(path)
+        offsets, melody_rows = reading_rows(source, profile, melody)
         reference = batch.ROOT / 'data' / song['reference']
         music = repeated_verses(reference, len(source['verses']), cache)
         target = features(reference, cache)
@@ -120,25 +153,27 @@ def generate(song, profile, cache):
         evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
         for shift in music['shifts']:
             onset = music['initialOnsetEstimate'] + shift
-            harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], onset, cue_offset=0)
-            melodic = match_template([melody], target[1], target[0], music['period'], onset, 'spatialWeights')
+            harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], onset, cue_offsets=offsets)
+            melodic = match_template(melody_rows, target[1], target[0], music['period'], onset, 'spatialWeights')
             one, two = harmonic['best'], melodic['best']
             matches.append({'harmony': harmonic, 'melody': melodic})
             if (one['cost'] > .35 or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                     not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
                     two['cost'] > .35 or melodic['runnerUp']['cost'] - two['cost'] < .06 or
-                    one['key'] != two['key'] or abs(one['at'] - two['starts'][0]) > .5):
+                    one['key'] != two['key'] or len(one['starts']) != len(two['starts']) or
+                    max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
                 raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
-            mapped.append(round((one['at'] + two['starts'][0]) / 2, 2))
-        corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), 1)
+            mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
+        corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
         # Both symbolic templates already locate every verse independently.
         if decisions:
             raise ValueError('MIDI 独立模板的首段起点仍有歧义')
         evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
-        definitions = [verse[0] for verse in source['verses']]
+        evidence['midiMatching']['readingOffsets'] = offsets
+        definitions = [item for verse in source['verses'] for item in verse]
         evidence['performanceOrder'] = definitions
         return export_result(song, batch.ROOT, cache, destination, evidence, start, source,
-                             definitions, corrected, list(range(len(definitions))))
+                             definitions, corrected, list(range(0, len(definitions), len(offsets))))
     except (ValueError, FileNotFoundError, KeyError) as error:
         evidence.update(status='needs-calibration', reason=str(error), elapsedSeconds=round(time.monotonic() - start, 3))
         batch.save(destination, evidence)

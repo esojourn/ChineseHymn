@@ -306,6 +306,36 @@ class BatchTests(unittest.TestCase):
         self.assertAlmostEqual(match['best']['at'], 3.4, delta=.1)
         self.assertLess(match['best']['cost'], .01)
         self.assertGreater(match['runnerUp']['cost'] - match['best']['cost'], .08)
+        passages = transfer.match_cycle((np.arange(240) * .1, query),
+                                        (np.arange(400) * .1, target), 0, 24, 24, 4,
+                                        cue_offsets=[0, 16])
+        self.assertEqual(passages['best']['key'], 5)
+        self.assertAlmostEqual(passages['best']['starts'][0], 3, delta=.1)
+        self.assertAlmostEqual(passages['best']['starts'][1], 19, delta=.1)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_text_midi_passages_require_verified_region_openings_and_melody(self):
+        import copy
+        melody = {'notes': [1] * 100, 'pitchOffsets': [0] * 100, 'spatialWeights': [1] * 100,
+                  'onsetTimes': list(range(10)), 'onsetPitches': [0, 2, 4, 5, 7, 9, 7, 5, 4, 2]}
+        source = {'verses': [[{'text': '第一段主歌起句'}, {'text': '共同副歌起句'}],
+                             [{'text': '第二段主歌起句'}, {'text': '共同副歌起句'}]]}
+        profile = {'regionOpenings': [['第一段主歌', '共同副歌'], ['第二段主歌', '共同副歌']],
+                   'readingBoundaries': [{'onsetIndex': 0, 'pitches': [0, 2, 4, 5, 7]},
+                                         {'onsetIndex': 5, 'pitches': [9, 7, 5, 4, 2]}]}
+        offsets, rows = midi_sync.reading_rows(source, profile, melody)
+        self.assertEqual(offsets, [0, 5])
+        self.assertEqual([len(row['notes']) for row in rows], [50, 50])
+        wrong = copy.deepcopy(profile)
+        wrong['regionOpenings'][1][1] = '尚未核对'
+        with self.assertRaises(ValueError):
+            midi_sync.reading_rows(source, wrong, melody)
+        wrong = copy.deepcopy(profile)
+        wrong['readingBoundaries'][1]['pitches'][0] = 11
+        with self.assertRaises(ValueError):
+            midi_sync.reading_rows(source, wrong, melody)
+        with self.assertRaises(ValueError):
+            midi_sync.reading_rows(source, {}, melody)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_score_accidentals_are_kept_separate_from_scale_degrees(self):

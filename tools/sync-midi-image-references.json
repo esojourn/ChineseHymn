@@ -18,5 +18,334 @@
     "verseCount": 4,
     "firstVerseTrigramOverlap": 0.9,
     "formReview": "首段歌词与公开参考对应；所有谱行起始音必须在完整音符序列的全部最优匹配中唯一确定。每个录音、每段及每行还须独立通过 MIDI 和声与旋律模板的声学对应，不使用图片字符数量估算时间。"
+  },
+  "05-319": {
+    "targetSha256": "227bffb3f83d26d0c72551db6057ef98a046dd1c8c5a3bccb23820ba1202399e",
+    "file": "hymnary097.mid",
+    "sha256": "f56650831a6ad114861d21291f5b564e2cb5cda82c7a3bc2ae0a4657b5fdf3f3",
+    "verseCount": 5,
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary097.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary097.htm",
+    "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 114,
+      "midiNoteCount": 103,
+      "editCost": 11,
+      "runnerUpCost": 78,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 14,
+          "possibleMidiNoteIndices": [
+            14
+          ],
+          "at": 8.0
+        },
+        {
+          "scoreNoteIndex": 28,
+          "possibleMidiNoteIndices": [
+            27
+          ],
+          "at": 16.0
+        },
+        {
+          "scoreNoteIndex": 43,
+          "possibleMidiNoteIndices": [
+            41
+          ],
+          "at": 24.0
+        },
+        {
+          "scoreNoteIndex": 56,
+          "possibleMidiNoteIndices": [
+            51
+          ],
+          "at": 31.5
+        },
+        {
+          "scoreNoteIndex": 71,
+          "possibleMidiNoteIndices": [
+            65
+          ],
+          "at": 39.5
+        },
+        {
+          "scoreNoteIndex": 86,
+          "possibleMidiNoteIndices": [
+            80
+          ],
+          "at": 47.5
+        },
+        {
+          "scoreNoteIndex": 103,
+          "possibleMidiNoteIndices": [
+            96
+          ],
+          "at": 55.5
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0,
+        16.0,
+        24.0,
+        31.5,
+        39.5,
+        47.5,
+        55.5
+      ]
+    }
+  },
+  "05-037": {
+    "targetSha256": "22a8e588f8c15883e9944d45e4c057b928622ba6c46fee93ad5b79b45722cbc1",
+    "file": "hymnary098.mid",
+    "sha256": "6d604cc39e4ba6291d4738aa903fa2df19a9e223ac64c54e68b3f63567809b7d",
+    "verseCount": 3,
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary098.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary098.htm",
+    "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 100,
+      "midiNoteCount": 95,
+      "editCost": 5,
+      "runnerUpCost": 74,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 17,
+          "possibleMidiNoteIndices": [
+            17
+          ],
+          "at": 8.0
+        },
+        {
+          "scoreNoteIndex": 33,
+          "possibleMidiNoteIndices": [
+            32
+          ],
+          "at": 16.0
+        },
+        {
+          "scoreNoteIndex": 50,
+          "possibleMidiNoteIndices": [
+            48
+          ],
+          "at": 24.0
+        },
+        {
+          "scoreNoteIndex": 66,
+          "possibleMidiNoteIndices": [
+            63
+          ],
+          "at": 32.0
+        },
+        {
+          "scoreNoteIndex": 83,
+          "possibleMidiNoteIndices": [
+            80
+          ],
+          "at": 40.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0,
+        16.0,
+        24.0,
+        32.0,
+        40.0
+      ]
+    }
+  },
+  "05-263": {
+    "targetSha256": "c102a385f333c68c03d7d0a2871f65a26bbfe23b91c1fec03a92bde43dc4a759",
+    "file": "hymnary498.mid",
+    "sha256": "8c1d598777385d42d0addda5b8b2f4723a8628ecf83b1286481d651772cf7b93",
+    "verseCount": 5,
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary498.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary498.htm",
+    "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 66,
+      "midiNoteCount": 68,
+      "editCost": 3,
+      "runnerUpCost": 52,
+      "semitoneShift": 8,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 16,
+          "possibleMidiNoteIndices": [
+            16
+          ],
+          "at": 8.7273
+        },
+        {
+          "scoreNoteIndex": 32,
+          "possibleMidiNoteIndices": [
+            32
+          ],
+          "at": 17.1818
+        },
+        {
+          "scoreNoteIndex": 48,
+          "possibleMidiNoteIndices": [
+            50
+          ],
+          "at": 24.5454
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.7273,
+        17.1818,
+        24.5454
+      ]
+    }
+  },
+  "05-347": {
+    "targetSha256": "d75cf7708a8ec98f6f2c54b9bfcd97269b0db388dd727d51eedba9c3d9d83a16",
+    "file": "hymnary593.mid",
+    "sha256": "e70e161b2855f608ba2296597b80612f2c5fc0ad887fb74c58277feeda317060",
+    "verseCount": 4,
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary593.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary593.htm",
+    "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 92,
+      "midiNoteCount": 85,
+      "editCost": 7,
+      "runnerUpCost": 67,
+      "semitoneShift": 8,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 15,
+          "possibleMidiNoteIndices": [
+            15
+          ],
+          "at": 9.2308
+        },
+        {
+          "scoreNoteIndex": 32,
+          "possibleMidiNoteIndices": [
+            30
+          ],
+          "at": 18.4615
+        },
+        {
+          "scoreNoteIndex": 47,
+          "possibleMidiNoteIndices": [
+            44
+          ],
+          "at": 27.6923
+        },
+        {
+          "scoreNoteIndex": 61,
+          "possibleMidiNoteIndices": [
+            57
+          ],
+          "at": 36.9231
+        },
+        {
+          "scoreNoteIndex": 76,
+          "possibleMidiNoteIndices": [
+            71
+          ],
+          "at": 46.1538
+        }
+      ],
+      "offsets": [
+        0.0,
+        9.2308,
+        18.4615,
+        27.6923,
+        36.9231,
+        46.1538
+      ]
+    }
+  },
+  "05-210": {
+    "targetSha256": "be59acb49c1c15a480eec50e72c11e7d7aeec8041bb632133f1406129841ff0d",
+    "file": "hymnary629.mid",
+    "sha256": "e3cf5074ec92b0fb50948eaaf50859067b9817e7e5c01e6520dbd3c4b980f778",
+    "verseCount": 6,
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary629.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary629.htm",
+    "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 53,
+      "midiNoteCount": 50,
+      "editCost": 3,
+      "runnerUpCost": 33,
+      "semitoneShift": 3,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 13,
+          "possibleMidiNoteIndices": [
+            13
+          ],
+          "at": 6.0
+        },
+        {
+          "scoreNoteIndex": 27,
+          "possibleMidiNoteIndices": [
+            27
+          ],
+          "at": 12.5
+        },
+        {
+          "scoreNoteIndex": 41,
+          "possibleMidiNoteIndices": [
+            41
+          ],
+          "at": 20.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        6.0,
+        12.5,
+        20.0
+      ]
+    }
   }
 }

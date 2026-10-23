@@ -137,6 +137,8 @@ def generate(job):
         if method == 'score':
             from sync_batch_score import score_times
             recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
+            if recognition.get('sparseRowRecovery'):
+                evidence['sparseRowRecovery'] = recognition['sparseRowRecovery']
             source, cue_times, score_evidence = score_times(root / 'data' / song['source'], reference, recognition, cache)
             evidence['scoreMatching'] = score_evidence
             definitions = [item for verse in source['verses'] for item in verse]

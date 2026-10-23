@@ -230,21 +230,64 @@ def recognize_image(job):
         pieces = max(1, round((bottom - top) / line_height)) if bottom - top > line_height * 1.65 else 1
         edges = np.linspace(top, bottom, pieces + 1).round().astype(int)
         split.extend(zip(edges[:-1].tolist(), edges[1:].tolist()))
-    rows = []
-    for top, bottom in split:
+    def read_row(top, bottom, trim=False):
         # Recognize horizontal bands explicitly: whole-page OCR often merges verses into vertical columns.
-        result, _ = _ocr(image[top:bottom], use_det=False, use_cls=False)
+        left, right = 0, width
+        if trim:
+            columns = np.flatnonzero((gray[top:bottom] < 150).sum(axis=0) > 2)
+            if not len(columns):
+                return None
+            left, right = max(0, int(columns[0]) - 8), min(width, int(columns[-1]) + 9)
+        result, _ = _ocr(image[top:bottom, left:right], use_det=False, use_cls=False)
         if result:
             text, confidence = result[0][:2]
             corners = np.array([[0, top, 1], [width, top, 1], [0, bottom, 1], [width, bottom, 1]]) @ inverse.T
-            rows.append({'top': round(max(0, float(corners[:, 1].min()) / height), 6),
-                         'bottom': round(min(1, float(corners[:, 1].max()) / height), 6),
-                         'recognitionBand': [top, bottom],
-                         'text': text, 'confidence': float(confidence)})
-    save(destination, {'source': song['source'], 'sha256': song['sha256'], 'width': width, 'height': height,
-                       'recognizerVersion': 4, 'recognitionAngle': angle,
-                       'rows': rows, 'elapsedSeconds': round(time.monotonic() - start, 3)})
-    return song['songId'], f'{len(rows)} rows, {round(time.monotonic() - start, 1)} s'
+            return {'top': round(max(0, float(corners[:, 1].min()) / height), 6),
+                    'bottom': round(min(1, float(corners[:, 1].max()) / height), 6),
+                    'recognitionBand': [top, bottom], 'text': text, 'confidence': float(confidence)}
+        return None
+
+    rows = [row for top, bottom in split if (row := read_row(top, bottom)) is not None]
+    recognition = {'source': song['source'], 'sha256': song['sha256'], 'width': width, 'height': height,
+                   'recognizerVersion': 5, 'recognitionAngle': angle, 'rows': rows}
+    from sync_batch_sources import image_source, IMAGE_VERSE
+    try:
+        image_source(recognition)
+    except ValueError as error:
+        missing = re.search(r'第 (\d+) 谱行缺少', str(error))
+        if missing:
+            notes = [row for row in rows if row['top'] > .07 and
+                     len(re.findall(r'[\u3400-\u9fff]', row['text'])) <= 1 and len(re.findall('[1-7]', row['text'])) >= 4]
+            index = int(missing[1]) - 1
+            if index < len(notes):
+                lo, hi = notes[index]['bottom'], notes[index + 1]['top'] if index + 1 < len(notes) else 1
+                sparse_labels, count = label(binary_closing(projection > width * .025,
+                    structure=np.ones(max(2, round(height * .004)))))
+                recovered = []
+                for band in range(1, count + 1):
+                    ys = np.flatnonzero(sparse_labels == band)
+                    if len(ys) < height * .01:
+                        continue
+                    top, bottom = max(0, int(ys[0]) - 4), min(height, int(ys[-1]) + 5)
+                    if not lo <= (top + bottom) / 2 / height <= hi:
+                        continue
+                    row = read_row(top, bottom, trim=True)
+                    if row and row['confidence'] >= .7 and len(re.findall(r'[\u3400-\u9fff]', row['text'])) >= 2:
+                        recovered.append(row)
+                merged = [row for row in rows if not any(new['top'] <= (row['top'] + row['bottom']) / 2 <= new['bottom']
+                                                        for new in recovered)] + recovered
+                candidate = {**recognition, 'rows': sorted(merged, key=lambda row: (row['top'] + row['bottom']) / 2)}
+                expected = max([int(match[1]) for row in rows if row['top'] > notes[0]['bottom'] and
+                                (match := IMAGE_VERSE.match(row['text'])) and int(match[1]) < 15] or [1])
+                try:
+                    source = image_source(candidate)
+                    if len(source['systems']) == len(notes) and len(source['verses']) == expected:
+                        recognition = {**candidate, 'sparseRowRecovery': {'system': index + 1, 'rows': recovered}}
+                except ValueError:
+                    pass
+    recognition['elapsedSeconds'] = round(time.monotonic() - start, 3)
+    save(destination, recognition)
+    return song['songId'], f'{len(recognition["rows"])} rows, {round(time.monotonic() - start, 1)} s'
 
 
 def main():

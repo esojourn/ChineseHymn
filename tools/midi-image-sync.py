@@ -53,6 +53,8 @@ def generate(song, profile, cache):
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')
         recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
+        if recognition.get('sparseRowRecovery'):
+            evidence['sparseRowRecovery'] = recognition['sparseRowRecovery']
         if recognition['sha256'] != song['sha256']:
             raise ValueError('谱面识别已失效')
         source = image_source(recognition)
@@ -94,6 +96,9 @@ if __name__ == '__main__':
     parser.add_argument('--songs', nargs='+', required=True)
     args = parser.parse_args()
     profiles = json.loads(Path(__file__).with_name('sync-midi-image-references.json').read_text())
+    unknown = sorted(set(args.songs) - profiles.keys())
+    if unknown:
+        parser.error('这些曲目尚未核对 MIDI 参考：' + '、'.join(unknown))
     for song in batch.inventory():
         if song['songId'] in args.songs and song['type'] == 'image' and song['tracks'] and not song['existing']:
             print(generate(song, profiles[song['songId']], args.cache), flush=True)

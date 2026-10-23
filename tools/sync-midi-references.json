@@ -2138,5 +2138,93 @@
       ]
     },
     "formReview": "已目视核对公开中文谱本第425首《渴慕耶稣》：前两谱行对应主歌四句，第三谱行明确标注副歌。逐行抄录最高旋律简谱，省略同音连结延续，升号在本小节内保持有效。完整79音与固定MIDI逐音完全一致；四个谱行起点在所有最优序列对齐中均唯一。正文两个阅读区域分别从MIDI索引0和42开始；每个实际段落还须通过独立和声、旋律、起点、调性与反复相位检查。"
+  },
+  "04-777": {
+    "targetSha256": "d44197b48d53855d1f5861624fc5535260c602c9cb943a7740679d85c02be394",
+    "file": "hymnary485.mid",
+    "sha256": "e5b7266dd4a3e5a45c2aec8071124cfde033eaef0f3b3d37e30e8c483cb4399a",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary485.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary485.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/P/Precious_Promise/Precious_Promise.xml",
+    "scoreReferenceSha256": "b920775ea012b03c71770018bae729654090b335d2e89ade72dacee6f4ac1eb3",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "你孤单么真孤单么",
+        "他曾孤单在城里面"
+      ],
+      [
+        "你困倦么真困倦么",
+        "他曾困倦在那晚间"
+      ],
+      [
+        "你贫穷么真贫穷么",
+        "从未安身走遍乡城"
+      ],
+      [
+        "你担重么真担重么",
+        "他曾亲身背负重担"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          4,
+          6,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          2,
+          0,
+          11,
+          11,
+          9
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 76,
+      "midiNoteCount": 76,
+      "editCost": 0,
+      "runnerUpCost": 52,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 38,
+          "possibleMidiNoteIndices": [
+            38
+          ],
+          "at": 18.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        18.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        38
+      ]
+    },
+    "formReview": "《你孤单么》采用 Precious Promise 同曲填词，不将参考诗歌的歌词当作本曲原文。MusicXML第1至10小节为主歌四句，第11小节 I will 起为后半四句，分别对应正文两个阅读区域。完整76个主旋律起音与固定MIDI逐音完全一致，两个阅读区域起点均唯一；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查。"
   }
 }

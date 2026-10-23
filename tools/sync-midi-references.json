@@ -4724,12 +4724,11 @@
   },
   "02-352": {
     "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
-    "file": "timeless-I_Would_Be_True.mid",
-    "sha256": "ddeae036c2a9605e9ee7178f4e86ee27ac156bd51e72823c5a5aec4d46a04314",
-    "url": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.mid",
-    "textReferenceUrl": "https://library.timelesstruths.org/music/I_Would_Be_True/",
-    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.xml",
-    "scoreReferenceSha256": "05fa0e305ad10e518a8e1ba93295bb8c9d8655d7cbf55775e85d839be127a4a9",
+    "file": "life352.mid",
+    "sha256": "b4b08de2974c5ca26ea94af8873bcedcc0e0e70e05a09e214504f5d793092375",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/352.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life352.html",
+    "textReferenceSha256": "e7744b416702c64b0387c85d69054321c9f09672f65dda2008ca4461f077f6a2",
     "verseCount": 4,
     "regionOpenings": [
       [
@@ -4745,47 +4744,15 @@
         "我主爱人爱敌也爱"
       ]
     ],
-    "readingBoundaries": [
-      {
-        "onsetIndex": 0,
-        "pitches": [
-          7,
-          5,
-          3,
-          10,
-          10
-        ]
-      }
-    ],
-    "symbolicReferenceReview": {
-      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
-      "noteCount": 52,
-      "midiNoteCount": 52,
-      "editCost": 0,
-      "runnerUpCost": 37,
-      "semitoneShift": 0,
-      "rowStarts": [
-        {
-          "scoreNoteIndex": 0,
-          "possibleMidiNoteIndices": [
-            0
-          ],
-          "at": 0.0
-        }
-      ],
-      "offsets": [
-        0.0
-      ]
-    },
-    "scoreVoiceReview": {
-      "voice": "1",
-      "highestChordHeadOnly": true,
-      "continuedTiedHeadsExcluded": true,
-      "sourceBoundaryNoteIndices": [
-        0
-      ]
-    },
-    "formReview": "I Would Be True / Peek，全文每段四行是单个阅读区域，包含末句谱面重唱；第三、四段中文补充歌词仍须实际音乐核对。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+    "formReview": "此录音为Albany曲调，另版02-353为Peek曲调，不能因歌词相同而共用参考或时间点。正文四段各四行，是各自完整的阅读区域。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 352,
+      "title": "我要忠诚",
+      "tune": "Albany, 11.10.11.10",
+      "composer": "J. Albert Jeffrey, 1886",
+      "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+    }
   },
   "02-353": {
     "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
@@ -5268,5 +5235,69 @@
       ]
     },
     "formReview": "A Charge to Keep I Have / Boylston，明确采用Lowell Mason版本及同名无_2后缀MusicXML与MIDI；正文每段两行涵盖完整四句，为单个阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "01-504": {
+    "targetSha256": "a5a176b1dcb7b27e4fe6453b5a6d9b6a8582325762d8687993c27e16b3e5eca9",
+    "file": "life504.mid",
+    "sha256": "0de168888bd77f43144e2f67e00eac81b440dddabcbea8d80edf95ecd7bc0bd8",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/504.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life504.html",
+    "textReferenceSha256": "c70aea1f3488b2b9b117c4ed3a303b945840f1f4cc29da4a26fa0b181040f57a",
+    "verseCount": 5,
+    "regionOpenings": [
+      [
+        "新年转瞬又来临恳"
+      ],
+      [
+        "愿怜悯信实恩惠充"
+      ],
+      [
+        "愿一年进步向前一"
+      ],
+      [
+        "愿一年热心侍奉努"
+      ],
+      [
+        "新年转瞬又来临恳"
+      ]
+    ],
+    "formReview": "正文五段各两行，分别覆盖本曲完整四句，不能误用同为新年题材的Another Year Is Dawning / Aurelia。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 504,
+      "title": "新年许愿",
+      "tune": "Vulpius, CM",
+      "composer": "Melchior Vulpius, 1609",
+      "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-284": {
+    "targetSha256": "7ecc0e7be51cbacad86cfa73bb87297900a55af8f5364cad653a3feb957cde08",
+    "file": "life284.mid",
+    "sha256": "106117f33b703918d0e73c2f1760182bbd4bf5a8089ca2a54377ea4081f3c6bb",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/284.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life284.html",
+    "textReferenceSha256": "195932baf3f25bc5fce2c71f7a4bb8d630601e289cef0ccee1854e2cea643dc5",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "信靠救主引导你前"
+      ],
+      [
+        "安静等候谦卑且顺"
+      ],
+      [
+        "祷告歌唱坚守主命"
+      ]
+    ],
+    "formReview": "正文三段各三行，涵盖完整六句，为单个阅读区域，采用If Thou But Suffer God to Guide Thee原曲。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 284,
+      "title": "等候倚靠",
+      "tune": "Neumark",
+      "composer": "Georg Neumark",
+      "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+    }
   }
 }

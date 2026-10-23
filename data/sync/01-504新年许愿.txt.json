@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "01-504",
+  "status": "reviewed",
+  "source": {
+    "file": "01-504新年许愿.txt",
+    "sha256": "a5a176b1dcb7b27e4fe6453b5a6d9b6a8582325762d8687993c27e16b3e5eca9",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-504新年许愿.mp3",
+      "sha256": "c2c2fc083942194c32f1ed6f345fbbb9891acf51d96ca75cb11c86df864c3244",
+      "duration": 108.19918367346939,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 4.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 23.95,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 43.15,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 62.35,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.55,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "新年转瞬又来临，恳求我主护荫， 不论工作或等候，与主同度此年。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "愿怜悯信实恩惠，充满这新一年， 愿主面光常照耀，一年充满喜乐。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "愿一年进步向前，一年充满赞美； 愿你恩手常证明，上主与我同在。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "愿一年热心侍奉，努力见证主爱； 愿一年殷勤学习，堪作属天忠仆。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "新年转瞬又来临，恳求我主护荫， 不论在地或天庭，为主而活此年。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-504新年许愿.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

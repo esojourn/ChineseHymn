@@ -1,0 +1,252 @@
+{
+  "songId": "02-352",
+  "source": "02-352我要忠诚1.txt",
+  "sourceHash": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+  "trackHashes": [
+    {
+      "file": "02-352我要忠诚1.mp3",
+      "sha256": "c3847d6a0e566cfa287977e4bacd204ef665dfecb2858789694a0691aec56a7e"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+      "file": "life352.mid",
+      "sha256": "b4b08de2974c5ca26ea94af8873bcedcc0e0e70e05a09e214504f5d793092375",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/352.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life352.html",
+      "textReferenceSha256": "e7744b416702c64b0387c85d69054321c9f09672f65dda2008ca4461f077f6a2",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "我要忠诚因别人对"
+        ],
+        [
+          "我要爱人爱敌也爱"
+        ],
+        [
+          "因主忠诚对我他也"
+        ],
+        [
+          "我主爱人爱敌也爱"
+        ]
+      ],
+      "formReview": "此录音为Albany曲调，另版02-353为Peek曲调，不能因歌词相同而共用参考或时间点。正文四段各四行，是各自完整的阅读区域。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 352,
+        "title": "我要忠诚",
+        "tune": "Albany, 11.10.11.10",
+        "composer": "J. Albert Jeffrey, 1886",
+        "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 19.47115125,
+    "music": {
+      "period": 24.6,
+      "similarity": 0.9824639558792114,
+      "initialOnsetEstimate": 6.232,
+      "shifts": [
+        0.0,
+        24.6,
+        49.2,
+        73.9
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18816509091757178,
+            "key": 6,
+            "at": 6.7,
+            "span": 24.5,
+            "starts": [
+              6.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5866906390926703,
+            "key": 11,
+            "at": 5.4,
+            "span": 20.4,
+            "starts": [
+              4.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13836251235589747,
+            "key": 6,
+            "starts": [
+              6.199999809265137
+            ],
+            "span": 24.5
+          },
+          "runnerUp": {
+            "cost": 0.38756728753810976,
+            "key": 1,
+            "starts": [
+              10.199999809265137
+            ],
+            "span": 22.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1866560369972291,
+            "key": 6,
+            "at": 31.4,
+            "span": 24.4,
+            "starts": [
+              30.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.600260974915047,
+            "key": 11,
+            "at": 30.0,
+            "span": 20.4,
+            "starts": [
+              29.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13954288203541826,
+            "key": 6,
+            "starts": [
+              30.799999237060547
+            ],
+            "span": 24.5
+          },
+          "runnerUp": {
+            "cost": 0.38908001659362296,
+            "key": 1,
+            "starts": [
+              34.79999923706055
+            ],
+            "span": 22.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18205295345647549,
+            "key": 6,
+            "at": 56.0,
+            "span": 24.4,
+            "starts": [
+              55.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.597326263179624,
+            "key": 11,
+            "at": 54.6,
+            "span": 20.4,
+            "starts": [
+              54.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13584546345036205,
+            "key": 6,
+            "starts": [
+              55.400001525878906
+            ],
+            "span": 24.5
+          },
+          "runnerUp": {
+            "cost": 0.38640876707991934,
+            "key": 1,
+            "starts": [
+              59.400001525878906
+            ],
+            "span": 22.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16758276776569644,
+            "key": 6,
+            "at": 80.6,
+            "span": 25.5,
+            "starts": [
+              80.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6003026574607787,
+            "key": 11,
+            "at": 79.3,
+            "span": 20.3,
+            "starts": [
+              78.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11754881851072234,
+            "key": 6,
+            "starts": [
+              80.0
+            ],
+            "span": 25.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4147894634463923,
+            "key": 1,
+            "starts": [
+              69.19999694824219
+            ],
+            "span": 17.800003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我要忠诚，因别人对我信赖； 我要纯洁，因为有人关怀， 我要坚强，人间痛苦才能当， 我要胆壮，才能抵挡强敌，",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "我要爱人，爱敌也爱孤苦者； 我要施赠，不求任何酬谢； 我要谦卑，不忘我身多弱点； 我要仰望欢笑，博爱互助。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "因主忠诚，对我祂也愿信赖； 因主圣洁，对我祂也关怀； 基督坚强，一切痛苦祂担当； 向我彰显至圣大爱无量。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我主爱人，爱敌也爱孤苦者； 祂施恩惠，永不吝啬施赠； 我主谦卑，为我们成为软弱； 我主仰望欢笑，博爱扶助。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.206
+}

@@ -1,0 +1,301 @@
+{
+  "songId": "01-504",
+  "source": "01-504新年许愿.txt",
+  "sourceHash": "a5a176b1dcb7b27e4fe6453b5a6d9b6a8582325762d8687993c27e16b3e5eca9",
+  "trackHashes": [
+    {
+      "file": "01-504新年许愿.mp3",
+      "sha256": "c2c2fc083942194c32f1ed6f345fbbb9891acf51d96ca75cb11c86df864c3244"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "a5a176b1dcb7b27e4fe6453b5a6d9b6a8582325762d8687993c27e16b3e5eca9",
+      "file": "life504.mid",
+      "sha256": "0de168888bd77f43144e2f67e00eac81b440dddabcbea8d80edf95ecd7bc0bd8",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/504.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life504.html",
+      "textReferenceSha256": "c70aea1f3488b2b9b117c4ed3a303b945840f1f4cc29da4a26fa0b181040f57a",
+      "verseCount": 5,
+      "regionOpenings": [
+        [
+          "新年转瞬又来临恳"
+        ],
+        [
+          "愿怜悯信实恩惠充"
+        ],
+        [
+          "愿一年进步向前一"
+        ],
+        [
+          "愿一年热心侍奉努"
+        ],
+        [
+          "新年转瞬又来临恳"
+        ]
+      ],
+      "formReview": "正文五段各两行，分别覆盖本曲完整四句，不能误用同为新年题材的Another Year Is Dawning / Aurelia。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 504,
+        "title": "新年许愿",
+        "tune": "Vulpius, CM",
+        "composer": "Melchior Vulpius, 1609",
+        "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 17.2767765,
+    "music": {
+      "period": 19.2,
+      "similarity": 0.9706120491027832,
+      "initialOnsetEstimate": 10.664,
+      "shifts": [
+        0.0,
+        19.2,
+        38.4,
+        57.6,
+        76.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26325223843256634,
+            "key": 8,
+            "at": 5.2,
+            "span": 19.2,
+            "starts": [
+              4.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4626165231068929,
+            "key": 1,
+            "at": 20.1,
+            "span": 14.9,
+            "starts": [
+              19.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1682275334993998,
+            "key": 8,
+            "starts": [
+              4.699999809265137
+            ],
+            "span": 19.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.4041213591893514,
+            "key": 3,
+            "starts": [
+              8.100000381469727
+            ],
+            "span": 18.19999885559082
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2636219064394633,
+            "key": 8,
+            "at": 24.4,
+            "span": 19.2,
+            "starts": [
+              24.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.46329506238301593,
+            "key": 1,
+            "at": 39.4,
+            "span": 14.9,
+            "starts": [
+              39.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16747188568115234,
+            "key": 8,
+            "starts": [
+              23.899999618530273
+            ],
+            "span": 19.19999885559082
+          },
+          "runnerUp": {
+            "cost": 0.40353163083394367,
+            "key": 3,
+            "starts": [
+              27.200000762939453
+            ],
+            "span": 18.299999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26353196303049725,
+            "key": 8,
+            "at": 43.6,
+            "span": 19.2,
+            "starts": [
+              43.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4619417190551758,
+            "key": 1,
+            "at": 58.5,
+            "span": 14.9,
+            "starts": [
+              58.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1671286424001058,
+            "key": 8,
+            "starts": [
+              43.099998474121094
+            ],
+            "span": 19.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.4032400846481323,
+            "key": 3,
+            "starts": [
+              46.400001525878906
+            ],
+            "span": 18.29999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2638610005378723,
+            "key": 8,
+            "at": 62.8,
+            "span": 19.2,
+            "starts": [
+              62.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.46232008934020996,
+            "key": 1,
+            "at": 77.7,
+            "span": 14.9,
+            "starts": [
+              77.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1677069067955017,
+            "key": 8,
+            "starts": [
+              62.29999923706055
+            ],
+            "span": 19.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.4027557373046875,
+            "key": 3,
+            "starts": [
+              65.5999984741211
+            ],
+            "span": 18.300003051757812
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2638278404871623,
+            "key": 8,
+            "at": 82.0,
+            "span": 19.2,
+            "starts": [
+              81.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4637445608774821,
+            "key": 1,
+            "at": 77.7,
+            "span": 14.8,
+            "starts": [
+              77.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1671507159868876,
+            "key": 8,
+            "starts": [
+              81.5
+            ],
+            "span": 19.199996948242188
+          },
+          "runnerUp": {
+            "cost": 0.40254823366800946,
+            "key": 1,
+            "starts": [
+              87.5999984741211
+            ],
+            "span": 16.099998474121094
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "新年转瞬又来临，恳求我主护荫， 不论工作或等候，与主同度此年。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "愿怜悯信实恩惠，充满这新一年， 愿主面光常照耀，一年充满喜乐。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "愿一年进步向前，一年充满赞美； 愿你恩手常证明，上主与我同在。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "愿一年热心侍奉，努力见证主爱； 愿一年殷勤学习，堪作属天忠仆。",
+      "label": "第4段"
+    },
+    {
+      "region": "r5",
+      "text": "新年转瞬又来临，恳求我主护荫， 不论在地或天庭，为主而活此年。",
+      "label": "第5段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 5,
+  "elapsedSeconds": 0.995
+}

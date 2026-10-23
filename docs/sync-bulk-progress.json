@@ -2,11 +2,11 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 269,
+    "published": 272,
     "existing": 8,
-    "needs-calibration": 46,
+    "needs-calibration": 55,
     "missing-audio": 2,
-    "pending": 67,
+    "pending": 55,
     "needs-source-review": 1,
     "needs-track-alignment": 4,
     "missing-lyrics": 23
@@ -190,7 +190,7 @@
         "01-270佳美脚踪.mp3",
         "01-270佳美脚踪-领唱.mp3"
       ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：3,4"
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-280",
@@ -399,17 +399,18 @@
       "songId": "01-500",
       "source": "01-500加利利人耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-500加利利人耶稣.mp3",
         "01-500加利利人耶稣-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,5"
     },
     {
       "songId": "01-504",
       "source": "01-504新年许愿.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-504新年许愿.mp3"
       ]
@@ -437,30 +438,33 @@
       "songId": "01-667",
       "source": "01-667十字架是我的福分.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-667十字架是我的福分.mp3",
         "01-667十字架是我的福分-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：3"
     },
     {
       "songId": "01-668",
       "source": "01-668四周墙垣坚而固.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-668四周墙垣坚而固.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-001",
       "source": "02-001主必保守我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-001主必保守我.mp3",
         "02-001主必保守我-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.554"
     },
     {
       "songId": "02-002",
@@ -484,11 +488,12 @@
       "songId": "02-004",
       "source": "02-004天父的爱深越海洋.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-004天父的爱深越海洋.mp3",
         "02-004天父的爱深越海洋-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.339"
     },
     {
       "songId": "02-005",
@@ -504,20 +509,22 @@
       "songId": "02-006",
       "source": "02-006感恩的泪.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-006感恩的泪.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.526"
     },
     {
       "songId": "02-007",
       "source": "02-007我心等候你_诗130.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-007我心等候你_诗130.mp3",
         "02-007我心等候你_诗130-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.530"
     },
     {
       "songId": "02-008",
@@ -532,10 +539,11 @@
       "songId": "02-009",
       "source": "02-009爱的真谛.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-009爱的真谛-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.520"
     },
     {
       "songId": "02-012",
@@ -757,10 +765,11 @@
       "songId": "02-234",
       "source": "02-234虔守主餐.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-234虔守主餐.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-259",
@@ -805,10 +814,11 @@
       "songId": "02-277",
       "source": "02-277坚固磐石.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-277坚固磐石.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-282",
@@ -824,7 +834,7 @@
       "songId": "02-284",
       "source": "02-284等候倚靠.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-284等候倚靠.mp3"
       ]
@@ -887,11 +897,10 @@
       "songId": "02-352",
       "source": "02-352我要忠诚1.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "02-352我要忠诚1.mp3"
-      ],
-      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
+      ]
     },
     {
       "songId": "02-353",

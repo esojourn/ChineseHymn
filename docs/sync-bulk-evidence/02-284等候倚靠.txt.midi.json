@@ -1,0 +1,203 @@
+{
+  "songId": "02-284",
+  "source": "02-284等候倚靠.txt",
+  "sourceHash": "7ecc0e7be51cbacad86cfa73bb87297900a55af8f5364cad653a3feb957cde08",
+  "trackHashes": [
+    {
+      "file": "02-284等候倚靠.mp3",
+      "sha256": "cf244969b5ff5ce173ad2fc81858644b7953f41dc73a80b460de45d092659087"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "7ecc0e7be51cbacad86cfa73bb87297900a55af8f5364cad653a3feb957cde08",
+      "file": "life284.mid",
+      "sha256": "106117f33b703918d0e73c2f1760182bbd4bf5a8089ca2a54377ea4081f3c6bb",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/284.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life284.html",
+      "textReferenceSha256": "195932baf3f25bc5fce2c71f7a4bb8d630601e289cef0ccee1854e2cea643dc5",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "信靠救主引导你前"
+        ],
+        [
+          "安静等候谦卑且顺"
+        ],
+        [
+          "祷告歌唱坚守主命"
+        ]
+      ],
+      "formReview": "正文三段各三行，涵盖完整六句，为单个阅读区域，采用If Thou But Suffer God to Guide Thee原曲。 已核对生命圣诗歌词页全文及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。所有滚动时间均来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 284,
+        "title": "等候倚靠",
+        "tune": "Neumark",
+        "composer": "Georg Neumark",
+        "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 34.92,
+    "music": {
+      "period": 34.8,
+      "similarity": 0.9936206936836243,
+      "initialOnsetEstimate": 2.816,
+      "shifts": [
+        0.0,
+        34.8,
+        69.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3170380427919585,
+            "key": 6,
+            "at": 5.4,
+            "span": 34.4,
+            "starts": [
+              5.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6782299787148662,
+            "key": 1,
+            "at": 17.3,
+            "span": 24.5,
+            "starts": [
+              16.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2095764642474295,
+            "key": 6,
+            "starts": [
+              5.0
+            ],
+            "span": 35.79999923706055
+          },
+          "runnerUp": {
+            "cost": 0.47173204093143856,
+            "key": 1,
+            "starts": [
+              21.700000762939453
+            ],
+            "span": 26.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3181557710143341,
+            "key": 6,
+            "at": 40.2,
+            "span": 34.4,
+            "starts": [
+              39.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6789024616109913,
+            "key": 1,
+            "at": 52.0,
+            "span": 24.6,
+            "starts": [
+              51.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.20926523756706852,
+            "key": 6,
+            "starts": [
+              39.79999923706055
+            ],
+            "span": 35.79999923706055
+          },
+          "runnerUp": {
+            "cost": 0.4675811679883935,
+            "key": 1,
+            "starts": [
+              22.600000381469727
+            ],
+            "span": 29.999998092651367
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3178731107163703,
+            "key": 6,
+            "at": 75.0,
+            "span": 34.4,
+            "starts": [
+              74.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6831016102056394,
+            "key": 1,
+            "at": 86.8,
+            "span": 21.0,
+            "starts": [
+              86.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21404733328983702,
+            "key": 6,
+            "starts": [
+              74.5999984741211
+            ],
+            "span": 34.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.46650073172032147,
+            "key": 1,
+            "starts": [
+              57.400001525878906
+            ],
+            "span": 29.900001525878906
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "信靠救主引导你前路，若你受苦，主必眷顾， 无论何境况主赐力量，使你平安渡过忧伤； 当信靠主不移的爱，如立磐石坚稳安泰。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "安静等候，谦卑且顺服，欢欣盼望，心满意足， 总要接受主恩慈旨意，主爱参透一切的事， 确信他知我们所需，因他选我们作儿女。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "祷告歌唱，坚守主命令，尽己本分，殷勤忠诚， 信靠主丰盛恩慈圣言，必得见神逐一成全， 将你所需都告诉神，他不撇下信靠的人。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 3,
+  "elapsedSeconds": 0.265
+}

@@ -1465,5 +1465,89 @@
       "sourceBoundaryNoteIndex": 67
     },
     "formReview": "正文前三行涵盖主歌及其结尾的奇异大爱句；独立副歌从明确标注 Refrain 的第25小节起，不与第17小节主歌中的同句混淆。 已核对原文与译文分句；MusicXML只取最高声部所属的第一声部，和弦首音取最高音，不把第二声部独立起音拼入主旋律，同音连结延续不重复起音。完整旋律及分句起点与固定MIDI的所有最优序列对齐核对，每个区域均唯一，误差代价不超过12%。各实际段落仍须独立通过和声、旋律、起点0.5秒、调性区分及反复相位检查。"
+  },
+  "04-471": {
+    "targetSha256": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+    "file": "hymnary527.mid",
+    "sha256": "25548ba3c30024ccd81f05a742c3e7eb2217167718ef051ae4d9d60c36ff85af",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary527.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary527.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/This_World_Is_Not_My_Home/This_World_Is_Not_My_Home.xml",
+    "scoreReferenceSha256": "55518f2a9d47d6a2e040473ab8c7fbedfddbdcc17dff80be72be7f30c00c7a24",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "这世界非我家我停",
+        "主啊你知我无良友"
+      ],
+      [
+        "天上万众圣徒望我",
+        "主啊你知我无良友"
+      ],
+      [
+        "我将永远居住天上",
+        "主啊你知我无良友"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          11,
+          11,
+          11,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 48,
+        "pitches": [
+          2,
+          2,
+          11,
+          7,
+          11
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 94,
+      "midiNoteCount": 94,
+      "editCost": 0,
+      "runnerUpCost": 71,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 48,
+          "possibleMidiNoteIndices": [
+            48
+          ],
+          "at": 19.2
+        }
+      ],
+      "offsets": [
+        0.0,
+        19.2
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true
+    },
+    "performedScoreMeasures": [
+      "1-15",
+      "6-10"
+    ],
+    "formReview": "公开MusicXML明确标记：第6小节Segno，第10小节Fine，第11小节Refrain，第15小节D.S. al Fine。实际完整乐段须先走1至15小节，再回6至10小节，70个直列主旋律音加回段24音，完整94音与固定MIDI核对。主歌正文前四行对应第1至10小节，副歌阅读区域从第11小节O Lord起，包含其后回唱的主歌末两句，不能将未展开的70音误当作完整乐段。各段两个阅读区域仍须原有独立和声、旋律、起点、调性及反复相位核对。"
   }
 }

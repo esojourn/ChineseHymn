@@ -4568,5 +4568,575 @@
       ]
     },
     "formReview": "主歌第1至8小节；第9小节副歌Bring起，对应“领他们归羊圈”区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+  },
+  "01-193": {
+    "targetSha256": "dca4dd27c664126821f3e9d6df4eb2026f5bee4e6dd0c4584cd82224154b1fb1",
+    "file": "timeless-Jesus_Is_Tenderly_Calling.mid",
+    "sha256": "b7350036cef38a9c8d32a9a7977fe4c9a3531796077641fa55f1d75d7c81ed1b",
+    "url": "https://library.timelesstruths.org/library/music/J/Jesus_Is_Tenderly_Calling/Jesus_Is_Tenderly_Calling.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Jesus_Is_Tenderly_Calling/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/J/Jesus_Is_Tenderly_Calling/Jesus_Is_Tenderly_Calling.xml",
+    "scoreReferenceSha256": "652537dc5c211131c4880438134d05e62e6d22a7d5b69977734b14ca5188f8f8",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "耶稣正柔声呼召你",
+        "今日召你今日召你"
+      ],
+      [
+        "耶稣今呼召劳苦者",
+        "今日召你今日召你"
+      ],
+      [
+        "耶稣今正等待盼你",
+        "今日召你今日召你"
+      ],
+      [
+        "耶稣正呼召请听他",
+        "今日召你今日召你"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          7,
+          7,
+          7,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 35,
+        "pitches": [
+          0,
+          11,
+          9,
+          11,
+          2
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 56,
+      "midiNoteCount": 56,
+      "editCost": 0,
+      "runnerUpCost": 41,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 35,
+          "possibleMidiNoteIndices": [
+            35
+          ],
+          "at": 18.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        18.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        35
+      ]
+    },
+    "formReview": "Jesus Is Tenderly Calling，前四行主歌对应原谱第1至8小节，末两行为第9小节Calling起的副歌。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "01-378": {
+    "targetSha256": "c2938988e706a372ba8cf4c5a4fd0afd48ec9b17b20fb49cca50b081d2d4c279",
+    "file": "timeless-Am_I_a_Soldier_of_the_Cross.mid",
+    "sha256": "7f7702e8c8fad8736f94b19db43f3b961863fef46ed35d3e969cfa183f229507",
+    "url": "https://library.timelesstruths.org/library/music/A/Am_I_a_Soldier_of_the_Cross/Am_I_a_Soldier_of_the_Cross.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Am_I_a_Soldier_of_the_Cross/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/Am_I_a_Soldier_of_the_Cross/Am_I_a_Soldier_of_the_Cross.xml",
+    "scoreReferenceSha256": "b6f61d1a926e53c72ac5ccd74a6f7f33711fadc243705c1a3b93f6c91ed3a712",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我是否要背负十架"
+      ],
+      [
+        "别人苦战要得荣耀"
+      ],
+      [
+        "岂可安逸如无仇敌"
+      ],
+      [
+        "若要得胜必须征战"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          9,
+          9,
+          9,
+          7
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 29,
+      "midiNoteCount": 29,
+      "editCost": 0,
+      "runnerUpCost": 23,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "Am I a Soldier of the Cross / Arlington，正文每段两行涵盖完整四句，为单个阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "02-352": {
+    "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+    "file": "timeless-I_Would_Be_True.mid",
+    "sha256": "ddeae036c2a9605e9ee7178f4e86ee27ac156bd51e72823c5a5aec4d46a04314",
+    "url": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/I_Would_Be_True/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.xml",
+    "scoreReferenceSha256": "05fa0e305ad10e518a8e1ba93295bb8c9d8655d7cbf55775e85d839be127a4a9",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我要忠诚因别人对"
+      ],
+      [
+        "我要爱人爱敌也爱"
+      ],
+      [
+        "因主忠诚对我他也"
+      ],
+      [
+        "我主爱人爱敌也爱"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          5,
+          3,
+          10,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 52,
+      "midiNoteCount": 52,
+      "editCost": 0,
+      "runnerUpCost": 37,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "I Would Be True / Peek，全文每段四行是单个阅读区域，包含末句谱面重唱；第三、四段中文补充歌词仍须实际音乐核对。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "02-353": {
+    "targetSha256": "48beaf4a776e148a6963fd19aa5e8efbdb3be149ca363f279e12ea8e48123584",
+    "file": "timeless-I_Would_Be_True.mid",
+    "sha256": "ddeae036c2a9605e9ee7178f4e86ee27ac156bd51e72823c5a5aec4d46a04314",
+    "url": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/I_Would_Be_True/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Would_Be_True/I_Would_Be_True.xml",
+    "scoreReferenceSha256": "05fa0e305ad10e518a8e1ba93295bb8c9d8655d7cbf55775e85d839be127a4a9",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我要忠诚因别人对"
+      ],
+      [
+        "我要爱人爱敌也爱"
+      ],
+      [
+        "因主忠诚对我他也"
+      ],
+      [
+        "我主爱人爱敌也爱"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          5,
+          3,
+          10,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 52,
+      "midiNoteCount": 52,
+      "editCost": 0,
+      "runnerUpCost": 37,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "I Would Be True / Peek，第二录音版单独定位，不能复用02-352起点；每段四行覆盖完整乐段及末句谱面重唱。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "02-496": {
+    "targetSha256": "1e9dc409b2473fbae988819fac16102c67f7a85faa891fcace12d8569b48fdd7",
+    "file": "timeless-The_Day_Thou_Gavest_Lord_Is_Ended.mid",
+    "sha256": "d71aeb34d1ebdc7ec0f976fa52adf28c2bb15ac007def3efbe7ebae4840fa73d",
+    "url": "https://library.timelesstruths.org/library/music/T/The_Day_Thou_Gavest_Lord_Is_Ended/The_Day_Thou_Gavest_Lord_Is_Ended.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/The_Day_Thou_Gavest_Lord_Is_Ended/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/The_Day_Thou_Gavest_Lord_Is_Ended/The_Day_Thou_Gavest_Lord_Is_Ended.xml",
+    "scoreReferenceSha256": "684d2aed6da47fd8f303dcb5c0dbd0adbd9cc7adc397510e799f0bbd588205de",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "主赐此日转瞬已经"
+      ],
+      [
+        "我们向主奉陈至敬"
+      ],
+      [
+        "大陆海洋闹市与僻"
+      ],
+      [
+        "家国兴衰转瞬成陈"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          11,
+          0,
+          11,
+          2
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 44,
+      "midiNoteCount": 44,
+      "editCost": 0,
+      "runnerUpCost": 34,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "The Day Thou Gavest / St. Clement，正文四段依次对应原文第1、2、3、5段；每段四行为完整阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "03-001": {
+    "targetSha256": "8d2b12b1439145bd0c33d69a25a44ead8f7226d73c4faeb2762d83babed1fbbc",
+    "file": "timeless-Be_Thou_My_Vision.mid",
+    "sha256": "d1a843599b3414a5d8ac496f430d60f792b78eb8e8abfba2f6af16d76fcad9bd",
+    "url": "https://library.timelesstruths.org/library/music/B/Be_Thou_My_Vision/Be_Thou_My_Vision.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Be_Thou_My_Vision/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/B/Be_Thou_My_Vision/Be_Thou_My_Vision.xml",
+    "scoreReferenceSha256": "8e5f80942bcfaeb300da411805f0ab63b518ccbd0a013d30f0a8322dd48b3597",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "恳求心中主成为我"
+      ],
+      [
+        "成为我智慧成为我"
+      ],
+      [
+        "财富与虚荣非我所"
+      ],
+      [
+        "诸天之君尊你为我"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          3,
+          5,
+          3,
+          0
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 47,
+      "midiNoteCount": 47,
+      "editCost": 0,
+      "runnerUpCost": 34,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "Be Thou My Vision / Slane，正文四段依次对应原文第1、2、4、5段；每段四行为完整阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "02-386": {
+    "targetSha256": "e25e0a7f9caff55ce127827c76ad655113bfdbcee84d4c8c63d937d4443a0e6a",
+    "file": "timeless-The_Banner_of_the_Cross.mid",
+    "sha256": "5e6549ce7d6664fe2c9a938ddedcad961500a8bd6ef17ff554e30773826f6392",
+    "url": "https://library.timelesstruths.org/library/music/T/The_Banner_of_the_Cross/The_Banner_of_the_Cross.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/The_Banner_of_the_Cross/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/The_Banner_of_the_Cross/The_Banner_of_the_Cross.xml",
+    "scoreReferenceSha256": "e54f5197c8bb334833f4f544e0b988935eea4372df3996f8d48fe2cb77d76b19",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "主基督众军兵齐昂"
+      ],
+      [
+        "仇敌虽然凶猛如洪"
+      ],
+      [
+        "越过海洋陆地到天"
+      ],
+      [
+        "荣耀黎明已近主国"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          3,
+          5,
+          5,
+          5
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 65,
+      "midiNoteCount": 65,
+      "editCost": 0,
+      "runnerUpCost": 48,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "The Banner of the Cross / Royal Banner，正文四行已包含完整主歌及副歌，为单个阅读区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+  },
+  "03-010": {
+    "targetSha256": "763663183eb2021ca72767fe4a1f2ce8ae8064c4a942493b5cba379be9b4eb82",
+    "file": "timeless-My_Saviors_Love.mid",
+    "sha256": "59fc038c5eeb3a41d2bd7522acf1e9f79d4846d25b881fcc9a28bacbb9d01aba",
+    "url": "https://library.timelesstruths.org/library/music/M/My_Saviors_Love/My_Saviors_Love.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/My_Saviors_Love/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/M/My_Saviors_Love/My_Saviors_Love.xml",
+    "scoreReferenceSha256": "991f72803ad886e94e773d1c4cefc1c785aee9fcd1ca6db67d6c843da5b9b594",
+    "verseCount": 5,
+    "regionOpenings": [
+      [
+        "我在拿撒勒人耶稣",
+        "何等希奇何等奇妙"
+      ],
+      [
+        "为我他在园中祷告",
+        "何等希奇何等奇妙"
+      ],
+      [
+        "天使看见就怜恤他",
+        "何等希奇何等奇妙"
+      ],
+      [
+        "他除去我罪与我忧",
+        "何等希奇何等奇妙"
+      ],
+      [
+        "当那日与蒙赎的人",
+        "何等希奇何等奇妙"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          3,
+          0,
+          3,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 30,
+        "pitches": [
+          0,
+          0,
+          10,
+          8,
+          3
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 61,
+      "midiNoteCount": 61,
+      "editCost": 0,
+      "runnerUpCost": 44,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            30
+          ],
+          "at": 19.8
+        }
+      ],
+      "offsets": [
+        0.0,
+        19.8
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        30
+      ]
+    },
+    "formReview": "My Savior’s Love / I Stand Amazed，正文主歌对应第1至10小节，独立副歌从第11小节How起。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
   }
 }

@@ -45,7 +45,7 @@ def generate(song, profile, cache):
     started = time.monotonic()
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 1, 'mode': 'image-rows', 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 2, 'mode': 'image-rows', 'profile': profile}}
     try:
         if song['sha256'] != profile['targetSha256']:
             raise ValueError('图片素材与已经核对的 MIDI 配置不一致')

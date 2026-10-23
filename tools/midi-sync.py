@@ -53,12 +53,15 @@ def midi_features(path):
                 continue
             key = message.channel, message.note
             if message.type == 'note_on' and message.velocity:
-                active[key] = (tick, message.velocity)
+                active.setdefault(key, []).append((tick, message.velocity))
             elif key in active:
-                start, velocity = active.pop(key)
+                start, velocity = active[key].pop()
+                if not active[key]:
+                    del active[key]
                 notes.append((index, at(start), at(tick), message.note, velocity))
-        for (channel, pitch), (start, velocity) in active.items():
-            notes.append((index, at(start), duration, pitch, velocity))
+        for (channel, pitch), pending in active.items():
+            for start, velocity in pending:
+                notes.append((index, at(start), duration, pitch, velocity))
     times = np.arange(0, duration, .1)
     harmony = np.zeros((12, len(times)), dtype=np.float32)
     melody = np.full(len(times), -1, dtype=int)
@@ -87,7 +90,8 @@ def midi_features(path):
         if not active:
             continue
         highest = max(active)
-        if any(note[1] == start and note[3] == highest for note in top_staff):
+        held = any(note[1] < start < note[2] and note[3] == highest for note in top_staff)
+        if not held and any(note[1] == start and note[3] == highest for note in top_staff):
             onsets.append((start - first_note, highest % 12))
     row['onsetTimes'] = [at for at, pitch in onsets]
     row['onsetPitches'] = [pitch for at, pitch in onsets]
@@ -97,7 +101,7 @@ def midi_features(path):
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 1, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 2, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:

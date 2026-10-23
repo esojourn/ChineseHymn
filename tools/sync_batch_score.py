@@ -25,6 +25,17 @@ def accidental_offsets(characters, indices):
     return offsets
 
 
+def is_barline(components, column, height):
+    # OCR character columns can miss a thin bar by several pixels. Inspect the
+    # nearest printed component, while retaining a real short digit beside it.
+    candidates = [item for item in components if item[3] >= height * .25 and item[2] <= height * 1.5]
+    if not candidates:
+        return False
+    x, y, width, span, area = min(candidates, key=lambda item: abs(item[0] + item[2] / 2 - column))
+    return (abs(x + width / 2 - column) <= height * .5 and width <= height * .25 and
+            span >= height * .85 and y <= 2 and y + span >= height - 2)
+
+
 def optical_rhythm(ink, positions, original_height, fallback):
     import cv2
     count, labels, stats, centroids = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
@@ -64,7 +75,7 @@ def note_rows(source, recognition, cache):
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
-        if data['sha256'] == recognition['sha256'] and data.get('version') == 2 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
+        if data['sha256'] == recognition['sha256'] and data.get('version') == 3 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
             return data['rows']
     import cv2
     from PIL import Image
@@ -81,6 +92,8 @@ def note_rows(source, recognition, cache):
         if not band:
             raise ValueError('需重做带坐标映射的谱行识别')
         crop = image[band[0]:band[1]]
+        ink = np.mean(crop, axis=2) < 150
+        _, _, components, _ = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
         results, _ = _ocr.text_rec(crop, return_word_box=True)
         text, confidence, detail = results[0]
         length, words, columns, states, probabilities = detail
@@ -93,8 +106,9 @@ def note_rows(source, recognition, cache):
                 continue
             # A tall bar mistaken for "1" must not become a melody note.
             column = round(x * w)
-            stripe = np.mean(crop[:, max(0, column - 3):min(w, column + 4)], axis=2) < 150
-            if char == '1' and stripe.size and stripe.sum(axis=0).max() / crop.shape[0] > .85:
+            stripe = ink[:, max(0, column - 3):min(w, column + 4)]
+            if char == '1' and (is_barline(components[1:], column, crop.shape[0]) or
+                                stripe.size and stripe.sum(axis=0).max() / crop.shape[0] > .85):
                 continue
             notes.append(int(char))
             positions.append(x)
@@ -120,7 +134,7 @@ def note_rows(source, recognition, cache):
                      'x': positions, 'spatialWeights': spatial, 'rhythmWeights': optical,
                      'ocrRhythmWeights': rhythm, 'opticalDiagnostics': diagnostics})
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps({'version': 2, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+    destination.write_text(json.dumps({'version': 3, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
     return rows
 
 

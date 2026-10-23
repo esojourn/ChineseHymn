@@ -347,5 +347,66 @@
         20.0
       ]
     }
+  },
+  "05-108": {
+    "targetSha256": "fcd98fa9ffd4a4b003294f49f7461c86152611c27e0cfb09a55f996e4037e2c2",
+    "file": "hymnary108.mid",
+    "sha256": "f32a1c6abcbf5e5519047e222fadc11773fb536a757f6e8384dd9dca573c5e12",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary108.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary108.htm",
+    "verseCount": 3,
+    "formReview": "同名、同曲的完整简谱音符序列；剔除错认作 1 的小节竖线后与 MIDI 高声部起音逐个一致。每个谱行的起点在所有最优序列匹配中确定，实际录音另须通过和声与旋律的完整核对。",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 72,
+      "midiNoteCount": 72,
+      "editCost": 0,
+      "runnerUpCost": 54,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 11,
+          "possibleMidiNoteIndices": [
+            11
+          ],
+          "at": 8.0
+        },
+        {
+          "scoreNoteIndex": 21,
+          "possibleMidiNoteIndices": [
+            21
+          ],
+          "at": 16.0
+        },
+        {
+          "scoreNoteIndex": 37,
+          "possibleMidiNoteIndices": [
+            37
+          ],
+          "at": 23.5
+        },
+        {
+          "scoreNoteIndex": 56,
+          "possibleMidiNoteIndices": [
+            56
+          ],
+          "at": 30.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0,
+        16.0,
+        23.5,
+        30.0
+      ]
+    }
   }
 }

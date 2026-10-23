@@ -14,6 +14,7 @@ try:
     from sync_batch_align import align_windows, confirm_boundaries, export_result, review_recordings
     from sync_batch_audio import alignment_band
     from sync_batch_symbolic import score_row_offsets
+    from sync_batch_score import is_barline
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
     transfer_spec.loader.exec_module(transfer)
@@ -32,6 +33,14 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional score dependencies')
+    def test_shifted_ocr_barline_is_removed_but_adjacent_digit_one_is_preserved(self):
+        components = [[30, 0, 3, 40, 110], [70, 4, 11, 32, 230], [85, 0, 3, 40, 100]]
+        self.assertTrue(is_barline(components, 22, 40))
+        self.assertTrue(is_barline(components, 32, 40))
+        self.assertFalse(is_barline(components, 74, 40))
+        self.assertFalse(is_barline([[30, 4, 5, 32, 150]], 32, 40))
+
     def test_cache_writers_with_the_same_pid_do_not_share_a_temporary_file(self):
         from concurrent.futures import ThreadPoolExecutor
         from threading import Barrier
@@ -381,6 +390,29 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(int(np.argmax(harmony[:, 16])), 4)
             self.assertEqual(row['onsetPitches'], [0, 4])
             self.assertEqual(row['onsetTimes'], [0, 1.5])
+
+    @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
+    def test_overlapping_unison_does_not_erase_the_held_soprano(self):
+        import mido
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'unison.mid'
+            score = mido.MidiFile(ticks_per_beat=480)
+            score.tracks.append(mido.MidiTrack([
+                mido.Message('note_on', note=76, velocity=90),
+                mido.Message('note_on', note=72, velocity=30),
+                mido.Message('note_off', note=72, time=480),
+                mido.Message('note_on', note=76, velocity=30),
+                mido.Message('note_off', note=76, time=480),
+                mido.Message('note_on', note=74, velocity=30, time=480),
+                mido.Message('note_off', note=74, time=240),
+                mido.Message('note_off', note=76, time=240),
+                mido.Message('note_on', note=77, velocity=90),
+                mido.Message('note_off', note=77, time=480)]))
+            score.save(path)
+            duration, (times, harmony), row = midi_sync.midi_features(path)
+            self.assertEqual(row['onsetPitches'], [4, 5])
+            self.assertEqual(row['onsetTimes'], [0, 2])
+            self.assertEqual(row['pitchOffsets'][17], 4)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
     def test_symbolic_score_mapping_rejects_an_ambiguous_repeated_opening_note(self):

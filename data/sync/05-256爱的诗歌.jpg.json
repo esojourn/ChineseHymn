@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "songId": "05-256",
+  "status": "reviewed",
+  "source": {
+    "file": "05-256爱的诗歌.jpg",
+    "sha256": "5ff4ba3f376aa59e24045bcdfc4f598506037f8ed820cc42736f3af6c9e4fda2",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-256爱的诗歌.mp3",
+      "sha256": "d2cfeaf4c8ae75f4a9f57bd13d3b3679fa2b411a158efd53910a046e4682a319",
+      "duration": 181.15918367346939,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.146426,
+      "bottom": 0.229591
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.179506,
+      "bottom": 0.262671
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.212586,
+      "bottom": 0.295208
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.245124,
+      "bottom": 0.328831
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.338941,
+      "bottom": 0.422106
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.371479,
+      "bottom": 0.454101
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.404017,
+      "bottom": 0.486639
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.436554,
+      "bottom": 0.519177
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.529287,
+      "bottom": 0.611909
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.561282,
+      "bottom": 0.643905
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.59382,
+      "bottom": 0.677527
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.6269,
+      "bottom": 0.709523
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.720717,
+      "bottom": 0.803882
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.753798,
+      "bottom": 0.837505
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.786878,
+      "bottom": 0.868958
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.818873,
+      "bottom": 0.902038
+    }
+  },
+  "cues": [
+    {
+      "at": 5.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.95,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.85,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.9,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 71.9,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 82.8,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 93.8,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 104.8,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 115.85,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.8,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.8,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 148.8,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 159.8,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 170.7,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed optical rhythm; full symbolic pitch-sequence verification; every row independently matched in each performed verse; harmony comparison retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "爱从上帝而来，爱本就是上帝。",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "爱是敬拜真神，爱神也爱兄弟。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "爱是联络全德，．爱是荣神益人，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "爱是荣耀主名，爱是爱人如己。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "爱是恒久忍耐，爱不轻易发怒，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "爱是又有恩慈，爱是从不嫉妒，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "爱是永不自夸，爱是决不张狂，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "爱不做害羞事，爱不求已益处。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "爱不计算人恶，爱不喜欢不义，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "爱是凡事包容，爱只喜欢真理，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "爱是凡事相信，爱是凡事盼望，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "爱是凡事忍耐，爱是永不止息。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "爱是心存圣洁，爱是胸怀坦白，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "爱是饥渴慕义，爱是相互信赖。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "爱人不可虚假，爱里没有惧怕，",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "爱能胜过罪恶，命令总归是爱。",
+        "label": "第4段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-256爱的诗歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

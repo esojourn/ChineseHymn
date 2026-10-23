@@ -1,0 +1,246 @@
+{
+  "songId": "01-493",
+  "source": "01-493像长江大河.txt",
+  "sourceHash": "65b0bbaa553776127d7d432a8958a789015d4d6507256b28da05555159684b3f",
+  "trackHashes": [
+    {
+      "file": "01-493像长江大河.mp3",
+      "sha256": "322f750480785657fc9971b4f180f59f6bf753da7241ed746d7466be3321ac7b"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 3,
+    "profile": {
+      "targetSha256": "65b0bbaa553776127d7d432a8958a789015d4d6507256b28da05555159684b3f",
+      "file": "hymnary493.mid",
+      "sha256": "a811aeb9a1b3c44b7bff6ee90bb6e66e8fa0c92def97e9054c58fe3a5f8b8d79",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary493.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary493.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/L/Like_a_River_Glorious/Like_a_River_Glorious.xml",
+      "scoreReferenceSha256": "51cb4f2fedb59812a53c6fa20f2f6cc504b725d4473113fb5be5c34deb4db09f",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "神完全的平安",
+          "坚定依靠救主"
+        ],
+        [
+          "躲藏祂恩手中-何等的护庇！ 仇敌无法追踪",
+          "坚定依靠救主"
+        ],
+        [
+          "每喜乐或忧伤",
+          "坚定依靠救主"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            5,
+            7,
+            7,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 44,
+          "pitches": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        }
+      ],
+      "formReview": "已核对同曲 Wye Valley 的 MusicXML：主歌四个歌词长句对应前16小节，副歌重唱第9至16小节；参考MIDI主歌首音为索引0，副歌首音为索引44（32秒）。正文各段前四行为主歌，后两行为副歌。每段、每个阅读区域仍须通过实际录音和声及旋律的独立定位，不能用文字长度或固定速度推算。",
+      "symbolicReferenceReview": {
+        "method": "MusicXML top staff highest note of each chord; all 44 verse onsets followed by the 22-onset refrain repeat",
+        "scoreOnsetCount": 44,
+        "referenceOnsetCount": 66,
+        "allPitchesAgree": true,
+        "refrainFirstOnsetIndex": 44
+      }
+    },
+    "referencePeriod": 47.875,
+    "music": {
+      "period": 57.6,
+      "similarity": 0.997028648853302,
+      "initialOnsetEstimate": 17.3,
+      "shifts": [
+        0.0,
+        57.6,
+        115.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3072868188222249,
+            "key": 8,
+            "at": 19.8,
+            "span": 57.3,
+            "starts": [
+              19.3,
+              57.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5360530747307671,
+            "key": 1,
+            "at": 17.3,
+            "span": 47.8,
+            "starts": [
+              16.8,
+              47.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.304943667517768,
+            "key": 8,
+            "starts": [
+              19.200000762939453,
+              57.599998474121094
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.4001031186845567,
+            "key": 3,
+            "starts": [
+              33.5,
+              65.69999694824219
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3073228465186225,
+            "key": 8,
+            "at": 77.4,
+            "span": 57.3,
+            "starts": [
+              76.9,
+              115.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5354521009657118,
+            "key": 1,
+            "at": 74.9,
+            "span": 47.8,
+            "starts": [
+              74.4,
+              105.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.3048749764760335,
+            "key": 8,
+            "starts": [
+              76.80000305175781,
+              115.19999694824219
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.3994102742936876,
+            "key": 3,
+            "starts": [
+              91.0999984741211,
+              119.19999694824219
+            ]
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3070572217305501,
+            "key": 8,
+            "at": 135.0,
+            "span": 57.3,
+            "starts": [
+              134.5,
+              172.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.535430802239312,
+            "key": 1,
+            "at": 132.5,
+            "span": 47.8,
+            "starts": [
+              132.0,
+              163.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.30480753050910103,
+            "key": 8,
+            "starts": [
+              134.39999389648438,
+              172.8000030517578
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.39716174867418075,
+            "key": 3,
+            "starts": [
+              148.6999969482422,
+              176.8000030517578
+            ]
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      32.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "神完全的平安，像长江大河； 不断向前淹漫，全胜不退落。 完全，却是天天越流越深浡； 完全，却是面面越流越广阔。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "躲藏祂恩手中-何等的护庇！ 仇敌无法追踪，对头难站立。 无担忧的波涛，无挂虑的黑影， 无慌张的风暴能搅扰我灵。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "每喜乐或忧伤，皆从天下降； 随着爱的太阳，尽我晷仪上。 我的所有办法，就是全心信； 谁是全心靠祂，必识祂全真。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 1.474
+}

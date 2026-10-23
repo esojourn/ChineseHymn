@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "01-493",
+  "status": "reviewed",
+  "source": {
+    "file": "01-493像长江大河.txt",
+    "sha256": "65b0bbaa553776127d7d432a8958a789015d4d6507256b28da05555159684b3f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-493像长江大河.mp3",
+      "sha256": "322f750480785657fc9971b4f180f59f6bf753da7241ed746d7466be3321ac7b",
+      "duration": 194.03755102040816,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 19.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 57.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.85,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 134.45,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 172.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "神完全的平安，像长江大河； 不断向前淹漫，全胜不退落。 完全，却是天天越流越深浡； 完全，却是面面越流越广阔。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "躲藏祂恩手中-何等的护庇！ 仇敌无法追踪，对头难站立。 无担忧的波涛，无挂虑的黑影， 无慌张的风暴能搅扰我灵。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "每喜乐或忧伤，皆从天下降； 随着爱的太阳，尽我晷仪上。 我的所有办法，就是全心信； 谁是全心靠祂，必识祂全真。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "坚定依靠救主，必全然蒙福， 得祂应许护庇，完全的安息。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-493像长江大河.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,1429 @@
+{
+  "songId": "05-256",
+  "source": "05-256爱的诗歌.jpg",
+  "sourceHash": "5ff4ba3f376aa59e24045bcdfc4f598506037f8ed820cc42736f3af6c9e4fda2",
+  "trackHashes": [
+    {
+      "file": "05-256爱的诗歌.mp3",
+      "sha256": "d2cfeaf4c8ae75f4a9f57bd13d3b3679fa2b411a158efd53910a046e4682a319"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 3,
+    "mode": "image-symbolic-with-optical",
+    "profile": {
+      "targetSha256": "5ff4ba3f376aa59e24045bcdfc4f598506037f8ed820cc42736f3af6c9e4fda2",
+      "file": "constellations-winter.mid",
+      "sha256": "981f9422b8a0ce9e99a63329add616032e1f565e6fb5a05185fd9890800235e5",
+      "url": "https://www13.big.or.jp/~sparrow/constellations-in-winter.mid",
+      "textReferenceUrl": "https://www13.big.or.jp/~sparrow/MIDI-constellations_in_winter.html",
+      "verseCount": 4,
+      "referenceCycle": "first-melody-track",
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 60,
+        "midiNoteCount": 61,
+        "editCost": 6,
+        "runnerUpCost": 43,
+        "semitoneShift": 10,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 15,
+            "possibleMidiNoteIndices": [
+              15
+            ],
+            "at": 10.6667
+          },
+          {
+            "scoreNoteIndex": 30,
+            "possibleMidiNoteIndices": [
+              31
+            ],
+            "at": 22.2666
+          },
+          {
+            "scoreNoteIndex": 45,
+            "possibleMidiNoteIndices": [
+              46
+            ],
+            "at": 32.9333
+          }
+        ],
+        "offsets": [
+          0.0,
+          10.6667,
+          22.2666,
+          32.9333
+        ]
+      },
+      "formReview": "原图四个谱行与《冬の星座 / Mollie Darling》参考主旋律全序列核对，60个原谱音符与61个参考音符的编辑代价6，逐行首音在所有最优路径中唯一，已目视核对图片。MIDI不同乐器接续演奏两段，参考范围明确从首旋律轨的第一个音起至该轨最后音结束，保留原MIDI速度变化及这段全部伴奏，不按歌曲时长裁切。实际各段、各音轨仍须和声与旋律逐行独立通过。 参考的伴奏编配与目标不同（和声匹配代价约0.50，未通过），不将其记为和声通过。采用完整 MIDI 旋律与原图独立提取的光学节奏两组模板，原有匹配代价、调性区分、完整乐段跨度、每行0.5秒及各段相位要求全部保留；和声失败记录保留为诊断。",
+      "mode": "symbolic-melody-and-optical"
+    },
+    "sourceRows": [
+      {
+        "text": "1.23561|5-3-|1.23653|2---—",
+        "confidence": 0.8701073917058798,
+        "notes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          1,
+          5,
+          3,
+          1,
+          2,
+          3,
+          6,
+          5,
+          3,
+          2
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.08854166666666667,
+          0.14583333333333334,
+          0.1875,
+          0.22395833333333334,
+          0.2604166666666667,
+          0.296875,
+          0.359375,
+          0.4322916666666667,
+          0.5364583333333334,
+          0.5885416666666666,
+          0.6354166666666666,
+          0.6770833333333334,
+          0.7239583333333334,
+          0.7604166666666666,
+          0.828125
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          2.0,
+          2.0,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "1.23561|5-3-|6.71323|1---—",
+        "confidence": 0.8764438119072181,
+        "notes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          1,
+          5,
+          3,
+          6,
+          7,
+          1,
+          3,
+          2,
+          3,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09137055837563451,
+          0.14213197969543148,
+          0.18781725888324874,
+          0.2233502538071066,
+          0.25888324873096447,
+          0.29441624365482233,
+          0.3553299492385787,
+          0.43147208121827413,
+          0.5329949238578681,
+          0.5888324873096447,
+          0.6294416243654822,
+          0.6751269035532995,
+          0.7208121827411168,
+          0.7563451776649747,
+          0.8274111675126904
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          2.0,
+          2.0,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "1. 72176|5-3-|1.72153|2---|",
+        "confidence": 0.849879264831543,
+        "notes": [
+          1,
+          7,
+          2,
+          1,
+          7,
+          6,
+          5,
+          3,
+          1,
+          7,
+          2,
+          1,
+          5,
+          3,
+          2
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.09137055837563451,
+          0.14213197969543148,
+          0.18781725888324874,
+          0.2233502538071066,
+          0.25888324873096447,
+          0.29441624365482233,
+          0.3553299492385787,
+          0.4263959390862944,
+          0.5329949238578681,
+          0.5888324873096447,
+          0.6294416243654822,
+          0.6751269035532995,
+          0.7208121827411168,
+          0.7563451776649747,
+          0.8274111675126904
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5,
+          2.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          2.0,
+          2.0,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "1.23561—5-3-|6.71323|1---",
+        "confidence": 0.9113347601890563,
+        "notes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          1,
+          5,
+          3,
+          6,
+          7,
+          1,
+          3,
+          2,
+          3,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.08854166666666667,
+          0.140625,
+          0.1875,
+          0.21875,
+          0.2552083333333333,
+          0.2916666666666667,
+          0.3541666666666667,
+          0.4270833333333333,
+          0.53125,
+          0.5885416666666666,
+          0.6302083333333334,
+          0.6770833333333334,
+          0.71875,
+          0.7552083333333334,
+          0.828125
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          0.5,
+          1.0,
+          1.0,
+          1.5,
+          1.5,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          2.0,
+          2.0,
+          1.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      }
+    ],
+    "symbolicRows": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 60,
+      "midiNoteCount": 61,
+      "editCost": 6,
+      "runnerUpCost": 43,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 15,
+          "possibleMidiNoteIndices": [
+            15
+          ],
+          "at": 10.6667
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            31
+          ],
+          "at": 22.2666
+        },
+        {
+          "scoreNoteIndex": 45,
+          "possibleMidiNoteIndices": [
+            46
+          ],
+          "at": 32.9333
+        }
+      ],
+      "offsets": [
+        0.0,
+        10.6667,
+        22.2666,
+        32.9333
+      ]
+    },
+    "referencePeriod": 43.29226800000016,
+    "recordings": {
+      "05-256爱的诗歌.mp3": {
+        "music": {
+          "period": 44.0,
+          "similarity": 0.9781272411346436,
+          "initialOnsetEstimate": 1.68,
+          "shifts": [
+            0.0,
+            44.0,
+            87.9,
+            131.9
+          ]
+        },
+        "matches": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.4998400254683061,
+                "key": 11,
+                "at": 6.0,
+                "span": 43.0,
+                "starts": [
+                  6.0,
+                  16.8,
+                  28.2,
+                  38.8
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5766988927667791,
+                "key": 4,
+                "at": 8.1,
+                "span": 37.6,
+                "starts": [
+                  8.1,
+                  16.8,
+                  29.1,
+                  38.9
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.24496416612104935,
+                "key": 11,
+                "starts": [
+                  5.900000095367432,
+                  16.899999618530273,
+                  28.0,
+                  38.900001525878906
+                ],
+                "span": 43.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.4443938515403054,
+                "key": 4,
+                "starts": [
+                  8.100000381469727,
+                  17.200000762939453,
+                  29.299999237060547,
+                  39.400001525878906
+                ],
+                "span": 37.599998474121094
+              }
+            },
+            "melodyTemplate": "spatialWeights",
+            "opticalMelody": {
+              "best": {
+                "cost": 0.17015953063964845,
+                "key": 9,
+                "starts": [
+                  5.900000095367432,
+                  16.899999618530273,
+                  27.899999618530273,
+                  38.79999923706055
+                ],
+                "span": 43.79999923706055
+              },
+              "runnerUp": {
+                "cost": 0.42533819025213065,
+                "key": 2,
+                "starts": [
+                  14.399999618530273,
+                  22.399999618530273,
+                  30.399999618530273,
+                  38.79999923706055
+                ],
+                "span": 31.30000114440918
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.5029812899502841,
+                "key": 11,
+                "at": 49.9,
+                "span": 43.1,
+                "starts": [
+                  49.9,
+                  60.8,
+                  72.3,
+                  82.8
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5745683843439275,
+                "key": 4,
+                "at": 52.0,
+                "span": 37.6,
+                "starts": [
+                  52.0,
+                  60.8,
+                  73.0,
+                  82.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.24708749597722834,
+                "key": 11,
+                "starts": [
+                  49.900001525878906,
+                  60.900001525878906,
+                  72.0,
+                  82.80000305175781
+                ],
+                "span": 43.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.44258703751997513,
+                "key": 4,
+                "starts": [
+                  52.0,
+                  61.20000076293945,
+                  73.30000305175781,
+                  83.4000015258789
+                ],
+                "span": 37.69999694824219
+              }
+            },
+            "melodyTemplate": "spatialWeights",
+            "opticalMelody": {
+              "best": {
+                "cost": 0.17285490902987394,
+                "key": 9,
+                "starts": [
+                  49.900001525878906,
+                  60.900001525878906,
+                  71.80000305175781,
+                  82.80000305175781
+                ],
+                "span": 43.79999542236328
+              },
+              "runnerUp": {
+                "cost": 0.4251425656405362,
+                "key": 2,
+                "starts": [
+                  58.400001525878906,
+                  66.4000015258789,
+                  74.4000015258789,
+                  82.80000305175781
+                ],
+                "span": 31.29999542236328
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.5055409518155185,
+                "key": 11,
+                "at": 93.9,
+                "span": 43.0,
+                "starts": [
+                  93.9,
+                  104.7,
+                  116.0,
+                  126.7
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.578255878795277,
+                "key": 4,
+                "at": 96.0,
+                "span": 37.6,
+                "starts": [
+                  96.0,
+                  104.8,
+                  117.0,
+                  126.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.24849172071977096,
+                "key": 11,
+                "starts": [
+                  93.80000305175781,
+                  104.80000305175781,
+                  115.9000015258789,
+                  126.80000305175781
+                ],
+                "span": 43.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.4433900312943892,
+                "key": 4,
+                "starts": [
+                  96.0,
+                  105.0999984741211,
+                  117.19999694824219,
+                  127.4000015258789
+                ],
+                "span": 37.600006103515625
+              }
+            },
+            "melodyTemplate": "spatialWeights",
+            "opticalMelody": {
+              "best": {
+                "cost": 0.17529973116787997,
+                "key": 9,
+                "starts": [
+                  93.80000305175781,
+                  104.80000305175781,
+                  115.80000305175781,
+                  126.80000305175781
+                ],
+                "span": 43.80000305175781
+              },
+              "runnerUp": {
+                "cost": 0.425922983342951,
+                "key": 2,
+                "starts": [
+                  102.30000305175781,
+                  110.30000305175781,
+                  118.30000305175781,
+                  126.80000305175781
+                ],
+                "span": 31.300003051757812
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.5056227944113991,
+                "key": 11,
+                "at": 137.8,
+                "span": 43.1,
+                "starts": [
+                  137.8,
+                  148.7,
+                  159.9,
+                  170.7
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5777837233109908,
+                "key": 4,
+                "at": 139.9,
+                "span": 37.3,
+                "starts": [
+                  139.9,
+                  148.7,
+                  161.1,
+                  170.7
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.25132943933660334,
+                "key": 11,
+                "starts": [
+                  137.8000030517578,
+                  148.8000030517578,
+                  159.89999389648438,
+                  170.6999969482422
+                ],
+                "span": 43.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.44378759210759944,
+                "key": 4,
+                "starts": [
+                  139.89999389648438,
+                  149.10000610351562,
+                  161.1999969482422,
+                  171.3000030517578
+                ],
+                "span": 37.70001220703125
+              }
+            },
+            "melodyTemplate": "spatialWeights",
+            "opticalMelody": {
+              "best": {
+                "cost": 0.18138044530695135,
+                "key": 9,
+                "starts": [
+                  137.8000030517578,
+                  148.8000030517578,
+                  159.6999969482422,
+                  170.6999969482422
+                ],
+                "span": 43.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.4266556132923473,
+                "key": 2,
+                "starts": [
+                  146.3000030517578,
+                  154.3000030517578,
+                  162.3000030517578,
+                  170.6999969482422
+                ],
+                "span": 31.300003051757812
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "independentTimelines": {
+    "05-256爱的诗歌.mp3": {
+      "definitions": [
+        {
+          "region": "s1_v1",
+          "text": "爱从上帝而来，爱本就是上帝。",
+          "label": "第1段：第1谱行"
+        },
+        {
+          "region": "s2_v1",
+          "text": "爱是敬拜真神，爱神也爱兄弟。",
+          "label": "第1段：第2谱行"
+        },
+        {
+          "region": "s3_v1",
+          "text": "爱是联络全德，．爱是荣神益人，",
+          "label": "第1段：第3谱行"
+        },
+        {
+          "region": "s4_v1",
+          "text": "爱是荣耀主名，爱是爱人如己。",
+          "label": "第1段：第4谱行"
+        },
+        {
+          "region": "s1_v2",
+          "text": "爱是恒久忍耐，爱不轻易发怒，",
+          "label": "第2段：第1谱行"
+        },
+        {
+          "region": "s2_v2",
+          "text": "爱是又有恩慈，爱是从不嫉妒，",
+          "label": "第2段：第2谱行"
+        },
+        {
+          "region": "s3_v2",
+          "text": "爱是永不自夸，爱是决不张狂，",
+          "label": "第2段：第3谱行"
+        },
+        {
+          "region": "s4_v2",
+          "text": "爱不做害羞事，爱不求已益处。",
+          "label": "第2段：第4谱行"
+        },
+        {
+          "region": "s1_v3",
+          "text": "爱不计算人恶，爱不喜欢不义，",
+          "label": "第3段：第1谱行"
+        },
+        {
+          "region": "s2_v3",
+          "text": "爱是凡事包容，爱只喜欢真理，",
+          "label": "第3段：第2谱行"
+        },
+        {
+          "region": "s3_v3",
+          "text": "爱是凡事相信，爱是凡事盼望，",
+          "label": "第3段：第3谱行"
+        },
+        {
+          "region": "s4_v3",
+          "text": "爱是凡事忍耐，爱是永不止息。",
+          "label": "第3段：第4谱行"
+        },
+        {
+          "region": "s1_v4",
+          "text": "爱是心存圣洁，爱是胸怀坦白，",
+          "label": "第4段：第1谱行"
+        },
+        {
+          "region": "s2_v4",
+          "text": "爱是饥渴慕义，爱是相互信赖。",
+          "label": "第4段：第2谱行"
+        },
+        {
+          "region": "s3_v4",
+          "text": "爱人不可虚假，爱里没有惧怕，",
+          "label": "第4段：第3谱行"
+        },
+        {
+          "region": "s4_v4",
+          "text": "爱能胜过罪恶，命令总归是爱。",
+          "label": "第4段：第4谱行"
+        }
+      ],
+      "times": [
+        5.9,
+        16.9,
+        27.95,
+        38.85,
+        49.9,
+        60.9,
+        71.9,
+        82.8,
+        93.8,
+        104.8,
+        115.85,
+        126.8,
+        137.8,
+        148.8,
+        159.8,
+        170.7
+      ],
+      "returnIndices": [
+        0,
+        4,
+        8,
+        12
+      ]
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "s1_v1",
+      "text": "爱从上帝而来，爱本就是上帝。",
+      "label": "第1段：第1谱行"
+    },
+    {
+      "region": "s2_v1",
+      "text": "爱是敬拜真神，爱神也爱兄弟。",
+      "label": "第1段：第2谱行"
+    },
+    {
+      "region": "s3_v1",
+      "text": "爱是联络全德，．爱是荣神益人，",
+      "label": "第1段：第3谱行"
+    },
+    {
+      "region": "s4_v1",
+      "text": "爱是荣耀主名，爱是爱人如己。",
+      "label": "第1段：第4谱行"
+    },
+    {
+      "region": "s1_v2",
+      "text": "爱是恒久忍耐，爱不轻易发怒，",
+      "label": "第2段：第1谱行"
+    },
+    {
+      "region": "s2_v2",
+      "text": "爱是又有恩慈，爱是从不嫉妒，",
+      "label": "第2段：第2谱行"
+    },
+    {
+      "region": "s3_v2",
+      "text": "爱是永不自夸，爱是决不张狂，",
+      "label": "第2段：第3谱行"
+    },
+    {
+      "region": "s4_v2",
+      "text": "爱不做害羞事，爱不求已益处。",
+      "label": "第2段：第4谱行"
+    },
+    {
+      "region": "s1_v3",
+      "text": "爱不计算人恶，爱不喜欢不义，",
+      "label": "第3段：第1谱行"
+    },
+    {
+      "region": "s2_v3",
+      "text": "爱是凡事包容，爱只喜欢真理，",
+      "label": "第3段：第2谱行"
+    },
+    {
+      "region": "s3_v3",
+      "text": "爱是凡事相信，爱是凡事盼望，",
+      "label": "第3段：第3谱行"
+    },
+    {
+      "region": "s4_v3",
+      "text": "爱是凡事忍耐，爱是永不止息。",
+      "label": "第3段：第4谱行"
+    },
+    {
+      "region": "s1_v4",
+      "text": "爱是心存圣洁，爱是胸怀坦白，",
+      "label": "第4段：第1谱行"
+    },
+    {
+      "region": "s2_v4",
+      "text": "爱是饥渴慕义，爱是相互信赖。",
+      "label": "第4段：第2谱行"
+    },
+    {
+      "region": "s3_v4",
+      "text": "爱人不可虚假，爱里没有惧怕，",
+      "label": "第4段：第3谱行"
+    },
+    {
+      "region": "s4_v4",
+      "text": "爱能胜过罪恶，命令总归是爱。",
+      "label": "第4段：第4谱行"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 16,
+  "elapsedSeconds": 2.703
+}

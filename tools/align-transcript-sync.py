@@ -130,6 +130,36 @@ def confirm_transcript_windows(observations, estimates, anchor_ranges=None, anch
     return confirmed, edge_decisions
 
 
+def verified_window_times(model, tokenizer, audio, definitions, estimates, language, preceding,
+                          anchor_ranges, anchor_words, resume, save_windows):
+    observations = align_windows(model, tokenizer, audio, definitions, estimates, language,
+        resume, save_windows, preceding_texts=preceding)
+    for row in observations:
+        if 'firstWordEnd' not in row and row.get('words'):
+            offset = len(clean(context(preceding[row['index']], language, True), language))
+            letters = [word for word in row['words'] for character in clean(word['word'], language)]
+            if offset < len(letters):
+                word = letters[offset]
+                row.update(firstWord=clean(word['word'], language), firstWordStart=word['start'] + row['bounds'][0],
+                           firstWordEnd=word['end'] + row['bounds'][0], firstWordProbability=float(word['probability']))
+    for index, estimate in enumerate(estimates):
+        for window, bounds in enumerate([(8, 18), (10, 16)], 2):
+            pair = [{**row, 'index': 0} for row in observations if row['index'] == index]
+            try:
+                confirm_transcript_windows(pair, [estimate], [anchor_ranges[index]], [anchor_words[index]])
+                break
+            except ValueError:
+                pass
+            if any(row['index'] == index and row['window'] == window for row in observations):
+                continue
+            additional = align_windows(model, tokenizer, audio, [definitions[index]], [estimate], language,
+                preceding_texts=[preceding[index]], window_bounds=[bounds])
+            observations.extend({**row, 'index': index, 'window': window} for row in additional)
+            save_windows(observations)
+    times, decisions = confirm_transcript_windows(observations, estimates, anchor_ranges, anchor_words)
+    return observations, times, decisions
+
+
 def generate(song, cache, model_dir, threads):
     global _model
     start = time.monotonic()
@@ -177,33 +207,13 @@ def generate(song, cache, model_dir, threads):
             legacy.pop('extraWindows')
             if old.get('signature') == fingerprint(legacy):
                 resume = [row for row in old['windows'] if legacy_context[row['index']] == preceding[row['index']]]
-        save_windows = lambda rows: batch.save(checkpoint, {'signature': signature, 'windows': rows})
-        observations = align_windows(_model, tokenizer, audio, definitions, estimates, language,
-            resume, save_windows, preceding_texts=preceding)
-        for row in observations:
-            if 'firstWordEnd' not in row and row.get('words'):
-                offset = len(clean(context(preceding[row['index']], language, True), language))
-                letters = [word for word in row['words'] for character in clean(word['word'], language)]
-                if offset < len(letters):
-                    word = letters[offset]
-                    row.update(firstWord=clean(word['word'], language), firstWordStart=word['start'] + row['bounds'][0],
-                               firstWordEnd=word['end'] + row['bounds'][0], firstWordProbability=float(word['probability']))
-        for index, estimate in enumerate(estimates):
-            for window, bounds in enumerate([(8, 18), (10, 16)], 2):
-                pair = [{**row, 'index': 0} for row in observations if row['index'] == index]
-                try:
-                    confirm_transcript_windows(pair, [estimate], [anchor_ranges[index]], [anchor_words[index]])
-                    break
-                except ValueError:
-                    pass
-                if any(row['index'] == index and row['window'] == window for row in observations):
-                    continue
-                additional = align_windows(_model, tokenizer, audio, [definitions[index]], [estimate], language,
-                    preceding_texts=[preceding[index]], window_bounds=[bounds])
-                observations.extend({**row, 'index': index, 'window': window} for row in additional)
-                save_windows(observations)
+        evidence['windows'] = resume
+        def save_windows(rows):
+            evidence['windows'] = rows
+            batch.save(checkpoint, {'signature': signature, 'windows': rows})
+        observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
+            language, preceding, anchor_ranges, anchor_words, resume, save_windows)
         evidence['windows'] = observations
-        times, decisions = confirm_transcript_windows(observations, estimates, anchor_ranges, anchor_words)
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
         evidence['returnIndices'] = [index for index in range(1, len(definitions))

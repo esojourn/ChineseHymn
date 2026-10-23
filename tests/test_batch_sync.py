@@ -21,6 +21,9 @@ try:
     transcript_spec = importlib.util.spec_from_file_location('transcript_sync', TOOLS / 'align-transcript-sync.py')
     transcript = importlib.util.module_from_spec(transcript_spec)
     transcript_spec.loader.exec_module(transcript)
+    image_transcript_spec = importlib.util.spec_from_file_location('image_transcript_sync', TOOLS / 'align-image-transcript-sync.py')
+    image_transcript = importlib.util.module_from_spec(image_transcript_spec)
+    image_transcript_spec.loader.exec_module(image_transcript)
     midi_spec = importlib.util.spec_from_file_location('midi_sync', TOOLS / 'midi-sync.py')
     midi_sync = importlib.util.module_from_spec(midi_spec)
     midi_spec.loader.exec_module(midi_sync)
@@ -33,6 +36,38 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    def test_lyrics_only_image_keeps_number_gaps_and_the_alternate_chorus(self):
+        texts = ['歌词图片标题', '1.第一段第一行', '第一段第二行', '**共同副歌第一行', '共同副歌第二行',
+                 'Von guten Machten wunderbar', 'An jedem neuen Tag', '2.第二段第一行', '第二段第二行',
+                 '6.烛光段落第一行', '烛光段落第二行']
+        ocr = {'rows': [{'text': text, 'top': .02 + index * .07, 'bottom': .05 + index * .07,
+                         'confidence': .99} for index, text in enumerate(texts)]}
+        source = sources.image_source(ocr)
+        self.assertEqual(source['layout'], 'lyrics-only')
+        self.assertEqual(list(source['regions']), ['v1', 'chorus', 'chorus-alt-1', 'v2', 'v6'])
+        self.assertEqual([verse[0]['region'] for verse in source['verses']], ['v1', 'v2', 'v6'])
+        self.assertTrue(all(verse[1]['region'] == 'chorus' for verse in source['verses']))
+        self.assertGreater(source['regions']['chorus-alt-1']['top'], source['regions']['chorus']['bottom'])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_original_language_image_blocks_account_for_every_transcribed_segment(self):
+        segments = [{'text': text, 'words': [{'word': text.split()[0], 'start': at, 'end': at + .5}]}
+                    for text, at in [('Von guten Machten', 10), ('Gott ist bei uns', 30), ('Ende.', 50)]]
+        source = {'regions': {'v1': {}, 'chorus': {}, 'v2': {}},
+                  'blocks': {'v1': {'label': '原图第1段'}, 'chorus': {'label': '副歌'}}}
+        profile = {'language': 'de', 'blocks': [{'region': 'v1', 'segmentIndices': [0]},
+                   {'region': 'chorus', 'segmentIndices': [1]}], 'nonLyricSegments': [{'index': 2, 'text': 'Ende.'}]}
+        definitions, estimates, ranges, words = image_transcript.transcript_blocks(profile, {'segments': segments}, source)
+        self.assertEqual([row['region'] for row in definitions], ['v1', 'chorus'])
+        self.assertEqual(estimates, [10, 30])
+        self.assertEqual(words, ['von', 'gott'])
+        with self.assertRaisesRegex(ValueError, '未说明'):
+            image_transcript.transcript_blocks({**profile, 'nonLyricSegments': []}, {'segments': segments}, source)
+        with self.assertRaisesRegex(ValueError, '尾语不一致'):
+            image_transcript.transcript_blocks({**profile, 'nonLyricSegments': [{'index': 2, 'text': 'different'}]},
+                                                {'segments': segments}, source)
+        self.assertEqual(sources.clean('Mächten großzügig Straße', 'de'), 'machtengrosszugigstrasse')
+
     def test_interrupted_transcription_replays_only_the_incomplete_chunk(self):
         from types import SimpleNamespace
         class Model:

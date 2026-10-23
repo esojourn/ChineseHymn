@@ -11,7 +11,7 @@ _model = None
 
 
 def context(text, language, tail=False):
-    if language == 'en':
+    if language in ('en', 'de'):
         words = text.split()
         return ' '.join(words[-4:] if tail else words[:10])
     value = clean(text, language)
@@ -31,7 +31,7 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
             previous = preceding_texts[index] if preceding_texts is not None else definitions[index - 1]['text'] if index else ''
             preceding = context(previous, language, True)
             current = context(definitions[index]['text'], language)
-            text = preceding + (' ' if language == 'en' else '') + current
+            text = preceding + (' ' if language in ('en', 'de') else '') + current
             for window, (before, after) in enumerate(bounds):
                 start, end = max(0, estimates[index] - before), min(duration, estimates[index] + after)
                 if end <= start:
@@ -350,7 +350,9 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 if not track['reviewed']:
                     evidence.setdefault('trackExceptions', {})[item['file']] = failure
         tracks.append(track)
-    method_description = ('Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
+    method_description = ('Documented original-language verses mapped to image translation blocks; transcript and two contextual medium/int8 windows at every boundary.'
+                          if evidence.get('transcriptMatching', {}).get('mode') == 'image-translation-blocks' else
+                          'Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
                           if 'transcriptMatching' in evidence else
                           'Printed optical melody; documented MIDI harmony and five verified row-opening pitches per system; independent audio correspondence at every boundary.'
                           if evidence.get('midiMatching', {}).get('mode') == 'image-optical-with-harmony' else

@@ -72,6 +72,8 @@ def optical_rhythm(ink, positions, original_height, fallback):
 def note_rows(source, recognition, cache):
     global _ocr
     definition = image_source(recognition)
+    if not definition['systems']:
+        raise ValueError('纯歌词图片没有简谱音符，需要人声转写匹配')
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())

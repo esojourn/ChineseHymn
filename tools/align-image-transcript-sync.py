@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""Verify explicit original-language/translation blocks in a lyrics-only image."""
+import argparse
+import hashlib
+import importlib.util
+import json
+import math
+from pathlib import Path
+import time
+from sync_batch_sources import clean, image_source
+from sync_batch_align import export_result
+
+spec = importlib.util.spec_from_file_location('image_transcript_checks', Path(__file__).with_name('align-transcript-sync.py'))
+checks = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(checks)
+batch = checks.batch
+_model = None
+
+
+def transcript_blocks(profile, transcript, source):
+    segments, used, definitions, ranges, words = transcript['segments'], set(), [], [], []
+    language = profile['language']
+    for block in profile['blocks']:
+        indices = block['segmentIndices']
+        region = block['region']
+        if (region not in source['regions'] or not indices or indices != list(range(indices[0], indices[-1] + 1)) or
+                indices[0] < 0 or indices[-1] >= len(segments) or used.intersection(indices)):
+            raise ValueError('翻译对应的段落范围或图片区域无效')
+        used.update(indices)
+        selected = [segments[index] for index in indices]
+        lexical = [word for segment in selected for word in segment.get('words', []) if clean(word['word'], language)]
+        if not lexical:
+            raise ValueError('指定段落没有可核对的人声词语')
+        definitions.append({'region': region, 'label': source['blocks'][region]['label'],
+                            'text': ' '.join(segment['text'].strip() for segment in selected)})
+        first = lexical[0]
+        ranges.append((float(first['start']), float(first['end'])))
+        words.append(clean(first['word'], language))
+    for excluded in profile.get('nonLyricSegments', []):
+        index = excluded['index']
+        if (index in used or not 0 <= index < len(segments) or
+                segments[index]['text'].strip() != excluded['text'].strip()):
+            raise ValueError('非歌词片段与已经复核的尾语不一致')
+        used.add(index)
+    if used != set(range(len(segments))):
+        raise ValueError('实际转写仍有未说明的演唱片段')
+    estimates = [start for start, end in ranges]
+    if (not estimates or any(not math.isfinite(value) or value < 0 for pair in ranges for value in pair) or
+            any(end < start for start, end in ranges) or any(a + .5 >= b for a, b in zip(estimates, estimates[1:]))):
+        raise ValueError('实际演唱段落起点不递增')
+    return definitions, estimates, ranges, words
+
+
+def generate(song, profile, cache, model_dir, threads):
+    global _model
+    started = time.monotonic()
+    evidence_path = cache / 'transcript-alignment' / (song['source'] + '.json')
+    evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5,
+                'mode': 'image-translation-blocks', 'profile': profile, 'model': 'medium/int8'}}
+    try:
+        track = next((track for track in song['tracks'] if track['file'] == profile['audioFile']), None)
+        if (song['sha256'] != profile['sourceHash'] or not track or track['sha256'] != profile['audioHash'] or
+                song['reference'] != profile['audioFile']):
+            raise ValueError('图片或原语言录音已变化，需重新核对翻译段落')
+        recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
+        if recognition['sha256'] != song['sha256']:
+            raise ValueError('图片识别已失效')
+        source = image_source(recognition)
+        if source.get('layout') != 'lyrics-only':
+            raise ValueError('该配置仅用于无乐谱的歌词图片')
+        asr_path = cache / 'asr' / (song['reference'] + '.json')
+        if batch.checksum(asr_path) != profile['transcriptHash']:
+            raise ValueError('转写已变化，需重新核对演唱段落')
+        transcript = json.loads(asr_path.read_text())
+        language = profile['language']
+        if transcript['sha256'] != profile['audioHash'] or transcript['language'] != language:
+            raise ValueError('缺少匹配当前录音和原歌词语言的转写')
+        definitions, estimates, ranges, anchor_words = transcript_blocks(profile, transcript, source)
+        evidence.update(performanceOrder=definitions, estimates=estimates)
+        evidence['transcriptMatching']['transcript'] = transcript
+        if _model is None:
+            from faster_whisper import WhisperModel
+            _model = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads,
+                                  download_root=model_dir, local_files_only=True)
+        from faster_whisper.audio import decode_audio
+        from faster_whisper.tokenizer import Tokenizer
+        tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
+        audio = decode_audio(str(batch.ROOT / 'data' / song['reference']), sampling_rate=16000)
+        preceding = [definitions[index - 1]['text'] if index else '' for index in range(len(definitions))]
+        signature = hashlib.sha256(json.dumps({'source': song['sha256'], 'profile': profile,
+            'definitions': definitions, 'language': language, 'version': 1}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        checkpoint = cache / 'image-transcript-windows' / (song['source'] + '.json')
+        previous = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
+        resume = previous.get('windows', []) if previous.get('signature') == signature else []
+        evidence['windows'] = resume
+
+        def save_windows(rows):
+            evidence['windows'] = rows
+            batch.save(checkpoint, {'signature': signature, 'windows': rows})
+
+        observations, times, decisions = checks.verified_window_times(_model, tokenizer, audio, definitions, estimates,
+            language, preceding, ranges, anchor_words, resume, save_windows)
+        evidence['windows'] = observations
+        evidence['transcriptMatching']['boundaryDecisions'] = decisions
+        evidence['returnIndices'] = [index for index in range(1, len(definitions)) if
+            source['regions'][definitions[index]['region']]['top'] < source['regions'][definitions[index - 1]['region']]['top']]
+        return export_result(song, batch.ROOT, cache, evidence_path, evidence, started, source,
+                             definitions, times, [0])
+    except (ValueError, FileNotFoundError, KeyError) as error:
+        evidence.update(status='needs-calibration', reason=str(error), elapsedSeconds=round(time.monotonic() - started, 3))
+        batch.save(evidence_path, evidence)
+        return song['songId'], 'needs-calibration: ' + str(error)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--cache', type=Path, required=True)
+    parser.add_argument('--songs', nargs='+', required=True)
+    parser.add_argument('--threads', type=int, default=1)
+    parser.add_argument('--model-dir', default=str(batch.ROOT / 'sync-drafts/models'))
+    args = parser.parse_args()
+    profiles = json.loads(Path(__file__).with_name('sync-image-transcript-profiles.json').read_text())
+    unknown = sorted(set(args.songs) - profiles.keys())
+    if unknown:
+        parser.error('这些曲目尚未核对图片与原歌词对应：' + '、'.join(unknown))
+    for song in batch.inventory():
+        if song['songId'] in args.songs and song['type'] == 'image' and not song['existing']:
+            print(generate(song, profiles[song['songId']], args.cache, args.model_dir, args.threads), flush=True)

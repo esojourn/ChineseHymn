@@ -2,10 +2,10 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 219,
+    "published": 220,
     "existing": 8,
-    "pending": 139,
-    "needs-calibration": 26,
+    "pending": 120,
+    "needs-calibration": 44,
     "missing-audio": 2,
     "needs-track-alignment": 3,
     "missing-lyrics": 23
@@ -203,7 +203,7 @@
       "songId": "01-298",
       "source": "01-298靠近主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-298靠近主.mp3",
         "01-298靠近主-领唱.mp3"
@@ -213,10 +213,11 @@
       "songId": "01-314",
       "source": "01-314从我活出你自己.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-314从我活出你自己.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-322",
@@ -3590,7 +3591,7 @@
       "tracks": [
         "06-002所有美善的力量.mp3"
       ],
-      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
+      "reason": "重复乐段内的副歌相位不一致"
     },
     {
       "songId": "06-003",
@@ -3626,82 +3627,91 @@
       "songId": "06-006",
       "source": "06-006成为我异象.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-006成为我异象.mp3"
-      ]
+      ],
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-007",
       "source": "06-007耶稣深爱.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-007耶稣深爱.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-008",
       "source": "06-008我心灵得安宁.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-008我心灵得安宁.mp3"
-      ]
+      ],
+      "reason": "第 3 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-009",
       "source": "06-009天父世界歌.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-009天父世界歌.mp3"
-      ]
+      ],
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-010",
       "source": "06-010唯有基督.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-010唯有基督.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-011",
       "source": "06-011你真伟大_Alan_Jackson.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-011你真伟大_Alan_Jackson.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-012",
       "source": "06-012神要开道路.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-012神要开道路.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-013",
       "source": "06-013谷中百合花（粤）.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-013谷中百合花（粤）.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-014",
       "source": "06-014你真伟大-HomeFree清唱.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-014你真伟大-HomeFree清唱.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-015",
@@ -3716,73 +3726,81 @@
       "songId": "06-016",
       "source": "06-016直到主耶稣再来时候-大提琴.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-016直到主耶稣再来时候-大提琴.mp3"
-      ]
+      ],
+      "reason": "缺少匹配当前音频及歌词语言的转写"
     },
     {
       "songId": "06-017",
       "source": "06-017主手所造万象生灵.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-017主手所造万象生灵.mp3"
-      ]
+      ],
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-018",
       "source": "06-018谷中百合花.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-018谷中百合花.mp3"
-      ]
+      ],
+      "reason": "缺少匹配当前音频及歌词语言的转写"
     },
     {
       "songId": "06-019",
       "source": "06-019诗篇二十三.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-019诗篇二十三.mp3"
-      ]
+      ],
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-020",
       "source": "06-020我灵镇静.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-020我灵镇静.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-021",
       "source": "06-021唯一最爱是你.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-021唯一最爱是你.mp3"
-      ]
+      ],
+      "reason": "转写尚未覆盖全部正文阅读区域"
     },
     {
       "songId": "06-022",
       "source": "06-022-他眼看顾小麻雀.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-022-他眼看顾小麻雀.mp3"
-      ]
+      ],
+      "reason": "缺少匹配当前音频及歌词语言的转写"
     },
     {
       "songId": "06-023",
       "source": "06-023-他必保守我.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "06-023-他必保守我.mp3"
-      ]
+      ],
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-024",

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "01-298",
+  "status": "reviewed",
+  "source": {
+    "file": "01-298靠近主.txt",
+    "sha256": "da6de3503d5a42377fc829485662ed711bc804ecbfe76bf2f39a22bad10c1241",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-298靠近主.mp3",
+      "sha256": "3cce3677111a5db3fdf91c9b1ec76095d0866f4e4a2eb97a2943faba30d05bc1",
+      "duration": 137.424,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.05,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 31.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 71.85,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 92.9,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 111.85,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-298靠近主-领唱.mp3",
+      "sha256": "f277090fa5a6692625bdf609a354629e086ca13045e683cdc125cc7e0000d98d",
+      "duration": 118.12571428571428,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    }
+  },
+  "cues": [
+    {
+      "at": 9.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 27.85,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 45.8,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.85,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.8,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.85,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主是我永远的福分， 胜过朋友与生命； 在人生孤单旅程中， 恳求主与我同行。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "靠近主，靠近主， 靠近主，靠近主， 在人生孤单旅程中， 恳求主与我同行。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我不求世界的欢乐， 也不求世界美名； 我愿受任何的劳苦， 只求主与我同行。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "靠近主，靠近主， 靠近主，靠近主， 我愿受任何的劳苦， 只求主与我同行。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "带领我经黑暗幽谷， 安然渡苦海危程； 当天上永生门大开， 愿与主同进天庭。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "靠近主，靠近主， 靠近主，靠近主， 当天上永生门大开， 愿与主同进天庭。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-298靠近主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

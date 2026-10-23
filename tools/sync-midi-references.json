@@ -3217,5 +3217,200 @@
       ]
     },
     "formReview": "已目视核对中文第306首《哦耶稣我主我救主》：第1至7小节加第8小节首音为主歌；副歌从第8小节休止符之后的弱起“哦”开始。正文前两行对应主歌，后两行对应副歌。完整69个非连结延续起音与固定MIDI核对，只差一个重复音，所有谱行与阅读区域的起点均唯一。 逐行核对完整旋律，省略同音连结延续；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查，不从字数或总时长推算。"
+  },
+  "02-217": {
+    "targetSha256": "d6de008ebc99cec6f63ba6cc9c79521ec309d522bb587dd64283154b26926288",
+    "file": "hymnary119.mid",
+    "sha256": "83ef3ab1f5b99e28d9f689e3ded5beda460bbd0ed9921dc151dc5c658456dfe0",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary119.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary119.htm",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0836_p.svg",
+    "scoreReferenceSha256": "aa125f3619fb5aeb88b36b786343d18442d6ebf484d8d0bd3796559db3d50767",
+    "verseCount": 4,
+    "printedScoreReview": {
+      "title": "Christ is made the sure foundation",
+      "entry": 836,
+      "numberedRowsRelativeToTonic": [
+        "5 3 1 5 3 2 1 5 6 6 5 1 5 4 3",
+        "5 3 1 5 3 2 1 7 1 7 6 7 1 7 6 5",
+        "2 2 7 5 3 2 1 6 4 3 2 1 1 7 1"
+      ],
+      "pitchProofRelativeToTonicC": true
+    },
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 46,
+      "midiNoteCount": 46,
+      "editCost": 0,
+      "runnerUpCost": 34,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 15,
+          "possibleMidiNoteIndices": [
+            15
+          ],
+          "at": 8.0
+        },
+        {
+          "scoreNoteIndex": 31,
+          "possibleMidiNoteIndices": [
+            31
+          ],
+          "at": 16.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0,
+        16.0
+      ]
+    },
+    "formReview": "已核对公开第836首 Christ is made the sure foundation 的 Regent Square 完整原谱，译文每段三行覆盖六个乐句，为一个完整阅读区域。参考第119首为同曲填词；完整旋律与三条谱行均通过音符序列匹配，起点在全部最优对齐中唯一。各实际段落仍须和声、旋律、起点、调性与反复相位独立检查。"
+  },
+  "04-627": {
+    "targetSha256": "d5e4f59f9d1c5b0039e92514cd7825ace5f170fb86b2b388bba2dbd8855f03c7",
+    "file": "hymnary636.mid",
+    "sha256": "11256161efa4b7e59d337bde2669ed6fbe52638e4983ce90b51be739e562728a",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary636.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary636.htm",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "在这弯曲悖谬世代",
+        "你心中是否也在惊",
+        "尽忠尽忠将此口号",
+        "使主常见你尽忠"
+      ],
+      [
+        "让别人去得世界虚",
+        "你不要去和仇敌通",
+        "尽忠尽忠将此口号",
+        "使主常见你尽忠"
+      ],
+      [
+        "勿惧怕魔鬼势力凶",
+        "效法三勇士在火窑",
+        "尽忠尽忠将此口号",
+        "使主常见你尽忠"
+      ],
+      [
+        "无论大小事向主尽",
+        "将来主降临于半空",
+        "尽忠尽忠将此口号",
+        "使主常见你尽忠"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          9,
+          10,
+          2,
+          5
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          5,
+          5,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 76,
+        "pitches": [
+          10,
+          2,
+          5,
+          10,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 123,
+        "pitches": [
+          10,
+          0,
+          2,
+          10,
+          0
+        ]
+      }
+    ],
+    "scoreReferencePages": [
+      {
+        "url": "https://hymnary.org/page/fetch/HoCL1936/390/high",
+        "sha256": "0c59b42d5ffa155742b016d0cd54fa75fab0e827c93bd173886e6810a2cd7fde",
+        "page": 390
+      },
+      {
+        "url": "https://hymnary.org/page/fetch/HoCL1936/391/high",
+        "sha256": "b461af805e8cfdc775f5aef60eabc53ab02f0da711b83779f865148c6ce580ee",
+        "page": 391
+      }
+    ],
+    "scoreOpeningReview": {
+      "book": "Hymns of the Christian Life (1936)",
+      "entry": 450,
+      "title": "Be True",
+      "printedKey": "Bb",
+      "numberedOpeningWitnesses": [
+        [
+          5,
+          7,
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          5,
+          3,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          5,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          1,
+          2
+        ]
+      ],
+      "midiOpeningIndices": [
+        0,
+        38,
+        76,
+        123
+      ],
+      "locations": [
+        "page 390, first staff, We are going forth",
+        "page 390, third staff, We are witnesses pickup",
+        "page 391, Chorus first pickup, Be true",
+        "page 391, final staff, Let Him always find you true"
+      ],
+      "allFiveOpeningPitchesAgree": true
+    },
+    "formReview": "正文采用Be True同曲异词。已目视核对1936年原谱第450首两页，每个阅读区域起点分别取五个实际旋律音作为固定MIDI的见证：主歌前半从We are going forth起，后半从We are witnesses起；副歌从第一处Be true弱起开始，最后独立短行对应Let Him always find you true。副歌第二处Be true弱起前两音与第一处不同，明确使用第一处，不能误移到后半副歌。各实际演奏段落、四个区域仍须原有和声、旋律、起点、调性及反复相位独立核对，不从字数和总时长推算。"
   }
 }

@@ -308,6 +308,11 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         track = {**item, 'duration': MP3(file).info.length, 'offset': 0, 'reviewed': False}
         if file == reference:
             track['reviewed'] = True
+        elif item['file'] in evidence.get('independentTimelines', {}):
+            independent = evidence['independentTimelines'][item['file']]
+            track['cues'] = recording_cues(independent['definitions'], independent['times'], source['regions'],
+                                            track['duration'], independent['returnIndices'])
+            track['reviewed'] = True
         else:
             try:
                 mapped, metrics = map_recordings(reference, file, cue_times, cache)

@@ -1,0 +1,59 @@
+"""Verify numbered-score row starts against all optimal symbolic MIDI alignments."""
+import numpy as np
+from numba import njit
+
+
+@njit(cache=True)
+def edit_costs(left, right):
+    costs = np.empty((len(left) + 1, len(right) + 1), dtype=np.int32)
+    costs[:, 0] = np.arange(len(left) + 1)
+    costs[0, :] = np.arange(len(right) + 1)
+    for i in range(len(left)):
+        for j in range(len(right)):
+            costs[i + 1, j + 1] = min(costs[i, j] + int(left[i] != right[j]),
+                                      costs[i + 1, j] + 1, costs[i, j + 1] + 1)
+    return costs
+
+
+def score_row_offsets(rows, onset_times, onset_pitches):
+    expected, boundaries = [], []
+    scale = [-1, 0, 2, 4, 5, 7, 9, 11]
+    for row in rows:
+        if len(row['notes']) != len(row.get('pitchOffsets', row['notes'])):
+            raise ValueError('谱面音符与升降号数量不一致')
+        pitches = [(scale[note] + offset) % 12 for note, offset in
+                   zip(row['notes'], row.get('pitchOffsets', [0] * len(row['notes']))) if note]
+        if len(pitches) < 3:
+            raise ValueError('每个谱行至少需要三个可核对的音符')
+        boundaries.append(len(expected))
+        expected.extend(pitches)
+    if (len(expected) < 8 or len(onset_times) != len(onset_pitches) or not onset_times or
+            any(not np.isfinite(at) or at < 0 for at in onset_times) or
+            any(a >= b for a, b in zip(onset_times, onset_times[1:]))):
+        raise ValueError('谱面或 MIDI 旋律起点不完整')
+    target = np.asarray(onset_pitches, dtype=np.int32)
+    candidates = []
+    for key in range(12):
+        query = (np.asarray(expected, dtype=np.int32) + key) % 12
+        forward = edit_costs(query, target)
+        candidates.append((int(forward[-1, -1]), key, query, forward))
+    candidates.sort(key=lambda item: (item[0], item[1]))
+    cost, key, query, forward = candidates[0]
+    evidence = {'method': 'all optimal global pitch-sequence alignments; exact row-opening notes',
+                'noteCount': len(expected), 'midiNoteCount': len(target), 'editCost': cost,
+                'runnerUpCost': candidates[1][0], 'semitoneShift': key}
+    if cost / len(query) > .12 or (candidates[1][0] - cost) / len(query) < .08:
+        raise ValueError('谱面音符与 MIDI 旋律对应不足或调性有歧义')
+    backward = edit_costs(query[::-1].copy(), target[::-1].copy())
+    offsets, diagnostics = [], []
+    for boundary in boundaries:
+        possible = [j for j in range(len(target)) if query[boundary] == target[j] and
+                    forward[boundary, j] + backward[len(query) - boundary - 1, len(target) - j - 1] == cost]
+        if not possible or max(onset_times[j] for j in possible) - min(onset_times[j] for j in possible) > .1:
+            raise ValueError('MIDI 中存在多个同样合理的谱行起点')
+        offsets.append(round(float(np.mean([onset_times[j] for j in possible])), 4))
+        diagnostics.append({'scoreNoteIndex': boundary, 'possibleMidiNoteIndices': possible, 'at': offsets[-1]})
+    if any(a + .1 >= b for a, b in zip(offsets, offsets[1:])):
+        raise ValueError('MIDI 谱行起点不递增')
+    evidence.update(rowStarts=diagnostics, offsets=offsets)
+    return offsets, evidence

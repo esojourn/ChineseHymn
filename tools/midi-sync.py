@@ -78,6 +78,19 @@ def midi_features(path):
     row = {'notes': [0 if pitch < 0 else 1 for pitch in melody],
            'pitchOffsets': [0 if pitch < 0 else int(pitch % 12) for pitch in melody],
            'spatialWeights': [1] * len(melody)}
+    # Emit the soprano only after all simultaneous note-ons have been considered;
+    # an alto note-on earlier in the same tick is not a second melody onset.
+    top_staff = [note for note in notes if note[0] == melodic_tracks[0]]
+    onsets = []
+    for start in sorted({note[1] for note in top_staff}):
+        active = [note[3] for note in top_staff if note[1] <= start < note[2]]
+        if not active:
+            continue
+        highest = max(active)
+        if any(note[1] == start and note[3] == highest for note in top_staff):
+            onsets.append((start - first_note, highest % 12))
+    row['onsetTimes'] = [at for at, pitch in onsets]
+    row['onsetPitches'] = [pitch for at, pitch in onsets]
     return duration, (times, harmony), row
 
 

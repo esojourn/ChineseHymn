@@ -13,6 +13,7 @@ import sync_batch_sources as sources
 try:
     from sync_batch_align import align_windows, confirm_boundaries, export_result, review_recordings
     from sync_batch_audio import alignment_band
+    from sync_batch_symbolic import score_row_offsets
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
     transfer_spec.loader.exec_module(transfer)
@@ -364,9 +365,10 @@ class BatchTests(unittest.TestCase):
             score = mido.MidiFile(ticks_per_beat=480)
             tempo = mido.MidiTrack([mido.MetaMessage('set_tempo', tempo=500000),
                                    mido.MetaMessage('set_tempo', tempo=1000000, time=480)])
-            melody = mido.MidiTrack([mido.Message('note_on', note=60, velocity=90),
+            melody = mido.MidiTrack([mido.Message('note_on', note=55, velocity=30),
+                mido.Message('note_on', note=60, velocity=90),
                 mido.Message('note_off', note=60, time=960), mido.Message('note_on', note=64, velocity=90),
-                mido.Message('note_off', note=64, time=480)])
+                mido.Message('note_off', note=64, time=480), mido.Message('note_off', note=55)])
             drums = mido.MidiTrack([mido.Message('note_on', channel=9, note=90, velocity=120),
                                     mido.Message('note_off', channel=9, note=90, time=1440)])
             score.tracks.extend([tempo, melody, drums])
@@ -377,6 +379,21 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(row['pitchOffsets'][16], 4)
             self.assertEqual(int(np.argmax(harmony[:, 1])), 0)
             self.assertEqual(int(np.argmax(harmony[:, 16])), 4)
+            self.assertEqual(row['onsetPitches'], [0, 4])
+            self.assertEqual(row['onsetTimes'], [0, 1.5])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
+    def test_symbolic_score_mapping_rejects_an_ambiguous_repeated_opening_note(self):
+        rows = [{'notes': [1, 2, 3, 4]}, {'notes': [5, 6, 7, 1, 2]}]
+        times, proof = score_row_offsets(rows, list(range(9)), [0, 2, 4, 5, 7, 9, 11, 0, 2])
+        self.assertEqual(times, [0, 4])
+        self.assertEqual(proof['editCost'], 0)
+        # One inserted nonmatching note does not obscure the exact row start.
+        times, proof = score_row_offsets(rows, list(range(10)), [0, 2, 4, 5, 3, 7, 9, 11, 0, 2])
+        self.assertEqual(times, [0, 5])
+        # Either G could begin the second row in an equally good full alignment.
+        with self.assertRaisesRegex(ValueError, '多个'):
+            score_row_offsets(rows, list(range(10)), [0, 2, 4, 5, 7, 7, 9, 11, 0, 2])
 
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_percussion_only_midi_cannot_be_a_lyric_melody_reference(self):

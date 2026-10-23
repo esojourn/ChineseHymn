@@ -39,7 +39,7 @@ def consistent_phases(mapped, music, verse_count, slots):
     return corrected, decisions
 
 
-def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset, cue_offset=.4):
+def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset, cue_offset=.4, cue_offsets=None):
     from sync_batch_score import subsequence_path
     reference_times, reference_chroma = reference_features
     times, chroma = target_features
@@ -52,6 +52,8 @@ def match_cycle(reference_features, target_features, reference_start, reference_
     hi = min(len(times), round((onset + period + 10) / step))
     if length < 20 or hi <= lo:
         raise ValueError('缺少完整乐段的音频范围')
+    if cue_offsets is not None and (not cue_offsets or any(not 0 <= offset < reference_period for offset in cue_offsets)):
+        raise ValueError('参考谱行起点超出 MIDI 乐段')
     candidates = []
     for key in range(12):
         shifted = np.roll(query, key, axis=0)
@@ -59,9 +61,16 @@ def match_cycle(reference_features, target_features, reference_start, reference_
         value, path = subsequence_path(cost)
         frame = round(cue_offset / reference_period * length)
         positions = path[path[:, 0] == frame, 1]
-        candidates.append({'cost': float(value), 'key': key,
-                           'at': round(float(times[lo + int(np.median(positions))]), 3),
-                           'span': round(float(times[lo + path[-1, 1]] - times[lo + path[0, 1]]), 3)})
+        candidate = {'cost': float(value), 'key': key,
+                     'at': round(float(times[lo + int(np.median(positions))]), 3),
+                     'span': round(float(times[lo + path[-1, 1]] - times[lo + path[0, 1]]), 3)}
+        if cue_offsets is not None:
+            candidate['starts'] = []
+            for offset in cue_offsets:
+                frame = min(length - 1, round(offset / reference_period * length))
+                js = path[path[:, 0] == frame, 1]
+                candidate['starts'].append(round(float(times[lo + int(np.median(js))]), 3))
+        candidates.append(candidate)
     candidates.sort(key=lambda row: row['cost'])
     return {'best': candidates[0], 'runnerUp': candidates[1]}
 

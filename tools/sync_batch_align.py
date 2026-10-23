@@ -352,6 +352,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         tracks.append(track)
     method_description = ('Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
                           if 'transcriptMatching' in evidence else
+                          'Printed optical melody; documented MIDI harmony and five verified row-opening pitches per system; independent audio correspondence at every boundary.'
+                          if evidence.get('midiMatching', {}).get('mode') == 'image-optical-with-harmony' else
                           'Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.'
                           if 'midiMatching' in evidence else
                           'Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'

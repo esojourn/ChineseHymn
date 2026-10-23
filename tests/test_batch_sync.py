@@ -13,7 +13,7 @@ import sync_batch_sources as sources
 try:
     from sync_batch_align import align_windows, confirm_boundaries, export_result, review_recordings
     from sync_batch_audio import alignment_band
-    from sync_batch_symbolic import score_row_offsets
+    from sync_batch_symbolic import score_row_offsets, documented_row_offsets
     from sync_batch_score import is_barline
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
@@ -426,6 +426,26 @@ class BatchTests(unittest.TestCase):
         # Either G could begin the second row in an equally good full alignment.
         with self.assertRaisesRegex(ValueError, '多个'):
             score_row_offsets(rows, list(range(10)), [0, 2, 4, 5, 7, 7, 9, 11, 0, 2])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
+    def test_documented_row_witnesses_require_five_exact_pitches_and_only_skip_ties(self):
+        rows = [{'notes': [1, 1, 2, 3, 4, 5]}, {'notes': [6, 7, 1, 2, 3]}]
+        times = [0, .5, 1, 1.5, 2, 3, 3.5, 4, 4.5, 5]
+        pitches = [2, 4, 6, 7, 9, 11, 1, 2, 4, 6]
+        anchors = [{'sourceNoteIndices': [0, 2, 3, 4, 5], 'referenceNoteIndices': [0, 1, 2, 3, 4],
+                    'tiedSourceNoteIndices': [1]},
+                   {'sourceNoteIndices': [0, 1, 2, 3, 4], 'referenceNoteIndices': [5, 6, 7, 8, 9],
+                    'tiedSourceNoteIndices': []}]
+        offsets, proof = documented_row_offsets(rows, times, pitches, anchors, 2)
+        self.assertEqual(offsets, [0, 3])
+        self.assertEqual(proof['rowStarts'][0]['sourcePitches'], [0, 2, 4, 5, 7])
+        wrong = pitches.copy()
+        wrong[3] = 8
+        with self.assertRaisesRegex(ValueError, '不符'):
+            documented_row_offsets(rows, times, wrong, anchors, 2)
+        rows[0]['notes'][1] = 7
+        with self.assertRaisesRegex(ValueError, '连结'):
+            documented_row_offsets(rows, times, pitches, anchors, 2)
 
     @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
     def test_percussion_only_midi_cannot_be_a_lyric_melody_reference(self):

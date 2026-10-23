@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "04-473",
+  "status": "reviewed",
+  "source": {
+    "file": "04-473你当让主带领你道路.txt",
+    "sha256": "b6d739d9346019b3729e452afcc6484c5146bb1a2ce8a8596857f4c66b2d1a1d",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-473你当让主带领你道路.mp3",
+      "sha256": "fed3cad296899bb0d6af18e624bb25078c122b9a77dcc2dfcd9d734967c649d8",
+      "duration": 145.42367346938775,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 4.67,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 39.5,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 74.23,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 109.3,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-473你当让主带领你道路-领唱.mp3",
+      "sha256": "d58c65687b5a8871c07bcc2891de7f8693c57652907fedd0f584fcde50fd2bac",
+      "duration": 144.56163265306122,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 5.57,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 40.37,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.03,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 110.2,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你当让主带领你道路，一心信靠便无忧愁， 虽遇危险主必来相救，投靠救主必不蒙羞； 人若依靠至高真神，如立磐石不在沙土。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主内信徒当时常靠托，信赖救主常存喜乐； 主乃山寨乃避难佳所，其恩丰富如同江河； 我等既为天父儿女，不必忧虑缺少什么。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "主知何事对你最善美，主知何时赐你安慰， 主乃全能你只管追随，作主门徒诚实无伪； 你所仰望主必赐来，各样美福为你预备。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "你当一心奔走主道路，时常赞美感谢祈求， 殷勤做工，守住你召命，主必赐福使你富厚； 全心靠主主不弃绝，仰望我主不会蒙羞。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-473你当让主带领你道路.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

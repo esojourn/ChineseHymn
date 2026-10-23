@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 207,
+    "published": 209,
     "existing": 8,
-    "pending": 167,
+    "pending": 159,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "needs-calibration": 10,
+    "needs-calibration": 16,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1679,56 +1679,61 @@
       "songId": "04-403",
       "source": "04-403坚立在应许上.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-403坚立在应许上.mp3",
         "04-403坚立在应许上-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4,6"
     },
     {
       "songId": "04-409",
       "source": "04-409每一天.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-409每一天.mp3",
         "04-409每一天-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
     },
     {
       "songId": "04-421",
       "source": "04-421归家吧.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-421归家吧.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
     },
     {
       "songId": "04-459",
       "source": "04-459求赐大复兴.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-459求赐大复兴.mp3",
         "04-459求赐大复兴-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,3,5,6,7"
     },
     {
       "songId": "04-471",
       "source": "04-471这世界非我家.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-471这世界非我家.mp3",
         "04-471这世界非我家-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
     },
     {
       "songId": "04-473",
       "source": "04-473你当让主带领你道路.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "04-473你当让主带领你道路.mp3",
         "04-473你当让主带领你道路-领唱.mp3"
@@ -1738,21 +1743,23 @@
       "songId": "04-474",
       "source": "04-474如鹿渴慕.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-474如鹿渴慕.mp3",
         "04-474如鹿渴慕-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
     },
     {
       "songId": "04-489",
       "source": "04-489神差爱子.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-489神差爱子.mp3",
         "04-489神差爱子-领唱.mp3"
-      ]
+      ],
+      "reason": "第3段音乐对应不足：0.419"
     },
     {
       "songId": "04-509",
@@ -2614,11 +2621,10 @@
       "songId": "05-165",
       "source": "05-165擘开生命饼歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-165擘开生命饼歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-169",

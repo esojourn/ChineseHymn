@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "songId": "05-165",
+  "status": "reviewed",
+  "source": {
+    "file": "05-165擘开生命饼歌.jpg",
+    "sha256": "dd2c84cb9f8a58ebab37cb2c583cc4f4d0ce53a9548416bead18d091bce13140",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-165擘开生命饼歌.mp3",
+      "sha256": "0ad05f675c50b6f55407777f52c58fb3cb6fac72eff4ff452703820c9e1e1af7",
+      "duration": 90.0,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.224567,
+      "bottom": 0.319542
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.272903,
+      "bottom": 0.367877
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.396516,
+      "bottom": 0.491491
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.444059,
+      "bottom": 0.539034
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.56688,
+      "bottom": 0.661855
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.614424,
+      "bottom": 0.708606
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.734867,
+      "bottom": 0.829049
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.781618,
+      "bottom": 0.876593
+    }
+  },
+  "cues": [
+    {
+      "at": 5.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 16.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 27.0,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.4,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.4,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 69.0,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 79.4,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "璧开生命的饼，颁赐吾人，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "如主当初璧饼，加利利滨；",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "我愿洗心涤虑，与主相亲，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "求主赐我圣粮，饱我心灵。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "谢主生命的饼，颁赐吾人，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "谢主所流宝血，救赎众生；",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "为主神圣牺牲，我得自由，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "与主同结团契,万古千秋。",
+        "label": "第2段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-165擘开生命饼歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

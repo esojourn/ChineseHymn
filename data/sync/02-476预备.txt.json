@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-476",
+  "status": "reviewed",
+  "source": {
+    "file": "02-476预备.txt",
+    "sha256": "5cab1c5ac7b83be392730a5611c6994851cffaf1b579578d84896c84ec28998e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-476预备.mp3",
+      "sha256": "54961393204708757f7dbc1fc20169acfdd1fcc32384eaaaeca5a54f1d45c6cc",
+      "duration": 165.19836734693877,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 9.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 47.85,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.25,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.65,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "预备忍受，痛苦悲伤，预备遭遇试炼， 或留本地，或往远方，全听凭主差遣。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "预备出发，预备辛劳，预备警醒祈祷， 预备退让静候一旁，等主明确引导。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "预备传扬，预备默想，预备运用心思， 预备站稳主派工场，预备寻主旨意。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "预备宣讲，预备警告，预备拯救灵魂， 或生或死预备接受，预备救主再临。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-476预备.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

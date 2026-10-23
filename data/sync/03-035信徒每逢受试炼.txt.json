@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-035",
+  "status": "reviewed",
+  "source": {
+    "file": "03-035信徒每逢受试炼.txt",
+    "sha256": "93bdeba8792b597851f1c5fef424d989beb7303ed981eb373b6c70b0d7144e79",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-035信徒每逢受试炼.mp3",
+      "sha256": "602afdec57da4ab089432d4ad3596d5ae9e3f8d82edf5a0c0a55787a8e3cfa45",
+      "duration": 132.5191836734694,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 5.3,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 36.6,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.85,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.2,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-035信徒每逢受试炼-领唱.mp3",
+      "sha256": "d6ef6f7c60d703343a18aacfe401ee0b4f89e35f8eb3961229ca73d62d833166",
+      "duration": 132.25795918367348,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 5.6,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.9,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.15,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.5,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "信徒每逢受试炼，当往客西马尼园， 听从主命同警醒，学主祷告心敬虔； 苦杯难喝汗如血，一切惟望父成全。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "随主同往祭司院，见主被审工会前， 遭人戏弄受鞭打，身心受难苦无限！ 效法救主背十架，虽遇苦难信益坚。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "随主同往各各他，在主脚前恭屈膝， 观看神显大奇恩，圣子献为挽回祭； 主临死时说成了，信徒观此当学习。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "清晨急往主坟墓，观看主受难身形， 谁将救主挪移去？幕内空空冷又清！ 主已复活现眼前，求主救我亦复生。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-035信徒每逢受试炼.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

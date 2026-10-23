@@ -1,0 +1,252 @@
+{
+  "songId": "02-476",
+  "source": "02-476预备.txt",
+  "sourceHash": "5cab1c5ac7b83be392730a5611c6994851cffaf1b579578d84896c84ec28998e",
+  "trackHashes": [
+    {
+      "file": "02-476预备.mp3",
+      "sha256": "54961393204708757f7dbc1fc20169acfdd1fcc32384eaaaeca5a54f1d45c6cc"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "5cab1c5ac7b83be392730a5611c6994851cffaf1b579578d84896c84ec28998e",
+      "file": "life476.mid",
+      "sha256": "1d44557a198982317231d3d26dc12af976b8108e6fac5c71ff6a20c347dc302f",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/476.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life476.html",
+      "textReferenceSha256": "6d3970e93db084123bc194d59c3098984b57d71c3a9d10f89e7d772f4ceeb52f",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "预备忍受痛苦悲伤"
+        ],
+        [
+          "预备出发预备辛劳"
+        ],
+        [
+          "预备传扬预备默想"
+        ],
+        [
+          "预备宣讲预备警告"
+        ]
+      ],
+      "formReview": "正文每段四行包含主歌及副歌，四段均是单个完整阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 476,
+        "title": "预备",
+        "tune": "Ready",
+        "composer": "A. C. Palmer",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 33.5,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9892265200614929,
+      "initialOnsetEstimate": 8.528,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8,
+        115.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.30137505133946735,
+            "key": 6,
+            "at": 10.2,
+            "span": 38.2,
+            "starts": [
+              9.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5423175096511841,
+            "key": 11,
+            "at": 29.3,
+            "span": 21.6,
+            "starts": [
+              28.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.157159556945165,
+            "key": 6,
+            "starts": [
+              9.600000381469727
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4184187650680542,
+            "key": 1,
+            "starts": [
+              0.8999999761581421
+            ],
+            "span": 35.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.29889188210169476,
+            "key": 6,
+            "at": 48.2,
+            "span": 38.6,
+            "starts": [
+              47.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5426178375879923,
+            "key": 11,
+            "at": 67.7,
+            "span": 21.6,
+            "starts": [
+              67.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15754027167956033,
+            "key": 6,
+            "starts": [
+              48.0
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4057471752166748,
+            "key": 1,
+            "starts": [
+              41.400001525878906
+            ],
+            "span": 33.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.29900052150090534,
+            "key": 6,
+            "at": 86.6,
+            "span": 38.6,
+            "starts": [
+              86.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5437100330988566,
+            "key": 11,
+            "at": 106.1,
+            "span": 21.6,
+            "starts": [
+              105.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15666805704434714,
+            "key": 6,
+            "starts": [
+              86.4000015258789
+            ],
+            "span": 38.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.4036380449930827,
+            "key": 1,
+            "starts": [
+              79.80000305175781
+            ],
+            "span": 33.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2979699969291687,
+            "key": 6,
+            "at": 125.0,
+            "span": 38.9,
+            "starts": [
+              124.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5479865868886312,
+            "key": 11,
+            "at": 140.5,
+            "span": 19.7,
+            "starts": [
+              140.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1573874056339264,
+            "key": 6,
+            "starts": [
+              124.80000305175781
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.40406938393910724,
+            "key": 1,
+            "starts": [
+              118.19999694824219
+            ],
+            "span": 33.5
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "预备忍受，痛苦悲伤，预备遭遇试炼， 或留本地，或往远方，全听凭主差遣。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "预备出发，预备辛劳，预备警醒祈祷， 预备退让静候一旁，等主明确引导。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "预备传扬，预备默想，预备运用心思， 预备站稳主派工场，预备寻主旨意。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "预备宣讲，预备警告，预备拯救灵魂， 或生或死预备接受，预备救主再临。 预备前往，或留本地，预备尽忠服事； 预备作圣工不论大小，预备遵主旨意。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.57
+}

@@ -1,0 +1,270 @@
+{
+  "songId": "03-035",
+  "source": "03-035信徒每逢受试炼.txt",
+  "sourceHash": "93bdeba8792b597851f1c5fef424d989beb7303ed981eb373b6c70b0d7144e79",
+  "trackHashes": [
+    {
+      "file": "03-035信徒每逢受试炼.mp3",
+      "sha256": "602afdec57da4ab089432d4ad3596d5ae9e3f8d82edf5a0c0a55787a8e3cfa45"
+    },
+    {
+      "file": "03-035信徒每逢受试炼-领唱.mp3",
+      "sha256": "d6ef6f7c60d703343a18aacfe401ee0b4f89e35f8eb3961229ca73d62d833166"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "93bdeba8792b597851f1c5fef424d989beb7303ed981eb373b6c70b0d7144e79",
+      "file": "life128.mid",
+      "sha256": "a743d1fde25b0880d8ef779d156f8630dec55d845f35b393be3d812099e938ac",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/128.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life128.html",
+      "textReferenceSha256": "35ea4a62df0447195f6c8619836ca19641ba0c63ae79070f40428623611b597a",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "信徒每逢受试炼当"
+        ],
+        [
+          "随主同往祭司院见"
+        ],
+        [
+          "随主同往各各他在"
+        ],
+        [
+          "清晨急往主坟墓观"
+        ]
+      ],
+      "formReview": "核对同曲Go to Dark Gethsemane原文及译文四段的结构，依次为客西马尼、审判、十架、复活。正文每段三行，均涵盖完整六句，为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 128,
+        "title": "效主舍己 / 信徒每逢受试炼",
+        "tune": "Redhead No. 76 / Petra",
+        "composer": "Richard Redhead",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 26.41590675,
+    "music": {
+      "period": 31.3,
+      "similarity": 0.9662966132164001,
+      "initialOnsetEstimate": 4.596,
+      "shifts": [
+        0.0,
+        31.3,
+        62.6,
+        93.9
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18848604439927366,
+            "key": 8,
+            "at": 6.1,
+            "span": 32.1,
+            "starts": [
+              5.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5501226845640725,
+            "key": 3,
+            "at": 12.4,
+            "span": 22.9,
+            "starts": [
+              12.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13994904295704996,
+            "key": 8,
+            "starts": [
+              5.599999904632568
+            ],
+            "span": 32.10000228881836
+          },
+          "runnerUp": {
+            "cost": 0.3575873329235723,
+            "key": 3,
+            "starts": [
+              12.100000381469727
+            ],
+            "span": 25.69999885559082
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17996898322059704,
+            "key": 8,
+            "at": 37.4,
+            "span": 32.1,
+            "starts": [
+              36.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5530716771134934,
+            "key": 3,
+            "at": 43.8,
+            "span": 23.1,
+            "starts": [
+              43.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15999341239563572,
+            "key": 8,
+            "starts": [
+              36.900001525878906
+            ],
+            "span": 32.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.3586978120163988,
+            "key": 3,
+            "starts": [
+              43.400001525878906
+            ],
+            "span": 25.699996948242188
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18310953938542082,
+            "key": 8,
+            "at": 68.7,
+            "span": 32.1,
+            "starts": [
+              68.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.559810065613768,
+            "key": 3,
+            "at": 75.0,
+            "span": 23.0,
+            "starts": [
+              74.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1565699592565957,
+            "key": 8,
+            "starts": [
+              68.0999984741211
+            ],
+            "span": 32.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.3567988727801143,
+            "key": 3,
+            "starts": [
+              74.69999694824219
+            ],
+            "span": 25.70000457763672
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18650688683263028,
+            "key": 8,
+            "at": 100.0,
+            "span": 31.3,
+            "starts": [
+              99.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5526294159813049,
+            "key": 3,
+            "at": 106.2,
+            "span": 22.9,
+            "starts": [
+              106.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1629043067225252,
+            "key": 8,
+            "starts": [
+              99.5
+            ],
+            "span": 31.300003051757812
+          },
+          "runnerUp": {
+            "cost": 0.3634458060462635,
+            "key": 3,
+            "starts": [
+              106.0
+            ],
+            "span": 24.800003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "信徒每逢受试炼，当往客西马尼园， 听从主命同警醒，学主祷告心敬虔； 苦杯难喝汗如血，一切惟望父成全。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "随主同往祭司院，见主被审工会前， 遭人戏弄受鞭打，身心受难苦无限！ 效法救主背十架，虽遇苦难信益坚。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "随主同往各各他，在主脚前恭屈膝， 观看神显大奇恩，圣子献为挽回祭； 主临死时说成了，信徒观此当学习。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "清晨急往主坟墓，观看主受难身形， 谁将救主挪移去？幕内空空冷又清！ 主已复活现眼前，求主救我亦复生。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "03-035信徒每逢受试炼.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.829423725605011,
+      "meanPathCost": 0.18472953140735626,
+      "cueWindowCosts": [
+        0.20477809011936188,
+        0.14166773855686188,
+        0.14906617999076843,
+        0.1463046818971634
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.926
+}

@@ -11,6 +11,7 @@ import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCE_REVIEW_FILE = Path(__file__).with_name('sync-source-reviews.json')
 
 
 def checksum(path):
@@ -44,6 +45,12 @@ def evidence_directory(candidate):
     return 'alignment'
 
 
+def source_review(song):
+    reviews = json.loads(SOURCE_REVIEW_FILE.read_text())
+    review = reviews.get(song['source'], {})
+    return review if review.get('sha256') == song['sha256'] else None
+
+
 def inventory(root=ROOT):
     songs = []
     for source in sorted((root / 'data').iterdir()):
@@ -75,6 +82,11 @@ def progress(songs, cache):
         status = ('published' if data.get('provenance', {}).get('batch') == 'bulk-2026-10' else 'existing') if data else 'missing-audio' if not song['tracks'] else 'missing-lyrics' if not song['lyricsAvailable'] else 'pending'
         item = {'songId': song['songId'], 'source': song['source'], 'type': song['type'], 'status': status,
                 'tracks': [track['file'] for track in song['tracks']]}
+        review = source_review(song)
+        if not data and review:
+            item.update(status='needs-source-review', reason=review['reason'])
+            items.append(item)
+            continue
         if data and any(not track['reviewed'] for track in data['tracks']):
             item['status'] = 'partially-published'
             item['pendingTracks'] = [track['file'] for track in data['tracks'] if not track['reviewed']]
@@ -111,6 +123,9 @@ def progress(songs, cache):
 
 
 def publish(song, cache):
+    review = source_review(song)
+    if review:
+        raise ValueError('原素材待核对：' + review['reason'])
     candidate = cache / 'ready' / (song['source'] + '.json')
     data = json.loads(candidate.read_text())
     if data['source']['sha256'] != song['sha256'] or any(not track['reviewed'] for track in data['tracks']):
@@ -339,7 +354,8 @@ def main():
         print(json.dumps({'sources': len(songs), 'existing': sum(song['existing'] for song in songs),
                           'withAudio': sum(bool(song['tracks']) for song in songs)}, ensure_ascii=False))
         return
-    selected = [song for song in songs if not song['existing'] and (not args.songs or song['songId'] in args.songs)]
+    selected = [song for song in songs if not song['existing'] and not source_review(song) and
+                (not args.songs or song['songId'] in args.songs)]
     if args.kind:
         selected = [song for song in selected if song['type'] == args.kind]
     if args.stage == 'align':

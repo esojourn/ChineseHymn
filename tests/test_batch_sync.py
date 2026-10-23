@@ -43,6 +43,24 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    def test_known_source_conflict_blocks_publication_and_clears_after_material_changes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            registry = root / 'source-reviews.json'
+            song = {'songId': '02-395', 'source': '02-395主前省察.txt', 'sha256': 'a' * 64,
+                    'type': 'text', 'lyricsAvailable': True, 'tracks': []}
+            batch.save(registry, {song['source']: {'sha256': song['sha256'], 'reason': '正文误复制了另一曲'}})
+            with patch.object(batch, 'ROOT', root), patch.object(batch, 'SOURCE_REVIEW_FILE', registry):
+                self.assertEqual(batch.source_review(song)['reason'], '正文误复制了另一曲')
+                self.assertEqual(batch.progress([song], root / 'cache'), {'needs-source-review': 1})
+                # No ready candidate exists: the source gate must reject before reading it.
+                with self.assertRaisesRegex(ValueError, '原素材待核对'):
+                    batch.publish(song, root / 'cache')
+                self.assertFalse((root / 'data/sync').exists())
+                song['sha256'] = 'b' * 64
+                self.assertIsNone(batch.source_review(song))
+                self.assertEqual(batch.progress([song], root / 'cache'), {'missing-audio': 1})
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
     def test_reference_score_crops_meter_and_preserves_rests_at_an_interior_pickup(self):
         from sync_batch_reference_score import group_reference_rows

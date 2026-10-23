@@ -4,9 +4,10 @@
   "counts": {
     "published": 269,
     "existing": 8,
-    "needs-calibration": 44,
-    "pending": 70,
+    "needs-calibration": 46,
     "missing-audio": 2,
+    "pending": 67,
+    "needs-source-review": 1,
     "needs-track-alignment": 4,
     "missing-lyrics": 23
   },
@@ -184,11 +185,12 @@
       "songId": "01-270",
       "source": "01-270佳美脚踪.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-270佳美脚踪.mp3",
         "01-270佳美脚踪-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：3,4"
     },
     {
       "songId": "01-280",
@@ -717,10 +719,11 @@
       "songId": "02-206",
       "source": "02-206求主施恩.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-206求主施恩.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.385"
     },
     {
       "songId": "02-208",
@@ -1023,12 +1026,12 @@
       "songId": "02-395",
       "source": "02-395主前省察.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-source-review",
       "tracks": [
         "02-395主前省察.mp3",
         "02-395主前省察-领唱.mp3"
       ],
-      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
+      "reason": "正文与02-386《高举主旗》逐字相同，与02-395《主前省察》的标题不一致；需核对对应录音的实际歌词后再制作滚动数据。"
     },
     {
       "songId": "02-396",
@@ -1183,10 +1186,11 @@
       "songId": "02-468",
       "source": "02-468当尽本分.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-468当尽本分.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-470",

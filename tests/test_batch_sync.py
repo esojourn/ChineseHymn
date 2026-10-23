@@ -552,6 +552,10 @@ class BatchTests(unittest.TestCase):
                 patch.object(midi_sync, 'match_template', return_value=melodic):
             with self.assertRaisesRegex(ValueError, '额外完整'):
                 midi_sync.check_extra_cycle(None, None, target, 40, music, 100, (.25, .20))
+            harmonic['best']['starts'] = [140.1]
+            melodic['best']['starts'] = [np.float32(140.6)]
+            with self.assertRaisesRegex(ValueError, '额外完整'):
+                midi_sync.check_extra_cycle(None, None, target, 40, music, 100, (.25, .20))
             melodic['best']['starts'] = [100.1]
             harmonic['best']['starts'] = [100]
             result = midi_sync.check_extra_cycle(None, None, target, 40, music, 100, (.25, .20))

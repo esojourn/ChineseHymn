@@ -160,7 +160,7 @@ def check_extra_cycle(harmony, melody_rows, target, period, music, last, limits)
     if (one['cost'] <= limits[0] and two['cost'] <= limits[1] and
             harmonic['runnerUp']['cost'] - one['cost'] >= .08 and
             melodic['runnerUp']['cost'] - two['cost'] >= .06 and one['key'] == two['key'] and
-            abs(one['starts'][0] - two['starts'][0]) <= .5 and
+            onsets_agree(one['starts'], two['starts']) and
             min(one['starts'][0], two['starts'][0]) >= last + .75 * music['period'] and
             all(.75 * music['period'] <= span <= 1.25 * music['period'] for span in [one['span'], two['span']])):
         raise ValueError('录音还有额外完整同曲乐段，需核对实际演唱顺序')

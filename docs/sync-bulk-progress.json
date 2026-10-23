@@ -2,12 +2,13 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 253,
+    "published": 258,
     "existing": 8,
-    "needs-calibration": 43,
-    "pending": 88,
+    "needs-calibration": 47,
+    "pending": 78,
     "missing-audio": 2,
     "needs-track-alignment": 3,
+    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -165,10 +166,11 @@
       "songId": "01-254",
       "source": "01-254赶快救灭亡人.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-254赶快救灭亡人.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-256",
@@ -194,11 +196,12 @@
       "songId": "01-280",
       "source": "01-280他藏我灵.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-280他藏我灵.mp3",
         "01-280他藏我灵-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-298",
@@ -251,11 +254,12 @@
       "songId": "01-342",
       "source": "01-342我心灵得安宁.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-342我心灵得安宁.mp3",
         "01-342我心灵得安宁-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-343",
@@ -678,11 +682,12 @@
       "songId": "02-176",
       "source": "02-176我所信有根基.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-176我所信有根基.mp3",
         "02-176我所信有根基-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-178",
@@ -783,7 +788,7 @@
       "songId": "02-262",
       "source": "02-262对我述说耶稣故事.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-262对我述说耶稣故事.mp3",
         "02-262对我述说耶稣故事-领唱.mp3"
@@ -830,10 +835,11 @@
       "songId": "02-285",
       "source": "02-285基督满足我心.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-285基督满足我心.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-289",
@@ -912,7 +918,7 @@
       "songId": "02-370",
       "source": "02-370更亲近恩主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-370更亲近恩主.mp3"
       ]
@@ -930,7 +936,7 @@
       "songId": "02-375",
       "source": "02-375精兵兴起.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-375精兵兴起.mp3"
       ]
@@ -1209,7 +1215,7 @@
       "songId": "02-474",
       "source": "02-474黑夜将临快作工.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-474黑夜将临快作工.mp3"
       ]
@@ -1218,7 +1224,7 @@
       "songId": "02-475",
       "source": "02-475找迷羊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-475找迷羊.mp3"
       ]
@@ -2353,12 +2359,11 @@
       "songId": "05-096",
       "source": "05-096在十字架.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "05-096在十字架.mp3",
         "05-096在十字架-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-098",

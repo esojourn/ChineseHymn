@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "02-474",
+  "status": "reviewed",
+  "source": {
+    "file": "02-474黑夜将临快作工.txt",
+    "sha256": "71d7de69309e0222c1f835f8966965af78061becd197a6255b90194fab44b20d",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-474黑夜将临快作工.mp3",
+      "sha256": "57437a1fb8827a6b6d07adc7ce95a7efa9a80135f8d2ba0c8db34dac0753ccdc",
+      "duration": 126.1191836734694,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 9.6,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.0,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.4,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "黑夜将临快作工，作工当趁早晨； 朝露闪耀花放时，作工要辛勤； 趁白日阳光明亮，努力作工不停； 黑夜将临快作工，夜临工当成。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "黑夜将临快作工，趁着太阳当空， 尽心尽力去事奉，将来享安宁； 光阴飞逝当爱惜，每分秒当善用； 黑夜将临快作工，夜临工将停。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "黑夜将临快作工，趁着暮色未深； 白日将尽黄昏近，赶快传福音； 夕阳残照仍努力，直到日影消失； 黑夜将临快作工，夜临工完成。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-474黑夜将临快作工.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

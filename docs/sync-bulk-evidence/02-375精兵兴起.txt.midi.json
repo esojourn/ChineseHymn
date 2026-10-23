@@ -1,0 +1,286 @@
+{
+  "songId": "02-375",
+  "source": "02-375精兵兴起.txt",
+  "sourceHash": "5e2f45fcf53155773590ddf02086fd1f18d8378e44b5fcb6273ac42935271077",
+  "trackHashes": [
+    {
+      "file": "02-375精兵兴起.mp3",
+      "sha256": "f90062b95fceba458e61d6436a3f91f53a3a51743a11e431876987268f59080a"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "5e2f45fcf53155773590ddf02086fd1f18d8378e44b5fcb6273ac42935271077",
+      "file": "timeless-Sound_the_Battle_Cry.mid",
+      "sha256": "93ba9031554d83f1d30909185e54c6d21d46ba889223addc7eb9fda7d4fc27f0",
+      "url": "https://library.timelesstruths.org/library/music/S/Sound_the_Battle_Cry/Sound_the_Battle_Cry.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Sound_the_Battle_Cry/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Sound_the_Battle_Cry/Sound_the_Battle_Cry.xml",
+      "scoreReferenceSha256": "edeffb0603bab5e1c7790e4252e7c51c87215df9cf8b96eee3388f98164ffc4c",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "仇敌已接近战号快",
+          "基督为此雄师大主"
+        ],
+        [
+          "大家向前进奋勇战",
+          "基督为此雄师大主"
+        ],
+        [
+          "万军全能神请听我",
+          "基督为此雄师大主"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            5,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "onsetIndex": 67,
+          "pitches": [
+            2,
+            5,
+            10,
+            9,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 76,
+        "midiNoteCount": 76,
+        "editCost": 0,
+        "runnerUpCost": 56,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 67,
+            "possibleMidiNoteIndices": [
+              67
+            ],
+            "at": 30.5454
+          }
+        ],
+        "offsets": [
+          0.0,
+          30.5454
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          67
+        ]
+      },
+      "formReview": "正文第一个阅读区域已包含完整主歌及副歌前三句；最后单独短行“基督为此雄师大主将”从第15小节Christ起，不能误用第9小节副歌首句。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 34.9111866796875,
+    "music": {
+      "period": 40.4,
+      "similarity": 0.9702546000480652,
+      "initialOnsetEstimate": 8.968,
+      "shifts": [
+        0.0,
+        40.4,
+        80.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19146896588920367,
+            "key": 5,
+            "at": 10.6,
+            "span": 40.3,
+            "starts": [
+              10.1,
+              45.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5869741534242535,
+            "key": 0,
+            "at": 38.9,
+            "span": 20.7,
+            "starts": [
+              38.6,
+              57.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10451770064854386,
+            "key": 5,
+            "starts": [
+              10.100000381469727,
+              45.400001525878906
+            ],
+            "span": 40.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.41389540870590963,
+            "key": 0,
+            "starts": [
+              7.300000190734863,
+              35.29999923706055
+            ],
+            "span": 33.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19070143746857596,
+            "key": 5,
+            "at": 51.0,
+            "span": 40.3,
+            "starts": [
+              50.5,
+              85.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5746029768839921,
+            "key": 0,
+            "at": 43.3,
+            "span": 30.2,
+            "starts": [
+              42.9,
+              69.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.107498565522751,
+            "key": 5,
+            "starts": [
+              50.5,
+              85.80000305175781
+            ],
+            "span": 40.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4069072987773631,
+            "key": 0,
+            "starts": [
+              37.900001525878906,
+              64.80000305175781
+            ],
+            "span": 31.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19514671174606474,
+            "key": 5,
+            "at": 91.5,
+            "span": 40.2,
+            "starts": [
+              91.0,
+              126.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5730496397112855,
+            "key": 0,
+            "at": 83.7,
+            "span": 30.2,
+            "starts": [
+              83.3,
+              109.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10618085200243657,
+            "key": 5,
+            "starts": [
+              90.9000015258789,
+              126.30000305175781
+            ],
+            "span": 40.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.40691972487043626,
+            "key": 0,
+            "starts": [
+              78.30000305175781,
+              109.19999694824219
+            ],
+            "span": 35.29999542236328
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      30.545424
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "仇敌已接近，战号快吹起，高学主基督得胜旗； 披全副军装刚强立敌前，得胜凯旋全靠主圣言。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "基督为此雄师大主将。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "大家向前进，奋勇战仇敌，深信跟随主必胜利； 盾牌与旌旗在光中耀闪，为主真理而战必凯旋。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "基督为此雄师大主将。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "万军全能神，请听我呼求，助我们得胜施恩佑； 战争完毕后齐高歌凯旋，头戴荣耀冠冕站主前。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "基督为此雄师大主将。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.185
+}

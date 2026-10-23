@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-370",
+  "status": "reviewed",
+  "source": {
+    "file": "02-370更亲近恩主.txt",
+    "sha256": "7abb59d6b466be0e1b2c645fcb306e097c2b99997d2b0d430c621ac98d2e7449",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-370更亲近恩主.mp3",
+      "sha256": "902c62b3f3056d1365d1a8c01b4476e49eeb377a0d6b121c359a4a8e1d0e6545",
+      "duration": 183.3012244897959,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 10.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 53.2,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.9,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.65,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主啊，我属你，我听你声音，说你爱我何等深； 但我更渴望被信心举起，使我更能亲近你。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "分别我为圣，专为主所用，仰赖你圣恩大能； 助我往上看，有坚固盼望，主旨意我所想往。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "虽片刻时间在施恩主座前，何等喜乐难以言； 俯伏主脚前，与主面对面，如密友欢聚甘甜。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "何等深主爱，我今不能明，直到走完世路程； 何等大喜乐，我今未全历，直到与主享安息。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-370更亲近恩主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

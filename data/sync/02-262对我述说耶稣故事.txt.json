@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-262",
+  "status": "reviewed",
+  "source": {
+    "file": "02-262对我述说耶稣故事.txt",
+    "sha256": "5ad1e07dc331b71e979b72881bf596da714fe9c3ad64d10dd0b0e89e03dbe520",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-262对我述说耶稣故事.mp3",
+      "sha256": "8bdc059378cfe037819572b083e885d381561be3e7249d4386f487c08b71e451",
+      "duration": 200.25469387755103,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.45,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 52.1,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 72.95,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 114.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 135.55,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 177.3,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-262对我述说耶稣故事-领唱.mp3",
+      "sha256": "ae6f59bc81403a9ead37728c9bff2b34e8f7a4ea39c05b443bddf8d0d540b4e8",
+      "duration": 198.89632653061224,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 23
+    }
+  },
+  "cues": [
+    {
+      "at": 10.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 52.5,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.35,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.1,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 135.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 177.7,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "对我述说耶稣故事，深印每句在我心；  对我述说宝贵故事，最甜美可爱佳音。 述说天使如何歌颂，庆贺主耶稣降生， 天上荣耀归与真神，地上平安归与人。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "述说耶稣禁食故事，独在旷野四十日， 祂为我们忍受试探，最后获得大胜利。 述说耶稣如何辛劳，历尽忧伤与苦痛， 被人弃绝藐视凌辱，居无定所极贫穷。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "述说救主被钉十架，如何受苦担罪过， 述说救主葬在坟墓，如何三日后复活。  这故事中的大慈爱，我今已明白是真， 听到主爱为我舍身，我不禁流泪感恩。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-262对我述说耶稣故事.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

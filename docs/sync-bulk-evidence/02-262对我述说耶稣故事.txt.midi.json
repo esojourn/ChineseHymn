@@ -1,0 +1,310 @@
+{
+  "songId": "02-262",
+  "source": "02-262对我述说耶稣故事.txt",
+  "sourceHash": "5ad1e07dc331b71e979b72881bf596da714fe9c3ad64d10dd0b0e89e03dbe520",
+  "trackHashes": [
+    {
+      "file": "02-262对我述说耶稣故事.mp3",
+      "sha256": "8bdc059378cfe037819572b083e885d381561be3e7249d4386f487c08b71e451"
+    },
+    {
+      "file": "02-262对我述说耶稣故事-领唱.mp3",
+      "sha256": "ae6f59bc81403a9ead37728c9bff2b34e8f7a4ea39c05b443bddf8d0d540b4e8"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "5ad1e07dc331b71e979b72881bf596da714fe9c3ad64d10dd0b0e89e03dbe520",
+      "file": "timeless-Tell_Me_the_Story_of_Jesus.mid",
+      "sha256": "505ec8459eeaa71099840cf2fa796ebd415437120380d7b1904ed40fa5ecae05",
+      "url": "https://library.timelesstruths.org/library/music/T/Tell_Me_the_Story_of_Jesus/Tell_Me_the_Story_of_Jesus.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Tell_Me_the_Story_of_Jesus/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/Tell_Me_the_Story_of_Jesus/Tell_Me_the_Story_of_Jesus.xml",
+      "scoreReferenceSha256": "fbcfefa51c4892c47624bd608719d200f550f7e3e037460e4be0c9fd9721ba3a",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "对我述说耶稣故事",
+          "对我述说耶稣故事"
+        ],
+        [
+          "述说耶稣禁食故事",
+          "对我述说耶稣故事"
+        ],
+        [
+          "述说救主被钉十架",
+          "对我述说耶稣故事"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            5,
+            3,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 62,
+          "pitches": [
+            7,
+            7,
+            5,
+            3,
+            7
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 92,
+        "midiNoteCount": 92,
+        "editCost": 0,
+        "runnerUpCost": 67,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 62,
+            "possibleMidiNoteIndices": [
+              62
+            ],
+            "at": 38.4
+          }
+        ],
+        "offsets": [
+          0.0,
+          38.4
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          62
+        ]
+      },
+      "formReview": "原谱第16小节D.C. Refrain，第8小节Fine；完整演奏为第1至16小节再第1至8小节。正文前四行覆盖完整主歌，末两行从回唱首句Tell me the story起作为副歌区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。",
+      "performedScoreMeasures": [
+        "1-16",
+        "1-8"
+      ]
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 57.602343749999996,
+    "music": {
+      "period": 62.6,
+      "similarity": 0.9770795106887817,
+      "initialOnsetEstimate": 7.1,
+      "shifts": [
+        0.0,
+        62.6,
+        125.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2468407481623153,
+            "key": 7,
+            "at": 11.2,
+            "span": 62.5,
+            "starts": [
+              10.8,
+              52.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5485017429144619,
+            "key": 0,
+            "at": 17.4,
+            "span": 28.0,
+            "starts": [
+              17.3,
+              37.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09048657523938261,
+            "key": 7,
+            "starts": [
+              10.699999809265137,
+              52.5
+            ],
+            "span": 62.70000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4740572310865116,
+            "key": 2,
+            "starts": [
+              6.699999809265137,
+              42.0
+            ],
+            "span": 51.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24226240456675568,
+            "key": 7,
+            "at": 73.8,
+            "span": 62.5,
+            "starts": [
+              73.4,
+              115.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5509174090985673,
+            "key": 0,
+            "at": 80.0,
+            "span": 28.0,
+            "starts": [
+              79.9,
+              100.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09279115207659931,
+            "key": 7,
+            "starts": [
+              73.30000305175781,
+              115.0999984741211
+            ],
+            "span": 62.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4661428433256789,
+            "key": 2,
+            "starts": [
+              59.70000076293945,
+              94.19999694824219
+            ],
+            "span": 50.89999771118164
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24770184599172573,
+            "key": 7,
+            "at": 136.4,
+            "span": 62.5,
+            "starts": [
+              136.0,
+              177.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5473097048628445,
+            "key": 0,
+            "at": 142.6,
+            "span": 28.0,
+            "starts": [
+              142.5,
+              162.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09104116884664225,
+            "key": 7,
+            "starts": [
+              135.89999389648438,
+              177.6999969482422
+            ],
+            "span": 62.70001220703125
+          },
+          "runnerUp": {
+            "cost": 0.47503320858501397,
+            "key": 2,
+            "starts": [
+              122.19999694824219,
+              156.6999969482422
+            ],
+            "span": 51.0
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      38.39999999999999
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "对我述说耶稣故事，深印每句在我心；  对我述说宝贵故事，最甜美可爱佳音。 述说天使如何歌颂，庆贺主耶稣降生， 天上荣耀归与真神，地上平安归与人。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "述说耶稣禁食故事，独在旷野四十日， 祂为我们忍受试探，最后获得大胜利。 述说耶稣如何辛劳，历尽忧伤与苦痛， 被人弃绝藐视凌辱，居无定所极贫穷。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "述说救主被钉十架，如何受苦担罪过， 述说救主葬在坟墓，如何三日后复活。  这故事中的大慈爱，我今已明白是真， 听到主爱为我舍身，我不禁流泪感恩。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "对我述说耶稣故事，深印每句在我心； 对我述说宝贵故事，最甜美可爱佳音。",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "02-262对我述说耶稣故事.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8823103308677673,
+      "meanPathCost": 0.09277445077896118,
+      "cueWindowCosts": [
+        0.09060617536306381,
+        0.09374378621578217,
+        0.05660414695739746,
+        0.0974610224366188,
+        0.05955878645181656,
+        0.0999489352107048
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 1.21
+}

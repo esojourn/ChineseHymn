@@ -1,0 +1,285 @@
+{
+  "songId": "02-370",
+  "source": "02-370更亲近恩主.txt",
+  "sourceHash": "7abb59d6b466be0e1b2c645fcb306e097c2b99997d2b0d430c621ac98d2e7449",
+  "trackHashes": [
+    {
+      "file": "02-370更亲近恩主.mp3",
+      "sha256": "902c62b3f3056d1365d1a8c01b4476e49eeb377a0d6b121c359a4a8e1d0e6545"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "7abb59d6b466be0e1b2c645fcb306e097c2b99997d2b0d430c621ac98d2e7449",
+      "file": "timeless-Draw_Me_Nearer_Crosby.mid",
+      "sha256": "ce63478c1711cdd7d2b86d54f9e2f22211489a0fb518d6950d70c69ad3d8dec7",
+      "url": "https://library.timelesstruths.org/library/music/D/Draw_Me_Nearer_Crosby/Draw_Me_Nearer_Crosby.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Draw_Me_Nearer_Crosby/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/D/Draw_Me_Nearer_Crosby/Draw_Me_Nearer_Crosby.xml",
+      "scoreReferenceSha256": "86c44cb89ac7150413bb27eecb4458d2c6ad2312ef5b3c5a6715726d1fe4f5de",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "主啊我属你我听你"
+        ],
+        [
+          "分别我为圣专为主"
+        ],
+        [
+          "虽片刻时间在施恩"
+        ],
+        [
+          "何等深主爱我今不"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            1,
+            0,
+            10,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 69,
+        "midiNoteCount": 69,
+        "editCost": 0,
+        "runnerUpCost": 48,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "每段四个正文行覆盖完整主歌及副歌，为一个阅读区域；采用Crosby/Doane的Draw Me Nearer，不与同名其他曲调混用。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 41.515564601562495,
+    "music": {
+      "period": 42.7,
+      "similarity": 0.9471782445907593,
+      "initialOnsetEstimate": 9.084,
+      "shifts": [
+        0.0,
+        42.7,
+        85.3,
+        128.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2826472512452887,
+            "key": 5,
+            "at": 11.1,
+            "span": 42.4,
+            "starts": [
+              10.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5661528183090603,
+            "key": 0,
+            "at": 25.2,
+            "span": 32.5,
+            "starts": [
+              24.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10941441556050571,
+            "key": 5,
+            "starts": [
+              10.600000381469727
+            ],
+            "span": 42.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.39721540321510906,
+            "key": 0,
+            "starts": [
+              16.0
+            ],
+            "span": 34.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2846492972809481,
+            "key": 5,
+            "at": 53.6,
+            "span": 42.6,
+            "starts": [
+              53.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5691795974481301,
+            "key": 0,
+            "at": 67.9,
+            "span": 32.5,
+            "starts": [
+              67.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11462150412923558,
+            "key": 5,
+            "starts": [
+              53.20000076293945
+            ],
+            "span": 42.60000228881836
+          },
+          "runnerUp": {
+            "cost": 0.39771872884495757,
+            "key": 0,
+            "starts": [
+              58.20000076293945
+            ],
+            "span": 34.999996185302734
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.28391823333097005,
+            "key": 5,
+            "at": 96.3,
+            "span": 42.6,
+            "starts": [
+              95.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5665701301092286,
+            "key": 0,
+            "at": 110.6,
+            "span": 32.4,
+            "starts": [
+              110.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11022165731747201,
+            "key": 5,
+            "starts": [
+              95.9000015258789
+            ],
+            "span": 42.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.39715154500420813,
+            "key": 0,
+            "starts": [
+              100.9000015258789
+            ],
+            "span": 34.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.28462013762784505,
+            "key": 5,
+            "at": 139.1,
+            "span": 42.4,
+            "starts": [
+              138.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5699547939613218,
+            "key": 10,
+            "at": 128.4,
+            "span": 28.3,
+            "starts": [
+              128.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10959655618779274,
+            "key": 5,
+            "starts": [
+              138.60000610351562
+            ],
+            "span": 42.59999084472656
+          },
+          "runnerUp": {
+            "cost": 0.3971147023542703,
+            "key": 0,
+            "starts": [
+              143.60000610351562
+            ],
+            "span": 34.899993896484375
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "主啊，我属你，我听你声音，说你爱我何等深； 但我更渴望被信心举起，使我更能亲近你。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "分别我为圣，专为主所用，仰赖你圣恩大能； 助我往上看，有坚固盼望，主旨意我所想往。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "虽片刻时间在施恩主座前，何等喜乐难以言； 俯伏主脚前，与主面对面，如密友欢聚甘甜。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "何等深主爱，我今不能明，直到走完世路程； 何等大喜乐，我今未全历，直到与主享安息。 亲爱恩主，引我更亲近，到你受死宝架前； 引我亲近，亲近，更亲近恩主，到你流宝血身边。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.248
+}

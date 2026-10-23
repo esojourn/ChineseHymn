@@ -1,0 +1,286 @@
+{
+  "songId": "02-475",
+  "source": "02-475找迷羊.txt",
+  "sourceHash": "e61bea5cc76007c75b7a4e2891eeeef8de7e4beac81003de4f3138b345e562f3",
+  "trackHashes": [
+    {
+      "file": "02-475找迷羊.mp3",
+      "sha256": "c747f505d243b6b334202ce9c0078ebcfe0f43a3a568ef64e005872849bce4d0"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "e61bea5cc76007c75b7a4e2891eeeef8de7e4beac81003de4f3138b345e562f3",
+      "file": "timeless-Bring_Them_In.mid",
+      "sha256": "6b558a530a4db9dac4da828f91e0b30ae91a9daaa7fe41381ac41afcb2575045",
+      "url": "https://library.timelesstruths.org/library/music/B/Bring_Them_In/Bring_Them_In.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Bring_Them_In/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/B/Bring_Them_In/Bring_Them_In.xml",
+      "scoreReferenceSha256": "448dc0b0878e66ba97486940fa223d5dafad4e52d9962034fa166bd9dfbd4a15",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "我听见好牧人慈声",
+          "领他们归羊圈领他"
+        ],
+        [
+          "谁愿意帮助大牧人",
+          "领他们归羊圈领他"
+        ],
+        [
+          "听迷羊旷野发哀声",
+          "领他们归羊圈领他"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            3,
+            5,
+            3,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 32,
+          "pitches": [
+            0,
+            3,
+            0,
+            1,
+            5
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 61,
+        "midiNoteCount": 61,
+        "editCost": 0,
+        "runnerUpCost": 45,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 32,
+            "possibleMidiNoteIndices": [
+              32
+            ],
+            "at": 19.2
+          }
+        ],
+        "offsets": [
+          0.0,
+          19.2
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          32
+        ]
+      },
+      "formReview": "主歌第1至8小节；第9小节副歌Bring起，对应“领他们归羊圈”区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 38.40234375,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9586095213890076,
+      "initialOnsetEstimate": 8.528,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16297640403111777,
+            "key": 7,
+            "at": 10.0,
+            "span": 38.3,
+            "starts": [
+              9.6,
+              28.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5332839886347452,
+            "key": 2,
+            "at": 13.6,
+            "span": 25.1,
+            "starts": [
+              13.2,
+              25.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09895373384157817,
+            "key": 7,
+            "starts": [
+              9.600000381469727,
+              28.799999237060547
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.41585254669189453,
+            "key": 2,
+            "starts": [
+              19.200000762939453,
+              38.400001525878906
+            ],
+            "span": 34.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16295040647188822,
+            "key": 7,
+            "at": 48.4,
+            "span": 38.3,
+            "starts": [
+              48.0,
+              67.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5354814926783243,
+            "key": 2,
+            "at": 52.0,
+            "span": 25.1,
+            "starts": [
+              51.6,
+              64.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09923297166824341,
+            "key": 7,
+            "starts": [
+              48.0,
+              67.19999694824219
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.40467790762583417,
+            "key": 2,
+            "starts": [
+              37.29999923706055,
+              52.79999923706055
+            ],
+            "span": 34.60000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16251872976620993,
+            "key": 7,
+            "at": 86.8,
+            "span": 38.3,
+            "starts": [
+              86.4,
+              105.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5352137088775635,
+            "key": 2,
+            "at": 90.4,
+            "span": 25.1,
+            "starts": [
+              90.0,
+              102.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09914940595626831,
+            "key": 7,
+            "starts": [
+              86.4000015258789,
+              105.5999984741211
+            ],
+            "span": 38.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.4049636522928874,
+            "key": 2,
+            "starts": [
+              75.69999694824219,
+              91.19999694824219
+            ],
+            "span": 34.600006103515625
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.2
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我听见，好牧人慈声， 来自荒凉，黑暗野地； 呼唤一切，迷路的羊， 归回羊群，不再流离。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "领他们归羊圈，领他们速离罪恶深渊； 领他们归羊圈，领他们归耶稣羊圈。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "谁愿意，帮助大牧人， 寻找失丧，迷路的羊； 谁肯领他们，归羊圈， 安居其中，免受寒流。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "领他们归羊圈，领他们速离罪恶深渊； 领他们归羊圈，领他们归耶稣羊圈。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "听迷羊，旷野发哀声， 正在荒野，高山被困； 听你救主，正对你说， 到各处，寻找我羊群。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "领他们归羊圈，领他们速离罪恶深渊； 领他们归羊圈，领他们归耶稣羊圈。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.163
+}

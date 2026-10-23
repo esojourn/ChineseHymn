@@ -1,0 +1,236 @@
+{
+  "songId": "02-474",
+  "source": "02-474黑夜将临快作工.txt",
+  "sourceHash": "71d7de69309e0222c1f835f8966965af78061becd197a6255b90194fab44b20d",
+  "trackHashes": [
+    {
+      "file": "02-474黑夜将临快作工.mp3",
+      "sha256": "57437a1fb8827a6b6d07adc7ce95a7efa9a80135f8d2ba0c8db34dac0753ccdc"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "71d7de69309e0222c1f835f8966965af78061becd197a6255b90194fab44b20d",
+      "file": "timeless-Work_for_the_Night_Is_Coming.mid",
+      "sha256": "3dc387ec54f8caa52d3169c039734dda0561011de988d84f89d27d5df1290d0f",
+      "url": "https://library.timelesstruths.org/library/music/W/Work_for_the_Night_Is_Coming/Work_for_the_Night_Is_Coming.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Work_for_the_Night_Is_Coming/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/W/Work_for_the_Night_Is_Coming/Work_for_the_Night_Is_Coming.xml",
+      "scoreReferenceSha256": "e003424f7fc7663de032576c108a5cb1870756d73c3a7813eaf6bffbe9548149",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "黑夜将临快作工作"
+        ],
+        [
+          "黑夜将临快作工趁"
+        ],
+        [
+          "黑夜将临快作工趁"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            9,
+            10,
+            0,
+            0
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 51,
+        "midiNoteCount": 51,
+        "editCost": 0,
+        "runnerUpCost": 36,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "正文每段四行覆盖完整八个乐句，为一个阅读区域，无另加副歌。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 38.40234375,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9888977408409119,
+      "initialOnsetEstimate": 7.828,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24550429979960123,
+            "key": 6,
+            "at": 10.0,
+            "span": 38.2,
+            "starts": [
+              9.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.560509204864502,
+            "key": 1,
+            "at": 16.4,
+            "span": 26.9,
+            "starts": [
+              16.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08643718560536702,
+            "key": 6,
+            "starts": [
+              9.600000381469727
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.3873102267583211,
+            "key": 1,
+            "starts": [
+              23.399999618530273
+            ],
+            "span": 29.30000114440918
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24505462249120077,
+            "key": 6,
+            "at": 48.4,
+            "span": 38.2,
+            "starts": [
+              48.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5601189136505127,
+            "key": 1,
+            "at": 54.8,
+            "span": 26.9,
+            "starts": [
+              54.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08697239557902019,
+            "key": 6,
+            "starts": [
+              48.0
+            ],
+            "span": 38.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.38664086659749347,
+            "key": 1,
+            "starts": [
+              61.79999923706055
+            ],
+            "span": 29.299999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2451793154080709,
+            "key": 6,
+            "at": 86.8,
+            "span": 38.3,
+            "starts": [
+              86.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5603340069452921,
+            "key": 1,
+            "at": 93.2,
+            "span": 22.1,
+            "starts": [
+              93.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08493899305661519,
+            "key": 6,
+            "starts": [
+              86.4000015258789
+            ],
+            "span": 38.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.391581932703654,
+            "key": 11,
+            "starts": [
+              84.0
+            ],
+            "span": 24.800003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "黑夜将临快作工，作工当趁早晨； 朝露闪耀花放时，作工要辛勤； 趁白日阳光明亮，努力作工不停； 黑夜将临快作工，夜临工当成。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "黑夜将临快作工，趁着太阳当空， 尽心尽力去事奉，将来享安宁； 光阴飞逝当爱惜，每分秒当善用； 黑夜将临快作工，夜临工将停。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "黑夜将临快作工，趁着暮色未深； 白日将尽黄昏近，赶快传福音； 夕阳残照仍努力，直到日影消失； 黑夜将临快作工，夜临工完成。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 3,
+  "elapsedSeconds": 0.154
+}

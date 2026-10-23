@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-375",
+  "status": "reviewed",
+  "source": {
+    "file": "02-375精兵兴起.txt",
+    "sha256": "5e2f45fcf53155773590ddf02086fd1f18d8378e44b5fcb6273ac42935271077",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-375精兵兴起.mp3",
+      "sha256": "f90062b95fceba458e61d6436a3f91f53a3a51743a11e431876987268f59080a",
+      "duration": 133.38122448979593,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    }
+  },
+  "cues": [
+    {
+      "at": 10.1,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 45.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 50.5,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 90.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.25,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "仇敌已接近，战号快吹起，高学主基督得胜旗； 披全副军装刚强立敌前，得胜凯旋全靠主圣言。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "基督为此雄师大主将。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "大家向前进，奋勇战仇敌，深信跟随主必胜利； 盾牌与旌旗在光中耀闪，为主真理而战必凯旋。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "基督为此雄师大主将。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "万军全能神，请听我呼求，助我们得胜施恩佑； 战争完毕后齐高歌凯旋，头戴荣耀冠冕站主前。 精兵，兴起！集合主旌旗下，预备前进， 将此令传扬！向前！向前！和散那高声唱，",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "基督为此雄师大主将。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-375精兵兴起.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

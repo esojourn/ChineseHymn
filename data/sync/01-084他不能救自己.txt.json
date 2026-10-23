@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "01-084",
+  "status": "reviewed",
+  "source": {
+    "file": "01-084他不能救自己.txt",
+    "sha256": "93e5025ab4c3ef67f0f3a91123296beb1eeef547226213af9130d0e0028c6246",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-084他不能救自己.mp3",
+      "sha256": "6520c95b3b586c2ef2ee531583b710f5823dbcc7057d002848e352e771e8fab8",
+      "duration": 154.8,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.5,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.3,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 45.7,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.3,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.6,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 109.4,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 117.8,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 145.4,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-084他不能救自己-领唱.mp3",
+      "sha256": "cdeb028fd3cdd5f340f6f204eb3bc16510dcb92346a755209537d4784140f86a",
+      "duration": 173.55755102040817,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    }
+  },
+  "cues": [
+    {
+      "at": 11.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.2,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 51.65,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.6,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.05,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.0,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 132.45,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 163.55,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "祂不能救自己，必须死髑髅地； 不然，恩典无门，来救荒凉罪人； 眞的，神儿子当流血， 罪人才能洗得清洁，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "罪人才能洗得清洁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "祂不能救自己，必须成全公义； 我罪当有刑罚，需要祂来被杀； 律法非此不算还债， 非此，罪恶不能宽待，",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "非此，罪恶不能宽待。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "祂不能救自己，因为祂是代替 信祂的人站立在罪人的死地； 祂在十字架上流血， 担当信徒一切罪孽，",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "担当信徒一切罪孽。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "祂不能救自己，这爱怎么样呢！ 祂不能救自己，这爱哪有止极！ 我们的心虽然冷淡， 这爱叫它发出感赞，",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "这爱叫它发出感赞。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-084他不能救自己.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

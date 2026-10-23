@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-285",
+  "status": "reviewed",
+  "source": {
+    "file": "02-285基督满足我心.txt",
+    "sha256": "c88196d5209479b657d3ea7f39452e83ab40e8386804f66b9a9a82a91f2d8070",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-285基督满足我心.mp3",
+      "sha256": "c98ee037128d803278ce574acfbf6e125a1ea09cd4afddf8c5c5ae93484fb550",
+      "duration": 193.9069387755102,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 11.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 56.5,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.6,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 146.8,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主基督里我已寻见我所久望平安， 前未经历的大喜乐，惟主能赐给我。 惟主基督满足我心，并无何人像他， 仁爱生命，永远喜乐，由主耶稣赐下。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "前我渴想世间乐福，却不寻求基督， 虽我曾将救主忽略，主爱却临及我。 惟主基督满足我心，并无何人像他， 仁爱生命，永远喜乐，由主耶稣赐下。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我曾来到破裂水池，希望痛快饱饮， 池中的水全都漏失，令我蒙羞呻吟。 惟主基督满足我心，并无何人像他， 仁爱生命，永远喜乐，由主耶稣赐下。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "世福落空我心伤悲，却未为主落泪， 直到心眼主为我开，始见上主慈爱。 惟主基督满足我心，并无何人像他， 仁爱生命，永远喜乐，由主耶稣赐下。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-285基督满足我心.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

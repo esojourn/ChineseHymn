@@ -1,0 +1,621 @@
+{
+  "songId": "05-263",
+  "source": "05-263主意尽美歌.jpg",
+  "sourceHash": "c102a385f333c68c03d7d0a2871f65a26bbfe23b91c1fec03a92bde43dc4a759",
+  "trackHashes": [
+    {
+      "file": "05-263主意尽美歌.mp3",
+      "sha256": "fe5c7e10afa5503faa0e79e0b8f31c24898c57da2db148e4f483e2499f3be304"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 1,
+    "mode": "image-rows",
+    "profile": {
+      "targetSha256": "c102a385f333c68c03d7d0a2871f65a26bbfe23b91c1fec03a92bde43dc4a759",
+      "file": "hymnary498.mid",
+      "sha256": "8c1d598777385d42d0addda5b8b2f4723a8628ecf83b1286481d651772cf7b93",
+      "verseCount": 5,
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary498.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary498.htm",
+      "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 66,
+        "midiNoteCount": 68,
+        "editCost": 3,
+        "runnerUpCost": 52,
+        "semitoneShift": 8,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 16,
+            "possibleMidiNoteIndices": [
+              16
+            ],
+            "at": 8.7273
+          },
+          {
+            "scoreNoteIndex": 32,
+            "possibleMidiNoteIndices": [
+              32
+            ],
+            "at": 17.1818
+          },
+          {
+            "scoreNoteIndex": 48,
+            "possibleMidiNoteIndices": [
+              50
+            ],
+            "at": 24.5454
+          }
+        ],
+        "offsets": [
+          0.0,
+          8.7273,
+          17.1818,
+          24.5454
+        ]
+      }
+    },
+    "symbolicRows": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 66,
+      "midiNoteCount": 68,
+      "editCost": 3,
+      "runnerUpCost": 52,
+      "semitoneShift": 8,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 16,
+          "possibleMidiNoteIndices": [
+            16
+          ],
+          "at": 8.7273
+        },
+        {
+          "scoreNoteIndex": 32,
+          "possibleMidiNoteIndices": [
+            32
+          ],
+          "at": 17.1818
+        },
+        {
+          "scoreNoteIndex": 48,
+          "possibleMidiNoteIndices": [
+            50
+          ],
+          "at": 24.5454
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.7273,
+        17.1818,
+        24.5454
+      ]
+    },
+    "referencePeriod": 33.1363305,
+    "recordings": {
+      "05-263主意尽美歌.mp3": {
+        "music": {
+          "period": 40.1,
+          "similarity": 0.9714578986167908,
+          "initialOnsetEstimate": 16.692,
+          "shifts": [
+            0.0,
+            40.1,
+            80.3,
+            120.4,
+            160.6
+          ]
+        },
+        "matches": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.1751174546239382,
+                "key": 6,
+                "at": 20.0,
+                "span": 39.8,
+                "starts": [
+                  20.0,
+                  30.5,
+                  40.6,
+                  49.5
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6341573662888677,
+                "key": 11,
+                "at": 8.7,
+                "span": 26.7,
+                "starts": [
+                  8.7,
+                  15.5,
+                  19.9,
+                  27.2
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.2436546839383475,
+                "key": 6,
+                "starts": [
+                  19.899999618530273,
+                  30.399999618530273,
+                  40.599998474121094,
+                  49.400001525878906
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.46196965624269404,
+                "key": 1,
+                "starts": [
+                  1.7000000476837158,
+                  10.899999618530273,
+                  15.399999618530273,
+                  22.399999618530273
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.17904860955521354,
+                "key": 6,
+                "at": 60.1,
+                "span": 39.8,
+                "starts": [
+                  60.1,
+                  70.6,
+                  80.8,
+                  89.6
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6314226183808058,
+                "key": 11,
+                "at": 48.9,
+                "span": 26.6,
+                "starts": [
+                  48.9,
+                  55.6,
+                  60.1,
+                  67.4
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.2417573619661783,
+                "key": 6,
+                "starts": [
+                  60.099998474121094,
+                  70.5999984741211,
+                  80.69999694824219,
+                  89.5
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.4547086796558409,
+                "key": 1,
+                "starts": [
+                  41.79999923706055,
+                  51.099998474121094,
+                  55.5,
+                  62.599998474121094
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.1765905175720367,
+                "key": 6,
+                "at": 100.3,
+                "span": 39.8,
+                "starts": [
+                  100.3,
+                  110.8,
+                  120.9,
+                  129.8
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6338041690816903,
+                "key": 1,
+                "at": 120.9,
+                "span": 10.8,
+                "starts": [
+                  120.9,
+                  122.0,
+                  125.9,
+                  127.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.2402181078370967,
+                "key": 6,
+                "starts": [
+                  100.19999694824219,
+                  110.69999694824219,
+                  120.9000015258789,
+                  129.6999969482422
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.458053969385618,
+                "key": 1,
+                "starts": [
+                  82.0,
+                  91.19999694824219,
+                  95.5999984741211,
+                  102.69999694824219
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.17729685490862687,
+                "key": 6,
+                "at": 140.4,
+                "span": 39.8,
+                "starts": [
+                  140.4,
+                  150.9,
+                  161.0,
+                  169.9
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6324632601844997,
+                "key": 11,
+                "at": 129.1,
+                "span": 26.7,
+                "starts": [
+                  129.1,
+                  136.2,
+                  140.4,
+                  147.6
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.243639824693637,
+                "key": 6,
+                "starts": [
+                  140.39999389648438,
+                  150.89999389648438,
+                  161.0,
+                  169.8000030517578
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.45741979736936955,
+                "key": 1,
+                "starts": [
+                  122.0999984741211,
+                  131.39999389648438,
+                  136.1999969482422,
+                  142.89999389648438
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.178793890517846,
+                "key": 6,
+                "at": 180.5,
+                "span": 39.8,
+                "starts": [
+                  180.5,
+                  191.1,
+                  201.2,
+                  210.1
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6310254712949073,
+                "key": 1,
+                "at": 201.2,
+                "span": 14.5,
+                "starts": [
+                  201.2,
+                  202.3,
+                  206.2,
+                  208.1
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.24271948379174135,
+                "key": 6,
+                "starts": [
+                  180.5,
+                  191.0,
+                  201.1999969482422,
+                  210.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.4587631796363583,
+                "key": 1,
+                "starts": [
+                  162.3000030517578,
+                  171.5,
+                  176.0,
+                  183.0
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "independentTimelines": {
+    "05-263主意尽美歌.mp3": {
+      "definitions": [
+        {
+          "region": "s1_v1",
+          "text": "救主子民还在世间，有时难免流泪试炼，",
+          "label": "第1段：第1谱行"
+        },
+        {
+          "region": "s2_v1",
+          "text": "虽然此刻不知何益，后来到家必要知悉。",
+          "label": "第1段：第2谱行"
+        },
+        {
+          "region": "s3_chorus",
+          "text": "一生一世只管靠主，不用惧怕，主无错误。",
+          "label": "第1段：第3谱行"
+        },
+        {
+          "region": "s4_chorus",
+          "text": "虽有多事还不甚明，主意尽美可以安心。",
+          "label": "第1段：第4谱行"
+        },
+        {
+          "region": "s1_v2",
+          "text": "天下万事互相效力，使主子民随时获益，",
+          "label": "第2段：第1谱行"
+        },
+        {
+          "region": "s2_v2",
+          "text": "我们应当一无挂虑，常常喜乐靠主应许。",
+          "label": "第2段：第2谱行"
+        },
+        {
+          "region": "s3_chorus",
+          "text": "一生一世只管靠主，不用惧怕，主无错误。",
+          "label": "第2段：第3谱行"
+        },
+        {
+          "region": "s4_chorus",
+          "text": "虽有多事还不甚明，主意尽美可以安心。",
+          "label": "第2段：第4谱行"
+        },
+        {
+          "region": "s1_v3",
+          "text": "今所遇见万般事情，多是奥秘不易知清，",
+          "label": "第3段：第1谱行"
+        },
+        {
+          "region": "s2_v3",
+          "text": "惟当深信主恩无尽，主既安排总可安心。",
+          "label": "第3段：第2谱行"
+        },
+        {
+          "region": "s3_chorus",
+          "text": "一生一世只管靠主，不用惧怕，主无错误。",
+          "label": "第3段：第3谱行"
+        },
+        {
+          "region": "s4_chorus",
+          "text": "虽有多事还不甚明，主意尽美可以安心。",
+          "label": "第3段：第4谱行"
+        },
+        {
+          "region": "s1_v4",
+          "text": "或有善事尚未成就，不可灰心，不可退后，",
+          "label": "第4段：第1谱行"
+        },
+        {
+          "region": "s2_v4",
+          "text": "仰望耶稣忍耐顺从，主既创始亦必成终。",
+          "label": "第4段：第2谱行"
+        },
+        {
+          "region": "s3_chorus",
+          "text": "一生一世只管靠主，不用惧怕，主无错误。",
+          "label": "第4段：第3谱行"
+        },
+        {
+          "region": "s4_chorus",
+          "text": "虽有多事还不甚明，主意尽美可以安心。",
+          "label": "第4段：第4谱行"
+        },
+        {
+          "region": "s1_v5",
+          "text": "凡事祈祷，凡事谢恩，不可疑惑，不可怨恨，",
+          "label": "第5段：第1谱行"
+        },
+        {
+          "region": "s2_v5",
+          "text": "忘记背后，努力面前，奔向标杆，领取冠冕。",
+          "label": "第5段：第2谱行"
+        },
+        {
+          "region": "s3_chorus",
+          "text": "一生一世只管靠主，不用惧怕，主无错误。",
+          "label": "第5段：第3谱行"
+        },
+        {
+          "region": "s4_chorus",
+          "text": "虽有多事还不甚明，主意尽美可以安心。",
+          "label": "第5段：第4谱行"
+        }
+      ],
+      "times": [
+        19.95,
+        30.45,
+        40.6,
+        49.45,
+        60.1,
+        70.6,
+        80.75,
+        89.55,
+        100.25,
+        110.75,
+        120.9,
+        129.75,
+        140.4,
+        150.9,
+        161.0,
+        169.85,
+        180.5,
+        191.05,
+        201.2,
+        210.05
+      ],
+      "returnIndices": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ]
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "s1_v1",
+      "text": "救主子民还在世间，有时难免流泪试炼，",
+      "label": "第1段：第1谱行"
+    },
+    {
+      "region": "s2_v1",
+      "text": "虽然此刻不知何益，后来到家必要知悉。",
+      "label": "第1段：第2谱行"
+    },
+    {
+      "region": "s3_chorus",
+      "text": "一生一世只管靠主，不用惧怕，主无错误。",
+      "label": "第1段：第3谱行"
+    },
+    {
+      "region": "s4_chorus",
+      "text": "虽有多事还不甚明，主意尽美可以安心。",
+      "label": "第1段：第4谱行"
+    },
+    {
+      "region": "s1_v2",
+      "text": "天下万事互相效力，使主子民随时获益，",
+      "label": "第2段：第1谱行"
+    },
+    {
+      "region": "s2_v2",
+      "text": "我们应当一无挂虑，常常喜乐靠主应许。",
+      "label": "第2段：第2谱行"
+    },
+    {
+      "region": "s3_chorus",
+      "text": "一生一世只管靠主，不用惧怕，主无错误。",
+      "label": "第2段：第3谱行"
+    },
+    {
+      "region": "s4_chorus",
+      "text": "虽有多事还不甚明，主意尽美可以安心。",
+      "label": "第2段：第4谱行"
+    },
+    {
+      "region": "s1_v3",
+      "text": "今所遇见万般事情，多是奥秘不易知清，",
+      "label": "第3段：第1谱行"
+    },
+    {
+      "region": "s2_v3",
+      "text": "惟当深信主恩无尽，主既安排总可安心。",
+      "label": "第3段：第2谱行"
+    },
+    {
+      "region": "s3_chorus",
+      "text": "一生一世只管靠主，不用惧怕，主无错误。",
+      "label": "第3段：第3谱行"
+    },
+    {
+      "region": "s4_chorus",
+      "text": "虽有多事还不甚明，主意尽美可以安心。",
+      "label": "第3段：第4谱行"
+    },
+    {
+      "region": "s1_v4",
+      "text": "或有善事尚未成就，不可灰心，不可退后，",
+      "label": "第4段：第1谱行"
+    },
+    {
+      "region": "s2_v4",
+      "text": "仰望耶稣忍耐顺从，主既创始亦必成终。",
+      "label": "第4段：第2谱行"
+    },
+    {
+      "region": "s3_chorus",
+      "text": "一生一世只管靠主，不用惧怕，主无错误。",
+      "label": "第4段：第3谱行"
+    },
+    {
+      "region": "s4_chorus",
+      "text": "虽有多事还不甚明，主意尽美可以安心。",
+      "label": "第4段：第4谱行"
+    },
+    {
+      "region": "s1_v5",
+      "text": "凡事祈祷，凡事谢恩，不可疑惑，不可怨恨，",
+      "label": "第5段：第1谱行"
+    },
+    {
+      "region": "s2_v5",
+      "text": "忘记背后，努力面前，奔向标杆，领取冠冕。",
+      "label": "第5段：第2谱行"
+    },
+    {
+      "region": "s3_chorus",
+      "text": "一生一世只管靠主，不用惧怕，主无错误。",
+      "label": "第5段：第3谱行"
+    },
+    {
+      "region": "s4_chorus",
+      "text": "虽有多事还不甚明，主意尽美可以安心。",
+      "label": "第5段：第4谱行"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 20,
+  "elapsedSeconds": 0.962
+}

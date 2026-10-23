@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "songId": "05-263",
+  "status": "reviewed",
+  "source": {
+    "file": "05-263主意尽美歌.jpg",
+    "sha256": "c102a385f333c68c03d7d0a2871f65a26bbfe23b91c1fec03a92bde43dc4a759",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-263主意尽美歌.mp3",
+      "sha256": "fe5c7e10afa5503faa0e79e0b8f31c24898c57da2db148e4f483e2499f3be304",
+      "duration": 220.36897959183673,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.176947,
+      "bottom": 0.260197
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.21,
+      "bottom": 0.292649
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.243053,
+      "bottom": 0.326303
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.276106,
+      "bottom": 0.359356
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.30976,
+      "bottom": 0.392409
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.415529,
+      "bottom": 0.498178
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.447981,
+      "bottom": 0.53063
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.481034,
+      "bottom": 0.563683
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.513486,
+      "bottom": 0.595534
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.545337,
+      "bottom": 0.627986
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.696779,
+      "bottom": 0.779428
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.804351,
+      "bottom": 0.887601
+    }
+  },
+  "cues": [
+    {
+      "at": 19.95,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.45,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 40.6,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.45,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 60.1,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 70.6,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 80.75,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.55,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 100.25,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 110.75,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.9,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 129.75,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 140.4,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 150.9,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 161.0,
+      "region": "s3_chorus",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 169.85,
+      "region": "s4_chorus",
+      "label": "第4段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 180.5,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 191.05,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 201.2,
+      "region": "s3_chorus",
+      "label": "第5段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 210.05,
+      "region": "s4_chorus",
+      "label": "第5段：第4谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "救主子民还在世间，有时难免流泪试炼，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "虽然此刻不知何益，后来到家必要知悉。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一生一世只管靠主，不用惧怕，主无错误。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "虽有多事还不甚明，主意尽美可以安心。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "天下万事互相效力，使主子民随时获益，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我们应当一无挂虑，常常喜乐靠主应许。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一生一世只管靠主，不用惧怕，主无错误。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "虽有多事还不甚明，主意尽美可以安心。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "今所遇见万般事情，多是奥秘不易知清，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "惟当深信主恩无尽，主既安排总可安心。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一生一世只管靠主，不用惧怕，主无错误。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "虽有多事还不甚明，主意尽美可以安心。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "或有善事尚未成就，不可灰心，不可退后，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "仰望耶稣忍耐顺从，主既创始亦必成终。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一生一世只管靠主，不用惧怕，主无错误。",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "虽有多事还不甚明，主意尽美可以安心。",
+        "label": "第4段：第4谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "凡事祈祷，凡事谢恩，不可疑惑，不可怨恨，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "忘记背后，努力面前，奔向标杆，领取冠冕。",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "一生一世只管靠主，不用惧怕，主无错误。",
+        "label": "第5段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "虽有多事还不甚明，主意尽美可以安心。",
+        "label": "第5段：第4谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-263主意尽美歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

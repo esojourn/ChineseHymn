@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "01-343",
+  "status": "reviewed",
+  "source": {
+    "file": "01-343安稳在耶稣手中.txt",
+    "sha256": "336c6545cbb0d3a7fcba49d44b82733d8b36234292866cf96893d72957cc37a8",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-343安稳在耶稣手中.mp3",
+      "sha256": "6ae9f6ba031c629b21ab391b67c79ae2b89967c7c075ab23cfea275a4d35fa7a",
+      "duration": 193.9330612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 10.1,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.65,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.75,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 111.3,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.35,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 171.9,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "安稳在耶稣手臂，安稳在主怀里； 在此祂爱常覆翼，我得甜美安息。 这是天来的音乐，经由诗歌倾吐； 飘过荣耀的天野，飘过碧玉之土。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "安稳在耶稣手臂，安稳在主怀里； 在此祂爱常覆翼，我得甜美安息。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "安稳在耶稣手臂，安稳脱离挂碍； 脱离试探与攻击，在此罪不为害。 脱离痛苦的熬煎，脱离疑惑惊畏； 只有几个小试炼，只有几滴眼泪。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "安稳在耶稣手臂，安稳在主怀里； 在此祂爱常覆翼，我得甜美安息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "耶稣是我避难所，耶稣为我受死； 我的信心要信托，神的万世盘石。 在此让我忍耐等，等到黑夜已过； 等到羔羊从新城，成全我所信托。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "安稳在耶稣手臂，安稳在主怀里； 在此祂爱常覆翼，我得甜美安息。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-343安稳在耶稣手中.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "01-314",
+  "status": "reviewed",
+  "source": {
+    "file": "01-314从我活出你自己.txt",
+    "sha256": "9b59112765197219e00622d612850024d4ff943f0a71a84b16d81a5838979196",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-314从我活出你自己.mp3",
+      "sha256": "ef4ba71829cb0086442f3e49a751b40f0b5c60e275dea4ab7d17d66a92efd99f",
+      "duration": 143.51673469387754,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 0.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.65,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 35.1,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 52.75,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.2,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.85,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.4,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.0,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "从我活出祢的自己， 耶稣，祢是我生命； 对于我的所有问题， 求祢以祢为答应。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "从我活出祢的自己， 一切事上能随意； 我不过是透明用器， 为着彰显祢秘密。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "殿宇今已完全奉献， 已除所有的不洁； 但愿祢荣耀火焰， 今从里面就露襭。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "全地现在都当肃穆， 我的身体今进供； 作祢顺服、安静奴仆， 只有被祢来推动。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "所有肢体每个时刻， 约束等候祢发言； 准备为祢前来负轭， 或是不用放一边。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "约束，没有不安追求， 没有紧张与受压； 没有因受对付怨尤， 没有因懊悔倒下。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "乃是柔软、安静、安息， 脱离倾向与成见； 让祢能够自由定意， 当祢对我有指点。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "从我活出祢的自己， 耶稣，祢是我生命； 对于我的所有问题， 求祢以祢为答应。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-314从我活出你自己.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

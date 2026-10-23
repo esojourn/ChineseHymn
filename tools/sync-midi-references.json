@@ -808,64 +808,35 @@
   },
   "02-467": {
     "targetSha256": "a6dc7eed7da7e2adbd32da987b9e08bc424bb1724f45ad08e6eb01dcdd19ef71",
-    "file": "hymnary304.mid",
-    "sha256": "d0ebec07abfb0712eb32f46fcb88e5e793531ae497df0bcac5f27c807b945fc3",
-    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary304.mid",
-    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary304.htm",
+    "file": "life467.mid",
+    "sha256": "fc4fd5c272c4e97a202ddbd071373c57194d4fc6e3d8325bd536af424cf976b2",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/467.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life467.html",
+    "textReferenceSha256": "d054cc08af52c8d4d6294df576d40e0f594b63f92f89176a1bb4330089bd38e7",
     "verseCount": 4,
-    "referenceDiscovery": {
-      "songId": "02-467",
-      "source": "02-467救主牺牲的爱.txt",
-      "sourceHash": "a6dc7eed7da7e2adbd32da987b9e08bc424bb1724f45ad08e6eb01dcdd19ef71",
-      "audio": "02-467救主牺牲的爱.mp3",
-      "audioHash": "10e60cd2a9da889a8230a7ec0ec1e25a0fbf3d6516668bc50c705359654757c7",
-      "diagnosticOnly": true,
-      "templateSignature": "fb60bfea5318b6fd6729f8ba99c83a7809a3b49ee70b8af1305c8ee77f075645",
-      "music": {
-        "period": 40.2,
-        "similarity": 0.8243415951728821,
-        "initialOnsetEstimate": 11.484,
-        "shifts": [
-          0.0,
-          40.2,
-          80.4,
-          120.5
-        ]
-      },
-      "matches": [
-        {
-          "file": "hymnary304.mid",
-          "similarity": 0.77132,
-          "key": 4,
-          "cyclicPhase": 508
-        },
-        {
-          "file": "hymnary464.mid",
-          "similarity": 0.59819,
-          "key": 8,
-          "cyclicPhase": 502
-        },
-        {
-          "file": "hymnary252.mid",
-          "similarity": 0.56827,
-          "key": 6,
-          "cyclicPhase": 509
-        },
-        {
-          "file": "hymnary556.mid",
-          "similarity": 0.56821,
-          "key": 8,
-          "cyclicPhase": 504
-        },
-        {
-          "file": "hymnary512.mid",
-          "similarity": 0.56247,
-          "key": 4,
-          "cyclicPhase": 249
-        }
+    "regionOpenings": [
+      [
+        "救主牺牲的爱已赐"
+      ],
+      [
+        "主在施恩座前为我"
+      ],
+      [
+        "赐我虔诚的心像主"
+      ],
+      [
+        "今生所有一切皆主"
       ]
-    },
-    "formReview": "实际录音的循环和声检索提出同曲候选，检索相似度不作为发布时间轴。每段正文均为单个不超过四行的阅读区域，只使用完整乐段首音定位；同曲填词或译词不同不作为逐字识别。发布须在每个实际段落独立通过更严格的和声代价0.25、旋律代价0.20、调性区分、起点0.5秒、完整乐段跨度与反复相位检查；额外完整同曲乐段必须另核对顺序。参考与源素材、录音哈希固定，未通过任何一项均继续待校准。"
+    ],
+    "formReview": "核对同曲Saviour! Thy Dying Love及原歌本完整四段译词；每段四行是单个阅读区域。此参考通过原歌本全文和直接MIDI链接确认，不以音频检索相似度证明曲名。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 467,
+      "title": "救主牺牲的爱",
+      "tune": "Something for Jesus",
+      "composer": "Robert Lowry",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
   },
   "02-492": {
     "targetSha256": "8314aac6600cdb8f638e59331f5dc9f1bc9279fc121970ee32828658c79a4ff5",
@@ -5298,6 +5269,230 @@
       "tune": "Neumark",
       "composer": "Georg Neumark",
       "scope": "核对歌词页全文、段落顺序及直接关联的同编号MIDI；仅用于整段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-290": {
+    "targetSha256": "20bf4fb5681064f67ad90c6aff1fb3b2174f0a36472e79d867d255ab9bbc97f4",
+    "file": "life290.mid",
+    "sha256": "260632bac4e69468302be48058c11e829bce5b106ee39c853d57c5dffc497830",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/290.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life290.html",
+    "textReferenceSha256": "7872e4f3fe71428c87d25392b621ff850a5cb4a21eca15bc6bd15f66a0867052",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "一生在神手中愿你"
+      ],
+      [
+        "一生在神手中不论"
+      ],
+      [
+        "一生在神手中被钉"
+      ],
+      [
+        "一生在神手中永远"
+      ]
+    ],
+    "formReview": "每段两行，覆盖完整四句，无独立副歌，四段均为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 290,
+      "title": "一生在神手中",
+      "tune": "Ferguson, SM",
+      "composer": "George Kingsley",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-411": {
+    "targetSha256": "1d0f4fac4657623fc4a2c49a60e0175faa4d4455745b28c688f547c36dc6b474",
+    "file": "life411.mid",
+    "sha256": "d1ae5b7f7c5a9293b86505f928ecf9ed7e53a42a1f65350c25689b593d992a0f",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/411.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life411.html",
+    "textReferenceSha256": "97ed25d9e386b7dd10af6aadbdf23d02e2845fdc69516a400450d445469425cd",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我原是迷路羊不爱"
+      ],
+      [
+        "善牧寻找迷羊慈父"
+      ],
+      [
+        "耶稣是我牧人是他"
+      ],
+      [
+        "我不再做迷羊喜欢"
+      ]
+    ],
+    "formReview": "每段四行，覆盖原文完整八句，四段均为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 411,
+      "title": "我原是迷路羊",
+      "tune": "Lebanon, SMD",
+      "composer": "John Zundel",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-440": {
+    "targetSha256": "40fd9d0f7bc885e9b2aa46abf764cf7496458691fb271e6b90c081ad23a740e8",
+    "file": "life440.mid",
+    "sha256": "477a44725f58bf26534857595a90771743273756ccbe65ada5b24432c1d9c96e",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/440.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life440.html",
+    "textReferenceSha256": "d7fe4b0af0f207764ee8eed06dd9a6bfcf0b6190626230c83ef246f2110a9db4",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "若我今天伤害他人"
+      ],
+      [
+        "若我今天言语不合"
+      ],
+      [
+        "若我今天对人冷酷"
+      ],
+      [
+        "求你赦免我所承认"
+      ]
+    ],
+    "formReview": "采用Charles H. Gabriel曲调，四段每段两行均为单个阅读区域，保留末段阿们的正文。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 440,
+      "title": "求主赦免",
+      "tune": "An Evening Prayer",
+      "composer": "Charles H. Gabriel",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-459": {
+    "targetSha256": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+    "file": "life459.mid",
+    "sha256": "f0557a1759218da635df10489683b3a69287332e3f17320331b4762be12051e8",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/459.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life459.html",
+    "textReferenceSha256": "932501c60a6ec081f38935ba9e131e49fbc7636d703c721d1e97298b17c8b623",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "完全的奉献主我愿"
+      ],
+      [
+        "完全的奉献光阴生"
+      ],
+      [
+        "完全的奉献金银财"
+      ],
+      [
+        "完全的奉献主我属"
+      ]
+    ],
+    "formReview": "正文四段各四行，覆盖各段完整旋律，作为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 459,
+      "title": "完全的奉献",
+      "tune": "Fully Surrendered",
+      "composer": "Alfred C. Snead / George C. Stebbins",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-470": {
+    "targetSha256": "96a4ccb92baf1c6bc2f483af8b32b75f9e59212d8c75348e2994ae91155771fe",
+    "file": "life470.mid",
+    "sha256": "75d00f0e5d2229935509a4fea048bd0631f8e480b63a380fd5e2b3579889fb0e",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/470.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life470.html",
+    "textReferenceSha256": "70e4100fcab35ad4ed9157f03e1ba5459f86c49ba5cd27f6261973e9fde8ec1e",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "活着为耶稣真平安"
+      ],
+      [
+        "活着为耶稣得安息"
+      ],
+      [
+        "活着在何处都为主"
+      ],
+      [
+        "活着为耶稣有盼望"
+      ]
+    ],
+    "formReview": "正文每段四行已包含主歌和副歌。采用Charles F. Weigle曲调，各段是单个完整阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 470,
+      "title": "活着为耶稣",
+      "tune": "Living for Jesus",
+      "composer": "Charles F. Weigle",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "02-476": {
+    "targetSha256": "5cab1c5ac7b83be392730a5611c6994851cffaf1b579578d84896c84ec28998e",
+    "file": "life476.mid",
+    "sha256": "1d44557a198982317231d3d26dc12af976b8108e6fac5c71ff6a20c347dc302f",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/476.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life476.html",
+    "textReferenceSha256": "6d3970e93db084123bc194d59c3098984b57d71c3a9d10f89e7d772f4ceeb52f",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "预备忍受痛苦悲伤"
+      ],
+      [
+        "预备出发预备辛劳"
+      ],
+      [
+        "预备传扬预备默想"
+      ],
+      [
+        "预备宣讲预备警告"
+      ]
+    ],
+    "formReview": "正文每段四行包含主歌及副歌，四段均是单个完整阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 476,
+      "title": "预备",
+      "tune": "Ready",
+      "composer": "A. C. Palmer",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+    }
+  },
+  "03-035": {
+    "targetSha256": "93bdeba8792b597851f1c5fef424d989beb7303ed981eb373b6c70b0d7144e79",
+    "file": "life128.mid",
+    "sha256": "a743d1fde25b0880d8ef779d156f8630dec55d845f35b393be3d812099e938ac",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/128.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life128.html",
+    "textReferenceSha256": "35ea4a62df0447195f6c8619836ca19641ba0c63ae79070f40428623611b597a",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "信徒每逢受试炼当"
+      ],
+      [
+        "随主同往祭司院见"
+      ],
+      [
+        "随主同往各各他在"
+      ],
+      [
+        "清晨急往主坟墓观"
+      ]
+    ],
+    "formReview": "核对同曲Go to Dark Gethsemane原文及译文四段的结构，依次为客西马尼、审判、十架、复活。正文每段三行，均涵盖完整六句，为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 128,
+      "title": "效主舍己 / 信徒每逢受试炼",
+      "tune": "Redhead No. 76 / Petra",
+      "composer": "Richard Redhead",
+      "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
     }
   }
 }

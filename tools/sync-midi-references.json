@@ -3412,5 +3412,182 @@
       "allFiveOpeningPitchesAgree": true
     },
     "formReview": "正文采用Be True同曲异词。已目视核对1936年原谱第450首两页，每个阅读区域起点分别取五个实际旋律音作为固定MIDI的见证：主歌前半从We are going forth起，后半从We are witnesses起；副歌从第一处Be true弱起开始，最后独立短行对应Let Him always find you true。副歌第二处Be true弱起前两音与第一处不同，明确使用第一处，不能误移到后半副歌。各实际演奏段落、四个区域仍须原有和声、旋律、起点、调性及反复相位独立核对，不从字数和总时长推算。"
+  },
+  "01-084": {
+    "targetSha256": "93e5025ab4c3ef67f0f3a91123296beb1eeef547226213af9130d0e0028c6246",
+    "file": "hymnary084.mid",
+    "sha256": "4dcf00d49b39e9314d0a70f72b2bba466da6ed15b99c4c1a2ee09ec684b0b431",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary084.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary084.htm",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Chinese/svg/c0091_cn_n.svg",
+    "scoreReferenceSha256": "221fa5b3242740c951b35bb22f9f12ea86a7eaa2c81e8a2126dc3112e8dd98a9",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "他不能救自己必须",
+        "罪人才能洗得清洁"
+      ],
+      [
+        "他不能救自己必须",
+        "非此罪恶不能宽待"
+      ],
+      [
+        "他不能救自己因为",
+        "担当信徒一切罪孽"
+      ],
+      [
+        "他不能救自己这爱",
+        "这爱叫它发出感赞"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          7,
+          9,
+          11,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 42,
+        "pitches": [
+          7,
+          9,
+          11,
+          0,
+          2
+        ]
+      }
+    ],
+    "printedScoreReview": {
+      "entry": 91,
+      "title": "祂不能救自己",
+      "numberedRows": [
+        "5 1 2 3 4 5 3 1 3 2 1 7 1 1",
+        "7 1 2 3 4 3 2 5 5 #4 5 5",
+        "6 #5 6 #4 5 #4 5 3 4 3 4 2 3 1 2 5",
+        "1 2 3 4 5 4 3 2 1"
+      ],
+      "tiedContinuationsExcluded": true,
+      "pitchProofRelativeToTonicC": true,
+      "readingRowIndices": [
+        0,
+        3
+      ]
+    },
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 51,
+      "midiNoteCount": 53,
+      "editCost": 3,
+      "runnerUpCost": 35,
+      "semitoneShift": 7,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 14,
+          "possibleMidiNoteIndices": [
+            14
+          ],
+          "at": 8.5
+        },
+        {
+          "scoreNoteIndex": 26,
+          "possibleMidiNoteIndices": [
+            26
+          ],
+          "at": 16.5
+        },
+        {
+          "scoreNoteIndex": 42,
+          "possibleMidiNoteIndices": [
+            42
+          ],
+          "at": 24.5
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.5,
+        16.5,
+        24.5
+      ]
+    },
+    "formReview": "已目视核对中文原谱第91首，完整四谱行和所有区域起点均经最优音符序列对齐核对。正文前四行覆盖前三谱行；最后独立短句重唱上一句歌词，对应第四谱行的变奏，必须从独立首音开始，不能误用前一谱行同句歌词的起点。每个实际段落仍须独立通过和声、旋律、起点、调性及反复相位检查。"
+  },
+  "02-503": {
+    "targetSha256": "78a3e3d911fe9edf22ac4cdd9d456ad2f494083537ea12b02befd5d699e23b97",
+    "file": "hymnary318.mid",
+    "sha256": "597bbeb386f8de214906d72091078320f6943ef0a00a7e2cdf461f286024a9a9",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary318.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary318.htm",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Chinese/svg/c0345_cn_n.svg",
+    "scoreReferenceSha256": "9344629e90284fab8f0fa48baf84f76a82c5ff286ae5b6a4a10f74f32056b2ed",
+    "verseCount": 4,
+    "printedScoreReview": {
+      "entry": 345,
+      "title": "我当如何爱我的主",
+      "numberedRows": [
+        "5 1 7 1 2 5 6 7 1",
+        "1 7 6 2 7 7 6 5 #4 5 5",
+        "5 1 1 7 6 5 3 3 2 1",
+        "7 4 4 3 2 1 2 7 1"
+      ],
+      "pitchProofRelativeToTonicC": true
+    },
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 39,
+      "midiNoteCount": 39,
+      "editCost": 0,
+      "runnerUpCost": 29,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 9,
+          "possibleMidiNoteIndices": [
+            9
+          ],
+          "at": 6.0
+        },
+        {
+          "scoreNoteIndex": 20,
+          "possibleMidiNoteIndices": [
+            20
+          ],
+          "at": 12.0
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            30
+          ],
+          "at": 18.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        6.0,
+        12.0,
+        18.0
+      ]
+    },
+    "formReview": "《新年颂主》为同曲填词，每段两行覆盖完整四个乐句，为一个阅读区域。已目视核对中文第345首《我当如何爱我的主》原谱，完整最高旋律和四条谱行均通过全部最优音符序列对齐，起点唯一；参考歌词不同，不能当作本曲原文。每个实际段落仍须通过和声、旋律、起点、调性及反复相位检查。"
   }
 }

@@ -202,6 +202,8 @@ def generate(song, profile, cache):
                     one['key'] != two['key'] or len(one['starts']) != len(two['starts']) or
                     max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
                 raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
+            if profile.get('referenceDiscovery') and not .75 * music['period'] <= two.get('span', 0) <= 1.25 * music['period']:
+                raise ValueError('音频检索参考的旋律没有覆盖完整乐段')
             mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
         corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
         # Both symbolic templates already locate every verse independently.

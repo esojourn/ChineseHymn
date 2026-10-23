@@ -2,10 +2,10 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 249,
+    "published": 250,
     "existing": 8,
-    "pending": 95,
-    "needs-calibration": 40,
+    "pending": 93,
+    "needs-calibration": 41,
     "missing-audio": 2,
     "needs-track-alignment": 3,
     "missing-lyrics": 23
@@ -259,10 +259,11 @@
       "songId": "01-343",
       "source": "01-343安稳在耶稣手中.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-343安稳在耶稣手中.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-357",
@@ -981,7 +982,7 @@
       "songId": "02-384",
       "source": "02-384求主扶持.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-384求主扶持.mp3"
       ]

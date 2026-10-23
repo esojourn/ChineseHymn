@@ -1,0 +1,286 @@
+{
+  "songId": "02-384",
+  "source": "02-384求主扶持.txt",
+  "sourceHash": "0c67b24772cf7cba60cae1be005624df9d33a04b1165e21c934a2db1a2b185be",
+  "trackHashes": [
+    {
+      "file": "02-384求主扶持.mp3",
+      "sha256": "050a900ff46eb8c4132d9e8de86527fe5bab49697eb01ea93454b0bc4cf308ec"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "0c67b24772cf7cba60cae1be005624df9d33a04b1165e21c934a2db1a2b185be",
+      "file": "hymnary276.mid",
+      "sha256": "c4b3881be5485213e3d4b2e9666625d5239d14f75239cdf4d1ae52040c42b018",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary276.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary276.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/Y/Yield_Not_to_Temptation/Yield_Not_to_Temptation.xml",
+      "scoreReferenceSha256": "f01825dc9ea0dd710e4029790508a32e50dd07e7590038edc300de1d22a861b5",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "切莫顺从试探免落",
+          "求主耶稣来扶持安"
+        ],
+        [
+          "远避不良同伴慎勿",
+          "求主耶稣来扶持安"
+        ],
+        [
+          "凡最后胜利者得冠",
+          "求主耶稣来扶持安"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            0,
+            1,
+            0,
+            10
+          ]
+        },
+        {
+          "onsetIndex": 44,
+          "pitches": [
+            3,
+            3,
+            3,
+            5,
+            3
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 72,
+        "midiNoteCount": 71,
+        "editCost": 2,
+        "runnerUpCost": 54,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 45,
+            "possibleMidiNoteIndices": [
+              44
+            ],
+            "at": 36.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          36.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          45
+        ]
+      },
+      "formReview": "Yield Not to Temptation 主歌第1至16小节，副歌第17小节Ask起对应“求主耶稣来扶持”。 已核对完整演奏顺序的旋律及译文分句，各阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须独立通过和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 54.25,
+    "music": {
+      "period": 52.0,
+      "similarity": 0.9623023867607117,
+      "initialOnsetEstimate": 6.4,
+      "shifts": [
+        0.0,
+        52.0,
+        104.1
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2637488438532903,
+            "key": 6,
+            "at": 9.1,
+            "span": 52.1,
+            "starts": [
+              8.7,
+              43.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6257985041691707,
+            "key": 11,
+            "at": 36.2,
+            "span": 26.7,
+            "starts": [
+              35.8,
+              53.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13767455174372747,
+            "key": 6,
+            "starts": [
+              8.699999809265137,
+              43.400001525878906
+            ],
+            "span": 52.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.43369102478027344,
+            "key": 1,
+            "starts": [
+              15.199999809265137,
+              47.70000076293945
+            ],
+            "span": 48.70000076293945
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26444878211388223,
+            "key": 6,
+            "at": 61.2,
+            "span": 52.1,
+            "starts": [
+              60.8,
+              95.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6341353783240685,
+            "key": 11,
+            "at": 88.3,
+            "span": 26.6,
+            "starts": [
+              87.9,
+              104.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13782838674692008,
+            "key": 6,
+            "starts": [
+              60.70000076293945,
+              95.4000015258789
+            ],
+            "span": 52.10000228881836
+          },
+          "runnerUp": {
+            "cost": 0.4333488464355469,
+            "key": 1,
+            "starts": [
+              67.30000305175781,
+              99.69999694824219
+            ],
+            "span": 48.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26344715998722956,
+            "key": 6,
+            "at": 113.2,
+            "span": 52.1,
+            "starts": [
+              112.8,
+              147.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6365129910982572,
+            "key": 11,
+            "at": 140.3,
+            "span": 18.3,
+            "starts": [
+              139.9,
+              157.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13600857074444112,
+            "key": 6,
+            "starts": [
+              112.80000305175781,
+              147.5
+            ],
+            "span": 52.09999084472656
+          },
+          "runnerUp": {
+            "cost": 0.44473231388972356,
+            "key": 1,
+            "starts": [
+              105.5,
+              134.0
+            ],
+            "span": 45.30000305175781
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      36.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "切莫顺从试探，免落入罪中， 你每次能抵挡，下次更易胜， 勇敢向前争战，将罪欲压制， 常仰望主耶稣，主必助你到底。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "远避不良同伴，慎勿出恶言， 勿妄称主名字，要存心敬虔， 要同情，要热诚，要慈爱真实， 常仰望主耶稣，主必助你到底。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "凡最后胜利者，得冠冕赏赐， 你虽屡受挫折，要凭信克敌， 基督是你救主，必加你能力，  常仰望主耶稣，主必助你到底。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.263
+}

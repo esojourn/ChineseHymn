@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-384",
+  "status": "reviewed",
+  "source": {
+    "file": "02-384求主扶持.txt",
+    "sha256": "0c67b24772cf7cba60cae1be005624df9d33a04b1165e21c934a2db1a2b185be",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-384求主扶持.mp3",
+      "sha256": "050a900ff46eb8c4132d9e8de86527fe5bab49697eb01ea93454b0bc4cf308ec",
+      "duration": 166.42612244897958,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    }
+  },
+  "cues": [
+    {
+      "at": 8.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 43.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 60.75,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.4,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 112.8,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 147.5,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "切莫顺从试探，免落入罪中， 你每次能抵挡，下次更易胜， 勇敢向前争战，将罪欲压制， 常仰望主耶稣，主必助你到底。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "远避不良同伴，慎勿出恶言， 勿妄称主名字，要存心敬虔， 要同情，要热诚，要慈爱真实， 常仰望主耶稣，主必助你到底。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "凡最后胜利者，得冠冕赏赐， 你虽屡受挫折，要凭信克敌， 基督是你救主，必加你能力，  常仰望主耶稣，主必助你到底。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "求主耶稣来扶持，安慰保护赐能力， 主乐意来照顾你，主必助你到底。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-384求主扶持.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

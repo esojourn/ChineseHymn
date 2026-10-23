@@ -2706,5 +2706,287 @@
       ]
     },
     "formReview": "Lord, I’m Coming Home，译文每段四行，覆盖主歌与副歌，属于一个完整阅读区域；公开参考第630首为同曲另一译文。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "01-343": {
+    "targetSha256": "336c6545cbb0d3a7fcba49d44b82733d8b36234292866cf96893d72957cc37a8",
+    "file": "hymnary490.mid",
+    "sha256": "4c46210e79e6beedb28e4b44212f1d503dcd3bff2ca30849a03156acb0b07c3b",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary490.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary490.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Safe_in_the_Arms_of_Jesus/Safe_in_the_Arms_of_Jesus.xml",
+    "scoreReferenceSha256": "e07a784df63d177c5f3b0acb0bc1d911fa9d61d34e0f94eff43a3b521cf27862",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "安稳在耶稣手臂安",
+        "安稳在耶稣手臂安"
+      ],
+      [
+        "安稳在耶稣手臂安",
+        "安稳在耶稣手臂安"
+      ],
+      [
+        "耶稣是我避难所耶",
+        "安稳在耶稣手臂安"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          11,
+          9,
+          7,
+          2,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 59,
+        "pitches": [
+          11,
+          9,
+          7,
+          2,
+          7
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 86,
+      "midiNoteCount": 88,
+      "editCost": 3,
+      "runnerUpCost": 66,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 57,
+          "possibleMidiNoteIndices": [
+            59
+          ],
+          "at": 32.5
+        }
+      ],
+      "offsets": [
+        0.0,
+        32.5
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        57
+      ]
+    },
+    "formReview": "Safe in the Arms of Jesus 原谱第16小节D.C. al Fine，第8小节Fine；主歌完整走第1至16小节，副歌回唱第1至8小节，分别对应正文前四行和后两行。 已核对完整演奏顺序的旋律及译文分句，各阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须独立通过和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。",
+    "performedScoreMeasures": [
+      "1-16",
+      "1-8"
+    ]
+  },
+  "02-384": {
+    "targetSha256": "0c67b24772cf7cba60cae1be005624df9d33a04b1165e21c934a2db1a2b185be",
+    "file": "hymnary276.mid",
+    "sha256": "c4b3881be5485213e3d4b2e9666625d5239d14f75239cdf4d1ae52040c42b018",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary276.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary276.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/Y/Yield_Not_to_Temptation/Yield_Not_to_Temptation.xml",
+    "scoreReferenceSha256": "f01825dc9ea0dd710e4029790508a32e50dd07e7590038edc300de1d22a861b5",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "切莫顺从试探免落",
+        "求主耶稣来扶持安"
+      ],
+      [
+        "远避不良同伴慎勿",
+        "求主耶稣来扶持安"
+      ],
+      [
+        "凡最后胜利者得冠",
+        "求主耶稣来扶持安"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          0,
+          1,
+          0,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 44,
+        "pitches": [
+          3,
+          3,
+          3,
+          5,
+          3
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 72,
+      "midiNoteCount": 71,
+      "editCost": 2,
+      "runnerUpCost": 54,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 45,
+          "possibleMidiNoteIndices": [
+            44
+          ],
+          "at": 36.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        36.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        45
+      ]
+    },
+    "formReview": "Yield Not to Temptation 主歌第1至16小节，副歌第17小节Ask起对应“求主耶稣来扶持”。 已核对完整演奏顺序的旋律及译文分句，各阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须独立通过和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "03-029": {
+    "targetSha256": "5db67b891ef92c29db5786094d1d5c8ce9fc2e0821c7c86cc3ef975c083874ee",
+    "file": "hymnary303.mid",
+    "sha256": "10793be7a8f9c7f34dfdcb9c51439e9827175652e5ed35c509c927f47dfc6af8",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary303.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary303.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/G/Give_of_Your_Best_to_the_Master/Give_of_Your_Best_to_the_Master.xml",
+    "scoreReferenceSha256": "3b761bebb6d35651880f4d53596452de32c0b3597eb5aaecc546717be5e65f73",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "将你最好的献给主",
+        "主耶稣已有好榜样",
+        "副将你最好的献给"
+      ],
+      [
+        "将你最好的献给主",
+        "奉献必从主得赏赐",
+        "副将你最好的献给"
+      ],
+      [
+        "将你最好的献给主",
+        "他舍生命毫无怨言",
+        "副将你最好的献给"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          9,
+          9,
+          10,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 31,
+        "pitches": [
+          9,
+          5,
+          4,
+          2,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 69,
+        "pitches": [
+          9,
+          9,
+          9,
+          10,
+          9
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 99,
+      "midiNoteCount": 100,
+      "editCost": 3,
+      "runnerUpCost": 74,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            31
+          ],
+          "at": 15.1579
+        },
+        {
+          "scoreNoteIndex": 69,
+          "possibleMidiNoteIndices": [
+            69
+          ],
+          "at": 30.3157
+        }
+      ],
+      "offsets": [
+        0.0,
+        15.1579,
+        30.3157
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        30,
+        69
+      ]
+    },
+    "formReview": "Give of Your Best to the Master 原谱第32小节D.C. Refrain，第16小节Fine；正文第一阅读区域对应第1至16小节，第二区域“主耶稣已有好榜样”从第17小节Jesus起，独立副歌为回唱第1至16小节。 已核对完整演奏顺序的旋律及译文分句，各阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须独立通过和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。",
+    "performedScoreMeasures": [
+      "1-32",
+      "1-16"
+    ]
   }
 }

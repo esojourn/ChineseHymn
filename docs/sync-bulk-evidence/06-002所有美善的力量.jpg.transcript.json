@@ -1,0 +1,3797 @@
+{
+  "songId": "06-002",
+  "source": "06-002所有美善的力量.jpg",
+  "sourceHash": "114ee212064d80f5967f074b5df8df6a67b6baea275121a888269bdb2f1ad9dc",
+  "trackHashes": [
+    {
+      "file": "06-002所有美善的力量.mp3",
+      "sha256": "e6aa4f4b3fb08a3c9be3b91884a2b46364436527adf7d57f51d399005f40c70b"
+    }
+  ],
+  "transcriptMatching": {
+    "algorithmVersion": 6,
+    "mode": "image-translation-blocks",
+    "profile": {
+      "sourceHash": "114ee212064d80f5967f074b5df8df6a67b6baea275121a888269bdb2f1ad9dc",
+      "audioFile": "06-002所有美善的力量.mp3",
+      "audioHash": "e6aa4f4b3fb08a3c9be3b91884a2b46364436527adf7d57f51d399005f40c70b",
+      "transcriptHash": "ef3dd6f919b0b563e6eeaa2ffb79d9f88caec4f582c669f043b68db3abb1a6fb",
+      "language": "de",
+      "review": "原图为中德双语歌词，没有简谱。根据原录音德语转写与原图中文语义核对：第一组为原图第1段，第二组为第2段，第三组烛光及相聚段为原图第6段；三次相同副歌复用原图中文副歌区域，其下德语原文作为图片预读内容。未演唱的原图段落保留阅读区域，不编造时间点。",
+      "blocks": [
+        {
+          "region": "v1",
+          "segmentIndices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "region": "chorus",
+          "segmentIndices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "region": "v2",
+          "segmentIndices": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "region": "chorus",
+          "segmentIndices": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "region": "v6",
+          "segmentIndices": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "region": "chorus",
+          "segmentIndices": [
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "nonLyricSegments": [
+        {
+          "index": 24,
+          "text": "Das war's für heute."
+        }
+      ]
+    },
+    "model": "medium/int8",
+    "transcript": {
+      "file": "06-002所有美善的力量.mp3",
+      "sha256": "e6aa4f4b3fb08a3c9be3b91884a2b46364436527adf7d57f51d399005f40c70b",
+      "model": "medium",
+      "language": "de",
+      "duration": 203.3393125,
+      "segments": [
+        {
+          "seek": 0,
+          "start": 13.5,
+          "end": 20.0,
+          "text": " Von guten Mächten treu und still umgeben,",
+          "avgLogprob": -0.3868086263537407,
+          "noSpeechProbability": 0.24892207980155945,
+          "words": [
+            {
+              "word": " Von",
+              "start": 13.5,
+              "end": 14.9,
+              "probability": 0.040811747312545776
+            },
+            {
+              "word": " guten",
+              "start": 14.9,
+              "end": 15.82,
+              "probability": 0.878100574016571
+            },
+            {
+              "word": " Mächten",
+              "start": 15.82,
+              "end": 16.58,
+              "probability": 0.6286655962467194
+            },
+            {
+              "word": " treu",
+              "start": 16.58,
+              "end": 17.22,
+              "probability": 0.9516895413398743
+            },
+            {
+              "word": " und",
+              "start": 17.22,
+              "end": 17.52,
+              "probability": 0.9697397947311401
+            },
+            {
+              "word": " still",
+              "start": 17.52,
+              "end": 17.88,
+              "probability": 0.9692397117614746
+            },
+            {
+              "word": " umgeben,",
+              "start": 17.88,
+              "end": 20.0,
+              "probability": 0.9728808999061584
+            }
+          ]
+        },
+        {
+          "seek": 2000,
+          "start": 20.0,
+          "end": 27.04,
+          "text": " behütet und getröstet wunderbar.",
+          "avgLogprob": -0.14859592671297034,
+          "noSpeechProbability": 0.4484117329120636,
+          "words": [
+            {
+              "word": " behütet",
+              "start": 20.0,
+              "end": 22.4,
+              "probability": 0.8044168849786123
+            },
+            {
+              "word": " und",
+              "start": 22.4,
+              "end": 23.0,
+              "probability": 0.9781591892242432
+            },
+            {
+              "word": " getröstet",
+              "start": 23.0,
+              "end": 24.14,
+              "probability": 0.9859256744384766
+            },
+            {
+              "word": " wunderbar.",
+              "start": 24.14,
+              "end": 27.04,
+              "probability": 0.9682201445102692
+            }
+          ]
+        },
+        {
+          "seek": 2000,
+          "start": 27.1,
+          "end": 32.96,
+          "text": " So will ich diese Tage mit euch leben",
+          "avgLogprob": -0.14859592671297034,
+          "noSpeechProbability": 0.4484117329120636,
+          "words": [
+            {
+              "word": " So",
+              "start": 27.1,
+              "end": 28.28,
+              "probability": 0.9662632942199707
+            },
+            {
+              "word": " will",
+              "start": 28.28,
+              "end": 28.88,
+              "probability": 0.9848297834396362
+            },
+            {
+              "word": " ich",
+              "start": 28.88,
+              "end": 29.6,
+              "probability": 0.964260995388031
+            },
+            {
+              "word": " diese",
+              "start": 29.6,
+              "end": 29.96,
+              "probability": 0.9940420985221863
+            },
+            {
+              "word": " Tage",
+              "start": 29.96,
+              "end": 30.7,
+              "probability": 0.9934606552124023
+            },
+            {
+              "word": " mit",
+              "start": 30.7,
+              "end": 31.3,
+              "probability": 0.9975691437721252
+            },
+            {
+              "word": " euch",
+              "start": 31.3,
+              "end": 31.68,
+              "probability": 0.9228079915046692
+            },
+            {
+              "word": " leben",
+              "start": 31.68,
+              "end": 32.96,
+              "probability": 0.9523277878761292
+            }
+          ]
+        },
+        {
+          "seek": 2000,
+          "start": 34.0,
+          "end": 39.48,
+          "text": " und mit euch gehen in ein neues Jahr.",
+          "avgLogprob": -0.14859592671297034,
+          "noSpeechProbability": 0.4484117329120636,
+          "words": [
+            {
+              "word": " und",
+              "start": 34.0,
+              "end": 35.1,
+              "probability": 0.689325749874115
+            },
+            {
+              "word": " mit",
+              "start": 35.1,
+              "end": 35.54,
+              "probability": 0.9964534044265747
+            },
+            {
+              "word": " euch",
+              "start": 35.54,
+              "end": 35.92,
+              "probability": 0.9972661733627319
+            },
+            {
+              "word": " gehen",
+              "start": 35.92,
+              "end": 36.66,
+              "probability": 0.9203263521194458
+            },
+            {
+              "word": " in",
+              "start": 36.66,
+              "end": 37.38,
+              "probability": 0.9901974201202393
+            },
+            {
+              "word": " ein",
+              "start": 37.38,
+              "end": 37.58,
+              "probability": 0.9921403527259827
+            },
+            {
+              "word": " neues",
+              "start": 37.58,
+              "end": 38.28,
+              "probability": 0.9926779270172119
+            },
+            {
+              "word": " Jahr.",
+              "start": 38.28,
+              "end": 39.48,
+              "probability": 0.9994069337844849
+            }
+          ]
+        },
+        {
+          "seek": 2000,
+          "start": 41.44,
+          "end": 47.32,
+          "text": " Von guten Mächten wunderbar geborgen,",
+          "avgLogprob": -0.14859592671297034,
+          "noSpeechProbability": 0.4484117329120636,
+          "words": [
+            {
+              "word": " Von",
+              "start": 41.44,
+              "end": 41.82,
+              "probability": 0.9066962599754333
+            },
+            {
+              "word": " guten",
+              "start": 41.82,
+              "end": 42.78,
+              "probability": 0.9805460572242737
+            },
+            {
+              "word": " Mächten",
+              "start": 42.78,
+              "end": 43.62,
+              "probability": 0.9758685827255249
+            },
+            {
+              "word": " wunderbar",
+              "start": 43.62,
+              "end": 45.16,
+              "probability": 0.9802744686603546
+            },
+            {
+              "word": " geborgen,",
+              "start": 45.16,
+              "end": 47.32,
+              "probability": 0.8621837894121805
+            }
+          ]
+        },
+        {
+          "seek": 4732,
+          "start": 47.32,
+          "end": 53.08,
+          "text": " Erwarten wie Getrost, was kommen mag.",
+          "avgLogprob": -0.2223152155969657,
+          "noSpeechProbability": 0.05392656847834587,
+          "words": [
+            {
+              "word": " Erwarten",
+              "start": 47.32,
+              "end": 48.62,
+              "probability": 0.4854324460029602
+            },
+            {
+              "word": " wie",
+              "start": 48.62,
+              "end": 49.2,
+              "probability": 0.9239432215690613
+            },
+            {
+              "word": " Getrost,",
+              "start": 49.2,
+              "end": 50.34,
+              "probability": 0.5615338385105133
+            },
+            {
+              "word": " was",
+              "start": 50.86,
+              "end": 51.06,
+              "probability": 0.9002137184143066
+            },
+            {
+              "word": " kommen",
+              "start": 51.06,
+              "end": 51.8,
+              "probability": 0.9290827512741089
+            },
+            {
+              "word": " mag.",
+              "start": 51.8,
+              "end": 53.08,
+              "probability": 0.9929986000061035
+            }
+          ]
+        },
+        {
+          "seek": 4732,
+          "start": 54.72,
+          "end": 59.96,
+          "text": " Gott ist mit uns am Abend und am Morgen",
+          "avgLogprob": -0.2223152155969657,
+          "noSpeechProbability": 0.05392656847834587,
+          "words": [
+            {
+              "word": " Gott",
+              "start": 54.72,
+              "end": 55.04,
+              "probability": 0.9726719856262207
+            },
+            {
+              "word": " ist",
+              "start": 55.04,
+              "end": 55.64,
+              "probability": 0.9316819310188293
+            },
+            {
+              "word": " mit",
+              "start": 55.64,
+              "end": 56.0,
+              "probability": 0.9962350726127625
+            },
+            {
+              "word": " uns",
+              "start": 56.0,
+              "end": 56.54,
+              "probability": 0.9986937642097473
+            },
+            {
+              "word": " am",
+              "start": 56.54,
+              "end": 56.84,
+              "probability": 0.9344853758811951
+            },
+            {
+              "word": " Abend",
+              "start": 56.84,
+              "end": 57.68,
+              "probability": 0.9902623891830444
+            },
+            {
+              "word": " und",
+              "start": 57.68,
+              "end": 58.3,
+              "probability": 0.9863986968994141
+            },
+            {
+              "word": " am",
+              "start": 58.3,
+              "end": 58.78,
+              "probability": 0.9842861294746399
+            },
+            {
+              "word": " Morgen",
+              "start": 58.78,
+              "end": 59.96,
+              "probability": 0.9740201234817505
+            }
+          ]
+        },
+        {
+          "seek": 4732,
+          "start": 61.32,
+          "end": 66.88,
+          "text": " Und ganz gewiss an jedem neuen Tag.",
+          "avgLogprob": -0.2223152155969657,
+          "noSpeechProbability": 0.05392656847834587,
+          "words": [
+            {
+              "word": " Und",
+              "start": 61.26,
+              "end": 61.96,
+              "probability": 0.29364830255508423
+            },
+            {
+              "word": " ganz",
+              "start": 61.96,
+              "end": 62.52,
+              "probability": 0.9954429864883423
+            },
+            {
+              "word": " gewiss",
+              "start": 62.52,
+              "end": 63.46,
+              "probability": 0.9077410995960236
+            },
+            {
+              "word": " an",
+              "start": 63.46,
+              "end": 63.88,
+              "probability": 0.9718456268310547
+            },
+            {
+              "word": " jedem",
+              "start": 63.88,
+              "end": 64.44,
+              "probability": 0.9951796531677246
+            },
+            {
+              "word": " neuen",
+              "start": 64.44,
+              "end": 65.32,
+              "probability": 0.9647454023361206
+            },
+            {
+              "word": " Tag.",
+              "start": 65.32,
+              "end": 66.88,
+              "probability": 0.9974429607391357
+            }
+          ]
+        },
+        {
+          "seek": 4732,
+          "start": 68.62,
+          "end": 74.22,
+          "text": " Noch will das Alte unsere Herzen quälen,",
+          "avgLogprob": -0.2223152155969657,
+          "noSpeechProbability": 0.05392656847834587,
+          "words": [
+            {
+              "word": " Noch",
+              "start": 68.62,
+              "end": 68.9,
+              "probability": 0.8642386198043823
+            },
+            {
+              "word": " will",
+              "start": 68.9,
+              "end": 69.52,
+              "probability": 0.9196577072143555
+            },
+            {
+              "word": " das",
+              "start": 69.52,
+              "end": 69.92,
+              "probability": 0.9946211576461792
+            },
+            {
+              "word": " Alte",
+              "start": 69.92,
+              "end": 70.72,
+              "probability": 0.9105401635169983
+            },
+            {
+              "word": " unsere",
+              "start": 70.72,
+              "end": 71.58,
+              "probability": 0.5763231515884399
+            },
+            {
+              "word": " Herzen",
+              "start": 71.58,
+              "end": 72.4,
+              "probability": 0.994160532951355
+            },
+            {
+              "word": " quälen,",
+              "start": 72.4,
+              "end": 74.22,
+              "probability": 0.8935930132865906
+            }
+          ]
+        },
+        {
+          "seek": 7422,
+          "start": 74.22,
+          "end": 79.92,
+          "text": " Noch drückt uns böser Tage schwere Last.",
+          "avgLogprob": -0.24667769984195106,
+          "noSpeechProbability": 0.5040844678878784,
+          "words": [
+            {
+              "word": " Noch",
+              "start": 74.22,
+              "end": 75.68,
+              "probability": 0.6319894790649414
+            },
+            {
+              "word": " drückt",
+              "start": 75.68,
+              "end": 76.16,
+              "probability": 0.9545614421367645
+            },
+            {
+              "word": " uns",
+              "start": 76.16,
+              "end": 76.58,
+              "probability": 0.9977255463600159
+            },
+            {
+              "word": " böser",
+              "start": 76.58,
+              "end": 77.44,
+              "probability": 0.8137319087982178
+            },
+            {
+              "word": " Tage",
+              "start": 77.44,
+              "end": 78.12,
+              "probability": 0.7657830715179443
+            },
+            {
+              "word": " schwere",
+              "start": 78.12,
+              "end": 79.04,
+              "probability": 0.9464620053768158
+            },
+            {
+              "word": " Last.",
+              "start": 79.04,
+              "end": 79.92,
+              "probability": 0.9867379069328308
+            }
+          ]
+        },
+        {
+          "seek": 7422,
+          "start": 82.32,
+          "end": 87.22,
+          "text": " Ach Herr, gib uns'n aufgescheuchten Seelen",
+          "avgLogprob": -0.24667769984195106,
+          "noSpeechProbability": 0.5040844678878784,
+          "words": [
+            {
+              "word": " Ach",
+              "start": 82.32,
+              "end": 82.44,
+              "probability": 0.9094609022140503
+            },
+            {
+              "word": " Herr,",
+              "start": 82.44,
+              "end": 82.86,
+              "probability": 0.753016471862793
+            },
+            {
+              "word": " gib",
+              "start": 83.06,
+              "end": 83.26,
+              "probability": 0.97397780418396
+            },
+            {
+              "word": " uns",
+              "start": 83.26,
+              "end": 83.84,
+              "probability": 0.7364729642868042
+            },
+            {
+              "word": "'n",
+              "start": 83.84,
+              "end": 84.04,
+              "probability": 0.39023713022470474
+            },
+            {
+              "word": " aufgescheuchten",
+              "start": 84.04,
+              "end": 85.68,
+              "probability": 0.9420163035392761
+            },
+            {
+              "word": " Seelen",
+              "start": 85.68,
+              "end": 87.22,
+              "probability": 0.8722387254238129
+            }
+          ]
+        },
+        {
+          "seek": 7422,
+          "start": 87.86,
+          "end": 93.32,
+          "text": " Das Heil, für das Du uns bereitet hast.",
+          "avgLogprob": -0.24667769984195106,
+          "noSpeechProbability": 0.5040844678878784,
+          "words": [
+            {
+              "word": " Das",
+              "start": 87.86,
+              "end": 88.98,
+              "probability": 0.39287781715393066
+            },
+            {
+              "word": " Heil,",
+              "start": 88.98,
+              "end": 89.5,
+              "probability": 0.9890483021736145
+            },
+            {
+              "word": " für",
+              "start": 89.68,
+              "end": 89.82,
+              "probability": 0.9746206998825073
+            },
+            {
+              "word": " das",
+              "start": 89.82,
+              "end": 90.08,
+              "probability": 0.9652909636497498
+            },
+            {
+              "word": " Du",
+              "start": 90.08,
+              "end": 90.54,
+              "probability": 0.5647672414779663
+            },
+            {
+              "word": " uns",
+              "start": 90.54,
+              "end": 91.14,
+              "probability": 0.9974325299263
+            },
+            {
+              "word": " bereitet",
+              "start": 91.14,
+              "end": 92.44,
+              "probability": 0.9524992406368256
+            },
+            {
+              "word": " hast.",
+              "start": 92.44,
+              "end": 93.32,
+              "probability": 0.9900626540184021
+            }
+          ]
+        },
+        {
+          "seek": 7422,
+          "start": 95.22,
+          "end": 100.36,
+          "text": " Von guten Mächten wunderbar geboren,",
+          "avgLogprob": -0.24667769984195106,
+          "noSpeechProbability": 0.5040844678878784,
+          "words": [
+            {
+              "word": " Von",
+              "start": 95.22,
+              "end": 95.48,
+              "probability": 0.6941903233528137
+            },
+            {
+              "word": " guten",
+              "start": 95.48,
+              "end": 96.4,
+              "probability": 0.9832973480224609
+            },
+            {
+              "word": " Mächten",
+              "start": 96.4,
+              "end": 97.26,
+              "probability": 0.9884121219317118
+            },
+            {
+              "word": " wunderbar",
+              "start": 97.26,
+              "end": 98.74,
+              "probability": 0.9877835810184479
+            },
+            {
+              "word": " geboren,",
+              "start": 98.74,
+              "end": 100.36,
+              "probability": 0.8666013479232788
+            }
+          ]
+        },
+        {
+          "seek": 10036,
+          "start": 100.36,
+          "end": 106.94,
+          "text": " Erwart' den Wege Trost, was kommen mag.",
+          "avgLogprob": -0.2733991933318804,
+          "noSpeechProbability": 0.2958042323589325,
+          "words": [
+            {
+              "word": " Erwart'",
+              "start": 100.36,
+              "end": 102.04,
+              "probability": 0.1816803216934204
+            },
+            {
+              "word": " den",
+              "start": 102.18,
+              "end": 102.26,
+              "probability": 0.5703780651092529
+            },
+            {
+              "word": " Wege",
+              "start": 102.26,
+              "end": 103.1,
+              "probability": 0.5760542750358582
+            },
+            {
+              "word": " Trost,",
+              "start": 103.1,
+              "end": 104.06,
+              "probability": 0.8538784086704254
+            },
+            {
+              "word": " was",
+              "start": 104.5,
+              "end": 104.72,
+              "probability": 0.9455072283744812
+            },
+            {
+              "word": " kommen",
+              "start": 104.72,
+              "end": 105.52,
+              "probability": 0.868840754032135
+            },
+            {
+              "word": " mag.",
+              "start": 105.52,
+              "end": 106.94,
+              "probability": 0.9928026795387268
+            }
+          ]
+        },
+        {
+          "seek": 10036,
+          "start": 108.38,
+          "end": 113.36,
+          "text": " Gott ist mit uns am Abend und am Morgen",
+          "avgLogprob": -0.2733991933318804,
+          "noSpeechProbability": 0.2958042323589325,
+          "words": [
+            {
+              "word": " Gott",
+              "start": 108.38,
+              "end": 108.72,
+              "probability": 0.9820051193237305
+            },
+            {
+              "word": " ist",
+              "start": 108.72,
+              "end": 109.26,
+              "probability": 0.8333050608634949
+            },
+            {
+              "word": " mit",
+              "start": 109.26,
+              "end": 109.58,
+              "probability": 0.9953902959823608
+            },
+            {
+              "word": " uns",
+              "start": 109.58,
+              "end": 110.12,
+              "probability": 0.9983017444610596
+            },
+            {
+              "word": " am",
+              "start": 110.12,
+              "end": 110.4,
+              "probability": 0.9344778656959534
+            },
+            {
+              "word": " Abend",
+              "start": 110.4,
+              "end": 111.24,
+              "probability": 0.9833753705024719
+            },
+            {
+              "word": " und",
+              "start": 111.24,
+              "end": 111.82,
+              "probability": 0.9929507970809937
+            },
+            {
+              "word": " am",
+              "start": 111.82,
+              "end": 112.3,
+              "probability": 0.987871527671814
+            },
+            {
+              "word": " Morgen",
+              "start": 112.3,
+              "end": 113.36,
+              "probability": 0.9673502445220947
+            }
+          ]
+        },
+        {
+          "seek": 10036,
+          "start": 114.36,
+          "end": 120.08,
+          "text": " Und ganz gewiss an jedem neuen Tag.",
+          "avgLogprob": -0.2733991933318804,
+          "noSpeechProbability": 0.2958042323589325,
+          "words": [
+            {
+              "word": " Und",
+              "start": 114.36,
+              "end": 115.36,
+              "probability": 0.3311397135257721
+            },
+            {
+              "word": " ganz",
+              "start": 115.36,
+              "end": 115.94,
+              "probability": 0.9820109009742737
+            },
+            {
+              "word": " gewiss",
+              "start": 115.94,
+              "end": 116.72,
+              "probability": 0.5263310149312019
+            },
+            {
+              "word": " an",
+              "start": 116.72,
+              "end": 117.26,
+              "probability": 0.9633446931838989
+            },
+            {
+              "word": " jedem",
+              "start": 117.26,
+              "end": 117.76,
+              "probability": 0.9198613166809082
+            },
+            {
+              "word": " neuen",
+              "start": 117.76,
+              "end": 118.62,
+              "probability": 0.955389142036438
+            },
+            {
+              "word": " Tag.",
+              "start": 118.62,
+              "end": 120.08,
+              "probability": 0.9969410300254822
+            }
+          ]
+        },
+        {
+          "seek": 10036,
+          "start": 122.38,
+          "end": 127.52,
+          "text": " Lass warm und still die Kerzen heute flammen,",
+          "avgLogprob": -0.2733991933318804,
+          "noSpeechProbability": 0.2958042323589325,
+          "words": [
+            {
+              "word": " Lass",
+              "start": 122.38,
+              "end": 122.54,
+              "probability": 0.8582820296287537
+            },
+            {
+              "word": " warm",
+              "start": 122.54,
+              "end": 123.18,
+              "probability": 0.7519039511680603
+            },
+            {
+              "word": " und",
+              "start": 123.18,
+              "end": 123.56,
+              "probability": 0.980518102645874
+            },
+            {
+              "word": " still",
+              "start": 123.56,
+              "end": 123.94,
+              "probability": 0.9914787411689758
+            },
+            {
+              "word": " die",
+              "start": 123.94,
+              "end": 124.38,
+              "probability": 0.9488022327423096
+            },
+            {
+              "word": " Kerzen",
+              "start": 124.38,
+              "end": 125.22,
+              "probability": 0.9955516755580902
+            },
+            {
+              "word": " heute",
+              "start": 125.22,
+              "end": 125.88,
+              "probability": 0.9100649952888489
+            },
+            {
+              "word": " flammen,",
+              "start": 125.88,
+              "end": 127.52,
+              "probability": 0.975661426782608
+            }
+          ]
+        },
+        {
+          "seek": 12752,
+          "start": 127.52,
+          "end": 133.52,
+          "text": " die du in unsere Dunkelheit gebracht.",
+          "avgLogprob": -0.16973222881555558,
+          "noSpeechProbability": 0.6550294160842896,
+          "words": [
+            {
+              "word": " die",
+              "start": 127.52,
+              "end": 129.3,
+              "probability": 0.21235570311546326
+            },
+            {
+              "word": " du",
+              "start": 129.3,
+              "end": 129.98,
+              "probability": 0.6624950766563416
+            },
+            {
+              "word": " in",
+              "start": 129.98,
+              "end": 130.62,
+              "probability": 0.9831959009170532
+            },
+            {
+              "word": " unsere",
+              "start": 130.62,
+              "end": 130.98,
+              "probability": 0.916647732257843
+            },
+            {
+              "word": " Dunkelheit",
+              "start": 130.98,
+              "end": 132.36,
+              "probability": 0.9917155702908834
+            },
+            {
+              "word": " gebracht.",
+              "start": 132.36,
+              "end": 133.52,
+              "probability": 0.9937612414360046
+            }
+          ]
+        },
+        {
+          "seek": 12752,
+          "start": 135.78,
+          "end": 140.56,
+          "text": " Für wenn es sein kann, wieder uns zusammen,",
+          "avgLogprob": -0.16973222881555558,
+          "noSpeechProbability": 0.6550294160842896,
+          "words": [
+            {
+              "word": " Für",
+              "start": 135.78,
+              "end": 136.0,
+              "probability": 0.7326297760009766
+            },
+            {
+              "word": " wenn",
+              "start": 136.0,
+              "end": 136.58,
+              "probability": 0.9961767196655273
+            },
+            {
+              "word": " es",
+              "start": 136.58,
+              "end": 137.02,
+              "probability": 0.9580399394035339
+            },
+            {
+              "word": " sein",
+              "start": 137.02,
+              "end": 137.26,
+              "probability": 0.9948321580886841
+            },
+            {
+              "word": " kann,",
+              "start": 137.26,
+              "end": 137.66,
+              "probability": 0.9850951433181763
+            },
+            {
+              "word": " wieder",
+              "start": 137.9,
+              "end": 138.46,
+              "probability": 0.9231112003326416
+            },
+            {
+              "word": " uns",
+              "start": 138.46,
+              "end": 139.14,
+              "probability": 0.9735530018806458
+            },
+            {
+              "word": " zusammen,",
+              "start": 139.14,
+              "end": 140.56,
+              "probability": 0.9821104407310486
+            }
+          ]
+        },
+        {
+          "seek": 12752,
+          "start": 142.36,
+          "end": 147.92,
+          "text": " wir wissen es, dein Licht scheint in der Nacht",
+          "avgLogprob": -0.16973222881555558,
+          "noSpeechProbability": 0.6550294160842896,
+          "words": [
+            {
+              "word": " wir",
+              "start": 142.36,
+              "end": 142.62,
+              "probability": 0.9356839656829834
+            },
+            {
+              "word": " wissen",
+              "start": 142.62,
+              "end": 143.12,
+              "probability": 0.9387759566307068
+            },
+            {
+              "word": " es,",
+              "start": 143.12,
+              "end": 143.78,
+              "probability": 0.9804204702377319
+            },
+            {
+              "word": " dein",
+              "start": 144.1,
+              "end": 144.24,
+              "probability": 0.9843618869781494
+            },
+            {
+              "word": " Licht",
+              "start": 144.24,
+              "end": 144.8,
+              "probability": 0.9984191656112671
+            },
+            {
+              "word": " scheint",
+              "start": 144.8,
+              "end": 145.14,
+              "probability": 0.9966248273849487
+            },
+            {
+              "word": " in",
+              "start": 145.14,
+              "end": 145.82,
+              "probability": 0.9949585795402527
+            },
+            {
+              "word": " der",
+              "start": 145.82,
+              "end": 146.3,
+              "probability": 0.9967554211616516
+            },
+            {
+              "word": " Nacht",
+              "start": 146.3,
+              "end": 147.92,
+              "probability": 0.9970874190330505
+            }
+          ]
+        },
+        {
+          "seek": 12752,
+          "start": 148.51999999999998,
+          "end": 154.68,
+          "text": " von guten Mächten wunderbar geborgen.",
+          "avgLogprob": -0.16973222881555558,
+          "noSpeechProbability": 0.6550294160842896,
+          "words": [
+            {
+              "word": " von",
+              "start": 148.51999999999998,
+              "end": 149.4,
+              "probability": 0.2922712564468384
+            },
+            {
+              "word": " guten",
+              "start": 149.4,
+              "end": 150.34,
+              "probability": 0.9897861480712891
+            },
+            {
+              "word": " Mächten",
+              "start": 150.34,
+              "end": 151.18,
+              "probability": 0.9811789194742838
+            },
+            {
+              "word": " wunderbar",
+              "start": 151.18,
+              "end": 152.64,
+              "probability": 0.989924430847168
+            },
+            {
+              "word": " geborgen.",
+              "start": 152.64,
+              "end": 154.68,
+              "probability": 0.9407970706621805
+            }
+          ]
+        },
+        {
+          "seek": 15468,
+          "start": 154.68,
+          "end": 160.96,
+          "text": " Erwart'n wir Getrost, was kommen mag.",
+          "avgLogprob": -0.36962417654089025,
+          "noSpeechProbability": 0.012431561946868896,
+          "words": [
+            {
+              "word": " Erwart",
+              "start": 154.68,
+              "end": 155.9,
+              "probability": 0.411393441259861
+            },
+            {
+              "word": "'n",
+              "start": 155.9,
+              "end": 156.22,
+              "probability": 0.39507509768009186
+            },
+            {
+              "word": " wir",
+              "start": 156.22,
+              "end": 156.78,
+              "probability": 0.631887674331665
+            },
+            {
+              "word": " Getrost,",
+              "start": 156.78,
+              "end": 157.92,
+              "probability": 0.6390529721975327
+            },
+            {
+              "word": " was",
+              "start": 158.44,
+              "end": 158.64,
+              "probability": 0.9379496574401855
+            },
+            {
+              "word": " kommen",
+              "start": 158.64,
+              "end": 159.4,
+              "probability": 0.8453810811042786
+            },
+            {
+              "word": " mag.",
+              "start": 159.4,
+              "end": 160.96,
+              "probability": 0.9624956846237183
+            }
+          ]
+        },
+        {
+          "seek": 15468,
+          "start": 162.56,
+          "end": 167.34,
+          "text": " Gott ist mit uns am Abend und am Morgen",
+          "avgLogprob": -0.36962417654089025,
+          "noSpeechProbability": 0.012431561946868896,
+          "words": [
+            {
+              "word": " Gott",
+              "start": 162.56,
+              "end": 162.66,
+              "probability": 0.9937905669212341
+            },
+            {
+              "word": " ist",
+              "start": 162.66,
+              "end": 163.22,
+              "probability": 0.8108913898468018
+            },
+            {
+              "word": " mit",
+              "start": 163.22,
+              "end": 163.6,
+              "probability": 0.9935436248779297
+            },
+            {
+              "word": " uns",
+              "start": 163.6,
+              "end": 164.06,
+              "probability": 0.9977712631225586
+            },
+            {
+              "word": " am",
+              "start": 164.06,
+              "end": 164.42,
+              "probability": 0.967421293258667
+            },
+            {
+              "word": " Abend",
+              "start": 164.42,
+              "end": 165.18,
+              "probability": 0.9813501834869385
+            },
+            {
+              "word": " und",
+              "start": 165.18,
+              "end": 165.76,
+              "probability": 0.987820565700531
+            },
+            {
+              "word": " am",
+              "start": 165.76,
+              "end": 166.24,
+              "probability": 0.9793456792831421
+            },
+            {
+              "word": " Morgen",
+              "start": 166.24,
+              "end": 167.34,
+              "probability": 0.9742404818534851
+            }
+          ]
+        },
+        {
+          "seek": 15468,
+          "start": 168.68,
+          "end": 174.12,
+          "text": " Und ganz gewiss an jedem neuen Tag.",
+          "avgLogprob": -0.36962417654089025,
+          "noSpeechProbability": 0.012431561946868896,
+          "words": [
+            {
+              "word": " Und",
+              "start": 168.64000000000001,
+              "end": 169.3,
+              "probability": 0.4034631550312042
+            },
+            {
+              "word": " ganz",
+              "start": 169.3,
+              "end": 169.9,
+              "probability": 0.9894992113113403
+            },
+            {
+              "word": " gewiss",
+              "start": 169.9,
+              "end": 170.74,
+              "probability": 0.680788666009903
+            },
+            {
+              "word": " an",
+              "start": 170.74,
+              "end": 171.14,
+              "probability": 0.947428822517395
+            },
+            {
+              "word": " jedem",
+              "start": 171.14,
+              "end": 171.86,
+              "probability": 0.8969779014587402
+            },
+            {
+              "word": " neuen",
+              "start": 171.86,
+              "end": 172.8,
+              "probability": 0.9320192933082581
+            },
+            {
+              "word": " Tag.",
+              "start": 172.8,
+              "end": 174.12,
+              "probability": 0.9972506165504456
+            }
+          ]
+        },
+        {
+          "seek": 18468,
+          "start": 197.4,
+          "end": 200.18,
+          "text": " Das war's für heute.",
+          "avgLogprob": -0.8093805540175665,
+          "noSpeechProbability": 0.9190300703048706,
+          "words": [
+            {
+              "word": " Das",
+              "start": 197.4,
+              "end": 198.8,
+              "probability": 0.01905211992561817
+            },
+            {
+              "word": " war's",
+              "start": 198.8,
+              "end": 200.18,
+              "probability": 0.2693209648132324
+            },
+            {
+              "word": " für",
+              "start": 200.18,
+              "end": 200.18,
+              "probability": 0.7119713425636292
+            },
+            {
+              "word": " heute.",
+              "start": 200.18,
+              "end": 200.18,
+              "probability": 0.9347395896911621
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 274.857
+    },
+    "boundaryDecisions": [
+      {
+        "index": 0,
+        "at": 14.59,
+        "method": "independent MMS CTC free-decoded prefix in two windows",
+        "model": {
+          "repository": "xycld/lyric-align-mms-fa",
+          "revision": "06e6cbfa5c257d23981c922f6406f5def958eb95",
+          "file": "mms_fa_uint8.onnx",
+          "sha256": "3949a7957375d802a9f813ef2a26315a44a30cd65da647f9405f82cd9f55d42a",
+          "tokenizerSha256": "e5a791edbc7d1daf221ae37c0b066957643024b28770a9cdb9d0009ef76cc20a"
+        },
+        "windows": [
+          {
+            "at": 14.586,
+            "wordEnd": 14.827,
+            "followingStart": 14.947,
+            "prefix": "vong",
+            "tokens": [
+              {
+                "letter": "v",
+                "start": 14.586,
+                "end": 14.606,
+                "score": 0.8772
+              },
+              {
+                "letter": "o",
+                "start": 14.687,
+                "end": 14.707,
+                "score": 0.7387
+              },
+              {
+                "letter": "n",
+                "start": 14.807,
+                "end": 14.827,
+                "score": 0.9307
+              },
+              {
+                "letter": "g",
+                "start": 14.947,
+                "end": 14.967,
+                "score": 0.6852
+              }
+            ],
+            "bounds": [
+              7.5,
+              29.5
+            ]
+          },
+          {
+            "at": 14.586,
+            "wordEnd": 14.826,
+            "followingStart": 14.946,
+            "prefix": "vong",
+            "tokens": [
+              {
+                "letter": "v",
+                "start": 14.586,
+                "end": 14.606,
+                "score": 0.9168
+              },
+              {
+                "letter": "o",
+                "start": 14.686,
+                "end": 14.706,
+                "score": 0.8583
+              },
+              {
+                "letter": "n",
+                "start": 14.806,
+                "end": 14.826,
+                "score": 0.9397
+              },
+              {
+                "letter": "g",
+                "start": 14.946,
+                "end": 14.966,
+                "score": 0.7432
+              }
+            ],
+            "bounds": [
+              9.5,
+              27.5
+            ]
+          }
+        ],
+        "asrWordRange": [
+          13.5,
+          14.9
+        ]
+      }
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "v1",
+      "label": "原图第1段",
+      "text": "Von guten Mächten treu und still umgeben, behütet und getröstet wunderbar. So will ich diese Tage mit euch leben und mit euch gehen in ein neues Jahr."
+    },
+    {
+      "region": "chorus",
+      "label": "副歌",
+      "text": "Von guten Mächten wunderbar geborgen, Erwarten wie Getrost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+    },
+    {
+      "region": "v2",
+      "label": "原图第2段",
+      "text": "Noch will das Alte unsere Herzen quälen, Noch drückt uns böser Tage schwere Last. Ach Herr, gib uns'n aufgescheuchten Seelen Das Heil, für das Du uns bereitet hast."
+    },
+    {
+      "region": "chorus",
+      "label": "副歌",
+      "text": "Von guten Mächten wunderbar geboren, Erwart' den Wege Trost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+    },
+    {
+      "region": "v6",
+      "label": "原图第6段",
+      "text": "Lass warm und still die Kerzen heute flammen, die du in unsere Dunkelheit gebracht. Für wenn es sein kann, wieder uns zusammen, wir wissen es, dein Licht scheint in der Nacht"
+    },
+    {
+      "region": "chorus",
+      "label": "副歌",
+      "text": "von guten Mächten wunderbar geborgen. Erwart'n wir Getrost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+    }
+  ],
+  "estimates": [
+    13.5,
+    41.44,
+    68.62,
+    95.22,
+    122.38,
+    148.51999999999998
+  ],
+  "windows": [
+    {
+      "index": 0,
+      "window": 0,
+      "at": 7.5,
+      "valid": false,
+      "firstWord": "von",
+      "firstWordStart": 7.5,
+      "firstWordEnd": 14.94,
+      "firstWordProbability": 0.5408,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8237,
+      "bounds": [
+        7.5,
+        29.5
+      ],
+      "words": [
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 0.0,
+          "end": 7.44,
+          "probability": 0.5407710671424866
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 7.44,
+          "end": 8.3,
+          "probability": 0.906419038772583
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 8.3,
+          "end": 9.1,
+          "probability": 0.6297961672147115
+        },
+        {
+          "word": " treu",
+          "tokens": [
+            220,
+            3599,
+            84
+          ],
+          "start": 9.1,
+          "end": 9.7,
+          "probability": 0.33267115606247444
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 9.7,
+          "end": 10.02,
+          "probability": 0.9839809536933899
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 10.02,
+          "end": 10.38,
+          "probability": 0.946826696395874
+        },
+        {
+          "word": " umgeben",
+          "tokens": [
+            1105,
+            16702
+          ],
+          "start": 10.38,
+          "end": 12.3,
+          "probability": 0.92032790184021
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 12.3,
+          "end": 13.98,
+          "probability": 0.49504178762435913
+        },
+        {
+          "word": " behütet",
+          "tokens": [
+            1540,
+            7695,
+            302
+          ],
+          "start": 13.98,
+          "end": 14.94,
+          "probability": 0.8231914142767588
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 14.94,
+          "end": 15.64,
+          "probability": 0.9919813275337219
+        },
+        {
+          "word": " getröstet",
+          "tokens": [
+            483,
+            81,
+            36995,
+            302
+          ],
+          "start": 15.64,
+          "end": 16.64,
+          "probability": 0.9884536862373352
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 1,
+      "at": 9.5,
+      "valid": false,
+      "firstWord": "von",
+      "firstWordStart": 9.5,
+      "firstWordEnd": 14.96,
+      "firstWordProbability": 0.7189,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8247,
+      "bounds": [
+        9.5,
+        27.5
+      ],
+      "words": [
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 0.0,
+          "end": 5.46,
+          "probability": 0.7189364433288574
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 5.46,
+          "end": 6.3,
+          "probability": 0.9354013204574585
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 6.3,
+          "end": 7.1,
+          "probability": 0.5056898146867752
+        },
+        {
+          "word": " treu",
+          "tokens": [
+            220,
+            3599,
+            84
+          ],
+          "start": 7.1,
+          "end": 7.7,
+          "probability": 0.33049507942323925
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 7.7,
+          "end": 8.02,
+          "probability": 0.9845426678657532
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 8.02,
+          "end": 8.38,
+          "probability": 0.9592432379722595
+        },
+        {
+          "word": " umgeben",
+          "tokens": [
+            1105,
+            16702
+          ],
+          "start": 8.38,
+          "end": 10.18,
+          "probability": 0.9676201641559601
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 10.18,
+          "end": 12.0,
+          "probability": 0.507796049118042
+        },
+        {
+          "word": " behütet",
+          "tokens": [
+            1540,
+            7695,
+            302
+          ],
+          "start": 12.0,
+          "end": 12.88,
+          "probability": 0.8049920698006948
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 12.88,
+          "end": 13.52,
+          "probability": 0.9942458271980286
+        },
+        {
+          "word": " getröstet",
+          "tokens": [
+            483,
+            81,
+            36995,
+            302
+          ],
+          "start": 13.52,
+          "end": 14.66,
+          "probability": 0.9857133477926254
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 0,
+      "at": 41.4,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 41.4,
+      "firstWordEnd": 41.82,
+      "firstWordProbability": 0.7338,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8125,
+      "bounds": [
+        35.44,
+        57.44
+      ],
+      "words": [
+        {
+          "word": "in",
+          "tokens": [
+            259
+          ],
+          "start": 0.0,
+          "end": 1.3,
+          "probability": 7.53864151192829e-06
+        },
+        {
+          "word": " ein",
+          "tokens": [
+            1343
+          ],
+          "start": 1.3,
+          "end": 2.12,
+          "probability": 0.9465346932411194
+        },
+        {
+          "word": " neues",
+          "tokens": [
+            43979
+          ],
+          "start": 2.12,
+          "end": 2.82,
+          "probability": 0.9800236821174622
+        },
+        {
+          "word": " Jahr",
+          "tokens": [
+            11674
+          ],
+          "start": 2.82,
+          "end": 3.88,
+          "probability": 0.997735857963562
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 3.88,
+          "end": 5.96,
+          "probability": 0.6392257213592529
+        },
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 5.96,
+          "end": 6.38,
+          "probability": 0.7338111996650696
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 6.38,
+          "end": 7.34,
+          "probability": 0.9756014943122864
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 7.34,
+          "end": 8.18,
+          "probability": 0.9754476745923361
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 8.18,
+          "end": 9.68,
+          "probability": 0.9568739533424377
+        },
+        {
+          "word": " geborgen",
+          "tokens": [
+            1519,
+            3918,
+            1766
+          ],
+          "start": 9.68,
+          "end": 11.9,
+          "probability": 0.9229440490404764
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 11.9,
+          "end": 12.42,
+          "probability": 0.6854844689369202
+        },
+        {
+          "word": " Erwarten",
+          "tokens": [
+            3300,
+            86,
+            11719
+          ],
+          "start": 12.42,
+          "end": 13.14,
+          "probability": 0.3657076892753442
+        },
+        {
+          "word": " wie",
+          "tokens": [
+            3355
+          ],
+          "start": 13.14,
+          "end": 13.76,
+          "probability": 0.45366033911705017
+        },
+        {
+          "word": " Getrost",
+          "tokens": [
+            3240,
+            27494
+          ],
+          "start": 13.76,
+          "end": 14.86,
+          "probability": 0.7208918631076813
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 14.86,
+          "end": 15.4,
+          "probability": 0.6863943338394165
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 15.4,
+          "end": 15.62,
+          "probability": 0.985879123210907
+        },
+        {
+          "word": " kommen",
+          "tokens": [
+            11729
+          ],
+          "start": 15.62,
+          "end": 16.34,
+          "probability": 0.9571720361709595
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 1,
+      "at": 41.3,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 41.3,
+      "firstWordEnd": 41.82,
+      "firstWordProbability": 0.7179,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7929,
+      "bounds": [
+        37.44,
+        55.44
+      ],
+      "words": [
+        {
+          "word": "in",
+          "tokens": [
+            259
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 4.237023404130014e-06
+        },
+        {
+          "word": " ein",
+          "tokens": [
+            1343
+          ],
+          "start": 0.0,
+          "end": 0.44,
+          "probability": 0.25190025568008423
+        },
+        {
+          "word": " neues",
+          "tokens": [
+            43979
+          ],
+          "start": 0.44,
+          "end": 0.82,
+          "probability": 0.9519490003585815
+        },
+        {
+          "word": " Jahr",
+          "tokens": [
+            11674
+          ],
+          "start": 0.82,
+          "end": 2.02,
+          "probability": 0.9878457188606262
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 2.02,
+          "end": 3.86,
+          "probability": 0.5381858944892883
+        },
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 3.86,
+          "end": 4.38,
+          "probability": 0.7179448008537292
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 4.38,
+          "end": 5.34,
+          "probability": 0.9791202545166016
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 5.34,
+          "end": 6.18,
+          "probability": 0.9611243605613708
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 6.18,
+          "end": 7.72,
+          "probability": 0.9781440198421478
+        },
+        {
+          "word": " geborgen",
+          "tokens": [
+            1519,
+            3918,
+            1766
+          ],
+          "start": 7.72,
+          "end": 9.86,
+          "probability": 0.9227544466654459
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 9.86,
+          "end": 10.42,
+          "probability": 0.5793275833129883
+        },
+        {
+          "word": " Erwarten",
+          "tokens": [
+            3300,
+            86,
+            11719
+          ],
+          "start": 10.42,
+          "end": 11.14,
+          "probability": 0.38818128655354184
+        },
+        {
+          "word": " wie",
+          "tokens": [
+            3355
+          ],
+          "start": 11.14,
+          "end": 11.76,
+          "probability": 0.1484016478061676
+        },
+        {
+          "word": " Getrost",
+          "tokens": [
+            3240,
+            27494
+          ],
+          "start": 11.76,
+          "end": 12.88,
+          "probability": 0.641898512840271
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 12.88,
+          "end": 13.42,
+          "probability": 0.7050674557685852
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 13.42,
+          "end": 13.64,
+          "probability": 0.9865096211433411
+        },
+        {
+          "word": " kommen",
+          "tokens": [
+            11729
+          ],
+          "start": 13.64,
+          "end": 14.34,
+          "probability": 0.9696208834648132
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 0,
+      "at": 68.58,
+      "valid": true,
+      "firstWord": "noch",
+      "firstWordStart": 68.58,
+      "firstWordEnd": 68.88,
+      "firstWordProbability": 0.8754,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8363,
+      "bounds": [
+        62.62,
+        84.62
+      ],
+      "words": [
+        {
+          "word": "an",
+          "tokens": [
+            282
+          ],
+          "start": 0.0,
+          "end": 0.9,
+          "probability": 0.0001259792916243896
+        },
+        {
+          "word": " jedem",
+          "tokens": [
+            36538
+          ],
+          "start": 0.9,
+          "end": 1.8,
+          "probability": 0.9751560091972351
+        },
+        {
+          "word": " neuen",
+          "tokens": [
+            21387
+          ],
+          "start": 1.8,
+          "end": 2.6,
+          "probability": 0.9514632225036621
+        },
+        {
+          "word": " Tag",
+          "tokens": [
+            11204
+          ],
+          "start": 2.6,
+          "end": 4.2,
+          "probability": 0.981155514717102
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.2,
+          "end": 5.96,
+          "probability": 0.5951544642448425
+        },
+        {
+          "word": " Noch",
+          "tokens": [
+            38116
+          ],
+          "start": 5.96,
+          "end": 6.26,
+          "probability": 0.8753763437271118
+        },
+        {
+          "word": " will",
+          "tokens": [
+            486
+          ],
+          "start": 6.26,
+          "end": 6.9,
+          "probability": 0.9091476202011108
+        },
+        {
+          "word": " das",
+          "tokens": [
+            1482
+          ],
+          "start": 6.9,
+          "end": 7.3,
+          "probability": 0.9937694668769836
+        },
+        {
+          "word": " Alte",
+          "tokens": [
+            967,
+            975
+          ],
+          "start": 7.3,
+          "end": 8.12,
+          "probability": 0.9430539309978485
+        },
+        {
+          "word": " unsere",
+          "tokens": [
+            14339
+          ],
+          "start": 8.12,
+          "end": 8.96,
+          "probability": 0.6616117358207703
+        },
+        {
+          "word": " Herzen",
+          "tokens": [
+            3204,
+            2904
+          ],
+          "start": 8.96,
+          "end": 9.78,
+          "probability": 0.9921550154685974
+        },
+        {
+          "word": " quälen",
+          "tokens": [
+            421,
+            737,
+            6698
+          ],
+          "start": 9.78,
+          "end": 12.16,
+          "probability": 0.9190695683161417
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 12.16,
+          "end": 12.84,
+          "probability": 0.6940863728523254
+        },
+        {
+          "word": " Noch",
+          "tokens": [
+            38116
+          ],
+          "start": 12.84,
+          "end": 13.04,
+          "probability": 0.07006354629993439
+        },
+        {
+          "word": " drückt",
+          "tokens": [
+            1224,
+            37532
+          ],
+          "start": 13.04,
+          "end": 13.56,
+          "probability": 0.9771550893783569
+        },
+        {
+          "word": " uns",
+          "tokens": [
+            2693
+          ],
+          "start": 13.56,
+          "end": 21.52,
+          "probability": 0.9983491897583008
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 1,
+      "at": 68.52,
+      "valid": true,
+      "firstWord": "noch",
+      "firstWordStart": 68.52,
+      "firstWordEnd": 68.88,
+      "firstWordProbability": 0.7624,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7669,
+      "bounds": [
+        64.62,
+        82.62
+      ],
+      "words": [
+        {
+          "word": "an",
+          "tokens": [
+            282
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 8.2123051470262e-06
+        },
+        {
+          "word": " jedem",
+          "tokens": [
+            36538
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 5.421160312835127e-05
+        },
+        {
+          "word": " neuen",
+          "tokens": [
+            21387
+          ],
+          "start": 0.0,
+          "end": 0.54,
+          "probability": 0.4715762734413147
+        },
+        {
+          "word": " Tag",
+          "tokens": [
+            11204
+          ],
+          "start": 0.54,
+          "end": 2.28,
+          "probability": 0.8822078108787537
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 2.28,
+          "end": 3.9,
+          "probability": 0.5142555236816406
+        },
+        {
+          "word": " Noch",
+          "tokens": [
+            38116
+          ],
+          "start": 3.9,
+          "end": 4.26,
+          "probability": 0.7623855471611023
+        },
+        {
+          "word": " will",
+          "tokens": [
+            486
+          ],
+          "start": 4.26,
+          "end": 4.9,
+          "probability": 0.7764248847961426
+        },
+        {
+          "word": " das",
+          "tokens": [
+            1482
+          ],
+          "start": 4.9,
+          "end": 5.3,
+          "probability": 0.9935799837112427
+        },
+        {
+          "word": " Alte",
+          "tokens": [
+            967,
+            975
+          ],
+          "start": 5.3,
+          "end": 6.14,
+          "probability": 0.8935319483280182
+        },
+        {
+          "word": " unsere",
+          "tokens": [
+            14339
+          ],
+          "start": 6.14,
+          "end": 6.96,
+          "probability": 0.44083064794540405
+        },
+        {
+          "word": " Herzen",
+          "tokens": [
+            3204,
+            2904
+          ],
+          "start": 6.96,
+          "end": 7.8,
+          "probability": 0.9872999787330627
+        },
+        {
+          "word": " quälen",
+          "tokens": [
+            421,
+            737,
+            6698
+          ],
+          "start": 7.8,
+          "end": 10.12,
+          "probability": 0.8476198315620422
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 10.12,
+          "end": 10.84,
+          "probability": 0.6759486794471741
+        },
+        {
+          "word": " Noch",
+          "tokens": [
+            38116
+          ],
+          "start": 10.84,
+          "end": 11.04,
+          "probability": 0.03618348762392998
+        },
+        {
+          "word": " drückt",
+          "tokens": [
+            1224,
+            37532
+          ],
+          "start": 11.04,
+          "end": 11.56,
+          "probability": 0.9628127813339233
+        },
+        {
+          "word": " uns",
+          "tokens": [
+            2693
+          ],
+          "start": 11.56,
+          "end": 11.98,
+          "probability": 0.9979348182678223
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 0,
+      "at": 95.26,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 95.26,
+      "firstWordEnd": 95.5,
+      "firstWordProbability": 0.3507,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6888,
+      "bounds": [
+        89.22,
+        111.22
+      ],
+      "words": [
+        {
+          "word": "Du",
+          "tokens": [
+            46266
+          ],
+          "start": 0.0,
+          "end": 0.82,
+          "probability": 2.14894134842325e-06
+        },
+        {
+          "word": " uns",
+          "tokens": [
+            2693
+          ],
+          "start": 0.82,
+          "end": 1.84,
+          "probability": 0.013143004849553108
+        },
+        {
+          "word": " bereitet",
+          "tokens": [
+            13375,
+            16341
+          ],
+          "start": 1.84,
+          "end": 3.0,
+          "probability": 0.7454246133565903
+        },
+        {
+          "word": " hast",
+          "tokens": [
+            6581
+          ],
+          "start": 3.0,
+          "end": 4.66,
+          "probability": 0.97513347864151
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.66,
+          "end": 6.04,
+          "probability": 0.19193357229232788
+        },
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 6.04,
+          "end": 6.28,
+          "probability": 0.35067179799079895
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 6.28,
+          "end": 7.2,
+          "probability": 0.9823551774024963
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 7.2,
+          "end": 8.06,
+          "probability": 0.9820205569267273
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 8.06,
+          "end": 9.62,
+          "probability": 0.9799083471298218
+        },
+        {
+          "word": " geboren",
+          "tokens": [
+            21125,
+            10948
+          ],
+          "start": 9.62,
+          "end": 11.12,
+          "probability": 0.5953556150197983
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 11.12,
+          "end": 12.22,
+          "probability": 0.2526368796825409
+        },
+        {
+          "word": " Erwart",
+          "tokens": [
+            3300,
+            29587
+          ],
+          "start": 12.22,
+          "end": 12.82,
+          "probability": 0.05897768074646592
+        },
+        {
+          "word": "'",
+          "tokens": [
+            6
+          ],
+          "start": 12.82,
+          "end": 12.98,
+          "probability": 0.20161040127277374
+        },
+        {
+          "word": " den",
+          "tokens": [
+            1441
+          ],
+          "start": 12.98,
+          "end": 13.1,
+          "probability": 0.16319091618061066
+        },
+        {
+          "word": " Wege",
+          "tokens": [
+            492,
+            432
+          ],
+          "start": 13.1,
+          "end": 13.92,
+          "probability": 0.4628939926624298
+        },
+        {
+          "word": " Trost",
+          "tokens": [
+            1765,
+            555
+          ],
+          "start": 13.92,
+          "end": 14.86,
+          "probability": 0.8748198747634888
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 14.86,
+          "end": 15.3,
+          "probability": 0.7424548864364624
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 15.3,
+          "end": 15.52,
+          "probability": 0.9753131866455078
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 1,
+      "at": 95.12,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 95.12,
+      "firstWordEnd": 95.48,
+      "firstWordProbability": 0.234,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6763,
+      "bounds": [
+        91.22,
+        109.22
+      ],
+      "words": [
+        {
+          "word": "Du",
+          "tokens": [
+            46266
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 1.9649673959065694e-06
+        },
+        {
+          "word": " uns",
+          "tokens": [
+            2693
+          ],
+          "start": 0.0,
+          "end": 0.5,
+          "probability": 0.0005114353261888027
+        },
+        {
+          "word": " bereitet",
+          "tokens": [
+            13375,
+            16341
+          ],
+          "start": 0.5,
+          "end": 1.08,
+          "probability": 0.5028320127166808
+        },
+        {
+          "word": " hast",
+          "tokens": [
+            6581
+          ],
+          "start": 1.08,
+          "end": 2.32,
+          "probability": 0.9854766726493835
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 2.32,
+          "end": 3.9,
+          "probability": 0.09064383059740067
+        },
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 3.9,
+          "end": 4.26,
+          "probability": 0.23404426872730255
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 4.26,
+          "end": 5.18,
+          "probability": 0.9886372685432434
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 5.18,
+          "end": 6.04,
+          "probability": 0.9784862995147705
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 6.04,
+          "end": 7.62,
+          "probability": 0.9894412755966187
+        },
+        {
+          "word": " geboren",
+          "tokens": [
+            21125,
+            10948
+          ],
+          "start": 7.62,
+          "end": 9.32,
+          "probability": 0.5635765492916107
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 9.32,
+          "end": 10.06,
+          "probability": 0.24069355428218842
+        },
+        {
+          "word": " Erwart",
+          "tokens": [
+            3300,
+            29587
+          ],
+          "start": 10.06,
+          "end": 10.82,
+          "probability": 0.038725589169189334
+        },
+        {
+          "word": "'",
+          "tokens": [
+            6
+          ],
+          "start": 10.82,
+          "end": 10.98,
+          "probability": 0.3474101424217224
+        },
+        {
+          "word": " den",
+          "tokens": [
+            1441
+          ],
+          "start": 10.98,
+          "end": 11.04,
+          "probability": 0.10532011836767197
+        },
+        {
+          "word": " Wege",
+          "tokens": [
+            492,
+            432
+          ],
+          "start": 11.04,
+          "end": 11.88,
+          "probability": 0.4587063193321228
+        },
+        {
+          "word": " Trost",
+          "tokens": [
+            1765,
+            555
+          ],
+          "start": 11.88,
+          "end": 12.94,
+          "probability": 0.9002797901630402
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 12.94,
+          "end": 13.28,
+          "probability": 0.7519902586936951
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 13.28,
+          "end": 13.52,
+          "probability": 0.9795738458633423
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 0,
+      "at": 122.36,
+      "valid": true,
+      "firstWord": "lass",
+      "firstWordStart": 122.36,
+      "firstWordEnd": 122.64,
+      "firstWordProbability": 0.9392,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.9599,
+      "bounds": [
+        116.38,
+        138.38
+      ],
+      "words": [
+        {
+          "word": "an",
+          "tokens": [
+            282
+          ],
+          "start": 0.0,
+          "end": 0.62,
+          "probability": 0.00036547722993418574
+        },
+        {
+          "word": " jedem",
+          "tokens": [
+            36538
+          ],
+          "start": 0.62,
+          "end": 1.38,
+          "probability": 0.47789236903190613
+        },
+        {
+          "word": " neuen",
+          "tokens": [
+            21387
+          ],
+          "start": 1.38,
+          "end": 2.22,
+          "probability": 0.9641175270080566
+        },
+        {
+          "word": " Tag",
+          "tokens": [
+            11204
+          ],
+          "start": 2.22,
+          "end": 3.76,
+          "probability": 0.9734930396080017
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 3.76,
+          "end": 5.98,
+          "probability": 0.6608428359031677
+        },
+        {
+          "word": " Lass",
+          "tokens": [
+            441,
+            640
+          ],
+          "start": 5.98,
+          "end": 6.26,
+          "probability": 0.9391993880271912
+        },
+        {
+          "word": " warm",
+          "tokens": [
+            4561
+          ],
+          "start": 6.26,
+          "end": 6.8,
+          "probability": 0.9508313536643982
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 6.8,
+          "end": 7.18,
+          "probability": 0.97844398021698
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.18,
+          "end": 7.56,
+          "probability": 0.9852331280708313
+        },
+        {
+          "word": " die",
+          "tokens": [
+            978
+          ],
+          "start": 7.56,
+          "end": 7.98,
+          "probability": 0.9556497931480408
+        },
+        {
+          "word": " Kerzen",
+          "tokens": [
+            20706,
+            2904
+          ],
+          "start": 7.98,
+          "end": 8.86,
+          "probability": 0.9959202408790588
+        },
+        {
+          "word": " heute",
+          "tokens": [
+            9801
+          ],
+          "start": 8.86,
+          "end": 9.5,
+          "probability": 0.9435279369354248
+        },
+        {
+          "word": " flammen",
+          "tokens": [
+            932,
+            11248
+          ],
+          "start": 9.5,
+          "end": 11.1,
+          "probability": 0.976311206817627
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 11.1,
+          "end": 12.84,
+          "probability": 0.8789334893226624
+        },
+        {
+          "word": " die",
+          "tokens": [
+            978
+          ],
+          "start": 12.84,
+          "end": 12.94,
+          "probability": 0.9586926698684692
+        },
+        {
+          "word": " du",
+          "tokens": [
+            1581
+          ],
+          "start": 12.94,
+          "end": 13.56,
+          "probability": 0.8120177388191223
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 1,
+      "at": 122.06,
+      "valid": true,
+      "firstWord": "lass",
+      "firstWordStart": 122.06,
+      "firstWordEnd": 122.64,
+      "firstWordProbability": 0.9301,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.9616,
+      "bounds": [
+        118.38,
+        136.38
+      ],
+      "words": [
+        {
+          "word": "an",
+          "tokens": [
+            282
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 1.894175511552021e-05
+        },
+        {
+          "word": " jedem",
+          "tokens": [
+            36538
+          ],
+          "start": 0.0,
+          "end": 3.5,
+          "probability": 0.00025553605519235134
+        },
+        {
+          "word": " neuen",
+          "tokens": [
+            21387
+          ],
+          "start": 3.5,
+          "end": 3.5,
+          "probability": 1.1118606380478013e-05
+        },
+        {
+          "word": " Tag",
+          "tokens": [
+            11204
+          ],
+          "start": 3.5,
+          "end": 3.5,
+          "probability": 0.9695228338241577
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 3.5,
+          "end": 3.68,
+          "probability": 0.6181915402412415
+        },
+        {
+          "word": " Lass",
+          "tokens": [
+            441,
+            640
+          ],
+          "start": 3.68,
+          "end": 4.26,
+          "probability": 0.9301213026046753
+        },
+        {
+          "word": " warm",
+          "tokens": [
+            4561
+          ],
+          "start": 4.26,
+          "end": 4.82,
+          "probability": 0.9774032235145569
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 4.82,
+          "end": 5.2,
+          "probability": 0.9798938035964966
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.2,
+          "end": 5.64,
+          "probability": 0.9819157123565674
+        },
+        {
+          "word": " die",
+          "tokens": [
+            978
+          ],
+          "start": 5.64,
+          "end": 5.98,
+          "probability": 0.958333432674408
+        },
+        {
+          "word": " Kerzen",
+          "tokens": [
+            20706,
+            2904
+          ],
+          "start": 5.98,
+          "end": 6.88,
+          "probability": 0.9959546625614166
+        },
+        {
+          "word": " heute",
+          "tokens": [
+            9801
+          ],
+          "start": 6.88,
+          "end": 7.52,
+          "probability": 0.953684389591217
+        },
+        {
+          "word": " flammen",
+          "tokens": [
+            932,
+            11248
+          ],
+          "start": 7.52,
+          "end": 9.22,
+          "probability": 0.9601570069789886
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 9.22,
+          "end": 10.84,
+          "probability": 0.8851973414421082
+        },
+        {
+          "word": " die",
+          "tokens": [
+            978
+          ],
+          "start": 10.84,
+          "end": 10.98,
+          "probability": 0.9397528767585754
+        },
+        {
+          "word": " du",
+          "tokens": [
+            1581
+          ],
+          "start": 10.98,
+          "end": 11.56,
+          "probability": 0.8732645511627197
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 0,
+      "at": 147.82,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 147.82,
+      "firstWordEnd": 149.4,
+      "firstWordProbability": 0.051,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7639,
+      "bounds": [
+        142.52,
+        164.52
+      ],
+      "words": [
+        {
+          "word": "scheint",
+          "tokens": [
+            12287,
+            686
+          ],
+          "start": 0.0,
+          "end": 2.66,
+          "probability": 0.4151124112048947
+        },
+        {
+          "word": " in",
+          "tokens": [
+            294
+          ],
+          "start": 2.66,
+          "end": 3.22,
+          "probability": 0.9560779929161072
+        },
+        {
+          "word": " der",
+          "tokens": [
+            1163
+          ],
+          "start": 3.22,
+          "end": 3.7,
+          "probability": 0.9903990626335144
+        },
+        {
+          "word": " Nacht",
+          "tokens": [
+            31133
+          ],
+          "start": 3.7,
+          "end": 5.3,
+          "probability": 0.9878266453742981
+        },
+        {
+          "word": " von",
+          "tokens": [
+            2957
+          ],
+          "start": 5.3,
+          "end": 6.88,
+          "probability": 0.05102469399571419
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 6.88,
+          "end": 7.8,
+          "probability": 0.9826719760894775
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 7.8,
+          "end": 8.66,
+          "probability": 0.9595683217048645
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 8.66,
+          "end": 10.2,
+          "probability": 0.9922839403152466
+        },
+        {
+          "word": " geborgen",
+          "tokens": [
+            1519,
+            3918,
+            1766
+          ],
+          "start": 10.2,
+          "end": 12.4,
+          "probability": 0.8735487659772238
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 12.4,
+          "end": 12.4,
+          "probability": 0.13579069077968597
+        },
+        {
+          "word": " Erwart",
+          "tokens": [
+            3300,
+            29587
+          ],
+          "start": 12.4,
+          "end": 13.42,
+          "probability": 0.4042376819998026
+        },
+        {
+          "word": "'n",
+          "tokens": [
+            6,
+            77
+          ],
+          "start": 13.42,
+          "end": 13.7,
+          "probability": 0.27097804844379425
+        },
+        {
+          "word": " wir",
+          "tokens": [
+            1987
+          ],
+          "start": 13.7,
+          "end": 14.24,
+          "probability": 0.5241299867630005
+        },
+        {
+          "word": " Getrost",
+          "tokens": [
+            3240,
+            27494
+          ],
+          "start": 14.24,
+          "end": 15.36,
+          "probability": 0.617913231253624
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 15.36,
+          "end": 15.92,
+          "probability": 0.5920719504356384
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 15.92,
+          "end": 16.12,
+          "probability": 0.9705726504325867
+        },
+        {
+          "word": " kommen",
+          "tokens": [
+            11729
+          ],
+          "start": 16.12,
+          "end": 16.86,
+          "probability": 0.8494706153869629
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 1,
+      "at": 147.92,
+      "valid": true,
+      "firstWord": "von",
+      "firstWordStart": 147.92,
+      "firstWordEnd": 149.42,
+      "firstWordProbability": 0.1337,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7584,
+      "bounds": [
+        144.52,
+        162.52
+      ],
+      "words": [
+        {
+          "word": "scheint",
+          "tokens": [
+            12287,
+            686
+          ],
+          "start": 0.0,
+          "end": 0.72,
+          "probability": 0.4835597378339429
+        },
+        {
+          "word": " in",
+          "tokens": [
+            294
+          ],
+          "start": 0.72,
+          "end": 1.32,
+          "probability": 0.9815275073051453
+        },
+        {
+          "word": " der",
+          "tokens": [
+            1163
+          ],
+          "start": 1.32,
+          "end": 1.78,
+          "probability": 0.9881999492645264
+        },
+        {
+          "word": " Nacht",
+          "tokens": [
+            31133
+          ],
+          "start": 1.78,
+          "end": 3.4,
+          "probability": 0.9829943180084229
+        },
+        {
+          "word": " von",
+          "tokens": [
+            2957
+          ],
+          "start": 3.4,
+          "end": 4.9,
+          "probability": 0.13372871279716492
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 4.9,
+          "end": 5.82,
+          "probability": 0.9788135290145874
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 5.82,
+          "end": 6.66,
+          "probability": 0.9702480634053549
+        },
+        {
+          "word": " wunderbar",
+          "tokens": [
+            47736,
+            5356
+          ],
+          "start": 6.66,
+          "end": 8.18,
+          "probability": 0.9941616654396057
+        },
+        {
+          "word": " geborgen",
+          "tokens": [
+            1519,
+            3918,
+            1766
+          ],
+          "start": 8.18,
+          "end": 10.3,
+          "probability": 0.8512612581253052
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 10.3,
+          "end": 10.3,
+          "probability": 0.25847116112709045
+        },
+        {
+          "word": " Erwart",
+          "tokens": [
+            3300,
+            29587
+          ],
+          "start": 10.3,
+          "end": 11.42,
+          "probability": 0.42367617785930634
+        },
+        {
+          "word": "'n",
+          "tokens": [
+            6,
+            77
+          ],
+          "start": 11.42,
+          "end": 11.66,
+          "probability": 0.2865328788757324
+        },
+        {
+          "word": " wir",
+          "tokens": [
+            1987
+          ],
+          "start": 11.66,
+          "end": 12.26,
+          "probability": 0.41485971212387085
+        },
+        {
+          "word": " Getrost",
+          "tokens": [
+            3240,
+            27494
+          ],
+          "start": 12.26,
+          "end": 13.36,
+          "probability": 0.606858029961586
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 13.36,
+          "end": 13.88,
+          "probability": 0.6562656760215759
+        },
+        {
+          "word": " was",
+          "tokens": [
+            390
+          ],
+          "start": 13.88,
+          "end": 14.12,
+          "probability": 0.9735186696052551
+        },
+        {
+          "word": " kommen",
+          "tokens": [
+            11729
+          ],
+          "start": 14.12,
+          "end": 14.86,
+          "probability": 0.8171935081481934
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 2,
+      "at": 5.5,
+      "valid": false,
+      "firstWord": "von",
+      "firstWordStart": 5.5,
+      "firstWordEnd": 14.96,
+      "firstWordProbability": 0.6299,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.8179,
+      "bounds": [
+        5.5,
+        31.5
+      ],
+      "words": [
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 0.0,
+          "end": 9.46,
+          "probability": 0.6298749446868896
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 9.46,
+          "end": 10.3,
+          "probability": 0.9088722467422485
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 10.3,
+          "end": 11.1,
+          "probability": 0.5720380246639252
+        },
+        {
+          "word": " treu",
+          "tokens": [
+            220,
+            3599,
+            84
+          ],
+          "start": 11.1,
+          "end": 11.7,
+          "probability": 0.3308570973700095
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 11.7,
+          "end": 12.02,
+          "probability": 0.9793317317962646
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 12.02,
+          "end": 12.38,
+          "probability": 0.8689967393875122
+        },
+        {
+          "word": " umgeben",
+          "tokens": [
+            1105,
+            16702
+          ],
+          "start": 12.38,
+          "end": 14.3,
+          "probability": 0.9504235684871674
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 14.3,
+          "end": 15.98,
+          "probability": 0.49060726165771484
+        },
+        {
+          "word": " behütet",
+          "tokens": [
+            1540,
+            7695,
+            302
+          ],
+          "start": 15.98,
+          "end": 16.9,
+          "probability": 0.8286240498224894
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 16.9,
+          "end": 17.62,
+          "probability": 0.9938905239105225
+        },
+        {
+          "word": " getröstet",
+          "tokens": [
+            483,
+            81,
+            36995,
+            302
+          ],
+          "start": 17.62,
+          "end": 18.66,
+          "probability": 0.9852694272994995
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 3,
+      "at": 3.5,
+      "valid": false,
+      "firstWord": "von",
+      "firstWordStart": 3.5,
+      "firstWordEnd": 14.94,
+      "firstWordProbability": 0.5205,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7931,
+      "bounds": [
+        3.5,
+        29.5
+      ],
+      "words": [
+        {
+          "word": " Von",
+          "tokens": [
+            20700
+          ],
+          "start": 0.0,
+          "end": 11.44,
+          "probability": 0.5205046534538269
+        },
+        {
+          "word": " guten",
+          "tokens": [
+            31277
+          ],
+          "start": 11.44,
+          "end": 12.3,
+          "probability": 0.8289838433265686
+        },
+        {
+          "word": " Mächten",
+          "tokens": [
+            376,
+            10168,
+            1147
+          ],
+          "start": 12.3,
+          "end": 13.1,
+          "probability": 0.5059038698673248
+        },
+        {
+          "word": " treu",
+          "tokens": [
+            220,
+            3599,
+            84
+          ],
+          "start": 13.1,
+          "end": 13.7,
+          "probability": 0.3317336720683291
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 13.7,
+          "end": 14.02,
+          "probability": 0.9788949489593506
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 14.02,
+          "end": 14.38,
+          "probability": 0.9232820868492126
+        },
+        {
+          "word": " umgeben",
+          "tokens": [
+            1105,
+            16702
+          ],
+          "start": 14.38,
+          "end": 16.26,
+          "probability": 0.9138851761817932
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 16.26,
+          "end": 17.98,
+          "probability": 0.4705953001976013
+        },
+        {
+          "word": " behütet",
+          "tokens": [
+            1540,
+            7695,
+            302
+          ],
+          "start": 17.98,
+          "end": 18.86,
+          "probability": 0.8069085776805878
+        },
+        {
+          "word": " und",
+          "tokens": [
+            674
+          ],
+          "start": 18.86,
+          "end": 19.64,
+          "probability": 0.9931755661964417
+        },
+        {
+          "word": " getröstet",
+          "tokens": [
+            483,
+            81,
+            36995,
+            302
+          ],
+          "start": 19.64,
+          "end": 20.64,
+          "probability": 0.9870331734418869
+        }
+      ]
+    }
+  ],
+  "returnIndices": [
+    3,
+    5
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 4.208
+}

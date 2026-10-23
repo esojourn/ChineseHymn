@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "songId": "06-002",
+  "status": "reviewed",
+  "source": {
+    "file": "06-002所有美善的力量.jpg",
+    "sha256": "114ee212064d80f5967f074b5df8df6a67b6baea275121a888269bdb2f1ad9dc",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "06-002所有美善的力量.mp3",
+      "sha256": "e6aa4f4b3fb08a3c9be3b91884a2b46364436527adf7d57f51d399005f40c70b",
+      "duration": 203.38938775510204,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "v1": {
+      "kind": "image",
+      "top": 0.135836,
+      "bottom": 0.237457
+    },
+    "chorus": {
+      "kind": "image",
+      "top": 0.244854,
+      "bottom": 0.345904
+    },
+    "chorus-alt-1": {
+      "kind": "image",
+      "top": 0.356155,
+      "bottom": 0.453781
+    },
+    "v2": {
+      "kind": "image",
+      "top": 0.461178,
+      "bottom": 0.562799
+    },
+    "v3": {
+      "kind": "image",
+      "top": 0.569626,
+      "bottom": 0.671817
+    },
+    "v4": {
+      "kind": "image",
+      "top": 0.678073,
+      "bottom": 0.779694
+    },
+    "v6": {
+      "kind": "image",
+      "top": 0.786521,
+      "bottom": 0.888712
+    },
+    "v7": {
+      "kind": "image",
+      "top": 0.894968,
+      "bottom": 0.996589
+    }
+  },
+  "cues": [
+    {
+      "at": 14.59,
+      "region": "v1",
+      "label": "原图第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 41.35,
+      "region": "chorus",
+      "label": "副歌",
+      "transition": "reading"
+    },
+    {
+      "at": 68.55,
+      "region": "v2",
+      "label": "原图第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.19,
+      "region": "chorus",
+      "label": "副歌",
+      "transition": "return"
+    },
+    {
+      "at": 122.21,
+      "region": "v6",
+      "label": "原图第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 147.87,
+      "region": "chorus",
+      "label": "副歌",
+      "transition": "return"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-confirmed performed order; contextual medium/int8 acoustic checks; initial clamped word independently located by exact freely decoded MMS CTC letters and the following word onset in two audio windows, within the ASR word range. All later boundaries retain the original two-window checks.",
+    "performanceOrder": [
+      {
+        "region": "v1",
+        "label": "原图第1段",
+        "text": "Von guten Mächten treu und still umgeben, behütet und getröstet wunderbar. So will ich diese Tage mit euch leben und mit euch gehen in ein neues Jahr."
+      },
+      {
+        "region": "chorus",
+        "label": "副歌",
+        "text": "Von guten Mächten wunderbar geborgen, Erwarten wie Getrost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+      },
+      {
+        "region": "v2",
+        "label": "原图第2段",
+        "text": "Noch will das Alte unsere Herzen quälen, Noch drückt uns böser Tage schwere Last. Ach Herr, gib uns'n aufgescheuchten Seelen Das Heil, für das Du uns bereitet hast."
+      },
+      {
+        "region": "chorus",
+        "label": "副歌",
+        "text": "Von guten Mächten wunderbar geboren, Erwart' den Wege Trost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+      },
+      {
+        "region": "v6",
+        "label": "原图第6段",
+        "text": "Lass warm und still die Kerzen heute flammen, die du in unsere Dunkelheit gebracht. Für wenn es sein kann, wieder uns zusammen, wir wissen es, dein Licht scheint in der Nacht"
+      },
+      {
+        "region": "chorus",
+        "label": "副歌",
+        "text": "von guten Mächten wunderbar geborgen. Erwart'n wir Getrost, was kommen mag. Gott ist mit uns am Abend und am Morgen Und ganz gewiss an jedem neuen Tag."
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-002所有美善的力量.jpg.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

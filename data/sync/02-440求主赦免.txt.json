@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-440",
+  "status": "reviewed",
+  "source": {
+    "file": "02-440求主赦免.txt",
+    "sha256": "40fd9d0f7bc885e9b2aa46abf764cf7496458691fb271e6b90c081ad23a740e8",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-440求主赦免.mp3",
+      "sha256": "9a3b3f6b30ac39bf68b203f47dcd58dec3579e3cb060223b7e3da7cfaf9be2a8",
+      "duration": 99.10857142857142,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 5.75,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.55,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 51.45,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.35,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "若我今天伤害他人心灵，若我今天使他人走错路， 若我今天照己心意偏行，求助赦免！",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "若我今天言语不合体统，不关怀别人需要与苦痛， 或许使别人受伤害跌倾，求主赦免！",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "若我今天对人冷酷无情，若我只贪图安逸与舒宁， 不愿完成上主交付使命，求主赦免！",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "求你赦免我所承认罪咎，求你赦免隐藏未显愆尤， 求你常常引导爱护保守。阿们，阿们！",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-440求主赦免.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

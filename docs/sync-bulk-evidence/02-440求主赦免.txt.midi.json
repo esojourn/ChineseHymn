@@ -1,0 +1,252 @@
+{
+  "songId": "02-440",
+  "source": "02-440求主赦免.txt",
+  "sourceHash": "40fd9d0f7bc885e9b2aa46abf764cf7496458691fb271e6b90c081ad23a740e8",
+  "trackHashes": [
+    {
+      "file": "02-440求主赦免.mp3",
+      "sha256": "9a3b3f6b30ac39bf68b203f47dcd58dec3579e3cb060223b7e3da7cfaf9be2a8"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "40fd9d0f7bc885e9b2aa46abf764cf7496458691fb271e6b90c081ad23a740e8",
+      "file": "life440.mid",
+      "sha256": "477a44725f58bf26534857595a90771743273756ccbe65ada5b24432c1d9c96e",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/440.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life440.html",
+      "textReferenceSha256": "d7fe4b0af0f207764ee8eed06dd9a6bfcf0b6190626230c83ef246f2110a9db4",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "若我今天伤害他人"
+        ],
+        [
+          "若我今天言语不合"
+        ],
+        [
+          "若我今天对人冷酷"
+        ],
+        [
+          "求你赦免我所承认"
+        ]
+      ],
+      "formReview": "采用Charles H. Gabriel曲调，四段每段两行均为单个阅读区域，保留末段阿们的正文。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 440,
+        "title": "求主赦免",
+        "tune": "An Evening Prayer",
+        "composer": "Charles H. Gabriel",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 20.9933895625,
+    "music": {
+      "period": 22.9,
+      "similarity": 0.9496798515319824,
+      "initialOnsetEstimate": 5.668,
+      "shifts": [
+        0.0,
+        22.9,
+        45.7,
+        68.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26504554915115824,
+            "key": 9,
+            "at": 6.2,
+            "span": 23.4,
+            "starts": [
+              5.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6162269958762623,
+            "key": 2,
+            "at": 15.7,
+            "span": 12.5,
+            "starts": [
+              15.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11828036912143491,
+            "key": 9,
+            "starts": [
+              5.699999809265137
+            ],
+            "span": 22.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.43435758898872473,
+            "key": 2,
+            "starts": [
+              22.100000381469727
+            ],
+            "span": 17.19999885559082
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.265171034367324,
+            "key": 9,
+            "at": 29.0,
+            "span": 23.4,
+            "starts": [
+              28.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6154088849063524,
+            "key": 2,
+            "at": 38.5,
+            "span": 12.5,
+            "starts": [
+              38.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12232448961016393,
+            "key": 9,
+            "starts": [
+              28.5
+            ],
+            "span": 22.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.43435758898872473,
+            "key": 2,
+            "starts": [
+              22.100000381469727
+            ],
+            "span": 17.19999885559082
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.26240832732754504,
+            "key": 9,
+            "at": 51.9,
+            "span": 23.4,
+            "starts": [
+              51.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6165819459606987,
+            "key": 2,
+            "at": 61.4,
+            "span": 12.5,
+            "starts": [
+              61.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11668222752200463,
+            "key": 9,
+            "starts": [
+              51.400001525878906
+            ],
+            "span": 22.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4333286202110057,
+            "key": 2,
+            "starts": [
+              67.9000015258789
+            ],
+            "span": 17.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.276455042143576,
+            "key": 9,
+            "at": 74.8,
+            "span": 23.3,
+            "starts": [
+              74.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6139336465227552,
+            "key": 2,
+            "at": 84.2,
+            "span": 14.3,
+            "starts": [
+              83.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12952672966703058,
+            "key": 9,
+            "starts": [
+              74.30000305175781
+            ],
+            "span": 22.0
+          },
+          "runnerUp": {
+            "cost": 0.4333286202110057,
+            "key": 2,
+            "starts": [
+              67.9000015258789
+            ],
+            "span": 17.099998474121094
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "若我今天伤害他人心灵，若我今天使他人走错路， 若我今天照己心意偏行，求助赦免！",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "若我今天言语不合体统，不关怀别人需要与苦痛， 或许使别人受伤害跌倾，求主赦免！",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "若我今天对人冷酷无情，若我只贪图安逸与舒宁， 不愿完成上主交付使命，求主赦免！",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "求你赦免我所承认罪咎，求你赦免隐藏未显愆尤， 求你常常引导爱护保守。阿们，阿们！",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.357
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-467",
+  "status": "reviewed",
+  "source": {
+    "file": "02-467救主牺牲的爱.txt",
+    "sha256": "a6dc7eed7da7e2adbd32da987b9e08bc424bb1724f45ad08e6eb01dcdd19ef71",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-467救主牺牲的爱.mp3",
+      "sha256": "10e60cd2a9da889a8230a7ec0ec1e25a0fbf3d6516668bc50c705359654757c7",
+      "duration": 175.464,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 11.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 51.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 91.65,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.8,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "救主牺牲的爱已赐给我， 我不愿为自己存留甚么； 主爱使我景仰，我将心愿还偿， 今将供物献上，愿主悦纳。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主在施恩座前为我祈求， 我信心虽软弱，望主扶佑； 助我背上十架，将主妙爱传扬， 敬献祷告歌唱，愿主悦纳。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "赐我虔诚的心，像主忠坚， 每一天消逝前有所表现， 开展仁爱工作，喜爱行善扶弱， 领人归入天国，愿主悦纳。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "今生所有一切皆主所赐， 愿终身勤为主，苦乐不辞； 当我面对父神，献我被赎灵魂， 直到永世无尽，愿主悦纳。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-467救主牺牲的爱.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

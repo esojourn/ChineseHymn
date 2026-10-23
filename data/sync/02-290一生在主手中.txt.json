@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-290",
+  "status": "reviewed",
+  "source": {
+    "file": "02-290一生在主手中.txt",
+    "sha256": "20bf4fb5681064f67ad90c6aff1fb3b2174f0a36472e79d867d255ab9bbc97f4",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-290一生在主手中.mp3",
+      "sha256": "41f39f40e3c8c15296d37d3c8490dd819f297d2e718f85ae4a904e880fd05647",
+      "duration": 100.96326530612245,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 5.5,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.95,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 52.35,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.7,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "一生在神手中，愿你支配使用； 愿将我命，我灵，我友，全交托你护佑。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "一生在神手中，不论遇何环境， 遇福遇祸，黑暗光明，全顺服你带领。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "一生在神手中，被钉十架恩主！ 为我罪过双手刺透，如今带领保守。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "一生在神手中，永远信靠顺服； 将来被召到主面前，永享安息美福。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-290一生在主手中.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-411",
+  "status": "reviewed",
+  "source": {
+    "file": "02-411我原是迷路羊.txt",
+    "sha256": "1d0f4fac4657623fc4a2c49a60e0175faa4d4455745b28c688f547c36dc6b474",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-411我原是迷路羊.mp3",
+      "sha256": "e51aa9d210b2b4f32d5658419fc20ff38c69b963258e822faae37e1815951b7f",
+      "duration": 159.86938775510205,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 9.35,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.55,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 83.65,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.85,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我原是迷路羊，不爱救主羊栏， 不听善牧慈爱之声，不愿接受教管。 我本是悖逆子，家庭我不喜爱， 不肯听从慈父恩言，却爱流荡野外。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "善牧寻找迷羊，慈父觅儿心伤， 深入幽谷攀上高岗，遍历野地蛮荒。 见我濒临死亡，饥饿疲乏非常， 就显慈爱将我怀抱，拯救飘流亡羊。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "耶稣是我牧人，是祂爱我至深， 是祂宝血洗我罪污，是祂医我身心， 是祂寻找失丧，是祂找到迷羊， 是祂带我归回羊栏，是祂保守喂养。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我不再做迷羊，喜欢受主约束， 我今爱听善牧慈声，在羊圈内安居。 不再是悖逆子，不再流荡野外， 我今羡慕天父恩言，父家我最喜爱。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-411我原是迷路羊.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

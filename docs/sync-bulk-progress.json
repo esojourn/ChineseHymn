@@ -2,12 +2,13 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 272,
+    "published": 278,
     "existing": 8,
-    "needs-calibration": 55,
+    "needs-calibration": 59,
     "missing-audio": 2,
-    "pending": 55,
+    "pending": 43,
     "needs-source-review": 1,
+    "ready-to-verify": 2,
     "needs-track-alignment": 4,
     "missing-lyrics": 23
   },
@@ -479,10 +480,11 @@
       "songId": "02-003",
       "source": "02-003但我知道.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-003但我知道-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,4,6"
     },
     {
       "songId": "02-004",
@@ -530,10 +532,11 @@
       "songId": "02-008",
       "source": "02-008主坚强仁慈.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-008主坚强仁慈-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,6,7"
     },
     {
       "songId": "02-009",
@@ -549,21 +552,23 @@
       "songId": "02-012",
       "source": "02-012你真伟大.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-012你真伟大.mp3",
         "02-012你真伟大-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2"
     },
     {
       "songId": "02-013",
       "source": "02-013你是荣耀君王.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-013你是荣耀君王.mp3",
         "02-013你是荣耀君王-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
     },
     {
       "songId": "02-014",
@@ -861,7 +866,7 @@
       "songId": "02-290",
       "source": "02-290一生在主手中.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-290一生在主手中.mp3"
       ]
@@ -1074,7 +1079,7 @@
       "songId": "02-411",
       "source": "02-411我原是迷路羊.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-411我原是迷路羊.mp3"
       ]
@@ -1130,7 +1135,7 @@
       "songId": "02-440",
       "source": "02-440求主赦免.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-440求主赦免.mp3"
       ]
@@ -1139,11 +1144,12 @@
       "songId": "02-443",
       "source": "02-443感恩歌.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "02-443感恩歌.mp3",
         "02-443感恩歌-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.312"
     },
     {
       "songId": "02-447",
@@ -1176,7 +1182,7 @@
       "songId": "02-459",
       "source": "02-459完全的奉献.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-459完全的奉献.mp3"
       ]
@@ -1185,11 +1191,10 @@
       "songId": "02-467",
       "source": "02-467救主牺牲的爱.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "02-467救主牺牲的爱.mp3"
-      ],
-      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
+      ]
     },
     {
       "songId": "02-468",
@@ -1205,7 +1210,7 @@
       "songId": "02-470",
       "source": "02-470活着为耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-470活着为耶稣.mp3"
       ]
@@ -1241,7 +1246,7 @@
       "songId": "02-476",
       "source": "02-476预备.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "02-476预备.mp3"
       ]
@@ -1586,7 +1591,7 @@
       "songId": "03-035",
       "source": "03-035信徒每逢受试炼.txt",
       "type": "text",
-      "status": "pending",
+      "status": "ready-to-verify",
       "tracks": [
         "03-035信徒每逢受试炼.mp3",
         "03-035信徒每逢受试炼-领唱.mp3"

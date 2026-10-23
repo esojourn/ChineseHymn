@@ -1,0 +1,252 @@
+{
+  "songId": "02-470",
+  "source": "02-470活着为耶稣.txt",
+  "sourceHash": "96a4ccb92baf1c6bc2f483af8b32b75f9e59212d8c75348e2994ae91155771fe",
+  "trackHashes": [
+    {
+      "file": "02-470活着为耶稣.mp3",
+      "sha256": "b88cda5956c31cb3b899d374f50a4f87177dc4b02e01eddfa35486944a299660"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "96a4ccb92baf1c6bc2f483af8b32b75f9e59212d8c75348e2994ae91155771fe",
+      "file": "life470.mid",
+      "sha256": "75d00f0e5d2229935509a4fea048bd0631f8e480b63a380fd5e2b3579889fb0e",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/470.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life470.html",
+      "textReferenceSha256": "70e4100fcab35ad4ed9157f03e1ba5459f86c49ba5cd27f6261973e9fde8ec1e",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "活着为耶稣真平安"
+        ],
+        [
+          "活着为耶稣得安息"
+        ],
+        [
+          "活着在何处都为主"
+        ],
+        [
+          "活着为耶稣有盼望"
+        ]
+      ],
+      "formReview": "正文每段四行已包含主歌和副歌。采用Charles F. Weigle曲调，各段是单个完整阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 470,
+        "title": "活着为耶稣",
+        "tune": "Living for Jesus",
+        "composer": "Charles F. Weigle",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 35.666666666666664,
+    "music": {
+      "period": 39.9,
+      "similarity": 0.8018522262573242,
+      "initialOnsetEstimate": 10.408,
+      "shifts": [
+        0.0,
+        39.9,
+        79.9,
+        119.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24512196782238801,
+            "key": 8,
+            "at": 10.5,
+            "span": 39.2,
+            "starts": [
+              10.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6118283761772596,
+            "key": 1,
+            "at": 4.0,
+            "span": 25.4,
+            "starts": [
+              3.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26708062728843596,
+            "key": 8,
+            "starts": [
+              10.199999809265137
+            ],
+            "span": 39.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4408617904012962,
+            "key": 3,
+            "starts": [
+              34.70000076293945
+            ],
+            "span": 26.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24023152592785676,
+            "key": 8,
+            "at": 50.2,
+            "span": 39.3,
+            "starts": [
+              49.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6050131661551339,
+            "key": 1,
+            "at": 43.4,
+            "span": 22.1,
+            "starts": [
+              43.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2742932924351895,
+            "key": 8,
+            "starts": [
+              49.900001525878906
+            ],
+            "span": 39.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4658750758732769,
+            "key": 3,
+            "starts": [
+              35.5
+            ],
+            "span": 25.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2641080316146812,
+            "key": 8,
+            "at": 90.2,
+            "span": 39.3,
+            "starts": [
+              89.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6026207868915453,
+            "key": 3,
+            "at": 114.0,
+            "span": 23.0,
+            "starts": [
+              113.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.27622377782835994,
+            "key": 8,
+            "starts": [
+              89.80000305175781
+            ],
+            "span": 39.09999084472656
+          },
+          "runnerUp": {
+            "cost": 0.48034625901912986,
+            "key": 3,
+            "starts": [
+              98.0
+            ],
+            "span": 32.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.28687353301466556,
+            "key": 8,
+            "at": 130.1,
+            "span": 39.1,
+            "starts": [
+              129.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6153976708127741,
+            "key": 1,
+            "at": 137.4,
+            "span": 29.6,
+            "starts": [
+              137.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.3447925691915335,
+            "key": 8,
+            "starts": [
+              129.6999969482422
+            ],
+            "span": 39.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4569015694142583,
+            "key": 11,
+            "starts": [
+              137.89999389648438
+            ],
+            "span": 35.100006103515625
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "活着为耶稣真平安，喜乐之江河永不干， 试炼虽来临我不慌，活着为耶稣祂在旁。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "活着为耶稣得安息，讨我主喜悦福满溢， 单为主生活听主命，直到我走完世路程。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "活着在何处都为主，我一切重担，主背负， 友纵背弃我，主忠诚，只要信靠主，祂引领。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "活着为耶稣，有盼望，将来必得见荣耀王， 见主在宝座，心欢喜，听主说：“忠仆，得赏赐。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.812
+}

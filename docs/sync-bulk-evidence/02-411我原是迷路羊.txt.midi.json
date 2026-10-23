@@ -1,0 +1,252 @@
+{
+  "songId": "02-411",
+  "source": "02-411我原是迷路羊.txt",
+  "sourceHash": "1d0f4fac4657623fc4a2c49a60e0175faa4d4455745b28c688f547c36dc6b474",
+  "trackHashes": [
+    {
+      "file": "02-411我原是迷路羊.mp3",
+      "sha256": "e51aa9d210b2b4f32d5658419fc20ff38c69b963258e822faae37e1815951b7f"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "1d0f4fac4657623fc4a2c49a60e0175faa4d4455745b28c688f547c36dc6b474",
+      "file": "life411.mid",
+      "sha256": "d1ae5b7f7c5a9293b86505f928ecf9ed7e53a42a1f65350c25689b593d992a0f",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/411.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life411.html",
+      "textReferenceSha256": "97ed25d9e386b7dd10af6aadbdf23d02e2845fdc69516a400450d445469425cd",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "我原是迷路羊不爱"
+        ],
+        [
+          "善牧寻找迷羊慈父"
+        ],
+        [
+          "耶稣是我牧人是他"
+        ],
+        [
+          "我不再做迷羊喜欢"
+        ]
+      ],
+      "formReview": "每段四行，覆盖原文完整八句，四段均为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 411,
+        "title": "我原是迷路羊",
+        "tune": "Lebanon, SMD",
+        "composer": "John Zundel",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 24.625,
+    "music": {
+      "period": 37.2,
+      "similarity": 0.9679563045501709,
+      "initialOnsetEstimate": 8.124,
+      "shifts": [
+        0.0,
+        37.2,
+        74.3,
+        111.5
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1780649615872291,
+            "key": 8,
+            "at": 10.0,
+            "span": 37.8,
+            "starts": [
+              9.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5378354800644741,
+            "key": 1,
+            "at": 16.1,
+            "span": 26.2,
+            "starts": [
+              15.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09804037565826088,
+            "key": 8,
+            "starts": [
+              9.300000190734863
+            ],
+            "span": 37.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.4161682539088752,
+            "key": 3,
+            "starts": [
+              25.5
+            ],
+            "span": 30.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17683301946168306,
+            "key": 8,
+            "at": 47.2,
+            "span": 37.8,
+            "starts": [
+              46.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5387938714796497,
+            "key": 1,
+            "at": 53.3,
+            "span": 26.2,
+            "starts": [
+              53.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09794046545541414,
+            "key": 8,
+            "starts": [
+              46.5
+            ],
+            "span": 37.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.4139846883794313,
+            "key": 3,
+            "starts": [
+              62.70000076293945
+            ],
+            "span": 30.200000762939453
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1758544675765499,
+            "key": 8,
+            "at": 84.3,
+            "span": 37.8,
+            "starts": [
+              83.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5386383712932628,
+            "key": 1,
+            "at": 90.5,
+            "span": 26.3,
+            "starts": [
+              90.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1001399665750483,
+            "key": 8,
+            "starts": [
+              83.5999984741211
+            ],
+            "span": 38.0
+          },
+          "runnerUp": {
+            "cost": 0.41588600732946907,
+            "key": 3,
+            "starts": [
+              99.9000015258789
+            ],
+            "span": 30.79999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17121398064397997,
+            "key": 8,
+            "at": 121.5,
+            "span": 37.8,
+            "starts": [
+              120.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5402583870836484,
+            "key": 1,
+            "at": 127.6,
+            "span": 26.2,
+            "starts": [
+              127.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08994392682147283,
+            "key": 8,
+            "starts": [
+              120.80000305175781
+            ],
+            "span": 37.899993896484375
+          },
+          "runnerUp": {
+            "cost": 0.42227923485540575,
+            "key": 3,
+            "starts": [
+              123.69999694824219
+            ],
+            "span": 22.0
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我原是迷路羊，不爱救主羊栏， 不听善牧慈爱之声，不愿接受教管。 我本是悖逆子，家庭我不喜爱， 不肯听从慈父恩言，却爱流荡野外。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "善牧寻找迷羊，慈父觅儿心伤， 深入幽谷攀上高岗，遍历野地蛮荒。 见我濒临死亡，饥饿疲乏非常， 就显慈爱将我怀抱，拯救飘流亡羊。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "耶稣是我牧人，是祂爱我至深， 是祂宝血洗我罪污，是祂医我身心， 是祂寻找失丧，是祂找到迷羊， 是祂带我归回羊栏，是祂保守喂养。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我不再做迷羊，喜欢受主约束， 我今爱听善牧慈声，在羊圈内安居。 不再是悖逆子，不再流荡野外， 我今羡慕天父恩言，父家我最喜爱。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.404
+}

@@ -1,0 +1,252 @@
+{
+  "songId": "02-459",
+  "source": "02-459完全的奉献.txt",
+  "sourceHash": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+  "trackHashes": [
+    {
+      "file": "02-459完全的奉献.mp3",
+      "sha256": "53f034cd8aa5e8a0fe7b5783342463e5973fc8c156702bfbc5ef9175657ffdfb"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+      "file": "life459.mid",
+      "sha256": "f0557a1759218da635df10489683b3a69287332e3f17320331b4762be12051e8",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/459.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life459.html",
+      "textReferenceSha256": "932501c60a6ec081f38935ba9e131e49fbc7636d703c721d1e97298b17c8b623",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "完全的奉献主我愿"
+        ],
+        [
+          "完全的奉献光阴生"
+        ],
+        [
+          "完全的奉献金银财"
+        ],
+        [
+          "完全的奉献主我属"
+        ]
+      ],
+      "formReview": "正文四段各四行，覆盖各段完整旋律，作为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 459,
+        "title": "完全的奉献",
+        "tune": "Fully Surrendered",
+        "composer": "Alfred C. Snead / George C. Stebbins",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 23.916666666666664,
+    "music": {
+      "period": 31.1,
+      "similarity": 0.9725344181060791,
+      "initialOnsetEstimate": 7.412,
+      "shifts": [
+        0.0,
+        31.1,
+        62.3,
+        93.4
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18538719741477844,
+            "key": 7,
+            "at": 8.3,
+            "span": 30.9,
+            "starts": [
+              7.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5408162304059485,
+            "key": 0,
+            "at": 16.0,
+            "span": 29.3,
+            "starts": [
+              15.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09823407237552753,
+            "key": 7,
+            "starts": [
+              7.800000190734863
+            ],
+            "span": 30.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.4385766523060691,
+            "key": 0,
+            "starts": [
+              11.699999809265137
+            ],
+            "span": 30.200000762939453
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18280472096139594,
+            "key": 7,
+            "at": 39.4,
+            "span": 31.0,
+            "starts": [
+              38.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5376745389588776,
+            "key": 0,
+            "at": 47.2,
+            "span": 29.3,
+            "starts": [
+              46.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09388379652017183,
+            "key": 7,
+            "starts": [
+              38.900001525878906
+            ],
+            "span": 31.0
+          },
+          "runnerUp": {
+            "cost": 0.42416013858709306,
+            "key": 0,
+            "starts": [
+              27.200000762939453
+            ],
+            "span": 31.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18431047151326366,
+            "key": 7,
+            "at": 70.6,
+            "span": 30.9,
+            "starts": [
+              70.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.539448974216866,
+            "key": 0,
+            "at": 78.3,
+            "span": 29.3,
+            "starts": [
+              77.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.0974993383769437,
+            "key": 7,
+            "starts": [
+              70.0999984741211
+            ],
+            "span": 30.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.4220592339322498,
+            "key": 0,
+            "starts": [
+              58.400001525878906
+            ],
+            "span": 30.79999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1849084835727115,
+            "key": 7,
+            "at": 101.7,
+            "span": 30.9,
+            "starts": [
+              101.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5486714648280496,
+            "key": 0,
+            "at": 91.3,
+            "span": 26.8,
+            "starts": [
+              90.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09857400973893439,
+            "key": 7,
+            "starts": [
+              101.19999694824219
+            ],
+            "span": 30.900009155273438
+          },
+          "runnerUp": {
+            "cost": 0.4229536639149166,
+            "key": 0,
+            "starts": [
+              89.5
+            ],
+            "span": 30.800003051757812
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "完全的奉献，主我愿意， 完全的奉献，奉献与你； 一切摆上祭坛，向你完全皈依， 你为我付赎价，我今归你。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "完全的奉献光阴生命， 一切主所赐，愿遵主令， 一闻恩主慈声，我乐跟随主行， 从今直到永远，顺服忠诚。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "完全的奉献金银财宝， 你所赐一切，丰盛美好； 一切皆属于你，因你将我买赎， 今后永归与你，耶稣我主。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "完全的奉献，主我属你， 完全的奉献，神圣救主； 借我显你生命，表彰你的丰盛， 非我，乃是基督，你是一切。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.442
+}

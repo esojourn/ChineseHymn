@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-470",
+  "status": "reviewed",
+  "source": {
+    "file": "02-470活着为耶稣.txt",
+    "sha256": "96a4ccb92baf1c6bc2f483af8b32b75f9e59212d8c75348e2994ae91155771fe",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-470活着为耶稣.mp3",
+      "sha256": "b88cda5956c31cb3b899d374f50a4f87177dc4b02e01eddfa35486944a299660",
+      "duration": 173.184,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 10.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 49.85,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.8,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 129.7,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "活着为耶稣真平安，喜乐之江河永不干， 试炼虽来临我不慌，活着为耶稣祂在旁。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "活着为耶稣得安息，讨我主喜悦福满溢， 单为主生活听主命，直到我走完世路程。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "活着在何处都为主，我一切重担，主背负， 友纵背弃我，主忠诚，只要信靠主，祂引领。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "活着为耶稣，有盼望，将来必得见荣耀王， 见主在宝座，心欢喜，听主说：“忠仆，得赏赐。 求主助我多事奉你，求主助我多赞美你， 使我活在主慈爱里，永远跟随主不转离。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-470活着为耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

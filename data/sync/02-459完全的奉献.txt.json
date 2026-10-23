@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-459",
+  "status": "reviewed",
+  "source": {
+    "file": "02-459完全的奉献.txt",
+    "sha256": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-459完全的奉献.mp3",
+      "sha256": "53f034cd8aa5e8a0fe7b5783342463e5973fc8c156702bfbc5ef9175657ffdfb",
+      "duration": 134.32163265306122,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 7.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 38.9,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.1,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.2,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "完全的奉献，主我愿意， 完全的奉献，奉献与你； 一切摆上祭坛，向你完全皈依， 你为我付赎价，我今归你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "完全的奉献光阴生命， 一切主所赐，愿遵主令， 一闻恩主慈声，我乐跟随主行， 从今直到永远，顺服忠诚。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "完全的奉献金银财宝， 你所赐一切，丰盛美好； 一切皆属于你，因你将我买赎， 今后永归与你，耶稣我主。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "完全的奉献，主我属你， 完全的奉献，神圣救主； 借我显你生命，表彰你的丰盛， 非我，乃是基督，你是一切。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-459完全的奉献.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "songId": "02-290",
+  "source": "02-290一生在主手中.txt",
+  "sourceHash": "20bf4fb5681064f67ad90c6aff1fb3b2174f0a36472e79d867d255ab9bbc97f4",
+  "trackHashes": [
+    {
+      "file": "02-290一生在主手中.mp3",
+      "sha256": "41f39f40e3c8c15296d37d3c8490dd819f297d2e718f85ae4a904e880fd05647"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "20bf4fb5681064f67ad90c6aff1fb3b2174f0a36472e79d867d255ab9bbc97f4",
+      "file": "life290.mid",
+      "sha256": "260632bac4e69468302be48058c11e829bce5b106ee39c853d57c5dffc497830",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/290.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life290.html",
+      "textReferenceSha256": "7872e4f3fe71428c87d25392b621ff850a5cb4a21eca15bc6bd15f66a0867052",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "一生在神手中愿你"
+        ],
+        [
+          "一生在神手中不论"
+        ],
+        [
+          "一生在神手中被钉"
+        ],
+        [
+          "一生在神手中永远"
+        ]
+      ],
+      "formReview": "每段两行，覆盖完整四句，无独立副歌，四段均为单个阅读区域。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 290,
+        "title": "一生在神手中",
+        "tune": "Ferguson, SM",
+        "composer": "George Kingsley",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 20.375,
+    "music": {
+      "period": 23.4,
+      "similarity": 0.993071436882019,
+      "initialOnsetEstimate": 5.528,
+      "shifts": [
+        0.0,
+        23.4,
+        46.8,
+        70.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19724695906679854,
+            "key": 5,
+            "at": 6.1,
+            "span": 24.1,
+            "starts": [
+              5.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5323889968741653,
+            "key": 10,
+            "at": 21.9,
+            "span": 16.7,
+            "starts": [
+              21.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09770714523445846,
+            "key": 5,
+            "starts": [
+              5.400000095367432
+            ],
+            "span": 24.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.3989709707406851,
+            "key": 0,
+            "starts": [
+              15.100000381469727
+            ],
+            "span": 16.19999885559082
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1973697955791767,
+            "key": 5,
+            "at": 29.5,
+            "span": 24.1,
+            "starts": [
+              29.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5304004636585203,
+            "key": 10,
+            "at": 45.3,
+            "span": 16.7,
+            "starts": [
+              45.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09700132842756744,
+            "key": 5,
+            "starts": [
+              28.899999618530273
+            ],
+            "span": 24.100000381469727
+          },
+          "runnerUp": {
+            "cost": 0.39836743346646303,
+            "key": 0,
+            "starts": [
+              38.5
+            ],
+            "span": 15.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.19797628353803587,
+            "key": 5,
+            "at": 52.9,
+            "span": 24.1,
+            "starts": [
+              52.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.529128897903312,
+            "key": 10,
+            "at": 68.7,
+            "span": 16.7,
+            "starts": [
+              68.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.09694095350738265,
+            "key": 5,
+            "starts": [
+              52.29999923706055
+            ],
+            "span": 24.10000228881836
+          },
+          "runnerUp": {
+            "cost": 0.39836743346646303,
+            "key": 0,
+            "starts": [
+              38.5
+            ],
+            "span": 15.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1982922839303302,
+            "key": 5,
+            "at": 76.3,
+            "span": 24.0,
+            "starts": [
+              75.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.529128897903312,
+            "key": 10,
+            "at": 68.7,
+            "span": 16.7,
+            "starts": [
+              68.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08816769591763489,
+            "key": 5,
+            "starts": [
+              75.5999984741211
+            ],
+            "span": 24.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.39864509126060027,
+            "key": 0,
+            "starts": [
+              61.900001525878906
+            ],
+            "span": 15.799995422363281
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "一生在神手中，愿你支配使用； 愿将我命，我灵，我友，全交托你护佑。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "一生在神手中，不论遇何环境， 遇福遇祸，黑暗光明，全顺服你带领。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "一生在神手中，被钉十架恩主！ 为我罪过双手刺透，如今带领保守。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "一生在神手中，永远信靠顺服； 将来被召到主面前，永享安息美福。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 1.332
+}

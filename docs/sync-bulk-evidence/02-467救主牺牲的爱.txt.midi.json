@@ -1,0 +1,252 @@
+{
+  "songId": "02-467",
+  "source": "02-467救主牺牲的爱.txt",
+  "sourceHash": "a6dc7eed7da7e2adbd32da987b9e08bc424bb1724f45ad08e6eb01dcdd19ef71",
+  "trackHashes": [
+    {
+      "file": "02-467救主牺牲的爱.mp3",
+      "sha256": "10e60cd2a9da889a8230a7ec0ec1e25a0fbf3d6516668bc50c705359654757c7"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 6,
+    "profile": {
+      "targetSha256": "a6dc7eed7da7e2adbd32da987b9e08bc424bb1724f45ad08e6eb01dcdd19ef71",
+      "file": "life467.mid",
+      "sha256": "fc4fd5c272c4e97a202ddbd071373c57194d4fc6e3d8325bd536af424cf976b2",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/467.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life467.html",
+      "textReferenceSha256": "d054cc08af52c8d4d6294df576d40e0f594b63f92f89176a1bb4330089bd38e7",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "救主牺牲的爱已赐"
+        ],
+        [
+          "主在施恩座前为我"
+        ],
+        [
+          "赐我虔诚的心像主"
+        ],
+        [
+          "今生所有一切皆主"
+        ]
+      ],
+      "formReview": "核对同曲Saviour! Thy Dying Love及原歌本完整四段译词；每段四行是单个阅读区域。此参考通过原歌本全文和直接MIDI链接确认，不以音频检索相似度证明曲名。 已核对原歌本歌词页及其直接提供的MIDI。每个实际演奏段落仍须独立通过MIDI和声、旋律、调性区分、起点0.5秒及反复相位检查；其他录音版本另须通过实际音乐对应。时间来自录音匹配，不以字符数或MIDI固定速度推算。",
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 467,
+        "title": "救主牺牲的爱",
+        "tune": "Something for Jesus",
+        "composer": "Robert Lowry",
+        "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.692274999999995,
+    "music": {
+      "period": 40.2,
+      "similarity": 0.8243415951728821,
+      "initialOnsetEstimate": 11.484,
+      "shifts": [
+        0.0,
+        40.2,
+        80.4,
+        120.5
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.20413853279986785,
+            "key": 4,
+            "at": 11.6,
+            "span": 40.0,
+            "starts": [
+              11.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.567872725909029,
+            "key": 11,
+            "at": 20.4,
+            "span": 27.6,
+            "starts": [
+              19.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2188056452357354,
+            "key": 4,
+            "starts": [
+              11.0
+            ],
+            "span": 40.0
+          },
+          "runnerUp": {
+            "cost": 0.41764554455505676,
+            "key": 6,
+            "starts": [
+              18.100000381469727
+            ],
+            "span": 36.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.21456406246963425,
+            "key": 4,
+            "at": 51.9,
+            "span": 39.9,
+            "starts": [
+              51.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5670124642291472,
+            "key": 11,
+            "at": 60.7,
+            "span": 20.9,
+            "starts": [
+              60.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2602293479501905,
+            "key": 4,
+            "starts": [
+              51.400001525878906
+            ],
+            "span": 39.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.4263643103452464,
+            "key": 6,
+            "starts": [
+              37.400001525878906
+            ],
+            "span": 35.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23444626461807175,
+            "key": 4,
+            "at": 92.2,
+            "span": 39.7,
+            "starts": [
+              91.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5421428395741021,
+            "key": 11,
+            "at": 107.5,
+            "span": 32.1,
+            "starts": [
+              107.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2895623202347637,
+            "key": 4,
+            "starts": [
+              91.5999984741211
+            ],
+            "span": 38.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.41628884083002954,
+            "key": 11,
+            "starts": [
+              82.69999694824219
+            ],
+            "span": 36.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2592444158905181,
+            "key": 4,
+            "at": 132.4,
+            "span": 39.7,
+            "starts": [
+              131.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5609075821454252,
+            "key": 11,
+            "at": 147.7,
+            "span": 22.3,
+            "starts": [
+              147.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.29501739426038753,
+            "key": 4,
+            "starts": [
+              131.6999969482422
+            ],
+            "span": 40.100006103515625
+          },
+          "runnerUp": {
+            "cost": 0.43128925532250856,
+            "key": 6,
+            "starts": [
+              119.4000015258789
+            ],
+            "span": 35.79999542236328
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "救主牺牲的爱已赐给我， 我不愿为自己存留甚么； 主爱使我景仰，我将心愿还偿， 今将供物献上，愿主悦纳。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "主在施恩座前为我祈求， 我信心虽软弱，望主扶佑； 助我背上十架，将主妙爱传扬， 敬献祷告歌唱，愿主悦纳。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "赐我虔诚的心，像主忠坚， 每一天消逝前有所表现， 开展仁爱工作，喜爱行善扶弱， 领人归入天国，愿主悦纳。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "今生所有一切皆主所赐， 愿终身勤为主，苦乐不辞； 当我面对父神，献我被赎灵魂， 直到永世无尽，愿主悦纳。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.852
+}

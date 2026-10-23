@@ -593,6 +593,15 @@ python tools/midi-image-sync.py --cache sync-drafts/bulk --songs 05-075 05-114
 python tools/align-image-transcript-sync.py --cache sync-drafts/bulk --songs 06-002 --threads 1
 ```
 
+首词落在音频窗口左边缘时，可显式添加 `--ctc-model-dir sync-drafts/models/mms-fa` 作独立核对。使用固定版本的 [MMS_FA ONNX 模型](https://huggingface.co/xycld/lyric-align-mms-fa)，版本、模型与词表 SHA-256 均由 `tools/sync_batch_ctc.py` 锁定。该分支不向 CTC 模型提供目标文字，而是在自由解码输出中查找完整首词及下一词的起音；首词至少三个字母，每个匹配字母的概率须不低于 0.2，平均不低于 0.5。两个不同窗口须各自只有一个候选、起点相差不超过 0.5 秒，且落在原转写首词区间内；CTC 词尾及下一词起音均须与 Whisper 首词词尾相差不超过 0.5 秒。原窗口仍须确认同一首词及词尾，其他有效窗口如有冲突则拒绝，所有后续区域继续使用原双窗口规则。它不能补造漏唱或漏识别的首词，也不能替代完整正文顺序核对。
+
+模型使用 CPU ONNX Runtime，按实际窗口作零均值及单位方差归一化；MMS 附加的常量通配符不参与自由解码。声学输出按模型、音频哈希、窗口和预处理参数缓存；原始失败窗口、独立字符起点及概率均随复核记录保存。模型只用于离线制作，不进入网站发布文件，也不自动下载。`06-002` 的首词在两个窗口中均为 14.586 秒，导出起点 14.59 秒；该例仍须完成浏览器位置验证。
+
+```sh
+python tools/align-image-transcript-sync.py --cache sync-drafts/bulk --songs 06-002 \
+    --ctc-model-dir sync-drafts/models/mms-fa
+```
+
 ## 断点续跑
 
 基础依赖及模型安装到独立环境；浏览器播放不需要这些依赖。

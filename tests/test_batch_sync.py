@@ -15,6 +15,7 @@ try:
     from sync_batch_audio import alignment_band
     from sync_batch_symbolic import score_row_offsets, documented_row_offsets
     from sync_batch_score import is_barline
+    import sync_batch_ctc as ctc
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
     transfer_spec.loader.exec_module(transfer)
@@ -39,6 +40,70 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @staticmethod
+    def ctc_fixture(first=50, probability=.9):
+        import numpy as np
+        labels = ['-', 'a', 'i', 'e', 'n', 'o', 'u', 't', 's', 'r', 'm', 'k', 'l', 'd', 'g', 'h',
+                  'y', 'b', 'p', 'w', 'c', 'v', 'j', 'z', 'f', "'", 'q', 'x', '*']
+        vocabulary = {letter: index for index, letter in enumerate(labels)}
+        logp = np.full((200, 29), -12., dtype=np.float32)
+        logp[:, 0] = logp[:, 28] = 0
+        for offset, letter in enumerate('vong'):
+            frame = first + offset * 4
+            logp[frame:frame + 2, 0] = -12
+            logp[frame:frame + 2, vocabulary[letter]] = np.log(probability)
+        return logp, vocabulary
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional CTC dependencies')
+    def test_ctc_freely_decoded_prefix_ignores_constant_wildcard_and_rejects_weak_letters(self):
+        logp, vocabulary = self.ctc_fixture()
+        candidates = ctc.decode_prefix(logp, vocabulary, 'Von', 'guten', [0, 20])
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]['at'], 5)
+        self.assertEqual(candidates[0]['followingStart'], 6.2)
+        weak, _ = self.ctc_fixture(probability=.19)
+        self.assertEqual(ctc.decode_prefix(weak, vocabulary, 'Von', 'guten', [0, 20]), [])
+        self.assertEqual(ctc.decode_prefix(logp, vocabulary, 'Von', 'heute', [0, 20]), [])
+        # A recognizer that hears only blank/wildcard cannot be forced to emit lyrics.
+        logp[:, :28] = -12
+        logp[:, 0] = 0
+        self.assertEqual(ctc.decode_prefix(logp, vocabulary, 'Von', 'guten', [0, 20]), [])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional CTC dependencies')
+    def test_ctc_recovery_preserves_later_windows_and_checks_word_end_and_asr_range(self):
+        import numpy as np
+        definitions = [{'text': 'Von guten Machten'}, {'text': 'And next'}]
+        observations = [{'index': 0, 'window': window, 'valid': False, 'at': start,
+            'firstWord': 'von', 'firstWordProbability': .8, 'firstWordEnd': 6.1,
+            'positiveDurationFraction': 1, 'meanProbability': .8, 'bounds': [start, start + 20]}
+            for window, start in enumerate([0, 2])]
+        observations += [{'index': 1, 'window': window, 'valid': True, 'at': 11 + window * .1}
+                         for window in [0, 1]]
+        fake = lambda audio, bounds, *args: self.ctc_fixture(first=50 if bounds[0] == 0 else 30)
+        with patch.object(ctc, 'emissions', side_effect=fake):
+            times, decisions = ctc.recover_initial(np.zeros(16000), 'hash', definitions, [4.5, 11],
+                [(4.5, 6.1), (11, 11.5)], ['von', 'and'], observations, Path('model'), Path('cache'),
+                transcript.confirm_transcript_windows)
+            self.assertEqual(times, [5, 11.05])
+            self.assertEqual(decisions[-1]['index'], 0)
+            with self.assertRaisesRegex(ValueError, '存在冲突'):
+                ctc.recover_initial(np.zeros(16000), 'hash', definitions, [4.5, 11],
+                    [(4.5, 6.1), (11, 11.5)], ['von', 'and'],
+                    observations + [{'index': 0, 'window': 2, 'valid': True, 'at': 3}],
+                    Path('model'), Path('cache'), transcript.confirm_transcript_windows)
+            with self.assertRaises(ValueError):
+                ctc.recover_initial(np.zeros(16000), 'hash', definitions, [6, 11],
+                    [(6, 6.1), (11, 11.5)], ['von', 'and'], observations, Path('model'), Path('cache'),
+                    transcript.confirm_transcript_windows)
+        wrong = [dict(row) for row in observations]
+        wrong[-1]['at'] = 13
+        with patch.object(ctc, 'emissions') as infer:
+            with self.assertRaises(ValueError):
+                ctc.recover_initial(np.zeros(16000), 'hash', definitions, [4.5, 11],
+                    [(4.5, 6.1), (11, 11.5)], ['von', 'and'], wrong, Path('model'), Path('cache'),
+                    transcript.confirm_transcript_windows)
+            infer.assert_not_called()
+
     def test_lyrics_only_image_keeps_number_gaps_and_the_alternate_chorus(self):
         texts = ['歌词图片标题', '1.第一段第一行', '第一段第二行', '**共同副歌第一行', '共同副歌第二行',
                  'Von guten Machten wunderbar', 'An jedem neuen Tag', '2.第二段第一行', '第二段第二行',

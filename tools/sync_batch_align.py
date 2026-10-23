@@ -350,7 +350,10 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 if not track['reviewed']:
                     evidence.setdefault('trackExceptions', {})[item['file']] = failure
         tracks.append(track)
-    method_description = ('Documented original-language verses mapped to image translation blocks; transcript and two contextual medium/int8 windows at every boundary.'
+    method_description = ('Transcript-confirmed performed order; contextual medium/int8 acoustic checks; initial clamped word independently located by exact freely decoded MMS CTC letters and the following word onset in two audio windows, within the ASR word range. All later boundaries retain the original two-window checks.'
+                          if any(row.get('method', '').startswith('independent MMS CTC') for row in
+                                 evidence.get('transcriptMatching', {}).get('boundaryDecisions', [])) else
+                          'Documented original-language verses mapped to image translation blocks; transcript and two contextual medium/int8 windows at every boundary.'
                           if evidence.get('transcriptMatching', {}).get('mode') == 'image-translation-blocks' else
                           'Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.'
                           if 'transcriptMatching' in evidence else

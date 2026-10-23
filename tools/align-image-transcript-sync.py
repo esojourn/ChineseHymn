@@ -51,12 +51,12 @@ def transcript_blocks(profile, transcript, source):
     return definitions, estimates, ranges, words
 
 
-def generate(song, profile, cache, model_dir, threads):
+def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
     global _model
     started = time.monotonic()
     evidence_path = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5,
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 6 if ctc_model_dir else 5,
                 'mode': 'image-translation-blocks', 'profile': profile, 'model': 'medium/int8'}}
     try:
         track = next((track for track in song['tracks'] if track['file'] == profile['audioFile']), None)
@@ -99,8 +99,16 @@ def generate(song, profile, cache, model_dir, threads):
             evidence['windows'] = rows
             batch.save(checkpoint, {'signature': signature, 'windows': rows})
 
-        observations, times, decisions = checks.verified_window_times(_model, tokenizer, audio, definitions, estimates,
-            language, preceding, ranges, anchor_words, resume, save_windows)
+        try:
+            observations, times, decisions = checks.verified_window_times(_model, tokenizer, audio, definitions, estimates,
+                language, preceding, ranges, anchor_words, resume, save_windows)
+        except ValueError:
+            if ctc_model_dir is None:
+                raise
+            from sync_batch_ctc import recover_initial
+            observations = evidence['windows']
+            times, decisions = recover_initial(audio, profile['audioHash'], definitions, estimates, ranges,
+                anchor_words, observations, ctc_model_dir, cache, checks.confirm_transcript_windows)
         evidence['windows'] = observations
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
         evidence['returnIndices'] = [index for index in range(1, len(definitions)) if
@@ -119,6 +127,7 @@ if __name__ == '__main__':
     parser.add_argument('--songs', nargs='+', required=True)
     parser.add_argument('--threads', type=int, default=1)
     parser.add_argument('--model-dir', default=str(batch.ROOT / 'sync-drafts/models'))
+    parser.add_argument('--ctc-model-dir', type=Path, help='Optional pinned MMS model for independently decoded initial words')
     args = parser.parse_args()
     profiles = json.loads(Path(__file__).with_name('sync-image-transcript-profiles.json').read_text())
     unknown = sorted(set(args.songs) - profiles.keys())
@@ -126,4 +135,4 @@ if __name__ == '__main__':
         parser.error('这些曲目尚未核对图片与原歌词对应：' + '、'.join(unknown))
     for song in batch.inventory():
         if song['songId'] in args.songs and song['type'] == 'image' and not song['existing']:
-            print(generate(song, profiles[song['songId']], args.cache, args.model_dir, args.threads), flush=True)
+            print(generate(song, profiles[song['songId']], args.cache, args.model_dir, args.threads, args.ctc_model_dir), flush=True)

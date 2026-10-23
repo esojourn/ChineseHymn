@@ -160,12 +160,12 @@ def verified_window_times(model, tokenizer, audio, definitions, estimates, langu
     return observations, times, decisions
 
 
-def generate(song, cache, model_dir, threads):
+def generate(song, cache, model_dir, threads, ctc_model_dir=None):
     global _model
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 4, 'model': 'medium/int8'}}
+                'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5 if ctc_model_dir else 4, 'model': 'medium/int8'}}
     try:
         text = prepare.read_text(batch.ROOT / 'data' / song['source'])
         language = 'en' if len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
@@ -211,8 +211,16 @@ def generate(song, cache, model_dir, threads):
         def save_windows(rows):
             evidence['windows'] = rows
             batch.save(checkpoint, {'signature': signature, 'windows': rows})
-        observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
-            language, preceding, anchor_ranges, anchor_words, resume, save_windows)
+        try:
+            observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
+                language, preceding, anchor_ranges, anchor_words, resume, save_windows)
+        except ValueError:
+            if ctc_model_dir is None or language != 'en':
+                raise
+            from sync_batch_ctc import recover_initial
+            observations = evidence['windows']
+            times, decisions = recover_initial(audio, batch.checksum(reference), definitions, estimates, anchor_ranges,
+                anchor_words, observations, ctc_model_dir, cache, confirm_transcript_windows)
         evidence['windows'] = observations
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
@@ -232,7 +240,8 @@ if __name__ == '__main__':
     parser.add_argument('--songs', nargs='+', required=True)
     parser.add_argument('--model-dir', default=str(Path(__file__).resolve().parents[1] / 'sync-drafts/models'))
     parser.add_argument('--threads', type=int, default=2)
+    parser.add_argument('--ctc-model-dir', type=Path, help='Optional pinned MMS model for independently decoded initial words')
     args = parser.parse_args()
     for song in batch.inventory():
         if song['songId'] in args.songs and song['type'] == 'text' and song['lyricsAvailable'] and song['tracks'] and not song['existing']:
-            print(generate(song, args.cache, args.model_dir, args.threads), flush=True)
+            print(generate(song, args.cache, args.model_dir, args.threads, args.ctc_model_dir), flush=True)

@@ -1,0 +1,367 @@
+{
+  "songId": "01-280",
+  "source": "01-280他藏我灵.txt",
+  "sourceHash": "cbfb603c996a8199817bce0189c75ee886252e3752809a89d4dc86cedc9565f5",
+  "trackHashes": [
+    {
+      "file": "01-280他藏我灵.mp3",
+      "sha256": "d325a3a292d7b8bb42f6a56c553938122f46fde7dceebd481befc2cd3d48cc55"
+    },
+    {
+      "file": "01-280他藏我灵-领唱.mp3",
+      "sha256": "6738c5297894e8e0bd17159d58875c42d18ff88078085d7ca8d94266a5fc6d7b"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 5,
+    "profile": {
+      "targetSha256": "cbfb603c996a8199817bce0189c75ee886252e3752809a89d4dc86cedc9565f5",
+      "file": "timeless-He_Hideth_My_Soul.mid",
+      "sha256": "f24278592a5b0a2e6eb1d1212dddb796b01853542be05e1498a8acc7220326e7",
+      "url": "https://library.timelesstruths.org/library/music/H/He_Hideth_My_Soul/He_Hideth_My_Soul.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/He_Hideth_My_Soul/",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/H/He_Hideth_My_Soul/He_Hideth_My_Soul.xml",
+      "scoreReferenceSha256": "3a1b62662d4b36386a1a63c24fbe7b6dd82569b67f36d820bfaacd99c7b79ee1",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "何等奇妙救主是耶",
+          "他藏我灵魂在磐石"
+        ],
+        [
+          "何等奇妙救主是耶",
+          "他藏我灵魂在磐石"
+        ],
+        [
+          "时时刻刻他赐我恩",
+          "他藏我灵魂在磐石"
+        ],
+        [
+          "穿上神赐衣裳我要",
+          "他藏我灵魂在磐石"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            9,
+            9,
+            7,
+            6,
+            6
+          ]
+        },
+        {
+          "onsetIndex": 38,
+          "pitches": [
+            9,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 84,
+        "midiNoteCount": 84,
+        "editCost": 0,
+        "runnerUpCost": 65,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 38,
+            "possibleMidiNoteIndices": [
+              38
+            ],
+            "at": 19.2
+          }
+        ],
+        "offsets": [
+          0.0,
+          19.2
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          38
+        ]
+      },
+      "formReview": "主歌第1至10小节；第11小节独立副歌He起，对应“他藏我灵魂在磐石洞穴里”区域，包含副歌尾句的重唱。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 44.253125,
+    "music": {
+      "period": 64.8,
+      "similarity": 0.9812803268432617,
+      "initialOnsetEstimate": 18.3,
+      "shifts": [
+        0.0,
+        64.8,
+        129.6,
+        194.4
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3078984625545549,
+            "key": 6,
+            "at": 22.8,
+            "span": 64.1,
+            "starts": [
+              22.6,
+              50.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.530697528226876,
+            "key": 1,
+            "at": 34.1,
+            "span": 46.0,
+            "starts": [
+              33.5,
+              56.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17466971314983604,
+            "key": 6,
+            "starts": [
+              22.100000381469727,
+              50.79999923706055
+            ],
+            "span": 64.5999984741211
+          },
+          "runnerUp": {
+            "cost": 0.380064269642771,
+            "key": 1,
+            "starts": [
+              33.5,
+              51.599998474121094
+            ],
+            "span": 42.19999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3062917921278212,
+            "key": 6,
+            "at": 87.8,
+            "span": 64.3,
+            "starts": [
+              87.2,
+              115.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5379238835087529,
+            "key": 1,
+            "at": 98.9,
+            "span": 46.0,
+            "starts": [
+              98.3,
+              121.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17657689695005063,
+            "key": 6,
+            "starts": [
+              86.9000015258789,
+              115.5999984741211
+            ],
+            "span": 64.5999984741211
+          },
+          "runnerUp": {
+            "cost": 0.38307006270797167,
+            "key": 1,
+            "starts": [
+              98.30000305175781,
+              116.5999984741211
+            ],
+            "span": 42.30000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.30905881340121044,
+            "key": 6,
+            "at": 152.8,
+            "span": 64.1,
+            "starts": [
+              152.2,
+              180.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.538628848982446,
+            "key": 1,
+            "at": 163.7,
+            "span": 46.0,
+            "starts": [
+              163.1,
+              186.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17953472372926313,
+            "key": 6,
+            "starts": [
+              151.6999969482422,
+              180.39999389648438
+            ],
+            "span": 64.60000610351562
+          },
+          "runnerUp": {
+            "cost": 0.384996908682364,
+            "key": 1,
+            "starts": [
+              163.10000610351562,
+              181.1999969482422
+            ],
+            "span": 42.29998779296875
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3106604211124373,
+            "key": 6,
+            "at": 217.2,
+            "span": 64.1,
+            "starts": [
+              217.0,
+              245.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.539574846809293,
+            "key": 1,
+            "at": 228.5,
+            "span": 46.0,
+            "starts": [
+              227.9,
+              250.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1803376586348922,
+            "key": 6,
+            "starts": [
+              216.5,
+              245.1999969482422
+            ],
+            "span": 64.60000610351562
+          },
+          "runnerUp": {
+            "cost": 0.386477882479444,
+            "key": 1,
+            "starts": [
+              227.89999389648438,
+              245.89999389648438
+            ],
+            "span": 42.300018310546875
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.2
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "何等奇妙救主是耶稣我主， 他真是我奇妙的主， 他把我灵魂深藏磐石之中， 得喜乐如江河无穷。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "何等奇妙救主是耶稣我主， 他挪去我一切重负， 我永不动摇因有主手扶持， 一生力量是他所赐。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "时时刻刻他赐我恩惠无穷， 他灵又充满我心中， 当我被提时一定大声歌颂， 奇妙救主配得尊容。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "穿上神赐衣裳我要会他面， 就在空中向他朝见， 愿与众圣徒一起歌唱欢呼， 完美救恩奇妙爱主。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "01-280他藏我灵.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8456747531890869,
+      "meanPathCost": 0.1513645052909851,
+      "cueWindowCosts": [
+        0.18347229063510895,
+        0.17033405601978302,
+        0.16572754085063934,
+        0.16682450473308563,
+        0.13666494190692902,
+        0.16708460450172424,
+        0.15790300071239471,
+        0.16892023384571075
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.827
+}

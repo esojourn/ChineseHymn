@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "01-280",
+  "status": "reviewed",
+  "source": {
+    "file": "01-280他藏我灵.txt",
+    "sha256": "cbfb603c996a8199817bce0189c75ee886252e3752809a89d4dc86cedc9565f5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-280他藏我灵.mp3",
+      "sha256": "d325a3a292d7b8bb42f6a56c553938122f46fde7dceebd481befc2cd3d48cc55",
+      "duration": 283.8465306122449,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 21.95,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 50.3,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 86.55,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 115.1,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 151.55,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 179.9,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 216.25,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 244.7,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-280他藏我灵-领唱.mp3",
+      "sha256": "6738c5297894e8e0bd17159d58875c42d18ff88078085d7ca8d94266a5fc6d7b",
+      "duration": 281.408,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 35,
+      "endLine": 38
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    }
+  },
+  "cues": [
+    {
+      "at": 22.35,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.8,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.05,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.6,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 151.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 180.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 216.75,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 245.2,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "何等奇妙救主是耶稣我主， 他真是我奇妙的主， 他把我灵魂深藏磐石之中， 得喜乐如江河无穷。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "何等奇妙救主是耶稣我主， 他挪去我一切重负， 我永不动摇因有主手扶持， 一生力量是他所赐。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "时时刻刻他赐我恩惠无穷， 他灵又充满我心中， 当我被提时一定大声歌颂， 奇妙救主配得尊容。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "穿上神赐衣裳我要会他面， 就在空中向他朝见， 愿与众圣徒一起歌唱欢呼， 完美救恩奇妙爱主。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "他藏我灵魂在磐石洞穴里， 如干渴之地得荫庇， 他藏我生命在他大慈爱里， 用他全能手来扶携。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-280他藏我灵.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

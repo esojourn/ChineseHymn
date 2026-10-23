@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-217",
+  "status": "reviewed",
+  "source": {
+    "file": "02-217稳固根基.txt",
+    "sha256": "d6de008ebc99cec6f63ba6cc9c79521ec309d522bb587dd64283154b26926288",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-217稳固根基.mp3",
+      "sha256": "1482169710ce4d200b7c20d1eb31855121381d1df25ea3956516be036dbbb7e4",
+      "duration": 126.90285714285714,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 4.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.3,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.65,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 93.05,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "基督做成稳固根基，主是元首房角石， 父神选召看为宝贵，为使众教会合一， 主是锡安永远帮助，惟基督堪足信赖。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "到此圣殿向你呼求，愿万军之主临近， 救主恩惠慈爱无量，倾听众圣民祈求， 愿你所赐丰盛祝福，常在圣殿中倾流。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "求主在此广施怜悯，应允你仆人祈求， 又求保守所赐恩惠，不致随流渐失去， 至终将来在荣耀中，与你掌权到永远。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "荣耀颂赞全归圣父，全归圣子与圣灵， 荣耀尊贵颂赞歌声，归与三一最高神， 满有大能，满有荣耀，直到永世无穷尽。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-217稳固根基.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

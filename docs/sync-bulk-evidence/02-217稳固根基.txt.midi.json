@@ -1,0 +1,277 @@
+{
+  "songId": "02-217",
+  "source": "02-217稳固根基.txt",
+  "sourceHash": "d6de008ebc99cec6f63ba6cc9c79521ec309d522bb587dd64283154b26926288",
+  "trackHashes": [
+    {
+      "file": "02-217稳固根基.mp3",
+      "sha256": "1482169710ce4d200b7c20d1eb31855121381d1df25ea3956516be036dbbb7e4"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "d6de008ebc99cec6f63ba6cc9c79521ec309d522bb587dd64283154b26926288",
+      "file": "hymnary119.mid",
+      "sha256": "83ef3ab1f5b99e28d9f689e3ded5beda460bbd0ed9921dc151dc5c658456dfe0",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary119.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary119.htm",
+      "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0836_p.svg",
+      "scoreReferenceSha256": "aa125f3619fb5aeb88b36b786343d18442d6ebf484d8d0bd3796559db3d50767",
+      "verseCount": 4,
+      "printedScoreReview": {
+        "title": "Christ is made the sure foundation",
+        "entry": 836,
+        "numberedRowsRelativeToTonic": [
+          "5 3 1 5 3 2 1 5 6 6 5 1 5 4 3",
+          "5 3 1 5 3 2 1 7 1 7 6 7 1 7 6 5",
+          "2 2 7 5 3 2 1 6 4 3 2 1 1 7 1"
+        ],
+        "pitchProofRelativeToTonicC": true
+      },
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 46,
+        "midiNoteCount": 46,
+        "editCost": 0,
+        "runnerUpCost": 34,
+        "semitoneShift": 10,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 15,
+            "possibleMidiNoteIndices": [
+              15
+            ],
+            "at": 8.0
+          },
+          {
+            "scoreNoteIndex": 31,
+            "possibleMidiNoteIndices": [
+              31
+            ],
+            "at": 16.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          8.0,
+          16.0
+        ]
+      },
+      "formReview": "已核对公开第836首 Christ is made the sure foundation 的 Regent Square 完整原谱，译文每段三行覆盖六个乐句，为一个完整阅读区域。参考第119首为同曲填词；完整旋律与三条谱行均通过音符序列匹配，起点在全部最优对齐中唯一。各实际段落仍须和声、旋律、起点、调性与反复相位独立检查。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 23.875,
+    "music": {
+      "period": 29.4,
+      "similarity": 0.9892090559005737,
+      "initialOnsetEstimate": 6.948,
+      "shifts": [
+        0.0,
+        29.4,
+        58.8,
+        88.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15841406218859613,
+            "key": 6,
+            "at": 5.4,
+            "span": 29.2,
+            "starts": [
+              4.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5630859063596142,
+            "key": 11,
+            "at": 28.3,
+            "span": 14.6,
+            "starts": [
+              28.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08152689901338954,
+            "key": 6,
+            "starts": [
+              4.900000095367432
+            ],
+            "span": 29.19999885559082
+          },
+          "runnerUp": {
+            "cost": 0.43629803300714814,
+            "key": 1,
+            "starts": [
+              13.399999618530273
+            ],
+            "span": 23.100000381469727
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1618053929335406,
+            "key": 6,
+            "at": 34.8,
+            "span": 29.1,
+            "starts": [
+              34.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5630859063596142,
+            "key": 11,
+            "at": 28.3,
+            "span": 14.6,
+            "starts": [
+              28.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.08284875649173244,
+            "key": 6,
+            "starts": [
+              34.29999923706055
+            ],
+            "span": 29.10000228881836
+          },
+          "runnerUp": {
+            "cost": 0.43674899769478104,
+            "key": 1,
+            "starts": [
+              42.79999923706055
+            ],
+            "span": 23.10000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15901588907047193,
+            "key": 6,
+            "at": 64.2,
+            "span": 29.1,
+            "starts": [
+              63.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5641720311171343,
+            "key": 11,
+            "at": 57.7,
+            "span": 14.6,
+            "starts": [
+              57.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.081164009717046,
+            "key": 6,
+            "starts": [
+              63.599998474121094
+            ],
+            "span": 29.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.43451272873651414,
+            "key": 1,
+            "starts": [
+              69.80000305175781
+            ],
+            "span": 25.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.15776617348599595,
+            "key": 6,
+            "at": 93.6,
+            "span": 29.1,
+            "starts": [
+              93.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5671372705576371,
+            "key": 11,
+            "at": 87.2,
+            "span": 14.5,
+            "starts": [
+              87.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.07964780379314812,
+            "key": 6,
+            "starts": [
+              93.0
+            ],
+            "span": 29.199996948242188
+          },
+          "runnerUp": {
+            "cost": 0.43999429300528803,
+            "key": 1,
+            "starts": [
+              89.4000015258789
+            ],
+            "span": 24.79999542236328
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "基督做成稳固根基，主是元首房角石， 父神选召看为宝贵，为使众教会合一， 主是锡安永远帮助，惟基督堪足信赖。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "到此圣殿向你呼求，愿万军之主临近， 救主恩惠慈爱无量，倾听众圣民祈求， 愿你所赐丰盛祝福，常在圣殿中倾流。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "求主在此广施怜悯，应允你仆人祈求， 又求保守所赐恩惠，不致随流渐失去， 至终将来在荣耀中，与你掌权到永远。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "荣耀颂赞全归圣父，全归圣子与圣灵， 荣耀尊贵颂赞歌声，归与三一最高神， 满有大能，满有荣耀，直到永世无穷尽。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.456
+}

@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-798",
+  "status": "reviewed",
+  "source": {
+    "file": "04-798尽告耶稣.txt",
+    "sha256": "2c920eed608cdec62c7b2bad952d26d1b18fd517aabd02161d02f1d503afa380",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-798尽告耶稣.mp3",
+      "sha256": "c0f4792002c49daa68be668f35877b50c4f64d4cd1541c96c4f2fb8bd857acd5",
+      "duration": 165.27673469387756,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.26,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 28.71,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 47.63,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.16,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 86.06,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.55,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 124.58,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.93,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-798尽告耶稣-领唱.mp3",
+      "sha256": "b637caf8387c361314f6ba926db8894e769531ba6b4f091d937837634a5d8f02",
+      "duration": 164.07510204081632,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 9.16,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.61,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.53,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.06,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.96,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.45,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.48,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.83,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "在你心中若有世间忧虑， 你当告诉耶稣，你当告诉耶稣， 在你心中若有愁苦叹息， 你当快告诉耶稣。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你当告诉耶稣，你当告诉耶稣， 最有慈爱之耶稣。你不必疑惑， 你也不必惧怕，你当快告诉耶稣。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "在你心中若有含泪痛苦， 你当告诉耶稣，你当告诉耶稣， 在你心中若有诸般罪污， 你当快告诉耶稣。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "你当告诉耶稣，你当告诉耶稣， 最有慈爱之耶稣。你不必疑惑， 你也不必惧怕，你当快告诉耶稣。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "在你心中若有惧怕缠绕， 你当告诉耶稣，你当告诉耶稣， 在你心中若有明日烦恼， 你当快告诉耶稣。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "你当告诉耶稣，你当告诉耶稣， 最有慈爱之耶稣。你不必疑惑， 你也不必惧怕，你当快告诉耶稣。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "在你心中若有怕死受苦， 你当告诉耶稣，你当告诉耶稣， 在你心中若盼望神国度， 你当快告诉耶稣。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "你当告诉耶稣，你当告诉耶稣， 最有慈爱之耶稣。你不必疑惑， 你也不必惧怕，你当快告诉耶稣。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-798尽告耶稣.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

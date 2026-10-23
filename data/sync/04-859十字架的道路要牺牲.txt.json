@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-859",
+  "status": "reviewed",
+  "source": {
+    "file": "04-859十字架的道路要牺牲.txt",
+    "sha256": "96e0987e6f9745ca5ef36b152225f2aa1e5724afa23eaa8255b22557c1457ae0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-859十字架的道路要牺牲.mp3",
+      "sha256": "d0c4a2a1e13998c82be792c2ae48ee4ade2ee56745be075a740a11d267ce72c8",
+      "duration": 164.64979591836735,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.83,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 28.12,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 47.2,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 66.54,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 85.69,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.17,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 124.03,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.38,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-859十字架的道路要牺牲-领唱.mp3",
+      "sha256": "b2c78871d9fdc0b72e84c04dcd090951df0074678dd15d5f829482ed7e7826c6",
+      "duration": 163.28270833333335,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.23,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.52,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.6,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.94,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.09,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.57,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.43,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.78,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "十字架的道路要牺牲， 要将一切献与神， 要放一切在死的祭坛上面， 火才在这里显现。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "这是十架道路，你愿否走这路， 你曾否背十架为主？ 你这奉献一切给神的人， 你对神是否全贞？",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "当唱诗歌或祷告时候， 何等愿说献所有， 但是前面有更重的十字架， 有更艰难的生涯。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "这是十架道路，你愿否走这路， 你曾否背十架为主？ 你这奉献一切给神的人， 你对神是否全贞？",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你要变节或忠心到死， 让一切完全损失， 直等到永活主的丰盛生命， 天天充满在你灵。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "这是十架道路，你愿否走这路， 你曾否背十架为主？ 你这奉献一切给神的人， 你对神是否全贞？",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "我们的得失并不要紧， 神的旨意当留心， 我们若将万事都看如粪土， 主才不会受拦阻。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "这是十架道路，你愿否走这路， 你曾否背十架为主？ 你这奉献一切给神的人， 你对神是否全贞？",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-859十字架的道路要牺牲.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

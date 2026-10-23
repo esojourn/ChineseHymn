@@ -27,6 +27,9 @@ try:
     midi_spec = importlib.util.spec_from_file_location('midi_sync', TOOLS / 'midi-sync.py')
     midi_sync = importlib.util.module_from_spec(midi_spec)
     midi_spec.loader.exec_module(midi_sync)
+    midi_image_spec = importlib.util.spec_from_file_location('midi_image_sync', TOOLS / 'midi-image-sync.py')
+    midi_image = importlib.util.module_from_spec(midi_image_spec)
+    midi_image_spec.loader.exec_module(midi_image)
 except ImportError:
     confirm_boundaries = None
 
@@ -337,6 +340,25 @@ class BatchTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             midi_sync.reading_rows(source, {}, melody)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
+    def test_symbolic_and_optical_pair_requires_all_boundaries_key_and_full_span(self):
+        import copy
+        symbolic = {'best': {'cost': .24, 'key': 11, 'starts': [6, 17, 28, 39], 'span': 44},
+                    'runnerUp': {'cost': .44}}
+        optical = {'best': {'cost': .17, 'key': 9, 'starts': [6.1, 16.9, 28.2, 39], 'span': 44},
+                   'runnerUp': {'cost': .42}}
+        self.assertEqual(midi_image.paired_melody_times(symbolic, optical, 44, 10), [6.05, 16.95, 28.1, 39])
+        for field, value in [('key', 8), ('starts', [6, 17, 28.6, 39]), ('starts', [6, 17, 28]),
+                             ('span', 20), ('cost', .36)]:
+            wrong = copy.deepcopy(optical)
+            wrong['best'][field] = value
+            with self.assertRaises(ValueError):
+                midi_image.paired_melody_times(symbolic, wrong, 44, 10)
+        wrong = copy.deepcopy(optical)
+        wrong['runnerUp']['cost'] = .2
+        with self.assertRaises(ValueError):
+            midi_image.paired_melody_times(symbolic, wrong, 44, 10)
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_score_accidentals_are_kept_separate_from_scale_degrees(self):
         from sync_batch_score import accidental_offsets
@@ -518,6 +540,31 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(row['onsetPitches'], [4, 5])
             self.assertEqual(row['onsetTimes'], [0, 2])
             self.assertEqual(row['pitchOffsets'][17], 4)
+
+    @unittest.skipIf(confirm_boundaries is None or importlib.util.find_spec('mido') is None, 'requires optional MIDI dependencies')
+    def test_documented_first_melody_track_cycle_preserves_its_full_notes(self):
+        import mido
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'two-instruments.mid'
+            score = mido.MidiFile(ticks_per_beat=480)
+            score.tracks.append(mido.MidiTrack([
+                mido.Message('note_on', note=72, velocity=90, time=480),
+                mido.Message('note_off', note=72, time=1920),
+                mido.Message('note_on', note=74, velocity=90),
+                mido.Message('note_off', note=74, time=1920)]))
+            score.tracks.append(mido.MidiTrack([
+                mido.Message('note_on', note=72, velocity=90, time=8160),
+                mido.Message('note_off', note=72, time=1920)]))
+            score.save(path)
+            duration, (times, harmony), row = midi_sync.midi_features(path, 'first-melody-track')
+            self.assertAlmostEqual(duration, 4)
+            self.assertEqual(row['onsetTimes'], [0, 2])
+            self.assertEqual(row['onsetPitches'], [0, 2])
+            self.assertAlmostEqual(times[-1], 3.9)
+            self.assertEqual(len(row['notes']), len(times))
+            self.assertGreater(midi_sync.midi_features(path)[0], duration)
+            with self.assertRaises(ValueError):
+                midi_sync.midi_features(path, 'guessed-duration')
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
     def test_symbolic_score_mapping_rejects_an_ambiguous_repeated_opening_note(self):

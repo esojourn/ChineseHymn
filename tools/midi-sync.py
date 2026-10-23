@@ -19,7 +19,7 @@ same_tune = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(same_tune)
 
 
-def midi_features(path):
+def midi_features(path, cycle=None):
     import mido
     score = mido.MidiFile(path)
     duration = score.length
@@ -62,6 +62,10 @@ def midi_features(path):
         for (channel, pitch), pending in active.items():
             for start, velocity in pending:
                 notes.append((index, at(start), duration, pitch, velocity))
+    if cycle is not None:
+        if cycle != 'first-melody-track':
+            raise ValueError('未知的 MIDI 乐段范围')
+        duration = max(end for track, start, end, pitch, velocity in notes if track == melodic_tracks[0])
     times = np.arange(0, duration, .1)
     harmony = np.zeros((12, len(times)), dtype=np.float32)
     melody = np.full(len(times), -1, dtype=int)
@@ -144,7 +148,7 @@ def generate(song, profile, cache):
         path = cache / 'midi' / profile['file']
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')
-        period, harmony, melody = midi_features(path)
+        period, harmony, melody = midi_features(path, profile.get('referenceCycle'))
         offsets, melody_rows = reading_rows(source, profile, melody)
         reference = batch.ROOT / 'data' / song['reference']
         music = repeated_verses(reference, len(source['verses']), cache)

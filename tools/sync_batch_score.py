@@ -195,7 +195,8 @@ def match_template(rows, chroma, times, period, onset_estimate, weight_key):
             frame = np.flatnonzero(frame_labels == label)[0]
             js = path[path[:, 0] == frame, 1]
             starts.append(float(times[lo + int(np.median(js))]))
-        candidates.append({'cost': float(value), 'key': key, 'starts': starts})
+        candidates.append({'cost': float(value), 'key': key, 'starts': starts,
+                           'span': float(times[lo + path[-1, 1]] - times[lo + path[0, 1]])})
     candidates.sort(key=lambda item: item['cost'])
     return {'best': candidates[0], 'runnerUp': candidates[1]}
 

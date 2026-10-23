@@ -17,16 +17,36 @@ spec.loader.exec_module(midi)
 batch = midi.batch
 
 
-def image_recording_times(path, source, period, harmony, melody_rows, offsets, cache, weight_key='spatialWeights', reference_key=0):
+def paired_melody_times(symbolic, optical, period, reference_key):
+    one, two = symbolic['best'], optical['best']
+    if (any(match['best']['cost'] > .35 or match['runnerUp']['cost'] - match['best']['cost'] < .06 or
+            not .75 * period <= match['best'].get('span', 0) <= 1.25 * period
+            for match in (symbolic, optical)) or
+            (one['key'] + reference_key) % 12 != two['key'] or
+            len(one['starts']) != len(two['starts']) or not one['starts'] or
+            max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
+        raise ValueError('外部 MIDI 旋律与原谱光学节奏未能共同确认全部谱行')
+    return [round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts'])]
+
+
+def image_recording_times(path, source, period, harmony, melody_rows, offsets, cache, weight_key='spatialWeights', reference_key=0, evidence=None, optical_rows=None):
     music = repeated_verses(path, len(source['verses']), cache)
     target = features(path, cache)
     mapped, matches = [], []
+    metrics = evidence if evidence is not None else {}
+    metrics.update(music=music, matches=matches)
     for shift in music['shifts']:
         onset = music['initialOnsetEstimate'] + shift
         harmonic = midi.same_tune.match_cycle(harmony, target, 0, period, music['period'], onset,
                                                cue_offset=0, cue_offsets=offsets)
         melodic = match_template(melody_rows, target[1], target[0], music['period'], onset, weight_key)
         one, two = harmonic['best'], melodic['best']
+        matches.append({'harmony': harmonic, 'melody': melodic, 'melodyTemplate': weight_key})
+        if optical_rows is not None:
+            optical = match_template(optical_rows, target[1], target[0], music['period'], onset, 'rhythmWeights')
+            matches[-1]['opticalMelody'] = optical
+            mapped.extend(paired_melody_times(melodic, optical, music['period'], reference_key))
+            continue
         if (one['cost'] > .35 or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                 not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
                 two['cost'] > .35 or melodic['runnerUp']['cost'] - two['cost'] < .06 or
@@ -34,11 +54,10 @@ def image_recording_times(path, source, period, harmony, melody_rows, offsets, c
                 max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
             raise ValueError('MIDI 和声与旋律未能共同确认每个谱行的起点')
         mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
-        matches.append({'harmony': harmonic, 'melody': melodic, 'melodyTemplate': weight_key})
     times, decisions = midi.same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
     if decisions:
         raise ValueError('独立 MIDI 模板的首段位置仍存在歧义')
-    return times, {'music': music, 'matches': matches}
+    return times, metrics
 
 
 def generate(song, profile, cache):
@@ -61,8 +80,8 @@ def generate(song, profile, cache):
         if len(source['verses']) != profile['verseCount']:
             raise ValueError('谱面段数与参考配置不一致')
         rows = note_rows(batch.ROOT / 'data' / song['source'], recognition, cache)
-        period, harmony, melody = midi.midi_features(path)
-        weight_key, reference_key = 'spatialWeights', 0
+        period, harmony, melody = midi.midi_features(path, profile.get('referenceCycle'))
+        weight_key, reference_key, optical_rows = 'spatialWeights', 0, None
         if profile.get('mode') == 'documented-rows-optical-melody':
             reference_key = profile['referenceKey']
             offsets, symbolic = documented_row_offsets(rows, melody['onsetTimes'], melody['onsetPitches'],
@@ -74,6 +93,9 @@ def generate(song, profile, cache):
             cuts = [round(at / .1) for at in offsets] + [len(melody['notes'])]
             melody_rows = [{key: melody[key][a:b] for key in ['notes', 'pitchOffsets', 'spatialWeights']}
                            for a, b in zip(cuts, cuts[1:])]
+            if profile.get('mode') == 'symbolic-melody-and-optical':
+                optical_rows, reference_key = rows, symbolic['semitoneShift']
+                evidence['midiMatching'].update(mode='image-symbolic-with-optical', sourceRows=rows)
         evidence['midiMatching'].update(symbolicRows=symbolic, referencePeriod=period)
         if offsets[0] > .1 or len(offsets) != len(source['systems']):
             raise ValueError('参考 MIDI 的起拍或谱行数量不一致')
@@ -85,8 +107,10 @@ def generate(song, profile, cache):
         evidence['independentTimelines'] = timelines
         evidence['midiMatching']['recordings'] = recordings
         for track in song['tracks']:
+            recordings[track['file']] = {}
             times, metrics = image_recording_times(batch.ROOT / 'data' / track['file'], source,
-                                                   period, harmony, melody_rows, offsets, cache, weight_key, reference_key)
+                                                   period, harmony, melody_rows, offsets, cache, weight_key, reference_key,
+                                                   recordings[track['file']], optical_rows)
             timelines[track['file']] = {'definitions': definitions, 'times': times, 'returnIndices': first_indices}
             recordings[track['file']] = metrics
         evidence['performanceOrder'] = definitions

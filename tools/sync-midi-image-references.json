@@ -631,5 +631,60 @@
       }
     ],
     "formReview": "已目视核对原图的逐行开头五个音符与 MIDI 对应位置；同音连结音头明确列出。该参考有音符细节差异，因此不以其旋律代替原谱；实际音频须同时通过原谱光学节奏旋律和完整 MIDI 和声，并逐行核对起点、调性、代价及重复相位。"
+  },
+  "05-256": {
+    "targetSha256": "5ff4ba3f376aa59e24045bcdfc4f598506037f8ed820cc42736f3af6c9e4fda2",
+    "file": "constellations-winter.mid",
+    "sha256": "981f9422b8a0ce9e99a63329add616032e1f565e6fb5a05185fd9890800235e5",
+    "url": "https://www13.big.or.jp/~sparrow/constellations-in-winter.mid",
+    "textReferenceUrl": "https://www13.big.or.jp/~sparrow/MIDI-constellations_in_winter.html",
+    "verseCount": 4,
+    "referenceCycle": "first-melody-track",
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 60,
+      "midiNoteCount": 61,
+      "editCost": 6,
+      "runnerUpCost": 43,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 15,
+          "possibleMidiNoteIndices": [
+            15
+          ],
+          "at": 10.6667
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            31
+          ],
+          "at": 22.2666
+        },
+        {
+          "scoreNoteIndex": 45,
+          "possibleMidiNoteIndices": [
+            46
+          ],
+          "at": 32.9333
+        }
+      ],
+      "offsets": [
+        0.0,
+        10.6667,
+        22.2666,
+        32.9333
+      ]
+    },
+    "formReview": "原图四个谱行与《冬の星座 / Mollie Darling》参考主旋律全序列核对，60个原谱音符与61个参考音符的编辑代价6，逐行首音在所有最优路径中唯一，已目视核对图片。MIDI不同乐器接续演奏两段，参考范围明确从首旋律轨的第一个音起至该轨最后音结束，保留原MIDI速度变化及这段全部伴奏，不按歌曲时长裁切。实际各段、各音轨仍须和声与旋律逐行独立通过。 参考的伴奏编配与目标不同（和声匹配代价约0.50，未通过），不将其记为和声通过。采用完整 MIDI 旋律与原图独立提取的光学节奏两组模板，原有匹配代价、调性区分、完整乐段跨度、每行0.5秒及各段相位要求全部保留；和声失败记录保留为诊断。",
+    "mode": "symbolic-melody-and-optical"
   }
 }

@@ -43,6 +43,56 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_onset_tolerance_includes_float32_half_second_and_rejects_larger_errors(self):
+        import numpy as np
+        from sync_batch_audio import onsets_agree
+        self.assertTrue(onsets_agree([23.1, 351.1], [np.float32(23.6), np.float32(351.6)]))
+        self.assertFalse(onsets_agree([23.1, 351.1], [np.float32(23.6), np.float32(351.61)]))
+        self.assertFalse(onsets_agree([23.1, 351.1], [23.1]))
+        self.assertFalse(onsets_agree([], []))
+        self.assertFalse(onsets_agree([float('nan')], [1]))
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_two_reference_cycles_locate_all_reading_regions_in_a_longer_performance(self):
+        import numpy as np
+        generator = np.random.default_rng(75)
+        phrase = np.eye(12, dtype=np.float32)[:, np.repeat(generator.integers(0, 12, 48), 5)]
+        reference = np.zeros((12, 550), dtype=np.float32)
+        reference[:, 30:270] = phrase
+        reference[:, 270:510] = phrase
+        stretched = phrase[:, np.minimum(np.arange(320) * 3 // 4, 239)]
+        target = np.zeros((12, 1050), dtype=np.float32)
+        for start in [50, 370, 690]:
+            target[:, start:start + 320] = np.roll(stretched, 5, axis=0)
+        cues = [{'at': at} for at in [3.4, 11.4, 19.4, 27.4, 35.4, 43.4]]
+        with patch.object(transfer, 'features', side_effect=[(np.arange(550) * .1, reference),
+                                                           (np.arange(1050) * .1, target)]):
+            times, evidence = transfer.cycle_times('reference', 'target', cues, 3,
+                {'period': 24, 'shifts': [0, 24]},
+                {'period': 32, 'initialOnsetEstimate': 5, 'shifts': [0, 32, 64]}, None, [0, 2])
+        self.assertEqual(len(times), 6)
+        for actual, expected in zip(times, [5.5, 26.9, 37.5, 58.9, 69.5, 90.9]):
+            self.assertAlmostEqual(actual, expected, delta=.2)
+        self.assertEqual(evidence['referenceSlots'], [0, 2])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_two_reference_cycles_reject_a_conflicting_later_region_and_invalid_slots(self):
+        first = {'best': {'cost': .1, 'key': 3, 'span': 20, 'starts': [4, 14]},
+                 'runnerUp': {'cost': .4}}
+        second = {'best': {'cost': .1, 'key': 3, 'span': 20, 'starts': [4, 15]},
+                  'runnerUp': {'cost': .4}}
+        cues = [{'at': at} for at in [2, 12, 22, 32]]
+        with patch.object(transfer, 'features', return_value=None), \
+                patch.object(transfer, 'match_cycle', side_effect=[first, second]):
+            with self.assertRaisesRegex(ValueError, '阅读区域起点不一致'):
+                transfer.cycle_times('a', 'b', cues, 2, {'period': 20, 'shifts': [0, 20]},
+                                     {'period': 20, 'initialOnsetEstimate': 4, 'shifts': [0]}, None, [0, 1])
+        with patch.object(transfer, 'features', return_value=None):
+            for slots in [[], [1], [0, 0], [0, 2], [0, True]]:
+                with self.assertRaises(ValueError):
+                    transfer.cycle_times('a', 'b', cues, 2, {'shifts': [0, 20]}, {}, None, slots)
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
     def test_printed_reference_preserves_rests_and_fractional_note_times(self):
         import io

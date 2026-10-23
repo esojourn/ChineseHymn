@@ -7,7 +7,7 @@ from pathlib import Path
 import time
 import numpy as np
 from sync_batch_sources import text_source
-from sync_batch_audio import features, repeated_verses
+from sync_batch_audio import features, repeated_verses, onsets_agree
 from sync_batch_score import match_template
 from sync_batch_align import export_result
 
@@ -170,7 +170,7 @@ def check_extra_cycle(harmony, melody_rows, target, period, music, last, limits)
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 4, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 5, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:
@@ -199,8 +199,7 @@ def generate(song, profile, cache):
             if (one['cost'] > limits[0] or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                     not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
                     two['cost'] > limits[1] or melodic['runnerUp']['cost'] - two['cost'] < .06 or
-                    one['key'] != two['key'] or len(one['starts']) != len(two['starts']) or
-                    max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
+                    one['key'] != two['key'] or not onsets_agree(one['starts'], two['starts'])):
                 raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
             if profile.get('referenceDiscovery') and not .75 * music['period'] <= two.get('span', 0) <= 1.25 * music['period']:
                 raise ValueError('音频检索参考的旋律没有覆盖完整乐段')

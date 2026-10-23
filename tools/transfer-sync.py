@@ -75,33 +75,44 @@ def match_cycle(reference_features, target_features, reference_start, reference_
     return {'best': candidates[0], 'runnerUp': candidates[1]}
 
 
-def cycle_times(audio, target_audio, cues, per_verse, reference_music, music, cache):
+def cycle_times(audio, target_audio, cues, per_verse, reference_music, music, cache, slots=None):
     reference_features, target_features = features(audio, cache), features(target_audio, cache)
+    slots = [0] if slots is None else slots
+    if (not slots or slots != sorted(set(slots)) or slots[0] != 0 or
+            any(type(slot) is not int or not 0 <= slot < per_verse for slot in slots) or
+            len(cues) < 2 * per_verse):
+        raise ValueError('完整乐段参考缺少有序且明确的阅读区域')
     if len(reference_music['shifts']) < 2:
         raise ValueError('完整乐段参考需要至少两个已确认的实际演奏段落')
     matches, mapped = [], []
     for shift in music['shifts']:
-        pair = [match_cycle(reference_features, target_features, cues[verse * per_verse]['at'] - .4,
-                            reference_music['period'], music['period'], music['initialOnsetEstimate'] + shift)
-                for verse in (0, 1)]
+        pair = []
+        for verse in (0, 1):
+            start = cues[verse * per_verse]['at'] - .4
+            offsets = [cues[verse * per_verse + slot]['at'] - start for slot in slots]
+            pair.append(match_cycle(reference_features, target_features, start, reference_music['period'],
+                                    music['period'], music['initialOnsetEstimate'] + shift, cue_offsets=offsets))
         for match in pair:
             best = match['best']
             if (best['cost'] > .35 or match['runnerUp']['cost'] - best['cost'] < .08 or
                     not .75 * music['period'] <= best['span'] <= 1.25 * music['period']):
                 raise ValueError('完整乐段与目标录音匹配不足')
-        if pair[0]['best']['key'] != pair[1]['best']['key'] or abs(pair[0]['best']['at'] - pair[1]['best']['at']) > .5:
-            raise ValueError('两段独立参考的乐段起点不一致')
-        mapped.append(round((pair[0]['best']['at'] + pair[1]['best']['at']) / 2, 2))
+        first, second = pair[0]['best'], pair[1]['best']
+        if (first['key'] != second['key'] or len(first['starts']) != len(slots) or
+                len(second['starts']) != len(slots) or
+                max(abs(a - b) for a, b in zip(first['starts'], second['starts'])) > .5):
+            raise ValueError('两段独立参考的阅读区域起点不一致')
+        mapped.extend(round((a + b) / 2, 2) for a, b in zip(first['starts'], second['starts']))
         matches.append(pair)
     return mapped, {'method': 'two complete score-referenced audio cycles; subsequence chroma-DTW',
-                    'referenceMusic': reference_music, 'matches': matches}
+                    'referenceMusic': reference_music, 'referenceSlots': slots, 'matches': matches}
 
 
 def generate(song, profile, cache, songs):
     start = time.monotonic()
     destination = cache / 'reference-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'referenceMatching': {'profile': profile, 'algorithmVersion': 1}}
+                'trackHashes': song['tracks'], 'referenceMatching': {'profile': profile, 'algorithmVersion': 2}}
     try:
         if song['type'] != 'text' or song['sha256'] != profile['targetSha256']:
             raise ValueError('参考配置不匹配当前文字素材，需重新核对段落')
@@ -113,9 +124,12 @@ def generate(song, profile, cache, songs):
         if not reference_path.exists():
             reference_path = cache / 'ready' / name
         reference = json.loads(reference_path.read_text())
-        reference_evidence = cache / batch.evidence_directory(reference) / name
+        reference_evidence = batch.ROOT / reference['provenance']['evidence']
+        if not reference_evidence.exists():
+            reference_evidence = cache / batch.evidence_directory(reference) / name
         reference_result = json.loads(reference_evidence.read_text())
-        if reference_result['status'] != 'ready':
+        if (reference_result['status'] != 'ready' or reference_result.get('sourceHash') != reference_song['sha256'] or
+                reference_result.get('trackHashes') != reference_song['tracks']):
             raise ValueError('参考谱面未通过匹配复核')
         if reference['source']['sha256'] != reference_song['sha256']:
             raise ValueError('参考同步数据已失效')
@@ -136,11 +150,12 @@ def generate(song, profile, cache, songs):
         target_audio = batch.ROOT / 'data' / song['reference']
         music = repeated_verses(target_audio, count, cache)
         if profile.get('mode') == 'verse-cycle':
-            if slots != [0]:
-                raise ValueError('完整乐段匹配仅适用于每段单个文字阅读区域')
-            reference_music = reference_result['scoreMatching']['music']
+            if 'scoreMatching' in reference_result:
+                reference_music = reference_result['scoreMatching']['music']
+            else:
+                reference_music = reference_result['midiMatching']['recordings'][track['file']]['music']
             adjusted_cues = [{**cue, 'at': cue['at'] + track['offset']} for cue in cues]
-            mapped, metrics = cycle_times(audio, target_audio, adjusted_cues, per_verse, reference_music, music, cache)
+            mapped, metrics = cycle_times(audio, target_audio, adjusted_cues, per_verse, reference_music, music, cache, slots)
         else:
             if reference_count != count:
                 raise ValueError('不同段数的录音需要完整乐段参考')

@@ -23,8 +23,7 @@ def paired_melody_times(symbolic, optical, period, reference_key):
             not .75 * period <= match['best'].get('span', 0) <= 1.25 * period
             for match in (symbolic, optical)) or
             (one['key'] + reference_key) % 12 != two['key'] or
-            len(one['starts']) != len(two['starts']) or not one['starts'] or
-            max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
+            not midi.onsets_agree(one['starts'], two['starts'])):
         raise ValueError('外部 MIDI 旋律与原谱光学节奏未能共同确认全部谱行')
     return [round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts'])]
 
@@ -50,8 +49,8 @@ def image_recording_times(path, source, period, harmony, melody_rows, offsets, c
         if (one['cost'] > .35 or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                 not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
                 two['cost'] > .35 or melodic['runnerUp']['cost'] - two['cost'] < .06 or
-                (one['key'] + reference_key) % 12 != two['key'] or len(one['starts']) != len(two['starts']) or
-                max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
+                (one['key'] + reference_key) % 12 != two['key'] or
+                not midi.onsets_agree(one['starts'], two['starts'])):
             raise ValueError('MIDI 和声与旋律未能共同确认每个谱行的起点')
         mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
     times, decisions = midi.same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
@@ -64,7 +63,7 @@ def generate(song, profile, cache):
     started = time.monotonic()
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 3, 'mode': 'image-rows', 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 4, 'mode': 'image-rows', 'profile': profile}}
     try:
         if song['sha256'] != profile['targetSha256']:
             raise ValueError('图片素材与已经核对的 MIDI 配置不一致')

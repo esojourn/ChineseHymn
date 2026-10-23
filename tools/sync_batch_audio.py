@@ -7,6 +7,13 @@ from numba import njit
 from scipy import signal
 
 
+def onsets_agree(first, second, tolerance=.5):
+    """Compare sampled audio times at millisecond precision, including the tolerance edge."""
+    return (bool(first) and len(first) == len(second) and
+            all(np.isfinite(a) and np.isfinite(b) and round(abs(float(a) - float(b)), 3) <= tolerance
+                for a, b in zip(first, second)))
+
+
 def features(path, cache):
     from faster_whisper.audio import decode_audio
     with path.open('rb') as stream:

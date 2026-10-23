@@ -233,6 +233,62 @@ def recording_cues(definitions, cue_times, regions, duration, return_indices):
     return cues
 
 
+def review_recordings(job):
+    """Finish partial text candidates using independent known-lyric acoustic checks."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('batch_recording_io', Path(__file__).with_name('batch-sync.py'))
+    batch = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(batch)
+    song, cache_name, model_dir, threads, _, retry = job
+    cache = Path(cache_name)
+    candidate_path = cache / 'ready' / (song['source'] + '.json')
+    if song['existing'] or song['type'] != 'text' or not candidate_path.exists():
+        return song['songId'], 'no pending text recording candidate'
+    candidate = json.loads(candidate_path.read_text())
+    evidence_path = cache / batch.evidence_directory(candidate) / candidate_path.name
+    evidence = json.loads(evidence_path.read_text())
+    if (batch.evidence_directory(candidate) != 'alignment' or evidence.get('status') != 'ready' or
+            candidate['source']['sha256'] != song['sha256'] or evidence.get('sourceHash') != song['sha256'] or
+            sorted((track['file'], track['sha256']) for track in candidate['tracks']) !=
+            sorted((track['file'], track['sha256']) for track in song['tracks']) or evidence.get('trackHashes') != song['tracks']):
+        return song['songId'], 'requires current known-lyric candidate'
+    from mutagen.mp3 import MP3
+    updated = False
+    for track in candidate['tracks']:
+        if track['reviewed']:
+            continue
+        local_cache = cache / 'recording-alignment' / track['sha256']
+        local_evidence = {'songId': song['songId'], 'sourceHash': song['sha256'], 'trackHashes': song['tracks'],
+                          'referenceTrack': track['file']}
+        started = time.monotonic()
+        try:
+            target_song = {**song, 'reference': track['file']}
+            source, order, times, starts = vocal_times(target_song, batch.ROOT, local_cache, model_dir,
+                                                      threads, local_evidence, retry, batch.save)
+            if source['regions'] != candidate['regions']:
+                raise ValueError('独立音轨的文字阅读区域已变化')
+            duration = MP3(batch.ROOT / 'data' / track['file']).info.length
+            cues = recording_cues(order, times, candidate['regions'], duration, [])
+            local_evidence.update(status='ready', cueCount=len(cues))
+            track.update(cues=cues, duration=duration, offset=0, reviewed=True)
+            updated = True
+            evidence.setdefault('recordingAcoustics', {})[track['file']] = local_evidence
+            evidence.get('trackExceptions', {}).pop(track['file'], None)
+        except (ValueError, FileNotFoundError, KeyError) as error:
+            local_evidence.update(status='needs-calibration', reason=str(error))
+            evidence.setdefault('trackExceptions', {})[track['file']] = str(error)
+        local_evidence['elapsedSeconds'] = round(time.monotonic() - started, 3)
+        batch.save(local_cache / 'alignment' / candidate_path.name, local_evidence)
+    method = (' Independent pending recordings use their own two contextual acoustic windows'
+              ' and repeated-music checks; no cross-recording time scaling.')
+    if updated and method not in candidate['provenance']['method']:
+        candidate['provenance']['method'] += method
+    # The publisher sees the revised candidate only after its complete evidence.
+    batch.save(evidence_path, evidence)
+    batch.save(candidate_path, candidate)
+    return song['songId'], 'ready' if all(track['reviewed'] for track in candidate['tracks']) else 'needs-track-alignment'
+
+
 def export_result(song, root, cache, evidence_path, evidence, start_time, source, definitions, cue_times, first_indices):
     import importlib.util
     spec = importlib.util.spec_from_file_location('batch_export_io', Path(__file__).with_name('batch-sync.py'))

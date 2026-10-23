@@ -495,6 +495,13 @@ python tools/batch-sync.py --stage report --cache /tmp/chinese-hymn-bulk
 
 音频窗口按原素材哈希、演唱顺序、语言及窗口参数保存断点；每完成一组即写入缓存。任务中断后重启同一命令，已完成的匹配窗口不会重复计算。`--kind text` 或 `--kind image` 可限定处理形式。
 
+文字候选的主录音已通过、另一录音的音乐映射未通过时，可运行 `--stage align-tracks`，为待处理录音独立执行原有歌词双窗口和重复音乐检查。每个录音使用按音频哈希区分的窗口缓存，避免复用主录音的声学窗口；素材和录音哈希必须与候选一致。成功依据附入原复核记录的 `recordingAcoustics`，原主录音时间点保留。此阶段仅处理尚未发布的普通歌词匹配候选，不修改已经发布的数据。
+
+```sh
+python tools/batch-sync.py --stage align-tracks --cache /tmp/chinese-hymn-bulk \
+    --songs 03-026 03-029 04-002 --workers 1 --threads 2 --retry
+```
+
 ```sh
 npm run sync:validate
 npm test

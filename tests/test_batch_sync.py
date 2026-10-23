@@ -11,7 +11,7 @@ TOOLS = Path(__file__).parents[1] / 'tools'
 sys.path.insert(0, str(TOOLS))
 import sync_batch_sources as sources
 try:
-    from sync_batch_align import align_windows, confirm_boundaries, export_result
+    from sync_batch_align import align_windows, confirm_boundaries, export_result, review_recordings
     from sync_batch_audio import alignment_band
     transfer_spec = importlib.util.spec_from_file_location('transfer_sync', TOOLS / 'transfer-sync.py')
     transfer = importlib.util.module_from_spec(transfer_spec)
@@ -479,6 +479,46 @@ class BatchTests(unittest.TestCase):
                 else:
                     self.assertEqual(short['cues'], [])
                     self.assertIn('short.mp3', evidence['trackExceptions'])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_pending_text_track_uses_independent_checks_and_rejects_stale_audio(self):
+        from types import SimpleNamespace
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            song = {'songId': '03-001', 'source': '03-001示例.txt', 'sha256': 'a' * 64,
+                    'type': 'text', 'reference': 'lead.mp3', 'existing': False,
+                    'tracks': [{'file': 'lead.mp3', 'sha256': 'b' * 64},
+                               {'file': 'base.mp3', 'sha256': 'c' * 64}]}
+            source = {'regions': {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3},
+                                  'r2': {'kind': 'text', 'startLine': 5, 'endLine': 6}}}
+            order = [{'region': 'r1', 'label': '一'}, {'region': 'r2', 'label': '二'}]
+            candidate = {'source': {'sha256': song['sha256']}, 'regions': source['regions'],
+                         'tracks': [{**track, 'reviewed': index == 0} for index, track in enumerate(song['tracks'])],
+                         'cues': [{'at': 3, 'region': 'r1'}, {'at': 21, 'region': 'r2'}],
+                         'provenance': {'method': 'original', 'evidence': 'docs/source.txt.json'}}
+            evidence = {'sourceHash': song['sha256'], 'trackHashes': song['tracks'], 'status': 'ready',
+                        'trackExceptions': {'base.mp3': 'mapping failed'}}
+            candidate_path = cache / 'ready' / (song['source'] + '.json')
+            evidence_path = cache / 'alignment' / candidate_path.name
+            for stale, times, expected in [(True, [7, 27], False), (False, [7], False), (False, [7, 27], True)]:
+                candidate['tracks'][1]['sha256'] = 'd' * 64 if stale else 'c' * 64
+                batch.save(candidate_path, candidate)
+                batch.save(evidence_path, evidence)
+                with patch('mutagen.mp3.MP3', return_value=SimpleNamespace(info=SimpleNamespace(length=80))), \
+                     patch('sync_batch_align.vocal_times', return_value=(source, order, times, [0, 1])) as acoustic:
+                    review_recordings((song, str(cache), 'models', 2, 'align-tracks', True))
+                    if stale:
+                        acoustic.assert_not_called()
+                    else:
+                        self.assertEqual(acoustic.call_args.args[0]['reference'], 'base.mp3')
+                result = json.loads(candidate_path.read_text())
+                self.assertEqual(result['tracks'][1]['reviewed'], expected)
+                self.assertEqual(result['cues'], candidate['cues'])
+                if expected:
+                    self.assertEqual([cue['at'] for cue in result['tracks'][1]['cues']], [7, 27])
+                    saved = json.loads(evidence_path.read_text())
+                    self.assertEqual(saved['recordingAcoustics']['base.mp3']['referenceTrack'], 'base.mp3')
+                    self.assertEqual(saved['trackExceptions'], {})
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_window_checkpoint_resumes_completed_chunks_without_duplicate_alignment(self):

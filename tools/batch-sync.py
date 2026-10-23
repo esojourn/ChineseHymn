@@ -239,7 +239,7 @@ def recognize_image(job):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--stage', choices=['inventory', 'ocr', 'transcribe', 'align', 'score', 'publish', 'report'], required=True)
+    parser.add_argument('--stage', choices=['inventory', 'ocr', 'transcribe', 'align', 'align-tracks', 'score', 'publish', 'report'], required=True)
     parser.add_argument('--cache', type=Path, required=True)
     parser.add_argument('--model-dir', default='/tmp/chinese-hymn-models')
     parser.add_argument('--model', default='small')
@@ -273,15 +273,18 @@ def main():
     if args.stage == 'align':
         selected = [song for song in selected if song['lyricsAvailable']]
     selected = [song for song in selected if song['type'] == 'image'] if args.stage == 'ocr' else [song for song in selected if song['reference']]
-    if args.stage in ('align', 'score'):
-        from sync_batch_align import generate
-        worker = generate
+    if args.stage in ('align', 'align-tracks', 'score'):
+        from sync_batch_align import generate, review_recordings
+        worker = review_recordings if args.stage == 'align-tracks' else generate
+        if args.stage == 'align-tracks':
+            selected = [song for song in selected if song['type'] == 'text' and song['lyricsAvailable'] and
+                        (args.cache / 'ready' / (song['source'] + '.json')).exists()]
         if args.stage == 'score':
             selected = [song for song in selected if song['type'] == 'image']
     else:
         worker = recognize_image if args.stage == 'ocr' else transcribe
     jobs = [(song, str(args.cache), args.threads, args.retry) if args.stage == 'ocr' else
-            (song, str(args.cache), args.model_dir, args.threads, args.stage, args.retry) if args.stage in ('align', 'score') else
+            (song, str(args.cache), args.model_dir, args.threads, args.stage, args.retry) if args.stage in ('align', 'align-tracks', 'score') else
             (song, str(args.cache), args.model_dir, args.model, args.threads) for song in selected]
     with ProcessPoolExecutor(max_workers=args.workers) as pool:
         tasks = {pool.submit(worker, job): job[0] for job in jobs}

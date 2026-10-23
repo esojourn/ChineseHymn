@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "02-492",
+  "status": "reviewed",
+  "source": {
+    "file": "02-492求主今天引导管理.txt",
+    "sha256": "8314aac6600cdb8f638e59331f5dc9f1bc9279fc121970ee32828658c79a4ff5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-492求主今天引导管理.mp3",
+      "sha256": "87d2928ce6cf70fac48efb00f77d24b2767e618ab6422be722b2608cf5fdee98",
+      "duration": 113.97224489795919,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    }
+  },
+  "cues": [
+    {
+      "at": 5.35,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 26.7,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.05,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.35,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 90.7,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我灵速醒，爱惜光阴， 竭力尽我一天责任， 驱除惰性，欢欣奋起， 敬虔晨祭向主献陈。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "每句言语，都要真诚， 良心要像午日明净， 当知上主洞察万事， 主目看透隐秘心灵。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我心速醒，奋发精神， 竭力工作尽我本分， 效法天军整日歌唱， 不停赞美永恒之君。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我今向主重新许愿， 求驱我罪，如露消散， 时常鉴察心思意念， 使我充满上主恩典。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "求主今天引导管理， 一切言语、行为心思， 愿我才干精神智能， 为主荣耀尽心竭力。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-492求主今天引导管理.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

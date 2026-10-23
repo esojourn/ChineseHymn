@@ -1,0 +1,332 @@
+{
+  "songId": "02-492",
+  "source": "02-492求主今天引导管理.txt",
+  "sourceHash": "8314aac6600cdb8f638e59331f5dc9f1bc9279fc121970ee32828658c79a4ff5",
+  "trackHashes": [
+    {
+      "file": "02-492求主今天引导管理.mp3",
+      "sha256": "87d2928ce6cf70fac48efb00f77d24b2767e618ab6422be722b2608cf5fdee98"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "8314aac6600cdb8f638e59331f5dc9f1bc9279fc121970ee32828658c79a4ff5",
+      "file": "hymnary589.mid",
+      "sha256": "5fa43c719aa6b25e86a0645a04161b3f9200087ee431c0da743f4b099adbdbf9",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary589.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary589.htm",
+      "verseCount": 5,
+      "referenceDiscovery": {
+        "songId": "02-492",
+        "source": "02-492求主今天引导管理.txt",
+        "sourceHash": "8314aac6600cdb8f638e59331f5dc9f1bc9279fc121970ee32828658c79a4ff5",
+        "audio": "02-492求主今天引导管理.mp3",
+        "audioHash": "87d2928ce6cf70fac48efb00f77d24b2767e618ab6422be722b2608cf5fdee98",
+        "diagnosticOnly": true,
+        "templateSignature": "fb60bfea5318b6fd6729f8ba99c83a7809a3b49ee70b8af1305c8ee77f075645",
+        "music": {
+          "period": 21.3,
+          "similarity": 0.9664250612258911,
+          "initialOnsetEstimate": 5.796,
+          "shifts": [
+            0.0,
+            21.3,
+            42.7,
+            64.0,
+            85.3
+          ]
+        },
+        "matches": [
+          {
+            "file": "hymnary589.mid",
+            "similarity": 0.70669,
+            "key": 7,
+            "cyclicPhase": 508
+          },
+          {
+            "file": "hymnary571.mid",
+            "similarity": 0.46478,
+            "key": 6,
+            "cyclicPhase": 505
+          },
+          {
+            "file": "hymnary262.mid",
+            "similarity": 0.4578,
+            "key": 4,
+            "cyclicPhase": 150
+          },
+          {
+            "file": "hymnary549.mid",
+            "similarity": 0.45058,
+            "key": 2,
+            "cyclicPhase": 3
+          },
+          {
+            "file": "hymnary069.mid",
+            "similarity": 0.44322,
+            "key": 11,
+            "cyclicPhase": 378
+          }
+        ]
+      },
+      "formReview": "实际录音的循环和声检索提出同曲候选，检索相似度不作为发布时间轴。每段正文均为单个不超过四行的阅读区域，只使用完整乐段首音定位；同曲填词或译词不同不作为逐字识别。发布须在每个实际段落独立通过更严格的和声代价0.25、旋律代价0.20、调性区分、起点0.5秒、完整乐段跨度与反复相位检查；额外完整同曲乐段必须另核对顺序。参考与源素材、录音哈希固定，未通过任何一项均继续待校准。"
+    },
+    "maximumCosts": {
+      "harmony": 0.25,
+      "melody": 0.2
+    },
+    "referencePeriod": 17.8636185,
+    "music": {
+      "period": 21.3,
+      "similarity": 0.9664250612258911,
+      "initialOnsetEstimate": 5.796,
+      "shifts": [
+        0.0,
+        21.3,
+        42.7,
+        64.0,
+        85.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2186933526410743,
+            "key": 7,
+            "at": 5.9,
+            "span": 21.5,
+            "starts": [
+              5.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.626842158501137,
+            "key": 2,
+            "at": 5.9,
+            "span": 13.3,
+            "starts": [
+              5.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15946940748904231,
+            "key": 7,
+            "starts": [
+              5.300000190734863
+            ],
+            "span": 21.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4338777568978323,
+            "key": 2,
+            "starts": [
+              5.199999809265137
+            ],
+            "span": 18.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2195968986117224,
+            "key": 7,
+            "at": 27.3,
+            "span": 21.5,
+            "starts": [
+              26.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6206089789878595,
+            "key": 2,
+            "at": 25.8,
+            "span": 15.0,
+            "starts": [
+              25.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1581872931108788,
+            "key": 7,
+            "starts": [
+              26.600000381469727
+            ],
+            "span": 21.69999885559082
+          },
+          "runnerUp": {
+            "cost": 0.4347379442671655,
+            "key": 2,
+            "starts": [
+              26.5
+            ],
+            "span": 18.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2217246758546068,
+            "key": 7,
+            "at": 48.6,
+            "span": 21.5,
+            "starts": [
+              48.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6214929141908744,
+            "key": 2,
+            "at": 47.1,
+            "span": 14.9,
+            "starts": [
+              46.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15822167911439994,
+            "key": 7,
+            "starts": [
+              48.0
+            ],
+            "span": 21.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.43774600320019075,
+            "key": 2,
+            "starts": [
+              47.20000076293945
+            ],
+            "span": 19.10000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.21607439282914281,
+            "key": 7,
+            "at": 69.9,
+            "span": 21.5,
+            "starts": [
+              69.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6192519496863996,
+            "key": 2,
+            "at": 68.1,
+            "span": 15.0,
+            "starts": [
+              68.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15962656227075997,
+            "key": 7,
+            "starts": [
+              69.30000305175781
+            ],
+            "span": 21.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4356188348761187,
+            "key": 2,
+            "starts": [
+              69.19999694824219
+            ],
+            "span": 18.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.21696819609879328,
+            "key": 7,
+            "at": 91.3,
+            "span": 21.5,
+            "starts": [
+              90.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6205316104799369,
+            "key": 2,
+            "at": 89.8,
+            "span": 15.0,
+            "starts": [
+              89.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15875308614381603,
+            "key": 7,
+            "starts": [
+              90.5999984741211
+            ],
+            "span": 21.70000457763672
+          },
+          "runnerUp": {
+            "cost": 0.4360917498807952,
+            "key": 2,
+            "starts": [
+              90.5
+            ],
+            "span": 18.400001525878906
+          }
+        }
+      }
+    ],
+    "trailingCycle": {
+      "checked": false,
+      "reason": "没有额外完整乐段的音频范围"
+    },
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我灵速醒，爱惜光阴， 竭力尽我一天责任， 驱除惰性，欢欣奋起， 敬虔晨祭向主献陈。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "每句言语，都要真诚， 良心要像午日明净， 当知上主洞察万事， 主目看透隐秘心灵。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "我心速醒，奋发精神， 竭力工作尽我本分， 效法天军整日歌唱， 不停赞美永恒之君。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我今向主重新许愿， 求驱我罪，如露消散， 时常鉴察心思意念， 使我充满上主恩典。",
+      "label": "第4段"
+    },
+    {
+      "region": "r5",
+      "text": "求主今天引导管理， 一切言语、行为心思， 愿我才干精神智能， 为主荣耀尽心竭力。",
+      "label": "第5段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 5,
+  "elapsedSeconds": 0.117
+}

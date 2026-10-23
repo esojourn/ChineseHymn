@@ -1,0 +1,285 @@
+{
+  "songId": "02-498",
+  "source": "02-498我灵之光.txt",
+  "sourceHash": "ff99f31aef82fbaab7e203596d16425b4c1f4c5313ebd8201f34ad0d9d723736",
+  "trackHashes": [
+    {
+      "file": "02-498我灵之光.mp3",
+      "sha256": "7021f66db54a50bec3e343c4ea750809e830b35d74a52ef2f5b70e7b7916f177"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "ff99f31aef82fbaab7e203596d16425b4c1f4c5313ebd8201f34ad0d9d723736",
+      "file": "hymnary591.mid",
+      "sha256": "8c13ed01cc8c11a21ba0df89ac3038caf323f0a69309acf81b898e30fb37f02e",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary591.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary591.htm",
+      "verseCount": 4,
+      "referenceDiscovery": {
+        "songId": "02-498",
+        "source": "02-498我灵之光.txt",
+        "sourceHash": "ff99f31aef82fbaab7e203596d16425b4c1f4c5313ebd8201f34ad0d9d723736",
+        "audio": "02-498我灵之光.mp3",
+        "audioHash": "7021f66db54a50bec3e343c4ea750809e830b35d74a52ef2f5b70e7b7916f177",
+        "diagnosticOnly": true,
+        "templateSignature": "fb60bfea5318b6fd6729f8ba99c83a7809a3b49ee70b8af1305c8ee77f075645",
+        "music": {
+          "period": 29.7,
+          "similarity": 0.9761006832122803,
+          "initialOnsetEstimate": 10.724,
+          "shifts": [
+            0.0,
+            29.7,
+            59.4,
+            89.1
+          ]
+        },
+        "matches": [
+          {
+            "file": "hymnary591.mid",
+            "similarity": 0.81227,
+            "key": 7,
+            "cyclicPhase": 460
+          },
+          {
+            "file": "hymnary333.mid",
+            "similarity": 0.59514,
+            "key": 9,
+            "cyclicPhase": 101
+          },
+          {
+            "file": "hymnary325.mid",
+            "similarity": 0.59297,
+            "key": 4,
+            "cyclicPhase": 458
+          },
+          {
+            "file": "hymnary035.mid",
+            "similarity": 0.59218,
+            "key": 5,
+            "cyclicPhase": 460
+          },
+          {
+            "file": "hymnary069.mid",
+            "similarity": 0.58944,
+            "key": 9,
+            "cyclicPhase": 443
+          }
+        ]
+      },
+      "formReview": "实际录音的循环和声检索提出同曲候选，检索相似度不作为发布时间轴。每段正文均为单个不超过四行的阅读区域，只使用完整乐段首音定位；同曲填词或译词不同不作为逐字识别。发布须在每个实际段落独立通过更严格的和声代价0.25、旋律代价0.20、调性区分、起点0.5秒、完整乐段跨度与反复相位检查；额外完整同曲乐段必须另核对顺序。参考与源素材、录音哈希固定，未通过任何一项均继续待校准。"
+    },
+    "maximumCosts": {
+      "harmony": 0.25,
+      "melody": 0.2
+    },
+    "referencePeriod": 20.2068915,
+    "music": {
+      "period": 29.7,
+      "similarity": 0.9761006832122803,
+      "initialOnsetEstimate": 10.724,
+      "shifts": [
+        0.0,
+        29.7,
+        59.4,
+        89.1
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14078858243897308,
+            "key": 7,
+            "at": 8.1,
+            "span": 30.0,
+            "starts": [
+              7.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5583302918507996,
+            "key": 0,
+            "at": 30.3,
+            "span": 19.7,
+            "starts": [
+              29.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17213188197074916,
+            "key": 7,
+            "starts": [
+              7.5
+            ],
+            "span": 30.0
+          },
+          "runnerUp": {
+            "cost": 0.45191102718263365,
+            "key": 2,
+            "starts": [
+              26.0
+            ],
+            "span": 25.799999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14049716268725668,
+            "key": 7,
+            "at": 37.8,
+            "span": 30.0,
+            "starts": [
+              37.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5627292928470907,
+            "key": 0,
+            "at": 59.7,
+            "span": 19.7,
+            "starts": [
+              59.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1715128349535393,
+            "key": 7,
+            "starts": [
+              37.20000076293945
+            ],
+            "span": 29.999996185302734
+          },
+          "runnerUp": {
+            "cost": 0.45098876953125,
+            "key": 2,
+            "starts": [
+              55.599998474121094
+            ],
+            "span": 25.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14069204619436554,
+            "key": 7,
+            "at": 67.5,
+            "span": 30.0,
+            "starts": [
+              66.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5577392064361059,
+            "key": 0,
+            "at": 89.7,
+            "span": 19.7,
+            "starts": [
+              89.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17264597985880945,
+            "key": 7,
+            "starts": [
+              66.9000015258789
+            ],
+            "span": 30.0
+          },
+          "runnerUp": {
+            "cost": 0.44969896515611846,
+            "key": 2,
+            "starts": [
+              85.30000305175781
+            ],
+            "span": 25.899993896484375
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.14591042361275516,
+            "key": 7,
+            "at": 97.2,
+            "span": 29.5,
+            "starts": [
+              96.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5657956929319234,
+            "key": 0,
+            "at": 90.1,
+            "span": 19.0,
+            "starts": [
+              89.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1741039520160919,
+            "key": 7,
+            "starts": [
+              96.5999984741211
+            ],
+            "span": 30.0
+          },
+          "runnerUp": {
+            "cost": 0.44969896515611846,
+            "key": 2,
+            "starts": [
+              85.30000305175781
+            ],
+            "span": 25.899993896484375
+          }
+        }
+      }
+    ],
+    "trailingCycle": {
+      "checked": false,
+      "reason": "没有额外完整乐段的音频范围"
+    },
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "亲爱救主，我灵之光， 有主在旁，黑夜亦亮； 莫容世务如云遮掩， 使我时刻能见主面。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "从朝到暮求主同住， 若没有主，便无生趣； 求主夜间也常在此， 若没有主，我便畏死。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "由主丰盛恩典之库， 救助贫穷，安慰孤独； 更求抚慰忧闷之人， 如同婴孩酣睡安稳。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "清早醒来求主赐福， 助我在世力行正路； 求主领我直到天庭， 在主爱中永享安宁。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.137
+}

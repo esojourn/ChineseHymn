@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-452",
+  "status": "reviewed",
+  "source": {
+    "file": "02-452更深认识耶穌.txt",
+    "sha256": "90c60c86d7cd5055a3122739ae6e39e695f53bc5ca9bf8ca05dfd34196ae2c9e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-452更深认识耶穌.mp3",
+      "sha256": "07020aa4da9076869eb0354e4917981733d66509723150b9194449c9141b69bd",
+      "duration": 125.64897959183673,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 7.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.35,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.45,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.55,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我愿更深认识耶稣， 深愿更多显出主恩， 更加明白救恩完美， 体念主爱为我受死。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我愿更多效法耶稣， 救主旨意更多领悟； 恳求圣灵作我导师， 教我学习基督真理。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我愿更深认识主话， 听主训诲，与主相交， 每字每句听主声音， 主言信实，铭刻在心。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我愿更深认识耶稣， 祂的尊贵、荣耀、权能； 深愿救主国度扩张， 专心盼望救主再来。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-452更深认识耶穌.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

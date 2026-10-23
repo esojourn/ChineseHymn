@@ -2226,5 +2226,485 @@
       ]
     },
     "formReview": "《你孤单么》采用 Precious Promise 同曲填词，不将参考诗歌的歌词当作本曲原文。MusicXML第1至10小节为主歌四句，第11小节 I will 起为后半四句，分别对应正文两个阅读区域。完整76个主旋律起音与固定MIDI逐音完全一致，两个阅读区域起点均唯一；各实际演奏段落仍须通过和声、旋律、起点、调性及反复相位检查。"
+  },
+  "03-009": {
+    "targetSha256": "c3aca19dfe24aecf5068729ff7f260017c6357323ea492a3459335bdaa0e2f8e",
+    "file": "hymnary377.mid",
+    "sha256": "f6c75ad8296a9b6073229595bdc37de5e2850632a780b19747bff640e0cc6e4e",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary377.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary377.htm",
+    "verseCount": 3,
+    "firstVerseTrigramOverlap": 1.0,
+    "formReview": "正文与公开目录第377首《愿主的旨意成就》逐段核对，为同一歌词；每段四行，恰为一个阅读区域。参考MIDI只提供完整旋律与和声模板，每个实际演奏段落仍须双重定位通过，不能从时长平均分段。"
+  },
+  "04-779": {
+    "targetSha256": "e2d5e0cc2d2bb0f873d8d5edbe90d36f8bd0c0aaf17b68fb8690aa4f2c86cfa4",
+    "file": "hymnary554.mid",
+    "sha256": "57c2827a1fe015733b04cef594bc995def3eefa716739b8f57065efd4f8aa3ae",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary554.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary554.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Must_Tell_Jesus/I_Must_Tell_Jesus.xml",
+    "scoreReferenceSha256": "3685e3f71458490465f1c53cbee95a2dbacd89f9844bf993a33eb8ade50719e6",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我一切苦况全告诉",
+        "必告诉耶稣全告诉"
+      ],
+      [
+        "我一切忧愁全告诉",
+        "必告诉耶稣全告诉"
+      ],
+      [
+        "受诱惑试探更需要",
+        "必告诉耶稣全告诉"
+      ],
+      [
+        "世界满罪污常因我",
+        "必告诉耶稣全告诉"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          5,
+          7,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          3,
+          3,
+          3,
+          3,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 76,
+      "midiNoteCount": 76,
+      "editCost": 0,
+      "runnerUpCost": 55,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 38,
+          "possibleMidiNoteIndices": [
+            38
+          ],
+          "at": 18.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        18.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        38
+      ]
+    },
+    "formReview": "I Must Tell Jesus，前四行对应主歌第1至10小节，第11小节独立副歌 I must tell Jesus 起对应“必告诉耶稣”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "03-036": {
+    "targetSha256": "0d57251633bac575056ed23287012fdc4e0a2ea731dbca2d58aaac3b009ddc79",
+    "file": "hymnary086.mid",
+    "sha256": "689c870678485cf669c4564d94100c617529b46063bb06ee9de4b9a964207d7e",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary086.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary086.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/N/Nothing_but_the_Blood/Nothing_but_the_Blood.xml",
+    "scoreReferenceSha256": "8b3eca1dfd20de5794521740137f3e0d243c7854b017a4ce509887b9203f1d6e",
+    "verseCount": 6,
+    "regionOpenings": [
+      [
+        "何能使我脱罪担只",
+        "副歌主在十架流血"
+      ],
+      [
+        "何能救赎我罪人只",
+        "副歌主在十架流血"
+      ],
+      [
+        "何能使我出黑暗只",
+        "副歌主在十架流血"
+      ],
+      [
+        "何能救我免地狱只",
+        "副歌主在十架流血"
+      ],
+      [
+        "何能使我得称义只",
+        "副歌主在十架流血"
+      ],
+      [
+        "何能使我常得胜只",
+        "副歌主在十架流血"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          5,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 30,
+        "pitches": [
+          0,
+          9,
+          7,
+          9,
+          0
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 57,
+      "midiNoteCount": 57,
+      "editCost": 0,
+      "runnerUpCost": 42,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 30,
+          "possibleMidiNoteIndices": [
+            30
+          ],
+          "at": 16.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        16.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        30
+      ]
+    },
+    "formReview": "Nothing but the Blood，主歌第1至8小节，第9小节副歌 Oh 起对应“副歌：主在十架流血”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "04-509": {
+    "targetSha256": "11eadb7f75ec4394d5376b702f7aeaf6a5e6dd04132aa386281a34056f765373",
+    "file": "hymnary374.mid",
+    "sha256": "746528b5f42e6922a818dae23b0929d34c087540a1d54324852e57b012d28ffb",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary374.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary374.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Sweet_Will_of_God/Sweet_Will_of_God.xml",
+    "scoreReferenceSha256": "898fa3c03059016db59235a3e34225ba399959be4ac1ac680a7ccee02670d240",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "顽梗我心已终于屈",
+        "愿神美旨紧紧环抱"
+      ],
+      [
+        "久困罪愆厌倦而思",
+        "愿神美旨紧紧环抱"
+      ],
+      [
+        "得胜的主你宝贝旨",
+        "愿神美旨紧紧环抱"
+      ],
+      [
+        "禁闭于你与你永相",
+        "愿神美旨紧紧环抱"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 40,
+        "pitches": [
+          5,
+          5,
+          7,
+          5,
+          7
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 86,
+      "midiNoteCount": 87,
+      "editCost": 2,
+      "runnerUpCost": 62,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 39,
+          "possibleMidiNoteIndices": [
+            40
+          ],
+          "at": 19.5
+        }
+      ],
+      "offsets": [
+        0.0,
+        19.5
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        39
+      ]
+    },
+    "formReview": "Sweet Will of God，主歌第1至10小节，第11小节副歌 Sweet 起对应“愿神美旨紧紧环抱我”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "02-381": {
+    "targetSha256": "c26b1342c0032392ca99bf5492395315ba3555ea4cf79482f3ce5f8d37f84d43",
+    "file": "hymnary661.mid",
+    "sha256": "fe387d27c73d45e46a2c513b22f487caf036248eb0aaf9f23c829b847debbc54",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary661.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary661.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/O/Onward_Christian_Soldiers/Onward_Christian_Soldiers.xml",
+    "scoreReferenceSha256": "cbda1d37eb12217d59bba3210346088210258afbb03f96ded594d812ab266b19",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "基督精兵前进齐向"
+      ],
+      [
+        "见主得胜旗号撒旦"
+      ],
+      [
+        "基督教会前进浩荡"
+      ],
+      [
+        "蒙恩圣徒前进欢欣"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 74,
+      "midiNoteCount": 74,
+      "editCost": 0,
+      "runnerUpCost": 57,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "Onward, Christian Soldiers，译文每段三行，覆盖完整的主歌与副歌，属于一个阅读区域；参考第661首为同曲不同译文。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "04-369": {
+    "targetSha256": "670dad50cd5f9323032bc495cd068509b7888dac1fe388332aedd8910087ee37",
+    "file": "hymnary031.mid",
+    "sha256": "38f3845298f405fe94e7ef53a4d52f72b6cb1b75ee46babd6333f62892c2ed78",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary031.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary031.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/Amazing_Grace/Amazing_Grace.xml",
+    "scoreReferenceSha256": "4cd985b4dd4993f317269509af06b71ad082c1643dd0f191433fcf0a040459bf",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "奇异恩典何等甘甜"
+      ],
+      [
+        "如此恩典使我敬畏"
+      ],
+      [
+        "许多危险试探网罗"
+      ],
+      [
+        "将来禧年圣徒欢聚"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          7,
+          11,
+          7,
+          11
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 35,
+      "midiNoteCount": 35,
+      "editCost": 0,
+      "runnerUpCost": 29,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "Amazing Grace / New Britain，译文每段四行为一个完整阅读区域。参考第31首为同曲填词，不能将其不同歌词当作本曲原文；完整公开原谱与参考35个旋律起音完全一致。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "04-421": {
+    "targetSha256": "f469fb5e1aeaa0943d77c4da9a004b13b845f6686c22b5fc4bbdc1e460fa08b0",
+    "file": "hymnary630.mid",
+    "sha256": "b90b97a78bfd5c83d788c9b68f37a8458bf30366752b8db2d28a4975f9bd19a2",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary630.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary630.htm",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/L/Lord_Im_Coming_Home/Lord_Im_Coming_Home.xml",
+    "scoreReferenceSha256": "538d5b92d326243c25eb1c1ea97073d1e3af0d04639eea867de620f8ffaf98b5",
+    "verseCount": 5,
+    "regionOpenings": [
+      [
+        "我已漂流远离天父"
+      ],
+      [
+        "往昔宝贵光阴枉费"
+      ],
+      [
+        "犯罪浪荡我深厌倦"
+      ],
+      [
+        "我心忧苦我灵凄怆"
+      ],
+      [
+        "既知救主受死为我"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          0,
+          0,
+          8,
+          8
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 52,
+      "midiNoteCount": 53,
+      "editCost": 1,
+      "runnerUpCost": 43,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        }
+      ],
+      "offsets": [
+        0.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0
+      ]
+    },
+    "formReview": "Lord, I’m Coming Home，译文每段四行，覆盖主歌与副歌，属于一个完整阅读区域；公开参考第630首为同曲另一译文。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
   }
 }

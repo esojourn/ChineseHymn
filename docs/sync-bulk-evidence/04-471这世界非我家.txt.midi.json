@@ -1,0 +1,306 @@
+{
+  "songId": "04-471",
+  "source": "04-471这世界非我家.txt",
+  "sourceHash": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+  "trackHashes": [
+    {
+      "file": "04-471这世界非我家.mp3",
+      "sha256": "64b53157af9474f0b2375d962a0df891fa6b5c95e8b0ce7aeeafc8b84324cbda"
+    },
+    {
+      "file": "04-471这世界非我家-领唱.mp3",
+      "sha256": "57e941e221cfd3e926b73b6b42db3d580483066ff57ba9d8b765e4290d816375"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+      "file": "hymnary527.mid",
+      "sha256": "25548ba3c30024ccd81f05a742c3e7eb2217167718ef051ae4d9d60c36ff85af",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary527.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary527.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/T/This_World_Is_Not_My_Home/This_World_Is_Not_My_Home.xml",
+      "scoreReferenceSha256": "55518f2a9d47d6a2e040473ab8c7fbedfddbdcc17dff80be72be7f30c00c7a24",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "这世界非我家我停",
+          "主啊你知我无良友"
+        ],
+        [
+          "天上万众圣徒望我",
+          "主啊你知我无良友"
+        ],
+        [
+          "我将永远居住天上",
+          "主啊你知我无良友"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            11,
+            11,
+            11,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 48,
+          "pitches": [
+            2,
+            2,
+            11,
+            7,
+            11
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 94,
+        "midiNoteCount": 94,
+        "editCost": 0,
+        "runnerUpCost": 71,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 48,
+            "possibleMidiNoteIndices": [
+              48
+            ],
+            "at": 19.2
+          }
+        ],
+        "offsets": [
+          0.0,
+          19.2
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true
+      },
+      "performedScoreMeasures": [
+        "1-15",
+        "6-10"
+      ],
+      "formReview": "公开MusicXML明确标记：第6小节Segno，第10小节Fine，第11小节Refrain，第15小节D.S. al Fine。实际完整乐段须先走1至15小节，再回6至10小节，70个直列主旋律音加回段24音，完整94音与固定MIDI核对。主歌正文前四行对应第1至10小节，副歌阅读区域从第11小节O Lord起，包含其后回唱的主歌末两句，不能将未展开的70音误当作完整乐段。各段两个阅读区域仍须原有独立和声、旋律、起点、调性及反复相位核对。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 38.3,
+    "music": {
+      "period": 42.7,
+      "similarity": 0.9761976599693298,
+      "initialOnsetEstimate": 7.884,
+      "shifts": [
+        0.0,
+        42.7,
+        85.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.12152498053164337,
+            "key": 7,
+            "at": 11.5,
+            "span": 42.5,
+            "starts": [
+              11.1,
+              32.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6393111718063891,
+            "key": 0,
+            "at": 14.6,
+            "span": 24.5,
+            "starts": [
+              14.4,
+              27.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14718252713563013,
+            "key": 7,
+            "starts": [
+              11.0,
+              32.400001525878906
+            ],
+            "span": 42.5
+          },
+          "runnerUp": {
+            "cost": 0.450440775315153,
+            "key": 2,
+            "starts": [
+              16.600000381469727,
+              37.099998474121094
+            ],
+            "span": 42.30000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11874539734887295,
+            "key": 7,
+            "at": 54.2,
+            "span": 42.4,
+            "starts": [
+              53.8,
+              75.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6381582219930109,
+            "key": 0,
+            "at": 57.5,
+            "span": 24.4,
+            "starts": [
+              57.1,
+              70.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14576844476704295,
+            "key": 7,
+            "starts": [
+              53.70000076293945,
+              75.0999984741211
+            ],
+            "span": 42.39999771118164
+          },
+          "runnerUp": {
+            "cost": 0.45159115221796325,
+            "key": 2,
+            "starts": [
+              59.29999923706055,
+              79.4000015258789
+            ],
+            "span": 42.10000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11888047515368852,
+            "key": 7,
+            "at": 96.8,
+            "span": 42.5,
+            "starts": [
+              96.4,
+              117.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.637482975908409,
+            "key": 0,
+            "at": 100.1,
+            "span": 24.5,
+            "starts": [
+              99.7,
+              112.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1476961086728813,
+            "key": 7,
+            "starts": [
+              96.30000305175781,
+              117.80000305175781
+            ],
+            "span": 42.5
+          },
+          "runnerUp": {
+            "cost": 0.4488497160078491,
+            "key": 2,
+            "starts": [
+              94.30000305175781,
+              112.5999984741211
+            ],
+            "span": 35.30000305175781
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.2
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "这世界非我家，我停留如客旅， 我积财宝在天，时刻仰望我主， 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "天上万众圣徒，望我快来相见， 我将前往欢聚，主已赦我罪愆， 我虽轻弱贫苦，主大能手搀扶， 故我不再贪爱，这世界非我家。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "我将永远居住，天上荣美福地， 千万得赎圣徒，一同欢呼胜利， 他们赞美歌声，在天各方回应， 故我不再贪爱，这世界非我家。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "04-471这世界非我家.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8839033246040344,
+      "meanPathCost": 0.07998323440551758,
+      "cueWindowCosts": [
+        0.08964212238788605,
+        0.06419488042593002,
+        0.08356908708810806,
+        0.06529036909341812,
+        0.08483631163835526,
+        0.0639425665140152
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 1.138
+}

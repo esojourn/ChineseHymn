@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "04-471",
+  "status": "reviewed",
+  "source": {
+    "file": "04-471这世界非我家.txt",
+    "sha256": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-471这世界非我家.mp3",
+      "sha256": "64b53157af9474f0b2375d962a0df891fa6b5c95e8b0ce7aeeafc8b84324cbda",
+      "duration": 140.61714285714285,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.65,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.0,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.35,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 74.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 95.95,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 117.35,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-471这世界非我家-领唱.mp3",
+      "sha256": "57e941e221cfd3e926b73b6b42db3d580483066ff57ba9d8b765e4290d816375",
+      "duration": 139.36326530612246,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 11.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.75,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.1,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.35,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 117.75,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "这世界非我家，我停留如客旅， 我积财宝在天，时刻仰望我主， 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "天上万众圣徒，望我快来相见， 我将前往欢聚，主已赦我罪愆， 我虽轻弱贫苦，主大能手搀扶， 故我不再贪爱，这世界非我家。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我将永远居住，天上荣美福地， 千万得赎圣徒，一同欢呼胜利， 他们赞美歌声，在天各方回应， 故我不再贪爱，这世界非我家。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

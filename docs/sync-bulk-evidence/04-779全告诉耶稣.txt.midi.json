@@ -1,0 +1,345 @@
+{
+  "songId": "04-779",
+  "source": "04-779全告诉耶稣.txt",
+  "sourceHash": "e2d5e0cc2d2bb0f873d8d5edbe90d36f8bd0c0aaf17b68fb8690aa4f2c86cfa4",
+  "trackHashes": [
+    {
+      "file": "04-779全告诉耶稣.mp3",
+      "sha256": "fed1be246037b30ce3cba06e79c857170379a23864ee463b46b6966747825fcc"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "e2d5e0cc2d2bb0f873d8d5edbe90d36f8bd0c0aaf17b68fb8690aa4f2c86cfa4",
+      "file": "hymnary554.mid",
+      "sha256": "57c2827a1fe015733b04cef594bc995def3eefa716739b8f57065efd4f8aa3ae",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary554.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary554.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/I/I_Must_Tell_Jesus/I_Must_Tell_Jesus.xml",
+      "scoreReferenceSha256": "3685e3f71458490465f1c53cbee95a2dbacd89f9844bf993a33eb8ade50719e6",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "我一切苦况全告诉",
+          "必告诉耶稣全告诉"
+        ],
+        [
+          "我一切忧愁全告诉",
+          "必告诉耶稣全告诉"
+        ],
+        [
+          "受诱惑试探更需要",
+          "必告诉耶稣全告诉"
+        ],
+        [
+          "世界满罪污常因我",
+          "必告诉耶稣全告诉"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            5,
+            7,
+            10,
+            10
+          ]
+        },
+        {
+          "onsetIndex": 38,
+          "pitches": [
+            3,
+            3,
+            3,
+            3,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 76,
+        "midiNoteCount": 76,
+        "editCost": 0,
+        "runnerUpCost": 55,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 38,
+            "possibleMidiNoteIndices": [
+              38
+            ],
+            "at": 18.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          18.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          38
+        ]
+      },
+      "formReview": "I Must Tell Jesus，前四行对应主歌第1至10小节，第11小节独立副歌 I must tell Jesus 起对应“必告诉耶稣”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 36.666666666666664,
+    "music": {
+      "period": 43.2,
+      "similarity": 0.9997512102127075,
+      "initialOnsetEstimate": 9.444,
+      "shifts": [
+        0.0,
+        43.2,
+        86.4,
+        129.6
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11735336868851273,
+            "key": 7,
+            "at": 11.4,
+            "span": 43.8,
+            "starts": [
+              10.9,
+              32.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5879393683539497,
+            "key": 2,
+            "at": 40.4,
+            "span": 18.5,
+            "starts": [
+              39.9,
+              43.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2169454362657335,
+            "key": 7,
+            "starts": [
+              10.899999618530273,
+              32.29999923706055
+            ],
+            "span": 43.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.47024783381709345,
+            "key": 2,
+            "starts": [
+              8.199999809265137,
+              28.700000762939453
+            ],
+            "span": 42.70000076293945
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11761328026100441,
+            "key": 7,
+            "at": 54.6,
+            "span": 43.8,
+            "starts": [
+              54.1,
+              75.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5880890599003544,
+            "key": 2,
+            "at": 83.6,
+            "span": 18.5,
+            "starts": [
+              83.1,
+              86.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21709631107471608,
+            "key": 7,
+            "starts": [
+              54.099998474121094,
+              75.5
+            ],
+            "span": 43.70000457763672
+          },
+          "runnerUp": {
+            "cost": 0.4703524554217303,
+            "key": 2,
+            "starts": [
+              51.400001525878906,
+              71.9000015258789
+            ],
+            "span": 42.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11731964570504648,
+            "key": 7,
+            "at": 97.8,
+            "span": 43.8,
+            "starts": [
+              97.3,
+              118.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.588735439159252,
+            "key": 2,
+            "at": 126.8,
+            "span": 18.5,
+            "starts": [
+              126.3,
+              129.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2167644500732422,
+            "key": 7,
+            "starts": [
+              97.30000305175781,
+              118.69999694824219
+            ],
+            "span": 43.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.47043196360270184,
+            "key": 2,
+            "starts": [
+              94.5999984741211,
+              115.0999984741211
+            ],
+            "span": 42.70000457763672
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11482113379019278,
+            "key": 7,
+            "at": 141.0,
+            "span": 43.8,
+            "starts": [
+              140.5,
+              162.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6003528877540871,
+            "key": 2,
+            "at": 170.0,
+            "span": 7.7,
+            "starts": [
+              169.5,
+              170.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2186441774721499,
+            "key": 7,
+            "starts": [
+              140.5,
+              161.89999389648438
+            ],
+            "span": 43.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.470632447136773,
+            "key": 2,
+            "starts": [
+              137.8000030517578,
+              158.3000030517578
+            ],
+            "span": 42.69999694824219
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我一切苦况，全告诉耶稣， 我不能独自担此重负； 我在患难中，主怜悯眷顾， 他永远爱我体恤帮扶。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "我一切忧愁，全告诉耶稣， 他是我良友，仁慈照顾， 我向他祈求，他必定救助， 解去我忧伤消除愁苦。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "受诱惑试探，更需要救主， 助我决疑难，代肩重负， 必告诉耶稣，必告诉耶稣， 惟他分愁烦关怀垂顾。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "世界满罪污，常因我向罪， 我心灵脆弱，容易越轨， 必告诉耶稣，助我明是非， 胜过那罪世终身无愧。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.238
+}

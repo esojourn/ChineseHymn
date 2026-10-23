@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "04-421",
+  "status": "reviewed",
+  "source": {
+    "file": "04-421归家吧.txt",
+    "sha256": "f469fb5e1aeaa0943d77c4da9a004b13b845f6686c22b5fc4bbdc1e460fa08b0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-421归家吧.mp3",
+      "sha256": "5ba0a2bd489bc05331819eb9d731acecbf1b8a8075e72ea523da581e5aaa634c",
+      "duration": 193.98530612244897,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    }
+  },
+  "cues": [
+    {
+      "at": 9.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 45.75,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.35,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 118.95,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 155.45,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我已漂流，远离天父，现在要归家； 常年奔走罪恶道路，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "往昔宝贵光阴枉费，现在要归家； 我已懊悔，伤心流泪，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "犯罪浪荡，我深厌倦，现在要归家； 投靠主爱，相信主言，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我心忧苦，我灵凄怆，现在要归家； 启我盼望！加我力量，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "既知救主受死为我，现在要归家； 惟此是我希望靠托，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-421归家吧.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

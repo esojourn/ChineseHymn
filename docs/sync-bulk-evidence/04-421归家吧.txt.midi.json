@@ -1,0 +1,334 @@
+{
+  "songId": "04-421",
+  "source": "04-421归家吧.txt",
+  "sourceHash": "f469fb5e1aeaa0943d77c4da9a004b13b845f6686c22b5fc4bbdc1e460fa08b0",
+  "trackHashes": [
+    {
+      "file": "04-421归家吧.mp3",
+      "sha256": "5ba0a2bd489bc05331819eb9d731acecbf1b8a8075e72ea523da581e5aaa634c"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "f469fb5e1aeaa0943d77c4da9a004b13b845f6686c22b5fc4bbdc1e460fa08b0",
+      "file": "hymnary630.mid",
+      "sha256": "b90b97a78bfd5c83d788c9b68f37a8458bf30366752b8db2d28a4975f9bd19a2",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary630.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary630.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/L/Lord_Im_Coming_Home/Lord_Im_Coming_Home.xml",
+      "scoreReferenceSha256": "538d5b92d326243c25eb1c1ea97073d1e3af0d04639eea867de620f8ffaf98b5",
+      "verseCount": 5,
+      "regionOpenings": [
+        [
+          "我已漂流远离天父"
+        ],
+        [
+          "往昔宝贵光阴枉费"
+        ],
+        [
+          "犯罪浪荡我深厌倦"
+        ],
+        [
+          "我心忧苦我灵凄怆"
+        ],
+        [
+          "既知救主受死为我"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            0,
+            0,
+            8,
+            8
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 52,
+        "midiNoteCount": 53,
+        "editCost": 1,
+        "runnerUpCost": 43,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "Lord, I’m Coming Home，译文每段四行，覆盖主歌与副歌，属于一个完整阅读区域；公开参考第630首为同曲另一译文。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.416666666666664,
+    "music": {
+      "period": 36.6,
+      "similarity": 0.9816866517066956,
+      "initialOnsetEstimate": 8.072,
+      "shifts": [
+        0.0,
+        36.6,
+        73.1,
+        109.7,
+        146.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.12041652658598019,
+            "key": 10,
+            "at": 9.7,
+            "span": 36.9,
+            "starts": [
+              9.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5942968566561005,
+            "key": 3,
+            "at": 12.2,
+            "span": 20.5,
+            "starts": [
+              12.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11249061751235379,
+            "key": 10,
+            "starts": [
+              9.100000381469727
+            ],
+            "span": 36.5
+          },
+          "runnerUp": {
+            "cost": 0.39402958604155996,
+            "key": 5,
+            "starts": [
+              16.600000381469727
+            ],
+            "span": 35.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.12063313051651084,
+            "key": 10,
+            "at": 46.3,
+            "span": 36.8,
+            "starts": [
+              45.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5984725535241633,
+            "key": 3,
+            "at": 48.7,
+            "span": 20.4,
+            "starts": [
+              48.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1128470311399366,
+            "key": 10,
+            "starts": [
+              45.70000076293945
+            ],
+            "span": 36.499996185302734
+          },
+          "runnerUp": {
+            "cost": 0.39384397913198,
+            "key": 5,
+            "starts": [
+              53.099998474121094
+            ],
+            "span": 35.099998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11829143795159346,
+            "key": 10,
+            "at": 82.9,
+            "span": 36.8,
+            "starts": [
+              82.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5959530189389088,
+            "key": 3,
+            "at": 85.6,
+            "span": 20.5,
+            "starts": [
+              85.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11124580675135545,
+            "key": 10,
+            "starts": [
+              82.30000305175781
+            ],
+            "span": 36.399993896484375
+          },
+          "runnerUp": {
+            "cost": 0.3957002149905012,
+            "key": 5,
+            "starts": [
+              89.69999694824219
+            ],
+            "span": 35.100006103515625
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11876070825128607,
+            "key": 10,
+            "at": 119.5,
+            "span": 36.8,
+            "starts": [
+              119.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5935816947228271,
+            "key": 3,
+            "at": 121.9,
+            "span": 20.5,
+            "starts": [
+              121.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.11238288879394531,
+            "key": 10,
+            "starts": [
+              118.9000015258789
+            ],
+            "span": 36.400001525878906
+          },
+          "runnerUp": {
+            "cost": 0.3955781029873207,
+            "key": 5,
+            "starts": [
+              126.30000305175781
+            ],
+            "span": 35.09999084472656
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.11637196775342597,
+            "key": 10,
+            "at": 156.0,
+            "span": 36.9,
+            "starts": [
+              155.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5956887000245474,
+            "key": 3,
+            "at": 158.5,
+            "span": 20.4,
+            "starts": [
+              158.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10730371318879675,
+            "key": 10,
+            "starts": [
+              155.39999389648438
+            ],
+            "span": 37.0
+          },
+          "runnerUp": {
+            "cost": 0.4069560316742444,
+            "key": 5,
+            "starts": [
+              144.60000610351562
+            ],
+            "span": 31.099990844726562
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "我已漂流，远离天父，现在要归家； 常年奔走罪恶道路，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "往昔宝贵光阴枉费，现在要归家； 我已懊悔，伤心流泪，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "犯罪浪荡，我深厌倦，现在要归家； 投靠主爱，相信主言，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "我心忧苦，我灵凄怆，现在要归家； 启我盼望！加我力量，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+      "label": "第4段"
+    },
+    {
+      "region": "r5",
+      "text": "既知救主受死为我，现在要归家； 惟此是我希望靠托，主，我今归家。 今归家！今归家！决不在游荡！ 主已伸开慈爱双臂，我今要归家。",
+      "label": "第5段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 5,
+  "elapsedSeconds": 0.219
+}

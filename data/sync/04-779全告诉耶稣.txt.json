@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "04-779",
+  "status": "reviewed",
+  "source": {
+    "file": "04-779全告诉耶稣.txt",
+    "sha256": "e2d5e0cc2d2bb0f873d8d5edbe90d36f8bd0c0aaf17b68fb8690aa4f2c86cfa4",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-779全告诉耶稣.mp3",
+      "sha256": "fed1be246037b30ce3cba06e79c857170379a23864ee463b46b6966747825fcc",
+      "duration": 185.67836734693878,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 10.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.1,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.6,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.3,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 118.75,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 140.5,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.0,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我一切苦况，全告诉耶稣， 我不能独自担此重负； 我在患难中，主怜悯眷顾， 他永远爱我体恤帮扶。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我一切忧愁，全告诉耶稣， 他是我良友，仁慈照顾， 我向他祈求，他必定救助， 解去我忧伤消除愁苦。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "受诱惑试探，更需要救主， 助我决疑难，代肩重负， 必告诉耶稣，必告诉耶稣， 惟他分愁烦关怀垂顾。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "世界满罪污，常因我向罪， 我心灵脆弱，容易越轨， 必告诉耶稣，助我明是非， 胜过那罪世终身无愧。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "必告诉耶稣，全告诉耶稣， 尽将心中事向主倾吐。 必告诉耶稣，全告诉耶稣， 惟主知我心，安慰帮助。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-779全告诉耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

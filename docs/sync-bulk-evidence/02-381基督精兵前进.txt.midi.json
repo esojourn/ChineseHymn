@@ -1,0 +1,285 @@
+{
+  "songId": "02-381",
+  "source": "02-381基督精兵前进.txt",
+  "sourceHash": "c26b1342c0032392ca99bf5492395315ba3555ea4cf79482f3ce5f8d37f84d43",
+  "trackHashes": [
+    {
+      "file": "02-381基督精兵前进.mp3",
+      "sha256": "435f783285642979edc2423bb306a0213edd15476b4e8123b8692aaab79e076f"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "c26b1342c0032392ca99bf5492395315ba3555ea4cf79482f3ce5f8d37f84d43",
+      "file": "hymnary661.mid",
+      "sha256": "fe387d27c73d45e46a2c513b22f487caf036248eb0aaf9f23c829b847debbc54",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary661.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary661.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/O/Onward_Christian_Soldiers/Onward_Christian_Soldiers.xml",
+      "scoreReferenceSha256": "cbda1d37eb12217d59bba3210346088210258afbb03f96ded594d812ab266b19",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "基督精兵前进齐向"
+        ],
+        [
+          "见主得胜旗号撒旦"
+        ],
+        [
+          "基督教会前进浩荡"
+        ],
+        [
+          "蒙恩圣徒前进欢欣"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 74,
+        "midiNoteCount": 74,
+        "editCost": 0,
+        "runnerUpCost": 57,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          }
+        ],
+        "offsets": [
+          0.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0
+        ]
+      },
+      "formReview": "Onward, Christian Soldiers，译文每段三行，覆盖完整的主歌与副歌，属于一个阅读区域；参考第661首为同曲不同译文。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 47.875,
+    "music": {
+      "period": 50.1,
+      "similarity": 0.9911179542541504,
+      "initialOnsetEstimate": 6.3,
+      "shifts": [
+        0.0,
+        50.1,
+        100.2,
+        150.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16605470090093252,
+            "key": 6,
+            "at": 8.8,
+            "span": 49.8,
+            "starts": [
+              8.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5566696197448853,
+            "key": 11,
+            "at": 14.0,
+            "span": 25.5,
+            "starts": [
+              13.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10294894829481661,
+            "key": 6,
+            "starts": [
+              8.300000190734863
+            ],
+            "span": 49.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.39943876285514907,
+            "key": 1,
+            "starts": [
+              7.0
+            ],
+            "span": 39.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16471672438813778,
+            "key": 6,
+            "at": 58.9,
+            "span": 49.8,
+            "starts": [
+              58.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5544241107628493,
+            "key": 11,
+            "at": 64.1,
+            "span": 25.5,
+            "starts": [
+              63.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1017953183598623,
+            "key": 6,
+            "starts": [
+              58.400001525878906
+            ],
+            "span": 49.900001525878906
+          },
+          "runnerUp": {
+            "cost": 0.3989985422221962,
+            "key": 1,
+            "starts": [
+              57.099998474121094
+            ],
+            "span": 39.900001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.16366488824109593,
+            "key": 6,
+            "at": 109.0,
+            "span": 49.8,
+            "starts": [
+              108.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5552712933507984,
+            "key": 11,
+            "at": 114.2,
+            "span": 25.5,
+            "starts": [
+              113.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10114021834261165,
+            "key": 6,
+            "starts": [
+              108.5
+            ],
+            "span": 49.899993896484375
+          },
+          "runnerUp": {
+            "cost": 0.3991057192256113,
+            "key": 1,
+            "starts": [
+              107.19999694824219
+            ],
+            "span": 39.90000915527344
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.1640771039707694,
+            "key": 6,
+            "at": 159.0,
+            "span": 49.9,
+            "starts": [
+              158.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5590804475034307,
+            "key": 11,
+            "at": 164.2,
+            "span": 25.5,
+            "starts": [
+              163.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.10219360777955808,
+            "key": 6,
+            "starts": [
+              158.60000610351562
+            ],
+            "span": 49.899993896484375
+          },
+          "runnerUp": {
+            "cost": 0.39906152660499317,
+            "key": 1,
+            "starts": [
+              157.3000030517578
+            ],
+            "span": 39.80000305175781
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "基督精兵前进，齐向战场走，十架旌旗高举，引领在前头； 主基督是元帅，领我攻仇敌，齐看我主旗号，进入战阵地。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "见主得胜旗号，撒旦军逃避，基督精兵前进，胜利在前头； 地狱根基震动，只因欢呼声，主内弟兄高唱，向主献颂扬。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "基督教会前进，浩荡如大军，弟兄努力奔走，步先贤脚踪； 我们一心一意团结攻敌军，信仰盼望相同，爱心亦一致。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "蒙恩圣徒前进，欢欣齐前往，大家异口同声，凯歌高声唱； 荣耀尊贵颂赞，归基督我王，世人天使同唱，颂扬永无疆。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.643
+}

@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "04-509",
+  "status": "reviewed",
+  "source": {
+    "file": "04-509神旨美甜.txt",
+    "sha256": "11eadb7f75ec4394d5376b702f7aeaf6a5e6dd04132aa386281a34056f765373",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-509神旨美甜.mp3",
+      "sha256": "7bdd9ae55dc78028fed044735e4ecbb0df4078f51ce4173eee9ed64942fc6859",
+      "duration": 240.06525,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 16.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 39.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 72.05,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.35,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 149.55,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 182.55,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 204.7,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "顽梗我心已终于屈服， 今愿属主，惟愿属主！ 我心祷告我口今求呼： “愿主旨意于我无阻！”",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "久困罪愆厌倦而思， 归幽暗世路，烦闷凄凉， 忽见一光射入我心内， 哦你是我晨星、朝阳。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "得胜的主，你宝贝旨意， 绕我环我直到永久， 纷乱消失平安何满溢， 又如困鸟释放自由。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "禁闭于你与你永相依， 流荡脚踪不再游移； 无何能使我与你相离， 我要永住你美旨里。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-509神旨美甜.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

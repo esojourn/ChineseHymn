@@ -2,10 +2,10 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 244,
+    "published": 249,
     "existing": 8,
-    "pending": 99,
-    "needs-calibration": 41,
+    "pending": 95,
+    "needs-calibration": 40,
     "missing-audio": 2,
     "needs-track-alignment": 3,
     "missing-lyrics": 23
@@ -953,7 +953,7 @@
       "songId": "02-381",
       "source": "02-381基督精兵前进.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "02-381基督精兵前进.mp3"
       ]
@@ -1358,10 +1358,11 @@
       "songId": "03-009",
       "source": "03-009我对撒但总是说不.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "03-009我对撒但总是说不-领唱.mp3"
-      ]
+      ],
+      "reason": "未找到可靠的音乐重复：0.581"
     },
     {
       "songId": "03-010",
@@ -1575,7 +1576,7 @@
       "songId": "03-036",
       "source": "03-036只有宝血.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "03-036只有宝血.mp3",
         "03-036只有宝血-领唱.mp3"
@@ -1643,10 +1644,11 @@
       "songId": "04-369",
       "source": "04-369奇异恩典.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-369奇异恩典.mp3"
-      ]
+      ],
+      "reason": "参考谱边界在各段的音乐相位不一致"
     },
     {
       "songId": "04-379",
@@ -1705,11 +1707,10 @@
       "songId": "04-421",
       "source": "04-421归家吧.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-421归家吧.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
+      ]
     },
     {
       "songId": "04-459",
@@ -1768,11 +1769,10 @@
       "songId": "04-509",
       "source": "04-509神旨美甜.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-509神旨美甜.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
+      ]
     },
     {
       "songId": "04-554",
@@ -1871,11 +1871,10 @@
       "songId": "04-779",
       "source": "04-779全告诉耶稣.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-779全告诉耶稣.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
+      ]
     },
     {
       "songId": "04-798",

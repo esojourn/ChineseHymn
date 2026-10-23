@@ -1,0 +1,489 @@
+{
+  "songId": "03-036",
+  "source": "03-036只有宝血.txt",
+  "sourceHash": "0d57251633bac575056ed23287012fdc4e0a2ea731dbca2d58aaac3b009ddc79",
+  "trackHashes": [
+    {
+      "file": "03-036只有宝血.mp3",
+      "sha256": "d3dee045fcedae92ed630835881b59bf9dedf1a6183b1287b9f8f3496ca57e67"
+    },
+    {
+      "file": "03-036只有宝血-领唱.mp3",
+      "sha256": "188191429b42f8c80aaca88f77b85b574abaab75f9c33d5d8543c88b302a6b78"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "0d57251633bac575056ed23287012fdc4e0a2ea731dbca2d58aaac3b009ddc79",
+      "file": "hymnary086.mid",
+      "sha256": "689c870678485cf669c4564d94100c617529b46063bb06ee9de4b9a964207d7e",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary086.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary086.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/N/Nothing_but_the_Blood/Nothing_but_the_Blood.xml",
+      "scoreReferenceSha256": "8b3eca1dfd20de5794521740137f3e0d243c7854b017a4ce509887b9203f1d6e",
+      "verseCount": 6,
+      "regionOpenings": [
+        [
+          "何能使我脱罪担只",
+          "副歌主在十架流血"
+        ],
+        [
+          "何能救赎我罪人只",
+          "副歌主在十架流血"
+        ],
+        [
+          "何能使我出黑暗只",
+          "副歌主在十架流血"
+        ],
+        [
+          "何能救我免地狱只",
+          "副歌主在十架流血"
+        ],
+        [
+          "何能使我得称义只",
+          "副歌主在十架流血"
+        ],
+        [
+          "何能使我常得胜只",
+          "副歌主在十架流血"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            5,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 30,
+          "pitches": [
+            0,
+            9,
+            7,
+            9,
+            0
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 57,
+        "midiNoteCount": 57,
+        "editCost": 0,
+        "runnerUpCost": 42,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 30,
+            "possibleMidiNoteIndices": [
+              30
+            ],
+            "at": 16.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.0
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          30
+        ]
+      },
+      "formReview": "Nothing but the Blood，主歌第1至8小节，第9小节副歌 Oh 起对应“副歌：主在十架流血”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 32.875,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9744051098823547,
+      "initialOnsetEstimate": 3.828,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8,
+        115.2,
+        153.6,
+        192.0
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17644832531611124,
+            "key": 8,
+            "at": 5.7,
+            "span": 39.3,
+            "starts": [
+              5.2,
+              24.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5697502692540487,
+            "key": 3,
+            "at": 26.4,
+            "span": 8.5,
+            "starts": [
+              26.1,
+              26.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14242488145828247,
+            "key": 8,
+            "starts": [
+              5.099999904632568,
+              24.299999237060547
+            ],
+            "span": 39.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4191729227701823,
+            "key": 3,
+            "starts": [
+              5.099999904632568,
+              22.0
+            ],
+            "span": 33.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18226724863052368,
+            "key": 8,
+            "at": 44.1,
+            "span": 39.3,
+            "starts": [
+              43.6,
+              62.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5758821964263916,
+            "key": 3,
+            "at": 64.8,
+            "span": 8.5,
+            "starts": [
+              64.5,
+              64.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.140390415986379,
+            "key": 8,
+            "starts": [
+              43.5,
+              62.70000076293945
+            ],
+            "span": 39.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.42618616422017414,
+            "key": 3,
+            "starts": [
+              43.5,
+              60.400001525878906
+            ],
+            "span": 33.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18543535470962524,
+            "key": 8,
+            "at": 82.5,
+            "span": 39.3,
+            "starts": [
+              82.0,
+              101.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5915912389755249,
+            "key": 3,
+            "at": 103.1,
+            "span": 8.5,
+            "starts": [
+              102.9,
+              103.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13967166344324747,
+            "key": 8,
+            "starts": [
+              81.9000015258789,
+              101.0999984741211
+            ],
+            "span": 39.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.4360118309656779,
+            "key": 3,
+            "starts": [
+              81.9000015258789,
+              98.80000305175781
+            ],
+            "span": 33.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18880526224772134,
+            "key": 8,
+            "at": 120.9,
+            "span": 39.3,
+            "starts": [
+              120.4,
+              139.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5819991827011108,
+            "key": 3,
+            "at": 141.5,
+            "span": 8.4,
+            "starts": [
+              141.3,
+              141.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.13723188638687134,
+            "key": 8,
+            "starts": [
+              120.30000305175781,
+              139.5
+            ],
+            "span": 39.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.444031556447347,
+            "key": 3,
+            "starts": [
+              123.30000305175781,
+              137.1999969482422
+            ],
+            "span": 30.5
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18232351541519165,
+            "key": 8,
+            "at": 159.3,
+            "span": 39.3,
+            "starts": [
+              158.8,
+              178.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5723485946655273,
+            "key": 3,
+            "at": 179.9,
+            "span": 8.8,
+            "starts": [
+              179.7,
+              180.0
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12770557403564453,
+            "key": 8,
+            "starts": [
+              158.6999969482422,
+              177.89999389648438
+            ],
+            "span": 39.30000305175781
+          },
+          "runnerUp": {
+            "cost": 0.4428131977717082,
+            "key": 3,
+            "starts": [
+              158.6999969482422,
+              175.5
+            ],
+            "span": 33.90000915527344
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18782488505045572,
+            "key": 8,
+            "at": 197.7,
+            "span": 38.4,
+            "starts": [
+              197.2,
+              216.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5838598807652792,
+            "key": 3,
+            "at": 218.3,
+            "span": 8.4,
+            "starts": [
+              218.1,
+              218.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14138134320576987,
+            "key": 8,
+            "starts": [
+              197.10000610351562,
+              216.3000030517578
+            ],
+            "span": 39.29998779296875
+          },
+          "runnerUp": {
+            "cost": 0.4414033095041911,
+            "key": 3,
+            "starts": [
+              200.10000610351562,
+              214.0
+            ],
+            "span": 30.899993896484375
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      16.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "何能使我脱罪担？ 只有主耶稣之宝血。 何能使我得平安？ 只有主耶稣之宝血。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "何能救赎我罪人？ 只有主耶稣之宝血。 何能使我近真神？ 只有主耶稣之宝血。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "何能使我出黑暗？ 只有主耶稣之宝血。 何能使我入光明？ 只有主耶稣之宝血。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "何能救我免地狱？ 只有主耶稣之宝血。 何能引我上天堂？ 只有主耶稣之宝血。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第4段"
+    },
+    {
+      "region": "r9",
+      "text": "何能使我得称义？ 只有主耶稣之宝血。 何能使我得成圣？ 只有主耶稣之宝血。",
+      "label": "第5段"
+    },
+    {
+      "region": "r10",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第5段"
+    },
+    {
+      "region": "r11",
+      "text": "何能使我常得胜？ 只有主耶稣之宝血。 何能使我得荣耀？ 只有主耶稣之宝血。",
+      "label": "第6段"
+    },
+    {
+      "region": "r12",
+      "text": "副歌：主在十架流血， 洗我罪恶清洁，使我白超乎雪， 全赖主耶稣之宝血。",
+      "label": "第6段"
+    }
+  ],
+  "recordingMaps": {
+    "03-036只有宝血.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8549432754516602,
+      "meanPathCost": 0.1533634215593338,
+      "cueWindowCosts": [
+        0.1124250739812851,
+        0.1511026918888092,
+        0.11824040114879608,
+        0.1567341536283493,
+        0.11701726913452148,
+        0.14417651295661926,
+        0.17108383774757385,
+        0.1461486965417862,
+        0.12974825501441956,
+        0.13542497158050537,
+        0.13476911187171936,
+        0.14893729984760284
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 12,
+  "elapsedSeconds": 1.121
+}

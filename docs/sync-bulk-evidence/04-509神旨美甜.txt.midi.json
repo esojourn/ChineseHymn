@@ -1,0 +1,345 @@
+{
+  "songId": "04-509",
+  "source": "04-509神旨美甜.txt",
+  "sourceHash": "11eadb7f75ec4394d5376b702f7aeaf6a5e6dd04132aa386281a34056f765373",
+  "trackHashes": [
+    {
+      "file": "04-509神旨美甜.mp3",
+      "sha256": "7bdd9ae55dc78028fed044735e4ecbb0df4078f51ce4173eee9ed64942fc6859"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 4,
+    "profile": {
+      "targetSha256": "11eadb7f75ec4394d5376b702f7aeaf6a5e6dd04132aa386281a34056f765373",
+      "file": "hymnary374.mid",
+      "sha256": "746528b5f42e6922a818dae23b0929d34c087540a1d54324852e57b012d28ffb",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary374.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary374.htm",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Sweet_Will_of_God/Sweet_Will_of_God.xml",
+      "scoreReferenceSha256": "898fa3c03059016db59235a3e34225ba399959be4ac1ac680a7ccee02670d240",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "顽梗我心已终于屈",
+          "愿神美旨紧紧环抱"
+        ],
+        [
+          "久困罪愆厌倦而思",
+          "愿神美旨紧紧环抱"
+        ],
+        [
+          "得胜的主你宝贝旨",
+          "愿神美旨紧紧环抱"
+        ],
+        [
+          "禁闭于你与你永相",
+          "愿神美旨紧紧环抱"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            2,
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 40,
+          "pitches": [
+            5,
+            5,
+            7,
+            5,
+            7
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 86,
+        "midiNoteCount": 87,
+        "editCost": 2,
+        "runnerUpCost": 62,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 39,
+            "possibleMidiNoteIndices": [
+              40
+            ],
+            "at": 19.5
+          }
+        ],
+        "offsets": [
+          0.0,
+          19.5
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          39
+        ]
+      },
+      "formReview": "Sweet Will of God，主歌第1至10小节，第11小节副歌 Sweet 起对应“愿神美旨紧紧环抱我”区域。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 48.14999999999999,
+    "music": {
+      "period": 55.2,
+      "similarity": 0.9544144868850708,
+      "initialOnsetEstimate": 15.3,
+      "shifts": [
+        0.0,
+        55.2,
+        110.5,
+        165.7
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.29983503922172217,
+            "key": 7,
+            "at": 17.4,
+            "span": 54.6,
+            "starts": [
+              16.9,
+              39.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6007283528645834,
+            "key": 0,
+            "at": 45.6,
+            "span": 31.4,
+            "starts": [
+              45.5,
+              58.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2704194663227468,
+            "key": 7,
+            "starts": [
+              16.799999237060547,
+              39.0
+            ],
+            "span": 54.70000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4441898180090863,
+            "key": 2,
+            "starts": [
+              18.799999237060547,
+              36.900001525878906
+            ],
+            "span": 48.60000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3022750080495641,
+            "key": 7,
+            "at": 72.6,
+            "span": 54.6,
+            "starts": [
+              72.1,
+              94.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6017194554425668,
+            "key": 0,
+            "at": 100.8,
+            "span": 31.6,
+            "starts": [
+              100.7,
+              113.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2690020575039629,
+            "key": 7,
+            "starts": [
+              72.0,
+              94.19999694824219
+            ],
+            "span": 54.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4433227207349694,
+            "key": 2,
+            "starts": [
+              76.0,
+              92.19999694824219
+            ],
+            "span": 46.69999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3016348576200181,
+            "key": 7,
+            "at": 127.9,
+            "span": 54.7,
+            "starts": [
+              127.4,
+              149.5
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5999628702799479,
+            "key": 0,
+            "at": 156.2,
+            "span": 31.4,
+            "starts": [
+              156.0,
+              168.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26887888148211053,
+            "key": 7,
+            "starts": [
+              127.30000305175781,
+              149.60000610351562
+            ],
+            "span": 54.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.442889614381652,
+            "key": 2,
+            "starts": [
+              128.60000610351562,
+              147.5
+            ],
+            "span": 49.399993896484375
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2996182372604591,
+            "key": 7,
+            "at": 183.0,
+            "span": 54.6,
+            "starts": [
+              182.6,
+              204.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6121099720830503,
+            "key": 0,
+            "at": 211.3,
+            "span": 27.9,
+            "starts": [
+              211.2,
+              223.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.26984032340671704,
+            "key": 7,
+            "starts": [
+              182.5,
+              204.6999969482422
+            ],
+            "span": 54.69999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4437989221102949,
+            "key": 2,
+            "starts": [
+              182.1999969482422,
+              202.6999969482422
+            ],
+            "span": 47.30000305175781
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.5
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "顽梗我心已终于屈服， 今愿属主，惟愿属主！ 我心祷告我口今求呼： “愿主旨意于我无阻！”",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "久困罪愆厌倦而思， 归幽暗世路，烦闷凄凉， 忽见一光射入我心内， 哦你是我晨星、朝阳。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "得胜的主，你宝贝旨意， 绕我环我直到永久， 纷乱消失平安何满溢， 又如困鸟释放自由。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "禁闭于你与你永相依， 流荡脚踪不再游移； 无何能使我与你相离， 我要永住你美旨里。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "愿神美旨紧紧环抱我， 使我全然消失于你。 愿神美旨紧紧环抱我， 使我全然消失于你。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.389
+}

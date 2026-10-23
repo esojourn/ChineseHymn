@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-381",
+  "status": "reviewed",
+  "source": {
+    "file": "02-381基督精兵前进.txt",
+    "sha256": "c26b1342c0032392ca99bf5492395315ba3555ea4cf79482f3ce5f8d37f84d43",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-381基督精兵前进.mp3",
+      "sha256": "435f783285642979edc2423bb306a0213edd15476b4e8123b8692aaab79e076f",
+      "duration": 210.70367346938775,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 8.35,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 58.45,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.55,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.6,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "基督精兵前进，齐向战场走，十架旌旗高举，引领在前头； 主基督是元帅，领我攻仇敌，齐看我主旗号，进入战阵地。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "见主得胜旗号，撒旦军逃避，基督精兵前进，胜利在前头； 地狱根基震动，只因欢呼声，主内弟兄高唱，向主献颂扬。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "基督教会前进，浩荡如大军，弟兄努力奔走，步先贤脚踪； 我们一心一意团结攻敌军，信仰盼望相同，爱心亦一致。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "蒙恩圣徒前进，欢欣齐前往，大家异口同声，凯歌高声唱； 荣耀尊贵颂赞，归基督我王，世人天使同唱，颂扬永无疆。 基督精兵前进，齐向战场走，十架旌旗高举，引领在前头。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-381基督精兵前进.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -69,6 +69,9 @@ def generate(song, profile, cache):
         if song['sha256'] != profile['targetSha256']:
             raise ValueError('图片素材与已经核对的 MIDI 配置不一致')
         path = cache / 'midi' / profile['file']
+        if 'printedRhythmReference' in profile:
+            from sync_batch_printed_midi import materialize_printed_reference
+            materialize_printed_reference(profile, song['sha256'], path)
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')
         recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())

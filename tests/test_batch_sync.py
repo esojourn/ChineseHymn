@@ -43,6 +43,56 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_printed_reference_preserves_rests_and_fractional_note_times(self):
+        import io
+        import mido
+        from sync_batch_printed_midi import printed_reference_bytes
+        profile = {'targetSha256': 'image', 'mode': 'symbolic-melody-and-optical',
+                   'printedRhythmReference': {'sourceSha256': 'image', 'tonicMidi': 63,
+                       'numberedRowsAndQuarterBeats': [[[1, .75], [2, .25], [0, 1], [3, 1], [4, 1], [5, 1]]]}}
+        data = printed_reference_bytes(profile, 'image')
+        midi = mido.MidiFile(file=io.BytesIO(data))
+        seconds, starts = 0, []
+        for message in midi:
+            seconds += message.time
+            if message.type == 'note_on' and message.velocity:
+                starts.append((message.note, seconds))
+        self.assertEqual(starts, [(63, 0), (65, .375), (67, 1), (68, 1.5), (70, 2)])
+        self.assertEqual(printed_reference_bytes(profile, 'image'), data)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_printed_reference_requires_current_image_optical_review_and_valid_rhythm(self):
+        import copy
+        from sync_batch_printed_midi import printed_reference_bytes
+        profile = {'targetSha256': 'image', 'mode': 'symbolic-melody-and-optical',
+                   'printedRhythmReference': {'sourceSha256': 'image', 'tonicMidi': 63,
+                       'numberedRowsAndQuarterBeats': [[[1, 1], [2, 1], [3, 1], [4, 1], [5, 1]]]}}
+        for field, value in [('mode', 'harmony-only'), ('targetSha256', 'old-image')]:
+            bad = {**profile, field: value}
+            with self.assertRaises(ValueError):
+                printed_reference_bytes(bad, 'image')
+        for note in [[8, 1], [True, 1], [1, 0], [1, float('nan')], [1, .3333]]:
+            bad = copy.deepcopy(profile)
+            bad['printedRhythmReference']['numberedRowsAndQuarterBeats'][0][0] = note
+            with self.assertRaises(ValueError):
+                printed_reference_bytes(bad, 'image')
+        with self.assertRaises(ValueError):
+            printed_reference_bytes(profile, 'changed-image')
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_printed_reference_hash_failure_cannot_replace_a_cached_reference(self):
+        from sync_batch_printed_midi import materialize_printed_reference
+        profile = {'targetSha256': 'image', 'sha256': 'wrong', 'mode': 'symbolic-melody-and-optical',
+                   'printedRhythmReference': {'sourceSha256': 'image', 'tonicMidi': 63,
+                       'numberedRowsAndQuarterBeats': [[[1, 1], [2, 1], [3, 1], [4, 1], [5, 1]]]}}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'reference.mid'
+            path.write_bytes(b'original')
+            with self.assertRaisesRegex(ValueError, '哈希'):
+                materialize_printed_reference(profile, 'image', path)
+            self.assertEqual(path.read_bytes(), b'original')
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional retrieval dependencies')
     def test_cyclic_retrieval_identifies_a_transposed_and_shifted_reference(self):
         import numpy as np

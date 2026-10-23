@@ -2030,5 +2030,113 @@
       ]
     },
     "formReview": "前四行主歌对应第1至10小节；第11小节副歌 In 起对应“到那日，乐无边”。 已核对原文与译文分句。完整主旋律和各区域首音须通过所有最优音符序列对齐的唯一性检查；每个实际演奏段落仍须独立通过原有和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+  },
+  "03-030": {
+    "targetSha256": "88b8a9bcc621e4a9dcf030510b36b2412a11a56768efe77c92ab1b140cda92b7",
+    "file": "hymnary563.mid",
+    "sha256": "0a04aa7833c99f31832cb196242b7f7efd2b433ffcacce4ded1296ee542d7017",
+    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary563.mid",
+    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary563.htm",
+    "scoreReferenceUrl": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf",
+    "scoreReferenceSha256": "7d17e5b89e90866094ecf9b6023f3d605975512692410cded82437d3a8e4eb16",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "我心中饥渴地爱慕",
+        "心中渴慕着耶稣我"
+      ],
+      [
+        "我心中渴望能够追",
+        "心中渴慕着耶稣我"
+      ],
+      [
+        "你也许并不知道谁",
+        "心中渴慕着耶稣我"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 42,
+        "pitches": [
+          7,
+          4,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "printedScoreReview": {
+      "book": "颂主新歌 / New Songs of Praise",
+      "entry": 425,
+      "printedPage": 323,
+      "pdfPageIndex": 342,
+      "title": "渴慕耶稣 / Longing for Jesus",
+      "composer": "Richard D. Baker",
+      "numberedRows": [
+        "5 #4 4 3 #2 3 5 3 #2 1 6 1 7 6 5 #4 5 6 5 3",
+        "2 5 #4 4 3 #2 3 5 3 #2 1 6 1 7 6 5 3 1 4 3 2 1",
+        "5 3 1 1 1 1 6 1 7 6 5 #4 5 6 5 3 2 5 5 5",
+        "5 3 1 1 1 1 6 1 7 6 5 6 7 1 1 7 1"
+      ],
+      "tiedContinuationsExcluded": true,
+      "accidentalsApplyThroughMeasure": true,
+      "chorusSystem": 3
+    },
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 79,
+      "midiNoteCount": 79,
+      "editCost": 0,
+      "runnerUpCost": 62,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 20,
+          "possibleMidiNoteIndices": [
+            20
+          ],
+          "at": 7.3636
+        },
+        {
+          "scoreNoteIndex": 42,
+          "possibleMidiNoteIndices": [
+            42
+          ],
+          "at": 18.2727
+        },
+        {
+          "scoreNoteIndex": 62,
+          "possibleMidiNoteIndices": [
+            62
+          ],
+          "at": 27.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        7.3636,
+        18.2727,
+        27.0
+      ]
+    },
+    "formReview": "已目视核对公开中文谱本第425首《渴慕耶稣》：前两谱行对应主歌四句，第三谱行明确标注副歌。逐行抄录最高旋律简谱，省略同音连结延续，升号在本小节内保持有效。完整79音与固定MIDI逐音完全一致；四个谱行起点在所有最优序列对齐中均唯一。正文两个阅读区域分别从MIDI索引0和42开始；每个实际段落还须通过独立和声、旋律、起点、调性与反复相位检查。"
   }
 }

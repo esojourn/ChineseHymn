@@ -33,6 +33,46 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    def test_interrupted_transcription_replays_only_the_incomplete_chunk(self):
+        from types import SimpleNamespace
+        class Model:
+            feature_extractor = SimpleNamespace(time_per_frame=.01)
+            calls = []
+
+            def transcribe(self, audio, **options):
+                self.calls.append(options)
+
+                def segment(seek, text):
+                    return SimpleNamespace(seek=seek, text=text, start=seek / 100, end=seek / 100 + 1,
+                                           avg_logprob=-.1, no_speech_prob=0, words=[])
+
+                def first():
+                    yield segment(0, 'a')
+                    yield segment(0, 'b')
+                    yield segment(3000, 'c')
+                    raise InterruptedError('interrupted during the second chunk')
+
+                rows = first() if len(self.calls) == 1 else iter([segment(3000, 'c'), segment(3000, 'd'), segment(6000, 'e')])
+                return rows, SimpleNamespace(language='en', duration=90)
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            (root / 'data/audio.mp3').write_bytes(b'audio')
+            song = {'songId': '06-001', 'reference': 'audio.mp3'}
+            model = Model()
+            with patch.object(batch, 'ROOT', root), patch.object(batch, '_model', model):
+                with self.assertRaises(InterruptedError):
+                    batch.transcribe((song, str(root), 'models', 'medium', 1))
+                self.assertFalse((root / 'asr/audio.mp3.json').exists())
+                saved = json.loads((root / 'asr-windows/audio.mp3.json').read_text())
+                self.assertEqual(saved['seek'], 3000)
+                self.assertEqual([row['text'] for row in saved['segments']], ['a', 'b'])
+                batch.transcribe((song, str(root), 'models', 'medium', 1))
+            self.assertEqual(model.calls[1]['clip_timestamps'], [30])
+            complete = json.loads((root / 'asr/audio.mp3.json').read_text())
+            self.assertEqual([row['text'] for row in complete['segments']], list('abcde'))
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional score dependencies')
     def test_shifted_ocr_barline_is_removed_but_adjacent_digit_one_is_preserved(self):
         components = [[30, 0, 3, 40, 110], [70, 4, 11, 32, 230], [85, 0, 3, 40, 100]]

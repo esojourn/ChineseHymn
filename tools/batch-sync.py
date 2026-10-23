@@ -165,16 +165,35 @@ def transcribe(job):
         _model = WhisperModel(model_name, device='cpu', compute_type='int8', cpu_threads=threads,
                               download_root=model_dir, local_files_only=True)
     start = time.monotonic()
-    language = None if song['songId'].startswith('06-') else 'zh'
+    checkpoint = Path(cache) / 'asr-windows' / (audio.name + '.json')
+    previous = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
+    current = (previous.get('version') == 1 and previous.get('sha256') == fingerprint and previous.get('model') == model_name)
+    rows = list(previous.get('segments', [])) if current else []
+    seek = int(previous.get('seek', 0)) if current else 0
+    elapsed = float(previous.get('elapsedSeconds', 0)) if current else 0
+    language = previous.get('language') if current else None if song['songId'].startswith('06-') else 'zh'
+    frame_seconds = _model.feature_extractor.time_per_frame
     segments, info = _model.transcribe(str(audio), language=language, beam_size=2, word_timestamps=True,
-                                      condition_on_previous_text=False, vad_filter=False, temperature=0)
-    rows = [{'start': float(row.start), 'end': float(row.end), 'text': row.text,
-             'avgLogprob': float(row.avg_logprob), 'noSpeechProbability': float(row.no_speech_prob),
-             'words': [{'word': word.word, 'start': float(word.start), 'end': float(word.end),
-                        'probability': float(word.probability)} for word in row.words or []]} for row in segments]
+                                      condition_on_previous_text=False, vad_filter=False, temperature=0,
+                                      clip_timestamps=[seek * frame_seconds])
+    for row in segments:
+        if row.seek < seek:
+            raise ValueError('转写窗口发生回退，保留上一个完整断点供复核')
+        if row.seek > seek:
+            # A new chunk proves all captions from the preceding chunk are done.
+            # Never persist a half-decoded chunk as if it were complete.
+            seek = row.seek
+            save(checkpoint, {'version': 1, 'file': audio.name, 'sha256': fingerprint, 'model': model_name,
+                              'seek': seek, 'language': info.language, 'segments': rows,
+                              'elapsedSeconds': round(elapsed + time.monotonic() - start, 3)})
+            print(f'ASR checkpoint {audio.name}: {seek * frame_seconds:.2f}/{info.duration:.2f} s, {len(rows)} segments', flush=True)
+        rows.append({'seek': int(row.seek), 'start': float(row.start), 'end': float(row.end), 'text': row.text,
+                     'avgLogprob': float(row.avg_logprob), 'noSpeechProbability': float(row.no_speech_prob),
+                     'words': [{'word': word.word, 'start': float(word.start), 'end': float(word.end),
+                                'probability': float(word.probability)} for word in row.words or []]})
     save(destination, {'file': audio.name, 'sha256': fingerprint, 'model': model_name,
                        'language': info.language, 'duration': info.duration, 'segments': rows,
-                       'elapsedSeconds': round(time.monotonic() - start, 3)})
+                       'elapsedSeconds': round(elapsed + time.monotonic() - start, 3)})
     return song['songId'], f'{len(rows)} segments, {round(time.monotonic() - start, 1)} s'
 
 

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "05-114",
+  "status": "reviewed",
+  "source": {
+    "file": "05-114同声欢呼歌.jpg",
+    "sha256": "441f6390527cf00849aede9771b2f5df063462bfe9c1d02bbff647d201b61d0f",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-114同声欢呼歌.mp3",
+      "sha256": "b5cd64423b4e81b72aa85abc2d3263a1075bd94ef6af2ca5da6f9978913e5a58",
+      "duration": 116.232,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.233995,
+      "bottom": 0.329473
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.282395,
+      "bottom": 0.377874
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.331616,
+      "bottom": 0.427915
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.381657,
+      "bottom": 0.477135
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.431698,
+      "bottom": 0.526356
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.571977,
+      "bottom": 0.668276
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.622018,
+      "bottom": 0.718317
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.672059,
+      "bottom": 0.768358
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.7221,
+      "bottom": 0.817578
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.771321,
+      "bottom": 0.866799
+    }
+  },
+  "cues": [
+    {
+      "at": 6.2,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 17.15,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 28.2,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 39.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 50.2,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 61.2,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.2,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 83.2,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 94.25,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 105.2,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我们当来同声欢呼，称颂神的基督；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我们若有千万舌头，新歌只有一首。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "“升天羔羊，你真是配来得这样赞美！”",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "我们喊说：你真是配，因你为我降卑！”",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "救主耶稣配得尊贵、权柄、荣耀、智慧；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "还有许多不及献上，永归被杀羔羊！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "不久圣徒快要上升，同发赞美之声；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "天地、宇宙、高山、沧海，都要赞美敬拜！",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "圣徒欢聚新天新地，颂赞羔羊不已；",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "因他降世，亲历死地，现今荣耀无比。",
+        "label": "第5段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-114同声欢呼歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

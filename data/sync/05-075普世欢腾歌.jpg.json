@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "songId": "05-075",
+  "status": "reviewed",
+  "source": {
+    "file": "05-075普世欢腾歌.jpg",
+    "sha256": "95afb703008f55aac28d8982d6422e96f6102cae3b9a0636e062b90cfd412e6c",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-075普世欢腾歌.mp3",
+      "sha256": "bf83eea702ecbdb0a2dd9619d5da59acc6ade41af61093249a1decd16abbf2b8",
+      "duration": 110.74133333333333,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.35,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 15.65,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 23.9,
+          "region": "s3_v1",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 32.45,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 41.8,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 50.0,
+          "region": "s3_v2",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 58.6,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 67.9,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 76.1,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 84.75,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 94.05,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 102.3,
+          "region": "s3_v4",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-075普世欢腾歌-领唱.mp3",
+      "sha256": "7ea4b3c3e30d7a051a822221e2ce6111a98fe3d278f6a23fa3e471af20d66a63",
+      "duration": 110.848,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.193074,
+      "bottom": 0.282909
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.229115,
+      "bottom": 0.318949
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.265766,
+      "bottom": 0.355601
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.301807,
+      "bottom": 0.391031
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.436807,
+      "bottom": 0.525419
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.472237,
+      "bottom": 0.56146
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.508277,
+      "bottom": 0.59689
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.543707,
+      "bottom": 0.63232
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.678096,
+      "bottom": 0.766709
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.714137,
+      "bottom": 0.803971
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.750177,
+      "bottom": 0.839401
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.786218,
+      "bottom": 0.876663
+    }
+  },
+  "cues": [
+    {
+      "at": 6.25,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 15.6,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 23.8,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 32.4,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 41.7,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.9,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 58.55,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 67.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 76.1,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.65,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 94.0,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.2,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "普世欢腾！救主下降，大地接她君王；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "惟愿众心预备地方，诸天万物歌唱，",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "诸天万物歌唱，诸天，诸天万物歌唱。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "普世欢腾！主治万方，民众首当歌唱；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "沃野、洪涛、山石、平原，响应歌声亮，",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "响 应歌声嘹 亮,响 应，响应 歌声嘹亮。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "罪恶忧愁不容再长，世途荆棘消亡；",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "化诅为恩，无远弗届，到处主泽流长，",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "到处主泽流长，到处，到处主泽流长。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "主藉真理恩治万方，要使万邦证明：",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "上主公义无限荣光，主爱奇妙莫名，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "主爱奇妙莫名，主爱，主爱奇妙莫名。",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-075普世欢腾歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

@@ -2,11 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 196,
+    "published": 199,
     "existing": 8,
-    "pending": 174,
+    "pending": 170,
     "missing-audio": 2,
-    "needs-calibration": 17,
+    "needs-track-alignment": 3,
+    "needs-calibration": 15,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1482,7 +1483,7 @@
       "songId": "03-026",
       "source": "03-026复活得胜主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "03-026复活得胜主.mp3",
         "03-026复活得胜主-领唱.mp3"
@@ -1501,7 +1502,7 @@
       "songId": "03-029",
       "source": "03-029将最好献主.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "03-029将最好献主.mp3",
         "03-029将最好献主-领唱.mp3"
@@ -1590,7 +1591,7 @@
       "songId": "04-001",
       "source": "04-001感谢神.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "04-001感谢神.mp3"
       ]
@@ -1599,7 +1600,7 @@
       "songId": "04-002",
       "source": "04-002藏身主里.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-track-alignment",
       "tracks": [
         "04-002藏身主里.mp3",
         "04-002藏身主里-领唱.mp3"
@@ -2256,12 +2257,11 @@
       "songId": "05-075",
       "source": "05-075普世欢腾歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-075普世欢腾歌.mp3",
         "05-075普世欢腾歌-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-076",
@@ -2441,11 +2441,10 @@
       "songId": "05-114",
       "source": "05-114同声欢呼歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-114同声欢呼歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-117",

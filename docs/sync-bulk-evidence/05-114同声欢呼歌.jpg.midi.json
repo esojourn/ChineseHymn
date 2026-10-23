@@ -1,0 +1,412 @@
+{
+  "songId": "05-114",
+  "source": "05-114同声欢呼歌.jpg",
+  "sourceHash": "441f6390527cf00849aede9771b2f5df063462bfe9c1d02bbff647d201b61d0f",
+  "trackHashes": [
+    {
+      "file": "05-114同声欢呼歌.mp3",
+      "sha256": "b5cd64423b4e81b72aa85abc2d3263a1075bd94ef6af2ca5da6f9978913e5a58"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 1,
+    "mode": "image-rows",
+    "profile": {
+      "targetSha256": "441f6390527cf00849aede9771b2f5df063462bfe9c1d02bbff647d201b61d0f",
+      "file": "hymnary127.mid",
+      "sha256": "21767f86abd052b53cd50b93d31759d0efe87742c5f6f462664a94a06cea7b52",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary127.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary127.htm",
+      "verseCount": 5,
+      "firstVerseTrigramOverlap": 0.846153846,
+      "formReview": "首段歌词与公开参考对应；所有谱行起始音必须在完整音符序列的全部最优匹配中唯一确定。每个录音、每段及每行还须独立通过 MIDI 和声与旋律模板的声学对应，不使用图片字符数量估算时间。"
+    },
+    "symbolicRows": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 34,
+      "midiNoteCount": 33,
+      "editCost": 1,
+      "runnerUpCost": 22,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 16,
+          "possibleMidiNoteIndices": [
+            15
+          ],
+          "at": 8.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0
+      ]
+    },
+    "referencePeriod": 15.874999999999998,
+    "recordings": {
+      "05-114同声欢呼歌.mp3": {
+        "music": {
+          "period": 22.0,
+          "similarity": 0.9944596290588379,
+          "initialOnsetEstimate": 4.54,
+          "shifts": [
+            0.0,
+            22.0,
+            44.0,
+            66.0,
+            88.1
+          ]
+        },
+        "matches": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.13849693645130504,
+                "key": 5,
+                "at": 6.2,
+                "span": 21.8,
+                "starts": [
+                  6.2,
+                  17.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5183334350585938,
+                "key": 10,
+                "at": 18.6,
+                "span": 13.6,
+                "starts": [
+                  18.6,
+                  28.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.15079465345902876,
+                "key": 5,
+                "starts": [
+                  6.199999809265137,
+                  17.100000381469727
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.37319003018465907,
+                "key": 0,
+                "starts": [
+                  7.699999809265137,
+                  18.899999618530273
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.13592360236428,
+                "key": 5,
+                "at": 28.2,
+                "span": 21.8,
+                "starts": [
+                  28.2,
+                  39.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5183334350585938,
+                "key": 10,
+                "at": 18.6,
+                "span": 13.6,
+                "starts": [
+                  18.6,
+                  28.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.15159783796830612,
+                "key": 5,
+                "starts": [
+                  28.200000762939453,
+                  39.20000076293945
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.37144948785955256,
+                "key": 0,
+                "starts": [
+                  29.799999237060547,
+                  40.599998474121094
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.13469626686789773,
+                "key": 5,
+                "at": 50.2,
+                "span": 21.8,
+                "starts": [
+                  50.2,
+                  61.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5123220617120916,
+                "key": 10,
+                "at": 62.6,
+                "span": 13.7,
+                "starts": [
+                  62.6,
+                  72.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.15199160142378373,
+                "key": 5,
+                "starts": [
+                  50.20000076293945,
+                  61.20000076293945
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.36805586381392047,
+                "key": 0,
+                "starts": [
+                  51.900001525878906,
+                  62.599998474121094
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.1341714165427468,
+                "key": 5,
+                "at": 72.2,
+                "span": 21.8,
+                "starts": [
+                  72.2,
+                  83.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5123220617120916,
+                "key": 10,
+                "at": 62.6,
+                "span": 13.7,
+                "starts": [
+                  62.6,
+                  72.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.15136477730490944,
+                "key": 5,
+                "starts": [
+                  72.19999694824219,
+                  83.19999694824219
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.3722590359774503,
+                "key": 0,
+                "starts": [
+                  74.19999694824219,
+                  84.5999984741211
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.1372065630826083,
+                "key": 5,
+                "at": 94.3,
+                "span": 21.7,
+                "starts": [
+                  94.3,
+                  105.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5136170473965731,
+                "key": 10,
+                "at": 84.6,
+                "span": 13.7,
+                "starts": [
+                  84.6,
+                  94.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.14947327700528232,
+                "key": 5,
+                "starts": [
+                  94.19999694824219,
+                  105.19999694824219
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.39831660877574576,
+                "key": 0,
+                "starts": [
+                  95.69999694824219,
+                  106.5999984741211
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "independentTimelines": {
+    "05-114同声欢呼歌.mp3": {
+      "definitions": [
+        {
+          "region": "s1_v1",
+          "text": "我们当来同声欢呼，称颂神的基督；",
+          "label": "第1段：第1谱行"
+        },
+        {
+          "region": "s2_v1",
+          "text": "我们若有千万舌头，新歌只有一首。",
+          "label": "第1段：第2谱行"
+        },
+        {
+          "region": "s1_v2",
+          "text": "“升天羔羊，你真是配来得这样赞美！”",
+          "label": "第2段：第1谱行"
+        },
+        {
+          "region": "s2_v2",
+          "text": "我们喊说：你真是配，因你为我降卑！”",
+          "label": "第2段：第2谱行"
+        },
+        {
+          "region": "s1_v3",
+          "text": "救主耶稣配得尊贵、权柄、荣耀、智慧；",
+          "label": "第3段：第1谱行"
+        },
+        {
+          "region": "s2_v3",
+          "text": "还有许多不及献上，永归被杀羔羊！",
+          "label": "第3段：第2谱行"
+        },
+        {
+          "region": "s1_v4",
+          "text": "不久圣徒快要上升，同发赞美之声；",
+          "label": "第4段：第1谱行"
+        },
+        {
+          "region": "s2_v4",
+          "text": "天地、宇宙、高山、沧海，都要赞美敬拜！",
+          "label": "第4段：第2谱行"
+        },
+        {
+          "region": "s1_v5",
+          "text": "圣徒欢聚新天新地，颂赞羔羊不已；",
+          "label": "第5段：第1谱行"
+        },
+        {
+          "region": "s2_v5",
+          "text": "因他降世，亲历死地，现今荣耀无比。",
+          "label": "第5段：第2谱行"
+        }
+      ],
+      "times": [
+        6.2,
+        17.15,
+        28.2,
+        39.2,
+        50.2,
+        61.2,
+        72.2,
+        83.2,
+        94.25,
+        105.2
+      ],
+      "returnIndices": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "s1_v1",
+      "text": "我们当来同声欢呼，称颂神的基督；",
+      "label": "第1段：第1谱行"
+    },
+    {
+      "region": "s2_v1",
+      "text": "我们若有千万舌头，新歌只有一首。",
+      "label": "第1段：第2谱行"
+    },
+    {
+      "region": "s1_v2",
+      "text": "“升天羔羊，你真是配来得这样赞美！”",
+      "label": "第2段：第1谱行"
+    },
+    {
+      "region": "s2_v2",
+      "text": "我们喊说：你真是配，因你为我降卑！”",
+      "label": "第2段：第2谱行"
+    },
+    {
+      "region": "s1_v3",
+      "text": "救主耶稣配得尊贵、权柄、荣耀、智慧；",
+      "label": "第3段：第1谱行"
+    },
+    {
+      "region": "s2_v3",
+      "text": "还有许多不及献上，永归被杀羔羊！",
+      "label": "第3段：第2谱行"
+    },
+    {
+      "region": "s1_v4",
+      "text": "不久圣徒快要上升，同发赞美之声；",
+      "label": "第4段：第1谱行"
+    },
+    {
+      "region": "s2_v4",
+      "text": "天地、宇宙、高山、沧海，都要赞美敬拜！",
+      "label": "第4段：第2谱行"
+    },
+    {
+      "region": "s1_v5",
+      "text": "圣徒欢聚新天新地，颂赞羔羊不已；",
+      "label": "第5段：第1谱行"
+    },
+    {
+      "region": "s2_v5",
+      "text": "因他降世，亲历死地，现今荣耀无比。",
+      "label": "第5段：第2谱行"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 10,
+  "elapsedSeconds": 0.416
+}

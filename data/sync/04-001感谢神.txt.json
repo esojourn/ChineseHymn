@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "04-001",
+  "status": "reviewed",
+  "source": {
+    "file": "04-001感谢神.txt",
+    "sha256": "12b8438cb083cc871e18b47ba2318d111e6b2b790e95d6dec43fb33fdb1bf7d2",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-001感谢神.mp3",
+      "sha256": "49438b4023115a54fbc3b27a05851d3e6f672bc092adab6cee15854c602e1916",
+      "duration": 127.16408163265307,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 9.79,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.98,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.21,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.56,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "感谢神，赐我救赎主， 感谢神，凡事担当； 感谢神，以往的同住， 感谢神，主在我旁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "感谢神，赐和煦春天， 感谢神，萧瑟秋景； 感谢神，收去我眼泪， 感谢神，里头安宁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "感谢神，应允我祷告， 感谢神，或未应允； 感谢神，虽经过风暴， 感谢神，祂是供应。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "感谢神，赐苦也赐乐， 感谢神，绝望得慰； 感谢神，无比施爱者， 感谢神，无限恩惠。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "感谢神，赐路旁玫瑰， 感谢神，虽它有刺； 感谢神，全家火炉围， 感谢神，天涯分驰。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "感谢神，奔波或惆怅， 感谢神，属天平安； 感谢神，赐明日盼望， 感谢神，直到永远。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-001感谢神.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

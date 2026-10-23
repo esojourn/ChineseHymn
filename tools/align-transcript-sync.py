@@ -220,7 +220,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cache', type=Path, required=True)
     parser.add_argument('--songs', nargs='+', required=True)
-    parser.add_argument('--model-dir', default='/tmp/chinese-hymn-models')
+    parser.add_argument('--model-dir', default=str(Path(__file__).resolve().parents[1] / 'sync-drafts/models'))
     parser.add_argument('--threads', type=int, default=2)
     args = parser.parse_args()
     for song in batch.inventory():

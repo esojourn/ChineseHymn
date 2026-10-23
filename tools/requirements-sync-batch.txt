@@ -1,6 +1,8 @@
 -r requirements-sync.txt
 # Offline recognition and music correspondence; not website runtime dependencies.
 faster-whisper==1.2.1
+# Version 19 removes the metadata_errors argument used by faster-whisper 1.2.1.
+av==16.1.0
 numpy==2.5.4
 scipy==1.18.1
 Pillow==13.0.0

@@ -4,10 +4,10 @@ import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import hashlib
 import json
-import os
 from pathlib import Path
 import re
 import subprocess
+import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,9 +20,19 @@ def checksum(path):
 
 def save(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(path.suffix + f'.{os.getpid()}.tmp')
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    temporary.replace(path)
+    # Separate process namespaces may share a PID while writing the same cache.
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent,
+                                     prefix=path.name + '.', suffix='.tmp', delete=False) as stream:
+        temporary = Path(stream.name)
+        try:
+            stream.write(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+        except BaseException:
+            temporary.unlink(missing_ok=True)
+            raise
+    try:
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def evidence_directory(candidate):
@@ -241,7 +251,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--stage', choices=['inventory', 'ocr', 'transcribe', 'align', 'align-tracks', 'score', 'publish', 'report'], required=True)
     parser.add_argument('--cache', type=Path, required=True)
-    parser.add_argument('--model-dir', default='/tmp/chinese-hymn-models')
+    parser.add_argument('--model-dir', default=str(Path(__file__).resolve().parents[1] / 'sync-drafts/models'))
     parser.add_argument('--model', default='small')
     parser.add_argument('--workers', type=int, default=2)
     parser.add_argument('--threads', type=int, default=2)

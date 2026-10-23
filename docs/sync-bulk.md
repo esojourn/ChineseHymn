@@ -449,7 +449,7 @@
 对已经核对主歌、副歌结构的同曲版本，可用另一份谱面的成功时间轴作参考，再通过实际音频的独立 chroma-DTW 对应及各段音乐相位一致性定位文字阅读区域。当前配置仅覆盖已经核对结构的具体曲目，配置锁定两份原素材的 SHA-256 和明确的谱行起点；译词相近程度不作为字词识别结果。已有同步文件仍不覆盖。
 
 ```sh
-python tools/transfer-sync.py --cache /tmp/chinese-hymn-bulk --songs 04-848 02-289 02-424 01-157 02-190 02-447 02-377
+python tools/transfer-sync.py --cache sync-drafts/bulk --songs 04-848 02-289 02-424 01-157 02-190 02-447 02-377
 ```
 
 参考谱面、音轨校验和段落数量均须匹配。各段相同位置相差超过 0.5 秒时拒绝；仅首个起拍可在后续至少两段定位一致、全曲反复及局部音乐对应均足够相似时修正前奏混淆。反复段数不同、且每段全文为单个文字阅读区域时，分别以两个完整参考乐段在每个目标段落中独立匹配，要求调性、起点、匹配代价、调性区分度和实际乐段长度均通过；不按录音总时长缩放时间点。完整参考快照、原始对应点、音乐对应指标与修正依据记录在 `.reference.json` 复核文件中，不声称已经逐曲人工试听。
@@ -459,7 +459,7 @@ python tools/transfer-sync.py --cache /tmp/chinese-hymn-bulk --songs 04-848 02-2
 单段正文不超过四行、每段只需一个阅读区域的文字歌，可使用已经核对同名的 MIDI 参考定位各段起点。已用《与我同住》《主你启示一个奥秘》《祂不误事因祂是神》《只要信祂》等曲核对；参考链接和固定 SHA-256 见 `tools/sync-midi-references.json`，来源为[圣徒诗歌目录](https://chinatownministry.org/Hymns.php)。参考文件缓存到 `CACHE/midi/`，不自动下载。程序按实际 MIDI 速度变化构建和声、主旋律两组模板，在每段实际音频中独立匹配，再核对调性、起点、相位、匹配代价和乐段长度；不以音符数推算字词时间，不声称歌词在 MP3 第 0 秒起唱。
 
 ```sh
-python tools/midi-sync.py --cache /tmp/chinese-hymn-bulk --songs 01-362 01-421 01-429
+python tools/midi-sync.py --cache sync-drafts/bulk --songs 01-362 01-421 01-429
 ```
 
 扫描图识别现支持更严格的投影分行、无标点段号和“我来”等短歌词行；已在原先缺行的《主寻亡羊歌》《我来就主歌》《信徒精兵歌》等曲中重新核对完整段落。音符匹配补充升降号、附点、八分/十六分音符线及延音线的像素检查。新增阅读区域后必须重做完整时间轴匹配，禁止沿用截断的旧时间点。已提交的原始图片和文字不修改，最初确认的 8 份同步文件继续保留。
@@ -474,19 +474,21 @@ python tools/midi-sync.py --cache /tmp/chinese-hymn-bulk --songs 01-362 01-421 0
 
 基础依赖及模型安装到独立环境；浏览器播放不需要这些依赖。
 
+批量任务的缓存、模型和日志使用已被 Git 忽略的项目目录 `sync-drafts/`，避免 `/tmp` 清理后失去断点。默认模型缓存为 `sync-drafts/models`；可用 `--model-dir` 指定已有目录。依赖固定使用 PyAV 16.1.0，以兼容 faster-whisper 1.2.1 的音频读取参数（[上游问题](https://github.com/SYSTRAN/faster-whisper/issues/1589)）。
+
 ```sh
 python -m pip install -r tools/requirements-sync-batch.txt
-python tools/batch-sync.py --stage inventory --cache /tmp/chinese-hymn-bulk
-python tools/batch-sync.py --stage ocr --cache /tmp/chinese-hymn-bulk --workers 2 --threads 2
-python tools/batch-sync.py --stage align --cache /tmp/chinese-hymn-bulk \
-    --model-dir /tmp/chinese-hymn-models --songs 01-040 --workers 1 --threads 2
-python tools/batch-sync.py --stage align --kind text --cache /tmp/chinese-hymn-bulk \
-    --model-dir /tmp/chinese-hymn-models --workers 2 --threads 2
-python tools/batch-sync.py --stage score --cache /tmp/chinese-hymn-bulk \
+python tools/batch-sync.py --stage inventory --cache sync-drafts/bulk
+python tools/batch-sync.py --stage ocr --cache sync-drafts/bulk --workers 2 --threads 2
+python tools/batch-sync.py --stage align --cache sync-drafts/bulk \
+    --model-dir sync-drafts/models --songs 01-040 --workers 1 --threads 2
+python tools/batch-sync.py --stage align --kind text --cache sync-drafts/bulk \
+    --model-dir sync-drafts/models --workers 2 --threads 2
+python tools/batch-sync.py --stage score --cache sync-drafts/bulk \
     --songs 05-001 05-002 --workers 1 --threads 1
-python tools/batch-sync.py --stage publish --cache /tmp/chinese-hymn-bulk \
+python tools/batch-sync.py --stage publish --cache sync-drafts/bulk \
     --songs 05-020 05-023
-python tools/batch-sync.py --stage report --cache /tmp/chinese-hymn-bulk
+python tools/batch-sync.py --stage report --cache sync-drafts/bulk
 ```
 
 模型必须已缓存，程序不自动下载模型。`transcribe` 阶段可额外生成普通语音转写供诊断，不是发布条件。原图、MP3 和 TXT 不修改；已有同步文件自动跳过。缓存保存原素材 SHA-256，素材变化后重新计算。候选写入缓存的 `ready/`；`publish` 仅接收显式指定的本批曲目，核对当前素材及全部音轨，再将候选和复核记录放入仓库，拒绝覆盖已有文件。随后运行同步校验和浏览器位置检查，通过后提交推送。`report` 更新全库进度，包括待校准及待音轨匹配的曲目。
@@ -498,7 +500,7 @@ python tools/batch-sync.py --stage report --cache /tmp/chinese-hymn-bulk
 文字候选的主录音已通过、另一录音的音乐映射未通过时，可运行 `--stage align-tracks`，为待处理录音独立执行原有歌词双窗口和重复音乐检查。每个录音使用按音频哈希区分的窗口缓存，避免复用主录音的声学窗口；素材和录音哈希必须与候选一致。成功依据附入原复核记录的 `recordingAcoustics`，原主录音时间点保留。此阶段仅处理尚未发布的普通歌词匹配候选，不修改已经发布的数据。
 
 ```sh
-python tools/batch-sync.py --stage align-tracks --cache /tmp/chinese-hymn-bulk \
+python tools/batch-sync.py --stage align-tracks --cache sync-drafts/bulk \
     --songs 03-026 03-029 04-002 --workers 1 --threads 2 --retry
 ```
 

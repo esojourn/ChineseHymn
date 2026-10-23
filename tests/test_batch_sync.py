@@ -31,6 +31,25 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    def test_cache_writers_with_the_same_pid_do_not_share_a_temporary_file(self):
+        from concurrent.futures import ThreadPoolExecutor
+        from threading import Barrier
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory) / 'inventory.json'
+            barrier = Barrier(4)
+            replace = Path.replace
+
+            def simultaneous_replace(path, target):
+                barrier.wait(timeout=10)
+                return replace(path, target)
+
+            with patch.object(Path, 'replace', simultaneous_replace), ThreadPoolExecutor(max_workers=4) as pool:
+                futures = [pool.submit(batch.save, destination, {'writer': index}) for index in range(4)]
+                for future in futures:
+                    future.result(timeout=15)
+            self.assertIn(json.loads(destination.read_text())['writer'], range(4))
+            self.assertEqual(list(Path(directory).glob('*.tmp')), [])
+
     def test_chorus_headings_with_punctuation_are_not_sung_lyrics(self):
         for heading in ['副歌.', '副歌：', '副：', '（副歌）', '[Chorus]', 'Chorus:']:
             self.assertTrue(sources.CHORUS.fullmatch(heading), heading)

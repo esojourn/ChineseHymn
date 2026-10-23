@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "songId": "05-108",
+  "status": "reviewed",
+  "source": {
+    "file": "05-108主复活.jpg",
+    "sha256": "fcd98fa9ffd4a4b003294f49f7461c86152611c27e0cfb09a55f996e4037e2c2",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-108主复活.mp3",
+      "sha256": "2c236d351e3749180e65671179115726a2502860da0e7df01feabfb64d0298ce",
+      "duration": 198.29333333333332,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 33.75,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 44.8,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 55.75,
+          "region": "s3_chorus",
+          "label": "第1段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 66.05,
+          "region": "s4_chorus",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 74.95,
+          "region": "s5_chorus",
+          "label": "第1段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 88.65,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 99.7,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 110.7,
+          "region": "s3_chorus",
+          "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 120.95,
+          "region": "s4_chorus",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 129.85,
+          "region": "s5_chorus",
+          "label": "第2段：第5谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 143.6,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 154.6,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 165.6,
+          "region": "s3_chorus",
+          "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 175.9,
+          "region": "s4_chorus",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 184.8,
+          "region": "s5_chorus",
+          "label": "第3段：第5谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-108主复活-领唱.mp3",
+      "sha256": "45b21c0b073ca4c00521381f2af1467b0180875eb1006fd9f1bf15e0769350e2",
+      "duration": 198.096,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.175827,
+      "bottom": 0.259002
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.216595,
+      "bottom": 0.29977
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.257362,
+      "bottom": 0.340537
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.364676,
+      "bottom": 0.447252
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.404844,
+      "bottom": 0.48742
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.445612,
+      "bottom": 0.527588
+    },
+    "s3_chorus": {
+      "kind": "image",
+      "top": 0.589496,
+      "bottom": 0.672671
+    },
+    "s4_chorus": {
+      "kind": "image",
+      "top": 0.696211,
+      "bottom": 0.779386
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.803525,
+      "bottom": 0.887899
+    }
+  },
+  "cues": [
+    {
+      "at": 33.4,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 44.4,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 55.35,
+      "region": "s3_chorus",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.65,
+      "region": "s4_chorus",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.55,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 88.3,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 99.3,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.3,
+      "region": "s3_chorus",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 120.6,
+      "region": "s4_chorus",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 129.5,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 143.25,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 154.25,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 165.2,
+      "region": "s3_chorus",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 175.5,
+      "region": "s4_chorus",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 184.4,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "主在坟墓安眠，耶稣我救主；",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "等待复活那天，耶稣我主！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主从坟墓里复活！得胜一切仇敌与罪孽！",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣复活，得胜黑暗死亡；从此永远与圣徒一",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "同作王；主复活主复活！哈利路亚！主复活！",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "兵丁守墓无用，耶稣我救主；",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "封石仍旧落空，耶稣我主！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主从坟墓里复活！得胜一切仇敌与罪孽！",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣复活，得胜黑暗死亡；从此永远与圣徒一",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "同作王；主复活主复活！哈利路亚！主复活！",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "死权困主不成，耶稣我救主；，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "因已被主得胜，耶稣我主！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_chorus",
+        "text": "主从坟墓里复活！得胜一切仇敌与罪孽！",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_chorus",
+        "text": "主耶稣复活，得胜黑暗死亡；从此永远与圣徒一",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "同作王；主复活主复活！哈利路亚！主复活！",
+        "label": "第3段：第5谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-108主复活.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

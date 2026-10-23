@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 209,
+    "published": 212,
     "existing": 8,
-    "pending": 159,
+    "pending": 155,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "needs-calibration": 16,
+    "needs-calibration": 17,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1765,40 +1765,44 @@
       "songId": "04-509",
       "source": "04-509神旨美甜.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-509神旨美甜.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
     },
     {
       "songId": "04-554",
       "source": "04-554宝贵祷告良辰.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-554宝贵祷告良辰.mp3",
         "04-554宝贵祷告良辰-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：1,6,9"
     },
     {
       "songId": "04-627",
       "source": "04-627尽忠.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-627尽忠.mp3",
         "04-627尽忠-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,3,6,9,10,14"
     },
     {
       "songId": "04-641",
       "source": "04-641靠信心必得胜.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-641靠信心必得胜.mp3",
         "04-641靠信心必得胜-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：4,6,8"
     },
     {
       "songId": "04-694",
@@ -2427,12 +2431,11 @@
       "songId": "05-108",
       "source": "05-108主复活.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-108主复活.mp3",
         "05-108主复活-领唱.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-113",
@@ -3257,11 +3260,10 @@
       "songId": "05-294",
       "source": "05-294平安在我心歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-294平安在我心歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-295",
@@ -3359,11 +3361,10 @@
       "songId": "05-316",
       "source": "05-316助我进深歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-316助我进深歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-317",

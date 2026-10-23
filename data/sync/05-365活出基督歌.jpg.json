@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "songId": "05-365",
+  "status": "reviewed",
+  "source": {
+    "file": "05-365活出基督歌.jpg",
+    "sha256": "6df717aa381d36b477d2392aa6a3b41f94403366f38b0ddba58a28e279da8c0a",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-365活出基督歌.mp3",
+      "sha256": "37bfb619de9ba84b4e471f0f92a63a5bdf2756b716d2e89d83c54e334a567c98",
+      "duration": 128.9926530612245,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.176398,
+      "bottom": 0.284482
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.223831,
+      "bottom": 0.331915
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.271265,
+      "bottom": 0.379349
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.31773,
+      "bottom": 0.42775
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.462935,
+      "bottom": 0.571987
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.510368,
+      "bottom": 0.620389
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.55877,
+      "bottom": 0.66879
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.607172,
+      "bottom": 0.716224
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.753344,
+      "bottom": 0.861428
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.801746,
+      "bottom": 0.90983
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.848211,
+      "bottom": 0.956295
+    },
+    "s3_v4": {
+      "kind": "image",
+      "top": 0.895645,
+      "bottom": 1
+    }
+  },
+  "cues": [
+    {
+      "at": 8.45,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.9,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 34.85,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 38.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 52.1,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 65.05,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.85,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.3,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 95.25,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 99.15,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 112.6,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 125.55,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "你的生命藉我表彰，耶稣我主万王之",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "王；使我能有你的形状，随时随在",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "为你发光。",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "你的大爱藉我宣扬，耶稣我主万王之",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "王；使我作你反光明镜，将你荣美",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "昭显与人。",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "你的工作我愿担当，耶稣我主万王之",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "王；全心全力由你支配，凭你差遣",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "决不推。",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "忧喜甘苦与你共尝，耶稣我主万王之",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "王；成为你的忠心伴侣，一生一世",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "跟主到底。（阿们)",
+        "label": "第4段：第3谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-365活出基督歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

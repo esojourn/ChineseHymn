@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 199,
+    "published": 202,
     "existing": 8,
-    "pending": 170,
+    "pending": 168,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "needs-calibration": 15,
+    "needs-calibration": 14,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1648,17 +1648,18 @@
       "songId": "04-379",
       "source": "04-379安稳港口.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "04-379安稳港口.mp3",
         "04-379安稳港口-领唱.mp3"
-      ]
+      ],
+      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4"
     },
     {
       "songId": "04-382",
       "source": "04-382当转眼仰望耶稣.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "04-382当转眼仰望耶稣.mp3",
         "04-382当转眼仰望耶稣-领唱.mp3"
@@ -2059,11 +2060,10 @@
       "songId": "05-037",
       "source": "05-037美哉羔羊歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-037美哉羔羊歌.mp3"
-      ],
-      "reason": "两组谱面节奏模板的定位不一致"
+      ]
     },
     {
       "songId": "05-038",
@@ -3504,11 +3504,10 @@
       "songId": "05-365",
       "source": "05-365活出基督歌.jpg",
       "type": "image",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "05-365活出基督歌.mp3"
-      ],
-      "reason": "第 3 谱行缺少第 1 段歌词，需核对 OCR"
+      ]
     },
     {
       "songId": "05-366",

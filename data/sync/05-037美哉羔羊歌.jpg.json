@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "songId": "05-037",
+  "status": "reviewed",
+  "source": {
+    "file": "05-037美哉羔羊歌.jpg",
+    "sha256": "22a8e588f8c15883e9944d45e4c057b928622ba6c46fee93ad5b79b45722cbc1",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-037美哉羔羊歌.mp3",
+      "sha256": "f05473c00f19591263c02487cb6a8e668553ec6723fa49d15acd8d613389ccb9",
+      "duration": 210.304,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.153201,
+      "bottom": 0.235229
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.186629,
+      "bottom": 0.268091
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.220057,
+      "bottom": 0.301518
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.306176,
+      "bottom": 0.387071
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.339037,
+      "bottom": 0.420499
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.371898,
+      "bottom": 0.45336
+    },
+    "s3_v1": {
+      "kind": "image",
+      "top": 0.45745,
+      "bottom": 0.538346
+    },
+    "s3_v2": {
+      "kind": "image",
+      "top": 0.490312,
+      "bottom": 0.571207
+    },
+    "s3_v3": {
+      "kind": "image",
+      "top": 0.523173,
+      "bottom": 0.603501
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.607592,
+      "bottom": 0.688487
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.64102,
+      "bottom": 0.721915
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.673881,
+      "bottom": 0.755343
+    },
+    "s5_chorus": {
+      "kind": "image",
+      "top": 0.797394,
+      "bottom": 0.878856
+    },
+    "s6_chorus": {
+      "kind": "image",
+      "top": 0.88068,
+      "bottom": 0.962142
+    }
+  },
+  "cues": [
+    {
+      "at": 21.6,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.1,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 42.65,
+      "region": "s3_v1",
+      "label": "第1段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 53.15,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 63.65,
+      "region": "s5_chorus",
+      "label": "第1段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 74.15,
+      "region": "s6_chorus",
+      "label": "第1段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 84.65,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 95.2,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 105.7,
+      "region": "s3_v2",
+      "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 116.2,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.7,
+      "region": "s5_chorus",
+      "label": "第2段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 137.2,
+      "region": "s6_chorus",
+      "label": "第2段：第6谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 147.75,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 158.25,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 168.75,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 179.25,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 189.75,
+      "region": "s5_chorus",
+      "label": "第3段：第5谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 200.25,
+      "region": "s6_chorus",
+      "label": "第3段：第6谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "美哉！善哉！羔羊的新歌，荣耀归主！荣耀归主！",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "这个福音赐无比快乐，荣耀至高的主！",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s3_v1",
+        "text": "降生人间耶稣基督，离去天庭是为救赎，",
+        "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "如此奇爱举世皆无，世人都可蒙恩泽。",
+        "label": "第1段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+        "label": "第1段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+        "label": "第1段：第6谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "听哪！歌声由天上飘来，荣耀归主！荣耀归主！",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "神就是光神也就是爱，荣耀至高的主！",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s3_v2",
+        "text": "世上所有悲伤人们，不必绝望，毋须烦闷，",
+        "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "抬起头来仰望救恩，耶稣救主都恩待。",
+        "label": "第2段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+        "label": "第2段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+        "label": "第2段：第6谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "此歌声音应当亮且清，荣耀归主！荣耀归主！",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "此歌题目应当常鲜明，荣耀至高的主！",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "唱至内心欢喜跳跃，唱至天下布满此调，",
+        "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "唱至所有蒙爱新造都唱此歌永不停。",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s5_chorus",
+        "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+        "label": "第3段：第5谱行"
+      },
+      {
+        "region": "s6_chorus",
+        "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+        "label": "第3段：第6谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-037美哉羔羊歌.jpg.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

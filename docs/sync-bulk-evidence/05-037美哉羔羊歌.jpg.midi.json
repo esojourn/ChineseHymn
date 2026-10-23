@@ -1,0 +1,551 @@
+{
+  "songId": "05-037",
+  "source": "05-037美哉羔羊歌.jpg",
+  "sourceHash": "22a8e588f8c15883e9944d45e4c057b928622ba6c46fee93ad5b79b45722cbc1",
+  "trackHashes": [
+    {
+      "file": "05-037美哉羔羊歌.mp3",
+      "sha256": "f05473c00f19591263c02487cb6a8e668553ec6723fa49d15acd8d613389ccb9"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 1,
+    "mode": "image-rows",
+    "profile": {
+      "targetSha256": "22a8e588f8c15883e9944d45e4c057b928622ba6c46fee93ad5b79b45722cbc1",
+      "file": "hymnary098.mid",
+      "sha256": "6d604cc39e4ba6291d4738aa903fa2df19a9e223ac64c54e68b3f63567809b7d",
+      "verseCount": 3,
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary098.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary098.htm",
+      "formReview": "完整简谱音符序列与参考 MIDI 的编辑代价不超过 12%，所有谱行起始音在全部最优序列匹配中位置确定。每段实际录音另须通过和声与旋律模板的全部谱行核对。",
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 100,
+        "midiNoteCount": 95,
+        "editCost": 5,
+        "runnerUpCost": 74,
+        "semitoneShift": 10,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 17,
+            "possibleMidiNoteIndices": [
+              17
+            ],
+            "at": 8.0
+          },
+          {
+            "scoreNoteIndex": 33,
+            "possibleMidiNoteIndices": [
+              32
+            ],
+            "at": 16.0
+          },
+          {
+            "scoreNoteIndex": 50,
+            "possibleMidiNoteIndices": [
+              48
+            ],
+            "at": 24.0
+          },
+          {
+            "scoreNoteIndex": 66,
+            "possibleMidiNoteIndices": [
+              63
+            ],
+            "at": 32.0
+          },
+          {
+            "scoreNoteIndex": 83,
+            "possibleMidiNoteIndices": [
+              80
+            ],
+            "at": 40.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          8.0,
+          16.0,
+          24.0,
+          32.0,
+          40.0
+        ]
+      }
+    },
+    "symbolicRows": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 100,
+      "midiNoteCount": 95,
+      "editCost": 5,
+      "runnerUpCost": 74,
+      "semitoneShift": 10,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 17,
+          "possibleMidiNoteIndices": [
+            17
+          ],
+          "at": 8.0
+        },
+        {
+          "scoreNoteIndex": 33,
+          "possibleMidiNoteIndices": [
+            32
+          ],
+          "at": 16.0
+        },
+        {
+          "scoreNoteIndex": 50,
+          "possibleMidiNoteIndices": [
+            48
+          ],
+          "at": 24.0
+        },
+        {
+          "scoreNoteIndex": 66,
+          "possibleMidiNoteIndices": [
+            63
+          ],
+          "at": 32.0
+        },
+        {
+          "scoreNoteIndex": 83,
+          "possibleMidiNoteIndices": [
+            80
+          ],
+          "at": 40.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        8.0,
+        16.0,
+        24.0,
+        32.0,
+        40.0
+      ]
+    },
+    "referencePeriod": 47.875,
+    "recordings": {
+      "05-037美哉羔羊歌.mp3": {
+        "music": {
+          "period": 63.1,
+          "similarity": 0.9761057496070862,
+          "initialOnsetEstimate": 17.1,
+          "shifts": [
+            0.0,
+            63.1,
+            126.1
+          ]
+        },
+        "matches": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.14287847648898697,
+                "key": 5,
+                "at": 21.6,
+                "span": 62.8,
+                "starts": [
+                  21.6,
+                  32.1,
+                  42.7,
+                  53.1,
+                  63.7,
+                  74.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.578208040699906,
+                "key": 10,
+                "at": 13.8,
+                "span": 41.9,
+                "starts": [
+                  13.8,
+                  21.0,
+                  29.6,
+                  34.6,
+                  42.6,
+                  51.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.18238980494286103,
+                "key": 5,
+                "starts": [
+                  21.600000381469727,
+                  32.099998474121094,
+                  42.599998474121094,
+                  53.20000076293945,
+                  63.599998474121094,
+                  74.0999984741211
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.4193141350844394,
+                "key": 0,
+                "starts": [
+                  37.29999923706055,
+                  47.29999923706055,
+                  56.0,
+                  63.70000076293945,
+                  71.5,
+                  81.30000305175781
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.14095692098046256,
+                "key": 5,
+                "at": 84.7,
+                "span": 62.8,
+                "starts": [
+                  84.7,
+                  95.2,
+                  105.7,
+                  116.2,
+                  126.7,
+                  137.2
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5728341418476377,
+                "key": 10,
+                "at": 76.8,
+                "span": 41.9,
+                "starts": [
+                  76.8,
+                  83.8,
+                  92.6,
+                  97.7,
+                  105.7,
+                  114.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.18652649651238734,
+                "key": 5,
+                "starts": [
+                  84.5999984741211,
+                  95.19999694824219,
+                  105.69999694824219,
+                  116.19999694824219,
+                  126.69999694824219,
+                  137.1999969482422
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.42093417837200375,
+                "key": 0,
+                "starts": [
+                  100.4000015258789,
+                  110.30000305175781,
+                  119.0,
+                  126.80000305175781,
+                  134.6999969482422,
+                  144.3000030517578
+                ]
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.14535996426493167,
+                "key": 5,
+                "at": 147.8,
+                "span": 62.5,
+                "starts": [
+                  147.8,
+                  158.3,
+                  168.8,
+                  179.2,
+                  189.8,
+                  200.3
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.577227609093329,
+                "key": 10,
+                "at": 139.9,
+                "span": 41.9,
+                "starts": [
+                  139.9,
+                  147.1,
+                  155.7,
+                  160.7,
+                  168.7,
+                  177.9
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.18529118751005969,
+                "key": 5,
+                "starts": [
+                  147.6999969482422,
+                  158.1999969482422,
+                  168.6999969482422,
+                  179.3000030517578,
+                  189.6999969482422,
+                  200.1999969482422
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.44940175874108557,
+                "key": 0,
+                "starts": [
+                  163.39999389648438,
+                  173.39999389648438,
+                  182.10000610351562,
+                  189.8000030517578,
+                  196.5,
+                  201.39999389648438
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "independentTimelines": {
+    "05-037美哉羔羊歌.mp3": {
+      "definitions": [
+        {
+          "region": "s1_v1",
+          "text": "美哉！善哉！羔羊的新歌，荣耀归主！荣耀归主！",
+          "label": "第1段：第1谱行"
+        },
+        {
+          "region": "s2_v1",
+          "text": "这个福音赐无比快乐，荣耀至高的主！",
+          "label": "第1段：第2谱行"
+        },
+        {
+          "region": "s3_v1",
+          "text": "降生人间耶稣基督，离去天庭是为救赎，",
+          "label": "第1段：第3谱行"
+        },
+        {
+          "region": "s4_v1",
+          "text": "如此奇爱举世皆无，世人都可蒙恩泽。",
+          "label": "第1段：第4谱行"
+        },
+        {
+          "region": "s5_chorus",
+          "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+          "label": "第1段：第5谱行"
+        },
+        {
+          "region": "s6_chorus",
+          "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+          "label": "第1段：第6谱行"
+        },
+        {
+          "region": "s1_v2",
+          "text": "听哪！歌声由天上飘来，荣耀归主！荣耀归主！",
+          "label": "第2段：第1谱行"
+        },
+        {
+          "region": "s2_v2",
+          "text": "神就是光神也就是爱，荣耀至高的主！",
+          "label": "第2段：第2谱行"
+        },
+        {
+          "region": "s3_v2",
+          "text": "世上所有悲伤人们，不必绝望，毋须烦闷，",
+          "label": "第2段：第3谱行"
+        },
+        {
+          "region": "s4_v2",
+          "text": "抬起头来仰望救恩，耶稣救主都恩待。",
+          "label": "第2段：第4谱行"
+        },
+        {
+          "region": "s5_chorus",
+          "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+          "label": "第2段：第5谱行"
+        },
+        {
+          "region": "s6_chorus",
+          "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+          "label": "第2段：第6谱行"
+        },
+        {
+          "region": "s1_v3",
+          "text": "此歌声音应当亮且清，荣耀归主！荣耀归主！",
+          "label": "第3段：第1谱行"
+        },
+        {
+          "region": "s2_v3",
+          "text": "此歌题目应当常鲜明，荣耀至高的主！",
+          "label": "第3段：第2谱行"
+        },
+        {
+          "region": "s3_v3",
+          "text": "唱至内心欢喜跳跃，唱至天下布满此调，",
+          "label": "第3段：第3谱行"
+        },
+        {
+          "region": "s4_v3",
+          "text": "唱至所有蒙爱新造都唱此歌永不停。",
+          "label": "第3段：第4谱行"
+        },
+        {
+          "region": "s5_chorus",
+          "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+          "label": "第3段：第5谱行"
+        },
+        {
+          "region": "s6_chorus",
+          "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+          "label": "第3段：第6谱行"
+        }
+      ],
+      "times": [
+        21.6,
+        32.1,
+        42.65,
+        53.15,
+        63.65,
+        74.15,
+        84.65,
+        95.2,
+        105.7,
+        116.2,
+        126.7,
+        137.2,
+        147.75,
+        158.25,
+        168.75,
+        179.25,
+        189.75,
+        200.25
+      ],
+      "returnIndices": [
+        0,
+        6,
+        12
+      ]
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "s1_v1",
+      "text": "美哉！善哉！羔羊的新歌，荣耀归主！荣耀归主！",
+      "label": "第1段：第1谱行"
+    },
+    {
+      "region": "s2_v1",
+      "text": "这个福音赐无比快乐，荣耀至高的主！",
+      "label": "第1段：第2谱行"
+    },
+    {
+      "region": "s3_v1",
+      "text": "降生人间耶稣基督，离去天庭是为救赎，",
+      "label": "第1段：第3谱行"
+    },
+    {
+      "region": "s4_v1",
+      "text": "如此奇爱举世皆无，世人都可蒙恩泽。",
+      "label": "第1段：第4谱行"
+    },
+    {
+      "region": "s5_chorus",
+      "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+      "label": "第1段：第5谱行"
+    },
+    {
+      "region": "s6_chorus",
+      "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+      "label": "第1段：第6谱行"
+    },
+    {
+      "region": "s1_v2",
+      "text": "听哪！歌声由天上飘来，荣耀归主！荣耀归主！",
+      "label": "第2段：第1谱行"
+    },
+    {
+      "region": "s2_v2",
+      "text": "神就是光神也就是爱，荣耀至高的主！",
+      "label": "第2段：第2谱行"
+    },
+    {
+      "region": "s3_v2",
+      "text": "世上所有悲伤人们，不必绝望，毋须烦闷，",
+      "label": "第2段：第3谱行"
+    },
+    {
+      "region": "s4_v2",
+      "text": "抬起头来仰望救恩，耶稣救主都恩待。",
+      "label": "第2段：第4谱行"
+    },
+    {
+      "region": "s5_chorus",
+      "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+      "label": "第2段：第5谱行"
+    },
+    {
+      "region": "s6_chorus",
+      "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+      "label": "第2段：第6谱行"
+    },
+    {
+      "region": "s1_v3",
+      "text": "此歌声音应当亮且清，荣耀归主！荣耀归主！",
+      "label": "第3段：第1谱行"
+    },
+    {
+      "region": "s2_v3",
+      "text": "此歌题目应当常鲜明，荣耀至高的主！",
+      "label": "第3段：第2谱行"
+    },
+    {
+      "region": "s3_v3",
+      "text": "唱至内心欢喜跳跃，唱至天下布满此调，",
+      "label": "第3段：第3谱行"
+    },
+    {
+      "region": "s4_v3",
+      "text": "唱至所有蒙爱新造都唱此歌永不停。",
+      "label": "第3段：第4谱行"
+    },
+    {
+      "region": "s5_chorus",
+      "text": "大声赞美，口唱心和，荣耀归主！荣耀归主！",
+      "label": "第3段：第5谱行"
+    },
+    {
+      "region": "s6_chorus",
+      "text": "自古以来无此诗歌，荣耀至高的主！（阿们）",
+      "label": "第3段：第6谱行"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 18,
+  "elapsedSeconds": 2.146
+}

@@ -1,0 +1,265 @@
+{
+  "songId": "01-133",
+  "source": "01-133金琴在天响起.txt",
+  "sourceHash": "234e93b751f3b608dd3ff4171d5ee5f8f2150767e0aaf607aeb53b5ff05b35db",
+  "trackHashes": [
+    {
+      "file": "01-133金琴在天响起.mp3",
+      "sha256": "2a8b5517ac609189f2711cc3916f2580241c0de0426b13fd0e14667d9b658c60"
+    },
+    {
+      "file": "01-133金琴在天响起-领唱.mp3",
+      "sha256": "9ab4bf411d59c0000f275804d0aa7cee6b9136eb324fe3a89fcb8b2c113a1148"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 3,
+    "profile": {
+      "targetSha256": "234e93b751f3b608dd3ff4171d5ee5f8f2150767e0aaf607aeb53b5ff05b35db",
+      "file": "hymnary133.mid",
+      "sha256": "88a67977405137479ec7800a1fd7dd653248bcfd954fc67ead608167e91272f1",
+      "url": "https://chinatownministry.org/Hymnal/Midi/hymnary133.mid",
+      "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary133.htm",
+      "scoreReferenceUrl": "https://www.smallchurchmusic.com/Score_PDF/GoldenHarpsAreSounding-Hermas.pdf",
+      "scoreReferenceSha256": "079a31877be0da5fae0efb4d1355de270efe2d1a5e64853676153d8b8623519c",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "金琴在天响起",
+          "祂的大工告成"
+        ],
+        [
+          "祂来流血、受死",
+          "祂的大工告成"
+        ],
+        [
+          "祂在有福境界",
+          "祂的大工告成"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            0,
+            0,
+            10,
+            8
+          ]
+        },
+        {
+          "onsetIndex": 46,
+          "pitches": [
+            0,
+            0,
+            0,
+            10,
+            8
+          ]
+        }
+      ],
+      "formReview": "目视核对公开 Hermas 四声部乐谱，共24个4/4小节；双小节线前16小节为主歌，后8小节为副歌。正文每段前四行对应主歌，后两行对应副歌。副歌第17小节起音（MIDI索引46、32秒），首句五音与主歌同为33321，公开谱G调、参考MIDI降A调。对照页与MIDI文件哈希固定，每个实际乐段的两个区域仍须独立通过和声、旋律定位与重复相位核对。"
+    },
+    "referencePeriod": 47.875,
+    "music": {
+      "period": 54.9,
+      "similarity": 0.9340370893478394,
+      "initialOnsetEstimate": 6.0,
+      "shifts": [
+        0.0,
+        54.9,
+        109.7
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.25794510415777266,
+            "key": 8,
+            "at": 9.9,
+            "span": 54.7,
+            "starts": [
+              9.4,
+              46.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5986824522035804,
+            "key": 1,
+            "at": 38.7,
+            "span": 31.3,
+            "starts": [
+              38.4,
+              60.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1533508439750185,
+            "key": 8,
+            "starts": [
+              9.399999618530273,
+              46.0
+            ],
+            "span": 54.599998474121094
+          },
+          "runnerUp": {
+            "cost": 0.4138836747744479,
+            "key": 3,
+            "starts": [
+              16.299999237060547,
+              46.0
+            ],
+            "span": 43.20000076293945
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2647492177716587,
+            "key": 8,
+            "at": 64.8,
+            "span": 54.6,
+            "starts": [
+              64.3,
+              100.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.607879527496727,
+            "key": 1,
+            "at": 51.1,
+            "span": 38.4,
+            "starts": [
+              50.9,
+              75.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14561219206707507,
+            "key": 8,
+            "starts": [
+              64.19999694824219,
+              100.80000305175781
+            ],
+            "span": 54.70000457763672
+          },
+          "runnerUp": {
+            "cost": 0.42838953014714254,
+            "key": 3,
+            "starts": [
+              71.19999694824219,
+              100.9000015258789
+            ],
+            "span": 43.100006103515625
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2560513466868027,
+            "key": 8,
+            "at": 119.6,
+            "span": 54.6,
+            "starts": [
+              119.1,
+              155.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.6111546917691257,
+            "key": 1,
+            "at": 138.8,
+            "span": 32.0,
+            "starts": [
+              138.5,
+              160.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.143112001957572,
+            "key": 8,
+            "starts": [
+              119.0999984741211,
+              155.6999969482422
+            ],
+            "span": 54.50000762939453
+          },
+          "runnerUp": {
+            "cost": 0.42636825478142076,
+            "key": 3,
+            "starts": [
+              126.0999984741211,
+              155.6999969482422
+            ],
+            "span": 43.099998474121094
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      32.0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "金琴在天响起，天使大赞美； 珍珠城门大开，欢迎王凯归。 基督，荣耀的王，耶稣，爱之君， 凯歌声中高举，坐宝座至尊。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "祂来流血、受死，将我们救援； 如今冠以荣耀，坐在父右边。 永不再经历死，永不再受苦。 耶稣，荣耀的王，已升至高处。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "祂在有福境界，为儿女祈求； 呼召同进荣耀，并赐下恩佑。 为着忠诚圣徒，居所已备全； 耶稣永远活着，祂爱到永远。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "01-133金琴在天响起.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.7664640545845032,
+      "meanPathCost": 0.22567090392112732,
+      "cueWindowCosts": [
+        0.27903586626052856,
+        0.2288769781589508,
+        0.2520766258239746,
+        0.24658556282520294,
+        0.24631264805793762,
+        0.23800745606422424
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 2.915
+}

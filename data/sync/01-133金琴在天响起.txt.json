@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "01-133",
+  "status": "reviewed",
+  "source": {
+    "file": "01-133金琴在天响起.txt",
+    "sha256": "234e93b751f3b608dd3ff4171d5ee5f8f2150767e0aaf607aeb53b5ff05b35db",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-133金琴在天响起.mp3",
+      "sha256": "2a8b5517ac609189f2711cc3916f2580241c0de0426b13fd0e14667d9b658c60",
+      "duration": 175.6212244897959,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.2,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 45.8,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 63.95,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.65,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 119.1,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 155.5,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-133金琴在天响起-领唱.mp3",
+      "sha256": "9ab4bf411d59c0000f275804d0aa7cee6b9136eb324fe3a89fcb8b2c113a1148",
+      "duration": 174.68081632653062,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 9.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 64.25,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 100.85,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.1,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 155.7,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "金琴在天响起，天使大赞美； 珍珠城门大开，欢迎王凯归。 基督，荣耀的王，耶稣，爱之君， 凯歌声中高举，坐宝座至尊。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "祂来流血、受死，将我们救援； 如今冠以荣耀，坐在父右边。 永不再经历死，永不再受苦。 耶稣，荣耀的王，已升至高处。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "祂在有福境界，为儿女祈求； 呼召同进荣耀，并赐下恩佑。 为着忠诚圣徒，居所已备全； 耶稣永远活着，祂爱到永远。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "祂的大工告成，我们欢声唱， 祂已被举高升，荣耀归我王。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-133金琴在天响起.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-23",
   "totalSources": 420,
   "counts": {
-    "published": 218,
+    "published": 219,
     "existing": 8,
-    "pending": 141,
+    "pending": 139,
+    "needs-calibration": 26,
     "missing-audio": 2,
     "needs-track-alignment": 3,
-    "needs-calibration": 25,
     "missing-lyrics": 23
   },
   "songs": [
@@ -95,7 +95,7 @@
       "songId": "01-133",
       "source": "01-133金琴在天响起.txt",
       "type": "text",
-      "status": "pending",
+      "status": "published",
       "tracks": [
         "01-133金琴在天响起.mp3",
         "01-133金琴在天响起-领唱.mp3"
@@ -124,11 +124,12 @@
       "songId": "01-171",
       "source": "01-171罪虽显如朱红.txt",
       "type": "text",
-      "status": "pending",
+      "status": "needs-calibration",
       "tracks": [
         "01-171罪虽显如朱红.mp3",
         "01-171罪虽显如朱红-领唱.mp3"
-      ]
+      ],
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-193",
@@ -3589,7 +3590,7 @@
       "tracks": [
         "06-002所有美善的力量.mp3"
       ],
-      "reason": "未识别出谱行及对应横排歌词"
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-003",

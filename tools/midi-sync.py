@@ -134,14 +134,49 @@ def reading_rows(source, profile, melody):
     return offsets, rows
 
 
+def reference_limits(song, profile):
+    discovery = profile.get('referenceDiscovery')
+    if not discovery:
+        return .35, .35
+    matches = discovery.get('matches', [])
+    recording = next((track for track in song['tracks'] if track['file'] == song['reference']), None)
+    if (discovery.get('sourceHash') != song['sha256'] or not recording or
+            discovery.get('audioHash') != recording['sha256'] or discovery.get('audio') != song['reference'] or
+            len(matches) < 2 or matches[0]['file'] != profile['file'] or matches[0]['similarity'] < .7 or
+            matches[0]['similarity'] - matches[1]['similarity'] < .1):
+        raise ValueError('音频检索参考尚未确认或已失效')
+    # Retrieval only proposes a tune. Actual publication requires stronger
+    # independent harmonic and melodic matches than a documented lyric reference.
+    return .25, .20
+
+
+def check_extra_cycle(harmony, melody_rows, target, period, music, last, limits):
+    expected = last + music['period']
+    if float(target[0][-1]) < expected + .75 * music['period']:
+        return {'checked': False, 'reason': '没有额外完整乐段的音频范围'}
+    harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], expected, cue_offsets=[0])
+    melodic = match_template(melody_rows, target[1], target[0], music['period'], expected, 'spatialWeights')
+    one, two = harmonic['best'], melodic['best']
+    if (one['cost'] <= limits[0] and two['cost'] <= limits[1] and
+            harmonic['runnerUp']['cost'] - one['cost'] >= .08 and
+            melodic['runnerUp']['cost'] - two['cost'] >= .06 and one['key'] == two['key'] and
+            abs(one['starts'][0] - two['starts'][0]) <= .5 and
+            min(one['starts'][0], two['starts'][0]) >= last + .75 * music['period'] and
+            all(.75 * music['period'] <= span <= 1.25 * music['period'] for span in [one['span'], two['span']])):
+        raise ValueError('录音还有额外完整同曲乐段，需核对实际演唱顺序')
+    return {'checked': True, 'harmony': harmonic, 'melody': melodic}
+
+
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 3, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 4, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:
             raise ValueError('文字素材与已经核对的 MIDI 配置不一致')
+        limits = reference_limits(song, profile)
+        evidence['midiMatching']['maximumCosts'] = {'harmony': limits[0], 'melody': limits[1]}
         source = text_source(batch.ROOT / 'data' / song['source'])
         if len(source['verses']) != profile['verseCount']:
             raise ValueError('MIDI 参考与正文段数不一致')
@@ -161,9 +196,9 @@ def generate(song, profile, cache):
             melodic = match_template(melody_rows, target[1], target[0], music['period'], onset, 'spatialWeights')
             one, two = harmonic['best'], melodic['best']
             matches.append({'harmony': harmonic, 'melody': melodic})
-            if (one['cost'] > .35 or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
+            if (one['cost'] > limits[0] or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
                     not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
-                    two['cost'] > .35 or melodic['runnerUp']['cost'] - two['cost'] < .06 or
+                    two['cost'] > limits[1] or melodic['runnerUp']['cost'] - two['cost'] < .06 or
                     one['key'] != two['key'] or len(one['starts']) != len(two['starts']) or
                     max(abs(a - b) for a, b in zip(one['starts'], two['starts'])) > .5):
                 raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
@@ -172,6 +207,11 @@ def generate(song, profile, cache):
         # Both symbolic templates already locate every verse independently.
         if decisions:
             raise ValueError('MIDI 独立模板的首段起点仍有歧义')
+        if profile.get('referenceDiscovery'):
+            if len(offsets) != 1:
+                raise ValueError('音频检索参考还需逐项核对段内分句')
+            evidence['midiMatching']['trailingCycle'] = check_extra_cycle(harmony, melody_rows, target,
+                period, music, corrected[-1], limits)
         evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
         evidence['midiMatching']['readingOffsets'] = offsets
         definitions = [item for verse in source['verses'] for item in verse]

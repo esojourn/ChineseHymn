@@ -31,6 +31,9 @@ try:
     midi_image_spec = importlib.util.spec_from_file_location('midi_image_sync', TOOLS / 'midi-image-sync.py')
     midi_image = importlib.util.module_from_spec(midi_image_spec)
     midi_image_spec.loader.exec_module(midi_image)
+    retrieval_spec = importlib.util.spec_from_file_location('midi_retrieval', TOOLS / 'find-midi-references.py')
+    retrieval = importlib.util.module_from_spec(retrieval_spec)
+    retrieval_spec.loader.exec_module(retrieval)
 except ImportError:
     confirm_boundaries = None
 
@@ -40,6 +43,20 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional retrieval dependencies')
+    def test_cyclic_retrieval_identifies_a_transposed_and_shifted_reference(self):
+        import numpy as np
+        generator = np.random.default_rng(31)
+        known = np.eye(12, dtype=np.float32)[:, np.repeat(generator.integers(0, 12, 64), 8)]
+        other = np.eye(12, dtype=np.float32)[:, np.repeat(generator.integers(0, 12, 64), 8)]
+        query = np.roll(np.roll(known, 5, axis=0), 37, axis=1)
+        spectra = np.stack([np.fft.rfft(value, axis=1) for value in [other, known]])
+        result = retrieval.rank_candidates(spectra, ['other.mid', 'known.mid'], query)
+        self.assertEqual(result[0]['file'], 'known.mid')
+        self.assertEqual(result[0]['key'], 5)
+        self.assertEqual(result[0]['cyclicPhase'], 37)
+        self.assertGreater(result[0]['similarity'] - result[1]['similarity'], .5)
+
     @staticmethod
     def ctc_fixture(first=50, probability=.9):
         import numpy as np
@@ -404,6 +421,45 @@ class BatchTests(unittest.TestCase):
             midi_sync.reading_rows(source, wrong, melody)
         with self.assertRaises(ValueError):
             midi_sync.reading_rows(source, {}, melody)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_retrieved_midi_references_pin_audio_and_apply_stronger_actual_match_limits(self):
+        import copy
+        song = {'sha256': 'source', 'reference': 'voice.mp3', 'tracks': [{'file': 'voice.mp3', 'sha256': 'audio'}]}
+        profile = {'file': 'tune.mid', 'referenceDiscovery': {'sourceHash': 'source', 'audio': 'voice.mp3',
+            'audioHash': 'audio', 'matches': [{'file': 'tune.mid', 'similarity': .8},
+                                           {'file': 'other.mid', 'similarity': .6}]}}
+        self.assertEqual(midi_sync.reference_limits(song, profile), (.25, .20))
+        self.assertEqual(midi_sync.reference_limits(song, {}), (.35, .35))
+        for field, value in [('audioHash', 'old-audio'), ('sourceHash', 'old-source'), ('audio', 'other.mp3')]:
+            wrong = copy.deepcopy(profile)
+            wrong['referenceDiscovery'][field] = value
+            with self.assertRaises(ValueError):
+                midi_sync.reference_limits(song, wrong)
+        wrong = copy.deepcopy(profile)
+        wrong['referenceDiscovery']['matches'][1]['similarity'] = .75
+        with self.assertRaises(ValueError):
+            midi_sync.reference_limits(song, wrong)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_retrieved_reference_rejects_an_unexplained_extra_complete_cycle(self):
+        import numpy as np
+        harmonic = {'best': {'cost': .1, 'key': 2, 'starts': [140], 'span': 40}, 'runnerUp': {'cost': .5}}
+        melodic = {'best': {'cost': .1, 'key': 2, 'starts': [140.1], 'span': 40}, 'runnerUp': {'cost': .5}}
+        target = (np.arange(250), np.zeros((12, 250)))
+        music = {'period': 40}
+        with patch.object(midi_sync.same_tune, 'match_cycle', return_value=harmonic), \
+                patch.object(midi_sync, 'match_template', return_value=melodic):
+            with self.assertRaisesRegex(ValueError, '额外完整'):
+                midi_sync.check_extra_cycle(None, None, target, 40, music, 100, (.25, .20))
+            melodic['best']['starts'] = [100.1]
+            harmonic['best']['starts'] = [100]
+            result = midi_sync.check_extra_cycle(None, None, target, 40, music, 100, (.25, .20))
+            self.assertTrue(result['checked'])
+        with patch.object(midi_sync.same_tune, 'match_cycle') as match:
+            result = midi_sync.check_extra_cycle(None, None, (np.arange(150), None), 40, music, 100, (.25, .20))
+            self.assertFalse(result['checked'])
+            match.assert_not_called()
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
     def test_symbolic_and_optical_pair_requires_all_boundaries_key_and_full_span(self):

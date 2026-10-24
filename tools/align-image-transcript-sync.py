@@ -21,18 +21,41 @@ _model_path = None
 def transcript_blocks(profile, transcript, source):
     segments, used, definitions, ranges, words = transcript['segments'], set(), [], [], []
     language = profile['language']
+    word_mode = any('wordRange' in block for block in profile['blocks'])
+    all_words, segment_words = [], []
+    for segment in segments:
+        indices = []
+        for word in segment.get('words', []):
+            if clean(word['word'], language):
+                indices.append(len(all_words))
+                all_words.append(word)
+        segment_words.append(indices)
+    empty_segments = {index for index, indices in enumerate(segment_words) if not indices}
+    excluded_empty = set()
     for block in profile['blocks']:
-        indices = block['segmentIndices']
         region = block['region']
-        if (region not in source['regions'] or not indices or indices != list(range(indices[0], indices[-1] + 1)) or
-                indices[0] < 0 or indices[-1] >= len(segments) or used.intersection(indices)):
-            raise ValueError('演唱片段范围或阅读区域无效')
+        if word_mode:
+            interval = block.get('wordRange')
+            if (region not in source['regions'] or 'segmentIndices' in block or not isinstance(interval, list) or
+                    len(interval) != 2 or any(type(index) is not int for index in interval) or
+                    not 0 <= interval[0] < interval[1] <= len(all_words)):
+                raise ValueError('演唱词语范围或阅读区域无效')
+            indices = list(range(*interval))
+            if used.intersection(indices):
+                raise ValueError('演唱词语范围发生重复')
+            lexical = all_words[interval[0]:interval[1]]
+            text = ' '.join(word['word'].strip() for word in lexical)
+        else:
+            indices = block['segmentIndices']
+            if (region not in source['regions'] or not indices or indices != list(range(indices[0], indices[-1] + 1)) or
+                    indices[0] < 0 or indices[-1] >= len(segments) or used.intersection(indices)):
+                raise ValueError('演唱片段范围或阅读区域无效')
+            selected = [segments[index] for index in indices]
+            lexical = [word for segment in selected for word in segment.get('words', []) if clean(word['word'], language)]
+            text = ' '.join(segment['text'].strip() for segment in selected)
         used.update(indices)
-        selected = [segments[index] for index in indices]
-        lexical = [word for segment in selected for word in segment.get('words', []) if clean(word['word'], language)]
         if not lexical:
             raise ValueError('指定段落没有可核对的人声词语')
-        text = ' '.join(segment['text'].strip() for segment in selected)
         if source.get('layout') == 'lyrics-only-text':
             original = source['blocks'][region]['text']
             text = block.get('sourceText', original)
@@ -47,11 +70,17 @@ def transcript_blocks(profile, transcript, source):
         words.append(clean(first['word'], language))
     for excluded in profile.get('nonLyricSegments', []):
         index = excluded['index']
-        if (index in used or not 0 <= index < len(segments) or
+        if (type(index) is not int or not 0 <= index < len(segments) or
                 segments[index]['text'].strip() != excluded['text'].strip()):
             raise ValueError('非歌词片段与已经复核的尾语不一致')
-        used.add(index)
-    if used != set(range(len(segments))):
+        indices = segment_words[index] if word_mode else [index]
+        if used.intersection(indices) or index in excluded_empty:
+            raise ValueError('非歌词片段与演唱范围发生重复')
+        used.update(indices)
+        if word_mode and not indices:
+            excluded_empty.add(index)
+    if (used != set(range(len(all_words) if word_mode else len(segments))) or
+            word_mode and excluded_empty != empty_segments):
         raise ValueError('实际转写仍有未说明的演唱片段')
     if source.get('layout') == 'lyrics-only-text':
         performed = {definition['region'] for definition in definitions}
@@ -102,7 +131,7 @@ def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
             source = text_source(batch.ROOT / 'data' / song['source'], profile['language'])
             source['layout'] = 'lyrics-only-text'
             source['blocks'] = {item['region']: item for verse in source['verses'] for item in verse}
-            evidence['transcriptMatching']['algorithmVersion'] = 7
+            evidence['transcriptMatching']['algorithmVersion'] = 8 if any('wordRange' in block for block in profile['blocks']) else 7
         asr_path = cache / 'asr' / (song['reference'] + '.json')
         if batch.checksum(asr_path) != profile['transcriptHash']:
             raise ValueError('转写已变化，需重新核对演唱段落')

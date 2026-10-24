@@ -10,6 +10,28 @@ from sync_batch_audio import map_recordings, repeated_verses
 _model = None
 
 
+def window_estimate_profile(song):
+    profiles = json.loads(Path(__file__).with_name('sync-window-estimate-profiles.json').read_text())
+    return profiles.get(song['songId'])
+
+
+def reviewed_estimates(song, definitions, defaults, profile):
+    if profile is None:
+        return defaults
+    if (profile.get('version') != 1 or profile.get('sourceHash') != song['sha256'] or
+            profile.get('tracks') != song['tracks'] or profile.get('audioFile') != song['reference'] or
+            profile.get('regions') != [item['region'] for item in definitions]):
+        raise ValueError('上下文取样配置与当前歌词、录音或演唱顺序不符')
+    estimates = profile.get('estimates', [])
+    if (len(estimates) != len(definitions) or not estimates or
+            any(type(at) not in (int, float) or not np.isfinite(at) or at < 0 for at in estimates) or
+            any(a + .5 >= b for a, b in zip(estimates, estimates[1:]))):
+        raise ValueError('上下文取样位置不完整或未递增')
+    # These values choose audio clips only. They never bypass confirm_boundaries
+    # or supply published times, including when a previous checkpoint exists.
+    return estimates
+
+
 def context(text, language, tail=False):
     if language in ('en', 'de'):
         words = text.split()
@@ -128,7 +150,8 @@ def generate(job):
     if evidence_path.exists():
         old = json.loads(evidence_path.read_text())
         valid_algorithm = method != 'score' or old.get('scoreMatching', {}).get('algorithmVersion', 0) >= 2
-        if not retry and valid_algorithm and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
+        valid_windows = method == 'score' or old.get('windowEstimateProfile') == window_estimate_profile(song)
+        if not retry and valid_algorithm and valid_windows and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
             return song['songId'], old['status'] + ' (cached)'
     start_time = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'], 'trackHashes': song['tracks']}
@@ -183,10 +206,14 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
             definitions.append(item)
             # Estimates only select audio windows. Published times come from acoustic alignment.
             estimates.append(music['initialOnsetEstimate'] + shift + music['period'] * float(weight))
+    profile = window_estimate_profile(song)
+    estimates = reviewed_estimates(song, definitions, estimates, profile)
+    if profile is not None:
+        evidence['windowEstimateProfile'] = profile
     previous_path = cache / 'alignment' / (song['source'] + '.json')
     previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
     evidence['performanceOrder'] = definitions
-    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions:
+    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions and previous.get('windowEstimateProfile') == profile:
         try:
             cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'])
             evidence.update(windows=previous['windows'], estimates=previous['estimates'], music=music, phaseDecisions=decisions)

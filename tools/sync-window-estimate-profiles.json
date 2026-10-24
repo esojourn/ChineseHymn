@@ -1,0 +1,77 @@
+{
+  "02-421": {
+    "version": 1,
+    "sourceHash": "23a99cc77a66b6f7992c84fe210a074183932045250ccd51ea0eb22e1060a4a0",
+    "tracks": [
+      {
+        "file": "02-421奇妙的主.mp3",
+        "sha256": "bf4e75526d963ab17f3e12a80d1612c733f957a9fe323010ed70889aa1b3f72b"
+      },
+      {
+        "file": "02-421奇妙的主-领唱.mp3",
+        "sha256": "3abde5817b4b602e6dfa44134313f330aeaac7c27d3a5959574ca50c9f857ccf"
+      }
+    ],
+    "audioFile": "02-421奇妙的主-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "estimates": [
+      6.5,
+      30.9,
+      55.3,
+      79.7,
+      104.2,
+      128.6,
+      153.0,
+      177.4
+    ],
+    "reference": {
+      "catalogUrl": "https://www.christianstudy.com/hymns_4.html",
+      "midi": {
+        "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/421.mid",
+        "file": "midi/cs-lifehymns-421.mid",
+        "sha256": "d0e6c47d5f21cf853c32695a29e37d44a7cea3c1120d924e0fe9b6ab165a246f",
+        "bytes": 3379
+      },
+      "lyrics": {
+        "url": "https://www.christianstudy.com/data/hymns/text/life421.html",
+        "file": "reference/external/cs-life421.html",
+        "sha256": "837dcec24087664a833b49d96f8a2d2b4c93acbc9e1005397f23a4ff27d77a68",
+        "bytes": 1908
+      },
+      "completeMelody": {
+        "best": {
+          "cost": 0.08748387229719554,
+          "key": 7,
+          "starts": [
+            6.5,
+            55.29999923706055,
+            104.19999694824219,
+            153.0
+          ],
+          "span": 195.10000610351562
+        },
+        "runnerUp": {
+          "cost": 0.4282592230366411,
+          "key": 0,
+          "starts": [
+            4.0,
+            43.099998474121094,
+            79.80000305175781,
+            119.0
+          ],
+          "span": 161.10000610351562
+        }
+      }
+    },
+    "review": "原文四段与共同副歌已逐段核对。完整同曲MIDI在录音中定位四次乐段，用其起点及半乐段位置选取正文和副歌的上下文音频窗口。半乐段仅为窗口中心估计，不是经谱面确认的副歌音符分界。所有最终起点仍须通过原有双窗口及实测重复音乐相位检查，其他录音独立做chroma-DTW对应。"
+  }
+}

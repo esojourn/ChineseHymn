@@ -44,6 +44,29 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_reviewed_window_estimates_bind_assets_and_order_without_confirming_onsets(self):
+        from copy import deepcopy
+        from sync_batch_align import reviewed_estimates
+        song = {'sha256': 'lyrics', 'reference': 'voice.mp3', 'tracks': [{'file': 'voice.mp3', 'sha256': 'audio'}]}
+        definitions = [{'region': 'r1'}, {'region': 'r2'}]
+        profile = {'version': 1, 'sourceHash': 'lyrics', 'tracks': song['tracks'],
+                   'audioFile': 'voice.mp3', 'regions': ['r1', 'r2'], 'estimates': [8, 30]}
+        self.assertEqual(reviewed_estimates(song, definitions, [2, 20], None), [2, 20])
+        self.assertEqual(reviewed_estimates(song, definitions, [2, 20], profile), [8, 30])
+        for key, value in [('sourceHash', 'stale'), ('tracks', []), ('audioFile', 'other.mp3'),
+                           ('regions', ['r2', 'r1']), ('estimates', [8]), ('estimates', [8, 8.5]),
+                           ('estimates', [-1, 30]), ('estimates', [False, 30]),
+                           ('estimates', [8, float('nan')])]:
+            bad = deepcopy(profile)
+            bad[key] = value
+            with self.assertRaises(ValueError):
+                reviewed_estimates(song, definitions, [2, 20], bad)
+        # A reviewed estimate supplies no observations, so later cue confirmation fails.
+        with self.assertRaises(ValueError):
+            confirm_boundaries([[definitions[0]], [definitions[1]]],
+                               {'shifts': [0, 22], 'similarity': 1}, [])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_complete_score_corroborates_each_region_despite_imprecise_repeat_shifts(self):
         import numpy as np
         pitches = np.repeat(np.random.default_rng(17).integers(0, 12, 24), 10)
@@ -502,6 +525,43 @@ class BatchTests(unittest.TestCase):
             with self.subTest(omissions=omissions):
                 with self.assertRaises(ValueError):
                     image_transcript.transcript_blocks({**profile, 'unsungRegions': omissions}, {'segments': segments}, source)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_word_ranges_cross_asr_segments_without_losing_or_repeating_words(self):
+        import copy
+        words = [{'word': word, 'start': 5 + i, 'end': 5.5 + i}
+                 for i, word in enumerate('God will make a way He will make a way for me Thank you'.split())]
+        segments = [{'text': 'God will make a way He will', 'words': words[:7]},
+                    {'text': 'make a way for me', 'words': words[7:12]},
+                    {'text': 'Thank you', 'words': words[12:]}, {'text': '♪', 'words': []}]
+        source = {'layout': 'lyrics-only-text', 'regions': {'r1': {}, 'r2': {}},
+                  'blocks': {'r1': {'text': 'God will make a way', 'label': 'first'},
+                             'r2': {'text': 'He will make a way for me', 'label': 'second'}}}
+        profile = {'language': 'en', 'blocks': [{'region': 'r1', 'wordRange': [0, 5]},
+                   {'region': 'r2', 'wordRange': [5, 12]}],
+                   'nonLyricSegments': [{'index': 2, 'text': 'Thank you'}, {'index': 3, 'text': '♪'}]}
+        definitions, estimates, *_ = image_transcript.transcript_blocks(profile, {'segments': segments}, source)
+        self.assertEqual(estimates, [5, 10])
+        self.assertEqual([row['text'] for row in definitions], ['God will make a way', 'He will make a way for me'])
+        for interval in [[4, 12], [6, 12], [-1, 12], [5, 15], [True, 12], [5, 5], '5:12']:
+            wrong = copy.deepcopy(profile)
+            wrong['blocks'][1]['wordRange'] = interval
+            with self.subTest(interval=interval):
+                with self.assertRaises(ValueError):
+                    image_transcript.transcript_blocks(wrong, {'segments': segments}, source)
+        for change in ['mixed', 'missing-word-outro', 'missing-empty-outro', 'excluded-lyric']:
+            wrong = copy.deepcopy(profile)
+            if change == 'mixed':
+                wrong['blocks'][0]['segmentIndices'] = [0]
+            elif change == 'missing-word-outro':
+                wrong['nonLyricSegments'].pop(0)
+            elif change == 'missing-empty-outro':
+                wrong['nonLyricSegments'].pop()
+            else:
+                wrong['nonLyricSegments'].append({'index': 0, 'text': segments[0]['text']})
+            with self.subTest(change=change):
+                with self.assertRaises(ValueError):
+                    image_transcript.transcript_blocks(wrong, {'segments': segments}, source)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
     def test_free_initial_prefix_requires_exact_unique_opening_and_measured_first_word(self):

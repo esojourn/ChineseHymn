@@ -5614,5 +5614,90 @@
       }
     },
     "formReview": "已逐段核对生命圣诗199完整四段及副歌和直接MIDI链接，正文每段前两行为主歌，空行后的单行为副歌。另目视复核风火公开PDF第2页全部60个旋律起音，前32音为主歌，第三谱行双小节线后首个5为副歌首音，所有音高及唯一分界与MIDI完全对应。每段、每区域仍须通过实际录音和声、旋律、调性、0.5秒及反复相位检查，不使用字数或固定速度推算时间。"
+  },
+  "02-018": {
+    "targetSha256": "b51ca8252b693f31856fbc6dace26b0c1c87372afa72277231416438af577b36",
+    "file": "life018.mid",
+    "sha256": "27c9e2bdca7967ca04fdb9cfbd68d5665755897efb20a2a76ebb6b1ce3c211eb",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/018.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life018.html",
+    "textReferenceSha256": "aa57c7c5dd271d24059f66f0c1a2f14973c296af4fbe21d49f0d1fc38d35d877",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/G/Great_Is_Thy_Faithfulness/Great_Is_Thy_Faithfulness.xml",
+    "scoreReferenceSha256": "fce228529919186d25b88360b7f9b03d88d0afe0d52479a5ce292e298a00117f",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "你信实何广大圣天",
+        "你信实何广大你信"
+      ],
+      [
+        "春夏秋冬循环栽种",
+        "你信实何广大你信"
+      ],
+      [
+        "你赦免我罪愆赐我",
+        "你信实何广大你信"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          6,
+          6,
+          6,
+          6,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 42,
+        "pitches": [
+          9,
+          9,
+          4,
+          7,
+          6
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 85,
+      "midiNoteCount": 85,
+      "editCost": 0,
+      "runnerUpCost": 63,
+      "semitoneShift": 11,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 42,
+          "possibleMidiNoteIndices": [
+            42
+          ],
+          "at": 25.0435
+        }
+      ],
+      "offsets": [
+        0.0,
+        25.0435
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        42
+      ]
+    },
+    "formReview": "Great Is Thy Faithfulness / Faithfulness，第1至16小节为主歌，副歌Great is Thy faithfulness从第17小节起。中文每段前四行为主歌，后四行为副歌。 已核对生命圣诗原歌本译文及同编号MIDI、原英文MusicXML完整最高旋律，各阅读起点在全部最优逐音对应中唯一。实际每段每区域仍须通过独立和声、旋律、调性、0.5秒及反复相位检查，其他录音另须实际音乐对应。不使用字数或固定速度推算歌词时间。"
   }
 }

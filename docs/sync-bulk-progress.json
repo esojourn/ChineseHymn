@@ -2,13 +2,12 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 292,
+    "published": 294,
     "existing": 8,
-    "needs-calibration": 88,
+    "needs-calibration": 87,
     "missing-audio": 2,
     "needs-source-review": 2,
     "needs-track-alignment": 4,
-    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -550,12 +549,11 @@
       "songId": "02-012",
       "source": "02-012你真伟大.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "02-012你真伟大.mp3",
         "02-012你真伟大-领唱.mp3"
-      ],
-      "reason": "参考谱边界在各段的音乐相位不一致"
+      ]
     },
     {
       "songId": "02-013",
@@ -1344,7 +1342,7 @@
         "03-003除你以外.mp3",
         "03-003除你以外-领唱.mp3"
       ],
-      "reason": "未找到可靠的音乐重复：0.462"
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "03-004",
@@ -1984,7 +1982,7 @@
       "songId": "04-924",
       "source": "04-924新年来临.txt",
       "type": "text",
-      "status": "ready-to-verify",
+      "status": "published",
       "tracks": [
         "04-924新年来临.mp3"
       ]
@@ -3728,7 +3726,7 @@
       "tracks": [
         "06-011你真伟大_Alan_Jackson.mp3"
       ],
-      "reason": "转写尚未覆盖全部正文阅读区域"
+      "reason": "第 1 个歌词起点未通过转写及双窗口核对"
     },
     {
       "songId": "06-012",

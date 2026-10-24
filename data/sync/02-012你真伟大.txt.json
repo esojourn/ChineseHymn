@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-012",
+  "status": "reviewed",
+  "source": {
+    "file": "02-012你真伟大.txt",
+    "sha256": "fdb2d2f7dbb9f15144dd9925df39ad2aa0d78a68f756f8db0599807841bdb6f4",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-012你真伟大.mp3",
+      "sha256": "39d1c8a98bcebc9fec29e42c2facc48fe0f21c211fa58ff5bf793d8fe9333905",
+      "duration": 150.288,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.52,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 31.03,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.72,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 76.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.75,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 122.15,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-012你真伟大-领唱.mp3",
+      "sha256": "f3df68e00a4b6a8aed2b7207b7d54028fdae91d92896f75e43fff9f52d61f24b",
+      "duration": 150.16345833333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    }
+  },
+  "cues": [
+    {
+      "at": 8.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.5,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.05,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 78.3,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.85,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 125.2,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主啊我神，我每逢举目观看    你手所造，一切奇妙大功     看见星宿，又听到隆隆雷声    你的大能，充满了宇宙中",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "   我灵歌唱赞美救主我神，    你真伟大何等伟大     我灵歌唱赞美救主我神，    你真伟大何等伟大",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "当我想到，神竟愿差他儿子     降世舍命，我几乎不领会    主在十架，甘愿背我的重担    流血舍身，为要赦免我罪",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "   我灵歌唱赞美救主我神，    你真伟大何等伟大     我灵歌唱赞美救主我神，    你真伟大何等伟大",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "当主再来，欢呼声响彻天空    何等喜乐，主接我回天家     我要跪下，谦恭地崇拜敬奉    并要颂扬，神啊你真伟大",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "   我灵歌唱赞美救主我神，    你真伟大何等伟大     我灵歌唱赞美救主我神，    你真伟大何等伟大",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-012你真伟大.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

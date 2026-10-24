@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "04-924",
+  "status": "reviewed",
+  "source": {
+    "file": "04-924新年来临.txt",
+    "sha256": "a04c29ca7533127eb5e0638fe8762aa96970da110dd545d027a55aa8d3867796",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-924新年来临.mp3",
+      "sha256": "fd9b9ec8558543ab800bd1bfeea4c7c3127feb80ed123d237bc61db2749589fc",
+      "duration": 127.50367346938775,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 9.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.3,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 47.55,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.7,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.1,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "旧岁已过新年临， 恳切祈求父神； 不论工作或等候， 新年偕主同行；",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "新年又是成长年， 充满赞美颂声； 新年更得到明证， 每天与主偕行。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "新年又是恩典年， 充满信心恩惠； 新年又是快乐年， 常见圣言光辉；",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "新年又是倚靠年， 紧靠恩主爱怀； 新年成为信托年， 赖主憩息愉快。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "新年又是侍奉年， 见证主爱丰宠； 新年又是训练年， 准备天上圣工；",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "旧岁已过新年临， 恳切祈求父神， 不论天上或人间， 新年全都为神。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-924新年来临.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

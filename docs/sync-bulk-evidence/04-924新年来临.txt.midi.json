@@ -1,0 +1,287 @@
+{
+  "songId": "04-924",
+  "source": "04-924新年来临.txt",
+  "sourceHash": "a04c29ca7533127eb5e0638fe8762aa96970da110dd545d027a55aa8d3867796",
+  "trackHashes": [
+    {
+      "file": "04-924新年来临.mp3",
+      "sha256": "fd9b9ec8558543ab800bd1bfeea4c7c3127feb80ed123d237bc61db2749589fc"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "a04c29ca7533127eb5e0638fe8762aa96970da110dd545d027a55aa8d3867796",
+      "file": "timeless-Another_Year_Is_Dawning.mid",
+      "sha256": "3ce9e00600abba8e53d51b55a4aade2c8bb43856a3a32189fce6d096c423ee28",
+      "url": "https://library.timelesstruths.org/library/music/A/Another_Year_Is_Dawning/Another_Year_Is_Dawning.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Another_Year_Is_Dawning/",
+      "textReferenceSha256": "a25d93a4ada285d729d28dbb212a313c0b0d5e58654b795d4cba1a68dd25f492",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/Another_Year_Is_Dawning/Another_Year_Is_Dawning.xml",
+      "scoreReferenceSha256": "940c211295414c03b09382f7e654192b32c9b0b4eb573813683fb101843bca86",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "旧岁已过新年临恳",
+          "新年又是成长年充"
+        ],
+        [
+          "新年又是恩典年充",
+          "新年又是倚靠年紧"
+        ],
+        [
+          "新年又是侍奉年见",
+          "旧岁已过新年临恳"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            7,
+            8,
+            7
+          ]
+        },
+        {
+          "onsetIndex": 26,
+          "pitches": [
+            5,
+            7,
+            8,
+            10,
+            0
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 52,
+        "midiNoteCount": 52,
+        "editCost": 0,
+        "runnerUpCost": 39,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 26,
+            "possibleMidiNoteIndices": [
+              26
+            ],
+            "at": 19.2
+          }
+        ],
+        "offsets": [
+          0.0,
+          19.2
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          26
+        ]
+      },
+      "formReview": "Another Year Is Dawning / Aurelia / Samuel Sebastian Wesley。中文三段与原版三段对应，前四行为各段前半，后四行从第9小节第二个 An 开始；第1段后半为progress/praise/proving/presence，第2段后半为leaning/trusting/rest。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 38.40234375,
+    "music": {
+      "period": 38.4,
+      "similarity": 0.9998712539672852,
+      "initialOnsetEstimate": 9.228,
+      "shifts": [
+        0.0,
+        38.4,
+        76.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3114144007364909,
+            "key": 7,
+            "at": 9.5,
+            "span": 38.3,
+            "starts": [
+              9.1,
+              28.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5683858394622803,
+            "key": 2,
+            "at": 24.8,
+            "span": 30.2,
+            "starts": [
+              24.4,
+              36.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.24435142676035562,
+            "key": 7,
+            "starts": [
+              9.199999809265137,
+              28.299999237060547
+            ],
+            "span": 38.20000076293945
+          },
+          "runnerUp": {
+            "cost": 0.4157793919245402,
+            "key": 2,
+            "starts": [
+              8.5,
+              23.200000762939453
+            ],
+            "span": 31.700000762939453
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3114548722902934,
+            "key": 7,
+            "at": 47.9,
+            "span": 38.3,
+            "starts": [
+              47.5,
+              66.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5679172277450562,
+            "key": 2,
+            "at": 63.2,
+            "span": 30.2,
+            "starts": [
+              62.8,
+              74.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.24451673030853271,
+            "key": 7,
+            "starts": [
+              47.599998474121094,
+              66.69999694824219
+            ],
+            "span": 38.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.41589685281117755,
+            "key": 2,
+            "starts": [
+              46.900001525878906,
+              61.599998474121094
+            ],
+            "span": 31.699996948242188
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.31127385298411053,
+            "key": 7,
+            "at": 86.3,
+            "span": 38.3,
+            "starts": [
+              85.9,
+              105.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5786459843317667,
+            "key": 2,
+            "at": 101.6,
+            "span": 25.1,
+            "starts": [
+              101.2,
+              113.2
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.24440181255340576,
+            "key": 7,
+            "starts": [
+              86.0,
+              105.0999984741211
+            ],
+            "span": 38.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4157675504684448,
+            "key": 2,
+            "starts": [
+              85.30000305175781,
+              100.0
+            ],
+            "span": 31.699996948242188
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      19.2
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "旧岁已过新年临， 恳切祈求父神； 不论工作或等候， 新年偕主同行；",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "新年又是成长年， 充满赞美颂声； 新年更得到明证， 每天与主偕行。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "新年又是恩典年， 充满信心恩惠； 新年又是快乐年， 常见圣言光辉；",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "新年又是倚靠年， 紧靠恩主爱怀； 新年成为信托年， 赖主憩息愉快。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "新年又是侍奉年， 见证主爱丰宠； 新年又是训练年， 准备天上圣工；",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "旧岁已过新年临， 恳切祈求父神， 不论天上或人间， 新年全都为神。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 1.405
+}

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-382",
+  "status": "reviewed",
+  "source": {
+    "file": "02-382万世战争.txt",
+    "sha256": "2d0e8bcff81cd7f0987f45fba0a071d0602429a14ec61d6c51423ff8b22287bf",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-382万世战争.mp3",
+      "sha256": "52f437630228d89031e7298c5f17a27179f95ebabd50d2cd2adea2fcd1097b2f",
+      "duration": 187.53306122448978,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.4,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.15,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 66.8,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 96.5,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 126.2,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 155.9,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-382万世战争-领唱.mp3",
+      "sha256": "3f2190eba9483fbcddf7c28c01a598df160c0b177d38d5febec83a3b7107ba2f",
+      "duration": 186.25306122448978,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    }
+  },
+  "cues": [
+    {
+      "at": 7.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.65,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.3,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.0,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.7,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 156.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "信徒看哪，万世战争已临我们时代， 无数军兵携械披甲，集合严阵以待； 你是否为忠勇战士，站在信徒队中？ 是否立誓向主尽忠？是否刚强奋勇",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "是否你见此异象 是否你心激动？ 是否你听主呼召？是否你愿听从？ 万世战争已经来临，圣经预言已经明载， 战争狂涛临到我们，临到我们时代。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "看这世界目前景象，正沉沦在罪中， 主大使命长久以来无人注意遵从； 现在请看神国儿女，携手同心合意， 勇往直前努力争战，要抢救这美地。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "是否你见此异象 是否你心激动？ 是否你听主呼召？是否你愿听从？ 万世战争已经来临，圣经预言已经明载， 战争狂涛临到我们，临到我们时代。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "神的教会正在醒起，热心传扬真理， 看她已在祭坛献上佳美珍贵活祭； 宝贵光阴瞬即过去，世界终局将临， 事主机会快将消逝，现在趁时救人.",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "是否你见此异象 是否你心激动？ 是否你听主呼召？是否你愿听从？ 万世战争已经来临，圣经预言已经明载， 战争狂涛临到我们，临到我们时代。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-382万世战争.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

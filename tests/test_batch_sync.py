@@ -591,6 +591,15 @@ class BatchTests(unittest.TestCase):
             path.write_text('Title\n\n1 He will hold me fast\n--\n2 Jesus - my Savior forever')
             self.assertEqual(len(sources.text_source(path, 'en')['verses']), 2)
 
+    def test_album_credit_after_bilingual_lyrics_preserves_original_coordinates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '06-011示例.txt'
+            for credit in ['所属专辑：Precious Memories', '所屬專輯：Precious Memories']:
+                path.write_text('Title\n\nHow great Thou art\n你真伟大\n\n---\n歌手：Alan Jackson\n' + credit)
+                definition = sources.text_source(path, 'en')
+                self.assertEqual(definition['regions'], {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3}})
+                self.assertEqual(definition['verses'][0][0]['text'], 'How great Thou art')
+
     def test_image_order_crosses_printed_rows_and_repeats_the_shared_chorus(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

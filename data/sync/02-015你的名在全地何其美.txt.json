@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "02-015",
+  "status": "reviewed",
+  "source": {
+    "file": "02-015你的名在全地何其美.txt",
+    "sha256": "b89c0d732de7bc74c2c6732dfc7f12ccd9920db168a64ec79ef35f2422fcf3b9",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-015你的名在全地何其美.mp3",
+      "sha256": "fccbc047ccef3a71ddd8855f5ae4795bb5a0d80960ec31cd154d015e812cfd0f",
+      "duration": 208.896,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.57,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 29.98,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 49.62,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.93,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 87.71,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.9,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.83,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 144.0,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 163.83,
+          "region": "r9",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 182.29,
+          "region": "r10",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-015你的名在全地何其美-领唱.mp3",
+      "sha256": "797af2b8c4f5a34a06ac6cdbdba657637a107ab1b7e06b08e87a43cfb65193b8",
+      "duration": 209.088,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 43,
+      "endLine": 46
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 47,
+      "endLine": 50
+    }
+  },
+  "cues": [
+    {
+      "at": 11.47,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 29.88,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 49.52,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.83,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.61,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 125.73,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.9,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 163.73,
+      "region": "r9",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 182.19,
+      "region": "r10",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶和华， 你的圣名在全地何其美！ 但愿各民、各族、各方， 宣扬你名宝贵。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "从待哺婴孩的口中， 你建立了赞美， 使你仇敌闭口无言， 敌权速速崩溃。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "当我夜间观看诸天， 你指头的工作 月亮、星宿暗中放明， 凭你智慧述说。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "不禁要问：人算甚么， 你竟如此顾念？ 在你神圣护理里面， 叫人特蒙恩眷！",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "哦，主耶稣，你是真神 降世联于人类； 你穿上了血肉之体， 取了卑微地位。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "如今你得主宰权柄， 荣耀为你冠冕， 你将万有服你脚下， 藉你『身体』掌权。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "你经过了道成肉身、 受死、复活、升天， 主权、元首、国度、身体， 一 一你都成全。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "藉着这些神圣工作， 你建立了赞美， 我们的心喜乐满溢， 赞美惟你是配。",
+        "label": "第4段"
+      },
+      {
+        "region": "r9",
+        "text": "有福之日不久将到， 万口莫不同唱， 但在各地教会之中， 我们先有预尝！",
+        "label": "第5段"
+      },
+      {
+        "region": "r10",
+        "text": "哦，主耶和华，你的名 在全地何其美！ 但愿各民、各族、各方， 宣扬你名宝贵。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-015你的名在全地何其美.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

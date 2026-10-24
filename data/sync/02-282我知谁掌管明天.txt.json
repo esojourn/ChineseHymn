@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-282",
+  "status": "reviewed",
+  "source": {
+    "file": "02-282我知谁掌管明天.txt",
+    "sha256": "2292792f8c9459f366c69545da04fec515b3a466552964be1d9bd3fb17258ecf",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-282我知谁掌管明天.mp3",
+      "sha256": "3ffcffe8c2c3dd8625734c3ce72efb083a53a98f03d9de1285638e450d226353",
+      "duration": 233.45625,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.32,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 58.99,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 84.27,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 132.1,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 155.37,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 203.2,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-282我知谁掌管明天-领唱.mp3",
+      "sha256": "e6a2f5432ecb72d35a898c5f3a568de91f302ae5108c3d57a356c05a4d0555bb",
+      "duration": 234.624,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 11.92,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 58.59,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 83.87,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.7,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 154.97,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 202.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我不知明天的道路，每一天只为主活， 我不借明天的阳光，因明天或许阴暗； 我不要为将来忧虑，因我信主的应许。 我今天要与主同行，因祂知前面如何。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "有许多未来的事情，我现在不能识透； 但我知谁掌管明天，我也知谁牵我手。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "每一步越走越光明，像攀登黄金阶梯， 每重担越挑越轻省，每朵云披上银衣； 在那里阳光常普照，在那里没有眼泪。 在美丽彩虹的尽头，众山岭与天相连。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "有许多未来的事情，我现在不能识透； 但我知谁掌管明天，我也知谁牵我手。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我不知明天的道路，或遭遇生活苦楚， 但那位养活麻雀者，祂必然也看顾我。 祂是我旅途的良伴，或经过水火之灾， 但救主必与我同在，祂宝血把我遮盖。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "有许多未来的事情，我现在不能识透； 但我知谁掌管明天，我也知谁牵我手。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-282我知谁掌管明天.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

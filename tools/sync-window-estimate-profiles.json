@@ -257,5 +257,93 @@
       "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
     },
     "review": "已逐段核对第七言正文两段、每段两个阅读区域。原来第二段取样在84秒附近，实际起句在96秒附近，故按整曲转写与84秒音乐反复的位置重新取样。四个实际起点仍由有效首词、原有及必要的补充上下文核对，保持原有音乐相位和独立录音对应检查，不以取样估计直接计算滚动时间。"
+  },
+  "02-015": {
+    "version": 1,
+    "sourceHash": "b89c0d732de7bc74c2c6732dfc7f12ccd9920db168a64ec79ef35f2422fcf3b9",
+    "tracks": [
+      {
+        "file": "02-015你的名在全地何其美.mp3",
+        "sha256": "fccbc047ccef3a71ddd8855f5ae4795bb5a0d80960ec31cd154d015e812cfd0f"
+      },
+      {
+        "file": "02-015你的名在全地何其美-领唱.mp3",
+        "sha256": "797af2b8c4f5a34a06ac6cdbdba657637a107ab1b7e06b08e87a43cfb65193b8"
+      }
+    ],
+    "audioFile": "02-015你的名在全地何其美-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10"
+    ],
+    "estimates": [
+      10.54,
+      29.42,
+      49.42,
+      67.86,
+      87.08,
+      105.88,
+      125.66,
+      143.46,
+      163.68,
+      182.12
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/02-015你的名在全地何其美-领唱.mp3.json",
+      "sha256": "5727d34514854b3a2a2be3e1482452cc9c048227644361ce98d178f1e98eac8f",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "原文五段，每段两个阅读区域，已与实际五次音乐反复及整曲转写逐段对应。旧字数取样偏晚，现按各段实际起句及后半段的对应转写选择上下文窗口。十个最终起点仍由原有声学窗口、必要的补充上下文和实际音乐相位核对，伴奏独立对应，不直接采用转写估计作为滚动时间。"
+  },
+  "02-282": {
+    "version": 1,
+    "sourceHash": "2292792f8c9459f366c69545da04fec515b3a466552964be1d9bd3fb17258ecf",
+    "tracks": [
+      {
+        "file": "02-282我知谁掌管明天.mp3",
+        "sha256": "3ffcffe8c2c3dd8625734c3ce72efb083a53a98f03d9de1285638e450d226353"
+      },
+      {
+        "file": "02-282我知谁掌管明天-领唱.mp3",
+        "sha256": "e6a2f5432ecb72d35a898c5f3a568de91f302ae5108c3d57a356c05a4d0555bb"
+      }
+    ],
+    "audioFile": "02-282我知谁掌管明天-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "estimates": [
+      13.0,
+      60.04,
+      83.98,
+      131.7,
+      155.66,
+      203.58
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/02-282我知谁掌管明天-领唱.mp3.json",
+      "sha256": "8a6d856b4ecda7a38d9abca0d80c533f1266ab76f1c38c9cca71de2f17c68f3b",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "原文三段，每段主歌四行及副歌两行，已核对实际三次完整音乐反复。旧字数窗口偏晚，按整曲转写中主歌和副歌起句的位置重新取样。六个最终时间仍由不同上下文的有效首词及音乐反复核对，伴奏另做独立chroma-DTW对应。"
   }
 }

@@ -363,6 +363,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                           if evidence.get('midiMatching', {}).get('mode') == 'image-symbolic-with-optical' else
                           'Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.'
                           if evidence.get('midiMatching', {}).get('mode') == 'text-symbolic-with-optical' else
+                          'Documented MIDI score; independent harmony and melody at every performed verse and reading region, additionally corroborated by both complete ordered score paths. All four onset estimates agree pairwise within 0.5 seconds; no arithmetic correction of performed verse starts.'
+                          if evidence.get('midiMatching', {}).get('mode') == 'text-local-and-complete-score' else
                           'Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.'
                           if 'midiMatching' in evidence else
                           'Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'

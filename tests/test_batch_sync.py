@@ -43,6 +43,94 @@ spec.loader.exec_module(batch)
 
 
 class BatchTests(unittest.TestCase):
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_complete_score_corroborates_each_region_despite_imprecise_repeat_shifts(self):
+        import numpy as np
+        pitches = np.repeat(np.random.default_rng(17).integers(0, 12, 24), 10)
+        harmony = np.eye(12, dtype=np.float32)[:, pitches]
+        harmony -= harmony.mean(axis=0)
+        harmony /= np.linalg.norm(harmony, axis=0)
+        rows = [{'notes': [1] * 120, 'pitchOffsets': pitches[a:a + 120].tolist(),
+                 'spatialWeights': [1] * 120} for a in [0, 120]]
+        lengths = [245, 240, 239, 241]
+        target = np.zeros((12, 1040), dtype=np.float32)
+        cursor, expected = 30, []
+        for length in lengths:
+            indices = np.minimum(np.arange(length) * 240 // length, 239)
+            target[:, cursor:cursor + length] = np.roll(harmony[:, indices], 5, axis=0)
+            expected.extend([cursor * .1, (cursor + length / 2) * .1])
+            cursor += length
+        reference = (np.arange(240) * .1, harmony)
+        audio = (np.arange(1040) * .1, target)
+        music = {'period': 24.125, 'initialOnsetEstimate': 3,
+                 'shifts': [0, 24.8, 47.8, 72.8], 'similarity': .9}
+        matches = []
+        for shift in music['shifts']:
+            harmonic = midi_sync.same_tune.match_cycle(reference, audio, 0, 24, music['period'],
+                3 + shift, cue_offsets=[0, 12])
+            melodic = midi_sync.match_template(rows, target, audio[0], music['period'], 3 + shift, 'spatialWeights')
+            matches.append({'harmony': harmonic, 'melody': melodic})
+        local = [at for row in matches for at in row['harmony']['best']['starts']]
+        with self.assertRaises(ValueError):
+            transfer.consistent_phases(local, music, 4, 2)
+        evidence = {}
+        times = midi_sync.full_performance_times({'fullPerformanceCheck': {'version': 1}},
+            reference, rows, [0, 12], 24, music, audio, matches, (.35, .35), evidence)
+        self.assertEqual(len(times), 8)
+        for actual, wanted in zip(times, expected):
+            self.assertAlmostEqual(actual, wanted, delta=.3)
+        self.assertEqual(evidence['harmony']['best']['key'], 5)
+        self.assertEqual(len(evidence['onsetEstimates']), 4)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_complete_score_requires_pairwise_agreement_not_just_agreement_with_one_anchor(self):
+        import numpy as np
+        def match(starts, span):
+            return {'best': {'starts': starts, 'span': span, 'cost': .1, 'key': 3},
+                    'runnerUp': {'cost': .4}}
+        local = [{'harmony': match([4 + i * 20, 14 + i * 20], 20),
+                  'melody': match([4 + i * 20, 14 + i * 20], 20)} for i in range(3)]
+        starts = [4, 14, 24, 34, 44, 54]
+        # Both complete paths are near the local path, but differ by .8 seconds from each other.
+        with patch.object(midi_sync.same_tune, 'match_cycle', return_value=match([x + .4 for x in starts], 60)), \
+                patch.object(midi_sync, 'match_template', return_value=match([x - .4 for x in starts], 60)):
+            with self.assertRaisesRegex(ValueError, '0.5秒'):
+                midi_sync.full_performance_times({'fullPerformanceCheck': {'version': 1}},
+                    (np.arange(200) * .1, np.zeros((12, 200))), [{}, {}], [0, 10], 20,
+                    {'shifts': [0, 20, 40], 'period': 20, 'initialOnsetEstimate': 4},
+                    (None, None), local, (.35, .35), {})
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_complete_score_rejects_retrieval_bypass_and_incomplete_or_weak_paths(self):
+        import copy
+        import numpy as np
+        def match(starts, span):
+            return {'best': {'starts': starts, 'span': span, 'cost': .1, 'key': 3},
+                    'runnerUp': {'cost': .4}}
+        profile = {'fullPerformanceCheck': {'version': 1}}
+        reference = (np.arange(200) * .1, np.zeros((12, 200)))
+        music = {'shifts': [0, 20, 40], 'period': 20, 'initialOnsetEstimate': 4}
+        local = [{'harmony': match([4 + i * 20], 20), 'melody': match([4 + i * 20], 20)} for i in range(3)]
+        for invalid in [{}, {'fullPerformanceCheck': {'version': 2}},
+                        {**profile, 'referenceDiscovery': {'file': 'candidate.mid'}}]:
+            with self.assertRaisesRegex(ValueError, '原谱配置'):
+                midi_sync.full_performance_times(invalid, None, [{}], [0], 20, music, None, local, (.35, .35), {})
+        for field, value in [('cost', .36), ('span', 40), ('key', 4), ('starts', [4, 24])]:
+            full = match([4, 24, 44], 60)
+            wrong = copy.deepcopy(full)
+            wrong['best'][field] = value
+            with patch.object(midi_sync.same_tune, 'match_cycle', return_value=wrong), \
+                    patch.object(midi_sync, 'match_template', return_value=full), self.assertRaises(ValueError):
+                midi_sync.full_performance_times(profile, reference, [{}], [0], 20,
+                    music, reference, local, (.35, .35), {})
+        full = match([4, 24, 44], 60)
+        weak_key = copy.deepcopy(full)
+        weak_key['runnerUp']['cost'] = .179
+        with patch.object(midi_sync.same_tune, 'match_cycle', return_value=weak_key), \
+                patch.object(midi_sync, 'match_template', return_value=full), self.assertRaises(ValueError):
+            midi_sync.full_performance_times(profile, reference, [{}], [0], 20,
+                music, reference, local, (.35, .35), {})
+
     def test_known_source_conflict_blocks_publication_and_clears_after_material_changes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

@@ -167,10 +167,56 @@ def check_extra_cycle(harmony, melody_rows, target, period, music, last, limits)
     return {'checked': True, 'harmony': harmonic, 'melody': melodic}
 
 
+def full_performance_times(profile, harmony, melody_rows, offsets, period, music, target, matches, limits, evidence):
+    """Corroborate every local opening with two complete, ordered score paths."""
+    review = profile.get('fullPerformanceCheck', {})
+    if not isinstance(review, dict) or review.get('version') != 1 or profile.get('referenceDiscovery'):
+        raise ValueError('整曲复核需要明确核对的原谱配置，不能替代检索候选的严格检查')
+    count = len(music['shifts'])
+    if count < 3 or len(matches) != count or not offsets or len(melody_rows) != len(offsets):
+        raise ValueError('整曲复核缺少至少三个完整且逐区域核对的实际乐段')
+    full_harmony = (np.concatenate([harmony[0] + verse * period for verse in range(count)]),
+                    np.tile(harmony[1], count))
+    full_offsets = [verse * period + offset for verse in range(count) for offset in offsets]
+    harmonic = same_tune.match_cycle(full_harmony, target, 0, count * period,
+        count * music['period'], music['initialOnsetEstimate'], cue_offsets=full_offsets)
+    melodic = match_template(melody_rows * count, target[1], target[0], count * music['period'],
+                             music['initialOnsetEstimate'], 'spatialWeights')
+    evidence.update(harmony=harmonic, melody=melodic)
+    pairs = [(row['harmony'], row['melody'], music['period']) for row in matches]
+    pairs.append((harmonic, melodic, count * music['period']))
+    keys = []
+    for first, second, span in pairs:
+        for result, limit, margin in [(first, limits[0], .08), (second, limits[1], .06)]:
+            best = result['best']
+            if (best['cost'] > limit or result['runnerUp']['cost'] - best['cost'] < margin or
+                    not .75 * span <= best['span'] <= 1.25 * span):
+                raise ValueError('逐段与整曲模板未能共同确认完整的演奏乐段')
+            keys.append(best['key'])
+    if len(set(keys)) != 1:
+        raise ValueError('逐段与整曲模板的调性对应不一致')
+    estimates = [[at for match in matches for at in match[kind]['best']['starts']]
+                 for kind in ['harmony', 'melody']]
+    estimates.extend([harmonic['best']['starts'], melodic['best']['starts']])
+    evidence['onsetEstimates'] = estimates
+    if (any(len(row) != count * len(offsets) for row in estimates) or
+            any(not onsets_agree(row, other) for index, row in enumerate(estimates) for other in estimates[index + 1:])):
+        raise ValueError('逐段与整曲模板的全部阅读起点未在0.5秒内一致')
+    times = [round(sum(values) / len(values), 2) for values in zip(*estimates)]
+    beginnings = times[::len(offsets)]
+    if (any(a + .5 >= b for a, b in zip(times, times[1:])) or
+            any(not .75 * music['period'] <= b - a <= 1.25 * music['period']
+                for a, b in zip(beginnings, beginnings[1:]))):
+        raise ValueError('整曲阅读顺序或相邻实际乐段跨度不一致')
+    evidence.update(version=1, method='paired local and complete ordered MIDI score paths; all pairwise onsets within 0.5 seconds',
+                    times=times)
+    return times
+
+
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
-                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 6, 'profile': profile}}
+                'trackHashes': song['tracks'], 'midiMatching': {'algorithmVersion': 7, 'profile': profile}}
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
     try:
         if song['sha256'] != profile['targetSha256']:
@@ -228,10 +274,16 @@ def generate(song, profile, cache):
             if profile.get('referenceDiscovery') and not .75 * music['period'] <= two.get('span', 0) <= 1.25 * music['period']:
                 raise ValueError('音频检索参考的旋律没有覆盖完整乐段')
             mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
-        corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
-        # Both symbolic templates already locate every verse independently.
-        if decisions:
-            raise ValueError('MIDI 独立模板的首段起点仍有歧义')
+        if profile.get('fullPerformanceCheck'):
+            complete = {}
+            evidence['midiMatching'].update(mode='text-local-and-complete-score', completePerformance=complete)
+            corrected = full_performance_times(profile, harmony, melody_rows, offsets, period,
+                music, target, matches, limits, complete)
+        else:
+            corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
+            # Both symbolic templates already locate every verse independently.
+            if decisions:
+                raise ValueError('MIDI 独立模板的首段起点仍有歧义')
         if profile.get('referenceDiscovery'):
             if len(offsets) != 1:
                 raise ValueError('音频检索参考还需逐项核对段内分句')

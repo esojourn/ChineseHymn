@@ -2581,12 +2581,11 @@
   },
   "04-369": {
     "targetSha256": "670dad50cd5f9323032bc495cd068509b7888dac1fe388332aedd8910087ee37",
-    "file": "hymnary031.mid",
-    "sha256": "38f3845298f405fe94e7ef53a4d52f72b6cb1b75ee46babd6333f62892c2ed78",
-    "url": "https://chinatownministry.org/Hymnal/Midi/hymnary031.mid",
-    "textReferenceUrl": "https://chinatownministry.org/Hymnal/hymnary031.htm",
-    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/Amazing_Grace/Amazing_Grace.xml",
-    "scoreReferenceSha256": "4cd985b4dd4993f317269509af06b71ad082c1643dd0f191433fcf0a040459bf",
+    "file": "life185.mid",
+    "sha256": "fa0c6aea8931dcec2ea346e1b8fcc9a381f94c5cc8901a0feb35bbc9b09385f8",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/185.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life185.html",
+    "textReferenceSha256": "0fa826cb0efd69cbce869f422c3443372a22578720784fce9c193fef0c862af9",
     "verseCount": 4,
     "regionOpenings": [
       [
@@ -2602,47 +2601,18 @@
         "将来禧年圣徒欢聚"
       ]
     ],
-    "readingBoundaries": [
-      {
-        "onsetIndex": 0,
-        "pitches": [
-          2,
-          7,
-          11,
-          7,
-          11
-        ]
-      }
-    ],
-    "symbolicReferenceReview": {
-      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
-      "noteCount": 35,
-      "midiNoteCount": 35,
-      "editCost": 0,
-      "runnerUpCost": 29,
-      "semitoneShift": 0,
-      "rowStarts": [
-        {
-          "scoreNoteIndex": 0,
-          "possibleMidiNoteIndices": [
-            0
-          ],
-          "at": 0.0
-        }
-      ],
-      "offsets": [
-        0.0
-      ]
+    "formReview": "正文四段各四行为完整阅读区域。每段和声、旋律分别通过后，再按四段完整顺序拼接参考，分别用整曲和声、旋律路径复核每个阅读起点。全部成本、调性区分及完整跨度门槛保留；四条时间路径任意两条须在0.5秒内一致，最终时间取实际匹配均值，不将段落起点修正到统一音乐相位。",
+    "fullPerformanceCheck": {
+      "version": 1,
+      "review": "逐段和声、旋律均通过。另以四段完整顺序的整曲和声、旋律两条路径核对全部实际起点；各成本、调性、完整跨度及四条路径任意两条的0.5秒限制都须通过，不将段落起点修正到统一相位。"
     },
-    "scoreVoiceReview": {
-      "voice": "1",
-      "highestChordHeadOnly": true,
-      "continuedTiedHeadsExcluded": true,
-      "sourceBoundaryNoteIndices": [
-        0
-      ]
-    },
-    "formReview": "Amazing Grace / New Britain，译文每段四行为一个完整阅读区域。参考第31首为同曲填词，不能将其不同歌词当作本曲原文；完整公开原谱与参考35个旋律起音完全一致。 已核对完整原谱旋律及译文分句，主旋律和每个阅读区域的起点在所有最优音符序列对齐中均唯一。各实际演奏段落仍须通过原有独立和声、旋律、起点、调性及反复相位检查，不用文字长度或固定比例推算。"
+    "lyricReferenceReview": {
+      "book": "生命圣诗",
+      "entry": 185,
+      "title": "奇异恩典 / Amazing Grace",
+      "tune": "New Britain",
+      "scope": "核对同曲译文与四段结构及歌词页直接关联的MIDI；不声称逐字声学识别。"
+    }
   },
   "04-421": {
     "targetSha256": "f469fb5e1aeaa0943d77c4da9a004b13b845f6686c22b5fc4bbdc1e460fa08b0",

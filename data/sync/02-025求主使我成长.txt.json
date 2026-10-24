@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "02-025",
+  "status": "reviewed",
+  "source": {
+    "file": "02-025求主使我成长.txt",
+    "sha256": "740b3df29e625c543c13a3394be1f08035a588cdf5d2055000257910fb993a89",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-025求主使我成长.mp3",
+      "sha256": "0ba6d7f9d9353783df1d7bbb57ebc878997f6338022d07d0e7cc942a1448fbac",
+      "duration": 252.36,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 15.34,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 48.14,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.15,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.76,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 146.69,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 179.39,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        },
+        {
+          "at": 212.24,
+          "region": "r7",
+          "label": "第7段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-025求主使我成长-领唱.mp3",
+      "sha256": "c782bf1ccf3f642a8cb38a2df16ec81ab7916c64ed7f3c63760d45cdd7aa0e3a",
+      "duration": 242.52,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 25
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 29
+    }
+  },
+  "cues": [
+    {
+      "at": 8.74,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 41.54,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.55,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.16,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 140.09,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 172.79,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 205.64,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "恳求上主使我成长，信心、爱心、靠主培养 能多经历恩典、力量，更深渴求瞻主荣光",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "如此祷告，是主教导，他是我信，应允我祷 然而苦境，仍令我扰，黑云满布，荆棘缠绕",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我呼求主，愿蒙垂听，盼他迅速施恩答允 以他恩爱激励大能，攻克我罪，安息我心",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "我主旨意，使我体验，内心诸般隐秘恶念 阴间众多凶恶魔权，联攻我灵一切防线",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "主的双手似折磨我，使我祸中加倍难过 我心精算他都抑挫，凉荫拆毁，煎晒炼我",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "战兢呼喊：“是为什么，这样追迫不放过我？” 主轻声说：因你所求，我必这样应允成就",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "你心遭此，多方熬炼，挫你矜夸、自我筹算 挪开欢乐，迫你学习，唯依靠我，单寻我面",
+        "label": "第7段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-025求主使我成长.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

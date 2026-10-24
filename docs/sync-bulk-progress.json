@@ -2,12 +2,12 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 289,
+    "published": 291,
     "existing": 8,
-    "needs-calibration": 94,
+    "needs-calibration": 91,
     "missing-audio": 2,
     "needs-source-review": 1,
-    "needs-track-alignment": 3,
+    "needs-track-alignment": 4,
     "missing-lyrics": 23
   },
   "songs": [
@@ -1713,12 +1713,11 @@
       "songId": "04-379",
       "source": "04-379安稳港口.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-track-alignment",
       "tracks": [
         "04-379安稳港口.mp3",
         "04-379安稳港口-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4"
+      ]
     },
     {
       "songId": "04-382",
@@ -1744,23 +1743,21 @@
       "songId": "04-403",
       "source": "04-403坚立在应许上.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-403坚立在应许上.mp3",
         "04-403坚立在应许上-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：2,4,6"
+      ]
     },
     {
       "songId": "04-409",
       "source": "04-409每一天.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-409每一天.mp3",
         "04-409每一天-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
+      ]
     },
     {
       "songId": "04-421",

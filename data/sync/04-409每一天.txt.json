@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "04-409",
+  "status": "reviewed",
+  "source": {
+    "file": "04-409每一天.txt",
+    "sha256": "d5342edb2b28002783b3149c046b4b02de121711903391a361644bfaf17de772",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-409每一天.mp3",
+      "sha256": "6519ac9800ac67981777cdfa5f9d6728e8dace3a055c31aa1b3f6f9be4efae6d",
+      "duration": 182.0734693877551,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 25.7,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 51.3,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 76.9,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 102.5,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 128.05,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 153.7,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-409每一天-领唱.mp3",
+      "sha256": "eaf1d6e11d841a459a6fa7353a0115fb60026e057d2ac0749e2b4ab9831786d4",
+      "duration": 181.00244897959183,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 26.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 52.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 77.6,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 128.75,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 154.4,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "每一天所度过的每一刻， 我获得力量胜过试炼； 我依靠天父周详的供应， 我不用再恐慌与挂虑。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他的心极仁慈无法测度， 他每天都有最好安排， 不论忧或喜他慈爱显明， 劳苦中他赐安泰。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "每一天主就在我的身旁， 每时刻赐下格外怜悯； 我忧虑主愿安慰与担当， 他名称为策士全能神。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "他保护他的儿女如珍宝， 他热心必要成就这事， 你日子如何力量也如何， 这是他向我应许。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "助我度过一切忧患苦难， 让我专心信靠你应许； 使我信心有了安慰依靠， 从你圣言得力量无惧。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "求帮助我脱离世俗纠缠， 带我进入你丰盛之地， 时日消逝有如快马飞奔， 直到天家永无忧。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-409每一天.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

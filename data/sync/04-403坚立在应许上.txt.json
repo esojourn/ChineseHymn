@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-403",
+  "status": "reviewed",
+  "source": {
+    "file": "04-403坚立在应许上.txt",
+    "sha256": "d79942753c765ec624b5c4cb86a76ac6a1b31e6c49899ed54636fcff7307643a",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-403坚立在应许上.mp3",
+      "sha256": "92b1dc0645500add0b5cfc1807352b8cff992be8e2ea05d990d5cc096a76c3da",
+      "duration": 175.848,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.1,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 25.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 46.8,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 65.3,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 87.6,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 107.05,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 128.5,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 148.05,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-403坚立在应许上-领唱.mp3",
+      "sha256": "e08870d3d16c9c953581b2cbae21f89c38a5c4a49cfc225a56ddee725393156b",
+      "duration": 179.09551020408162,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 24
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 29
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 32
+    }
+  },
+  "cues": [
+    {
+      "at": 11.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.1,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.5,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.2,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.45,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 136.9,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 157.15,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "坚立在我主基督的应许上， 万古千秋永将主圣名颂扬； 荣耀归至高真神我当歌唱， 坚立在我主的应许上。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "坚立在我主不变的应许上， 当疑虑忧惊的风浪肆凶狂； 藉神生命言语我稳立坚强， 坚立在我主的应许上。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "坚立在我主宝贵的应许上， 永远系在主的爱索不动荡； 带着圣灵宝剑天天打胜仗， 坚立在我主的应许上。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "坚立在我主应许不至跌倒， 时刻注意倾听圣灵所训导； 救主是我一切永稳定可靠， 坚立在我主的应许上。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-403坚立在应许上.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

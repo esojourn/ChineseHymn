@@ -1,0 +1,368 @@
+{
+  "songId": "04-403",
+  "source": "04-403坚立在应许上.txt",
+  "sourceHash": "d79942753c765ec624b5c4cb86a76ac6a1b31e6c49899ed54636fcff7307643a",
+  "trackHashes": [
+    {
+      "file": "04-403坚立在应许上.mp3",
+      "sha256": "92b1dc0645500add0b5cfc1807352b8cff992be8e2ea05d990d5cc096a76c3da"
+    },
+    {
+      "file": "04-403坚立在应许上-领唱.mp3",
+      "sha256": "e08870d3d16c9c953581b2cbae21f89c38a5c4a49cfc225a56ddee725393156b"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "d79942753c765ec624b5c4cb86a76ac6a1b31e6c49899ed54636fcff7307643a",
+      "file": "timeless-Standing_on_the_Promises.mid",
+      "sha256": "5c37cbe7545b8d1322f9331255c594529780eb7dae3afeeaba7c5416b7b602fa",
+      "url": "https://library.timelesstruths.org/library/music/S/Standing_on_the_Promises/Standing_on_the_Promises.mid",
+      "textReferenceUrl": "https://library.timelesstruths.org/music/Standing_on_the_Promises/",
+      "textReferenceSha256": "fc74f410f7db89e6a98ced0e135c1d0c8f6bcbd7467f3632d6bef29e60642395",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Standing_on_the_Promises/Standing_on_the_Promises.xml",
+      "scoreReferenceSha256": "0438347c1a707b367ae4df1a0a56aa882a06e3fc3f295473e31f0c6e0ef95547",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "坚立在我主基督的",
+          "坚立坚立坚立在我"
+        ],
+        [
+          "坚立在我主不变的",
+          "坚立坚立坚立在我"
+        ],
+        [
+          "坚立在我主宝贵的",
+          "坚立坚立坚立在我"
+        ],
+        [
+          "坚立在我主应许不",
+          "坚立坚立坚立在我"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            5,
+            5,
+            5,
+            7,
+            5
+          ]
+        },
+        {
+          "onsetIndex": 42,
+          "pitches": [
+            2,
+            10,
+            7,
+            10,
+            0
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 72,
+        "midiNoteCount": 72,
+        "editCost": 0,
+        "runnerUpCost": 55,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 42,
+            "possibleMidiNoteIndices": [
+              42
+            ],
+            "at": 18.2857
+          }
+        ],
+        "offsets": [
+          0.0,
+          18.2857
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          42
+        ]
+      },
+      "formReview": "Standing on the Promises / Russell K. Carter，中文四段依次对应英文第1、2、4、5段，正文前四行主歌，后副歌从第9小节Standing起。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 37.680767140624994,
+    "music": {
+      "period": 41.7,
+      "similarity": 0.9755322337150574,
+      "initialOnsetEstimate": 8.964,
+      "shifts": [
+        0.0,
+        41.7,
+        83.4,
+        125.1
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.33301560655772255,
+            "key": 7,
+            "at": 12.2,
+            "span": 41.6,
+            "starts": [
+              11.8,
+              32.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5180913618714403,
+            "key": 2,
+            "at": 20.9,
+            "span": 17.7,
+            "starts": [
+              20.7,
+              23.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17164042813600683,
+            "key": 7,
+            "starts": [
+              11.800000190734863,
+              32.099998474121094
+            ],
+            "span": 41.60000228881836
+          },
+          "runnerUp": {
+            "cost": 0.38314394870822094,
+            "key": 2,
+            "starts": [
+              5.099999904632568,
+              23.0
+            ],
+            "span": 35.80000305175781
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3412557551614958,
+            "key": 7,
+            "at": 53.9,
+            "span": 41.6,
+            "starts": [
+              53.5,
+              73.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.518476454188212,
+            "key": 2,
+            "at": 62.6,
+            "span": 17.6,
+            "starts": [
+              62.4,
+              65.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1731514690591277,
+            "key": 7,
+            "starts": [
+              53.5,
+              73.80000305175781
+            ],
+            "span": 41.5
+          },
+          "runnerUp": {
+            "cost": 0.3697202760252735,
+            "key": 2,
+            "starts": [
+              37.20000076293945,
+              55.5
+            ],
+            "span": 36.999996185302734
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3357627008744567,
+            "key": 7,
+            "at": 95.6,
+            "span": 41.6,
+            "starts": [
+              95.2,
+              115.4
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5118072656132906,
+            "key": 2,
+            "at": 104.2,
+            "span": 17.6,
+            "starts": [
+              104.1,
+              106.8
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17363336503648644,
+            "key": 7,
+            "starts": [
+              95.19999694824219,
+              115.5
+            ],
+            "span": 41.5
+          },
+          "runnerUp": {
+            "cost": 0.36603756545544813,
+            "key": 2,
+            "starts": [
+              78.9000015258789,
+              97.0
+            ],
+            "span": 37.0
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.33864953935289266,
+            "key": 7,
+            "at": 137.3,
+            "span": 41.5,
+            "starts": [
+              136.9,
+              157.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5187506732894934,
+            "key": 2,
+            "at": 145.9,
+            "span": 17.6,
+            "starts": [
+              145.8,
+              148.6
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.17467032233588128,
+            "key": 7,
+            "starts": [
+              136.89999389648438,
+              157.1999969482422
+            ],
+            "span": 41.5
+          },
+          "runnerUp": {
+            "cost": 0.36524988993180457,
+            "key": 2,
+            "starts": [
+              120.5999984741211,
+              138.8000030517578
+            ],
+            "span": 37.00000762939453
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      18.285695999999998
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "坚立在我主基督的应许上， 万古千秋永将主圣名颂扬； 荣耀归至高真神我当歌唱， 坚立在我主的应许上。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "坚立在我主不变的应许上， 当疑虑忧惊的风浪肆凶狂； 藉神生命言语我稳立坚强， 坚立在我主的应许上。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "坚立在我主宝贵的应许上， 永远系在主的爱索不动荡； 带着圣灵宝剑天天打胜仗， 坚立在我主的应许上。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "坚立在我主应许不至跌倒， 时刻注意倾听圣灵所训导； 救主是我一切永稳定可靠， 坚立在我主的应许上。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "坚立，坚立，坚立 在我主基督宝贵应许上， 信靠坚立，坚立在我主宝贵应许上。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "04-403坚立在应许上.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 11,
+      "initialSimilarity": 0.4833592474460602,
+      "meanPathCost": 0.32424214482307434,
+      "cueWindowCosts": [
+        0.35574620962142944,
+        0.39662495255470276,
+        0.3045117259025574,
+        0.2821599841117859,
+        0.2793255150318146,
+        0.33730024099349976,
+        0.3299329876899719,
+        0.343234121799469
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 3.17
+}

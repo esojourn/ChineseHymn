@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-019",
+  "status": "reviewed",
+  "source": {
+    "file": "03-019十架七言-第七言-我将灵魂.txt",
+    "sha256": "b03324a046e5d0de809cd4da19df5b2650a260f6779563e07f68207c87a527fd",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-019十架七言-第七言-我将灵魂.mp3",
+      "sha256": "777bc54d6f60855b30b63ea408bf28ea62bded16f207c6d2798d69e2bc1fa9e8",
+      "duration": 169.3257142857143,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.99,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 35.97,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 95.99,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 120.0,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+      "sha256": "32ae89ebfbe7e01bda48b30df233b1fa90d30ca515b04be6c987391ba7dc1659",
+      "duration": 168.77714285714285,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 12.39,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.47,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.39,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.5,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "地暗天昏，磐石崩裂，众人皆惊惶。 我主气将尽，十字架上；我救主他大声说：",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "父啊！父啊！我将灵魂， 我将我的灵魂交在你的手里。 天色渐暗，生命将近， 说完这句话，我救主就死了。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "天地震动，圣殿幔子，裂开成两片。 死亡的阴影，笼罩我主，十架上他大声说：",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "父啊！父啊！我将灵魂， 我将我的灵魂交在你的手里。 天色渐暗，生命将近， 说完这句话，我救主就死了。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-019十架七言-第七言-我将灵魂.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,1700 @@
+{
+  "songId": "03-019",
+  "source": "03-019十架七言-第七言-我将灵魂.txt",
+  "sourceHash": "b03324a046e5d0de809cd4da19df5b2650a260f6779563e07f68207c87a527fd",
+  "trackHashes": [
+    {
+      "file": "03-019十架七言-第七言-我将灵魂.mp3",
+      "sha256": "777bc54d6f60855b30b63ea408bf28ea62bded16f207c6d2798d69e2bc1fa9e8"
+    },
+    {
+      "file": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+      "sha256": "32ae89ebfbe7e01bda48b30df233b1fa90d30ca515b04be6c987391ba7dc1659"
+    }
+  ],
+  "vocalBoundaryVersion": 3,
+  "music": {
+    "period": 84.0,
+    "similarity": 0.9480341672897339,
+    "initialOnsetEstimate": 0,
+    "shifts": [
+      0.0,
+      84.0
+    ]
+  },
+  "windowEstimateProfile": {
+    "version": 1,
+    "sourceHash": "b03324a046e5d0de809cd4da19df5b2650a260f6779563e07f68207c87a527fd",
+    "tracks": [
+      {
+        "file": "03-019十架七言-第七言-我将灵魂.mp3",
+        "sha256": "777bc54d6f60855b30b63ea408bf28ea62bded16f207c6d2798d69e2bc1fa9e8"
+      },
+      {
+        "file": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+        "sha256": "32ae89ebfbe7e01bda48b30df233b1fa90d30ca515b04be6c987391ba7dc1659"
+      }
+    ],
+    "audioFile": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "estimates": [
+      12.3,
+      35.8235294117647,
+      96.1,
+      119.8235294117647
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/03-019十架七言-第七言-我将灵魂-领唱.mp3.json",
+      "sha256": "790881291c41c2971f9ce7705378700c41b153316d0cc1775168e8d7eddd55ba",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "已逐段核对第七言正文两段、每段两个阅读区域。原来第二段取样在84秒附近，实际起句在96秒附近，故按整曲转写与84秒音乐反复的位置重新取样。四个实际起点仍由有效首词、原有及必要的补充上下文核对，保持原有音乐相位和独立录音对应检查，不以取样估计直接计算滚动时间。"
+  },
+  "extendedContext": {
+    "version": 1,
+    "bounds": [
+      [
+        6,
+        16
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        8,
+        18
+      ],
+      [
+        10,
+        16
+      ]
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "地暗天昏，磐石崩裂，众人皆惊惶。 我主气将尽，十字架上；我救主他大声说：",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "父啊！父啊！我将灵魂， 我将我的灵魂交在你的手里。 天色渐暗，生命将近， 说完这句话，我救主就死了。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "天地震动，圣殿幔子，裂开成两片。 死亡的阴影，笼罩我主，十架上他大声说：",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "父啊！父啊！我将灵魂， 我将我的灵魂交在你的手里。 天色渐暗，生命将近， 说完这句话，我救主就死了。",
+      "label": "第2段"
+    }
+  ],
+  "windows": [
+    {
+      "index": 1,
+      "window": 0,
+      "at": 36.484,
+      "valid": true,
+      "firstWord": "父",
+      "firstWordStart": 36.484,
+      "firstWordEnd": 37.204,
+      "firstWordProbability": 0.0103,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6628,
+      "bounds": [
+        29.824,
+        51.824
+      ],
+      "words": [
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 1.96,
+          "probability": 0.0002673059643711895
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 1.96,
+          "end": 3.36,
+          "probability": 0.12349177896976471
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 3.36,
+          "end": 4.66,
+          "probability": 0.005809904541820288
+        },
+        {
+          "word": "大",
+          "tokens": [
+            3582
+          ],
+          "start": 4.66,
+          "end": 5.34,
+          "probability": 0.6953446269035339
+        },
+        {
+          "word": "声",
+          "tokens": [
+            32045
+          ],
+          "start": 5.34,
+          "end": 6.04,
+          "probability": 0.27601391077041626
+        },
+        {
+          "word": "说",
+          "tokens": [
+            8090
+          ],
+          "start": 6.04,
+          "end": 6.66,
+          "probability": 0.8368944525718689
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 6.66,
+          "end": 7.38,
+          "probability": 0.010277070105075836
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 7.38,
+          "end": 9.56,
+          "probability": 0.8950601816177368
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 9.56,
+          "end": 10.84,
+          "probability": 0.47105664014816284
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 10.84,
+          "end": 12.78,
+          "probability": 0.993194580078125
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 12.78,
+          "end": 14.36,
+          "probability": 0.3354647159576416
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 14.36,
+          "end": 14.86,
+          "probability": 0.6434311270713806
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 14.86,
+          "end": 15.78,
+          "probability": 0.5130536910146475
+        },
+        {
+          "word": "魂",
+          "tokens": [
+            20149,
+            224
+          ],
+          "start": 15.78,
+          "end": 16.98,
+          "probability": 0.9974197149276733
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 16.98,
+          "end": 18.1,
+          "probability": 0.7849823832511902
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 18.1,
+          "end": 18.86,
+          "probability": 0.9838497638702393
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 1,
+      "at": 36.464,
+      "valid": true,
+      "firstWord": "父",
+      "firstWordStart": 36.464,
+      "firstWordEnd": 37.824,
+      "firstWordProbability": 0.0244,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6476,
+      "bounds": [
+        31.824,
+        49.824
+      ],
+      "words": [
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 0.36,
+          "probability": 0.0005088556208647788
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.36,
+          "end": 1.48,
+          "probability": 0.3994363844394684
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 1.48,
+          "end": 2.68,
+          "probability": 0.0052127656526863575
+        },
+        {
+          "word": "大",
+          "tokens": [
+            3582
+          ],
+          "start": 2.68,
+          "end": 3.24,
+          "probability": 0.7641699314117432
+        },
+        {
+          "word": "声",
+          "tokens": [
+            32045
+          ],
+          "start": 3.24,
+          "end": 4.0,
+          "probability": 0.38112524151802063
+        },
+        {
+          "word": "说",
+          "tokens": [
+            8090
+          ],
+          "start": 4.0,
+          "end": 4.64,
+          "probability": 0.8525899052619934
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 4.64,
+          "end": 6.0,
+          "probability": 0.024382028728723526
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 6.0,
+          "end": 7.58,
+          "probability": 0.931695818901062
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 7.58,
+          "end": 8.92,
+          "probability": 0.42046040296554565
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 8.92,
+          "end": 10.7,
+          "probability": 0.9955762624740601
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 10.7,
+          "end": 12.34,
+          "probability": 0.08128605782985687
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 12.34,
+          "end": 12.96,
+          "probability": 0.6355016231536865
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 12.96,
+          "end": 13.78,
+          "probability": 0.5124425003305078
+        },
+        {
+          "word": "魂",
+          "tokens": [
+            20149,
+            224
+          ],
+          "start": 13.78,
+          "end": 14.92,
+          "probability": 0.9927331507205963
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 14.92,
+          "end": 16.06,
+          "probability": 0.8958148956298828
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 16.06,
+          "end": 16.76,
+          "probability": 0.9856981635093689
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 0,
+      "at": 120.524,
+      "valid": true,
+      "firstWord": "父",
+      "firstWordStart": 120.524,
+      "firstWordEnd": 122.224,
+      "firstWordProbability": 0.0036,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5948,
+      "bounds": [
+        113.824,
+        135.824
+      ],
+      "words": [
+        {
+          "word": "架",
+          "tokens": [
+            7360,
+            114
+          ],
+          "start": 0.0,
+          "end": 1.84,
+          "probability": 0.1407437163288705
+        },
+        {
+          "word": "上",
+          "tokens": [
+            5708
+          ],
+          "start": 1.84,
+          "end": 3.44,
+          "probability": 0.5328848958015442
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 3.44,
+          "end": 4.44,
+          "probability": 0.07430031150579453
+        },
+        {
+          "word": "大",
+          "tokens": [
+            3582
+          ],
+          "start": 4.44,
+          "end": 5.36,
+          "probability": 0.8841208815574646
+        },
+        {
+          "word": "声",
+          "tokens": [
+            32045
+          ],
+          "start": 5.36,
+          "end": 6.06,
+          "probability": 0.21181148290634155
+        },
+        {
+          "word": "说",
+          "tokens": [
+            8090
+          ],
+          "start": 6.06,
+          "end": 6.7,
+          "probability": 0.9288747310638428
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 6.7,
+          "end": 8.4,
+          "probability": 0.00355111644603312
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 8.4,
+          "end": 9.7,
+          "probability": 0.03449833020567894
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 9.7,
+          "end": 10.38,
+          "probability": 0.34293222427368164
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 10.38,
+          "end": 12.62,
+          "probability": 0.9893490076065063
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 12.62,
+          "end": 14.3,
+          "probability": 0.4662288725376129
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 14.3,
+          "end": 14.86,
+          "probability": 0.9749061465263367
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 14.86,
+          "end": 15.78,
+          "probability": 0.4986242400482297
+        },
+        {
+          "word": "魂",
+          "tokens": [
+            20149,
+            224
+          ],
+          "start": 15.78,
+          "end": 16.98,
+          "probability": 0.9988554418087006
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 16.98,
+          "end": 18.06,
+          "probability": 0.6479525566101074
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 18.06,
+          "end": 18.72,
+          "probability": 0.9909968376159668
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 1,
+      "at": 120.484,
+      "valid": true,
+      "firstWord": "父",
+      "firstWordStart": 120.484,
+      "firstWordEnd": 122.184,
+      "firstWordProbability": 0.0037,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5629,
+      "bounds": [
+        115.824,
+        133.824
+      ],
+      "words": [
+        {
+          "word": "架",
+          "tokens": [
+            7360,
+            114
+          ],
+          "start": 0.0,
+          "end": 0.08,
+          "probability": 0.051494667859515175
+        },
+        {
+          "word": "上",
+          "tokens": [
+            5708
+          ],
+          "start": 0.08,
+          "end": 1.34,
+          "probability": 0.16788232326507568
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 1.34,
+          "end": 2.44,
+          "probability": 0.07691816985607147
+        },
+        {
+          "word": "大",
+          "tokens": [
+            3582
+          ],
+          "start": 2.44,
+          "end": 3.34,
+          "probability": 0.8476309180259705
+        },
+        {
+          "word": "声",
+          "tokens": [
+            32045
+          ],
+          "start": 3.34,
+          "end": 4.06,
+          "probability": 0.20848394930362701
+        },
+        {
+          "word": "说",
+          "tokens": [
+            8090
+          ],
+          "start": 4.06,
+          "end": 4.66,
+          "probability": 0.9403987526893616
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 4.66,
+          "end": 6.36,
+          "probability": 0.003718583844602108
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 6.36,
+          "end": 7.58,
+          "probability": 0.03385835886001587
+        },
+        {
+          "word": "父",
+          "tokens": [
+            34131
+          ],
+          "start": 7.58,
+          "end": 8.32,
+          "probability": 0.2857334613800049
+        },
+        {
+          "word": "啊",
+          "tokens": [
+            4905
+          ],
+          "start": 8.32,
+          "end": 10.6,
+          "probability": 0.9921348094940186
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 10.6,
+          "end": 12.34,
+          "probability": 0.1372687816619873
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 12.34,
+          "end": 12.92,
+          "probability": 0.9513056874275208
+        },
+        {
+          "word": "灵",
+          "tokens": [
+            13290,
+            113
+          ],
+          "start": 12.92,
+          "end": 13.78,
+          "probability": 0.498412138200365
+        },
+        {
+          "word": "魂",
+          "tokens": [
+            20149,
+            224
+          ],
+          "start": 13.78,
+          "end": 14.92,
+          "probability": 0.9975840747356415
+        },
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 14.92,
+          "end": 16.08,
+          "probability": 0.7398815155029297
+        },
+        {
+          "word": "将",
+          "tokens": [
+            45456
+          ],
+          "start": 16.08,
+          "end": 16.8,
+          "probability": 0.988978922367096
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 0,
+      "at": 6.3,
+      "valid": false,
+      "firstWord": "地",
+      "firstWordStart": 6.3,
+      "firstWordEnd": 13.4,
+      "firstWordProbability": 0.0145,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5285,
+      "bounds": [
+        6.3,
+        28.3
+      ],
+      "words": [
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 0.0,
+          "end": 7.1,
+          "probability": 0.014508716762065887
+        },
+        {
+          "word": "暗",
+          "tokens": [
+            23826,
+            245
+          ],
+          "start": 7.1,
+          "end": 7.62,
+          "probability": 0.6258041560649872
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 7.62,
+          "end": 8.48,
+          "probability": 0.8565935492515564
+        },
+        {
+          "word": "昏",
+          "tokens": [
+            1431,
+            237
+          ],
+          "start": 8.48,
+          "end": 9.48,
+          "probability": 0.9660666286945343
+        },
+        {
+          "word": "磐",
+          "tokens": [
+            163,
+            96,
+            238
+          ],
+          "start": 9.48,
+          "end": 9.98,
+          "probability": 0.18119346722960472
+        },
+        {
+          "word": "石",
+          "tokens": [
+            36783
+          ],
+          "start": 9.98,
+          "end": 10.4,
+          "probability": 0.9930993318557739
+        },
+        {
+          "word": "崩",
+          "tokens": [
+            49378,
+            102
+          ],
+          "start": 10.4,
+          "end": 11.24,
+          "probability": 0.14204899792093784
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 11.24,
+          "end": 12.5,
+          "probability": 0.5987603962421417
+        },
+        {
+          "word": "众",
+          "tokens": [
+            7384,
+            245
+          ],
+          "start": 12.5,
+          "end": 13.06,
+          "probability": 0.42185662558767945
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 13.06,
+          "end": 13.54,
+          "probability": 0.48520874977111816
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 1,
+      "at": 8.3,
+      "valid": false,
+      "firstWord": "地",
+      "firstWordStart": 8.3,
+      "firstWordEnd": 13.4,
+      "firstWordProbability": 0.0118,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5643,
+      "bounds": [
+        8.3,
+        26.3
+      ],
+      "words": [
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 0.0,
+          "end": 5.1,
+          "probability": 0.011771990917623043
+        },
+        {
+          "word": "暗",
+          "tokens": [
+            23826,
+            245
+          ],
+          "start": 5.1,
+          "end": 5.62,
+          "probability": 0.5437595658004284
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 5.62,
+          "end": 6.48,
+          "probability": 0.8261736035346985
+        },
+        {
+          "word": "昏",
+          "tokens": [
+            1431,
+            237
+          ],
+          "start": 6.48,
+          "end": 7.44,
+          "probability": 0.9481453895568848
+        },
+        {
+          "word": "磐",
+          "tokens": [
+            163,
+            96,
+            238
+          ],
+          "start": 7.44,
+          "end": 7.98,
+          "probability": 0.15216505232577524
+        },
+        {
+          "word": "石",
+          "tokens": [
+            36783
+          ],
+          "start": 7.98,
+          "end": 8.52,
+          "probability": 0.9906755685806274
+        },
+        {
+          "word": "崩",
+          "tokens": [
+            49378,
+            102
+          ],
+          "start": 8.52,
+          "end": 9.34,
+          "probability": 0.5013866852968931
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 9.34,
+          "end": 10.52,
+          "probability": 0.6730228960514069
+        },
+        {
+          "word": "众",
+          "tokens": [
+            7384,
+            245
+          ],
+          "start": 10.52,
+          "end": 11.02,
+          "probability": 0.40519469731952995
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 11.02,
+          "end": 11.52,
+          "probability": 0.590534508228302
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 0,
+      "at": 94.94,
+      "valid": true,
+      "firstWord": "天",
+      "firstWordStart": 94.94,
+      "firstWordEnd": 94.94,
+      "firstWordProbability": 0.0094,
+      "positiveDurationFraction": 0.9,
+      "meanProbability": 0.5141,
+      "bounds": [
+        90.1,
+        112.1
+      ],
+      "words": [
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.0018874091329053044
+        },
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.00012072316894773394
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.0,
+          "end": 1.68,
+          "probability": 0.000163137839990668
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 1.68,
+          "end": 1.68,
+          "probability": 0.00048004594282247126
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 1.68,
+          "end": 4.84,
+          "probability": 0.004613768775016069
+        },
+        {
+          "word": "了",
+          "tokens": [
+            2289
+          ],
+          "start": 4.84,
+          "end": 4.84,
+          "probability": 0.39134785532951355
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 4.84,
+          "end": 4.84,
+          "probability": 0.00938053522258997
+        },
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 4.84,
+          "end": 7.56,
+          "probability": 0.988731324672699
+        },
+        {
+          "word": "震",
+          "tokens": [
+            18594,
+            229
+          ],
+          "start": 7.56,
+          "end": 8.4,
+          "probability": 0.5039100213907659
+        },
+        {
+          "word": "动",
+          "tokens": [
+            34961
+          ],
+          "start": 8.4,
+          "end": 9.52,
+          "probability": 0.42321038246154785
+        },
+        {
+          "word": "圣",
+          "tokens": [
+            2523,
+            96
+          ],
+          "start": 9.52,
+          "end": 10.2,
+          "probability": 0.5087259924039245
+        },
+        {
+          "word": "殿",
+          "tokens": [
+            15976,
+            123
+          ],
+          "start": 10.2,
+          "end": 10.86,
+          "probability": 0.8945477902889252
+        },
+        {
+          "word": "幔",
+          "tokens": [
+            3509,
+            242
+          ],
+          "start": 10.86,
+          "end": 11.7,
+          "probability": 0.04842688540156814
+        },
+        {
+          "word": "子",
+          "tokens": [
+            7626
+          ],
+          "start": 11.7,
+          "end": 12.72,
+          "probability": 0.32161784172058105
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 12.72,
+          "end": 13.18,
+          "probability": 0.452593493857421
+        },
+        {
+          "word": "开",
+          "tokens": [
+            18937
+          ],
+          "start": 13.18,
+          "end": 13.88,
+          "probability": 0.9896961450576782
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 1,
+      "at": 96.4,
+      "valid": true,
+      "firstWord": "天",
+      "firstWordStart": 96.4,
+      "firstWordEnd": 96.54,
+      "firstWordProbability": 0.0063,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5484,
+      "bounds": [
+        92.1,
+        110.1
+      ],
+      "words": [
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.0016610999591648579
+        },
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.00012604663788806647
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.0,
+          "end": 4.3,
+          "probability": 0.00012479154975153506
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 4.3,
+          "end": 4.3,
+          "probability": 0.0006730962777510285
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 4.3,
+          "end": 4.3,
+          "probability": 0.003943695221096277
+        },
+        {
+          "word": "了",
+          "tokens": [
+            2289
+          ],
+          "start": 4.3,
+          "end": 4.3,
+          "probability": 0.48964923620224
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 4.3,
+          "end": 4.44,
+          "probability": 0.0062809535302221775
+        },
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 4.44,
+          "end": 5.76,
+          "probability": 0.9839503765106201
+        },
+        {
+          "word": "震",
+          "tokens": [
+            18594,
+            229
+          ],
+          "start": 5.76,
+          "end": 6.46,
+          "probability": 0.7592956721782684
+        },
+        {
+          "word": "动",
+          "tokens": [
+            34961
+          ],
+          "start": 6.46,
+          "end": 7.46,
+          "probability": 0.33194977045059204
+        },
+        {
+          "word": "圣",
+          "tokens": [
+            2523,
+            96
+          ],
+          "start": 7.46,
+          "end": 8.26,
+          "probability": 0.5074418326839805
+        },
+        {
+          "word": "殿",
+          "tokens": [
+            15976,
+            123
+          ],
+          "start": 8.26,
+          "end": 8.9,
+          "probability": 0.884829193353653
+        },
+        {
+          "word": "幔",
+          "tokens": [
+            3509,
+            242
+          ],
+          "start": 8.9,
+          "end": 9.5,
+          "probability": 0.040511014507501386
+        },
+        {
+          "word": "子",
+          "tokens": [
+            7626
+          ],
+          "start": 9.5,
+          "end": 10.62,
+          "probability": 0.5194756388664246
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 10.62,
+          "end": 11.18,
+          "probability": 0.4597088019363582
+        },
+        {
+          "word": "开",
+          "tokens": [
+            18937
+          ],
+          "start": 11.18,
+          "end": 11.88,
+          "probability": 0.9907762408256531
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 2,
+      "at": 95.12,
+      "valid": true,
+      "firstWord": "天",
+      "firstWordStart": 95.12,
+      "firstWordEnd": 95.12,
+      "firstWordProbability": 0.0324,
+      "positiveDurationFraction": 0.9,
+      "meanProbability": 0.5294,
+      "bounds": [
+        88.1,
+        114.1
+      ],
+      "words": [
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.0006241423543542624
+        },
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 0.28,
+          "probability": 0.00012664722453337163
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.28,
+          "end": 1.62,
+          "probability": 0.0003333478234708309
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 1.62,
+          "end": 1.62,
+          "probability": 0.00036042346619069576
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 1.62,
+          "end": 7.02,
+          "probability": 0.0028775662649422884
+        },
+        {
+          "word": "了",
+          "tokens": [
+            2289
+          ],
+          "start": 7.02,
+          "end": 7.02,
+          "probability": 0.417072057723999
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 7.02,
+          "end": 7.02,
+          "probability": 0.03240685164928436
+        },
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 7.02,
+          "end": 9.7,
+          "probability": 0.9907013177871704
+        },
+        {
+          "word": "震",
+          "tokens": [
+            18594,
+            229
+          ],
+          "start": 9.7,
+          "end": 10.5,
+          "probability": 0.552058108150959
+        },
+        {
+          "word": "动",
+          "tokens": [
+            34961
+          ],
+          "start": 10.5,
+          "end": 11.58,
+          "probability": 0.31249308586120605
+        },
+        {
+          "word": "圣",
+          "tokens": [
+            2523,
+            96
+          ],
+          "start": 11.58,
+          "end": 12.28,
+          "probability": 0.5104054780676961
+        },
+        {
+          "word": "殿",
+          "tokens": [
+            15976,
+            123
+          ],
+          "start": 12.28,
+          "end": 12.86,
+          "probability": 0.8785765469074249
+        },
+        {
+          "word": "幔",
+          "tokens": [
+            3509,
+            242
+          ],
+          "start": 12.86,
+          "end": 13.64,
+          "probability": 0.025235046254238114
+        },
+        {
+          "word": "子",
+          "tokens": [
+            7626
+          ],
+          "start": 13.64,
+          "end": 14.68,
+          "probability": 0.5888484120368958
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 14.68,
+          "end": 15.16,
+          "probability": 0.41643134877085686
+        },
+        {
+          "word": "开",
+          "tokens": [
+            18937
+          ],
+          "start": 15.16,
+          "end": 15.9,
+          "probability": 0.9872469902038574
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 3,
+      "at": 96.38,
+      "valid": true,
+      "firstWord": "天",
+      "firstWordStart": 96.38,
+      "firstWordEnd": 97.08,
+      "firstWordProbability": 0.1456,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5805,
+      "bounds": [
+        86.1,
+        112.1
+      ],
+      "words": [
+        {
+          "word": "我",
+          "tokens": [
+            1654
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.001074473955668509
+        },
+        {
+          "word": "救",
+          "tokens": [
+            39716
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 7.675375672988594e-05
+        },
+        {
+          "word": "主",
+          "tokens": [
+            13557
+          ],
+          "start": 0.0,
+          "end": 8.84,
+          "probability": 0.00016553190653212368
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 8.84,
+          "end": 9.36,
+          "probability": 0.0005882462137378752
+        },
+        {
+          "word": "死",
+          "tokens": [
+            16989
+          ],
+          "start": 9.36,
+          "end": 9.52,
+          "probability": 0.003972471691668034
+        },
+        {
+          "word": "了",
+          "tokens": [
+            2289
+          ],
+          "start": 9.52,
+          "end": 10.28,
+          "probability": 0.2792923152446747
+        },
+        {
+          "word": "天",
+          "tokens": [
+            6135
+          ],
+          "start": 10.28,
+          "end": 10.98,
+          "probability": 0.1456332504749298
+        },
+        {
+          "word": "地",
+          "tokens": [
+            10928
+          ],
+          "start": 10.98,
+          "end": 11.78,
+          "probability": 0.9946675300598145
+        },
+        {
+          "word": "震",
+          "tokens": [
+            18594,
+            229
+          ],
+          "start": 11.78,
+          "end": 12.5,
+          "probability": 0.6364786326885223
+        },
+        {
+          "word": "动",
+          "tokens": [
+            34961
+          ],
+          "start": 12.5,
+          "end": 13.62,
+          "probability": 0.5013807415962219
+        },
+        {
+          "word": "圣",
+          "tokens": [
+            2523,
+            96
+          ],
+          "start": 13.62,
+          "end": 14.3,
+          "probability": 0.5057661938481033
+        },
+        {
+          "word": "殿",
+          "tokens": [
+            15976,
+            123
+          ],
+          "start": 14.3,
+          "end": 14.86,
+          "probability": 0.9178726673126221
+        },
+        {
+          "word": "幔",
+          "tokens": [
+            3509,
+            242
+          ],
+          "start": 14.86,
+          "end": 15.76,
+          "probability": 0.04515971926412021
+        },
+        {
+          "word": "子",
+          "tokens": [
+            7626
+          ],
+          "start": 15.76,
+          "end": 16.72,
+          "probability": 0.6219674944877625
+        },
+        {
+          "word": "裂",
+          "tokens": [
+            8083,
+            224
+          ],
+          "start": 16.72,
+          "end": 17.16,
+          "probability": 0.44590729055926204
+        },
+        {
+          "word": "开",
+          "tokens": [
+            18937
+          ],
+          "start": 17.16,
+          "end": 17.88,
+          "probability": 0.990239143371582
+        }
+      ]
+    }
+  ],
+  "estimates": [
+    12.3,
+    35.8235294117647,
+    96.1,
+    119.8235294117647
+  ],
+  "phaseDecisions": [
+    {
+      "index": 2,
+      "at": 96.39,
+      "supportedOnsets": [
+        96.38,
+        96.4
+      ],
+      "chosenWindows": [
+        1,
+        3
+      ],
+      "method": "additional contextual windows confirm one supported onset cluster"
+    }
+  ],
+  "recordingMaps": {
+    "03-019十架七言-第七言-我将灵魂.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.7316949963569641,
+      "meanPathCost": 0.2649727761745453,
+      "cueWindowCosts": [
+        0.2088242918252945,
+        0.26182791590690613,
+        0.19319716095924377,
+        0.2649630308151245
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 4.864
+}

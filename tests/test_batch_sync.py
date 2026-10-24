@@ -742,6 +742,20 @@ class BatchTests(unittest.TestCase):
             self.assertTrue(sources.CHORUS.fullmatch(heading), heading)
         self.assertFalse(sources.CHORUS.fullmatch('我们同唱副歌'))
 
+    def test_inline_chorus_labels_preserve_display_lines_but_do_not_add_sung_words(self):
+        original = '示例\n\n1.主歌真实起句\n主歌下一句\n\n副歌：哈利路亚\n哈利路亚\n'
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'example.txt'
+            path.write_text(original)
+            source = sources.text_source(path)
+            self.assertEqual(source['verses'][0][1]['text'], '哈利路亚 哈利路亚')
+            self.assertEqual(source['regions']['r2'], {'kind': 'text', 'startLine': 5, 'endLine': 6})
+            self.assertEqual(path.read_text(), original)
+        for text in ['副：哈利路亚', '（副歌）哈利路亚', '[Chorus] Hallelujah', 'Chorus: Hallelujah']:
+            self.assertIn(sources.strip_verse(text), ['哈利路亚', 'Hallelujah'])
+        for text in ['我们同唱副歌', '副歌颂扬救恩', 'Chorus of angels']:
+            self.assertEqual(sources.strip_verse(text), text)
+
     def test_inventory_keeps_missing_media_and_never_treats_existing_data_as_work(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

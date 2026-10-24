@@ -392,6 +392,12 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
     from mutagen.mp3 import MP3
     if len(cue_times) != len(definitions) or not cue_times or not all(np.isfinite(at) for at in cue_times):
         raise ValueError('谱行数量与完整时间轴不一致')
+    initial_view = evidence.get('initialReadingView')
+    if initial_view and (type(initial_view.get('version')) is not int or initial_view['version'] != 1 or
+                         initial_view.get('at') != 0 or song['type'] != 'text' or len(cue_times) < 2 or cue_times[0] != 0 or
+                         initial_view.get('region') != definitions[0]['region'] or
+                         initial_view.get('lyricOnsetMeasured') is not False):
+        raise ValueError('首屏位置必须明确标注为播放开始时的阅读位置')
     return_indices = set(evidence.get('returnIndices', []))
     if song['type'] == 'image':
         return_indices.update(first_indices)
@@ -409,7 +415,10 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
             track['reviewed'] = True
         else:
             try:
-                mapped, metrics = map_recordings(reference, file, cue_times, cache)
+                mapped, metrics = map_recordings(reference, file, cue_times[1:] if initial_view else cue_times, cache)
+                if initial_view:
+                    mapped = [0] + mapped
+                    metrics['initialReadingView'] = 'Initial region is displayed from zero; only subsequent measured cues are mapped.'
                 track['cues'] = recording_cues(definitions, mapped, source['regions'], track['duration'], return_indices)
                 evidence.setdefault('recordingMaps', {})[item['file']] = metrics
                 track['reviewed'] = True
@@ -465,6 +474,10 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                           'Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.'
                           if evidence.get('extendedContext', {}).get('version') == 1 else
                           'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.')
+    if initial_view:
+        method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '
+                              '(sung onset not measured); every subsequent change retains contextual acoustic checks '
+                              'and independent chroma-DTW recording correspondence.')
     evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},
@@ -473,6 +486,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
             'provenance': {'batch': 'bulk-2026-10', 'method': method_description,
                            'performanceOrder': definitions, 'evidence': 'docs/sync-bulk-evidence/' + song['source'] + evidence_suffix,
                            'review': 'Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.'}}
+    if initial_view:
+        data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
     if song['type'] == 'image':
         # These regions focus the performed lyric row, rather than all printed
         # stanzas of a staff; reveal its entire next region so glyphs are not cut.

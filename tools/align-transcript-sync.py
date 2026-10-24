@@ -161,13 +161,42 @@ def verified_window_times(model, tokenizer, audio, definitions, estimates, langu
     return observations, times, decisions
 
 
-def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_profile=None):
+def validate_initial_view(song, profile, transcript_path, definitions, diagnostics):
+    if (not isinstance(profile, dict) or type(profile.get('version')) is not int or profile['version'] != 1 or
+            song['type'] != 'text' or profile.get('sourceHash') != song['sha256'] or
+            profile.get('tracks') != song['tracks'] or profile.get('audioFile') != song['reference'] or
+            profile.get('transcriptHash') != batch.checksum(transcript_path) or len(definitions) < 2 or
+            profile.get('regions') != [item['region'] for item in definitions] or
+            len(diagnostics) != len(definitions) or any(row.get('matchedFraction', 0) < .6 for row in diagnostics)):
+        raise ValueError('首屏位置配置与正文、录音、完整转写或已确认的演唱顺序不符')
+    return {'version': 1, 'region': definitions[0]['region'], 'at': 0,
+            'policy': 'initial reading position from playback start', 'lyricOnsetMeasured': False,
+            'profile': profile}
+
+
+def initial_view_window_times(model, tokenizer, audio, definitions, estimates, language, preceding,
+                              anchor_ranges, anchor_words, resume, save_windows):
+    later = [{**row, 'index': row['index'] - 1} for row in resume if row['index'] > 0]
+    def save_later(rows):
+        save_windows([{**row, 'index': row['index'] + 1} for row in rows])
+    observations, times, decisions = verified_window_times(model, tokenizer, audio, definitions[1:], estimates[1:],
+        language, preceding[1:], anchor_ranges[1:], anchor_words[1:], later, save_later)
+    if times and times[0] <= .5:
+        raise ValueError('首屏位置与实际后续换句顺序冲突')
+    return ([{**row, 'index': row['index'] + 1} for row in observations], [0] + times,
+            [{'index': 0, 'at': 0, 'method': 'initial reading position; sung onset not measured'}] +
+            [{**row, 'index': row['index'] + 1} for row in decisions])
+
+
+def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_profile=None, initial_view_profile=None):
     global _model, _model_path
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
                 'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5 if ctc_model_dir else 4, 'model': 'medium/int8'}}
     try:
+        if initial_view_profile and (free_initial_profile or ctc_model_dir):
+            raise ValueError('首屏位置与首词实测应分别配置')
         if free_initial_profile:
             track = next((item for item in song['tracks'] if item['file'] == song['reference']), None)
             if (free_initial_profile.get('sourceHash') != song['sha256'] or
@@ -185,13 +214,17 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
             raise ValueError('缺少匹配当前音频及歌词语言的转写')
         original = [item for verse in source['verses'] for item in verse]
         definitions, estimates, diagnostics = performed_order(original, transcript['segments'], language)
+        if initial_view_profile:
+            evidence['initialReadingView'] = validate_initial_view(song, initial_view_profile, transcript_path,
+                                                                  definitions, diagnostics)
+            evidence['transcriptMatching']['algorithmVersion'] = 7
         evidence.update(performanceOrder=definitions, estimates=estimates)
         preceding = [definitions[index - 1]['text'] if index else '' for index in range(len(definitions))]
         anchor_ranges = [(row['at'], row['firstWordEnd']) for row in diagnostics]
         anchor_words = [row['firstWord'] for row in diagnostics]
         evidence['transcriptMatching'].update(transcript=transcript, diagnostics=diagnostics, language=language)
-        selected_model = str(Path(model_dir) / 'medium') if free_initial_profile else 'medium'
-        if _model is None or free_initial_profile and _model_path != selected_model:
+        selected_model = str(Path(model_dir) / 'medium') if free_initial_profile or initial_view_profile else 'medium'
+        if _model is None or (free_initial_profile or initial_view_profile) and _model_path != selected_model:
             from faster_whisper import WhisperModel
             _model = WhisperModel(selected_model, device='cpu', compute_type='int8', cpu_threads=threads,
                                   download_root=model_dir, local_files_only=True)
@@ -204,10 +237,15 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
         parameters = {'source': song['sha256'], 'tracks': song['tracks'], 'definitions': definitions,
                       'estimates': estimates, 'preceding': preceding, 'language': language,
                       'windowVersion': 2, 'extraWindows': [(8, 18), (10, 16)]}
+        normal_parameters = dict(parameters)
+        if initial_view_profile:
+            parameters['initialReadingViewVersion'] = 1
         fingerprint = lambda value: hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
         signature = fingerprint(parameters)
         old = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
         resume = old.get('windows', []) if old.get('signature') == signature else []
+        if not resume and initial_view_profile and old.get('signature') == fingerprint(normal_parameters):
+            resume = [row for row in old.get('windows', []) if row['index'] > 0]
         # Retain only windows whose actual token context is unchanged by the
         # previous gap-handling rule; source/audio/sequence signatures still match.
         if not resume and old.get('windows'):
@@ -215,29 +253,35 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
                               for index, estimate in enumerate(estimates)]
             legacy = {**parameters, 'preceding': legacy_context, 'windowVersion': 1}
             legacy.pop('extraWindows')
+            legacy.pop('initialReadingViewVersion', None)
             if old.get('signature') == fingerprint(legacy):
                 resume = [row for row in old['windows'] if legacy_context[row['index']] == preceding[row['index']]]
         evidence['windows'] = resume
         def save_windows(rows):
             evidence['windows'] = rows
             batch.save(checkpoint, {'signature': signature, 'windows': rows})
-        try:
-            observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
+        if initial_view_profile:
+            observations, times, decisions = initial_view_window_times(_model, tokenizer, audio, definitions, estimates,
                 language, preceding, anchor_ranges, anchor_words, resume, save_windows)
-        except ValueError:
-            if free_initial_profile:
-                from sync_batch_free_prefix import recover_initial
-                observations = evidence['windows']
-                times, decisions = recover_initial(_model, audio, batch.checksum(reference), definitions, estimates,
-                    anchor_ranges, anchor_words, observations, language, free_initial_profile['freeInitialPrefix'],
-                    model_dir, cache, confirm_transcript_windows, batch.save)
-            elif ctc_model_dir is None or language != 'en':
-                raise
-            else:
-                from sync_batch_ctc import recover_initial
-                observations = evidence['windows']
-                times, decisions = recover_initial(audio, batch.checksum(reference), definitions, estimates, anchor_ranges,
-                    anchor_words, observations, ctc_model_dir, cache, confirm_transcript_windows)
+            save_windows(observations)
+        else:
+            try:
+                observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
+                    language, preceding, anchor_ranges, anchor_words, resume, save_windows)
+            except ValueError:
+                if free_initial_profile:
+                    from sync_batch_free_prefix import recover_initial
+                    observations = evidence['windows']
+                    times, decisions = recover_initial(_model, audio, batch.checksum(reference), definitions, estimates,
+                        anchor_ranges, anchor_words, observations, language, free_initial_profile['freeInitialPrefix'],
+                        model_dir, cache, confirm_transcript_windows, batch.save)
+                elif ctc_model_dir is None or language != 'en':
+                    raise
+                else:
+                    from sync_batch_ctc import recover_initial
+                    observations = evidence['windows']
+                    times, decisions = recover_initial(audio, batch.checksum(reference), definitions, estimates, anchor_ranges,
+                        anchor_words, observations, ctc_model_dir, cache, confirm_transcript_windows)
         evidence['windows'] = observations
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
@@ -261,6 +305,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     profile_path = Path(__file__).with_name('sync-transcript-prefix-profiles.json')
     profiles = json.loads(profile_path.read_text()) if profile_path.exists() else {}
+    view_path = Path(__file__).with_name('sync-initial-reading-profiles.json')
+    view_profiles = json.loads(view_path.read_text()) if view_path.exists() else {}
     for song in batch.inventory():
         if song['songId'] in args.songs and song['type'] == 'text' and song['lyricsAvailable'] and song['tracks'] and not song['existing']:
-            print(generate(song, args.cache, args.model_dir, args.threads, args.ctc_model_dir, profiles.get(song['songId'])), flush=True)
+            print(generate(song, args.cache, args.model_dir, args.threads, args.ctc_model_dir,
+                           profiles.get(song['songId']), view_profiles.get(song['songId'])), flush=True)

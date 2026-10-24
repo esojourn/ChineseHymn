@@ -44,6 +44,83 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_initial_view_requires_current_assets_and_coverage_of_every_reading_region(self):
+        from copy import deepcopy
+        with tempfile.TemporaryDirectory() as directory:
+            asr = Path(directory) / 'asr.json'
+            asr.write_text('{"segments": []}')
+            song = {'type': 'text', 'sha256': 'lyrics', 'reference': 'voice.mp3',
+                    'tracks': [{'file': 'voice.mp3', 'sha256': 'audio'}]}
+            definitions = [{'region': 'r1'}, {'region': 'r2'}]
+            diagnostics = [{'matchedFraction': .8}, {'matchedFraction': .9}]
+            profile = {'version': 1, 'sourceHash': 'lyrics', 'tracks': song['tracks'],
+                       'audioFile': 'voice.mp3', 'transcriptHash': batch.checksum(asr), 'regions': ['r1', 'r2']}
+            view = transcript.validate_initial_view(song, profile, asr, definitions, diagnostics)
+            self.assertEqual(view['at'], 0)
+            self.assertFalse(view['lyricOnsetMeasured'])
+            for key, value in [('version', True), ('sourceHash', 'old'), ('tracks', []),
+                               ('audioFile', 'other.mp3'), ('transcriptHash', 'old'), ('regions', ['r2', 'r1'])]:
+                invalid = deepcopy(profile)
+                invalid[key] = value
+                with self.assertRaises(ValueError):
+                    transcript.validate_initial_view(song, invalid, asr, definitions, diagnostics)
+            with self.assertRaises(ValueError):
+                transcript.validate_initial_view(song, profile, asr, definitions, [{'matchedFraction': .59}, diagnostics[1]])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_initial_view_preserves_all_later_acoustic_checks_and_their_preceding_lyrics(self):
+        definitions = [{'region': 'r1', 'text': '首屏歌词'}, {'region': 'r2', 'text': '第二屏'},
+                       {'region': 'r3', 'text': '第三屏'}]
+        later = [{'index': 0, 'window': 0}, {'index': 1, 'window': 0}]
+        saved = []
+        def verify(*args):
+            self.assertEqual(args[3], definitions[1:])
+            self.assertEqual(args[6], ['首屏歌词', '第二屏'])
+            args[-1](later)
+            return later, [30, 50], [{'index': 0, 'at': 30}]
+        with patch.object(transcript, 'verified_window_times', side_effect=verify):
+            rows, times, decisions = transcript.initial_view_window_times(None, None, [], definitions, [9, 30, 50],
+                'zh', ['', '首屏歌词', '第二屏'], [(9, 10), (30, 31), (50, 51)], ['首', '第', '第'], [], saved.append)
+        self.assertEqual(times, [0, 30, 50])
+        self.assertEqual([row['index'] for row in rows], [1, 2])
+        self.assertEqual(saved[-1], rows)
+        self.assertEqual(decisions[1]['index'], 1)
+        with patch.object(transcript, 'verified_window_times', side_effect=ValueError('later onset ambiguous')):
+            with self.assertRaisesRegex(ValueError, 'ambiguous'):
+                transcript.initial_view_window_times(None, None, [], definitions, [9, 30, 50], 'zh',
+                    ['', '首屏歌词', '第二屏'], [(9, 10), (30, 31), (50, 51)], ['首', '第', '第'], [], saved.append)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_initial_reading_position_is_zero_in_each_recording_and_never_used_as_a_sung_anchor(self):
+        from time import monotonic
+        from types import SimpleNamespace
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            song = {'songId': '01-001', 'source': '01-001.txt', 'sha256': 'lyrics', 'type': 'text',
+                    'reference': 'voice.mp3', 'tracks': [{'file': 'music.mp3', 'sha256': 'music'},
+                                                       {'file': 'voice.mp3', 'sha256': 'voice'}]}
+            definitions = [{'region': 'r1', 'text': '首屏', 'label': '第1段'},
+                           {'region': 'r2', 'text': '后续', 'label': '第2段'}]
+            source = {'regions': {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3},
+                                  'r2': {'kind': 'text', 'startLine': 5, 'endLine': 6}}}
+            evidence = {'initialReadingView': {'version': 1, 'region': 'r1', 'at': 0, 'lyricOnsetMeasured': False},
+                        'transcriptMatching': {}}
+            with patch('mutagen.mp3.MP3', return_value=SimpleNamespace(info=SimpleNamespace(length=90))), \
+                    patch('sync_batch_align.map_recordings', return_value=([21], {'method': 'test'})) as mapping:
+                export_result(song, root, root, root / 'evidence.json', evidence, monotonic(),
+                              source, definitions, [0, 20], [0])
+            self.assertEqual(mapping.call_args.args[2], [20])
+            result = json.loads((root / 'ready/01-001.txt.json').read_text())
+            self.assertEqual(result['cues'][0]['at'], 0)
+            self.assertEqual([cue['at'] for cue in result['tracks'][0]['cues']], [0, 21])
+            self.assertFalse(result['provenance']['initialReadingView']['lyricOnsetMeasured'])
+            for key, value in [('version', True), ('at', 4), ('lyricOnsetMeasured', True)]:
+                invalid = {**evidence, 'initialReadingView': {**evidence['initialReadingView'], key: value}}
+                with self.assertRaises(ValueError):
+                    export_result(song, root, root, root / 'invalid.json', invalid, monotonic(),
+                                  source, definitions, [0, 20], [0])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_context_family_rejects_distinct_clusters_and_zero_duration_words(self):
         from sync_batch_align import context_cluster_time, extended_context_enabled
         def rows(times):

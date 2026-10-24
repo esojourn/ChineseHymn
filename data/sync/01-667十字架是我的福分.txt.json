@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "01-667",
+  "status": "reviewed",
+  "source": {
+    "file": "01-667十字架是我的福分.txt",
+    "sha256": "2d71b06af6d51717f3534a664ac746820798d8b664eed49b3c20538dd9f4febb",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-667十字架是我的福分.mp3",
+      "sha256": "2a3d6c0217f9f987fc68d08e20224e9b921319482d274521fbf9f5cb02398e0d",
+      "duration": 231.02693877551022,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 20.66,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 61.82,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 103.69,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 144.97,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 186.11,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-667十字架是我的福分-领唱.mp3",
+      "sha256": "eb711cb821baadd232db1b99adaea60a40c00fb6fbc7a9c971ec7a464ddd3d09",
+      "duration": 230.97469387755103,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    }
+  },
+  "cues": [
+    {
+      "at": 20.74,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 61.92,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.69,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 145.07,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 186.21,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "长久陷入忧患苦痛， 我就退到祢的手中；丝毫再无保留； 祢手擦干我的眼泪， 使我哭脸满了光辉；再无苦泪可流。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "再见！你这虚空欢娱， 无味消遣儿戏乐趣，对你我失口味。 真实快乐乃在十架， 其他娱乐尽是虚假，我主心意相同。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "哦十字架！才是福气； 它的损失乃是利益；其苦也是甘甜， 所有心思、心志、心情， 在此全都得以炼净，尝到真乐之满。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "苦中自爱难能得益， 因它总求自己安逸。除此它无福气。 真实之爱目的高尚， 舍己乃是它所欣赏；受苦是它所喜。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我的选择和祢一样， 哦！将圣火前来挑旺，使之永焚无尽！ 背起十架将祢跟随， 因着祢爱时常赞美，乃是我的福份。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-667十字架是我的福分.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

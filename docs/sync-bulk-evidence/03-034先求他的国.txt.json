@@ -1,0 +1,2500 @@
+{
+  "songId": "03-034",
+  "source": "03-034先求他的国.txt",
+  "sourceHash": "c08ca2ab41dcbca09dc84c2357da4aa74c9403da91308da227f85e39d4156f4e",
+  "trackHashes": [
+    {
+      "file": "03-034先求他的国.mp3",
+      "sha256": "01e90536b7d46ac8d63b6b13a0e07731552981252915713789e231c231c8c554"
+    },
+    {
+      "file": "03-034先求他的国-领唱.mp3",
+      "sha256": "afd9fb823f820bd345f9cc52830566d4be1a6cd10df3be574f6c00676e4c9485"
+    }
+  ],
+  "vocalBoundaryVersion": 3,
+  "music": {
+    "period": 51.2,
+    "similarity": 0.9622665643692017,
+    "initialOnsetEstimate": 3.6,
+    "shifts": [
+      0.0,
+      51.2,
+      102.4
+    ]
+  },
+  "windowEstimateProfile": {
+    "version": 1,
+    "sourceHash": "c08ca2ab41dcbca09dc84c2357da4aa74c9403da91308da227f85e39d4156f4e",
+    "tracks": [
+      {
+        "file": "03-034先求他的国.mp3",
+        "sha256": "01e90536b7d46ac8d63b6b13a0e07731552981252915713789e231c231c8c554"
+      },
+      {
+        "file": "03-034先求他的国-领唱.mp3",
+        "sha256": "afd9fb823f820bd345f9cc52830566d4be1a6cd10df3be574f6c00676e4c9485"
+      }
+    ],
+    "audioFile": "03-034先求他的国-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "estimates": [
+      6.18,
+      31.88,
+      57.5,
+      82.4,
+      108.96,
+      134.3
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "review": "已逐段核对三段主歌与三次副歌；副歌标签只在识别输入中排除。使用整曲转写的起句附近选择窗口，第二段起句另由两个更长上下文复核；全部实际时间仍由声学起点及音乐反复确定。"
+  },
+  "extendedContext": {
+    "version": 1,
+    "bounds": [
+      [
+        6,
+        16
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        8,
+        18
+      ],
+      [
+        10,
+        16
+      ]
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "你们要先求祂的国， 和祂的义， 这些东西都要加给你们， 都要加给你们。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "人们活着不是单靠食物， 乃是靠神的话语， 这些东西都要加给你们， 都要加给你们。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你们祈求就给你们， 寻找就寻见， 叩门就给你们开门， 一切都要给你们。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+      "label": "第3段"
+    }
+  ],
+  "windows": [
+    {
+      "index": 0,
+      "window": 0,
+      "at": 0.18,
+      "valid": false,
+      "firstWord": "你们",
+      "firstWordStart": 0.18,
+      "firstWordEnd": 7.72,
+      "firstWordProbability": 0.0228,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.1933,
+      "bounds": [
+        0.18,
+        22.18
+      ],
+      "words": [
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 0.0,
+          "end": 7.54,
+          "probability": 0.022806115448474884
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 7.54,
+          "end": 8.34,
+          "probability": 0.20698182284832
+        },
+        {
+          "word": "先",
+          "tokens": [
+            10108
+          ],
+          "start": 8.34,
+          "end": 9.04,
+          "probability": 0.0295110996812582
+        },
+        {
+          "word": "求",
+          "tokens": [
+            32718
+          ],
+          "start": 9.04,
+          "end": 9.54,
+          "probability": 0.010156035423278809
+        },
+        {
+          "word": "他的",
+          "tokens": [
+            31309
+          ],
+          "start": 9.54,
+          "end": 10.74,
+          "probability": 0.49110063910484314
+        },
+        {
+          "word": "国",
+          "tokens": [
+            16086
+          ],
+          "start": 10.74,
+          "end": 12.2,
+          "probability": 0.0012395234080031514
+        },
+        {
+          "word": "和",
+          "tokens": [
+            12565
+          ],
+          "start": 12.2,
+          "end": 13.96,
+          "probability": 0.5878982543945312
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 13.96,
+          "end": 15.2,
+          "probability": 0.06967029720544815
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 1,
+      "at": 2.18,
+      "valid": false,
+      "firstWord": "你们",
+      "firstWordStart": 2.18,
+      "firstWordEnd": 7.64,
+      "firstWordProbability": 0.0446,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.1659,
+      "bounds": [
+        2.18,
+        20.18
+      ],
+      "words": [
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 0.0,
+          "end": 5.46,
+          "probability": 0.044579509645700455
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 5.46,
+          "end": 6.32,
+          "probability": 0.1804959625005722
+        },
+        {
+          "word": "先",
+          "tokens": [
+            10108
+          ],
+          "start": 6.32,
+          "end": 6.96,
+          "probability": 0.04077684506773949
+        },
+        {
+          "word": "求",
+          "tokens": [
+            32718
+          ],
+          "start": 6.96,
+          "end": 7.52,
+          "probability": 0.07113102078437805
+        },
+        {
+          "word": "他的",
+          "tokens": [
+            31309
+          ],
+          "start": 7.52,
+          "end": 8.76,
+          "probability": 0.4082271456718445
+        },
+        {
+          "word": "国",
+          "tokens": [
+            16086
+          ],
+          "start": 8.76,
+          "end": 10.18,
+          "probability": 0.0059163193218410015
+        },
+        {
+          "word": "和",
+          "tokens": [
+            12565
+          ],
+          "start": 10.18,
+          "end": 11.96,
+          "probability": 0.30257508158683777
+        },
+        {
+          "word": "他",
+          "tokens": [
+            5000
+          ],
+          "start": 11.96,
+          "end": 13.2,
+          "probability": 0.152177631855011
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 0,
+      "at": 31.94,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 31.94,
+      "firstWordEnd": 34.08,
+      "firstWordProbability": 0.2506,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.761,
+      "bounds": [
+        25.88,
+        47.88
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 0.84,
+          "probability": 0.06617860496044159
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 0.84,
+          "end": 1.56,
+          "probability": 0.9585713148117065
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 1.56,
+          "end": 2.4,
+          "probability": 0.672982394695282
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 2.4,
+          "end": 3.3,
+          "probability": 0.02173790894448757
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 3.3,
+          "end": 6.06,
+          "probability": 0.18932068347930908
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 6.06,
+          "end": 8.2,
+          "probability": 0.25062745809555054
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 8.2,
+          "end": 9.66,
+          "probability": 0.607042133808136
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 9.66,
+          "end": 11.02,
+          "probability": 0.11184997111558914
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 11.02,
+          "end": 12.46,
+          "probability": 0.9392282962799072
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 12.46,
+          "end": 14.62,
+          "probability": 0.8519885540008545
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 14.62,
+          "end": 15.8,
+          "probability": 0.9904113411903381
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 15.8,
+          "end": 17.24,
+          "probability": 0.9876567125320435
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 17.24,
+          "end": 18.58,
+          "probability": 0.9990997314453125
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 18.58,
+          "end": 20.9,
+          "probability": 0.8910287618637085
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 20.9,
+          "end": 21.98,
+          "probability": 0.9812394380569458
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 1,
+      "at": 31.72,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 31.72,
+      "firstWordEnd": 33.96,
+      "firstWordProbability": 0.1013,
+      "positiveDurationFraction": 0.9,
+      "meanProbability": 0.6927,
+      "bounds": [
+        27.88,
+        45.88
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 0.64,
+          "probability": 0.0005504221189767122
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 0.64,
+          "end": 1.94,
+          "probability": 0.03072092868387699
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 1.94,
+          "end": 1.94,
+          "probability": 0.0012362818233668804
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 1.94,
+          "end": 1.94,
+          "probability": 0.0002159212453989312
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 1.94,
+          "end": 3.84,
+          "probability": 0.03317466750741005
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 3.84,
+          "end": 6.08,
+          "probability": 0.10132983326911926
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 6.08,
+          "end": 7.62,
+          "probability": 0.6195595860481262
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 7.62,
+          "end": 9.1,
+          "probability": 0.07973679900169373
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 9.1,
+          "end": 10.38,
+          "probability": 0.8697777688503265
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 10.38,
+          "end": 12.46,
+          "probability": 0.8389497399330139
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 12.46,
+          "end": 13.8,
+          "probability": 0.9739606380462646
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 13.8,
+          "end": 15.42,
+          "probability": 0.9810820817947388
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 15.42,
+          "end": 16.74,
+          "probability": 0.9977501034736633
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 16.74,
+          "end": 17.98,
+          "probability": 0.7660267353057861
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 17.98,
+          "end": 17.98,
+          "probability": 0.6985255479812622
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 0,
+      "at": 56.98,
+      "valid": true,
+      "firstWord": "人",
+      "firstWordStart": 56.98,
+      "firstWordEnd": 58.4,
+      "firstWordProbability": 0.3882,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3548,
+      "bounds": [
+        51.5,
+        73.5
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 1.04,
+          "probability": 0.00019892262935172766
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 1.04,
+          "end": 2.08,
+          "probability": 0.007607599720358849
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 2.08,
+          "end": 2.76,
+          "probability": 0.00022252232884056866
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 2.76,
+          "end": 3.26,
+          "probability": 0.06794269382953644
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 3.26,
+          "end": 4.8,
+          "probability": 0.5391050577163696
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 4.8,
+          "end": 5.48,
+          "probability": 0.4863264439627528
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 5.48,
+          "end": 6.9,
+          "probability": 0.38820144534111023
+        },
+        {
+          "word": "们",
+          "tokens": [
+            9497
+          ],
+          "start": 6.9,
+          "end": 7.48,
+          "probability": 0.6773512959480286
+        },
+        {
+          "word": "活",
+          "tokens": [
+            25956
+          ],
+          "start": 7.48,
+          "end": 8.0,
+          "probability": 0.829376220703125
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 8.0,
+          "end": 8.66,
+          "probability": 0.987036406993866
+        },
+        {
+          "word": "不是",
+          "tokens": [
+            7296
+          ],
+          "start": 8.66,
+          "end": 9.44,
+          "probability": 0.025160402059555054
+        },
+        {
+          "word": "单",
+          "tokens": [
+            47446
+          ],
+          "start": 9.44,
+          "end": 10.0,
+          "probability": 0.0006127072847448289
+        },
+        {
+          "word": "靠",
+          "tokens": [
+            5363,
+            254
+          ],
+          "start": 10.0,
+          "end": 10.44,
+          "probability": 0.5003494080156088
+        },
+        {
+          "word": "食",
+          "tokens": [
+            25155
+          ],
+          "start": 10.44,
+          "end": 11.8,
+          "probability": 0.0004161039541941136
+        },
+        {
+          "word": "物",
+          "tokens": [
+            23516
+          ],
+          "start": 11.8,
+          "end": 21.98,
+          "probability": 0.11482725292444229
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 1,
+      "at": 57.72,
+      "valid": true,
+      "firstWord": "人",
+      "firstWordStart": 57.72,
+      "firstWordEnd": 58.54,
+      "firstWordProbability": 0.6698,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3965,
+      "bounds": [
+        53.5,
+        71.5
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 0.84,
+          "probability": 0.0001237107499036938
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 0.84,
+          "end": 1.2,
+          "probability": 0.00668267672881484
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 1.2,
+          "end": 1.2,
+          "probability": 3.135655424557626e-05
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 1.2,
+          "end": 1.2,
+          "probability": 0.06888847798109055
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 1.2,
+          "end": 2.2,
+          "probability": 0.30309826135635376
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 2.2,
+          "end": 4.22,
+          "probability": 0.4798237618524581
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 4.22,
+          "end": 5.04,
+          "probability": 0.6698077321052551
+        },
+        {
+          "word": "们",
+          "tokens": [
+            9497
+          ],
+          "start": 5.04,
+          "end": 5.52,
+          "probability": 0.7739672064781189
+        },
+        {
+          "word": "活",
+          "tokens": [
+            25956
+          ],
+          "start": 5.52,
+          "end": 5.92,
+          "probability": 0.8291274309158325
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 5.92,
+          "end": 6.68,
+          "probability": 0.9898994565010071
+        },
+        {
+          "word": "不是",
+          "tokens": [
+            7296
+          ],
+          "start": 6.68,
+          "end": 7.44,
+          "probability": 0.007842063903808594
+        },
+        {
+          "word": "单",
+          "tokens": [
+            47446
+          ],
+          "start": 7.44,
+          "end": 8.04,
+          "probability": 0.0006198941846378148
+        },
+        {
+          "word": "靠",
+          "tokens": [
+            5363,
+            254
+          ],
+          "start": 8.04,
+          "end": 8.4,
+          "probability": 0.5176203530281782
+        },
+        {
+          "word": "食",
+          "tokens": [
+            25155
+          ],
+          "start": 8.4,
+          "end": 9.8,
+          "probability": 0.0004756190173793584
+        },
+        {
+          "word": "物",
+          "tokens": [
+            23516
+          ],
+          "start": 9.8,
+          "end": 17.98,
+          "probability": 0.16750574111938477
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 0,
+      "at": 82.94,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 82.94,
+      "firstWordEnd": 85.28,
+      "firstWordProbability": 0.2199,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7464,
+      "bounds": [
+        76.4,
+        98.4
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 1.58,
+          "probability": 0.025341477245092392
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 1.58,
+          "end": 2.18,
+          "probability": 0.9283196330070496
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 2.18,
+          "end": 3.02,
+          "probability": 0.4006025493144989
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 3.02,
+          "end": 3.78,
+          "probability": 0.05720754340291023
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 3.78,
+          "end": 6.54,
+          "probability": 0.199464350938797
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 6.54,
+          "end": 8.88,
+          "probability": 0.21991917490959167
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 8.88,
+          "end": 10.28,
+          "probability": 0.6322332620620728
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 10.28,
+          "end": 11.76,
+          "probability": 0.1938353329896927
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 11.76,
+          "end": 13.16,
+          "probability": 0.9287635982036591
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 13.16,
+          "end": 15.2,
+          "probability": 0.744399905204773
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 15.2,
+          "end": 16.5,
+          "probability": 0.9885572195053101
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 16.5,
+          "end": 18.12,
+          "probability": 0.8946942090988159
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 18.12,
+          "end": 19.42,
+          "probability": 0.9993758201599121
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 19.42,
+          "end": 21.56,
+          "probability": 0.8913349509239197
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 21.56,
+          "end": 21.98,
+          "probability": 0.9710851311683655
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 1,
+      "at": 81.9,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 81.9,
+      "firstWordEnd": 84.38,
+      "firstWordProbability": 0.1874,
+      "positiveDurationFraction": 0.9,
+      "meanProbability": 0.6908,
+      "bounds": [
+        78.4,
+        96.4
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 0.24,
+          "probability": 0.0016940470086410642
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 0.24,
+          "end": 0.98,
+          "probability": 0.011056944727897644
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 0.98,
+          "end": 1.04,
+          "probability": 0.01206719595938921
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 1.04,
+          "end": 1.72,
+          "probability": 0.0038275509141385555
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 1.72,
+          "end": 3.5,
+          "probability": 0.055815886706113815
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 3.5,
+          "end": 5.98,
+          "probability": 0.1873631775379181
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 5.98,
+          "end": 8.44,
+          "probability": 0.5447630286216736
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 8.44,
+          "end": 9.74,
+          "probability": 0.23042301833629608
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 9.74,
+          "end": 11.06,
+          "probability": 0.9157877564430237
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 11.06,
+          "end": 13.22,
+          "probability": 0.8546590805053711
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 13.22,
+          "end": 14.52,
+          "probability": 0.9853923916816711
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 14.52,
+          "end": 16.08,
+          "probability": 0.9559410214424133
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 16.08,
+          "end": 17.46,
+          "probability": 0.9984531402587891
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 17.46,
+          "end": 17.98,
+          "probability": 0.6659142374992371
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 17.98,
+          "end": 17.98,
+          "probability": 0.5689176917076111
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 0,
+      "at": 108.94,
+      "valid": true,
+      "firstWord": "你们",
+      "firstWordStart": 108.94,
+      "firstWordEnd": 110.02,
+      "firstWordProbability": 0.0015,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3814,
+      "bounds": [
+        102.96,
+        124.96
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 0.8,
+          "probability": 0.000248185358941555
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 0.8,
+          "end": 1.98,
+          "probability": 0.06232694163918495
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 1.98,
+          "end": 2.52,
+          "probability": 0.00041516940109431744
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 2.52,
+          "end": 2.94,
+          "probability": 0.8184842467308044
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 2.94,
+          "end": 4.4,
+          "probability": 0.4235927164554596
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 4.4,
+          "end": 5.98,
+          "probability": 0.2601811229251325
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 5.98,
+          "end": 7.06,
+          "probability": 0.0015266340924426913
+        },
+        {
+          "word": "祈",
+          "tokens": [
+            12695,
+            230
+          ],
+          "start": 7.06,
+          "end": 7.66,
+          "probability": 0.3008658809121698
+        },
+        {
+          "word": "求",
+          "tokens": [
+            32718
+          ],
+          "start": 7.66,
+          "end": 8.26,
+          "probability": 0.861682116985321
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 8.26,
+          "end": 9.2,
+          "probability": 0.2662588953971863
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 9.2,
+          "end": 9.98,
+          "probability": 0.027609363198280334
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 9.98,
+          "end": 12.02,
+          "probability": 0.462890088558197
+        },
+        {
+          "word": "寻",
+          "tokens": [
+            4510,
+            119
+          ],
+          "start": 12.02,
+          "end": 13.24,
+          "probability": 0.5386160835623741
+        },
+        {
+          "word": "找",
+          "tokens": [
+            25085
+          ],
+          "start": 13.24,
+          "end": 14.02,
+          "probability": 0.8901607394218445
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 1,
+      "at": 108.8,
+      "valid": true,
+      "firstWord": "你们",
+      "firstWordStart": 108.8,
+      "firstWordEnd": 110.0,
+      "firstWordProbability": 0.0006,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.2944,
+      "bounds": [
+        104.96,
+        122.96
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 0.62,
+          "probability": 5.2334245992824435e-05
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 0.62,
+          "end": 0.82,
+          "probability": 0.013391918502748013
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 0.82,
+          "end": 0.82,
+          "probability": 4.079805876244791e-05
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.82,
+          "end": 0.82,
+          "probability": 0.09824991971254349
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 0.82,
+          "end": 1.96,
+          "probability": 0.2544272541999817
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 1.96,
+          "end": 3.84,
+          "probability": 0.4083121754229069
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 3.84,
+          "end": 5.04,
+          "probability": 0.0006238307687453926
+        },
+        {
+          "word": "祈",
+          "tokens": [
+            12695,
+            230
+          ],
+          "start": 5.04,
+          "end": 5.68,
+          "probability": 0.38991749670822173
+        },
+        {
+          "word": "求",
+          "tokens": [
+            32718
+          ],
+          "start": 5.68,
+          "end": 6.5,
+          "probability": 0.9493387937545776
+        },
+        {
+          "word": "就",
+          "tokens": [
+            3111
+          ],
+          "start": 6.5,
+          "end": 7.16,
+          "probability": 0.1251501888036728
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 7.16,
+          "end": 7.94,
+          "probability": 0.01898559182882309
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 7.94,
+          "end": 8.8,
+          "probability": 0.19042447209358215
+        },
+        {
+          "word": "寻",
+          "tokens": [
+            4510,
+            119
+          ],
+          "start": 8.8,
+          "end": 10.8,
+          "probability": 0.18446968880016357
+        },
+        {
+          "word": "找",
+          "tokens": [
+            25085
+          ],
+          "start": 10.8,
+          "end": 12.02,
+          "probability": 0.8945619463920593
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 0,
+      "at": 134.38,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 134.38,
+      "firstWordEnd": 136.46,
+      "firstWordProbability": 0.5033,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.797,
+      "bounds": [
+        128.3,
+        150.3
+      ],
+      "words": [
+        {
+          "word": "切",
+          "tokens": [
+            23632
+          ],
+          "start": 0.0,
+          "end": 0.8,
+          "probability": 2.6641437216312625e-05
+        },
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.8,
+          "end": 1.36,
+          "probability": 0.09166553616523743
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 1.36,
+          "end": 2.38,
+          "probability": 0.9611157774925232
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 2.38,
+          "end": 3.14,
+          "probability": 0.10315946489572525
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 3.14,
+          "end": 6.08,
+          "probability": 0.47885221242904663
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 6.08,
+          "end": 8.16,
+          "probability": 0.5032548904418945
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 8.16,
+          "end": 9.62,
+          "probability": 0.6747657060623169
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 9.62,
+          "end": 11.14,
+          "probability": 0.4501992166042328
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 11.14,
+          "end": 12.48,
+          "probability": 0.6700798571109772
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 12.48,
+          "end": 14.56,
+          "probability": 0.8887166380882263
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 14.56,
+          "end": 16.08,
+          "probability": 0.965518057346344
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 16.08,
+          "end": 17.4,
+          "probability": 0.9676167368888855
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 17.4,
+          "end": 18.72,
+          "probability": 0.9988815486431122
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 18.72,
+          "end": 20.82,
+          "probability": 0.8824585676193237
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 20.82,
+          "end": 21.98,
+          "probability": 0.9685066342353821
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 1,
+      "at": 134.74,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 134.74,
+      "firstWordEnd": 136.46,
+      "firstWordProbability": 0.0459,
+      "positiveDurationFraction": 0.9,
+      "meanProbability": 0.6903,
+      "bounds": [
+        130.3,
+        148.3
+      ],
+      "words": [
+        {
+          "word": "切",
+          "tokens": [
+            23632
+          ],
+          "start": 0.0,
+          "end": 0.94,
+          "probability": 9.607932588551193e-05
+        },
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.94,
+          "end": 1.82,
+          "probability": 0.0005919720861129463
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 1.82,
+          "end": 3.54,
+          "probability": 0.044396381825208664
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 3.54,
+          "end": 4.44,
+          "probability": 0.0003834734088741243
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 4.44,
+          "end": 4.44,
+          "probability": 0.01768200471997261
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 4.44,
+          "end": 6.16,
+          "probability": 0.04585730656981468
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 6.16,
+          "end": 7.62,
+          "probability": 0.6742425560951233
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 7.62,
+          "end": 9.3,
+          "probability": 0.4202817976474762
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 9.3,
+          "end": 10.66,
+          "probability": 0.7157603651285172
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 10.66,
+          "end": 12.48,
+          "probability": 0.8587319254875183
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 12.48,
+          "end": 14.16,
+          "probability": 0.9419204592704773
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 14.16,
+          "end": 15.48,
+          "probability": 0.9860790371894836
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 15.48,
+          "end": 16.62,
+          "probability": 0.9983653724193573
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 16.62,
+          "end": 17.98,
+          "probability": 0.7824146151542664
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 17.98,
+          "end": 17.98,
+          "probability": 0.4791991412639618
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 2,
+      "at": 56.92,
+      "valid": true,
+      "firstWord": "人",
+      "firstWordStart": 56.92,
+      "firstWordEnd": 58.38,
+      "firstWordProbability": 0.2658,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3734,
+      "bounds": [
+        49.5,
+        75.5
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 3.04,
+          "probability": 7.395642023766413e-05
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 3.04,
+          "end": 3.66,
+          "probability": 0.010599308647215366
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 3.66,
+          "end": 3.66,
+          "probability": 6.05805944360327e-05
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 3.66,
+          "end": 3.66,
+          "probability": 0.09765396267175674
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 3.66,
+          "end": 4.16,
+          "probability": 0.4696822762489319
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 4.16,
+          "end": 7.42,
+          "probability": 0.4725489574484527
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 7.42,
+          "end": 8.88,
+          "probability": 0.2658049762248993
+        },
+        {
+          "word": "们",
+          "tokens": [
+            9497
+          ],
+          "start": 8.88,
+          "end": 9.48,
+          "probability": 0.8426740765571594
+        },
+        {
+          "word": "活",
+          "tokens": [
+            25956
+          ],
+          "start": 9.48,
+          "end": 9.94,
+          "probability": 0.8340435028076172
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 9.94,
+          "end": 10.68,
+          "probability": 0.9924117922782898
+        },
+        {
+          "word": "不是",
+          "tokens": [
+            7296
+          ],
+          "start": 10.68,
+          "end": 11.46,
+          "probability": 0.037782181054353714
+        },
+        {
+          "word": "单",
+          "tokens": [
+            47446
+          ],
+          "start": 11.46,
+          "end": 12.04,
+          "probability": 0.0005913873319514096
+        },
+        {
+          "word": "靠",
+          "tokens": [
+            5363,
+            254
+          ],
+          "start": 12.04,
+          "end": 12.44,
+          "probability": 0.5134151019155979
+        },
+        {
+          "word": "食",
+          "tokens": [
+            25155
+          ],
+          "start": 12.44,
+          "end": 13.22,
+          "probability": 0.0005286689265631139
+        },
+        {
+          "word": "物",
+          "tokens": [
+            23516
+          ],
+          "start": 13.22,
+          "end": 25.98,
+          "probability": 0.2095205932855606
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 3,
+      "at": 57.18,
+      "valid": true,
+      "firstWord": "人",
+      "firstWordStart": 57.18,
+      "firstWordEnd": 58.44,
+      "firstWordProbability": 0.1617,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.3309,
+      "bounds": [
+        47.5,
+        73.5
+      ],
+      "words": [
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 0.0,
+          "end": 0.84,
+          "probability": 0.0014671868411824107
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 0.84,
+          "end": 2.06,
+          "probability": 0.1038941890001297
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 2.06,
+          "end": 3.7,
+          "probability": 8.987556066131219e-05
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 3.7,
+          "end": 5.18,
+          "probability": 0.5880452394485474
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 5.18,
+          "end": 6.2,
+          "probability": 0.6143690943717957
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 6.2,
+          "end": 9.68,
+          "probability": 0.5003060188610107
+        },
+        {
+          "word": "人",
+          "tokens": [
+            4035
+          ],
+          "start": 9.68,
+          "end": 10.94,
+          "probability": 0.16171441972255707
+        },
+        {
+          "word": "们",
+          "tokens": [
+            9497
+          ],
+          "start": 10.94,
+          "end": 11.52,
+          "probability": 0.5654116868972778
+        },
+        {
+          "word": "活",
+          "tokens": [
+            25956
+          ],
+          "start": 11.52,
+          "end": 12.0,
+          "probability": 0.7198447585105896
+        },
+        {
+          "word": "着",
+          "tokens": [
+            20708
+          ],
+          "start": 12.0,
+          "end": 12.66,
+          "probability": 0.9873707294464111
+        },
+        {
+          "word": "不是",
+          "tokens": [
+            7296
+          ],
+          "start": 12.66,
+          "end": 13.46,
+          "probability": 0.0061687021516263485
+        },
+        {
+          "word": "单",
+          "tokens": [
+            47446
+          ],
+          "start": 13.46,
+          "end": 14.04,
+          "probability": 0.0008988878107629716
+        },
+        {
+          "word": "靠",
+          "tokens": [
+            5363,
+            254
+          ],
+          "start": 14.04,
+          "end": 14.4,
+          "probability": 0.47571057826280594
+        },
+        {
+          "word": "食",
+          "tokens": [
+            25155
+          ],
+          "start": 14.4,
+          "end": 15.26,
+          "probability": 0.0010381817119196057
+        },
+        {
+          "word": "物",
+          "tokens": [
+            23516
+          ],
+          "start": 15.26,
+          "end": 16.7,
+          "probability": 0.38496655225753784
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 2,
+      "at": 83.12,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 83.12,
+      "firstWordEnd": 85.14,
+      "firstWordProbability": 0.3721,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7797,
+      "bounds": [
+        74.4,
+        100.4
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 0.72,
+          "probability": 0.002405507257208228
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 0.72,
+          "end": 4.1,
+          "probability": 0.6532952785491943
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 4.1,
+          "end": 5.02,
+          "probability": 0.33066055178642273
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 5.02,
+          "end": 6.02,
+          "probability": 0.04312939569354057
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 6.02,
+          "end": 8.72,
+          "probability": 0.0614740327000618
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 8.72,
+          "end": 10.74,
+          "probability": 0.3721102476119995
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 10.74,
+          "end": 12.28,
+          "probability": 0.6838175654411316
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 12.28,
+          "end": 13.74,
+          "probability": 0.3851085603237152
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 13.74,
+          "end": 15.06,
+          "probability": 0.8030857741832733
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 15.06,
+          "end": 17.2,
+          "probability": 0.75685054063797
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 17.2,
+          "end": 18.52,
+          "probability": 0.9865186810493469
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 18.52,
+          "end": 19.58,
+          "probability": 0.8998046517372131
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 19.58,
+          "end": 21.42,
+          "probability": 0.9987870752811432
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 21.42,
+          "end": 23.54,
+          "probability": 0.9162428975105286
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 23.54,
+          "end": 25.14,
+          "probability": 0.9950419664382935
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 3,
+      "at": 82.28,
+      "valid": true,
+      "firstWord": "哈",
+      "firstWordStart": 82.28,
+      "firstWordEnd": 84.64,
+      "firstWordProbability": 0.1516,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7756,
+      "bounds": [
+        72.4,
+        98.4
+      ],
+      "words": [
+        {
+          "word": "都",
+          "tokens": [
+            7182
+          ],
+          "start": 0.0,
+          "end": 1.0,
+          "probability": 0.18522457778453827
+        },
+        {
+          "word": "要",
+          "tokens": [
+            4275
+          ],
+          "start": 1.0,
+          "end": 1.42,
+          "probability": 0.9676872491836548
+        },
+        {
+          "word": "加",
+          "tokens": [
+            9990
+          ],
+          "start": 1.42,
+          "end": 2.14,
+          "probability": 0.022173555567860603
+        },
+        {
+          "word": "给",
+          "tokens": [
+            23197
+          ],
+          "start": 2.14,
+          "end": 7.8,
+          "probability": 0.25267520546913147
+        },
+        {
+          "word": "你们",
+          "tokens": [
+            29806
+          ],
+          "start": 7.8,
+          "end": 9.88,
+          "probability": 0.25694406032562256
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 9.88,
+          "end": 12.24,
+          "probability": 0.15158158540725708
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 12.24,
+          "end": 14.24,
+          "probability": 0.6984326839447021
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 14.24,
+          "end": 15.8,
+          "probability": 0.554098904132843
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 15.8,
+          "end": 17.08,
+          "probability": 0.8570230007171631
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 17.08,
+          "end": 19.06,
+          "probability": 0.6517548561096191
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 19.06,
+          "end": 20.46,
+          "probability": 0.987883985042572
+        },
+        {
+          "word": "路",
+          "tokens": [
+            24658
+          ],
+          "start": 20.46,
+          "end": 22.08,
+          "probability": 0.9515896439552307
+        },
+        {
+          "word": "亚",
+          "tokens": [
+            1369,
+            248
+          ],
+          "start": 22.08,
+          "end": 23.54,
+          "probability": 0.9993358552455902
+        },
+        {
+          "word": "哈",
+          "tokens": [
+            10595
+          ],
+          "start": 23.54,
+          "end": 25.54,
+          "probability": 0.9240885376930237
+        },
+        {
+          "word": "利",
+          "tokens": [
+            23700
+          ],
+          "start": 25.54,
+          "end": 25.98,
+          "probability": 0.9803643226623535
+        }
+      ]
+    }
+  ],
+  "estimates": [
+    6.18,
+    31.88,
+    57.5,
+    82.4,
+    108.96,
+    134.3
+  ],
+  "phaseDecisions": [
+    {
+      "index": 2,
+      "at": 56.95,
+      "supportedOnsets": [
+        56.92,
+        56.98,
+        57.18
+      ],
+      "chosenWindows": [
+        0,
+        2
+      ],
+      "method": "additional contextual windows confirm one supported onset cluster"
+    },
+    {
+      "index": 3,
+      "musicPhaseAt": 83.195,
+      "chosenWindow": 2,
+      "at": 83.12,
+      "method": "two independent acoustic phase anchors corroborate one window; conflicting window discarded"
+    }
+  ],
+  "recordingMaps": {
+    "03-034先求他的国.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.6954620480537415,
+      "meanPathCost": 0.3024882972240448,
+      "cueWindowCosts": [
+        0.26368895173072815,
+        0.3487361669540405,
+        0.28776997327804565,
+        0.34569302201271057,
+        0.2544736862182617,
+        0.39479589462280273
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 4.589
+}

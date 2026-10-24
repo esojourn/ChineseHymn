@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "03-034",
+  "status": "reviewed",
+  "source": {
+    "file": "03-034先求他的国.txt",
+    "sha256": "c08ca2ab41dcbca09dc84c2357da4aa74c9403da91308da227f85e39d4156f4e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-034先求他的国.mp3",
+      "sha256": "01e90536b7d46ac8d63b6b13a0e07731552981252915713789e231c231c8c554",
+      "duration": 162.58612244897958,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.01,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 31.63,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 56.85,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 83.02,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 108.77,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 134.36,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-034先求他的国-领唱.mp3",
+      "sha256": "afd9fb823f820bd345f9cc52830566d4be1a6cd10df3be574f6c00676e4c9485",
+      "duration": 161.17551020408163,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 6.11,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.83,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 56.95,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 83.12,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.87,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 134.56,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你们要先求祂的国， 和祂的义， 这些东西都要加给你们， 都要加给你们。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "人们活着不是单靠食物， 乃是靠神的话语， 这些东西都要加给你们， 都要加给你们。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你们祈求就给你们， 寻找就寻见， 叩门就给你们开门， 一切都要给你们。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "哈利路亚，哈利路亚， 哈利路亚，哈利路， 哈利路亚。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-034先求他的国.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

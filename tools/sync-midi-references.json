@@ -6898,5 +6898,179 @@
       },
       "layoutReview": "已目视核对固定SVG的2倍像素密度图片及四行音符／歌词像素范围，首行拍号在x<0.095排除。第二阅读区域从第二行第三个数字3开始，副歌从第三行首个5开始。光学提取保留原图休止和同音连结的实际时值；完整音符序列及唯一阅读分界必须与MIDI核对，各实际音轨独立通过原有全部匹配限值。"
     }
+  },
+  "04-403": {
+    "targetSha256": "d79942753c765ec624b5c4cb86a76ac6a1b31e6c49899ed54636fcff7307643a",
+    "file": "timeless-Standing_on_the_Promises.mid",
+    "sha256": "5c37cbe7545b8d1322f9331255c594529780eb7dae3afeeaba7c5416b7b602fa",
+    "url": "https://library.timelesstruths.org/library/music/S/Standing_on_the_Promises/Standing_on_the_Promises.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Standing_on_the_Promises/",
+    "textReferenceSha256": "fc74f410f7db89e6a98ced0e135c1d0c8f6bcbd7467f3632d6bef29e60642395",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/S/Standing_on_the_Promises/Standing_on_the_Promises.xml",
+    "scoreReferenceSha256": "0438347c1a707b367ae4df1a0a56aa882a06e3fc3f295473e31f0c6e0ef95547",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "坚立在我主基督的",
+        "坚立坚立坚立在我"
+      ],
+      [
+        "坚立在我主不变的",
+        "坚立坚立坚立在我"
+      ],
+      [
+        "坚立在我主宝贵的",
+        "坚立坚立坚立在我"
+      ],
+      [
+        "坚立在我主应许不",
+        "坚立坚立坚立在我"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          5,
+          5,
+          7,
+          5
+        ]
+      },
+      {
+        "onsetIndex": 42,
+        "pitches": [
+          2,
+          10,
+          7,
+          10,
+          0
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 72,
+      "midiNoteCount": 72,
+      "editCost": 0,
+      "runnerUpCost": 55,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 42,
+          "possibleMidiNoteIndices": [
+            42
+          ],
+          "at": 18.2857
+        }
+      ],
+      "offsets": [
+        0.0,
+        18.2857
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        42
+      ]
+    },
+    "formReview": "Standing on the Promises / Russell K. Carter，中文四段依次对应英文第1、2、4、5段，正文前四行主歌，后副歌从第9小节Standing起。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
+  },
+  "04-409": {
+    "targetSha256": "d5342edb2b28002783b3149c046b4b02de121711903391a361644bfaf17de772",
+    "file": "timeless-Day_by_Day.mid",
+    "sha256": "d2d849fc86569939b9f861cb2c498472c46d1b34680efdf792e87960de6bbee6",
+    "url": "https://library.timelesstruths.org/library/music/D/Day_by_Day/Day_by_Day.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Day_by_Day/",
+    "textReferenceSha256": "65b579cdab5daaca87b72493f4cf4c45cb6f793700d88d5befd4db97b8a134aa",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/D/Day_by_Day/Day_by_Day.xml",
+    "scoreReferenceSha256": "89d1a7298514026c6aa96cb85f66d6a03d394e159cbac661febc38d7a59f5923",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "每一天所度过的每",
+        "他的心极仁慈无法"
+      ],
+      [
+        "每一天主就在我的",
+        "他保护他的儿女如"
+      ],
+      [
+        "助我度过一切忧患",
+        "求帮助我脱离世俗"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          7,
+          8,
+          10,
+          10,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 76,
+      "midiNoteCount": 76,
+      "editCost": 0,
+      "runnerUpCost": 59,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 38,
+          "possibleMidiNoteIndices": [
+            38
+          ],
+          "at": 24.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        24.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        38
+      ]
+    },
+    "formReview": "Day by Day / Blott en Dag，中文三段对应原文三段。各段前四行为前半，后四行为后半；第二区域从原谱第11小节He whose heart开始，不是独立副歌。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
   }
 }

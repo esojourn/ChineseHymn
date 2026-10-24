@@ -2,11 +2,11 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 307,
+    "published": 308,
     "existing": 8,
-    "needs-calibration": 72,
+    "needs-calibration": 70,
     "missing-audio": 2,
-    "needs-track-alignment": 5,
+    "needs-track-alignment": 6,
     "needs-source-review": 3,
     "missing-lyrics": 23
   },
@@ -1571,12 +1571,11 @@
       "songId": "03-031",
       "source": "03-031亲爱主，牵我手.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-track-alignment",
       "tracks": [
         "03-031亲爱主，牵我手.mp3",
         "03-031亲爱主，牵我手-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4"
+      ]
     },
     {
       "songId": "03-032",
@@ -1592,12 +1591,11 @@
       "songId": "03-033",
       "source": "03-033我知道我的救赎主活着.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "03-033我知道我的救赎主活着.mp3",
         "03-033我知道我的救赎主活着-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2"
+      ]
     },
     {
       "songId": "03-034",

@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-033",
+  "status": "reviewed",
+  "source": {
+    "file": "03-033我知道我的救赎主活着.txt",
+    "sha256": "e0affe7b7b39f711eeb00daa7d7062a9ca9f38b76a92f35a7138001dabbd90b2",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-033我知道我的救赎主活着.mp3",
+      "sha256": "85cba39232e52b6da0df9f2d34a06fc11143cfc19d7e764eb49cd6dcef4c76f4",
+      "duration": 124.34285714285714,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.09,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 35.31,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 63.99,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 92.54,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-033我知道我的救赎主活着-领唱.mp3",
+      "sha256": "55183fd9fab299c0191c5791cb76fb24eec309afff9f88de00cf44e9c7055a47",
+      "duration": 130.8734693877551,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 7.59,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.41,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.59,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.84,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我知我的救赎主活着，并且一直为我祷告， 祂赐下爱的证明，和自由的允诺。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "祂愿意我成为圣洁，谁能抗拒主的意愿？ 这出于主恩典的劝勉，主必将为我成全。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "耶稣我仔细聆听你的话，我坚定地相信， 你将再临并呼召我，主啊，请领我回家。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "当神属我，我属于神，我就拥有了天堂， 品尝那无法言传的极乐和永远的安息。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-033我知道我的救赎主活着.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -2,9 +2,9 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 288,
+    "published": 289,
     "existing": 8,
-    "needs-calibration": 95,
+    "needs-calibration": 94,
     "missing-audio": 2,
     "needs-source-review": 1,
     "needs-track-alignment": 3,
@@ -554,7 +554,7 @@
         "02-012你真伟大.mp3",
         "02-012你真伟大-领唱.mp3"
       ],
-      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
+      "reason": "参考谱边界在各段的音乐相位不一致"
     },
     {
       "songId": "02-013",
@@ -1857,12 +1857,11 @@
       "songId": "04-641",
       "source": "04-641靠信心必得胜.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "04-641靠信心必得胜.mp3",
         "04-641靠信心必得胜-领唱.mp3"
-      ],
-      "reason": "外部 MIDI 旋律与原谱光学节奏未能共同确认全部谱行"
+      ]
     },
     {
       "songId": "04-694",

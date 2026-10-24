@@ -5699,5 +5699,181 @@
       ]
     },
     "formReview": "Great Is Thy Faithfulness / Faithfulness，第1至16小节为主歌，副歌Great is Thy faithfulness从第17小节起。中文每段前四行为主歌，后四行为副歌。 已核对生命圣诗原歌本译文及同编号MIDI、原英文MusicXML完整最高旋律，各阅读起点在全部最优逐音对应中唯一。实际每段每区域仍须通过独立和声、旋律、调性、0.5秒及反复相位检查，其他录音另须实际音乐对应。不使用字数或固定速度推算歌词时间。"
+  },
+  "02-332": {
+    "targetSha256": "474324536649e599e958745ea3ff733129a96f6c6e84c183f7211b3a1e6412df",
+    "file": "life332.mid",
+    "sha256": "20d8c2cda913ee58304b5d823419ef1e11f52fa20847b9980a0cd80c81676022",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/332.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life332.html",
+    "textReferenceSha256": "686f5e3d8f44815695ed6344f13c4a3fdb0f6cb75e28614f9d4293fd0c989971",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0677_n.svg",
+    "scoreReferenceSha256": "645786031ae36762246b72661aa1e76d987b7bfeaa64f4b7966f07a5500d94dd",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "你是否在忧愁渊中",
+        "他能扶你他能扶你"
+      ],
+      [
+        "人的手臂软弱无力",
+        "他能扶你他能扶你"
+      ],
+      [
+        "靠主大能膀臂扶助",
+        "他能扶你他能扶你"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          4,
+          5,
+          7,
+          0,
+          5
+        ]
+      },
+      {
+        "onsetIndex": 60,
+        "pitches": [
+          7,
+          7,
+          7,
+          4,
+          4
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "Numbered SVG melody digits selected by their printed note font, excluding chord symbols, verse numbers, and final rest; visually reviewed full render and Chorus opening on fifth system.",
+      "printedKey": "C",
+      "printedMelodyDegrees": [
+        3,
+        4,
+        5,
+        1,
+        4,
+        3,
+        3,
+        2,
+        3,
+        5,
+        6,
+        5,
+        1,
+        3,
+        2,
+        3,
+        4,
+        5,
+        1,
+        4,
+        3,
+        3,
+        2,
+        3,
+        5,
+        1,
+        3,
+        2,
+        2,
+        1,
+        5,
+        5,
+        1,
+        7,
+        1,
+        6,
+        5,
+        3,
+        5,
+        5,
+        6,
+        5,
+        4,
+        3,
+        2,
+        3,
+        4,
+        5,
+        3,
+        1,
+        6,
+        5,
+        3,
+        5,
+        5,
+        6,
+        2,
+        1,
+        7,
+        1,
+        5,
+        5,
+        5,
+        3,
+        3,
+        3,
+        3,
+        1,
+        3,
+        3,
+        2,
+        4,
+        3,
+        2,
+        3,
+        5,
+        5,
+        5,
+        3,
+        1,
+        1,
+        2,
+        1,
+        6,
+        6,
+        5,
+        1,
+        3,
+        2,
+        1
+      ],
+      "sourceReadingIndices": [
+        0,
+        60
+      ],
+      "proof": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 90,
+        "midiNoteCount": 90,
+        "editCost": 1,
+        "runnerUpCost": 66,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 60,
+            "possibleMidiNoteIndices": [
+              60
+            ],
+            "at": 24.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          24.0
+        ]
+      }
+    },
+    "formReview": "已逐段核对生命圣诗332完整三段及共同副歌、同编号MIDI，以及Albert B. Simpson同曲英文Art thou sunk in depths of sorrow的公开简谱。正文前四行对应主歌，后两行为副歌。目视核对SVG完整简谱：副歌从第五谱行Chorus标记后首个5起，完整90个旋律音的所有最优对应均唯一确定副歌首音为MIDI索引60；两版仅主歌内一音不同，分界处五音完全相符。每段每区域仍须通过实际录音独立和声、旋律、调性、0.5秒及反复相位检查，不以字符或固定速度推算时间。"
   }
 }

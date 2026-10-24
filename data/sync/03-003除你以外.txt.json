@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "songId": "03-003",
+  "status": "reviewed",
+  "source": {
+    "file": "03-003除你以外.txt",
+    "sha256": "2bd4c844c528af424e51fa86e8df5bf1df1d8efba15087da824d15737eab6a62",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-003除你以外.mp3",
+      "sha256": "82e8731b5d1f1b28d2f117c3ca0287cfa5e8736f8d4c0c10699ad091a5e70640",
+      "duration": 160.10448979591837,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 36.83,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.21,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 96.9,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 127.1,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-003除你以外-领唱.mp3",
+      "sha256": "f358844b13e4ea71281e1c0dedb8210dc7cccffc810c75c26479e9377ba3e1d2",
+      "duration": 160.52244897959184,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 22
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.93,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.31,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.0,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.2,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed reading order; initial region shown from playback zero (sung onset not measured); every subsequent change retains contextual acoustic checks and independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "除你以外，在天上我还能有谁 除你以外，在地上我别无眷恋 除你以外，有谁能擦干我眼泪 除你以外，有谁能带给我安慰",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "虽然我的肉体和我的心肠渐渐的衰退 但是神是我心里的力量 是我的福份 直到永远",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "除你以外，在天上我还能有谁 除你以外，在地上我别无眷恋 除你以外，有谁能擦干我眼泪 除你以外，有谁能带给我安慰",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "虽然我的肉体和我的心肠渐渐的衰退 但是神是我心里的力量 是我的福份 直到永远",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "虽然我的肉体和我的心肠渐渐的衰退 但是神是我心里的力量 是我的福份 直到永远",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-003除你以外.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

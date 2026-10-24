@@ -163,5 +163,178 @@
       }
     ],
     "performanceReview": "Be Still, My Soul。已逐段核对完整英文转写，实际演唱原文第1、2、4段，原文第3段未唱，页面仍保留全部原文坐标。全部13个演唱片段均对应现有正文，末尾Thank you为致谢，不作为歌词。每个实际阅读区域仍须正文至少60%逐字对应及原有双窗口起点、词尾与实际演唱顺序检查。"
+  },
+  "06-012": {
+    "sourceHash": "61e36b2a36e118057f2f0f57f972ef7dd7bd964ca918b9a83f4158b6fd4c14c7",
+    "audioFile": "06-012神要开道路.mp3",
+    "audioHash": "46c3defda885958c193b536ab38b4d8243ccd43b9aa1156ea11bc9288931edf5",
+    "transcriptHash": "efdbe457c0769d244b3e56dd7576f0b8b69f735afcdfb013db8a2a2e57fa3e3d",
+    "language": "en",
+    "blocks": [
+      {
+        "region": "r1",
+        "wordRange": [
+          0,
+          12
+        ]
+      },
+      {
+        "region": "r2",
+        "wordRange": [
+          12,
+          26
+        ]
+      },
+      {
+        "region": "r3",
+        "wordRange": [
+          26,
+          37
+        ]
+      },
+      {
+        "region": "r4",
+        "wordRange": [
+          37,
+          55
+        ]
+      },
+      {
+        "region": "r5",
+        "wordRange": [
+          55,
+          68
+        ]
+      },
+      {
+        "region": "r6",
+        "wordRange": [
+          68,
+          82
+        ]
+      },
+      {
+        "region": "r7",
+        "wordRange": [
+          82,
+          93
+        ]
+      },
+      {
+        "region": "r8",
+        "wordRange": [
+          93,
+          111
+        ]
+      },
+      {
+        "region": "r9",
+        "wordRange": [
+          111,
+          126
+        ]
+      },
+      {
+        "region": "r10",
+        "wordRange": [
+          126,
+          144
+        ]
+      },
+      {
+        "region": "r11",
+        "wordRange": [
+          144,
+          156
+        ]
+      },
+      {
+        "region": "r12",
+        "wordRange": [
+          156,
+          170
+        ]
+      },
+      {
+        "region": "r13",
+        "wordRange": [
+          170,
+          182
+        ]
+      },
+      {
+        "region": "r14",
+        "wordRange": [
+          182,
+          200
+        ]
+      },
+      {
+        "region": "r15",
+        "wordRange": [
+          200,
+          217
+        ]
+      },
+      {
+        "region": "r16",
+        "wordRange": [
+          217,
+          228
+        ]
+      },
+      {
+        "region": "r17",
+        "wordRange": [
+          228,
+          240
+        ]
+      },
+      {
+        "region": "r18",
+        "wordRange": [
+          240,
+          254
+        ]
+      },
+      {
+        "region": "r19",
+        "wordRange": [
+          254,
+          266
+        ]
+      },
+      {
+        "region": "r20",
+        "wordRange": [
+          266,
+          281
+        ]
+      },
+      {
+        "region": "r21",
+        "wordRange": [
+          281,
+          299
+        ]
+      },
+      {
+        "region": "r22",
+        "wordRange": [
+          299,
+          309
+        ]
+      }
+    ],
+    "freeInitialPrefix": {
+      "version": 1,
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    },
+    "performanceReview": "God Will Make a Way。已逐段对照完整原文和309个实际转写词语，按原有22个阅读区域逐词分配全部录音，不漏词或重叠。尾部若干阅读区域在同一个语音段落内部，故使用全局词语范围标记。每块须至少60%逐字原文对应及原有双窗口核对。首次起句夹到窗口左缘时另须两个无歌词提示的自由转写窗口确认。"
   }
 }

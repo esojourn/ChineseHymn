@@ -245,12 +245,18 @@ def generate(song, profile, cache):
             evidence['midiMatching'].update(mode='text-symbolic-with-optical',
                 opticalReference=optical_evidence, referencePeriod=period, readingOffsets=offsets,
                 recordings=recordings)
+            complete_recordings = image_alignment.complete_optical_recordings(profile, song['tracks'])
             for track in song['tracks']:
                 recordings[track['file']] = {}
-                times, _ = image_alignment.image_recording_times(batch.ROOT / 'data' / track['file'],
-                    source, period, harmony, melody_rows, offsets, cache,
-                    reference_key=optical_evidence['symbolicRows']['semitoneShift'],
-                    evidence=recordings[track['file']], optical_rows=optical_rows)
+                if track['file'] in complete_recordings:
+                    times, _ = image_alignment.complete_optical_recording_times(batch.ROOT / 'data' / track['file'],
+                        source, melody_rows, optical_rows, offsets, cache,
+                        reference_key=optical_evidence['symbolicRows']['semitoneShift'], evidence=recordings[track['file']])
+                else:
+                    times, _ = image_alignment.image_recording_times(batch.ROOT / 'data' / track['file'],
+                        source, period, harmony, melody_rows, offsets, cache,
+                        reference_key=optical_evidence['symbolicRows']['semitoneShift'],
+                        evidence=recordings[track['file']], optical_rows=optical_rows)
                 timelines[track['file']] = {'definitions': definitions, 'times': times, 'returnIndices': []}
             evidence['performanceOrder'] = definitions
             return export_result(song, batch.ROOT, cache, destination, evidence, start, source, definitions,

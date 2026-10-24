@@ -798,6 +798,82 @@ class BatchTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             midi_image.paired_melody_times(symbolic, wrong, 44, 10)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
+    def test_complete_optical_review_is_bound_to_selected_recording_hashes(self):
+        tracks = [{'file': 'main.mp3', 'sha256': 'main-hash'}, {'file': 'lead.mp3', 'sha256': 'lead-hash'}]
+        review = {'version': 1, 'recordings': [tracks[0]]}
+        self.assertEqual(midi_image.complete_optical_recordings({}, tracks), set())
+        self.assertEqual(midi_image.complete_optical_recordings({'completeOpticalCheck': review}, tracks), {'main.mp3'})
+        for invalid in [None, {'version': True, 'recordings': [tracks[0]]}, {'version': 2, 'recordings': [tracks[0]]},
+                        {'version': 1, 'recordings': []}, {'version': 1, 'recordings': [tracks[0], tracks[0]]},
+                        {'version': 1, 'recordings': [{'file': 'other.mp3', 'sha256': 'main-hash'}]},
+                        {'version': 1, 'recordings': [{'file': 'main.mp3', 'sha256': 'old-hash'}]}]:
+            profile = {'completeOpticalCheck': invalid}
+            if invalid is None:
+                self.assertEqual(midi_image.complete_optical_recordings(profile, tracks), set())
+            else:
+                with self.assertRaises(ValueError):
+                    midi_image.complete_optical_recordings(profile, tracks)
+        with self.assertRaises(ValueError):
+            midi_image.complete_optical_recordings({'completeOpticalCheck': review, 'referenceDiscovery': {'matches': []}}, tracks)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional symbolic dependencies')
+    def test_complete_optical_paths_measure_variable_stanza_tempos_and_reject_disagreements(self):
+        import copy
+        import numpy as np
+
+        def match(starts, span, key):
+            return {'best': {'cost': .2, 'key': key, 'starts': starts, 'span': span}, 'runnerUp': {'cost': .5}}
+
+        results = [match([5, 15, 27, 37, 47, 57], 61, 9), match([5.1, 15.1, 27.1, 37.1, 47.1, 57.1], 60.9, 7)]
+        for start, span in [(5, 22), (27, 20), (47, 19)]:
+            results.extend([match([start + .1, start + 10], span, 9), match([start + .2, start + 10.1], span, 7)])
+        source, target = {'verses': [[{}, {}]] * 3}, (np.array([0., 70.]), None)
+
+        def run(values, actual_target=target):
+            evidence = {}
+            with patch.object(midi_image, 'features', return_value=actual_target), \
+                    patch.object(midi_image, 'match_template', side_effect=values):
+                times, _ = midi_image.complete_optical_recording_times(Path('main.mp3'), source,
+                    [{}, {}], [{}, {}], [0, 10], Path('/cache'), 10, evidence)
+            return times, evidence
+
+        times, evidence = run(copy.deepcopy(results))
+        self.assertEqual(times, [5.1, 15.05, 27.1, 37.05, 47.1, 57.05])
+        self.assertEqual(len(evidence['onsetEstimates']), 4)
+        self.assertGreater(evidence['measuredVerseSpans'][0], evidence['measuredVerseSpans'][-1])
+        for index, field, value in [(0, 'cost', .36), (1, 'span', 30), (3, 'key', 6),
+                                    (2, 'key', 8), (3, 'starts', [5.7, 15.1]), (7, 'starts', [47.2]),
+                                    (0, 'starts', [5, 15, 27, 37]), (0, 'span', 100)]:
+            wrong = copy.deepcopy(results)
+            wrong[index]['best'][field] = value
+            with self.subTest(index=index, field=field):
+                with self.assertRaises(ValueError):
+                    run(wrong)
+        # Each local pair agrees, but two valid pairs disagree with each other.
+        wrong = copy.deepcopy(results)
+        wrong[2]['best']['starts'] = [5.7, 15]
+        wrong[3]['best']['starts'] = [5.8, 15.1]
+        with self.assertRaisesRegex(ValueError, '0.5秒'):
+            run(wrong)
+        wrong = copy.deepcopy(results)
+        wrong[2]['best']['key'], wrong[3]['best']['key'] = 8, 6
+        with self.assertRaisesRegex(ValueError, '调性'):
+            run(wrong)
+        # A spare whole verse at either end must remain unresolved.
+        wrong = copy.deepcopy(results)
+        for result in wrong[:2]:
+            result['best']['starts'] = [start - 5 for start in result['best']['starts']]
+        with self.assertRaisesRegex(ValueError, '首尾'):
+            run(wrong, (np.array([0., 80.]), None))
+        wrong = copy.deepcopy(results)
+        for result in wrong[:2]:
+            result['best']['starts'] = [start + 13 for start in result['best']['starts']]
+        with self.assertRaisesRegex(ValueError, '首尾'):
+            run(wrong, (np.array([0., 80.]), None))
+        with self.assertRaisesRegex(ValueError, '至少三个'):
+            midi_image.complete_optical_recording_times(None, {'verses': [[{}]] * 2}, [{}], [{}], [0], None)
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_score_accidentals_are_kept_separate_from_scale_degrees(self):
         from sync_batch_score import accidental_offsets

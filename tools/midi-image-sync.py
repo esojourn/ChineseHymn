@@ -28,6 +28,72 @@ def paired_melody_times(symbolic, optical, period, reference_key):
     return [round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts'])]
 
 
+def complete_optical_recordings(profile, tracks):
+    review = profile.get('completeOpticalCheck')
+    if review is None:
+        return set()
+    if (not isinstance(review, dict) or type(review.get('version')) is not int or review['version'] != 1 or
+            profile.get('referenceDiscovery') or not isinstance(review.get('recordings'), list) or not review['recordings']):
+        raise ValueError('整曲光学复核需要明确核对的原谱及录音配置')
+    available = {track['file']: track['sha256'] for track in tracks}
+    selected = set()
+    for track in review['recordings']:
+        if (not isinstance(track, dict) or track.get('file') not in available or track['file'] in selected or
+                track.get('sha256') != available[track['file']]):
+            raise ValueError('整曲光学复核的录音配置已失效或重复')
+        selected.add(track['file'])
+    return selected
+
+
+def complete_optical_recording_times(path, source, melody_rows, optical_rows, offsets, cache,
+                                     reference_key=0, evidence=None):
+    """Confirm changing stanza tempos with complete and local measured score paths."""
+    count, size = len(source['verses']), len(offsets)
+    if count < 3 or not size or len(melody_rows) != size or len(optical_rows) != size:
+        raise ValueError('整曲光学复核需要至少三个完整且逐区域对应的乐段')
+    target = features(path, cache)
+    duration = float(target[0][-1])
+    metrics = evidence if evidence is not None else {}
+    complete_melody = match_template(melody_rows * count, target[1], target[0], duration, 0, 'spatialWeights')
+    complete_optical = match_template(optical_rows * count, target[1], target[0], duration, 0, 'rhythmWeights')
+    metrics.update(completeMelody=complete_melody, completeOptical=complete_optical)
+    complete = paired_melody_times(complete_melody, complete_optical, duration, reference_key)
+    if len(complete) != count * size:
+        raise ValueError('整曲光学复核没有覆盖全部阅读区域')
+    end = sum(match['best']['starts'][0] + match['best']['span']
+              for match in (complete_melody, complete_optical)) / 2
+    beginnings = complete[::size]
+    spans = [stop - start for start, stop in zip(beginnings, beginnings[1:] + [end])]
+    mean = (end - beginnings[0]) / count
+    if mean <= 0 or any(not .75 * mean <= span <= 1.25 * mean for span in spans):
+        raise ValueError('整曲光学复核的实际完整乐段跨度不一致')
+    if beginnings[0] >= .75 * mean or duration - end >= .75 * mean:
+        raise ValueError('录音首尾仍可容纳完整乐段，需核对实际演唱顺序')
+    matches = []
+    metrics.update(matches=matches, measuredVerseSpans=spans)
+    for onset, span in zip(beginnings, spans):
+        melodic = match_template(melody_rows, target[1], target[0], span, onset, 'spatialWeights')
+        optical = match_template(optical_rows, target[1], target[0], span, onset, 'rhythmWeights')
+        matches.append({'melody': melodic, 'opticalMelody': optical})
+        paired_melody_times(melodic, optical, span, reference_key)
+        if (melodic['best']['key'] != complete_melody['best']['key'] or
+                optical['best']['key'] != complete_optical['best']['key']):
+            raise ValueError('逐段与整曲光学复核的调性对应不一致')
+    paths = [[at for match in matches for at in match[kind]['best']['starts']]
+             for kind in ['melody', 'opticalMelody']]
+    paths.extend([complete_melody['best']['starts'], complete_optical['best']['starts']])
+    metrics['onsetEstimates'] = paths
+    if (any(len(row) != count * size for row in paths) or
+            any(not midi.onsets_agree(row, other) for index, row in enumerate(paths) for other in paths[index + 1:])):
+        raise ValueError('逐段与整曲光学复核的全部阅读起点未在0.5秒内一致')
+    times = [round(sum(values) / len(values), 2) for values in zip(*paths)]
+    if times[0] < 0 or times[-1] >= duration or any(a + .5 >= b for a, b in zip(times, times[1:])):
+        raise ValueError('整曲光学复核的阅读顺序超出实际录音')
+    metrics.update(version=1, method='paired local and complete MIDI melody and printed optical rhythm paths; all pairwise onsets within 0.5 seconds',
+                   times=times)
+    return times, metrics
+
+
 def image_recording_times(path, source, period, harmony, melody_rows, offsets, cache, weight_key='spatialWeights', reference_key=0, evidence=None, optical_rows=None):
     music = repeated_verses(path, len(source['verses']), cache)
     target = features(path, cache)

@@ -92,5 +92,76 @@
       "review": "整曲自由转写已逐段对应全部正文及末尾副歌、最后一句反复。首词在原有两个窗口均被夹到窗口左缘，但词尾一致；仅用两个不提供歌词提示的自由转写窗口逐字确认正文起句及真实首词起止，保留0.5秒一致性及原有首词、词尾、概率、时长和后续顺序检查。"
     },
     "performanceReview": "中文正文含主歌和副歌两遍。实际录音第二遍副歌后再唱一次副歌，并两次单独重复愿荣耀归于至高神、耶稣是弥赛亚最后一句。全部32个整曲转写片段均已分配，末尾片段对应现有r4中的原文子串，未修改歌词或跳过演唱段落。各块仍须至少60%正文逐字对应和原有双窗口声学核对，首句另有两个完整起句的自由转写证据。"
+  },
+  "06-020": {
+    "sourceHash": "96a0f008121cdb0e5e413dbcde202b4a952e562f5fd4aa14002e0488d9926373",
+    "audioFile": "06-020我灵镇静.mp3",
+    "audioHash": "06652eb0c32569a7b2b9443a20f85d8607cecb8ff4cf61e69a7731d59da3056c",
+    "transcriptHash": "98b7d1490b05f563d74c81eb3d6a82b60810a4182996afa7e21434045475a884",
+    "language": "en",
+    "blocks": [
+      {
+        "region": "r1",
+        "segmentIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "region": "r2",
+        "segmentIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "region": "r3",
+        "segmentIndices": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "region": "r4",
+        "segmentIndices": [
+          8
+        ]
+      },
+      {
+        "region": "r7",
+        "segmentIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "region": "r8",
+        "segmentIndices": [
+          11,
+          12
+        ]
+      }
+    ],
+    "nonLyricSegments": [
+      {
+        "index": 13,
+        "text": "Thank you."
+      }
+    ],
+    "unsungRegions": [
+      {
+        "region": "r5",
+        "sourceText": "Be still, my soul: when dearest friends depart, And all is darkened in the vale of tears, Then shalt thou better know His love, His heart, Who comes to soothe thy sorrow and thy fears,",
+        "reason": "整曲录音实际依次演唱原文第1、2、4段，未唱when dearest friends depart的第3段。第3段原文保留。"
+      },
+      {
+        "region": "r6",
+        "sourceText": "Be still, my soul: thy Jesus can repay From His own fullness all He takes away.",
+        "reason": "整曲录音实际依次演唱原文第1、2、4段，未唱when dearest friends depart的第3段。第3段原文保留。"
+      }
+    ],
+    "performanceReview": "Be Still, My Soul。已逐段核对完整英文转写，实际演唱原文第1、2、4段，原文第3段未唱，页面仍保留全部原文坐标。全部13个演唱片段均对应现有正文，末尾Thank you为致谢，不作为歌词。每个实际阅读区域仍须正文至少60%逐字对应及原有双窗口起点、词尾与实际演唱顺序检查。"
   }
 }

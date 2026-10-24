@@ -53,8 +53,24 @@ def transcript_blocks(profile, transcript, source):
         used.add(index)
     if used != set(range(len(segments))):
         raise ValueError('实际转写仍有未说明的演唱片段')
-    if source.get('layout') == 'lyrics-only-text' and {definition['region'] for definition in definitions} != set(source['regions']):
-        raise ValueError('实际演唱配置尚未覆盖全部正文阅读区域')
+    if source.get('layout') == 'lyrics-only-text':
+        performed = {definition['region'] for definition in definitions}
+        unsung = set()
+        omissions = profile.get('unsungRegions', [])
+        if not isinstance(omissions, list):
+            raise ValueError('未演唱区域必须逐项明确配置')
+        for item in omissions:
+            if not isinstance(item, dict):
+                raise ValueError('未演唱区域必须逐项明确配置')
+            region = item.get('region')
+            if (region not in source['regions'] or region in performed or region in unsung or
+                    not isinstance(item.get('reason'), str) or not item['reason'].strip() or
+                    not isinstance(item.get('sourceText'), str) or
+                    clean(item.get('sourceText', ''), language) != clean(source['blocks'][region]['text'], language)):
+                raise ValueError('未演唱区域未明确绑定正文、重复或已列入实际演唱')
+            unsung.add(region)
+        if performed | unsung != set(source['regions']):
+            raise ValueError('实际演唱配置尚未覆盖全部正文阅读区域')
     estimates = [start for start, end in ranges]
     if (not estimates or any(not math.isfinite(value) or value < 0 for pair in ranges for value in pair) or
             any(end < start for start, end in ranges) or any(a + .5 >= b for a, b in zip(estimates, estimates[1:]))):

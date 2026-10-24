@@ -489,6 +489,20 @@ class BatchTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     image_transcript.transcript_blocks(wrong, {'segments': actual}, source)
 
+        # A recording may omit a printed stanza only with its exact source and an explicit review.
+        source['regions']['r3'] = {}
+        source['blocks']['r3'] = {'text': '这是录音未唱的原文', 'label': '未演唱段落'}
+        omission = {'region': 'r3', 'sourceText': '这是录音未唱的原文', 'reason': '已核对整曲实际演唱顺序'}
+        definitions, *_ = image_transcript.transcript_blocks({**profile, 'unsungRegions': [omission]},
+                                                              {'segments': segments}, source)
+        self.assertEqual([item['region'] for item in definitions], ['r1', 'r2', 'r2'])
+        for omissions in [[], None, [None], [omission, omission], [{**omission, 'reason': ''}],
+                          [{**omission, 'sourceText': '改动的正文'}], [{**omission, 'region': 'r2'}],
+                          [{**omission, 'region': 'missing'}]]:
+            with self.subTest(omissions=omissions):
+                with self.assertRaises(ValueError):
+                    image_transcript.transcript_blocks({**profile, 'unsungRegions': omissions}, {'segments': segments}, source)
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
     def test_free_initial_prefix_requires_exact_unique_opening_and_measured_first_word(self):
         import copy

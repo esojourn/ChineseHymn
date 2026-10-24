@@ -166,6 +166,56 @@ class BatchTests(unittest.TestCase):
                 group_reference_rows(rows, {'0': [.1, 1]}, starts)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_reviewed_reference_bands_reject_missing_overlapping_and_out_of_image_ranges(self):
+        from sync_batch_score import reviewed_score_systems
+        valid = [{'notes': {'recognitionBand': [10, 24]},
+                  'lyrics': [{'recognitionBand': [27, 40]}]}]
+        self.assertEqual(reviewed_score_systems(valid, 100), valid)
+        for invalid in [[], [{}], [{'notes': {'recognitionBand': [-1, 24]}, 'lyrics': valid[0]['lyrics']}],
+                        [{'notes': {'recognitionBand': [10, 101]}, 'lyrics': valid[0]['lyrics']}],
+                        [{'notes': {'recognitionBand': [10, 24]}, 'lyrics': [{'recognitionBand': [23, 40]}]}],
+                        [{'notes': {'recognitionBand': [10, 24]}, 'lyrics': [
+                            {'recognitionBand': [27, 40]}, {'recognitionBand': [35, 45]}]}],
+                        [valid[0], valid[0]],
+                        [{'notes': {'recognitionBand': [10.5, 24]}, 'lyrics': valid[0]['lyrics']}]]:
+            with self.assertRaises(ValueError):
+                reviewed_score_systems(invalid, 100)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_reviewed_reference_layout_is_bound_to_note_cache_without_changing_default_detection(self):
+        from PIL import Image
+        import sync_batch_score as score
+        class Reader:
+            calls = 0
+            def text_rec(self, crop, return_word_box):
+                self.calls += 1
+                return [('1234', 1., (100, ['1234'], [[10, 30, 50, 70]], None, None))], None
+        reader = Reader()
+        systems = [{'notes': {'recognitionBand': [10, 24]},
+                    'lyrics': [{'recognitionBand': [27, 40]}]}]
+        changed = [{'notes': {'recognitionBand': [11, 25]}, 'lyrics': systems[0]['lyrics']}]
+        with tempfile.TemporaryDirectory() as directory, patch.object(score, '_ocr', reader):
+            cache = Path(directory)
+            raster = cache / 'score.png'
+            Image.new('RGB', (100, 100), 'white').save(raster)
+            recognition = {'source': 'score.png', 'sha256': 'pinned-raster', 'recognizerVersion': 5,
+                           'recognitionAngle': 1}
+            with patch.object(score, 'image_source', side_effect=AssertionError('not a Chinese score')):
+                first = score.note_rows(raster, recognition, cache, reviewed_systems=systems)
+                self.assertEqual(first[0]['notes'], [1, 2, 3, 4])
+                self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems), first)
+                self.assertEqual(reader.calls, 1)
+                score.note_rows(raster, recognition, cache, reviewed_systems=changed)
+                self.assertEqual(reader.calls, 2)
+            with patch.object(score, 'image_source', return_value={'systems': systems}) as detected:
+                score.note_rows(raster, recognition, cache)
+                detected.assert_called_once_with(recognition)
+                self.assertEqual(reader.calls, 3)
+                saved = json.loads((cache / 'notes/score.png.json').read_text())
+                self.assertEqual(saved['version'], 3)
+                self.assertNotIn('reviewedSystems', saved)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
     def test_reference_score_rejects_changed_source_render_and_cached_notes(self):
         import hashlib
         import sync_batch_reference_score as reference_score

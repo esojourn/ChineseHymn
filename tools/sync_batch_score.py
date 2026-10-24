@@ -69,15 +69,44 @@ def optical_rhythm(ink, positions, original_height, fallback):
     return weights, diagnostics
 
 
-def note_rows(source, recognition, cache):
+def reviewed_score_systems(systems, height):
+    """Validate explicitly reviewed reference-score bands, including their lyric limits."""
+    if not isinstance(systems, list) or not systems:
+        raise ValueError('原谱人工核对的谱行范围为空')
+    previous = -1
+    for system in systems:
+        if (not isinstance(system, dict) or not isinstance(system.get('notes'), dict) or
+                not isinstance(system.get('lyrics'), list) or not system['lyrics']):
+            raise ValueError('原谱谱行需要音符及歌词边界')
+        bands = [system['notes'].get('recognitionBand')]
+        bands.extend(row.get('recognitionBand') if isinstance(row, dict) else None for row in system['lyrics'])
+        if any(not isinstance(band, list) or len(band) != 2 or
+               any(type(value) is not int for value in band) or not 0 <= band[0] < band[1] <= height
+               for band in bands):
+            raise ValueError('原谱谱行坐标超出固定图片范围')
+        if bands[0][0] <= previous or any(left[1] > right[0] for left, right in zip(bands, bands[1:])):
+            raise ValueError('原谱音符及歌词边界重叠或顺序不一致')
+        previous = max(band[1] for band in bands)
+    return systems
+
+
+def note_rows(source, recognition, cache, reviewed_systems=None):
     global _ocr
-    definition = image_source(recognition)
+    if reviewed_systems is None:
+        definition = image_source(recognition)
+    else:
+        from PIL import Image
+        with Image.open(source) as raster:
+            definition = {'systems': reviewed_score_systems(reviewed_systems, raster.height)}
     if not definition['systems']:
         raise ValueError('纯歌词图片没有简谱音符，需要人声转写匹配')
+    version = 3 if reviewed_systems is None else 4
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
-        if data['sha256'] == recognition['sha256'] and data.get('version') == 3 and data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and len(data['rows']) == len(definition['systems']):
+        if (data['sha256'] == recognition['sha256'] and data.get('version') == version and
+                data.get('recognizerVersion', 2) == recognition.get('recognizerVersion') and
+                data.get('reviewedSystems') == reviewed_systems and len(data['rows']) == len(definition['systems'])):
             return data['rows']
     import cv2
     from PIL import Image
@@ -86,7 +115,10 @@ def note_rows(source, recognition, cache):
         _ocr = RapidOCR(intra_op_num_threads=1, inter_op_num_threads=1)
     image = np.array(Image.open(source).convert('RGB'))
     h, w = image.shape[:2]
-    matrix = cv2.getRotationMatrix2D((w / 2, h / 2), recognition.get('recognitionAngle', 0), 1)
+    # Reviewed bands are coordinates in the pinned original raster, whereas
+    # detected bands are coordinates in the recognizer's deskewed image.
+    angle = recognition.get('recognitionAngle', 0) if reviewed_systems is None else 0
+    matrix = cv2.getRotationMatrix2D((w / 2, h / 2), angle, 1)
     image = cv2.warpAffine(image, matrix, (w, h), borderValue=(255, 255, 255))
     rows = []
     for system in definition['systems']:
@@ -136,7 +168,11 @@ def note_rows(source, recognition, cache):
                      'x': positions, 'spatialWeights': spatial, 'rhythmWeights': optical,
                      'ocrRhythmWeights': rhythm, 'opticalDiagnostics': diagnostics})
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps({'version': 3, 'sha256': recognition['sha256'], 'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+    data = {'version': version, 'sha256': recognition['sha256'],
+            'recognizerVersion': recognition.get('recognizerVersion'), 'rows': rows}
+    if reviewed_systems is not None:
+        data['reviewedSystems'] = reviewed_systems
+    destination.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     return rows
 
 

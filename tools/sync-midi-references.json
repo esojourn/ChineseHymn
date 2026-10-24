@@ -6083,5 +6083,310 @@
       }
     },
     "formReview": "已逐段核对生命圣诗382完整三段及共同副歌、同编号MIDI；采用Lelia Naylor Morris同曲公开简谱核对旋律，英文正文为另一改词，未用于证明中文歌词内容。目视核对全部112个旋律起音、第二谱行升5及第五谱行升4；副歌从第四谱行Chorus标记后的5开始。完整音高序列的所有最优对应唯一确定阅读分界。中文每段前四行为主歌，后四行为副歌，每段每区域仍须通过实际录音独立和声、旋律、调性、0.5秒及反复相位检查，不以字符或固定速度推算时间。"
+  },
+  "03-026": {
+    "targetSha256": "b5131e5bc3359e014501a95eca27aae642fea660b75df4622f730ca3d4358711",
+    "file": "life133.mid",
+    "sha256": "a8ec457590cdb0dd017d72cc25658ad916503d84b68eb67386a04278c49467f6",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/133.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life133.html",
+    "textReferenceSha256": "8c1359fc3b4f03c991fc19adf38c0679a2a313df2655b7643fe064946eb61ba9",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0121_n.svg",
+    "scoreReferenceSha256": "897407e9d99adb4557e6a74ad32733ef02e5f819ce8b89f6bb867e7d34834095",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "复活得胜主荣耀属",
+        "复活得胜主荣耀属"
+      ],
+      [
+        "看救主耶稣复生离",
+        "复活得胜主荣耀属"
+      ],
+      [
+        "荣耀生命主我深信",
+        "复活得胜主荣耀属"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          10,
+          7,
+          8,
+          10,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 52,
+        "pitches": [
+          10,
+          7,
+          8,
+          10,
+          3
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "Numbered SVG melody digits selected by printed note font and sorted by visual row and x, rests excluded; full rendered score and Chorus boundary visually reviewed. Chinese lyrics separately checked against the original Life hymnal.",
+      "printedKey": 3,
+      "printedMelodyDegrees": [
+        5,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        3,
+        4,
+        5,
+        6,
+        5,
+        5,
+        1,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        4,
+        3,
+        3,
+        2,
+        1,
+        4,
+        3,
+        2,
+        1,
+        7,
+        1,
+        7,
+        1,
+        2,
+        1,
+        1,
+        6,
+        4,
+        5,
+        6,
+        5,
+        4,
+        5,
+        5,
+        5,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        3,
+        4,
+        5,
+        6,
+        5,
+        5,
+        1,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "printedAccidentals": [
+        {
+          "noteIndex": 45,
+          "semitones": 1
+        },
+        {
+          "noteIndex": 49,
+          "semitones": 1
+        }
+      ],
+      "sourceReadingIndices": [
+        0,
+        52
+      ],
+      "proof": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 77,
+        "midiNoteCount": 77,
+        "editCost": 0,
+        "runnerUpCost": 54,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 52,
+            "possibleMidiNoteIndices": [
+              52
+            ],
+            "at": 32.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          32.0
+        ]
+      }
+    },
+    "formReview": "Thine Be the Glory / Maccabaeus，第五谱行Chorus首音5起为副歌；第四谱行两个升4分别在原谱旋律索引45及49，均已目视核对。中文三段内容及共同副歌从生命圣诗133单独核对，公开英文简谱仅用于旋律和主副歌边界。 从SVG字形抽取全曲简谱音符，排除和弦、拍号、段号、休止；完整音高序列所有最优对应必须唯一确定阅读分界。每段每区域仍须通过实际录音和声、旋律、调性、0.5秒及反复相位检查，其他录音另须实际音乐对应，不以字符或固定速度推算歌词时间。 英文简谱使用显式复核的六行音符／歌词像素范围，光学音符和节奏由原始图片重新提取，与MIDI旋律独立定位每版录音每段每个区域；和声仅作为诊断，不将SVG文字或固定谱面时长用于滚动时间。",
+    "opticalReference": {
+      "svgFile": "reference/external/e0121_n.svg",
+      "imageFile": "printed-text-references/data/e0121_n.png",
+      "recognitionFile": "printed-text-references/ocr/e0121_n.png.json",
+      "imageSha256": "c383b2e486ee6810c5830f2baf80cdc839b69b0c40172c70007085776ec60eb6",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 4,
+      "rowsSha256": "a2364967452ea642e53501ca2381b189acfce0fb8a97ad924f0510329cb88e5b",
+      "noteRanges": {
+        "0": [
+          0.105,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              185,
+              199
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                202,
+                214
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              273,
+              287
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                290,
+                302
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              374,
+              388
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                391,
+                403
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              470,
+              484
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                487,
+                499
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              571,
+              585
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                588,
+                600
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              658,
+              672
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                675,
+                687
+              ]
+            }
+          ]
+        }
+      ],
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/121",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "layoutReview": "已目视复核固定哈希原图的六行简谱：音符范围使用原始未旋转图片的像素坐标，歌词上缘限制光学节奏采样范围。首行左侧拍号在x<0.105排除，副歌从第五行首个5开始。英语歌词不用于中文内容识别；中文原文及三段结构已从原歌本单独核对。完整光学音符、变音及唯一阅读分界均须与MIDI逐音核对，其他全部录音检查保持原有限值。"
+    }
   }
 }

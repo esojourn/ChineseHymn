@@ -45,7 +45,7 @@ def prepare(profile, cache, song_id):
     ocr = json.loads(recognition.read_text())
     if ocr['sha256'] != reference['imageSha256'] or ocr['recognizerVersion'] != reference['recognizerVersion']:
         raise ValueError('原谱识别版本或图片哈希不一致')
-    rows = note_rows(image, ocr, reference_cache)
+    rows = note_rows(image, ocr, reference_cache, reviewed_systems=reference.get('reviewedSystems'))
     if score_rows_hash(rows) != reference['rowsSha256']:
         raise ValueError('原谱光学音符或节奏已改变，需重新核对')
     print(song_id, 'verified printed reference', flush=True)

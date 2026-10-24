@@ -44,6 +44,8 @@ def reference_rows(profile, cache, offsets, melody):
     if profile.get('referenceDiscovery'):
         raise ValueError('检索候选不能用原谱光学模式替代原有严格录音检查')
     reference = profile['opticalReference']
+    if reference.get('reviewedSystems') is not None and reference.get('noteExtractorVersion') != 4:
+        raise ValueError('人工核对的原谱版面需要绑定谱行提取版本4')
     paths = {key: Path(cache) / reference[key] for key in ['svgFile', 'imageFile', 'recognitionFile']}
     for kind, expected in [('svgFile', profile['scoreReferenceSha256']), ('imageFile', reference['imageSha256'])]:
         if hashlib.sha256(paths[kind].read_bytes()).hexdigest() != expected:
@@ -53,7 +55,8 @@ def reference_rows(profile, cache, offsets, melody):
             recognition.get('source') != paths['imageFile'].name or
             recognition.get('recognizerVersion') != reference['recognizerVersion']):
         raise ValueError('独立原谱的光学识别已失效')
-    rows = note_rows(paths['imageFile'], recognition, paths['recognitionFile'].parent.parent)
+    rows = note_rows(paths['imageFile'], recognition, paths['recognitionFile'].parent.parent,
+                     reviewed_systems=reference.get('reviewedSystems'))
     if score_rows_hash(rows) != reference['rowsSha256']:
         raise ValueError('原谱光学音符或节奏已改变，需重新核对')
     grouped = group_reference_rows(rows, reference.get('noteRanges', {}), reference['readingStarts'])

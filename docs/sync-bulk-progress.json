@@ -4,10 +4,11 @@
   "counts": {
     "published": 292,
     "existing": 8,
-    "needs-calibration": 90,
+    "needs-calibration": 88,
     "missing-audio": 2,
-    "needs-source-review": 1,
+    "needs-source-review": 2,
     "needs-track-alignment": 4,
+    "ready-to-verify": 1,
     "missing-lyrics": 23
   },
   "songs": [
@@ -402,7 +403,7 @@
         "01-500加利利人耶稣.mp3",
         "01-500加利利人耶稣-领唱.mp3"
       ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,5"
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "01-504",
@@ -1983,11 +1984,10 @@
       "songId": "04-924",
       "source": "04-924新年来临.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "ready-to-verify",
       "tracks": [
         "04-924新年来临.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
+      ]
     },
     {
       "songId": "04-935",
@@ -3754,11 +3754,11 @@
       "songId": "06-014",
       "source": "06-014你真伟大-HomeFree清唱.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-source-review",
       "tracks": [
         "06-014你真伟大-HomeFree清唱.mp3"
       ],
-      "reason": "转写尚未覆盖全部正文阅读区域"
+      "reason": "Home Free录音在约63秒起演唱林间漫步的一段，并在约134秒起加入It Is Well桥段；现有歌词缺少这两部分，且第一遍副歌只唱一次。需补齐并核对对应歌词后再制作完整滚动数据。"
     },
     {
       "songId": "06-015",

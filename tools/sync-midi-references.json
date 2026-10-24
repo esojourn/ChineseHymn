@@ -7162,5 +7162,90 @@
       ]
     },
     "formReview": "Sweet Peace, the Gift of God’s Love / Peter P. Bilhorn。中文四段对应英文四段，前四行主歌，后平安起为副歌。已查看 Jubelklangen 1896 第39首瑞典文五线谱，核对最高声部 LilyPond 与直接链接 MIDI 的完整音序列，副歌从第9小节、第四谱行 c 开始；不是 Far Away in the Depths 的 Wonderful Peace。实际各段仍需和声、旋律、调性、0.5秒起点及反复相位一致，其他录音另须实际音频对应。"
+  },
+  "04-924": {
+    "targetSha256": "a04c29ca7533127eb5e0638fe8762aa96970da110dd545d027a55aa8d3867796",
+    "file": "timeless-Another_Year_Is_Dawning.mid",
+    "sha256": "3ce9e00600abba8e53d51b55a4aade2c8bb43856a3a32189fce6d096c423ee28",
+    "url": "https://library.timelesstruths.org/library/music/A/Another_Year_Is_Dawning/Another_Year_Is_Dawning.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Another_Year_Is_Dawning/",
+    "textReferenceSha256": "a25d93a4ada285d729d28dbb212a313c0b0d5e58654b795d4cba1a68dd25f492",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/A/Another_Year_Is_Dawning/Another_Year_Is_Dawning.xml",
+    "scoreReferenceSha256": "940c211295414c03b09382f7e654192b32c9b0b4eb573813683fb101843bca86",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "旧岁已过新年临恳",
+        "新年又是成长年充"
+      ],
+      [
+        "新年又是恩典年充",
+        "新年又是倚靠年紧"
+      ],
+      [
+        "新年又是侍奉年见",
+        "旧岁已过新年临恳"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          7,
+          7,
+          8,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 26,
+        "pitches": [
+          5,
+          7,
+          8,
+          10,
+          0
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 52,
+      "midiNoteCount": 52,
+      "editCost": 0,
+      "runnerUpCost": 39,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 26,
+          "possibleMidiNoteIndices": [
+            26
+          ],
+          "at": 19.2
+        }
+      ],
+      "offsets": [
+        0.0,
+        19.2
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        26
+      ]
+    },
+    "formReview": "Another Year Is Dawning / Aurelia / Samuel Sebastian Wesley。中文三段与原版三段对应，前四行为各段前半，后四行从第9小节第二个 An 开始；第1段后半为progress/praise/proving/presence，第2段后半为leaning/trusting/rest。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
   }
 }

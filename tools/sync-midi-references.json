@@ -6679,5 +6679,224 @@
       },
       "layoutReview": "已目视复核固定哈希原图的六行简谱：音符范围使用原始未旋转图片的像素坐标，歌词上缘限制光学节奏采样范围。首行左侧拍号在x<0.105排除，副歌从第五行首个5开始。英语歌词不用于中文内容识别；中文原文及三段结构已从原歌本单独核对。完整光学音符、变音及唯一阅读分界均须与MIDI逐音核对，其他全部录音检查保持原有限值。"
     }
+  },
+  "04-641": {
+    "targetSha256": "45b6da0697e88d75fc58560cc8dff17b6ecc9d87bd1663c219dfb68bc069b6f8",
+    "file": "life281.mid",
+    "sha256": "757975fb753f1e30c4a583e75717241ce5056d5cebfb981fe08e264685c8d409",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/281.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life281.html",
+    "textReferenceSha256": "414c8e5d6b88d78bf31a7d8e81e282f7f3382c975522f959ba69cbf14a97958c",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0882_n.svg",
+    "scoreReferenceSha256": "f4868083aec7e5d8ac639b9dba588d42ad33a519143ab3fab51ce6cd9afb3d11",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "光明山上基督精兵",
+        "居高临下全力进攻",
+        "靠信心必得胜靠信"
+      ],
+      [
+        "真神慈爱是我旌旗",
+        "他们因信如风疾卷",
+        "靠信心必得胜靠信"
+      ],
+      [
+        "四围敌军同时进迫",
+        "头上都带救恩头盔",
+        "靠信心必得胜靠信"
+      ],
+      [
+        "凡能战胜仇敌的人",
+        "当从光明山头启程",
+        "靠信心必得胜靠信"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          0,
+          5,
+          5,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 28,
+        "pitches": [
+          9,
+          9,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 57,
+        "pitches": [
+          0,
+          2,
+          9,
+          0,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 81,
+      "midiNoteCount": 82,
+      "editCost": 1,
+      "runnerUpCost": 63,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 28,
+          "possibleMidiNoteIndices": [
+            28
+          ],
+          "at": 12.0
+        },
+        {
+          "scoreNoteIndex": 56,
+          "possibleMidiNoteIndices": [
+            57
+          ],
+          "at": 24.25
+        }
+      ],
+      "offsets": [
+        0.0,
+        12.0,
+        24.25
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        28,
+        56
+      ]
+    },
+    "formReview": "Faith Is the Victory / Sankey，已核对生命圣诗281完整四段中文及共同副歌。每段前四行对应主歌前半，第二阅读区域从Against对应居高临下起，末两行副歌对应Faith is the victory。MusicXML完整主旋律及三个阅读起点与歌本MIDI全序列核对通过；另目视复核同曲四行英文简谱，原图以2倍像素密度渲染，第二行第三个数字3为Against，第三行Chorus首个5为副歌。完整光学音高序列的所有最优对应唯一确定三个阅读首音；每个实际录音每段每区域使用独立MIDI旋律及原谱光学节奏，保持原有成本、调性、0.5秒、完整跨度和反复相位检查；和声仅留诊断，不以字符或固定速度推算时间。",
+    "symbolicScoreReferenceUrl": "https://library.timelesstruths.org/library/music/F/Faith_Is_the_Victory/Faith_Is_the_Victory.xml",
+    "symbolicScoreReferenceSha256": "f80d20a44125ec1e54a932b9070483dd339402f676e643eb4de99296ed9b6463",
+    "opticalReference": {
+      "svgFile": "reference/external/e0882_n.svg",
+      "imageFile": "printed-text-references/data/e0882_n_2x.png",
+      "recognitionFile": "printed-text-references/ocr/e0882_n_2x.png.json",
+      "imageSha256": "7e871f2f6b5bd5abc106057f0e0452b218561ac01f419982180dcd48640f5924",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 4,
+      "rowsSha256": "141e1856d6c97e67bf5e848017e944acbf0c77c3055306638a94266d266b2a69",
+      "noteRanges": {
+        "0": [
+          0.095,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              302,
+              330
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                336,
+                360
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              456,
+              484
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                490,
+                514
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              612,
+              640
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                646,
+                670
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              736,
+              764
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                770,
+                794
+              ]
+            }
+          ]
+        }
+      ],
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/882",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        },
+        "deviceScaleFactor": 2
+      },
+      "layoutReview": "已目视核对固定SVG的2倍像素密度图片及四行音符／歌词像素范围，首行拍号在x<0.095排除。第二阅读区域从第二行第三个数字3开始，副歌从第三行首个5开始。光学提取保留原图休止和同音连结的实际时值；完整音符序列及唯一阅读分界必须与MIDI核对，各实际音轨独立通过原有全部匹配限值。"
+    }
   }
 }

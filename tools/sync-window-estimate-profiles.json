@@ -73,5 +73,46 @@
       }
     },
     "review": "原文四段与共同副歌已逐段核对。完整同曲MIDI在录音中定位四次乐段，用其起点及半乐段位置选取正文和副歌的上下文音频窗口。半乐段仅为窗口中心估计，不是经谱面确认的副歌音符分界。所有最终起点仍须通过原有双窗口及实测重复音乐相位检查，其他录音独立做chroma-DTW对应。"
+  },
+  "02-014": {
+    "version": 1,
+    "sourceHash": "5389a73741732bcf77a73aa38c6db87fdeb42e4baea36509a5877d1ceec7b599",
+    "tracks": [
+      {
+        "file": "02-014基督是生命之光.mp3",
+        "sha256": "fce4cf01058491456614ae60d01daa7123694f0eb9a93652586ba2019585c52c"
+      },
+      {
+        "file": "02-014基督是生命之光-领唱.mp3",
+        "sha256": "e0dee1180faf36654002ac8affdb272aa23647b9f7174349ab5da7931e3b4d01"
+      }
+    ],
+    "audioFile": "02-014基督是生命之光-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "estimates": [
+      3.652,
+      24.106237288135596,
+      46.752,
+      67.2062372881356,
+      89.952,
+      114.88,
+      133.052,
+      153.5062372881356
+    ],
+    "reference": {
+      "file": "asr/02-014基督是生命之光-领唱.mp3.json",
+      "sha256": "7853cf00fbfe1230a7ba8e01ca1ffd31eb7ffaee28afe4802c62a674a38b4eee",
+      "purpose": "Reviewed ASR locations choose contextual clips only; original acoustic and repeated-music gates determine all final onsets."
+    },
+    "review": "原文四段、每段两个阅读区域。第三段“引领归正力上加力”的旧字数窗口偏早，整曲转写在114.88秒附近识别到此句，因此只调整该处取样窗口；其他取样位置不变。全部八个最终起点仍由原有两个上下文声学窗口及实际重复音乐相位核对，伴奏另由独立chroma-DTW对应。转写估计不直接作为滚动时间。"
   }
 }

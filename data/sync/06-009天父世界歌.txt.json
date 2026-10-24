@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "songId": "06-009",
+  "status": "reviewed",
+  "source": {
+    "file": "06-009天父世界歌.txt",
+    "sha256": "a991d62fe254802ffdbc53509d24420fc43e7260c6434ee187af5a1bbf160303",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-009天父世界歌.mp3",
+      "sha256": "7c7527f4512d43950ceffb2d060c7a3f3fb5aa5a46b9d7486ee9a2598aff4708",
+      "duration": 206.1061224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 31
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 45,
+      "endLine": 48
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 49,
+      "endLine": 52
+    }
+  },
+  "cues": [
+    {
+      "at": 9.57,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 20.05,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 29.0,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 38.17,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 51.31,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 60.99,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.59,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 80.65,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 137.07,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 147.67,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.75,
+      "region": "r11",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 168.62,
+      "region": "r12",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "This is my Father's world, And to my listening ears.",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "All nature sings, and round me rings, The music of the spheres.",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "This is my Father's world: I rest me in the thought",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "Of rocks and trees, of skies and seas; His hand the wonders wrought.",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "This is my Father's world, The birds their carols raise.",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "The morning light, the lily white, Declare their Maker's praise.",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "This is my Father's world, He shines in all that's fair;",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "In the rustling grass I hear him pass; He speaks to me everywhere.",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "This is my Father's world. O let me ne'er forget",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "That though the wrong seems oft so strong, God is the ruler yet.",
+        "label": "第3段"
+      },
+      {
+        "region": "r11",
+        "text": "This is my Father's world: The battle is not done.",
+        "label": "第3段"
+      },
+      {
+        "region": "r12",
+        "text": "​Jesus who died shall be satisfied, And earth and heaven be one! ",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-009天父世界歌.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

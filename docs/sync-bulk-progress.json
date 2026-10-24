@@ -2,12 +2,12 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 294,
+    "published": 296,
     "existing": 8,
-    "needs-calibration": 87,
+    "needs-calibration": 84,
     "missing-audio": 2,
+    "needs-track-alignment": 5,
     "needs-source-review": 2,
-    "needs-track-alignment": 4,
     "missing-lyrics": 23
   },
   "songs": [
@@ -559,12 +559,11 @@
       "songId": "02-013",
       "source": "02-013你是荣耀君王.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-track-alignment",
       "tracks": [
         "02-013你是荣耀君王.mp3",
         "02-013你是荣耀君王-领唱.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3"
+      ]
     },
     {
       "songId": "02-014",
@@ -3702,11 +3701,10 @@
       "songId": "06-009",
       "source": "06-009天父世界歌.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "06-009天父世界歌.mp3"
-      ],
-      "reason": "独立 CTC 自由解码未能唯一确认首词及下一词前缀"
+      ]
     },
     {
       "songId": "06-010",
@@ -3781,11 +3779,10 @@
       "songId": "06-017",
       "source": "06-017主手所造万象生灵.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "06-017主手所造万象生灵.mp3"
-      ],
-      "reason": "转写没有确认正文的实际首词"
+      ]
     },
     {
       "songId": "06-018",

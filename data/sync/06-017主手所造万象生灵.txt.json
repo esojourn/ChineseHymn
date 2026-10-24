@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "06-017",
+  "status": "reviewed",
+  "source": {
+    "file": "06-017主手所造万象生灵.txt",
+    "sha256": "06ab05b5529d913cc999ee116068ea2ee994ce9f59a3be6ade5cd019d8db3f98",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-017主手所造万象生灵.mp3",
+      "sha256": "59802878b02a5c025539c73670f173ba5f9f702c084bbba16f51899f2bed126b",
+      "duration": 238.106125,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 36
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 50,
+      "endLine": 52
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 57,
+      "endLine": 60
+    }
+  },
+  "cues": [
+    {
+      "at": 1.64,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 22.13,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 56.43,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.76,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.24,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 132.24,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 167.35,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 189.87,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "All creatures of our God and King Lift up your voice and with us sing Alleluia Alleluia",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Thou burning sun with golden beam Thou silver moon with softer gleam O praise Him O praise Him Alleluia Alleluia Alleluia",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "Thou rushing wind that art so strong Ye clouds that sail in heav’n along O praise Him Alleluia",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "Thou rising morn in praise rejoice Ye lights of evening find a voice O praise Him O praise Him Alleluia Alleluia Alleluia",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "And all ye men of tender heart Forgiving others take your part O sing ye Alleluia",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "Ye who long pain and sorrow bear Praise God and on Him cast your care O praise Him O praise Him Alleluia Alleluia Alleluia",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "Let all things their Creator bless And worship Him in humbleness O praise Him Alleluia",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "Praise praise the Father praise the Son And praise the Spirit Thee in One O praise Him O praise Him Alleluia Alleluia Alleluia",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-017主手所造万象生灵.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

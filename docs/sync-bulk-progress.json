@@ -2,9 +2,9 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 282,
+    "published": 283,
     "existing": 8,
-    "needs-calibration": 100,
+    "needs-calibration": 99,
     "missing-audio": 2,
     "needs-source-review": 1,
     "needs-track-alignment": 4,
@@ -594,11 +594,10 @@
       "songId": "02-018",
       "source": "02-018你的信实广大.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "02-018你的信实广大.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5"
+      ]
     },
     {
       "songId": "02-020",
@@ -1867,7 +1866,7 @@
         "04-641靠信心必得胜.mp3",
         "04-641靠信心必得胜-领唱.mp3"
       ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：4,6,8"
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "04-694",

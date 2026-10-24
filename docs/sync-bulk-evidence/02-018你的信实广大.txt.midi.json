@@ -1,0 +1,287 @@
+{
+  "songId": "02-018",
+  "source": "02-018你的信实广大.txt",
+  "sourceHash": "b51ca8252b693f31856fbc6dace26b0c1c87372afa72277231416438af577b36",
+  "trackHashes": [
+    {
+      "file": "02-018你的信实广大.mp3",
+      "sha256": "5b0b25b1e66876d274d7afe555bf8bc3d47d19356cdd99b3147a0105f105fc50"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "b51ca8252b693f31856fbc6dace26b0c1c87372afa72277231416438af577b36",
+      "file": "life018.mid",
+      "sha256": "27c9e2bdca7967ca04fdb9cfbd68d5665755897efb20a2a76ebb6b1ce3c211eb",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/018.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life018.html",
+      "textReferenceSha256": "aa57c7c5dd271d24059f66f0c1a2f14973c296af4fbe21d49f0d1fc38d35d877",
+      "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/G/Great_Is_Thy_Faithfulness/Great_Is_Thy_Faithfulness.xml",
+      "scoreReferenceSha256": "fce228529919186d25b88360b7f9b03d88d0afe0d52479a5ce292e298a00117f",
+      "verseCount": 3,
+      "regionOpenings": [
+        [
+          "你信实何广大圣天",
+          "你信实何广大你信"
+        ],
+        [
+          "春夏秋冬循环栽种",
+          "你信实何广大你信"
+        ],
+        [
+          "你赦免我罪愆赐我",
+          "你信实何广大你信"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            6,
+            6,
+            6,
+            6,
+            4
+          ]
+        },
+        {
+          "onsetIndex": 42,
+          "pitches": [
+            9,
+            9,
+            4,
+            7,
+            6
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 85,
+        "midiNoteCount": 85,
+        "editCost": 0,
+        "runnerUpCost": 63,
+        "semitoneShift": 11,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 42,
+            "possibleMidiNoteIndices": [
+              42
+            ],
+            "at": 25.0435
+          }
+        ],
+        "offsets": [
+          0.0,
+          25.0435
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "1",
+        "highestChordHeadOnly": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          42
+        ]
+      },
+      "formReview": "Great Is Thy Faithfulness / Faithfulness，第1至16小节为主歌，副歌Great is Thy faithfulness从第17小节起。中文每段前四行为主歌，后四行为副歌。 已核对生命圣诗原歌本译文及同编号MIDI、原英文MusicXML完整最高旋律，各阅读起点在全部最优逐音对应中唯一。实际每段每区域仍须通过独立和声、旋律、调性、0.5秒及反复相位检查，其他录音另须实际音乐对应。不使用字数或固定速度推算歌词时间。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 50.47824824999999,
+    "music": {
+      "period": 64.6,
+      "similarity": 0.7177302241325378,
+      "initialOnsetEstimate": 26.2,
+      "shifts": [
+        0.0,
+        64.4,
+        129.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.27319671347414376,
+            "key": 10,
+            "at": 19.3,
+            "span": 63.3,
+            "starts": [
+              18.8,
+              50.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.56723046081354,
+            "key": 3,
+            "at": 56.8,
+            "span": 40.8,
+            "starts": [
+              56.6,
+              71.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.16707107969112808,
+            "key": 10,
+            "starts": [
+              18.899999618530273,
+              50.099998474121094
+            ],
+            "span": 63.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.41753526811629255,
+            "key": 5,
+            "starts": [
+              47.0,
+              71.69999694824219
+            ],
+            "span": 52.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.27189844090133997,
+            "key": 10,
+            "at": 84.0,
+            "span": 62.9,
+            "starts": [
+              83.5,
+              114.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5503229194381288,
+            "key": 3,
+            "at": 121.2,
+            "span": 38.3,
+            "starts": [
+              120.9,
+              135.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.19851101146024816,
+            "key": 10,
+            "starts": [
+              83.5999984741211,
+              114.4000015258789
+            ],
+            "span": 62.79999542236328
+          },
+          "runnerUp": {
+            "cost": 0.42620344132461785,
+            "key": 3,
+            "starts": [
+              91.30000305175781,
+              117.69999694824219
+            ],
+            "span": 58.19999694824219
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.28758662551549197,
+            "key": 10,
+            "at": 148.5,
+            "span": 64.5,
+            "starts": [
+              148.0,
+              179.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5902025913675503,
+            "key": 3,
+            "at": 150.6,
+            "span": 43.1,
+            "starts": [
+              150.1,
+              169.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.20493163117683338,
+            "key": 10,
+            "starts": [
+              148.10000610351562,
+              179.5
+            ],
+            "span": 64.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4078923748004547,
+            "key": 5,
+            "starts": [
+              142.8000030517578,
+              163.60000610351562
+            ],
+            "span": 49.69999694824219
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      25.043471999999998
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "你信实何广大，圣天父真神   你永远不离弃，爱你的人   你永世不改变，满有怜悯恩   昔在今在永在，我主我神",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "春夏秋冬循环，栽种又收成    日月星辰，时刻循轨运行    天地宇宙万物，皆同作见证    述说我主信实，慈爱永恒",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你赦免我罪愆，赐我永平安   你常与我偕行，安慰扶援   日日加力，更赐我光明美盼    你沛赐我恩惠，丰厚无限",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+      "label": "第3段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 0.57
+}

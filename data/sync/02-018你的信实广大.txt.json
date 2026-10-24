@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "songId": "02-018",
+  "status": "reviewed",
+  "source": {
+    "file": "02-018你的信实广大.txt",
+    "sha256": "b51ca8252b693f31856fbc6dace26b0c1c87372afa72277231416438af577b36",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-018你的信实广大.mp3",
+      "sha256": "5b0b25b1e66876d274d7afe555bf8bc3d47d19356cdd99b3147a0105f105fc50",
+      "duration": 223.93575,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    }
+  },
+  "cues": [
+    {
+      "at": 18.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.2,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 83.55,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 114.5,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 148.05,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 179.55,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你信实何广大，圣天父真神   你永远不离弃，爱你的人   你永世不改变，满有怜悯恩   昔在今在永在，我主我神",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "春夏秋冬循环，栽种又收成    日月星辰，时刻循轨运行    天地宇宙万物，皆同作见证    述说我主信实，慈爱永恒",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你赦免我罪愆，赐我永平安   你常与我偕行，安慰扶援   日日加力，更赐我光明美盼    你沛赐我恩惠，丰厚无限",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "  你信实何广大！你信实何广大！   清晨复清晨，主爱日更新；   我一切所需用，你都已预备，   你信实何广大，显在我身。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-018你的信实广大.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

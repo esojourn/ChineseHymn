@@ -5875,5 +5875,213 @@
       }
     },
     "formReview": "已逐段核对生命圣诗332完整三段及共同副歌、同编号MIDI，以及Albert B. Simpson同曲英文Art thou sunk in depths of sorrow的公开简谱。正文前四行对应主歌，后两行为副歌。目视核对SVG完整简谱：副歌从第五谱行Chorus标记后首个5起，完整90个旋律音的所有最优对应均唯一确定副歌首音为MIDI索引60；两版仅主歌内一音不同，分界处五音完全相符。每段每区域仍须通过实际录音独立和声、旋律、调性、0.5秒及反复相位检查，不以字符或固定速度推算时间。"
+  },
+  "02-382": {
+    "targetSha256": "2d0e8bcff81cd7f0987f45fba0a071d0602429a14ec61d6c51423ff8b22287bf",
+    "file": "life382.mid",
+    "sha256": "ec160d463d87926449a5025f6b5aea24f9f06c1638e9a9f0284119f62bf75215",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/382.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life382.html",
+    "textReferenceSha256": "d52d39328fa51cf98d56e76aba2796ae95949fd4fbf9818ba5057e28ee8e1841",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e1172_n.svg",
+    "scoreReferenceSha256": "1fab8167a0dbfe3ea39318cb532c2f31a6c6b5bc9b7441b92b93126b82ea6b9f",
+    "verseCount": 3,
+    "regionOpenings": [
+      [
+        "信徒看哪万世战争",
+        "是否你见此异象是"
+      ],
+      [
+        "看这世界目前景象",
+        "是否你见此异象是"
+      ],
+      [
+        "神的教会正在醒起",
+        "是否你见此异象是"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          5,
+          6,
+          8,
+          8,
+          5
+        ]
+      },
+      {
+        "onsetIndex": 56,
+        "pitches": [
+          8,
+          8,
+          1,
+          0,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "Numbered SVG melody digits selected by their printed note font and sorted by visual row and x; complete rendered score visually reviewed including two accidentals and Chorus opening. The English text is a different adaptation of the same Morris tune; the Chinese lyrics and performed form are separately verified from Life 382.",
+      "printedKey": "C",
+      "printedMelodyDegrees": [
+        3,
+        4,
+        5,
+        5,
+        3,
+        4,
+        5,
+        5,
+        3,
+        5,
+        1,
+        7,
+        6,
+        3,
+        5,
+        1,
+        7,
+        7,
+        6,
+        7,
+        6,
+        6,
+        3,
+        3,
+        2,
+        1,
+        2,
+        3,
+        5,
+        5,
+        1,
+        1,
+        7,
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        1,
+        7,
+        6,
+        6,
+        5,
+        2,
+        7,
+        7,
+        2,
+        1,
+        6,
+        5,
+        5,
+        5,
+        1,
+        7,
+        6,
+        5,
+        3,
+        5,
+        5,
+        1,
+        7,
+        6,
+        7,
+        5,
+        5,
+        7,
+        6,
+        5,
+        7,
+        7,
+        6,
+        5,
+        6,
+        5,
+        4,
+        5,
+        5,
+        5,
+        5,
+        1,
+        1,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        2,
+        2,
+        1,
+        7,
+        7,
+        5,
+        5,
+        3,
+        1,
+        5,
+        5,
+        3,
+        1,
+        7,
+        1,
+        2,
+        1,
+        7,
+        1
+      ],
+      "printedAccidentals": [
+        {
+          "noteIndex": 38,
+          "semitones": 1
+        },
+        {
+          "noteIndex": 80,
+          "semitones": 1
+        }
+      ],
+      "sourceReadingIndices": [
+        0,
+        56
+      ],
+      "proof": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 112,
+        "midiNoteCount": 112,
+        "editCost": 2,
+        "runnerUpCost": 89,
+        "semitoneShift": 1,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 56,
+            "possibleMidiNoteIndices": [
+              56
+            ],
+            "at": 24.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          24.0
+        ]
+      }
+    },
+    "formReview": "已逐段核对生命圣诗382完整三段及共同副歌、同编号MIDI；采用Lelia Naylor Morris同曲公开简谱核对旋律，英文正文为另一改词，未用于证明中文歌词内容。目视核对全部112个旋律起音、第二谱行升5及第五谱行升4；副歌从第四谱行Chorus标记后的5开始。完整音高序列的所有最优对应唯一确定阅读分界。中文每段前四行为主歌，后四行为副歌，每段每区域仍须通过实际录音独立和声、旋律、调性、0.5秒及反复相位检查，不以字符或固定速度推算时间。"
   }
 }

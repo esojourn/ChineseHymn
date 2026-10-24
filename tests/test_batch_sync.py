@@ -44,6 +44,72 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_context_family_rejects_distinct_clusters_and_zero_duration_words(self):
+        from sync_batch_align import context_cluster_time, extended_context_enabled
+        def rows(times):
+            return [{'window': i, 'valid': True, 'at': at, 'firstWordStart': at, 'firstWordEnd': at + .3}
+                    for i, at in enumerate(times)]
+        at, detail = context_cluster_time(rows([20, 20.2, 20.22, 20.7]))
+        self.assertAlmostEqual(at, 20.21)
+        self.assertEqual(detail['chosenWindows'], [1, 2])
+        for values in [[20, 20.1, 21.3, 21.4], [20, 20.1, 20.8, 20.9], [20, 20.7]]:
+            self.assertIsNone(context_cluster_time(rows(values))[0])
+        zero = rows([20, 20.1])
+        zero[0]['firstWordEnd'] = zero[0]['firstWordStart']
+        self.assertIsNone(context_cluster_time(zero)[0])
+        duplicate = rows([20, 20.1])
+        duplicate[1]['window'] = 0
+        self.assertIsNone(context_cluster_time(duplicate)[0])
+        self.assertFalse(extended_context_enabled(None))
+        self.assertFalse(extended_context_enabled({}))
+        self.assertTrue(extended_context_enabled({'extendedContext': {'version': 1}}))
+        for invalid in [True, {'version': True}, {'version': '1'}, {'version': 2}]:
+            with self.assertRaises(ValueError):
+                extended_context_enabled({'extendedContext': invalid})
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_additional_known_lyric_windows_preserve_context_and_completed_boundaries(self):
+        from sync_batch_align import supplement_context_windows
+        definitions = [{'region': 'r1', 'text': '第一句'}, {'region': 'r2', 'text': '第二句'},
+                       {'region': 'r3', 'text': '第三句'}]
+        rows = [{'index': i, 'window': w, 'valid': True, 'at': 10 * i + w * (.8 if i == 1 else .1),
+                 'firstWordStart': 10 * i, 'firstWordEnd': 10 * i + 1}
+                for i in range(3) for w in range(2)]
+        extra = [{'index': 0, 'window': w, 'valid': True, 'at': 10.3 + w * .02,
+                  'firstWordStart': 10.3, 'firstWordEnd': 10.7} for w in range(2)]
+        saved = []
+        with patch('sync_batch_align.align_windows', return_value=extra) as align:
+            result = supplement_context_windows(None, None, [], definitions, [0, 10, 20], 'zh', rows, saved.append)
+        self.assertEqual(align.call_count, 1)
+        self.assertEqual(align.call_args.args[3:6], ([definitions[1]], [10], 'zh'))
+        self.assertEqual(align.call_args.kwargs['preceding_texts'], ['第一句'])
+        self.assertEqual(align.call_args.kwargs['window_bounds'], [(8, 18), (10, 16)])
+        self.assertEqual([row for row in result if row['window'] < 2], rows)
+        self.assertEqual([row['window'] for row in result if row['index'] == 1], [0, 1, 2, 3])
+        self.assertEqual(saved[-1], result)
+        # A completed family is read without a new model call.
+        with patch('sync_batch_align.align_windows') as align:
+            self.assertEqual(supplement_context_windows(None, None, [], definitions, [0, 10, 20], 'zh', result,
+                                                       saved.append), result)
+            align.assert_not_called()
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_known_context_family_requires_opt_in_and_keeps_measured_verse_phases(self):
+        verses = [[{'region': 'r1'}], [{'region': 'r2'}], [{'region': 'r3'}]]
+        music = {'shifts': [0, 20, 40], 'similarity': .85}
+        rows = [{'index': i, 'window': w, 'valid': True, 'at': at,
+                 'firstWordStart': at, 'firstWordEnd': at + .3}
+                for i, times in enumerate([[0, .1], [20, 20.2, 20.22, 20.7], [40, 40.1]])
+                for w, at in enumerate(times)]
+        with self.assertRaises(ValueError):
+            confirm_boundaries(verses, music, rows)
+        times, starts, decisions = confirm_boundaries(verses, music, rows, extended_context=True)
+        self.assertAlmostEqual(times[1], 20.21)
+        self.assertEqual(starts, [0, 1, 2])
+        self.assertAlmostEqual(times[0], .13)
+        self.assertEqual(decisions[0]['chosenWindows'], [1, 2])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_repeated_music_does_not_confirm_a_zero_duration_first_word(self):
         verses = [[{'region': 'r1'}], [{'region': 'r2'}], [{'region': 'r3'}]]
         music = {'shifts': [0, 20, 40], 'similarity': 1}

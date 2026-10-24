@@ -153,5 +153,73 @@
       "purpose": "Reviewed ASR locations choose contextual clips only; original acoustic and repeated-music gates determine all final onsets."
     },
     "review": "已逐段核对原文七段与录音七个完整乐段。第一段仍用音乐估计取样，第二至七段按整曲转写中相应起句的位置选择上下文片段，未增删歌词或阅读区域。全部七个最终起点由原有两组声学窗口及实际音乐反复核对；转写估计不直接作为时间点，伴奏另用独立chroma-DTW对应。"
+  },
+  "03-034": {
+    "version": 1,
+    "sourceHash": "c08ca2ab41dcbca09dc84c2357da4aa74c9403da91308da227f85e39d4156f4e",
+    "tracks": [
+      {
+        "file": "03-034先求他的国.mp3",
+        "sha256": "01e90536b7d46ac8d63b6b13a0e07731552981252915713789e231c231c8c554"
+      },
+      {
+        "file": "03-034先求他的国-领唱.mp3",
+        "sha256": "afd9fb823f820bd345f9cc52830566d4be1a6cd10df3be574f6c00676e4c9485"
+      }
+    ],
+    "audioFile": "03-034先求他的国-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "estimates": [
+      6.18,
+      31.88,
+      57.5,
+      82.4,
+      108.96,
+      134.3
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "review": "已逐段核对三段主歌与三次副歌；副歌标签只在识别输入中排除。使用整曲转写的起句附近选择窗口，第二段起句另由两个更长上下文复核；全部实际时间仍由声学起点及音乐反复确定。"
+  },
+  "01-667": {
+    "version": 1,
+    "sourceHash": "2d71b06af6d51717f3534a664ac746820798d8b664eed49b3c20538dd9f4febb",
+    "tracks": [
+      {
+        "file": "01-667十字架是我的福分.mp3",
+        "sha256": "2a3d6c0217f9f987fc68d08e20224e9b921319482d274521fbf9f5cb02398e0d"
+      },
+      {
+        "file": "01-667十字架是我的福分-领唱.mp3",
+        "sha256": "eb711cb821baadd232db1b99adaea60a40c00fb6fbc7a9c971ec7a464ddd3d09"
+      }
+    ],
+    "audioFile": "01-667十字架是我的福分-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5"
+    ],
+    "estimates": [
+      20.688,
+      62.087999999999994,
+      103.488,
+      144.888,
+      186.28799999999998
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "review": "原文五段每段一个阅读区域；保持原有音乐估计的取样位置，仅对第四段有争议的起句补充较长上下文。实际第四段起点仍由其他已确认段落的实测音乐相位及有效声学首词共同支持，所有限值保持不变。"
   }
 }

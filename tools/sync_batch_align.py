@@ -8,7 +8,7 @@ from sync_batch_sources import clean, image_source, text_source
 from sync_batch_audio import map_recordings, repeated_verses
 
 _model = None
-VOCAL_BOUNDARY_VERSION = 2
+VOCAL_BOUNDARY_VERSION = 3
 
 
 def window_estimate_profile(song):
@@ -28,9 +28,52 @@ def reviewed_estimates(song, definitions, defaults, profile):
             any(type(at) not in (int, float) or not np.isfinite(at) or at < 0 for at in estimates) or
             any(a + .5 >= b for a, b in zip(estimates, estimates[1:]))):
         raise ValueError('上下文取样位置不完整或未递增')
+    extended_context_enabled(profile)
     # These values choose audio clips only. They never bypass confirm_boundaries
     # or supply published times, including when a previous checkpoint exists.
     return estimates
+
+
+def extended_context_enabled(profile):
+    if profile is None or 'extendedContext' not in profile:
+        return False
+    review = profile['extendedContext']
+    if not isinstance(review, dict) or type(review.get('version')) is not int or review['version'] != 1:
+        raise ValueError('补充上下文核对需要显式版本配置')
+    return True
+
+
+def context_cluster_time(rows):
+    windows = [row['window'] for row in rows]
+    if len(set(windows)) != len(windows) or any(type(window) is not int or window not in range(4) for window in windows):
+        return None, {}
+    good = [row for row in rows if row['valid'] and np.isfinite(row['at']) and
+            ('firstWordStart' not in row or row.get('firstWordEnd', 0) - row['firstWordStart'] >= .04)]
+    choices = [(abs(left['at'] - right['at']), (left['at'] + right['at']) / 2, left, right)
+               for first, left in enumerate(good) for right in good[first + 1:]
+               if abs(left['at'] - right['at']) <= .5]
+    supported = sorted({row['at'] for delta, at, left, right in choices for row in (left, right)})
+    if (not supported or supported[-1] - supported[0] > 1 or
+            any(right - left > .5 for left, right in zip(supported, supported[1:]))):
+        return None, {}
+    delta, at, left, right = min(choices, key=lambda choice: (choice[0], choice[1]))
+    return round(at, 2), {'supportedOnsets': supported, 'chosenWindows': [left['window'], right['window']]}
+
+
+def supplement_context_windows(model, tokenizer, audio, definitions, estimates, language, observations, save):
+    # The initial reading position is still inferred from later measured verse
+    # phases. Supplement only disputed later boundaries, using fixed bounds.
+    for index in range(1, len(definitions)):
+        if context_cluster_time([row for row in observations if row['index'] == index])[0] is not None:
+            continue
+        resume = [{**row, 'index': 0, 'window': row['window'] - 2} for row in observations
+                  if row['index'] == index and row['window'] in (2, 3)]
+        additional = align_windows(model, tokenizer, audio, [definitions[index]], [estimates[index]], language,
+            resume, preceding_texts=[definitions[index - 1]['text']], window_bounds=[(8, 18), (10, 16)])
+        observations = [row for row in observations if not (row['index'] == index and row['window'] in (2, 3))]
+        observations.extend({**row, 'index': index, 'window': row['window'] + 2} for row in additional)
+        save(observations)
+    return observations
 
 
 def context(text, language, tail=False):
@@ -97,7 +140,7 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
     return observations
 
 
-def confirm_boundaries(verses, music, observations):
+def confirm_boundaries(verses, music, observations, extended_context=False):
     accepted, decisions, first_indices, slots = {}, [], [], {}
     def usable(row):
         return (row['valid'] and ('firstWordStart' not in row or
@@ -110,7 +153,14 @@ def confirm_boundaries(verses, music, observations):
         cursor += len(verse)
     for index in range(cursor):
         pair = [row for row in observations if row['index'] == index]
-        if len(pair) == 2 and all(usable(row) for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
+        if extended_context:
+            at, detail = context_cluster_time(pair)
+            if at is not None:
+                accepted[index] = at
+                if len(pair) > 2:
+                    decisions.append({'index': index, 'at': at, **detail,
+                                      'method': 'additional contextual windows confirm one supported onset cluster'})
+        elif len(pair) == 2 and all(usable(row) for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
             accepted[index] = round((pair[0]['at'] + pair[1]['at']) / 2, 2)
     # Two independent acoustic anchors must establish a phase before music can resolve
     # a conflicting window. Music alone never invents an unrecognized lyric boundary.
@@ -214,14 +264,17 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
             estimates.append(music['initialOnsetEstimate'] + shift + music['period'] * float(weight))
     profile = window_estimate_profile(song)
     estimates = reviewed_estimates(song, definitions, estimates, profile)
+    extended_context = extended_context_enabled(profile)
     if profile is not None:
         evidence['windowEstimateProfile'] = profile
+    if extended_context:
+        evidence['extendedContext'] = {'version': 1, 'bounds': [[6, 16], [4, 14], [8, 18], [10, 16]]}
     previous_path = cache / 'alignment' / (song['source'] + '.json')
     previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
     evidence['performanceOrder'] = definitions
     if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions and previous.get('windowEstimateProfile') == profile:
         try:
-            cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'])
+            cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'], extended_context)
             evidence.update(windows=previous['windows'], estimates=previous['estimates'], music=music, phaseDecisions=decisions)
             return source, definitions, cue_times, first_indices
         except ValueError:
@@ -236,16 +289,22 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
     tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
     audio = decode_audio(str(reference), sampling_rate=16000)
     checkpoint = cache / 'windows' / (song['source'] + '.json')
-    signature = hashlib.sha256(json.dumps({'source': song['sha256'], 'tracks': song['tracks'],
+    parameters = {'source': song['sha256'], 'tracks': song['tracks'],
         'definitions': definitions, 'estimates': estimates, 'language': language,
-        'windowVersion': 1}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+        'windowVersion': 1}
+    if extended_context:
+        parameters.update(windowVersion=2, additionalContextVersion=1)
+    signature = hashlib.sha256(json.dumps(parameters, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     previous_windows = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
     resume = previous_windows.get('windows', []) if previous_windows.get('signature') == signature else []
     observations = align_windows(_model, tokenizer, audio, definitions, estimates, language, resume,
         lambda rows: save(checkpoint, {'signature': signature, 'windows': rows}))
+    if extended_context:
+        observations = supplement_context_windows(_model, tokenizer, audio, definitions, estimates, language, observations,
+            lambda rows: save(checkpoint, {'signature': signature, 'windows': rows}))
     evidence['windows'] = observations
     evidence['estimates'] = estimates
-    cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations)
+    cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations, extended_context)
     evidence['phaseDecisions'] = decisions
     return source, definitions, cue_times, first_indices
 
@@ -403,6 +462,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                           'Documented same-tune score reference; independent chroma-DTW recording correspondence; measured repeat-phase consistency.'
                           if 'referenceMatching' in evidence else
                           'Numbered-score melody/chroma matching with two rhythm templates and measured repeats.' if 'scoreMatching' in evidence else
+                          'Known lyrics; original contextual acoustic windows, disputed boundaries rechecked with two additional fixed contexts; positive first-word spans and one supported onset cluster; original measured-music phase checks and independent chroma-DTW recording correspondence.'
+                          if evidence.get('extendedContext', {}).get('version') == 1 else
                           'Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.')
     evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',

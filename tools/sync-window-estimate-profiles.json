@@ -114,5 +114,44 @@
       "purpose": "Reviewed ASR locations choose contextual clips only; original acoustic and repeated-music gates determine all final onsets."
     },
     "review": "原文四段、每段两个阅读区域。第三段“引领归正力上加力”的旧字数窗口偏早，整曲转写在114.88秒附近识别到此句，因此只调整该处取样窗口；其他取样位置不变。全部八个最终起点仍由原有两个上下文声学窗口及实际重复音乐相位核对，伴奏另由独立chroma-DTW对应。转写估计不直接作为滚动时间。"
+  },
+  "02-025": {
+    "version": 1,
+    "sourceHash": "740b3df29e625c543c13a3394be1f08035a588cdf5d2055000257910fb993a89",
+    "tracks": [
+      {
+        "file": "02-025求主使我成长.mp3",
+        "sha256": "0ba6d7f9d9353783df1d7bbb57ebc878997f6338022d07d0e7cc942a1448fbac"
+      },
+      {
+        "file": "02-025求主使我成长-领唱.mp3",
+        "sha256": "c782bf1ccf3f642a8cb38a2df16ec81ab7916c64ed7f3c63760d45cdd7aa0e3a"
+      }
+    ],
+    "audioFile": "02-025求主使我成长-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7"
+    ],
+    "estimates": [
+      10.376,
+      42,
+      73.6,
+      107.08,
+      139.3,
+      171.44,
+      205.72
+    ],
+    "reference": {
+      "file": "asr/02-025求主使我成长-领唱.mp3.json",
+      "sha256": "0bace642194e6f9904a10de68ed7e1eebd140efc45b14a9bdf180fdc6f469780",
+      "purpose": "Reviewed ASR locations choose contextual clips only; original acoustic and repeated-music gates determine all final onsets."
+    },
+    "review": "已逐段核对原文七段与录音七个完整乐段。第一段仍用音乐估计取样，第二至七段按整曲转写中相应起句的位置选择上下文片段，未增删歌词或阅读区域。全部七个最终起点由原有两组声学窗口及实际音乐反复核对；转写估计不直接作为时间点，伴奏另用独立chroma-DTW对应。"
   }
 }

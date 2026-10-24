@@ -17,6 +17,7 @@ spec = importlib.util.spec_from_file_location('batch_io', Path(__file__).with_na
 batch = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(batch)
 _model = None
+_model_path = None
 
 
 def match_order(definitions, words, language, partial=False):
@@ -160,13 +161,20 @@ def verified_window_times(model, tokenizer, audio, definitions, estimates, langu
     return observations, times, decisions
 
 
-def generate(song, cache, model_dir, threads, ctc_model_dir=None):
-    global _model
+def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_profile=None):
+    global _model, _model_path
     start = time.monotonic()
     destination = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
                 'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5 if ctc_model_dir else 4, 'model': 'medium/int8'}}
     try:
+        if free_initial_profile:
+            track = next((item for item in song['tracks'] if item['file'] == song['reference']), None)
+            if (free_initial_profile.get('sourceHash') != song['sha256'] or
+                    free_initial_profile.get('audioFile') != song['reference'] or not track or
+                    free_initial_profile.get('audioHash') != track['sha256']):
+                raise ValueError('自由首句配置与当前歌词或录音不一致')
+            evidence['transcriptMatching'].update(algorithmVersion=6, freeInitialProfile=free_initial_profile)
         text = prepare.read_text(batch.ROOT / 'data' / song['source'])
         language = 'en' if len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
         source = text_source(batch.ROOT / 'data' / song['source'], language)
@@ -182,10 +190,12 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None):
         anchor_ranges = [(row['at'], row['firstWordEnd']) for row in diagnostics]
         anchor_words = [row['firstWord'] for row in diagnostics]
         evidence['transcriptMatching'].update(transcript=transcript, diagnostics=diagnostics, language=language)
-        if _model is None:
+        selected_model = str(Path(model_dir) / 'medium') if free_initial_profile else 'medium'
+        if _model is None or free_initial_profile and _model_path != selected_model:
             from faster_whisper import WhisperModel
-            _model = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads,
+            _model = WhisperModel(selected_model, device='cpu', compute_type='int8', cpu_threads=threads,
                                   download_root=model_dir, local_files_only=True)
+            _model_path = selected_model
         from faster_whisper.audio import decode_audio
         from faster_whisper.tokenizer import Tokenizer
         tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
@@ -215,12 +225,19 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None):
             observations, times, decisions = verified_window_times(_model, tokenizer, audio, definitions, estimates,
                 language, preceding, anchor_ranges, anchor_words, resume, save_windows)
         except ValueError:
-            if ctc_model_dir is None or language != 'en':
+            if free_initial_profile:
+                from sync_batch_free_prefix import recover_initial
+                observations = evidence['windows']
+                times, decisions = recover_initial(_model, audio, batch.checksum(reference), definitions, estimates,
+                    anchor_ranges, anchor_words, observations, language, free_initial_profile['freeInitialPrefix'],
+                    model_dir, cache, confirm_transcript_windows, batch.save)
+            elif ctc_model_dir is None or language != 'en':
                 raise
-            from sync_batch_ctc import recover_initial
-            observations = evidence['windows']
-            times, decisions = recover_initial(audio, batch.checksum(reference), definitions, estimates, anchor_ranges,
-                anchor_words, observations, ctc_model_dir, cache, confirm_transcript_windows)
+            else:
+                from sync_batch_ctc import recover_initial
+                observations = evidence['windows']
+                times, decisions = recover_initial(audio, batch.checksum(reference), definitions, estimates, anchor_ranges,
+                    anchor_words, observations, ctc_model_dir, cache, confirm_transcript_windows)
         evidence['windows'] = observations
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
         starts = {region: bounds['startLine'] for region, bounds in source['regions'].items()}
@@ -242,6 +259,8 @@ if __name__ == '__main__':
     parser.add_argument('--threads', type=int, default=2)
     parser.add_argument('--ctc-model-dir', type=Path, help='Optional pinned MMS model for independently decoded initial words')
     args = parser.parse_args()
+    profile_path = Path(__file__).with_name('sync-transcript-prefix-profiles.json')
+    profiles = json.loads(profile_path.read_text()) if profile_path.exists() else {}
     for song in batch.inventory():
         if song['songId'] in args.songs and song['type'] == 'text' and song['lyricsAvailable'] and song['tracks'] and not song['existing']:
-            print(generate(song, args.cache, args.model_dir, args.threads, args.ctc_model_dir), flush=True)
+            print(generate(song, args.cache, args.model_dir, args.threads, args.ctc_model_dir, profiles.get(song['songId'])), flush=True)

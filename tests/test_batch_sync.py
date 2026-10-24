@@ -458,6 +458,144 @@ class BatchTests(unittest.TestCase):
                                                 {'segments': segments}, source)
         self.assertEqual(sources.clean('Mächten großzügig Straße', 'de'), 'machtengrosszugigstrasse')
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_reviewed_text_order_covers_source_and_actual_repeated_fragments(self):
+        import copy
+        source = {'layout': 'lyrics-only-text', 'regions': {'r1': {}, 'r2': {}},
+                  'blocks': {'r1': {'text': '你是荣耀的君王你是和平之主', 'label': '主歌'},
+                             'r2': {'text': '和撒那归于大卫的子孙愿荣耀归于至高神', 'label': '副歌'}}}
+        texts = ['你是荣耀的君王你是和平之主', '和撒那归于大卫的子孙愿荣耀归于至高神', '愿荣耀归于至高神']
+        segments = [{'text': text, 'words': [{'word': text, 'start': at, 'end': at + 5}]}
+                    for text, at in zip(texts, [5, 30, 55])]
+        profile = {'language': 'zh', 'blocks': [{'region': 'r1', 'segmentIndices': [0]},
+                   {'region': 'r2', 'segmentIndices': [1]},
+                   {'region': 'r2', 'segmentIndices': [2], 'sourceText': texts[2]}]}
+        definitions, estimates, ranges, words = image_transcript.transcript_blocks(profile, {'segments': segments}, source)
+        self.assertEqual([item['region'] for item in definitions], ['r1', 'r2', 'r2'])
+        self.assertEqual(definitions[-1]['text'], texts[2])
+        for change in ['invented', 'overlap', 'uncovered', 'unrecognized']:
+            wrong = copy.deepcopy(profile)
+            actual = copy.deepcopy(segments)
+            if change == 'invented':
+                wrong['blocks'][-1]['sourceText'] = '这不是原文歌词'
+            elif change == 'overlap':
+                wrong['blocks'][-1]['segmentIndices'] = [1, 2]
+            elif change == 'uncovered':
+                wrong['blocks'][0]['region'] = 'r2'
+                actual[0] = copy.deepcopy(actual[1])
+            else:
+                actual[2]['words'][0]['word'] = '毫不相关的演唱内容'
+            with self.subTest(change=change):
+                with self.assertRaises(ValueError):
+                    image_transcript.transcript_blocks(wrong, {'segments': actual}, source)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_free_initial_prefix_requires_exact_unique_opening_and_measured_first_word(self):
+        import copy
+        import sync_batch_free_prefix as free
+        definition = {'text': '你是荣耀的君王你是和平之主'}
+        words = [{'word': '你是', 'start': 5.74, 'end': 7.14, 'probability': .7}]
+        words.extend({'word': character, 'start': 7.14 + index * .5, 'end': 7.64 + index * .5, 'probability': .8}
+                     for index, character in enumerate('荣耀的君王你是和平之主'))
+        decoded = {'bounds': [0, 21.66], 'segments': [{'words': words}]}
+        edge = {'firstWord': '你是', 'firstWordEnd': 7.14}
+        result = free.prefix_candidate(decoded, definition, 'zh', edge, 5.66)
+        self.assertEqual(result['at'], 5.74)
+        self.assertEqual(result['prefix'], '你是荣耀的君王你是和')
+        for change in ['text', 'duplicate', 'probability', 'zero', 'edge', 'end', 'range', 'nan']:
+            wrong = copy.deepcopy(decoded)
+            first = wrong['segments'][0]['words'][0]
+            if change == 'text':
+                wrong['segments'][0]['words'][1]['word'] = '错'
+            elif change == 'duplicate':
+                wrong['segments'][0]['words'] *= 2
+            elif change == 'probability':
+                first['probability'] = .1
+            elif change == 'zero':
+                first['end'] = first['start']
+            elif change == 'edge':
+                first['start'] = 0
+            elif change == 'end':
+                first['end'] = 8
+            elif change == 'range':
+                first['start'] = -1
+            else:
+                first['probability'] = float('nan')
+            with self.subTest(change=change):
+                with self.assertRaises(ValueError):
+                    free.prefix_candidate(wrong, definition, 'zh', edge, 5.66)
+        self.assertEqual(free.initial_prefix('Oh Lord my God when I wonder', 'en'), 'ohlordmygod')
+        with self.assertRaises(ValueError):
+            free.initial_prefix('很短', 'zh')
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_free_initial_recovery_requires_clamped_windows_and_pinned_model(self):
+        import copy
+        import hashlib
+        import sync_batch_free_prefix as free
+        from types import SimpleNamespace
+        import numpy as np
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'medium').mkdir()
+            for name in ['model.bin', 'tokenizer.json']:
+                (root / 'medium' / name).write_bytes(b'fixed-test-model')
+            digest = hashlib.sha256(b'fixed-test-model').hexdigest()
+            review = {'version': 1, 'model': {'sha256': digest, 'tokenizerSha256': digest}}
+            edges = [{'index': 0, 'window': index, 'valid': False, 'at': start, 'bounds': [start, end],
+                      'firstWord': '你是', 'firstWordEnd': 7.14, 'firstWordProbability': .7,
+                      'positiveDurationFraction': 1, 'meanProbability': .8}
+                     for index, (start, end) in enumerate([(0, 21.66), (1.66, 19.66)])]
+            class Model:
+                calls = []
+
+                def transcribe(self, audio, **options):
+                    self.calls.append(options)
+                    shift = 0 if len(self.calls) == 1 else 1.66
+                    at = 5.74 if len(self.calls) == 1 else 5.78
+                    words = [SimpleNamespace(word='你是', start=at - shift, end=7.14 - shift, probability=.7)]
+                    words += [SimpleNamespace(word=character, start=7.14 + i * .5 - shift,
+                              end=7.64 + i * .5 - shift, probability=.8)
+                              for i, character in enumerate('荣耀的君王你是和平之主')]
+                    return [SimpleNamespace(start=at - shift, end=14 - shift, text='你是荣耀的君王你是和平之主', words=words)], None
+
+            model = Model()
+            args = (model, np.zeros(25 * 16000), 'audio-hash', [{'text': '你是荣耀的君王你是和平之主'}],
+                    [5.66], [(5.66, 7.14)], ['你是'], edges, 'zh', review, root, root / 'cache', lambda *a: ([], []), batch.save)
+            times, decisions = free.recover_initial(*args)
+            self.assertEqual(times, [5.76])
+            self.assertEqual(len(decisions[0]['windows']), 2)
+            self.assertTrue(all(not call['vad_filter'] and not call['condition_on_previous_text'] and
+                                'initial_prompt' not in call for call in model.calls))
+            wrong = copy.deepcopy(edges)
+            wrong[0]['valid'] = True
+            with self.assertRaisesRegex(ValueError, '边缘'):
+                free.recover_initial(*args[:7], wrong, *args[8:])
+            for path in (root / 'cache/free-initial-windows').glob('*.json'):
+                decoded = json.loads(path.read_text())
+                if decoded['bounds'][0] == 1.66:
+                    decoded['segments'][0]['words'][0]['start'] += 1
+                    path.write_text(json.dumps(decoded))
+            with self.assertRaisesRegex(ValueError, '两组自由转写'):
+                free.recover_initial(*args)
+            (root / 'medium/model.bin').write_bytes(b'changed')
+            with self.assertRaisesRegex(ValueError, '模型或词表'):
+                free.recover_initial(*args)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional transcript dependencies')
+    def test_free_initial_profile_rejects_changed_text_or_recording_before_alignment(self):
+        song = {'songId': '06-009', 'source': 'lyrics.txt', 'sha256': 'source-hash', 'reference': 'song.mp3',
+                'tracks': [{'file': 'song.mp3', 'sha256': 'audio-hash'}]}
+        original = {'sourceHash': 'source-hash', 'audioFile': 'song.mp3', 'audioHash': 'audio-hash',
+                    'freeInitialPrefix': {'version': 1}}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for field in ['sourceHash', 'audioFile', 'audioHash']:
+                result = transcript.generate(song, root, root, 2, free_initial_profile={**original, field: 'changed'})
+                self.assertIn('当前歌词或录音不一致', result[1])
+                evidence = json.loads((root / 'transcript-alignment/lyrics.txt.json').read_text())
+                self.assertEqual(evidence['status'], 'needs-calibration')
+
     def test_interrupted_transcription_replays_only_the_incomplete_chunk(self):
         from types import SimpleNamespace
         class Model:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify explicit original-language/translation blocks in a lyrics-only image."""
+"""Verify reviewed performed blocks in a lyrics image or an unchanged text source."""
 import argparse
 import hashlib
 import importlib.util
@@ -7,7 +7,7 @@ import json
 import math
 from pathlib import Path
 import time
-from sync_batch_sources import clean, image_source
+from sync_batch_sources import clean, image_source, text_source
 from sync_batch_align import export_result
 
 spec = importlib.util.spec_from_file_location('image_transcript_checks', Path(__file__).with_name('align-transcript-sync.py'))
@@ -15,6 +15,7 @@ checks = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checks)
 batch = checks.batch
 _model = None
+_model_path = None
 
 
 def transcript_blocks(profile, transcript, source):
@@ -25,14 +26,22 @@ def transcript_blocks(profile, transcript, source):
         region = block['region']
         if (region not in source['regions'] or not indices or indices != list(range(indices[0], indices[-1] + 1)) or
                 indices[0] < 0 or indices[-1] >= len(segments) or used.intersection(indices)):
-            raise ValueError('翻译对应的段落范围或图片区域无效')
+            raise ValueError('演唱片段范围或阅读区域无效')
         used.update(indices)
         selected = [segments[index] for index in indices]
         lexical = [word for segment in selected for word in segment.get('words', []) if clean(word['word'], language)]
         if not lexical:
             raise ValueError('指定段落没有可核对的人声词语')
-        definitions.append({'region': region, 'label': source['blocks'][region]['label'],
-                            'text': ' '.join(segment['text'].strip() for segment in selected)})
+        text = ' '.join(segment['text'].strip() for segment in selected)
+        if source.get('layout') == 'lyrics-only-text':
+            original = source['blocks'][region]['text']
+            text = block.get('sourceText', original)
+            if not clean(text, language) or clean(text, language) not in clean(original, language):
+                raise ValueError('实际演唱片段不属于指定正文阅读区域')
+            anchors, _ = checks.match_order([{'region': region, 'text': text}], lexical, language)
+            if len(anchors) != 1:
+                raise ValueError('指定演唱片段未覆盖正文阅读区域')
+        definitions.append({'region': region, 'label': source['blocks'][region]['label'], 'text': text})
         first = lexical[0]
         ranges.append((float(first['start']), float(first['end'])))
         words.append(clean(first['word'], language))
@@ -44,6 +53,8 @@ def transcript_blocks(profile, transcript, source):
         used.add(index)
     if used != set(range(len(segments))):
         raise ValueError('实际转写仍有未说明的演唱片段')
+    if source.get('layout') == 'lyrics-only-text' and {definition['region'] for definition in definitions} != set(source['regions']):
+        raise ValueError('实际演唱配置尚未覆盖全部正文阅读区域')
     estimates = [start for start, end in ranges]
     if (not estimates or any(not math.isfinite(value) or value < 0 for pair in ranges for value in pair) or
             any(end < start for start, end in ranges) or any(a + .5 >= b for a, b in zip(estimates, estimates[1:]))):
@@ -52,23 +63,30 @@ def transcript_blocks(profile, transcript, source):
 
 
 def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
-    global _model
+    global _model, _model_path
     started = time.monotonic()
     evidence_path = cache / 'transcript-alignment' / (song['source'] + '.json')
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
                 'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 6 if ctc_model_dir else 5,
-                'mode': 'image-translation-blocks', 'profile': profile, 'model': 'medium/int8'}}
+                'mode': 'image-translation-blocks' if song['type'] == 'image' else 'text-reviewed-performance',
+                'profile': profile, 'model': 'medium/int8'}}
     try:
         track = next((track for track in song['tracks'] if track['file'] == profile['audioFile']), None)
         if (song['sha256'] != profile['sourceHash'] or not track or track['sha256'] != profile['audioHash'] or
                 song['reference'] != profile['audioFile']):
-            raise ValueError('图片或原语言录音已变化，需重新核对翻译段落')
-        recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
-        if recognition['sha256'] != song['sha256']:
-            raise ValueError('图片识别已失效')
-        source = image_source(recognition)
-        if source.get('layout') != 'lyrics-only':
-            raise ValueError('该配置仅用于无乐谱的歌词图片')
+            raise ValueError('歌词素材或录音已变化，需重新核对演唱段落')
+        if song['type'] == 'image':
+            recognition = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())
+            if recognition['sha256'] != song['sha256']:
+                raise ValueError('图片识别已失效')
+            source = image_source(recognition)
+            if source.get('layout') != 'lyrics-only':
+                raise ValueError('该配置仅用于无乐谱的歌词图片')
+        else:
+            source = text_source(batch.ROOT / 'data' / song['source'], profile['language'])
+            source['layout'] = 'lyrics-only-text'
+            source['blocks'] = {item['region']: item for verse in source['verses'] for item in verse}
+            evidence['transcriptMatching']['algorithmVersion'] = 7
         asr_path = cache / 'asr' / (song['reference'] + '.json')
         if batch.checksum(asr_path) != profile['transcriptHash']:
             raise ValueError('转写已变化，需重新核对演唱段落')
@@ -79,10 +97,12 @@ def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
         definitions, estimates, ranges, anchor_words = transcript_blocks(profile, transcript, source)
         evidence.update(performanceOrder=definitions, estimates=estimates)
         evidence['transcriptMatching']['transcript'] = transcript
-        if _model is None:
+        selected_model = str(Path(model_dir) / 'medium') if profile.get('freeInitialPrefix') else 'medium'
+        if _model is None or _model_path != selected_model:
             from faster_whisper import WhisperModel
-            _model = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads,
+            _model = WhisperModel(selected_model, device='cpu', compute_type='int8', cpu_threads=threads,
                                   download_root=model_dir, local_files_only=True)
+            _model_path = selected_model
         from faster_whisper.audio import decode_audio
         from faster_whisper.tokenizer import Tokenizer
         tokenizer = Tokenizer(_model.hf_tokenizer, _model.model.is_multilingual, task='transcribe', language=language)
@@ -103,16 +123,24 @@ def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
             observations, times, decisions = checks.verified_window_times(_model, tokenizer, audio, definitions, estimates,
                 language, preceding, ranges, anchor_words, resume, save_windows)
         except ValueError:
-            if ctc_model_dir is None:
+            if profile.get('freeInitialPrefix'):
+                from sync_batch_free_prefix import recover_initial
+                observations = evidence['windows']
+                times, decisions = recover_initial(_model, audio, profile['audioHash'], definitions, estimates, ranges,
+                    anchor_words, observations, language, profile['freeInitialPrefix'], model_dir, cache,
+                    checks.confirm_transcript_windows, batch.save)
+            elif ctc_model_dir is None:
                 raise
-            from sync_batch_ctc import recover_initial
-            observations = evidence['windows']
-            times, decisions = recover_initial(audio, profile['audioHash'], definitions, estimates, ranges,
-                anchor_words, observations, ctc_model_dir, cache, checks.confirm_transcript_windows)
+            else:
+                from sync_batch_ctc import recover_initial
+                observations = evidence['windows']
+                times, decisions = recover_initial(audio, profile['audioHash'], definitions, estimates, ranges,
+                    anchor_words, observations, ctc_model_dir, cache, checks.confirm_transcript_windows)
         evidence['windows'] = observations
         evidence['transcriptMatching']['boundaryDecisions'] = decisions
+        coordinate = 'top' if song['type'] == 'image' else 'startLine'
         evidence['returnIndices'] = [index for index in range(1, len(definitions)) if
-            source['regions'][definitions[index]['region']]['top'] < source['regions'][definitions[index - 1]['region']]['top']]
+            source['regions'][definitions[index]['region']][coordinate] < source['regions'][definitions[index - 1]['region']][coordinate]]
         return export_result(song, batch.ROOT, cache, evidence_path, evidence, started, source,
                              definitions, times, [0])
     except (ValueError, FileNotFoundError, KeyError) as error:
@@ -130,9 +158,12 @@ if __name__ == '__main__':
     parser.add_argument('--ctc-model-dir', type=Path, help='Optional pinned MMS model for independently decoded initial words')
     args = parser.parse_args()
     profiles = json.loads(Path(__file__).with_name('sync-image-transcript-profiles.json').read_text())
+    text_profiles = Path(__file__).with_name('sync-text-transcript-profiles.json')
+    if text_profiles.exists():
+        profiles.update(json.loads(text_profiles.read_text()))
     unknown = sorted(set(args.songs) - profiles.keys())
     if unknown:
-        parser.error('这些曲目尚未核对图片与原歌词对应：' + '、'.join(unknown))
+        parser.error('这些曲目尚未核对素材与实际歌词对应：' + '、'.join(unknown))
     for song in batch.inventory():
-        if song['songId'] in args.songs and song['type'] == 'image' and not song['existing']:
+        if song['songId'] in args.songs and not song['existing']:
             print(generate(song, profiles[song['songId']], args.cache, args.model_dir, args.threads, args.ctc_model_dir), flush=True)

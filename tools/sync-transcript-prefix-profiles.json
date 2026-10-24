@@ -1,0 +1,32 @@
+{
+  "06-009": {
+    "sourceHash": "a991d62fe254802ffdbc53509d24420fc43e7260c6434ee187af5a1bbf160303",
+    "audioFile": "06-009天父世界歌.mp3",
+    "audioHash": "7c7527f4512d43950ceffb2d060c7a3f3fb5aa5a46b9d7486ee9a2598aff4708",
+    "freeInitialPrefix": {
+      "version": 1,
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    },
+    "review": "This Is My Father’s World / Audrey Assad。全部十二个正文阅读区域已由整曲转写逐字核对及原有上下文双窗口确认；首词This在两组已知歌词窗口夹到左缘，但词尾一致。另用两组无歌词提示的自由转写逐字且唯一确认This is my Father开头、真实首词正时长与词尾，两个起点在0.5秒内一致；不改变后续起点。"
+  },
+  "06-017": {
+    "sourceHash": "06ab05b5529d913cc999ee116068ea2ee994ce9f59a3be6ade5cd019d8db3f98",
+    "audioFile": "06-017主手所造万象生灵.mp3",
+    "audioHash": "59802878b02a5c025539c73670f173ba5f9f702c084bbba16f51899f2bed126b",
+    "freeInitialPrefix": {
+      "version": 1,
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    },
+    "review": "All Creatures of Our God and King。完整正文八个阅读区域与整曲转写对应，后续起点保持原有双窗口声学核对。整曲转写漏掉最初All，但两个无歌词提示的局部转写均逐字唯一识别All creatures of our开头，首词有正时长及概率依据，词尾与已知歌词窗口一致，两组实际起点在0.5秒内相符。"
+  }
+}

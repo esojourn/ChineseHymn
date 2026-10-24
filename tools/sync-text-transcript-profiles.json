@@ -1,0 +1,96 @@
+{
+  "02-013": {
+    "sourceHash": "47980c9faab3521a3604bbad6f5ccaeb8a60ac1ddcbc3c820db0cbec3a0c8e3f",
+    "audioFile": "02-013你是荣耀君王-领唱.mp3",
+    "audioHash": "deca3c092ebb440996c140d7fe8c30c1e08f53f8b390216ecacea7133b358782",
+    "transcriptHash": "ffb0fc09a166f269be0273ed681d9c1a2323b5971e999e1feb33bfd5715a508a",
+    "language": "zh",
+    "blocks": [
+      {
+        "region": "r1",
+        "segmentIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "sourceText": "你是荣耀的君王，你是和平之主， 你是天地万有主宰，唯有你圣洁公义， 天使都向你跪下，敬拜尊崇你， 因为在你有永生之道，你是主耶稣基督。"
+      },
+      {
+        "region": "r2",
+        "segmentIndices": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "sourceText": "和撒那归于大卫的子孙， 和撒那归于万王之王。 愿荣耀归于至高神，耶稣是弥赛亚。"
+      },
+      {
+        "region": "r3",
+        "segmentIndices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "sourceText": "你是荣耀的君王，你是和平之主， 你是天地万有主宰，唯有你圣洁公义， 天使都向你跪下，敬拜尊崇你， 因为在你有永生之道，你是主耶稣基督。"
+      },
+      {
+        "region": "r4",
+        "segmentIndices": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "sourceText": "和撒那归于大卫的子孙， 和撒那归于万王之王。 愿荣耀归于至高神，耶稣是弥赛亚。"
+      },
+      {
+        "region": "r4",
+        "segmentIndices": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "sourceText": "和撒那归于大卫的子孙， 和撒那归于万王之王。 愿荣耀归于至高神，耶稣是弥赛亚。"
+      },
+      {
+        "region": "r4",
+        "segmentIndices": [
+          28,
+          29
+        ],
+        "sourceText": "愿荣耀归于至高神，耶稣是弥赛亚。"
+      },
+      {
+        "region": "r4",
+        "segmentIndices": [
+          30,
+          31
+        ],
+        "sourceText": "愿荣耀归于至高神，耶稣是弥赛亚。"
+      }
+    ],
+    "freeInitialPrefix": {
+      "version": 1,
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "review": "整曲自由转写已逐段对应全部正文及末尾副歌、最后一句反复。首词在原有两个窗口均被夹到窗口左缘，但词尾一致；仅用两个不提供歌词提示的自由转写窗口逐字确认正文起句及真实首词起止，保留0.5秒一致性及原有首词、词尾、概率、时长和后续顺序检查。"
+    },
+    "performanceReview": "中文正文含主歌和副歌两遍。实际录音第二遍副歌后再唱一次副歌，并两次单独重复愿荣耀归于至高神、耶稣是弥赛亚最后一句。全部32个整曲转写片段均已分配，末尾片段对应现有r4中的原文子串，未修改歌词或跳过演唱段落。各块仍须至少60%正文逐字对应和原有双窗口声学核对，首句另有两个完整起句的自由转写证据。"
+  }
+}

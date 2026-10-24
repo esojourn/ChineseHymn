@@ -1,0 +1,369 @@
+{
+  "songId": "04-768",
+  "source": "04-768奇妙平安由神而来.txt",
+  "sourceHash": "c402ab39b206c892bae9584bd0af26d3bd64f0fd6428c6f367cf22fd4742ba0d",
+  "trackHashes": [
+    {
+      "file": "04-768奇妙平安由神而来.mp3",
+      "sha256": "f57486c2082cc16eb85324673a9195db36262ce339ab762160206ca7fc4ffb2a"
+    },
+    {
+      "file": "04-768奇妙平安由神而来-领唱.mp3",
+      "sha256": "b675b38da20c92e8744cd508c45e914767bf9d7f11b4b01110368f3eaeecb0f0"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "c402ab39b206c892bae9584bd0af26d3bd64f0fd6428c6f367cf22fd4742ba0d",
+      "file": "sweet-peace-wiki.mid",
+      "sha256": "2333a0cb21cc81e3b0b50e412f1cacee5dd72069cb2dc3c862271b343e12aec8",
+      "url": "https://www.hymnwiki.org/wiki/images/7/79/039_Frid%2C_frid%2C_Guds_frid.mid",
+      "textReferenceUrl": "https://hymnary.org/hymn/CYBER/6420",
+      "scoreReferenceUrl": "https://www.hymnwiki.org/wiki/images/c/cf/039_Frid%2C_frid%2C_Guds_frid.ly",
+      "scoreReferenceSha256": "99cd3edf564d446142613912e69b9fc34f4b0f92a881ce24fd6836042e86bd43",
+      "printedScoreUrl": "https://www.hymnwiki.org/wiki/images/8/84/039_Frid%2C_frid%2C_Guds_frid.pdf",
+      "printedScoreSha256": "f346f0ae7b289e9803572b1507ed4fc3720adc13dcda728f81dd5a7619b049be",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "有一美意入我心灵",
+          "平安平安奇妙平安"
+        ],
+        [
+          "有十字架才有安宁",
+          "平安平安奇妙平安"
+        ],
+        [
+          "当我承认耶稣救主",
+          "平安平安奇妙平安"
+        ],
+        [
+          "居主恩中得享安详",
+          "平安平安奇妙平安"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            0,
+            10,
+            8,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 32,
+          "pitches": [
+            0,
+            8,
+            1,
+            0,
+            10
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 58,
+        "midiNoteCount": 58,
+        "editCost": 0,
+        "runnerUpCost": 44,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 32,
+            "possibleMidiNoteIndices": [
+              32
+            ],
+            "at": 12.25
+          }
+        ],
+        "offsets": [
+          0.0,
+          12.25
+        ]
+      },
+      "scoreVoiceReview": {
+        "voice": "sopranos",
+        "absoluteLilyPond": true,
+        "continuedTiedHeadsExcluded": true,
+        "sourceBoundaryNoteIndices": [
+          0,
+          32
+        ]
+      },
+      "formReview": "Sweet Peace, the Gift of God’s Love / Peter P. Bilhorn。中文四段对应英文四段，前四行主歌，后平安起为副歌。已查看 Jubelklangen 1896 第39首瑞典文五线谱，核对最高声部 LilyPond 与直接链接 MIDI 的完整音序列，副歌从第9小节、第四谱行 c 开始；不是 Far Away in the Depths 的 Wonderful Peace。实际各段仍需和声、旋律、调性、0.5秒起点及反复相位一致，其他录音另须实际音频对应。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 26.034631,
+    "music": {
+      "period": 34.9,
+      "similarity": 0.9822574257850647,
+      "initialOnsetEstimate": 7.208,
+      "shifts": [
+        0.0,
+        34.9,
+        69.8,
+        104.7
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17183536649775027,
+            "key": 8,
+            "at": 9.7,
+            "span": 36.5,
+            "starts": [
+              9.2,
+              27.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5633481525759984,
+            "key": 1,
+            "at": 22.3,
+            "span": 30.1,
+            "starts": [
+              21.8,
+              36.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2445424252048263,
+            "key": 8,
+            "starts": [
+              9.0,
+              26.700000762939453
+            ],
+            "span": 37.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.3663837247045129,
+            "key": 1,
+            "starts": [
+              2.5999999046325684,
+              14.100000381469727
+            ],
+            "span": 28.399999618530273
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17731133709664332,
+            "key": 8,
+            "at": 44.6,
+            "span": 36.5,
+            "starts": [
+              44.1,
+              61.9
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.562635011864255,
+            "key": 1,
+            "at": 58.2,
+            "span": 29.1,
+            "starts": [
+              57.7,
+              71.4
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.24548551892824363,
+            "key": 8,
+            "starts": [
+              43.900001525878906,
+              61.599998474121094
+            ],
+            "span": 37.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.35817250686252017,
+            "key": 1,
+            "starts": [
+              37.29999923706055,
+              49.0
+            ],
+            "span": 28.60000228881836
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.17477867323211407,
+            "key": 8,
+            "at": 79.5,
+            "span": 36.5,
+            "starts": [
+              79.0,
+              96.8
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5599731182983748,
+            "key": 1,
+            "at": 92.1,
+            "span": 30.1,
+            "starts": [
+              91.6,
+              106.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.24245441950494717,
+            "key": 8,
+            "starts": [
+              78.80000305175781,
+              96.5
+            ],
+            "span": 37.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.36172491909781296,
+            "key": 1,
+            "starts": [
+              72.19999694824219,
+              83.9000015258789
+            ],
+            "span": 28.600006103515625
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.18094001048615463,
+            "key": 8,
+            "at": 114.4,
+            "span": 35.3,
+            "starts": [
+              113.9,
+              131.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5742924206577946,
+            "key": 1,
+            "at": 108.1,
+            "span": 27.2,
+            "starts": [
+              107.6,
+              121.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.2524068662976809,
+            "key": 8,
+            "starts": [
+              113.80000305175781,
+              131.5
+            ],
+            "span": 35.5
+          },
+          "runnerUp": {
+            "cost": 0.36008173551805384,
+            "key": 1,
+            "starts": [
+              107.19999694824219,
+              118.80000305175781
+            ],
+            "span": 28.5
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      12.25
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "有一美意入我心灵； 使我喜乐发出歌声； 反复欢呼不住歌颂； 平安由神恩赐来。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "平安，平安，奇妙平安由神来， 奇妙平安由神而来， 奇妙平安由神来。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "有十字架才有安宁， 主代我死罪债还清； 无其他根基能稳定； 因这平安由神来。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "平安，平安，奇妙平安由神来， 奇妙平安由神而来， 奇妙平安由神来。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "当我承认耶稣救主； 我心充满安慰丰富； 从主我受无限恩福； 平安由神恩赐来。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "平安，平安，奇妙平安由神来， 奇妙平安由神而来， 奇妙平安由神来。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "居主恩中得享安详； 时常靠近救主身旁； 惟他能赐平安指望； 平安由神恩赐来。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "平安，平安，奇妙平安由神来， 奇妙平安由神而来， 奇妙平安由神来。",
+      "label": "第4段"
+    }
+  ],
+  "recordingMaps": {
+    "04-768奇妙平安由神而来.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.8677823543548584,
+      "meanPathCost": 0.13061082363128662,
+      "cueWindowCosts": [
+        0.14426609873771667,
+        0.0815066322684288,
+        0.14782001078128815,
+        0.09031767398118973,
+        0.15106387436389923,
+        0.08280078321695328,
+        0.1372235268354416,
+        0.0789063423871994
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 2.651
+}

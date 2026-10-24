@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "02-421",
+  "status": "reviewed",
+  "source": {
+    "file": "02-421奇妙的主.txt",
+    "sha256": "23a99cc77a66b6f7992c84fe210a074183932045250ccd51ea0eb22e1060a4a0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-421奇妙的主.mp3",
+      "sha256": "bf4e75526d963ab17f3e12a80d1612c733f957a9fe323010ed70889aa1b3f72b",
+      "duration": 203.36326530612246,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 30.35,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.81,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 79.01,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 103.58,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 127.97,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 152.3,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 176.81,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-421奇妙的主-领唱.mp3",
+      "sha256": "3abde5817b4b602e6dfa44134313f330aeaac7c27d3a5959574ca50c9f857ccf",
+      "duration": 202.2661224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 6.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.85,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.21,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 79.51,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.98,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 128.47,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 152.8,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 177.31,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "奇妙的降生：出世於马棚， 道成肉身，谦卑披上人形； 降临罪恶世界，彰显神爱， 望罪人开心门，让主进来。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主的尊名奇妙，主的冠冕荣耀， 主奇妙胜利，我得恩丰饶， 奇妙加略山岭，奇妙丰盛恩典， 我主奇妙的爱向我彰显。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "奇妙的生命：主为人服务， 是贫寒人良友，解人困苦； 不停劳苦，各处拯溺救殆， 对最卑污者显不死之爱。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "主的尊名奇妙，主的冠冕荣耀， 主奇妙胜利，我得恩丰饶， 奇妙加略山岭，奇妙丰盛恩典， 我主奇妙的爱向我彰显。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "奇妙的死亡：决不是失败， 主在十架成全最大使命； 从死复活，救赎大功告成， 永远败坏仇敌所有权柄。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "主的尊名奇妙，主的冠冕荣耀， 主奇妙胜利，我得恩丰饶， 奇妙加略山岭，奇妙丰盛恩典， 我主奇妙的爱向我彰显。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "奇妙的盼望：救主快再来， 万国君王统治直至万代； 主荣耀的应许，坚定不移， 救主公平国度终必胜利。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "主的尊名奇妙，主的冠冕荣耀， 主奇妙胜利，我得恩丰饶， 奇妙加略山岭，奇妙丰盛恩典， 我主奇妙的爱向我彰显。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-421奇妙的主.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

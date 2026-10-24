@@ -961,6 +961,24 @@ class BatchTests(unittest.TestCase):
             (root / 'data/06-015示例.txt').write_text('标题\n\n歌词整理中。。。\nhttps://example.com/song')
             self.assertTrue(all(not item['lyricsAvailable'] for item in batch.inventory(root)))
 
+    def test_final_repeat_instruction_reuses_original_regions_in_performed_order(self):
+        original = '标题\n\n1.第一段歌词\n下一行\n\n2.第二段歌词\n末句\n\n（重复一次）\n'
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'example.txt'
+            path.write_text(original)
+            source = sources.text_source(path)
+            self.assertEqual(source['regions'], {
+                'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3},
+                'r2': {'kind': 'text', 'startLine': 5, 'endLine': 6}})
+            self.assertEqual([verse[0]['region'] for verse in source['verses']], ['r1', 'r2', 'r1', 'r2'])
+            self.assertEqual(path.read_text(), original)
+            path.write_text(original.replace('（重复一次）', '我们重复一次爱的诗歌'))
+            ordinary = sources.text_source(path)
+            self.assertEqual(len(ordinary['verses']), 2)
+            self.assertIn('我们重复一次爱的诗歌', ordinary['verses'][-1][-1]['text'])
+            path.write_text(original + '最后还有歌词\n')
+            self.assertEqual(len(sources.text_source(path)['verses']), 2)
+
     def test_artist_and_songwriting_credits_are_not_english_lyric_regions(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / '06-001示例.txt'

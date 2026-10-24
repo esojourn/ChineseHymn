@@ -44,6 +44,10 @@ def strip_verse(text):
 
 def text_source(path, language='zh'):
     lines = prepare.read_text(path).split('\n')
+    # A standalone final instruction refers to the whole printed song. Keep
+    # its display line intact, but reuse the real reading regions on the repeat.
+    last = next((i for i in range(len(lines) - 1, -1, -1) if lines[i].strip()), None)
+    repeat_once = last is not None and re.fullmatch(r'[（(]重复一次[）)]', lines[last].strip()) is not None
     numbered = [i for i, line in enumerate(lines) if verse_number(line) == 1]
     first = numbered[0] if numbered else next((i + 1 for i, line in enumerate(lines) if not line.strip()), 1)
     regions, verses = {}, {}
@@ -63,6 +67,9 @@ def text_source(path, language='zh'):
 
     for i in range(first, len(lines)):
         line = lines[i].strip()
+        if repeat_once and i == last:
+            flush()
+            break
         if re.fullmatch('-{2,}', line):
             trailing = [value.strip() for value in lines[i + 1:] if value.strip()]
             if len(trailing) == 1 and ' - ' in trailing[0] and not verse_number(trailing[0]):
@@ -88,7 +95,10 @@ def text_source(path, language='zh'):
         if len(pending) == 4:
             flush()
     flush()
-    return {'regions': regions, 'verses': list(verses.values()), 'language': language}
+    order = list(verses.values())
+    if repeat_once:
+        order = order + [[dict(item) for item in verse] for verse in order]
+    return {'regions': regions, 'verses': order, 'language': language}
 
 
 def image_lyric_source(ocr):

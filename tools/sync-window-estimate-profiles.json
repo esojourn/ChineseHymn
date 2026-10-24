@@ -345,5 +345,85 @@
       "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
     },
     "review": "原文三段，每段主歌四行及副歌两行，已核对实际三次完整音乐反复。旧字数窗口偏晚，按整曲转写中主歌和副歌起句的位置重新取样。六个最终时间仍由不同上下文的有效首词及音乐反复核对，伴奏另做独立chroma-DTW对应。"
+  },
+  "03-033": {
+    "version": 1,
+    "sourceHash": "e0affe7b7b39f711eeb00daa7d7062a9ca9f38b76a92f35a7138001dabbd90b2",
+    "tracks": [
+      {
+        "file": "03-033我知道我的救赎主活着.mp3",
+        "sha256": "85cba39232e52b6da0df9f2d34a06fc11143cfc19d7e764eb49cd6dcef4c76f4"
+      },
+      {
+        "file": "03-033我知道我的救赎主活着-领唱.mp3",
+        "sha256": "55183fd9fab299c0191c5791cb76fb24eec309afff9f88de00cf44e9c7055a47"
+      }
+    ],
+    "audioFile": "03-033我知道我的救赎主活着-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "estimates": [
+      7.34,
+      36.4,
+      66.4,
+      96.4
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/03-033我知道我的救赎主活着-领唱.mp3.json",
+      "sha256": "81e58dc1be7dfb99657fe1f1fcd03d8e408c0b5938525257e3c30a2edf928c74",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "已核对原文段落及相应音乐反复；只在完整转写的对应起句附近调整上下文取样位置。全部最终起点仍由有效声学首词、不同上下文窗口及原有实际音乐相位检查确定，其他录音独立做chroma-DTW对应。"
+  },
+  "03-031": {
+    "version": 1,
+    "sourceHash": "43ac8a83d7e5e6bf7de1f7a4e00c0172d96149531f39d70cd18598b4ad480b99",
+    "tracks": [
+      {
+        "file": "03-031亲爱主，牵我手.mp3",
+        "sha256": "ac082e499a5f7c464127e248cb972e8e2312c55dd3dea756e854720bc317a07c"
+      },
+      {
+        "file": "03-031亲爱主，牵我手-领唱.mp3",
+        "sha256": "1839ef82a428dfd127a431fd812797eb231e3fcccb4964060e2c76b79f586d40"
+      }
+    ],
+    "audioFile": "03-031亲爱主，牵我手-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "estimates": [
+      11.1,
+      32.88,
+      46.42,
+      69.92,
+      86.1,
+      107.64,
+      121.42,
+      144.92
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/03-031亲爱主，牵我手-领唱.mp3.json",
+      "sha256": "5b2bbe268c08354107b2cc1150e945a46b1da0a2878983ddb26940ba962f5d1c",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "已核对原文段落及相应音乐反复；只在完整转写的对应起句附近调整上下文取样位置。全部最终起点仍由有效声学首词、不同上下文窗口及原有实际音乐相位检查确定，其他录音独立做chroma-DTW对应。"
   }
 }

@@ -321,7 +321,9 @@ def recording_cues(definitions, cue_times, regions, duration, return_indices):
         cue = {'at': at, 'region': item['region'], 'label': item['label'], 'transition': 'reading'}
         if not index:
             cue.update(moveStart=0, transition='intro')
-        elif index in return_indices:
+        elif (index in return_indices or
+              regions[item['region']].get('kind') == 'text' and
+              regions[item['region']]['startLine'] < regions[definitions[index - 1]['region']]['startLine']):
             cue['transition'] = 'return'
         cues.append(cue)
     return cues

@@ -979,6 +979,15 @@ class BatchTests(unittest.TestCase):
             path.write_text(original + '最后还有歌词\n')
             self.assertEqual(len(sources.text_source(path)['verses']), 2)
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_text_repeats_mark_only_backward_reading_moves_as_returns(self):
+        from sync_batch_align import recording_cues
+        regions = {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 5},
+                   'r2': {'kind': 'text', 'startLine': 8, 'endLine': 11}}
+        definitions = [{'region': region, 'label': region} for region in ['r1', 'r2', 'r1', 'r2']]
+        cues = recording_cues(definitions, [1, 11, 21, 31], regions, 40, set())
+        self.assertEqual([cue['transition'] for cue in cues], ['intro', 'reading', 'return', 'reading'])
+
     def test_artist_and_songwriting_credits_are_not_english_lyric_regions(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / '06-001示例.txt'

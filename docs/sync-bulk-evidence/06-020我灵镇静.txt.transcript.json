@@ -1,0 +1,3475 @@
+{
+  "songId": "06-020",
+  "source": "06-020我灵镇静.txt",
+  "sourceHash": "96a0f008121cdb0e5e413dbcde202b4a952e562f5fd4aa14002e0488d9926373",
+  "trackHashes": [
+    {
+      "file": "06-020我灵镇静.mp3",
+      "sha256": "06652eb0c32569a7b2b9443a20f85d8607cecb8ff4cf61e69a7731d59da3056c"
+    }
+  ],
+  "transcriptMatching": {
+    "algorithmVersion": 7,
+    "mode": "text-reviewed-performance",
+    "profile": {
+      "sourceHash": "96a0f008121cdb0e5e413dbcde202b4a952e562f5fd4aa14002e0488d9926373",
+      "audioFile": "06-020我灵镇静.mp3",
+      "audioHash": "06652eb0c32569a7b2b9443a20f85d8607cecb8ff4cf61e69a7731d59da3056c",
+      "transcriptHash": "98b7d1490b05f563d74c81eb3d6a82b60810a4182996afa7e21434045475a884",
+      "language": "en",
+      "blocks": [
+        {
+          "region": "r1",
+          "segmentIndices": [
+            0,
+            1
+          ]
+        },
+        {
+          "region": "r2",
+          "segmentIndices": [
+            2,
+            3
+          ]
+        },
+        {
+          "region": "r3",
+          "segmentIndices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "region": "r4",
+          "segmentIndices": [
+            8
+          ]
+        },
+        {
+          "region": "r7",
+          "segmentIndices": [
+            9,
+            10
+          ]
+        },
+        {
+          "region": "r8",
+          "segmentIndices": [
+            11,
+            12
+          ]
+        }
+      ],
+      "nonLyricSegments": [
+        {
+          "index": 13,
+          "text": "Thank you."
+        }
+      ],
+      "unsungRegions": [
+        {
+          "region": "r5",
+          "sourceText": "Be still, my soul: when dearest friends depart, And all is darkened in the vale of tears, Then shalt thou better know His love, His heart, Who comes to soothe thy sorrow and thy fears,",
+          "reason": "整曲录音实际依次演唱原文第1、2、4段，未唱when dearest friends depart的第3段。第3段原文保留。"
+        },
+        {
+          "region": "r6",
+          "sourceText": "Be still, my soul: thy Jesus can repay From His own fullness all He takes away.",
+          "reason": "整曲录音实际依次演唱原文第1、2、4段，未唱when dearest friends depart的第3段。第3段原文保留。"
+        }
+      ],
+      "performanceReview": "Be Still, My Soul。已逐段核对完整英文转写，实际演唱原文第1、2、4段，原文第3段未唱，页面仍保留全部原文坐标。全部13个演唱片段均对应现有正文，末尾Thank you为致谢，不作为歌词。每个实际阅读区域仍须正文至少60%逐字对应及原有双窗口起点、词尾与实际演唱顺序检查。"
+    },
+    "model": "medium/int8",
+    "transcript": {
+      "file": "06-020我灵镇静.mp3",
+      "sha256": "06652eb0c32569a7b2b9443a20f85d8607cecb8ff4cf61e69a7731d59da3056c",
+      "model": "medium",
+      "language": "en",
+      "duration": 172.4194375,
+      "segments": [
+        {
+          "seek": 0,
+          "start": 0.0,
+          "end": 16.44,
+          "text": " Be still, my soul, the Lord is on your side. Bear patiently the cross of grief or pain.",
+          "avgLogprob": -0.2640131287849866,
+          "noSpeechProbability": 0.4654010534286499,
+          "words": [
+            {
+              "word": " Be",
+              "start": 0.0,
+              "end": 1.54,
+              "probability": 0.17980711162090302
+            },
+            {
+              "word": " still,",
+              "start": 1.54,
+              "end": 2.22,
+              "probability": 0.9860682487487793
+            },
+            {
+              "word": " my",
+              "start": 2.62,
+              "end": 2.8,
+              "probability": 0.9438546299934387
+            },
+            {
+              "word": " soul,",
+              "start": 2.8,
+              "end": 4.0,
+              "probability": 0.9946866035461426
+            },
+            {
+              "word": " the",
+              "start": 4.56,
+              "end": 4.82,
+              "probability": 0.9065930843353271
+            },
+            {
+              "word": " Lord",
+              "start": 4.82,
+              "end": 5.3,
+              "probability": 0.9750810861587524
+            },
+            {
+              "word": " is",
+              "start": 5.3,
+              "end": 5.9,
+              "probability": 0.9979853630065918
+            },
+            {
+              "word": " on",
+              "start": 5.9,
+              "end": 6.4,
+              "probability": 0.9960165619850159
+            },
+            {
+              "word": " your",
+              "start": 6.4,
+              "end": 6.96,
+              "probability": 0.9847404360771179
+            },
+            {
+              "word": " side.",
+              "start": 6.96,
+              "end": 9.0,
+              "probability": 0.9985979199409485
+            },
+            {
+              "word": " Bear",
+              "start": 9.62,
+              "end": 9.84,
+              "probability": 0.7721158862113953
+            },
+            {
+              "word": " patiently",
+              "start": 9.84,
+              "end": 11.1,
+              "probability": 0.9941207766532898
+            },
+            {
+              "word": " the",
+              "start": 11.1,
+              "end": 12.9,
+              "probability": 0.9464514255523682
+            },
+            {
+              "word": " cross",
+              "start": 12.9,
+              "end": 13.38,
+              "probability": 0.9025804400444031
+            },
+            {
+              "word": " of",
+              "start": 13.38,
+              "end": 13.8,
+              "probability": 0.9235092997550964
+            },
+            {
+              "word": " grief",
+              "start": 13.8,
+              "end": 14.42,
+              "probability": 0.9972405433654785
+            },
+            {
+              "word": " or",
+              "start": 14.42,
+              "end": 14.98,
+              "probability": 0.49392470717430115
+            },
+            {
+              "word": " pain.",
+              "start": 14.98,
+              "end": 16.44,
+              "probability": 0.998308539390564
+            }
+          ]
+        },
+        {
+          "seek": 1644,
+          "start": 16.44,
+          "end": 32.3,
+          "text": " Leave to your God, to order and provide, In every change, be faithful, we'll remain.",
+          "avgLogprob": -0.3918711948394775,
+          "noSpeechProbability": 0.5145447254180908,
+          "words": [
+            {
+              "word": " Leave",
+              "start": 16.44,
+              "end": 17.68,
+              "probability": 0.06615105271339417
+            },
+            {
+              "word": " to",
+              "start": 17.68,
+              "end": 18.38,
+              "probability": 0.934363067150116
+            },
+            {
+              "word": " your",
+              "start": 18.38,
+              "end": 18.96,
+              "probability": 0.7907379865646362
+            },
+            {
+              "word": " God,",
+              "start": 18.96,
+              "end": 20.32,
+              "probability": 0.48899969458580017
+            },
+            {
+              "word": " to",
+              "start": 21.0,
+              "end": 21.2,
+              "probability": 0.940951406955719
+            },
+            {
+              "word": " order",
+              "start": 21.2,
+              "end": 21.9,
+              "probability": 0.9417681694030762
+            },
+            {
+              "word": " and",
+              "start": 21.9,
+              "end": 22.78,
+              "probability": 0.9824386239051819
+            },
+            {
+              "word": " provide,",
+              "start": 22.78,
+              "end": 24.32,
+              "probability": 0.9420186281204224
+            },
+            {
+              "word": " In",
+              "start": 25.64,
+              "end": 26.1,
+              "probability": 0.7028677463531494
+            },
+            {
+              "word": " every",
+              "start": 26.1,
+              "end": 27.0,
+              "probability": 0.9715514183044434
+            },
+            {
+              "word": " change,",
+              "start": 27.0,
+              "end": 28.16,
+              "probability": 0.9907777309417725
+            },
+            {
+              "word": " be",
+              "start": 28.9,
+              "end": 29.1,
+              "probability": 0.7210743427276611
+            },
+            {
+              "word": " faithful,",
+              "start": 29.1,
+              "end": 29.94,
+              "probability": 0.9938511848449707
+            },
+            {
+              "word": " we'll",
+              "start": 30.22,
+              "end": 31.02,
+              "probability": 0.7224859297275543
+            },
+            {
+              "word": " remain.",
+              "start": 31.02,
+              "end": 32.3,
+              "probability": 0.9917774200439453
+            }
+          ]
+        },
+        {
+          "seek": 3230,
+          "start": 32.3,
+          "end": 40.72,
+          "text": " Be still, my soul, your best, your heavenly friend",
+          "avgLogprob": -0.37551759756528413,
+          "noSpeechProbability": 0.5777108073234558,
+          "words": [
+            {
+              "word": " Be",
+              "start": 32.3,
+              "end": 34.02,
+              "probability": 0.22115230560302734
+            },
+            {
+              "word": " still,",
+              "start": 34.02,
+              "end": 34.58,
+              "probability": 0.9768422245979309
+            },
+            {
+              "word": " my",
+              "start": 34.58,
+              "end": 35.06,
+              "probability": 0.943648099899292
+            },
+            {
+              "word": " soul,",
+              "start": 35.06,
+              "end": 36.26,
+              "probability": 0.9829620718955994
+            },
+            {
+              "word": " your",
+              "start": 36.72,
+              "end": 36.94,
+              "probability": 0.780854344367981
+            },
+            {
+              "word": " best,",
+              "start": 36.94,
+              "end": 37.52,
+              "probability": 0.7065136432647705
+            },
+            {
+              "word": " your",
+              "start": 37.58,
+              "end": 38.32,
+              "probability": 0.8265880942344666
+            },
+            {
+              "word": " heavenly",
+              "start": 38.32,
+              "end": 38.92,
+              "probability": 0.9855965971946716
+            },
+            {
+              "word": " friend",
+              "start": 38.92,
+              "end": 40.72,
+              "probability": 0.9156098961830139
+            }
+          ]
+        },
+        {
+          "seek": 3230,
+          "start": 40.72,
+          "end": 48.58,
+          "text": " Through thorny ways leads to a joyful end",
+          "avgLogprob": -0.37551759756528413,
+          "noSpeechProbability": 0.5777108073234558,
+          "words": [
+            {
+              "word": " Through",
+              "start": 40.72,
+              "end": 41.96,
+              "probability": 0.5023369789123535
+            },
+            {
+              "word": " thorny",
+              "start": 41.96,
+              "end": 43.0,
+              "probability": 0.9485081136226654
+            },
+            {
+              "word": " ways",
+              "start": 43.0,
+              "end": 44.34,
+              "probability": 0.5990445017814636
+            },
+            {
+              "word": " leads",
+              "start": 44.34,
+              "end": 45.08,
+              "probability": 0.8833206295967102
+            },
+            {
+              "word": " to",
+              "start": 45.08,
+              "end": 45.86,
+              "probability": 0.9916198253631592
+            },
+            {
+              "word": " a",
+              "start": 45.86,
+              "end": 46.2,
+              "probability": 0.9893448948860168
+            },
+            {
+              "word": " joyful",
+              "start": 46.2,
+              "end": 47.1,
+              "probability": 0.9895474910736084
+            },
+            {
+              "word": " end",
+              "start": 47.1,
+              "end": 48.58,
+              "probability": 0.9878986477851868
+            }
+          ]
+        },
+        {
+          "seek": 3230,
+          "start": 52.88,
+          "end": 61.02,
+          "text": " Be still, my soul, your God will undertake",
+          "avgLogprob": -0.37551759756528413,
+          "noSpeechProbability": 0.5777108073234558,
+          "words": [
+            {
+              "word": " Be",
+              "start": 52.88,
+              "end": 54.28,
+              "probability": 0.34470367431640625
+            },
+            {
+              "word": " still,",
+              "start": 54.28,
+              "end": 54.86,
+              "probability": 0.9988922476768494
+            },
+            {
+              "word": " my",
+              "start": 54.86,
+              "end": 55.4,
+              "probability": 0.9955078363418579
+            },
+            {
+              "word": " soul,",
+              "start": 55.4,
+              "end": 56.56,
+              "probability": 0.9995564818382263
+            },
+            {
+              "word": " your",
+              "start": 57.06,
+              "end": 57.4,
+              "probability": 0.9811341762542725
+            },
+            {
+              "word": " God",
+              "start": 57.4,
+              "end": 57.9,
+              "probability": 0.9428039789199829
+            },
+            {
+              "word": " will",
+              "start": 57.9,
+              "end": 58.84,
+              "probability": 0.9516642093658447
+            },
+            {
+              "word": " undertake",
+              "start": 58.84,
+              "end": 61.02,
+              "probability": 0.9757307767868042
+            }
+          ]
+        },
+        {
+          "seek": 6102,
+          "start": 61.02,
+          "end": 69.72,
+          "text": " To guide the future as he has the past.",
+          "avgLogprob": -0.23327213847959363,
+          "noSpeechProbability": 0.699198305606842,
+          "words": [
+            {
+              "word": " To",
+              "start": 61.02,
+              "end": 62.34,
+              "probability": 0.19285650551319122
+            },
+            {
+              "word": " guide",
+              "start": 62.34,
+              "end": 63.08,
+              "probability": 0.7979022264480591
+            },
+            {
+              "word": " the",
+              "start": 63.08,
+              "end": 63.74,
+              "probability": 0.939283549785614
+            },
+            {
+              "word": " future",
+              "start": 63.74,
+              "end": 65.44,
+              "probability": 0.9822725057601929
+            },
+            {
+              "word": " as",
+              "start": 65.44,
+              "end": 66.12,
+              "probability": 0.893172562122345
+            },
+            {
+              "word": " he",
+              "start": 66.12,
+              "end": 66.68,
+              "probability": 0.6225767135620117
+            },
+            {
+              "word": " has",
+              "start": 66.68,
+              "end": 67.22,
+              "probability": 0.9310601353645325
+            },
+            {
+              "word": " the",
+              "start": 67.22,
+              "end": 67.82,
+              "probability": 0.7693389654159546
+            },
+            {
+              "word": " past.",
+              "start": 67.82,
+              "end": 69.72,
+              "probability": 0.5316458940505981
+            }
+          ]
+        },
+        {
+          "seek": 6102,
+          "start": 70.42,
+          "end": 77.3,
+          "text": " Your hope, your confidence, let nothing shake.",
+          "avgLogprob": -0.23327213847959363,
+          "noSpeechProbability": 0.699198305606842,
+          "words": [
+            {
+              "word": " Your",
+              "start": 70.42,
+              "end": 70.66,
+              "probability": 0.9291117191314697
+            },
+            {
+              "word": " hope,",
+              "start": 70.66,
+              "end": 71.18,
+              "probability": 0.9438619613647461
+            },
+            {
+              "word": " your",
+              "start": 71.26,
+              "end": 72.56,
+              "probability": 0.9379385113716125
+            },
+            {
+              "word": " confidence,",
+              "start": 72.56,
+              "end": 74.12,
+              "probability": 0.990715742111206
+            },
+            {
+              "word": " let",
+              "start": 74.12,
+              "end": 74.76,
+              "probability": 0.9385280609130859
+            },
+            {
+              "word": " nothing",
+              "start": 74.76,
+              "end": 75.68,
+              "probability": 0.9909597635269165
+            },
+            {
+              "word": " shake.",
+              "start": 75.68,
+              "end": 77.3,
+              "probability": 0.9930724501609802
+            }
+          ]
+        },
+        {
+          "seek": 6102,
+          "start": 78.72,
+          "end": 85.64,
+          "text": " All now mysterious shall be bright at last.",
+          "avgLogprob": -0.23327213847959363,
+          "noSpeechProbability": 0.699198305606842,
+          "words": [
+            {
+              "word": " All",
+              "start": 78.72,
+              "end": 78.96,
+              "probability": 0.9797849059104919
+            },
+            {
+              "word": " now",
+              "start": 78.96,
+              "end": 79.38,
+              "probability": 0.894475519657135
+            },
+            {
+              "word": " mysterious",
+              "start": 79.38,
+              "end": 81.38,
+              "probability": 0.9767667055130005
+            },
+            {
+              "word": " shall",
+              "start": 81.38,
+              "end": 82.46,
+              "probability": 0.768557608127594
+            },
+            {
+              "word": " be",
+              "start": 82.46,
+              "end": 83.08,
+              "probability": 0.9963453412055969
+            },
+            {
+              "word": " bright",
+              "start": 83.08,
+              "end": 83.72,
+              "probability": 0.9881701469421387
+            },
+            {
+              "word": " at",
+              "start": 83.72,
+              "end": 84.82,
+              "probability": 0.9823578596115112
+            },
+            {
+              "word": " last.",
+              "start": 84.82,
+              "end": 85.64,
+              "probability": 0.9976248145103455
+            }
+          ]
+        },
+        {
+          "seek": 8564,
+          "start": 85.64,
+          "end": 101.78,
+          "text": " Be still, my soul, the waves, the winds, still no ho. His voice throughrode them while he dwelt below.",
+          "avgLogprob": -0.4822840467095375,
+          "noSpeechProbability": 0.2279367446899414,
+          "words": [
+            {
+              "word": " Be",
+              "start": 85.64,
+              "end": 87.02,
+              "probability": 0.2740703821182251
+            },
+            {
+              "word": " still,",
+              "start": 87.02,
+              "end": 87.54,
+              "probability": 0.987514317035675
+            },
+            {
+              "word": " my",
+              "start": 87.54,
+              "end": 88.1,
+              "probability": 0.9654593467712402
+            },
+            {
+              "word": " soul,",
+              "start": 88.1,
+              "end": 89.4,
+              "probability": 0.996517539024353
+            },
+            {
+              "word": " the",
+              "start": 89.68,
+              "end": 90.16,
+              "probability": 0.7808849811553955
+            },
+            {
+              "word": " waves,",
+              "start": 90.16,
+              "end": 90.72,
+              "probability": 0.9873692393302917
+            },
+            {
+              "word": " the",
+              "start": 91.18,
+              "end": 91.34,
+              "probability": 0.9932997226715088
+            },
+            {
+              "word": " winds,",
+              "start": 91.34,
+              "end": 91.92,
+              "probability": 0.8675901889801025
+            },
+            {
+              "word": " still",
+              "start": 91.96,
+              "end": 92.38,
+              "probability": 0.8893520832061768
+            },
+            {
+              "word": " no",
+              "start": 92.38,
+              "end": 92.94,
+              "probability": 0.6649221777915955
+            },
+            {
+              "word": " ho.",
+              "start": 92.94,
+              "end": 94.02,
+              "probability": 0.2855263352394104
+            },
+            {
+              "word": " His",
+              "start": 94.74,
+              "end": 95.46,
+              "probability": 0.9591987133026123
+            },
+            {
+              "word": " voice",
+              "start": 95.46,
+              "end": 95.9,
+              "probability": 0.9924212098121643
+            },
+            {
+              "word": " throughrode",
+              "start": 95.9,
+              "end": 97.78,
+              "probability": 0.4364811182022095
+            },
+            {
+              "word": " them",
+              "start": 97.78,
+              "end": 98.46,
+              "probability": 0.8407162427902222
+            },
+            {
+              "word": " while",
+              "start": 98.46,
+              "end": 98.98,
+              "probability": 0.9611352682113647
+            },
+            {
+              "word": " he",
+              "start": 98.98,
+              "end": 99.68,
+              "probability": 0.8087076544761658
+            },
+            {
+              "word": " dwelt",
+              "start": 99.68,
+              "end": 100.22,
+              "probability": 0.9521829783916473
+            },
+            {
+              "word": " below.",
+              "start": 100.22,
+              "end": 101.78,
+              "probability": 0.9792484045028687
+            }
+          ]
+        },
+        {
+          "seek": 10178,
+          "start": 106.44,
+          "end": 123.1,
+          "text": " Be still, my soul, the hour is hastening on, When we shall be forever with the Lord.",
+          "avgLogprob": -0.3323860179919463,
+          "noSpeechProbability": 0.2840694487094879,
+          "words": [
+            {
+              "word": " Be",
+              "start": 106.44,
+              "end": 107.7,
+              "probability": 0.73595130443573
+            },
+            {
+              "word": " still,",
+              "start": 107.7,
+              "end": 108.26,
+              "probability": 0.996070384979248
+            },
+            {
+              "word": " my",
+              "start": 108.26,
+              "end": 108.9,
+              "probability": 0.9437373876571655
+            },
+            {
+              "word": " soul,",
+              "start": 108.9,
+              "end": 110.18,
+              "probability": 0.9984183311462402
+            },
+            {
+              "word": " the",
+              "start": 110.68,
+              "end": 111.08,
+              "probability": 0.881502628326416
+            },
+            {
+              "word": " hour",
+              "start": 111.08,
+              "end": 111.5,
+              "probability": 0.9985948204994202
+            },
+            {
+              "word": " is",
+              "start": 111.5,
+              "end": 112.06,
+              "probability": 0.9982650876045227
+            },
+            {
+              "word": " hastening",
+              "start": 112.06,
+              "end": 113.16,
+              "probability": 0.624863862991333
+            },
+            {
+              "word": " on,",
+              "start": 113.16,
+              "end": 114.72,
+              "probability": 0.9934926629066467
+            },
+            {
+              "word": " When",
+              "start": 115.34,
+              "end": 115.94,
+              "probability": 0.8370999693870544
+            },
+            {
+              "word": " we",
+              "start": 115.94,
+              "end": 116.62,
+              "probability": 0.9966055154800415
+            },
+            {
+              "word": " shall",
+              "start": 116.62,
+              "end": 117.08,
+              "probability": 0.997783362865448
+            },
+            {
+              "word": " be",
+              "start": 117.08,
+              "end": 118.34,
+              "probability": 0.9947532415390015
+            },
+            {
+              "word": " forever",
+              "start": 118.34,
+              "end": 119.78,
+              "probability": 0.9837009310722351
+            },
+            {
+              "word": " with",
+              "start": 119.78,
+              "end": 120.96,
+              "probability": 0.998316764831543
+            },
+            {
+              "word": " the",
+              "start": 120.96,
+              "end": 121.46,
+              "probability": 0.9952414035797119
+            },
+            {
+              "word": " Lord.",
+              "start": 121.46,
+              "end": 123.1,
+              "probability": 0.9856446981430054
+            }
+          ]
+        },
+        {
+          "seek": 12310,
+          "start": 123.1,
+          "end": 139.14,
+          "text": " When disappointment, grief, and fear are gone, Sorrow forgot, love's purest joys restored.",
+          "avgLogprob": -0.3155919508292125,
+          "noSpeechProbability": 0.3116256892681122,
+          "words": [
+            {
+              "word": " When",
+              "start": 123.1,
+              "end": 124.08,
+              "probability": 0.2721867561340332
+            },
+            {
+              "word": " disappointment,",
+              "start": 124.08,
+              "end": 126.46,
+              "probability": 0.6326910257339478
+            },
+            {
+              "word": " grief,",
+              "start": 127.64,
+              "end": 127.68,
+              "probability": 0.9890607595443726
+            },
+            {
+              "word": " and",
+              "start": 128.08,
+              "end": 128.12,
+              "probability": 0.9912034273147583
+            },
+            {
+              "word": " fear",
+              "start": 128.12,
+              "end": 128.94,
+              "probability": 0.998252809047699
+            },
+            {
+              "word": " are",
+              "start": 128.94,
+              "end": 129.42,
+              "probability": 0.9782384634017944
+            },
+            {
+              "word": " gone,",
+              "start": 129.42,
+              "end": 131.4,
+              "probability": 0.998160183429718
+            },
+            {
+              "word": " Sorrow",
+              "start": 132.3,
+              "end": 132.8,
+              "probability": 0.613022044301033
+            },
+            {
+              "word": " forgot,",
+              "start": 132.8,
+              "end": 134.3,
+              "probability": 0.4295099675655365
+            },
+            {
+              "word": " love's",
+              "start": 135.16,
+              "end": 135.66,
+              "probability": 0.8968442976474762
+            },
+            {
+              "word": " purest",
+              "start": 135.66,
+              "end": 136.54,
+              "probability": 0.9760086238384247
+            },
+            {
+              "word": " joys",
+              "start": 136.54,
+              "end": 137.22,
+              "probability": 0.8756230175495148
+            },
+            {
+              "word": " restored.",
+              "start": 137.22,
+              "end": 139.14,
+              "probability": 0.9631962180137634
+            }
+          ]
+        },
+        {
+          "seek": 13914,
+          "start": 139.14,
+          "end": 147.5,
+          "text": " Be still, my soul, when change and tears are passed.",
+          "avgLogprob": -0.31827664375305176,
+          "noSpeechProbability": 0.2741064429283142,
+          "words": [
+            {
+              "word": " Be",
+              "start": 139.14,
+              "end": 140.46,
+              "probability": 0.6863014101982117
+            },
+            {
+              "word": " still,",
+              "start": 140.46,
+              "end": 141.0,
+              "probability": 0.9971035122871399
+            },
+            {
+              "word": " my",
+              "start": 141.0,
+              "end": 141.56,
+              "probability": 0.985508143901825
+            },
+            {
+              "word": " soul,",
+              "start": 141.56,
+              "end": 142.82,
+              "probability": 0.9956544637680054
+            },
+            {
+              "word": " when",
+              "start": 142.98,
+              "end": 143.56,
+              "probability": 0.7801677584648132
+            },
+            {
+              "word": " change",
+              "start": 143.56,
+              "end": 144.18,
+              "probability": 0.9182684421539307
+            },
+            {
+              "word": " and",
+              "start": 144.18,
+              "end": 144.8,
+              "probability": 0.9928606152534485
+            },
+            {
+              "word": " tears",
+              "start": 144.8,
+              "end": 145.4,
+              "probability": 0.9990070462226868
+            },
+            {
+              "word": " are",
+              "start": 145.4,
+              "end": 146.14,
+              "probability": 0.9939789772033691
+            },
+            {
+              "word": " passed.",
+              "start": 146.14,
+              "end": 147.5,
+              "probability": 0.5171533226966858
+            }
+          ]
+        },
+        {
+          "seek": 13914,
+          "start": 148.46,
+          "end": 155.52,
+          "text": " All safe and blessed, we shall meet at last.",
+          "avgLogprob": -0.31827664375305176,
+          "noSpeechProbability": 0.2741064429283142,
+          "words": [
+            {
+              "word": " All",
+              "start": 148.46,
+              "end": 148.76,
+              "probability": 0.9556189775466919
+            },
+            {
+              "word": " safe",
+              "start": 148.76,
+              "end": 149.3,
+              "probability": 0.9852801561355591
+            },
+            {
+              "word": " and",
+              "start": 149.3,
+              "end": 149.98,
+              "probability": 0.9936919212341309
+            },
+            {
+              "word": " blessed,",
+              "start": 149.98,
+              "end": 151.06,
+              "probability": 0.7221219539642334
+            },
+            {
+              "word": " we",
+              "start": 151.84,
+              "end": 152.28,
+              "probability": 0.9476789832115173
+            },
+            {
+              "word": " shall",
+              "start": 152.28,
+              "end": 152.94,
+              "probability": 0.9988300204277039
+            },
+            {
+              "word": " meet",
+              "start": 152.94,
+              "end": 153.6,
+              "probability": 0.9945043325424194
+            },
+            {
+              "word": " at",
+              "start": 153.6,
+              "end": 154.08,
+              "probability": 0.9916477203369141
+            },
+            {
+              "word": " last.",
+              "start": 154.08,
+              "end": 155.52,
+              "probability": 0.998683512210846
+            }
+          ]
+        },
+        {
+          "seek": 16914,
+          "start": 170.98,
+          "end": 172.38,
+          "text": " Thank you.",
+          "avgLogprob": -0.978157619635264,
+          "noSpeechProbability": 0.9037485122680664,
+          "words": [
+            {
+              "word": " Thank",
+              "start": 170.98,
+              "end": 172.38,
+              "probability": 0.016516467556357384
+            },
+            {
+              "word": " you.",
+              "start": 172.38,
+              "end": 172.38,
+              "probability": 0.9898589253425598
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 118.775
+    },
+    "boundaryDecisions": [
+      {
+        "index": 0,
+        "window": 0,
+        "reason": "转写与声学均从音频首帧起唱"
+      },
+      {
+        "index": 0,
+        "window": 1,
+        "reason": "转写与声学均从音频首帧起唱"
+      }
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "label": "第1段",
+      "text": "Be still, my soul: the Lord is on thy side. Bear patiently the cross of grief or pain. Leave to thy God to order and provide; In every change, He faithful will remain."
+    },
+    {
+      "region": "r2",
+      "label": "第1段",
+      "text": "Be still, my soul: thy best, thy heavenly Friend, Through thorny ways leads to a joyful end."
+    },
+    {
+      "region": "r3",
+      "label": "第2段",
+      "text": "Be still, my soul: thy God doth undertake. To guide the future, as He has the past. Thy hope, thy confidence let nothing shake; All now mysterious shall be bright at last."
+    },
+    {
+      "region": "r4",
+      "label": "第2段",
+      "text": "Be still, my soul: the waves and winds still know His voice Who ruled them while He dwelt below."
+    },
+    {
+      "region": "r7",
+      "label": "第4段",
+      "text": "Be still, my soul: the hour is hastening on. When we shall be forever with the Lord. When disappointment, grief and fear are gone, Sorrow forgot, love’s purest joys restored."
+    },
+    {
+      "region": "r8",
+      "label": "第4段",
+      "text": "Be still, my soul: when change and tears are past All safe and blessed we shall meet at last."
+    }
+  ],
+  "estimates": [
+    0.0,
+    32.3,
+    52.88,
+    85.64,
+    106.44,
+    139.14
+  ],
+  "windows": [
+    {
+      "index": 0,
+      "window": 0,
+      "at": 0.0,
+      "valid": false,
+      "firstWord": "be",
+      "firstWordStart": 0.0,
+      "firstWordEnd": 1.7,
+      "firstWordProbability": 0.6131,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6989,
+      "bounds": [
+        0,
+        16.0
+      ],
+      "words": [
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 0.0,
+          "end": 1.7,
+          "probability": 0.6131272912025452
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 1.7,
+          "end": 2.26,
+          "probability": 0.9973575472831726
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 2.26,
+          "end": 2.64,
+          "probability": 0.37171757221221924
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 2.64,
+          "end": 2.78,
+          "probability": 0.958818256855011
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 2.78,
+          "end": 3.94,
+          "probability": 0.9953655004501343
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 3.94,
+          "end": 4.58,
+          "probability": 1.8771094119074405e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 4.58,
+          "end": 4.82,
+          "probability": 2.1340351395338075e-05
+        },
+        {
+          "word": " Lord",
+          "tokens": [
+            3257
+          ],
+          "start": 4.82,
+          "end": 5.3,
+          "probability": 0.9795364141464233
+        },
+        {
+          "word": " is",
+          "tokens": [
+            307
+          ],
+          "start": 5.3,
+          "end": 5.92,
+          "probability": 0.9974892139434814
+        },
+        {
+          "word": " on",
+          "tokens": [
+            322
+          ],
+          "start": 5.92,
+          "end": 6.36,
+          "probability": 0.995612382888794
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 6.36,
+          "end": 6.74,
+          "probability": 6.573492009920301e-05
+        },
+        {
+          "word": " side",
+          "tokens": [
+            1252
+          ],
+          "start": 6.74,
+          "end": 9.02,
+          "probability": 0.412578821182251
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 9.02,
+          "end": 15.98,
+          "probability": 0.49598270654678345
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "window": 1,
+      "at": 0.0,
+      "valid": false,
+      "firstWord": "be",
+      "firstWordStart": 0.0,
+      "firstWordEnd": 1.68,
+      "firstWordProbability": 0.4743,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6926,
+      "bounds": [
+        0,
+        14.0
+      ],
+      "words": [
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 0.0,
+          "end": 1.68,
+          "probability": 0.4743291735649109
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 1.68,
+          "end": 2.26,
+          "probability": 0.9958187937736511
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 2.26,
+          "end": 2.64,
+          "probability": 0.40324148535728455
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 2.64,
+          "end": 2.82,
+          "probability": 0.956902801990509
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 2.82,
+          "end": 3.94,
+          "probability": 0.9871653318405151
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 3.94,
+          "end": 4.58,
+          "probability": 1.8728570694293012e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 4.58,
+          "end": 4.8,
+          "probability": 2.0481642422964796e-05
+        },
+        {
+          "word": " Lord",
+          "tokens": [
+            3257
+          ],
+          "start": 4.8,
+          "end": 5.3,
+          "probability": 0.9835211038589478
+        },
+        {
+          "word": " is",
+          "tokens": [
+            307
+          ],
+          "start": 5.3,
+          "end": 5.92,
+          "probability": 0.9974226951599121
+        },
+        {
+          "word": " on",
+          "tokens": [
+            322
+          ],
+          "start": 5.92,
+          "end": 6.36,
+          "probability": 0.9948886036872864
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 6.36,
+          "end": 6.74,
+          "probability": 9.559468253428349e-05
+        },
+        {
+          "word": " side",
+          "tokens": [
+            1252
+          ],
+          "start": 6.74,
+          "end": 9.02,
+          "probability": 0.44027841091156006
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 9.02,
+          "end": 13.98,
+          "probability": 0.4502282738685608
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 0,
+      "at": 34.04,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 34.04,
+      "firstWordEnd": 34.14,
+      "firstWordProbability": 0.173,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5137,
+      "bounds": [
+        26.3,
+        48.3
+      ],
+      "words": [
+        {
+          "word": "He",
+          "tokens": [
+            5205
+          ],
+          "start": 0.0,
+          "end": 1.76,
+          "probability": 4.677111519413302e-06
+        },
+        {
+          "word": " faithful",
+          "tokens": [
+            17808
+          ],
+          "start": 1.76,
+          "end": 3.6,
+          "probability": 0.014899857342243195
+        },
+        {
+          "word": " will",
+          "tokens": [
+            486
+          ],
+          "start": 3.6,
+          "end": 4.54,
+          "probability": 0.9075168967247009
+        },
+        {
+          "word": " remain",
+          "tokens": [
+            6222
+          ],
+          "start": 4.54,
+          "end": 6.14,
+          "probability": 0.9421350955963135
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 6.14,
+          "end": 7.74,
+          "probability": 0.4490061104297638
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 7.74,
+          "end": 7.84,
+          "probability": 0.17299531400203705
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.84,
+          "end": 8.36,
+          "probability": 0.9948186278343201
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 8.36,
+          "end": 8.48,
+          "probability": 0.6142321228981018
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 8.48,
+          "end": 8.82,
+          "probability": 0.8747811317443848
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 8.82,
+          "end": 10.08,
+          "probability": 0.2790452241897583
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 10.08,
+          "end": 10.34,
+          "probability": 3.7472946132766083e-06
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 10.34,
+          "end": 10.72,
+          "probability": 2.006871363846585e-05
+        },
+        {
+          "word": " best",
+          "tokens": [
+            1151
+          ],
+          "start": 10.72,
+          "end": 11.24,
+          "probability": 0.8154869079589844
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 11.24,
+          "end": 11.24,
+          "probability": 0.6235661506652832
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 11.24,
+          "end": 11.72,
+          "probability": 0.017402608296833932
+        },
+        {
+          "word": " heavenly",
+          "tokens": [
+            29406
+          ],
+          "start": 11.72,
+          "end": 12.64,
+          "probability": 0.8437474370002747
+        },
+        {
+          "word": " Friend",
+          "tokens": [
+            22812
+          ],
+          "start": 12.64,
+          "end": 14.46,
+          "probability": 0.05996384471654892
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 14.46,
+          "end": 15.12,
+          "probability": 0.4596894383430481
+        },
+        {
+          "word": " Through",
+          "tokens": [
+            8927
+          ],
+          "start": 15.12,
+          "end": 19.62,
+          "probability": 0.570728600025177
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "window": 1,
+      "at": 34.0,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 34.0,
+      "firstWordEnd": 34.16,
+      "firstWordProbability": 0.3304,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5405,
+      "bounds": [
+        28.3,
+        46.3
+      ],
+      "words": [
+        {
+          "word": "He",
+          "tokens": [
+            5205
+          ],
+          "start": 0.0,
+          "end": 0.72,
+          "probability": 1.0770968401629943e-05
+        },
+        {
+          "word": " faithful",
+          "tokens": [
+            17808
+          ],
+          "start": 0.72,
+          "end": 1.62,
+          "probability": 0.8688309788703918
+        },
+        {
+          "word": " will",
+          "tokens": [
+            486
+          ],
+          "start": 1.62,
+          "end": 2.52,
+          "probability": 0.9185193181037903
+        },
+        {
+          "word": " remain",
+          "tokens": [
+            6222
+          ],
+          "start": 2.52,
+          "end": 4.24,
+          "probability": 0.963139533996582
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.24,
+          "end": 5.7,
+          "probability": 0.4648316204547882
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 5.7,
+          "end": 5.86,
+          "probability": 0.3303668200969696
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.86,
+          "end": 6.36,
+          "probability": 0.9942732453346252
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 6.36,
+          "end": 6.48,
+          "probability": 0.5953856706619263
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 6.48,
+          "end": 6.78,
+          "probability": 0.8038539290428162
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 6.78,
+          "end": 8.08,
+          "probability": 0.33370375633239746
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 8.08,
+          "end": 8.44,
+          "probability": 5.123094524606131e-06
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 8.44,
+          "end": 8.72,
+          "probability": 2.2606143829762004e-05
+        },
+        {
+          "word": " best",
+          "tokens": [
+            1151
+          ],
+          "start": 8.72,
+          "end": 9.24,
+          "probability": 0.7767084836959839
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 9.24,
+          "end": 9.54,
+          "probability": 0.5067040920257568
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 9.54,
+          "end": 9.74,
+          "probability": 0.01253220092621632
+        },
+        {
+          "word": " heavenly",
+          "tokens": [
+            29406
+          ],
+          "start": 9.74,
+          "end": 10.62,
+          "probability": 0.9539452195167542
+        },
+        {
+          "word": " Friend",
+          "tokens": [
+            22812
+          ],
+          "start": 10.62,
+          "end": 12.6,
+          "probability": 0.08798044174909592
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 12.6,
+          "end": 13.04,
+          "probability": 0.4457244873046875
+        },
+        {
+          "word": " Through",
+          "tokens": [
+            8927
+          ],
+          "start": 13.04,
+          "end": 17.38,
+          "probability": 0.5577164888381958
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 0,
+      "at": 54.16,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 54.16,
+      "firstWordEnd": 54.3,
+      "firstWordProbability": 0.6734,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6951,
+      "bounds": [
+        46.88,
+        68.88
+      ],
+      "words": [
+        {
+          "word": "to",
+          "tokens": [
+            1353
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 5.669743586622644e-06
+        },
+        {
+          "word": " a",
+          "tokens": [
+            257
+          ],
+          "start": 0.0,
+          "end": 0.0,
+          "probability": 0.002162582240998745
+        },
+        {
+          "word": " joyful",
+          "tokens": [
+            33090
+          ],
+          "start": 0.0,
+          "end": 0.2,
+          "probability": 0.0005708925891667604
+        },
+        {
+          "word": " end",
+          "tokens": [
+            917
+          ],
+          "start": 0.2,
+          "end": 2.7,
+          "probability": 0.914045512676239
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 2.7,
+          "end": 7.28,
+          "probability": 0.4206094443798065
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 7.28,
+          "end": 7.42,
+          "probability": 0.6733559370040894
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.42,
+          "end": 7.98,
+          "probability": 0.9971356391906738
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 7.98,
+          "end": 7.98,
+          "probability": 0.5034559965133667
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 7.98,
+          "end": 8.5,
+          "probability": 0.9670148491859436
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 8.5,
+          "end": 9.72,
+          "probability": 0.9953007698059082
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 9.72,
+          "end": 10.2,
+          "probability": 5.615753707388649e-06
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 10.2,
+          "end": 10.48,
+          "probability": 1.2820958090742351e-05
+        },
+        {
+          "word": " God",
+          "tokens": [
+            1265
+          ],
+          "start": 10.48,
+          "end": 10.98,
+          "probability": 0.7534840703010559
+        },
+        {
+          "word": " doth",
+          "tokens": [
+            274,
+            900
+          ],
+          "start": 10.98,
+          "end": 12.2,
+          "probability": 0.2763619035395095
+        },
+        {
+          "word": " undertake",
+          "tokens": [
+            37010
+          ],
+          "start": 12.2,
+          "end": 14.22,
+          "probability": 0.7088964581489563
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 14.22,
+          "end": 14.9,
+          "probability": 0.017562417313456535
+        },
+        {
+          "word": " To",
+          "tokens": [
+            1407
+          ],
+          "start": 14.9,
+          "end": 15.68,
+          "probability": 0.19557522237300873
+        },
+        {
+          "word": " guide",
+          "tokens": [
+            5934
+          ],
+          "start": 15.68,
+          "end": 16.22,
+          "probability": 0.94504714012146
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 1,
+      "at": 52.78,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 52.78,
+      "firstWordEnd": 54.18,
+      "firstWordProbability": 0.2805,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.5728,
+      "bounds": [
+        48.88,
+        66.88
+      ],
+      "words": [
+        {
+          "word": "to",
+          "tokens": [
+            1353
+          ],
+          "start": 0.0,
+          "end": 2.12,
+          "probability": 2.0596598915290087e-06
+        },
+        {
+          "word": " a",
+          "tokens": [
+            257
+          ],
+          "start": 2.12,
+          "end": 2.12,
+          "probability": 0.0016547904815524817
+        },
+        {
+          "word": " joyful",
+          "tokens": [
+            33090
+          ],
+          "start": 2.12,
+          "end": 3.72,
+          "probability": 0.00011718388122972101
+        },
+        {
+          "word": " end",
+          "tokens": [
+            917
+          ],
+          "start": 3.72,
+          "end": 3.88,
+          "probability": 0.027178900316357613
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 3.88,
+          "end": 3.9,
+          "probability": 0.6765879392623901
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 3.9,
+          "end": 5.3,
+          "probability": 0.2805303931236267
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.3,
+          "end": 5.96,
+          "probability": 0.9803397059440613
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 5.96,
+          "end": 6.38,
+          "probability": 0.49783214926719666
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 6.38,
+          "end": 6.48,
+          "probability": 0.9588846564292908
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 6.48,
+          "end": 7.7,
+          "probability": 0.9928713440895081
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 7.7,
+          "end": 8.22,
+          "probability": 4.140700639254646e-06
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 8.22,
+          "end": 8.46,
+          "probability": 1.5951308341755066e-05
+        },
+        {
+          "word": " God",
+          "tokens": [
+            1265
+          ],
+          "start": 8.46,
+          "end": 8.96,
+          "probability": 0.7475270628929138
+        },
+        {
+          "word": " doth",
+          "tokens": [
+            274,
+            900
+          ],
+          "start": 8.96,
+          "end": 10.24,
+          "probability": 0.4435217985883355
+        },
+        {
+          "word": " undertake",
+          "tokens": [
+            37010
+          ],
+          "start": 10.24,
+          "end": 12.22,
+          "probability": 0.2344578206539154
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 12.22,
+          "end": 12.76,
+          "probability": 0.031661663204431534
+        },
+        {
+          "word": " To",
+          "tokens": [
+            1407
+          ],
+          "start": 12.76,
+          "end": 13.66,
+          "probability": 0.15759171545505524
+        },
+        {
+          "word": " guide",
+          "tokens": [
+            5934
+          ],
+          "start": 13.66,
+          "end": 14.22,
+          "probability": 0.9090653657913208
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 0,
+      "at": 86.94,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 86.94,
+      "firstWordEnd": 87.1,
+      "firstWordProbability": 0.5494,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6547,
+      "bounds": [
+        79.64,
+        101.64
+      ],
+      "words": [
+        {
+          "word": "be",
+          "tokens": [
+            650
+          ],
+          "start": 0.0,
+          "end": 2.82,
+          "probability": 9.601235433365218e-07
+        },
+        {
+          "word": " bright",
+          "tokens": [
+            4730
+          ],
+          "start": 2.82,
+          "end": 4.02,
+          "probability": 0.5432907938957214
+        },
+        {
+          "word": " at",
+          "tokens": [
+            412
+          ],
+          "start": 4.02,
+          "end": 4.62,
+          "probability": 0.967395544052124
+        },
+        {
+          "word": " last",
+          "tokens": [
+            1036
+          ],
+          "start": 4.62,
+          "end": 6.16,
+          "probability": 0.9917215704917908
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 6.16,
+          "end": 7.3,
+          "probability": 0.5622659921646118
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 7.3,
+          "end": 7.46,
+          "probability": 0.5494006872177124
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.46,
+          "end": 7.98,
+          "probability": 0.9973564147949219
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 7.98,
+          "end": 7.98,
+          "probability": 0.5250741243362427
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 7.98,
+          "end": 8.54,
+          "probability": 0.9701364636421204
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 8.54,
+          "end": 9.76,
+          "probability": 0.9954732060432434
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 9.76,
+          "end": 10.04,
+          "probability": 2.140332298949943e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 10.04,
+          "end": 10.56,
+          "probability": 3.0389638027372712e-05
+        },
+        {
+          "word": " waves",
+          "tokens": [
+            9417
+          ],
+          "start": 10.56,
+          "end": 11.08,
+          "probability": 0.9877809286117554
+        },
+        {
+          "word": " and",
+          "tokens": [
+            293
+          ],
+          "start": 11.08,
+          "end": 11.56,
+          "probability": 0.008201858028769493
+        },
+        {
+          "word": " winds",
+          "tokens": [
+            17765
+          ],
+          "start": 11.56,
+          "end": 12.26,
+          "probability": 0.0767730250954628
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 12.26,
+          "end": 12.76,
+          "probability": 0.795602023601532
+        },
+        {
+          "word": " know",
+          "tokens": [
+            458
+          ],
+          "start": 12.76,
+          "end": 13.68,
+          "probability": 0.8859433531761169
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "window": 1,
+      "at": 86.94,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 86.94,
+      "firstWordEnd": 87.12,
+      "firstWordProbability": 0.4674,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6367,
+      "bounds": [
+        81.64,
+        99.64
+      ],
+      "words": [
+        {
+          "word": "be",
+          "tokens": [
+            650
+          ],
+          "start": 0.0,
+          "end": 1.08,
+          "probability": 3.4606682675075717e-07
+        },
+        {
+          "word": " bright",
+          "tokens": [
+            4730
+          ],
+          "start": 1.08,
+          "end": 2.06,
+          "probability": 0.8424755334854126
+        },
+        {
+          "word": " at",
+          "tokens": [
+            412
+          ],
+          "start": 2.06,
+          "end": 2.6,
+          "probability": 0.9709954261779785
+        },
+        {
+          "word": " last",
+          "tokens": [
+            1036
+          ],
+          "start": 2.6,
+          "end": 4.3,
+          "probability": 0.9873142838478088
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.3,
+          "end": 5.3,
+          "probability": 0.45692703127861023
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 5.3,
+          "end": 5.48,
+          "probability": 0.4674344062805176
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.48,
+          "end": 5.96,
+          "probability": 0.9965229034423828
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 5.96,
+          "end": 5.96,
+          "probability": 0.401140421628952
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 5.96,
+          "end": 6.44,
+          "probability": 0.9463608860969543
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 6.44,
+          "end": 7.76,
+          "probability": 0.9926540851593018
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 7.76,
+          "end": 8.02,
+          "probability": 3.388138338777935e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 8.02,
+          "end": 8.54,
+          "probability": 3.8944933407947246e-05
+        },
+        {
+          "word": " waves",
+          "tokens": [
+            9417
+          ],
+          "start": 8.54,
+          "end": 9.04,
+          "probability": 0.9887825846672058
+        },
+        {
+          "word": " and",
+          "tokens": [
+            293
+          ],
+          "start": 9.04,
+          "end": 9.56,
+          "probability": 0.0066258106380701065
+        },
+        {
+          "word": " winds",
+          "tokens": [
+            17765
+          ],
+          "start": 9.56,
+          "end": 10.24,
+          "probability": 0.032478105276823044
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 10.24,
+          "end": 10.76,
+          "probability": 0.7544880509376526
+        },
+        {
+          "word": " know",
+          "tokens": [
+            458
+          ],
+          "start": 10.76,
+          "end": 11.32,
+          "probability": 0.8787184357643127
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 0,
+      "at": 106.52,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 106.52,
+      "firstWordEnd": 107.72,
+      "firstWordProbability": 0.6042,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7692,
+      "bounds": [
+        100.44,
+        122.44
+      ],
+      "words": [
+        {
+          "word": "while",
+          "tokens": [
+            7723
+          ],
+          "start": 0.0,
+          "end": 1.28,
+          "probability": 3.137876944947493e-07
+        },
+        {
+          "word": " He",
+          "tokens": [
+            634
+          ],
+          "start": 1.28,
+          "end": 1.28,
+          "probability": 0.004506455734372139
+        },
+        {
+          "word": " dwelt",
+          "tokens": [
+            27379,
+            2018
+          ],
+          "start": 1.28,
+          "end": 1.28,
+          "probability": 0.4893091520316375
+        },
+        {
+          "word": " below",
+          "tokens": [
+            2507
+          ],
+          "start": 1.28,
+          "end": 1.28,
+          "probability": 0.0013016870943829417
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 1.28,
+          "end": 6.08,
+          "probability": 0.2957051992416382
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 6.08,
+          "end": 7.28,
+          "probability": 0.6041976809501648
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.28,
+          "end": 7.8,
+          "probability": 0.9956724643707275
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 7.8,
+          "end": 7.8,
+          "probability": 0.5984421372413635
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 7.8,
+          "end": 8.48,
+          "probability": 0.8653592467308044
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 8.48,
+          "end": 9.72,
+          "probability": 0.9951510429382324
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 9.72,
+          "end": 10.2,
+          "probability": 1.9954964045609813e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 10.2,
+          "end": 10.64,
+          "probability": 2.4650830823702563e-05
+        },
+        {
+          "word": " hour",
+          "tokens": [
+            1773
+          ],
+          "start": 10.64,
+          "end": 11.0,
+          "probability": 0.9975259900093079
+        },
+        {
+          "word": " is",
+          "tokens": [
+            307
+          ],
+          "start": 11.0,
+          "end": 11.62,
+          "probability": 0.996599018573761
+        },
+        {
+          "word": " hastening",
+          "tokens": [
+            6581,
+            4559
+          ],
+          "start": 11.62,
+          "end": 12.78,
+          "probability": 0.5704040229320526
+        },
+        {
+          "word": " on",
+          "tokens": [
+            322
+          ],
+          "start": 12.78,
+          "end": 14.28,
+          "probability": 0.9934771656990051
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 14.28,
+          "end": 14.78,
+          "probability": 0.153614804148674
+        },
+        {
+          "word": " When",
+          "tokens": [
+            1133
+          ],
+          "start": 14.78,
+          "end": 15.5,
+          "probability": 0.864092230796814
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "window": 1,
+      "at": 106.56,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 106.56,
+      "firstWordEnd": 107.68,
+      "firstWordProbability": 0.4034,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.6993,
+      "bounds": [
+        102.44,
+        120.44
+      ],
+      "words": [
+        {
+          "word": "while",
+          "tokens": [
+            7723
+          ],
+          "start": 0.0,
+          "end": 0.12,
+          "probability": 6.223082777978561e-07
+        },
+        {
+          "word": " He",
+          "tokens": [
+            634
+          ],
+          "start": 0.12,
+          "end": 0.12,
+          "probability": 0.00041841104393824935
+        },
+        {
+          "word": " dwelt",
+          "tokens": [
+            27379,
+            2018
+          ],
+          "start": 0.12,
+          "end": 4.12,
+          "probability": 0.4810162001667777
+        },
+        {
+          "word": " below",
+          "tokens": [
+            2507
+          ],
+          "start": 4.12,
+          "end": 4.12,
+          "probability": 0.0003486375790089369
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.12,
+          "end": 4.12,
+          "probability": 0.24500435590744019
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 4.12,
+          "end": 5.24,
+          "probability": 0.4033810496330261
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.24,
+          "end": 5.8,
+          "probability": 0.986426591873169
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 5.8,
+          "end": 6.24,
+          "probability": 0.6273677349090576
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 6.24,
+          "end": 6.4,
+          "probability": 0.7985523343086243
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 6.4,
+          "end": 7.72,
+          "probability": 0.991419792175293
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 7.72,
+          "end": 8.22,
+          "probability": 1.5420964700751938e-06
+        },
+        {
+          "word": " the",
+          "tokens": [
+            220,
+            3322
+          ],
+          "start": 8.22,
+          "end": 8.6,
+          "probability": 2.7256569410383236e-05
+        },
+        {
+          "word": " hour",
+          "tokens": [
+            1773
+          ],
+          "start": 8.6,
+          "end": 9.0,
+          "probability": 0.9931681156158447
+        },
+        {
+          "word": " is",
+          "tokens": [
+            307
+          ],
+          "start": 9.0,
+          "end": 9.62,
+          "probability": 0.9940062761306763
+        },
+        {
+          "word": " hastening",
+          "tokens": [
+            6581,
+            4559
+          ],
+          "start": 9.62,
+          "end": 10.96,
+          "probability": 0.3807307779788971
+        },
+        {
+          "word": " on",
+          "tokens": [
+            322
+          ],
+          "start": 10.96,
+          "end": 12.28,
+          "probability": 0.9852691292762756
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 12.28,
+          "end": 12.82,
+          "probability": 0.2870221436023712
+        },
+        {
+          "word": " When",
+          "tokens": [
+            1133
+          ],
+          "start": 12.82,
+          "end": 13.46,
+          "probability": 0.8040086627006531
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 0,
+      "at": 140.22,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 140.22,
+      "firstWordEnd": 140.52,
+      "firstWordProbability": 0.7638,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7725,
+      "bounds": [
+        133.14,
+        155.14
+      ],
+      "words": [
+        {
+          "word": "love’s",
+          "tokens": [
+            28459,
+            913,
+            247,
+            82
+          ],
+          "start": 0.0,
+          "end": 2.5,
+          "probability": 0.23680814548708895
+        },
+        {
+          "word": " purest",
+          "tokens": [
+            6075,
+            372
+          ],
+          "start": 2.5,
+          "end": 3.38,
+          "probability": 0.9384016990661621
+        },
+        {
+          "word": " joys",
+          "tokens": [
+            1488,
+            749
+          ],
+          "start": 3.38,
+          "end": 4.06,
+          "probability": 0.7518095076084137
+        },
+        {
+          "word": " restored",
+          "tokens": [
+            23143
+          ],
+          "start": 4.06,
+          "end": 5.98,
+          "probability": 0.570110559463501
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 5.98,
+          "end": 7.08,
+          "probability": 0.4452303349971771
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 7.08,
+          "end": 7.38,
+          "probability": 0.7638236880302429
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 7.38,
+          "end": 7.86,
+          "probability": 0.9961362481117249
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 7.86,
+          "end": 7.86,
+          "probability": 0.6241952180862427
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 7.86,
+          "end": 8.4,
+          "probability": 0.9817270040512085
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 8.4,
+          "end": 9.64,
+          "probability": 0.9981132745742798
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 9.64,
+          "end": 10.02,
+          "probability": 6.925262141521671e-07
+        },
+        {
+          "word": " when",
+          "tokens": [
+            562
+          ],
+          "start": 10.02,
+          "end": 10.42,
+          "probability": 0.7866796255111694
+        },
+        {
+          "word": " change",
+          "tokens": [
+            1319
+          ],
+          "start": 10.42,
+          "end": 11.06,
+          "probability": 0.7378666400909424
+        },
+        {
+          "word": " and",
+          "tokens": [
+            293
+          ],
+          "start": 11.06,
+          "end": 11.64,
+          "probability": 0.9875712394714355
+        },
+        {
+          "word": " tears",
+          "tokens": [
+            220,
+            975,
+            685
+          ],
+          "start": 11.64,
+          "end": 12.32,
+          "probability": 0.3268645086248701
+        },
+        {
+          "word": " are",
+          "tokens": [
+            366
+          ],
+          "start": 12.32,
+          "end": 12.94,
+          "probability": 0.9945651292800903
+        },
+        {
+          "word": " past",
+          "tokens": [
+            1791
+          ],
+          "start": 12.94,
+          "end": 14.34,
+          "probability": 0.43402576446533203
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "window": 1,
+      "at": 140.3,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 140.3,
+      "firstWordEnd": 140.5,
+      "firstWordProbability": 0.5479,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7531,
+      "bounds": [
+        135.14,
+        153.14
+      ],
+      "words": [
+        {
+          "word": "love’s",
+          "tokens": [
+            28459,
+            913,
+            247,
+            82
+          ],
+          "start": 0.0,
+          "end": 0.52,
+          "probability": 0.2269194022709371
+        },
+        {
+          "word": " purest",
+          "tokens": [
+            6075,
+            372
+          ],
+          "start": 0.52,
+          "end": 1.42,
+          "probability": 0.9579654335975647
+        },
+        {
+          "word": " joys",
+          "tokens": [
+            1488,
+            749
+          ],
+          "start": 1.42,
+          "end": 2.1,
+          "probability": 0.8356402516365051
+        },
+        {
+          "word": " restored",
+          "tokens": [
+            23143
+          ],
+          "start": 2.1,
+          "end": 3.98,
+          "probability": 0.547539234161377
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 3.98,
+          "end": 5.16,
+          "probability": 0.308672159910202
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 5.16,
+          "end": 5.36,
+          "probability": 0.5478744506835938
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 5.36,
+          "end": 5.9,
+          "probability": 0.9949043989181519
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 5.9,
+          "end": 5.9,
+          "probability": 0.4825685918331146
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 5.9,
+          "end": 6.36,
+          "probability": 0.9728943109512329
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 6.36,
+          "end": 7.64,
+          "probability": 0.9977095127105713
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 7.64,
+          "end": 8.04,
+          "probability": 1.656748622735904e-06
+        },
+        {
+          "word": " when",
+          "tokens": [
+            562
+          ],
+          "start": 8.04,
+          "end": 8.42,
+          "probability": 0.7518922090530396
+        },
+        {
+          "word": " change",
+          "tokens": [
+            1319
+          ],
+          "start": 8.42,
+          "end": 9.06,
+          "probability": 0.7237244248390198
+        },
+        {
+          "word": " and",
+          "tokens": [
+            293
+          ],
+          "start": 9.06,
+          "end": 9.6,
+          "probability": 0.9740988612174988
+        },
+        {
+          "word": " tears",
+          "tokens": [
+            220,
+            975,
+            685
+          ],
+          "start": 9.6,
+          "end": 10.3,
+          "probability": 0.3291382696506844
+        },
+        {
+          "word": " are",
+          "tokens": [
+            366
+          ],
+          "start": 10.3,
+          "end": 10.94,
+          "probability": 0.9929803013801575
+        },
+        {
+          "word": " past",
+          "tokens": [
+            1791
+          ],
+          "start": 10.94,
+          "end": 12.4,
+          "probability": 0.4287865459918976
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "window": 2,
+      "at": 54.26,
+      "valid": true,
+      "firstWord": "be",
+      "firstWordStart": 54.26,
+      "firstWordEnd": 54.38,
+      "firstWordProbability": 0.8791,
+      "positiveDurationFraction": 1.0,
+      "meanProbability": 0.7046,
+      "bounds": [
+        44.88,
+        70.88
+      ],
+      "words": [
+        {
+          "word": "to",
+          "tokens": [
+            1353
+          ],
+          "start": 0.0,
+          "end": 0.54,
+          "probability": 9.881770893116482e-06
+        },
+        {
+          "word": " a",
+          "tokens": [
+            257
+          ],
+          "start": 0.54,
+          "end": 1.18,
+          "probability": 0.9120982885360718
+        },
+        {
+          "word": " joyful",
+          "tokens": [
+            33090
+          ],
+          "start": 1.18,
+          "end": 2.22,
+          "probability": 0.9730912446975708
+        },
+        {
+          "word": " end",
+          "tokens": [
+            917
+          ],
+          "start": 2.22,
+          "end": 4.74,
+          "probability": 0.9837591648101807
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 4.74,
+          "end": 9.38,
+          "probability": 0.4681312143802643
+        },
+        {
+          "word": " Be",
+          "tokens": [
+            879
+          ],
+          "start": 9.38,
+          "end": 9.5,
+          "probability": 0.8790868520736694
+        },
+        {
+          "word": " still",
+          "tokens": [
+            920
+          ],
+          "start": 9.5,
+          "end": 10.0,
+          "probability": 0.9977275729179382
+        },
+        {
+          "word": ",",
+          "tokens": [
+            11
+          ],
+          "start": 10.0,
+          "end": 10.0,
+          "probability": 0.5721641778945923
+        },
+        {
+          "word": " my",
+          "tokens": [
+            452
+          ],
+          "start": 10.0,
+          "end": 10.5,
+          "probability": 0.9524843692779541
+        },
+        {
+          "word": " soul",
+          "tokens": [
+            5133
+          ],
+          "start": 10.5,
+          "end": 11.7,
+          "probability": 0.991692841053009
+        },
+        {
+          "word": ":",
+          "tokens": [
+            25
+          ],
+          "start": 11.7,
+          "end": 12.22,
+          "probability": 6.905514510435751e-06
+        },
+        {
+          "word": " thy",
+          "tokens": [
+            220,
+            28433
+          ],
+          "start": 12.22,
+          "end": 12.46,
+          "probability": 1.2192398116894765e-05
+        },
+        {
+          "word": " God",
+          "tokens": [
+            1265
+          ],
+          "start": 12.46,
+          "end": 12.98,
+          "probability": 0.7038106918334961
+        },
+        {
+          "word": " doth",
+          "tokens": [
+            274,
+            900
+          ],
+          "start": 12.98,
+          "end": 14.2,
+          "probability": 0.3766589379119978
+        },
+        {
+          "word": " undertake",
+          "tokens": [
+            37010
+          ],
+          "start": 14.2,
+          "end": 16.02,
+          "probability": 0.632026731967926
+        },
+        {
+          "word": ".",
+          "tokens": [
+            13
+          ],
+          "start": 16.02,
+          "end": 17.14,
+          "probability": 0.05628408491611481
+        },
+        {
+          "word": " To",
+          "tokens": [
+            1407
+          ],
+          "start": 17.14,
+          "end": 17.68,
+          "probability": 0.383339524269104
+        },
+        {
+          "word": " guide",
+          "tokens": [
+            5934
+          ],
+          "start": 17.68,
+          "end": 18.24,
+          "probability": 0.9580360651016235
+        }
+      ]
+    }
+  ],
+  "returnIndices": [],
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 137.071
+}

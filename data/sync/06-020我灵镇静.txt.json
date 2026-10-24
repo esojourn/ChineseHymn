@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "songId": "06-020",
+  "status": "reviewed",
+  "source": {
+    "file": "06-020我灵镇静.txt",
+    "sha256": "96a0f008121cdb0e5e413dbcde202b4a952e562f5fd4aa14002e0488d9926373",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-020我灵镇静.mp3",
+      "sha256": "06652eb0c32569a7b2b9443a20f85d8607cecb8ff4cf61e69a7731d59da3056c",
+      "duration": 172.41945578231292,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 23
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 38
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 48,
+      "endLine": 51
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 52,
+      "endLine": 53
+    }
+  },
+  "cues": [
+    {
+      "at": 0.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.02,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.21,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.94,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 106.54,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 140.26,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed lyric order; two contextual medium/int8 acoustic windows at every boundary; independently mapped recording versions.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "label": "第1段",
+        "text": "Be still, my soul: the Lord is on thy side. Bear patiently the cross of grief or pain. Leave to thy God to order and provide; In every change, He faithful will remain."
+      },
+      {
+        "region": "r2",
+        "label": "第1段",
+        "text": "Be still, my soul: thy best, thy heavenly Friend, Through thorny ways leads to a joyful end."
+      },
+      {
+        "region": "r3",
+        "label": "第2段",
+        "text": "Be still, my soul: thy God doth undertake. To guide the future, as He has the past. Thy hope, thy confidence let nothing shake; All now mysterious shall be bright at last."
+      },
+      {
+        "region": "r4",
+        "label": "第2段",
+        "text": "Be still, my soul: the waves and winds still know His voice Who ruled them while He dwelt below."
+      },
+      {
+        "region": "r7",
+        "label": "第4段",
+        "text": "Be still, my soul: the hour is hastening on. When we shall be forever with the Lord. When disappointment, grief and fear are gone, Sorrow forgot, love’s purest joys restored."
+      },
+      {
+        "region": "r8",
+        "label": "第4段",
+        "text": "Be still, my soul: when change and tears are past All safe and blessed we shall meet at last."
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-020我灵镇静.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

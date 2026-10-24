@@ -4,10 +4,10 @@
   "counts": {
     "published": 297,
     "existing": 8,
-    "needs-calibration": 83,
+    "needs-calibration": 82,
     "missing-audio": 2,
     "needs-track-alignment": 5,
-    "needs-source-review": 2,
+    "needs-source-review": 3,
     "missing-lyrics": 23
   },
   "songs": [
@@ -3827,11 +3827,11 @@
       "songId": "06-022",
       "source": "06-022-他眼看顾小麻雀.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "needs-source-review",
       "tracks": [
         "06-022-他眼看顾小麻雀.mp3"
       ],
-      "reason": "缺少匹配当前音频及歌词语言的转写"
+      "reason": "英文录音后半段约167秒起唱Whenever I am tempted、whenever clouds arise，对应原歌第三段；现有中文正文第二段为我听救主温柔声、除去你心忧情，与实际演唱段落不同，缺少对应译文。需核对并补齐实际演唱段落后再制作完整滚动数据。"
     },
     {
       "songId": "06-023",

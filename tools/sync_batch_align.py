@@ -8,6 +8,7 @@ from sync_batch_sources import clean, image_source, text_source
 from sync_batch_audio import map_recordings, repeated_verses
 
 _model = None
+VOCAL_BOUNDARY_VERSION = 2
 
 
 def window_estimate_profile(song):
@@ -98,6 +99,9 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
 
 def confirm_boundaries(verses, music, observations):
     accepted, decisions, first_indices, slots = {}, [], [], {}
+    def usable(row):
+        return (row['valid'] and ('firstWordStart' not in row or
+                row.get('firstWordEnd', 0) - row['firstWordStart'] >= .04))
     cursor = 0
     for verse_index, verse in enumerate(verses):
         first_indices.append(cursor)
@@ -106,7 +110,7 @@ def confirm_boundaries(verses, music, observations):
         cursor += len(verse)
     for index in range(cursor):
         pair = [row for row in observations if row['index'] == index]
-        if len(pair) == 2 and all(row['valid'] for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
+        if len(pair) == 2 and all(usable(row) for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
             accepted[index] = round((pair[0]['at'] + pair[1]['at']) / 2, 2)
     # Two independent acoustic anchors must establish a phase before music can resolve
     # a conflicting window. Music alone never invents an unrecognized lyric boundary.
@@ -119,7 +123,7 @@ def confirm_boundaries(verses, music, observations):
         if len(phases) < 2 or max(phases) - min(phases) > .6 or music['similarity'] < .9:
             continue
         expected = float(np.median(phases)) + music['shifts'][verse_index]
-        corroborated = [row for row in observations if row['index'] == index and row['valid'] and abs(row['at'] - expected) <= .45]
+        corroborated = [row for row in observations if row['index'] == index and usable(row) and abs(row['at'] - expected) <= .45]
         if corroborated:
             chosen = min(corroborated, key=lambda row: abs(row['at'] - expected))
             accepted[index] = round(chosen['at'], 2)
@@ -149,7 +153,8 @@ def generate(job):
     evidence_path = cache / ('score-alignment' if method == 'score' else 'alignment') / (song['source'] + '.json')
     if evidence_path.exists():
         old = json.loads(evidence_path.read_text())
-        valid_algorithm = method != 'score' or old.get('scoreMatching', {}).get('algorithmVersion', 0) >= 2
+        valid_algorithm = (old.get('scoreMatching', {}).get('algorithmVersion', 0) >= 2 if method == 'score' else
+                           old.get('vocalBoundaryVersion') == VOCAL_BOUNDARY_VERSION)
         valid_windows = method == 'score' or old.get('windowEstimateProfile') == window_estimate_profile(song)
         if not retry and valid_algorithm and valid_windows and old.get('sourceHash') == song['sha256'] and old.get('trackHashes') == song['tracks']:
             return song['songId'], old['status'] + ' (cached)'
@@ -181,6 +186,7 @@ def generate(job):
 
 def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
     global _model
+    evidence['vocalBoundaryVersion'] = VOCAL_BOUNDARY_VERSION
     reference = root / 'data' / song['reference']
     if song['type'] == 'image':
         ocr = json.loads((cache / 'ocr' / (song['source'] + '.json')).read_text())

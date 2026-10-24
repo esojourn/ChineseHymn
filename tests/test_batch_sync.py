@@ -44,6 +44,20 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_repeated_music_does_not_confirm_a_zero_duration_first_word(self):
+        verses = [[{'region': 'r1'}], [{'region': 'r2'}], [{'region': 'r3'}]]
+        music = {'shifts': [0, 20, 40], 'similarity': 1}
+        rows = [{'index': i, 'window': w, 'valid': True, 'at': 1 + 20 * i,
+                 'firstWordStart': 1 + 20 * i, 'firstWordEnd': 1.5 + 20 * i}
+                for i in range(3) for w in range(2)]
+        self.assertEqual(confirm_boundaries(verses, music, rows)[0], [1, 21, 41])
+        for row in rows:
+            if row['index'] == 1:
+                row['firstWordEnd'] = row['firstWordStart']
+        with self.assertRaises(ValueError):
+            confirm_boundaries(verses, music, rows)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_reviewed_window_estimates_bind_assets_and_order_without_confirming_onsets(self):
         from copy import deepcopy
         from sync_batch_align import reviewed_estimates

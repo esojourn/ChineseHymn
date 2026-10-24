@@ -221,5 +221,41 @@
       "version": 1
     },
     "review": "原文五段每段一个阅读区域；保持原有音乐估计的取样位置，仅对第四段有争议的起句补充较长上下文。实际第四段起点仍由其他已确认段落的实测音乐相位及有效声学首词共同支持，所有限值保持不变。"
+  },
+  "03-019": {
+    "version": 1,
+    "sourceHash": "b03324a046e5d0de809cd4da19df5b2650a260f6779563e07f68207c87a527fd",
+    "tracks": [
+      {
+        "file": "03-019十架七言-第七言-我将灵魂.mp3",
+        "sha256": "777bc54d6f60855b30b63ea408bf28ea62bded16f207c6d2798d69e2bc1fa9e8"
+      },
+      {
+        "file": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+        "sha256": "32ae89ebfbe7e01bda48b30df233b1fa90d30ca515b04be6c987391ba7dc1659"
+      }
+    ],
+    "audioFile": "03-019十架七言-第七言-我将灵魂-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "estimates": [
+      12.3,
+      35.8235294117647,
+      96.1,
+      119.8235294117647
+    ],
+    "extendedContext": {
+      "version": 1
+    },
+    "reference": {
+      "file": "asr/03-019十架七言-第七言-我将灵魂-领唱.mp3.json",
+      "sha256": "790881291c41c2971f9ce7705378700c41b153316d0cc1775168e8d7eddd55ba",
+      "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
+    },
+    "review": "已逐段核对第七言正文两段、每段两个阅读区域。原来第二段取样在84秒附近，实际起句在96秒附近，故按整曲转写与84秒音乐反复的位置重新取样。四个实际起点仍由有效首词、原有及必要的补充上下文核对，保持原有音乐相位和独立录音对应检查，不以取样估计直接计算滚动时间。"
   }
 }

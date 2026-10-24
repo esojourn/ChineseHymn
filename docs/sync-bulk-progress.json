@@ -2,12 +2,12 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 285,
+    "published": 286,
     "existing": 8,
     "needs-calibration": 97,
     "missing-audio": 2,
     "needs-source-review": 1,
-    "needs-track-alignment": 4,
+    "needs-track-alignment": 3,
     "missing-lyrics": 23
   },
   "songs": [
@@ -555,7 +555,7 @@
         "02-012你真伟大.mp3",
         "02-012你真伟大-领唱.mp3"
       ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：2"
+      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
     },
     {
       "songId": "02-013",
@@ -1545,7 +1545,7 @@
       "songId": "03-026",
       "source": "03-026复活得胜主.txt",
       "type": "text",
-      "status": "needs-track-alignment",
+      "status": "published",
       "tracks": [
         "03-026复活得胜主.mp3",
         "03-026复活得胜主-领唱.mp3"

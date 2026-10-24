@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "03-026",
+  "status": "reviewed",
+  "source": {
+    "file": "03-026复活得胜主.txt",
+    "sha256": "b5131e5bc3359e014501a95eca27aae642fea660b75df4622f730ca3d4358711",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-026复活得胜主.mp3",
+      "sha256": "3c54183459b374ebe515623381df1c0fd6786479d286c4c92dd909e9b99520af",
+      "duration": 177.744,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.4,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 45.8,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 64.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.3,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 118.6,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 154.85,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-026复活得胜主-领唱.mp3",
+      "sha256": "ab85f1b3bd13f3959823add7be28b5ee3a6a0935dba0e5d7c985d64e297d2bbb",
+      "duration": 167.68,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 9.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 44.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 61.4,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.3,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.75,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 148.7,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "复活得胜主，荣耀属于你， 你已征服死权，得永远胜利。 白衣天使下来，将墓石滚开， 只见麻布头巾，身体已不在。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "复活得胜主，荣耀属于你， 你已征服死权，得永远胜利。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "看救主耶稣，复生离坟墓， 向众亲切招呼，忧惧尽消除。 教会应当欢乐，高唱凯旋歌， 因主今已复生，死权已受挫。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "复活得胜主，荣耀属于你， 你已征服死权，得永远胜利。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "荣耀生命主，我深信不疑， 若无救主同在，生命无意义。 借主永恒大爱，我得胜有余， 领我安渡约旦，在天家安居。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "复活得胜主，荣耀属于你， 你已征服死权，得永远胜利。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-026复活得胜主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

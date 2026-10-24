@@ -2,9 +2,9 @@
   "date": "2026-10-24",
   "totalSources": 420,
   "counts": {
-    "published": 281,
+    "published": 282,
     "existing": 8,
-    "needs-calibration": 101,
+    "needs-calibration": 100,
     "missing-audio": 2,
     "needs-source-review": 1,
     "needs-track-alignment": 4,
@@ -731,11 +731,10 @@
       "songId": "02-199",
       "source": "02-199仰望真神羔羊.txt",
       "type": "text",
-      "status": "needs-calibration",
+      "status": "published",
       "tracks": [
         "02-199仰望真神羔羊.mp3"
-      ],
-      "reason": "两个窗口及重复音乐未能共同确认时间点：1,2,3,4,5,6,7"
+      ]
     },
     {
       "songId": "02-206",
@@ -832,7 +831,7 @@
       "tracks": [
         "02-277坚固磐石.mp3"
       ],
-      "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点"
+      "reason": "录音首尾仍可容纳完整乐段，需核对实际演唱顺序"
     },
     {
       "songId": "02-282",

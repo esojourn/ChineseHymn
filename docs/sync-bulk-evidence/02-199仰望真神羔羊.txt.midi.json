@@ -1,0 +1,407 @@
+{
+  "songId": "02-199",
+  "source": "02-199仰望真神羔羊.txt",
+  "sourceHash": "f3bc7cca8514a79282f03cab36a4d2a1248218f85d9a93415e1992e1b7331370",
+  "trackHashes": [
+    {
+      "file": "02-199仰望真神羔羊.mp3",
+      "sha256": "94b2ccb6ffdf1c76c2e55efc212aafa6cb315845dac5543a2a99915fb0a86a0c"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "f3bc7cca8514a79282f03cab36a4d2a1248218f85d9a93415e1992e1b7331370",
+      "file": "life199.mid",
+      "sha256": "2ed4391d1ab6de08ed5d57892e7b261ea501f2f382edb749ab64d7999bdde5e2",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/199.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life199.html",
+      "textReferenceSha256": "d8cf69c7ad085f9c77c77a55786584e89968b1ae95fb2b8ed3575676d3a96b52",
+      "scoreReferenceUrl": "https://s80976101befaaa82.jimcontent.com/download/version/1634162020/module/16151942622/name/%E4%BB%B0%E6%9C%9B%E7%9C%9F%E7%A5%9E%E7%BE%94%E7%BE%8A.pdf",
+      "scoreReferenceSha256": "a7271ec50f16bac3d7b59d44260d114c431ed20def104df3f1bc6c3e738f4ac6",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "你心若渴望从罪中",
+          "仰望真神羔羊仰望"
+        ],
+        [
+          "当撒旦试诱恐惧疑",
+          "仰望真神羔羊仰望"
+        ],
+        [
+          "你是否困倦路崎岖",
+          "仰望真神羔羊仰望"
+        ],
+        [
+          "黑影遮前路你不用",
+          "仰望真神羔羊仰望"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            9,
+            9,
+            10,
+            9,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 32,
+          "pitches": [
+            0,
+            0,
+            2,
+            0,
+            5
+          ]
+        }
+      ],
+      "symbolicReferenceReview": {
+        "method": "Visually transcribed every sounding numbered-score pitch on PDF page 2; complete sequence and all optimal reading-boundary correspondences agree with the directly linked Life 199 MIDI.",
+        "printedKey": "F",
+        "printedMelodyDegrees": [
+          3,
+          3,
+          4,
+          3,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          5,
+          3,
+          1,
+          3,
+          2,
+          3,
+          3,
+          4,
+          3,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          5,
+          4,
+          3,
+          2,
+          1,
+          5,
+          5,
+          6,
+          5,
+          1,
+          7,
+          2,
+          4,
+          5,
+          7,
+          6,
+          5,
+          3,
+          3,
+          4,
+          5,
+          3,
+          4,
+          6,
+          6,
+          6,
+          4,
+          3,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "readingIndices": [
+          0,
+          32
+        ],
+        "proof": {
+          "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+          "noteCount": 60,
+          "midiNoteCount": 60,
+          "editCost": 0,
+          "runnerUpCost": 45,
+          "semitoneShift": 0,
+          "rowStarts": [
+            {
+              "scoreNoteIndex": 0,
+              "possibleMidiNoteIndices": [
+                0
+              ],
+              "at": 0.0
+            },
+            {
+              "scoreNoteIndex": 32,
+              "possibleMidiNoteIndices": [
+                32
+              ],
+              "at": 16.6956
+            }
+          ],
+          "offsets": [
+            0.0,
+            16.6956
+          ]
+        }
+      },
+      "formReview": "已逐段核对生命圣诗199完整四段及副歌和直接MIDI链接，正文每段前两行为主歌，空行后的单行为副歌。另目视复核风火公开PDF第2页全部60个旋律起音，前32音为主歌，第三谱行双小节线后首个5为副歌首音，所有音高及唯一分界与MIDI完全对应。每段、每区域仍须通过实际录音和声、旋律、调性、0.5秒及反复相位检查，不使用字数或固定速度推算时间。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 33.26086125,
+    "music": {
+      "period": 40.4,
+      "similarity": 0.9713005423545837,
+      "initialOnsetEstimate": 8.268,
+      "shifts": [
+        0.0,
+        40.4,
+        80.8,
+        121.3
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2408010463903446,
+            "key": 6,
+            "at": 10.6,
+            "span": 40.1,
+            "starts": [
+              10.1,
+              30.3
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5690299307945932,
+            "key": 11,
+            "at": 43.3,
+            "span": 15.1,
+            "starts": [
+              42.9,
+              51.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1235213043666122,
+            "key": 6,
+            "starts": [
+              10.0,
+              30.299999237060547
+            ],
+            "span": 40.29999923706055
+          },
+          "runnerUp": {
+            "cost": 0.4132209626754912,
+            "key": 1,
+            "starts": [
+              25.299999237060547,
+              40.29999923706055
+            ],
+            "span": 31.299999237060547
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23960011548335008,
+            "key": 6,
+            "at": 51.0,
+            "span": 40.2,
+            "starts": [
+              50.5,
+              70.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5690299307945932,
+            "key": 11,
+            "at": 43.3,
+            "span": 15.1,
+            "starts": [
+              42.9,
+              51.7
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12308234979610631,
+            "key": 6,
+            "starts": [
+              50.5,
+              70.69999694824219
+            ],
+            "span": 40.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4140879564946241,
+            "key": 1,
+            "starts": [
+              65.69999694824219,
+              80.69999694824219
+            ],
+            "span": 31.300003051757812
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.23975523391572556,
+            "key": 6,
+            "at": 91.4,
+            "span": 40.2,
+            "starts": [
+              90.9,
+              111.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5691610279649791,
+            "key": 11,
+            "at": 124.1,
+            "span": 15.1,
+            "starts": [
+              123.8,
+              132.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12158306990519609,
+            "key": 6,
+            "starts": [
+              90.9000015258789,
+              111.0999984741211
+            ],
+            "span": 40.20000457763672
+          },
+          "runnerUp": {
+            "cost": 0.41153584848536123,
+            "key": 1,
+            "starts": [
+              106.0999984741211,
+              121.0999984741211
+            ],
+            "span": 31.400001525878906
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24081173509654433,
+            "key": 6,
+            "at": 131.9,
+            "span": 40.1,
+            "starts": [
+              131.4,
+              151.6
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5691610279649791,
+            "key": 11,
+            "at": 124.1,
+            "span": 15.1,
+            "starts": [
+              123.8,
+              132.5
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.12148229202421584,
+            "key": 6,
+            "starts": [
+              131.3000030517578,
+              151.5
+            ],
+            "span": 40.19999694824219
+          },
+          "runnerUp": {
+            "cost": 0.4473480753379293,
+            "key": 1,
+            "starts": [
+              117.5,
+              134.39999389648438
+            ],
+            "span": 33.69999694824219
+          }
+        }
+      }
+    ],
+    "readingOffsets": [
+      0.0,
+      16.695648
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "你心若渴望从罪中释放，仰望真神羔羊！ 祂为救赎你，死在十架上，仰望真神羔羊。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "当撒旦试诱，恐惧疑虑多，仰望真神羔羊！ 靠赖主力量，你必能胜过，仰望真神羔羊。",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "你是否困倦，路崎岖又长？仰望真神羔羊！ 祂以爱激励，使你心歌唱，仰望真神羔羊。",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+      "label": "第3段"
+    },
+    {
+      "region": "r7",
+      "text": "黑影遮前路，你不用恐慌，仰望真神羔羊！ 不论悲或喜，祂是你一切，仰望真神羔羊。",
+      "label": "第4段"
+    },
+    {
+      "region": "r8",
+      "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "elapsedSeconds": 0.571
+}

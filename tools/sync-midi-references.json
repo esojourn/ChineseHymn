@@ -7072,5 +7072,95 @@
       ]
     },
     "formReview": "Day by Day / Blott en Dag，中文三段对应原文三段。各段前四行为前半，后四行为后半；第二区域从原谱第11小节He whose heart开始，不是独立副歌。 已核对原文及中文结构、MusicXML完整最高主旋律与直接链接MIDI，所有阅读区域首音在全部最优音符序列对应中唯一。每个实际演奏段落仍须通过独立和声、旋律、调性、0.5秒和反复相位检查，其他录音另须实际音乐对应，不按字数或固定速度计算时间。"
+  },
+  "04-768": {
+    "targetSha256": "c402ab39b206c892bae9584bd0af26d3bd64f0fd6428c6f367cf22fd4742ba0d",
+    "file": "sweet-peace-wiki.mid",
+    "sha256": "2333a0cb21cc81e3b0b50e412f1cacee5dd72069cb2dc3c862271b343e12aec8",
+    "url": "https://www.hymnwiki.org/wiki/images/7/79/039_Frid%2C_frid%2C_Guds_frid.mid",
+    "textReferenceUrl": "https://hymnary.org/hymn/CYBER/6420",
+    "scoreReferenceUrl": "https://www.hymnwiki.org/wiki/images/c/cf/039_Frid%2C_frid%2C_Guds_frid.ly",
+    "scoreReferenceSha256": "99cd3edf564d446142613912e69b9fc34f4b0f92a881ce24fd6836042e86bd43",
+    "printedScoreUrl": "https://www.hymnwiki.org/wiki/images/8/84/039_Frid%2C_frid%2C_Guds_frid.pdf",
+    "printedScoreSha256": "f346f0ae7b289e9803572b1507ed4fc3720adc13dcda728f81dd5a7619b049be",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "有一美意入我心灵",
+        "平安平安奇妙平安"
+      ],
+      [
+        "有十字架才有安宁",
+        "平安平安奇妙平安"
+      ],
+      [
+        "当我承认耶稣救主",
+        "平安平安奇妙平安"
+      ],
+      [
+        "居主恩中得享安详",
+        "平安平安奇妙平安"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          0,
+          10,
+          8,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 32,
+        "pitches": [
+          0,
+          8,
+          1,
+          0,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 58,
+      "midiNoteCount": 58,
+      "editCost": 0,
+      "runnerUpCost": 44,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 32,
+          "possibleMidiNoteIndices": [
+            32
+          ],
+          "at": 12.25
+        }
+      ],
+      "offsets": [
+        0.0,
+        12.25
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "sopranos",
+      "absoluteLilyPond": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        32
+      ]
+    },
+    "formReview": "Sweet Peace, the Gift of God’s Love / Peter P. Bilhorn。中文四段对应英文四段，前四行主歌，后平安起为副歌。已查看 Jubelklangen 1896 第39首瑞典文五线谱，核对最高声部 LilyPond 与直接链接 MIDI 的完整音序列，副歌从第9小节、第四谱行 c 开始；不是 Far Away in the Depths 的 Wonderful Peace。实际各段仍需和声、旋律、调性、0.5秒起点及反复相位一致，其他录音另须实际音频对应。"
   }
 }

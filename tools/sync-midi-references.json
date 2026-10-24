@@ -3777,12 +3777,12 @@
   },
   "01-254": {
     "targetSha256": "dbf3540186f388f7bc107f2e3fb6126d362d2f525d36864dd9bf90063ed86f16",
-    "file": "timeless-Rescue_the_Perishing.mid",
-    "sha256": "da1d0236c4fbbc9e0b80fa61225e46065ba9336eb786d303f89cf98bc8258e0b",
-    "url": "https://library.timelesstruths.org/library/music/R/Rescue_the_Perishing/Rescue_the_Perishing.mid",
-    "textReferenceUrl": "https://library.timelesstruths.org/music/Rescue_the_Perishing/",
-    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/R/Rescue_the_Perishing/Rescue_the_Perishing.xml",
-    "scoreReferenceSha256": "81fbaebb83b22603eb97d7ef5654c7684b11931f03ff182a88157299bbe1dc3f",
+    "file": "life254.mid",
+    "sha256": "fd1996d5a1020b3c1bccfe691025b9c4f969aa4de02eb1957591cde673cf3120",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/254.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life254.html",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0921_n.svg",
+    "scoreReferenceSha256": "80a1fd08625890d968064b3cc69578d7c1b250ac06c9d472e14fcbb1859d6c20",
     "verseCount": 4,
     "regionOpenings": [
       [
@@ -3861,7 +3861,196 @@
         42
       ]
     },
-    "formReview": "主歌第1至8小节；第9小节独立副歌Rescue起，对应正文“赶快救灭亡人，救失丧灵魂”区域。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。各实际演奏段落和全部录音版本仍须通过原有独立定位检查，不从字数或总时长推算。"
+    "formReview": "Rescue the Perishing，中文每段前四行是主歌，后两行为副歌。已核对生命圣诗254完整四段中文及直接关联MIDI；原有MusicXML完整旋律及分句通过全部最优对应唯一转移到歌本MIDI。另目视复核同曲三行英文简谱，第三行首音2是副歌开始，全部63个光学音符及两个阅读首音与MIDI完全对应。每个实际录音每段每区域使用独立MIDI旋律和原谱光学节奏，保持原有成本、调性、0.5秒、完整跨度和反复相位检查；和声仅留诊断，不以字符或固定速度推算时间。",
+    "referenceBoundaryTransfer": {
+      "sourceFile": "timeless-Rescue_the_Perishing.mid",
+      "sourceSha256": "da1d0236c4fbbc9e0b80fa61225e46065ba9336eb786d303f89cf98bc8258e0b",
+      "sourceReadingIndices": [
+        0,
+        42
+      ],
+      "sourceMidiOnsetPitches": [
+        5,
+        2,
+        3,
+        5,
+        5,
+        5,
+        10,
+        9,
+        7,
+        7,
+        5,
+        5,
+        7,
+        9,
+        10,
+        0,
+        2,
+        0,
+        10,
+        7,
+        5,
+        5,
+        2,
+        3,
+        5,
+        5,
+        5,
+        10,
+        9,
+        7,
+        7,
+        5,
+        5,
+        7,
+        9,
+        10,
+        0,
+        2,
+        0,
+        10,
+        9,
+        10,
+        0,
+        10,
+        0,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0,
+        2,
+        10,
+        10,
+        9,
+        7,
+        5,
+        10,
+        2,
+        0,
+        10,
+        9,
+        10
+      ],
+      "proof": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 63,
+        "midiNoteCount": 63,
+        "editCost": 0,
+        "runnerUpCost": 44,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 42,
+            "possibleMidiNoteIndices": [
+              42
+            ],
+            "at": 16.6956
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.6956
+        ]
+      },
+      "review": "原有已核对的阅读区域与完整旧参考旋律逐音映射到同歌本MIDI，每个区域首音在所有最优匹配中唯一。保留实际音符顺序与各MIDI的原速度，不使用字符或时长比例推算边界。"
+    },
+    "textReferenceSha256": "a2db8635983d4b699a50f05b4c60ca6730ec42788ab32e3458c76c3f9daa8a7f",
+    "symbolicScoreReferenceUrl": "https://library.timelesstruths.org/library/music/R/Rescue_the_Perishing/Rescue_the_Perishing.xml",
+    "symbolicScoreReferenceSha256": "81fbaebb83b22603eb97d7ef5654c7684b11931f03ff182a88157299bbe1dc3f",
+    "opticalReference": {
+      "svgFile": "reference/external/e0921_n.svg",
+      "imageFile": "printed-text-references/data/e0921_n.png",
+      "recognitionFile": "printed-text-references/ocr/e0921_n.png.json",
+      "imageSha256": "ed6b95a447be8538ecdf5fe936e24d3e7bf068752d073345eded906f964ab5ed",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 4,
+      "rowsSha256": "a44f2453d45c5e2161fd55bd7add5ed3125ea1a5bc8e42ecd37302a1c4463f80",
+      "noteRanges": {
+        "0": [
+          0.105,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              180,
+              194
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                197,
+                209
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              273,
+              287
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                290,
+                302
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              380,
+              394
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                397,
+                409
+              ]
+            }
+          ]
+        }
+      ],
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/921",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "layoutReview": "已目视复核固定原始图片的简谱各行音符范围及歌词上缘、首行拍号排除范围和各正文阅读首音。仅用于独立光学节奏及全旋律核对，英文改词或不同译词不用于替代中文歌词内容，中文结构已独立核对。所有实际录音逐段逐区域保持原有旋律、光学节奏、调性、起点、完整跨度和反复相位检查。"
+    }
   },
   "01-280": {
     "targetSha256": "cbfb603c996a8199817bce0189c75ee886252e3752809a89d4dc86cedc9565f5",
@@ -4961,8 +5150,8 @@
     "sha256": "59fc038c5eeb3a41d2bd7522acf1e9f79d4846d25b881fcc9a28bacbb9d01aba",
     "url": "https://library.timelesstruths.org/library/music/M/My_Saviors_Love/My_Saviors_Love.mid",
     "textReferenceUrl": "https://library.timelesstruths.org/music/My_Saviors_Love/",
-    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/M/My_Saviors_Love/My_Saviors_Love.xml",
-    "scoreReferenceSha256": "991f72803ad886e94e773d1c4cefc1c785aee9fcd1ca6db67d6c843da5b9b594",
+    "scoreReferenceUrl": "https://www.hymnal.net/Hymns/Hymnal/svg/e0290_n.svg",
+    "scoreReferenceSha256": "8d70b533d58f50fe14bfd4b5829ea41bc6ea4238c2a0044fe426b7b6a1145d2d",
     "verseCount": 5,
     "regionOpenings": [
       [
@@ -5045,7 +5234,109 @@
         30
       ]
     },
-    "formReview": "My Savior’s Love / I Stand Amazed，正文主歌对应第1至10小节，独立副歌从第11小节How起。 已核对原文及译文结构，完整原谱最高主旋律与固定公开MIDI通过全部最优音符序列对齐，所有阅读区域起点均唯一。每个实际演奏段落和全部录音版本仍须通过独立和声、旋律、调性、起点和反复相位检查，不从字数或总时长推算。"
+    "formReview": "My Savior’s Love / I Stand Amazed，中文五段主歌对应原谱第1至10小节，独立副歌从第11小节How起。已核对完整原文和中文结构，以及MusicXML最高旋律的61个起音；另目视复核公开四行简谱，副歌从第三行首音3开始，全部光学音符及两个阅读首音与MIDI完全对应。每个实际录音每段每区域使用独立的MIDI旋律和原谱光学节奏，保持原有成本、调性、0.5秒、完整跨度和反复相位检查；和声仅留诊断，不以字符或固定速度推算歌词时间。",
+    "symbolicScoreReferenceUrl": "https://library.timelesstruths.org/library/music/M/My_Saviors_Love/My_Saviors_Love.xml",
+    "symbolicScoreReferenceSha256": "991f72803ad886e94e773d1c4cefc1c785aee9fcd1ca6db67d6c843da5b9b594",
+    "opticalReference": {
+      "svgFile": "reference/external/e0290_n.svg",
+      "imageFile": "printed-text-references/data/e0290_n.png",
+      "recognitionFile": "printed-text-references/ocr/e0290_n.png.json",
+      "imageSha256": "f630a696235a0a27fc345545c11b354396a9e8b578219d92725c53814c847adc",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 4,
+      "rowsSha256": "782feb287f6fb975170e4ac8ab8ec48ae9260e287c4d76497f1e93c2b35e12ed",
+      "noteRanges": {
+        "0": [
+          0.105,
+          1
+        ]
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              166,
+              180
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                183,
+                195
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              251,
+              265
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                268,
+                280
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              353,
+              367
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                370,
+                382
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              456,
+              470
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                473,
+                485
+              ]
+            }
+          ]
+        }
+      ],
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/290",
+      "render": {
+        "playwrightVersion": "1.64.1",
+        "viewport": {
+          "width": 1400,
+          "height": 2000
+        }
+      },
+      "layoutReview": "已目视复核固定原始图片的四行简谱音符范围及歌词上缘、首行拍号排除范围和各正文阅读首音。仅用于独立光学节奏及全旋律核对，英文改词或不同译词不用于替代中文歌词内容，中文结构已独立核对。所有实际录音逐段逐区域保持原有旋律、光学节奏、调性、起点、完整跨度和反复相位检查。"
+    }
   },
   "02-206": {
     "targetSha256": "6fd10b0391c7fa35a11714b951d037e0412bffc367221a7cefeae1259d15a940",

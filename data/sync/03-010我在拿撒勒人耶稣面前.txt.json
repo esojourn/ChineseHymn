@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "03-010",
+  "status": "reviewed",
+  "source": {
+    "file": "03-010我在拿撒勒人耶稣面前.txt",
+    "sha256": "763663183eb2021ca72767fe4a1f2ce8ae8064c4a942493b5cba379be9b4eb82",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-010我在拿撒勒人耶稣面前.mp3",
+      "sha256": "7577578af9aad2e14f8d7adb0f66f40266a6d9c1b10b481ccde74deb35924af0",
+      "duration": 229.4334693877551,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.8,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.65,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.2,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 76.0,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 97.5,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 119.3,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 140.8,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 162.65,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 184.15,
+          "region": "r9",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 206.0,
+          "region": "r10",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-010我在拿撒勒人耶稣面前-领唱.mp3",
+      "sha256": "5e64b9216ff7c27a16241a34e3cdd308faef008455519aad2a8fcdf396c715d7",
+      "duration": 228.1795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 30
+    }
+  },
+  "cues": [
+    {
+      "at": 11.05,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 33.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.45,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.4,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.75,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.7,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.05,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 163.0,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 184.4,
+      "region": "r9",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 206.4,
+      "region": "r10",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我在拿撒勒人耶稣  面前惊异的站立， 希奇，不洁罪人如我，他爱竟然能临及。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "何等希奇！何等奇妙！我要歌唱到万代， 何等希奇！何等奇妙！是我救主的大爱！",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "为我他在园中祷告：“只要照你的旨意” 他无眼泪为己忧伤，为我流汗如血滴",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "何等希奇！何等奇妙！我要歌唱到万代， 何等希奇！何等奇妙！是我救主的大爱！",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "天使看见就怜恤他，从光明之中显现， 在那极其伤痛晚上，使他力量得加添",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "何等希奇！何等奇妙！我要歌唱到万代， 何等希奇！何等奇妙！是我救主的大爱！",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "他除去我罪与我忧，将其全归他自己， 他负重担到各各他，独自受苦并受死。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "何等希奇！何等奇妙！我要歌唱到万代， 何等希奇！何等奇妙！是我救主的大爱！",
+        "label": "第4段"
+      },
+      {
+        "region": "r9",
+        "text": "当那日与蒙赎的人，在荣耀里见他面， 何等欢乐歌唱他爱，一直到千万亿年。",
+        "label": "第5段"
+      },
+      {
+        "region": "r10",
+        "text": "何等希奇！何等奇妙！我要歌唱到万代， 何等希奇！何等奇妙！是我救主的大爱！",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-010我在拿撒勒人耶稣面前.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

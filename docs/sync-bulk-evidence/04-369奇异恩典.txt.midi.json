@@ -1,0 +1,342 @@
+{
+  "songId": "04-369",
+  "source": "04-369奇异恩典.txt",
+  "sourceHash": "670dad50cd5f9323032bc495cd068509b7888dac1fe388332aedd8910087ee37",
+  "trackHashes": [
+    {
+      "file": "04-369奇异恩典.mp3",
+      "sha256": "b6bf41e358f1c4c652e3972cd26b7cbfda6529d1f2c77b7917154d004b4ebffd"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "670dad50cd5f9323032bc495cd068509b7888dac1fe388332aedd8910087ee37",
+      "file": "life185.mid",
+      "sha256": "fa0c6aea8931dcec2ea346e1b8fcc9a381f94c5cc8901a0feb35bbc9b09385f8",
+      "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/185.mid",
+      "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life185.html",
+      "textReferenceSha256": "0fa826cb0efd69cbce869f422c3443372a22578720784fce9c193fef0c862af9",
+      "verseCount": 4,
+      "regionOpenings": [
+        [
+          "奇异恩典何等甘甜"
+        ],
+        [
+          "如此恩典使我敬畏"
+        ],
+        [
+          "许多危险试探网罗"
+        ],
+        [
+          "将来禧年圣徒欢聚"
+        ]
+      ],
+      "formReview": "正文四段各四行为完整阅读区域。每段和声、旋律分别通过后，再按四段完整顺序拼接参考，分别用整曲和声、旋律路径复核每个阅读起点。全部成本、调性区分及完整跨度门槛保留；四条时间路径任意两条须在0.5秒内一致，最终时间取实际匹配均值，不将段落起点修正到统一音乐相位。",
+      "fullPerformanceCheck": {
+        "version": 1,
+        "review": "逐段和声、旋律均通过。另以四段完整顺序的整曲和声、旋律两条路径核对全部实际起点；各成本、调性、完整跨度及四条路径任意两条的0.5秒限制都须通过，不将段落起点修正到统一相位。"
+      },
+      "lyricReferenceReview": {
+        "book": "生命圣诗",
+        "entry": 185,
+        "title": "奇异恩典 / Amazing Grace",
+        "tune": "New Britain",
+        "scope": "核对同曲译文与四段结构及歌词页直接关联的MIDI；不声称逐字声学识别。"
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 26.849999999999998,
+    "music": {
+      "period": 32.0,
+      "similarity": 0.7723020315170288,
+      "initialOnsetEstimate": 23.64,
+      "shifts": [
+        0.0,
+        32.2,
+        63.9,
+        96.2
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.27084214687347413,
+            "key": 8,
+            "at": 17.2,
+            "span": 31.9,
+            "starts": [
+              16.7
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5502200126647949,
+            "key": 1,
+            "at": 54.3,
+            "span": 2.0,
+            "starts": [
+              54.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.15771162509918213,
+            "key": 8,
+            "starts": [
+              16.700000762939453
+            ],
+            "span": 31.89999771118164
+          },
+          "runnerUp": {
+            "cost": 0.3906923770904541,
+            "key": 3,
+            "starts": [
+              39.900001525878906
+            ],
+            "span": 27.599998474121094
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2578118801116943,
+            "key": 8,
+            "at": 49.7,
+            "span": 31.6,
+            "starts": [
+              49.2
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5502200126647949,
+            "key": 1,
+            "at": 54.3,
+            "span": 2.0,
+            "starts": [
+              54.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.21097350120544434,
+            "key": 8,
+            "starts": [
+              49.20000076293945
+            ],
+            "span": 30.200000762939453
+          },
+          "runnerUp": {
+            "cost": 0.38466973304748536,
+            "key": 3,
+            "starts": [
+              71.4000015258789
+            ],
+            "span": 28.29999542236328
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.2668125867843628,
+            "key": 8,
+            "at": 81.6,
+            "span": 31.3,
+            "starts": [
+              81.1
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5584137916564942,
+            "key": 1,
+            "at": 111.6,
+            "span": 8.8,
+            "starts": [
+              111.1
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.1915365219116211,
+            "key": 8,
+            "starts": [
+              81.30000305175781
+            ],
+            "span": 31.099998474121094
+          },
+          "runnerUp": {
+            "cost": 0.3877577543258667,
+            "key": 3,
+            "starts": [
+              72.5
+            ],
+            "span": 27.699996948242188
+          }
+        }
+      },
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.24265501499176026,
+            "key": 8,
+            "at": 113.5,
+            "span": 31.4,
+            "starts": [
+              113.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5517225742340088,
+            "key": 1,
+            "at": 134.4,
+            "span": 2.1,
+            "starts": [
+              133.9
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.20128107070922852,
+            "key": 8,
+            "starts": [
+              113.0999984741211
+            ],
+            "span": 31.29999542236328
+          },
+          "runnerUp": {
+            "cost": 0.40713953971862793,
+            "key": 3,
+            "starts": [
+              104.80000305175781
+            ],
+            "span": 28.399993896484375
+          }
+        }
+      }
+    ],
+    "mode": "text-local-and-complete-score",
+    "completePerformance": {
+      "harmony": {
+        "best": {
+          "cost": 0.2632730960845947,
+          "key": 8,
+          "at": 17.2,
+          "span": 127.7,
+          "starts": [
+            16.7,
+            48.8,
+            81.0,
+            112.7
+          ]
+        },
+        "runnerUp": {
+          "cost": 0.5702922821044922,
+          "key": 1,
+          "at": 54.3,
+          "span": 2.0,
+          "starts": [
+            54.1,
+            55.3,
+            55.3,
+            55.3
+          ]
+        }
+      },
+      "melody": {
+        "best": {
+          "cost": 0.19623717069625854,
+          "key": 8,
+          "starts": [
+            16.700000762939453,
+            48.70000076293945,
+            81.0,
+            112.9000015258789
+          ],
+          "span": 127.69999694824219
+        },
+        "runnerUp": {
+          "cost": 0.41302051544189455,
+          "key": 3,
+          "starts": [
+            18.700000762939453,
+            46.79999923706055,
+            78.19999694824219,
+            109.0999984741211
+          ],
+          "span": 114.60000610351562
+        }
+      },
+      "onsetEstimates": [
+        [
+          16.7,
+          49.2,
+          81.1,
+          113.0
+        ],
+        [
+          16.700000762939453,
+          49.20000076293945,
+          81.30000305175781,
+          113.0999984741211
+        ],
+        [
+          16.7,
+          48.8,
+          81.0,
+          112.7
+        ],
+        [
+          16.700000762939453,
+          48.70000076293945,
+          81.0,
+          112.9000015258789
+        ]
+      ],
+      "version": 1,
+      "method": "paired local and complete ordered MIDI score paths; all pairwise onsets within 0.5 seconds",
+      "times": [
+        16.7,
+        48.98,
+        81.1,
+        112.92
+      ]
+    },
+    "readingOffsets": [
+      0
+    ]
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "奇异恩典何等甘甜， 我罪已得赦免； 前我失丧，今被寻回， 瞎眼今得看见。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "如此恩典使我敬畏， 使我心得安慰； 初信之时，即蒙恩惠， 真是何等宝贵！",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "许多危险试探网罗， 我已安然经过； 靠主恩典，安全不怕， 更引导我归家。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "将来禧年圣徒欢聚， 恩光爱谊千年； 喜乐颂赞，在父座前， 深望那日快现。",
+      "label": "第4段"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 0.915
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "04-369",
+  "status": "reviewed",
+  "source": {
+    "file": "04-369奇异恩典.txt",
+    "sha256": "670dad50cd5f9323032bc495cd068509b7888dac1fe388332aedd8910087ee37",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-369奇异恩典.mp3",
+      "sha256": "b6bf41e358f1c4c652e3972cd26b7cbfda6529d1f2c77b7917154d004b4ebffd",
+      "duration": 154.176,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 16.7,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.98,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.1,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 112.92,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmony and melody at every performed verse and reading region, additionally corroborated by both complete ordered score paths. All four onset estimates agree pairwise within 0.5 seconds; no arithmetic correction of performed verse starts.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "奇异恩典何等甘甜， 我罪已得赦免； 前我失丧，今被寻回， 瞎眼今得看见。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "如此恩典使我敬畏， 使我心得安慰； 初信之时，即蒙恩惠， 真是何等宝贵！",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "许多危险试探网罗， 我已安然经过； 靠主恩典，安全不怕， 更引导我归家。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "将来禧年圣徒欢聚， 恩光爱谊千年； 喜乐颂赞，在父座前， 深望那日快现。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-369奇异恩典.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

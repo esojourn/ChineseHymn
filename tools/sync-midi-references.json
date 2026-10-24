@@ -5464,5 +5464,155 @@
       "composer": "Richard Redhead",
       "scope": "核对原歌本歌词及段落结构与直接关联的同编号MIDI；只用于完整乐段首音，不声称逐字声学识别。"
     }
+  },
+  "02-199": {
+    "targetSha256": "f3bc7cca8514a79282f03cab36a4d2a1248218f85d9a93415e1992e1b7331370",
+    "file": "life199.mid",
+    "sha256": "2ed4391d1ab6de08ed5d57892e7b261ea501f2f382edb749ab64d7999bdde5e2",
+    "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/199.mid",
+    "textReferenceUrl": "https://www.christianstudy.com/data/hymns/text/life199.html",
+    "textReferenceSha256": "d8cf69c7ad085f9c77c77a55786584e89968b1ae95fb2b8ed3575676d3a96b52",
+    "scoreReferenceUrl": "https://s80976101befaaa82.jimcontent.com/download/version/1634162020/module/16151942622/name/%E4%BB%B0%E6%9C%9B%E7%9C%9F%E7%A5%9E%E7%BE%94%E7%BE%8A.pdf",
+    "scoreReferenceSha256": "a7271ec50f16bac3d7b59d44260d114c431ed20def104df3f1bc6c3e738f4ac6",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "你心若渴望从罪中",
+        "仰望真神羔羊仰望"
+      ],
+      [
+        "当撒旦试诱恐惧疑",
+        "仰望真神羔羊仰望"
+      ],
+      [
+        "你是否困倦路崎岖",
+        "仰望真神羔羊仰望"
+      ],
+      [
+        "黑影遮前路你不用",
+        "仰望真神羔羊仰望"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          9,
+          10,
+          9,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 32,
+        "pitches": [
+          0,
+          0,
+          2,
+          0,
+          5
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "Visually transcribed every sounding numbered-score pitch on PDF page 2; complete sequence and all optimal reading-boundary correspondences agree with the directly linked Life 199 MIDI.",
+      "printedKey": "F",
+      "printedMelodyDegrees": [
+        3,
+        3,
+        4,
+        3,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        5,
+        3,
+        1,
+        3,
+        2,
+        3,
+        3,
+        4,
+        3,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        5,
+        4,
+        3,
+        2,
+        1,
+        5,
+        5,
+        6,
+        5,
+        1,
+        7,
+        2,
+        4,
+        5,
+        7,
+        6,
+        5,
+        3,
+        3,
+        4,
+        5,
+        3,
+        4,
+        6,
+        6,
+        6,
+        4,
+        3,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "readingIndices": [
+        0,
+        32
+      ],
+      "proof": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 60,
+        "midiNoteCount": 60,
+        "editCost": 0,
+        "runnerUpCost": 45,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 32,
+            "possibleMidiNoteIndices": [
+              32
+            ],
+            "at": 16.6956
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.6956
+        ]
+      }
+    },
+    "formReview": "已逐段核对生命圣诗199完整四段及副歌和直接MIDI链接，正文每段前两行为主歌，空行后的单行为副歌。另目视复核风火公开PDF第2页全部60个旋律起音，前32音为主歌，第三谱行双小节线后首个5为副歌首音，所有音高及唯一分界与MIDI完全对应。每段、每区域仍须通过实际录音和声、旋律、调性、0.5秒及反复相位检查，不使用字数或固定速度推算时间。"
   }
 }

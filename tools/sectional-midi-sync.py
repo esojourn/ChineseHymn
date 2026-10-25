@@ -11,10 +11,10 @@ from pathlib import Path
 import time
 import urllib.request
 from sync_batch_align import export_result
-from sync_batch_audio import features
+from sync_batch_audio import features, repeated_verses
 from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
-from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups
+from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music
 from sync_batch_sources import clean, text_source
 from sync_batch_symbolic import score_row_offsets
 
@@ -191,6 +191,22 @@ def previous_reading_context(profile):
     return True
 
 
+def source_verse_context(source, profile):
+    review = profile.get('sourceVerseContext')
+    if review is None:
+        return None
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            'previousReadingContext' in profile):
+        raise ValueError('原文歌段上下文须说明完整反复结构，且不能叠加前一区域策略')
+    verses, at = [], 0
+    for verse in source['verses']:
+        verses.append(list(range(at, at + len(verse))))
+        at += len(verse)
+    return source_verse_groups(at, verses)
+
+
 def outro_profiles(profile):
     variants, names = [], set()
     alternatives = profile.get('instrumentalOutroAlternatives', [])
@@ -236,14 +252,14 @@ def independent_recordings(song, profile):
     return recordings
 
 
-def measured_performance(profile, window, material, target, cache, prepare, detail):
+def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None):
     melody, optical, reference = material
     verify_local = local_matcher(profile)
     previous_context = previous_reading_context(profile)
     proof = detail['performance'] = {}
     times = performance_times(melody, optical, target, window['durationEstimate'], window['onsetEstimate'],
         reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
-        reading_sections=profile.get('readingSectionReview'), previous_context=previous_context)
+        reading_sections=profile.get('readingSectionReview'), previous_context=previous_context, source_verses=source_verses)
     variants = outro_profiles(profile)
     if variants:
         checks = detail['instrumentalOutroChecks'] = []
@@ -256,7 +272,7 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
             measured = performance_times(melody_variant, optical_variant, target,
                 window['durationEstimate'], window['onsetEstimate'], reference_variant['symbolicRows']['semitoneShift'],
                 midi.match_template, check['performance'], local_match=verify_local,
-                reading_sections=variant.get('readingSectionReview'), previous_context=previous_context)
+                reading_sections=variant.get('readingSectionReview'), previous_context=previous_context, source_verses=source_verses)
             check['times'] = measured
             timelines.append(measured)
             stable_outro_times(timelines)
@@ -273,21 +289,29 @@ def generate(song, profile, cache, prepare=False):
                 'maximumOnsetDifference': .5, 'spanRatio': [.75, 1.25]}}
     try:
         source, definitions = validate_source(song, profile)
+        verses = source_verse_context(source, profile)
         recordings = independent_recordings(song, profile)
         melody, optical, reference = reference_material(profile, cache, prepare)
         if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
         evidence['performanceOrder'] = definitions
-        target = features(batch.ROOT / 'data' / song['reference'], cache)
         material = melody, optical, reference
-        times = measured_performance(profile, profile['sampling'], material, target, cache, prepare,
-                                     evidence['midiMatching'])
+        def measure_recording(file, window, detail):
+            audio = batch.ROOT / 'data' / file
+            measured = measured_performance(profile, window, material, features(audio, cache), cache, prepare,
+                                           detail, source_verses=verses)
+            if verses is not None:
+                music = repeated_verses(audio, len(verses), cache)
+                detail['sourceVerseMusic'] = verify_verse_music(measured, verses, music)
+                for check in detail.get('instrumentalOutroChecks', []):
+                    check['sourceVerseMusic'] = verify_verse_music(check['times'], verses, music)
+            return measured
+        times = measure_recording(song['reference'], profile['sampling'], evidence['midiMatching'])
         for item in recordings:
             detail = dict(item)
             evidence['midiMatching'].setdefault('independentRecordings', []).append(detail)
-            measured = measured_performance(profile, item['sampling'], material,
-                features(batch.ROOT / 'data' / item['file'], cache), cache, prepare, detail)
+            measured = measure_recording(item['file'], item['sampling'], detail)
             detail['times'] = measured
             evidence.setdefault('independentTimelines', {})[item['file']] = {
                 'definitions': definitions, 'times': measured, 'returnIndices': []}

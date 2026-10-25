@@ -217,13 +217,47 @@ def reading_section_groups(count, review=None):
     return groups
 
 
+def source_verse_groups(count, verses):
+    if (not isinstance(verses, list) or len(verses) < 2 or
+            any(not isinstance(verse, list) or not verse or
+                any(type(index) is not int for index in verse) for verse in verses) or
+            len({len(verse) for verse in verses}) != 1 or
+            [index for verse in verses for index in verse] != list(range(count))):
+        raise ValueError('完整歌段须按原文等长分组，依次覆盖全部阅读区域')
+    return verses
+
+
+def verify_verse_music(times, verses, music):
+    verses = source_verse_groups(len(times), verses)
+    shifts = music.get('shifts')
+    if (not isinstance(shifts, list) or len(shifts) != len(verses) or
+            any(type(at) not in (int, float) or not math.isfinite(at) for at in shifts) or
+            shifts[0] != 0 or any(a >= b for a, b in zip(shifts, shifts[1:])) or
+            not math.isfinite(music.get('similarity', float('nan'))) or music['similarity'] < .6):
+        raise ValueError('完整歌段缺少独立音乐反复证据')
+    differences = []
+    for verse, shift in zip(verses, shifts):
+        errors = [round(abs(times[index] - times[first] - shift), 3)
+                  for index, first in zip(verse, verses[0])]
+        if any(not math.isfinite(error) or error > .5 for error in errors):
+            raise ValueError('正文阅读起点与独立音乐反复相位不一致')
+        differences.append(errors)
+    return {'verseReadings': verses, 'music': music, 'maximumPhaseDifference': .5,
+            'phaseDifferences': differences}
+
+
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
-                      local_match=None, reading_sections=None, previous_context=False):
+                      local_match=None, reading_sections=None, previous_context=False, source_verses=None):
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)
     if type(previous_context) is not bool:
         raise ValueError('前一区域上下文必须显式启用')
+    if source_verses is not None:
+        source_verse_groups(len(groups), source_verses)
+        if previous_context:
+            raise ValueError('原文完整歌段上下文不能叠加前一区域策略')
+        evidence['sourceVerseReadings'] = source_verses
     one = match(melody_rows, target[1], target[0], duration, onset, 'spatialWeights')
     two = match(optical_rows, target[1], target[0], duration, onset, 'rhythmWeights')
     evidence.update(fullMelody=one, fullOptical=two, local=[])
@@ -255,6 +289,11 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         prefix = []
         if previous_context and index:
             prefix = list(range(groups[index - 1][0], first))
+        if source_verses is not None:
+            verse_index = next(i for i, verse in enumerate(source_verses) if index in verse)
+            context_first = source_verses[max(0, verse_index - 1)][0]
+            prefix = list(range(groups[context_first][0], first))
+        if prefix:
             query_start = (a['starts'][prefix[0]] + b['starts'][prefix[0]]) / 2
             query_span = end - query_start
             local_rows.insert(0, joined(melody_rows, 'spatialWeights', prefix))
@@ -264,9 +303,15 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
                                   'melody': local, 'optical': optical})
         if prefix:
-            evidence['local'][-1]['previousReadingContext'] = {'fromReading': index - 1,
+            context = {'fromReading': index - 1,
                 'sections': prefix, 'queryStart': query_start, 'queryDuration': query_span,
                 'targetRow': 1}
+            if source_verses is None:
+                evidence['local'][-1]['previousReadingContext'] = context
+            else:
+                context.pop('fromReading')
+                context.update(fromVerse=max(0, verse_index - 1), currentVerse=verse_index)
+                evidence['local'][-1]['sourceVerseContext'] = context
         if reading_sections is not None:
             evidence['local'][-1]['sections'] = group
         check_match(local, query_span, a['key'])
@@ -276,7 +321,10 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         spans.append(span)
     if any(x + .5 >= y for x, y in zip(times, times[1:])):
         raise ValueError('分段时间轴未递增')
-    if min(a['starts'][0], b['starts'][0]) >= .75 * min(spans) or (
-            float(target[0][-1]) - min(a['starts'][0] + a['span'], b['starts'][0] + b['span']) >= .75 * min(spans)):
+    edge_spans = spans if source_verses is None else [sum(spans[index] for index in verse) for verse in source_verses]
+    if source_verses is not None:
+        evidence['completeVerseSpans'] = edge_spans
+    if min(a['starts'][0], b['starts'][0]) >= .75 * min(edge_spans) or (
+            float(target[0][-1]) - min(a['starts'][0] + a['span'], b['starts'][0] + b['span']) >= .75 * min(edge_spans)):
         raise ValueError('录音首尾仍可容纳完整乐段，需核对演唱结构')
     return times

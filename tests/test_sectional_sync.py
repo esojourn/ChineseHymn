@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parents[1] / 'tools'))
 try:
     import mido
     import numpy as np
-    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time, stable_outro_times, reading_section_groups
+    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music
 except ImportError:
     mido = None
 
@@ -381,6 +381,125 @@ class SectionalTests(unittest.TestCase):
         for value in [True, {}, {'version': True}, {'version': 2}, {'version': 1, 'count': 2}]:
             with self.assertRaises(ValueError):
                 self.cli.previous_reading_context({'previousReadingContext': value})
+
+    def test_complete_verse_policy_derives_all_groups_from_source_and_rejects_count_overrides(self):
+        source = {'verses': [[{'region': 'r1'}, {'region': 'r2'}],
+                             [{'region': 'r3'}, {'region': 'r4'}],
+                             [{'region': 'r1'}, {'region': 'r2'}]]}
+        review = {'version': 1, 'reason': 'complete repeated source verses'}
+        self.assertIsNone(self.cli.source_verse_context(source, {}))
+        self.assertEqual(self.cli.source_verse_context(source, {'sourceVerseContext': review}),
+                         [[0, 1], [2, 3], [4, 5]])
+        for value in [{}, {**review, 'version': True}, {**review, 'reason': ''},
+                      {**review, 'verses': [[0, 1], [2, 3]]}, {**review, 'count': 2}]:
+            with self.assertRaises(ValueError):
+                self.cli.source_verse_context(source, {'sourceVerseContext': value})
+        with self.assertRaises(ValueError):
+            self.cli.source_verse_context(source, {'sourceVerseContext': review,
+                                                  'previousReadingContext': {'version': 1}})
+        for groups in [[[0, 1], [2, 3, 4, 5]], [[0, 1], [4, 5]], [[0, 1], [2, 3], [3, 4]],
+                       [[0, True], [2, 3], [4, 5]], [[0, 1, 2, 3, 4, 5]], []]:
+            with self.assertRaises(ValueError):
+                source_verse_groups(6, groups)
+
+    def test_complete_verse_music_checks_every_reading_phase_and_rejects_missing_repetitions(self):
+        groups = [[0, 1], [2, 3], [4, 5]]
+        music = {'period': 20, 'similarity': .8, 'shifts': [0, 20, 40]}
+        proof = verify_verse_music([14, 20, 34.5, 40, 54, 60], groups, music)
+        self.assertEqual(proof['phaseDifferences'], [[0, 0], [.5, 0], [0, 0]])
+        for times in [[14, 20, 34.51, 40, 54, 60], [14, 20, 34, 41, 54, 60],
+                      [14, 20, 34, 40, float('nan'), 60]]:
+            with self.assertRaises(ValueError):
+                verify_verse_music(times, groups, music)
+        for change in [{'shifts': [0, 20]}, {'shifts': [0, 40, 20]}, {'shifts': [0, 20, float('nan')]},
+                       {'shifts': [1, 20, 40]}, {'similarity': .59}]:
+            with self.assertRaises(ValueError):
+                verify_verse_music([14, 20, 34, 40, 54, 60], groups, {**music, **change})
+
+    def test_complete_verse_context_keeps_current_boundary_separate_and_retains_complete_verse_edges(self):
+        melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(6)]
+        optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(6)]
+        verses = [[0, 1], [2, 3], [4, 5]]
+        starts = [14, 20, 34, 40, 54, 60]
+        queries = []
+        def matcher(rows, chroma, times, duration, onset, weight):
+            queries.append([row['notes'] for row in rows])
+            found = starts if len(rows) == 6 else [starts[row['notes'][0] - 1] for row in rows]
+            return {'best': {'cost': .2, 'span': duration,
+                             'key': 1 if weight == 'spatialWeights' else 3, 'starts': found},
+                    'runnerUp': {'cost': .4}}
+        target = np.arange(77), np.zeros((12, 77))
+        proof = {}
+        self.assertEqual(performance_times(melody, optical, target, 60, 14, 2, matcher, proof,
+                                          source_verses=verses), starts)
+        self.assertEqual(proof['completeVerseSpans'], [20, 20, 20])
+        self.assertEqual(proof['local'][3]['sourceVerseContext']['sections'], [0, 1, 2])
+        self.assertEqual(proof['local'][4]['sourceVerseContext']['sections'], [2, 3])
+        self.assertEqual(queries[8:10], [[[1, 2, 3], [4]], [[1, 2, 3], [4]]])
+        with self.assertRaisesRegex(ValueError, '录音首尾'):
+            performance_times(melody, optical, target, 60, 14, 2, matcher, {})
+        with self.assertRaisesRegex(ValueError, '录音首尾'):
+            performance_times(melody, optical, (np.arange(90), target[1]), 60, 14, 2, matcher, {},
+                              source_verses=verses)
+        starts[:] = [at + 2 for at in starts]
+        with self.assertRaisesRegex(ValueError, '录音首尾'):
+            performance_times(melody, optical, target, 60, 16, 2, matcher, {}, source_verses=verses)
+        starts[:] = [at - 2 for at in starts]
+        def expensive(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2:
+                result['best']['cost'] = .36
+            return result
+        with self.assertRaisesRegex(ValueError, '成本'):
+            performance_times(melody, optical, target, 60, 14, 2, expensive, {}, source_verses=verses)
+        def disputed(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2 and args[-1] == 'rhythmWeights':
+                result['best']['starts'][-1] += .6
+            return result
+        with self.assertRaisesRegex(ValueError, '四条路径'):
+            performance_times(melody, optical, target, 60, 14, 2, disputed, {}, source_verses=verses)
+
+    def test_independent_complete_verse_phase_failure_prevents_export(self):
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}, {'file': 'main.mp3', 'sha256': 'main'}]}
+        definitions = [{'region': 'r' + str(i)} for i in range(4)]
+        source = {'verses': [definitions[:2], definitions[2:]]}
+        window = {'durationEstimate': 40, 'onsetEstimate': 2}
+        profile = {'sampling': window, 'sourceVerseContext': {'version': 1, 'reason': 'reviewed repeated verses'},
+                   'independentRecordings': [{'file': 'main.mp3', 'sha256': 'main', 'sampling': window}]}
+        material = ([{}] * 4, [{}] * 4, {'symbolicRows': {'semitoneShift': 2}})
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 8, 22, 28], [2, 8, 22, 29]]), \
+                patch.object(self.cli, 'repeated_verses', return_value={'similarity': .8, 'shifts': [0, 20]}), \
+                patch.object(self.cli, 'export_result') as export:
+            result = self.cli.generate(song, profile, Path(directory))
+            self.assertIn('needs-calibration', result[1])
+            export.assert_not_called()
+            self.assertFalse((Path(directory) / 'ready/song.txt.json').exists())
+
+    def test_complete_verse_music_also_rejects_an_outro_variant_with_disputed_repeat_phase(self):
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}]}
+        definitions = [{'region': 'r' + str(i)} for i in range(4)]
+        source = {'verses': [definitions[:2], definitions[2:]]}
+        profile = {'sampling': {'durationEstimate': 40, 'onsetEstimate': 2},
+                   'sourceVerseContext': {'version': 1, 'reason': 'reviewed repeated verses'}}
+        material = ([{}] * 4, [{}] * 4, {'symbolicRows': {'semitoneShift': 2}})
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'outro_profiles', return_value=[('alternate', {'midiReference': {}})]), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 8, 22, 28], [1.6, 7.6, 22.4, 28.4]]), \
+                patch.object(self.cli, 'repeated_verses', return_value={'similarity': .8, 'shifts': [0, 20]}), \
+                patch.object(self.cli, 'export_result') as export:
+            result = self.cli.generate(song, profile, Path(directory))
+            self.assertIn('相位', result[1])
+            export.assert_not_called()
 
     def test_independent_recordings_require_current_hashes_unique_files_and_only_sampling_overrides(self):
         song = {'reference': 'lead.mp3', 'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'},

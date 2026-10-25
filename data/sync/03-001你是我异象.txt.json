@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-001",
+  "status": "reviewed",
+  "source": {
+    "file": "03-001你是我异象.txt",
+    "sha256": "8d2b12b1439145bd0c33d69a25a44ead8f7226d73c4faeb2762d83babed1fbbc",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-001你是我异象.mp3",
+      "sha256": "27a7678e3b71e2560009c31346db9f521977d6a8eb5cdce97251201cf05bd306",
+      "duration": 185.88725,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 51.18,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 91.25,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 130.75,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-001你是我异象-领唱.mp3",
+      "sha256": "ec59643e9ab3bdaac407d337eaae6c369c4a701037a4bf4c2027d5fac81c8970",
+      "duration": 184.104,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 9.6,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 51.88,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 91.68,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.45,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "恳求心中主，成为我异象 万事无所慕主恩我渴望 求主居首位，昼夜导思想 工作或安息，慈容作我光",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "成为我智慧，成为我箴言 主与我同行常做我良伴 你是圣天父，我是你孩子 你住我心内，我与你合一",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "财富与虚荣，非我所倾意 你是我基业一直到永恒 唯有主基督，居我心首位 天上大君王，胜珍宝权能",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "诸天之君尊，你为我奏凯， 使我充满天乐，充满我心； 你是我心爱，无论何遭遇， 万有的主宰，求作我异象",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-001你是我异象.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "songId": "03-029",
+  "status": "reviewed",
+  "source": {
+    "file": "03-029将最好献主.txt",
+    "sha256": "5db67b891ef92c29db5786094d1d5c8ce9fc2e0821c7c86cc3ef975c083874ee",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-029将最好献主.mp3",
+      "sha256": "df66815f6bac69d64014f7e7220a9fdc52d7153b9f04f011aa70b73546f7e570",
+      "duration": 210.24,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.17,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 34.52,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 55.9,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 77.9,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.57,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 120.8,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 142.75,
+          "region": "r7",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 164.28,
+          "region": "r8",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 185.6,
+          "region": "r9",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-029将最好献主-领唱.mp3",
+      "sha256": "454f3a5bf4fa2bbfb8dc8c18635a6142d1c4146a9b7e7dfd0607f08404ecb7cd",
+      "duration": 187.4808163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 39,
+      "endLine": 42
+    }
+  },
+  "cues": [
+    {
+      "at": 9.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 29.08,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 49.4,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.65,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.85,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.2,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.45,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 146.7,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 167.1,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "将你最好的献给主， 献你青春的力量， 将你纯洁热情心灵， 忠心为真理打仗；",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主耶稣已有好榜样， 勇敢坚定不惧怕， 你要忠心敬虔爱主， 将最好奉献与祂。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "将你最好的献给主， 献你青春的力量， 穿上救恩全副军装， 忠心为真理打仗。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "将你最好的献给主， 主在你心居首位， 作主工尊主居首位， 奉献一切最可贵；",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "奉献必从主得赏赐， 父神曾赐独生子， 要甘心乐意服侍主， 将最好奉献与祂。",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "将你最好的献给主， 献你青春的力量， 穿上救恩全副军装， 忠心为真理打仗。",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "将你最好的献给主， 主爱伟大无可比， 祂将自己作你赎价， 天上荣耀赏赐你；",
+        "label": "第3段"
+      },
+      {
+        "region": "r8",
+        "text": "祂舍生命毫无怨言， 救你脱罪把血洒， 你要热心敬虔爱主， 将最好奉献与祂。",
+        "label": "第3段"
+      },
+      {
+        "region": "r9",
+        "text": "将你最好的献给主， 献你青春的力量， 穿上救恩全副军装， 忠心为真理打仗。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-029将最好献主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -555,6 +555,42 @@ class BatchTests(unittest.TestCase):
                 materialize_printed_reference(profile, 'image', path)
             self.assertEqual(path.read_bytes(), b'original')
 
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_printed_accidentals_preserve_note_times_and_explicit_natural_cancellation(self):
+        import io
+        import mido
+        from sync_batch_printed_midi import printed_reference_bytes
+        reference = {'sourceSha256': 'image', 'tonicMidi': 63,
+                     'numberedRowsAndQuarterBeats': [[[1, 1], [1, .5], [0, .5], [4, 1], [4, 1], [7, 1]]],
+                     'accidentals': {'version': 1, 'offsets': [[1, 0, 0, 1, 0, -1]],
+                                     'reason': 'reviewed sharp, natural and flat in the pinned print'}}
+        profile = {'targetSha256': 'image', 'mode': 'symbolic-melody-and-optical',
+                   'printedRhythmReference': reference}
+        midi = mido.MidiFile(file=io.BytesIO(printed_reference_bytes(profile, 'image')))
+        seconds, starts = 0, []
+        for message in midi:
+            seconds += message.time
+            if message.type == 'note_on' and message.velocity:
+                starts.append((message.note, seconds))
+        self.assertEqual(starts, [(64, 0), (63, .5), (69, 1), (68, 1.5), (73, 2)])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional MIDI dependencies')
+    def test_printed_accidentals_reject_unreviewed_or_unbounded_changes_and_accidental_rests(self):
+        from sync_batch_printed_midi import printed_reference_bytes
+        base = {'version': 1, 'offsets': [[1, 0, 0, 0, 0, 0]], 'reason': 'reviewed print'}
+        reference = {'sourceSha256': 'image', 'tonicMidi': 63,
+                     'numberedRowsAndQuarterBeats': [[[1, 1], [2, 1], [0, 1], [3, 1], [4, 1], [5, 1]]]}
+        for value in [{}, {**base, 'version': True}, {**base, 'version': 2}, {**base, 'reason': ''},
+                      {**base, 'offsets': []}, {**base, 'offsets': [[1]]},
+                      {**base, 'offsets': [[True, 0, 0, 0, 0, 0]]},
+                      {**base, 'offsets': [[2, 0, 0, 0, 0, 0]]},
+                      {**base, 'offsets': [[0, 0, 1, 0, 0, 0]]},
+                      {**base, 'offsets': [[0, 0, 0, 0, 0, 0]]}, {**base, 'ignoreHash': True}]:
+            profile = {'targetSha256': 'image', 'mode': 'symbolic-melody-and-optical',
+                       'printedRhythmReference': {**reference, 'accidentals': value}}
+            with self.assertRaises(ValueError):
+                printed_reference_bytes(profile, 'image')
+
     @unittest.skipIf(confirm_boundaries is None, 'requires optional retrieval dependencies')
     def test_cyclic_retrieval_identifies_a_transposed_and_shifted_reference(self):
         import numpy as np

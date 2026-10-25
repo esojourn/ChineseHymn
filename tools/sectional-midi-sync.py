@@ -33,7 +33,38 @@ midi = load_module('sectional_midi_checks', 'midi-sync.py')
 def pinned_file(cache, item, prepare):
     path = cache / item['file']
     render = item.get('renderPdf')
-    if render is not None:
+    stack = item.get('stackImages')
+    if stack is not None:
+        from PIL import Image, __version__ as pillow_version
+        if (render is not None or not isinstance(stack, dict) or
+                set(stack) != {'version', 'pillowVersion', 'sources'} or
+                type(stack.get('version')) is not int or stack['version'] != 1 or
+                stack.get('pillowVersion') != pillow_version or
+                not isinstance(stack.get('sources'), list) or not 2 <= len(stack['sources']) <= 12 or
+                any(not isinstance(source, dict) or set(source) != {'file', 'url', 'sha256'} or
+                    any(not isinstance(source[key], str) or not source[key] for key in ['file', 'url', 'sha256']) or
+                    source['file'] == item['file'] for source in stack['sources']) or
+                len({source['file'] for source in stack['sources']}) != len(stack['sources'])):
+            raise ValueError('多页原谱须固定每页文件、原始哈希、顺序及图片渲染器版本')
+        sources = [pinned_file(cache, source, prepare) for source in stack['sources']]
+        if prepare:
+            pages = []
+            for source in sources:
+                with Image.open(source) as page:
+                    pages.append(page.convert('RGB'))
+            raster = Image.new('RGB', (max(page.width for page in pages), sum(page.height for page in pages)), 'white')
+            top = 0
+            for page in pages:
+                raster.paste(page, (0, top))
+                top += page.height
+            stream = io.BytesIO()
+            raster.save(stream, format='PNG')
+            data = stream.getvalue()
+            if hashlib.sha256(data).hexdigest() != item['sha256']:
+                raise ValueError('多页原谱合并图片与复核哈希不一致')
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+    elif render is not None:
         if (not isinstance(render, dict) or type(render.get('version')) is not int or render['version'] != 1 or
                 type(render.get('page')) is not int or render['page'] < 0 or
                 type(render.get('scale')) is not int or not 1 <= render['scale'] <= 8 or

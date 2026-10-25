@@ -151,6 +151,50 @@ class SectionalTests(unittest.TestCase):
                 self.cli.reference_material(profile, cache)
             self.assertEqual(destination.read_bytes(), b'keep existing reference')
 
+    def test_stacked_pages_rebuild_original_pixels_in_order_and_verify_sources_before_cache_reuse(self):
+        from PIL import Image, __version__ as pillow_version
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            sources = []
+            for name, size, color in [('first.png', (3, 2), 'red'), ('second.png', (2, 3), 'blue')]:
+                Image.new('RGB', size, color).save(cache / name)
+                sources.append({'file': name, 'url': 'https://example.test/' + name,
+                                'sha256': hashlib.sha256((cache / name).read_bytes()).hexdigest()})
+            expected = Image.new('RGB', (3, 5), 'white')
+            expected.paste(Image.new('RGB', (3, 2), 'red'), (0, 0))
+            expected.paste(Image.new('RGB', (2, 3), 'blue'), (0, 2))
+            stream = io.BytesIO()
+            expected.save(stream, format='PNG')
+            item = {'file': 'stack.png', 'sha256': hashlib.sha256(stream.getvalue()).hexdigest(),
+                    'stackImages': {'version': 1, 'pillowVersion': pillow_version, 'sources': sources}}
+            self.assertEqual(self.cli.pinned_file(cache, item, True), cache / 'stack.png')
+            self.assertEqual((cache / 'stack.png').read_bytes(), stream.getvalue())
+            with self.assertRaisesRegex(ValueError, '合并图片'):
+                self.cli.pinned_file(cache, {**item, 'sha256': 'changed'}, True)
+            self.assertEqual((cache / 'stack.png').read_bytes(), stream.getvalue())
+            (cache / 'second.png').write_bytes(b'changed original page')
+            for prepare in [False, True]:
+                with self.assertRaises(ValueError):
+                    self.cli.pinned_file(cache, item, prepare)
+            self.assertEqual((cache / 'stack.png').read_bytes(), stream.getvalue())
+
+    def test_stacked_pages_reject_unpinned_transforms_duplicate_pages_and_recursive_inputs(self):
+        from PIL import __version__ as pillow_version
+        source = {'file': 'first.png', 'url': 'https://example.test/first.png', 'sha256': 'first'}
+        stack = {'version': 1, 'pillowVersion': pillow_version,
+                 'sources': [source, {**source, 'file': 'second.png'}]}
+        bad_stacks = [{**stack, 'version': True}, {**stack, 'pillowVersion': 'other'},
+                      {**stack, 'resize': 2}, {**stack, 'sources': [source]},
+                      {**stack, 'sources': [source, source]},
+                      {**stack, 'sources': [source, {**source, 'file': 'stack.png'}]},
+                      {**stack, 'sources': [source, {**source, 'file': 'second.png', 'renderPdf': {}}]}]
+        with tempfile.TemporaryDirectory() as directory:
+            for value in bad_stacks:
+                with self.assertRaisesRegex(ValueError, '多页原谱'):
+                    self.cli.pinned_file(Path(directory), {'file': 'stack.png', 'stackImages': value}, True)
+            with self.assertRaisesRegex(ValueError, '多页原谱'):
+                self.cli.pinned_file(Path(directory), {'file': 'stack.png', 'stackImages': stack, 'renderPdf': {}}, True)
+
     def test_printed_origin_is_bound_to_the_actual_optical_image_before_any_midi_write(self):
         from sync_batch_printed_midi import printed_reference_bytes
         with tempfile.TemporaryDirectory() as directory:

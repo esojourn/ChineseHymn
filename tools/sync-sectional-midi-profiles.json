@@ -5574,5 +5574,361 @@
       ]
     },
     "formReview": "原文两段并明确重复一遍，四个完整演唱乐段各48拍、各含前28拍与后20拍两个阅读区域，实际顺序ABABABAB。B从第二行末小节的求领我（第二段拉我手）首个3开始，不能等到第三谱行才移动。原谱为公开传统诗歌选集第176首亲爱主牵我手，原始JPG逐像素绑定SHA-256。目视核对最高声部的三个谱行及全部拍数，重建完整48拍单旋律分析MIDI并重复四次；只合并第二行我苦愁跨小节的2和末行到天庭的1持续音，其余不同音圆滑线保留各音头。光学提取只排除已经目视核对的小节线及谱行括号，保留实际识别结果，不手工修补被错认的6；全曲音序编辑率、全部起句至少五个音及唯一对应仍须通过。领唱和伴奏分别用原始录音完成整曲MIDI、整曲光学及每次阅读区域独立MIDI、光学四路径。局部只增加原文一个完整前段及本段已唱部分作上下文，当前起点单独标记，成本0.35、调性区分0.06、跨度75%至125%、起点任意互差0.5秒全部保留。首尾检查使用原文完整歌段的实测长度，同时必须通过同一录音的独立音乐反复检索：四段的每个阅读位置均须与第一段相位差不超过0.5秒，不能遗漏或混淆循环。较长器乐前奏不冒充正文，首屏保持原文第一阅读区域；全部时间点由实际音频测得，不按拍数或总时长推算。原始歌词、空行、图片、音频及已发布数据不改动。"
+  },
+  "04-002": {
+    "version": 1,
+    "sourceHash": "27979b3430248ad9d14fd64982c4aeed59421110796dcc85aaae9b65a95ad750",
+    "tracks": [
+      {
+        "file": "04-002藏身主里.mp3",
+        "sha256": "2d748b5736e13ab33dd3d19a361b37746bfdfa73357665d23e4356eae4e5b668"
+      },
+      {
+        "file": "04-002藏身主里-领唱.mp3",
+        "sha256": "78916997708541d35d65477e23b7994bfcd300efc0d74f565db2dbf9fdcf8be8"
+      }
+    ],
+    "audioFile": "04-002藏身主里-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "regionOpenings": [
+      "我灵在忧伤痛苦挣扎之时，",
+      "藏身主里，藏身主里， 你",
+      "无论在平静或忧伤或孤单，",
+      "藏身主里，藏身主里， 你",
+      "仇敌常侵扰，挣扎中真苦恼",
+      "藏身主里，藏身主里， 你"
+    ],
+    "sampling": {
+      "durationEstimate": 150,
+      "onsetEstimate": 8
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "independentRecordings": [
+      {
+        "file": "04-002藏身主里.mp3",
+        "sha256": "2d748b5736e13ab33dd3d19a361b37746bfdfa73357665d23e4356eae4e5b668",
+        "sampling": {
+          "durationEstimate": 198,
+          "onsetEstimate": 11
+        },
+        "endingReadingRepeat": {
+          "version": 1,
+          "region": "r6",
+          "opticalPart": "B",
+          "quarterRange": [
+            68,
+            99
+          ],
+          "file": "reference/external/hiding-thee-three-verses-final-refrain.mid",
+          "sha256": "7101955f0de1c38dd3278679a3f52035f6881e7d82ee8f115ae718606a789825",
+          "reason": "该伴奏版在三个完整歌段后再次演奏末段副歌，实测约189.9秒起；沿用末个阅读区域显示同一副歌，不新增换页。正文前三次AB顺序及全部已核对原谱保持不变，只在分析参考尾部追加原谱同一B一次；追加后所有正文起点仍须逐录音通过整曲及局部四路径，不能用删去尾部后的结果代替。"
+        }
+      }
+    ],
+    "midiReference": {
+      "origin": {
+        "file": "midi/timeless-Hiding_in_Thee.mid",
+        "sha256": "04b295eff0065ab7b342c84f7a83f057bd535fbbb62e719652a5eb2f3736daf2",
+        "url": "https://library.timelesstruths.org/library/music/H/Hiding_in_Thee/Hiding_in_Thee.mid"
+      },
+      "file": "reference/external/hiding-thee-three-verses.mid",
+      "sha256": "8974d2fed16a8d0f6dea88d5c32564986c5843dee26871258310d6133f54586b",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Treble",
+        "quarterLength": 100,
+        "sections": [
+          [
+            3,
+            99
+          ],
+          [
+            3,
+            99
+          ],
+          [
+            3,
+            99
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          0,
+          10,
+          9,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 46,
+        "pitches": [
+          7,
+          7,
+          9,
+          10,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 65,
+        "pitches": [
+          0,
+          0,
+          10,
+          9,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 111,
+        "pitches": [
+          7,
+          7,
+          9,
+          10,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 130,
+        "pitches": [
+          0,
+          0,
+          10,
+          9,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 176,
+        "pitches": [
+          7,
+          7,
+          9,
+          10,
+          9
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/hiding-thee.png",
+        "sha256": "475a7c2d1c21365c0adf0d629da99fa4d3df5b40ff121208798784f12b797c2e",
+        "pdfSource": {
+          "file": "reference/external/evangel-hymnal.pdf",
+          "sha256": "7d17e5b89e90866094ecf9b6023f3d605975512692410cded82437d3a8e4eb16",
+          "url": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 149,
+          "scale": 4,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/hiding-thee.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              265,
+              307
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                434,
+                575
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              720,
+              770
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                889,
+                1037
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1171,
+              1222
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1334,
+                1405
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "f1d4416bc7607beb388edec5528d12e773e3ebdf7e81f54e65dcb4cc16425367",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            11
+          ],
+          [
+            0,
+            12,
+            14
+          ],
+          [
+            0,
+            15,
+            18
+          ],
+          [
+            0,
+            19,
+            22
+          ],
+          [
+            0,
+            23,
+            26
+          ],
+          [
+            0,
+            27,
+            28
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            7,
+            13
+          ],
+          [
+            1,
+            14,
+            19
+          ],
+          [
+            1,
+            20,
+            23
+          ],
+          [
+            1,
+            24,
+            29
+          ]
+        ],
+        "B": [
+          [
+            2,
+            1,
+            4
+          ],
+          [
+            2,
+            5,
+            12
+          ],
+          [
+            2,
+            13,
+            16
+          ],
+          [
+            2,
+            17,
+            23
+          ],
+          [
+            2,
+            24,
+            25
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文三段各由主歌四行与副歌两行构成，正文六个阅读区域按ABABAB完整演唱。独立原谱为颂主新歌第176首藏身主里（O Safe to the Rock / Hiding in Thee），原PDF索引149页，逐行核对最高声部三个谱行。明确排除小节线、谱行括号及其误认音头，保留光学识别遗漏或错认的音符原结果，不手工填补。完整音序与公开原MIDI及每个阅读起句的至少五音唯一对应均须通过；65个原MIDI旋律起音组成一个96拍完整曲调。原文件第3至99拍重复三次，保留全部声部、时值和速度；副歌起点在参考首音后第65拍，不能按印刷行数或总时长比例推算。领唱只演奏三个完整歌段，伴奏在三段后又奏一次末段副歌，单独绑定该音轨文件和SHA-256及末段再奏说明；其分析参考只能追加原谱末个B，不改动任何前面的正文或阅读分界。末段再奏保持最后副歌阅读区域。两版分别使用整曲MIDI、整曲光学、逐区域MIDI及光学四路径，局部固定保留一个完整前一区域作上下文；成本0.35、调性区分0.06、跨度75%至125%、起点任意互差0.5秒、首尾及正文顺序检查全部保留。任一录音追加尾部后验证失败都阻止导出，不能回退到删除尾部的时间轴或复用另一版时间。原始歌词、空行、图片、音频及已发布数据不改动。"
   }
 }

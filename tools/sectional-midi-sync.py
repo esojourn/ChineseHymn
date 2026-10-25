@@ -239,7 +239,8 @@ def independent_recordings(song, profile):
         raise ValueError('独立录音配置必须逐项绑定当前音轨')
     seen = {song['reference']}
     for item in recordings:
-        if (not isinstance(item, dict) or set(item) != {'file', 'sha256', 'sampling'} or
+        if (not isinstance(item, dict) or set(item) not in [
+                {'file', 'sha256', 'sampling'}, {'file', 'sha256', 'sampling', 'endingReadingRepeat'}] or
                 not any(item['file'] == track['file'] and item['sha256'] == track['sha256']
                         for track in song['tracks']) or item['file'] in seen):
             raise ValueError('独立录音配置重复或与当前全部音轨哈希不符')
@@ -250,6 +251,36 @@ def independent_recordings(song, profile):
                 window['durationEstimate'] <= 0 or window['onsetEstimate'] < 0):
             raise ValueError('独立录音的整曲取样范围无效')
     return recordings
+
+
+def ending_recording_profile(profile, item):
+    repeat = item.get('endingReadingRepeat')
+    if 'endingReadingRepeat' not in item:
+        return profile
+    reference, optical = profile['midiReference'], profile['opticalReference']
+    if (not isinstance(repeat, dict) or set(repeat) != {
+            'version', 'region', 'opticalPart', 'quarterRange', 'file', 'sha256', 'reason'} or
+            type(repeat.get('version')) is not int or repeat['version'] != 1 or
+            not isinstance(repeat.get('reason'), str) or not repeat['reason'].strip() or
+            repeat.get('region') != profile['regions'][-1] or repeat.get('opticalPart') != optical['order'][-1] or
+            optical['readingStarts'][-1] != [len(optical['order']) - 1, 0] or
+            'readingSectionReview' in profile or profile.get('instrumentalOutroAlternatives') or
+            'transposeSections' in reference['arrangement'] or 'transposeParts' in optical or
+            not isinstance(repeat.get('file'), str) or not repeat['file'] or
+            repeat['file'] in [reference['file'], reference['origin']['file']] or
+            not isinstance(repeat.get('sha256'), str) or len(repeat['sha256']) != 64 or
+            any(char not in '0123456789abcdef' for char in repeat['sha256'])):
+        raise ValueError('录音尾部再奏只能明确绑定末个阅读区域的同一原谱乐段')
+    section = repeat['quarterRange']
+    if (not isinstance(section, list) or len(section) != 2 or
+            any(type(at) not in (int, float) or not math.isfinite(at) for at in section) or
+            not 0 <= section[0] < section[1] <= reference['arrangement']['quarterLength']):
+        raise ValueError('末段再奏须引用原 MIDI 中明确的完整拍数范围')
+    result = copy.deepcopy(profile)
+    result['midiReference'].update(file=repeat['file'], sha256=repeat['sha256'])
+    result['midiReference']['arrangement']['sections'].append(section[:])
+    result['opticalReference']['order'].append(repeat['opticalPart'])
+    return result
 
 
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None):
@@ -291,15 +322,16 @@ def generate(song, profile, cache, prepare=False):
         source, definitions = validate_source(song, profile)
         verses = source_verse_context(source, profile)
         recordings = independent_recordings(song, profile)
+        recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         melody, optical, reference = reference_material(profile, cache, prepare)
         if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
         evidence['performanceOrder'] = definitions
         material = melody, optical, reference
-        def measure_recording(file, window, detail):
+        def measure_recording(file, window, detail, track_profile=profile, track_material=material):
             audio = batch.ROOT / 'data' / file
-            measured = measured_performance(profile, window, material, features(audio, cache), cache, prepare,
+            measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
                                            detail, source_verses=verses)
             if verses is not None:
                 music = repeated_verses(audio, len(verses), cache)
@@ -308,10 +340,17 @@ def generate(song, profile, cache, prepare=False):
                     check['sourceVerseMusic'] = verify_verse_music(check['times'], verses, music)
             return measured
         times = measure_recording(song['reference'], profile['sampling'], evidence['midiMatching'])
-        for item in recordings:
+        for item, track_profile in recording_profiles:
             detail = dict(item)
             evidence['midiMatching'].setdefault('independentRecordings', []).append(detail)
-            measured = measure_recording(item['file'], item['sampling'], detail)
+            track_material = material
+            if track_profile is not profile:
+                track_material = reference_material(track_profile, cache, prepare)
+                detail.update(track_material[2])
+                detail['recordingReference'] = {'midiReference': track_profile['midiReference'],
+                    'opticalReference': track_profile['opticalReference'],
+                    'readingBoundaries': track_profile['readingBoundaries']}
+            measured = measure_recording(item['file'], item['sampling'], detail, track_profile, track_material)
             detail['times'] = measured
             evidence.setdefault('independentTimelines', {})[item['file']] = {
                 'definitions': definitions, 'times': measured, 'returnIndices': []}

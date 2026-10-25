@@ -550,6 +550,66 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.cli.measured_performance({}, window, material, None, Path('.'), False, {})
 
+    def ending_profile(self):
+        return {'regions': ['r1', 'r2', 'r3'], 'readingBoundaries': [{'onsetIndex': 0}],
+                'midiReference': {'file': 'body.mid', 'origin': {'file': 'original.mid'},
+                                  'arrangement': self.recipe()},
+                'opticalReference': {'order': ['A', 'B', 'A'], 'parts': {'A': [], 'B': []},
+                                     'readingStarts': [[0, 0], [1, 0], [2, 0]]}}
+
+    def ending_repeat(self):
+        return {'version': 1, 'region': 'r3', 'opticalPart': 'A', 'quarterRange': [0, 4],
+                'file': 'body-with-ending.mid', 'sha256': '0' * 64, 'reason': 'measured reprise of the final reading'}
+
+    def test_recording_ending_can_only_append_the_final_part_without_changing_body_or_reading_boundaries(self):
+        profile = self.ending_profile()
+        original = copy.deepcopy(profile)
+        actual = self.cli.ending_recording_profile(profile, {'endingReadingRepeat': self.ending_repeat()})
+        self.assertEqual(profile, original)
+        self.assertEqual(actual['midiReference']['arrangement']['sections'],
+                         original['midiReference']['arrangement']['sections'] + [[0, 4]])
+        self.assertEqual(actual['opticalReference']['order'], ['A', 'B', 'A', 'A'])
+        self.assertEqual(actual['opticalReference']['readingStarts'], original['opticalReference']['readingStarts'])
+        self.assertEqual(actual['readingBoundaries'], original['readingBoundaries'])
+        self.assertIs(self.cli.ending_recording_profile(profile, {}), profile)
+
+    def test_recording_ending_rejects_body_overrides_unreviewed_parts_and_reference_overwrites(self):
+        profile = self.ending_profile()
+        repeat = self.ending_repeat()
+        for update in [{'version': True}, {'region': 'r2'}, {'opticalPart': 'B'}, {'reason': ''},
+                       {'file': 'body.mid'}, {'file': 'original.mid'}, {'sha256': 'unreviewed'},
+                       {'quarterRange': [0, 9]}, {'quarterRange': [False, 4]},
+                       {'quarterRange': [0, float('nan')]}, {'sections': [[4, 8]]}]:
+            with self.assertRaises(ValueError):
+                self.cli.ending_recording_profile(profile, {'endingReadingRepeat': {**repeat, **update}})
+        for update in [{'readingSectionReview': {}}, {'instrumentalOutroAlternatives': [{}]}]:
+            with self.assertRaises(ValueError):
+                self.cli.ending_recording_profile({**profile, **update}, {'endingReadingRepeat': repeat})
+        with self.assertRaises(ValueError):
+            self.cli.ending_recording_profile(profile, {'endingReadingRepeat': None})
+
+    def test_failed_recording_ending_verification_cannot_export_or_reuse_the_body_timeline(self):
+        profile = {**self.ending_profile(), 'sampling': {'durationEstimate': 30, 'onsetEstimate': 2}}
+        profile['independentRecordings'] = [{'file': 'main.mp3', 'sha256': 'main',
+            'sampling': profile['sampling'], 'endingReadingRepeat': self.ending_repeat()}]
+        original = copy.deepcopy(profile)
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}, {'file': 'main.mp3', 'sha256': 'main'}]}
+        definitions = [{'region': 'r' + str(i)} for i in range(3)]
+        material = ([{}] * 3, [{}] * 3, {'symbolicRows': {'semitoneShift': 2}})
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=({}, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material) as reference, \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 12, 22], ValueError('unverified ending')]), \
+                patch.object(self.cli, 'export_result') as export:
+            result = self.cli.generate(song, profile, Path(directory))
+            self.assertIn('needs-calibration', result[1])
+            export.assert_not_called()
+            self.assertEqual(len(reference.call_args_list[1].args[0]['midiReference']['arrangement']['sections']), 4)
+            self.assertEqual(profile, original)
+            self.assertFalse((Path(directory) / 'ready/song.txt.json').exists())
+
     def test_previous_context_retains_current_row_label_and_rejects_disputed_target_onsets(self):
         melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(3)]
         optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(3)]

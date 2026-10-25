@@ -482,6 +482,9 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '
                               '(sung onset not measured); every subsequent change retains contextual acoustic checks '
                               'and independent chroma-DTW recording correspondence.')
+    if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
+        method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
+            'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')
     evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},

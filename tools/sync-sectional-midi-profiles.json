@@ -3572,5 +3572,351 @@
       }
     },
     "formReview": "原文三段各八行，按原始四行阅读区域分为AB，末段后原文另有一次B，完整正文为ABABABB七个区域。固定公开F调5/4拍简谱四行合计四十拍；每段B从第二谱行最后的5音弱起，不能误用第三谱行首音。人工音级和时值逐项按原图核对，与独立像素识别及完整MIDI音符序列和全部阅读分界严格唯一对应。录音中前两段之后存在器乐过门，末尾还有器乐延续，以固定谱内最后十拍段作完整路径参考；末段及其后的反复整体升高全音，MIDI全部声部和光学音级分别显式加两半音。对于同音弱起，局部查询包含一个完整前一区域作为上下文，当前阅读区域单独标记；仅取当前标记的实测音频起点，前文位置不作为本次滚动时间。每个原文阅读位置仍逐一通过整曲和局部MIDI、光学四路径0.5秒核对，成本0.35、调性区分0.06、跨度75%至125%、实际顺序及首尾检查保持不变。184秒时长和13秒前奏仅选择搜索范围，不直接提供滚动时间；其他现有音轨仍须独立对应，原始歌词和空行保持不变。"
+  },
+  "04-379": {
+    "version": 1,
+    "sourceHash": "4762a50ddaf28cc4fe894c87f2dee0b1a2f0b933c7b3514a14fa85762bf70b73",
+    "tracks": [
+      {
+        "file": "04-379安稳港口.mp3",
+        "sha256": "c828697fc94fc7bea57ec38d190e6b156ea6bad2cc2b1c5385eab8bedbf47c01"
+      },
+      {
+        "file": "04-379安稳港口-领唱.mp3",
+        "sha256": "5911fd45d704bb8167621f481ea5c3e38a31f9a0fc80dbd6c2875ca442342b17"
+      }
+    ],
+    "audioFile": "04-379安稳港口-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "regionOpenings": [
+      "我灵惶惶然如漂流大海中，",
+      "我将我灵魂抛锚安稳港口，",
+      "我愿将自己投靠他怀抱里，",
+      "我将我灵魂抛锚安稳港口，",
+      "我灵要歌唱，因耶稣医治我",
+      "我将我灵魂抛锚安稳港口，",
+      "朋友请你来，主耶稣在等你",
+      "我将我灵魂抛锚安稳港口，"
+    ],
+    "sampling": {
+      "durationEstimate": 220,
+      "onsetEstimate": 14
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "independentRecordings": [
+      {
+        "file": "04-379安稳港口.mp3",
+        "sha256": "c828697fc94fc7bea57ec38d190e6b156ea6bad2cc2b1c5385eab8bedbf47c01",
+        "sampling": {
+          "durationEstimate": 209,
+          "onsetEstimate": 14
+        }
+      }
+    ],
+    "midiReference": {
+      "origin": {
+        "file": "midi/timeless-The_Haven_of_Rest.mid",
+        "url": "https://library.timelesstruths.org/library/music/T/The_Haven_of_Rest/The_Haven_of_Rest.mid",
+        "sha256": "5fcd28e2ad75a46cbb9c162da32ae98d6d026d965e727c2eefa9f86fedd6340a"
+      },
+      "file": "reference/external/haven-main-four-verses.mid",
+      "sha256": "9f7c4d6006fe28e50eb2fa3eeb8a39fcf62653b94b8f508de85277fc7282f8ce",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "SOPRANO ALTO",
+        "quarterLength": 102,
+        "sections": [
+          [
+            5,
+            101
+          ],
+          [
+            5,
+            101
+          ],
+          [
+            5,
+            101
+          ],
+          [
+            5,
+            101
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          8,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 77,
+        "pitches": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 115,
+        "pitches": [
+          8,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 154,
+        "pitches": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 192,
+        "pitches": [
+          8,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 231,
+        "pitches": [
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 269,
+        "pitches": [
+          8,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/haven-rest-6x.png",
+        "sha256": "db6ecf0fa8f00201cf0685bd017a5362f1bf68b5b8b128fd658f9ee72556891b",
+        "pdfSource": {
+          "file": "reference/external/evangel-hymnal.pdf",
+          "sha256": "7d17e5b89e90866094ecf9b6023f3d605975512692410cded82437d3a8e4eb16",
+          "url": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 252,
+          "scale": 6,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/haven-rest-6x.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              1064,
+              1118
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1287,
+                1353
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1752,
+              1808
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1988,
+                2051
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              2429,
+              2483
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                2663,
+                2729
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              2903,
+              2960
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                3123,
+                3191
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "80d04aedc7717dabd4874081ce16aec9b34ea27fa555eae9396f88eb1882a5ea",
+      "ties": {
+        "0": [
+          18
+        ],
+        "1": [
+          17
+        ],
+        "2": [
+          21
+        ],
+        "3": [
+          18
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            20
+          ],
+          [
+            1,
+            0,
+            18
+          ]
+        ],
+        "B": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            23
+          ],
+          [
+            3,
+            0,
+            19
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文四段各由主歌四行与副歌四行构成，完整八个阅读区域按ABABABAB顺序演唱。独立公开颂主新歌第309首安稳港口，原PDF索引252页，以固定PDFium版本六倍渲染，逐行核对四行简谱。四处末尾相邻同音连结分别合并；副歌开头一条被识别为1的小节线明确排除，不改动原图音符。原谱完整旋律和全部阅读首音均须与公开MIDI最高声部唯一对应。MIDI从原文件第5至101拍取完整乐段并重复四次，保留全部声部、时值和原始速度，不用固定拍数推算音频时间。两版录音编配及速度不同，伴奏明确绑定文件与SHA-256，和领唱一样分别完成整曲MIDI、整曲光学、逐区域MIDI和逐区域光学核对；每个实际起点须任意两路径在0.5秒内一致。局部固定保留一个前一区域作上下文，仍保持成本0.35、调性区分0.06、跨度75%至125%、全部阅读顺序及录音首尾检查。领唱220秒、伴奏209秒和14秒前奏仅是搜索范围估计，任何独立录音失败都不得转为沿用另一版时间。原始歌词、空行和全部音频保持不变。"
   }
 }

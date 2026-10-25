@@ -338,6 +338,55 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.cli.previous_reading_context({'previousReadingContext': value})
 
+    def test_independent_recordings_require_current_hashes_unique_files_and_only_sampling_overrides(self):
+        song = {'reference': 'lead.mp3', 'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'},
+                                                  {'file': 'main.mp3', 'sha256': 'main'}]}
+        item = {'file': 'main.mp3', 'sha256': 'main', 'sampling': {'durationEstimate': 30, 'onsetEstimate': 2}}
+        self.assertEqual(self.cli.independent_recordings(song, {}), [])
+        self.assertEqual(self.cli.independent_recordings(song, {'independentRecordings': [item]}), [item])
+        for entries in [None, [item, item], [{**item, 'file': 'unknown.mp3'}],
+                        [{**item, 'file': 'lead.mp3', 'sha256': 'lead'}], [{**item, 'sha256': 'stale'}],
+                        [{**item, 'regions': ['r1']}], [{**item, 'sampling': {'durationEstimate': True, 'onsetEstimate': 2}}],
+                        [{**item, 'sampling': {'durationEstimate': float('nan'), 'onsetEstimate': 2}}],
+                        [{**item, 'sampling': {'durationEstimate': 30, 'onsetEstimate': -1}}]]:
+            with self.assertRaises(ValueError):
+                self.cli.independent_recordings(song, {'independentRecordings': entries})
+
+    def test_failed_explicit_independent_recording_cannot_export_or_fall_back_to_another_track(self):
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}, {'file': 'main.mp3', 'sha256': 'main'}]}
+        window = {'durationEstimate': 30, 'onsetEstimate': 2}
+        profile = {'sampling': window, 'independentRecordings': [
+            {'file': 'main.mp3', 'sha256': 'main', 'sampling': window}]}
+        definitions = [{'region': 'r' + str(i)} for i in range(3)]
+        material = ([{}] * 3, [{}] * 3, {'symbolicRows': {'semitoneShift': 2}})
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=({}, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 12, 22], ValueError('bad independent track')]), \
+                patch.object(self.cli, 'export_result') as export:
+            result = self.cli.generate(song, profile, Path(directory))
+            self.assertIn('needs-calibration', result[1])
+            export.assert_not_called()
+            self.assertFalse((Path(directory) / 'ready/song.txt.json').exists())
+
+    def test_every_recording_measurement_rechecks_all_declared_outro_alternatives(self):
+        material = ([{}] * 3, [{}] * 3, {'symbolicRows': {'semitoneShift': 2}})
+        window = {'durationEstimate': 30, 'onsetEstimate': 2}
+        with patch.object(self.cli, 'outro_profiles', return_value=[('alternate', {'midiReference': {}})]), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 12, 22], [2.1, 12, 22]]):
+            detail = {}
+            self.assertEqual(self.cli.measured_performance({}, window, material, None, Path('.'), False, detail),
+                             [2, 12, 22])
+            self.assertEqual(len(detail['instrumentalOutroChecks']), 1)
+        with patch.object(self.cli, 'outro_profiles', return_value=[('alternate', {'midiReference': {}})]), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'performance_times', side_effect=[[2, 12, 22], [2.6, 12, 22]]):
+            with self.assertRaises(ValueError):
+                self.cli.measured_performance({}, window, material, None, Path('.'), False, {})
+
     def test_previous_context_retains_current_row_label_and_rejects_disputed_target_onsets(self):
         melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(3)]
         optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(3)]

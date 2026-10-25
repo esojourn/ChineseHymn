@@ -186,6 +186,52 @@ def outro_profiles(profile):
     return variants
 
 
+def independent_recordings(song, profile):
+    recordings = profile.get('independentRecordings', [])
+    if not isinstance(recordings, list):
+        raise ValueError('独立录音配置必须逐项绑定当前音轨')
+    seen = {song['reference']}
+    for item in recordings:
+        if (not isinstance(item, dict) or set(item) != {'file', 'sha256', 'sampling'} or
+                not any(item['file'] == track['file'] and item['sha256'] == track['sha256']
+                        for track in song['tracks']) or item['file'] in seen):
+            raise ValueError('独立录音配置重复或与当前全部音轨哈希不符')
+        seen.add(item['file'])
+        window = item['sampling']
+        if (not isinstance(window, dict) or set(window) != {'durationEstimate', 'onsetEstimate'} or
+                any(type(window[key]) not in (int, float) or not math.isfinite(window[key]) for key in window) or
+                window['durationEstimate'] <= 0 or window['onsetEstimate'] < 0):
+            raise ValueError('独立录音的整曲取样范围无效')
+    return recordings
+
+
+def measured_performance(profile, window, material, target, cache, prepare, detail):
+    melody, optical, reference = material
+    verify_local = local_matcher(profile)
+    previous_context = previous_reading_context(profile)
+    proof = detail['performance'] = {}
+    times = performance_times(melody, optical, target, window['durationEstimate'], window['onsetEstimate'],
+        reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
+        reading_sections=profile.get('readingSectionReview'), previous_context=previous_context)
+    variants = outro_profiles(profile)
+    if variants:
+        checks = detail['instrumentalOutroChecks'] = []
+        timelines = [times]
+        for name, variant in variants:
+            melody_variant, optical_variant, reference_variant = reference_material(variant, cache, prepare)
+            check = {'name': name, 'midiReference': variant['midiReference'], 'reference': reference_variant,
+                     'performance': {}}
+            checks.append(check)
+            measured = performance_times(melody_variant, optical_variant, target,
+                window['durationEstimate'], window['onsetEstimate'], reference_variant['symbolicRows']['semitoneShift'],
+                midi.match_template, check['performance'], local_match=verify_local,
+                reading_sections=variant.get('readingSectionReview'), previous_context=previous_context)
+            check['times'] = measured
+            timelines.append(measured)
+            stable_outro_times(timelines)
+    return times
+
+
 def generate(song, profile, cache, prepare=False):
     started = time.monotonic()
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
@@ -196,37 +242,24 @@ def generate(song, profile, cache, prepare=False):
                 'maximumOnsetDifference': .5, 'spanRatio': [.75, 1.25]}}
     try:
         source, definitions = validate_source(song, profile)
+        recordings = independent_recordings(song, profile)
         melody, optical, reference = reference_material(profile, cache, prepare)
         if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
         evidence['performanceOrder'] = definitions
         target = features(batch.ROOT / 'data' / song['reference'], cache)
-        verify_local = local_matcher(profile)
-        previous_context = previous_reading_context(profile)
-        proof = {}
-        evidence['midiMatching']['performance'] = proof
-        times = performance_times(melody, optical, target, profile['sampling']['durationEstimate'],
-            profile['sampling']['onsetEstimate'], reference['symbolicRows']['semitoneShift'], midi.match_template, proof,
-            local_match=verify_local, reading_sections=profile.get('readingSectionReview'),
-            previous_context=previous_context)
-        variants = outro_profiles(profile)
-        if variants:
-            checks = evidence['midiMatching']['instrumentalOutroChecks'] = []
-            timelines = [times]
-            for name, variant in variants:
-                melody_variant, optical_variant, reference_variant = reference_material(variant, cache, prepare)
-                detail = {'name': name, 'midiReference': variant['midiReference'], 'reference': reference_variant,
-                          'performance': {}}
-                checks.append(detail)
-                measured = performance_times(melody_variant, optical_variant, target,
-                    profile['sampling']['durationEstimate'], profile['sampling']['onsetEstimate'],
-                    reference_variant['symbolicRows']['semitoneShift'], midi.match_template, detail['performance'],
-                    local_match=verify_local, reading_sections=variant.get('readingSectionReview'),
-                    previous_context=previous_context)
-                detail['times'] = measured
-                timelines.append(measured)
-                stable_outro_times(timelines)
+        material = melody, optical, reference
+        times = measured_performance(profile, profile['sampling'], material, target, cache, prepare,
+                                     evidence['midiMatching'])
+        for item in recordings:
+            detail = dict(item)
+            evidence['midiMatching'].setdefault('independentRecordings', []).append(detail)
+            measured = measured_performance(profile, item['sampling'], material,
+                features(batch.ROOT / 'data' / item['file'], cache), cache, prepare, detail)
+            detail['times'] = measured
+            evidence.setdefault('independentTimelines', {})[item['file']] = {
+                'definitions': definitions, 'times': measured, 'returnIndices': []}
         return export_result(song, batch.ROOT, cache, destination, evidence, started, source,
                              definitions, times, [0])
     except (ValueError, FileNotFoundError, KeyError) as error:

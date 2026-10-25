@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "songId": "03-031",
+  "status": "reviewed",
+  "source": {
+    "file": "03-031亲爱主，牵我手.txt",
+    "sha256": "43ac8a83d7e5e6bf7de1f7a4e00c0172d96149531f39d70cd18598b4ad480b99",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-031亲爱主，牵我手.mp3",
+      "sha256": "ac082e499a5f7c464127e248cb972e8e2312c55dd3dea756e854720bc317a07c",
+      "duration": 163.128,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 18.4,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 39.3,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.27,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 75.1,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 89.95,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "return"
+        },
+        {
+          "at": 110.8,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.9,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 146.4,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-031亲爱主，牵我手-领唱.mp3",
+      "sha256": "1839ef82a428dfd127a431fd812797eb231e3fcccb4964060e2c76b79f586d40",
+      "duration": 159.52979591836734,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    }
+  },
+  "cues": [
+    {
+      "at": 9.03,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.15,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 46.65,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.65,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 84.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "return"
+    },
+    {
+      "at": 106.12,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 121.65,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.63,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "亲爱主，牵我手， 建立我，领我走； 我疲倦，我软弱，我苦愁； 经风暴，过黑夜，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求领我，进光明； 亲爱主，牵我手，到天庭。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我道路，虽凄凉， 主临近，慰忧伤； 我在世快打完美好仗； 听我求，听我祷，",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "拉我手，防跌倒； 亲爱主，牵我手，常引导。",
+        "label": "第2段"
+      },
+      {
+        "region": "r1",
+        "text": "亲爱主，牵我手， 建立我，领我走； 我疲倦，我软弱，我苦愁； 经风暴，过黑夜，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求领我，进光明； 亲爱主，牵我手，到天庭。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我道路，虽凄凉， 主临近，慰忧伤； 我在世快打完美好仗； 听我求，听我祷，",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "拉我手，防跌倒； 亲爱主，牵我手，常引导。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-031亲爱主，牵我手.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

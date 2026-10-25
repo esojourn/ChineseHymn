@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 import re
+import unicodedata
 import numpy as np
 from numba import njit
 from sync_batch_audio import features, repeated_verses
@@ -90,7 +91,7 @@ def reviewed_score_systems(systems, height):
     return systems
 
 
-def note_rows(source, recognition, cache, reviewed_systems=None):
+def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digits=False):
     global _ocr
     if reviewed_systems is None:
         definition = image_source(recognition)
@@ -100,7 +101,9 @@ def note_rows(source, recognition, cache, reviewed_systems=None):
             definition = {'systems': reviewed_score_systems(reviewed_systems, raster.height)}
     if not definition['systems']:
         raise ValueError('纯歌词图片没有简谱音符，需要人声转写匹配')
-    version = 3 if reviewed_systems is None else 4
+    if type(normalize_digits) is not bool or normalize_digits and reviewed_systems is None:
+        raise ValueError('数字规范化需要显式核对的原谱版面')
+    version = 5 if normalize_digits else 3 if reviewed_systems is None else 4
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
@@ -135,6 +138,8 @@ def note_rows(source, recognition, cache, reviewed_systems=None):
                       for char, column in zip(group, group_columns)]
         notes, positions, char_indices = [], [], []
         for index, (char, x) in enumerate(characters):
+            if normalize_digits:
+                char = unicodedata.normalize('NFKC', char)
             char = char.replace('i', '1').replace('I', '1')
             if not re.fullmatch('[0-7]', char):
                 continue

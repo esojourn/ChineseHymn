@@ -396,6 +396,33 @@ class BatchTests(unittest.TestCase):
                 self.assertNotIn('reviewedSystems', saved)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
+    def test_normalized_reference_digits_use_a_separate_cache_and_preserve_legacy_notes(self):
+        from PIL import Image
+        import sync_batch_score as score
+        class Reader:
+            calls = 0
+            def text_rec(self, crop, return_word_box):
+                self.calls += 1
+                return [('1234０５', 1., (100, ['1234０５'], [[10, 25, 40, 55, 70, 85]], None, None))], None
+        reader = Reader()
+        systems = [{'notes': {'recognitionBand': [10, 24]},
+                    'lyrics': [{'recognitionBand': [27, 40]}]}]
+        with tempfile.TemporaryDirectory() as directory, patch.object(score, '_ocr', reader):
+            cache = Path(directory)
+            raster = cache / 'score.png'
+            Image.new('RGB', (100, 100), 'white').save(raster)
+            recognition = {'source': 'score.png', 'sha256': 'fixed', 'recognizerVersion': 5}
+            legacy = score.note_rows(raster, recognition, cache, reviewed_systems=systems)
+            normalized = score.note_rows(raster, recognition, cache, reviewed_systems=systems, normalize_digits=True)
+            self.assertEqual(legacy[0]['notes'], [1, 2, 3, 4])
+            self.assertEqual(normalized[0]['notes'], [1, 2, 3, 4, 0, 5])
+            self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems,
+                                             normalize_digits=True), normalized)
+            self.assertEqual(reader.calls, 2)
+            self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems), legacy)
+            self.assertEqual(reader.calls, 3)
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
     def test_reference_score_rejects_changed_source_render_and_cached_notes(self):
         import hashlib
         import sync_batch_reference_score as reference_score

@@ -3918,5 +3918,242 @@
       ]
     },
     "formReview": "原文四段各由主歌四行与副歌四行构成，完整八个阅读区域按ABABABAB顺序演唱。独立公开颂主新歌第309首安稳港口，原PDF索引252页，以固定PDFium版本六倍渲染，逐行核对四行简谱。四处末尾相邻同音连结分别合并；副歌开头一条被识别为1的小节线明确排除，不改动原图音符。原谱完整旋律和全部阅读首音均须与公开MIDI最高声部唯一对应。MIDI从原文件第5至101拍取完整乐段并重复四次，保留全部声部、时值和原始速度，不用固定拍数推算音频时间。两版录音编配及速度不同，伴奏明确绑定文件与SHA-256，和领唱一样分别完成整曲MIDI、整曲光学、逐区域MIDI和逐区域光学核对；每个实际起点须任意两路径在0.5秒内一致。局部固定保留一个前一区域作上下文，仍保持成本0.35、调性区分0.06、跨度75%至125%、全部阅读顺序及录音首尾检查。领唱220秒、伴奏209秒和14秒前奏仅是搜索范围估计，任何独立录音失败都不得转为沿用另一版时间。原始歌词、空行和全部音频保持不变。"
+  },
+  "02-496": {
+    "version": 1,
+    "sourceHash": "1e9dc409b2473fbae988819fac16102c67f7a85faa891fcace12d8569b48fdd7",
+    "tracks": [
+      {
+        "file": "02-496晨昏颂祷.mp3",
+        "sha256": "1f75d5f604e72f11c48039613cb8136e33942bbfe7064630d73bfe85baf2540d"
+      },
+      {
+        "file": "02-496晨昏颂祷-领唱.mp3",
+        "sha256": "f7e4df2a10338d0f8b98eb66490acc33e680b52aa004f1dd03f5f2c274ac7f87"
+      }
+    ],
+    "audioFile": "02-496晨昏颂祷-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "主赐此日转瞬已经过， 遵",
+      "我们向主奉陈至敬心， 静",
+      "大陆海洋，闹市与僻境， ",
+      "家国兴衰，转瞬成陈迹， "
+    ],
+    "sampling": {
+      "durationEstimate": 115.19999999999999,
+      "onsetEstimate": 8.85
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "independentRecordings": [
+      {
+        "file": "02-496晨昏颂祷.mp3",
+        "sha256": "1f75d5f604e72f11c48039613cb8136e33942bbfe7064630d73bfe85baf2540d",
+        "sampling": {
+          "durationEstimate": 124,
+          "onsetEstimate": 11
+        }
+      }
+    ],
+    "midiReference": {
+      "origin": {
+        "file": "midi/timeless-The_Day_Thou_Gavest_Lord_Is_Ended.mid",
+        "url": "https://library.timelesstruths.org/library/music/T/The_Day_Thou_Gavest_Lord_Is_Ended/The_Day_Thou_Gavest_Lord_Is_Ended.mid",
+        "sha256": "d71aeb34d1ebdc7ec0f976fa52adf28c2bb15ac007def3efbe7ebae4840fa73d"
+      },
+      "file": "reference/external/day-ended-four-verses.mid",
+      "sha256": "4d2091e67fd680cdfc2273c35ba02b77d50668ff52e8d3dcdf1e24398f4dea47",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Treble",
+        "quarterLength": 51,
+        "sections": [
+          [
+            2,
+            50
+          ],
+          [
+            2,
+            50
+          ],
+          [
+            2,
+            50
+          ],
+          [
+            2,
+            50
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          11,
+          0,
+          11,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 44,
+        "pitches": [
+          2,
+          11,
+          0,
+          11,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 88,
+        "pitches": [
+          2,
+          11,
+          0,
+          11,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 132,
+        "pitches": [
+          2,
+          11,
+          0,
+          11,
+          2
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/day-ended.png",
+        "sha256": "390902b136e763b4bbf38e6b4ba2051ef27d1ede478c24a1613d2106bb214ba9",
+        "pdfSource": {
+          "file": "reference/external/sicheng-new-hymns.pdf",
+          "sha256": "82adf0f463d0b146a92912ef5f15a1ec65e04862b58ff28a03adb468c06ec369",
+          "url": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 639,
+          "scale": 2,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/day-ended.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              382,
+              440
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                462,
+                523
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              624,
+              682
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                696,
+                764
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              866,
+              929
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                937,
+                1013
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "08e788b4ab3767015bf9b654cb4bb251883c429d34e2d8f333c8bec33eaf736a",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            0,
+            17
+          ],
+          [
+            1,
+            0,
+            16
+          ],
+          [
+            2,
+            0,
+            11
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "formReview": "歌词四段各四行，逐段覆盖完整St. Clement曲调，原文对应英文第1、2、3、5段。独立原谱为思澄堂公开赞美诗新编第155首晚间颂声歌，固定原PDF索引639页、渲染器版本及两倍倍率。逐行核对44个实际旋律音头；末行最后被识别为7的双终止线明确排除，所有跨不同音的弧线均为圆滑线而非同音连结，第一行相邻两个5保留为重新发音。完整印刷旋律与公开原MIDI旋律零编辑且全部阅读起点唯一对应。MIDI采用原第2至50拍重复四次，保留全部声部与原始速度；不使用总时长或字数推算滚动点。领唱与伴奏分别使用各自原始MP3进行整曲MIDI、整曲光学及逐段MIDI、光学四条路径核对。局部固定保留一个完整前一区域作上下文，全部路径仍保持成本0.35、调性区分0.06、完整跨度75%至125%、起点0.5秒、顺序与录音首尾检查。伴奏文件与哈希明确固定，失败不能沿用领唱时间。取样时长和前奏仅限定搜索范围，实际时间点全部由音频测得；原始歌词、空行、图片和音频不改动。"
   }
 }

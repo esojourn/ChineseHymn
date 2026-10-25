@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "02-022",
+  "status": "reviewed",
+  "source": {
+    "file": "02-022更新我心意.txt",
+    "sha256": "f4930fa93ba4b22bd3a5acd08d41c910e44483ace664bb781c7c01903a934472",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-022更新我心意.mp3",
+      "sha256": "88efcae1085c236bcea037463c28a45090ed7929960d392f6e2e43be45108999",
+      "duration": 135.0,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 33.7,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.95,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 74.8,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 94.73,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-022更新我心意-领唱.mp3",
+      "sha256": "52d14953f1f76e6cda77f12635d62f2c4b0f223576aa9ad52cd2a31df69200b4",
+      "duration": 133.08,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 13.1,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.9,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.1,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.0,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.93,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "更新我心意，使我能像你。 更新我心意，使我能像你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主，你是窑匠，我是泥土； 陶我、塑造我，是我的恳求。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "更新我心意，使我能像你。 更新我心意，使我能像你。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "主，你是窑匠，我是泥土； 陶我、塑造我，是我的恳求。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "更新我心意，使我能像你。 更新我心意，使我能像你。 使我能像你。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-022更新我心意.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

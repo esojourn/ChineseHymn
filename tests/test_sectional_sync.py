@@ -331,6 +331,61 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 four_path_time(values)
 
+    def test_previous_reading_policy_is_explicit_and_cannot_change_context_length(self):
+        self.assertFalse(self.cli.previous_reading_context({}))
+        self.assertTrue(self.cli.previous_reading_context({'previousReadingContext': {'version': 1}}))
+        for value in [True, {}, {'version': True}, {'version': 2}, {'version': 1, 'count': 2}]:
+            with self.assertRaises(ValueError):
+                self.cli.previous_reading_context({'previousReadingContext': value})
+
+    def test_previous_context_retains_current_row_label_and_rejects_disputed_target_onsets(self):
+        melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(3)]
+        optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(3)]
+        queries = []
+        def matcher(rows, chroma, times, duration, onset, weight):
+            queries.append([[*row['notes']] for row in rows])
+            starts = [2, 12, 22] if len(rows) == 3 else [onset, onset + 10] if len(rows) == 2 else [onset]
+            return {'best': {'cost': .2, 'span': duration, 'key': 1 if weight == 'spatialWeights' else 3,
+                             'starts': starts}, 'runnerUp': {'cost': .4}}
+        evidence = {}
+        target = np.arange(36), np.zeros((12, 36))
+        self.assertEqual(performance_times(melody, optical, target, 30, 2, 2, matcher, evidence,
+                                          previous_context=True), [2, 12, 22])
+        self.assertEqual(queries[4:6], [[[1], [2]], [[1], [2]]])
+        self.assertEqual(evidence['local'][1]['previousReadingContext']['queryDuration'], 20)
+        self.assertNotIn('previousReadingContext', evidence['local'][0])
+        def disputed(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2 and args[-1] == 'rhythmWeights':
+                result['best']['starts'][-1] += .6
+            return result
+        with self.assertRaisesRegex(ValueError, '四条路径'):
+            performance_times(melody, optical, target, 30, 2, 2, disputed, {}, previous_context=True)
+        def expensive(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2:
+                result['best']['cost'] = .36
+            return result
+        with self.assertRaises(ValueError):
+            performance_times(melody, optical, target, 30, 2, 2, expensive, {}, previous_context=True)
+
+    def test_previous_context_includes_intervening_instrumental_sections_without_new_reading_cues(self):
+        review = {'version': 1, 'groups': [[0], [2], [4]], 'instrumentalSections': [1, 3, 5],
+                  'reason': 'reviewed instrumental interludes and outro'}
+        melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(6)]
+        optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(6)]
+        queries = []
+        def matcher(rows, chroma, times, duration, onset, weight):
+            queries.append([row['notes'] for row in rows])
+            starts = [2, 8, 12, 18, 22, 28] if len(rows) == 6 else [onset, onset + 10] if len(rows) == 2 else [onset]
+            return {'best': {'cost': .2, 'span': duration, 'key': 1 if weight == 'spatialWeights' else 3,
+                             'starts': starts}, 'runnerUp': {'cost': .4}}
+        actual = performance_times(melody, optical, (np.arange(36), np.zeros((12, 36))),
+                                   30, 2, 2, matcher, {}, reading_sections=review, previous_context=True)
+        self.assertEqual(actual, [2, 12, 22])
+        self.assertEqual(queries[4:6], [[[1, 2], [3]], [[1, 2], [3]]])
+        self.assertEqual(queries[6:8], [[[3, 4], [5]], [[3, 4], [5]]])
+
     def test_reading_groups_account_for_every_section_and_cannot_skip_undeclared_music(self):
         review = {'version': 1, 'groups': [[0, 1], [3], [4]],
                   'instrumentalSections': [2, 5], 'reason': 'reviewed instrumental interlude and outro'}

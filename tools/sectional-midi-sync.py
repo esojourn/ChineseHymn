@@ -150,6 +150,16 @@ def local_matcher(profile):
     return match
 
 
+def previous_reading_context(profile):
+    review = profile.get('previousReadingContext')
+    if review is None:
+        return False
+    if (not isinstance(review, dict) or set(review) != {'version'} or
+            type(review['version']) is not int or review['version'] != 1):
+        raise ValueError('前一区域上下文需要版本1，且只能使用一个完整前一区域')
+    return True
+
+
 def outro_profiles(profile):
     variants, names = [], set()
     alternatives = profile.get('instrumentalOutroAlternatives', [])
@@ -193,11 +203,13 @@ def generate(song, profile, cache, prepare=False):
         evidence['performanceOrder'] = definitions
         target = features(batch.ROOT / 'data' / song['reference'], cache)
         verify_local = local_matcher(profile)
+        previous_context = previous_reading_context(profile)
         proof = {}
         evidence['midiMatching']['performance'] = proof
         times = performance_times(melody, optical, target, profile['sampling']['durationEstimate'],
             profile['sampling']['onsetEstimate'], reference['symbolicRows']['semitoneShift'], midi.match_template, proof,
-            local_match=verify_local, reading_sections=profile.get('readingSectionReview'))
+            local_match=verify_local, reading_sections=profile.get('readingSectionReview'),
+            previous_context=previous_context)
         variants = outro_profiles(profile)
         if variants:
             checks = evidence['midiMatching']['instrumentalOutroChecks'] = []
@@ -210,7 +222,8 @@ def generate(song, profile, cache, prepare=False):
                 measured = performance_times(melody_variant, optical_variant, target,
                     profile['sampling']['durationEstimate'], profile['sampling']['onsetEstimate'],
                     reference_variant['symbolicRows']['semitoneShift'], midi.match_template, detail['performance'],
-                    local_match=verify_local, reading_sections=variant.get('readingSectionReview'))
+                    local_match=verify_local, reading_sections=variant.get('readingSectionReview'),
+                    previous_context=previous_context)
                 detail['times'] = measured
                 timelines.append(measured)
                 stable_outro_times(timelines)

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "02-023",
+  "status": "reviewed",
+  "source": {
+    "file": "02-023耶稣是我的一切.txt",
+    "sha256": "193ff7792e2e5cab6c9724b35b7c12aeafe020d7bf3bde71230c43e28da42f7b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-023耶稣是我的一切.mp3",
+      "sha256": "17b74384664b1f7e44021cb9dd7901101b748dd4a8f4b4ecb7686d3e24ac272e",
+      "duration": 178.224,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 2.3,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 30.63,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 44.3,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.12,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 95.48,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 108.7,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 137.75,
+          "region": "r7",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-023耶稣是我的一切-领唱.mp3",
+      "sha256": "5213613d7316c6765dd2ddaeb73db4ed0ade0898ebdfceabfecc9cefa547bf08",
+      "duration": 178.368,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 2.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.13,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 44.8,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.62,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.98,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 109.2,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.25,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你是我依靠的力量 你是我追寻的宝藏，你是我的一切",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你是我贵重的珍宝 离弃你，我便是愚妄，你是我的一切",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "耶稣 神羔羊，配得众颂扬 耶稣 神羔羊，配得众颂扬",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "十架上担当我罪债 死里复活配得尊荣，你是我的一切",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "当我跌倒 你手扶持 当我干渴 你赐活泉，你是我的一切",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "耶稣 神羔羊，配得众颂扬 耶稣 神羔羊，配得众颂扬",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "耶稣 神羔羊，配得众颂扬 耶稣 神羔羊，配得众颂扬",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-023耶稣是我的一切.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

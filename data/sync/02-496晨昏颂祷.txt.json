@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "02-496",
+  "status": "reviewed",
+  "source": {
+    "file": "02-496晨昏颂祷.txt",
+    "sha256": "1e9dc409b2473fbae988819fac16102c67f7a85faa891fcace12d8569b48fdd7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-496晨昏颂祷.mp3",
+      "sha256": "1f75d5f604e72f11c48039613cb8136e33942bbfe7064630d73bfe85baf2540d",
+      "duration": 142.224,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 42.3,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.85,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 104.0,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-496晨昏颂祷-领唱.mp3",
+      "sha256": "f7e4df2a10338d0f8b98eb66490acc33e680b52aa004f1dd03f5f2c274ac7f87",
+      "duration": 128.6008163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 8.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.6,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.4,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 95.2,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主赐此日转瞬已经过， 遵主命令，黑夜又临， 我们早起，向主献晨歌， 今将安息，再发颂声。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我们向主奉陈至敬心， 静看大地，由暗入明， 普天之下，教会常儆醒， 不分昼夜，永不懈怠。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "大陆海洋，闹市与僻境， 黎明所到，又是一天， 祈祷之声，未曾一息停， 颂赞歌音，到处悠然。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "家国兴衰，转瞬成陈迹， 只有天国永远长存， 繁荣滋长，圣绩永昌盛， 直到众生向主投诚。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-496晨昏颂祷.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

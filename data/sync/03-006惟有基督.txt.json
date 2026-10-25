@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-006",
+  "status": "reviewed",
+  "source": {
+    "file": "03-006惟有基督.txt",
+    "sha256": "0a8a1d3b29372ec2d49693608282a747ed1392503f4b28433c4434b30aa3873d",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-006惟有基督.mp3",
+      "sha256": "c6723549889dbe8e9e0a574f4cf4dc81555f3a6f9b0a0f529d890691db7f875c",
+      "duration": 223.0073469387755,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 19.2,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 66.73,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.65,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 160.9,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-006惟有基督-领唱.mp3",
+      "sha256": "b0eb507a9a20c009244d482d0f854b2735042e1f9bfda5b066dc57f78e2c86ed",
+      "duration": 223.36,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 21.2,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 68.73,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.65,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.9,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "惟有基督赐我盼望，祂是光芒诗歌力量； 祂是盘石稳固根基，患难风暴坚定不移。 慈爱至高平安至深，驱散恐惧平静风浪！ 我的安慰我的一切，在基督里我能站立。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "惟有基督道成肉身，全权之神成为婴孩！ 从天赐下慈爱公义，却被世人拒绝厌弃。 被钉十架流血舍身，父神公义终得满足； 基督承担所有罪愆，祂以死亡赐我生命。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "祂被安葬在坟墓里，世上之光黑暗吞没； 荣耀之日冲破幽暗，脱离死亡救主复活。 因他复活因他得胜，我才脱离罪恶毒钩； 我属基督基督属我，宝血重价将我买赎。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "不被定罪不惧死亡，基督大能在我里面； 从我诞生直到离世，我的一生基督掌权。 黑暗权势恶人计谋，无法将我与主隔绝； 直到主来或召我去。靠主全能我永站立！",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-006惟有基督.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

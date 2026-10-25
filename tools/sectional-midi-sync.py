@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild reviewed musical sections and verify every reading boundary in real audio."""
 import argparse
+import copy
 import hashlib
 import importlib.util
 import json
@@ -12,7 +13,7 @@ from sync_batch_align import export_result
 from sync_batch_audio import features
 from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
-from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times
+from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times
 from sync_batch_sources import clean, text_source
 from sync_batch_symbolic import score_row_offsets
 
@@ -45,7 +46,17 @@ def pinned_file(cache, item, prepare):
 
 def reference_material(profile, cache, prepare=False):
     reference = profile['midiReference']
-    origin = pinned_file(cache, reference['origin'], prepare)
+    if reference['origin'].get('kind') == 'printed-numbered-score':
+        from sync_batch_printed_midi import materialize_printed_reference
+        image_review = profile['opticalReference']
+        pinned_file(cache, image_review['image'], prepare)
+        origin = cache / reference['origin']['file']
+        printed = {'mode': 'symbolic-melody-and-optical', 'targetSha256': image_review['image']['sha256'],
+                   'printedRhythmReference': reference['origin']['printedRhythmReference'],
+                   'sha256': reference['origin']['sha256']}
+        materialize_printed_reference(printed, image_review['image']['sha256'], origin)
+    else:
+        origin = pinned_file(cache, reference['origin'], prepare)
     data = arranged_midi_bytes(origin, reference['arrangement'])
     if hashlib.sha256(data).hexdigest() != reference['sha256']:
         raise ValueError('重建的乐曲结构与已核对 MIDI 不一致')
@@ -101,6 +112,45 @@ def validate_source(song, profile):
     return source, definitions
 
 
+def local_matcher(profile):
+    review = profile.get('localOnsetWindow')
+    if review is None:
+        return None
+    if (not isinstance(review, dict) or type(review.get('version')) is not int or review['version'] != 1 or
+            type(review.get('fraction')) not in (int, float) or review['fraction'] != .4):
+        raise ValueError('逐段起点上下文需要显式版本及固定40%范围')
+    def match(rows, chroma, times, duration, onset, weight):
+        return midi.match_template(rows, chroma, times, duration, onset, weight,
+            onset_bounds=[onset - .4 * duration, onset + .4 * duration])
+    return match
+
+
+def outro_profiles(profile):
+    variants, names = [], set()
+    alternatives = profile.get('instrumentalOutroAlternatives', [])
+    if alternatives:
+        review = profile.get('instrumentalOutroReview')
+        if (not isinstance(review, dict) or type(review.get('version')) is not int or review['version'] != 1 or
+                review.get('nonLyric') is not True or review.get('region') != profile['regions'][-1] or
+                not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+                any(section == len(profile['opticalReference']['order']) - 1
+                    for section, note in profile['opticalReference']['readingStarts'])):
+            raise ValueError('尾奏变体须明确绑定末个阅读区域后的器乐部分')
+    for item in alternatives:
+        name = item['name']
+        if not isinstance(name, str) or not name.strip() or name in names:
+            raise ValueError('器乐尾奏参考须逐项命名且不重复')
+        names.add(name)
+        if item['opticalPart'] not in profile['opticalReference']['parts']:
+            raise ValueError('器乐尾奏引用了未核对的原谱乐段')
+        variant = copy.deepcopy(profile)
+        variant['midiReference'].update(file=item['file'], sha256=item['sha256'])
+        variant['midiReference']['arrangement']['sections'][-1] = item['quarterRange']
+        variant['opticalReference']['order'][-1] = item['opticalPart']
+        variants.append((name, variant))
+    return variants
+
+
 def generate(song, profile, cache, prepare=False):
     started = time.monotonic()
     destination = cache / 'midi-alignment' / (song['source'] + '.json')
@@ -117,10 +167,28 @@ def generate(song, profile, cache, prepare=False):
         evidence['midiMatching'].update(reference)
         evidence['performanceOrder'] = definitions
         target = features(batch.ROOT / 'data' / song['reference'], cache)
+        verify_local = local_matcher(profile)
         proof = {}
         evidence['midiMatching']['performance'] = proof
         times = performance_times(melody, optical, target, profile['sampling']['durationEstimate'],
-            profile['sampling']['onsetEstimate'], reference['symbolicRows']['semitoneShift'], midi.match_template, proof)
+            profile['sampling']['onsetEstimate'], reference['symbolicRows']['semitoneShift'], midi.match_template, proof,
+            local_match=verify_local)
+        variants = outro_profiles(profile)
+        if variants:
+            checks = evidence['midiMatching']['instrumentalOutroChecks'] = []
+            timelines = [times]
+            for name, variant in variants:
+                melody_variant, optical_variant, reference_variant = reference_material(variant, cache, prepare)
+                detail = {'name': name, 'midiReference': variant['midiReference'], 'reference': reference_variant,
+                          'performance': {}}
+                checks.append(detail)
+                measured = performance_times(melody_variant, optical_variant, target,
+                    profile['sampling']['durationEstimate'], profile['sampling']['onsetEstimate'],
+                    reference_variant['symbolicRows']['semitoneShift'], midi.match_template, detail['performance'],
+                    local_match=verify_local)
+                detail['times'] = measured
+                timelines.append(measured)
+                stable_outro_times(timelines)
         return export_result(song, batch.ROOT, cache, destination, evidence, started, source,
                              definitions, times, [0])
     except (ValueError, FileNotFoundError, KeyError) as error:

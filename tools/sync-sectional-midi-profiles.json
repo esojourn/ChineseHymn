@@ -289,5 +289,698 @@
       ]
     },
     "formReview": "逐字核对原文五个阅读区域及完整录音：主歌A与回应段B按ABABA演唱，末尾另反复A最后一句使我能像你，仍显示第五个区域。教会公开MIDI原谱为ABA，明确使用名为Melody的第4声部；只按原有拍数片段重组，不改写音高或时值。独立简谱按固定原图逐行识别；两处同音连线各行合并、两组三连音按可见标记还原。完整音高序列和所有阅读首音必须与MIDI唯一对应；整曲及逐区域四条实测路径各自保留成本0.35、调性区分0.06、跨度75%至125%和起点差0.5秒检查。估计时长和前奏只选择搜索范围，不提供最终滚动时间；伴奏仍通过原有独立录音对应。"
+  },
+  "02-023": {
+    "version": 1,
+    "sourceHash": "193ff7792e2e5cab6c9724b35b7c12aeafe020d7bf3bde71230c43e28da42f7b",
+    "tracks": [
+      {
+        "file": "02-023耶稣是我的一切.mp3",
+        "sha256": "17b74384664b1f7e44021cb9dd7901101b748dd4a8f4b4ecb7686d3e24ac272e"
+      },
+      {
+        "file": "02-023耶稣是我的一切-领唱.mp3",
+        "sha256": "5213613d7316c6765dd2ddaeb73db4ed0ade0898ebdfceabfecc9cefa547bf08"
+      }
+    ],
+    "audioFile": "02-023耶稣是我的一切-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7"
+    ],
+    "regionOpenings": [
+      "你是我依靠的力量 你是我",
+      "你是我贵重的珍宝 离弃你",
+      "耶稣 神羔羊，配得众颂扬",
+      "十架上担当我罪债 死里复",
+      "当我跌倒 你手扶持 当我",
+      "耶稣 神羔羊，配得众颂扬",
+      "耶稣 神羔羊，配得众颂扬"
+    ],
+    "sampling": {
+      "durationEstimate": 175,
+      "onsetEstimate": 1
+    },
+    "localOnsetWindow": {
+      "version": 1,
+      "fraction": 0.4
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/all-in-all-reviewed-print.mid",
+        "sha256": "2610fdc6611038f10bd8c44140838f9c3cfe4350471ec4ab4a57d5ca5657a84f",
+        "printedRhythmReference": {
+          "sourceSha256": "20fbb8f278854199e336b54b05cce7712e3c468a2d0640124f4d6a8f8e016a9d",
+          "tonicMidi": 62,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                2,
+                0.25
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                2,
+                0.5
+              ],
+              [
+                2,
+                0.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                7,
+                0.5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                2,
+                0.25
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                7,
+                0.5
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                0.25
+              ],
+              [
+                7,
+                0.25
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                1,
+                1.5
+              ],
+              [
+                2,
+                0.25
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                2,
+                0.25
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                2,
+                0.5
+              ],
+              [
+                2,
+                0.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                7,
+                0.5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                2,
+                0.25
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                7,
+                0.5
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                0.25
+              ],
+              [
+                7,
+                0.25
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1.5
+              ],
+              [
+                4,
+                0.25
+              ],
+              [
+                3,
+                0.25
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/all-in-all-reviewed-C1-C2-end-C2-performance.mid",
+      "sha256": "eff02df38711b694ca40810dd463f7512367d655134e2803db3be657f2727d39",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 64,
+        "sections": [
+          [
+            32,
+            48
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            56,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            32,
+            64
+          ],
+          [
+            48,
+            64
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          6,
+          4,
+          2,
+          9,
+          6
+        ]
+      },
+      {
+        "onsetIndex": 38,
+        "pitches": [
+          2,
+          4,
+          6,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 60,
+        "pitches": [
+          6,
+          4,
+          2,
+          9,
+          6
+        ]
+      },
+      {
+        "onsetIndex": 88,
+        "pitches": [
+          2,
+          4,
+          6,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 113,
+        "pitches": [
+          2,
+          4,
+          6,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 135,
+        "pitches": [
+          6,
+          4,
+          2,
+          9,
+          6
+        ]
+      },
+      {
+        "onsetIndex": 158,
+        "pitches": [
+          6,
+          4,
+          2,
+          9,
+          6
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/all-in-all.png",
+        "url": "https://file.izanm.org/store/2022/12/30/63aec7da462e8de65304acd1.png",
+        "sha256": "20fbb8f278854199e336b54b05cce7712e3c468a2d0640124f4d6a8f8e016a9d"
+      },
+      "pageUrl": "https://www.izanmei.com/tab/39897.html",
+      "recognitionFile": "modern-sectional-scores/ocr/all-in-all.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              565,
+              605
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                640,
+                685
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1111,
+              1151
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1187,
+                1231
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1657,
+              1697
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1734,
+                1776
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              2203,
+              2243
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                2279,
+                2323
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "9335626ca3cd01a1bd5f2cb9017a3eda05818ca9c3bfbc7a7c10df179cbbfa00",
+      "ties": {
+        "1": [
+          1
+        ],
+        "3": [
+          8
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "P": [
+          [
+            0,
+            0,
+            22
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "Q": [
+          [
+            1,
+            5,
+            21
+          ],
+          [
+            2,
+            0,
+            7
+          ]
+        ],
+        "C1": [
+          [
+            2,
+            7,
+            9
+          ],
+          [
+            3,
+            0,
+            12
+          ]
+        ],
+        "C2": [
+          [
+            2,
+            7,
+            9
+          ],
+          [
+            3,
+            0,
+            7
+          ],
+          [
+            3,
+            12,
+            13
+          ]
+        ],
+        "Il": [
+          [
+            3,
+            3,
+            7
+          ],
+          [
+            3,
+            12,
+            13
+          ]
+        ]
+      },
+      "order": [
+        "C1",
+        "P",
+        "Q",
+        "C1",
+        "C2",
+        "Il",
+        "P",
+        "Q",
+        "C1",
+        "C2",
+        "C1",
+        "C2",
+        "C2"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ]
+    },
+    "instrumentalOutroReview": {
+      "version": 1,
+      "nonLyric": true,
+      "region": "r7",
+      "reason": "录音末尾为器乐延续，正文保持最后一个阅读区域；不声明唯一的尾奏编配。分别用原谱C1、C2、P、Q作器乐尾句参考，全部完整时间轴都须通过原有限值且所有正文起点互相在0.5秒内一致。"
+    },
+    "instrumentalOutroAlternatives": [
+      {
+        "name": "C1",
+        "quarterRange": [
+          32,
+          48
+        ],
+        "opticalPart": "C1",
+        "file": "reference/external/all-in-all-reviewed-C1-C2-end-C1-performance.mid",
+        "sha256": "f72fc7699088256ff548c5cb07f451772cbf02c4c72bcde6baef6e5c73aa57f1"
+      },
+      {
+        "name": "P",
+        "quarterRange": [
+          0,
+          16
+        ],
+        "opticalPart": "P",
+        "file": "reference/external/all-in-all-reviewed-C1-C2-end-P-performance.mid",
+        "sha256": "cf397c469fff5b6019bded7c4f94595b869ded3c9f6e242593e6209f02b818cf"
+      },
+      {
+        "name": "Q",
+        "quarterRange": [
+          16,
+          32
+        ],
+        "opticalPart": "Q",
+        "file": "reference/external/all-in-all-reviewed-C1-C2-end-Q-performance.mid",
+        "sha256": "94ae44bc90aebc88877f9e1327361709af75884def2448e20780789ee2c50ea9"
+      }
+    ],
+    "formReview": "原文七个阅读区域及录音完整结构已逐项核对：器乐前奏使用谱内副歌乐段参考；第一段P/Q/C1/C2后有八拍器乐过门，接第二段P/Q/C1/C2，末尾再唱C1/C2并延续器乐尾奏。第一个区域从前奏开始可读，其首个音乐位置不声明测得首句起唱。原始中文歌词与空行保持不变。MIDI由目视核对的固定哈希原谱音级和拍数重建；全曲音符和所有阅读分界与独立像素识别的原谱音符严格唯一对应。逐段搜索只在整曲路径提供的上下文内限定首帧范围为该段实测跨度的正负40%，防止相邻近似乐句混淆；原有四路径0.5秒、成本0.35、调性区分0.06、完整跨度75%至125%及首尾检查保持不变。四种尾奏参考全部核对且不影响正文位置后才可发布，固定拍数及前奏时长估计不直接提供滚动时间。"
   }
 }

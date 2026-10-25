@@ -209,7 +209,7 @@ def subsequence_path(cost):
     return total[n, end + 1] / n, np.array(path[::-1], dtype=np.int32)
 
 
-def match_template(rows, chroma, times, period, onset_estimate, weight_key):
+def match_template(rows, chroma, times, period, onset_estimate, weight_key, onset_bounds=None):
     step = float(times[1] - times[0])
     weights = [value for row in rows for value in row[weight_key]]
     notes = [value for row in rows for value in row['notes']]
@@ -225,11 +225,23 @@ def match_template(rows, chroma, times, period, onset_estimate, weight_key):
     frame_labels = np.array(labels)[indices]
     lo = max(0, round((onset_estimate - 15) / step))
     hi = min(chroma.shape[1], round((onset_estimate + period + 12) / step))
+    if onset_bounds is not None:
+        if (not isinstance(onset_bounds, (list, tuple)) or len(onset_bounds) != 2 or
+                any(type(at) not in (int, float) or not np.isfinite(at) for at in onset_bounds) or
+                onset_bounds[0] > onset_bounds[1]):
+            raise ValueError('逐段起点取样范围无效')
+        first = max(0, round(onset_bounds[0] / step) - lo)
+        last = min(hi - lo - 1, round(onset_bounds[1] / step) - lo)
+        if first > last:
+            raise ValueError('逐段起点取样范围未覆盖当前音频')
     candidates = []
     for key in range(12):
         score = chroma[(pitches + key) % 12, lo:hi]
         score[rests, :] = 0
         cost = np.ascontiguousarray(np.maximum(.05, .65 - score), dtype=np.float32)
+        if onset_bounds is not None:
+            cost[0, :first] = np.inf
+            cost[0, last + 1:] = np.inf
         value, path = subsequence_path(cost)
         starts = []
         for label in range(len(rows)):
@@ -239,7 +251,10 @@ def match_template(rows, chroma, times, period, onset_estimate, weight_key):
         candidates.append({'cost': float(value), 'key': key, 'starts': starts,
                            'span': float(times[lo + path[-1, 1]] - times[lo + path[0, 1]])})
     candidates.sort(key=lambda item: item['cost'])
-    return {'best': candidates[0], 'runnerUp': candidates[1]}
+    result = {'best': candidates[0], 'runnerUp': candidates[1]}
+    if onset_bounds is not None:
+        result['onsetBounds'] = list(onset_bounds)
+    return result
 
 
 def score_times(source, audio, recognition, cache):

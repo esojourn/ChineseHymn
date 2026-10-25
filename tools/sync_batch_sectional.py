@@ -169,7 +169,15 @@ def four_path_time(values):
     return round(float(np.mean(values)), 2)
 
 
-def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence):
+def stable_outro_times(timelines):
+    if (not timelines or not timelines[0] or any(len(row) != len(timelines[0]) for row in timelines) or
+            any(not np.isfinite(at) for row in timelines for at in row) or
+            any(round(max(values) - min(values), 3) > .5 for values in zip(*timelines))):
+        raise ValueError('器乐尾奏参考导致正文阅读位置发生争议')
+    return timelines[0]
+
+
+def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence, local_match=None):
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     one = match(melody_rows, target[1], target[0], duration, onset, 'spatialWeights')
@@ -183,6 +191,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
     if any(round(abs(x - y), 3) > .5 for x, y in zip(a['starts'], b['starts'])):
         raise ValueError('两条整曲路径的阅读起点不一致')
     times, spans = [], []
+    verify_local = local_match or match
     for index in range(len(melody_rows)):
         start = (a['starts'][index] + b['starts'][index]) / 2
         end = ((a['starts'][index + 1] + b['starts'][index + 1]) / 2 if index + 1 < len(melody_rows)
@@ -190,8 +199,8 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         span = end - start
         if span <= .5:
             raise ValueError('整曲路径没有保持实际乐段顺序')
-        local = match([melody_rows[index]], target[1], target[0], span, start, 'spatialWeights')
-        optical = match([optical_rows[index]], target[1], target[0], span, start, 'rhythmWeights')
+        local = verify_local([melody_rows[index]], target[1], target[0], span, start, 'spatialWeights')
+        optical = verify_local([optical_rows[index]], target[1], target[0], span, start, 'rhythmWeights')
         evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
                                   'melody': local, 'optical': optical})
         check_match(local, span, a['key'])

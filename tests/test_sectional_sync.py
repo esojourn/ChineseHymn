@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parents[1] / 'tools'))
 try:
     import mido
     import numpy as np
-    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time
+    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time, stable_outro_times
 except ImportError:
     mido = None
 
@@ -86,6 +86,88 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, '重建'):
                 self.cli.reference_material(profile, cache)
             self.assertEqual(destination.read_bytes(), b'keep existing reference')
+
+    def test_printed_origin_is_bound_to_the_actual_optical_image_before_any_midi_write(self):
+        from sync_batch_printed_midi import printed_reference_bytes
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            image = b'fixed printed reference'
+            (cache / 'score.png').write_bytes(image)
+            digest = hashlib.sha256(image).hexdigest()
+            printed = {'sourceSha256': digest, 'tonicMidi': 60,
+                       'numberedRowsAndQuarterBeats': [[[1, 1], [2, 1], [3, 1], [4, 1], [5, 4]]]}
+            origin = printed_reference_bytes({'mode': 'symbolic-melody-and-optical', 'targetSha256': digest,
+                                              'printedRhythmReference': printed}, digest)
+            profile = {'midiReference': {'origin': {'kind': 'printed-numbered-score', 'file': 'origin.mid',
+                       'sha256': hashlib.sha256(origin).hexdigest(), 'printedRhythmReference': printed},
+                       'file': 'performance.mid', 'sha256': 'not accepted',
+                       'arrangement': {'melodyTrack': 0, 'melodyTrackName': 'Manual transcription of a printed numbered melody',
+                                       'quarterLength': 8, 'sections': [[0, 8]]}},
+                       'opticalReference': {'image': {'file': 'score.png', 'sha256': digest}}}
+            with self.assertRaisesRegex(ValueError, '重建'):
+                self.cli.reference_material(profile, cache)
+            self.assertEqual((cache / 'origin.mid').read_bytes(), origin)
+            self.assertFalse((cache / 'performance.mid').exists())
+            (cache / 'origin.mid').unlink()
+            (cache / 'score.png').write_bytes(b'changed raster')
+            with self.assertRaises(ValueError):
+                self.cli.reference_material(profile, cache)
+            self.assertFalse((cache / 'origin.mid').exists())
+
+    def test_local_context_restricts_candidate_onsets_without_waiving_acoustic_cost(self):
+        from sync_batch_score import match_template
+        from sync_batch_sectional import check_match
+        times = np.arange(0, 12, .1)
+        chroma = np.zeros((12, len(times)), dtype=np.float32)
+        row = {'notes': [1, 2, 3, 4], 'spatialWeights': [1] * 4}
+        for start, strength in [(2, .4), (7, .6)]:
+            for index, pitch in enumerate([0, 2, 4, 5]):
+                lo = round((start + index * .5) / .1)
+                chroma[pitch, lo:lo + 5] = strength
+        free = match_template([row], chroma, times, 2, 2, 'spatialWeights')
+        self.assertGreater(free['best']['starts'][0], 6)
+        local = match_template([row], chroma, times, 2, 2, 'spatialWeights', onset_bounds=[1, 3])
+        self.assertTrue(1 <= local['best']['starts'][0] <= 3)
+        self.assertEqual(local['onsetBounds'], [1, 3])
+        chroma[:, 10:40] = 0
+        rejected = match_template([row], chroma, times, 2, 2, 'spatialWeights', onset_bounds=[1, 3])
+        with self.assertRaises(ValueError):
+            check_match(rejected, 2)
+        for bounds in [[3, 1], [float('nan'), 3], [30, 31]]:
+            with self.assertRaises(ValueError):
+                match_template([row], chroma, times, 2, 2, 'spatialWeights', onset_bounds=bounds)
+
+    def test_local_context_policy_is_explicit_and_fixed_and_outro_variants_are_pairwise_stable(self):
+        self.assertIsNone(self.cli.local_matcher({}))
+        self.assertIsNotNone(self.cli.local_matcher({'localOnsetWindow': {'version': 1, 'fraction': .4}}))
+        for value in [{'version': True, 'fraction': .4}, {'version': 1, 'fraction': .5}, {}]:
+            with self.assertRaises(ValueError):
+                self.cli.local_matcher({'localOnsetWindow': value})
+        self.assertEqual(stable_outro_times([[2, 31], [2.1, 31.2], [2.2, 31.1]]), [2, 31])
+        for timelines in [[[1], [1.5], [.5]], [[1, 2], [1]], [[float('nan')]], []]:
+            with self.assertRaises(ValueError):
+                stable_outro_times(timelines)
+
+    def test_outro_variants_cannot_replace_body_sections_or_mutate_the_base_recipe(self):
+        profile = {'regions': ['r1', 'r2', 'r3'],
+                   'midiReference': {'arrangement': {'sections': [[0, 8], [8, 16], [16, 24]]}},
+                   'opticalReference': {'parts': {'A': []}, 'order': ['A', 'A', 'A', 'A'],
+                                        'readingStarts': [[0, 0], [1, 0], [2, 0]]},
+                   'instrumentalOutroReview': {'version': 1, 'nonLyric': True, 'region': 'r3', 'reason': 'instrumental tail'},
+                   'instrumentalOutroAlternatives': [{'name': 'alternative', 'quarterRange': [0, 8],
+                       'opticalPart': 'A', 'file': 'alternative.mid', 'sha256': 'hash'}]}
+        original = copy.deepcopy(profile)
+        variants = self.cli.outro_profiles(profile)
+        self.assertEqual(profile, original)
+        self.assertEqual(variants[0][1]['midiReference']['arrangement']['sections'], [[0, 8], [8, 16], [0, 8]])
+        for change in [{'nonLyric': False}, {'region': 'r2'}, {'reason': ''}]:
+            bad = {**profile, 'instrumentalOutroReview': {**profile['instrumentalOutroReview'], **change}}
+            with self.assertRaises(ValueError):
+                self.cli.outro_profiles(bad)
+        bad = copy.deepcopy(profile)
+        bad['opticalReference']['readingStarts'][-1] = [3, 0]
+        with self.assertRaises(ValueError):
+            self.cli.outro_profiles(bad)
 
     def test_source_profile_binds_every_recording_and_every_original_reading_region(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -73,6 +73,70 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 arranged_midi_bytes(io.BytesIO(self.score()), {**self.recipe(), **update})
 
+    def test_modulation_transposes_all_voices_with_balanced_note_edges(self):
+        recipe = {**self.recipe(), 'transposeSections': [0, 2, 0],
+                  'transpositionReview': {'version': 1, 'reason': 'independently verified modulation'}}
+        score = mido.MidiFile(file=io.BytesIO(arranged_midi_bytes(io.BytesIO(self.score()), recipe)))
+        for track, pitches in zip(score.tracks[1:], [{60, 62, 64}, {48, 50, 52}]):
+            tick, active, seen = 0, {}, set()
+            for event in track:
+                tick += event.time
+                if event.type == 'note_on':
+                    active[event.note] = active.get(event.note, 0) + 1
+                    seen.add(event.note)
+                    if tick == 4 * 480:
+                        self.assertEqual(event.note, max(pitches))
+                elif event.type == 'note_off':
+                    self.assertGreater(active.get(event.note, 0), 0)
+                    active[event.note] -= 1
+            self.assertEqual(seen, pitches)
+            self.assertFalse(any(active.values()))
+        for change in [{'transposeSections': [0, 2]}, {'transposeSections': [0, True, 0]},
+                       {'transposeSections': [0, 13, 0]}, {'transposeSections': [0, 0, 0]},
+                       {'transpositionReview': {}}, {'transpositionReview': {'version': 1, 'reason': ''}}]:
+            with self.assertRaises(ValueError):
+                arranged_midi_bytes(io.BytesIO(self.score()), {**recipe, **change})
+
+    def test_identical_duplicate_tempos_do_not_change_music_and_conflicting_rates_are_rejected(self):
+        original = arranged_midi_bytes(io.BytesIO(self.score()), self.recipe())
+        for tempo in [600000, 500000]:
+            score = mido.MidiFile(file=io.BytesIO(self.score()))
+            score.tracks[0].insert(1, mido.MetaMessage('set_tempo', tempo=tempo))
+            stream = io.BytesIO()
+            score.save(file=stream)
+            if tempo == 600000:
+                self.assertEqual(arranged_midi_bytes(io.BytesIO(stream.getvalue()), self.recipe()), original)
+            else:
+                with self.assertRaises(ValueError):
+                    arranged_midi_bytes(io.BytesIO(stream.getvalue()), self.recipe())
+
+    def test_pdf_and_renderer_hashes_are_checked_before_overwriting_a_reference_image(self):
+        try:
+            import pypdfium2 as pdfium
+            from pypdfium2.version import PYPDFIUM_INFO, PDFIUM_INFO
+        except ImportError:
+            self.skipTest('requires optional PDF renderer')
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            with pdfium.PdfDocument.new() as document:
+                document.new_page(72, 72)
+                document.save(cache / 'source.pdf')
+            source = (cache / 'source.pdf').read_bytes()
+            item = {'file': 'reference.png', 'sha256': 'wrong rendered hash',
+                    'pdfSource': {'file': 'source.pdf', 'sha256': hashlib.sha256(source).hexdigest()},
+                    'renderPdf': {'version': 1, 'page': 0, 'scale': 2,
+                                  'pypdfium2Version': PYPDFIUM_INFO.version, 'pdfiumVersion': PDFIUM_INFO.version}}
+            (cache / 'reference.png').write_bytes(b'keep reviewed image')
+            with self.assertRaisesRegex(ValueError, '渲染图片'):
+                self.cli.pinned_file(cache, item, True)
+            self.assertEqual((cache / 'reference.png').read_bytes(), b'keep reviewed image')
+            with self.assertRaisesRegex(ValueError, '渲染器版本'):
+                self.cli.pinned_file(cache, {**item, 'renderPdf': {**item['renderPdf'], 'pdfiumVersion': 'changed'}}, True)
+            (cache / 'source.pdf').write_bytes(b'changed PDF')
+            with self.assertRaises(ValueError):
+                self.cli.pinned_file(cache, item, True)
+            self.assertEqual((cache / 'reference.png').read_bytes(), b'keep reviewed image')
+
     def test_failed_reference_hash_cannot_replace_an_existing_derived_midi(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = Path(directory)
@@ -204,6 +268,20 @@ class SectionalTests(unittest.TestCase):
         self.assertAlmostEqual(sum(sum(row['rhythmWeights']) for row in actual), 14)
         self.assertEqual(actual[0]['rhythmWeights'][0], 2)
         self.assertAlmostEqual(actual[0]['rhythmWeights'][1], 2 / 3)
+
+    def test_optical_modulation_preserves_source_notes_and_rhythm_and_keeps_rests_neutral(self):
+        rows, review = self.notation()
+        original = copy.deepcopy(rows)
+        unchanged = optical_performance_rows(rows, review)
+        review.update(transposeParts=[0, 2, 0], transpositionReview={'version': 1, 'reason': 'reviewed modulation'})
+        changed = optical_performance_rows(rows, review)
+        self.assertEqual(rows, original)
+        for index, (before, after) in enumerate(zip(unchanged, changed)):
+            self.assertEqual(before['notes'], after['notes'])
+            self.assertEqual(before['rhythmWeights'], after['rhythmWeights'])
+            self.assertEqual(after['pitchOffsets'], [2 if note and index == 1 else 0 for note in after['notes']])
+        with self.assertRaises(ValueError):
+            optical_performance_rows(rows, {**review, 'transposeParts': [0, 2]})
 
     def test_optical_annotations_cannot_merge_other_pitches_or_cut_tuplets_or_tied_heads(self):
         for changes in [{'ties': {'0': [3]}}, {'parts': {'A': [[0, 2, 6]]}},

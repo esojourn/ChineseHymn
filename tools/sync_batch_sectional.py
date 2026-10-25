@@ -4,6 +4,18 @@ import math
 import numpy as np
 
 
+def reviewed_transpositions(review, key, count):
+    if key not in review:
+        return [0] * count
+    values, detail = review[key], review.get('transpositionReview')
+    if (not isinstance(values, list) or len(values) != count or
+            any(type(value) is not int or not -12 <= value <= 12 for value in values) or
+            not any(values) or not isinstance(detail, dict) or type(detail.get('version')) is not int or
+            detail['version'] != 1 or not isinstance(detail.get('reason'), str) or not detail['reason'].strip()):
+        raise ValueError('转调须逐段记录整数半音、明确版本及独立核对说明')
+    return values
+
+
 def arranged_midi_bytes(origin, recipe):
     import mido
     score = mido.MidiFile(file=origin) if hasattr(origin, 'read') else mido.MidiFile(origin)
@@ -12,7 +24,7 @@ def arranged_midi_bytes(origin, recipe):
         event.type == 'note_on' and event.velocity and event.channel != 9 for event in track)]
     tempos = [event.tempo for event in mido.merge_tracks(score.tracks) if event.type == 'set_tempo']
     if (type(melody) is not int or melody not in tracks or
-            score.tracks[melody].name != recipe['melodyTrackName'] or len(tempos) != 1):
+            score.tracks[melody].name != recipe['melodyTrackName'] or len(set(tempos)) != 1):
         raise ValueError('分段参考需要明确的旋律声部及单一原始速度')
     length, sections = recipe['quarterLength'], recipe['sections']
     maximum_tick = max(sum(event.time for event in track) for track in score.tracks)
@@ -26,6 +38,7 @@ def arranged_midi_bytes(origin, recipe):
                     abs(at * score.ticks_per_beat - round(at * score.ticks_per_beat)) > 1e-8 for at in section) or
                 not 0 <= section[0] < section[1] <= length):
             raise ValueError('乐段必须引用原 MIDI 中完整、明确的拍数范围')
+    transpositions = reviewed_transpositions(recipe, 'transposeSections', len(sections))
     result = mido.MidiFile(ticks_per_beat=score.ticks_per_beat)
     meta = mido.MidiTrack()
     meta.append(mido.MetaMessage('set_tempo', tempo=tempos[0]))
@@ -45,12 +58,14 @@ def arranged_midi_bytes(origin, recipe):
         if any(active.values()):
             raise ValueError('原 MIDI 存在未结束的音符')
         offset, events = 0, []
-        for lo, hi in sections:
+        for (lo, hi), shift in zip(sections, transpositions):
             lo, hi = round(lo * score.ticks_per_beat), round(hi * score.ticks_per_beat)
             for start, end, channel, pitch, velocity in notes:
                 if start < hi and end > lo:
-                    events.extend([(offset + max(start, lo) - lo, 1, channel, pitch, velocity),
-                                   (offset + min(end, hi) - lo, 0, channel, pitch, 0)])
+                    if not 0 <= pitch + shift <= 127:
+                        raise ValueError('转调后的音高超出 MIDI 范围')
+                    events.extend([(offset + max(start, lo) - lo, 1, channel, pitch + shift, velocity),
+                                   (offset + min(end, hi) - lo, 0, channel, pitch + shift, 0)])
             offset += hi - lo
         track, previous = mido.MidiTrack(), 0
         track.append(mido.MetaMessage('track_name', name=score.tracks[index].name))
@@ -118,12 +133,14 @@ def optical_performance_rows(rows, review):
             raise ValueError('印刷乐段为空')
         parts[name] = part
     flat, starts = {key: [] for key in keys}, []
-    for name in review['order']:
+    transpositions = reviewed_transpositions(review, 'transposeParts', len(review['order']))
+    for name, shift in zip(review['order'], transpositions):
         if name not in parts:
             raise ValueError('实际音乐结构引用了未定义的原谱乐段')
         starts.append(len(flat['notes']))
         for key in keys:
-            flat[key].extend(parts[name][key])
+            flat[key].extend([value + shift if note and key == 'pitchOffsets' else value
+                              for value, note in zip(parts[name][key], parts[name]['notes'])])
     cuts = []
     for section, note in review['readingStarts']:
         if (type(section) is not int or type(note) is not int or not 0 <= section < len(starts) or

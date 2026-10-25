@@ -2610,5 +2610,342 @@
       "reason": "逐项核对完整录音及原文十六个阅读区域：三次段间器乐过门和末尾器乐延续不另设歌词区域；最后两次乃是基督在里面活共用原文末个阅读区域。首屏组包含器乐前奏及第一段主歌，从前奏开始可读，不声明测得首句起唱。全部演唱乐段按原文顺序覆盖且不能省略；单独的器乐段仍保留在两条完整路径中。"
     },
     "formReview": "固定哈希公开简谱为C调4/4拍，四行音级与拍数经目视独立核对。原文每段主歌四行、回应四行及不是我末句分别对应阅读区域；完整录音依次四段正文、回应重唱、当跑完所有路起的尾句，以及两遍乃是基督在里面活。原谱片段只按明确拍数重组，保留音高和时值；器乐前奏、段间过门及尾奏用固定谱内十二拍末句作完整路径参考，不声明唯一器乐编配。首屏从器乐参考位置可读，不把该位置称为首次演唱首词。二十二个音乐分界全部由原谱音符与MIDI完整序列唯一对应，十六个正文起点逐一由完整MIDI、完整光学、正文局部MIDI和正文局部光学四条实测路径确认。局部段落不混入后续器乐过门；固定40%上下文防止相邻末句误认，原有成本0.35、调性区分0.06、跨度75%至125%、四路径0.5秒、顺序及首尾检查保持不变。320秒及1秒取样估计不直接提供滚动时间；原始歌词和空行不改；当前曲目现有领唱录音的十六个阅读位置逐项核对。"
+  },
+  "03-001": {
+    "version": 1,
+    "sourceHash": "8d2b12b1439145bd0c33d69a25a44ead8f7226d73c4faeb2762d83babed1fbbc",
+    "tracks": [
+      {
+        "file": "03-001你是我异象.mp3",
+        "sha256": "27a7678e3b71e2560009c31346db9f521977d6a8eb5cdce97251201cf05bd306"
+      },
+      {
+        "file": "03-001你是我异象-领唱.mp3",
+        "sha256": "ec59643e9ab3bdaac407d337eaae6c369c4a701037a4bf4c2027d5fac81c8970"
+      }
+    ],
+    "audioFile": "03-001你是我异象-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "恳求心中主，成为我异象 ",
+      "成为我智慧，成为我箴言 ",
+      "财富与虚荣，非我所倾意 ",
+      "诸天之君尊，你为我奏凯，"
+    ],
+    "sampling": {
+      "durationEstimate": 156,
+      "onsetEstimate": 13
+    },
+    "midiReference": {
+      "origin": {
+        "file": "midi/timeless-Be_Thou_My_Vision.mid",
+        "sha256": "d1a843599b3414a5d8ac496f430d60f792b78eb8e8abfba2f6af16d76fcad9bd",
+        "url": "https://library.timelesstruths.org/library/music/B/Be_Thou_My_Vision/Be_Thou_My_Vision.mid"
+      },
+      "file": "reference/external/be-thou-vision-reviewed-modulated-performance.mid",
+      "sha256": "9d274be375c3105d1a9bf0ff52f37b2b4ee070ff181f0150f95937cbb9c83b07",
+      "arrangement": {
+        "transposeSections": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "transpositionReview": {
+          "version": 1,
+          "reason": "The complete final stanza is independently matched one whole tone above the preceding three stanzas."
+        },
+        "melodyTrack": 1,
+        "melodyTrackName": "Treble",
+        "quarterLength": 49,
+        "sections": [
+          [
+            0,
+            48
+          ],
+          [
+            39,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            39,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            39,
+            48
+          ],
+          [
+            0,
+            48
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          3,
+          5,
+          3,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 47,
+        "pitches": [
+          0,
+          10,
+          7,
+          3,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 56,
+        "pitches": [
+          3,
+          3,
+          5,
+          3,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 103,
+        "pitches": [
+          0,
+          10,
+          7,
+          3,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 112,
+        "pitches": [
+          3,
+          3,
+          5,
+          3,
+          0
+        ]
+      },
+      {
+        "onsetIndex": 159,
+        "pitches": [
+          0,
+          10,
+          7,
+          3,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 168,
+        "pitches": [
+          5,
+          5,
+          7,
+          5,
+          2
+        ]
+      }
+    ],
+    "readingSectionReview": {
+      "version": 1,
+      "groups": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ]
+      ],
+      "instrumentalSections": [
+        1,
+        3,
+        5
+      ],
+      "reason": "Complete four source stanzas with the three intervening instrumental passages, each source stanza remains one reading region."
+    },
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/be-thou-vision.png",
+        "sha256": "67e5a95467692bd530cd51d5c45bbca8b0557b2ff04c2a03eb1b1161e16be856",
+        "pdfSource": {
+          "file": "reference/external/evangel-hymnal.pdf",
+          "sha256": "7d17e5b89e90866094ecf9b6023f3d605975512692410cded82437d3a8e4eb16",
+          "url": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 293,
+          "scale": 4,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.evangelwoodlands-bpc.org/uploads/2/7/9/8/27984159/evangel-hymnal.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/be-thou-vision.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              270,
+              309
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                425,
+                468
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              701,
+              742
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                859,
+                903
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1153,
+              1194
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1305,
+                1349
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "eea2b4f217bd6e0b1bd29bc172b1de756815a96ed7ac0503a0d52b8790244180",
+      "transposeParts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "transpositionReview": {
+        "version": 1,
+        "reason": "Final stanza modulation corroborated by independently extracted numbered-score chroma."
+      },
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            0,
+            14
+          ],
+          [
+            1,
+            0,
+            15
+          ],
+          [
+            2,
+            0,
+            16
+          ]
+        ],
+        "Il": [
+          [
+            2,
+            7,
+            16
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "Il",
+        "V",
+        "Il",
+        "V",
+        "Il",
+        "V"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文四段各四行为一个完整阅读区域，逐段保留中文原文与空行。已目视核对公开颂主新歌第359首成为我异象，PDF第293页索引的三行简谱，与独立公开Slane MIDI完整最高旋律对应唯一；原图光学识别存在少数误字，完整序列代价仍须保留原有12%上限、调性区分及所有分界唯一性检查。前三段实际录音同调，末段独立的MIDI及原谱匹配共同确认升高全音。按原谱四遍正文及其间三个谱内末九拍参考片段重组；转调只对末段全部声部同时加两个半音，不改变音程、节奏或拍数，音符开关须成对一致。三个器乐过门保留在完整路径中，不另设歌词区域。四个正文起点全部通过整曲和局部MIDI、光学四路径核对，保留成本0.35、调性区分0.06、跨度75%至125%、起点互差0.5秒及首尾检查；156秒和13秒仅为搜索范围估计。其他现有音轨仍须通过独立录音对应后才可启用。"
   }
 }

@@ -5,6 +5,7 @@ import copy
 import hashlib
 import importlib.util
 import json
+import io
 import math
 from pathlib import Path
 import time
@@ -31,7 +32,31 @@ midi = load_module('sectional_midi_checks', 'midi-sync.py')
 
 def pinned_file(cache, item, prepare):
     path = cache / item['file']
-    if not path.exists() and prepare:
+    render = item.get('renderPdf')
+    if render is not None:
+        if (not isinstance(render, dict) or type(render.get('version')) is not int or render['version'] != 1 or
+                type(render.get('page')) is not int or render['page'] < 0 or
+                type(render.get('scale')) is not int or not 1 <= render['scale'] <= 8 or
+                not isinstance(item.get('pdfSource'), dict) or 'renderPdf' in item['pdfSource']):
+            raise ValueError('PDF 原谱渲染须明确固定原文、页码及倍率')
+        source = pinned_file(cache, item['pdfSource'], prepare)
+        import pypdfium2 as pdfium
+        from pypdfium2.version import PYPDFIUM_INFO, PDFIUM_INFO
+        if (render.get('pypdfium2Version') != PYPDFIUM_INFO.version or
+                render.get('pdfiumVersion') != PDFIUM_INFO.version):
+            raise ValueError('PDF 原谱渲染器版本与已核对的图片不符')
+        if prepare:
+            with pdfium.PdfDocument(source) as document:
+                if render['page'] >= len(document):
+                    raise ValueError('PDF 原谱页码超出固定文件')
+                stream = io.BytesIO()
+                document[render['page']].render(scale=render['scale']).to_pil().save(stream, format='PNG')
+            data = stream.getvalue()
+            if hashlib.sha256(data).hexdigest() != item['sha256']:
+                raise ValueError('PDF 原谱渲染图片与复核哈希不一致')
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+    elif not path.exists() and prepare:
         request = urllib.request.Request(item['url'], headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(request, timeout=45) as stream:
             data = stream.read()

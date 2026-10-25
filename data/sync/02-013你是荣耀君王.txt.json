@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "02-013",
+  "status": "reviewed",
+  "source": {
+    "file": "02-013你是荣耀君王.txt",
+    "sha256": "47980c9faab3521a3604bbad6f5ccaeb8a60ac1ddcbc3c820db0cbec3a0c8e3f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-013你是荣耀君王.mp3",
+      "sha256": "5e84be7a8fbe90a4f4e0365c6adcae9f3a0b9a0dafb11ae58147be21d6f527d9",
+      "duration": 148.99395833333332,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.83,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 57.38,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 80.67,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 126.48,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-013你是荣耀君王-领唱.mp3",
+      "sha256": "deca3c092ebb440996c140d7fe8c30c1e08f53f8b390216ecacea7133b358782",
+      "duration": 206.0538775510204,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 6.2,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 54.5,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 79.2,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.4,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你是荣耀的君王，你是和平之主， 你是天地万有主宰，唯有你圣洁公义， 天使都向你跪下，敬拜尊崇你， 因为在你有永生之道，你是主耶稣基督。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "和撒那归于大卫的子孙， 和撒那归于万王之王。 愿荣耀归于至高神，耶稣是弥赛亚。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "你是荣耀的君王，你是和平之主， 你是天地万有主宰，唯有你圣洁公义， 天使都向你跪下，敬拜尊崇你， 因为在你有永生之道，你是主耶稣基督。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "和撒那归于大卫的子孙， 和撒那归于万王之王。 愿荣耀归于至高神，耶稣是弥赛亚。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-013你是荣耀君王.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

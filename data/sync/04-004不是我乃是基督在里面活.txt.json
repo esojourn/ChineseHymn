@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "songId": "04-004",
+  "status": "reviewed",
+  "source": {
+    "file": "04-004不是我乃是基督在里面活.txt",
+    "sha256": "92b632e364e58ac28e7ff866113b160d32f2cc339cecde4a9ad1207d97ad699c",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-004不是我乃是基督在里面活-领唱.mp3",
+      "sha256": "f1cddd9d4277f004a40ddd1db919389cc09b8d6efbc802ff5ff3341f2a420463",
+      "duration": 323.784875,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 7
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 26
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 38,
+      "endLine": 38
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 44
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 46,
+      "endLine": 49
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 50,
+      "endLine": 50
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 52,
+      "endLine": 55
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 56,
+      "endLine": 56
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 58,
+      "endLine": 60
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 62,
+      "endLine": 63
+    }
+  },
+  "cues": [
+    {
+      "at": 3.88,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 39.15,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.75,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.75,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 102.35,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 121.15,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 139.28,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 165.6,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 184.58,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 202.85,
+      "region": "r10",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 229.1,
+      "region": "r11",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 247.87,
+      "region": "r12",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 256.05,
+      "region": "r13",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 274.45,
+      "region": "r14",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 282.92,
+      "region": "r15",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 296.3,
+      "region": "r16",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "何等礼物耶稣是我救赎主 何等丰富，神已无别恩赐 祂是我的喜乐、公义和自由 不变的爱、无限深广平安",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我心坚信，唯耶稣是我盼望 我生命与祂紧紧相连 何稀奇，这恩典 都归我！",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "不是我，乃是基督在里面活",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "黑夜虽深，但我不会被丢弃 因我救主，永远在我身边 我虽软弱，仍欢欢喜喜往前 我的缺乏显出祂的大能",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我心坚信，我牧者必保护我 祂领我，走过死荫幽谷 哦，黑暗要过去 我得胜！",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "不是我，乃是基督在里面活",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "无有惧怕，我知我已被赦免 前途光明， 罪债已经付清 耶稣流血， 受苦痛为我救赎 死里复活，完全胜了坟墓",
+        "label": "第3段"
+      },
+      {
+        "region": "r8",
+        "text": "我心坚信，我罪已完全解决 耶稣是我永远的遮蔽 哦，锁链已脱落 我自由！",
+        "label": "第3段"
+      },
+      {
+        "region": "r9",
+        "text": "不是我，乃是基督在里面活",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "一息尚存，我要跟随主耶稣 祂已应许，领我走到天家 日复一日，我知祂在改变我 直至那日，欢喜到宝座前",
+        "label": "第4段"
+      },
+      {
+        "region": "r11",
+        "text": "我心坚信，唯耶稣是我盼望 全荣耀一切都归给祂 当跑完所有路 我要唱",
+        "label": "第4段"
+      },
+      {
+        "region": "r12",
+        "text": "不是我，乃是基督在里面活",
+        "label": "第4段"
+      },
+      {
+        "region": "r13",
+        "text": "我心坚信，唯耶稣是我盼望 全荣耀一切都归给祂 当跑完所有路 我要唱",
+        "label": "第4段"
+      },
+      {
+        "region": "r14",
+        "text": "不是我，乃是基督在里面活",
+        "label": "第4段"
+      },
+      {
+        "region": "r15",
+        "text": "当跑完所有路 我要唱 不是我，乃是基督在里面活",
+        "label": "第4段"
+      },
+      {
+        "region": "r16",
+        "text": "乃是基督在里面活 乃是基督在里面活",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-004不是我乃是基督在里面活.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

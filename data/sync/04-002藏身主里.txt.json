@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "04-002",
+  "status": "reviewed",
+  "source": {
+    "file": "04-002藏身主里.txt",
+    "sha256": "27979b3430248ad9d14fd64982c4aeed59421110796dcc85aaae9b65a95ad750",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-002藏身主里.mp3",
+      "sha256": "2d748b5736e13ab33dd3d19a361b37746bfdfa73357665d23e4356eae4e5b668",
+      "duration": 216.6,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.2,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 51.88,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.5,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 111.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 132.55,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 170.9,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-002藏身主里-领唱.mp3",
+      "sha256": "78916997708541d35d65477e23b7994bfcd300efc0d74f565db2dbf9fdcf8be8",
+      "duration": 160.07836734693876,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 1,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 26
+    }
+  },
+  "cues": [
+    {
+      "at": 8.15,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 58.02,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.1,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.1,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 142.2,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我灵在忧伤痛苦挣扎之时， 愿飞往至高磐石中得安息， 我罪虽众多，但我深愿属你； 你是万世磐石，我藏身主里。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "藏身主里，藏身主里， 你是万世磐石，我藏身主里。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "无论在平静或忧伤或孤单， 无论敌攻击，或恶魔施试探， 或遇暴风雨，海中飘摇不已， 你是万世磐石，我藏身主里。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "藏身主里，藏身主里， 你是万世磐石，我藏身主里。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "仇敌常侵扰，挣扎中真苦恼， 速奔避难所，可以陈述求告， 试炼临近身，好像海中风涛， 藏身在磐石里，我灵得安逸。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "藏身主里，藏身主里， 你是万世磐石，我藏身主里。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-002藏身主里.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

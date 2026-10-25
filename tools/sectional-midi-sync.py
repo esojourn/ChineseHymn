@@ -283,6 +283,51 @@ def ending_recording_profile(profile, item):
     return result
 
 
+def reference_ending_profile(profile):
+    if 'referenceEndingSequence' not in profile:
+        return profile
+    ending = profile['referenceEndingSequence']
+    reference, optical = profile['midiReference'], profile['opticalReference']
+    if (not isinstance(ending, dict) or set(ending) != {'version', 'region', 'sections', 'file', 'sha256', 'reason'} or
+            type(ending.get('version')) is not int or ending['version'] != 1 or
+            ending.get('region') != profile['regions'][-1] or
+            not isinstance(ending.get('reason'), str) or not ending['reason'].strip() or
+            not isinstance(ending.get('sections'), list) or not 1 <= len(ending['sections']) <= 8 or
+            optical['readingStarts'][-1] != [len(optical['order']) - 1, 0] or
+            'readingSectionReview' in profile or profile.get('instrumentalOutroAlternatives') or
+            'transposeSections' in reference['arrangement'] or 'transposeParts' in optical or
+            not isinstance(ending.get('file'), str) or not ending['file'] or
+            ending['file'] in [reference['file'], reference['origin']['file']] or
+            not isinstance(ending.get('sha256'), str) or len(ending['sha256']) != 64 or
+            any(char not in '0123456789abcdef' for char in ending['sha256'])):
+        raise ValueError('参考录音结尾只能追加末个阅读区域中已经核对的原谱乐句')
+    def coordinates(ranges):
+        if (not isinstance(ranges, list) or not ranges or any(
+                not isinstance(item, list) or len(item) != 3 or
+                any(type(value) is not int for value in item) or
+                not 0 <= item[1] < item[2] or item[0] < 0 for item in ranges)):
+            raise ValueError('结尾原谱乐句须逐音绑定已核对的谱行范围')
+        return [(system, index) for system, lo, hi in ranges for index in range(lo, hi)]
+    last = coordinates(optical['parts'][optical['order'][-1]])
+    result = copy.deepcopy(profile)
+    for section in ending['sections']:
+        if (not isinstance(section, dict) or set(section) != {'opticalPart', 'quarterRange'} or
+                not isinstance(section.get('opticalPart'), str) or section['opticalPart'] not in optical['parts']):
+            raise ValueError('结尾只能引用末个阅读区域内的原谱完整乐句')
+        chosen = coordinates(optical['parts'][section['opticalPart']])
+        if len(chosen) < 5 or sum(last[i:i + len(chosen)] == chosen for i in range(len(last))) != 1:
+            raise ValueError('结尾原谱乐句必须是末个阅读区域中唯一、连续的至少五个音头')
+        bounds = section['quarterRange']
+        if (not isinstance(bounds, list) or len(bounds) != 2 or
+                any(type(at) not in (int, float) or not math.isfinite(at) for at in bounds) or
+                not 0 <= bounds[0] < bounds[1] <= reference['arrangement']['quarterLength']):
+            raise ValueError('结尾乐句须引用原 MIDI 中明确的完整拍数范围')
+        result['midiReference']['arrangement']['sections'].append(bounds[:])
+        result['opticalReference']['order'].append(section['opticalPart'])
+    result['midiReference'].update(file=ending['file'], sha256=ending['sha256'])
+    return result
+
+
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None):
     melody, optical, reference = material
     verify_local = local_matcher(profile)
@@ -323,13 +368,19 @@ def generate(song, profile, cache, prepare=False):
         verses = source_verse_context(source, profile)
         recordings = independent_recordings(song, profile)
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
-        melody, optical, reference = reference_material(profile, cache, prepare)
+        reference_profile = reference_ending_profile(profile)
+        body_material = reference_material(profile, cache, prepare)
+        material = body_material if reference_profile is profile else reference_material(reference_profile, cache, prepare)
+        melody, optical, reference = material
         if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
+        if reference_profile is not profile:
+            evidence['midiMatching']['recordingReference'] = {
+                'midiReference': reference_profile['midiReference'], 'opticalReference': reference_profile['opticalReference'],
+                'readingBoundaries': reference_profile['readingBoundaries']}
         evidence['performanceOrder'] = definitions
-        material = melody, optical, reference
-        def measure_recording(file, window, detail, track_profile=profile, track_material=material):
+        def measure_recording(file, window, detail, track_profile=reference_profile, track_material=material):
             audio = batch.ROOT / 'data' / file
             measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
                                            detail, source_verses=verses)
@@ -343,9 +394,10 @@ def generate(song, profile, cache, prepare=False):
         for item, track_profile in recording_profiles:
             detail = dict(item)
             evidence['midiMatching'].setdefault('independentRecordings', []).append(detail)
-            track_material = material
+            track_material = body_material
             if track_profile is not profile:
                 track_material = reference_material(track_profile, cache, prepare)
+            if track_profile is not profile or reference_profile is not profile:
                 detail.update(track_material[2])
                 detail['recordingReference'] = {'midiReference': track_profile['midiReference'],
                     'opticalReference': track_profile['opticalReference'],

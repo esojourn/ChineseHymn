@@ -5930,5 +5930,397 @@
       ]
     },
     "formReview": "原文三段各由主歌四行与副歌两行构成，正文六个阅读区域按ABABAB完整演唱。独立原谱为颂主新歌第176首藏身主里（O Safe to the Rock / Hiding in Thee），原PDF索引149页，逐行核对最高声部三个谱行。明确排除小节线、谱行括号及其误认音头，保留光学识别遗漏或错认的音符原结果，不手工填补。完整音序与公开原MIDI及每个阅读起句的至少五音唯一对应均须通过；65个原MIDI旋律起音组成一个96拍完整曲调。原文件第3至99拍重复三次，保留全部声部、时值和速度；副歌起点在参考首音后第65拍，不能按印刷行数或总时长比例推算。领唱只演奏三个完整歌段，伴奏在三段后又奏一次末段副歌，单独绑定该音轨文件和SHA-256及末段再奏说明；其分析参考只能追加原谱末个B，不改动任何前面的正文或阅读分界。末段再奏保持最后副歌阅读区域。两版分别使用整曲MIDI、整曲光学、逐区域MIDI及光学四路径，局部固定保留一个完整前一区域作上下文；成本0.35、调性区分0.06、跨度75%至125%、起点任意互差0.5秒、首尾及正文顺序检查全部保留。任一录音追加尾部后验证失败都阻止导出，不能回退到删除尾部的时间轴或复用另一版时间。原始歌词、空行、图片、音频及已发布数据不改动。"
+  },
+  "02-013": {
+    "version": 1,
+    "sourceHash": "47980c9faab3521a3604bbad6f5ccaeb8a60ac1ddcbc3c820db0cbec3a0c8e3f",
+    "tracks": [
+      {
+        "file": "02-013你是荣耀君王.mp3",
+        "sha256": "5e84be7a8fbe90a4f4e0365c6adcae9f3a0b9a0dafb11ae58147be21d6f527d9"
+      },
+      {
+        "file": "02-013你是荣耀君王-领唱.mp3",
+        "sha256": "deca3c092ebb440996c140d7fe8c30c1e08f53f8b390216ecacea7133b358782"
+      }
+    ],
+    "audioFile": "02-013你是荣耀君王-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "你是荣耀的君王，你是和平",
+      "和撒那归于大卫的子孙， ",
+      "你是荣耀的君王，你是和平",
+      "和撒那归于大卫的子孙， "
+    ],
+    "sampling": {
+      "durationEstimate": 200,
+      "onsetEstimate": 6
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "independentRecordings": [
+      {
+        "file": "02-013你是荣耀君王.mp3",
+        "sha256": "5e84be7a8fbe90a4f4e0365c6adcae9f3a0b9a0dafb11ae58147be21d6f527d9",
+        "sampling": {
+          "durationEstimate": 138,
+          "onsetEstimate": 10.5
+        }
+      }
+    ],
+    "referenceEndingSequence": {
+      "version": 1,
+      "region": "r4",
+      "sections": [
+        {
+          "opticalPart": "B",
+          "quarterRange": [
+            63.5,
+            96
+          ]
+        },
+        {
+          "opticalPart": "E",
+          "quarterRange": [
+            80,
+            96
+          ]
+        },
+        {
+          "opticalPart": "E",
+          "quarterRange": [
+            80,
+            96
+          ]
+        }
+      ],
+      "file": "reference/external/king-glory-lead-complete.mid",
+      "sha256": "1e5802b661c19967d32b16acf836b1035fbe63743baed561f8fc1e037e2d2dca",
+      "reason": "当前领唱录音完整演唱原文两段后，继续反复同一副歌一次，再唱两次愿荣耀归于至高神至耶稣是弥赛亚末句；原始逐词转写及整曲MIDI与光学均已独立对应。末句E为末阅读区域B内部连续的同一原谱音头，分别明确绑定原MIDI第80至96拍；再奏副歌绑定第63.5拍拾音至96拍。所有结尾仅延长末阅读区域，不新增换页，不改变两段正文或其他录音。"
+    },
+    "midiReference": {
+      "origin": {
+        "file": "midi/new-songs-ringing-359.mid",
+        "sha256": "f8059d17f324bc8ccf10309a92a20eaa9ff6aa7f816bfbc303750ab3fa1c216b",
+        "url": "https://www.christianstudy.com/data/hymns/midi/new_songs_ringing_359.mid"
+      },
+      "file": "reference/external/king-glory-two-verses.mid",
+      "sha256": "fd2a1886660b831a320a0f08d7d67272471d45398ca6e20c25b6def6315f4074",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "",
+        "quarterLength": 96,
+        "sections": [
+          [
+            0,
+            96
+          ],
+          [
+            0,
+            96
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          2,
+          2,
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 64,
+        "pitches": [
+          2,
+          2,
+          0,
+          11,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 102,
+        "pitches": [
+          2,
+          2,
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 166,
+        "pitches": [
+          2,
+          2,
+          0,
+          11,
+          9
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/king-glory.png",
+        "sha256": "1f269585d6fd2e1d48de22aa9b8806807d7fe45795e7f48cb49abec6dd4b7bc7",
+        "url": "https://file.izanm.org/store/2022/08/15/62fa1dfa1bcba0072208edb2.png"
+      },
+      "pageUrl": "https://www.zanmei.ai/tab/39893/full.html",
+      "recognitionFile": "modern-sectional-scores/ocr/king-glory.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              518,
+              564
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                591,
+                647
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              885,
+              932
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                957,
+                1013
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1250,
+              1299
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1321,
+                1377
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1615,
+              1664
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1687,
+                1745
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1978,
+              2025
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                2051,
+                2112
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              2226,
+              2277
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                2298,
+                2356
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "a2f16b033a0eb85a7e066884c9515c36e030d5c1af97fd3c60bece80b8150232",
+      "ties": {
+        "2": [
+          9
+        ],
+        "4": [
+          11
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            16
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            6,
+            17
+          ],
+          [
+            1,
+            18,
+            20
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            2,
+            6,
+            16
+          ],
+          [
+            2,
+            17,
+            20
+          ],
+          [
+            3,
+            0,
+            5
+          ],
+          [
+            3,
+            6,
+            8
+          ],
+          [
+            3,
+            9,
+            16
+          ],
+          [
+            3,
+            17,
+            19
+          ]
+        ],
+        "B": [
+          [
+            3,
+            19,
+            20
+          ],
+          [
+            4,
+            0,
+            7
+          ],
+          [
+            4,
+            8,
+            14
+          ],
+          [
+            4,
+            15,
+            22
+          ],
+          [
+            4,
+            23,
+            25
+          ],
+          [
+            5,
+            0,
+            10
+          ],
+          [
+            5,
+            11,
+            20
+          ]
+        ],
+        "E": [
+          [
+            5,
+            0,
+            10
+          ],
+          [
+            5,
+            11,
+            20
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "formReview": "原始歌词含两次完整的你是荣耀的君王及和撒那副歌，四个阅读区域按ABAB完整覆盖。原谱为公开和弦简谱当代诗歌合集第177首你是荣耀的君王，固定原始PNG、音符提取及版面哈希。逐行目视核对六行单旋律谱，副歌和字拾音为第四谱行最后一个5，末句愿荣耀至弥赛亚为最后一整行E；不得等到下一谱行才定位副歌。只排除目视核对的小节线及谱行括号，保留光学误认音符，不手工补音。第三行下及第五行孙的相邻同音持续音各合并一处，其余跨不同音的圆滑线保留所有音头。完整光学音序及四个阅读起句至少五音均须与原公开MIDI唯一对应。原MIDI每曲96拍，伴奏演奏两次完整AB；领唱另有完整B及两次E结尾，只追加已声明的同一末区域音句，其他录音使用各自实际结构。每版完整演奏的MIDI、光学节奏及每个当前阅读区域的独立MIDI、光学四条路径全部须通过成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、顺序及录音首尾检查。局部只固定保留一个前阅读区域作上下文。末区域持续显示覆盖反复，不按时长比例推算时间；任意结尾验证失败均阻止导出，不能把领唱结尾套用到伴奏。原始歌词、空行、图片、音频及已发布数据不改动。"
   }
 }

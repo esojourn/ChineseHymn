@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "songId": "02-004",
+  "status": "reviewed",
+  "source": {
+    "file": "02-004天父的爱深越海洋.txt",
+    "sha256": "17cec3c2dffb87fd640988cfbdb63e7f9dca2ed203fb550ab4d7299e0c730364",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-004天父的爱深越海洋.mp3",
+      "sha256": "42b47d6bfbf62ce0033dce12273a4252daca3ae1c726995711ed83b2ad2f0dc1",
+      "duration": 208.11755102040817,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 14.3,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 35.63,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.92,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 88.95,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 120.2,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 141.37,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 162.15,
+          "region": "r7",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-004天父的爱深越海洋-领唱.mp3",
+      "sha256": "59a2ef78c6c7fc9ceb0d62c36b5345c16e8dd263447c551ea8e6047a363cc352",
+      "duration": 204.4865306122449,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    }
+  },
+  "cues": [
+    {
+      "at": 14.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 35.73,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.02,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.05,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.3,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.47,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.25,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "天父的爱深越海洋 广阔也无法测量 祂赐下祂独生爱子 怜我罪人施恩义",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "裂肺撕心哀唤悲鸣 天父转脸不听不应 赎罪羔羊流血舍命 引领世人进祂荣耀中",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "人子被挂十字架 把我众罪全卸下 卑鄙的我仿若暴徒 狂言秽语乱叫骂",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "祂为我罪甘愿受苦 完成使命义无反顾 十架牺牲，拯救我命 完成使命，救主得胜",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我没有可夸之处 无财无势，无智慧 但我只夸耶稣 因祂受死和复活",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "为何蒙祂施恩赐福 我不知道如何答复 但我心里清楚明白  祂流宝血赎我罪债",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "为何蒙祂施恩赐福 我不知道如何答复 但我心里清楚明白  祂流宝血赎我罪债",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-004天父的爱深越海洋.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

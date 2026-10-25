@@ -177,9 +177,34 @@ def stable_outro_times(timelines):
     return timelines[0]
 
 
-def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence, local_match=None):
+def reading_section_groups(count, review=None):
+    """Bind each reading to complete performed sections; explicitly account for instrumental gaps."""
+    if review is None:
+        return [[index] for index in range(count)]
+    if (not isinstance(review, dict) or type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            not isinstance(review.get('groups'), list) or len(review['groups']) < 3):
+        raise ValueError('正文乐段分组需要明确版本、完整分组及器乐间隔说明')
+    groups = review['groups']
+    for group in groups:
+        if (not isinstance(group, list) or not group or
+                any(type(index) is not int or not 0 <= index < count for index in group) or
+                group != list(range(group[0], group[-1] + 1))):
+            raise ValueError('每个正文阅读区域须引用连续、完整的实际乐段')
+    used = [index for group in groups for index in group]
+    omitted = review.get('instrumentalSections')
+    if (used[0] != 0 or used != sorted(set(used)) or not isinstance(omitted, list) or
+            any(type(index) is not int for index in omitted) or
+            omitted != [index for index in range(count) if index not in used]):
+        raise ValueError('正文乐段顺序重复或遗漏，未显示的乐段须逐项标明为器乐')
+    return groups
+
+
+def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
+                      local_match=None, reading_sections=None):
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
+    groups = reading_section_groups(len(melody_rows), reading_sections)
     one = match(melody_rows, target[1], target[0], duration, onset, 'spatialWeights')
     two = match(optical_rows, target[1], target[0], duration, onset, 'rhythmWeights')
     evidence.update(fullMelody=one, fullOptical=two, local=[])
@@ -188,24 +213,34 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
     check_match(two, duration, (a['key'] + reference_key) % 12)
     if len(a['starts']) != len(melody_rows) or len(b['starts']) != len(melody_rows):
         raise ValueError('整曲路径没有覆盖全部阅读区域')
-    if any(round(abs(x - y), 3) > .5 for x, y in zip(a['starts'], b['starts'])):
+    if any(round(abs(a['starts'][group[0]] - b['starts'][group[0]]), 3) > .5 for group in groups):
         raise ValueError('两条整曲路径的阅读起点不一致')
+    if reading_sections is not None:
+        evidence['readingSectionReview'] = reading_sections
     times, spans = [], []
     verify_local = local_match or match
-    for index in range(len(melody_rows)):
-        start = (a['starts'][index] + b['starts'][index]) / 2
-        end = ((a['starts'][index + 1] + b['starts'][index + 1]) / 2 if index + 1 < len(melody_rows)
+    for index, group in enumerate(groups):
+        first, after = group[0], group[-1] + 1
+        start = (a['starts'][first] + b['starts'][first]) / 2
+        end = ((a['starts'][after] + b['starts'][after]) / 2 if after < len(melody_rows)
                else (a['starts'][0] + a['span'] + b['starts'][0] + b['span']) / 2)
         span = end - start
         if span <= .5:
             raise ValueError('整曲路径没有保持实际乐段顺序')
-        local = verify_local([melody_rows[index]], target[1], target[0], span, start, 'spatialWeights')
-        optical = verify_local([optical_rows[index]], target[1], target[0], span, start, 'rhythmWeights')
+        def joined(rows, weight):
+            return {key: [value for section in group for value in rows[section][key]]
+                    for key in ['notes', 'pitchOffsets', weight]}
+        local_rows = [melody_rows[index]] if reading_sections is None else [joined(melody_rows, 'spatialWeights')]
+        printed_rows = [optical_rows[index]] if reading_sections is None else [joined(optical_rows, 'rhythmWeights')]
+        local = verify_local(local_rows, target[1], target[0], span, start, 'spatialWeights')
+        optical = verify_local(printed_rows, target[1], target[0], span, start, 'rhythmWeights')
         evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
                                   'melody': local, 'optical': optical})
+        if reading_sections is not None:
+            evidence['local'][-1]['sections'] = group
         check_match(local, span, a['key'])
         check_match(optical, span, b['key'])
-        times.append(four_path_time([a['starts'][index], b['starts'][index],
+        times.append(four_path_time([a['starts'][first], b['starts'][first],
                                     local['best']['starts'][0], optical['best']['starts'][0]]))
         spans.append(span)
     if any(x + .5 >= y for x, y in zip(times, times[1:])):

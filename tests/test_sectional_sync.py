@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parents[1] / 'tools'))
 try:
     import mido
     import numpy as np
-    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time, stable_outro_times
+    from sync_batch_sectional import arranged_midi_bytes, optical_performance_rows, performance_times, four_path_time, stable_outro_times, reading_section_groups
 except ImportError:
     mido = None
 
@@ -252,6 +252,48 @@ class SectionalTests(unittest.TestCase):
         for values in [[1, 1.51, 1.2, 1.3], [1, 1, 1, float('nan')], [1, 1, 1]]:
             with self.assertRaises(ValueError):
                 four_path_time(values)
+
+    def test_reading_groups_account_for_every_section_and_cannot_skip_undeclared_music(self):
+        review = {'version': 1, 'groups': [[0, 1], [3], [4]],
+                  'instrumentalSections': [2, 5], 'reason': 'reviewed instrumental interlude and outro'}
+        self.assertEqual(reading_section_groups(6, review), [[0, 1], [3], [4]])
+        self.assertEqual(reading_section_groups(3), [[0], [1], [2]])
+        for change in [{'version': True}, {'reason': ''}, {'groups': [[1], [3], [4]]},
+                       {'groups': [[0, 2], [3], [4]]}, {'groups': [[0, 1], [1], [4]]},
+                       {'groups': [[0, 1], [4], [3]]}, {'groups': [[0, 1], [3], [6]]},
+                       {'groups': [[False, 1], [3], [4]]}, {'instrumentalSections': [2]},
+                       {'instrumentalSections': [2, 4, 5]}, {'instrumentalSections': [5, 2]}]:
+            with self.assertRaises(ValueError, msg=str(change)):
+                reading_section_groups(6, {**review, **change})
+
+    def test_instrumental_sections_remain_in_complete_paths_and_are_excluded_from_sung_local_queries(self):
+        review = {'version': 1, 'groups': [[0, 1], [3], [4]],
+                  'instrumentalSections': [2, 5], 'reason': 'instrumental gaps reviewed against recording'}
+        melody = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1]} for i in range(6)]
+        optical = [{'notes': [i + 1], 'pitchOffsets': [0], 'rhythmWeights': [1]} for i in range(6)]
+        queries = []
+        def matcher(rows, chroma, times, duration, onset, weight):
+            complete = len(rows) == 6
+            queries.append((complete, [n for row in rows for n in row['notes']], duration))
+            starts = [2, 6, 12, 17, 25, 34] if complete else [onset]
+            key = 1 if weight == 'spatialWeights' else 3
+            return {'best': {'cost': .2, 'span': duration, 'key': key, 'starts': starts},
+                    'runnerUp': {'cost': .4}}
+        evidence = {}
+        target = np.arange(45), np.zeros((12, 45))
+        self.assertEqual(performance_times(melody, optical, target, 40, 2, 2, matcher,
+                         evidence, reading_sections=review), [2, 17, 25])
+        self.assertEqual([notes for complete, notes, span in queries if complete], [[1, 2, 3, 4, 5, 6]] * 2)
+        self.assertEqual([notes for complete, notes, span in queries if not complete], [[1, 2]] * 2 + [[4]] * 2 + [[5]] * 2)
+        self.assertEqual([item['duration'] for item in evidence['local']], [10, 8, 9])
+        self.assertEqual([item['sections'] for item in evidence['local']], review['groups'])
+        def wrong_local(*args):
+            answer = matcher(*args)
+            if len(args[0]) == 1 and args[-1] == 'rhythmWeights':
+                answer['best']['starts'][0] += .6
+            return answer
+        with self.assertRaisesRegex(ValueError, '四条路径'):
+            performance_times(melody, optical, target, 40, 2, 2, wrong_local, {}, reading_sections=review)
 
 
 if __name__ == '__main__':

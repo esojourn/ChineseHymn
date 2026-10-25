@@ -13,7 +13,7 @@ from sync_batch_align import export_result
 from sync_batch_audio import features
 from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
-from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times
+from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups
 from sync_batch_sources import clean, text_source
 from sync_batch_symbolic import score_row_offsets
 
@@ -162,7 +162,7 @@ def generate(song, profile, cache, prepare=False):
     try:
         source, definitions = validate_source(song, profile)
         melody, optical, reference = reference_material(profile, cache, prepare)
-        if len(melody) != len(definitions):
+        if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
         evidence['performanceOrder'] = definitions
@@ -172,7 +172,7 @@ def generate(song, profile, cache, prepare=False):
         evidence['midiMatching']['performance'] = proof
         times = performance_times(melody, optical, target, profile['sampling']['durationEstimate'],
             profile['sampling']['onsetEstimate'], reference['symbolicRows']['semitoneShift'], midi.match_template, proof,
-            local_match=verify_local)
+            local_match=verify_local, reading_sections=profile.get('readingSectionReview'))
         variants = outro_profiles(profile)
         if variants:
             checks = evidence['midiMatching']['instrumentalOutroChecks'] = []
@@ -185,7 +185,7 @@ def generate(song, profile, cache, prepare=False):
                 measured = performance_times(melody_variant, optical_variant, target,
                     profile['sampling']['durationEstimate'], profile['sampling']['onsetEstimate'],
                     reference_variant['symbolicRows']['semitoneShift'], midi.match_template, detail['performance'],
-                    local_match=verify_local)
+                    local_match=verify_local, reading_sections=variant.get('readingSectionReview'))
                 detail['times'] = measured
                 timelines.append(measured)
                 stable_outro_times(timelines)

@@ -44,6 +44,24 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_wide_thin_ocr_rows_bypass_zero_dimension_resize_without_losing_pixels(self):
+        import numpy as np
+        from unittest.mock import Mock
+        ocr = Mock(max_side_len=2000)
+        ocr.text_rec.return_value = ([['细小文字', .95]], 0)
+        thin = np.full((12, 2526, 3), 255, dtype=np.uint8)
+        self.assertEqual(batch.recognize_row(ocr, thin)[0], [['细小文字', .95]])
+        ocr.assert_not_called()
+        self.assertIs(ocr.text_rec.call_args.args[0], thin)
+        ocr.reset_mock()
+        for shape in [(64, 2526, 3), (12, 1400, 3), (2526, 64, 3)]:
+            pixels = np.full(shape, 255, dtype=np.uint8)
+            batch.recognize_row(ocr, pixels)
+            self.assertIs(ocr.call_args.args[0], pixels)
+            self.assertEqual(ocr.call_args.kwargs, {'use_det': False, 'use_cls': False})
+        ocr.text_rec.assert_not_called()
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_initial_view_requires_current_assets_and_coverage_of_every_reading_region(self):
         from copy import deepcopy
         with tempfile.TemporaryDirectory() as directory:

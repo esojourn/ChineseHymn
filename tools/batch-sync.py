@@ -212,6 +212,18 @@ def transcribe(job):
     return song['songId'], f'{len(rows)} segments, {round(time.monotonic() - start, 1)} s'
 
 
+def recognize_row(ocr, pixels):
+    height, width = pixels.shape[:2]
+    maximum = max(height, width)
+    if maximum > ocr.max_side_len:
+        ratio = ocr.max_side_len / maximum
+        # RapidOCR rounds reduced dimensions to multiples of 32. Thin, wide
+        # score rows can round to zero; the text recognizer accepts them directly.
+        if any(round(int(size * ratio) / 32) == 0 for size in (height, width)):
+            return ocr.text_rec(pixels)
+    return ocr(pixels, use_det=False, use_cls=False)
+
+
 def recognize_image(job):
     global _ocr
     song, cache, threads, *options = job
@@ -272,7 +284,7 @@ def recognize_image(job):
             if not len(columns):
                 return None
             left, right = max(0, int(columns[0]) - 8), min(width, int(columns[-1]) + 9)
-        result, _ = _ocr(image[top:bottom, left:right], use_det=False, use_cls=False)
+        result, _ = recognize_row(_ocr, image[top:bottom, left:right])
         if result:
             text, confidence = result[0][:2]
             corners = np.array([[0, top, 1], [width, top, 1], [0, bottom, 1], [width, bottom, 1]]) @ inverse.T

@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "03-008",
+  "status": "reviewed",
+  "source": {
+    "file": "03-008我的心你要称颂耶和华.txt",
+    "sha256": "3b9e2f56ef01b05eb18e92dc3da344c6973630aee04b9bb57d7eddd9fc9aa685",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-008我的心你要称颂耶和华.mp3",
+      "sha256": "bf5a67939d12124db7e5fbc93c98bf7f6fb5ffb7f44ac8b61c4093f14cd0332a",
+      "duration": 224.0,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.1,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 34.4,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 62.73,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 88.02,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 115.8,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 141.55,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        },
+        {
+          "at": 169.8,
+          "region": "r7",
+          "label": "第7段",
+          "transition": "reading"
+        },
+        {
+          "at": 195.03,
+          "region": "r8",
+          "label": "第8段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-008我的心你要称颂耶和华-领唱.mp3",
+      "sha256": "bcc2921e41c72714b3ecff4535164c13e5a3f84772f2423a7eb2b6eb5c13ece5",
+      "duration": 224.52244897959184,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 35
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 37,
+      "endLine": 40
+    }
+  },
+  "cues": [
+    {
+      "at": 9.6,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.9,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.2,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 88.52,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.9,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.9,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 170.33,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    },
+    {
+      "at": 195.6,
+      "region": "r8",
+      "label": "第8段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我的心你要称颂耶和华 不可忘记祂的恩惠 祂赦免你一切过犯罪孽 医治你疾病复原",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我的心你要称颂耶和华 不可忘记祂的恩惠 祂以仁爱慈悲为你冠冕 替受屈的人申冤",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "天离地有何等的高 他的慈爱也何等的深 东离西有多么的远 他使我的过犯也离我多远",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "耶和华有怜悯的爱 且有丰盛无尽的恩典 从亘古直到永远 耶和华祂是我的神",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我的心你要称颂耶和华 不可忘记祂的恩惠 祂赦免你一切过犯罪孽 医治你疾病复原",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "我的心你要称颂耶和华 不可忘记祂的恩惠 祂以仁爱慈悲为你冠冕 替受屈的人申冤",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "天离地有何等的高 他的慈爱也何等的深 东离西有多么的远 他使我的过犯也离我多远",
+        "label": "第7段"
+      },
+      {
+        "region": "r8",
+        "text": "耶和华有怜悯的爱 且有丰盛无尽的恩典 从亘古直到永远 耶和华祂是我的神",
+        "label": "第8段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-008我的心你要称颂耶和华.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

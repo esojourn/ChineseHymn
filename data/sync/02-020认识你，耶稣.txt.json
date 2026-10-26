@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-020",
+  "status": "reviewed",
+  "source": {
+    "file": "02-020认识你，耶稣.txt",
+    "sha256": "334afb4725cbf6c5ef2ed1cbb2fd6827c9399bd0b1cc6e503e0f600641dac09f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-020认识你，耶稣.mp3",
+      "sha256": "c45d0b0472e1ed4ba71fca20d9df5b06515331d9429868b9689ac5f03352a1af",
+      "duration": 221.231,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 15.5,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 49.77,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 79.78,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.3,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.0,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 176.08,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-020认识你，耶稣-领唱.mp3",
+      "sha256": "ef686df3672b757e721ebd81429280bc9199b69cb90b205babdaade92a0c9603",
+      "duration": 220.96975,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 11
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 31,
+      "endLine": 33
+    }
+  },
+  "cues": [
+    {
+      "at": 15.5,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 49.77,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 79.78,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.4,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.0,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 176.08,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我以前生命所追求事情， 在世界追逐名利、财富； 前看为有益，现看为有损， 一切事情都不能相比：",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "认识你，耶稣，认识你是最重要的事， 你美善，是公义、是喜乐、是我一切， 主我深爱你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "现我心所愿追求认识你， 愿在你里面，更归属你； 因信神称义，非我做的事， 一切恩赐都不能相比：",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "认识你，耶稣，认识你是最重要的事， 你美善，是公义、是喜乐、是我一切， 主我深爱你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "让我晓得你复活大能力， 并晓得和你一同受苦； 让我更像你，效法你的死， 我也得以从死里复活。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "认识你，耶稣，认识你是最重要的事， 你美善，是公义、是喜乐、是我一切， 主我深爱你。主我深爱你。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-020认识你，耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

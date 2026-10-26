@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-021",
+  "status": "reviewed",
+  "source": {
+    "file": "02-021耶和华你是我的神.txt",
+    "sha256": "9cc81cc56664daa59e516f771d6147bdbe625bdfd5828235fcd70c5d2587f3eb",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-021耶和华你是我的神.mp3",
+      "sha256": "96c90418931589e2cf5b7398ac3b774325eb550f4a0694fb5df8205c2af3d090",
+      "duration": 194.769,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0.0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 43.6,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 72.52,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.95,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 129.65,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 158.7,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-021耶和华你是我的神-领唱.mp3",
+      "sha256": "67525c0e141c0f7a9e985fe40105f392adca15bf8d1a1b65aa3ae5fd79b681ce",
+      "duration": 196.3625,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 19
+    }
+  },
+  "cues": [
+    {
+      "at": 0.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 43.7,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 72.52,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.05,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 129.75,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.7,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "耶和华你是我的神，我要时时称颂 你的名  你是我的盾牌 是我的荣耀，又是叫我抬起头的神 ",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "纵然仇敌围绕攻击我，在你怀中必不怕遭害  你是我的神，我所倚靠的，你同在使我全然得胜",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "耶和华你是我的神，我要时时称颂 你的名  你是我的盾牌 是我的荣耀，又是叫我抬起头的神 ",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "纵然仇敌围绕攻击我，在你怀中必不怕遭害  你是我的神，我所倚靠的，你同在使我全然得胜",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "纵然仇敌围绕攻击我，在你怀中必不怕遭害  你是我的神，我所倚靠的，你同在使我全然得胜",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "你是我的神，我所倚靠的，你同在使我全然得胜",
+        "label": "第6段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-021耶和华你是我的神.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

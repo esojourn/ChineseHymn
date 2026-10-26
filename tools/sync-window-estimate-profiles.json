@@ -425,5 +425,51 @@
       "purpose": "Approximate ASR phrases and measured musical shifts select contextual clips only; no published timestamp is taken directly from these estimates."
     },
     "review": "已核对原文段落及相应音乐反复；只在完整转写的对应起句附近调整上下文取样位置。全部最终起点仍由有效声学首词、不同上下文窗口及原有实际音乐相位检查确定，其他录音独立做chroma-DTW对应。"
+  },
+  "03-012": {
+    "version": 1,
+    "sourceHash": "88c23d2b3afd22282525a3216916e9058f190661bb0c49522bc4b730717f2d57",
+    "tracks": [
+      {
+        "file": "03-012最知心的朋友.mp3",
+        "sha256": "36e047cf5c05bdf1c9411c2026c2eb8cbf1a2f5ffee80b526764bb0b527d48ae"
+      },
+      {
+        "file": "03-012最知心的朋友-领唱.mp3",
+        "sha256": "fbd65060c45fe25cd855cfec5b52b6cdf81f203ef3fb0fe1bd47a2d8665a8ca6"
+      }
+    ],
+    "audioFile": "03-012最知心的朋友-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "estimates": [
+      6,
+      31.5,
+      55.5,
+      80,
+      105.5,
+      130,
+      154,
+      178.5
+    ],
+    "sourceCycle": {
+      "version": 1,
+      "versesPerCycle": 2,
+      "reason": "原文四个段落分别为前半主歌、前半副歌、第二轮主歌、第二轮副歌，每段又有两个阅读区域；实际录音为两个完整主歌加副歌循环，两轮四个区域歌词逐项完全相同，原文四段不等于四轮音乐。"
+    },
+    "reference": {
+      "file": "asr/03-012最知心的朋友-领唱.mp3.json",
+      "sha256": "678903dc7a0e20add4d7bd5365440968552ee53fd0ecdca58ccdd1618be4afde",
+      "purpose": "Reviewed ASR locations choose contextual clips only; the original two acoustic windows and independently detected complete music cycles determine final cues."
+    },
+    "review": "原文四段各两个阅读区域，完整顺序八个区域均保留，两轮主歌加副歌逐字相同。音乐从完整原始领唱独立检测为两轮，周期98.5秒、相似度0.6036；不能按四个原文段落直接检索四轮音乐。上下文中心仅参考同曲当前录音的逐词转写以选择音频窗口，不使用未通过的谱面匹配结果作为最终时间。全部后续起点仍须经过medium/int8前6后16及前4后14秒两组独立上下文声学对齐，首词须有正时长、有效字符比例及概率，起点互差不超过0.5秒；首个阅读位置沿用后续实测循环相位推导，不能使用取样中心直接导出。其他录音继续独立完整chroma-DTW对应，逐个阅读位置检查局部成本。原始歌词、空行、音频及已发布滚动数据保持不变。"
   }
 }

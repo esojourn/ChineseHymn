@@ -34,6 +34,30 @@ def reviewed_estimates(song, definitions, defaults, profile):
     return estimates
 
 
+def source_cycle_verses(song, source, profile):
+    """Group consecutive source verses only when complete lyric cycles repeat exactly."""
+    if profile is None or 'sourceCycle' not in profile:
+        return source['verses']
+    review = profile['sourceCycle']
+    definitions = [item for verse in source['verses'] for item in verse]
+    reviewed_estimates(song, definitions, [], profile)
+    count = review.get('versesPerCycle') if isinstance(review, dict) else None
+    verses = source['verses']
+    if (song.get('type') != 'text' or source.get('language') != 'zh' or
+            not isinstance(review, dict) or set(review) != {'version', 'versesPerCycle', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            type(count) is not int or not 2 <= count <= len(verses) // 2 or len(verses) % count or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            any(not verse for verse in verses)):
+        raise ValueError('音乐循环分组须绑定完整原文及至少两轮相同歌词，不能指定时间或自选分组')
+    groups = [[item for verse in verses[first:first + count] for item in verse]
+              for first in range(0, len(verses), count)]
+    texts = [[clean(item['text'], source['language']) for item in group] for group in groups]
+    if not all(texts[0]) or any(text != texts[0] for text in texts[1:]):
+        raise ValueError('音乐循环中的全部阅读区域必须与第一轮原文歌词逐项相同')
+    return groups
+
+
 def extended_context_enabled(profile):
     if profile is None or 'extendedContext' not in profile:
         return False
@@ -248,9 +272,14 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
         text = prepare.read_text(path)
         language = 'en' if song['songId'].startswith('06-') and len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
         source = text_source(path, language)
-    verses = source['verses']
+    profile = window_estimate_profile(song)
+    verses = source_cycle_verses(song, source, profile)
     if not verses or any(not verse for verse in verses):
         raise ValueError('歌词段落不完整')
+    if profile is not None and 'sourceCycle' in profile:
+        evidence['sourceCycle'] = {'profile': profile['sourceCycle'],
+            'sourceVerseCount': len(source['verses']),
+            'readingGroups': [[item['region'] for item in verse] for verse in verses]}
     music = repeated_verses(reference, len(verses), cache)
     evidence['music'] = music
     definitions, estimates = [], []
@@ -262,7 +291,6 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
             definitions.append(item)
             # Estimates only select audio windows. Published times come from acoustic alignment.
             estimates.append(music['initialOnsetEstimate'] + shift + music['period'] * float(weight))
-    profile = window_estimate_profile(song)
     estimates = reviewed_estimates(song, definitions, estimates, profile)
     extended_context = extended_context_enabled(profile)
     if profile is not None:

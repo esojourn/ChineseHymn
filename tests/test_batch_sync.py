@@ -265,6 +265,86 @@ class BatchTests(unittest.TestCase):
                                {'shifts': [0, 22], 'similarity': 1}, [])
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_source_cycles_preserve_every_region_and_require_identical_complete_lyrics(self):
+        from copy import deepcopy
+        from sync_batch_align import source_cycle_verses
+        song = {'type': 'text', 'sha256': 'lyrics', 'reference': 'voice.mp3',
+                'tracks': [{'file': 'voice.mp3', 'sha256': 'audio'}]}
+        definitions = [{'region': f'r{i + 1}', 'text': ['主歌甲', '主歌乙', '副歌甲', '副歌乙'][i % 4]}
+                       for i in range(8)]
+        source = {'language': 'zh', 'verses': [definitions[i:i + 2] for i in range(0, 8, 2)]}
+        original = deepcopy(source)
+        review = {'version': 1, 'versesPerCycle': 2, 'reason': 'two source verses per repeated cycle'}
+        profile = {'version': 1, 'sourceHash': 'lyrics', 'tracks': song['tracks'],
+                   'audioFile': 'voice.mp3', 'regions': [row['region'] for row in definitions],
+                   'estimates': [2 + i * 10 for i in range(8)], 'sourceCycle': review}
+        self.assertIs(source_cycle_verses(song, source, None), source['verses'])
+        self.assertIs(source_cycle_verses(song, source,
+                      {key: value for key, value in profile.items() if key != 'sourceCycle'}), source['verses'])
+        groups = source_cycle_verses(song, source, profile)
+        self.assertEqual(groups, [definitions[:4], definitions[4:]])
+        self.assertEqual(source, original)
+        for value in [True, {}, {**review, 'version': True}, {**review, 'versesPerCycle': True},
+                      {**review, 'versesPerCycle': 1}, {**review, 'versesPerCycle': 3},
+                      {**review, 'reason': ''}, {**review, 'groups': [[0, 1], [2, 3]]},
+                      {**review, 'times': [2, 42]}]:
+            with self.assertRaises(ValueError):
+                source_cycle_verses(song, source, {**profile, 'sourceCycle': value})
+        for key, value in [('sourceHash', 'old'), ('tracks', []), ('audioFile', 'other.mp3'),
+                           ('regions', ['r2', 'r1']), ('estimates', [2])]:
+            with self.assertRaises(ValueError):
+                source_cycle_verses(song, source, {**profile, key: value})
+        changed = deepcopy(source)
+        changed['verses'][3][1]['text'] = '额外唱词'
+        with self.assertRaises(ValueError):
+            source_cycle_verses(song, changed, profile)
+        with self.assertRaises(ValueError):
+            source_cycle_verses({**song, 'type': 'image'}, source, profile)
+        windows = [{'index': i, 'window': w, 'valid': True, 'at': 2 + i * 10 + .1 * w}
+                   for i in range(8) for w in range(2)]
+        music = {'shifts': [0, 40], 'similarity': .8}
+        self.assertEqual(confirm_boundaries(groups, music, windows)[1], [0, 4])
+        with self.assertRaises(ValueError):
+            confirm_boundaries(groups, music, [row for row in windows if row['index'] != 7])
+        with self.assertRaises(ValueError):
+            confirm_boundaries(groups, music, [{**row, 'at': row['at'] + 1}
+                if row['index'] == 3 and row['window'] == 1 else row for row in windows])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_vocal_alignment_detects_complete_cycles_without_rewriting_source_paragraphs(self):
+        import sync_batch_align as align
+        definitions = [{'region': f'r{i + 1}', 'text': ['主歌甲', '主歌乙', '副歌甲', '副歌乙'][i % 4]}
+                       for i in range(8)]
+        source = {'language': 'zh', 'verses': [definitions[i:i + 2] for i in range(0, 8, 2)]}
+        song = {'songId': '03-999', 'type': 'text', 'source': 'lyrics.txt', 'sha256': 'lyrics',
+                'reference': 'voice.mp3', 'tracks': [{'file': 'voice.mp3', 'sha256': 'audio'}]}
+        profile = {'version': 1, 'sourceHash': 'lyrics', 'tracks': song['tracks'], 'audioFile': 'voice.mp3',
+                   'regions': [row['region'] for row in definitions], 'estimates': [2 + i * 10 for i in range(8)],
+                   'sourceCycle': {'version': 1, 'versesPerCycle': 2, 'reason': 'two complete repeated cycles'}}
+        windows = [{'index': i, 'window': w, 'valid': True, 'at': 2 + i * 10 + .1 * w}
+                   for i in range(8) for w in range(2)]
+        music = {'shifts': [0, 40], 'period': 40, 'similarity': .8, 'initialOnsetEstimate': 2}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'alignment').mkdir()
+            (root / 'alignment/lyrics.txt.json').write_text(json.dumps({
+                'sourceHash': song['sha256'], 'trackHashes': song['tracks'], 'performanceOrder': definitions,
+                'windowEstimateProfile': profile, 'windows': windows, 'estimates': profile['estimates']}))
+            proof = {}
+            with patch.object(sources.prepare, 'read_text', return_value='测试歌词'), \
+                 patch.object(align, 'text_source', return_value=source), \
+                 patch.object(align, 'window_estimate_profile', return_value=profile), \
+                 patch.object(align, 'repeated_verses', return_value=music) as repeated:
+                result = align.vocal_times(song, root, root, '', 1, proof, True, lambda *args: None)
+            repeated.assert_called_once_with(root / 'data/voice.mp3', 2, root)
+            self.assertIs(result[0], source)
+            self.assertEqual(len(source['verses']), 4)
+            self.assertEqual(result[1], definitions)
+            self.assertEqual(result[3], [0, 4])
+            self.assertEqual(proof['sourceCycle']['readingGroups'], [['r1', 'r2', 'r3', 'r4'],
+                                                                   ['r5', 'r6', 'r7', 'r8']])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_complete_score_corroborates_each_region_despite_imprecise_repeat_shifts(self):
         import numpy as np
         pitches = np.repeat(np.random.default_rng(17).integers(0, 12, 24), 10)

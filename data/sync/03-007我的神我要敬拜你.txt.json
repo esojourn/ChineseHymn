@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "songId": "03-007",
+  "status": "reviewed",
+  "source": {
+    "file": "03-007我的神我要敬拜你.txt",
+    "sha256": "05a030586e7cec5b6416c177232e4f2b7c943e79771ed390f278529edee6e193",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-007我的神我要敬拜你.mp3",
+      "sha256": "a51d97d0b109d76531e1820d59420e90dffbaf40c2977882f064d7d6f97f8ecb",
+      "duration": 181.86448979591836,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.57,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 39.02,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 71.2,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 102.0,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 134.97,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-007我的神我要敬拜你-领唱.mp3",
+      "sha256": "c97277672093f3cba42615d80ce8f72487180b298b887af76f557089f7981914",
+      "duration": 178.65142857142857,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 7.65,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 39.12,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 71.3,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 102.15,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 134.0,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我的神我要敬拜你，我的心深深地爱你 在你的座前，我思想你恩典 我的心赞美敬拜你",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你是我心灵的满足，你是我唯一的喜乐 在你的座前，我思想你恩典 我的神我要敬拜你",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我的神我要敬拜你，我的心深深地爱你 在你的座前，我思想你恩典 我的心赞美敬拜你",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "你是我心灵的满足，你是我唯一的喜乐 在你的座前，我思想你恩典 我的神我要敬拜你",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "你是我心灵的满足，你是我唯一的喜乐 在你的座前，我思想你恩典 我的神我要敬拜你",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-007我的神我要敬拜你.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

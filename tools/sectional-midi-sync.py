@@ -207,6 +207,42 @@ def source_verse_context(source, profile):
     return source_verse_groups(at, verses)
 
 
+def verse_music_section(profile, verses, optical):
+    review = profile.get('sourceVerseMusicRange')
+    if review is None:
+        return None
+    if (not isinstance(review, dict) or set(review) != {'version', 'endBeforeSection', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            type(review.get('endBeforeSection')) is not int or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            verses is None or len(verses) < 3 or
+            any(profile.get(key) for key in ['instrumentalOutroAlternatives', 'referenceEndingSequence']) or
+            any(item.get('endingReadingRepeat') for item in profile.get('independentRecordings', []))):
+        raise ValueError('正文反复比较范围须绑定至少三段原文及明确的同副歌结尾')
+    groups = reading_section_groups(len(optical), profile.get('readingSectionReview'))
+    last, end = groups[-1], review['endBeforeSection']
+    if len(last) != 2 or end != last[1] or end != len(optical) - 1:
+        raise ValueError('正文音乐范围只能排除末阅读区域追加的一次同副歌')
+    def sounded(row):
+        return [(note, pitch, weight) for note, pitch, weight in
+                zip(row['notes'], row['pitchOffsets'], row['rhythmWeights']) if note]
+    if not sounded(optical[last[0]]) or sounded(optical[last[0]]) != sounded(optical[end]):
+        raise ValueError('被排除的结尾必须是同一原谱副歌，仅可附加声乐休止')
+    return end
+
+
+def verse_music_bounds(section, performance):
+    one, two = performance['fullMelody']['best']['starts'], performance['fullOptical']['best']['starts']
+    if (len(one) != len(two) or not 0 < section < len(one) or
+            any(not math.isfinite(at) for at in [one[0], two[0], one[section], two[section]]) or
+            any(round(abs(one[index] - two[index]), 3) > .5 for index in [0, section])):
+        raise ValueError('正文音乐范围的两条整曲边界不一致')
+    bounds = [(one[index] + two[index]) / 2 for index in [0, section]]
+    if not 0 <= bounds[0] < bounds[1]:
+        raise ValueError('正文音乐范围顺序无效')
+    return bounds
+
+
 def outro_profiles(profile):
     variants, names = [], set()
     alternatives = profile.get('instrumentalOutroAlternatives', [])
@@ -372,6 +408,7 @@ def generate(song, profile, cache, prepare=False):
         body_material = reference_material(profile, cache, prepare)
         material = body_material if reference_profile is profile else reference_material(reference_profile, cache, prepare)
         melody, optical, reference = material
+        verse_music_section(reference_profile, verses, optical)
         if len(reading_section_groups(len(melody), profile.get('readingSectionReview'))) != len(definitions):
             raise ValueError('完整乐曲结构未覆盖全部正文阅读区域')
         evidence['midiMatching'].update(reference)
@@ -382,10 +419,13 @@ def generate(song, profile, cache, prepare=False):
         evidence['performanceOrder'] = definitions
         def measure_recording(file, window, detail, track_profile=reference_profile, track_material=material):
             audio = batch.ROOT / 'data' / file
+            music_section = verse_music_section(track_profile, verses, track_material[1])
             measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
                                            detail, source_verses=verses)
             if verses is not None:
-                music = repeated_verses(audio, len(verses), cache)
+                music = (repeated_verses(audio, len(verses), cache) if music_section is None else
+                         repeated_verses(audio, len(verses), cache,
+                                         audio_range=verse_music_bounds(music_section, detail['performance'])))
                 detail['sourceVerseMusic'] = verify_verse_music(measured, verses, music)
                 for check in detail.get('instrumentalOutroChecks', []):
                     check['sourceVerseMusic'] = verify_verse_music(check['times'], verses, music)

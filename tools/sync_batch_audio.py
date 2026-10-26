@@ -35,10 +35,20 @@ def features(path, cache):
     return times, chroma
 
 
-def repeated_verses(path, count, cache):
+def repeated_verses(path, count, cache, audio_range=None):
     if count < 2:
         raise ValueError('单段或无法识别段数，需要语音或谱面独立定位')
     times, chroma = features(path, cache)
+    if audio_range is not None:
+        if (not isinstance(audio_range, (list, tuple)) or len(audio_range) != 2 or
+                any(type(at) not in (int, float) or not np.isfinite(at) for at in audio_range) or
+                not 0 <= audio_range[0] < audio_range[1] <= float(times[-1])):
+            raise ValueError('音乐反复比较范围必须位于当前完整录音内')
+        selected = (times >= audio_range[0]) & (times < audio_range[1])
+        times, chroma = times[selected], chroma[:, selected]
+        if len(times) < 2:
+            raise ValueError('音乐反复比较范围过短')
+        times = times - times[0]
     step = float(times[1] - times[0])
     duration = float(times[-1])
     low = max(6, (duration - 50) / count * .75)
@@ -59,6 +69,13 @@ def repeated_verses(path, count, cache):
     for verse in range(1, count):
         expected = round(verse * period / step)
         start, end = round((intro + 2) / step), round((intro + period - 2) / step)
+        if audio_range is not None:
+            # The final source verse need not have the earlier instrumental gap.
+            # Compare a shared window in every verse, retaining at least 75% of
+            # the independently detected cycle and the existing similarity gates.
+            end = min(end, chroma.shape[1] - (count - 1) * round(period / step) - 13)
+            if end - start < .75 * period / step:
+                raise ValueError('末段共有音乐跨度不足75%')
         matches = []
         for offset in range(max(1, expected - 12), min(chroma.shape[1] - end, expected + 13)):
             matches.append((float(np.mean(np.sum(chroma[:, start:end] * chroma[:, start + offset:end + offset], axis=0))), offset))
@@ -68,7 +85,11 @@ def repeated_verses(path, count, cache):
         if score < .55:
             raise ValueError(f'第{verse + 1}段音乐对应不足：{score:.3f}')
         shifts.append(round(offset * step, 4))
-    return {'period': round(period, 4), 'similarity': similarity, 'initialOnsetEstimate': round(intro, 3), 'shifts': shifts}
+    result = {'period': round(period, 4), 'similarity': similarity, 'initialOnsetEstimate': round(intro, 3), 'shifts': shifts}
+    if audio_range is not None:
+        result['comparisonRange'] = {'start': audio_range[0], 'end': audio_range[1],
+                                     'minimumSharedCycleRatio': .75}
+    return result
 
 
 def alignment_band(n, m, lag):

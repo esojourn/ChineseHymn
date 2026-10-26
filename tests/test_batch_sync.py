@@ -44,6 +44,29 @@ spec.loader.exec_module(batch)
 
 class BatchTests(unittest.TestCase):
     @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
+    def test_reviewed_music_range_retains_three_verses_without_requiring_a_final_interlude(self):
+        import numpy as np
+        import sync_batch_audio as audio
+        rng = np.random.default_rng(42)
+        cycle = rng.normal(size=(12, 400))
+        cycle /= np.linalg.norm(cycle, axis=0)
+        body = np.concatenate([cycle, cycle, cycle[:, :350]], axis=1)
+        chroma = np.concatenate([rng.normal(size=(12, 50)), body,
+                                 rng.normal(size=(12, 200))], axis=1)
+        times = np.arange(chroma.shape[1]) / 10
+        with patch.object(audio, 'features', return_value=(times, chroma)):
+            result = audio.repeated_verses(Path('track.mp3'), 3, None, audio_range=[5, 120])
+            self.assertEqual(result['period'], 40)
+            self.assertEqual(result['shifts'], [0, 40, 80])
+            self.assertGreater(result['similarity'], .99)
+            self.assertEqual(result['comparisonRange']['minimumSharedCycleRatio'], .75)
+            for invalid in [[-1, 120], [5, 500], [5, float('nan')], [5, 5], [True, 120]]:
+                with self.assertRaises(ValueError):
+                    audio.repeated_verses(Path('track.mp3'), 3, None, audio_range=invalid)
+            with self.assertRaisesRegex(ValueError, '75%'):
+                audio.repeated_verses(Path('track.mp3'), 3, None, audio_range=[5, 109])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional audio dependencies')
     def test_wide_thin_ocr_rows_bypass_zero_dimension_resize_without_losing_pixels(self):
         import numpy as np
         from unittest.mock import Mock

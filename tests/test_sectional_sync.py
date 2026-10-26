@@ -402,6 +402,78 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 source_verse_groups(6, groups)
 
+    def test_music_range_can_exclude_only_one_identical_final_chorus_after_all_source_verses(self):
+        verses = [[0, 1], [2, 3], [4, 5]]
+        profile = {'sourceVerseMusicRange': {'version': 1, 'endBeforeSection': 6,
+                    'reason': 'source verses followed by one repeated final chorus'},
+                   'readingSectionReview': {'version': 1, 'groups': [[0], [1], [2], [3], [4], [5, 6]],
+                    'instrumentalSections': [], 'reason': 'same final chorus repeated once'}}
+        row = {'notes': [1, 2, 3, 4, 5], 'pitchOffsets': [0] * 5, 'rhythmWeights': [1] * 5}
+        optical = [copy.deepcopy(row) for _ in range(7)]
+        optical[-1] = {'notes': row['notes'] + [0], 'pitchOffsets': [0] * 6,
+                       'rhythmWeights': [1] * 5 + [4]}
+        self.assertIsNone(self.cli.verse_music_section({}, None, optical))
+        self.assertEqual(self.cli.verse_music_section(profile, verses, optical), 6)
+        for change in [{'version': True}, {'version': 2}, {'endBeforeSection': 5},
+                       {'reason': ''}, {'count': 2}]:
+            invalid = copy.deepcopy(profile)
+            invalid['sourceVerseMusicRange'].update(change)
+            with self.assertRaises(ValueError):
+                self.cli.verse_music_section(invalid, verses, optical)
+        for invalid in [{**profile, 'referenceEndingSequence': {'version': 1}},
+                        {**profile, 'instrumentalOutroAlternatives': [{}]}]:
+            with self.assertRaises(ValueError):
+                self.cli.verse_music_section(invalid, verses, optical)
+        with self.assertRaises(ValueError):
+            self.cli.verse_music_section(profile, None, optical)
+        changed = copy.deepcopy(optical)
+        changed[-1]['notes'][0] = 6
+        with self.assertRaises(ValueError):
+            self.cli.verse_music_section(profile, verses, changed)
+        changed = copy.deepcopy(optical)
+        changed[-1]['rhythmWeights'][0] = 2
+        with self.assertRaises(ValueError):
+            self.cli.verse_music_section(profile, verses, changed)
+        proof = {'fullMelody': {'best': {'starts': [2, 8, 22, 28, 42, 48, 58]}},
+                 'fullOptical': {'best': {'starts': [2.2, 8, 22, 28, 42, 48, 58.4]}}}
+        self.assertEqual(self.cli.verse_music_bounds(6, proof), [2.1, 58.2])
+        proof['fullOptical']['best']['starts'][6] = 58.51
+        with self.assertRaises(ValueError):
+            self.cli.verse_music_bounds(6, proof)
+
+    def test_reviewed_music_range_is_measured_from_both_full_paths_and_phase_failure_blocks_export(self):
+        definitions = [{'region': 'r' + str(i)} for i in range(6)]
+        source = {'verses': [definitions[:2], definitions[2:4], definitions[4:]]}
+        profile = {'sampling': {'durationEstimate': 70, 'onsetEstimate': 2},
+                   'sourceVerseContext': {'version': 1, 'reason': 'three source verses'},
+                   'sourceVerseMusicRange': {'version': 1, 'endBeforeSection': 6,
+                    'reason': 'same final chorus repeated once'},
+                   'readingSectionReview': {'version': 1, 'groups': [[0], [1], [2], [3], [4], [5, 6]],
+                    'instrumentalSections': [], 'reason': 'repeated final chorus'}}
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'lyrics', 'tracks': [], 'reference': 'lead.mp3'}
+        row = {'notes': [1] * 5, 'pitchOffsets': [0] * 5, 'rhythmWeights': [1] * 5}
+        material = ([{}] * 7, [row] * 7, {'symbolicRows': {'semitoneShift': 2}})
+        def measured(profile, window, material, target, cache, prepare, detail, **kwargs):
+            detail['performance'] = {name: {'best': {'starts': [2, 8, 22, 28, 42, 48, 58]}}
+                                     for name in ['fullMelody', 'fullOptical']}
+            return [2, 8, 22, 28, 42, 48]
+        for shifts in [[0, 20, 40], [0, 20, 41]]:
+            with tempfile.TemporaryDirectory() as directory, \
+                    patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                    patch.object(self.cli, 'reference_material', return_value=material), \
+                    patch.object(self.cli, 'features', return_value=None), \
+                    patch.object(self.cli, 'measured_performance', side_effect=measured), \
+                    patch.object(self.cli, 'repeated_verses', return_value={'similarity': .8, 'shifts': shifts}) as music, \
+                    patch.object(self.cli, 'export_result', return_value=('test', 'ready')) as export:
+                result = self.cli.generate(song, profile, Path(directory))
+                self.assertEqual(music.call_args.kwargs, {'audio_range': [2, 58]})
+                if shifts[-1] == 40:
+                    self.assertEqual(result, ('test', 'ready'))
+                    self.assertEqual(export.call_args.args[8], [2, 8, 22, 28, 42, 48])
+                else:
+                    self.assertIn('相位', result[1])
+                    export.assert_not_called()
+
     def test_complete_verse_music_checks_every_reading_phase_and_rejects_missing_repetitions(self):
         groups = [[0, 1], [2, 3], [4, 5]]
         music = {'period': 20, 'similarity': .8, 'shifts': [0, 20, 40]}

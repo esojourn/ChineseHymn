@@ -9997,5 +9997,403 @@
       }
     ],
     "formReview": "原文三段分别有三个、三个、四个阅读区域，前两段四行前半段、四行后半段、最后一句重复，末段则另完整重复后半段再唱最后一句。原始中文简谱来自Sovereign Grace Music官方PDF第二页，固定PDF SHA-256、页码、四倍渲染及渲染器版本；逐行目视核对降B调3/4拍四行原谱，前三行各15拍、第四行18拍，整段63拍。人工独立拍数表重建原谱全部音头，不手工替换光学结果，全部249个实际起音与光学零编辑对应，十个阅读起句至少五音均唯一。实际结构为ABCABCABBC，A从1.5拍弱起到24拍，B至49.5拍，C至63拍；末段两个B之间的声乐停顿使用原谱开头已经印刷的1.5拍休止段，休止保留在前一阅读区域而不产生额外滚动。领唱和伴奏分别从各自原始完整音频独立测量十个起点，不复制时间或按比例推算；两版各十个起点均通过整曲MIDI、整曲光学、局部MIDI、局部光学四路径。局部固定只保留前一完整阅读区域，当前区域单独取其音频起点；成本0.35、调性区分0.06、完整跨度75%至125%、任意起点互差0.5秒及全部顺序检查保持。首尾遗漏按当前原文全部完整歌段自动分组，仍以最短实测完整歌段的75%拒绝可容纳另一完整歌段的前后遗漏，不将仅一句的阅读片段当成整段。原始歌词、空行、图片、音频及之前已发布数据保持不变。"
+  },
+  "02-003": {
+    "version": 1,
+    "sourceHash": "d9016a998cf756547f68f3c7c7b19ff9c538f4f3b175763ca9f8ac2284fee8f2",
+    "tracks": [
+      {
+        "file": "02-003但我知道-领唱.mp3",
+        "sha256": "a9b7b92bb0c326d3072eaecdcf6a296c1bc87dbe218459d07f8c35f93e220de7"
+      }
+    ],
+    "audioFile": "02-003但我知道-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "regionOpenings": [
+      "我不知道：天使所拜的君王",
+      "但我知道，祂从马利亚而生",
+      "我不知道祂如何默然受苦 ",
+      "但我知道，祂手医治我心伤",
+      "我不知道：祂如何吸引万民",
+      "但我知道，众人必见祂荣光",
+      "我不知道全地要如何敬拜；",
+      "但我知道，天空要响彻欢呼"
+    ],
+    "sampling": {
+      "durationEstimate": 238,
+      "onsetEstimate": 31
+    },
+    "sourceVerseContext": {
+      "version": 1,
+      "reason": "原文四段各四行前半段与四行后半段，完整一段采用Londonderry Air同一旋律；局部固定保留上一完整歌段及当前已唱部分，首尾按完整歌段检查，同时要求四段全部八个阅读相位与独立音乐反复一致。"
+    },
+    "midiReference": {
+      "origin": {
+        "url": "https://www.christianstudy.com/data/hymns/midi/chinese_hymnary/chinese_hymnary054.mid",
+        "file": "midi/cs-chinese_hymnary-chinese_hymnary054.mid",
+        "sha256": "7cb58b403da2ce23016202a8694d7badcdddb6f7824012497dea2ec801357527",
+        "bytes": 2718
+      },
+      "file": "reference/external/cannot-tell-book1362-four-verses.mid",
+      "sha256": "6e87dbea366c65529f5497c4973fe3a19e5cb9b2847d644f2b18f9b0631a0c4d",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Treble Clef       \u0000",
+        "quarterLength": 136.005,
+        "sections": [
+          [
+            5,
+            136
+          ],
+          [
+            5,
+            136
+          ],
+          [
+            5,
+            136
+          ],
+          [
+            5,
+            136
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          1,
+          2,
+          4,
+          6,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 44,
+        "pitches": [
+          9,
+          11,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 90,
+        "pitches": [
+          1,
+          2,
+          4,
+          6,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 134,
+        "pitches": [
+          9,
+          11,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 180,
+        "pitches": [
+          1,
+          2,
+          4,
+          6,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 224,
+        "pitches": [
+          9,
+          11,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 270,
+        "pitches": [
+          1,
+          2,
+          4,
+          6,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 314,
+        "pitches": [
+          9,
+          11,
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/cannot-tell-book1362.png",
+        "sha256": "f7303e9da9eaee0e2baee703f55e2cf82b2eb4600b79050b6f2b0938f9e21a9e",
+        "url": "https://file.izanm.org/store/2024/09/28/66f718ebca6b0acf3f024e2f.png"
+      },
+      "pageUrl": "https://www.zanmei.ai/tab/50949/full.html",
+      "recognitionFile": "modern-sectional-scores/ocr/cannot-tell-book1362.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              529,
+              578
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                600,
+                820
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1022,
+              1071
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1110,
+                1330
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1516,
+              1565
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1610,
+                1830
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              2009,
+              2058
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                2090,
+                2310
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "a5a3192853fb71c9e01b0fccfccda0eabc1b3d793125ec78fae8a0fe76f1a922",
+      "ties": {
+        "0": [
+          14
+        ],
+        "1": [
+          15
+        ],
+        "2": [
+          28
+        ],
+        "3": [
+          13
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            4,
+            10
+          ],
+          [
+            0,
+            11,
+            18
+          ],
+          [
+            0,
+            19,
+            25
+          ],
+          [
+            0,
+            26,
+            27
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            5,
+            11
+          ],
+          [
+            1,
+            12,
+            19
+          ],
+          [
+            1,
+            20,
+            26
+          ],
+          [
+            1,
+            27,
+            28
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "B": [
+          [
+            2,
+            1,
+            4
+          ],
+          [
+            2,
+            5,
+            11
+          ],
+          [
+            2,
+            12,
+            19
+          ],
+          [
+            2,
+            20,
+            26
+          ],
+          [
+            2,
+            27,
+            29
+          ],
+          [
+            3,
+            0,
+            9
+          ],
+          [
+            3,
+            10,
+            17
+          ],
+          [
+            3,
+            18,
+            27
+          ],
+          [
+            3,
+            28,
+            29
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文四段各有四行我不知道及四行但我知道，后半是本段的继续，不是额外重复副歌，八个区域按ABABABAB完整覆盖。独立中文简谱来自公开和弦简谱古典赞美诗新唱第1362首但我知道C调译本1，固定原始PNG及SHA-256；逐行目视核对四行全部实际音头、连音、4/4及弱起。原始MIDI来自ChristianStudy颂主圣歌54直接公开链接，固定原文件SHA-256，使用原Treble Clef声部及完整四次反复，移除原曲头部五拍未发声音及末尾非音乐文件事件，不修改正文旋律或按音频时间重写MIDI。原谱第一、第二行各有跨小节同音6连音，第三行末2及第四行中1也为同音连音，按原图合并；第一行末跨行2的光学重复音头保留，谱中与公开MIDI略异的个别旋律音也保留，不手工替换识别结果。明确排除OCR误认成1的实际竖直小节线；91个原谱发声音头每段与90个MIDI起音全局对应，四段共12编辑、3.3%，所有八个区域的至少五个首音均唯一精确对应。后半首音是第三行休止后的5，不将前一句结尾的1延音错当但我知道。实际原始领唱逐段通过整曲MIDI、整曲光学、局部MIDI、局部光学四路径，成本0.35、调性区分0.06、跨度75%至125%、起点互差0.5秒、顺序及首尾检查全部保持。另从实际音频独立检测四段音乐反复， similarity为0.875，全部八个阅读相位差至多0.05秒；所有时间点从原始录音测得，不按字数、拍数或总时长平均推算。原始歌词、空行、图片、音频及以前已发布滚动数据保持不变。"
   }
 }

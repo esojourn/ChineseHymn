@@ -375,6 +375,50 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 four_path_time(values)
 
+    def test_edge_verse_review_uses_source_groups_even_with_a_longer_final_verse(self):
+        source = {'verses': [[{}, {}], [{}, {}, {}]]}
+        review = {'version': 1, 'reason': 'last source verse repeats more lines'}
+        self.assertIsNone(self.cli.source_verse_edges(source, {}))
+        self.assertEqual(self.cli.source_verse_edges(source, {'sourceVerseEdgeReview': review}),
+                         [[0, 1], [2, 3, 4]])
+        for value in [{}, {**review, 'version': True}, {**review, 'reason': ''},
+                      {**review, 'groups': [[0], [1, 2, 3, 4]]}]:
+            with self.assertRaises(ValueError):
+                self.cli.source_verse_edges(source, {'sourceVerseEdgeReview': value})
+        with self.assertRaises(ValueError):
+            self.cli.source_verse_edges(source, {'sourceVerseEdgeReview': review, 'sourceVerseContext': review})
+
+    def test_complete_verse_edge_check_preserves_four_paths_and_rejects_a_missing_whole_verse(self):
+        starts = [14, 24, 34, 44, 54]
+        def matcher(rows, chroma, times, duration, onset, weight):
+            return {'best': {'cost': .2, 'key': 1 if weight == 'spatialWeights' else 3,
+                             'starts': starts if len(rows) == 5 else [onset], 'span': duration},
+                    'runnerUp': {'cost': .4}}
+        target = np.arange(70), np.zeros((12, 70))
+        groups = [[0, 1], [2, 3, 4]]
+        proof = {}
+        self.assertEqual(performance_times([{}] * 5, [{}] * 5, target, 50, 14, 2,
+                         matcher, proof, edge_verses=groups), starts)
+        self.assertEqual(proof['completeVerseSpans'], [20, 30])
+        self.assertEqual(len(proof['local']), 5)
+        with self.assertRaises(ValueError):
+            performance_times([{}] * 5, [{}] * 5, target, 50, 14, 2, matcher, {})
+        with self.assertRaises(ValueError):
+            performance_times([{}] * 5, [{}] * 5, (np.arange(90), target[1]), 50, 14, 2,
+                              matcher, {}, edge_verses=groups)
+        for groups in [[[0], [2, 3, 4]], [[0, 1], [1, 2, 3, 4]], [[0, 1], [2, True, 4]]]:
+            with self.assertRaises(ValueError):
+                performance_times([{}] * 5, [{}] * 5, target, 50, 14, 2,
+                                  matcher, {}, edge_verses=groups)
+        def disputed(*args):
+            result = matcher(*args)
+            if len(args[0]) == 1 and args[-1] == 'rhythmWeights':
+                result['best']['starts'] = [args[-2] + .6]
+            return result
+        with self.assertRaises(ValueError):
+            performance_times([{}] * 5, [{}] * 5, target, 50, 14, 2,
+                              disputed, {}, edge_verses=[[0, 1], [2, 3, 4]])
+
     def test_previous_reading_policy_is_explicit_and_cannot_change_context_length(self):
         self.assertFalse(self.cli.previous_reading_context({}))
         self.assertTrue(self.cli.previous_reading_context({'previousReadingContext': {'version': 1}}))

@@ -247,10 +247,18 @@ def verify_verse_music(times, verses, music):
 
 
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
-                      local_match=None, reading_sections=None, previous_context=False, source_verses=None):
+                      local_match=None, reading_sections=None, previous_context=False, source_verses=None,
+                      edge_verses=None):
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)
+    if edge_verses is not None:
+        if (source_verses is not None or not isinstance(edge_verses, list) or len(edge_verses) < 2 or
+                any(not isinstance(verse, list) or not verse or
+                    any(type(index) is not int for index in verse) for verse in edge_verses) or
+                [index for verse in edge_verses for index in verse] != list(range(len(groups)))):
+            raise ValueError('首尾检查须按原文完整歌段依次覆盖全部阅读区域')
+        evidence['edgeVerseReadings'] = edge_verses
     if type(previous_context) is not bool:
         raise ValueError('前一区域上下文必须显式启用')
     if source_verses is not None:
@@ -321,8 +329,9 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         spans.append(span)
     if any(x + .5 >= y for x, y in zip(times, times[1:])):
         raise ValueError('分段时间轴未递增')
-    edge_spans = spans if source_verses is None else [sum(spans[index] for index in verse) for verse in source_verses]
-    if source_verses is not None:
+    edge_groups = source_verses if source_verses is not None else edge_verses
+    edge_spans = spans if edge_groups is None else [sum(spans[index] for index in verse) for verse in edge_groups]
+    if edge_groups is not None:
         evidence['completeVerseSpans'] = edge_spans
     if min(a['starts'][0], b['starts'][0]) >= .75 * min(edge_spans) or (
             float(target[0][-1]) - min(a['starts'][0] + a['span'], b['starts'][0] + b['span']) >= .75 * min(edge_spans)):

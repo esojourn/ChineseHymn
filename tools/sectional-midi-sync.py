@@ -364,14 +364,33 @@ def reference_ending_profile(profile):
     return result
 
 
-def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None):
+def source_verse_edges(source, profile):
+    review = profile.get('sourceVerseEdgeReview')
+    if review is None:
+        return None
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            'sourceVerseContext' in profile or len(source['verses']) < 2 or
+            any(not verse for verse in source['verses'])):
+        raise ValueError('首尾完整歌段检查须绑定原文分段及明确说明，不能指定分组或时间')
+    groups, at = [], 0
+    for verse in source['verses']:
+        groups.append(list(range(at, at + len(verse))))
+        at += len(verse)
+    return groups
+
+
+def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None,
+                         edge_verses=None):
     melody, optical, reference = material
     verify_local = local_matcher(profile)
     previous_context = previous_reading_context(profile)
     proof = detail['performance'] = {}
     times = performance_times(melody, optical, target, window['durationEstimate'], window['onsetEstimate'],
         reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
-        reading_sections=profile.get('readingSectionReview'), previous_context=previous_context, source_verses=source_verses)
+        reading_sections=profile.get('readingSectionReview'), previous_context=previous_context,
+        source_verses=source_verses, edge_verses=edge_verses)
     variants = outro_profiles(profile)
     if variants:
         checks = detail['instrumentalOutroChecks'] = []
@@ -384,7 +403,8 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
             measured = performance_times(melody_variant, optical_variant, target,
                 window['durationEstimate'], window['onsetEstimate'], reference_variant['symbolicRows']['semitoneShift'],
                 midi.match_template, check['performance'], local_match=verify_local,
-                reading_sections=variant.get('readingSectionReview'), previous_context=previous_context, source_verses=source_verses)
+                reading_sections=variant.get('readingSectionReview'), previous_context=previous_context,
+                source_verses=source_verses, edge_verses=edge_verses)
             check['times'] = measured
             timelines.append(measured)
             stable_outro_times(timelines)
@@ -402,6 +422,7 @@ def generate(song, profile, cache, prepare=False):
     try:
         source, definitions = validate_source(song, profile)
         verses = source_verse_context(source, profile)
+        edge_verses = source_verse_edges(source, profile)
         recordings = independent_recordings(song, profile)
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
@@ -421,7 +442,7 @@ def generate(song, profile, cache, prepare=False):
             audio = batch.ROOT / 'data' / file
             music_section = verse_music_section(track_profile, verses, track_material[1])
             measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
-                                           detail, source_verses=verses)
+                                           detail, source_verses=verses, edge_verses=edge_verses)
             if verses is not None:
                 music = (repeated_verses(audio, len(verses), cache) if music_section is None else
                          repeated_verses(audio, len(verses), cache,

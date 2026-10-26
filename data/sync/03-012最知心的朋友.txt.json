@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "03-012",
+  "status": "reviewed",
+  "source": {
+    "file": "03-012最知心的朋友.txt",
+    "sha256": "88c23d2b3afd22282525a3216916e9058f190661bb0c49522bc4b730717f2d57",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-012最知心的朋友.mp3",
+      "sha256": "36e047cf5c05bdf1c9411c2026c2eb8cbf1a2f5ffee80b526764bb0b527d48ae",
+      "duration": 230.53061224489795,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 6.67,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 29.86,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.73,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 80.11,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.17,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 129.33,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 153.42,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 178.59,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-012最知心的朋友-领唱.mp3",
+      "sha256": "fbd65060c45fe25cd855cfec5b52b6cdf81f203ef3fb0fe1bd47a2d8665a8ca6",
+      "duration": 235.07591836734693,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 6.77,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 29.96,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.83,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 80.21,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.27,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 129.43,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 153.52,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 178.69,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主你是我最知心的朋友 主你是我最亲爱的伴侣 我的心在天天追想着你 渴望见到你的面",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "在我人生的每一个台阶 在我人生的每一个小站 你的手总是在搀拉着我 把我带在你身边",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "告诉我当走的路 没有滑向死亡线 你爱何等的长阔深高 我心发出惊叹",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "有了主还要什么 我心与主心相连 我已起誓要跟随主 永不改变",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "主你是我最知心的朋友 主你是我最亲爱的伴侣 我的心在天天追想着你 渴望见到你的面",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "在我人生的每一个台阶 在我人生的每一个小站 你的手总是在搀拉着我 把我带在你身边",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "告诉我当走的路 没有滑向死亡线 你爱何等的长阔深高 我心发出惊叹",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "有了主还要什么 我心与主心相连 我已起誓要跟随主 永不改变",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-012最知心的朋友.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

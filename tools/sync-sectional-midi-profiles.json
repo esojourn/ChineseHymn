@@ -6891,5 +6891,384 @@
       ]
     },
     "formReview": "原文四段各含主歌及副歌两个阅读区域，实际正文按ABABABAB完整覆盖。独立原谱为传统诗歌选集第69首所信有根基，固定公开原始JPG网址和SHA-256。逐行目视核对四个谱行的最高声部，其他声部不作旋律；明确排除误认的谱行括号及第二行两条小节线，不手工替换任何音头。副歌从第三行拾音5开始；该音对应正文我不需要的我，不能沿用另一版本以1开始的副歌。第三行末1至7是不同音圆滑线，必须保留两次起音。独立人工拍数表每行12拍、完整一段48拍；按原谱全部57个旋律起音重建分析MIDI，重复四段，原始录音时间不按拍数或总时长推算。228个光学音符与MIDI零编辑对应，八个阅读起句至少五个音均唯一。领唱与伴奏分别通过整曲MIDI、整曲光学、逐区域MIDI及光学四路径；局部只固定保留一个完整前阅读区域，成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、顺序及首尾检查全部保持。原文停一拍提示保留原位，不作为新增歌词或额外阅读区域。每版录音独立匹配，任一失败阻止导出；原始歌词、空行、图片、音频及已发布数据不改动。"
+  },
+  "01-322": {
+    "version": 1,
+    "sourceHash": "4e3a47ed1bba5054acd0f3434c34b75e79aa00412ca1ca7432e97057c2a67b19",
+    "tracks": [
+      {
+        "file": "01-322耶稣我今背起十架.mp3",
+        "sha256": "53799b76939455ac5bb2548d1571d4fcb0b3935527561f7a7daa6b83851f6a97"
+      }
+    ],
+    "audioFile": "01-322耶稣我今背起十架.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12"
+    ],
+    "regionOpenings": [
+      "耶稣，我今撇下所有， 背",
+      "前所追求、爱慕、盼望， ",
+      "任凭世界弃我嫌我， 主，",
+      "当祢向我显出笑脸， 友虽",
+      "去罢，罪的名利福乐， 来",
+      "我既称祂阿爸父亲， 我既",
+      "我所受的试炼苦痛， 不过",
+      "有何忧愁能将我袭， 当祢",
+      "心哪，当脱恐惧、挂虑， ",
+      "试想有主作你罪祭， 有父",
+      "快由恩典进入荣耀， 信当",
+      "地上职事就要停止， 人生"
+    ],
+    "sampling": {
+      "durationEstimate": 235.20000000000002,
+      "onsetEstimate": 8.564
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "midiReference": {
+      "origin": {
+        "file": "midi/hymnary404.mid",
+        "sha256": "8a253c86415df23e9fe6e47784f01aec794ab5fca89625d1c7c976dd742d56de",
+        "url": "https://chinatownministry.org/Hymnal/Midi/hymnary404.mid"
+      },
+      "file": "reference/external/cross-six-verses.mid",
+      "sha256": "160a95c20634be625adb7a50868c7da04e951de3ab45261cf020659a33d84e37",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Staff",
+        "quarterLength": 64,
+        "sections": [
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 35,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "onsetIndex": 70,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 105,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "onsetIndex": 140,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 175,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "onsetIndex": 210,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 245,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "onsetIndex": 280,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 315,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      {
+        "onsetIndex": 350,
+        "pitches": [
+          9,
+          9,
+          9,
+          9,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 385,
+        "pitches": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/cross-book172.jpg",
+        "sha256": "ad161d8f32fe907890c0646abdb6ff9943ba6119eed99e0d91a7d60f9573c804",
+        "url": "https://file.izanm.org/store/2014/06/24/53a9221400769e7c170002af.jpg"
+      },
+      "pageUrl": "https://www.zanmei.ai/tab/20981/full.html",
+      "recognitionFile": "modern-sectional-scores/ocr/cross-book172.jpg.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              230,
+              289
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                308,
+                373
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              453,
+              518
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                533,
+                597
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              672,
+              737
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                753,
+                818
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              910,
+              968
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                995,
+                1045
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "7249d3098ac061e0a95dd8b5696e284ee746248f8d993d39d11efccec56f61e5",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            17
+          ],
+          [
+            1,
+            0,
+            18
+          ]
+        ],
+        "B": [
+          [
+            2,
+            0,
+            17
+          ],
+          [
+            3,
+            0,
+            18
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文六段各由前四句及后四句两个阅读区域组成，完整实际顺序ABABABABABAB。独立原谱为选本诗歌805首第172首耶稣我今撇下所有，原始JPG逐像素绑定网址与SHA-256；不是同名HYFRYDOL曲调。目视核对四行单旋律谱及全部六段，前两谱行为A，后两谱行为B，B首音为第三行前所追求的第一个2。所有不同音圆滑线均保留每个音头，不合并同音重新起音，不手工修补数字。最后一谱行的下方横线与歌词范围逐项核对，识别区域在固定原图中保留全部音符及独立光学节奏。公开第404首原MIDI完整64拍重复六次，保留全部声部、原时值与速度；420个光学旋律起音与MIDI零编辑对应，十二个阅读起句至少五音均唯一。录音六次完整音乐反复已独立检索，全部阅读位置仍分别通过整曲MIDI、整曲光学、逐区域MIDI及光学四路径；局部只固定保留一个完整前阅读区域作上下文。成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、首尾及正文顺序检查全部保持。所有时间点从实际录音测得，不按行数、拍数或总时长推算；原始歌词、空行、图片、音频及已发布数据不改动。"
   }
 }

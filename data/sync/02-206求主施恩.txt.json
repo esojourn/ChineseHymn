@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-206",
+  "status": "reviewed",
+  "source": {
+    "file": "02-206求主施恩.txt",
+    "sha256": "6fd10b0391c7fa35a11714b951d037e0412bffc367221a7cefeae1259d15a940",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-206求主施恩.mp3",
+      "sha256": "a757985a0067f5ee99708b9d3cef72b69d2e6ff376dc589daa8a21bc8f065a90",
+      "duration": 177.696,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 11.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 52.27,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.35,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 132.6,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "慈爱救主听我恳求，莫将我拒绝， 既有别人蒙主选召，亦求拯救我。 救主，救主，请听我恳求，既有别人蒙主选召，使我亦得救。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "让我来到施恩座前，接受你恩典， 虔诚跪下，忧伤痛悔，祝我信更坚。 救主，救主，请听我恳求，既有别人蒙主选召，使我亦得救。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我惟靠主赎罪功劳，才能到主前， 心灵创伤望主医治，显出你恩典。 救主，救主，请听我恳求，既有别人蒙主选召，使我亦得救。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "你是我平安的泉源，比生命更宝， 天上地下除你以外，我无所爱慕。 救主，救主，请听我恳求，既有别人蒙主选召，使我亦得救。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-206求主施恩.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

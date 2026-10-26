@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "songId": "02-009",
+  "status": "reviewed",
+  "source": {
+    "file": "02-009爱的真谛.txt",
+    "sha256": "7c904e7b5602f1c03bb8395a26ab61132ecfc71202dfd6df635b1f2ca2352814",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-009爱的真谛-领唱.mp3",
+      "sha256": "78c3bff8e71c1b8a11a14571de8af4df324c10f6773c6cfcbcc97bf2bda68b6d",
+      "duration": 185.2605,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 20
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 23
+    }
+  },
+  "cues": [
+    {
+      "at": 11.18,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.12,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.8,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 91.35,
+      "region": "r4",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.45,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 137.95,
+      "region": "r6",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 160.23,
+      "region": "r7",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "爱是恒久忍耐，又有恩慈，爱是不嫉妒， 爱是不自夸，不张狂， 不做害羞的事。 不求自己的益处，不轻易发怒，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "不计算人家的恶， 不喜欢不义只喜欢真理。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "凡事包容，凡事相信，凡事盼望， 凡事忍耐 凡事要忍耐，爱是永不止息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "爱是恒久忍耐，又有恩慈，爱是不嫉妒， 爱是不自夸，不张狂， 不做害羞的事。 不求自己的益处，不轻易发怒，",
+        "label": "第3段"
+      },
+      {
+        "region": "r5",
+        "text": "不计算人家的恶， 不喜欢不义只喜欢真理。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "凡事包容，凡事相信，凡事盼望， 凡事忍耐 凡事要忍耐，爱是永不止息。",
+        "label": "第4段"
+      },
+      {
+        "region": "r7",
+        "text": "凡事包容，凡事相信，凡事盼望， 凡事忍耐 凡事要忍耐，爱是永不止息。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-009爱的真谛.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

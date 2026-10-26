@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "02-003",
+  "status": "reviewed",
+  "source": {
+    "file": "02-003但我知道.txt",
+    "sha256": "d9016a998cf756547f68f3c7c7b19ff9c538f4f3b175763ca9f8ac2284fee8f2",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-003但我知道-领唱.mp3",
+      "sha256": "a9b7b92bb0c326d3072eaecdcf6a296c1bc87dbe218459d07f8c35f93e220de7",
+      "duration": 273.3975510204082,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 31.03,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 60.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 90.27,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 149.33,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 178.9,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 208.4,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 237.95,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我不知道：天使所拜的君王 为何这样爱怜世上罪人； 为何又像牧人去寻找迷羊， 引领他们归回祂的羊圈；",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "但我知道，祂从马利亚而生， 卑微降生在伯利恒马槽； 居住长大在拿撒勒辛苦作工； 我深知救主，为世人今已来到。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我不知道祂如何默然受苦 将祂平安安慰这流泪谷； 祂又如何在十字架上心碎； 三十三年换来痛苦冠冕。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "但我知道，祂手医治我心伤， 除我罪恶，使我恐惧消散； 凡担重担的人都能享受安息； 因我的救主为世人祂在这里。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我不知道：祂如何吸引万民， 如何承受祂属地的产业； 无论何人不论何处或善恶， 祂又如何供应他们一切；",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "但我知道，众人必见祂荣光， 所撒的种祂必亲自收割； 必有一日公义的日头要普照， 那时我救主必定被世人知道。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "我不知道全地要如何敬拜； 祂发一言立时风浪平静； 当人的心充满丰富的主爱； 谁能说尽其中极大欢欣！",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "但我知道，天空要响彻欢呼， 千万世人要引声而高唱， 天上传扬地上众口同声说道； “哈利路亚我主来到世上做王”",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-003但我知道.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

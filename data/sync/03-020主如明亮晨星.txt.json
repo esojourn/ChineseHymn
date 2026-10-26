@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "03-020",
+  "status": "reviewed",
+  "source": {
+    "file": "03-020主如明亮晨星.txt",
+    "sha256": "e99ef0b34c00b6e15ed882abc93c380fa8587f55fe134516b92f115bbb6a905c",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-020主如明亮晨星.mp3",
+      "sha256": "9b0199badaaa56315be6d8aea41de538e0fde2a1a381a948efb0ce29cbf1b0c5",
+      "duration": 195.00408163265305,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.6,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 34.5,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 56.45,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 92.48,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 115.1,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 138.05,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-020主如明亮晨星-领唱.mp3",
+      "sha256": "f4d2cace0eb1420a59c9418eeb0355ccdbbd66e962354804356546045b9f165d",
+      "duration": 197.7208163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    }
+  },
+  "cues": [
+    {
+      "at": 12.67,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 56.62,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.57,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.22,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.15,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "当我在黑暗痛苦绝望中， 有一曙光明照我心， 他是那称为奇妙的救主， 舍去天上荣华为我降生，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他又为我被钉在十字架， 情愿受苦洗净我的罪， 我要唱奇妙主哈里路亚！ 从今后永不会再绝望。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "他仁慈善良的爱， 领我冲破狂风巨浪， 主为一颗明亮的晨星， 带给我无限的希望。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "救主耶稣基督被接升天， 去为我们预备地方， 主必再来接我到那父家， 永与你同住在那荣耀里，",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "到那时再没有痛苦悲伤， 只有赞美快乐的笑容， 众圣徒同住在明亮圣城， 同声歌颂赞美主大恩。",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "他仁慈善良的爱， 领我冲破狂风巨浪， 主为一颗明亮的晨星， 带给我无限的希望。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-020主如明亮晨星.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

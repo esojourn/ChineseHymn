@@ -426,6 +426,94 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.cli.previous_reading_context({'previousReadingContext': value})
 
+    def interlude_fixture(self):
+        definitions = [{'region': 'r' + str(i)} for i in range(3)]
+        source = {'verses': [definitions[:1], definitions[1:]]}
+        melody = [{'notes': [1] * 10, 'pitchOffsets': [0] * 10,
+                   'spatialWeights': [1] * 10} for _ in definitions]
+        optical = [{'notes': [1, 2, 3, 4, 5], 'pitchOffsets': [0] * 5,
+                    'rhythmWeights': [1] * 5} for _ in definitions]
+        material = (melody, optical, {'symbolicRows': {'semitoneShift': 2}})
+        profile = {'midiReference': {'arrangement': {'sections': [[0, 15]]}},
+                   'vocalInterludes': {'version': 1, 'reason': 'reviewed instrumental passage',
+                                      'afterVerses': [{'verse': 1, 'quarterBeats': 4}]}}
+        return source, profile, material
+
+    def test_interludes_preserve_every_printed_note_and_add_only_unpitched_context_between_source_verses(self):
+        source, profile, material = self.interlude_fixture()
+        original = copy.deepcopy((source, profile, material))
+        self.assertIs(self.cli.vocal_interlude_material(None, {}, material), material)
+        actual = self.cli.vocal_interlude_material(source, profile, material)
+        self.assertEqual((source, profile, material), original)
+        self.assertEqual(actual[0][0]['notes'], material[0][0]['notes'] + [0])
+        self.assertEqual(actual[0][0]['pitchOffsets'], material[0][0]['pitchOffsets'] + [0])
+        self.assertEqual(actual[0][0]['spatialWeights'], [1] * 10 + [8])
+        self.assertEqual(actual[1][0]['notes'], [1, 2, 3, 4, 5, 0])
+        self.assertEqual(actual[1][0]['rhythmWeights'], [1] * 5 + [4])
+        self.assertEqual(actual[0][1:], material[0][1:])
+        self.assertEqual(actual[1][1:], material[1][1:])
+        self.assertEqual(actual[2]['symbolicRows'], material[2]['symbolicRows'])
+        self.assertEqual(actual[2]['vocalInterludes']['sourceVerseGroups'], [[0], [1, 2]])
+        self.assertEqual(actual[2]['vocalInterludes']['gaps'][0]['afterReadingIndex'], 0)
+
+    def test_interludes_reject_manual_times_incomplete_verses_invalid_beats_and_conflicting_forms(self):
+        source, profile, material = self.interlude_fixture()
+        review = profile['vocalInterludes']
+        for change in [{'version': True}, {'version': 2}, {'reason': ''}, {'afterVerses': []},
+                       {'seconds': 10}, {'groups': [[0], [1, 2]]},
+                       *[{'afterVerses': [{'verse': verse, 'quarterBeats': beats}]}
+                         for verse, beats in [(0, 4), (2, 4), (True, 4), (1, 0), (1, -1),
+                                              (1, True), (1, 1.5), (1, 65), (1, float('nan'))]],
+                       {'afterVerses': [{'verse': 1, 'quarterBeats': 4, 'at': 12}]},
+                       {'afterVerses': [{'verse': 1, 'quarterBeats': 4}] * 2}]:
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                self.cli.vocal_interlude_material(source, {**profile, 'vocalInterludes': {**review, **change}}, material)
+        for verses in [[], [source['verses'][0]], [[], source['verses'][1]],
+                       [source['verses'][0], source['verses'][1][:1]]]:
+            with self.assertRaises(ValueError):
+                self.cli.vocal_interlude_material({'verses': verses}, profile, material)
+        for key in ['readingSectionReview', 'sourceVerseContext', 'sourceVerseMusicRange',
+                    'instrumentalOutroReview', 'instrumentalOutroAlternatives', 'referenceEndingSequence']:
+            with self.assertRaises(ValueError):
+                self.cli.vocal_interlude_material(source, {**profile, key: {}}, material)
+        with self.assertRaises(ValueError):
+            self.cli.vocal_interlude_material(source, {**profile,
+                'independentRecordings': [{'endingReadingRepeat': {}}]}, material)
+
+    def test_interlude_pipeline_rechecks_every_recording_and_all_original_alignment_gates(self):
+        source, profile, material = self.interlude_fixture()
+        definitions = [item for verse in source['verses'] for item in verse]
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}, {'file': 'main.mp3', 'sha256': 'main'}]}
+        window = {'durationEstimate': 30, 'onsetEstimate': 2}
+        profile.update(sampling=window, independentRecordings=[
+            {'file': 'main.mp3', 'sha256': 'main', 'sampling': window}])
+        for bad in [None, 'cost', 'margin', 'span', 'key', 'local']:
+            seen = []
+            def matcher(rows, chroma, times, duration, onset, weight):
+                main = bool(chroma[0, 0])
+                if len(rows) == 3:
+                    seen.append((main, weight, rows[0]['notes'][-1], rows[1]['notes'][-1]))
+                return self.matcher(bad if main else None)(rows, chroma, times, duration, onset, weight)
+            with self.subTest(bad=bad), tempfile.TemporaryDirectory() as directory, \
+                    patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                    patch.object(self.cli, 'reference_material', return_value=material), \
+                    patch.object(self.cli, 'features', side_effect=lambda path, cache:
+                        (np.arange(36), np.full((12, 36), int(path.name == 'main.mp3')))), \
+                    patch.object(self.cli.midi, 'match_template', side_effect=matcher), \
+                    patch.object(self.cli, 'export_result', return_value=('test', 'ready')) as export:
+                result = self.cli.generate(song, profile, Path(directory))
+                self.assertEqual(len(seen), 4)
+                self.assertTrue(all(rest == 0 and next_note != 0 for _, _, rest, next_note in seen))
+                if bad is None:
+                    self.assertEqual(result, ('test', 'ready'))
+                    evidence = export.call_args.args[4]
+                    self.assertEqual(evidence['independentTimelines']['main.mp3']['times'], [2, 12, 22])
+                    self.assertEqual(len(evidence['midiMatching']['performance']['local']), 3)
+                else:
+                    self.assertIn('needs-calibration', result[1])
+                    export.assert_not_called()
+
     def test_complete_verse_policy_derives_all_groups_from_source_and_rejects_count_overrides(self):
         source = {'verses': [[{'region': 'r1'}, {'region': 'r2'}],
                              [{'region': 'r3'}, {'region': 'r4'}],

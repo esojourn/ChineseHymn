@@ -381,6 +381,59 @@ def source_verse_edges(source, profile):
     return groups
 
 
+def vocal_interlude_material(source, profile, material):
+    """Describe unpitched interludes between complete source verses in both queries."""
+    review = profile.get('vocalInterludes')
+    if review is None:
+        return material
+    if (not isinstance(review, dict) or set(review) != {'version', 'afterVerses', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            not isinstance(review.get('afterVerses'), list) or not review['afterVerses'] or
+            any(key in profile for key in ['readingSectionReview', 'sourceVerseContext',
+                'sourceVerseMusicRange', 'instrumentalOutroReview', 'instrumentalOutroAlternatives',
+                'referenceEndingSequence']) or
+            any('endingReadingRepeat' in item for item in profile.get('independentRecordings', []))):
+        raise ValueError('段间声乐休止须明确版本、原文完整歌段及拍数，不能与其他结构策略叠加')
+    verses = source['verses']
+    melody, optical, reference = material
+    if (len(verses) < 2 or any(not verse for verse in verses) or
+            sum(map(len, verses)) != len(melody) or len(melody) != len(optical)):
+        raise ValueError('段间声乐休止不能遗漏原文或改变阅读区域数量')
+    groups, at = [], 0
+    for verse in verses:
+        groups.append(list(range(at, at + len(verse))))
+        at += len(verse)
+    previous, gaps = 0, []
+    for gap in review['afterVerses']:
+        if (not isinstance(gap, dict) or set(gap) != {'verse', 'quarterBeats'} or
+                type(gap.get('verse')) is not int or not previous < gap['verse'] < len(verses) or
+                type(gap.get('quarterBeats')) is not int or not 1 <= gap['quarterBeats'] <= 64):
+            raise ValueError('声乐休止只能按原文顺序位于完整歌段之间，使用1至64个四分音符拍数')
+        previous = gap['verse']
+        gaps.append({**gap, 'afterReadingIndex': groups[gap['verse'] - 1][-1]})
+    quarters = sum(hi - lo for lo, hi in profile['midiReference']['arrangement']['sections'])
+    weights = sum(sum(row['spatialWeights']) for row in melody)
+    if not math.isfinite(quarters) or quarters <= 0 or not math.isfinite(weights) or weights <= 0:
+        raise ValueError('段间声乐休止缺少完整原 MIDI 的拍数与采样权重')
+    result = copy.deepcopy(material)
+    for gap in gaps:
+        # MIDI query samples have 0.1-second reference units; no recorded-audio
+        # seconds or new pitched notes enter either query.
+        weight = gap['quarterBeats'] * weights / quarters
+        for rows, key, value in [(result[0], 'spatialWeights', weight),
+                                 (result[1], 'rhythmWeights', gap['quarterBeats'])]:
+            row = rows[gap['afterReadingIndex']]
+            row['notes'].append(0)
+            row['pitchOffsets'].append(0)
+            row[key].append(value)
+        gap['midiReferenceWeight'] = weight
+    result[2]['vocalInterludes'] = {'version': 1, 'sourceVerseGroups': groups, 'gaps': gaps,
+        'templateOnly': True, 'reason': review['reason']}
+    result[2]['opticalReadingRows'] = result[1]
+    return result
+
+
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None,
                          edge_verses=None):
     melody, optical, reference = material
@@ -426,7 +479,7 @@ def generate(song, profile, cache, prepare=False):
         recordings = independent_recordings(song, profile)
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
-        body_material = reference_material(profile, cache, prepare)
+        body_material = vocal_interlude_material(source, profile, reference_material(profile, cache, prepare))
         material = body_material if reference_profile is profile else reference_material(reference_profile, cache, prepare)
         melody, optical, reference = material
         verse_music_section(reference_profile, verses, optical)

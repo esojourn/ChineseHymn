@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "02-176",
+  "status": "reviewed",
+  "source": {
+    "file": "02-176我所信有根基.txt",
+    "sha256": "651b59029de190c9b384451c05a2b1b2a24b038f40abe53a33753e9d51978a78",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-176我所信有根基.mp3",
+      "sha256": "4ca4a4efee7c60eb3871b5d7af295d9ac527b01c92acc46314c96ea27fc4f54d",
+      "duration": 191.256,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 13.25,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 32.5,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.95,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 74.3,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 96.5,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 115.6,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 137.8,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 157.4,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-176我所信有根基-领唱.mp3",
+      "sha256": "7c20b78885416c78964a9c6bf55789fbb300f6acffee916edcc58a8dfe09acce",
+      "duration": 190.68,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 13.25,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 32.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 54.93,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.3,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 96.52,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.6,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 137.92,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 157.5,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "今我所信确有根基，不在信条仪文， 只是靠赖永活基督，受伤成全救恩。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我不需要别的辩证，不用别人求情【停一拍】 耶稣基督曾经舍命，他是为我舍命。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "蒙主拯救我心满足，不再恐惧怀疑， 罪孽满身来到主前，他永不会撇弃。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我不需要别的辩证，不用别人求情【停一拍】 耶稣基督曾经舍命，他是为我舍命。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我心信靠真神的话，在圣经中记明， 蒙恩得救靠主宝血，仰赖救主圣名。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "我不需要别的辩证，不用别人求情【停一拍】 耶稣基督曾经舍命，他是为我舍命。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "救主拯救失丧灵魂，医治一切疾病， 耶稣宝血为我流出，甘愿为我舍命。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "我不需要别的辩证，不用别人求情【停一拍】 耶稣基督曾经舍命，他是为我舍命。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-176我所信有根基.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

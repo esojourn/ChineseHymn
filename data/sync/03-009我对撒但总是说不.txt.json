@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "03-009",
+  "status": "reviewed",
+  "source": {
+    "file": "03-009我对撒但总是说不.txt",
+    "sha256": "c3aca19dfe24aecf5068729ff7f260017c6357323ea492a3459335bdaa0e2f8e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-009我对撒但总是说不-领唱.mp3",
+      "sha256": "3d0bcd5c25c70a3f539b03c191585ec453b3ae48f9cf45c9bc322dd91b6674cd",
+      "duration": 130.1942857142857,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 12.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.55,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 88.8,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我对撒但总是说不，我对父神就说是 好叫我主所有部署，全得成功不受阻 当我这样听主号令，求主赐给我权柄 使我满有能力圣灵，成功主永远定命",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我对撒但总是说不，我对父神就说是 这个是我永远态度，求神施恩加保护 不然当我实行顺服，撒但就要拦去路 当我正在听你吩咐，主耶稣，求你看顾",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我对撒但总是说不，我对父神就说是 我愿完全绝对顺服，不论如何受损失 当我与主同行时候，主若肯拯救保守 无论什么威胁引诱，都不会使我回头",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-009我对撒但总是说不.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "songId": "04-474",
+  "status": "reviewed",
+  "source": {
+    "file": "04-474如鹿渴慕.txt",
+    "sha256": "fcc08dd94fc70aef2beaede280ed64550bf1a738f08bbb6b2ac374264bbb4da0",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-474如鹿渴慕.mp3",
+      "sha256": "73201f3f6de1a0891e98e935f7c57f161414b675c553ab1d18b7a23ff8c58545",
+      "duration": 225.77632653061224,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 23.5,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 85.2,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 147.3,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-474如鹿渴慕-领唱.mp3",
+      "sha256": "82e448fac510f36868f575cf6da4fa5ac0d24448ee06312667a94ee4438d765c",
+      "duration": 212.40163265306123,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 14.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 76.6,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.7,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "如同鹿切切渴慕溪水，我灵亦渴慕追求你。 唯有你是我心所爱，我渴望来敬拜你。 你是我的盾牌力量，我身心灵惟降服于你， 唯有你是我心所爱，我渴望来敬拜你。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你是我好朋友是兄弟，又是我的大君王， 我爱你超过爱任何人，更超过世上万物。 你是我的盾牌力量，我身心灵惟降服于你， 唯有你是我心所爱，我渴望来敬拜你。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我要你胜过世上金银，只有你能满我心。 唯有你赐我真实喜乐，你是我眼中瞳仁。 你是我的盾牌力量，我身心灵惟降服于你， 唯有你是我心所爱，我渴望来敬拜你。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-474如鹿渴慕.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

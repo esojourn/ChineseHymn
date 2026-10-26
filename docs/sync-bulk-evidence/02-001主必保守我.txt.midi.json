@@ -1,0 +1,3485 @@
+{
+  "songId": "02-001",
+  "source": "02-001主必保守我.txt",
+  "sourceHash": "e5aceacd9a177386dc6106d63e88874cdcfce2ca832634de3d8fe43091c54bb4",
+  "trackHashes": [
+    {
+      "file": "02-001主必保守我.mp3",
+      "sha256": "859c5edde73b92db2b8441406705ab105479345b651aaa09dd648be15023e4c3"
+    },
+    {
+      "file": "02-001主必保守我-领唱.mp3",
+      "sha256": "d31bf7be1b9e5077829a194ebe00953060ad8f4e4ed95344a1cb44f855883ffd"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 1,
+    "mode": "text-sectional-score",
+    "profile": {
+      "version": 1,
+      "sourceHash": "e5aceacd9a177386dc6106d63e88874cdcfce2ca832634de3d8fe43091c54bb4",
+      "tracks": [
+        {
+          "file": "02-001主必保守我.mp3",
+          "sha256": "859c5edde73b92db2b8441406705ab105479345b651aaa09dd648be15023e4c3"
+        },
+        {
+          "file": "02-001主必保守我-领唱.mp3",
+          "sha256": "d31bf7be1b9e5077829a194ebe00953060ad8f4e4ed95344a1cb44f855883ffd"
+        }
+      ],
+      "audioFile": "02-001主必保守我-领唱.mp3",
+      "regions": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "regionOpenings": [
+        "有时我惧怕失丧，基督保守",
+        "主必保守我，主必保守我 ",
+        "我在主前如宝珠，基督保守",
+        "主必保守我，主必保守我 ",
+        "为我流血为我死，基督保守",
+        "主必保守我，主必保守我 "
+      ],
+      "sampling": {
+        "durationEstimate": 246,
+        "onsetEstimate": 23
+      },
+      "sourceVerseContext": {
+        "version": 1,
+        "reason": "原文三段各含主歌及同一副歌，局部固定保留上一完整原文歌段及本段已唱部分，当前起点单独匹配；首尾按完整歌段检查，并要求独立音乐反复的全部六个阅读相位一致。"
+      },
+      "sourceVerseMusicRange": {
+        "version": 1,
+        "endBeforeSection": 6,
+        "reason": "三个完整正文歌段后又完整唱一次同一副歌，再接无歌词器乐尾奏；音乐反复比较只排除末个阅读区域追加的同一副歌及其声乐休止。边界由整曲MIDI和光学两路径独立定位，共有比较窗口至少覆盖检测周期的75%，不要求末段后仍有前两段的间奏。"
+      },
+      "midiReference": {
+        "origin": {
+          "kind": "printed-numbered-score",
+          "file": "reference/external/hold-me-fast-reviewed-print.mid",
+          "sha256": "ceb5082fe5cd49e653f2aee2fab3e7717f5b461704bb19be7ccb7ee840ebfafc",
+          "printedRhythmReference": {
+            "sourceSha256": "5e168439d04ef725c6b983cb3c7511b510776ad58fe1f4a80d93e930987ed281",
+            "tonicMidi": 69,
+            "numberedRowsAndQuarterBeats": [
+              [
+                [
+                  5,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  6,
+                  1.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              [
+                [
+                  5,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  6,
+                  1.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  3,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  7,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  3,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  5,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              [
+                [
+                  0,
+                  4
+                ],
+                [
+                  6,
+                  1.5
+                ],
+                [
+                  7,
+                  0.5
+                ],
+                [
+                  7,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  1.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              [
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ]
+          }
+        },
+        "file": "reference/external/hold-me-fast-three-verses-silent-gaps.mid",
+        "sha256": "b1d2f158a7cae2e2a931e8dce2bdc487bb5e79eb3b78ebc1ec5ccab30b1a318e",
+        "arrangement": {
+          "melodyTrack": 0,
+          "melodyTrackName": "Manual transcription of a printed numbered melody",
+          "quarterLength": 110,
+          "sections": [
+            [
+              0,
+              110
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              0,
+              110
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              0,
+              110
+            ],
+            [
+              76,
+              110
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ],
+            [
+              72,
+              76
+            ]
+          ]
+        }
+      },
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            4,
+            9,
+            9,
+            8,
+            4
+          ]
+        },
+        {
+          "onsetIndex": 48,
+          "pitches": [
+            6,
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 70,
+          "pitches": [
+            4,
+            9,
+            9,
+            8,
+            4
+          ]
+        },
+        {
+          "onsetIndex": 118,
+          "pitches": [
+            6,
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 140,
+          "pitches": [
+            4,
+            9,
+            9,
+            8,
+            4
+          ]
+        },
+        {
+          "onsetIndex": 188,
+          "pitches": [
+            6,
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "onsetIndex": 210,
+          "pitches": [
+            6,
+            8,
+            8,
+            9,
+            9
+          ]
+        }
+      ],
+      "readingSectionReview": {
+        "version": 1,
+        "groups": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "instrumentalSections": [],
+        "reason": "领唱三段正文后再次完整演唱同一副歌，末阅读区域连续覆盖两次B。"
+      },
+      "opticalReference": {
+        "image": {
+          "file": "modern-sectional-scores/data/hold-me-fast-tgc.png",
+          "sha256": "5e168439d04ef725c6b983cb3c7511b510776ad58fe1f4a80d93e930987ed281",
+          "url": "https://9marks-static.oss-cn-hongkong.aliyuncs.com/wp/2020/03/%E4%B8%BB%E5%BF%85%E4%BF%9D%E5%AE%88%E6%88%91.png"
+        },
+        "pageUrl": "https://www.tgcchinese.org/article/25-hymns-to-sing-in-troubled-times",
+        "recognitionFile": "modern-sectional-scores/ocr/hold-me-fast-tgc.png.json",
+        "recognizerVersion": 5,
+        "noteExtractorVersion": 5,
+        "reviewedSystems": [
+          {
+            "notes": {
+              "recognitionBand": [
+                1290,
+                1410
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  1480,
+                  1895
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                1974,
+                2094
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  2175,
+                  2550
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                2648,
+                2770
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  2850,
+                  3210
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                3310,
+                3440
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  3520,
+                  3915
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                3990,
+                4120
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  4340,
+                  4470
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                4580,
+                4715
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  4770,
+                  4960
+                ]
+              }
+            ]
+          }
+        ],
+        "rowsSha256": "4bd6c10685fb215ab111725f5bb753d5fcca88dc594ba285be709fb73c0b4170",
+        "ties": {},
+        "tuplets": [],
+        "parts": {
+          "A": [
+            [
+              0,
+              0,
+              12
+            ],
+            [
+              1,
+              0,
+              7
+            ],
+            [
+              1,
+              8,
+              13
+            ],
+            [
+              2,
+              0,
+              7
+            ],
+            [
+              2,
+              8,
+              13
+            ],
+            [
+              3,
+              0,
+              7
+            ],
+            [
+              3,
+              8,
+              13
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "B": [
+            [
+              4,
+              1,
+              11
+            ],
+            [
+              5,
+              1,
+              7
+            ],
+            [
+              5,
+              8,
+              14
+            ]
+          ],
+          "E": [
+            [
+              5,
+              1,
+              7
+            ],
+            [
+              5,
+              8,
+              14
+            ]
+          ],
+          "BG": [
+            [
+              4,
+              1,
+              11
+            ],
+            [
+              5,
+              1,
+              7
+            ],
+            [
+              5,
+              8,
+              14
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ],
+          "BT": [
+            [
+              4,
+              1,
+              11
+            ],
+            [
+              5,
+              1,
+              7
+            ],
+            [
+              5,
+              8,
+              14
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              0,
+              1
+            ]
+          ]
+        },
+        "order": [
+          "A",
+          "BG",
+          "A",
+          "BG",
+          "A",
+          "B",
+          "BT"
+        ],
+        "readingStarts": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ]
+      },
+      "formReview": "原文三段各由四行主歌和两行副歌构成，六个阅读区域按ABABAB完整覆盖；原始领唱另在末段后完整重复一次同一副歌，最后副歌区域持续显示。独立原谱为福音联盟公开中文版主必保守我，明确Matt Merker 2013曲调，固定原始PNG网址与SHA-256。逐行目视核对六行主旋律及2/2、3/2变拍，主歌四行各18拍，副歌两行16拍及18拍，主歌后另有已印刷的整小节声乐休止。人工拍数表独立重建原谱110拍单旋律参考，不手工替换光学音头；只排除实际变拍记号的分子分母，保留识别所得节奏误差。无歌词间奏及尾奏使用同一原谱声乐休止小节作分析参考：前两段副歌后各五次，末段再唱副歌后十八次，不将伴奏装饰音当作未演唱的新歌词。全部232个发声起音与独立光学零编辑对应，七个物理乐段起句至少五音均唯一。三段正文后追加的B及尾奏与原末阅读区域合并，六个当前阅读起点分别通过整曲MIDI、整曲光学、局部MIDI和局部光学四路径；局部固定仅保留原文上一完整歌段及当前已唱部分。全部成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、顺序及首尾检查保持。另从原始录音独立检测三段正文的音乐反复：两条整曲路径须在0.5秒内共同确认比较边界，被排除部分只能是同一原谱副歌再唱及声乐休止；相似度0.60、逐段0.55、至少75%共有周期及全部阅读相位0.5秒检查全部保留。伴奏使用原始完整录音与领唱作独立chroma-DTW对应，所有阅读位置逐项核对，不使用时长比例或另一录音的原始时间。所有时间点均从实际音频测得，前奏和采样时长只限定检索范围；原始歌词、空行、图片、音频及已发布数据不改动。"
+    },
+    "maximumCosts": {
+      "melody": 0.35,
+      "optical": 0.35
+    },
+    "keyMargin": 0.06,
+    "maximumOnsetDifference": 0.5,
+    "spanRatio": [
+      0.75,
+      1.25
+    ],
+    "referencePeriod": 238.0,
+    "readingOffsets": [
+      0.0,
+      38.0,
+      65.0,
+      103.0,
+      130.0,
+      168.0,
+      185.0
+    ],
+    "symbolicRows": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 232,
+      "midiNoteCount": 232,
+      "editCost": 0,
+      "runnerUpCost": 156,
+      "semitoneShift": 9,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 48,
+          "possibleMidiNoteIndices": [
+            48
+          ],
+          "at": 38.0
+        },
+        {
+          "scoreNoteIndex": 70,
+          "possibleMidiNoteIndices": [
+            70
+          ],
+          "at": 65.0
+        },
+        {
+          "scoreNoteIndex": 118,
+          "possibleMidiNoteIndices": [
+            118
+          ],
+          "at": 103.0
+        },
+        {
+          "scoreNoteIndex": 140,
+          "possibleMidiNoteIndices": [
+            140
+          ],
+          "at": 130.0
+        },
+        {
+          "scoreNoteIndex": 188,
+          "possibleMidiNoteIndices": [
+            188
+          ],
+          "at": 168.0
+        },
+        {
+          "scoreNoteIndex": 210,
+          "possibleMidiNoteIndices": [
+            210
+          ],
+          "at": 185.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        38.0,
+        65.0,
+        103.0,
+        130.0,
+        168.0,
+        185.0
+      ]
+    },
+    "sourceRows": [
+      {
+        "text": "¥5 11751 6---6.52.53---|",
+        "confidence": 0.8570414346953233,
+        "notes": [
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.08695652173913043,
+          0.13043478260869565,
+          0.1793478260869565,
+          0.22826086956521738,
+          0.30434782608695654,
+          0.3532608695652174,
+          0.40217391304347827,
+          0.5760869565217391,
+          0.6358695652173914,
+          0.7010869565217391,
+          0.7608695652173914,
+          0.8260869565217391
+        ],
+        "spatialWeights": [
+          0.5,
+          1.0,
+          1.0,
+          1.5,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          5.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 4
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "¥511 7516---26.52.5|3---丨",
+        "confidence": 0.8326252675056458,
+        "notes": [
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          2,
+          6,
+          5,
+          2,
+          5,
+          3
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.07065217391304347,
+          0.11413043478260869,
+          0.16304347826086957,
+          0.21195652173913043,
+          0.28804347826086957,
+          0.3532608695652174,
+          0.41847826086956524,
+          0.5597826086956522,
+          0.6032608695652174,
+          0.6521739130434783,
+          0.7010869565217391,
+          0.7445652173913043,
+          0.8097826086956522
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5,
+          1.5,
+          3.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          4.0,
+          0.25,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 2,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "i22i 3. i6---26 7 7. 1|1---",
+        "confidence": 0.7638777251596804,
+        "notes": [
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          2,
+          6,
+          7,
+          7,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.0718232044198895,
+          0.13259668508287292,
+          0.19889502762430938,
+          0.2596685082872928,
+          0.3370165745856354,
+          0.3867403314917127,
+          0.430939226519337,
+          0.5911602209944752,
+          0.6187845303867403,
+          0.6685082872928176,
+          0.7182320441988951,
+          0.7624309392265194,
+          0.8232044198895028
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.0,
+          0.5,
+          2.5,
+          0.5,
+          1.0,
+          1.0,
+          0.5,
+          1.0,
+          1.0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          0.5,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "¥i22i 3. i 6---— 2655. 11---",
+        "confidence": 0.782276315348489,
+        "notes": [
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          2,
+          6,
+          5,
+          5,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.07058823529411765,
+          0.13529411764705881,
+          0.19411764705882353,
+          0.25882352941176473,
+          0.3352941176470588,
+          0.38823529411764707,
+          0.4294117647058823,
+          0.5588235294117647,
+          0.5882352941176471,
+          0.6529411764705882,
+          0.7176470588235294,
+          0.7764705882352941,
+          0.8411764705882353
+        ],
+        "spatialWeights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          2.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          0.25,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 1
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 2,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": " 0 - - - — 6. 7 7. 1 1 --- 1. 2  2. 3  3 - - - —",
+        "confidence": 0.7804926112294197,
+        "notes": [
+          0,
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.07058823529411765,
+          0.22941176470588234,
+          0.27647058823529413,
+          0.3235294117647059,
+          0.37058823529411766,
+          0.4294117647058823,
+          0.5882352941176471,
+          0.6352941176470588,
+          0.6823529411764706,
+          0.7294117647058823,
+          0.8117647058823529
+        ],
+        "spatialWeights": [
+          3.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          3.5,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          5,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          5
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      },
+      {
+        "text": "33 4432126---612. 111---1",
+        "confidence": 0.8505922675132751,
+        "notes": [
+          3,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          2,
+          6,
+          6,
+          1,
+          2,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "x": [
+          0.06134969325153374,
+          0.08588957055214724,
+          0.13496932515337423,
+          0.17791411042944785,
+          0.22699386503067484,
+          0.27607361963190186,
+          0.32515337423312884,
+          0.37423312883435583,
+          0.3987730061349693,
+          0.5766871165644172,
+          0.6257668711656442,
+          0.6748466257668712,
+          0.7361963190184049,
+          0.8159509202453987
+        ],
+        "spatialWeights": [
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.5,
+          3.5,
+          1.0,
+          1.0,
+          1.0,
+          1.5,
+          1.5
+        ],
+        "rhythmWeights": [
+          0.25,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.25,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0
+        ],
+        "ocrRhythmWeights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "opticalDiagnostics": [
+          {
+            "glyphFound": true,
+            "beams": 2,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 2,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": true,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 1,
+            "dot": false,
+            "dashes": 0
+          },
+          {
+            "glyphFound": true,
+            "beams": 0,
+            "dot": false,
+            "dashes": 3
+          }
+        ]
+      }
+    ],
+    "opticalReadingRows": [
+      {
+        "notes": [
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          5,
+          5,
+          1,
+          1,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          5.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          6,
+          6,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          5,
+          5,
+          1,
+          1,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          5.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          6,
+          6,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          5,
+          1,
+          1,
+          7,
+          5,
+          1,
+          6,
+          6,
+          5,
+          2,
+          5,
+          3,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1,
+          6,
+          6,
+          5,
+          5,
+          1,
+          1,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          5.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          6,
+          6,
+          1,
+          2,
+          1,
+          1
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0
+        ]
+      },
+      {
+        "notes": [
+          6,
+          7,
+          7,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          2,
+          1,
+          6,
+          6,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pitchOffsets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rhythmWeights": [
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.5,
+          0.5,
+          1.5,
+          0.5,
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          1.0,
+          1.0,
+          1.5,
+          0.5,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      }
+    ],
+    "performance": {
+      "sourceVerseReadings": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fullMelody": {
+        "best": {
+          "cost": 0.3008852330649771,
+          "key": 9,
+          "starts": [
+            23.0,
+            61.900001525878906,
+            89.5999984741211,
+            127.69999694824219,
+            155.3000030517578,
+            194.1999969482422,
+            212.8000030517578
+          ],
+          "span": 242.79998779296875
+        },
+        "runnerUp": {
+          "cost": 0.4875215359819614,
+          "key": 4,
+          "starts": [
+            40.400001525878906,
+            71.4000015258789,
+            98.0,
+            131.8000030517578,
+            157.3000030517578,
+            188.60000610351562,
+            206.8000030517578
+          ],
+          "span": 221.30001831054688
+        }
+      },
+      "fullOptical": {
+        "best": {
+          "cost": 0.3039958922843623,
+          "key": 6,
+          "starts": [
+            23.0,
+            61.900001525878906,
+            89.4000015258789,
+            127.69999694824219,
+            155.1999969482422,
+            194.1999969482422,
+            212.8000030517578
+          ],
+          "span": 241.60000610351562
+        },
+        "runnerUp": {
+          "cost": 0.4915191898501016,
+          "key": 1,
+          "starts": [
+            68.9000015258789,
+            101.30000305175781,
+            122.5999984741211,
+            153.5,
+            172.6999969482422,
+            204.0,
+            212.8000030517578
+          ],
+          "span": 194.5
+        }
+      },
+      "local": [
+        {
+          "index": 0,
+          "estimate": 23.0,
+          "duration": 38.900001525878906,
+          "melody": {
+            "best": {
+              "cost": 0.207415838168029,
+              "key": 9,
+              "starts": [
+                23.0
+              ],
+              "span": 39.0
+            },
+            "runnerUp": {
+              "cost": 0.4425777641237548,
+              "key": 4,
+              "starts": [
+                40.5
+              ],
+              "span": 31.300003051757812
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.23015920055556113,
+              "key": 6,
+              "starts": [
+                23.100000381469727
+              ],
+              "span": 38.5
+            },
+            "runnerUp": {
+              "cost": 0.4487230550967023,
+              "key": 1,
+              "starts": [
+                40.29999923706055
+              ],
+              "span": 31.39999771118164
+            }
+          },
+          "sections": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "estimate": 61.900001525878906,
+          "duration": 27.599998474121094,
+          "melody": {
+            "best": {
+              "cost": 0.26344290138187265,
+              "key": 9,
+              "starts": [
+                23.0,
+                61.900001525878906
+              ],
+              "span": 66.4000015258789
+            },
+            "runnerUp": {
+              "cost": 0.47307018767622183,
+              "key": 4,
+              "starts": [
+                22.399999618530273,
+                55.79999923706055
+              ],
+              "span": 60.599998474121094
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.2735432101371593,
+              "key": 6,
+              "starts": [
+                23.100000381469727,
+                61.900001525878906
+              ],
+              "span": 65.80000305175781
+            },
+            "runnerUp": {
+              "cost": 0.47373069820547464,
+              "key": 11,
+              "starts": [
+                36.900001525878906,
+                69.0
+              ],
+              "span": 56.29999542236328
+            }
+          },
+          "sourceVerseContext": {
+            "sections": [
+              0
+            ],
+            "queryStart": 23.0,
+            "queryDuration": 66.5,
+            "targetRow": 1,
+            "fromVerse": 0,
+            "currentVerse": 0
+          },
+          "sections": [
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "estimate": 89.5,
+          "duration": 38.19999694824219,
+          "melody": {
+            "best": {
+              "cost": 0.23877104692723258,
+              "key": 9,
+              "starts": [
+                23.0,
+                89.5
+              ],
+              "span": 104.5999984741211
+            },
+            "runnerUp": {
+              "cost": 0.4619001007808769,
+              "key": 4,
+              "starts": [
+                51.29999923706055,
+                109.19999694824219
+              ],
+              "span": 88.30000305175781
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.2573628685194305,
+              "key": 6,
+              "starts": [
+                23.100000381469727,
+                89.19999694824219
+              ],
+              "span": 104.0999984741211
+            },
+            "runnerUp": {
+              "cost": 0.4659904472693559,
+              "key": 11,
+              "starts": [
+                36.900001525878906,
+                93.0999984741211
+              ],
+              "span": 91.0999984741211
+            }
+          },
+          "sourceVerseContext": {
+            "sections": [
+              0,
+              1
+            ],
+            "queryStart": 23.0,
+            "queryDuration": 104.69999694824219,
+            "targetRow": 1,
+            "fromVerse": 0,
+            "currentVerse": 1
+          },
+          "sections": [
+            2
+          ]
+        },
+        {
+          "index": 3,
+          "estimate": 127.69999694824219,
+          "duration": 27.550003051757812,
+          "melody": {
+            "best": {
+              "cost": 0.2604611580021984,
+              "key": 9,
+              "starts": [
+                23.0,
+                127.69999694824219
+              ],
+              "span": 132.0
+            },
+            "runnerUp": {
+              "cost": 0.4703907468856373,
+              "key": 4,
+              "starts": [
+                40.5,
+                122.4000015258789
+              ],
+              "span": 108.60000610351562
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.2709948471923459,
+              "key": 6,
+              "starts": [
+                23.100000381469727,
+                127.69999694824219
+              ],
+              "span": 131.5
+            },
+            "runnerUp": {
+              "cost": 0.4762859027071908,
+              "key": 1,
+              "starts": [
+                40.099998474121094,
+                122.4000015258789
+              ],
+              "span": 108.5999984741211
+            }
+          },
+          "sourceVerseContext": {
+            "sections": [
+              0,
+              1,
+              2
+            ],
+            "queryStart": 23.0,
+            "queryDuration": 132.25,
+            "targetRow": 1,
+            "fromVerse": 0,
+            "currentVerse": 1
+          },
+          "sections": [
+            3
+          ]
+        },
+        {
+          "index": 4,
+          "estimate": 155.25,
+          "duration": 38.94999694824219,
+          "melody": {
+            "best": {
+              "cost": 0.22740731517132282,
+              "key": 9,
+              "starts": [
+                89.5,
+                155.1999969482422
+              ],
+              "span": 104.60000610351562
+            },
+            "runnerUp": {
+              "cost": 0.45365545788376016,
+              "key": 4,
+              "starts": [
+                88.69999694824219,
+                149.89999389648438
+              ],
+              "span": 90.5
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.24273002500634253,
+              "key": 6,
+              "starts": [
+                89.5,
+                155.1999969482422
+              ],
+              "span": 104.5
+            },
+            "runnerUp": {
+              "cost": 0.46405568528198127,
+              "key": 11,
+              "starts": [
+                106.19999694824219,
+                158.10000610351562
+              ],
+              "span": 90.5
+            }
+          },
+          "sourceVerseContext": {
+            "sections": [
+              2,
+              3
+            ],
+            "queryStart": 89.5,
+            "queryDuration": 104.69999694824219,
+            "targetRow": 1,
+            "fromVerse": 1,
+            "currentVerse": 2
+          },
+          "sections": [
+            4
+          ]
+        },
+        {
+          "index": 5,
+          "estimate": 194.1999969482422,
+          "duration": 71.0,
+          "melody": {
+            "best": {
+              "cost": 0.315282918271112,
+              "key": 9,
+              "starts": [
+                89.5,
+                194.1999969482422
+              ],
+              "span": 175.60000610351562
+            },
+            "runnerUp": {
+              "cost": 0.49043651704565666,
+              "key": 4,
+              "starts": [
+                98.0,
+                189.0
+              ],
+              "span": 163.0
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.31852465973160926,
+              "key": 6,
+              "starts": [
+                89.5,
+                194.1999969482422
+              ],
+              "span": 174.60000610351562
+            },
+            "runnerUp": {
+              "cost": 0.49663789040267503,
+              "key": 1,
+              "starts": [
+                98.0999984741211,
+                189.10000610351562
+              ],
+              "span": 153.20001220703125
+            }
+          },
+          "sourceVerseContext": {
+            "sections": [
+              2,
+              3,
+              4
+            ],
+            "queryStart": 89.5,
+            "queryDuration": 175.6999969482422,
+            "targetRow": 1,
+            "fromVerse": 1,
+            "currentVerse": 2
+          },
+          "sections": [
+            5,
+            6
+          ]
+        }
+      ],
+      "readingSectionReview": {
+        "version": 1,
+        "groups": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "instrumentalSections": [],
+        "reason": "领唱三段正文后再次完整演唱同一副歌，末阅读区域连续覆盖两次B。"
+      },
+      "completeVerseSpans": [
+        66.5,
+        65.75,
+        109.94999694824219
+      ]
+    },
+    "sourceVerseMusic": {
+      "verseReadings": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "music": {
+        "period": 65.9003,
+        "similarity": 0.6658827066421509,
+        "initialOnsetEstimate": 0,
+        "shifts": [
+          0.0,
+          65.9003,
+          132.4005
+        ],
+        "comparisonRange": {
+          "start": 23.0,
+          "end": 212.8000030517578,
+          "minimumSharedCycleRatio": 0.75
+        }
+      },
+      "maximumPhaseDifference": 0.5,
+      "phaseDifferences": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.49,
+          0.1
+        ],
+        [
+          0.21,
+          0.101
+        ]
+      ]
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "有时我惧怕失丧，基督保守我 有时诱惑难抵挡，主必保守我 自己不能站稳妥，经过荆棘路 因我爱心常冷落，需祂保守我",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "主必保守我，主必保守我 因我救主真爱我，祂必保守我",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "我在主前如宝珠，基督保守我 蒙救恩者祂眷顾，主必保守我 祂不让我灵失丧，应许必成就 付重价偿我罪债，祂必保守我",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "主必保守我，主必保守我 因我救主真爱我，祂必保守我",
+      "label": "第2段"
+    },
+    {
+      "region": "r5",
+      "text": "为我流血为我死，基督保守我 上主公义得满足，祂必保守我 一同复活到永久，祂必保守我 信心终必成眼见，主终必再来",
+      "label": "第3段"
+    },
+    {
+      "region": "r6",
+      "text": "主必保守我，主必保守我 因我救主真爱我，祂必保守我",
+      "label": "第3段"
+    }
+  ],
+  "recordingMaps": {
+    "02-001主必保守我.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.9608410000801086,
+      "meanPathCost": 0.07556851208209991,
+      "cueWindowCosts": [
+        0.018067892640829086,
+        0.030368108302354813,
+        0.02299788035452366,
+        0.013910210691392422,
+        0.087206169962883,
+        0.031352221965789795
+      ]
+    }
+  },
+  "status": "ready",
+  "cueCount": 6,
+  "elapsedSeconds": 3.727
+}

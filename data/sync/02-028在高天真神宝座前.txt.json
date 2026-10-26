@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "songId": "02-028",
+  "status": "reviewed",
+  "source": {
+    "file": "02-028在高天真神宝座前.txt",
+    "sha256": "576b891989e71d9921df5714bad76552b519bb49b5c9fa9dabc3df846fa7e744",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-028在高天真神宝座前.mp3",
+      "sha256": "89491723b6b9c9e2bab465a2dd770f74f60c4cd9d52c912d92ac276fdea264e8",
+      "duration": 218.832,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 30.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 49.65,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 70.73,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 82.23,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 101.75,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 122.33,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 134.67,
+          "region": "r7",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 153.35,
+          "region": "r8",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 173.73,
+          "region": "r9",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 193.1,
+          "region": "r10",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-028在高天真神宝座前-领唱.mp3",
+      "sha256": "431e878e58b019f00d0ed97f0078ed001b6c01f91f72b6a3d1bd671480e6bc2b",
+      "duration": 216.84,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 22
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 38,
+      "endLine": 38
+    }
+  },
+  "cues": [
+    {
+      "at": 31.0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 49.8,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.78,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 82.37,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.8,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.43,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 134.75,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 153.4,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 173.85,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 193.1,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "在高天真神宝座前  完美中保，将我保全  伟大祭司，满有爱怜 昨日今日永不改变",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "镌刻我名在他掌心  又将我名记于心田  因祂侍立，代求父前 控告全消，与神无间 ",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "控告全消，与神无间",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "试探引诱使我绝望  坠入痛苦罪咎深渊  我举目见祂在高天  一切罪孽全然赦免 ",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "无瑕救主代罪受死  罪人称义，灵魂得释  公义满足，忿怒消散  因祂换来救赎恩典 ",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "因祂换来救赎恩典 ",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "复活羔羊在宝座前  成为我义圣洁完全  自有永有，永不改变  荣耀君王充满恩典 ",
+        "label": "第3段"
+      },
+      {
+        "region": "r8",
+        "text": "因祂宝血，我罪偿还 与主合一，同行永远  我今与主藏神里面  基督我王直到永远 ",
+        "label": "第3段"
+      },
+      {
+        "region": "r9",
+        "text": "因祂宝血，我罪偿还 与主合一，同行永远  我今与主藏神里面  基督我王直到永远 ",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "基督我王直到永远",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-028在高天真神宝座前.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

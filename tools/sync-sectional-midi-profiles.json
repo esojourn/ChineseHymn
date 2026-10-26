@@ -7270,5 +7270,318 @@
       ]
     },
     "formReview": "原文六段各由前四句及后四句两个阅读区域组成，完整实际顺序ABABABABABAB。独立原谱为选本诗歌805首第172首耶稣我今撇下所有，原始JPG逐像素绑定网址与SHA-256；不是同名HYFRYDOL曲调。目视核对四行单旋律谱及全部六段，前两谱行为A，后两谱行为B，B首音为第三行前所追求的第一个2。所有不同音圆滑线均保留每个音头，不合并同音重新起音，不手工修补数字。最后一谱行的下方横线与歌词范围逐项核对，识别区域在固定原图中保留全部音符及独立光学节奏。公开第404首原MIDI完整64拍重复六次，保留全部声部、原时值与速度；420个光学旋律起音与MIDI零编辑对应，十二个阅读起句至少五音均唯一。录音六次完整音乐反复已独立检索，全部阅读位置仍分别通过整曲MIDI、整曲光学、逐区域MIDI及光学四路径；局部只固定保留一个完整前阅读区域作上下文。成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、首尾及正文顺序检查全部保持。所有时间点从实际录音测得，不按行数、拍数或总时长推算；原始歌词、空行、图片、音频及已发布数据不改动。"
+  },
+  "02-468": {
+    "version": 1,
+    "sourceHash": "71a25e04cf8d7e2d6e70260353b371f2f84cf0fbe3242a82ecec6bfadfd64564",
+    "tracks": [
+      {
+        "file": "02-468当尽本分.mp3",
+        "sha256": "da12f13f58f116cc95a93d113c912267a9b65c7ffc8a7936b6255ab210d3427e"
+      }
+    ],
+    "audioFile": "02-468当尽本分.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "我有本分当尽，我有上主当",
+      "我愿听候主命，服事现今世",
+      "求主使我谨慎，活在主面光",
+      "助我警醒祷告，凡事靠主引"
+    ],
+    "sampling": {
+      "durationEstimate": 76.8,
+      "onsetEstimate": 5.264
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/boylston-reviewed-print.mid",
+        "sha256": "0d96d11bac5a437e5ec78411d4c566e962f22f7d7c0bcadd3a6a42c40407da58",
+        "printedRhythmReference": {
+          "sourceSha256": "3e3e0bbc198df161e698087d92bd0de41590a5e29ca3c44c92a1ca2cb6e071eb",
+          "tonicMidi": 60,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            [
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/boylston-printed-four-verses.mid",
+      "sha256": "08330dbd3ae4f63e2fe863938eea4d349e40a2fcf1ae658a5d08c6266564bd44",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 48,
+        "sections": [
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 26,
+        "pitches": [
+          7,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 52,
+        "pitches": [
+          7,
+          4,
+          5,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 78,
+        "pitches": [
+          7,
+          4,
+          5,
+          7,
+          9
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/boylston-sicheng.png",
+        "sha256": "3e3e0bbc198df161e698087d92bd0de41590a5e29ca3c44c92a1ca2cb6e071eb",
+        "pdfSource": {
+          "file": "reference/external/sicheng-new-hymns.pdf",
+          "sha256": "82adf0f463d0b146a92912ef5f15a1ec65e04862b58ff28a03adb468c06ec369",
+          "url": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 724,
+          "scale": 3,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/boylston-sicheng.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              451,
+              526
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                570,
+                862
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1016,
+              1091
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1130,
+                1430
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "d43009eedb4d0e3f2ac027ed69fa200dc7c148860b84721affa6eed25b8ddf1b",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            0,
+            12
+          ],
+          [
+            1,
+            0,
+            14
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文四段各两行、各含四句，每段对应一个完整阅读区域。已核对当尽本分采用Lowell Mason的BOYLSTON曲调，不能与同名KENTUCKY或FESTAL SONG曲调混淆。独立原谱为思澄堂公开赞美诗新编第180首一年又过歌，同一BOYLSTON曲调的另一填词；固定原始PDF、索引724页、三倍倍率、渲染器版本及原图SHA-256。只使用该谱完整两行主旋律，26个旋律起音与已核对的当尽本分公开MIDI全部逐音对应，不按相似标题认定曲调。人工核对2/2原谱每行24拍、完整48拍，独立拍数表重建单旋律分析MIDI并完整重复四次；不将全书其他页或另一本四声部谱所附阿们加入正文。独立光学保留原始识别音头及横线拍数，不手工替换数字，104个完整演奏起音与MIDI零编辑对应，四个阅读起句至少五音均唯一。录音四次完整音乐反复已独立检索。每个当前完整歌段分别执行局部MIDI及光学匹配，同时核对整曲MIDI及光学路径；本曲不附加前段上下文。四路径保持成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、首尾及正文顺序检查。全部时间点从实际录音测得，不按字数、拍数或总时长推算；原始歌词、空行、图片、音频及已发布数据不改动。"
   }
 }

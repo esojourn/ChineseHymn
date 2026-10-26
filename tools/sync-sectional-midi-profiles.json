@@ -8050,5 +8050,266 @@
       ]
     },
     "formReview": "原文三段各四行，每段恰为一个完整阅读区域。独立原谱为选本诗歌805首第302首我对撒但总是说不，逐像素固定原始JPG网址和SHA-256；该页并列两个不同曲调，当前领唱录音明确采用下半页F大调第二调，不能套用上半页第一调或同词的旧第377首MIDI。逐行目视核对第二调四行全部单旋律音头及拍数，每行16拍、完整一段64拍。首个我对为两个半拍5，所有不同音圆滑线保留各音头，不合并重新起音；未演奏的第一调不参与分析参考。人工独立拍数表重建完整64拍旋律MIDI，按三段正文重复三次；光学识别仅使用已固定的第二调四个谱行，全部183个实际演奏起音与MIDI零编辑对应，三个阅读起句至少五音均唯一。每段分别用实际原始录音进行局部MIDI及光学匹配，同时核对整曲MIDI及光学四路径；不附加前一区域上下文，不依赖泛用音乐循环检索的失败估计。成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、顺序及首尾检查全部保持。取样时长和前奏只限定搜索范围，全部时间点从实际音频测得，不按字数、拍数或总时长平均推算；原始歌词、空行、图片、音频及已发布数据不改动。"
+  },
+  "02-206": {
+    "version": 1,
+    "sourceHash": "6fd10b0391c7fa35a11714b951d037e0412bffc367221a7cefeae1259d15a940",
+    "tracks": [
+      {
+        "file": "02-206求主施恩.mp3",
+        "sha256": "a757985a0067f5ee99708b9d3cef72b69d2e6ff376dc589daa8a21bc8f065a90"
+      }
+    ],
+    "audioFile": "02-206求主施恩.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "慈爱救主听我恳求，莫将我",
+      "让我来到施恩座前，接受你",
+      "我惟靠主赎罪功劳，才能到",
+      "你是我平安的泉源，比生命"
+    ],
+    "sampling": {
+      "durationEstimate": 160,
+      "onsetEstimate": 10
+    },
+    "midiReference": {
+      "origin": {
+        "file": "midi/timeless-Pass_Me_Not_O_Gentle_Savior.mid",
+        "sha256": "21f8da6456b39bc1bce363c757851a3e5f08452a1d6a88068cfff5b34404face",
+        "url": "https://library.timelesstruths.org/library/music/P/Pass_Me_Not_O_Gentle_Savior/Pass_Me_Not_O_Gentle_Savior.mid"
+      },
+      "file": "reference/external/pass-me-not-four-verses-modulated.mid",
+      "sha256": "77aa1c17e003811b7d579d3810377f2ddb2253613d7df3414da9f65d01365b5f",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "SOPRANO ALTO",
+        "quarterLength": 65,
+        "sections": [
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ]
+        ],
+        "transposeSections": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "transpositionReview": {
+          "version": 1,
+          "reason": "实际录音前三段维持同调，第四段独立MIDI与光学匹配的调性均提高两个半音；只在完整末段移调，不改动节奏、音符或阅读边界。"
+        }
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          10,
+          8,
+          7,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 49,
+        "pitches": [
+          0,
+          10,
+          8,
+          7,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 98,
+        "pitches": [
+          0,
+          10,
+          8,
+          7,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 147,
+        "pitches": [
+          2,
+          0,
+          10,
+          9,
+          10
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/pass-me-not-sicheng.png",
+        "sha256": "c391224b0f9e55c267130d13b0d8e4d5f13cf889ea2ac5db75569cefa5308e51",
+        "pdfSource": {
+          "file": "reference/external/sicheng-new-hymns.pdf",
+          "sha256": "82adf0f463d0b146a92912ef5f15a1ec65e04862b58ff28a03adb468c06ec369",
+          "url": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf"
+        },
+        "renderPdf": {
+          "version": 1,
+          "page": 888,
+          "scale": 3,
+          "pypdfium2Version": "5.14.0",
+          "pdfiumVersion": "156.0.8076.0"
+        }
+      },
+      "pageUrl": "https://www.sichengtang.com/uploads/files/20240831/64f3cce046c6659d262ec86de2f6b58f.pdf",
+      "recognitionFile": "modern-sectional-scores/ocr/pass-me-not-sicheng.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              391,
+              457
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                500,
+                590
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              667,
+              733
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                778,
+                868
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              942,
+              1008
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1055,
+                1145
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1218,
+              1284
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1330,
+                1425
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "feec48e7ec7766bd6c6d0c21b32a232a2ffb6c805cda549b3f17fe19a06dc162",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            0,
+            14
+          ],
+          [
+            1,
+            0,
+            14
+          ],
+          [
+            2,
+            0,
+            11
+          ],
+          [
+            3,
+            0,
+            14
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "transposeParts": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "transpositionReview": {
+        "version": 1,
+        "reason": "录音第四完整段相对前三段提高两个半音；逐段MIDI及光学独立证据一致。"
+      },
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "formReview": "原文四段各含主歌及救主救主副歌，每段各为一个完整阅读区域。独立原谱为思澄堂公开赞美诗新编第227首求莫弃我歌，同曲Pass Me Not O Gentle Savior的另一译文；固定原PDF索引888页、三倍倍率、渲染器版本和原图SHA-256。逐行目视核对四行完整单旋律，保留休止符及所有不同音圆滑线上的音头，不手工替换光学数字。公开原始MIDI每段64拍，完整第0至64拍重复四次，49个旋律起音及整曲196个实际演奏起音与光学原谱全部零编辑对应，四个阅读起句至少五音均唯一。该实际伴奏前三段维持同调，第四完整段提高两个半音：先对原始未转调参考分别做逐段MIDI及光学独立检索，两路径的末段最佳调性均比前三段高两个半音；再将同一原MIDI末段所有声部及同一光学乐段显式移调两个半音，节奏、音头和各段边界保持原样。整曲重建后四个当前完整歌段分别通过局部MIDI及光学匹配，并核对整曲MIDI及光学四路径，不附加前一区域上下文。成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、首尾及正文顺序检查全部保持；不能将未转调的前三段时间轴平均外推到第四段。前奏和取样时长仅限定检索范围，全部时间点从实际录音测得，不按字数、拍数或总时长推算；原始歌词、空行、图片、音频及已发布数据不改动。"
   }
 }

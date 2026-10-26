@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-468",
+  "status": "reviewed",
+  "source": {
+    "file": "02-468当尽本分.txt",
+    "sha256": "71a25e04cf8d7e2d6e70260353b371f2f84cf0fbe3242a82ecec6bfadfd64564",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-468当尽本分.mp3",
+      "sha256": "da12f13f58f116cc95a93d113c912267a9b65c7ffc8a7936b6255ab210d3427e",
+      "duration": 83.56571428571428,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 5.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.95,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 44.15,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.5,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我有本分当尽，我有上主当尊， 我有宝贵灵魂当救，引领他进天庭。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我愿听候主命，服事现今世代， 竭尽一切能力才智，殷勤成就主工。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "求主使我谨慎，活在主面光中， 使你仆人常做准备，面陈所做事工。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "助我警醒祷告，凡事靠主引导， 持守真道不违托付，忠心至见主面。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-468当尽本分.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -20700,5 +20700,673 @@
       ]
     },
     "formReview": "当前英文原文为Audrey Assad版Holy Holy Holy，按原文顺序演唱Early in the morning、Though the darkness、All thy works三节，末尾再唱God in three persons blessed Trinity。原文每行后有空行，解析为18个原文阅读区域，前三节分别包含6、5、7个区域；第二节Only thou art holy there is none beside thee合为一个原文区域，第三节第七区域是原文已写明的末句重复，不改歌词、空行或专辑说明。固定hymnal.net英文诗歌6的完整原始SVG、公开来源页、SHA-256及固定Playwright/Chromium版本，以3倍像素密度独立渲染为2382乘3369像素PNG。目视独立核对降E大调4/4全谱64拍，四行各16拍；所有重复音头独立发声，无同音连音合并。原谱第一节译作Unto everlasting days，与当前演唱Early in the morning旋律一致。光学音头仅排除首行误识别拍号4，全部148个演奏音头与独立人工MIDI零编辑匹配，十八个起句前五音在完整序列中唯一对应。两节之间各有一小节4/4声乐休止，分别只能位于第6和第11个完整原文段落之后，在MIDI与光学查询中同时加入4拍静音上下文，仍计既有固定成本，不跳过录音帧、不配置音频秒数。首尾完整性按已证明的整份原谱检查：第一个6区域诗节必须覆盖全部46个原印刷发声音头及独立时值；第二个5区域诗节在光学与MIDI模板均须完整一致；最后7区域诗节须为同一完整旋律加一次相同原有末区域，不允许部分旋律、漏音、变音、重排或额外尾句。该完整诗节分组只用于录音首尾是否遗漏整节的检查，所有18个换句位置仍逐一经过完整MIDI、完整光学、局部MIDI、局部光学四路径；局部最多保留一个完整前一区域。成本0.35、调性区分0.06、跨度75%至125%、四路径互差0.5秒及严格顺序保持，所有秒数均从完整原始录音取得。无过门描述的旧试算在第二节起点有争议，未发布。全部原始歌词、图片、音频及之前数据保持不变。"
+  },
+  "06-007": {
+    "version": 1,
+    "language": "en",
+    "sourceHash": "751ccf77f84cf403de6b6c90d931c20774cd3883d20059e72433faf7a02f6dcf",
+    "tracks": [
+      {
+        "file": "06-007耶稣深爱.mp3",
+        "sha256": "0a1cc337fda36bd2b130b45efafc1c7902db2e7902ac029c1b2d36f232cb78a6"
+      }
+    ],
+    "audioFile": "06-007耶稣深爱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16"
+    ],
+    "regionOpenings": [
+      "Oh the deep ",
+      "Vast unmeasu",
+      "Rolling as a",
+      "In its fulln",
+      "Underneath m",
+      "Is the curre",
+      "Leading onwa",
+      "To your glor",
+      "Oh the deep ",
+      "Tis heaven o",
+      "And it lifts",
+      "For it lifts",
+      "Oh the deep ",
+      "Spread his p",
+      "How he loves",
+      "Changes neve"
+    ],
+    "sampling": {
+      "durationEstimate": 149,
+      "onsetEstimate": 0
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "vocalInterludes": {
+      "version": 1,
+      "afterVerses": [
+        {
+          "verse": 4,
+          "quarterBeats": 3
+        },
+        {
+          "verse": 12,
+          "quarterBeats": 3
+        }
+      ],
+      "reason": "BUNESSAN为3/4，第一及第三次完整旋律之间各有一小节声乐停顿，位于原文第4和第12段之后；仅补全休止查询上下文。"
+    },
+    "musicalVerseEdges": {
+      "version": 1,
+      "paragraphsPerVerse": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "reason": "四个连续原文段落各覆盖一次完整BUNESSAN原谱72拍，全曲四次完整旋律。"
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/bunessan-hymnal694-reviewed-print.mid",
+        "sha256": "17557cdc5e7847af02bce3a91e9b53b72812b1d8eab69d5ae84d683901b0f1e1",
+        "printedRhythmReference": {
+          "sourceSha256": "3aaa35b82a01cbb9103a392be033df36ece8cbe396f08a537194ff610e43f258",
+          "tonicMidi": 60,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1.5
+              ],
+              [
+                7,
+                0.5
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/bunessan-hymnal694-complete.mid",
+      "sha256": "48affa7f8bab7d932e6acd9bc902f531ca0ea5d6fdd42b8589715807cbdd0800",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 72,
+        "sections": [
+          [
+            0,
+            72
+          ],
+          [
+            0,
+            72
+          ],
+          [
+            0,
+            72
+          ],
+          [
+            0,
+            72
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          4,
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 12,
+        "pitches": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 21,
+        "pitches": [
+          7,
+          4,
+          7,
+          0,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 31,
+        "pitches": [
+          4,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 40,
+        "pitches": [
+          0,
+          4,
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 52,
+        "pitches": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 61,
+        "pitches": [
+          7,
+          4,
+          7,
+          0,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 71,
+        "pitches": [
+          4,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 80,
+        "pitches": [
+          0,
+          4,
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 92,
+        "pitches": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 101,
+        "pitches": [
+          7,
+          4,
+          7,
+          0,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 111,
+        "pitches": [
+          4,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 120,
+        "pitches": [
+          0,
+          4,
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 132,
+        "pitches": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 141,
+        "pitches": [
+          7,
+          4,
+          7,
+          0,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 151,
+        "pitches": [
+          4,
+          2,
+          4,
+          7,
+          9
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/bunessan-hymnal694.png",
+        "sha256": "3aaa35b82a01cbb9103a392be033df36ece8cbe396f08a537194ff610e43f258",
+        "svgSource": {
+          "file": "reference/external/bunessan-hymnal694.svg",
+          "url": "https://www.hymnal.net/Hymns/NewSongs/svg/ns0694_n.svg",
+          "sha256": "af800b0837466b2732ff1a852cc709173605b3590913cab612ae1294fb69e8c6",
+          "referer": "https://www.hymnal.net/en/hymn/ns/694"
+        },
+        "renderSvg": {
+          "version": 1,
+          "scale": 3,
+          "playwrightVersion": "1.64.1",
+          "chromiumVersion": "156.0.8078.4"
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/en/hymn/ns/694",
+      "recognitionFile": "modern-sectional-scores/ocr/bunessan-hymnal694.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              450,
+              500
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                525,
+                568
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              759,
+              809
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                810,
+                852
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1022,
+              1072
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1088,
+                1131
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1320,
+              1370
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1387,
+                1435
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "e2d4a983b0846c39ca8faa8148c8d6379fd540eea2c6577c82e2825913d472ec",
+      "ties": {
+        "1": [
+          9
+        ],
+        "3": [
+          9
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            1,
+            14
+          ]
+        ],
+        "B": [
+          [
+            1,
+            0,
+            10
+          ]
+        ],
+        "C": [
+          [
+            2,
+            0,
+            10
+          ]
+        ],
+        "D": [
+          [
+            3,
+            0,
+            11
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A",
+        "B",
+        "C",
+        "D",
+        "A",
+        "B",
+        "C",
+        "D",
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ]
+    },
+    "formReview": "当前原文为Audrey Assad与Fernando Ortega的Oh the Deep Deep Love of Jesus，使用BUNESSAN旋律，与常见Ebenezer谱本不同。原文每行后有空行，形成十六个原文阅读区域；按Oh the deep、Underneath、Oh the deep tis heaven、Oh the deep spread his praise四组，每四个连续区域唱一次完整旋律，保持原词、顺序、空行及末尾专辑说明不变。采用hymnal.net新诗歌694 Eternal Blessing的同一BUNESSAN旋律原谱，固定完整SVG网址、公开来源页、Referer及SHA-256，以固定Playwright和Chromium版本渲染为2382乘3369像素PNG。独立目视核对C调3/4、24小节共72拍，四个印刷谱行各18拍，分别对应四个原文区域；存在多音连唱，不能按英文词数或音节平均分时。第二行末同音2连音及第四行末同音1连音合并时值，不合并不同音圆滑线。识别带覆盖完整音头并与歌词分离，只排除首行误读的拍号3；全部160个实际演奏音头与独立人工MIDI全局零编辑匹配，十六个起句前五音在完整序列中唯一精确对应。第一和第三次完整旋律之后各有一小节3/4声乐停顿，分别绑定原文第4和第12段之后，在两种查询模板同时加入3拍休止，仅作上下文，保留固定休止成本，不跳过原始录音帧、不配置音频秒数。无段间休止的旧试算在第5处起点存在争议，未发布。完整诗节首尾检查要求首四区域覆盖独立原谱全部40个发声音头及其时值，后续三组在光学与MIDI中均完整重现同一旋律；不能用局部旋律冒充完整诗节。分组仅用于首尾是否漏节的检查，每个原文区域仍逐一通过完整MIDI、完整光学、局部MIDI及局部光学四路径，局部最多包含一个完整前一区域。成本0.35、调性区分0.06、跨度75%至125%、任意四路径互差0.5秒及严格顺序保持；所有时间来自当前完整原始录音。原始歌词、图片、音频及之前数据保持不变。"
   }
 }

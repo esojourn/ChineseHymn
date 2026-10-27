@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "02-412",
+  "status": "reviewed",
+  "source": {
+    "file": "02-412罪皆脱落.txt",
+    "sha256": "5427ffb4a94d45fd5357e800cc200188473f685d456d81cb8939d7ccf0aaa400",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-412罪皆脱落.mp3",
+      "sha256": "a555d77627f4f3c3257ea0d6b63884f37e5c1059298aca2155249d19ee31f369",
+      "duration": 45.16571428571429,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 2
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 4
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 8
+    }
+  },
+  "cues": [
+    {
+      "at": 4.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 14.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 24.0,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 33.6,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "皆脱落，皆脱落，皆脱落，在我心一切重担皆脱落；",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "皆脱落，皆脱落，皆脱落，在我心一切重担皆脱落；",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我众罪得洗脱，借救主宝血。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "皆脱落，皆脱落，皆脱落，在我心一切重担皆脱落。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-412罪皆脱落.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "04-489",
+  "status": "reviewed",
+  "source": {
+    "file": "04-489神差爱子.txt",
+    "sha256": "b91043afe96ebcd9f6bd01a714c001bf3235b61e96253414aad588a375020c21",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-489神差爱子.mp3",
+      "sha256": "9e58de56d83594382c63074954ec54ae725a6c22c184dba752b6dbd8a2ad7bc1",
+      "duration": 224.736,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 9.67,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 41.5,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.35,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.38,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 137.28,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 169.1,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-489神差爱子-领唱.mp3",
+      "sha256": "beff24bf5ef7a6c548178ea09a93731169d662a08cbc513be3564b5ed97f9831",
+      "duration": 197.7730612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 14.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 76.0,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.1,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 137.25,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 166.07,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "神差爱子，人称他耶稣， 他赐下爱，医治宽恕。 死里复活，使我得自由， 那空坟墓就是我得救的记号。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "因他活着，我能面对明天， 因他活着，不再惧怕， 我深知道，他掌管明天， 生命充满了希望只因他活着。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "在主里面，重生的生命， 耶稣的爱助我喜乐。 深切相信，依靠主帮助， 我用信心依靠他要为他活着。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "因他活着，我能面对明天， 因他活着，不再惧怕， 我深知道，他掌管明天， 生命充满了希望只因他活着。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "未来的事，我不知如何， 直到一天，我见主面。 为主打仗，属灵的战争， 胜利的路虽艰难主保守前路。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "因他活着，我能面对明天， 因他活着，不再惧怕， 我深知道，他掌管明天， 生命充满了希望只因他活着。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-489神差爱子.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

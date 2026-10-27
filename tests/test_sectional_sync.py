@@ -513,6 +513,99 @@ class SectionalTests(unittest.TestCase):
                    'spatialWeights': [1] * len(notes)} for notes in performed]
         return source, profile, (melody, optical, {'symbolicRows': {'semitoneShift': 0}}), definitions
 
+    def initial_context_fixture(self):
+        source, profile, material, definitions = self.musical_edge_fixture()
+        source['verses'] = [definitions[:3], definitions[3:6], definitions[6:]]
+        profile.pop('musicalVerseEdges')
+        profile['initialVerseContext'] = {'version': 1, 'reason': 'complete first printed stanza'}
+        profile['midiReference']['arrangement'] = {'quarterLength': 21, 'sections': [[0, 21]] * 3}
+        material[2]['symbolicRows']['editCost'] = 0
+        return source, profile, material, definitions
+
+    def test_initial_context_requires_the_complete_original_printed_stanza_without_mutation(self):
+        source, profile, material, _ = self.initial_context_fixture()
+        original = copy.deepcopy((source, profile, material))
+        sections, proof = self.cli.initial_verse_context(source, profile, material)
+        self.assertEqual(sections, [0, 1, 2])
+        self.assertEqual(proof['completePrintedSoundedNotes'], 21)
+        self.assertEqual((source, profile, material), original)
+        self.assertIsNone(self.cli.initial_verse_context(source, {}, material))
+        for key in ['notes', 'pitchOffsets', 'rhythmWeights']:
+            changed = copy.deepcopy(material)
+            changed[1][1][key][0] += 1
+            with self.assertRaises(ValueError):
+                self.cli.initial_verse_context(source, profile, changed)
+        for change in [{'version': True}, {'reason': ''}, {'at': 15}, {'readings': [0, 1]}]:
+            bad = copy.deepcopy(profile)
+            bad['initialVerseContext'].update(change)
+            with self.assertRaises(ValueError):
+                self.cli.initial_verse_context(source, bad, material)
+        for key in ['sourceVerseContext', 'readingSectionReview', 'musicalVerseEdges', 'vocalInterludes']:
+            with self.assertRaises(ValueError):
+                self.cli.initial_verse_context(source, {**profile, key: {}}, material)
+        for update in [{'quarterLength': 22}, {'sections': [[1, 21]]}, {'sections': []}]:
+            bad = copy.deepcopy(profile)
+            bad['midiReference']['arrangement'].update(update)
+            with self.assertRaises(ValueError):
+                self.cli.initial_verse_context(source, bad, material)
+        bad = copy.deepcopy(material)
+        bad[2]['symbolicRows']['editCost'] = 1
+        with self.assertRaises(ValueError):
+            self.cli.initial_verse_context(source, profile, bad)
+        with self.assertRaises(ValueError):
+            self.cli.initial_verse_context({**source, 'verses': [source['verses'][0][:2], *source['verses'][1:]]},
+                                           profile, material)
+
+    def test_initial_audio_context_uses_first_onset_and_retains_all_cost_and_time_gates(self):
+        rows = [{'notes': [1], 'pitchOffsets': [0], 'spatialWeights': [1], 'rhythmWeights': [1]}] * 6
+        target = (np.array([0., 70.]), None)
+        calls = []
+        failure = {}
+        def match(query, chroma, times, duration, onset, weight):
+            calls.append((len(query), duration, onset, weight))
+            starts = [5. + 10 * i for i in range(6)] if len(query) == 6 else [onset + 10 * i for i in range(len(query))]
+            best = {'cost': .1, 'key': 0, 'starts': starts, 'span': duration}
+            if len(query) == 3:
+                best.update(failure)
+            return {'best': best, 'runnerUp': {'cost': .4}}
+        evidence = {}
+        actual = performance_times(rows, rows, target, 60, 5, 0, match, evidence,
+                                   previous_context=True, initial_verse_sections=[0, 1, 2])
+        self.assertEqual(actual, [5, 15, 25, 35, 45, 55])
+        self.assertEqual(calls[2][:3], (3, 30, 5))
+        self.assertEqual(evidence['local'][0]['initialVerseContext']['targetRow'], 0)
+        self.assertEqual(evidence['local'][1]['previousReadingContext']['sections'], [0])
+        for update in [{'cost': .36}, {'key': 1}, {'span': 20}, {'starts': [5.6, 15, 25]}]:
+            failure.clear()
+            failure.update(update)
+            with self.assertRaises(ValueError):
+                performance_times(rows, rows, target, 60, 5, 0, match, {},
+                                  previous_context=True, initial_verse_sections=[0, 1, 2])
+        for indices in [[0, 1], [0, 2, 3], [1, 2, 3], [False, 1, 2], list(range(6))]:
+            with self.assertRaises(ValueError):
+                performance_times(rows, rows, target, 60, 5, 0, match, {}, initial_verse_sections=indices)
+
+    def test_generation_passes_initial_stanza_context_to_every_recording_and_rejects_disputed_audio(self):
+        source, profile, material, definitions = self.initial_context_fixture()
+        profile['sampling'] = {'durationEstimate': 60, 'onsetEstimate': 5}
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}]}
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'performance_times', side_effect=ValueError('disputed initial audio')) as measure, \
+                patch.object(self.cli, 'export_result') as export:
+            self.assertIn('disputed initial audio', self.cli.generate(song, profile, Path(directory))[1])
+            self.assertEqual(measure.call_args.kwargs['initial_verse_sections'], [0, 1, 2])
+            export.assert_not_called()
+            bad = copy.deepcopy(profile)
+            bad['midiReference']['arrangement']['sections'][0] = [1, 21]
+            measure.reset_mock()
+            self.cli.generate(song, bad, Path(directory))
+            measure.assert_not_called()
+            export.assert_not_called()
+
     def test_musical_edges_require_every_printed_note_and_cover_all_paragraphs_without_changing_queries(self):
         source, profile, material, _ = self.musical_edge_fixture()
         profile['vocalInterludes'] = {'version': 1, 'afterVerses': [

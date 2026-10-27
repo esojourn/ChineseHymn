@@ -255,6 +255,44 @@ def source_verse_context(source, profile):
     return source_verse_groups(at, verses)
 
 
+def initial_verse_context(source, profile, material):
+    """Verify a complete printed first stanza before using it for the initial local query."""
+    review = profile.get('initialVerseContext')
+    if review is None:
+        return None
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            any(key in profile for key in ['sourceVerseContext', 'readingSectionReview', 'musicalVerseEdges',
+                'sourceVerseMusicRange', 'referenceEndingSequence', 'vocalInterludes',
+                'instrumentalOutroReview', 'instrumentalOutroAlternatives'])):
+        raise ValueError('首句完整诗节上下文须说明原文及完整原谱，不能叠加其他结构策略')
+    melody, optical, reference = material
+    verses = source.get('verses', [])
+    if (len(verses) < 2 or any(not verse for verse in verses) or len(verses[0]) < 3 or
+            sum(map(len, verses)) != len(optical) or len(melody) != len(optical) or
+            reference.get('symbolicRows', {}).get('editCost') != 0):
+        raise ValueError('首句须绑定至少三个原文阅读区域组成的完整诗节，且所有音头零编辑匹配')
+    origin = profile.get('midiReference', {}).get('origin', {})
+    printed = origin.get('printedRhythmReference', {})
+    rows = printed.get('numberedRowsAndQuarterBeats', [])
+    accidentals = printed.get('accidentals', {}).get('offsets', [[0] * len(row) for row in rows])
+    expected = [(note, shift, beat) for row, shifts in zip(rows, accidentals, strict=True)
+                for (note, beat), shift in zip(row, shifts, strict=True)]
+    sections = list(range(len(verses[0])))
+    actual = [(note, shift, beat) for index in sections for note, shift, beat in
+              zip(optical[index]['notes'], optical[index]['pitchOffsets'], optical[index]['rhythmWeights'], strict=True)]
+    recipe = profile.get('midiReference', {}).get('arrangement', {})
+    quarters = sum(beat for row in rows for note, beat in row)
+    if (origin.get('kind') != 'printed-numbered-score' or not any(note for note, shift, beat in expected) or expected != actual or
+            any(not math.isfinite(beat) or beat <= 0 for note, shift, beat in actual) or
+            recipe.get('quarterLength') != quarters or not recipe.get('sections') or
+            recipe['sections'][0] != [0, quarters]):
+        raise ValueError('首个原文诗节须完整覆盖独立原谱的全部音高和时值，不能使用截取旋律')
+    return sections, {'readings': sections, 'completePrintedSoundedNotes': sum(bool(note) for note, shift, beat in expected),
+                      'scope': 'first local query only; all four audio gates unchanged'}
+
+
 def musical_verse_edges(source, profile, material):
     """Recognize complete printed stanzas across English paragraphs for the edge audit only."""
     review = profile.get('musicalVerseEdges')
@@ -553,7 +591,7 @@ def vocal_interlude_material(source, profile, material):
 
 
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None,
-                         edge_verses=None):
+                         edge_verses=None, initial_verse_sections=None):
     melody, optical, reference = material
     verify_local = local_matcher(profile)
     previous_context = previous_reading_context(profile)
@@ -561,7 +599,7 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
     times = performance_times(melody, optical, target, window['durationEstimate'], window['onsetEstimate'],
         reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
         reading_sections=profile.get('readingSectionReview'), previous_context=previous_context,
-        source_verses=source_verses, edge_verses=edge_verses)
+        source_verses=source_verses, edge_verses=edge_verses, initial_verse_sections=initial_verse_sections)
     variants = outro_profiles(profile)
     if variants:
         checks = detail['instrumentalOutroChecks'] = []
@@ -575,7 +613,7 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
                 window['durationEstimate'], window['onsetEstimate'], reference_variant['symbolicRows']['semitoneShift'],
                 midi.match_template, check['performance'], local_match=verify_local,
                 reading_sections=variant.get('readingSectionReview'), previous_context=previous_context,
-                source_verses=source_verses, edge_verses=edge_verses)
+                source_verses=source_verses, edge_verses=edge_verses, initial_verse_sections=initial_verse_sections)
             check['times'] = measured
             timelines.append(measured)
             stable_outro_times(timelines)
@@ -598,6 +636,10 @@ def generate(song, profile, cache, prepare=False):
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
         body_material = vocal_interlude_material(source, profile, reference_material(profile, cache, prepare))
+        initial_sections = None
+        initial_context = initial_verse_context(source, profile, body_material)
+        if initial_context is not None:
+            initial_sections, evidence['midiMatching']['initialVerseContext'] = initial_context
         musical_edges = musical_verse_edges(source, profile, body_material)
         if musical_edges is not None:
             edge_verses, evidence['midiMatching']['musicalVerseEdges'] = musical_edges
@@ -616,7 +658,8 @@ def generate(song, profile, cache, prepare=False):
             audio = batch.ROOT / 'data' / file
             music_section = verse_music_section(track_profile, verses, track_material[1])
             measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
-                                           detail, source_verses=verses, edge_verses=edge_verses)
+                                           detail, source_verses=verses, edge_verses=edge_verses,
+                                           initial_verse_sections=initial_sections)
             if verses is not None:
                 music = (repeated_verses(audio, len(verses), cache) if music_section is None else
                          repeated_verses(audio, len(verses), cache,

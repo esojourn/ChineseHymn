@@ -287,10 +287,17 @@ def verify_verse_music(times, verses, music):
 
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
                       local_match=None, reading_sections=None, previous_context=False, source_verses=None,
-                      edge_verses=None):
+                      edge_verses=None, initial_verse_sections=None):
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)
+    if initial_verse_sections is not None and (
+            reading_sections is not None or source_verses is not None or
+            not isinstance(initial_verse_sections, list) or
+            not 3 <= len(initial_verse_sections) < len(groups) or
+            any(type(index) is not int for index in initial_verse_sections) or
+            initial_verse_sections != list(range(len(initial_verse_sections)))):
+        raise ValueError('首句上下文只能使用经过完整原谱核对的第一个原文诗节')
     if edge_verses is not None:
         if (source_verses is not None or not isinstance(edge_verses, list) or len(edge_verses) < 2 or
                 any(not isinstance(verse, list) or not verse or
@@ -332,7 +339,12 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
                     for key in ['notes', 'pitchOffsets', weight]}
         local_rows = [melody_rows[index]] if reading_sections is None else [joined(melody_rows, 'spatialWeights', group)]
         printed_rows = [optical_rows[index]] if reading_sections is None else [joined(optical_rows, 'rhythmWeights', group)]
-        query_start, query_span = start, span
+        query_start, query_span, target_row = start, span, 0
+        if index == 0 and initial_verse_sections is not None:
+            count = len(initial_verse_sections)
+            local_rows = melody_rows[:count]
+            printed_rows = optical_rows[:count]
+            query_span = (a['starts'][count] + b['starts'][count]) / 2 - start
         prefix = []
         if previous_context and index:
             prefix = list(range(groups[index - 1][0], first))
@@ -345,10 +357,15 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
             query_span = end - query_start
             local_rows.insert(0, joined(melody_rows, 'spatialWeights', prefix))
             printed_rows.insert(0, joined(optical_rows, 'rhythmWeights', prefix))
+            target_row = 1
         local = verify_local(local_rows, target[1], target[0], query_span, query_start, 'spatialWeights')
         optical = verify_local(printed_rows, target[1], target[0], query_span, query_start, 'rhythmWeights')
         evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
                                   'melody': local, 'optical': optical})
+        if index == 0 and initial_verse_sections is not None:
+            evidence['local'][-1]['initialVerseContext'] = {
+                'sections': initial_verse_sections, 'queryStart': query_start,
+                'queryDuration': query_span, 'targetRow': 0}
         if prefix:
             context = {'fromReading': index - 1,
                 'sections': prefix, 'queryStart': query_start, 'queryDuration': query_span,
@@ -364,7 +381,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         check_match(local, query_span, a['key'])
         check_match(optical, query_span, b['key'])
         times.append(four_path_time([a['starts'][first], b['starts'][first],
-                                    local['best']['starts'][-1], optical['best']['starts'][-1]]))
+                                    local['best']['starts'][target_row], optical['best']['starts'][target_row]]))
         spans.append(span)
     if any(x + .5 >= y for x, y in zip(times, times[1:])):
         raise ValueError('分段时间轴未递增')

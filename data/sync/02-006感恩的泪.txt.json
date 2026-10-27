@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "songId": "02-006",
+  "status": "reviewed",
+  "source": {
+    "file": "02-006感恩的泪.txt",
+    "sha256": "f31721dabac51ad122cb54b806dfa352236f1255e241b679795a9a55e63fcf02",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-006感恩的泪.mp3",
+      "sha256": "ef74a4ef5d1b87411cacfe62406b3e110bf58514cf6899dc98c2680991558bc0",
+      "duration": 161.88,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    }
+  },
+  "cues": [
+    {
+      "at": 13.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 60.35,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "感恩的泪止不住地流 心里的话儿说也说不够 一双钉痕的手叩响久闭的门 一个柔和的声音把我们的心夺走",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "明知这路是十字架的路 有风有雨很大很难也很苦 主慈爱的手时时拉着我的手 没有任何理由不去走脚下的路",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-006感恩的泪.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

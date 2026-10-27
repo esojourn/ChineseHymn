@@ -2,8 +2,10 @@ import copy
 import hashlib
 import importlib.util
 import io
+import json
 from pathlib import Path
 import sys
+import subprocess
 import unittest
 import tempfile
 from unittest.mock import patch
@@ -150,6 +152,77 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, '重建'):
                 self.cli.reference_material(profile, cache)
             self.assertEqual(destination.read_bytes(), b'keep existing reference')
+
+    def svg_reference(self, cache):
+        source = b'<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><text>1 2 3</text></svg>'
+        (cache / 'original score.svg').write_bytes(source)
+        return {'file': 'score.png', 'sha256': hashlib.sha256(b'reviewed raster').hexdigest(),
+                'svgSource': {'file': 'original score.svg', 'url': 'https://example.test/score.svg',
+                              'sha256': hashlib.sha256(source).hexdigest()},
+                'renderSvg': {'version': 1, 'scale': 3, 'playwrightVersion': '1.64.1',
+                              'chromiumVersion': '156.0.8078.4'}}
+
+    def test_svg_rebuild_verifies_source_and_pixels_before_replacing_the_reviewed_raster(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            item = self.svg_reference(cache)
+            def render(command, **kwargs):
+                request = json.loads(kwargs['input'])
+                self.assertEqual(command[0], 'node')
+                self.assertEqual(Path(request['source']).read_bytes(), (cache / 'original score.svg').read_bytes())
+                self.assertEqual(request['scale'], 3)
+                self.assertTrue(kwargs['check'])
+                Path(request['destination']).write_bytes(b'reviewed raster')
+            with patch.object(self.cli.subprocess, 'run', side_effect=render) as renderer:
+                self.assertEqual(self.cli.pinned_file(cache, item, True), cache / 'score.png')
+                self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
+                self.assertEqual(self.cli.pinned_file(cache, item, False), cache / 'score.png')
+                self.assertEqual(renderer.call_count, 1)
+                with self.assertRaisesRegex(ValueError, '渲染图片'):
+                    self.cli.pinned_file(cache, {**item, 'sha256': 'changed pixels'}, True)
+                self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
+                (cache / 'original score.svg').write_bytes(b'changed original')
+                for prepare in [False, True]:
+                    with self.assertRaises(ValueError):
+                        self.cli.pinned_file(cache, item, prepare)
+                self.assertEqual(renderer.call_count, 2)
+                self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
+
+    def test_svg_renderer_failure_and_non_svg_source_cannot_replace_the_reviewed_raster(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            item = self.svg_reference(cache)
+            (cache / 'score.png').write_bytes(b'reviewed raster')
+            for failure in [subprocess.CalledProcessError(1, ['node']), subprocess.TimeoutExpired(['node'], 60)]:
+                with patch.object(self.cli.subprocess, 'run', side_effect=failure):
+                    with self.assertRaisesRegex(ValueError, '渲染器'):
+                        self.cli.pinned_file(cache, item, True)
+                self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
+            for source in [b'<html/>', b'<svg']:
+                (cache / 'original score.svg').write_bytes(source)
+                changed = {**item, 'svgSource': {**item['svgSource'], 'sha256': hashlib.sha256(source).hexdigest()}}
+                with patch.object(self.cli.subprocess, 'run') as renderer:
+                    with self.assertRaisesRegex(ValueError, 'SVG 谱面'):
+                        self.cli.pinned_file(cache, changed, True)
+                    renderer.assert_not_called()
+                self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
+
+    def test_svg_rebuild_rejects_unpinned_or_recursive_transforms(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            item = self.svg_reference(cache)
+            updates = [{'renderPdf': {}}, {'stackImages': {}}]
+            for change in [{'version': True}, {'version': 2}, {'scale': True}, {'scale': 1.5},
+                           {'scale': 0}, {'scale': 5}, {'crop': [0, 10]}, {'playwrightVersion': ''},
+                           {'chromiumVersion': None}]:
+                updates.append({'renderSvg': {**item['renderSvg'], **change}})
+            for change in [{'renderSvg': {}}, {'file': 'score.png'}, {'sha256': ''}]:
+                updates.append({'svgSource': {**item['svgSource'], **change}})
+            for update in updates:
+                with self.subTest(update=update), patch.object(self.cli.subprocess, 'run') as renderer:
+                    with self.assertRaisesRegex(ValueError, 'SVG 原谱'):
+                        self.cli.pinned_file(cache, {**item, **update}, True)
+                    renderer.assert_not_called()
 
     def test_stacked_pages_rebuild_original_pixels_in_order_and_verify_sources_before_cache_reuse(self):
         from PIL import Image, __version__ as pillow_version

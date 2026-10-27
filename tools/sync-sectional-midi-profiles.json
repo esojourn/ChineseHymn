@@ -18889,5 +18889,442 @@
       ]
     },
     "formReview": "当前原文四段各八行，前四行为主歌、后四行为共同副歌，八个阅读区域依次ABABABAB，原歌词及空行不改。公开独立原谱为思澄堂新编赞美诗PDF第342首献己于主歌，Frances R. Havergal词、William J. Kirkpatrick曲；原谱部分译句及分节不同，但正文主副歌旋律相同，按当前原文四段顺序使用。固定原始PDF网址和SHA-256，取零起始1389页、pypdfium2及PDFium固定版本以3倍分辨率渲染为2526乘1786像素PNG，并固定图像SHA及五行谱面与歌词边界；不改写原始谱面。目视独立核对D调4/4全谱64拍，五行时值分别16、16、10、11、11拍，跨谱行保持同一完整小节。主我命我心一切的前两组是附点八分加十六分音符，最后一组附点四分加八分，不把不同下划线简化为相同时值。无真实同音连音，所有重复音头独立保留。光学源音头与独立人工MIDI全程256音零编辑匹配，八处阅读起句前五音在完整全局序列中唯一精确对应。现有伴奏录音的八个起点分别通过整曲MIDI、整曲光学、局部MIDI及局部光学四路径，局部只保留一个完整前一区域；成本0.35、调性区分0.06、跨度75%至125%、起点互差0.5秒、严格顺序及首尾检查保持。原始录音本身包含四轮完整演奏，所有滚动秒数从实际对应测量取得，不使用字数、拍数或歌曲总长平均推算。所有原始歌词、图片、音频及之前已发布滚动数据保持不变。"
+  },
+  "01-668": {
+    "version": 1,
+    "sourceHash": "42e72d7fbbfe1a7fa5654203eef4dddf17d039eecea9a08f9dc3adfe307a1622",
+    "tracks": [
+      {
+        "file": "01-668四周墙垣坚而固.mp3",
+        "sha256": "8e5c414243eb17ac5fdf7a33a99e156047203332b44c4a96e05f97247671d9a6"
+      }
+    ],
+    "audioFile": "01-668四周墙垣坚而固.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "四周墙垣坚而固，终日将我",
+      "关闭我者都知道，甚难使我",
+      "哦神，祢爱激动我，悲叹转",
+      "这个成为我宝贝，这个使我"
+    ],
+    "sampling": {
+      "durationEstimate": 164,
+      "onsetEstimate": 13
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/walls-hymnal525-reviewed-print.mid",
+        "sha256": "83209a9bb8c6de5be2628eecab6636b4234b2dcd1d1e87e75eb77a6b248c2256",
+        "printedRhythmReference": {
+          "sourceSha256": "ac1e8d87121d127509b374419350737df4b48a521c68f695543d1c1dafba098d",
+          "tonicMidi": 63,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            [
+              [
+                3,
+                5
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/walls-hymnal525-complete.mid",
+      "sha256": "a7b9249c98774b9dd1729938d251deb8bbe745c5f0fa358351cfbd8717617377",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 73,
+        "sections": [
+          [
+            0,
+            73
+          ],
+          [
+            0,
+            73
+          ],
+          [
+            0,
+            73
+          ],
+          [
+            0,
+            73
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 48,
+        "pitches": [
+          3,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 96,
+        "pitches": [
+          3,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 144,
+        "pitches": [
+          3,
+          7,
+          7,
+          7,
+          7
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/walls-hymnal525.png",
+        "sha256": "ac1e8d87121d127509b374419350737df4b48a521c68f695543d1c1dafba098d",
+        "svgSource": {
+          "file": "reference/external/walls-hymnal525.svg",
+          "url": "https://www.hymnal.net/Hymns/Chinese/svg/c0525_cn_n.svg",
+          "sha256": "c3be1a0e203551356539a789858ceff35ffade3d273c73b1196dc8f56bb70d5f"
+        },
+        "renderSvg": {
+          "version": 1,
+          "scale": 3,
+          "playwrightVersion": "1.64.1",
+          "chromiumVersion": "156.0.8078.4"
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/en/hymn/ch/525?gb=1",
+      "recognitionFile": "modern-sectional-scores/ocr/walls-hymnal525.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              560,
+              627
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                650,
+                704
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              857,
+              911
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                913,
+                973
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1146,
+              1210
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1210,
+                1264
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "682bf0556be9b20864ce170e527cd67ef36ede7484c6c591f4a44fc32bc4d1e3",
+      "ties": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            1,
+            15
+          ],
+          [
+            1,
+            0,
+            16
+          ],
+          [
+            2,
+            0,
+            21
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "formReview": "当前原文四段各为一个完整阅读区域，分别从四周墙垣、关闭我者、哦神祢爱、这个成为开始，原文及空行保持。独立公开原谱为hymnal.net中文诗歌525四圍牆垣堅而固，对应英文725 Strong are the walls around me，E. K. Brinkworth曲。原文与公开谱面少数字形和译词不同，四段顺序及完整旋律相同。固定原始SVG网址及SHA-256，使用Playwright 1.64.1及Chromium 156.0.8078.4以3倍像素密度从原始字节独立渲染为2382乘3369像素PNG，绑定PNG哈希及三行原谱与歌词边界；原始SVG不改写、不执行脚本、不加载外部资源。中文字体通过正常浏览器字体回退保留，不使用缺字渲染版本。独立目视核对降E大调6/4拍、开头一拍弱起和十二个完整小节共73拍，三行分别19、24、30拍；第二行开头3与3、第三行开头5与5为真实同音连音，合并各自3加2拍，其余连接不同音的圆滑线保留独立音头。光学音符仅排除第一行误识别的拍号6，其余192个实际演奏音头与独立人工MIDI全局零编辑对应；四个起句前五音在完整序列匹配中唯一精确对应。现有伴奏录音的全部四个位置分别通过整曲MIDI、整曲光学、局部MIDI及局部光学四路径，局部最多使用一个完整前一区域；成本0.35、调性区分0.06、跨度75%至125%、任意四路径起点差0.5秒、严格顺序及首尾检查均保留。所有滚动秒数从实际原始录音对应取得，不按字数、拍数或总时长平均推算；全部原始歌词、图片、音频和之前滚动数据保持不变。"
   }
 }

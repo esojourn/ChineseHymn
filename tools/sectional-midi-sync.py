@@ -8,6 +8,8 @@ import json
 import io
 import math
 from pathlib import Path
+import subprocess
+import tempfile
 import time
 import urllib.request
 from sync_batch_align import export_result
@@ -34,7 +36,41 @@ def pinned_file(cache, item, prepare):
     path = cache / item['file']
     render = item.get('renderPdf')
     stack = item.get('stackImages')
-    if stack is not None:
+    svg = item.get('renderSvg')
+    if svg is not None:
+        source_review = item.get('svgSource')
+        if (render is not None or stack is not None or not isinstance(svg, dict) or
+                set(svg) != {'version', 'scale', 'playwrightVersion', 'chromiumVersion'} or
+                type(svg.get('version')) is not int or svg['version'] != 1 or
+                type(svg.get('scale')) is not int or not 1 <= svg['scale'] <= 4 or
+                any(not isinstance(svg.get(key), str) or not svg[key].strip()
+                    for key in ['playwrightVersion', 'chromiumVersion']) or
+                not isinstance(source_review, dict) or set(source_review) != {'file', 'url', 'sha256'} or
+                any(not isinstance(source_review[key], str) or not source_review[key] for key in source_review) or
+                source_review['file'] == item['file']):
+            raise ValueError('SVG 原谱须固定原文、倍率及浏览器版本，不能叠加其他变换')
+        source = pinned_file(cache, source_review, prepare)
+        from xml.etree import ElementTree
+        try:
+            if ElementTree.fromstring(source.read_bytes()).tag != '{http://www.w3.org/2000/svg}svg':
+                raise ValueError('原始文件不是 SVG 谱面')
+        except ElementTree.ParseError as error:
+            raise ValueError('原始文件不是有效 SVG 谱面') from error
+        if prepare:
+            with tempfile.TemporaryDirectory() as directory:
+                destination = Path(directory) / 'reference.png'
+                request = {**svg, 'source': str(source.resolve()), 'destination': str(destination)}
+                try:
+                    subprocess.run(['node', str(Path(__file__).with_name('render-sync-svg.cjs'))],
+                                   input=json.dumps(request), text=True, check=True, capture_output=True, timeout=60)
+                except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as error:
+                    raise ValueError('SVG 原谱渲染器或固定版本检查失败') from error
+                data = destination.read_bytes()
+            if hashlib.sha256(data).hexdigest() != item['sha256']:
+                raise ValueError('SVG 原谱渲染图片与复核哈希不一致')
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+    elif stack is not None:
         from PIL import Image, __version__ as pillow_version
         if (render is not None or not isinstance(stack, dict) or
                 set(stack) != {'version', 'pillowVersion', 'sources'} or

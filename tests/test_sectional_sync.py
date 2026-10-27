@@ -429,6 +429,112 @@ class SectionalTests(unittest.TestCase):
                   'readingStarts': [[0, 1], [1, 1], [2, 1]]}
         return [row], review
 
+    def musical_edge_fixture(self):
+        parts = [[1, 2, 3, 4, 5, 6, 7], [7, 6, 5, 4, 3, 2, 1], [1, 3, 5, 1, 3, 5, 1]]
+        definitions = [{'region': 'r' + str(index)} for index in range(10)]
+        source = {'language': 'en', 'verses': [[item] for item in definitions]}
+        review = {'version': 1, 'paragraphsPerVerse': [3, 3, 4], 'lastVerseRepeatsFinalReading': True,
+                  'reason': 'Three complete musical stanzas, printed as separate original paragraphs.'}
+        profile = {'language': 'en', 'musicalVerseEdges': review, 'midiReference': {'origin': {
+            'kind': 'printed-numbered-score', 'printedRhythmReference': {
+                'numberedRowsAndQuarterBeats': [[(note, 1) for note in part] for part in parts]}}}}
+        performed = parts * 3 + [parts[-1]]
+        optical = [{'notes': notes[:], 'pitchOffsets': [0] * len(notes), 'rhythmWeights': [1] * len(notes)}
+                   for notes in performed]
+        scale = [0, 2, 4, 5, 7, 9, 11]
+        melody = [{'notes': [1] * len(notes), 'pitchOffsets': [scale[note - 1] for note in notes],
+                   'spatialWeights': [1] * len(notes)} for notes in performed]
+        return source, profile, (melody, optical, {'symbolicRows': {'semitoneShift': 0}}), definitions
+
+    def test_musical_edges_require_every_printed_note_and_cover_all_paragraphs_without_changing_queries(self):
+        source, profile, material, _ = self.musical_edge_fixture()
+        profile['vocalInterludes'] = {'version': 1, 'afterVerses': [
+            {'verse': 3, 'quarterBeats': 4}, {'verse': 6, 'quarterBeats': 4}], 'reason': 'between complete stanzas'}
+        # Interlude silence contributes to the real query but cannot replace a printed melody note.
+        for template, weight in [(material[0], 'spatialWeights'), (material[1], 'rhythmWeights')]:
+            for index in [2, 5]:
+                template[index]['notes'].append(0)
+                template[index]['pitchOffsets'].append(0)
+                template[index][weight].append(4)
+        original = copy.deepcopy((source, profile, material))
+        groups, proof = self.cli.musical_verse_edges(source, profile, material)
+        self.assertEqual(groups, [[0, 1, 2], [3, 4, 5], [6, 7, 8, 9]])
+        self.assertEqual(proof['completePrintedSoundedNotes'], 21)
+        self.assertTrue(proof['lastVerseRepeatsFinalReading'])
+        self.assertEqual((source, profile, material), original)
+        self.assertIsNone(self.cli.musical_verse_edges(source, {}, material))
+
+    def test_musical_edges_reject_partial_printed_tunes_changed_notes_rhythm_or_extra_final_repeats(self):
+        source, profile, material, _ = self.musical_edge_fixture()
+        for index, key in [(0, 'notes'), (0, 'pitchOffsets'), (0, 'spatialWeights'),
+                           (1, 'notes'), (1, 'pitchOffsets'), (1, 'rhythmWeights')]:
+            for row in [0, 4, 9]:
+                bad = copy.deepcopy(material)
+                bad[index][row][key][0] += 1
+                with self.assertRaises(ValueError):
+                    self.cli.musical_verse_edges(source, profile, bad)
+        bad = copy.deepcopy(profile)
+        bad['midiReference']['origin']['printedRhythmReference']['numberedRowsAndQuarterBeats'].pop()
+        with self.assertRaisesRegex(ValueError, '全部音高与时值'):
+            self.cli.musical_verse_edges(source, bad, material)
+        empty = copy.deepcopy(material)
+        for row in empty[0]:
+            for key in row:
+                row[key] = []
+        with self.assertRaisesRegex(ValueError, '发声旋律'):
+            self.cli.musical_verse_edges(source, profile, empty)
+        changed = copy.deepcopy(profile)
+        changed['musicalVerseEdges'].pop('lastVerseRepeatsFinalReading')
+        with self.assertRaises(ValueError):
+            self.cli.musical_verse_edges(source, changed, material)
+        short_source = {**source, 'verses': source['verses'][:-1]}
+        short_profile = copy.deepcopy(changed)
+        short_profile['musicalVerseEdges']['paragraphsPerVerse'] = [3, 3, 3]
+        self.assertEqual(self.cli.musical_verse_edges(short_source, short_profile,
+            (material[0][:-1], material[1][:-1], {}))[0], [[0, 1, 2], [3, 4, 5], [6, 7, 8]])
+
+    def test_musical_edges_reject_manual_times_missing_paragraphs_and_conflicting_contexts(self):
+        source, profile, material, _ = self.musical_edge_fixture()
+        for change in [{'version': True}, {'paragraphsPerVerse': [3, 3, 3]},
+                       {'paragraphsPerVerse': [True, 3, 6]}, {'paragraphsPerVerse': [2, 4, 4]},
+                       {'paragraphsPerVerse': [3.0, 3, 4]}, {'lastVerseRepeatsFinalReading': False},
+                       {'at': 10}, {'groups': [[0, 2]]}, {'reason': ''}]:
+            with self.assertRaises(ValueError):
+                self.cli.musical_verse_edges(source,
+                    {**profile, 'musicalVerseEdges': {**profile['musicalVerseEdges'], **change}}, material)
+        for key in ['sourceVerseEdgeReview', 'sourceVerseContext', 'readingSectionReview',
+                    'sourceVerseMusicRange', 'referenceEndingSequence', 'instrumentalOutroReview', 'instrumentalOutroAlternatives']:
+            with self.assertRaises(ValueError):
+                self.cli.musical_verse_edges(source, {**profile, key: {}}, material)
+        for change in [{'language': 'zh'}, {'verses': source['verses'][1:]},
+                       {'verses': [source['verses'][0] * 2] + source['verses'][1:]}]:
+            with self.assertRaises(ValueError):
+                self.cli.musical_verse_edges({**source, **change}, profile, material)
+        with self.assertRaisesRegex(ValueError, '完整音乐诗节边界'):
+            self.cli.musical_verse_edges(source, {**profile, 'vocalInterludes': {
+                'afterVerses': [{'verse': 2, 'quarterBeats': 4}]}}, material)
+
+    def test_generation_applies_verified_musical_edges_to_audio_checks_and_never_exports_disputed_audio(self):
+        source, profile, material, definitions = self.musical_edge_fixture()
+        profile['sampling'] = {'durationEstimate': 30, 'onsetEstimate': 1}
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}]}
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                patch.object(self.cli, 'reference_material', return_value=material), \
+                patch.object(self.cli, 'features', return_value=None), \
+                patch.object(self.cli, 'performance_times', side_effect=ValueError('disputed audio path')) as measure, \
+                patch.object(self.cli, 'export_result') as export:
+            self.assertIn('disputed audio path', self.cli.generate(song, profile, Path(directory))[1])
+            self.assertEqual(measure.call_args.kwargs['edge_verses'], [[0, 1, 2], [3, 4, 5], [6, 7, 8, 9]])
+            export.assert_not_called()
+            bad = copy.deepcopy(profile)
+            bad['musicalVerseEdges']['paragraphsPerVerse'] = [3, 3, 3]
+            measure.reset_mock()
+            self.cli.generate(song, bad, Path(directory))
+            measure.assert_not_called()
+            export.assert_not_called()
+
     def test_optical_form_preserves_rests_ties_and_tuplets_without_mutating_raw_recognition(self):
         rows, review = self.notation()
         original = copy.deepcopy(rows)

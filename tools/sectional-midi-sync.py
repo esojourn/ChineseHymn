@@ -255,6 +255,76 @@ def source_verse_context(source, profile):
     return source_verse_groups(at, verses)
 
 
+def musical_verse_edges(source, profile, material):
+    """Recognize complete printed stanzas across English paragraphs for the edge audit only."""
+    review = profile.get('musicalVerseEdges')
+    if review is None:
+        return None
+    allowed = {'version', 'paragraphsPerVerse', 'reason'}
+    if (not isinstance(review, dict) or set(review) not in [allowed, allowed | {'lastVerseRepeatsFinalReading'}] or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            ('lastVerseRepeatsFinalReading' in review and review['lastVerseRepeatsFinalReading'] is not True) or
+            profile.get('language') != 'en' or source.get('language') != 'en' or
+            any(key in profile for key in ['sourceVerseEdgeReview', 'sourceVerseContext', 'readingSectionReview',
+                'sourceVerseMusicRange', 'referenceEndingSequence', 'instrumentalOutroReview', 'instrumentalOutroAlternatives']) or
+            any(item.get('endingReadingRepeat') for item in profile.get('independentRecordings', []))):
+        raise ValueError('英文完整诗节首尾检查须明确原文分组及完整原谱，不能叠加其他分组或结尾策略')
+    counts = review.get('paragraphsPerVerse')
+    verses = source.get('verses', [])
+    melody, optical, _ = material
+    if (not isinstance(counts, list) or len(counts) < 2 or
+            any(type(count) is not int or count < 3 for count in counts) or
+            not verses or any(not isinstance(verse, list) or len(verse) != 1 for verse in verses) or
+            sum(counts) != len(verses) or len(melody) != len(verses) or len(optical) != len(verses)):
+        raise ValueError('英文诗节须连续覆盖全部原文单行段落及阅读区域')
+    groups, at = [], 0
+    for count in counts:
+        groups.append(list(range(at, at + count)))
+        at += count
+    boundaries = {group[-1] + 1 for group in groups[:-1]}
+    if any(item['verse'] not in boundaries
+           for item in (profile.get('vocalInterludes') or {}).get('afterVerses', [])):
+        raise ValueError('声乐休止只能位于已经核对的完整音乐诗节边界')
+
+    def sounded(rows, weight):
+        result = []
+        for row in rows:
+            for note, pitch, span in zip(row['notes'], row['pitchOffsets'], row[weight], strict=True):
+                if not all(math.isfinite(value) for value in [note, pitch, span]) or span <= 0:
+                    raise ValueError('完整诗节参考含无效音符或时值')
+                if note:
+                    result.append((note, pitch, span))
+        return result
+
+    origin = profile.get('midiReference', {}).get('origin', {})
+    printed = origin.get('printedRhythmReference', {})
+    rows = printed.get('numberedRowsAndQuarterBeats')
+    if origin.get('kind') != 'printed-numbered-score' or not isinstance(rows, list) or not rows:
+        raise ValueError('完整诗节必须绑定全部独立核对的印刷旋律')
+    accidentals = printed.get('accidentals', {}).get('offsets', [[0] * len(row) for row in rows])
+    expected = [(note, offset, span) for row, shifts in zip(rows, accidentals, strict=True)
+                for (note, span), offset in zip(row, shifts, strict=True) if note]
+    first = sounded([optical[index] for index in groups[0]], 'rhythmWeights')
+    if not expected or first != expected:
+        raise ValueError('首个诗节未完整覆盖独立原谱的全部音高与时值')
+    repeat = review.get('lastVerseRepeatsFinalReading', False)
+    for template, weight in [(melody, 'spatialWeights'), (optical, 'rhythmWeights')]:
+        base = sounded([template[index] for index in groups[0]], weight)
+        ending = sounded([template[groups[0][-1]]], weight)
+        if not base or not ending:
+            raise ValueError('完整诗节及原有末阅读区域不能缺少发声旋律')
+        for index, group in enumerate(groups[1:], 1):
+            extra = repeat and index == len(groups) - 1
+            body = group[:-1] if extra else group
+            if (sounded([template[position] for position in body], weight) != base or
+                    extra and sounded([template[group[-1]]], weight) != ending):
+                raise ValueError('每个诗节须保持完整原谱旋律，仅末节可再唱一次原有末阅读区域')
+    return groups, {'paragraphsPerVerse': counts, 'verseReadings': groups,
+                    'completePrintedSoundedNotes': len(expected), 'lastVerseRepeatsFinalReading': repeat,
+                    'scope': 'edge completeness only; every reading retains all four audio checks'}
+
+
 def verse_music_section(profile, verses, optical):
     review = profile.get('sourceVerseMusicRange')
     if review is None:
@@ -528,6 +598,9 @@ def generate(song, profile, cache, prepare=False):
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
         body_material = vocal_interlude_material(source, profile, reference_material(profile, cache, prepare))
+        musical_edges = musical_verse_edges(source, profile, body_material)
+        if musical_edges is not None:
+            edge_verses, evidence['midiMatching']['musicalVerseEdges'] = musical_edges
         material = body_material if reference_profile is profile else reference_material(reference_profile, cache, prepare)
         melody, optical, reference = material
         verse_music_section(reference_profile, verses, optical)

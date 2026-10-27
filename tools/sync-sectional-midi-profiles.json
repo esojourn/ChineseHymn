@@ -19975,5 +19975,730 @@
       ]
     },
     "formReview": "当前英文原文是Audrey Assad版It Is Well with My Soul，三节依次When peace、Though Satan、My sin；原文三个段落分别含2、2、3个阅读区域，共七处，不改原歌词、空行或末尾专辑说明。第三节末尾原文另含一次完整副歌；第六区域包含第三节副歌及下一次It is well，第七区域从With my soul开始继续最后的重复。原谱为hymnal.net英文诗歌341 It is well，Philip P. Bliss曲，固定完整原始SVG网址、公开来源页及SHA-256，通过固定Playwright和Chromium版本以3倍像素密度渲染为2382乘3369像素PNG；原文SVG不修改，不执行脚本、不请求外部资源。独立目视核对C调4/4及开头一拍弱起，四行拍数分别29、24、20、16，全谱89拍；第一行第十九音为印刷升4，副歌同音5与5及末同音1与1连线合并时值，不合并不同音圆滑线。光学源音头只排除第一行误识别的拍号4，其余180个实际演奏音头与独立人工MIDI全局零编辑匹配，七个阅读起句前五音在完整序列中唯一精确对应；最后的印刷休止未被OCR识别为音头，不手工补写。正文旋律55拍、副歌34拍，按三节正文及末尾附加一次完整副歌重组，所有七个分界由原文真实行号、原谱音符与实际录音共同绑定。旧的中文译谱试算在首个副歌四路径存在争议，未发布；新的独立英文原谱使当前录音七处起点全部通过完整MIDI、完整光学、局部MIDI及局部光学四路径，局部最多包含一个完整前一区域。显式language en只选择原文起句字符校验方法，仍要求当前歌词哈希、全部音轨哈希、完整阅读区域与至少四个有效起句字母；成本0.35、调性区分0.06、跨度75%至125%、任意四路径起点差0.5秒、顺序及首尾检查均不改变。未配置语言的既有曲目保留中文处理。全部时间点来自实际录音测量，不按字数、拍数或总长平均推算；原始素材与之前数据保持不变。"
+  },
+  "06-005": {
+    "version": 1,
+    "language": "en",
+    "sourceHash": "91ac9832920aebc4880d3e5d835bc31cb306cfcefc658d399bcad6ae9320e00d",
+    "tracks": [
+      {
+        "file": "06-005圣哉！圣哉！圣哉！.mp3",
+        "sha256": "489babd30f962b466e1cfafe1c2676ce9b6c6fc111a9124edba397e03e3850e2"
+      }
+    ],
+    "audioFile": "06-005圣哉！圣哉！圣哉！.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16",
+      "r17",
+      "r18"
+    ],
+    "regionOpenings": [
+      "Holy holy ho",
+      "Lord god alm",
+      "Early in the",
+      "Holy holy ho",
+      "Merciful and",
+      "God in three",
+      "Holy holy ho",
+      "Though the d",
+      "Though the e",
+      "Only thou ar",
+      "Perfect in p",
+      "Holy holy ho",
+      "Lord god alm",
+      "All thy work",
+      "Holy holy ho",
+      "Merciful and",
+      "God in three",
+      "God in three"
+    ],
+    "sampling": {
+      "durationEstimate": 160,
+      "onsetEstimate": 12
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "vocalInterludes": {
+      "version": 1,
+      "afterVerses": [
+        {
+          "verse": 6,
+          "quarterBeats": 4
+        },
+        {
+          "verse": 11,
+          "quarterBeats": 4
+        }
+      ],
+      "reason": "原文逐行空行分隔，第一完整诗节在第六个原文段落后结束、第二诗节在第十一个原文段落后结束，各有一小节4/4声乐休止，仅作查询上下文。"
+    },
+    "musicalVerseEdges": {
+      "version": 1,
+      "paragraphsPerVerse": [
+        6,
+        5,
+        7
+      ],
+      "lastVerseRepeatsFinalReading": true,
+      "reason": "原文每行空行分隔为18个单阅读区域段落，实际为三节完整64拍原谱，第三节末尾另重复一次God in three persons原末阅读区域。逐条以整份原谱及两种查询模板证明完整旋律一致，原区域和每个音频检查不改变。"
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/holy-hymnal6-reviewed-print.mid",
+        "sha256": "911671fa58f53131574bbea72829166c58fea3f852a579ab36e62652702c2edb",
+        "printedRhythmReference": {
+          "sourceSha256": "be741c243a466b43bf814e2a74952e172450f4c5225d027d6f7af7add18d5add",
+          "tonicMidi": 63,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                5,
+                1.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                1.5
+              ],
+              [
+                6,
+                0.5
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            [
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/holy-hymnal6-complete.mid",
+      "sha256": "f23de41b5bd4519dc331419c761bd9a96cf2a3c094210473819936f9216c0046",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 64,
+        "sections": [
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            48,
+            64
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 6,
+        "pitches": [
+          0,
+          0,
+          0,
+          10,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 11,
+        "pitches": [
+          10,
+          10,
+          10,
+          10,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 24,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 30,
+        "pitches": [
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 36,
+        "pitches": [
+          3,
+          10,
+          10,
+          0,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 46,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 52,
+        "pitches": [
+          0,
+          0,
+          0,
+          10,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 57,
+        "pitches": [
+          10,
+          10,
+          10,
+          10,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 70,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 82,
+        "pitches": [
+          3,
+          10,
+          10,
+          0,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 92,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 98,
+        "pitches": [
+          0,
+          0,
+          0,
+          10,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 103,
+        "pitches": [
+          10,
+          10,
+          10,
+          10,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 116,
+        "pitches": [
+          3,
+          3,
+          7,
+          7,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 122,
+        "pitches": [
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 128,
+        "pitches": [
+          3,
+          10,
+          10,
+          0,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 138,
+        "pitches": [
+          3,
+          10,
+          10,
+          0,
+          7
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/holy-hymnal6.png",
+        "sha256": "be741c243a466b43bf814e2a74952e172450f4c5225d027d6f7af7add18d5add",
+        "svgSource": {
+          "file": "reference/external/holy-hymnal6.svg",
+          "url": "https://www.hymnal.net/Hymns/Hymnal/svg/e0006_n.svg",
+          "sha256": "4b73bfa6c9575048895d2dbe6eb5978763e3f479efe2db31fdb1e1aa38fe1d9f",
+          "referer": "https://www.hymnal.net/en/hymn/h/6"
+        },
+        "renderSvg": {
+          "version": 1,
+          "scale": 3,
+          "playwrightVersion": "1.64.1",
+          "chromiumVersion": "156.0.8078.4"
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/6",
+      "recognitionFile": "modern-sectional-scores/ocr/holy-hymnal6.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              538,
+              586
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                594,
+                637
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              766,
+              822
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                835,
+                878
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1030,
+              1088
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1094,
+                1138
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1305,
+              1356
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1380,
+                1424
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "e1d2fed59a9875c56f1780f0cd35b4113fde2337f3d5e59b53447a417ac5660c",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            1,
+            7
+          ]
+        ],
+        "B": [
+          [
+            0,
+            7,
+            12
+          ]
+        ],
+        "C": [
+          [
+            1,
+            0,
+            13
+          ]
+        ],
+        "D": [
+          [
+            2,
+            6,
+            12
+          ]
+        ],
+        "J": [
+          [
+            2,
+            0,
+            12
+          ]
+        ],
+        "E": [
+          [
+            3,
+            0,
+            10
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "C",
+        "A",
+        "D",
+        "E",
+        "A",
+        "B",
+        "C",
+        "J",
+        "E",
+        "A",
+        "B",
+        "C",
+        "A",
+        "D",
+        "E",
+        "E"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          17,
+          0
+        ]
+      ]
+    },
+    "formReview": "当前英文原文为Audrey Assad版Holy Holy Holy，按原文顺序演唱Early in the morning、Though the darkness、All thy works三节，末尾再唱God in three persons blessed Trinity。原文每行后有空行，解析为18个原文阅读区域，前三节分别包含6、5、7个区域；第二节Only thou art holy there is none beside thee合为一个原文区域，第三节第七区域是原文已写明的末句重复，不改歌词、空行或专辑说明。固定hymnal.net英文诗歌6的完整原始SVG、公开来源页、SHA-256及固定Playwright/Chromium版本，以3倍像素密度独立渲染为2382乘3369像素PNG。目视独立核对降E大调4/4全谱64拍，四行各16拍；所有重复音头独立发声，无同音连音合并。原谱第一节译作Unto everlasting days，与当前演唱Early in the morning旋律一致。光学音头仅排除首行误识别拍号4，全部148个演奏音头与独立人工MIDI零编辑匹配，十八个起句前五音在完整序列中唯一对应。两节之间各有一小节4/4声乐休止，分别只能位于第6和第11个完整原文段落之后，在MIDI与光学查询中同时加入4拍静音上下文，仍计既有固定成本，不跳过录音帧、不配置音频秒数。首尾完整性按已证明的整份原谱检查：第一个6区域诗节必须覆盖全部46个原印刷发声音头及独立时值；第二个5区域诗节在光学与MIDI模板均须完整一致；最后7区域诗节须为同一完整旋律加一次相同原有末区域，不允许部分旋律、漏音、变音、重排或额外尾句。该完整诗节分组只用于录音首尾是否遗漏整节的检查，所有18个换句位置仍逐一经过完整MIDI、完整光学、局部MIDI、局部光学四路径；局部最多保留一个完整前一区域。成本0.35、调性区分0.06、跨度75%至125%、四路径互差0.5秒及严格顺序保持，所有秒数均从完整原始录音取得。无过门描述的旧试算在第二节起点有争议，未发布。全部原始歌词、图片、音频及之前数据保持不变。"
   }
 }

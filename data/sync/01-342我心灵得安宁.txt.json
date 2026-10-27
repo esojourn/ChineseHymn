@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "01-342",
+  "status": "reviewed",
+  "source": {
+    "file": "01-342我心灵得安宁.txt",
+    "sha256": "aab69dad86063d61e75d2ce508d2b9e0bd620a8abe01e84555803d03d01ea5d7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-342我心灵得安宁.mp3",
+      "sha256": "8cd4a6b1a993d0acbbf055311a490fea43b5a5bbc050673d1afd7fee763fdb8e",
+      "duration": 253.1265306122449,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 49.07,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 70.93,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 109.05,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 130.95,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 169.1,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 190.92,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 229.28,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-342我心灵得安宁-领唱.mp3",
+      "sha256": "2cbca2ca69548c1f7958577d774b892dd89f440c6ea7a29cbe242d311a09dd73",
+      "duration": 252.288,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 29
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 32
+    }
+  },
+  "cues": [
+    {
+      "at": 11.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.07,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 71.93,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 110.05,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.95,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 170.1,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 191.92,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 230.28,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "有时享平安，如江河平又稳， 有时忧伤来似浪滚， 在任何环境，我已蒙主引领， 我心灵得安宁，得安宁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我心灵得安宁，我心灵得安宁，得安宁。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "撒旦虽相侵，诸多试炼来临， 但有主美证在我心， 基督早看清我孤独之困境， 甘流血救赎我赐安宁。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我心灵得安宁，我心灵得安宁，得安宁。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "回看我众罪，全钉在十架上， 每想念时心极欢畅， 主担我重担，何奇妙大恩情， 赞美主！我心灵得安宁。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "我心灵得安宁，我心灵得安宁，得安宁。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "求主快再来，使所信得亲见， 云彩将卷起在主前， 号筒声吹响，主再临掌权柄， 愿主来！我心灵必安宁。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "我心灵得安宁，我心灵得安宁，得安宁。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-342我心灵得安宁.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

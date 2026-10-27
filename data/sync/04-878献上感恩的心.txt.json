@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-878",
+  "status": "reviewed",
+  "source": {
+    "file": "04-878献上感恩的心.txt",
+    "sha256": "89cbef42239b65b01ec93c65e64fab80d6d388a30f204468e50fe6e3e5c3f5c7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-878献上感恩的心.mp3",
+      "sha256": "feecc68e7d5226fbbe92bb64cfecd9b25a519121dae1191ccbf85b5779dc825b",
+      "duration": 196.10122448979592,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 10.1,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 35.75,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 63.48,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 91.9,
+          "region": "r4",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 102.23,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 127.7,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 155.35,
+          "region": "r7",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 183.75,
+          "region": "r8",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-878献上感恩的心-领唱.mp3",
+      "sha256": "7b6ba7c1fdeff6ab6b9033e611901060b8c3013a95b6e558436464b843def3ec",
+      "duration": 195.2130612244898,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 10.95,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.6,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 64.35,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.8,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.05,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 128.6,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 156.28,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 184.65,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "献上感恩的心， 归给至圣全能神， 因祂赐下独生子主耶稣基督。 献上感恩的心，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "归给至圣全能神， 因祂赐下独生子主耶稣基督。 如今，软弱者已得刚强， 贫穷者已成富足，",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "都因为主已成就了大事。 如今，软弱者已得刚强， 贫穷者已成富足， 都因为主已成就了大事。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "感恩。感恩。",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "献上感恩的心， 归给至圣全能神， 因祂赐下独生子主耶稣基督。 献上感恩的心，",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "归给至圣全能神， 因祂赐下独生子主耶稣基督。 如今，软弱者已得刚强， 贫穷者已成富足，",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "都因为主已成就了大事。 如今，软弱者已得刚强， 贫穷者已成富足， 都因为主已成就了大事。",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "感恩。感恩。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-878献上感恩的心.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

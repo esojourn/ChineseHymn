@@ -45,7 +45,8 @@ def pinned_file(cache, item, prepare):
                 type(svg.get('scale')) is not int or not 1 <= svg['scale'] <= 4 or
                 any(not isinstance(svg.get(key), str) or not svg[key].strip()
                     for key in ['playwrightVersion', 'chromiumVersion']) or
-                not isinstance(source_review, dict) or set(source_review) != {'file', 'url', 'sha256'} or
+                not isinstance(source_review, dict) or set(source_review) not in [
+                    {'file', 'url', 'sha256'}, {'file', 'url', 'sha256', 'referer'}] or
                 any(not isinstance(source_review[key], str) or not source_review[key] for key in source_review) or
                 source_review['file'] == item['file']):
             raise ValueError('SVG 原谱须固定原文、倍率及浏览器版本，不能叠加其他变换')
@@ -124,7 +125,14 @@ def pinned_file(cache, item, prepare):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
     elif not path.exists() and prepare:
-        request = urllib.request.Request(item['url'], headers={'User-Agent': 'Mozilla/5.0'})
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        if 'referer' in item:
+            referer = item['referer']
+            if (not isinstance(referer, str) or not referer.startswith(('https://', 'http://')) or
+                    any(char in referer for char in ['\r', '\n'])):
+                raise ValueError('原谱下载来源页无效')
+            headers['Referer'] = referer
+        request = urllib.request.Request(item['url'], headers=headers)
         with urllib.request.urlopen(request, timeout=45) as stream:
             data = stream.read()
         if hashlib.sha256(data).hexdigest() != item['sha256']:

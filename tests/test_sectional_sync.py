@@ -207,6 +207,26 @@ class SectionalTests(unittest.TestCase):
                     renderer.assert_not_called()
                 self.assertEqual((cache / 'score.png').read_bytes(), b'reviewed raster')
 
+    def test_reference_download_carries_the_reviewed_public_page_and_still_checks_the_original_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            data = b'<svg xmlns="http://www.w3.org/2000/svg"/>'
+            item = {'file': 'original.svg', 'url': 'https://example.test/score.svg',
+                    'referer': 'https://example.test/hymn/525', 'sha256': hashlib.sha256(data).hexdigest()}
+            with patch.object(self.cli.urllib.request, 'urlopen', return_value=io.BytesIO(data)) as download:
+                self.assertEqual(self.cli.pinned_file(cache, item, True).read_bytes(), data)
+                self.assertEqual(download.call_args.args[0].get_header('Referer'), item['referer'])
+            (cache / item['file']).unlink()
+            with patch.object(self.cli.urllib.request, 'urlopen', return_value=io.BytesIO(b'changed original')):
+                with self.assertRaisesRegex(ValueError, '下载的原始'):
+                    self.cli.pinned_file(cache, item, True)
+                self.assertFalse((cache / item['file']).exists())
+            for referer in [False, '', 'file:///private', 'https://example.test/\nInjected: value']:
+                with patch.object(self.cli.urllib.request, 'urlopen') as download:
+                    with self.assertRaisesRegex(ValueError, '来源页'):
+                        self.cli.pinned_file(cache, {**item, 'referer': referer}, True)
+                    download.assert_not_called()
+
     def test_svg_rebuild_rejects_unpinned_or_recursive_transforms(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = Path(directory)

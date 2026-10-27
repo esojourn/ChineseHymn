@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-361",
+  "status": "reviewed",
+  "source": {
+    "file": "02-361我宁愿有耶稣.txt",
+    "sha256": "4b9ac5e534a9ff52688bc4397102ff1f997257fd9d33bdfe337eae8d6bfa58a8",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-361我宁愿有耶稣.mp3",
+      "sha256": "45f29500ffdc63d6c5c2a4c82dab0d1e9f48ac26df4c5c42ef80b7e96aa4ed45",
+      "duration": 191.42530612244897,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 7.9,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 37.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 68.1,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 98.55,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 128.85,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 159.15,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-361我宁愿有耶稣-领唱.mp3",
+      "sha256": "79c2049775ff44b012890675ebe14b6cfc4b118236ab140c94f4b165fbdcb637",
+      "duration": 191.98258333333334,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 9.5,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 39.52,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.85,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 100.2,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 130.53,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 160.9,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我宁愿有耶稣，胜得金钱， 我宁属耶稣，胜得财富无边； 我宁愿有耶稣，胜得华宇， 愿主钉痕手，引导我前途。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我宁愿有耶稣，胜得称颂， 我宁忠于主，成全他的事工； 我宁愿有耶稣，胜得名声， 愿向主圣名，永赤胆忠诚。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "恩主比百合花更加美艳， 远比蜂房蜜更加可口甘甜； 惟主能满足我饥渴心灵， 我宁愿有主，跟随他引领。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

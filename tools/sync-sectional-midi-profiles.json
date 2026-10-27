@@ -21368,5 +21368,644 @@
       ]
     },
     "formReview": "当前原文为Audrey Assad与Fernando Ortega的Oh the Deep Deep Love of Jesus，使用BUNESSAN旋律，与常见Ebenezer谱本不同。原文每行后有空行，形成十六个原文阅读区域；按Oh the deep、Underneath、Oh the deep tis heaven、Oh the deep spread his praise四组，每四个连续区域唱一次完整旋律，保持原词、顺序、空行及末尾专辑说明不变。采用hymnal.net新诗歌694 Eternal Blessing的同一BUNESSAN旋律原谱，固定完整SVG网址、公开来源页、Referer及SHA-256，以固定Playwright和Chromium版本渲染为2382乘3369像素PNG。独立目视核对C调3/4、24小节共72拍，四个印刷谱行各18拍，分别对应四个原文区域；存在多音连唱，不能按英文词数或音节平均分时。第二行末同音2连音及第四行末同音1连音合并时值，不合并不同音圆滑线。识别带覆盖完整音头并与歌词分离，只排除首行误读的拍号3；全部160个实际演奏音头与独立人工MIDI全局零编辑匹配，十六个起句前五音在完整序列中唯一精确对应。第一和第三次完整旋律之后各有一小节3/4声乐停顿，分别绑定原文第4和第12段之后，在两种查询模板同时加入3拍休止，仅作上下文，保留固定休止成本，不跳过原始录音帧、不配置音频秒数。无段间休止的旧试算在第5处起点存在争议，未发布。完整诗节首尾检查要求首四区域覆盖独立原谱全部40个发声音头及其时值，后续三组在光学与MIDI中均完整重现同一旋律；不能用局部旋律冒充完整诗节。分组仅用于首尾是否漏节的检查，每个原文区域仍逐一通过完整MIDI、完整光学、局部MIDI及局部光学四路径，局部最多包含一个完整前一区域。成本0.35、调性区分0.06、跨度75%至125%、任意四路径互差0.5秒及严格顺序保持；所有时间来自当前完整原始录音。原始歌词、图片、音频及之前数据保持不变。"
+  },
+  "01-342": {
+    "version": 1,
+    "sourceHash": "aab69dad86063d61e75d2ce508d2b9e0bd620a8abe01e84555803d03d01ea5d7",
+    "tracks": [
+      {
+        "file": "01-342我心灵得安宁.mp3",
+        "sha256": "8cd4a6b1a993d0acbbf055311a490fea43b5a5bbc050673d1afd7fee763fdb8e"
+      },
+      {
+        "file": "01-342我心灵得安宁-领唱.mp3",
+        "sha256": "2cbca2ca69548c1f7958577d774b892dd89f440c6ea7a29cbe242d311a09dd73"
+      }
+    ],
+    "audioFile": "01-342我心灵得安宁-领唱.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "regionOpenings": [
+      "有时享平安，如江河平又稳",
+      "我心灵得安宁，我心灵得安",
+      "撒旦虽相侵，诸多试炼来临",
+      "我心灵得安宁，我心灵得安",
+      "回看我众罪，全钉在十架上",
+      "我心灵得安宁，我心灵得安",
+      "求主快再来，使所信得亲见",
+      "我心灵得安宁，我心灵得安"
+    ],
+    "sampling": {
+      "durationEstimate": 240,
+      "onsetEstimate": 8.3
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/it-is-well-hymnal341-reviewed-print.mid",
+        "sha256": "82dd2a7d42ac6c6a9c50e50eea2496902a070959ab90e6d554fb4e081e6c3d8f",
+        "printedRhythmReference": {
+          "sourceSha256": "d83456b0dbcf4ffaed552faed8d46219b1810ed249a448155e48beb6a8c8823a",
+          "tonicMidi": 60,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                1.5
+              ],
+              [
+                1,
+                0.5
+              ]
+            ],
+            [
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            [
+              [
+                6,
+                2
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                7,
+                1.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                7
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "accidentals": {
+            "version": 1,
+            "offsets": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "reason": "原谱第一行第十九个旋律音为印刷升4，其余音头保持自然音。"
+          }
+        }
+      },
+      "file": "reference/external/it-is-well-hymnal341-chinese-four.mid",
+      "sha256": "c802791b74d078a5bd9feade5189d7902a9a79a36de6cc009cd610f54924a736",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 89,
+        "sections": [
+          [
+            0,
+            89
+          ],
+          [
+            0,
+            89
+          ],
+          [
+            0,
+            89
+          ],
+          [
+            0,
+            89
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          7,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 40,
+        "pitches": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 55,
+        "pitches": [
+          7,
+          7,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 95,
+        "pitches": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 110,
+        "pitches": [
+          7,
+          7,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 150,
+        "pitches": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 165,
+        "pitches": [
+          7,
+          7,
+          5,
+          4,
+          4
+        ]
+      },
+      {
+        "onsetIndex": 205,
+        "pitches": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/it-is-well-hymnal341.png",
+        "sha256": "d83456b0dbcf4ffaed552faed8d46219b1810ed249a448155e48beb6a8c8823a",
+        "svgSource": {
+          "file": "reference/external/it-is-well-hymnal341.svg",
+          "url": "https://www.hymnal.net/Hymns/Hymnal/svg/e0341_n.svg",
+          "sha256": "0c219def093a71ecbc83b6b258be240d607fe6dc94fbe18ee9bf60a3c6d140cb",
+          "referer": "https://www.hymnal.net/en/hymn/h/341"
+        },
+        "renderSvg": {
+          "version": 1,
+          "scale": 3,
+          "playwrightVersion": "1.64.1",
+          "chromiumVersion": "156.0.8078.4"
+        }
+      },
+      "pageUrl": "https://www.hymnal.net/en/hymn/h/341",
+      "recognitionFile": "modern-sectional-scores/ocr/it-is-well-hymnal341.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              538,
+              590
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                614,
+                660
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              834,
+              881
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                881,
+                925
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1083,
+              1132
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1138,
+                1176
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1375,
+              1425
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1488,
+                1524
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "6761c1dd39e0eff4d46c7eab351bffc73007004b89a4fb5f1d509f2b43f0b149",
+      "ties": {
+        "2": [
+          4,
+          8
+        ],
+        "3": [
+          7
+        ]
+      },
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            1,
+            22
+          ],
+          [
+            1,
+            0,
+            18
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "B": [
+          [
+            2,
+            1,
+            11
+          ],
+          [
+            3,
+            0,
+            8
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    "formReview": "当前中文原文为我心灵得安宁，有时享平安、撒旦虽相侵、回看我众罪、求主快再来四节，每节后各有独立原文副歌段落，共八个原文阅读区域，严格保持正文、副歌、标点、空行及各段顺序。采用Philip P. Bliss的IT IS WELL原谱，hymnal.net英文诗歌341的完整原始SVG；译词不同但整份旋律一致。固定公开网址、Referer、SVG和PNG的SHA-256，通过固定Playwright及Chromium版本以3倍像素密度渲染，所有光学识别由未修改的原始谱面重建。独立目视核对C调4/4及开头一拍弱起，四行分别29、24、20、16拍，全谱89拍，正文55拍、副歌34拍；第一行第十九音为升4，同音5连线及结尾同音1连线合并，不合并不同音圆滑线。仅排除首行误识别的拍号4，末尾印刷休止未识别成数字不手工补写；全部220个演奏音头与独立人工MIDI全局零编辑一致，八个阅读起句前五音在整份序列中唯一精确定位。按四次完整正文及副歌重组，不按音符数、歌词字数或总长推算实际滚动时间。领唱的八处起点分别通过完整MIDI、完整光学、局部MIDI、局部光学四路径，局部至多保留一个完整前一区域。伴奏独立试算在首两处副歌的两条完整路径有分歧，未采用该试算时间；伴奏必须另经完整原始录音chroma对应、全局成本、音乐相似度及每一阅读位置局部窗口检查，不能直接复制领唱或以固定秒差平移。成本0.35、调性区分0.06、跨度75%至125%、四路径互差0.5秒及顺序、首尾完整性检查均保持。原始歌词、图片、音频和之前发布数据不变。"
   }
 }

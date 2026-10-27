@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "songId": "02-385",
+  "status": "reviewed",
+  "source": {
+    "file": "02-385效圣徒尽忠.txt",
+    "sha256": "ff1b76f7c5bb9a3e7a92016b1f32503d89ec4f01f67c8ef4124ac9e50ce90298",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-385效圣徒尽忠.mp3",
+      "sha256": "c019a8612939a42ef153453cea1a1160ad9fe40dad09f229b9fc177591b79f5f",
+      "duration": 170.2138775510204,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 20
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 30
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 33
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 35,
+      "endLine": 36
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 38,
+      "endLine": 39
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 41,
+      "endLine": 42
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 44,
+      "endLine": 45
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 47,
+      "endLine": 48
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 50,
+      "endLine": 51
+    },
+    "r17": {
+      "kind": "text",
+      "startLine": 53,
+      "endLine": 54
+    },
+    "r18": {
+      "kind": "text",
+      "startLine": 56,
+      "endLine": 57
+    }
+  },
+  "cues": [
+    {
+      "at": 9.9,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 19.8,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 24.75,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 42.1,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 49.5,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 59.4,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 64.4,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 81.65,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.05,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.02,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.88,
+      "region": "r11",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.8,
+      "region": "r12",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 121.3,
+      "region": "r13",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 128.65,
+      "region": "r14",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 133.63,
+      "region": "r15",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.0,
+      "region": "r16",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 148.45,
+      "region": "r17",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.3,
+      "region": "r18",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "上帝爱子亲临战场， 赢取至高尊荣，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "血红旌旗 远远飘扬，",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "谁跟随主脚踪？ 谁能与主同饮苦杯， 不畏忧患苦痛， 背负十架，",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "忍受逼迫， 跟随主不摇动？",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "昔有圣徒不惧死亡， 为义殉道在先，",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "举目望天， 见主荣面，",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "求主保守眷念； 他能为道舍命尽忠， 与主被害相同， 为敌祈祷",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "求父赦免， 谁跟从他脚踪？",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "荣耀使徒， 乃主选召，",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "曾受天降圣灵， 确知他日必得荣冕，",
+        "label": "第3段"
+      },
+      {
+        "region": "r11",
+        "text": "苦难都已看轻； 不畏锁链监牢猛兽，",
+        "label": "第3段"
+      },
+      {
+        "region": "r12",
+        "text": "不怕暴君刑重， 忠心至死，",
+        "label": "第3段"
+      },
+      {
+        "region": "r13",
+        "text": "坚信不摇， 谁跟他们脚踪？",
+        "label": "第3段"
+      },
+      {
+        "region": "r14",
+        "text": "男女老幼， 无数信徒，",
+        "label": "第4段"
+      },
+      {
+        "region": "r15",
+        "text": "做主忠心精兵， 身穿白袍，",
+        "label": "第4段"
+      },
+      {
+        "region": "r16",
+        "text": "环绕宝座， 欢呼颂赞主名；",
+        "label": "第4段"
+      },
+      {
+        "region": "r17",
+        "text": "他们曾历天路险程， 经过危难重重，",
+        "label": "第4段"
+      },
+      {
+        "region": "r18",
+        "text": "我们求主施恩相助， 跟随前人脚踪。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-385效圣徒尽忠.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

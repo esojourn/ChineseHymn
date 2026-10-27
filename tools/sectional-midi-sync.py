@@ -18,6 +18,7 @@ from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
 from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music
 from sync_batch_sources import clean, text_source
+from sync_batch_reused_chorus import source_chorus_reuse, validate_reused_chorus
 from sync_batch_symbolic import score_row_offsets
 
 
@@ -255,6 +256,7 @@ def validate_source(song, profile):
     if language not in ['zh', 'en']:
         raise ValueError('原文起句校验只支持明确的中文或英文配置')
     source = text_source(batch.ROOT / 'data' / song['source'], language)
+    source = source_chorus_reuse(source, batch.ROOT / 'data' / song['source'], profile)
     definitions = [item for verse in source['verses'] for item in verse]
     short_form = short_form_review(profile)
     if ((len(definitions) != 2 if short_form else len(definitions) < 3) or
@@ -693,6 +695,10 @@ def generate(song, profile, cache, prepare=False):
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
         body_material = vocal_interlude_material(source, profile, reference_material(profile, cache, prepare))
+        chorus_reuse = validate_reused_chorus(source, profile, body_material)
+        if chorus_reuse is not None:
+            evidence['midiMatching']['sourceChorusReuse'] = chorus_reuse
+            evidence['returnIndices'] = [len(definitions) - 1]
         short_form = validate_short_form(source, profile, body_material)
         if short_form is not None:
             evidence['midiMatching']['shortFormReview'] = short_form

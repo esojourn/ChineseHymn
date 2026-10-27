@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "songId": "06-007",
+  "status": "reviewed",
+  "source": {
+    "file": "06-007耶稣深爱.txt",
+    "sha256": "751ccf77f84cf403de6b6c90d931c20774cd3883d20059e72433faf7a02f6dcf",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-007耶稣深爱.mp3",
+      "sha256": "0a1cc337fda36bd2b130b45efafc1c7902db2e7902ac029c1b2d36f232cb78a6",
+      "duration": 157.41387755102042,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 2
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 4
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 8
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 10
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 14
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 16
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 20
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 22
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 26
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 28
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 30
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 32
+    }
+  },
+  "cues": [
+    {
+      "at": 1.5,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 10.6,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 19.6,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 28.65,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 39.1,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.1,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.1,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    },
+    {
+      "at": 66.1,
+      "region": "r8",
+      "label": "第8段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.45,
+      "region": "r9",
+      "label": "第9段",
+      "transition": "reading"
+    },
+    {
+      "at": 85.55,
+      "region": "r10",
+      "label": "第10段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.5,
+      "region": "r11",
+      "label": "第11段",
+      "transition": "reading"
+    },
+    {
+      "at": 103.5,
+      "region": "r12",
+      "label": "第12段",
+      "transition": "reading"
+    },
+    {
+      "at": 114.15,
+      "region": "r13",
+      "label": "第13段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.05,
+      "region": "r14",
+      "label": "第14段",
+      "transition": "reading"
+    },
+    {
+      "at": 132.1,
+      "region": "r15",
+      "label": "第15段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.1,
+      "region": "r16",
+      "label": "第16段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Oh the deep deep love of jesus",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Vast unmeasured boundless free",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "Rolling as a mighty ocean",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "In its fullness over me",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "Underneath me all around me",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "Is the current of your love",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "Leading onward leading homeward",
+        "label": "第7段"
+      },
+      {
+        "region": "r8",
+        "text": "To your glorious rest above",
+        "label": "第8段"
+      },
+      {
+        "region": "r9",
+        "text": "Oh the deep deep love of jesus",
+        "label": "第9段"
+      },
+      {
+        "region": "r10",
+        "text": "Tis heaven of heavens to me",
+        "label": "第10段"
+      },
+      {
+        "region": "r11",
+        "text": "And it lifts me up to glory",
+        "label": "第11段"
+      },
+      {
+        "region": "r12",
+        "text": "For it lifts me up to thee",
+        "label": "第12段"
+      },
+      {
+        "region": "r13",
+        "text": "Oh the deep deep love of jesus",
+        "label": "第13段"
+      },
+      {
+        "region": "r14",
+        "text": "Spread his praise from shore to shore",
+        "label": "第14段"
+      },
+      {
+        "region": "r15",
+        "text": "How he loves us ever loves us",
+        "label": "第15段"
+      },
+      {
+        "region": "r16",
+        "text": "Changes never nevermore",
+        "label": "第16段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-007耶稣深爱.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

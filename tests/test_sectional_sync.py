@@ -75,6 +75,73 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 arranged_midi_bytes(io.BytesIO(self.score()), {**self.recipe(), **update})
 
+    def crossing_score(self):
+        rows = [
+            {'notes': [1, 2, 3, 4, 5, 5], 'pitchOffsets': [0] * 6,
+             'rhythmWeights': [1, 1, 1, 1, 2, 1]},
+            {'notes': [5, 6, 7, 1, 2, 3], 'pitchOffsets': [0] * 6,
+             'rhythmWeights': [3, 1, 1, 1, 1, 1]}]
+        review = {'ties': {'0': [5]}, 'crossSystemTies': {
+            'version': 1, 'boundaries': [[0, 1]], 'reason': 'printed tie continues on next system'},
+            'parts': {'verse': [[0, 0, 6], [1, 0, 6]]},
+            'order': ['verse'], 'readingStarts': [[0, 0]]}
+        return rows, review
+
+    def test_cross_system_tie_preserves_one_sounding_note_and_complete_midi_duration(self):
+        from sync_batch_printed_midi import printed_reference_bytes
+        rows, review = self.crossing_score()
+        unchanged = copy.deepcopy((rows, review))
+        actual = optical_performance_rows(rows, review)
+        expected_notes = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3]
+        expected_beats = [1, 1, 1, 1, 6, 1, 1, 1, 1, 1]
+        self.assertEqual(actual, [{'notes': expected_notes, 'pitchOffsets': [0] * 10,
+                                   'rhythmWeights': expected_beats}])
+        self.assertEqual((rows, review), unchanged)
+        reference = {'mode': 'symbolic-melody-and-optical', 'targetSha256': 'printed',
+                     'printedRhythmReference': {'sourceSha256': 'printed', 'tonicMidi': 60,
+                        'numberedRowsAndQuarterBeats': [[(1, 1), (2, 1), (3, 1), (4, 1),
+                            (5, 6), (6, 1), (7, 1), (1, 1), (2, 1), (3, 1)]]}}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'independent.mid'
+            path.write_bytes(printed_reference_bytes(reference, 'printed'))
+            duration, _, melody = self.cli.midi.midi_features(path)
+        self.assertEqual(duration, 7.5)
+        self.assertEqual(melody['onsetTimes'], [0, .5, 1, 1.5, 2, 5, 5.5, 6, 6.5, 7])
+        self.assertEqual(melody['onsetPitches'], [0, 2, 4, 5, 7, 9, 11, 0, 2, 4])
+        # Without an explicit cross-system declaration, the same heads retain
+        # their former two onsets and weights.
+        review.pop('crossSystemTies')
+        legacy = optical_performance_rows(rows, review)[0]
+        self.assertEqual(legacy['notes'][4:6], [5, 5])
+        self.assertEqual(legacy['rhythmWeights'][4:6], [3, 3])
+
+    def test_cross_system_ties_reject_changed_pitches_rests_and_invalid_source_boundaries(self):
+        for key, index, value in [('notes', 0, 4), ('notes', 0, 0), ('pitchOffsets', 0, 1)]:
+            rows, review = self.crossing_score()
+            rows[1][key][index] = value
+            with self.assertRaises(ValueError):
+                optical_performance_rows(rows, review)
+        for changes in [{'version': True}, {'version': 2}, {'reason': ''}, {'boundaries': []},
+                        {'boundaries': [[0, 0]]}, {'boundaries': [[0, 2]]},
+                        {'boundaries': [[True, 1]]}, {'boundaries': [[0, 1], [0, 1]]},
+                        {'boundaries': [[1, 0]]}, {'boundaries': [[-1, 0]]}, {'seconds': 2}]:
+            rows, review = self.crossing_score()
+            review['crossSystemTies'].update(changes)
+            with self.assertRaises(ValueError):
+                optical_performance_rows(rows, review)
+
+    def test_cross_system_tie_cannot_be_split_omitted_or_joined_across_an_unrelated_range(self):
+        for ranges in [[[1, 0, 6]], [[0, 0, 6]], [[0, 0, 5], [1, 0, 6]],
+                       [[0, 0, 6], [1, 1, 6]], [[0, 0, 6], [0, 0, 1], [1, 0, 6]]]:
+            rows, review = self.crossing_score()
+            review['parts']['verse'] = ranges
+            with self.assertRaises(ValueError):
+                optical_performance_rows(rows, review)
+        rows, review = self.crossing_score()
+        review['ties']['1'] = [0]
+        with self.assertRaises(ValueError):
+            optical_performance_rows(rows, review)
+
     def test_modulation_transposes_all_voices_with_balanced_note_edges(self):
         recipe = {**self.recipe(), 'transposeSections': [0, 2, 0],
                   'transpositionReview': {'version': 1, 'reason': 'independently verified modulation'}}

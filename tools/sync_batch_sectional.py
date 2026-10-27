@@ -104,9 +104,37 @@ def optical_performance_rows(rows, review):
                 not row['notes'][i] or row['notes'][i] != row['notes'][i - 1] or
                 row['pitchOffsets'][i] != row['pitchOffsets'][i - 1] for i in indices):
             raise ValueError('连音只能合并已经目视核对的相邻同音音头')
+    crossing = review.get('crossSystemTies')
+    following = {}
+    if crossing is not None:
+        if (not isinstance(crossing, dict) or set(crossing) != {'version', 'boundaries', 'reason'} or
+                type(crossing.get('version')) is not int or crossing['version'] != 1 or
+                not isinstance(crossing.get('reason'), str) or not crossing['reason'].strip() or
+                not isinstance(crossing.get('boundaries'), list) or not crossing['boundaries']):
+            raise ValueError('跨行同音连线须明确版本、相邻原谱行及目视核对说明')
+        previous_boundary = -1
+        for pair in crossing['boundaries']:
+            if (not isinstance(pair, list) or len(pair) != 2 or
+                    any(type(value) is not int for value in pair) or
+                    not previous_boundary < pair[0] < pair[1] < len(rows) or pair[1] != pair[0] + 1):
+                raise ValueError('跨行连线只能依次连接相邻原谱行的末音与首音')
+            before, after = (rows[index] for index in pair)
+            if (not before['notes'] or not after['notes'] or not before['notes'][-1] or
+                    before['notes'][-1] != after['notes'][0] or
+                    before['pitchOffsets'][-1] != after['pitchOffsets'][0]):
+                raise ValueError('跨行连线不能合并休止或不同音高的音头')
+            following[pair[0]] = pair[1]
+            previous_boundary = pair[0]
+    continuations = {after: before for before, after in following.items()}
+
+    def pending_crossing(position):
+        return (position is not None and position[0] in following and
+                position[1] == len(rows[position[0]]['notes']) - 1)
+
     parts = {}
     for name, ranges in review['parts'].items():
         part = {key: [] for key in keys}
+        previous_position = None
         for item in ranges:
             if not isinstance(item, list) or len(item) != 3:
                 raise ValueError('印刷乐段必须明确引用谱行的音符范围')
@@ -122,13 +150,24 @@ def optical_performance_rows(rows, review):
             for index in range(lo, hi):
                 row = rows[system]
                 weight = row['rhythmWeights'][index] * multipliers.get((system, index), 1)
-                if index in ties.get(str(system), []):
+                if (pending_crossing(previous_position) and
+                        (system, index) != (following[previous_position[0]], 0)):
+                    raise ValueError('印刷乐段不能跳过跨行连音的连续音头')
+                if index == 0 and system in continuations:
+                    before = continuations[system]
+                    if previous_position != (before, len(rows[before]['notes']) - 1):
+                        raise ValueError('印刷乐段不能从跨行连音的后半音头开始')
+                    part['rhythmWeights'][-1] += weight
+                elif index in ties.get(str(system), []):
                     if index == lo:
                         raise ValueError('印刷乐段不能从连音的后半音头开始')
                     part['rhythmWeights'][-1] += weight
                 else:
                     for key in keys:
                         part[key].append(weight if key == 'rhythmWeights' else row[key][index])
+                previous_position = (system, index)
+        if pending_crossing(previous_position):
+            raise ValueError('印刷乐段不能截断跨行同音连线')
         if not part['notes']:
             raise ValueError('印刷乐段为空')
         parts[name] = part

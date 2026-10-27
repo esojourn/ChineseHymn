@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "songId": "02-277",
+  "status": "reviewed",
+  "source": {
+    "file": "02-277坚固磐石.txt",
+    "sha256": "09cf9317220fd4d92efe9f257543386ba5314bd928073bbf60b3c5be8af1daba",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-277坚固磐石.mp3",
+      "sha256": "37d0ffbf67e172d5ae3ae468a595d06323b263ac3842f5750c9c0a2bb25147a3",
+      "duration": 162.72,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 21,
+      "endLine": 22
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    }
+  },
+  "cues": [
+    {
+      "at": 7.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.9,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 70.2,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.85,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 118.75,
+      "region": "r5",
+      "label": "副歌",
+      "transition": "return"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我心所望别无依靠，只有基督公义宝血； 我无好处堪足自夸，惟全然靠救主圣名。 立在基督坚固盘石，其余根基全是沙土， 耶稣基督就是盘石。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "有时黑云遮蔽主面，主恩不变是我倚靠； 在风浪中不会飘流，我锚抛牢在主恩中。 立在基督坚固盘石，其余根基全是沙土， 耶稣基督就是盘石。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "基督宝血奠立圣约，救我不受洪流吞灭； 其他倚靠都要失效，救主是我居所、盼望。 立在基督坚固盘石，其余根基全是沙土， 耶稣基督就是盘石。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "末日听见号角响起， 那时我必在基督里；  穿戴救主雪白义袍， 圣洁无瑕立宝座前。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "立在基督坚固盘石，其余根基全是沙土， 耶稣基督就是盘石。",
+        "label": "副歌"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-277坚固磐石.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

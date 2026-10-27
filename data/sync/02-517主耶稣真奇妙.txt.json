@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "songId": "02-517",
+  "status": "reviewed",
+  "source": {
+    "file": "02-517主耶稣真奇妙.txt",
+    "sha256": "f02be1b9b6961cf1627765cc78f98cdf6958d8a3cb49a717e37384c2067e206b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-517主耶稣真奇妙.mp3",
+      "sha256": "9d78a78cf9eff31ee976d278d885300b45bdeeb42c8bfb48f7af8fe79e6c33e0",
+      "duration": 33.95918367346939,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    }
+  },
+  "cues": [
+    {
+      "at": 10.6,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 23.95,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶稣，真奇妙  主耶稣，真奇妙  主耶稣我救主真奇妙  眼曾见，耳曾听 ",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "清楚在圣经记明  主耶稣我救主真奇妙",
+        "label": "第1段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-517主耶稣真奇妙.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

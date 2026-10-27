@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "songId": "06-008",
+  "status": "reviewed",
+  "source": {
+    "file": "06-008我心灵得安宁.txt",
+    "sha256": "135d5561dc141dc3e949e9061ed4cde45c0769816187f5d98cbf1843685ce3a7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-008我心灵得安宁.mp3",
+      "sha256": "a0d7244e75858d48923d8ac5a5ce4f0850775b3752b022abb9fef5647ed2825e",
+      "duration": 251.37632653061223,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 0.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.8,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 73.95,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.15,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 147.55,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 192.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 226.9,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "When peace like a river attendeth my way When sorrows like sea billows roll What ever my lot thou hast taught me to say It is well it is well with my soul",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "It is well With my soul It is well it is well with my soul",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "Though satan should buffet though trials should come Let this blest assurance control That christ has regarded my helpless estate And hath shed his own blood for my soul",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "It is well it is well With my soul with my soul It is well it is well with my soul",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "My sin oh the bliss of this glorious thought My sin not in part but the whole Is nailed to the cross and I bear it no more Praise the lord praise the lord my soul",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "It is well it is well With my soul with my soul It is well it is well with my soul It is well it is well",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "With my soul with my soul It is well it is well with my soul",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-008我心灵得安宁.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

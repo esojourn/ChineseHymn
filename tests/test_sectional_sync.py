@@ -705,6 +705,123 @@ class SectionalTests(unittest.TestCase):
         self.assertEqual(actual[0]['rhythmWeights'][0], 2)
         self.assertAlmostEqual(actual[0]['rhythmWeights'][1], 2 / 3)
 
+    def test_mixed_quarter_eighth_triplets_preserve_the_printed_unit_and_reject_partial_groups(self):
+        rows = [{'notes': [3, 2, 4, 5], 'pitchOffsets': [0, 1, 0, 0],
+                 'rhythmWeights': [1, .5, .5, 1]}]
+        groups = [{'system': 0, 'noteIndices': pair, 'actualNotes': 3, 'normalNotes': 2}
+                  for pair in [[0, 1], [2, 3]]]
+        review = {'tuplets': groups, 'parts': {'A': [[0, 0, 4]]}, 'order': ['A'], 'readingStarts': [[0, 0]]}
+        original = copy.deepcopy((rows, review))
+        actual = optical_performance_rows(rows, review)[0]
+        self.assertEqual(actual['notes'], [3, 2, 4, 5])
+        np.testing.assert_allclose(actual['rhythmWeights'], [2 / 3, 1 / 3, 1 / 3, 2 / 3])
+        self.assertEqual(sum(actual['rhythmWeights']), 2)
+        self.assertEqual((rows, review), original)
+        for weights in [[1, 1, .5, 1], [.5, .5, .5, 1], [0, .5, .5, 1]]:
+            with self.assertRaises(ValueError):
+                optical_performance_rows([{**rows[0], 'rhythmWeights': weights}], review)
+        for change in [{'parts': {'A': [[0, 0, 1]]}}, {'tuplets': groups + groups[:1]}]:
+            with self.assertRaises(ValueError):
+                optical_performance_rows(rows, {**review, **change})
+
+    def short_form_fixture(self):
+        source, profile, material, definitions = self.initial_context_fixture()
+        definitions = definitions[:2]
+        source['verses'] = [definitions]
+        profile.pop('initialVerseContext')
+        profile['shortFormReview'] = {'version': 1, 'reason': 'One complete short stanza, two original reading regions.'}
+        profile['midiReference']['origin']['printedRhythmReference']['numberedRowsAndQuarterBeats'] = [
+            [(note, 1) for note in row['notes']] for row in material[1][:2]]
+        profile['midiReference']['arrangement'] = {'quarterLength': 14, 'sections': [[0, 14]]}
+        return source, profile, (material[0][:2], material[1][:2], material[2]), definitions
+
+    def test_short_form_requires_one_complete_zero_edit_print_and_two_original_regions(self):
+        source, profile, material, _ = self.short_form_fixture()
+        original = copy.deepcopy((source, profile, material))
+        proof = self.cli.validate_short_form(source, profile, material)
+        self.assertEqual(proof['readings'], [0, 1])
+        self.assertEqual(proof['completePrintedSoundedNotes'], 14)
+        self.assertEqual((source, profile, material), original)
+        self.assertIsNone(self.cli.validate_short_form(source, {}, material))
+        for review in [None, {'version': True, 'reason': 'x'}, {'version': 1, 'reason': ''},
+                       {'version': 1, 'reason': 'x', 'at': 10}]:
+            with self.assertRaises(ValueError):
+                self.cli.validate_short_form(source, {**profile, 'shortFormReview': review}, material)
+        for key in ['sourceVerseContext', 'readingSectionReview', 'initialVerseContext', 'vocalInterludes',
+                    'referenceEndingSequence', 'sourceVerseEdgeReview', 'instrumentalOutroReview']:
+            with self.assertRaises(ValueError):
+                self.cli.validate_short_form(source, {**profile, key: {}}, material)
+        for verses in [[source['verses'][0][:1]], [[source['verses'][0][0]], [source['verses'][0][1]]]]:
+            with self.assertRaises(ValueError):
+                self.cli.validate_short_form({**source, 'verses': verses}, profile, material)
+        for change in [{'sections': [[0, 7]]}, {'sections': [[0, 14], [0, 14]]}, {'quarterLength': 15}]:
+            bad = copy.deepcopy(profile)
+            bad['midiReference']['arrangement'].update(change)
+            with self.assertRaises(ValueError):
+                self.cli.validate_short_form(source, bad, material)
+        bad = copy.deepcopy(material)
+        bad[2]['symbolicRows']['editCost'] = 1
+        with self.assertRaises(ValueError):
+            self.cli.validate_short_form(source, profile, bad)
+        bad = copy.deepcopy(material)
+        bad[1][1]['pitchOffsets'][0] = 1
+        with self.assertRaises(ValueError):
+            self.cli.validate_short_form(source, profile, bad)
+
+    def test_short_form_keeps_all_audio_gates_and_audits_intro_against_the_complete_stanza(self):
+        rows = [{'notes': [1], 'pitchOffsets': [0], 'spatialWeights': [1], 'rhythmWeights': [1]}] * 2
+        target = (np.array([0., 40.]), None)
+        failure = {}
+        def match(query, chroma, times, duration, onset, weight):
+            starts = [12., 23.] if len(query) == 2 else [onset]
+            best = {'cost': .1, 'key': 0, 'starts': starts, 'span': duration}
+            if len(query) == 1:
+                best.update(failure)
+            return {'best': best, 'runnerUp': {'cost': .4}}
+        evidence = {}
+        self.assertEqual(performance_times(rows, rows, target, 22, 12, 0, match, evidence,
+                         previous_context=True, short_form=True), [12, 23])
+        self.assertEqual(evidence['completeVerseSpans'], [22])
+        self.assertEqual(len(evidence['local']), 2)
+        with self.assertRaises(ValueError):
+            performance_times(rows, rows, target, 22, 12, 0, match, {})
+        for update in [{'cost': .36}, {'cost': .35}, {'key': 1}, {'span': 7}, {'starts': [12.6]}]:
+            failure.clear()
+            failure.update(update)
+            with self.assertRaises(ValueError):
+                performance_times(rows, rows, target, 22, 12, 0, match, {}, short_form=True)
+        failure.clear()
+        with self.assertRaisesRegex(ValueError, '录音首尾'):
+            performance_times(rows, rows, (np.array([0., 60.]), None), 22, 12, 0, match, {}, short_form=True)
+        for flag in [None, 1, 'true']:
+            with self.assertRaises(ValueError):
+                performance_times(rows, rows, target, 22, 12, 0, match, {}, short_form=flag)
+
+    def test_short_form_source_binding_and_generation_cannot_export_disputed_audio(self):
+        source, profile, material, definitions = self.short_form_fixture()
+        profile['sampling'] = {'durationEstimate': 22, 'onsetEstimate': 12}
+        song = {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'main.mp3',
+                'tracks': [{'file': 'main.mp3', 'sha256': 'main'}], 'type': 'text'}
+        profile.update(version=1, sourceHash='source', tracks=song['tracks'], audioFile='main.mp3',
+                       language='zh', regions=['r1', 'r2'], regionOpenings=['第一部分歌词', '第二部分歌词'])
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            (root / 'data/song.txt').write_text('标题\n\n第一部分歌词\n第二行歌词\n第三行歌词\n第四行歌词\n第二部分歌词\n第六行歌词')
+            with patch.object(self.cli.batch, 'ROOT', root):
+                self.assertEqual(len(self.cli.validate_source(song, profile)[1]), 2)
+                with self.assertRaises(ValueError):
+                    self.cli.validate_source(song, {key: value for key, value in profile.items() if key != 'shortFormReview'})
+            with patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                    patch.object(self.cli, 'reference_material', return_value=material), \
+                    patch.object(self.cli, 'features', return_value=None), \
+                    patch.object(self.cli, 'performance_times', side_effect=ValueError('disputed short audio')) as measure, \
+                    patch.object(self.cli, 'export_result') as export:
+                self.assertIn('needs-calibration', self.cli.generate(song, profile, root)[1])
+                self.assertTrue(measure.call_args.kwargs['short_form'])
+                export.assert_not_called()
+                self.assertFalse((root / 'ready/song.txt.json').exists())
+
     def test_optical_modulation_preserves_source_notes_and_rhythm_and_keeps_rests_neutral(self):
         rows, review = self.notation()
         original = copy.deepcopy(rows)

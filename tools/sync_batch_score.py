@@ -37,7 +37,7 @@ def is_barline(components, column, height):
             span >= height * .85 and y <= 2 and y + span >= height - 2)
 
 
-def optical_rhythm(ink, positions, original_height, fallback):
+def optical_rhythm(ink, positions, original_height, fallback, separate_octave_dots=False):
     import cv2
     count, labels, stats, centroids = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
     components = stats[1:]
@@ -54,7 +54,14 @@ def optical_rhythm(ink, positions, original_height, fallback):
         glyph = min(candidates, key=lambda s: abs(s[0] + s[2] / 2 - x * width))
         gx, gy, gw, gh, area = map(int, glyph)
         center, baseline = gx + gw // 2, gy + gh
-        stripe = ink[baseline + 2:min(height, baseline + round(gh * .55)),
+        beam_ink, gap = ink, 2
+        if separate_octave_dots:
+            # Horizontal opening keeps thin beams even when an octave dot
+            # touches them, while removing isolated dots below the digit.
+            beam_ink = cv2.morphologyEx(ink.astype(np.uint8), cv2.MORPH_OPEN,
+                np.ones((1, max(3, round(gh * .5))), dtype=np.uint8)).astype(bool)
+            gap = 1
+        stripe = beam_ink[baseline + gap:min(height, baseline + round(gh * .55)),
                      max(0, center - round(gh * .2)):min(width, center + round(gh * .2) + 1)]
         rows = np.flatnonzero(stripe.mean(axis=1) > .55) if stripe.size else np.array([])
         beams = min(2, sum(index == 0 or row - rows[index - 1] > 1 for index, row in enumerate(rows)))
@@ -91,7 +98,8 @@ def reviewed_score_systems(systems, height):
     return systems
 
 
-def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digits=False):
+def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digits=False,
+              separate_octave_dots=False):
     global _ocr
     if reviewed_systems is None:
         definition = image_source(recognition)
@@ -103,7 +111,10 @@ def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digit
         raise ValueError('纯歌词图片没有简谱音符，需要人声转写匹配')
     if type(normalize_digits) is not bool or normalize_digits and reviewed_systems is None:
         raise ValueError('数字规范化需要显式核对的原谱版面')
-    version = 5 if normalize_digits else 3 if reviewed_systems is None else 4
+    if (type(separate_octave_dots) is not bool or
+            separate_octave_dots and (not normalize_digits or reviewed_systems is None)):
+        raise ValueError('八度圆点识别须明确核对原谱版面并规范化数字')
+    version = 6 if separate_octave_dots else 5 if normalize_digits else 3 if reviewed_systems is None else 4
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
@@ -166,8 +177,8 @@ def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digit
         # Read those pixels up to (but not into) the first printed lyric row.
         lyric_bands = [row['recognitionBand'][0] - 2 for row in system['lyrics'] if 'recognitionBand' in row]
         analysis_bottom = max(band[1], min(lyric_bands or [band[1] + round(crop.shape[0] * .6)]))
-        ink = np.mean(image[band[0]:analysis_bottom], axis=2) < 150
-        optical, diagnostics = optical_rhythm(ink, positions, crop.shape[0], rhythm)
+        ink = np.mean(image[band[0]:analysis_bottom], axis=2) < (180 if separate_octave_dots else 150)
+        optical, diagnostics = optical_rhythm(ink, positions, crop.shape[0], rhythm, separate_octave_dots)
         rows.append({'text': text, 'confidence': float(confidence), 'notes': notes,
                      'pitchOffsets': accidental_offsets(characters, char_indices),
                      'x': positions, 'spatialWeights': spatial, 'rhythmWeights': optical,

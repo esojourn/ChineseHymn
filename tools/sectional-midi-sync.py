@@ -165,8 +165,8 @@ def reference_material(profile, cache, prepare=False):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
     image_review = profile['opticalReference']
-    if image_review.get('noteExtractorVersion') != 5:
-        raise ValueError('分段原谱需要明确的数字规范化提取版本5')
+    if type(image_review.get('noteExtractorVersion')) is not int or image_review['noteExtractorVersion'] not in [5, 6]:
+        raise ValueError('分段原谱需要明确的数字规范化提取版本5或6')
     image = pinned_file(cache, image_review['image'], prepare)
     recognition_path = cache / image_review['recognitionFile']
     if prepare:
@@ -179,7 +179,8 @@ def reference_material(profile, cache, prepare=False):
             recognition['recognizerVersion'] != image_review['recognizerVersion']):
         raise ValueError('原谱识别文件不匹配当前固定图片')
     rows = note_rows(image, recognition, recognition_path.parent.parent,
-                     reviewed_systems=image_review['reviewedSystems'], normalize_digits=True)
+                     reviewed_systems=image_review['reviewedSystems'], normalize_digits=True,
+                     separate_octave_dots=image_review['noteExtractorVersion'] == 6)
     if score_rows_hash(rows) != image_review['rowsSha256']:
         raise ValueError('原谱光学音符或节奏已变化')
     period, harmony, melody = midi.midi_features(path)
@@ -192,6 +193,49 @@ def reference_material(profile, cache, prepare=False):
         'symbolicRows': proof, 'sourceRows': rows, 'opticalReadingRows': optical_rows}
 
 
+def short_form_review(profile):
+    if 'shortFormReview' not in profile:
+        return False
+    review = profile['shortFormReview']
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            any(key in profile for key in ['sourceVerseContext', 'sourceVerseEdgeReview', 'readingSectionReview',
+                'musicalVerseEdges', 'sourceVerseMusicRange', 'referenceEndingSequence', 'vocalInterludes',
+                'instrumentalOutroReview', 'instrumentalOutroAlternatives', 'initialVerseContext']) or
+            not isinstance(profile.get('independentRecordings', []), list) or
+            any(not isinstance(item, dict) or 'endingReadingRepeat' in item
+                for item in profile.get('independentRecordings', []))):
+        raise ValueError('短歌须明确说明单个完整原文诗节，不能叠加分组、反复或结尾策略')
+    return True
+
+
+def validate_short_form(source, profile, material):
+    if not short_form_review(profile):
+        return None
+    melody, optical, reference = material
+    verses = source.get('verses', [])
+    origin = profile.get('midiReference', {}).get('origin', {})
+    printed = origin.get('printedRhythmReference', {})
+    rows = printed.get('numberedRowsAndQuarterBeats', [])
+    shifts = printed.get('accidentals', {}).get('offsets', [[0] * len(row) for row in rows])
+    expected = [(note, shift) for row, offsets in zip(rows, shifts, strict=True)
+                for (note, beat), shift in zip(row, offsets, strict=True)]
+    actual = [(note, shift) for row in optical
+              for note, shift in zip(row['notes'], row['pitchOffsets'], strict=True)]
+    recipe = profile.get('midiReference', {}).get('arrangement', {})
+    quarters = sum(beat for row in rows for note, beat in row)
+    if (len(verses) != 1 or len(verses[0]) != 2 or len(melody) != 2 or len(optical) != 2 or
+            origin.get('kind') != 'printed-numbered-score' or not any(note for note, shift in expected) or
+            expected != actual or reference.get('symbolicRows', {}).get('editCost') != 0 or
+            any(not math.isfinite(beat) or beat <= 0 for row in rows for note, beat in row) or
+            not math.isclose(recipe.get('quarterLength', 0), quarters, abs_tol=1e-8) or
+            recipe.get('sections') != [[0, recipe.get('quarterLength')]]):
+        raise ValueError('短歌的两个区域须零编辑、依次覆盖完整独立原谱，不得截取、重排或重复乐段')
+    return {'readings': [0, 1], 'completePrintedSoundedNotes': sum(bool(note) for note, shift in expected),
+            'edgeScope': 'one complete original stanza; all full and local audio gates unchanged'}
+
+
 def validate_source(song, profile):
     if (type(profile.get('version')) is not int or profile['version'] != 1 or song['type'] != 'text' or
             profile.get('sourceHash') != song['sha256'] or profile.get('tracks') != song['tracks'] or
@@ -202,7 +246,9 @@ def validate_source(song, profile):
         raise ValueError('原文起句校验只支持明确的中文或英文配置')
     source = text_source(batch.ROOT / 'data' / song['source'], language)
     definitions = [item for verse in source['verses'] for item in verse]
-    if (len(definitions) < 3 or profile.get('regions') != [item['region'] for item in definitions] or
+    short_form = short_form_review(profile)
+    if ((len(definitions) != 2 if short_form else len(definitions) < 3) or
+            profile.get('regions') != [item['region'] for item in definitions] or
             len(profile.get('regionOpenings', [])) != len(definitions) or
             any(len(clean(opening, language)) < 4 or
                 not clean(item['text'], language).startswith(clean(opening, language))
@@ -591,7 +637,7 @@ def vocal_interlude_material(source, profile, material):
 
 
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None,
-                         edge_verses=None, initial_verse_sections=None):
+                         edge_verses=None, initial_verse_sections=None, short_form=False):
     melody, optical, reference = material
     verify_local = local_matcher(profile)
     previous_context = previous_reading_context(profile)
@@ -599,7 +645,8 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
     times = performance_times(melody, optical, target, window['durationEstimate'], window['onsetEstimate'],
         reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
         reading_sections=profile.get('readingSectionReview'), previous_context=previous_context,
-        source_verses=source_verses, edge_verses=edge_verses, initial_verse_sections=initial_verse_sections)
+        source_verses=source_verses, edge_verses=edge_verses, initial_verse_sections=initial_verse_sections,
+        short_form=short_form)
     variants = outro_profiles(profile)
     if variants:
         checks = detail['instrumentalOutroChecks'] = []
@@ -636,6 +683,9 @@ def generate(song, profile, cache, prepare=False):
         recording_profiles = [(item, ending_recording_profile(profile, item)) for item in recordings]
         reference_profile = reference_ending_profile(profile)
         body_material = vocal_interlude_material(source, profile, reference_material(profile, cache, prepare))
+        short_form = validate_short_form(source, profile, body_material)
+        if short_form is not None:
+            evidence['midiMatching']['shortFormReview'] = short_form
         initial_sections = None
         initial_context = initial_verse_context(source, profile, body_material)
         if initial_context is not None:
@@ -659,7 +709,7 @@ def generate(song, profile, cache, prepare=False):
             music_section = verse_music_section(track_profile, verses, track_material[1])
             measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
                                            detail, source_verses=verses, edge_verses=edge_verses,
-                                           initial_verse_sections=initial_sections)
+                                           initial_verse_sections=initial_sections, short_form=short_form is not None)
             if verses is not None:
                 music = (repeated_verses(audio, len(verses), cache) if music_section is None else
                          repeated_verses(audio, len(verses), cache,

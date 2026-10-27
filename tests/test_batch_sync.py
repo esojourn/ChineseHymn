@@ -542,6 +542,18 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(reader.calls, 2)
             self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems), legacy)
             self.assertEqual(reader.calls, 3)
+            separate = score.note_rows(raster, recognition, cache, reviewed_systems=systems,
+                                       normalize_digits=True, separate_octave_dots=True)
+            self.assertEqual(separate[0]['notes'], normalized[0]['notes'])
+            self.assertEqual(json.loads((cache / 'notes/score.png.json').read_text())['version'], 6)
+            self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems,
+                             normalize_digits=True, separate_octave_dots=True), separate)
+            self.assertEqual(reader.calls, 4)
+            self.assertEqual(score.note_rows(raster, recognition, cache, reviewed_systems=systems,
+                             normalize_digits=True), normalized)
+            self.assertEqual(reader.calls, 5)
+            with self.assertRaises(ValueError):
+                score.note_rows(raster, recognition, cache, reviewed_systems=systems, separate_octave_dots=True)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional optical dependencies')
     def test_reference_score_rejects_changed_source_render_and_cached_notes(self):
@@ -1475,6 +1487,27 @@ class BatchTests(unittest.TestCase):
         characters = [(char, index) for index, char in enumerate(text)]
         indices = [index for index, char in enumerate(text) if char.isdigit()]
         self.assertEqual(accidental_offsets(characters, indices), [0, 1, 0, -1, 0, 1])
+
+    @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
+    def test_small_octave_dots_do_not_become_beams_in_opt_in_extractor(self):
+        import numpy as np
+        from sync_batch_score import optical_rhythm
+        ink = np.zeros((40, 100), dtype=np.uint8)
+        for x in [15, 45, 75]:
+            ink[5:22, x:x + 9] = 1
+        ink[24:27, 18:22] = 1  # A small low-octave dot that filled the old stripe.
+        ink[23:24, 43:58] = 1  # A thin beam one pixel below the digit.
+        ink[24:27, 48:52] = 1  # Connected octave dot must not erase that beam.
+        ink[23:24, 73:88] = 1
+        ink[27:28, 73:88] = 1
+        positions = [19 / 100, 49 / 100, 79 / 100]
+        original = ink.copy()
+        legacy = optical_rhythm(ink, positions, 26, [1] * 3)
+        weights, diagnostics = optical_rhythm(ink, positions, 26, [1] * 3, True)
+        self.assertEqual(weights, [1, .5, .25])
+        self.assertEqual([item['beams'] for item in diagnostics], [0, 1, 2])
+        self.assertEqual(optical_rhythm(ink, positions, 26, [1] * 3), legacy)
+        np.testing.assert_array_equal(ink, original)
 
     @unittest.skipIf(confirm_boundaries is None, 'requires optional batch audio dependencies')
     def test_optical_rhythm_distinguishes_beams_dots_holds_and_bar_lines(self):

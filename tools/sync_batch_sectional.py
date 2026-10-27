@@ -89,11 +89,14 @@ def optical_performance_rows(rows, review):
     for group in tuplets:
         system, indices = group['system'], group['noteIndices']
         if (type(system) is not int or not 0 <= system < len(rows) or
-                not isinstance(indices, list) or len(indices) != 3 or any(type(i) is not int for i in indices) or
-                indices != list(range(indices[0], indices[0] + 3)) or
+                not isinstance(indices, list) or len(indices) not in [2, 3] or any(type(i) is not int for i in indices) or
+                indices != list(range(indices[0], indices[0] + len(indices))) or
                 group.get('actualNotes') != 3 or group.get('normalNotes') != 2 or
                 indices[-1] >= len(rows[system]['notes']) or indices[0] < 0):
-            raise ValueError('三连音须明确引用连续三个原谱音符')
+            raise ValueError('三连音须明确引用连续的原谱音符')
+        if (len(indices) == 2 and
+                [rows[system]['rhythmWeights'][i] for i in indices] not in [[1, .5], [.5, 1]]):
+            raise ValueError('两个音头的三连音只能由印刷四分音符和八分音符组成')
         for index in indices:
             if (system, index) in multipliers:
                 raise ValueError('三连音标记重复')
@@ -287,8 +290,12 @@ def verify_verse_music(times, verses, music):
 
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
                       local_match=None, reading_sections=None, previous_context=False, source_verses=None,
-                      edge_verses=None, initial_verse_sections=None):
-    if len(melody_rows) != len(optical_rows) or len(melody_rows) < 3:
+                      edge_verses=None, initial_verse_sections=None, short_form=False):
+    if (type(short_form) is not bool or short_form and (
+            len(melody_rows) != 2 or any(item is not None for item in
+                [reading_sections, source_verses, edge_verses, initial_verse_sections]))):
+        raise ValueError('短歌须绑定同一完整原文诗节的两个阅读区域')
+    if len(melody_rows) != len(optical_rows) or len(melody_rows) < (2 if short_form else 3):
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)
     if initial_verse_sections is not None and (
@@ -385,7 +392,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         spans.append(span)
     if any(x + .5 >= y for x, y in zip(times, times[1:])):
         raise ValueError('分段时间轴未递增')
-    edge_groups = source_verses if source_verses is not None else edge_verses
+    edge_groups = [[0, 1]] if short_form else source_verses if source_verses is not None else edge_verses
     edge_spans = spans if edge_groups is None else [sum(spans[index] for index in verse) for verse in edge_groups]
     if edge_groups is not None:
         evidence['completeVerseSpans'] = edge_spans

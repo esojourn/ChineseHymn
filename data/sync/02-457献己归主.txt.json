@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "02-457",
+  "status": "reviewed",
+  "source": {
+    "file": "02-457献己归主.txt",
+    "sha256": "7200e03be001f291d5eda8cef6acde92b3d30bf0486b75137529158ecba42316",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-457献己归主.mp3",
+      "sha256": "565acfe44b73d23351296a1632913f2a29b695062e29310d91f89e1f08c1a5c5",
+      "duration": 167.83673469387756,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 9.8,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 29.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.98,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.6,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 88.15,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.8,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 127.4,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 146.95,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我一生求主管理， 愿献身心为活祭； 我双手为主做工， 因被主慈爱感动。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "救主宝血将我罪洗净， 宝贝血泉使我得成圣， 主，我命我心，一切都归于你， 从今日直到永远。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "愿我脚为主走路， 步步遵从主吩咐； 愿我口时常颂扬， 赞美我荣耀君王。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "救主宝血将我罪洗净， 宝贝血泉使我得成圣， 主，我命我心，一切都归于你， 从今日直到永远。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "愿我恭敬献金银， 不为自己留分文； 我光阴全归主用， 赞美歌声永不停。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "救主宝血将我罪洗净， 宝贝血泉使我得成圣， 主，我命我心，一切都归于你， 从今日直到永远。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "愿我一生听主命， 放弃己见随主行； 我心成为主宝座， 愿你做王我心中。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "救主宝血将我罪洗净， 宝贝血泉使我得成圣， 主，我命我心，一切都归于你， 从今日直到永远。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-457献己归主.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

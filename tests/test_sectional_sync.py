@@ -382,11 +382,44 @@ class SectionalTests(unittest.TestCase):
                        'sampling': {'durationEstimate': 30, 'onsetEstimate': 2}}
             with patch.object(self.cli.batch, 'ROOT', root):
                 self.assertEqual(len(self.cli.validate_source(song, profile)[1]), 3)
+                self.assertEqual(self.cli.validate_source(song, profile),
+                                 self.cli.validate_source(song, {**profile, 'language': 'zh'}))
                 for change in [{'tracks': song['tracks'][1:]}, {'sourceHash': 'changed'},
                                {'regions': ['r1', 'r2']}, {'audioFile': 'main.mp3'},
                                {'regionOpenings': ['第一段歌词', '另外的歌词', '第三段歌词']}]:
                     with self.assertRaises(ValueError):
                         self.cli.validate_source(song, {**profile, **change})
+
+    def test_english_source_requires_explicit_language_and_keeps_all_original_region_and_recording_bindings(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            text = 'English hymn\n\nWhen peace like a river\n\nIt is well with my soul\n\nMy sin not in part but the whole\n\n--\nTest artist - Album credit'
+            (root / 'data/song.txt').write_text(text)
+            song = {'type': 'text', 'source': 'song.txt', 'sha256': 'source', 'reference': 'lead.mp3',
+                    'tracks': [{'file': 'lead.mp3', 'sha256': 'lead'}]}
+            profile = {'version': 1, 'language': 'en', 'sourceHash': 'source', 'tracks': song['tracks'],
+                       'audioFile': 'lead.mp3', 'regions': ['r1', 'r2', 'r3'],
+                       'regionOpenings': ['WHEN PEACE', 'It is well', 'My sin not in part'],
+                       'sampling': {'durationEstimate': 30, 'onsetEstimate': 0}}
+            with patch.object(self.cli.batch, 'ROOT', root):
+                source, definitions = self.cli.validate_source(song, profile)
+                self.assertEqual(source['language'], 'en')
+                self.assertEqual([item['region'] for item in definitions], ['r1', 'r2', 'r3'])
+                self.assertEqual(source['regions']['r3'], {'kind': 'text', 'startLine': 6, 'endLine': 6})
+                for update in [{'sourceHash': 'stale'}, {'tracks': []}, {'audioFile': 'other.mp3'},
+                               {'regions': ['r1', 'r3']}, {'regions': ['r1', 'r3', 'r2']},
+                               {'regionOpenings': ['When peace', 'Other lyric', 'My sin']},
+                               {'regionOpenings': ['When peace', 'It', 'My sin']}]:
+                    with self.assertRaises(ValueError):
+                        self.cli.validate_source(song, {**profile, **update})
+                missing = {key: value for key, value in profile.items() if key != 'language'}
+                with self.assertRaises(ValueError):
+                    self.cli.validate_source(song, missing)
+                for language in [None, True, 'fr', {}, '']:
+                    with self.assertRaisesRegex(ValueError, '中文或英文'):
+                        self.cli.validate_source(song, {**profile, 'language': language})
+                self.assertEqual((root / 'data/song.txt').read_text(), text)
 
     def notation(self):
         row = {'notes': [0, 1, 1, 2, 3, 4], 'pitchOffsets': [0] * 6, 'rhythmWeights': [1] * 6}

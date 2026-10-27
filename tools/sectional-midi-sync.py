@@ -197,11 +197,15 @@ def validate_source(song, profile):
             profile.get('sourceHash') != song['sha256'] or profile.get('tracks') != song['tracks'] or
             profile.get('audioFile') != song['reference']):
         raise ValueError('乐曲结构配置与当前歌词、全部录音或参考音轨不符')
-    source = text_source(batch.ROOT / 'data' / song['source'])
+    language = profile.get('language', 'zh')
+    if language not in ['zh', 'en']:
+        raise ValueError('原文起句校验只支持明确的中文或英文配置')
+    source = text_source(batch.ROOT / 'data' / song['source'], language)
     definitions = [item for verse in source['verses'] for item in verse]
     if (len(definitions) < 3 or profile.get('regions') != [item['region'] for item in definitions] or
             len(profile.get('regionOpenings', [])) != len(definitions) or
-            any(len(clean(opening)) < 4 or not clean(item['text']).startswith(clean(opening))
+            any(len(clean(opening, language)) < 4 or
+                not clean(item['text'], language).startswith(clean(opening, language))
                 for item, opening in zip(definitions, profile['regionOpenings']))):
         raise ValueError('实际结构未完整绑定原文阅读区域及起句')
     window = profile['sampling']

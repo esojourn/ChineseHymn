@@ -294,7 +294,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
     if (type(short_form) is not bool or short_form and (
             len(melody_rows) != 2 or any(item is not None for item in
                 [reading_sections, source_verses, edge_verses, initial_verse_sections]))):
-        raise ValueError('短歌须绑定同一完整原文诗节的两个阅读区域')
+        raise ValueError('短歌须绑定同一完整谱面的两个原文阅读区域')
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < (2 if short_form else 3):
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)

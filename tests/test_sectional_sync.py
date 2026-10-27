@@ -748,7 +748,7 @@ class SectionalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.cli.validate_short_form(source, {**profile, 'shortFormReview': review}, material)
         for key in ['sourceVerseContext', 'readingSectionReview', 'initialVerseContext', 'vocalInterludes',
-                    'referenceEndingSequence', 'sourceVerseEdgeReview', 'instrumentalOutroReview']:
+                    'sourceVerseEdgeReview', 'instrumentalOutroReview']:
             with self.assertRaises(ValueError):
                 self.cli.validate_short_form(source, {**profile, key: {}}, material)
         for verses in [[source['verses'][0][:1]], [[source['verses'][0][0]], [source['verses'][0][1]]]]:
@@ -767,6 +767,59 @@ class SectionalTests(unittest.TestCase):
         bad[1][1]['pitchOffsets'][0] = 1
         with self.assertRaises(ValueError):
             self.cli.validate_short_form(source, profile, bad)
+
+    def test_two_original_paragraphs_require_explicit_short_form_binding_to_the_same_complete_print(self):
+        source, profile, material, definitions = self.short_form_fixture()
+        source['verses'] = [[item] for item in definitions]
+        original = copy.deepcopy((source, profile, material))
+        with self.assertRaises(ValueError):
+            self.cli.validate_short_form(source, profile, material)
+        explicit = copy.deepcopy(profile)
+        explicit['shortFormReview']['sourceParagraphs'] = 2
+        self.assertEqual(self.cli.validate_short_form(source, explicit, material)['completePrintedSoundedNotes'], 14)
+        self.assertEqual((source, profile, material), original)
+        for count in [True, 1, 3, 2., '2']:
+            bad = copy.deepcopy(explicit)
+            bad['shortFormReview']['sourceParagraphs'] = count
+            with self.assertRaises(ValueError):
+                self.cli.validate_short_form(source, bad, material)
+        with self.assertRaises(ValueError):
+            self.cli.validate_short_form({**source, 'verses': [definitions]}, explicit, material)
+
+    def test_short_form_final_reprise_is_verified_separately_without_changing_original_regions(self):
+        source, profile, material, definitions = self.short_form_fixture()
+        profile['regions'] = [item['region'] for item in definitions]
+        profile['readingBoundaries'] = [{'onsetIndex': 0}, {'onsetIndex': 7}]
+        profile['opticalReference'] = {'parts': {'A': [[0, 0, 7]], 'B': [[1, 0, 7]]},
+                                     'order': ['A', 'B'], 'readingStarts': [[0, 0], [1, 0]]}
+        profile['midiReference'].update(file='body.mid', sha256='a' * 64)
+        profile['midiReference']['origin']['file'] = 'original.mid'
+        profile['referenceEndingSequence'] = {'version': 1, 'region': profile['regions'][-1],
+            'sections': [{'opticalPart': 'B', 'quarterRange': [7, 14]}],
+            'file': 'ending.mid', 'sha256': 'b' * 64, 'reason': 'The recording reprises the complete final reading.'}
+        original = copy.deepcopy((source, profile, material))
+        self.assertIsNotNone(self.cli.validate_short_form(source, profile, material))
+        ending = self.cli.reference_ending_profile(profile)
+        self.assertEqual(ending['midiReference']['arrangement']['sections'], [[0, 14], [7, 14]])
+        self.assertEqual(ending['opticalReference']['order'], ['A', 'B', 'B'])
+        self.assertEqual(ending['opticalReference']['readingStarts'], profile['opticalReference']['readingStarts'])
+        self.assertEqual(ending['regions'], profile['regions'])
+        self.assertEqual((source, profile, material), original)
+        for change in [{'region': profile['regions'][0]},
+                       {'sections': [{'opticalPart': 'A', 'quarterRange': [0, 7]}]}]:
+            bad = copy.deepcopy(profile)
+            bad['referenceEndingSequence'].update(change)
+            with self.assertRaises(ValueError):
+                self.cli.reference_ending_profile(bad)
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(self.cli, 'validate_source', return_value=(source, definitions)), \
+                patch.object(self.cli, 'reference_material') as read, \
+                patch.object(self.cli, 'export_result') as export:
+            self.assertIn('末个阅读区域', self.cli.generate(
+                {'songId': 'test', 'source': 'song.txt', 'sha256': 'source', 'reference': 'main.mp3',
+                 'tracks': [{'file': 'main.mp3', 'sha256': 'main'}]}, bad, Path(directory))[1])
+            read.assert_not_called()
+            export.assert_not_called()
 
     def test_short_form_keeps_all_audio_gates_and_audits_intro_against_the_complete_stanza(self):
         rows = [{'notes': [1], 'pitchOffsets': [0], 'spatialWeights': [1], 'rhythmWeights': [1]}] * 2

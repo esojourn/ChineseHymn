@@ -197,16 +197,19 @@ def short_form_review(profile):
     if 'shortFormReview' not in profile:
         return False
     review = profile['shortFormReview']
-    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+    if (not isinstance(review, dict) or set(review) not in [
+                {'version', 'reason'}, {'version', 'reason', 'sourceParagraphs'}] or
             type(review.get('version')) is not int or review['version'] != 1 or
             not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            ('sourceParagraphs' in review and
+                (type(review['sourceParagraphs']) is not int or review['sourceParagraphs'] != 2)) or
             any(key in profile for key in ['sourceVerseContext', 'sourceVerseEdgeReview', 'readingSectionReview',
-                'musicalVerseEdges', 'sourceVerseMusicRange', 'referenceEndingSequence', 'vocalInterludes',
+                'musicalVerseEdges', 'sourceVerseMusicRange', 'vocalInterludes',
                 'instrumentalOutroReview', 'instrumentalOutroAlternatives', 'initialVerseContext']) or
             not isinstance(profile.get('independentRecordings', []), list) or
             any(not isinstance(item, dict) or 'endingReadingRepeat' in item
                 for item in profile.get('independentRecordings', []))):
-        raise ValueError('短歌须明确说明单个完整原文诗节，不能叠加分组、反复或结尾策略')
+        raise ValueError('短歌须明确说明完整原谱对应的原文段落，不能叠加分组、间奏或其他结尾策略')
     return True
 
 
@@ -225,15 +228,22 @@ def validate_short_form(source, profile, material):
               for note, shift in zip(row['notes'], row['pitchOffsets'], strict=True)]
     recipe = profile.get('midiReference', {}).get('arrangement', {})
     quarters = sum(beat for row in rows for note, beat in row)
-    if (len(verses) != 1 or len(verses[0]) != 2 or len(melody) != 2 or len(optical) != 2 or
+    paragraphs = profile['shortFormReview'].get('sourceParagraphs', 1)
+    if (len(verses) != paragraphs or any(not verse for verse in verses) or sum(map(len, verses)) != 2 or
+            len(melody) != 2 or len(optical) != 2 or
             origin.get('kind') != 'printed-numbered-score' or not any(note for note, shift in expected) or
             expected != actual or reference.get('symbolicRows', {}).get('editCost') != 0 or
             any(not math.isfinite(beat) or beat <= 0 for row in rows for note, beat in row) or
             not math.isclose(recipe.get('quarterLength', 0), quarters, abs_tol=1e-8) or
             recipe.get('sections') != [[0, recipe.get('quarterLength')]]):
         raise ValueError('短歌的两个区域须零编辑、依次覆盖完整独立原谱，不得截取、重排或重复乐段')
+    scope = 'one complete original stanza; all full and local audio gates unchanged'
+    if 'referenceEndingSequence' in profile:
+        scope = 'one complete printed cycle and its audited final-reading reprise; all full and local audio gates unchanged'
+    elif paragraphs == 2:
+        scope = 'one complete printed cycle across two original paragraphs; all full and local audio gates unchanged'
     return {'readings': [0, 1], 'completePrintedSoundedNotes': sum(bool(note) for note, shift in expected),
-            'edgeScope': 'one complete original stanza; all full and local audio gates unchanged'}
+            'edgeScope': scope}
 
 
 def validate_source(song, profile):

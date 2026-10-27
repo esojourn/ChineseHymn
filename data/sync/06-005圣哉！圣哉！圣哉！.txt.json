@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "songId": "06-005",
+  "status": "reviewed",
+  "source": {
+    "file": "06-005圣哉！圣哉！圣哉！.txt",
+    "sha256": "91ac9832920aebc4880d3e5d835bc31cb306cfcefc658d399bcad6ae9320e00d",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-005圣哉！圣哉！圣哉！.mp3",
+      "sha256": "489babd30f962b466e1cfafe1c2676ce9b6c6fc111a9124edba397e03e3850e2",
+      "duration": 189.4661224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 2
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 4
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 8
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 10
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 14
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 16
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 20
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 22
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 26
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 28
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 30
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 32
+    },
+    "r17": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 34
+    },
+    "r18": {
+      "kind": "text",
+      "startLine": 36,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 12.4,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 18.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 24.4,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 36.3,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 42.35,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 48.1,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 63.4,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.35,
+      "region": "r8",
+      "label": "第8段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.1,
+      "region": "r9",
+      "label": "第9段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.4,
+      "region": "r10",
+      "label": "第10段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.2,
+      "region": "r11",
+      "label": "第11段",
+      "transition": "reading"
+    },
+    {
+      "at": 114.3,
+      "region": "r12",
+      "label": "第12段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.2,
+      "region": "r13",
+      "label": "第13段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.15,
+      "region": "r14",
+      "label": "第14段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.4,
+      "region": "r15",
+      "label": "第15段",
+      "transition": "reading"
+    },
+    {
+      "at": 144.35,
+      "region": "r16",
+      "label": "第16段",
+      "transition": "reading"
+    },
+    {
+      "at": 150.2,
+      "region": "r17",
+      "label": "第17段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.35,
+      "region": "r18",
+      "label": "第18段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Holy holy holy",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Lord god almighty",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "Early in the morning our song shall rise to thee",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "Holy holy holy",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "Merciful and mighty",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "God in three persons blessed trinity",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "Holy holy holy",
+        "label": "第7段"
+      },
+      {
+        "region": "r8",
+        "text": "Though the darkness hide thee",
+        "label": "第8段"
+      },
+      {
+        "region": "r9",
+        "text": "Though the eye of sinful man thy glory may not see",
+        "label": "第9段"
+      },
+      {
+        "region": "r10",
+        "text": "Only thou art holy there is none beside thee",
+        "label": "第10段"
+      },
+      {
+        "region": "r11",
+        "text": "Perfect in power in love and purity",
+        "label": "第11段"
+      },
+      {
+        "region": "r12",
+        "text": "Holy holy holy",
+        "label": "第12段"
+      },
+      {
+        "region": "r13",
+        "text": "Lord god almighty",
+        "label": "第13段"
+      },
+      {
+        "region": "r14",
+        "text": "All thy works shall praise thy name in earth and sky and sea",
+        "label": "第14段"
+      },
+      {
+        "region": "r15",
+        "text": "Holy holy holy",
+        "label": "第15段"
+      },
+      {
+        "region": "r16",
+        "text": "Merciful and mighty",
+        "label": "第16段"
+      },
+      {
+        "region": "r17",
+        "text": "God in three persons blessed trinity",
+        "label": "第17段"
+      },
+      {
+        "region": "r18",
+        "text": "God in three persons blessed trinity",
+        "label": "第18段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-005圣哉！圣哉！圣哉！.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

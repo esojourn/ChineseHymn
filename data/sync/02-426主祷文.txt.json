@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "songId": "02-426",
+  "status": "reviewed",
+  "source": {
+    "file": "02-426主祷文.txt",
+    "sha256": "19881103f1553afca39b8726f8d1a5bbc4c79998bfa620ac6f561755430c3cb1",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-426主祷文.mp3",
+      "sha256": "8a7c08d4a461b88ffd9fbe30c4904d1962173b191ab338b4599a727a2094c311",
+      "duration": 106.65795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 5.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.35,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.35,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我们在天慈爱的父，愿我们以敬虔心声 尊崇呼求你至圣名，你名永远被尊为圣。 愿你的国早日降临，愿你旨意行在地上！",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "求赐我们日用饮食，使我们得温暖饱足。 我们俯伏在你座前，诚心悔罪求你垂怜， 求你赦免我们罪债，正如我们免人的债。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "不叫我们遇见试探，拯救我们脱离凶恶， 求你大能保守我们。你国度必永无穷尽！ 权柄荣耀全是你的，从今直到永永远远。阿门。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-426主祷文.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

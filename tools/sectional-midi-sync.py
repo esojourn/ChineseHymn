@@ -14,6 +14,7 @@ import time
 import urllib.request
 from sync_batch_align import export_result
 from sync_batch_audio import features, repeated_verses
+from sync_batch_cqt import audio_feature_review, cqt_features
 from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
 from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music
@@ -248,6 +249,7 @@ def validate_short_form(source, profile, material):
 
 
 def validate_source(song, profile):
+    audio_feature_review(profile)
     if (type(profile.get('version')) is not int or profile['version'] != 1 or song['type'] != 'text' or
             profile.get('sourceHash') != song['sha256'] or profile.get('tracks') != song['tracks'] or
             profile.get('audioFile') != song['reference']):
@@ -500,7 +502,21 @@ def independent_recordings(song, profile):
                 any(type(window[key]) not in (int, float) or not math.isfinite(window[key]) for key in window) or
                 window['durationEstimate'] <= 0 or window['onsetEstimate'] < 0):
             raise ValueError('独立录音的整曲取样范围无效')
+    if audio_feature_review(profile) is not None and seen != {track['file'] for track in song['tracks']}:
+        raise ValueError('常Q音高分析须对当前全部录音分别进行完整及局部四路径核对')
     return recordings
+
+
+def recording_features(audio, cache, profile, detail):
+    review = audio_feature_review(profile)
+    if review is None:
+        return features(audio, cache)
+    target, proof = cqt_features(audio, cache)
+    if not any(batch.ROOT / 'data' / track['file'] == audio and
+               track['sha256'] == proof.get('sourceSha256') for track in profile.get('tracks', [])):
+        raise ValueError('常Q音高特征没有绑定当前已复核音轨的哈希')
+    detail['audioFeatures'] = {**proof, 'reason': review['reason']}
+    return target
 
 
 def ending_recording_profile(profile, item):
@@ -723,7 +739,8 @@ def generate(song, profile, cache, prepare=False):
         def measure_recording(file, window, detail, track_profile=reference_profile, track_material=material):
             audio = batch.ROOT / 'data' / file
             music_section = verse_music_section(track_profile, verses, track_material[1])
-            measured = measured_performance(track_profile, window, track_material, features(audio, cache), cache, prepare,
+            target = recording_features(audio, cache, track_profile, detail)
+            measured = measured_performance(track_profile, window, track_material, target, cache, prepare,
                                            detail, source_verses=verses, edge_verses=edge_verses,
                                            initial_verse_sections=initial_sections, short_form=short_form is not None)
             if verses is not None:

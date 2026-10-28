@@ -11,3 +11,5 @@ onnxruntime==1.31.0
 numba==0.68.0
 opencc-python-reimplemented==0.1.7
 mido==1.3.3
+# Optional explicitly selected constant-Q features; legacy STFT remains the default.
+librosa==0.11.0

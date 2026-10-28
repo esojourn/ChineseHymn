@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "04-459",
+  "status": "reviewed",
+  "source": {
+    "file": "04-459求赐大复兴.txt",
+    "sha256": "0af612d014acfd6e36a0f60c92022356bcac0d22e21aa0c50c67815fa05886f5",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-459求赐大复兴.mp3",
+      "sha256": "6a0e39ea3bd916e05b4613a64d8350c2d7b5295f145621a445f3c57127f9a4e8",
+      "duration": 166.4,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 11.6,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 29.4,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 49.9,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 88.2,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 106.0,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 126.5,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 144.3,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "04-459求赐大复兴-领唱.mp3",
+      "sha256": "cc50435b6d3f3f3a876427ff77f8f9028ae95a9db8c22a523f588b64230073be",
+      "duration": 167.86285714285714,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 18
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 27
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 29,
+      "endLine": 32
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 33,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 13.3,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 31.1,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 51.4,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.4,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 89.65,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 107.7,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.95,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 146.0,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我今来就你，耶稣我神， 惟靠你宝贵圣言宏恩， 愿我谦恭祷声蒙垂听， 并使我心灵得极大复兴。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "使我心灵得极大复兴， 使我心灵得极大复兴， 更求圣灵进我心中掌权柄， 并使我心灵得极大复兴。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "求赐圣灵进我心深处， 烧除一切渣滓与罪辜， 让你恩典权能今动工， 求使我心灵得极大复兴。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "使我心灵得极大复兴， 使我心灵得极大复兴， 更求圣灵进我心中掌权柄， 并使我心灵得极大复兴。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "恳求主将复兴灵赐我， 助我常靠主喜乐蔼和， 赐我力量生活常得胜， 并使我心灵得极大复兴。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "使我心灵得极大复兴， 使我心灵得极大复兴， 更求圣灵进我心中掌权柄， 并使我心灵得极大复兴。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "助我今愿听从主差遣， 导偏离正路人脱罪险， 助我带领他们归天庭， 求使我心灵得极大复兴。",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "使我心灵得极大复兴， 使我心灵得极大复兴， 更求圣灵进我心中掌权柄， 并使我心灵得极大复兴。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-459求赐大复兴.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

@@ -1206,6 +1206,17 @@ class BatchTests(unittest.TestCase):
                 self.assertEqual(definition['regions'], {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3}})
                 self.assertEqual(definition['verses'][0][0]['text'], 'How great Thou art')
 
+    def test_video_credit_is_not_a_chinese_lyric_reading(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '06-018示例.txt'
+            for credit in ['视频：', '視頻:']:
+                original = '标题\n\n恩主耶稣是我良友\n有主胜得万有\n\n' + credit + '\nhttps://example.org/video\n'
+                path.write_text(original)
+                definition = sources.text_source(path)
+                self.assertEqual(definition['regions'], {'r1': {'kind': 'text', 'startLine': 2, 'endLine': 3}})
+                self.assertEqual(definition['verses'][0][0]['text'], '恩主耶稣是我良友 有主胜得万有')
+                self.assertEqual(path.read_text(), original)
+
     def test_image_order_crosses_printed_rows_and_repeats_the_shared_chorus(self):
         def row(top, text):
             return {'top': top, 'bottom': top + .025, 'text': text, 'confidence': .99}

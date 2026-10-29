@@ -12,7 +12,7 @@ VERSE = re.compile(r'^\s*(\d{1,2})(?:\s*[.．、)]\s*|\s+(?=\D))')
 CHINESE_VERSE = re.compile(r'^\s*[（(]([一二三四五六七八九十])[）)]\s*')
 CHORUS = re.compile(r'^\s*[（(\[]?(?:副(?:歌)?|chorus)[）)\]]?\s*[:：.．]?\s*$', re.I)
 CHORUS_PREFIX = re.compile(r'^\s*(?:(?:副歌|副|chorus)\s*[:：.．]\s*|[（(\[](?:副歌|副|chorus)[）)\]]\s*[:：.．]?\s*)(?=\S)', re.I)
-CREDITS = re.compile(r'^(?:歌手|演唱|作词|作詞|作曲|词曲|詞曲|编曲|編曲|所属专辑|所屬專輯|lyrics\s+by|music\s+by|performed\s+by)\s*[:：]', re.I)
+CREDITS = re.compile(r'^(?:歌手|演唱|作词|作詞|作曲|词曲|詞曲|编曲|編曲|所属专辑|所屬專輯|视频|視頻|lyrics\s+by|music\s+by|performed\s+by)\s*[:：]', re.I)
 IMAGE_VERSE = re.compile(r'''^\s*['’‘“"]?(\d{1,2})(?:\s*[.．、)]\s*|\s*)(?=[\u3400-\u9fff“‘（"'(])''')
 
 

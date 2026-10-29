@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "songId": "06-019",
+  "status": "reviewed",
+  "source": {
+    "file": "06-019诗篇二十三.txt",
+    "sha256": "dc61649bf2d3315f68fa0c1c9ad33c1d642dd1420a91d8992e01ba688f44fe42",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-019诗篇二十三.mp3",
+      "sha256": "aec036d706c0d940de42ebec45ac6fbfad210e46b6688ad00cd470ede41b0332",
+      "duration": 226.84733333333332,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 39,
+      "endLine": 42
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 43,
+      "endLine": 46
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 49,
+      "endLine": 52
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 36.29,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 60.37,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 84.52,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.84,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 162.72,
+      "region": "r6",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 172.1,
+      "region": "r7",
+      "label": "第6段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified performed reading order; initial region shown from playback zero (sung onset not measured). Degenerate first words after transcript-verified long gaps require two prompt-free ten-word opening transcriptions, pinned models, explicit inflection review, and agreement with the complete transcript. Other changes pass original contextual acoustic checks; other recordings retain chroma-DTW correspondence checks. Original source lyrics are preserved.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Jesus my shepherd and only provider He makes me lie down in green pastures He leads me beside the still water He restores my soul",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Surely goodness and mercy will follow me All the days of my life And I will dwell in His house forever Until the end of time",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "Jesus my Shepherd and only provider You make me lie down in green pastures You lead me beside the still water You restore my soul",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "Though I walk through the valley of shadows I will not be afraid Your rod and staff are my only comfort And You'll be with me always",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "You prepare a table before me In the presence of my enemies And You anoint my head with oil And my cup overflows",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "My cup overflows with Your love With Your love",
+        "label": "第5段"
+      },
+      {
+        "region": "r7",
+        "text": "Jesus my shepherd and only provider You make me lie down in green pastures You lead me beside the still water You restore my soul",
+        "label": "第6段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-019诗篇二十三.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "longGapFreePrefix": {
+      "version": 1,
+      "reason": "前句词尾106.48秒早于两个原始声学窗口，完整转写直到下一句之间无词。只复核这类长间奏后首词退化问题，绝不直接采用退化的零时长词或窗口边缘起点。",
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "inflections": [
+        {
+          "source": "prepare",
+          "decoded": "prepared"
+        }
+      ]
+    }
+  }
+}

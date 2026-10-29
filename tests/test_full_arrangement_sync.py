@@ -189,6 +189,57 @@ class FullArrangementTests(unittest.TestCase):
                 self.assertEqual(a.dtype, np.float32)
                 self.assertTrue(np.array_equal(a, b))
 
+    def short_fixture(self, root):
+        song, profile, source, _ = self.fixture(root)
+        path = root / 'data/song.txt'
+        path.write_text('原始完整诗歌\n\n' + '\n'.join(f'完整原文第{i}行歌词全部保留' for i in range(6)))
+        source = text_source(path)
+        song['sha256'] = full.digest(path)
+        score = mido.MidiFile(root / 'midi/original.mid')
+        bass = copy.deepcopy(score.tracks[-1])
+        for event in bass:
+            if event.type in ['note_on', 'note_off']:
+                event.channel, event.note = 3, event.note - 12
+        score.tracks.append(bass)
+        score.save(root / 'midi/original.mid')
+        profile.pop('midiOrigin')
+        profile.pop('midiArrangement')
+        definitions = source['verses'][0]
+        profile.update(targetSha256=song['sha256'], sourceVerseShape=[2], verseCount=1,
+            sourceRegions=[d['region'] for d in definitions],
+            regionOpenings=[[d['text'][:8] for d in definitions]],
+            file='original.mid', sha256=full.digest(root / 'midi/original.mid'),
+            shortOriginalMidiReview={'version': 1, 'reason': '完整原始四声部及全文两区，禁止截取或重排。'})
+        return song, profile, source
+
+    def test_two_regions_require_complete_unmodified_polyphonic_reference(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            song, profile, source = self.short_fixture(root)
+            raw = (root / 'midi/original.mid').read_bytes()
+            full.validate_source(song, profile, source, root, root)
+            path, proof = full.reference_midi(profile, root)
+            self.assertEqual(path, root / 'midi/original.mid')
+            self.assertEqual(path.read_bytes(), raw)
+            self.assertTrue(proof['unmodifiedOriginal'])
+            self.assertGreaterEqual(proof['maximumDistinctSoundingPitches'], 4)
+            without = {k: v for k, v in profile.items() if k != 'shortOriginalMidiReview'}
+            with self.assertRaises(ValueError):
+                full.validate_source(song, without, source, root, root)
+            for extra in ['midiArrangement', 'midiOrigin']:
+                with self.assertRaises(ValueError):
+                    full.reference_midi({**profile, extra: {}}, root)
+            for review in [{'version': True, 'reason': 'x'}, {'version': 1, 'reason': ''},
+                           {'version': 1, 'reason': 'x', 'seconds': [5, 20]}]:
+                with self.assertRaises(ValueError):
+                    full.reference_midi({**profile, 'shortOriginalMidiReview': review}, root)
+            score = mido.MidiFile(path)
+            score.tracks = score.tracks[:2]
+            score.save(path)
+            profile['sha256'] = full.digest(path)
+            with self.assertRaises(ValueError):
+                full.reference_midi(profile, root)
+
     def test_failed_additional_recording_prevents_export(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

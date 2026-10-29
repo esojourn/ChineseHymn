@@ -11,6 +11,18 @@ from sync_batch_sources import clean
 VOICE_NAME = 'Combined source vocal voices'
 
 
+def short_original_review(profile):
+    if 'shortOriginalMidiReview' not in profile:
+        return False
+    review = profile['shortOriginalMidiReview']
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            any(key in profile for key in ['midiArrangement', 'midiOrigin'])):
+        raise ValueError('双区域原谱核对只能使用完整原始复调 MIDI，不能裁切、重排或指定时间')
+    return True
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -26,10 +38,16 @@ def validate_source(song, profile, source, root, cache):
     review = profile['fullArrangementReview']
     definitions = [item for verse in source['verses'] for item in verse]
     openings = profile.get('regionOpenings', [])
+    short = short_original_review(profile)
+    if short and (len(source['verses']) != 1 or len(definitions) != 2 or
+            len(source['regions']) != 2 or
+            any(len(clean(item['text'])) < 8 for item in definitions) or
+            sum(len(clean(item['text'])) for item in definitions) < 40):
+        raise ValueError('双区域原谱核对须完整覆盖一个原始中文段落及至少四十个歌词字')
     if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
             type(review.get('version')) is not int or review['version'] != 1 or
             not isinstance(review.get('reason'), str) or not review['reason'].strip() or
-            song.get('type') != 'text' or source.get('language') != 'zh' or len(definitions) < 4 or
+            song.get('type') != 'text' or source.get('language') != 'zh' or (not short and len(definitions) < 4) or
             song['sha256'] != profile.get('targetSha256') or
             digest(root / 'data' / song['source']) != song['sha256'] or
             profile.get('tracks') != song['tracks'] or
@@ -58,6 +76,37 @@ def validate_source(song, profile, source, root, cache):
 
 def reference_midi(profile, cache):
     import mido
+    if short_original_review(profile):
+        path = cache / 'midi' / profile['file']
+        if digest(path) != profile['sha256']:
+            raise ValueError('完整原始复调 MIDI 哈希已变化')
+        score = mido.MidiFile(path)
+        events = []
+        for track in score.tracks:
+            tick = 0
+            for event in track:
+                tick += event.time
+                if event.type in ('note_on', 'note_off') and event.channel != 9:
+                    sounding = event.type == 'note_on' and bool(event.velocity)
+                    events.append((tick, sounding, event.channel, event.note))
+        active, polyphony = {}, 0
+        for tick, sounding, channel, pitch in sorted(events):
+            key = channel, pitch
+            if sounding:
+                active[key] = active.get(key, 0) + 1
+            elif active.get(key, 0):
+                active[key] -= 1
+                if not active[key]:
+                    del active[key]
+            else:
+                raise ValueError('完整原始复调 MIDI 存在未配对音符')
+            polyphony = max(polyphony, len({pitch for channel, pitch in active}))
+        if score.type != 1 or active or polyphony < 4:
+            raise ValueError('双区域参考须包含完整闭合的至少四音复调，单旋律不能替代和声核对')
+        return path, {'version': 1, 'unmodifiedOriginal': True,
+            'sourceSha256': profile['sha256'], 'analysisSha256': profile['sha256'],
+            'maximumDistinctSoundingPitches': polyphony,
+            'policy': 'complete unmodified original polyphonic MIDI; no voice filtering, cropping, rearrangement or retiming'}
     origin = profile['midiOrigin']
     path = cache / 'midi' / origin['file']
     if digest(path) != origin['sha256']:
@@ -196,7 +245,8 @@ def generate_timelines(cli, song, profile, source, cache):
     offsets, rows = midi_reading_rows(melody, profile['readingBoundaries'])
     if len(rows) != len(definitions) or offsets[0] > .1:
         raise ValueError('完整编排必须从首个主旋律音依次覆盖全部原文阅读区域')
-    detail = {'mode': 'text-complete-arranged-midi', 'referenceDerivation': proof,
+    detail = {'mode': 'text-complete-original-midi' if proof.get('unmodifiedOriginal') else 'text-complete-arranged-midi',
+              'referenceDerivation': proof,
               'referenceTrack': reference, 'maximumCosts': {'harmony': .35, 'melody': .35}, 'recordings': {}}
     audio = cli.batch.ROOT / 'data' / reference
     measured = detail['recordings'][reference] = {'method': 'local and complete harmony/melody; all four paths within 0.5 seconds'}

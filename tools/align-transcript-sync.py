@@ -261,8 +261,18 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
             evidence['windows'] = rows
             batch.save(checkpoint, {'signature': signature, 'windows': rows})
         if initial_view_profile:
-            observations, times, decisions = initial_view_window_times(_model, tokenizer, audio, definitions, estimates,
-                language, preceding, anchor_ranges, anchor_words, resume, save_windows)
+            try:
+                observations, times, decisions = initial_view_window_times(_model, tokenizer, audio, definitions, estimates,
+                    language, preceding, anchor_ranges, anchor_words, resume, save_windows)
+            except ValueError:
+                review = initial_view_profile.get('longGapFreePrefix')
+                if not review:
+                    raise
+                from sync_batch_gap_prefix import recover
+                observations = evidence['windows']
+                times, decisions = recover(_model, audio, song, definitions, diagnostics, observations, transcript,
+                    review, model_dir, cache, confirm_transcript_windows, batch.save)
+                evidence['transcriptMatching'].update(algorithmVersion=8, longGapFreePrefix=review)
             save_windows(observations)
         else:
             try:

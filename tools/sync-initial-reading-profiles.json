@@ -22,5 +22,43 @@
       "r5"
     ],
     "review": "原文五个阅读区域已由完整转写逐块覆盖，每块保留至少60%的逐字对应；后续四个换句均通过原有上下文窗口及延音核对。首个区域从播放开始即显示，其0秒时间点只表示首屏阅读位置，未声明测得首个唱词的起唱时刻。伴奏独立匹配后续实测换句，首屏同样从0秒显示。"
+  },
+  "06-019": {
+    "version": 1,
+    "sourceHash": "dc61649bf2d3315f68fa0c1c9ad33c1d642dd1420a91d8992e01ba688f44fe42",
+    "tracks": [
+      {
+        "file": "06-019诗篇二十三.mp3",
+        "sha256": "aec036d706c0d940de42ebec45ac6fbfad210e46b6688ad00cd470ede41b0332"
+      }
+    ],
+    "audioFile": "06-019诗篇二十三.mp3",
+    "transcriptHash": "5cc5184f5b5a5836e9a8d573847e593136633bfa24c52274bf2093a5d0d300f4",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7"
+    ],
+    "review": "原文七个阅读区域全部由完整英文转写覆盖，首屏从播放开始显示且不声明实测起唱。第5区域前有35秒无词间奏，原始声学窗口首词退化；两个原窗口各自无歌词提示识别完整十词起句，首词起点和词尾均与完整转写一致。转写prepare为prepared的一处同词干过去式差异显式记录，原文不改动；其他换句保留原有双窗口检查。",
+    "longGapFreePrefix": {
+      "version": 1,
+      "reason": "前句词尾106.48秒早于两个原始声学窗口，完整转写直到下一句之间无词。只复核这类长间奏后首词退化问题，绝不直接采用退化的零时长词或窗口边缘起点。",
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "inflections": [
+        {
+          "source": "prepare",
+          "decoded": "prepared"
+        }
+      ]
+    }
   }
 }

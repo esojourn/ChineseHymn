@@ -514,6 +514,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '
                               '(sung onset not measured); every subsequent change retains contextual acoustic checks '
                               'and independent chroma-DTW recording correspondence.')
+    gap_review = evidence.get('transcriptMatching', {}).get('longGapFreePrefix')
+    if gap_review:
+        method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '
+                              '(sung onset not measured). Degenerate first words after transcript-verified long gaps require '
+                              'two prompt-free ten-word opening transcriptions, pinned models, explicit inflection review, '
+                              'and agreement with the complete transcript. Other changes pass original contextual acoustic checks; '
+                              'other recordings retain chroma-DTW correspondence checks. Original source lyrics are preserved.')
     if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')
@@ -527,6 +534,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                            'review': 'Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.'}}
     if initial_view:
         data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
+    if gap_review:
+        data['provenance']['longGapFreePrefix'] = gap_review
     if song['type'] == 'image':
         # These regions focus the performed lyric row, rather than all printed
         # stanzas of a staff; reveal its entire next region so glyphs are not cut.

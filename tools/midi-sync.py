@@ -7,6 +7,7 @@ from pathlib import Path
 import time
 import numpy as np
 from sync_batch_sources import text_source
+from sync_batch_chorus_groups import source_chorus_groups
 from sync_batch_audio import features, repeated_verses, onsets_agree
 from sync_batch_score import match_template
 from sync_batch_align import export_result
@@ -213,6 +214,46 @@ def full_performance_times(profile, harmony, melody_rows, offsets, period, music
     return times
 
 
+def midi_recording_times(profile, source, reference, period, harmony, melody_rows, offsets, cache, detail, limits):
+    evidence = {'midiMatching': detail}
+    music = repeated_verses(reference, len(source['verses']), cache)
+    target = features(reference, cache)
+    mapped, matches = [], []
+    evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
+    for shift in music['shifts']:
+        onset = music['initialOnsetEstimate'] + shift
+        harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], onset, cue_offsets=offsets)
+        melodic = match_template(melody_rows, target[1], target[0], music['period'], onset, 'spatialWeights')
+        one, two = harmonic['best'], melodic['best']
+        matches.append({'harmony': harmonic, 'melody': melodic})
+        if (one['cost'] > limits[0] or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
+                not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
+                two['cost'] > limits[1] or melodic['runnerUp']['cost'] - two['cost'] < .06 or
+                one['key'] != two['key'] or not onsets_agree(one['starts'], two['starts'])):
+            raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
+        if profile.get('referenceDiscovery') and not .75 * music['period'] <= two.get('span', 0) <= 1.25 * music['period']:
+            raise ValueError('音频检索参考的旋律没有覆盖完整乐段')
+        mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
+    if profile.get('fullPerformanceCheck'):
+        complete = {}
+        evidence['midiMatching'].update(mode='text-local-and-complete-score', completePerformance=complete)
+        corrected = full_performance_times(profile, harmony, melody_rows, offsets, period,
+            music, target, matches, limits, complete)
+    else:
+        corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
+        # Both symbolic templates already locate every verse independently.
+        if decisions:
+            raise ValueError('MIDI 独立模板的首段起点仍有歧义')
+    if profile.get('referenceDiscovery'):
+        if len(offsets) != 1:
+            raise ValueError('音频检索参考还需逐项核对段内分句')
+        evidence['midiMatching']['trailingCycle'] = check_extra_cycle(harmony, melody_rows, target,
+            period, music, corrected[-1], limits)
+    evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
+    evidence['midiMatching']['readingOffsets'] = offsets
+    return corrected
+
+
 def generate(song, profile, cache):
     start = time.monotonic()
     evidence = {'songId': song['songId'], 'source': song['source'], 'sourceHash': song['sha256'],
@@ -223,7 +264,8 @@ def generate(song, profile, cache):
             raise ValueError('文字素材与已经核对的 MIDI 配置不一致')
         limits = reference_limits(song, profile)
         evidence['midiMatching']['maximumCosts'] = {'harmony': limits[0], 'melody': limits[1]}
-        source = text_source(batch.ROOT / 'data' / song['source'])
+        source = source_chorus_groups(text_source(batch.ROOT / 'data' / song['source']),
+                                      batch.ROOT / 'data' / song['source'], profile)
         if len(source['verses']) != profile['verseCount']:
             raise ValueError('MIDI 参考与正文段数不一致')
         path = cache / 'midi' / profile['file']
@@ -261,42 +303,37 @@ def generate(song, profile, cache):
             evidence['performanceOrder'] = definitions
             return export_result(song, batch.ROOT, cache, destination, evidence, start, source, definitions,
                 timelines[song['reference']]['times'], first_indices)
-        reference = batch.ROOT / 'data' / song['reference']
-        music = repeated_verses(reference, len(source['verses']), cache)
-        target = features(reference, cache)
-        mapped, matches = [], []
-        evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
-        for shift in music['shifts']:
-            onset = music['initialOnsetEstimate'] + shift
-            harmonic = same_tune.match_cycle(harmony, target, 0, period, music['period'], onset, cue_offsets=offsets)
-            melodic = match_template(melody_rows, target[1], target[0], music['period'], onset, 'spatialWeights')
-            one, two = harmonic['best'], melodic['best']
-            matches.append({'harmony': harmonic, 'melody': melodic})
-            if (one['cost'] > limits[0] or harmonic['runnerUp']['cost'] - one['cost'] < .08 or
-                    not .75 * music['period'] <= one['span'] <= 1.25 * music['period'] or
-                    two['cost'] > limits[1] or melodic['runnerUp']['cost'] - two['cost'] < .06 or
-                    one['key'] != two['key'] or not onsets_agree(one['starts'], two['starts'])):
-                raise ValueError('MIDI 和声与旋律未能共同确认目标乐段的起点')
-            if profile.get('referenceDiscovery') and not .75 * music['period'] <= two.get('span', 0) <= 1.25 * music['period']:
-                raise ValueError('音频检索参考的旋律没有覆盖完整乐段')
-            mapped.extend(round((a + b) / 2, 2) for a, b in zip(one['starts'], two['starts']))
-        if profile.get('fullPerformanceCheck'):
-            complete = {}
-            evidence['midiMatching'].update(mode='text-local-and-complete-score', completePerformance=complete)
-            corrected = full_performance_times(profile, harmony, melody_rows, offsets, period,
-                music, target, matches, limits, complete)
-        else:
-            corrected, decisions = same_tune.consistent_phases(mapped, music, len(source['verses']), len(offsets))
-            # Both symbolic templates already locate every verse independently.
-            if decisions:
-                raise ValueError('MIDI 独立模板的首段起点仍有歧义')
-        if profile.get('referenceDiscovery'):
-            if len(offsets) != 1:
-                raise ValueError('音频检索参考还需逐项核对段内分句')
-            evidence['midiMatching']['trailingCycle'] = check_extra_cycle(harmony, melody_rows, target,
-                period, music, corrected[-1], limits)
-        evidence['midiMatching'].update(referencePeriod=period, music=music, matches=matches)
-        evidence['midiMatching']['readingOffsets'] = offsets
+        if 'sourceChorusGroups' in profile:
+            if (profile.get('tracks') != song['tracks'] or profile.get('audioFile') != song['reference'] or
+                    batch.checksum(batch.ROOT / 'data' / song['source']) != song['sha256'] or
+                    batch.checksum(cache / profile['textReferenceFile']) != profile['textReferenceSha256']):
+                raise ValueError('主副歌分组未绑定当前原文、全部录音及原始歌词来源页')
+            evidence['midiMatching']['mode'] = 'text-local-and-complete-score'
+            evidence['midiMatching']['sourceChorusGroups'] = source['chorusGroups']
+            recordings = evidence['midiMatching']['recordings'] = {}
+            timelines = evidence['independentTimelines'] = {}
+            definitions = [item for verse in source['verses'] for item in verse]
+            for track in song['tracks']:
+                audio = batch.ROOT / 'data' / track['file']
+                if batch.checksum(audio) != track['sha256']:
+                    raise ValueError('主副歌完整录音的哈希已变化')
+                detail = recordings[track['file']] = {'sha256': track['sha256']}
+                times = midi_recording_times(profile, source, audio, period, harmony, melody_rows,
+                                             offsets, cache, detail, limits)
+                complete = detail['completePerformance']
+                full = [complete[key]['best'] for key in ['harmony', 'melody']]
+                duration = float(features(audio, cache)[0][-1])
+                if (min(item['starts'][0] for item in full) >= .75 * detail['music']['period'] or
+                        duration - min(item['starts'][0] + item['span'] for item in full) >=
+                        .75 * detail['music']['period']):
+                    raise ValueError('主副歌录音首尾仍可容纳完整乐段，需核对演唱结构')
+                timelines[track['file']] = {'definitions': definitions, 'times': times, 'returnIndices': []}
+            evidence['performanceOrder'] = definitions
+            return export_result(song, batch.ROOT, cache, destination, evidence, start,
+                source, definitions, timelines[song['reference']]['times'],
+                list(range(0, len(definitions), len(offsets))))
+        corrected = midi_recording_times(profile, source, batch.ROOT / 'data' / song['reference'],
+            period, harmony, melody_rows, offsets, cache, evidence['midiMatching'], limits)
         definitions = [item for verse in source['verses'] for item in verse]
         evidence['performanceOrder'] = definitions
         return export_result(song, batch.ROOT, cache, destination, evidence, start, source,

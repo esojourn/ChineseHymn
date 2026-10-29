@@ -269,6 +269,17 @@ def generate(song, profile, cache):
                                       batch.ROOT / 'data' / song['source'], profile)
         if len(source['verses']) != profile['verseCount']:
             raise ValueError('MIDI 参考与正文段数不一致')
+        if 'fullArrangementReview' in profile:
+            from sync_batch_full_arrangement import generate_timelines
+            # Pass the actual module helpers, keeping the existing default paths unchanged.
+            from types import SimpleNamespace
+            helpers = SimpleNamespace(batch=batch, midi_features=midi_features,
+                same_tune=same_tune, match_template=match_template)
+            definitions, timelines, detail = generate_timelines(helpers, song, profile, source, cache)
+            evidence.update(performanceOrder=definitions, independentTimelines=timelines)
+            evidence['midiMatching'].update(detail)
+            return export_result(song, batch.ROOT, cache, destination, evidence, start, source,
+                definitions, timelines[song['reference']]['times'], [0])
         path = cache / 'midi' / profile['file']
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')

@@ -7815,5 +7815,177 @@
     "scorePdfUrl": "https://library.timelesstruths.org/library/music/L/Living_by_Faith/Living_by_Faith.pdf",
     "scorePdfSha256": "cc803b3f5bb51ae93658b3a6d457b84688402b7e9f20b43d065426af96b34d00",
     "scorePdfFile": "reference/external/living-faith-timeless.pdf"
+  },
+  "03-005": {
+    "targetSha256": "b6451eaf3c63402abff09addfc8d1ee5940c2a7c26e1ab47fac39329a23debae",
+    "verseCount": 3,
+    "file": "holy-is-he-full-arrangement-v1.mid",
+    "sha256": "b36516291a623500393a17deb94853e47b5ddb8350bf87cc3f7d0feba3be6e63",
+    "url": "https://noty-bratstvo.org/sites/default/files/Bozhe_svyatoy_p_ra.mid",
+    "midiOrigin": {
+      "file": "holy-is-he-bratstvo.mid",
+      "sha256": "16967c83d0b1cd99455c060153c10d24d68cc781e75c2f32f4b727da1727a7c6",
+      "url": "https://noty-bratstvo.org/sites/default/files/Bozhe_svyatoy_p_ra.mid"
+    },
+    "scoreReferenceFile": "reference/external/holy-is-he-Bozhe_svyatoy_choir.pdf",
+    "scoreReferenceSha256": "4b4e172b52fc87831eb9c3287e5853d4468930175b3230df392cc1647324f4b7",
+    "scoreReferenceUrl": "https://noty-bratstvo.org/sites/default/files/Bozhe_svyatoy_choir.pdf",
+    "scoreReferencePageUrl": "https://noty-bratstvo.org/node/4449",
+    "tracks": [
+      {
+        "file": "03-005全然圣洁主.mp3",
+        "sha256": "a39e5260c30464a5edb835af48e2ca357668d3271eb5983024bae67c7612d8d9"
+      },
+      {
+        "file": "03-005全然圣洁主-领唱.mp3",
+        "sha256": "342c1a7bcd303b156e57b1b69bbff28cea889be83fb30ff65c01a16d940038e8"
+      }
+    ],
+    "sourceVerseShape": [
+      2,
+      2,
+      2
+    ],
+    "sourceRegions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "regionOpenings": [
+      [
+        "全然圣洁主配得至",
+        "谁赦免我一切过犯"
+      ],
+      [
+        "全然圣洁主配得至",
+        "谁听我软弱祈祷声"
+      ],
+      [
+        "全然圣洁主配得至",
+        "全然圣洁主配得至"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          6,
+          1,
+          4,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 51,
+        "pitches": [
+          8,
+          8,
+          1,
+          1,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 104,
+        "pitches": [
+          1,
+          10,
+          5,
+          8,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 155,
+        "pitches": [
+          8,
+          8,
+          1,
+          1,
+          8
+        ]
+      },
+      {
+        "onsetIndex": 208,
+        "pitches": [
+          1,
+          10,
+          5,
+          8,
+          1
+        ]
+      },
+      {
+        "onsetIndex": 259,
+        "pitches": [
+          2,
+          11,
+          6,
+          9,
+          9
+        ]
+      }
+    ],
+    "referenceAudioFile": "03-005全然圣洁主.mp3",
+    "fullArrangementReview": {
+      "version": 1,
+      "reason": "原文六段依次为ABABAA，原谱女声与男声交接主旋律；原始MIDI完整原声部按原谱拍数编排，伴奏整曲及逐段和声旋律核对，领唱按完整音乐对应及自身逐段旋律共同核对。"
+    },
+    "midiArrangement": {
+      "version": 1,
+      "voiceTracks": [
+        1,
+        2
+      ],
+      "voiceTrackNames": [
+        "?. ?.",
+        "?. ?."
+      ],
+      "recipe": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Combined source vocal voices",
+        "quarterLength": 324,
+        "sections": [
+          [
+            0,
+            16
+          ],
+          [
+            16,
+            84
+          ],
+          [
+            84,
+            140
+          ],
+          [
+            140,
+            208
+          ],
+          [
+            84,
+            140
+          ],
+          [
+            140,
+            208
+          ],
+          [
+            208,
+            216
+          ],
+          [
+            216,
+            324
+          ]
+        ]
+      },
+      "reason": "配套完整合唱谱先由女声唱第一句，男声独唱第二句，再全体齐唱；合并原始两条声乐轨的全部音符，保留原音高、频道、力度和起止拍数，其他原钢琴声部保持。"
+    },
+    "formReview": "全然圣洁主完整原文三组各两个阅读区域，实际次序ABABAA；保留全部原文、空行、标点、阅读坐标及已发布数据。固定Noty Bratstvo同曲Holy Is He原始完整MIDI及4页配套合唱PDF网址与SHA-256，原谱明确Claire Cloninger词、David T. Clydesdale曲。此为同一首全然圣洁主，不是传统Holy Holy Holy单曲。目视核对原谱第一句女声、第二句男声、其后齐唱的声部交接，原MIDI两条声乐轨1和2均有明确独立歌词事件；合并两轨全部原始音符，其他钢琴声部保持。原始文件不修改，不补音符、不改音高、起止拍数、发声音量或速度；沿用既有编排工具仅把note_off释放力度规范为0，不改音符的发声力度和时值。原始MIDI为每分钟80拍，按原谱完整乐段重建IABABAIA的实际演唱结构：0至16拍器乐前奏，16至84拍A，84至140拍B，140至208拍A，再次完整引用84至140拍B与140至208拍A，208至216拍器乐过渡，216至324拍最后A及原谱终止段。原谱B开头含无歌词休止，其人声第一音是原始95拍；相同休止在第二B照原谱保留。现有特征程序从原始合并声乐轨的第一个音开始建立旋律参考，最前16拍声乐休止未作为歌词起音；当前完整录音仍从零秒分析，实测首起点约10.6秒，前后未匹配部分均不足最短完整阅读乐段的75%。六个原文阅读分界对应编排后16、95、140、219、264、340拍，由原始旋律起音索引及各五音绑定，不按歌词字数推算时间。该配套五线谱用于声部、乐段及阅读分界的目视核对，没有声称光学提取或全谱零编辑验证。当前伴奏对照每个完整阅读乐段和声、每段旋律、完整有序编排和声与完整有序编排旋律，六个起点的四路径两两相差不超过0.5秒；整曲和声成本约0.168，旋律约0.258。完整实际演唱顺序不由等长诗节反复猜测。领唱使用既有完整chroma-DTW音乐对应，平均路径成本约0.238，各换句窗口均低于0.336；另对领唱自身每个完整阅读区域独立核对原谱旋律，映射与自身旋律起点相差不超过0.15秒，不把伴奏的秒数直接套到领唱。明确记录伴奏四路径与领唱音乐对应加自身旋律两种证据，不声称领唱逐段和声通过。保留成本0.35、和声调性区分0.08、旋律调性区分0.06、跨度75%至125%、调性一致、严格递增、四路径0.5秒检查，以及既有跨录音均值成本0.42和换句窗口成本0.60；任何音轨的对应或自身旋律核对失败，整首不导出。全部最终时间从完整当前原始录音测量，不手填时间、不按总长缩放，不宣称逐曲人工试听。"
   }
 }

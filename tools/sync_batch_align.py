@@ -481,7 +481,9 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 if not track['reviewed']:
                     evidence.setdefault('trackExceptions', {})[item['file']] = failure
         tracks.append(track)
-    method_description = ('Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.'
+    method_description = ('Source-pinned complete MIDI arrangement with reviewed vocal-part merge; reference recording passes local and complete harmony/melody paths, all pairwise onsets within 0.5 seconds; additional recordings pass full chroma-DTW correspondence and their own per-reading MIDI melody checks. No optical extraction or full harmony check of the additional recordings is claimed.'
+                          if evidence.get('midiMatching', {}).get('mode') == 'text-complete-arranged-midi' else
+                          'Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.'
                           if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' else
                           'Transcript-confirmed performed order; contextual medium/int8 acoustic checks; initial clamped word independently located by exact freely decoded MMS CTC letters and the following word onset in two audio windows, within the ASR word range. All later boundaries retain the original two-window checks.'
                           if any(row.get('method', '').startswith('independent MMS CTC') for row in

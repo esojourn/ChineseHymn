@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "songId": "06-013",
+  "status": "reviewed",
+  "source": {
+    "file": "06-013谷中百合花（粤）.txt",
+    "sha256": "f75a50afd6f472d889a5f730f7d082da8ef2819eb8aa52ef64086f3c7b25012b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-013谷中百合花（粤）.mp3",
+      "sha256": "632eab06249ee771dfc12dd96efdc6f9ee202e7d25582d60b7371ac1f790aa03",
+      "duration": 146.44244897959183,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 19
+    }
+  },
+  "cues": [
+    {
+      "at": 11.1,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.22,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 67.85,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "return"
+    },
+    {
+      "at": 86.75,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.92,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 124.65,
+      "region": "r5",
+      "label": "第1段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "主耶稣是我良友，有主胜得万有， 万人中救主是我最好灵友； 主是谷中百合花，我惟一需要他， 他能洗净我使我圣洁无瑕。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "悲伤时他来解忧，患难时他保佑， 一切挂虑全放在主肩头。 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱他。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "悲伤时他来解忧，患难时他保佑， 一切挂虑全放在主肩头。 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱他。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "主永不把我舍弃，我主何等仁慈， 我要忠诚信靠遵行主旨意； 有火柱绕我身旁，任遭何事不慌， 主赐吗哪喂养我灵得健壮。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "那日在天见主面，享受主爱甘甜， 有快乐江河长流至永年。 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱他。",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "万人中救主最美好，我爱他。 万人中救主最美好，我爱他。",
+        "label": "第1段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-013谷中百合花（粤）.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

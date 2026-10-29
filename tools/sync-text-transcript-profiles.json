@@ -336,5 +336,142 @@
       }
     },
     "performanceReview": "God Will Make a Way。已逐段对照完整原文和309个实际转写词语，按原有22个阅读区域逐词分配全部录音，不漏词或重叠。尾部若干阅读区域在同一个语音段落内部，故使用全局词语范围标记。每块须至少60%逐字原文对应及原有双窗口核对。首次起句夹到窗口左缘时另须两个无歌词提示的自由转写窗口确认。"
+  },
+  "02-008": {
+    "sourceHash": "073fd33cff302735ef4db38332e1d51c0af46b7fd2bf3cf5884e9c8094cd0bf6",
+    "audioFile": "02-008主坚强仁慈-领唱.mp3",
+    "audioHash": "dc6b3e88a2fc33e9239a81e9d94a281fa38a64742608540fc043c8690ecacebc",
+    "transcriptHash": "4594af1c64cd8da9b56ade999cf30e3a2a764edd914b4c75c729bad113f2c7a7",
+    "language": "zh",
+    "blocks": [
+      {
+        "region": "r1",
+        "wordRange": [
+          0,
+          7
+        ],
+        "sourceText": "耶稣说，当我口渴"
+      },
+      {
+        "region": "r1",
+        "wordRange": [
+          12,
+          29
+        ],
+        "sourceText": "就来寻求祂 无一人能够满足 要来寻求祂"
+      },
+      {
+        "region": "r2",
+        "wordRange": [
+          29,
+          53
+        ]
+      },
+      {
+        "region": "r3",
+        "wordRange": [
+          53,
+          81
+        ]
+      },
+      {
+        "region": "r4",
+        "wordRange": [
+          81,
+          104
+        ]
+      },
+      {
+        "region": "r5",
+        "wordRange": [
+          104,
+          131
+        ]
+      },
+      {
+        "region": "r6",
+        "wordRange": [
+          131,
+          155
+        ]
+      },
+      {
+        "region": "r7",
+        "wordRange": [
+          155,
+          182
+        ]
+      },
+      {
+        "region": "r8",
+        "wordRange": [
+          182,
+          214
+        ]
+      }
+    ],
+    "nonLyricSegments": [
+      {
+        "index": 1,
+        "text": "詞曲 李宗盛",
+        "reason": "署名式误识别，五个词语总时长仅0.04秒，其中四词零时长，不属于原文唱词。"
+      },
+      {
+        "index": 32,
+        "text": "作詞 李宗盛 作曲 李宗盛",
+        "reason": "末尾署名式转写内容，不属于原文唱词，保留原始录音。"
+      }
+    ],
+    "repeatHomophones": {
+      "version": 1,
+      "blocks": [
+        7
+      ],
+      "pinyinVersion": "0.55.0",
+      "reason": "第7块为逐行完全相同的原文副歌；另外第3、第5块均逐字覆盖通过，该块还须保留至少50%逐字及80%逐音节精确对应，保留原始歌词和转写。"
+    },
+    "performanceReview": "按实际第一段两次主歌、后续主歌及副歌反复逐块核对。第7区域的同音字复核还须另外两次相同唱词逐字通过，并保持一半以上逐字与80%以上逐音节精确对应；不改写转写原文。",
+    "initialReadingView": {
+      "version": 1,
+      "sourceHash": "073fd33cff302735ef4db38332e1d51c0af46b7fd2bf3cf5884e9c8094cd0bf6",
+      "tracks": [
+        {
+          "file": "02-008主坚强仁慈-领唱.mp3",
+          "sha256": "dc6b3e88a2fc33e9239a81e9d94a281fa38a64742608540fc043c8690ecacebc"
+        }
+      ],
+      "audioFile": "02-008主坚强仁慈-领唱.mp3",
+      "transcriptHash": "4594af1c64cd8da9b56ade999cf30e3a2a764edd914b4c75c729bad113f2c7a7",
+      "regions": [
+        "r1",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ]
+    },
+    "midiVerseBoundaryReview": {
+      "version": 1,
+      "reason": "完整转写覆盖全部原文阅读区域；两处主歌首词在原始窗口退化，另以出版方完整编号第1节至第2节起音及词音对应的前半段独立核对和声、旋律四路径，原有成本、调性、跨度与0.5秒一致门槛不变，并由正常通过声学核对的第二节印证。完整原始MIDI保留全部音符及速度变化，只分析原始明确主歌分句，不改写MIDI或原文。",
+      "regions": [
+        "r1",
+        "r2",
+        "r4",
+        "r6"
+      ],
+      "file": "reference/external/strong-kind-bluesky.mid",
+      "sha256": "f963d97e28613adefc49b584929ee02a638e0574532ae4e6b0ae053d9b0c8c9e",
+      "url": "https://blueskymusic.net/wp-content/uploads/2025/05/Jesus-Strong-and-Kind.mid",
+      "scoreFile": "reference/external/strong-kind-bluesky-preview.pdf",
+      "scoreSha256": "d210c9e91efcf224733e338dd4818abf7705c67d24461f4072a8a156885464aa",
+      "scoreUrl": "https://blueskymusic.net/wp-content/uploads/2025/05/Jesus-Strong-and-Kind-RN_Preview.pdf",
+      "melodyTrack": 1,
+      "melodyTrackName": "Soprano",
+      "openingLyric": "No "
+    }
   }
 }

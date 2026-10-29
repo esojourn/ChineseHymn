@@ -39,7 +39,7 @@ def consistent_phases(mapped, music, verse_count, slots):
     return corrected, decisions
 
 
-def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset, cue_offset=.4, cue_offsets=None):
+def match_cycle(reference_features, target_features, reference_start, reference_period, period, onset, cue_offset=.4, cue_offsets=None, onset_bounds=None):
     from sync_batch_score import subsequence_path
     reference_times, reference_chroma = reference_features
     times, chroma = target_features
@@ -54,10 +54,22 @@ def match_cycle(reference_features, target_features, reference_start, reference_
         raise ValueError('缺少完整乐段的音频范围')
     if cue_offsets is not None and (not cue_offsets or any(not 0 <= offset < reference_period for offset in cue_offsets)):
         raise ValueError('参考谱行起点超出 MIDI 乐段')
+    if onset_bounds is not None:
+        if (not isinstance(onset_bounds, (list, tuple)) or len(onset_bounds) != 2 or
+                any(type(at) not in (int, float) or not np.isfinite(at) for at in onset_bounds) or
+                onset_bounds[0] > onset_bounds[1]):
+            raise ValueError('逐段起点取样范围无效')
+        first = max(0, round(onset_bounds[0] / step) - lo)
+        last = min(hi - lo - 1, round(onset_bounds[1] / step) - lo)
+        if first > last:
+            raise ValueError('逐段起点取样范围未覆盖当前音频')
     candidates = []
     for key in range(12):
         shifted = np.roll(query, key, axis=0)
         cost = np.ascontiguousarray(np.maximum(0, 1 - shifted.T @ chroma[:, lo:hi]), dtype=np.float32)
+        if onset_bounds is not None:
+            cost[0, :first] = np.inf
+            cost[0, last + 1:] = np.inf
         value, path = subsequence_path(cost)
         frame = round(cue_offset / reference_period * length)
         positions = path[path[:, 0] == frame, 1]

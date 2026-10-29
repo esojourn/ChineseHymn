@@ -521,6 +521,17 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'two prompt-free ten-word opening transcriptions, pinned models, explicit inflection review, '
                               'and agreement with the complete transcript. Other changes pass original contextual acoustic checks; '
                               'other recordings retain chroma-DTW correspondence checks. Original source lyrics are preserved.')
+    midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
+    homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
+    if midi_boundaries:
+        method_description = ('Reviewed complete performed transcript blocks; initial region shown from playback zero '
+                              '(sung onset not measured). Degenerate verse starts require the original numbered publisher MIDI verse '
+                              'and its opening phrase, original tempo retained, harmony/melody four-path agreement, transcript-derived '
+                              'onset bounds, and another acoustically verified verse. Other changes retain original contextual acoustic checks; '
+                              'other recordings retain chroma-DTW correspondence checks.')
+    if homophones:
+        method_description += (' Explicitly reviewed Chinese refrain homophones require two literal-confirmed complete source repeats, '
+                               'at least 50 percent literal and 80 percent exact tone-free syllable correspondence; original text is preserved.')
     if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')
@@ -536,6 +547,10 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
     if gap_review:
         data['provenance']['longGapFreePrefix'] = gap_review
+    if midi_boundaries:
+        data['provenance']['midiVerseBoundaries'] = {key: midi_boundaries[key] for key in ['version', 'review', 'changedIndices']}
+    if homophones:
+        data['provenance']['repeatHomophones'] = homophones
     if song['type'] == 'image':
         # These regions focus the performed lyric row, rather than all printed
         # stanzas of a staff; reveal its entire next region so glyphs are not cut.

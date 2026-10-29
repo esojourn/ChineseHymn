@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "songId": "02-008",
+  "status": "reviewed",
+  "source": {
+    "file": "02-008主坚强仁慈.txt",
+    "sha256": "073fd33cff302735ef4db38332e1d51c0af46b7fd2bf3cf5884e9c8094cd0bf6",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-008主坚强仁慈-领唱.mp3",
+      "sha256": "dc6b3e88a2fc33e9239a81e9d94a281fa38a64742608540fc043c8690ecacebc",
+      "duration": 251.76,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 28
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 30.34,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 46.9,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 68.37,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.55,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.72,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 152.0,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 173.3,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 195.31,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed complete performed transcript blocks; initial region shown from playback zero (sung onset not measured). Degenerate verse starts require the original numbered publisher MIDI verse and its opening phrase, original tempo retained, harmony/melody four-path agreement, transcript-derived onset bounds, and another acoustically verified verse. Other changes retain original contextual acoustic checks; other recordings retain chroma-DTW correspondence checks. Explicitly reviewed Chinese refrain homophones require two literal-confirmed complete source repeats, at least 50 percent literal and 80 percent exact tone-free syllable correspondence; original text is preserved.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "label": "第1段",
+        "text": "耶稣说，当我口渴"
+      },
+      {
+        "region": "r1",
+        "label": "第1段",
+        "text": "就来寻求祂 无一人能够满足 要来寻求祂"
+      },
+      {
+        "region": "r2",
+        "label": "第1段",
+        "text": "耶稣说，当我软弱，就来寻求祂 无人能加力给我，要来寻求祂"
+      },
+      {
+        "region": "r3",
+        "label": "第1段",
+        "text": "因我主良善又信实，保守我黑夜白日 就让我们奔向耶稣，祂坚强仁慈"
+      },
+      {
+        "region": "r4",
+        "label": "第2段",
+        "text": "耶稣说，当我惧怕，就来寻求祂 无人能作我盾牌，要来寻求祂"
+      },
+      {
+        "region": "r5",
+        "label": "第2段",
+        "text": "因我主良善又信实，保守我黑夜白日 就让我们奔向耶稣，祂坚强仁慈"
+      },
+      {
+        "region": "r6",
+        "label": "第3段",
+        "text": "耶稣说，当我迷失，祂来寻找我 十字架向我显明，祂来寻找我"
+      },
+      {
+        "region": "r7",
+        "label": "第3段",
+        "text": "因我主良善又信实，保守我黑夜白日 就让我们奔向耶稣，祂坚强仁慈"
+      },
+      {
+        "region": "r8",
+        "label": "第3段",
+        "text": "因我主良善又信实，保守我黑夜白日 就让我们奔向耶稣，祂坚强仁慈 祂坚强仁慈"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-008主坚强仁慈.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "midiVerseBoundaries": {
+      "version": 1,
+      "review": {
+        "version": 1,
+        "reason": "完整转写覆盖全部原文阅读区域；两处主歌首词在原始窗口退化，另以出版方完整编号第1节至第2节起音及词音对应的前半段独立核对和声、旋律四路径，原有成本、调性、跨度与0.5秒一致门槛不变，并由正常通过声学核对的第二节印证。完整原始MIDI保留全部音符及速度变化，只分析原始明确主歌分句，不改写MIDI或原文。",
+        "regions": [
+          "r1",
+          "r2",
+          "r4",
+          "r6"
+        ],
+        "file": "reference/external/strong-kind-bluesky.mid",
+        "sha256": "f963d97e28613adefc49b584929ee02a638e0574532ae4e6b0ae053d9b0c8c9e",
+        "url": "https://blueskymusic.net/wp-content/uploads/2025/05/Jesus-Strong-and-Kind.mid",
+        "scoreFile": "reference/external/strong-kind-bluesky-preview.pdf",
+        "scoreSha256": "d210c9e91efcf224733e338dd4818abf7705c67d24461f4072a8a156885464aa",
+        "scoreUrl": "https://blueskymusic.net/wp-content/uploads/2025/05/Jesus-Strong-and-Kind-RN_Preview.pdf",
+        "melodyTrack": 1,
+        "melodyTrackName": "Soprano",
+        "openingLyric": "No "
+      },
+      "changedIndices": [
+        4,
+        6
+      ]
+    },
+    "repeatHomophones": [
+      {
+        "index": 7,
+        "region": "r7",
+        "literalMatchedFraction": 0.5357142857142857,
+        "syllableMatchedFraction": 0.8571428571428571,
+        "corroboratingBlocks": [
+          3,
+          5
+        ],
+        "pinyinVersion": "0.55.0",
+        "method": "two literal-confirmed complete source refrains and tone-free syllable correspondence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "songId": "02-443",
+  "status": "reviewed",
+  "source": {
+    "file": "02-443感恩歌.txt",
+    "sha256": "f1f3e5963fff181238f94cd5bd634b5ba7dcbb61e4cddcf33dfe320f744c4b8a",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-443感恩歌.mp3",
+      "sha256": "9c7e838a625ff1531e40e3fdde31ae5132f4704ff977c2fce25700e899bfae32",
+      "duration": 156.096,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.45,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 30.05,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 53.73,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 75.6,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.05,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 121.1,
+          "region": "r6",
+          "label": "第6段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-443感恩歌-领唱.mp3",
+      "sha256": "f5a8c9c059a02bae5b7da299d87e7b2ee537b37e62a24afa9533447a4d3981e2",
+      "duration": 139.07591836734693,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 18
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    }
+  },
+  "cues": [
+    {
+      "at": 5.85,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 28.05,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 50.1,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 72.35,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.45,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 116.65,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmony and melody at every performed verse and reading region, additionally corroborated by both complete ordered score paths. All four onset estimates agree pairwise within 0.5 seconds; no arithmetic correction of performed verse starts.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "有人为着家庭，朋友，向主献上感恩， 我却为着救恩颂主，让我现在重述。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "感谢主拯救我灵魂，感谢主医治我心身， 感谢主白白赐给我，丰丰富富的奇妙救恩。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "有人为着美花，翠草，为着闪星谢主， 我却为主永远属我，满心喜乐欢呼。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "感谢主拯救我灵魂，感谢主医治我心身， 感谢主白白赐给我，丰丰富富的奇妙救恩。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "我必每日信靠救主，证主救赎恩典， 我要歌唱赞美救主，直到见主荣面。",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "感谢主拯救我灵魂，感谢主医治我心身， 感谢主白白赐给我，丰丰富富的奇妙救恩。",
+        "label": "第6段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-443感恩歌.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

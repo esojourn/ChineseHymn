@@ -1,0 +1,280 @@
+{
+  "songId": "04-880",
+  "source": "04-880愿主赐福看顾你.txt",
+  "sourceHash": "f961772226c7f3bb521e1b3bc6fbc14ffb21a7531b1cfc102722fde7bda38fbb",
+  "trackHashes": [
+    {
+      "file": "04-880愿主赐福看顾你.mp3",
+      "sha256": "000d89c504fb60277ce65f7bed8f3056f5e1691055a6f0f1bcba35df4937fb7b"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "f961772226c7f3bb521e1b3bc6fbc14ffb21a7531b1cfc102722fde7bda38fbb",
+      "verseCount": 1,
+      "file": "lutkin-bratstvo-choir.mid",
+      "sha256": "3f4768e93f342a17cac7ec127446ae892dab90711aabcfa887561dcf0a87b54e",
+      "url": "https://noty-bratstvo.org/sites/default/files/%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D1%8C%20%D0%B4%D0%B0%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%20%D1%82%D0%B5%D0%B1%D1%8F-%D1%85%D0%BE%D1%80.mid",
+      "scoreReferenceFile": "reference/external/lutkin-bratstvo-choir.pdf",
+      "scoreReferenceSha256": "b156a2c7bcf33c10aa17cf3df4cd76ac694fe2095ac013cd9aee81f6f2d75bf9",
+      "scoreReferenceUrl": "https://noty-bratstvo.org/sites/default/files/%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D1%8C%20%D0%B4%D0%B0%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%20%D1%82%D0%B5%D0%B1%D1%8F-%D1%85%D0%BE%D1%80.pdf",
+      "scoreReferencePageUrl": "https://noty-bratstvo.org/node/622",
+      "tracks": [
+        {
+          "file": "04-880愿主赐福看顾你.mp3",
+          "sha256": "000d89c504fb60277ce65f7bed8f3056f5e1691055a6f0f1bcba35df4937fb7b"
+        }
+      ],
+      "sourceVerseShape": [
+        2
+      ],
+      "sourceRegions": [
+        "r1",
+        "r2"
+      ],
+      "regionOpenings": [
+        [
+          "愿主赐福看顾你愿",
+          "赐恩与你保护你保"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            7,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 47,
+          "pitches": [
+            4,
+            9,
+            9,
+            7,
+            4
+          ]
+        }
+      ],
+      "referenceAudioFile": "04-880愿主赐福看顾你.mp3",
+      "fullArrangementReview": {
+        "version": 1,
+        "reason": "完整原始四声部MIDI及配套两页原谱含原始七重阿们，原文全文只有两个阅读区域，不截取、不重排或改音符，整曲与逐区和声旋律四路径共同确认。"
+      },
+      "shortOriginalMidiReview": {
+        "version": 1,
+        "reason": "原文为一个连续完整六行段落和两个既有阅读区域；完整原始复调MIDI及配套四声部谱全部保留，含原谱七重阿们，禁止裁切、重排或调整音符、速度，不使用单旋律代替和声。"
+      },
+      "formReview": "愿主赐福看顾你原文六行、一个连续完整段落及两个既有阅读区域，保留全部原始歌词、标点、空行与坐标。第一区域从愿主赐福看顾你开始，包含到愿耶和华使他的脸光照你；第二区域从赐恩与你开始，到最后赐恩与你，随后原谱结尾仍保持末阅读区域。采用Noty Bratstvo原始Lutkin完整两页四声部合唱PDF及同页直接提供的原始合唱MIDI，固定原始网址及SHA-256。完整原谱含七重阿们，先前仅用雅歌658或敬拜877简谱的短阿们结尾不能覆盖当前录音，现按完整原始四声部参考核对，不凭空追加或删除任何歌词、音乐或音符。原始MIDI只有元数据轨与一条完整SATB复调轨，同时发声的不同音高最多七个；所有音符完整闭合。直接读取原始MIDI字节，原始与分析SHA-256完全相同，不合并或筛选声部，不裁切、重排、转调、修改音符、速度、力度或起止拍数。现有特征程序自然从第一主旋律音开始，原文件有三拍前导；完整当前音频仍从零秒计算，不按预设秒数截取。两个阅读分界核对原文、同曲完整四声部谱以及雅歌658中文数字谱：分别为首音5及第三谱行的赐恩首音3，在原始C调MIDI中首五音为G、G、E、C、C和E、A、A、G、E，对应零基最高旋律起音索引0和47；第二分界位于原始第35拍，扣除三拍前导为第32拍。只有原文完整一段、两个原始区域、至少四十个歌词字并同时绑定完整原谱与未经修改的原始至少四音复调MIDI时，才允许这一双区域流程；不允许通过单旋律、谱面截取、自由时间参数或编排参数绕过检查。当前唯一伴奏完整录音对照原始整曲和声、整曲旋律、每个完整阅读区域和声及旋律，所有分界的四路径两两相差不超过0.5秒。实测完整路径约从6秒持续到70秒，覆盖完整正文与七重阿们，首尾未覆盖部分不足最短阅读乐段的75%；两个起点约5.95和27.32秒。保留成本0.35、和声调性区分0.08、旋律调性区分0.06、跨度75%至125%、调性一致、严格递增、首尾及四路径0.5秒检查，不通过时不导出。原谱用于完整音乐及阅读边界目视核对，不声称全谱光学提取或MusicXML零编辑对应；同页另一个MusicXML版本音符和拍数存在差异，未使用。全部最终时间从当前完整原始录音测量，不手填最终秒数、不按总时长缩放，不宣称逐曲人工试听。原始素材、目录及所有已发布文字和图片滚动数据不改动。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "mode": "text-complete-original-midi",
+    "referenceDerivation": {
+      "version": 1,
+      "unmodifiedOriginal": true,
+      "sourceSha256": "3f4768e93f342a17cac7ec127446ae892dab90711aabcfa887561dcf0a87b54e",
+      "analysisSha256": "3f4768e93f342a17cac7ec127446ae892dab90711aabcfa887561dcf0a87b54e",
+      "maximumDistinctSoundingPitches": 7,
+      "policy": "complete unmodified original polyphonic MIDI; no voice filtering, cropping, rearrangement or retiming"
+    },
+    "referenceTrack": "04-880愿主赐福看顾你.mp3",
+    "recordings": {
+      "04-880愿主赐福看顾你.mp3": {
+        "method": "local and complete harmony/melody; all four paths within 0.5 seconds",
+        "completePerformance": {
+          "harmony": {
+            "best": {
+              "cost": 0.20616493823694945,
+              "key": 8,
+              "at": 6.0,
+              "span": 63.4,
+              "starts": [
+                5.6,
+                27.3
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6429112933671763,
+              "key": 3,
+              "at": 14.8,
+              "span": 50.5,
+              "starts": [
+                14.7,
+                24.1
+              ]
+            }
+          },
+          "melody": {
+            "best": {
+              "cost": 0.2621922731059424,
+              "key": 8,
+              "starts": [
+                6.099999904632568,
+                27.299999237060547
+              ],
+              "span": 62.599998474121094
+            },
+            "runnerUp": {
+              "cost": 0.4202126844463267,
+              "key": 3,
+              "starts": [
+                9.5,
+                32.099998474121094
+              ],
+              "span": 55.19999694824219
+            }
+          }
+        },
+        "localReadings": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.14962110786794502,
+                "key": 8,
+                "at": 6.4,
+                "span": 21.2,
+                "starts": [
+                  6.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5853908574469736,
+                "key": 1,
+                "at": 28.9,
+                "span": 7.5,
+                "starts": [
+                  28.6
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.2096412516085901,
+                "key": 8,
+                "starts": [
+                  6.099999904632568
+                ],
+                "span": 21.0
+              },
+              "runnerUp": {
+                "cost": 0.4012482545086157,
+                "key": 3,
+                "starts": [
+                  0.6000000238418579
+                ],
+                "span": 20.100000381469727
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.20244653540921498,
+                "key": 8,
+                "at": 27.8,
+                "span": 41.6,
+                "starts": [
+                  27.4
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6334043204066265,
+                "key": 3,
+                "at": 38.8,
+                "span": 26.8,
+                "starts": [
+                  38.4
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.26784425298851655,
+                "key": 8,
+                "starts": [
+                  27.299999237060547
+                ],
+                "span": 41.39999771118164
+              },
+              "runnerUp": {
+                "cost": 0.4165374755859375,
+                "key": 3,
+                "starts": [
+                  33.900001525878906
+                ],
+                "span": 30.79999542236328
+              }
+            }
+          }
+        ],
+        "referencePeriod": 71.2529296875,
+        "readingOffsets": [
+          0.0,
+          24.0
+        ],
+        "fourPathOnsets": [
+          [
+            6.0,
+            6.099999904632568,
+            5.6,
+            6.099999904632568
+          ],
+          [
+            27.4,
+            27.299999237060547,
+            27.3,
+            27.299999237060547
+          ]
+        ],
+        "times": [
+          5.95,
+          27.32
+        ]
+      }
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "愿主赐福看顾你， 愿主向你仰脸赐福与你， 赐你平安，赐你平安， 愿耶和华使他的脸光照你，",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "赐恩与你，保护你，保护你， 愿主保护你，赐恩与你。",
+      "label": "第1段"
+    }
+  ],
+  "independentTimelines": {
+    "04-880愿主赐福看顾你.mp3": {
+      "definitions": [
+        {
+          "region": "r1",
+          "text": "愿主赐福看顾你， 愿主向你仰脸赐福与你， 赐你平安，赐你平安， 愿耶和华使他的脸光照你，",
+          "label": "第1段"
+        },
+        {
+          "region": "r2",
+          "text": "赐恩与你，保护你，保护你， 愿主保护你，赐恩与你。",
+          "label": "第1段"
+        }
+      ],
+      "times": [
+        5.95,
+        27.32
+      ],
+      "returnIndices": []
+    }
+  },
+  "status": "ready",
+  "cueCount": 2,
+  "elapsedSeconds": 0.564
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "songId": "04-880",
+  "status": "reviewed",
+  "source": {
+    "file": "04-880愿主赐福看顾你.txt",
+    "sha256": "f961772226c7f3bb521e1b3bc6fbc14ffb21a7531b1cfc102722fde7bda38fbb",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "04-880愿主赐福看顾你.mp3",
+      "sha256": "000d89c504fb60277ce65f7bed8f3056f5e1691055a6f0f1bcba35df4937fb7b",
+      "duration": 70.06040816326531,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    }
+  },
+  "cues": [
+    {
+      "at": 5.95,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 27.32,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete unmodified original polyphonic MIDI and pinned full printed score; every source reading region passes local and complete harmony/melody paths, all pairwise onsets within 0.5 seconds. No score excerpt, note edits, optical extraction or proportional cue placement.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "愿主赐福看顾你， 愿主向你仰脸赐福与你， 赐你平安，赐你平安， 愿耶和华使他的脸光照你，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "赐恩与你，保护你，保护你， 愿主保护你，赐恩与你。",
+        "label": "第1段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/04-880愿主赐福看顾你.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

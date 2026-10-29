@@ -4,6 +4,39 @@ import math
 import numpy as np
 
 
+def repeated_source_readings(source, profile):
+    """Replay whole original regions while preserving every first occurrence."""
+    review = profile.get('repeatedSourceReadings')
+    if review is None:
+        return source
+    original = [item for verse in source['verses'] for item in verse]
+    names = [item['region'] for item in original]
+    if (not isinstance(review, dict) or set(review) != {'version', 'verses', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            not original or len(set(names)) != len(names) or
+            any(key in profile for key in ['sourceChorusReuse', 'shortFormReview', 'sourceVerseContext',
+                'initialVerseContext', 'musicalVerseEdges', 'sourceVerseMusicRange', 'vocalInterludes',
+                'referenceEndingSequence'])):
+        raise ValueError('原文反复须明确版本、完整区域顺序及复核说明，不能叠加其他正文结构策略')
+    verses = review['verses']
+    if (not isinstance(verses, list) or len(verses) < 2 or
+            any(not isinstance(verse, list) or not verse or
+                any(not isinstance(name, str) or name not in names for name in verse) for verse in verses)):
+        raise ValueError('原文反复只能引用完整的已有阅读区域')
+    performed = [name for verse in verses for name in verse]
+    if len(performed) <= len(names) or list(dict.fromkeys(performed)) != names:
+        raise ValueError('原文反复不得遗漏或重排首次出现的正文区域')
+    import copy
+    result = copy.deepcopy(source)
+    definitions = {item['region']: item for item in original}
+    result['verses'] = [[copy.deepcopy(definitions[name]) for name in verse] for verse in verses]
+    result['repeatedSourceReadings'] = {'originalRegions': names, 'verses': verses,
+        'returnIndices': [index for index in range(1, len(performed))
+                          if names.index(performed[index]) <= names.index(performed[index - 1])]}
+    return result
+
+
 def reviewed_transpositions(review, key, count):
     if key not in review:
         return [0] * count

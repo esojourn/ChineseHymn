@@ -30,8 +30,11 @@ def features(path, cache):
     chroma = np.sqrt(np.stack([magnitude[midi % 12 == pitch].sum(axis=0) for pitch in range(12)]))
     chroma -= chroma.mean(axis=0)
     chroma /= np.maximum(np.linalg.norm(chroma, axis=0), 1e-8)
+    # The first calculation must use the same precision as a cached calculation.
+    # Float64 times can otherwise change a cue rounded at a half-centisecond.
+    times, chroma = times.astype(np.float32), chroma.astype(np.float32)
     destination.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(destination, times=times.astype(np.float32), chroma=chroma.astype(np.float32))
+    np.savez_compressed(destination, times=times, chroma=chroma)
     return times, chroma
 
 

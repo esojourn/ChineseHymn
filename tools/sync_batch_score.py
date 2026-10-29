@@ -99,7 +99,7 @@ def reviewed_score_systems(systems, height):
 
 
 def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digits=False,
-              separate_octave_dots=False):
+              separate_octave_dots=False, join_broken_barlines=False):
     global _ocr
     if reviewed_systems is None:
         definition = image_source(recognition)
@@ -114,7 +114,10 @@ def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digit
     if (type(separate_octave_dots) is not bool or
             separate_octave_dots and (not normalize_digits or reviewed_systems is None)):
         raise ValueError('八度圆点识别须明确核对原谱版面并规范化数字')
-    version = 6 if separate_octave_dots else 5 if normalize_digits else 3 if reviewed_systems is None else 4
+    if (type(join_broken_barlines) is not bool or join_broken_barlines and (
+            not normalize_digits or reviewed_systems is None or separate_octave_dots)):
+        raise ValueError('断裂小节线识别须明确核对原谱版面，且不能叠加八度圆点策略')
+    version = 7 if join_broken_barlines else 6 if separate_octave_dots else 5 if normalize_digits else 3 if reviewed_systems is None else 4
     destination = cache / 'notes' / (recognition['source'] + '.json')
     if destination.exists():
         data = json.loads(destination.read_text())
@@ -142,6 +145,11 @@ def note_rows(source, recognition, cache, reviewed_systems=None, normalize_digit
         crop = image[band[0]:band[1]]
         ink = np.mean(crop, axis=2) < 150
         _, _, components, _ = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
+        if join_broken_barlines:
+            # Repair only one- or two-pixel vertical scan gaps for bar detection.
+            # OCR and all rhythm measurements still use the original pixels.
+            bars = cv2.morphologyEx(ink.astype(np.uint8), cv2.MORPH_CLOSE, np.ones((3, 1), dtype=np.uint8))
+            _, _, components, _ = cv2.connectedComponentsWithStats(bars, 8)
         results, _ = _ocr.text_rec(crop, return_word_box=True)
         text, confidence, detail = results[0]
         length, words, columns, states, probabilities = detail

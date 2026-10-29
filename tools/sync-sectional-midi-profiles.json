@@ -28640,5 +28640,429 @@
       ]
     },
     "formReview": "当前求赐大复兴原文为四节，每节主歌、副歌两个既有阅读区域，共八处。保留全部原始歌词、空行、标点、顺序与重复副歌。独立采用爱赞美公开敬拜赞美第459首完整原始JPG，B. B. McKinney词曲的Send a Great Revival，固定来源页、原图网址及SHA-256，不采用同名其他曲调。目视转录C调4/4四个完整物理谱行，每行16拍，全曲64拍、76个发声音头，保留休止、附点八分与十六分音符，不把普通圆滑线合并为同音连线。前两行主歌32拍、后两行副歌32拍，完整原谱依次演奏四轮，304个旋律音头与独立固定版面光学提取全局零编辑，八处阅读起句前五音均在全部最优对应中唯一精确定位。原STFT试算未能让领唱版通过完整旋律成本门槛，未发布其结果，也未降低成本或用伴奏版时间代替领唱版。此配置显式使用固定librosa 0.11.0常Q分析：16kHz、1600样本步长、C2起五个八度、每八度36频带、固定零调谐偏移，平方根、去均值和列L2归一化；不裁剪、跳过、静音或修改原始音频，不使用人工秒数或歌词长度生成滚动点。主音轨与领唱分别绑定当前SHA-256，各自重新核对完整MIDI、完整光学、局部MIDI和局部光学四路径，完整保留成本0.35、调性区分0.06、跨度75%至125%、四路径起点互差0.5秒、严格递增及首尾完整性检查；任一音轨失败即拒绝整首导出。两条实测时间轴独立保存，不按伴奏或总时长缩放领唱时间，不宣称经过逐曲人工试听。新特征缓存与旧STFT完全分开，记录固定参数、版本、完整原始音频哈希及实际特征数组哈希；空缓存须重新下载原谱、识谱、重建MIDI与分析两条完整音频并得到同样结果。原始歌词、图片、音频和已发布数据不修改。"
+  },
+  "06-013": {
+    "version": 1,
+    "sourceHash": "f75a50afd6f472d889a5f730f7d082da8ef2819eb8aa52ef64086f3c7b25012b",
+    "tracks": [
+      {
+        "file": "06-013谷中百合花（粤）.mp3",
+        "sha256": "632eab06249ee771dfc12dd96efdc6f9ee202e7d25582d60b7371ac1f790aa03"
+      }
+    ],
+    "audioFile": "06-013谷中百合花（粤）.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r2",
+      "r3",
+      "r4",
+      "r5"
+    ],
+    "regionOpenings": [
+      "主耶稣是我良友，有主胜得",
+      "悲伤时他来解忧，患难时他",
+      "悲伤时他来解忧，患难时他",
+      "主永不把我舍弃，我主何等",
+      "那日在天见主面，享受主爱",
+      "万人中救主最美好，我爱他"
+    ],
+    "repeatedSourceReadings": {
+      "version": 1,
+      "verses": [
+        [
+          "r1",
+          "r2"
+        ],
+        [
+          "r2"
+        ],
+        [
+          "r3",
+          "r4",
+          "r5"
+        ]
+      ],
+      "reason": "原文前八行对应第一节完整A+B，录音间奏后先完整重唱其后四行悲伤时他来解忧至我爱他，再唱主永不把我舍弃起的完整第三节A+B；最后原文两行同一句结尾均保留在r5。全曲medium转写10.68至49.8、68.04至86.66、87.08至124.38逐句支持该先后顺序；粤语turbo出现大量重复字幻听，仅作旁证，不用于生成时间。全部原文区域首次顺序不变，r2只引用同一完整四行原文，无新增歌词或人工时间点。"
+    },
+    "sourceVerseEdgeReview": {
+      "version": 1,
+      "reason": "以实际演唱的完整第一节、原文后半节反复、完整第三节连同原文两行结尾检查首尾容量；短收尾不是另一个独立完整诗节。只绑定已核对的原文分组，不指定时间。"
+    },
+    "previousReadingContext": {
+      "version": 1
+    },
+    "sampling": {
+      "durationEstimate": 132,
+      "onsetEstimate": 10
+    },
+    "midiReference": {
+      "origin": {
+        "file": "reference/external/timeless-lily.mid",
+        "sha256": "d7e62f4d086ad069c350deb66c9d866acb653894636a5d3be1ae70b4453a519e",
+        "url": "https://library.timelesstruths.org/library/music/T/The_Lily_of_the_Valley/The_Lily_of_the_Valley.mid"
+      },
+      "file": "reference/external/lily-yue-performance.mid",
+      "sha256": "9994a95a3792d9c4ed4bf7fd7dc55a0959ef5d8a5cee3febf321285c1c421421",
+      "arrangement": {
+        "melodyTrack": 1,
+        "melodyTrackName": "Soprano",
+        "quarterLength": 67.01,
+        "sections": [
+          [
+            3,
+            35
+          ],
+          [
+            35,
+            67
+          ],
+          [
+            35,
+            67
+          ],
+          [
+            35,
+            67
+          ],
+          [
+            3,
+            35
+          ],
+          [
+            35,
+            67
+          ],
+          [
+            59,
+            67
+          ],
+          [
+            59,
+            67
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          9,
+          10,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 50,
+        "pitches": [
+          5,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 99,
+        "pitches": [
+          5,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 148,
+        "pitches": [
+          5,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 197,
+        "pitches": [
+          9,
+          10,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "onsetIndex": 247,
+        "pitches": [
+          5,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 296,
+        "pitches": [
+          5,
+          7,
+          9,
+          0,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 307,
+        "pitches": [
+          5,
+          7,
+          9,
+          0,
+          9
+        ]
+      }
+    ],
+    "readingSectionReview": {
+      "version": 1,
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "instrumentalSections": [
+        2
+      ],
+      "reason": "Full first and third verses; instrumental second half, reprise of first latter half, then two sung closing line tags."
+    },
+    "opticalReference": {
+      "image": {
+        "file": "lily-sectional-score/data/lily.png",
+        "sha256": "bec64558b3fb41d52becbf0116dc7b0a7196ec82ea42babf68abf8bf5009ebf6",
+        "url": "https://raw.githubusercontent.com/esojourn/ChineseHymn/8e2f43c71da4460ba31edc875234899e747d6c46/data/05-301%E8%B0%B7%E4%B8%AD%E7%99%BE%E5%90%88%E8%8A%B1.jpg"
+      },
+      "pageUrl": "https://github.com/esojourn/ChineseHymn/blob/8e2f43c71da4460ba31edc875234899e747d6c46/data/05-301%E8%B0%B7%E4%B8%AD%E7%99%BE%E5%90%88%E8%8A%B1.jpg",
+      "recognitionFile": "lily-sectional-score/ocr/lily.png.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 7,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              287,
+              326
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                355,
+                400
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              557,
+              596
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                623,
+                665
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              817,
+              854
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                883,
+                927
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1085,
+              1123
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1144,
+                1188
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1404,
+              1445
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1478,
+                1525
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1566,
+              1604
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1630,
+                1680
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "82c10ce5ed7c9539eeb1117d061b7630ac0c3dc1d394b1213cd8bf152a3746c8",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "A": [
+          [
+            0,
+            0,
+            20
+          ],
+          [
+            1,
+            0,
+            19
+          ],
+          [
+            2,
+            0,
+            12
+          ]
+        ],
+        "B": [
+          [
+            2,
+            12,
+            19
+          ],
+          [
+            3,
+            0,
+            17
+          ],
+          [
+            4,
+            0,
+            20
+          ],
+          [
+            5,
+            0,
+            5
+          ]
+        ],
+        "T": [
+          [
+            4,
+            14,
+            20
+          ],
+          [
+            5,
+            0,
+            5
+          ]
+        ]
+      },
+      "order": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "A",
+        "B",
+        "T",
+        "T"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    "formReview": "独立核对原有05-301歌谱及Timeless Truths原始Salvationist MIDI。原MIDI有三拍静默前置，完整旋律为3至67四分拍，共99个最高旋律音头；A为3至35，B为35至67，结尾整句T为59至67。原图六行简谱除最后括号阿们两音（录音未唱）均逐音保留，包括A末印刷休止；重组A B、器乐B、重唱B、A B、T T，全部318个发声音头与MIDI零编辑、唯一调性对应，不改音高、时值或截掉任何唱词。原图第四谱行小节线扫描有两像素断裂，显式版本7只对小节线判别做三像素垂直闭运算，OCR及节奏仍读原始像素。整曲及局部MIDI和印刷节奏四路径均须保留成本0.35、调性区分0.06、跨度75%至125%、所有正文起点互差不超过0.5秒及首尾容量检查。前一区域上下文包括间奏，解决相同结尾句的反复相位，未通过的传统和声模板及其他谱面实验不用于发布。11秒及132秒仅为整曲搜索范围估计，所有六个起点由音频路径计算。已有05-301数据、原始文本及媒体均不修改。"
   }
 }

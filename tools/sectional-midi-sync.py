@@ -17,7 +17,7 @@ from sync_batch_audio import features, repeated_verses
 from sync_batch_cqt import audio_feature_review, cqt_features
 from sync_batch_reference_score import score_rows_hash
 from sync_batch_score import note_rows
-from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music
+from sync_batch_sectional import arranged_midi_bytes, midi_reading_rows, optical_performance_rows, performance_times, stable_outro_times, reading_section_groups, source_verse_groups, verify_verse_music, repeated_source_readings
 from sync_batch_sources import clean, text_source
 from sync_batch_reused_chorus import source_chorus_reuse, validate_reused_chorus
 from sync_batch_symbolic import score_row_offsets
@@ -167,8 +167,8 @@ def reference_material(profile, cache, prepare=False):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
     image_review = profile['opticalReference']
-    if type(image_review.get('noteExtractorVersion')) is not int or image_review['noteExtractorVersion'] not in [5, 6]:
-        raise ValueError('分段原谱需要明确的数字规范化提取版本5或6')
+    if type(image_review.get('noteExtractorVersion')) is not int or image_review['noteExtractorVersion'] not in [5, 6, 7]:
+        raise ValueError('分段原谱需要明确的数字规范化提取版本5、6或7')
     image = pinned_file(cache, image_review['image'], prepare)
     recognition_path = cache / image_review['recognitionFile']
     if prepare:
@@ -182,7 +182,8 @@ def reference_material(profile, cache, prepare=False):
         raise ValueError('原谱识别文件不匹配当前固定图片')
     rows = note_rows(image, recognition, recognition_path.parent.parent,
                      reviewed_systems=image_review['reviewedSystems'], normalize_digits=True,
-                     separate_octave_dots=image_review['noteExtractorVersion'] == 6)
+                     separate_octave_dots=image_review['noteExtractorVersion'] == 6,
+                     join_broken_barlines=image_review['noteExtractorVersion'] == 7)
     if score_rows_hash(rows) != image_review['rowsSha256']:
         raise ValueError('原谱光学音符或节奏已变化')
     period, harmony, melody = midi.midi_features(path)
@@ -259,6 +260,7 @@ def validate_source(song, profile):
         raise ValueError('原文起句校验只支持明确的中文或英文配置')
     source = text_source(batch.ROOT / 'data' / song['source'], language)
     source = source_chorus_reuse(source, batch.ROOT / 'data' / song['source'], profile)
+    source = repeated_source_readings(source, profile)
     definitions = [item for verse in source['verses'] for item in verse]
     short_form = short_form_review(profile)
     if ((len(definitions) != 2 if short_form else len(definitions) < 3) or
@@ -705,6 +707,10 @@ def generate(song, profile, cache, prepare=False):
                 'maximumOnsetDifference': .5, 'spanRatio': [.75, 1.25]}}
     try:
         source, definitions = validate_source(song, profile)
+        if 'repeatedSourceReadings' in source:
+            evidence['midiMatching']['algorithmVersion'] = 2
+            evidence['midiMatching']['repeatedSourceReadings'] = source['repeatedSourceReadings']
+            evidence['returnIndices'] = source['repeatedSourceReadings']['returnIndices']
         verses = source_verse_context(source, profile)
         edge_verses = source_verse_edges(source, profile)
         recordings = independent_recordings(song, profile)
@@ -766,7 +772,8 @@ def generate(song, profile, cache, prepare=False):
             measured = measure_recording(item['file'], item['sampling'], detail, track_profile, track_material)
             detail['times'] = measured
             evidence.setdefault('independentTimelines', {})[item['file']] = {
-                'definitions': definitions, 'times': measured, 'returnIndices': []}
+                'definitions': definitions, 'times': measured,
+                'returnIndices': source.get('repeatedSourceReadings', {}).get('returnIndices', [])}
         return export_result(song, batch.ROOT, cache, destination, evidence, started, source,
                              definitions, times, [0])
     except (ValueError, FileNotFoundError, KeyError) as error:

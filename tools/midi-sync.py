@@ -8,6 +8,7 @@ import time
 import numpy as np
 from sync_batch_sources import text_source
 from sync_batch_chorus_groups import source_chorus_groups
+from sync_batch_fermata import score_time_reference
 from sync_batch_audio import features, repeated_verses, onsets_agree
 from sync_batch_score import match_template
 from sync_batch_align import export_result
@@ -271,6 +272,9 @@ def generate(song, profile, cache):
         path = cache / 'midi' / profile['file']
         if batch.checksum(path) != profile['sha256']:
             raise ValueError('MIDI 参考哈希不匹配')
+        path, fermata = score_time_reference(path, profile, cache)
+        if fermata is not None:
+            evidence['midiMatching']['terminalFermataTempo'] = fermata
         period, harmony, melody = midi_features(path, profile.get('referenceCycle'))
         offsets, melody_rows = reading_rows(source, profile, melody)
         if 'opticalReference' in profile:
@@ -303,20 +307,22 @@ def generate(song, profile, cache):
             evidence['performanceOrder'] = definitions
             return export_result(song, batch.ROOT, cache, destination, evidence, start, source, definitions,
                 timelines[song['reference']]['times'], first_indices)
-        if 'sourceChorusGroups' in profile:
+        if 'sourceChorusGroups' in profile or fermata is not None:
             if (profile.get('tracks') != song['tracks'] or profile.get('audioFile') != song['reference'] or
-                    batch.checksum(batch.ROOT / 'data' / song['source']) != song['sha256'] or
-                    batch.checksum(cache / profile['textReferenceFile']) != profile['textReferenceSha256']):
-                raise ValueError('主副歌分组未绑定当前原文、全部录音及原始歌词来源页')
+                    batch.checksum(batch.ROOT / 'data' / song['source']) != song['sha256']):
+                raise ValueError('完整检查未绑定当前原文及全部录音')
             evidence['midiMatching']['mode'] = 'text-local-and-complete-score'
-            evidence['midiMatching']['sourceChorusGroups'] = source['chorusGroups']
+            if 'sourceChorusGroups' in profile:
+                if batch.checksum(cache / profile['textReferenceFile']) != profile['textReferenceSha256']:
+                    raise ValueError('主副歌分组原始歌词来源页已变化')
+                evidence['midiMatching']['sourceChorusGroups'] = source['chorusGroups']
             recordings = evidence['midiMatching']['recordings'] = {}
             timelines = evidence['independentTimelines'] = {}
             definitions = [item for verse in source['verses'] for item in verse]
             for track in song['tracks']:
                 audio = batch.ROOT / 'data' / track['file']
                 if batch.checksum(audio) != track['sha256']:
-                    raise ValueError('主副歌完整录音的哈希已变化')
+                    raise ValueError('完整录音的哈希已变化')
                 detail = recordings[track['file']] = {'sha256': track['sha256']}
                 times = midi_recording_times(profile, source, audio, period, harmony, melody_rows,
                                              offsets, cache, detail, limits)
@@ -326,7 +332,7 @@ def generate(song, profile, cache):
                 if (min(item['starts'][0] for item in full) >= .75 * detail['music']['period'] or
                         duration - min(item['starts'][0] + item['span'] for item in full) >=
                         .75 * detail['music']['period']):
-                    raise ValueError('主副歌录音首尾仍可容纳完整乐段，需核对演唱结构')
+                    raise ValueError('录音首尾仍可容纳完整乐段，需核对演唱结构')
                 timelines[track['file']] = {'definitions': definitions, 'times': times, 'returnIndices': []}
             evidence['performanceOrder'] = definitions
             return export_result(song, batch.ROOT, cache, destination, evidence, start,

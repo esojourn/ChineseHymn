@@ -7659,5 +7659,161 @@
         3
       ]
     }
+  },
+  "02-396": {
+    "targetSha256": "1474d4a4125d3a10af0e767a0fc83eab57d2e2fc979ae17d7fd38d14dccd81ed",
+    "file": "timeless-Living_by_Faith.mid",
+    "sha256": "84cb8a9794e35e0611c85d3184f74ddee0ea6478657a5b22a7f124520ef6a7b4",
+    "url": "https://library.timelesstruths.org/library/music/L/Living_by_Faith/Living_by_Faith.mid",
+    "textReferenceUrl": "https://library.timelesstruths.org/music/Living_by_Faith/",
+    "scoreReferenceUrl": "https://library.timelesstruths.org/library/music/L/Living_by_Faith/Living_by_Faith.xml",
+    "scoreReferenceSha256": "354cd4f95f99eca3b30173bd0f586cf760558142f614b00b3da967d65f25b783",
+    "verseCount": 4,
+    "regionOpenings": [
+      [
+        "我不在乎将来会遇",
+        "信靠耶稣哦信靠耶",
+        "在他膀臂哦在他膀",
+        "哦不会惊慌哦不会"
+      ],
+      [
+        "虽风暴会袭来且乌",
+        "信靠耶稣哦信靠耶",
+        "在他膀臂哦在他膀",
+        "哦不会惊慌哦不会"
+      ],
+      [
+        "主会带我平安地度",
+        "信靠耶稣哦信靠耶",
+        "在他膀臂哦在他膀",
+        "哦不会惊慌哦不会"
+      ],
+      [
+        "主将会为他所爱的",
+        "信靠耶稣哦信靠耶",
+        "在他膀臂哦在他膀",
+        "哦不会惊慌哦不会"
+      ]
+    ],
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          3,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "onsetIndex": 37,
+        "pitches": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      {
+        "onsetIndex": 55,
+        "pitches": [
+          10,
+          0,
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "onsetIndex": 65,
+        "pitches": [
+          3,
+          7,
+          10,
+          0,
+          10
+        ]
+      }
+    ],
+    "symbolicReferenceReview": {
+      "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+      "noteCount": 75,
+      "midiNoteCount": 75,
+      "editCost": 0,
+      "runnerUpCost": 63,
+      "semitoneShift": 0,
+      "rowStarts": [
+        {
+          "scoreNoteIndex": 0,
+          "possibleMidiNoteIndices": [
+            0
+          ],
+          "at": 0.0
+        },
+        {
+          "scoreNoteIndex": 37,
+          "possibleMidiNoteIndices": [
+            37
+          ],
+          "at": 16.3333
+        },
+        {
+          "scoreNoteIndex": 55,
+          "possibleMidiNoteIndices": [
+            55
+          ],
+          "at": 32.3333
+        },
+        {
+          "scoreNoteIndex": 65,
+          "possibleMidiNoteIndices": [
+            65
+          ],
+          "at": 40.0
+        }
+      ],
+      "offsets": [
+        0.0,
+        16.3333,
+        32.3333,
+        40.0
+      ]
+    },
+    "scoreVoiceReview": {
+      "voice": "1",
+      "highestChordHeadOnly": true,
+      "continuedTiedHeadsExcluded": true,
+      "sourceBoundaryNoteIndices": [
+        0,
+        37,
+        55,
+        65
+      ]
+    },
+    "fullPerformanceCheck": {
+      "version": 1
+    },
+    "formReview": "凭信而活原始中文正文四节，每节四个既有阅读区域，保留全部原始字节、歌词、标点、段落及顺序。采用Timeless Truths的Living by Faith完整原始MIDI、MusicXML和PDF，James Wells及Robert E. Winsett作词，J. L. Heath作曲；不是生命圣诗396的烙主圣容在我心。绑定原始参考网址及SHA-256。完整MusicXML第一Treble声部voice 1每组和弦取最高音，排除延音线继续音，75个主旋律音头与原始MIDI最高旋律全部零编辑对应。四个原文阅读分界分别对应原谱第1、11、15、17小节I care not/Living by faith/From all harm/I am living，零基音头0、37、55、65；中文的信靠耶稣、在祂膀臂、哦不会惊慌分别在对应完整旋律分句开始，低声部回应不提前挪动主旋律换段。原始MIDI有2.5拍前导，MusicXML最后第19小节主旋律从第71拍延至72.5拍，带延长记号；MIDI末音为73.5至75拍，仅最后74.75拍起在Treble和Bass同时将每拍666666微秒降为5000000，75拍恢复。严格核对原谱末尾延长记号、首尾拍数、全部音符闭合及唯一末音内减速后，仅为分析派生副本还原原谱速度，不修改原始MIDI、原谱、音符、音高、音符起止或拍数，不调整音频时间、不手填滚动秒数。原始中文、伴奏与领唱分别绑定SHA-256，两版从完整音频零秒独立取得特征，各自对照每节和声、每节旋律、四节完整有序和声和完整有序旋律，所有16个起点的四路径两两相差不超过0.5秒；反复周期约52.4秒，伴奏及领唱相似度约0.908及0.911。保留成本0.35、和声调性区分0.08、旋律调性区分0.06、跨度75%至125%、调性一致、严格递增、完整首尾和四路径一致检查，任何一版失败不导出整首，不回退到跨录音映射。全部时间来自完整当前原始录音，未按总时长缩放，不宣称逐曲人工试听。原始素材、目录及已有文字版和图片版滚动数据不改。",
+    "scoreReferenceFile": "reference/external/living-faith-timeless.xml",
+    "audioFile": "02-396凭信而活-领唱.mp3",
+    "tracks": [
+      {
+        "file": "02-396凭信而活.mp3",
+        "sha256": "8a30d12b6c82dbd7cb7843b936a7eb81489e8facb2db3fd30ab3070324cdbf8b"
+      },
+      {
+        "file": "02-396凭信而活-领唱.mp3",
+        "sha256": "819d3ffb32fe32aa1d1e787daacade7b89513c418f18f2598b340648605ed538"
+      }
+    ],
+    "terminalFermataTempo": {
+      "version": 1,
+      "reason": "原始MusicXML最后主旋律音有延长记号，原始MIDI仅在此音的末尾把速度从666666降至5000000微秒每拍；只在分析副本中按原谱速度核对完整反复，所有音符和拍数不变。"
+    },
+    "scorePdfUrl": "https://library.timelesstruths.org/library/music/L/Living_by_Faith/Living_by_Faith.pdf",
+    "scorePdfSha256": "cc803b3f5bb51ae93658b3a6d457b84688402b7e9f20b43d065426af96b34d00",
+    "scorePdfFile": "reference/external/living-faith-timeless.pdf"
   }
 }

@@ -473,5 +473,240 @@
       "melodyTrackName": "Soprano",
       "openingLyric": "No "
     }
+  },
+  "06-003": {
+    "sourceHash": "d07b9b89397ccd4e1160eefa9975dc3eff1dd8995caf575080a217cad14bc2c5",
+    "audioFile": "06-003这是关于十字架.mp3",
+    "audioHash": "50ffa24b81536f60b7eef62ed41f11b105f510d1b909ceeb487d17665fff548b",
+    "transcriptHash": "50677fcf1d4f41067a85e1ae8cb6c65d37a77f2081be5a9f18b4e9b6c305d39c",
+    "language": "en",
+    "blocks": [
+      {
+        "region": "r1",
+        "wordRange": [
+          0,
+          10
+        ]
+      },
+      {
+        "region": "r2",
+        "wordRange": [
+          10,
+          22
+        ]
+      },
+      {
+        "region": "r3",
+        "wordRange": [
+          22,
+          34
+        ]
+      },
+      {
+        "region": "r4",
+        "wordRange": [
+          34,
+          45
+        ]
+      },
+      {
+        "region": "r5",
+        "wordRange": [
+          45,
+          53
+        ]
+      },
+      {
+        "region": "r6",
+        "wordRange": [
+          53,
+          69
+        ]
+      },
+      {
+        "region": "r7",
+        "wordRange": [
+          69,
+          77
+        ]
+      },
+      {
+        "region": "r8",
+        "wordRange": [
+          77,
+          91
+        ]
+      },
+      {
+        "region": "r9",
+        "wordRange": [
+          91,
+          109
+        ]
+      },
+      {
+        "region": "r10",
+        "wordRange": [
+          109,
+          124
+        ]
+      },
+      {
+        "region": "r11",
+        "wordRange": [
+          124,
+          136
+        ]
+      },
+      {
+        "region": "r5",
+        "wordRange": [
+          136,
+          144
+        ]
+      },
+      {
+        "region": "r6",
+        "wordRange": [
+          144,
+          160
+        ]
+      },
+      {
+        "region": "r7",
+        "wordRange": [
+          160,
+          168
+        ]
+      },
+      {
+        "region": "r8",
+        "wordRange": [
+          168,
+          182
+        ]
+      },
+      {
+        "region": "r12",
+        "wordRange": [
+          182,
+          198
+        ]
+      },
+      {
+        "region": "r13",
+        "wordRange": [
+          198,
+          206
+        ]
+      },
+      {
+        "region": "r14",
+        "wordRange": [
+          206,
+          214
+        ]
+      },
+      {
+        "region": "r15",
+        "wordRange": [
+          214,
+          230
+        ]
+      },
+      {
+        "region": "r16",
+        "wordRange": [
+          230,
+          238
+        ]
+      },
+      {
+        "region": "r17",
+        "wordRange": [
+          238,
+          255
+        ]
+      },
+      {
+        "region": "r18",
+        "wordRange": [
+          255,
+          263
+        ]
+      },
+      {
+        "region": "r19",
+        "wordRange": [
+          263,
+          278
+        ]
+      },
+      {
+        "region": "r20",
+        "wordRange": [
+          278,
+          283
+        ]
+      },
+      {
+        "region": "r21",
+        "wordRange": [
+          283,
+          295
+        ]
+      }
+    ],
+    "review": "基于固定哈希large-v3-turbo整曲无提示转写重新划分。第二节后录音重复首组副歌，复用原文四个区域，保留全部原文及25块实际顺序。结尾同一句三次演唱保持同一末尾阅读区域，不遗漏转写词语。每个块的首词须与原文首词精确相同，全部正文须独立逐字覆盖，再以原有medium两上下文窗口确认每个起点。 首屏仅从播放开始显示，不声称测得第一唱词起点；第二节后完整重唱首组副歌，按实际顺序复用原文区域。结尾同一句三次演唱均覆盖在同一末尾阅读区域，保留完整转写词语。第9块在长间奏后原始两窗口首词均零时长，按已发布的无提示双窗口完整十词起句规则独立复核，不配置词形差异，其余换句使用原有声学规则。",
+    "longGapFreePrefix": {
+      "version": 1,
+      "reason": "前一句完整转写结束早于两个原始窗口；已完成整曲与原文25块演唱顺序核对，首词在两组原始窗口均零时长。采用已发布的双窗口无提示完整十词起句复核，全部门槛不变，不配置词形差异。",
+      "model": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "inflections": []
+    },
+    "initialReadingView": {
+      "version": 1,
+      "sourceHash": "d07b9b89397ccd4e1160eefa9975dc3eff1dd8995caf575080a217cad14bc2c5",
+      "tracks": [
+        {
+          "file": "06-003这是关于十字架.mp3",
+          "sha256": "50ffa24b81536f60b7eef62ed41f11b105f510d1b909ceeb487d17665fff548b"
+        }
+      ],
+      "audioFile": "06-003这是关于十字架.mp3",
+      "transcriptHash": "50677fcf1d4f41067a85e1ae8cb6c65d37a77f2081be5a9f18b4e9b6c305d39c",
+      "regions": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r9",
+        "r10",
+        "r11",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r16",
+        "r17",
+        "r18",
+        "r19",
+        "r20",
+        "r21"
+      ]
+    }
   }
 }

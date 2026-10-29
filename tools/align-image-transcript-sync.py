@@ -18,7 +18,7 @@ _model = None
 _model_path = None
 
 
-def transcript_blocks(profile, transcript, source, proofs=None):
+def transcript_blocks(profile, transcript, source, proofs=None, diagnostics=None):
     segments, used, definitions, ranges, words = transcript['segments'], set(), [], [], []
     language = profile['language']
     from sync_batch_repeat_homophones import validate_review, verify as verify_homophones
@@ -75,6 +75,9 @@ def transcript_blocks(profile, transcript, source, proofs=None):
         first = lexical[0]
         ranges.append((float(first['start']), float(first['end'])))
         words.append(clean(first['word'], language))
+        if diagnostics is not None:
+            diagnostics.append({'at': float(first['start']), 'firstWordEnd': float(first['end']),
+                                'firstWord': clean(first['word'], language), 'end': float(lexical[-1]['end'])})
     for excluded in profile.get('nonLyricSegments', []):
         index = excluded['index']
         if (type(index) is not int or not 0 <= index < len(segments) or
@@ -124,8 +127,10 @@ def reviewed_initial_view(song, profile, asr_path, source, definitions):
         raise ValueError('首屏阅读位置须绑定当前正文、全部录音及完整演唱片段')
     for region in source['regions']:
         performed = ''.join(clean(item['text'], profile['language']) for item in definitions if item['region'] == region)
-        if performed != clean(source['blocks'][region]['text'], profile['language']):
-            raise ValueError('首屏阅读位置需要逐字完整覆盖每个原文区域，不能遗漏或重复')
+        original = clean(source['blocks'][region]['text'], profile['language'])
+        copies = len(performed) // len(original) if original else 0
+        if copies < 1 or performed != original * copies:
+            raise ValueError('首屏阅读位置须逐字完整覆盖每个原文区域，重复演唱须保留完整原文副本')
     return {'version': 1, 'region': definitions[0]['region'], 'at': 0,
             'policy': 'initial reading position from playback start', 'lyricOnsetMeasured': False, 'profile': view}
 
@@ -163,14 +168,15 @@ def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
         if transcript['sha256'] != profile['audioHash'] or transcript['language'] != language:
             raise ValueError('缺少匹配当前录音和原歌词语言的转写')
         homophone_proofs = []
-        definitions, estimates, ranges, anchor_words = transcript_blocks(profile, transcript, source, homophone_proofs)
+        block_diagnostics = [] if profile.get('longGapFreePrefix') else None
+        definitions, estimates, ranges, anchor_words = transcript_blocks(profile, transcript, source, homophone_proofs, block_diagnostics)
         evidence.update(performanceOrder=definitions, estimates=estimates)
         evidence['transcriptMatching']['transcript'] = transcript
         if homophone_proofs:
             evidence['transcriptMatching'].update(algorithmVersion=11, repeatHomophoneProof=homophone_proofs)
         if profile.get('initialReadingView'):
             evidence['initialReadingView'] = reviewed_initial_view(song, profile, asr_path, source, definitions)
-        selected_model = str(Path(model_dir) / 'medium') if profile.get('freeInitialPrefix') else 'medium'
+        selected_model = str(Path(model_dir) / 'medium') if profile.get('freeInitialPrefix') or profile.get('longGapFreePrefix') else 'medium'
         if _model is None or _model_path != selected_model:
             from faster_whisper import WhisperModel
             _model = WhisperModel(selected_model, device='cpu', compute_type='int8', cpu_threads=threads,
@@ -200,7 +206,17 @@ def generate(song, profile, cache, model_dir, threads, ctc_model_dir=None):
                 observations, times, decisions = checks.verified_window_times(_model, tokenizer, audio, definitions, estimates,
                     language, preceding, ranges, anchor_words, resume, save_windows)
         except ValueError:
-            if profile.get('midiVerseBoundaryReview'):
+            if profile.get('longGapFreePrefix'):
+                if (not profile.get('initialReadingView') or language != 'en' or
+                        profile.get('freeInitialPrefix') or profile.get('midiVerseBoundaryReview') or ctc_model_dir):
+                    raise ValueError('长间奏复核须单独启用完整英文演唱片段与首屏阅读位置')
+                from sync_batch_gap_prefix import recover
+                observations = evidence['windows']
+                times, decisions = recover(_model, audio, song, definitions, block_diagnostics, observations, transcript,
+                    profile['longGapFreePrefix'], model_dir, cache, checks.confirm_transcript_windows, batch.save)
+                evidence['transcriptMatching'].update(algorithmVersion=13, longGapFreePrefix=profile['longGapFreePrefix'],
+                                                       blockDiagnostics=block_diagnostics)
+            elif profile.get('midiVerseBoundaryReview'):
                 if not profile.get('initialReadingView') or language != 'zh' or profile.get('freeInitialPrefix') or ctc_model_dir:
                     raise ValueError('主歌 MIDI 边界复核须单独启用中文完整演唱片段及首屏阅读位置')
                 from sync_batch_midi_boundaries import recover

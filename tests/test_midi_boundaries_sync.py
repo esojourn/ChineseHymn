@@ -184,11 +184,15 @@ class RepeatedHomophoneTests(unittest.TestCase):
             item['label'] = region
         original = copy.deepcopy(self.words)
         proofs = []
-        definitions, estimates, ranges, words = image.transcript_blocks(self.profile, {'segments': [{'words': self.words}]}, source, proofs)
+        diagnostics = []
+        definitions, estimates, ranges, words = image.transcript_blocks(self.profile, {'segments': [{'words': self.words}]}, source, proofs, diagnostics)
         self.assertEqual(len(definitions), 3)
         self.assertEqual([item['text'] for item in definitions], [self.text] * 3)
         self.assertEqual(proofs[0]['corroboratingBlocks'], [0, 1])
         self.assertEqual(self.words, original)
+        self.assertEqual(len(diagnostics), 3)
+        self.assertEqual(diagnostics[-1]['end'], self.words[-1]['end'])
+        self.assertEqual(diagnostics[0]['at'], estimates[0])
         strict = {key: value for key, value in self.profile.items() if key != 'repeatHomophones'}
         with self.assertRaises(ValueError):
             image.transcript_blocks(strict, {'segments': [{'words': self.words}]}, source)
@@ -209,6 +213,13 @@ class RepeatedHomophoneTests(unittest.TestCase):
                     'transcriptHash': image.batch.checksum(path), 'regions': ['a', 'b', 'c']}
             profile = {**self.profile, 'initialReadingView': view}
             self.assertFalse(image.reviewed_initial_view(song, profile, path, source, definitions)['lyricOnsetMeasured'])
+            repeated = definitions + [copy.deepcopy(definitions[1])]
+            repeated_profile = copy.deepcopy(profile)
+            repeated_profile['initialReadingView']['regions'].append('b')
+            self.assertFalse(image.reviewed_initial_view(song, repeated_profile, path, source, repeated)['lyricOnsetMeasured'])
+            repeated[-1]['text'] = self.text[:8]
+            with self.assertRaises(ValueError):
+                image.reviewed_initial_view(song, repeated_profile, path, source, repeated)
             partial = copy.deepcopy(definitions)
             partial[1]['text'] = self.text[:8]
             with self.assertRaises(ValueError):

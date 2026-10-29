@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "songId": "02-383",
+  "status": "reviewed",
+  "source": {
+    "file": "02-383时代的挑战.txt",
+    "sha256": "612f53c2ec24ddca34781c9b40fa080433897e690962919d97af8e93de3a1378",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-383时代的挑战.mp3",
+      "sha256": "e29c62ecb4741bbd695392fd9acaa31c2063d91fb9cf7e4c911b3dbdd996d25f",
+      "duration": 191.13795918367347,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    }
+  },
+  "cues": [
+    {
+      "at": 8.45,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.4,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.62,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.55,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 98.8,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 132.75,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.97,
+      "region": "r7",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 177.9,
+      "region": "r8",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Documented MIDI score; independent harmony and melody at every performed verse and reading region, additionally corroborated by both complete ordered score paths. All four onset estimates agree pairwise within 0.5 seconds; no arithmetic correction of performed verse starts.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "兴起，基督哨兵！ 守望，惊醒，时代前锋，注视天上异象， 持守信仰，认定路向，点起先知得火把， 启蒙，明瞎，暴露虚假；",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "投入时代得洪流，伸出援手，拯溺释囚。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "兴起，基督使者！ 纯良如鸽，灵巧似蛇，表彰基督荣形， 离罪成圣，仁爱，刚勇；传扬基督得福音， 普世得闻十架救恩；",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "见证基督得真理，心口一致，力行不息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "兴起，基督仆人！ 事主忠心，以诚以勤，关心基督圣工， 忧喜与共，同建灵宫；流露基督得慈仁， 服务人群，悲天悯人，",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "紧随基督得脚踪，与主同行，与主同工。",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "兴起，基督战士！ 如虹士气，再接再厉，分享基督胜利； 非靠才势，惟主可恃。顺从基督得角声， 请缨效命，陷阵冲锋，",
+        "label": "第4段"
+      },
+      {
+        "region": "r8",
+        "text": "等候基督得凯旋，万民颂赞，永远，永远。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-383时代的挑战.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

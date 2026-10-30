@@ -1,0 +1,335 @@
+{
+  "songId": "03-018",
+  "source": "03-018十架七言-第六言-成了.txt",
+  "sourceHash": "7a00739c3b11e150ec8fff4bbddfcd9765a8470166548afb424a141c6638a0f7",
+  "trackHashes": [
+    {
+      "file": "03-018十架七言-第六言-成了.mp3",
+      "sha256": "c75d55160526f6acb516c316c9fb4964cf144bf7102d5cfec8f0f8dc67c83f20"
+    },
+    {
+      "file": "03-018十架七言-第六言-成了-领唱.mp3",
+      "sha256": "ec2f6317858fc6642bbc362e85c9875d4eff1ecde44214b67421141d2fb37b07"
+    }
+  ],
+  "midiMatching": {
+    "mode": "repository-original-midi",
+    "algorithmVersion": 1,
+    "profile": {
+      "version": 1,
+      "targetSha256": "7a00739c3b11e150ec8fff4bbddfcd9765a8470166548afb424a141c6638a0f7",
+      "tracks": [
+        {
+          "file": "03-018十架七言-第六言-成了.mp3",
+          "sha256": "c75d55160526f6acb516c316c9fb4964cf144bf7102d5cfec8f0f8dc67c83f20"
+        },
+        {
+          "file": "03-018十架七言-第六言-成了-领唱.mp3",
+          "sha256": "ec2f6317858fc6642bbc362e85c9875d4eff1ecde44214b67421141d2fb37b07"
+        }
+      ],
+      "file": "03-018十架七言-第六言-成了.mid",
+      "sha256": "895ee8d38d0792ed9e214953b93806156898edb7a299810378a501cd80cdbce8",
+      "sourceVerseShape": [
+        1,
+        1
+      ],
+      "sections": [
+        {
+          "quarter": 8,
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            4,
+            6,
+            11,
+            4,
+            4,
+            3,
+            1
+          ],
+          "region": "r1",
+          "opening": "成了成了痛苦就快过体"
+        },
+        {
+          "quarter": 88,
+          "onsetIndex": 38,
+          "pitches": [
+            3,
+            4,
+            6,
+            11,
+            4,
+            4,
+            3,
+            1
+          ],
+          "region": "r2",
+          "opening": "成了成了黑暗包围他阴"
+        }
+      ],
+      "trackMethods": {
+        "03-018十架七言-第六言-成了.mp3": "chroma-dtw",
+        "03-018十架七言-第六言-成了-领唱.mp3": "four-paths"
+      },
+      "review": "同名原始 MIDI 的8/88拍对应两段原文，80拍间距与录音56.5秒音乐反复一致；领唱通过完整和逐段和声/旋律四路径，伴奏通过原有整曲chroma-DTW对应，不声称伴奏独立旋律检查通过。保留全部原始音符、声部、速度与原文。首屏从0显示，不声称0是起唱时间，不声称有独立出版谱面或人工听完整曲。",
+      "referenceAudioFile": "03-018十架七言-第六言-成了-领唱.mp3"
+    },
+    "referenceDerivation": {
+      "unmodifiedOriginal": true,
+      "sourceFile": "data/03-018十架七言-第六言-成了.mid",
+      "sourceSha256": "895ee8d38d0792ed9e214953b93806156898edb7a299810378a501cd80cdbce8",
+      "analysisSha256": "895ee8d38d0792ed9e214953b93806156898edb7a299810378a501cd80cdbce8",
+      "maximumDistinctSoundingPitches": 7,
+      "firstMelodyQuarter": 8.0,
+      "sections": [
+        {
+          "quarter": 8,
+          "onsetIndex": 0,
+          "pitches": [
+            3,
+            4,
+            6,
+            11,
+            4,
+            4,
+            3,
+            1
+          ],
+          "region": "r1",
+          "opening": "成了成了痛苦就快过体"
+        },
+        {
+          "quarter": 88,
+          "onsetIndex": 38,
+          "pitches": [
+            3,
+            4,
+            6,
+            11,
+            4,
+            4,
+            3,
+            1
+          ],
+          "region": "r2",
+          "opening": "成了成了黑暗包围他阴"
+        }
+      ],
+      "policy": "original repository MIDI; preserve every original note, track and tempo; full score plus every complete section independently checked"
+    },
+    "recordings": {
+      "03-018十架七言-第六言-成了-领唱.mp3": {
+        "completePerformance": {
+          "harmony": {
+            "best": {
+              "cost": 0.34035800593120624,
+              "key": 0,
+              "at": 6.0,
+              "span": 107.1,
+              "starts": [
+                5.7,
+                62.4
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6241060113322296,
+              "key": 7,
+              "at": 10.1,
+              "span": 82.2,
+              "starts": [
+                9.7,
+                52.8
+              ]
+            }
+          },
+          "melody": {
+            "best": {
+              "cost": 0.2949489720439744,
+              "key": 0,
+              "starts": [
+                5.599999904632568,
+                62.400001525878906
+              ],
+              "span": 107.30000305175781
+            },
+            "runnerUp": {
+              "cost": 0.4795929329199048,
+              "key": 7,
+              "starts": [
+                5.099999904632568,
+                61.79999923706055
+              ],
+              "span": 106.5999984741211
+            }
+          }
+        },
+        "localReadings": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.34395167436549273,
+                "key": 0,
+                "at": 6.1,
+                "span": 56.4,
+                "starts": [
+                  5.7
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6040213986889605,
+                "key": 7,
+                "at": 13.2,
+                "span": 48.8,
+                "starts": [
+                  12.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.3074147865255043,
+                "key": 0,
+                "starts": [
+                  5.699999809265137
+                ],
+                "span": 55.79999923706055
+              },
+              "runnerUp": {
+                "cost": 0.46875667403824955,
+                "key": 7,
+                "starts": [
+                  5.400000095367432
+                ],
+                "span": 55.5
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.31727693951319136,
+                "key": 0,
+                "at": 62.7,
+                "span": 50.5,
+                "starts": [
+                  62.3
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6136711968315972,
+                "key": 7,
+                "at": 69.7,
+                "span": 39.4,
+                "starts": [
+                  69.3
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.25665752471439424,
+                "key": 0,
+                "starts": [
+                  62.400001525878906
+                ],
+                "span": 49.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4748781597803509,
+                "key": 7,
+                "starts": [
+                  50.29999923706055
+                ],
+                "span": 41.70000076293945
+              }
+            }
+          }
+        ],
+        "referencePeriod": 107.29406399999999,
+        "readingOffsets": [
+          0.0,
+          56.47056
+        ],
+        "fourPathOnsets": [
+          [
+            5.7,
+            5.699999809265137,
+            5.7,
+            5.599999904632568
+          ],
+          [
+            62.3,
+            62.400001525878906,
+            62.4,
+            62.400001525878906
+          ]
+        ],
+        "times": [
+          5.67,
+          62.38
+        ],
+        "key": 0
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    }
+  },
+  "independentTimelines": {
+    "03-018十架七言-第六言-成了-领唱.mp3": {
+      "definitions": [
+        {
+          "region": "r1",
+          "text": "成了！成了！痛苦就快过。 体无完肤，灵创伤，痛苦就快过。 你可知道他是谁，甘愿受酷刑。 成了！他是神爱子。",
+          "label": "第1段"
+        },
+        {
+          "region": "r2",
+          "text": "成了！成了！黑暗包围他。 阴森坟墓，无情的，等待吞吃他。 为何上帝的爱子，竟受此遭遇。 成了！使命已完毕。",
+          "label": "第2段"
+        }
+      ],
+      "times": [
+        0,
+        62.38
+      ],
+      "returnIndices": []
+    }
+  },
+  "initialReadingView": {
+    "version": 1,
+    "region": "r1",
+    "at": 0,
+    "policy": "initial reading position from playback start",
+    "lyricOnsetMeasured": false
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "成了！成了！痛苦就快过。 体无完肤，灵创伤，痛苦就快过。 你可知道他是谁，甘愿受酷刑。 成了！他是神爱子。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "成了！成了！黑暗包围他。 阴森坟墓，无情的，等待吞吃他。 为何上帝的爱子，竟受此遭遇。 成了！使命已完毕。",
+      "label": "第2段"
+    }
+  ],
+  "recordingMaps": {
+    "03-018十架七言-第六言-成了.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.7101208567619324,
+      "meanPathCost": 0.29957666993141174,
+      "cueWindowCosts": [
+        0.43276673555374146
+      ],
+      "initialReadingView": "Initial region is displayed from zero; only subsequent measured cues are mapped."
+    }
+  },
+  "status": "ready",
+  "cueCount": 2,
+  "elapsedSeconds": 1.447
+}

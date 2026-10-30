@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "songId": "03-016",
+  "status": "reviewed",
+  "source": {
+    "file": "03-016十架七言-第四言-为何离弃我.txt",
+    "sha256": "b34d34ade9cce2e4a702e76d38d77047a73fdfd69c7e20b1d941ed115351a6d6",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-016十架七言-第四言-为何离弃我.mp3",
+      "sha256": "ce20208d8a457f83b4c87577638169c5687769222efe29d6d2159f64733a1962",
+      "duration": 130.06367346938777,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 76.8,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-016十架七言-第四言-为何离弃我-领唱.mp3",
+      "sha256": "ed80732169381e9830955cc47807ff0ae721b10663f3edabd17efa5b2148077f",
+      "duration": 129.8808163265306,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 77.1,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Unmodified same-name polyphonic MIDI supplied in the repository; source-bound original quarter positions and melody fingerprints. Reference recording passes complete and per-section harmony/melody checks, with all four paths within 0.5 seconds, including any prelude. Explicitly selected additional recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. First reading is displayed from playback zero; this display time is not a measured sung onset. No printed-score verification or note edits are claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "加略山天昏地暗，草木显悲情 我主在此被钉十字架，为我受极刑 讥笑人群尽欺凌，揶揄嘲弄声不停 伤心忧戚他呼喊：我的上帝为何离弃我",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "在此最痛苦时刻，众叛又亲离 他必须独自尝苦杯，独自尝苦杯 他背负人类罪担，上帝掩面不愿看 深沉痛苦他喊说：我的上帝为何离弃我",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-016十架七言-第四言-为何离弃我.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

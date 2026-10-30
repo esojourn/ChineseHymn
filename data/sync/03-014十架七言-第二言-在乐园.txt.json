@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "songId": "03-014",
+  "status": "reviewed",
+  "source": {
+    "file": "03-014十架七言-第二言-在乐园.txt",
+    "sha256": "8f421c88baa093732c5917c5d07b6cd6f10fa6458d927d3e7db9354485be87ed",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-014十架七言-第二言-在乐园.mp3",
+      "sha256": "97f2442dc5df69c3ee9d4eeef1c00e6568de8d0f2dfc74968fb2135812c367d5",
+      "duration": 271.12489795918367,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 68.2,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 121.3,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 136.42,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 197.05,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 250.1,
+          "region": "r6",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-014十架七言-第二言-在乐园-领唱.mp3",
+      "sha256": "adcb2140af01c5e0be7a535fb9cf82a50b9dc0a05cf4bfc02db75e97a8854c63",
+      "duration": 271.3077551020408,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 22
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 68.62,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 121.72,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 136.92,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 197.53,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 250.58,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Unmodified same-name polyphonic MIDI supplied in the repository; source-bound original quarter positions and melody fingerprints. Reference recording passes complete and per-section harmony/melody checks, with all four paths within 0.5 seconds, including any prelude. Explicitly selected additional recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. First reading is displayed from playback zero; this display time is not a measured sung onset. No printed-score verification or note edits are claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "各各他山，高悬十架，上帝爱子受苦； 两旁同钉二强盗，他们因罪受死； 其中一位，痛悔前非，靠主救赎大能， 在十架上，向着基督，伤心地求告说：",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主，记念我；主，记念我。 求主你记念我。 当你得国降临的时候，求主你记念我。 耶稣立刻回答他说：我实实在在告诉你，",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "今日你要同我在乐园，同我在乐园里。",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "生命盼望，奇妙恩言，加略山上发出， 救赎一位失丧者，使他脱离罪污， 罪的刑罚已赦免，黑暗终于消离， 天门大开，真光照耀，不久进入安息。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "主，记念我；主，记念我。 求主你记念我。 当你得国降临的时候，求主你记念我。 耶稣立刻回答他说：我实实在在告诉你，",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "今日你要同我在乐园，同我在乐园里。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-014十架七言-第二言-在乐园.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

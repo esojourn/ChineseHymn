@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "songId": "03-018",
+  "status": "reviewed",
+  "source": {
+    "file": "03-018十架七言-第六言-成了.txt",
+    "sha256": "7a00739c3b11e150ec8fff4bbddfcd9765a8470166548afb424a141c6638a0f7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-018十架七言-第六言-成了.mp3",
+      "sha256": "c75d55160526f6acb516c316c9fb4964cf144bf7102d5cfec8f0f8dc67c83f20",
+      "duration": 114.31183673469388,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 62.28,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-018十架七言-第六言-成了-领唱.mp3",
+      "sha256": "ec2f6317858fc6642bbc362e85c9875d4eff1ecde44214b67421141d2fb37b07",
+      "duration": 114.18122448979592,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 62.38,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Unmodified same-name polyphonic MIDI supplied in the repository; source-bound original quarter positions and melody fingerprints. Reference recording passes complete and per-section harmony/melody checks, with all four paths within 0.5 seconds, including any prelude. Explicitly selected additional recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. First reading is displayed from playback zero; this display time is not a measured sung onset. No printed-score verification or note edits are claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "成了！成了！痛苦就快过。 体无完肤，灵创伤，痛苦就快过。 你可知道他是谁，甘愿受酷刑。 成了！他是神爱子。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "成了！成了！黑暗包围他。 阴森坟墓，无情的，等待吞吃他。 为何上帝的爱子，竟受此遭遇。 成了！使命已完毕。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-018十架七言-第六言-成了.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

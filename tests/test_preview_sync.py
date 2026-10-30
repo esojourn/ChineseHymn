@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from sync_batch_preview import verify
+from sync_batch_preview import bilingual_lines, verify
 
 
 class PreviewEvidenceTests(unittest.TestCase):
@@ -72,6 +72,24 @@ class PreviewEvidenceTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.check()
         self.anchors[1]['previous']['matchedFraction'] = float('nan')
         with self.assertRaises(ValueError): self.check()
+
+    def test_bilingual_position_preserves_strict_version_one(self):
+        self.anchors[1]['previous']['end'] = 16.1
+        self.anchors[1]['current']['at'] = 16.2
+        self.decoded[0]['bounds'] = [4., 34.]
+        self.decoded[1]['bounds'] = [2., 32.]
+        result = verify(1, self.previous, self.current, self.anchors, self.decoded, bilingual=True)
+        self.assertEqual(result['at'], 16.6)
+        self.assertIn('must already be visible', result['method'])
+        with self.assertRaises(ValueError): self.check()
+
+    def test_bilingual_source_requires_adjacent_unchanged_translation_lines(self):
+        lines = ['He must hold me fast', '他必保守我', 'Those he saves are his delight', '他所救的都是喜乐']
+        self.assertEqual(bilingual_lines(lines, {'startLine': 0, 'endLine': 1}, {'startLine': 2, 'endLine': 3}),
+                         (lines[0], lines[2]))
+        lines[1] = 'no translation'
+        with self.assertRaises(ValueError):
+            bilingual_lines(lines, {'startLine': 0, 'endLine': 1}, {'startLine': 2, 'endLine': 3})
 
 
 if __name__ == '__main__':

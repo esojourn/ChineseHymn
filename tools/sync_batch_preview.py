@@ -3,12 +3,23 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import re
 
 from sync_batch_gap_prefix import words
 from sync_batch_sources import clean, prepare
 
 
-def verify(index, previous_text, current_text, anchors, decoded):
+def bilingual_lines(lines, prior_region, next_region):
+    p, n = prior_region['endLine'], next_region['startLine']
+    if (p <= prior_region['startLine'] or n >= next_region['endLine'] or
+            not re.search('[\u3400-\u9fff]', lines[p]) or clean(lines[p], 'en') or
+            not re.search('[\u3400-\u9fff]', lines[n + 1]) or clean(lines[n + 1], 'en') or
+            not clean(lines[p - 1], 'en') or not clean(lines[n], 'en')):
+        raise ValueError('双语预读须使用相邻原始英文行及其中文译文行')
+    return lines[p - 1], lines[n]
+
+
+def verify(index, previous_text, current_text, anchors, decoded, bilingual=False):
     """Place a preview after all observed previous-line ends, never claim a sung onset."""
     previous, current = words(previous_text), words(current_text)
     if len(previous) < 4 or len(current) < 4 or len(anchors) != 2 or len(decoded) != 2:
@@ -22,7 +33,7 @@ def verify(index, previous_text, current_text, anchors, decoded):
     if any(not .8 <= row['previous']['matchedFraction'] <= 1 or not .8 <= row['current']['matchedFraction'] <= 1 for row in anchors):
         raise ValueError('预读前后区域未被两份完整转写覆盖')
     evidence = []
-    for item, before in zip(decoded, (18, 20)):
+    for item, before in zip(decoded, (16, 18) if bilingual else (18, 20)):
         bounds = item['bounds']
         if (len(bounds) != 2 or abs(bounds[0] - max(0, anchors[0]['current']['at'] - before)) > .001 or
                 abs(bounds[1] - (anchors[0]['current']['at'] + 30 - before)) > .001):
@@ -37,7 +48,7 @@ def verify(index, previous_text, current_text, anchors, decoded):
             return [(i, heard[i:i + len(phrase)]) for i in range(len(tokens) - len(phrase) + 1)
                     if tokens[i:i + len(phrase)] == phrase]
         left = [(i, selected) for i, selected in matches(previous)
-                if all(abs(selected[-1]['end'] - a['previous']['end']) <= 1 for a in anchors)]
+                if all(abs(selected[-1]['end'] - a['previous']['end']) <= (1.5 if bilingual else 1) for a in anchors)]
         right = [(i, selected) for i, selected in matches(current)
                  if all(abs(selected[0]['end'] - a['current']['firstWordEnd']) <= .5 for a in anchors)]
         if len(left) != 1 or len(right) != 1:
@@ -56,9 +67,11 @@ def verify(index, previous_text, current_text, anchors, decoded):
         raise ValueError('预读的两个无提示窗口词尾不一致')
     upper = max([a['previous']['end'] for a in anchors] + [e['previous'][-1]['end'] for e in evidence])
     at = round(upper + .5, 2)
-    if any(at >= a['current']['at'] - .5 for a in anchors):
+    if any(at >= a['current']['firstWordEnd' if bilingual else 'at'] - .5 for a in anchors):
         raise ValueError('上一行结束后没有足够的预读间隔')
-    return {'index': index, 'at': at, 'method': 'reading preview after conservative previous-line end; not a measured next-line onset',
+    method = ('bilingual reading position after conservative previous-line end; next translated line must already be visible; not a measured sung onset'
+              if bilingual else 'reading preview after conservative previous-line end; not a measured next-line onset')
+    return {'index': index, 'at': at, 'method': method,
             'previousWords': previous, 'currentWords': current, 'anchors': anchors, 'windows': evidence}
 
 
@@ -66,7 +79,10 @@ def recover(song, source, definitions, diagnostics, observations, transcript, au
             cache, confirm, performed_order, save):
     from faster_whisper import WhisperModel
     import sync_batch_whole_reading as whole
-    synthetic = {'freeWholeReading': {k: review[k] for k in ('version', 'indices', 'reason', 'model', 'contextModel')}}
+    if type(review.get('version')) is not int or review['version'] not in (1, 2):
+        raise ValueError('预读版本无效')
+    bilingual = review['version'] == 2
+    synthetic = {'freeWholeReading': {**{k: review[k] for k in ('indices', 'reason', 'model', 'contextModel')}, 'version': 1}}
     whole.validate_review(synthetic, 'en', model_dir)
     if set(review) != {'version', 'indices', 'reason', 'model', 'contextModel', 'independentTranscriptHash'}:
         raise ValueError('预读配置包含未识别字段')
@@ -98,7 +114,7 @@ def recover(song, source, definitions, diagnostics, observations, transcript, au
             decisions.extend({**row, 'index': index} for row in detail)
             continue
         decoded = []
-        for before in (18, 20):
+        for before in ((16, 18) if bilingual else (18, 20)):
             bounds = [max(0, anchor['at'] - before), anchor['at'] + 30 - before]
             if bounds[1] > len(audio) / 16000:
                 raise ValueError('预读窗口超出录音')
@@ -118,10 +134,14 @@ def recover(song, source, definitions, diagnostics, observations, transcript, au
             if data.get('parameters') != parameters or data.get('bounds') != bounds:
                 raise ValueError('预读缓存与固定模型或原始窗口不符')
             decoded.append(data)
-        previous = lines[source['regions'][definitions[index - 1]['region']]['endLine']]
-        current = lines[source['regions'][definitions[index]['region']]['startLine']]
+        prior_region = source['regions'][definitions[index - 1]['region']]
+        next_region = source['regions'][definitions[index]['region']]
+        if bilingual:
+            previous, current = bilingual_lines(lines, prior_region, next_region)
+        else:
+            previous, current = lines[prior_region['endLine']], lines[next_region['startLine']]
         anchors = [{'previous': rows[index - 1], 'current': rows[index]} for rows in (diagnostics, other_diagnostics)]
-        proof = verify(index, previous, current, anchors, decoded)
+        proof = verify(index, previous, current, anchors, decoded, bilingual=bilingual)
         times.append(proof['at'])
         decisions.append(proof)
     if any(a + .5 >= b for a, b in zip(times, times[1:])):

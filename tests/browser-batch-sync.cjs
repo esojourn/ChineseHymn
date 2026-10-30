@@ -47,7 +47,10 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                     window.geometryProbe = new HymnSync.Controller(document.querySelector('audio'),
                         document.querySelector('.text-inner'), data, track);
                 }, { data, track });
-                for (const viewport of [{ width: 1280, height: 800 }, { width: 390, height: 844 }, { width: 844, height: 390 }]) {
+                const bilingualPreview = data.provenance?.previousLinePreview?.version === 2;
+                const viewports = [{ width: 1280, height: 800 }, { width: 390, height: 844 }, { width: 844, height: 390 }];
+                if (bilingualPreview) viewports.push({ width: 320, height: 568 }, { width: 568, height: 320 });
+                for (const viewport of viewports) {
                     await page.setViewportSize(viewport);
                     const geometry = await page.evaluate(() => {
                         geometryProbe.measure();
@@ -87,17 +90,19 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                         report.geometryChecks++;
                     }
                     for (const index of data.provenance?.previousLinePreview?.indices || []) {
-                        const visible = await page.evaluate(index => {
+                        const visible = await page.evaluate(({ index, bilingual }) => {
                             const before = geometryProbe.data.regions[geometryProbe.data.cues[index - 1].region];
                             const after = geometryProbe.data.regions[geometryProbe.data.cues[index].region];
-                            const last = document.querySelector('[data-line="' + before.endLine + '"]').getBoundingClientRect();
+                            const last = document.querySelector('[data-line="' + (before.endLine - (bilingual ? 1 : 0)) + '"]').getBoundingClientRect();
+                            const lastBottom = document.querySelector('[data-line="' + before.endLine + '"]').getBoundingClientRect();
                             const first = document.querySelector('[data-line="' + after.startLine + '"]').getBoundingClientRect();
+                            const firstBottom = document.querySelector('[data-line="' + (after.startLine + (bilingual ? 1 : 0)) + '"]').getBoundingClientRect();
                             const prior = geometryProbe.positions[index - 1], next = geometryProbe.positions[index];
-                            return { lastAtPrior: [last.top + scrollY - prior, last.bottom + scrollY - prior],
-                                lastAtNext: [last.top + scrollY - next, last.bottom + scrollY - next],
-                                firstAtPrior: [first.top + scrollY - prior, first.bottom + scrollY - prior],
-                                firstAtNext: [first.top + scrollY - next, first.bottom + scrollY - next] };
-                        }, index);
+                            return { lastAtPrior: [last.top + scrollY - prior, lastBottom.bottom + scrollY - prior],
+                                lastAtNext: [last.top + scrollY - next, lastBottom.bottom + scrollY - next],
+                                firstAtPrior: [first.top + scrollY - prior, firstBottom.bottom + scrollY - prior],
+                                firstAtNext: [first.top + scrollY - next, firstBottom.bottom + scrollY - next] };
+                        }, { index, bilingual: bilingualPreview });
                         for (const line of Object.values(visible)) {
                             assert.ok(line[0] >= -1 && line[1] <= viewport.height + 1,
                                 'previous last line and next first line remain visible: ' + data.songId + JSON.stringify(visible));

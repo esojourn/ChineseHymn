@@ -250,7 +250,7 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
         if whole_reading_review:
             parameters.update(wholeReadingWindowVersion=1, contextModel=whole_reading_review['contextModel'])
         if preview_review:
-            parameters.update(previousLinePreviewVersion=1, contextModel=preview_review['contextModel'])
+            parameters.update(previousLinePreviewVersion=preview_review['version'], contextModel=preview_review['contextModel'])
         normal_parameters = dict(parameters)
         if initial_view_profile:
             parameters['initialReadingViewVersion'] = 1

@@ -160,5 +160,59 @@
       },
       "independentTranscriptHash": "92b6eabcd7fa2e0418b470e91043bf2652a5b5f5794ee32563c819d66e852b72"
     }
+  },
+  "06-011": {
+    "version": 1,
+    "sourceHash": "5874089586422cb0d1235606ea7000d7b655069cae7359ed6f55134ffadddb1e",
+    "tracks": [
+      {
+        "file": "06-011你真伟大_Alan_Jackson.mp3",
+        "sha256": "39b96b75edba4a65c1b7171064667f87d94c9f12649c2ab41ab03369694e5870"
+      }
+    ],
+    "audioFile": "06-011你真伟大_Alan_Jackson.mp3",
+    "transcriptHash": "b71be4367628dbaef5f825939f60995e49984e91c51b5c93e8a741c827fcbc91",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16",
+      "r17"
+    ],
+    "review": "英文演唱及中英对照原文完整保留；首屏从零显示。三个换段由两份完整转写和两个固定无提示窗口核对相邻完整英文行，上一行最晚结束估计加0.5秒作为阅读位置；实际唱词起点并未测得，五种屏幕尺寸均检查前后英文及中文行在移动前后可见。",
+    "previousLinePreview": {
+      "version": 2,
+      "indices": [
+        6,
+        12,
+        14
+      ],
+      "reason": "前后相邻英文原文行在两组固定无提示窗口逐词对应，两份完整转写覆盖相邻阅读区域；上一句最晚结束估计加0.5秒，须早于两份转写下一句首词词尾0.5秒。唱词起点有歧义，不将阅读位置称为起唱时间；浏览器验证中英文行在移动前后可见。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "independentTranscriptHash": "fbfbbebebd1cb2f89a6c638a6df2cb4750167420879ca38a1784211c67382bf3"
+    }
   }
 }

@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "songId": "03-015",
+  "status": "reviewed",
+  "source": {
+    "file": "03-015十架七言-第三言-母亲看.txt",
+    "sha256": "bfe13b2edd35f6c11e044187bb38338a934283369ae2da03344310d6f11f5821",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-015十架七言-第三言-母亲看.mp3",
+      "sha256": "b5cf97ae373a2ded67324acbdf9711c6938b8ffc7360a5bed54f2f10a61a0673",
+      "duration": 203.15428571428572,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 12.78,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 66.52,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 113.38,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 167.08,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-015十架七言-第三言-母亲看-领唱.mp3",
+      "sha256": "03838c6a32715b5e6549e5be7be9803948f02d9e5fd2b34eb26e879dc9a49279",
+      "duration": 202.47510204081632,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 13.48,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 67.22,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 114.08,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 167.78,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Known-lyric contextual windows and measured musical repeats; a zero-duration later verse opening additionally verified by two source-free five-syllable prefixes, literal first word, full-transcript word edges and a prior verse plus another reading region at the same measured phase. Original contextual observations retained; other recordings use normal chroma-DTW checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "在十架下站一妇人，无助又悲惨； 马利亚我救主慈母，伤心且孤单； 无辜儿子竟遭酷刑，她断肠又碎肝； 耳际传来救主温柔声：母亲看你儿子。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "加略山上想起他母亲，自己痛苦虽将过， 温柔声音对她说，母亲看你儿子。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "在十架下站一门徒，跟主行此路； 诚然是救主真门徒，危险不反顾； 主毅然交托所爱慈母，让这门徒看护； 从此以后他成为儿子，对她悉心照顾。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "加略山上想起他母亲，自己痛苦虽将过， 温柔声音对她说，母亲看你儿子。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-015十架七言-第三言-母亲看.txt.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

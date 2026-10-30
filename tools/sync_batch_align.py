@@ -569,6 +569,15 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. '
                               'First reading is displayed from playback zero; this display time is not a measured sung onset. '
                               'No printed-score verification or note edits are claimed.')
+    if evidence.get('midiMatching', {}).get('mode') == 'paired-prelude-sectional-score':
+        method_description = ('Complete source-bound printed melody with zero-edit symbolic verification. Both recordings '
+                              'independently pass full and per-reading MIDI/optical paths with the original cost, key, span '
+                              'and 0.5-second onset gates. A long opening is verified against the original same-name backing '
+                              'and lead PCM: the entire prefix is silence or highly correlated backing with stable sample '
+                              'delay and gain; subsequent lyric windows show significant added foreground. The analysis '
+                              'prefix is derived from uncropped score matches, all final boundaries remain within 0.5 seconds '
+                              'of those matches, and original audio files are preserved. First reading is displayed from zero; '
+                              'this display time is not a measured sung onset. No full human listening review is claimed.')
     if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')

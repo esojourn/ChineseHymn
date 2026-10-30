@@ -1,4 +1,112 @@
 {
+  "03-013": {
+    "version": 1,
+    "targetSha256": "566231fb59afa85a40757b9eb5e26ccdf08fd35858e51f50afa0e479f6d7fb65",
+    "tracks": [
+      {
+        "file": "03-013十架七言-第一言-父啊.mp3",
+        "sha256": "6f0066aa8fd2c502de481b0403b241bcc6aee1fc17b9ce1be23aef0049d4e88b"
+      },
+      {
+        "file": "03-013十架七言-第一言-父啊-领唱.mp3",
+        "sha256": "5419fcc3350b172ad0c2ecfec2366bc51f2b02f8ba35dfe29c0af94d6c98f95d"
+      }
+    ],
+    "file": "03-013十架七言-第一言-父啊.mid",
+    "sha256": "55f1d2a0b1a6d22bc68c580c06cae3769c0bd94b826eb5c64e4b466df6c365a2",
+    "sourceVerseShape": [
+      2,
+      2
+    ],
+    "sections": [
+      {
+        "quarter": 0,
+        "onsetIndex": 0,
+        "pitches": [
+          0,
+          7,
+          10,
+          8,
+          4,
+          7,
+          5,
+          0
+        ],
+        "region": null,
+        "opening": ""
+      },
+      {
+        "quarter": 16.5,
+        "onsetIndex": 17,
+        "pitches": [
+          3,
+          8,
+          3,
+          8,
+          3,
+          3,
+          8,
+          3
+        ],
+        "region": "r1",
+        "opening": "上帝羔羊被带上加略山"
+      },
+      {
+        "quarter": 64,
+        "onsetIndex": 71,
+        "pitches": [
+          0,
+          10,
+          8,
+          8,
+          7,
+          5,
+          3,
+          8
+        ],
+        "region": "r2",
+        "opening": "父啊父啊赦免他们因为"
+      },
+      {
+        "quarter": 96.5,
+        "onsetIndex": 95,
+        "pitches": [
+          3,
+          8,
+          3,
+          8,
+          3,
+          3,
+          8,
+          3
+        ],
+        "region": "r3",
+        "opening": "上帝羔羊在十架上祷告"
+      },
+      {
+        "quarter": 144,
+        "onsetIndex": 149,
+        "pitches": [
+          0,
+          10,
+          8,
+          8,
+          7,
+          5,
+          3,
+          8
+        ],
+        "region": "r4",
+        "opening": "父啊父啊赦免他们因为"
+      }
+    ],
+    "referenceAudioFile": "03-013十架七言-第一言-父啊.mp3",
+    "trackMethods": {
+      "03-013十架七言-第一言-父啊.mp3": "four-paths",
+      "03-013十架七言-第一言-父啊-领唱.mp3": "chroma-dtw"
+    },
+    "review": "同名原始 MIDI 两段主歌在16/96拍起始处的旋律声部先休止半拍，实际首个旋律音为16.5/96.5拍；副歌首音为64/144拍。按四段原文起句依次绑定这些原始起音，完整前奏及半拍休止仍参与整曲和逐段匹配。伴奏通过完整和逐段和声/旋律四路径，领唱采用原有整曲chroma-DTW对应，不声称领唱逐段和声检查通过。原始MIDI与歌词全部保留，首屏从0显示，不声称0是起唱时间，不声称有独立出版谱面或人工听完整曲。"
+  },
   "03-014": {
     "version": 1,
     "targetSha256": "8f421c88baa093732c5917c5d07b6cd6f10fa6458d927d3e7db9354485be87ed",

@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "songId": "03-013",
+  "status": "reviewed",
+  "source": {
+    "file": "03-013十架七言-第一言-父啊.txt",
+    "sha256": "566231fb59afa85a40757b9eb5e26ccdf08fd35858e51f50afa0e479f6d7fb65",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-013十架七言-第一言-父啊.mp3",
+      "sha256": "6f0066aa8fd2c502de481b0403b241bcc6aee1fc17b9ce1be23aef0049d4e88b",
+      "duration": 139.33714285714285,
+      "offset": 0,
+      "reviewed": true
+    },
+    {
+      "file": "03-013十架七言-第一言-父啊-领唱.mp3",
+      "sha256": "5419fcc3350b172ad0c2ecfec2366bc51f2b02f8ba35dfe29c0af94d6c98f95d",
+      "duration": 139.88571428571427,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 48.65,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 108.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        }
+      ]
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 15,
+      "endLine": 17
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.0,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 72.4,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.0,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Unmodified same-name polyphonic MIDI supplied in the repository; source-bound original quarter positions and melody fingerprints. Reference recording passes complete and per-section harmony/melody checks, with all four paths within 0.5 seconds, including any prelude. Explicitly selected additional recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. First reading is displayed from playback zero; this display time is not a measured sung onset. No printed-score verification or note edits are claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "上帝羔羊，被带上加略山， 在十架上受苦与受死， 他满怀爱心也满怀怜悯。 请听他呼求：",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "上帝羔羊在十架上祷告， 何等神圣没有怨恨， 为那些将他钉十字架的人。 请听他呼求：",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。 因为他们不晓得。",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-013十架七言-第一言-父啊.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

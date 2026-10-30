@@ -1,0 +1,611 @@
+{
+  "songId": "03-013",
+  "source": "03-013十架七言-第一言-父啊.txt",
+  "sourceHash": "566231fb59afa85a40757b9eb5e26ccdf08fd35858e51f50afa0e479f6d7fb65",
+  "trackHashes": [
+    {
+      "file": "03-013十架七言-第一言-父啊.mp3",
+      "sha256": "6f0066aa8fd2c502de481b0403b241bcc6aee1fc17b9ce1be23aef0049d4e88b"
+    },
+    {
+      "file": "03-013十架七言-第一言-父啊-领唱.mp3",
+      "sha256": "5419fcc3350b172ad0c2ecfec2366bc51f2b02f8ba35dfe29c0af94d6c98f95d"
+    }
+  ],
+  "midiMatching": {
+    "mode": "repository-original-midi",
+    "algorithmVersion": 1,
+    "profile": {
+      "version": 1,
+      "targetSha256": "566231fb59afa85a40757b9eb5e26ccdf08fd35858e51f50afa0e479f6d7fb65",
+      "tracks": [
+        {
+          "file": "03-013十架七言-第一言-父啊.mp3",
+          "sha256": "6f0066aa8fd2c502de481b0403b241bcc6aee1fc17b9ce1be23aef0049d4e88b"
+        },
+        {
+          "file": "03-013十架七言-第一言-父啊-领唱.mp3",
+          "sha256": "5419fcc3350b172ad0c2ecfec2366bc51f2b02f8ba35dfe29c0af94d6c98f95d"
+        }
+      ],
+      "file": "03-013十架七言-第一言-父啊.mid",
+      "sha256": "55f1d2a0b1a6d22bc68c580c06cae3769c0bd94b826eb5c64e4b466df6c365a2",
+      "sourceVerseShape": [
+        2,
+        2
+      ],
+      "sections": [
+        {
+          "quarter": 0,
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            7,
+            10,
+            8,
+            4,
+            7,
+            5,
+            0
+          ],
+          "region": null,
+          "opening": ""
+        },
+        {
+          "quarter": 16.5,
+          "onsetIndex": 17,
+          "pitches": [
+            3,
+            8,
+            3,
+            8,
+            3,
+            3,
+            8,
+            3
+          ],
+          "region": "r1",
+          "opening": "上帝羔羊被带上加略山"
+        },
+        {
+          "quarter": 64,
+          "onsetIndex": 71,
+          "pitches": [
+            0,
+            10,
+            8,
+            8,
+            7,
+            5,
+            3,
+            8
+          ],
+          "region": "r2",
+          "opening": "父啊父啊赦免他们因为"
+        },
+        {
+          "quarter": 96.5,
+          "onsetIndex": 95,
+          "pitches": [
+            3,
+            8,
+            3,
+            8,
+            3,
+            3,
+            8,
+            3
+          ],
+          "region": "r3",
+          "opening": "上帝羔羊在十架上祷告"
+        },
+        {
+          "quarter": 144,
+          "onsetIndex": 149,
+          "pitches": [
+            0,
+            10,
+            8,
+            8,
+            7,
+            5,
+            3,
+            8
+          ],
+          "region": "r4",
+          "opening": "父啊父啊赦免他们因为"
+        }
+      ],
+      "referenceAudioFile": "03-013十架七言-第一言-父啊.mp3",
+      "trackMethods": {
+        "03-013十架七言-第一言-父啊.mp3": "four-paths",
+        "03-013十架七言-第一言-父啊-领唱.mp3": "chroma-dtw"
+      },
+      "review": "同名原始 MIDI 两段主歌在16/96拍起始处的旋律声部先休止半拍，实际首个旋律音为16.5/96.5拍；副歌首音为64/144拍。按四段原文起句依次绑定这些原始起音，完整前奏及半拍休止仍参与整曲和逐段匹配。伴奏通过完整和逐段和声/旋律四路径，领唱采用原有整曲chroma-DTW对应，不声称领唱逐段和声检查通过。原始MIDI与歌词全部保留，首屏从0显示，不声称0是起唱时间，不声称有独立出版谱面或人工听完整曲。"
+    },
+    "referenceDerivation": {
+      "unmodifiedOriginal": true,
+      "sourceFile": "data/03-013十架七言-第一言-父啊.mid",
+      "sourceSha256": "55f1d2a0b1a6d22bc68c580c06cae3769c0bd94b826eb5c64e4b466df6c365a2",
+      "analysisSha256": "55f1d2a0b1a6d22bc68c580c06cae3769c0bd94b826eb5c64e4b466df6c365a2",
+      "maximumDistinctSoundingPitches": 6,
+      "firstMelodyQuarter": 0.0,
+      "sections": [
+        {
+          "quarter": 0,
+          "onsetIndex": 0,
+          "pitches": [
+            0,
+            7,
+            10,
+            8,
+            4,
+            7,
+            5,
+            0
+          ],
+          "region": null,
+          "opening": ""
+        },
+        {
+          "quarter": 16.5,
+          "onsetIndex": 17,
+          "pitches": [
+            3,
+            8,
+            3,
+            8,
+            3,
+            3,
+            8,
+            3
+          ],
+          "region": "r1",
+          "opening": "上帝羔羊被带上加略山"
+        },
+        {
+          "quarter": 64,
+          "onsetIndex": 71,
+          "pitches": [
+            0,
+            10,
+            8,
+            8,
+            7,
+            5,
+            3,
+            8
+          ],
+          "region": "r2",
+          "opening": "父啊父啊赦免他们因为"
+        },
+        {
+          "quarter": 96.5,
+          "onsetIndex": 95,
+          "pitches": [
+            3,
+            8,
+            3,
+            8,
+            3,
+            3,
+            8,
+            3
+          ],
+          "region": "r3",
+          "opening": "上帝羔羊在十架上祷告"
+        },
+        {
+          "quarter": 144,
+          "onsetIndex": 149,
+          "pitches": [
+            0,
+            10,
+            8,
+            8,
+            7,
+            5,
+            3,
+            8
+          ],
+          "region": "r4",
+          "opening": "父啊父啊赦免他们因为"
+        }
+      ],
+      "policy": "original repository MIDI; preserve every original note, track and tempo; full score plus every complete section independently checked"
+    },
+    "recordings": {
+      "03-013十架七言-第一言-父啊.mp3": {
+        "completePerformance": {
+          "harmony": {
+            "best": {
+              "cost": 0.1840643516480281,
+              "key": 0,
+              "at": 0.4,
+              "span": 137.2,
+              "starts": [
+                0.0,
+                12.4,
+                48.0,
+                72.4,
+                108.0
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.665374602504711,
+              "key": 5,
+              "at": 33.1,
+              "span": 92.9,
+              "starts": [
+                33.0,
+                40.9,
+                65.9,
+                82.0,
+                110.7
+              ]
+            }
+          },
+          "melody": {
+            "best": {
+              "cost": 0.19204427112543745,
+              "key": 0,
+              "starts": [
+                0.0,
+                12.399999618530273,
+                48.0,
+                72.4000015258789,
+                108.0
+              ],
+              "span": 137.1999969482422
+            },
+            "runnerUp": {
+              "cost": 0.4601993820946249,
+              "key": 7,
+              "starts": [
+                19.399999618530273,
+                31.100000381469727,
+                64.0999984741211,
+                83.69999694824219,
+                111.4000015258789
+              ],
+              "span": 114.79999542236328
+            }
+          }
+        },
+        "localReadings": [
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.16176477555305727,
+                "key": 0,
+                "at": 0.4,
+                "span": 12.3,
+                "starts": [
+                  0.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6830227759576613,
+                "key": 5,
+                "at": 13.0,
+                "span": 8.5,
+                "starts": [
+                  12.8
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.1346181438815209,
+                "key": 0,
+                "starts": [
+                  0.0
+                ],
+                "span": 12.300000190734863
+              },
+              "runnerUp": {
+                "cost": 0.44045460608697706,
+                "key": 7,
+                "starts": [
+                  2.5999999046325684
+                ],
+                "span": 10.100000381469727
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.15900172544329355,
+                "key": 0,
+                "at": 12.8,
+                "span": 35.4,
+                "starts": [
+                  12.4
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6672453719578432,
+                "key": 5,
+                "at": 12.4,
+                "span": 30.6,
+                "starts": [
+                  12.0
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.1725123223294033,
+                "key": 0,
+                "starts": [
+                  12.399999618530273
+                ],
+                "span": 35.5
+              },
+              "runnerUp": {
+                "cost": 0.4255422956488106,
+                "key": 7,
+                "starts": [
+                  21.299999237060547
+                ],
+                "span": 28.0
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.20539371302870454,
+                "key": 0,
+                "at": 48.4,
+                "span": 24.3,
+                "starts": [
+                  48.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5616655818751601,
+                "key": 5,
+                "at": 51.4,
+                "span": 14.5,
+                "starts": [
+                  51.0
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.23445589034283748,
+                "key": 0,
+                "starts": [
+                  48.0
+                ],
+                "span": 24.199996948242188
+              },
+              "runnerUp": {
+                "cost": 0.41098372662653687,
+                "key": 5,
+                "starts": [
+                  65.30000305175781
+                ],
+                "span": 18.899993896484375
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.16731939422950315,
+                "key": 0,
+                "at": 72.8,
+                "span": 35.4,
+                "starts": [
+                  72.4
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.630560028419066,
+                "key": 5,
+                "at": 63.0,
+                "span": 22.4,
+                "starts": [
+                  62.6
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.18581771850585938,
+                "key": 0,
+                "starts": [
+                  72.4000015258789
+                ],
+                "span": 35.5
+              },
+              "runnerUp": {
+                "cost": 0.4239660113045339,
+                "key": 5,
+                "starts": [
+                  60.0
+                ],
+                "span": 25.0
+              }
+            }
+          },
+          {
+            "harmony": {
+              "best": {
+                "cost": 0.21176459691295885,
+                "key": 0,
+                "at": 108.4,
+                "span": 29.1,
+                "starts": [
+                  108.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5242693652845409,
+                "key": 5,
+                "at": 106.7,
+                "span": 19.4,
+                "starts": [
+                  106.5
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.19353597458094768,
+                "key": 0,
+                "starts": [
+                  108.0
+                ],
+                "span": 29.100006103515625
+              },
+              "runnerUp": {
+                "cost": 0.43531935182336257,
+                "key": 7,
+                "starts": [
+                  102.0
+                ],
+                "span": 23.199996948242188
+              }
+            }
+          }
+        ],
+        "referencePeriod": 137.25,
+        "readingOffsets": [
+          0.0,
+          12.375,
+          48.0,
+          72.375,
+          108.0
+        ],
+        "fourPathOnsets": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            12.4,
+            12.399999618530273,
+            12.4,
+            12.399999618530273
+          ],
+          [
+            48.0,
+            48.0,
+            48.0,
+            48.0
+          ],
+          [
+            72.4,
+            72.4000015258789,
+            72.4,
+            72.4000015258789
+          ],
+          [
+            108.0,
+            108.0,
+            108.0,
+            108.0
+          ]
+        ],
+        "times": [
+          0.0,
+          12.4,
+          48.0,
+          72.4,
+          108.0
+        ],
+        "key": 0
+      }
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    }
+  },
+  "independentTimelines": {
+    "03-013十架七言-第一言-父啊.mp3": {
+      "definitions": [
+        {
+          "region": "r1",
+          "text": "上帝羔羊，被带上加略山， 在十架上受苦与受死， 他满怀爱心也满怀怜悯。 请听他呼求：",
+          "label": "第1段"
+        },
+        {
+          "region": "r2",
+          "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。",
+          "label": "第1段"
+        },
+        {
+          "region": "r3",
+          "text": "上帝羔羊在十架上祷告， 何等神圣没有怨恨， 为那些将他钉十字架的人。 请听他呼求：",
+          "label": "第2段"
+        },
+        {
+          "region": "r4",
+          "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。 因为他们不晓得。",
+          "label": "第2段"
+        }
+      ],
+      "times": [
+        0,
+        48.0,
+        72.4,
+        108.0
+      ],
+      "returnIndices": []
+    }
+  },
+  "initialReadingView": {
+    "version": 1,
+    "region": "r1",
+    "at": 0,
+    "policy": "initial reading position from playback start",
+    "lyricOnsetMeasured": false
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "上帝羔羊，被带上加略山， 在十架上受苦与受死， 他满怀爱心也满怀怜悯。 请听他呼求：",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。",
+      "label": "第1段"
+    },
+    {
+      "region": "r3",
+      "text": "上帝羔羊在十架上祷告， 何等神圣没有怨恨， 为那些将他钉十字架的人。 请听他呼求：",
+      "label": "第2段"
+    },
+    {
+      "region": "r4",
+      "text": "父啊！父啊！赦免他们， 因为他们所作的他们不晓得。 因为他们不晓得。",
+      "label": "第2段"
+    }
+  ],
+  "recordingMaps": {
+    "03-013十架七言-第一言-父啊-领唱.mp3": {
+      "method": "chroma-DTW",
+      "semitoneShift": 0,
+      "initialSimilarity": 0.7910424470901489,
+      "meanPathCost": 0.2054547518491745,
+      "cueWindowCosts": [
+        0.3684760332107544,
+        0.3683224320411682,
+        0.2727490961551666
+      ],
+      "initialReadingView": "Initial region is displayed from zero; only subsequent measured cues are mapped."
+    }
+  },
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 1.884
+}

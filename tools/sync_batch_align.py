@@ -164,7 +164,7 @@ def align_windows(model, tokenizer, audio, definitions, estimates, language, res
     return observations
 
 
-def confirm_boundaries(verses, music, observations, extended_context=False):
+def confirm_boundaries(verses, music, observations, extended_context=False, recovered=None):
     accepted, decisions, first_indices, slots = {}, [], [], {}
     def usable(row):
         return (row['valid'] and ('firstWordStart' not in row or
@@ -186,6 +186,18 @@ def confirm_boundaries(verses, music, observations, extended_context=False):
                                       'method': 'additional contextual windows confirm one supported onset cluster'})
         elif len(pair) == 2 and all(usable(row) for row in pair) and abs(pair[0]['at'] - pair[1]['at']) <= .5:
             accepted[index] = round((pair[0]['at'] + pair[1]['at']) / 2, 2)
+    # These proofs are calculated from raw free decodes, whole-ASR word edges
+    # and cyclic phase. Profile fields never supply an accepted onset time.
+    for proof in recovered or []:
+        index, at = proof['index'], proof['at']
+        original = [row for row in observations if row['index'] == index]
+        if (type(index) is not int or not 0 < index < cursor or index in accepted or
+                slots[index][0] != 0 or type(at) not in (int, float) or not np.isfinite(at) or len(original) != 4 or
+                any(not 0 <= row.get('firstWordEnd', 0) - row.get('firstWordStart', 0) < .04
+                    for row in original)):
+            raise ValueError('循环首字复核不能替代已有有效起点或其他正文位置')
+        accepted[index] = at
+        decisions.append(proof)
     # Two independent acoustic anchors must establish a phase before music can resolve
     # a conflicting window. Music alone never invents an unrecognized lyric boundary.
     for index in range(1, cursor):
@@ -273,6 +285,8 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
         language = 'en' if song['songId'].startswith('06-') and len(re.findall('[A-Za-z]', text)) > 2 * len(re.findall('[\u3400-\u9fff]', text)) else 'zh'
         source = text_source(path, language)
     profile = window_estimate_profile(song)
+    from sync_batch_cyclic_onset import validate_review, verify_model
+    cyclic_review = validate_review(profile, source)
     verses = source_cycle_verses(song, source, profile)
     if not verses or any(not verse for verse in verses):
         raise ValueError('歌词段落不完整')
@@ -300,16 +314,19 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
     previous_path = cache / 'alignment' / (song['source'] + '.json')
     previous = json.loads(previous_path.read_text()) if previous_path.exists() else {}
     evidence['performanceOrder'] = definitions
-    if retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions and previous.get('windowEstimateProfile') == profile:
+    if not cyclic_review and retry and previous.get('windows') and previous.get('sourceHash') == song['sha256'] and previous.get('trackHashes') == song['tracks'] and previous.get('performanceOrder') == definitions and previous.get('windowEstimateProfile') == profile:
         try:
             cue_times, first_indices, decisions = confirm_boundaries(verses, music, previous['windows'], extended_context)
             evidence.update(windows=previous['windows'], estimates=previous['estimates'], music=music, phaseDecisions=decisions)
             return source, definitions, cue_times, first_indices
         except ValueError:
             pass
+    if cyclic_review:
+        verify_model(model_dir, cyclic_review)
     if _model is None:
         from faster_whisper import WhisperModel
-        _model = WhisperModel('medium', device='cpu', compute_type='int8', cpu_threads=threads,
+        selected = str(Path(model_dir) / 'medium') if cyclic_review else 'medium'
+        _model = WhisperModel(selected, device='cpu', compute_type='int8', cpu_threads=threads,
                               download_root=model_dir, local_files_only=True)
     from faster_whisper.audio import decode_audio
     from faster_whisper.tokenizer import Tokenizer
@@ -322,6 +339,8 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
         'windowVersion': 1}
     if extended_context:
         parameters.update(windowVersion=2, additionalContextVersion=1)
+    if cyclic_review:
+        parameters['cyclicModel'] = cyclic_review['model']
     signature = hashlib.sha256(json.dumps(parameters, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     previous_windows = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
     resume = previous_windows.get('windows', []) if previous_windows.get('signature') == signature else []
@@ -332,7 +351,16 @@ def vocal_times(song, root, cache, model_dir, threads, evidence, retry, save):
             lambda rows: save(checkpoint, {'signature': signature, 'windows': rows}))
     evidence['windows'] = observations
     evidence['estimates'] = estimates
-    cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations, extended_context)
+    recovered = None
+    if cyclic_review:
+        from sync_batch_cyclic_onset import recover
+        recovered = recover(_model, audio, song, source, estimates, music, observations, cyclic_review,
+                            model_dir, cache, context_cluster_time, save)
+        evidence['cyclicFreeOnsets'] = {'version': 1, 'review': cyclic_review, 'proofs': recovered}
+    if recovered is None:
+        cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations, extended_context)
+    else:
+        cue_times, first_indices, decisions = confirm_boundaries(verses, music, observations, extended_context, recovered)
     evidence['phaseDecisions'] = decisions
     return source, definitions, cue_times, first_indices
 
@@ -481,7 +509,9 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                 if not track['reviewed']:
                     evidence.setdefault('trackExceptions', {})[item['file']] = failure
         tracks.append(track)
-    method_description = ('Complete unmodified original polyphonic MIDI and pinned full printed score; every source reading region passes local and complete harmony/melody paths, all pairwise onsets within 0.5 seconds. No score excerpt, note edits, optical extraction or proportional cue placement.'
+    method_description = ('Known-lyric contextual windows and measured musical repeats; a zero-duration later verse opening additionally verified by two source-free five-syllable prefixes, literal first word, full-transcript word edges and a prior verse plus another reading region at the same measured phase. Original contextual observations retained; other recordings use normal chroma-DTW checks.'
+                          if evidence.get('cyclicFreeOnsets', {}).get('proofs') else
+                          'Complete unmodified original polyphonic MIDI and pinned full printed score; every source reading region passes local and complete harmony/melody paths, all pairwise onsets within 0.5 seconds. No score excerpt, note edits, optical extraction or proportional cue placement.'
                           if evidence.get('midiMatching', {}).get('mode') == 'text-complete-original-midi' else
                           'Source-pinned complete MIDI arrangement with reviewed vocal-part merge; reference recording passes local and complete harmony/melody paths, all pairwise onsets within 0.5 seconds; additional recordings pass full chroma-DTW correspondence and their own per-reading MIDI melody checks. No optical extraction or full harmony check of the additional recordings is claimed.'
                           if evidence.get('midiMatching', {}).get('mode') == 'text-complete-arranged-midi' else

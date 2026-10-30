@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "songId": "06-023",
+  "status": "reviewed",
+  "source": {
+    "file": "06-023-他必保守我.txt",
+    "sha256": "73ec8b3ed80821f567bf49097807ca78305e1b8a4c6dabd76b6c04123069817f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-023-他必保守我.mp3",
+      "sha256": "ef6029ceaf304d267e631638a45cc0f694dcf80ac9e7c7515ea55b2ac120bead",
+      "duration": 316.01739229024946,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 14
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 39,
+      "endLine": 42
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 44,
+      "endLine": 47
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 104.16,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 123.14,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 142.9,
+      "region": "r4",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 169.94,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 188.18,
+      "region": "r6",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 207.12,
+      "region": "r7",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 234.48,
+      "region": "r8",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 254.43,
+      "region": "r9",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 272.07,
+      "region": "r10",
+      "label": "第7段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete reading order checked against two pinned original-audio transcripts; initial region shown from zero. Selected positions are previews, not measured sung onsets: two fixed prompt-free windows identify the complete adjacent original lyric lines, and the preview follows the latest previous-line end from both transcripts and both windows by 0.5 seconds. Other positions retain the original contextual acoustic checks. Original lyrics are preserved.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "When I fear my faith will fail Christ will hold me fast When the tempter would prevail He will hold me fast",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "I could never keep my hold Through life's fearful path For my love is often cold He must hold me fast",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "He will hold me fast He will hold me fast For my Savior loves me so He will hold me fast",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "Those He saves are His delight Christ will hold me fast Precious in His holy sight He will hold me fast",
+        "label": "第3段"
+      },
+      {
+        "region": "r5",
+        "text": "He'll not let my soul be lost His promises shall last Bought by Him at such a cost He will hold me fast",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "He will hold me fast He will hold me fast For my Savior loves me so He will hold me fast",
+        "label": "第4段"
+      },
+      {
+        "region": "r7",
+        "text": "For my life He bled and died Christ will hold me fast Justice has been satisfied He will hold me fast",
+        "label": "第5段"
+      },
+      {
+        "region": "r8",
+        "text": "Raised with Him to endless life He will hold me fast Till our faith is turned to sight When he comes at last",
+        "label": "第5段"
+      },
+      {
+        "region": "r9",
+        "text": "He will hold me fast He will hold me fast For my Savior loves me so He will hold me fast",
+        "label": "第6段"
+      },
+      {
+        "region": "r10",
+        "text": "He will hold me fast He will hold me fast For my Savior loves me so He will hold me fast",
+        "label": "第7段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-023-他必保守我.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 1,
+      "indices": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "reason": "前后完整原文行在两组固定无提示窗口逐词对应；两份完整转写独立覆盖，上一行的最晚结束估计加0.5秒且早于下一行的转写起点。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "independentTranscriptHash": "92b6eabcd7fa2e0418b470e91043bf2652a5b5f5794ee32563c819d66e852b72"
+    }
+  }
+}

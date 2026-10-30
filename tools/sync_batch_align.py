@@ -562,6 +562,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
     if homophones:
         method_description += (' Explicitly reviewed Chinese refrain homophones require two literal-confirmed complete source repeats, '
                                'at least 50 percent literal and 80 percent exact tone-free syllable correspondence; original text is preserved.')
+    if evidence.get('midiMatching', {}).get('mode') == 'repository-original-midi':
+        method_description = ('Unmodified same-name polyphonic MIDI supplied in the repository; source-bound original quarter '
+                              'positions and melody fingerprints. Reference recording passes complete and per-section harmony/melody '
+                              'checks, with all four paths within 0.5 seconds, including any prelude. Explicitly selected additional '
+                              'recordings pass the same four paths; other recordings retain normal chroma-DTW correspondence checks. '
+                              'First reading is displayed from playback zero; this display time is not a measured sung onset. '
+                              'No printed-score verification or note edits are claimed.')
     if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')

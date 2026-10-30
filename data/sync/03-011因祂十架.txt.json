@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "songId": "03-011",
+  "status": "reviewed",
+  "source": {
+    "file": "03-011因祂十架.txt",
+    "sha256": "e357e5ea416b9eeefba28ae9e656c153ea96421cc203ce2c5c73a17a37251a71",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "03-011因祂十架.mp3",
+      "sha256": "d911515dbfa085850a897b1c3863f30c6e8df51626189172a1031b81656555be",
+      "duration": 196.5191836734694,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 72.05,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.72,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 136.15,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "03-011因祂十架-领唱.mp3",
+      "sha256": "f9c27bad46cf609a48e4c8b40d8cf9f8ce451923c4c7c1d637627c1a53567004",
+      "duration": 197.7991836734694,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 17,
+      "endLine": 20
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 72.15,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 105.8,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 136.23,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete source-bound printed melody with zero-edit symbolic verification. Both recordings independently pass full and per-reading MIDI/optical paths with the original cost, key, span and 0.5-second onset gates. A long opening is verified against the original same-name backing and lead PCM: the entire prefix is silence or highly correlated backing with stable sample delay and gain; subsequent lyric windows show significant added foreground. The analysis prefix is derived from uncropped score matches, all final boundaries remain within 0.5 seconds of those matches, and original audio files are preserved. First reading is displayed from zero; this display time is not a measured sung onset. No full human listening review is claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "他蒙羞耻，带来了荣耀。 因他忧愁，我得喜乐。 他受鞭打，使我得医治。 耶稣十架，换来冠冕。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "神羔羊，你带来救赎。 你的恩典，充满我心。 主慈爱眼泪除去我的愁烦。 你眼看清我一切。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/03-011因祂十架.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

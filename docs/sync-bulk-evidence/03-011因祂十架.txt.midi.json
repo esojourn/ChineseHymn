@@ -1,0 +1,5187 @@
+{
+  "songId": "03-011",
+  "source": "03-011因祂十架.txt",
+  "sourceHash": "e357e5ea416b9eeefba28ae9e656c153ea96421cc203ce2c5c73a17a37251a71",
+  "trackHashes": [
+    {
+      "file": "03-011因祂十架.mp3",
+      "sha256": "d911515dbfa085850a897b1c3863f30c6e8df51626189172a1031b81656555be"
+    },
+    {
+      "file": "03-011因祂十架-领唱.mp3",
+      "sha256": "f9c27bad46cf609a48e4c8b40d8cf9f8ce451923c4c7c1d637627c1a53567004"
+    }
+  ],
+  "midiMatching": {
+    "mode": "paired-prelude-sectional-score",
+    "algorithmVersion": 1,
+    "profile": {
+      "version": 1,
+      "sourceHash": "e357e5ea416b9eeefba28ae9e656c153ea96421cc203ce2c5c73a17a37251a71",
+      "tracks": [
+        {
+          "file": "03-011因祂十架.mp3",
+          "sha256": "d911515dbfa085850a897b1c3863f30c6e8df51626189172a1031b81656555be"
+        },
+        {
+          "file": "03-011因祂十架-领唱.mp3",
+          "sha256": "f9c27bad46cf609a48e4c8b40d8cf9f8ce451923c4c7c1d637627c1a53567004"
+        }
+      ],
+      "audioFile": "03-011因祂十架-领唱.mp3",
+      "regions": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "regionOpenings": [
+        "因他眼泪，我得到安慰。 ",
+        "他蒙羞耻，带来了荣耀。 ",
+        "神羔羊，你带来救赎。 你",
+        "因他眼泪，我得到安慰。 "
+      ],
+      "sampling": {
+        "durationEstimate": 187,
+        "onsetEstimate": 0
+      },
+      "previousReadingContext": {
+        "version": 1
+      },
+      "pairedPreludeReview": {
+        "version": 1,
+        "reason": "同名原始领唱与伴奏在长前奏中是同一段伴奏波形，按固定采样时差、增益和完整前缀残差核对；正文开始后出现显著额外领唱信号。只据未裁取整曲的原谱匹配推导分析前缀，不配置固定滚动秒数。正文全部分界仍须各录音独立通过原有整曲、局部四路径检查并与未裁取匹配相符，首屏从播放0显示。"
+      },
+      "midiReference": {
+        "origin": {
+          "kind": "printed-numbered-score",
+          "file": "reference/external/his-tears-book44088-reviewed-print.mid",
+          "sha256": "b21649df846d98b6eed0188782c7446a150589c5780ed2cc95b78a41331dbe62",
+          "printedRhythmReference": {
+            "sourceSha256": "6f2fdbb72b859ae0d1bb3abfed872f61b65a09362e2c68b44f2a6b81bd2889a9",
+            "tonicMidi": 60,
+            "numberedRowsAndQuarterBeats": [
+              [
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  7,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  6,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  1.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  1,
+                  4
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  5,
+                  2.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  4,
+                  0.5
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  5,
+                  2.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  4,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  7,
+                  0.5
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  4,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  2,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  0.5
+                ],
+                [
+                  6,
+                  0.5
+                ],
+                [
+                  5,
+                  2.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  7,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  6,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  1.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  7,
+                  0.5
+                ],
+                [
+                  6,
+                  2.5
+                ],
+                [
+                  6,
+                  0.5
+                ],
+                [
+                  5,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  1.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  0.5
+                ],
+                [
+                  1,
+                  1.5
+                ],
+                [
+                  3,
+                  0.5
+                ],
+                [
+                  2,
+                  1.5
+                ],
+                [
+                  1,
+                  0.5
+                ],
+                [
+                  1,
+                  6
+                ]
+              ]
+            ]
+          }
+        },
+        "file": "reference/external/his-tears-book44088-complete.mid",
+        "sha256": "7b8b0499eedc300513e188309e62ca1a519a643b8c00fd2d3c44b01aab6f292a",
+        "arrangement": {
+          "melodyTrack": 0,
+          "melodyTrackName": "Manual transcription of a printed numbered melody",
+          "quarterLength": 132,
+          "sections": [
+            [
+              0,
+              34
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              34,
+              132
+            ]
+          ]
+        }
+      },
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            4,
+            4,
+            0,
+            9,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 34,
+          "pitches": [
+            4,
+            4,
+            0,
+            9,
+            0
+          ]
+        },
+        {
+          "onsetIndex": 68,
+          "pitches": [
+            4,
+            7,
+            7,
+            7,
+            2
+          ]
+        },
+        {
+          "onsetIndex": 102,
+          "pitches": [
+            4,
+            4,
+            0,
+            9,
+            0
+          ]
+        }
+      ],
+      "opticalReference": {
+        "image": {
+          "file": "modern-sectional-scores/data/his-tears-book44088.png",
+          "sha256": "6f2fdbb72b859ae0d1bb3abfed872f61b65a09362e2c68b44f2a6b81bd2889a9",
+          "url": "https://file.izanm.org/store/2022/03/29/62423ad73ac5ff7f66256296.png"
+        },
+        "pageUrl": "https://www.zanmei.ai/tab/44088.html",
+        "recognitionFile": "modern-sectional-scores/ocr/his-tears-book44088.png.json",
+        "recognizerVersion": 5,
+        "noteExtractorVersion": 6,
+        "reviewedSystems": [
+          {
+            "notes": {
+              "recognitionBand": [
+                436,
+                486
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  513,
+                  556
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                768,
+                817
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  845,
+                  887
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                1100,
+                1149
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  1176,
+                  1219
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                1375,
+                1424
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  1452,
+                  1494
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                1650,
+                1699
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  1727,
+                  1770
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                1925,
+                1975
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  2003,
+                  2045
+                ]
+              }
+            ]
+          },
+          {
+            "notes": {
+              "recognitionBand": [
+                2201,
+                2250
+              ]
+            },
+            "lyrics": [
+              {
+                "recognitionBand": [
+                  2278,
+                  2321
+                ]
+              }
+            ]
+          }
+        ],
+        "rowsSha256": "47a698fb29159a538688d5671aa35fdcffa74721f7dfddf163435f5c1f9fa381",
+        "ties": {
+          "0": [
+            5,
+            18
+          ],
+          "1": [
+            1
+          ],
+          "2": [
+            8,
+            20
+          ],
+          "4": [
+            6,
+            25
+          ],
+          "5": [
+            1,
+            23
+          ],
+          "6": [
+            20
+          ]
+        },
+        "tuplets": [],
+        "parts": {
+          "A1": [
+            [
+              0,
+              0,
+              9
+            ],
+            [
+              0,
+              10,
+              16
+            ],
+            [
+              0,
+              17,
+              27
+            ],
+            [
+              1,
+              0,
+              5
+            ],
+            [
+              1,
+              6,
+              12
+            ],
+            [
+              1,
+              13,
+              17
+            ],
+            [
+              1,
+              18,
+              20
+            ]
+          ],
+          "A2": [
+            [
+              1,
+              20,
+              23
+            ],
+            [
+              0,
+              4,
+              9
+            ],
+            [
+              0,
+              10,
+              16
+            ],
+            [
+              0,
+              17,
+              27
+            ],
+            [
+              1,
+              0,
+              5
+            ],
+            [
+              1,
+              6,
+              12
+            ],
+            [
+              1,
+              13,
+              17
+            ],
+            [
+              2,
+              0,
+              4
+            ]
+          ],
+          "Bridge": [
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              2,
+              7,
+              18
+            ],
+            [
+              2,
+              19,
+              24
+            ],
+            [
+              3,
+              0,
+              20
+            ],
+            [
+              4,
+              0,
+              2
+            ]
+          ],
+          "Last": [
+            [
+              4,
+              2,
+              16
+            ],
+            [
+              4,
+              17,
+              23
+            ],
+            [
+              4,
+              24,
+              29
+            ],
+            [
+              5,
+              0,
+              5
+            ],
+            [
+              5,
+              6,
+              16
+            ],
+            [
+              5,
+              17,
+              27
+            ],
+            [
+              6,
+              0,
+              21
+            ]
+          ]
+        },
+        "order": [
+          "A1",
+          "A2",
+          "Bridge",
+          "Last"
+        ],
+        "readingStarts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "formReview": "原文四个既有阅读区域：两段主歌、神羔羊桥段、最后主歌及末句再奏。保留原文全部歌词与显示行号，末句再奏期间仍完整显示最后区域。独立采用爱赞美44088的原始完整C调简谱，七个物理谱行和明确反复/一二房，按印刷主旋律音高与节奏逐音转录并复核同音连线；独立光学的全部163个演奏音头与重建MIDI零编辑匹配。图片、全部录音及完整正文起句均绑定哈希。两录音起始约42秒只有同一原始伴奏的事实由完整PCM前缀而非ASR幻觉核对；仅在原有整曲和声学对应均成立后选择分析片段，第一阅读区域从0预先显示，后续起点仍由音频实测，禁止直接写入谱面秒数。"
+    },
+    "recordings": {
+      "03-011因祂十架.mp3": {
+        "uncroppedFullScore": {
+          "melody": {
+            "best": {
+              "cost": 0.3222115093373997,
+              "key": 11,
+              "starts": [
+                42.29999923706055,
+                72.19999694824219,
+                105.69999694824219,
+                136.10000610351562
+              ],
+              "span": 150.89999389648438
+            },
+            "runnerUp": {
+              "cost": 0.42138443401153075,
+              "key": 4,
+              "starts": [
+                51.29999923706055,
+                76.5,
+                108.80000305175781,
+                138.89999389648438
+              ],
+              "span": 131.0
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.31722333775484624,
+              "key": 11,
+              "starts": [
+                42.099998474121094,
+                72.0999984741211,
+                105.69999694824219,
+                136.0
+              ],
+              "span": 151.10000610351562
+            },
+            "runnerUp": {
+              "cost": 0.42056404970546457,
+              "key": 4,
+              "starts": [
+                51.20000076293945,
+                76.30000305175781,
+                108.9000015258789,
+                138.6999969482422
+              ],
+              "span": 131.10000610351562
+            }
+          }
+        },
+        "pairedPrelude": {
+          "version": 1,
+          "sampleRate": 16000,
+          "shiftSamples": 1638,
+          "endInBacking": 41.599998474121094,
+          "bodyStartInBacking": 42.099998474121094,
+          "introWindows": [
+            {
+              "at": 0.0,
+              "span": 2.0,
+              "silent": true,
+              "shiftSamples": 1638
+            },
+            {
+              "at": 2.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.984538762007471,
+              "gain": 0.6042142714505871,
+              "residualEnergyFraction": 0.030683426104796355
+            },
+            {
+              "at": 4.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9915878387185634,
+              "gain": 0.6110422994278695,
+              "residualEnergyFraction": 0.016753558105448405
+            },
+            {
+              "at": 6.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9890876070169022,
+              "gain": 0.6078188724398952,
+              "residualEnergyFraction": 0.021705705645577923
+            },
+            {
+              "at": 8.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9862423878346638,
+              "gain": 0.6077268249433411,
+              "residualEnergyFraction": 0.02732595243818046
+            },
+            {
+              "at": 10.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9934026098331826,
+              "gain": 0.6112018269977172,
+              "residualEnergyFraction": 0.013151254776622295
+            },
+            {
+              "at": 12.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9927180867696498,
+              "gain": 0.6144012484628444,
+              "residualEnergyFraction": 0.014510800200406133
+            },
+            {
+              "at": 14.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.990409043512695,
+              "gain": 0.6054813996565904,
+              "residualEnergyFraction": 0.019089926528268554
+            },
+            {
+              "at": 16.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9898623311769228,
+              "gain": 0.6152545108638493,
+              "residualEnergyFraction": 0.020172565316988106
+            },
+            {
+              "at": 18.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.993166904364064,
+              "gain": 0.6118854243251328,
+              "residualEnergyFraction": 0.013619500075902395
+            },
+            {
+              "at": 20.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991773149192144,
+              "gain": 0.6117504687205565,
+              "residualEnergyFraction": 0.016386020541497404
+            },
+            {
+              "at": 22.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9906591745807595,
+              "gain": 0.6093809839571764,
+              "residualEnergyFraction": 0.018594399818968294
+            },
+            {
+              "at": 24.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991926723115578,
+              "gain": 0.6091385206499306,
+              "residualEnergyFraction": 0.016081375969191538
+            },
+            {
+              "at": 26.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9925085175977763,
+              "gain": 0.6073984730560816,
+              "residualEnergyFraction": 0.014926842495864692
+            },
+            {
+              "at": 28.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9870775478376963,
+              "gain": 0.6038556264491749,
+              "residualEnergyFraction": 0.025677914554720287
+            },
+            {
+              "at": 30.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9901419102928622,
+              "gain": 0.6100493758960307,
+              "residualEnergyFraction": 0.01961899748160145
+            },
+            {
+              "at": 32.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9912581013701101,
+              "gain": 0.6138963344650885,
+              "residualEnergyFraction": 0.017407376468124645
+            },
+            {
+              "at": 34.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9941783437681064,
+              "gain": 0.6147087340938828,
+              "residualEnergyFraction": 0.011609420782504805
+            },
+            {
+              "at": 36.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9910645008470051,
+              "gain": 0.6148082983338407,
+              "residualEnergyFraction": 0.017791155160876385
+            },
+            {
+              "at": 38.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991100809691783,
+              "gain": 0.6033060937845962,
+              "residualEnergyFraction": 0.01771918502829187
+            },
+            {
+              "at": 40.0,
+              "span": 1.5999984741210938,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9850201815112072,
+              "gain": 0.6040584256610307,
+              "residualEnergyFraction": 0.029735242015628414
+            }
+          ],
+          "bodyWindows": [
+            {
+              "at": 42.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9573846929155427,
+              "gain": 0.6088753365322077,
+              "residualEnergyFraction": 0.08341454977101181
+            },
+            {
+              "at": 44.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9854099043411082,
+              "gain": 0.6109019971358284,
+              "residualEnergyFraction": 0.028967320426447805
+            },
+            {
+              "at": 46.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9676689083901847,
+              "gain": 0.5978059518059707,
+              "residualEnergyFraction": 0.06361688373494816
+            },
+            {
+              "at": 48.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9653143921606674,
+              "gain": 0.6097105695030566,
+              "residualEnergyFraction": 0.06816812428748148
+            },
+            {
+              "at": 50.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.928917827483241,
+              "gain": 0.6170841847301259,
+              "residualEnergyFraction": 0.13711166978381573
+            },
+            {
+              "at": 52.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9494558004493344,
+              "gain": 0.6256142881652367,
+              "residualEnergyFraction": 0.09853368299311348
+            },
+            {
+              "at": 54.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9469412902289887,
+              "gain": 0.6038215670467715,
+              "residualEnergyFraction": 0.10330219285945834
+            },
+            {
+              "at": 56.099998474121094,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9425585909950873,
+              "gain": 0.5897056907910417,
+              "residualEnergyFraction": 0.1115833025413555
+            }
+          ],
+          "meanIntroResidual": 0.019128030975473023,
+          "foregroundWindowCount": 7,
+          "policy": "same bound backing and lead recordings; complete prefix is silence or >=0.98 correlated backing, <=4% residual, <=2 sample drift, <=5% gain range; at least three body windows have >=6% and >=3x intro residual"
+        },
+        "performance": {
+          "fullMelody": {
+            "best": {
+              "cost": 0.3134107595878389,
+              "key": 11,
+              "starts": [
+                0.9000015258789062,
+                30.400001525878906,
+                64.0999984741211,
+                94.50000762939453
+              ],
+              "span": 149.20001220703125
+            },
+            "runnerUp": {
+              "cost": 0.42744842785415993,
+              "key": 4,
+              "starts": [
+                10.10000228881836,
+                34.70000457763672,
+                67.9000015258789,
+                96.70000457763672
+              ],
+              "span": 123.89999389648438
+            }
+          },
+          "fullOptical": {
+            "best": {
+              "cost": 0.3074090217605108,
+              "key": 11,
+              "starts": [
+                0.9000015258789062,
+                30.400001525878906,
+                64.0999984741211,
+                94.5999984741211
+              ],
+              "span": 149.20001220703125
+            },
+            "runnerUp": {
+              "cost": 0.42370455737572627,
+              "key": 4,
+              "starts": [
+                10.0,
+                34.70000457763672,
+                68.20000457763672,
+                96.79999542236328
+              ],
+              "span": 130.70001220703125
+            }
+          },
+          "local": [
+            {
+              "index": 0,
+              "estimate": 0.9000015258789062,
+              "duration": 29.5,
+              "melody": {
+                "best": {
+                  "cost": 0.3121333235401218,
+                  "key": 11,
+                  "starts": [
+                    0.9000015258789062
+                  ],
+                  "span": 29.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.38367332846431407,
+                  "key": 4,
+                  "starts": [
+                    0.0
+                  ],
+                  "span": 21.800003051757812
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.30011666508044227,
+                  "key": 11,
+                  "starts": [
+                    0.9000015258789062
+                  ],
+                  "span": 29.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.37995639089810646,
+                  "key": 4,
+                  "starts": [
+                    0.0
+                  ],
+                  "span": 21.700000762939453
+                }
+              }
+            },
+            {
+              "index": 1,
+              "estimate": 30.400001525878906,
+              "duration": 33.69999694824219,
+              "melody": {
+                "best": {
+                  "cost": 0.3339348563665076,
+                  "key": 11,
+                  "starts": [
+                    0.9000015258789062,
+                    30.5
+                  ],
+                  "span": 63.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.4197114872027047,
+                  "key": 4,
+                  "starts": [
+                    0.0,
+                    26.5
+                  ],
+                  "span": 54.0
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.32438666911064823,
+                  "key": 11,
+                  "starts": [
+                    0.9000015258789062,
+                    30.5
+                  ],
+                  "span": 63.19999694824219
+                },
+                "runnerUp": {
+                  "cost": 0.4171523564978491,
+                  "key": 4,
+                  "starts": [
+                    0.0,
+                    26.400001525878906
+                  ],
+                  "span": 54.0
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 0,
+                "sections": [
+                  0
+                ],
+                "queryStart": 0.9000015258789062,
+                "queryDuration": 63.19999694824219,
+                "targetRow": 1
+              }
+            },
+            {
+              "index": 2,
+              "estimate": 64.0999984741211,
+              "duration": 30.45000457763672,
+              "melody": {
+                "best": {
+                  "cost": 0.32477078013784616,
+                  "key": 11,
+                  "starts": [
+                    31.0,
+                    64.0999984741211
+                  ],
+                  "span": 62.400001525878906
+                },
+                "runnerUp": {
+                  "cost": 0.43121418826479624,
+                  "key": 4,
+                  "starts": [
+                    33.400001525878906,
+                    68.20000457763672
+                  ],
+                  "span": 61.600006103515625
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.3210448504610106,
+                  "key": 11,
+                  "starts": [
+                    30.900001525878906,
+                    64.20000457763672
+                  ],
+                  "span": 62.5
+                },
+                "runnerUp": {
+                  "cost": 0.4316754274174873,
+                  "key": 4,
+                  "starts": [
+                    26.70000457763672,
+                    54.099998474121094
+                  ],
+                  "span": 49.29999542236328
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 1,
+                "sections": [
+                  1
+                ],
+                "queryStart": 30.400001525878906,
+                "queryDuration": 64.1500015258789,
+                "targetRow": 1
+              }
+            },
+            {
+              "index": 3,
+              "estimate": 94.55000305175781,
+              "duration": 55.550010681152344,
+              "melody": {
+                "best": {
+                  "cost": 0.3011905404024346,
+                  "key": 11,
+                  "starts": [
+                    64.0999984741211,
+                    94.50000762939453
+                  ],
+                  "span": 85.79999542236328
+                },
+                "runnerUp": {
+                  "cost": 0.4222492306731468,
+                  "key": 4,
+                  "starts": [
+                    68.30000305175781,
+                    96.70000457763672
+                  ],
+                  "span": 65.69999694824219
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.2936005703238554,
+                  "key": 11,
+                  "starts": [
+                    64.0999984741211,
+                    94.5999984741211
+                  ],
+                  "span": 85.79999542236328
+                },
+                "runnerUp": {
+                  "cost": 0.41625834620276164,
+                  "key": 4,
+                  "starts": [
+                    68.5,
+                    96.79999542236328
+                  ],
+                  "span": 65.5
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 2,
+                "sections": [
+                  2
+                ],
+                "queryStart": 64.0999984741211,
+                "queryDuration": 86.00001525878906,
+                "targetRow": 1
+              }
+            }
+          ]
+        },
+        "analysisStart": 41.599998474121094,
+        "measuredAbsoluteTimes": [
+          42.5,
+          72.05,
+          105.72,
+          136.15
+        ]
+      },
+      "03-011因祂十架-领唱.mp3": {
+        "uncroppedFullScore": {
+          "melody": {
+            "best": {
+              "cost": 0.2848322740850602,
+              "key": 11,
+              "starts": [
+                42.400001525878906,
+                72.30000305175781,
+                105.80000305175781,
+                136.1999969482422
+              ],
+              "span": 150.89999389648438
+            },
+            "runnerUp": {
+              "cost": 0.4243692816260027,
+              "key": 4,
+              "starts": [
+                44.20000076293945,
+                75.19999694824219,
+                108.9000015258789,
+                139.0
+              ],
+              "span": 138.1999969482422
+            }
+          },
+          "optical": {
+            "best": {
+              "cost": 0.2787554572610294,
+              "key": 11,
+              "starts": [
+                42.20000076293945,
+                72.19999694824219,
+                105.80000305175781,
+                136.10000610351562
+              ],
+              "span": 151.10000610351562
+            },
+            "runnerUp": {
+              "cost": 0.42191331832804146,
+              "key": 4,
+              "starts": [
+                44.099998474121094,
+                75.19999694824219,
+                108.9000015258789,
+                138.8000030517578
+              ],
+              "span": 138.29998779296875
+            }
+          }
+        },
+        "pairedPrelude": {
+          "version": 1,
+          "sampleRate": 16000,
+          "shiftSamples": 1638,
+          "endInBacking": 41.59762576293945,
+          "bodyStartInBacking": 42.09762576293945,
+          "introWindows": [
+            {
+              "at": 0.0,
+              "span": 2.0,
+              "silent": true,
+              "shiftSamples": 1638
+            },
+            {
+              "at": 2.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.984538762007471,
+              "gain": 0.6042142714505871,
+              "residualEnergyFraction": 0.030683426104796355
+            },
+            {
+              "at": 4.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9915878387185634,
+              "gain": 0.6110422994278695,
+              "residualEnergyFraction": 0.016753558105448405
+            },
+            {
+              "at": 6.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9890876070169022,
+              "gain": 0.6078188724398952,
+              "residualEnergyFraction": 0.021705705645577923
+            },
+            {
+              "at": 8.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9862423878346638,
+              "gain": 0.6077268249433411,
+              "residualEnergyFraction": 0.02732595243818046
+            },
+            {
+              "at": 10.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9934026098331826,
+              "gain": 0.6112018269977172,
+              "residualEnergyFraction": 0.013151254776622295
+            },
+            {
+              "at": 12.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9927180867696498,
+              "gain": 0.6144012484628444,
+              "residualEnergyFraction": 0.014510800200406133
+            },
+            {
+              "at": 14.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.990409043512695,
+              "gain": 0.6054813996565904,
+              "residualEnergyFraction": 0.019089926528268554
+            },
+            {
+              "at": 16.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9898623311769228,
+              "gain": 0.6152545108638493,
+              "residualEnergyFraction": 0.020172565316988106
+            },
+            {
+              "at": 18.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.993166904364064,
+              "gain": 0.6118854243251328,
+              "residualEnergyFraction": 0.013619500075902395
+            },
+            {
+              "at": 20.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991773149192144,
+              "gain": 0.6117504687205565,
+              "residualEnergyFraction": 0.016386020541497404
+            },
+            {
+              "at": 22.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9906591745807595,
+              "gain": 0.6093809839571764,
+              "residualEnergyFraction": 0.018594399818968294
+            },
+            {
+              "at": 24.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991926723115578,
+              "gain": 0.6091385206499306,
+              "residualEnergyFraction": 0.016081375969191538
+            },
+            {
+              "at": 26.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9925085175977763,
+              "gain": 0.6073984730560816,
+              "residualEnergyFraction": 0.014926842495864692
+            },
+            {
+              "at": 28.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9870775478376963,
+              "gain": 0.6038556264491749,
+              "residualEnergyFraction": 0.025677914554720287
+            },
+            {
+              "at": 30.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9901419102928622,
+              "gain": 0.6100493758960307,
+              "residualEnergyFraction": 0.01961899748160145
+            },
+            {
+              "at": 32.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9912581013701101,
+              "gain": 0.6138963344650885,
+              "residualEnergyFraction": 0.017407376468124645
+            },
+            {
+              "at": 34.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9941783437681064,
+              "gain": 0.6147087340938828,
+              "residualEnergyFraction": 0.011609420782504805
+            },
+            {
+              "at": 36.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9910645008470051,
+              "gain": 0.6148082983338407,
+              "residualEnergyFraction": 0.017791155160876385
+            },
+            {
+              "at": 38.0,
+              "span": 2.0,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.991100809691783,
+              "gain": 0.6033060937845962,
+              "residualEnergyFraction": 0.01771918502829187
+            },
+            {
+              "at": 40.0,
+              "span": 1.597625762939451,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9850244021165704,
+              "gain": 0.6040362660118899,
+              "residualEnergyFraction": 0.02972692723489308
+            }
+          ],
+          "bodyWindows": [
+            {
+              "at": 42.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9572593309905885,
+              "gain": 0.6090493268550156,
+              "residualEnergyFraction": 0.0836545732314511
+            },
+            {
+              "at": 44.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.985427010417223,
+              "gain": 0.6108145689174505,
+              "residualEnergyFraction": 0.02893360714017404
+            },
+            {
+              "at": 46.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9676033603014392,
+              "gain": 0.597526956576217,
+              "residualEnergyFraction": 0.06374373713336269
+            },
+            {
+              "at": 48.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9655277980322606,
+              "gain": 0.6102145295123234,
+              "residualEnergyFraction": 0.06775607122697394
+            },
+            {
+              "at": 50.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9288927673229056,
+              "gain": 0.6169041845816254,
+              "residualEnergyFraction": 0.13715822681519438
+            },
+            {
+              "at": 52.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9494235757387923,
+              "gain": 0.6257617583156126,
+              "residualEnergyFraction": 0.0985948738313649
+            },
+            {
+              "at": 54.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1638,
+              "correlation": 0.9468424782717451,
+              "gain": 0.6037354608104007,
+              "residualEnergyFraction": 0.10348932134021989
+            },
+            {
+              "at": 56.09762576293945,
+              "span": 2,
+              "silent": false,
+              "shiftSamples": 1639,
+              "correlation": 0.9426666046742589,
+              "gain": 0.589580546510356,
+              "residualEnergyFraction": 0.1113796724319046
+            }
+          ],
+          "meanIntroResidual": 0.019127615236436253,
+          "foregroundWindowCount": 7,
+          "policy": "same bound backing and lead recordings; complete prefix is silence or >=0.98 correlated backing, <=4% residual, <=2 sample drift, <=5% gain range; at least three body windows have >=6% and >=3x intro residual"
+        },
+        "performance": {
+          "fullMelody": {
+            "best": {
+              "cost": 0.2664164042793582,
+              "key": 11,
+              "starts": [
+                0.8999977111816406,
+                30.499996185302734,
+                64.10000610351562,
+                94.5
+              ],
+              "span": 149.20001220703125
+            },
+            "runnerUp": {
+              "cost": 0.4300726353549407,
+              "key": 4,
+              "starts": [
+                10.299999237060547,
+                34.999996185302734,
+                67.89999389648438,
+                96.69999694824219
+              ],
+              "span": 130.39999389648438
+            }
+          },
+          "fullOptical": {
+            "best": {
+              "cost": 0.2585216769035774,
+              "key": 11,
+              "starts": [
+                0.8999977111816406,
+                30.499996185302734,
+                64.10000610351562,
+                94.5
+              ],
+              "span": 149.3000030517578
+            },
+            "runnerUp": {
+              "cost": 0.4247881872847934,
+              "key": 4,
+              "starts": [
+                10.0,
+                34.89999771118164,
+                68.0,
+                96.69999694824219
+              ],
+              "span": 130.6999969482422
+            }
+          },
+          "local": [
+            {
+              "index": 0,
+              "estimate": 0.8999977111816406,
+              "duration": 29.599998474121094,
+              "melody": {
+                "best": {
+                  "cost": 0.26615931536700277,
+                  "key": 11,
+                  "starts": [
+                    0.8999977111816406
+                  ],
+                  "span": 29.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.38774134661700277,
+                  "key": 4,
+                  "starts": [
+                    0.0
+                  ],
+                  "span": 21.89999771118164
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.25410750105574326,
+                  "key": 11,
+                  "starts": [
+                    0.8999977111816406
+                  ],
+                  "span": 29.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.38006406217008026,
+                  "key": 4,
+                  "starts": [
+                    0.0
+                  ],
+                  "span": 21.799999237060547
+                }
+              }
+            },
+            {
+              "index": 1,
+              "estimate": 30.499996185302734,
+              "duration": 33.60000991821289,
+              "melody": {
+                "best": {
+                  "cost": 0.2882041931152344,
+                  "key": 11,
+                  "starts": [
+                    0.8999977111816406,
+                    30.39999771118164
+                  ],
+                  "span": 63.099998474121094
+                },
+                "runnerUp": {
+                  "cost": 0.4202644251569917,
+                  "key": 4,
+                  "starts": [
+                    0.0,
+                    26.499996185302734
+                  ],
+                  "span": 53.999996185302734
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.27897757518140576,
+                  "key": 11,
+                  "starts": [
+                    0.8999977111816406,
+                    30.39999771118164
+                  ],
+                  "span": 63.200008392333984
+                },
+                "runnerUp": {
+                  "cost": 0.41632577437388746,
+                  "key": 4,
+                  "starts": [
+                    0.0,
+                    26.39999771118164
+                  ],
+                  "span": 53.999996185302734
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 0,
+                "sections": [
+                  0
+                ],
+                "queryStart": 0.8999977111816406,
+                "queryDuration": 63.200008392333984,
+                "targetRow": 1
+              }
+            },
+            {
+              "index": 2,
+              "estimate": 64.10000610351562,
+              "duration": 30.399993896484375,
+              "melody": {
+                "best": {
+                  "cost": 0.2791853189468384,
+                  "key": 11,
+                  "starts": [
+                    30.999996185302734,
+                    64.10000610351562
+                  ],
+                  "span": 62.500003814697266
+                },
+                "runnerUp": {
+                  "cost": 0.4296566963195801,
+                  "key": 4,
+                  "starts": [
+                    33.39999771118164,
+                    68.0
+                  ],
+                  "span": 61.60000228881836
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.2737059831619263,
+                  "key": 11,
+                  "starts": [
+                    30.89999771118164,
+                    64.10000610351562
+                  ],
+                  "span": 62.60000228881836
+                },
+                "runnerUp": {
+                  "cost": 0.4312100410461426,
+                  "key": 4,
+                  "starts": [
+                    33.39999771118164,
+                    68.10000610351562
+                  ],
+                  "span": 61.60000228881836
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 1,
+                "sections": [
+                  1
+                ],
+                "queryStart": 30.499996185302734,
+                "queryDuration": 64.00000381469727,
+                "targetRow": 1
+              }
+            },
+            {
+              "index": 3,
+              "estimate": 94.5,
+              "duration": 55.65000534057617,
+              "melody": {
+                "best": {
+                  "cost": 0.2478275631362968,
+                  "key": 11,
+                  "starts": [
+                    64.10000610351562,
+                    94.5
+                  ],
+                  "span": 85.89999389648438
+                },
+                "runnerUp": {
+                  "cost": 0.4253772199500036,
+                  "key": 6,
+                  "starts": [
+                    81.39999389648438,
+                    107.60000610351562
+                  ],
+                  "span": 72.80000305175781
+                }
+              },
+              "optical": {
+                "best": {
+                  "cost": 0.2381249227313353,
+                  "key": 11,
+                  "starts": [
+                    64.10000610351562,
+                    94.60000610351562
+                  ],
+                  "span": 85.80000305175781
+                },
+                "runnerUp": {
+                  "cost": 0.4217150396863204,
+                  "key": 4,
+                  "starts": [
+                    68.10000610351562,
+                    96.80000305175781
+                  ],
+                  "span": 65.80000305175781
+                }
+              },
+              "previousReadingContext": {
+                "fromReading": 2,
+                "sections": [
+                  2
+                ],
+                "queryStart": 64.10000610351562,
+                "queryDuration": 86.04999923706055,
+                "targetRow": 1
+              }
+            }
+          ]
+        },
+        "analysisStart": 41.70000076293945,
+        "measuredAbsoluteTimes": [
+          42.6,
+          72.15,
+          105.8,
+          136.23
+        ]
+      }
+    },
+    "reference": {
+      "referencePeriod": 79.75,
+      "readingOffsets": [
+        0.0,
+        16.0,
+        34.25,
+        50.0
+      ],
+      "symbolicRows": {
+        "method": "all optimal global pitch-sequence alignments; exact row-opening notes",
+        "noteCount": 163,
+        "midiNoteCount": 163,
+        "editCost": 0,
+        "runnerUpCost": 113,
+        "semitoneShift": 0,
+        "rowStarts": [
+          {
+            "scoreNoteIndex": 0,
+            "possibleMidiNoteIndices": [
+              0
+            ],
+            "at": 0.0
+          },
+          {
+            "scoreNoteIndex": 34,
+            "possibleMidiNoteIndices": [
+              34
+            ],
+            "at": 16.0
+          },
+          {
+            "scoreNoteIndex": 68,
+            "possibleMidiNoteIndices": [
+              68
+            ],
+            "at": 34.25
+          },
+          {
+            "scoreNoteIndex": 102,
+            "possibleMidiNoteIndices": [
+              102
+            ],
+            "at": 50.0
+          }
+        ],
+        "offsets": [
+          0.0,
+          16.0,
+          34.25,
+          50.0
+        ]
+      },
+      "sourceRows": [
+        {
+          "text": "¥03311/6-61２11２3033516-655213-051７1",
+          "confidence": 0.7337322022233691,
+          "notes": [
+            0,
+            3,
+            3,
+            1,
+            6,
+            6,
+            1,
+            2,
+            1,
+            1,
+            2,
+            3,
+            0,
+            3,
+            3,
+            5,
+            1,
+            6,
+            6,
+            5,
+            5,
+            2,
+            3,
+            0,
+            5,
+            1,
+            7
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.08411214953271028,
+            0.10747663551401869,
+            0.13551401869158877,
+            0.16355140186915887,
+            0.21495327102803738,
+            0.2757009345794392,
+            0.29906542056074764,
+            0.32710280373831774,
+            0.35514018691588783,
+            0.37383177570093457,
+            0.397196261682243,
+            0.42990654205607476,
+            0.46261682242990654,
+            0.48598130841121495,
+            0.514018691588785,
+            0.5420560747663551,
+            0.5607476635514018,
+            0.5841121495327103,
+            0.6448598130841121,
+            0.6635514018691588,
+            0.6915887850467289,
+            0.7242990654205608,
+            0.7663551401869159,
+            0.8177570093457944,
+            0.8411214953271028,
+            0.8691588785046729,
+            0.9018691588785047
+          ],
+          "spatialWeights": [
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            2.0,
+            0.5,
+            1.0,
+            1.0,
+            1.5,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            2.5
+          ],
+          "rhythmWeights": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "¥6—6652143033211·32·11１—033１:=",
+          "confidence": 0.681936024626096,
+          "notes": [
+            6,
+            6,
+            6,
+            5,
+            2,
+            1,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            1,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.0867579908675799,
+            0.1735159817351598,
+            0.2009132420091324,
+            0.228310502283105,
+            0.2557077625570776,
+            0.2785388127853881,
+            0.3013698630136986,
+            0.3470319634703196,
+            0.3881278538812785,
+            0.4155251141552511,
+            0.4429223744292237,
+            0.4703196347031963,
+            0.4931506849315068,
+            0.5205479452054794,
+            0.5799086757990868,
+            0.6073059360730594,
+            0.6666666666666666,
+            0.6894977168949772,
+            0.7168949771689498,
+            0.8036529680365296,
+            0.8264840182648402,
+            0.8584474885844748,
+            0.8858447488584474
+          ],
+          "spatialWeights": [
+            3.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5,
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            1.0,
+            2.0,
+            1.0,
+            1.0,
+            3.0,
+            1.0,
+            1.0,
+            1.0,
+            2.5
+          ],
+          "rhythmWeights": [
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "1---|0003515-55２4|43013515-52541",
+          "confidence": 0.7766291238367558,
+          "notes": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            5,
+            1,
+            5,
+            5,
+            5,
+            2,
+            4,
+            4,
+            3,
+            0,
+            1,
+            3,
+            5,
+            1,
+            5,
+            5,
+            2,
+            5,
+            4,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.091324200913242,
+            0.2191780821917808,
+            0.2465753424657534,
+            0.273972602739726,
+            0.3105022831050228,
+            0.3378995433789954,
+            0.3561643835616438,
+            0.3835616438356164,
+            0.4429223744292237,
+            0.4657534246575342,
+            0.4977168949771689,
+            0.5251141552511416,
+            0.5662100456621004,
+            0.6027397260273972,
+            0.634703196347032,
+            0.6575342465753424,
+            0.684931506849315,
+            0.7123287671232876,
+            0.7351598173515982,
+            0.7579908675799086,
+            0.817351598173516,
+            0.8401826484018264,
+            0.867579908675799,
+            0.8949771689497716,
+            0.9178082191780822
+          ],
+          "spatialWeights": [
+            4.0,
+            1.0,
+            1.0,
+            1.5,
+            1.0,
+            0.5,
+            1.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5,
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.5
+          ],
+          "rhythmWeights": [
+            4.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 3
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "¥3-051７|61７2|１７65|0431２341",
+          "confidence": 0.7170037856468787,
+          "notes": [
+            3,
+            0,
+            5,
+            1,
+            7,
+            6,
+            1,
+            7,
+            2,
+            1,
+            7,
+            6,
+            5,
+            0,
+            4,
+            3,
+            1,
+            2,
+            3,
+            4,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.0867579908675799,
+            0.1780821917808219,
+            0.2009132420091324,
+            0.2328767123287671,
+            0.2602739726027397,
+            0.3059360730593607,
+            0.3470319634703196,
+            0.3926940639269406,
+            0.4383561643835616,
+            0.4977168949771689,
+            0.54337899543379,
+            0.6027397260273972,
+            0.6438356164383562,
+            0.7077625570776256,
+            0.7534246575342466,
+            0.7808219178082192,
+            0.8082191780821918,
+            0.8356164383561644,
+            0.867579908675799,
+            0.8949771689497716,
+            0.9178082191780822
+          ],
+          "spatialWeights": [
+            2.0,
+            0.5,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5,
+            1.0,
+            1.5,
+            1.0,
+            1.5,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            0.5,
+            0.5,
+            1.5
+          ],
+          "rhythmWeights": [
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "２-033116-6１２１|２30335161２1７615-5１１７1",
+          "confidence": 0.6896629699638912,
+          "notes": [
+            2,
+            0,
+            3,
+            3,
+            1,
+            6,
+            6,
+            1,
+            2,
+            1,
+            2,
+            3,
+            0,
+            3,
+            3,
+            5,
+            1,
+            6,
+            1,
+            2,
+            1,
+            7,
+            6,
+            1,
+            5,
+            5,
+            1,
+            1,
+            7,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.0867579908675799,
+            0.1324200913242009,
+            0.1552511415525114,
+            0.182648401826484,
+            0.2146118721461187,
+            0.2557077625570776,
+            0.3013698630136986,
+            0.3242009132420091,
+            0.3515981735159817,
+            0.3789954337899543,
+            0.4200913242009132,
+            0.4520547945205479,
+            0.4840182648401826,
+            0.5068493150684932,
+            0.5342465753424658,
+            0.5616438356164384,
+            0.5799086757990868,
+            0.6027397260273972,
+            0.6255707762557078,
+            0.6484018264840182,
+            0.6712328767123288,
+            0.7031963470319634,
+            0.730593607305936,
+            0.7488584474885844,
+            0.771689497716895,
+            0.817351598173516,
+            0.8401826484018264,
+            0.867579908675799,
+            0.8995433789954338,
+            0.9178082191780822
+          ],
+          "spatialWeights": [
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            1.5,
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.5,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            2.5
+          ],
+          "rhythmWeights": [
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "¥6-665２143033２11·3２·１1１-05１７16-665２1",
+          "confidence": 0.6917861542767949,
+          "notes": [
+            6,
+            6,
+            6,
+            5,
+            2,
+            1,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0,
+            5,
+            1,
+            7,
+            6,
+            6,
+            6,
+            5,
+            2
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.08411214953271028,
+            0.13551401869158877,
+            0.1588785046728972,
+            0.18691588785046728,
+            0.21495327102803738,
+            0.2336448598130841,
+            0.2570093457943925,
+            0.2897196261682243,
+            0.32242990654205606,
+            0.3411214953271028,
+            0.3691588785046729,
+            0.397196261682243,
+            0.4392523364485981,
+            0.48598130841121495,
+            0.514018691588785,
+            0.5560747663551402,
+            0.5747663551401869,
+            0.5981308411214953,
+            0.6495327102803738,
+            0.6682242990654206,
+            0.7009345794392523,
+            0.7289719626168224,
+            0.7663551401869159,
+            0.822429906542056,
+            0.8411214953271028,
+            0.8691588785046729,
+            0.897196261682243
+          ],
+          "spatialWeights": [
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.5,
+            1.5,
+            1.0,
+            1.5,
+            0.5,
+            1.0,
+            2.0,
+            0.5,
+            1.0,
+            1.0,
+            1.5,
+            2.0,
+            0.5,
+            1.0,
+            1.0,
+            2.5
+          ],
+          "rhythmWeights": [
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "ocrRhythmWeights": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            }
+          ]
+        },
+        {
+          "text": "¥４3033２—1·3２·１—１-033２—1·3２·１—１---|１-—",
+          "confidence": 0.6027283853775746,
+          "notes": [
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "x": [
+            0.0867579908675799,
+            0.1187214611872146,
+            0.1461187214611872,
+            0.1689497716894977,
+            0.2009132420091324,
+            0.228310502283105,
+            0.2694063926940639,
+            0.3105022831050228,
+            0.3470319634703196,
+            0.3881278538812785,
+            0.4292237442922374,
+            0.4794520547945205,
+            0.502283105022831,
+            0.5296803652968036,
+            0.5570776255707762,
+            0.5981735159817352,
+            0.6438356164383562,
+            0.6712328767123288,
+            0.7168949771689498,
+            0.7579908675799086,
+            0.867579908675799
+          ],
+          "spatialWeights": [
+            1.0,
+            0.5,
+            0.5,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            1.0,
+            2.5,
+            1.5
+          ],
+          "rhythmWeights": [
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            1.0,
+            1.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            4.0,
+            2.0
+          ],
+          "ocrRhythmWeights": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            4,
+            3
+          ],
+          "opticalDiagnostics": [
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": true,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 1,
+              "dot": false,
+              "dashes": 0
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 3
+            },
+            {
+              "glyphFound": true,
+              "beams": 0,
+              "dot": false,
+              "dashes": 1
+            }
+          ]
+        }
+      ],
+      "opticalReadingRows": [
+        {
+          "notes": [
+            3,
+            3,
+            1,
+            6,
+            1,
+            2,
+            1,
+            2,
+            3,
+            0,
+            3,
+            3,
+            5,
+            6,
+            5,
+            5,
+            2,
+            3,
+            0,
+            5,
+            1,
+            7,
+            6,
+            6,
+            5,
+            2,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            0
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rhythmWeights": [
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            2.0,
+            0.5
+          ]
+        },
+        {
+          "notes": [
+            3,
+            3,
+            1,
+            6,
+            1,
+            2,
+            1,
+            2,
+            3,
+            0,
+            3,
+            3,
+            5,
+            6,
+            5,
+            5,
+            2,
+            3,
+            0,
+            5,
+            1,
+            7,
+            6,
+            6,
+            5,
+            2,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rhythmWeights": [
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            4.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "notes": [
+            3,
+            5,
+            5,
+            5,
+            2,
+            4,
+            4,
+            3,
+            0,
+            1,
+            3,
+            5,
+            5,
+            2,
+            5,
+            4,
+            3,
+            0,
+            5,
+            1,
+            7,
+            6,
+            1,
+            7,
+            2,
+            1,
+            7,
+            6,
+            5,
+            0,
+            4,
+            3,
+            1,
+            2,
+            3,
+            4,
+            2,
+            0
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rhythmWeights": [
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.0,
+            0.5
+          ]
+        },
+        {
+          "notes": [
+            3,
+            3,
+            1,
+            6,
+            1,
+            2,
+            1,
+            2,
+            3,
+            0,
+            3,
+            3,
+            5,
+            6,
+            1,
+            2,
+            1,
+            7,
+            6,
+            5,
+            1,
+            1,
+            7,
+            6,
+            6,
+            5,
+            2,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            0,
+            5,
+            1,
+            7,
+            6,
+            6,
+            5,
+            2,
+            4,
+            3,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1,
+            0,
+            3,
+            3,
+            2,
+            1,
+            3,
+            2,
+            1,
+            1
+          ],
+          "pitchOffsets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rhythmWeights": [
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            2.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            1.0,
+            1.5,
+            0.5,
+            2.0,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.5,
+            0.5,
+            1.5,
+            0.5,
+            6.0
+          ]
+        }
+      ]
+    }
+  },
+  "independentTimelines": {
+    "03-011因祂十架.mp3": {
+      "definitions": [
+        {
+          "region": "r1",
+          "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+          "label": "第1段"
+        },
+        {
+          "region": "r2",
+          "text": "他蒙羞耻，带来了荣耀。 因他忧愁，我得喜乐。 他受鞭打，使我得医治。 耶稣十架，换来冠冕。",
+          "label": "第2段"
+        },
+        {
+          "region": "r3",
+          "text": "神羔羊，你带来救赎。 你的恩典，充满我心。 主慈爱眼泪除去我的愁烦。 你眼看清我一切。",
+          "label": "第3段"
+        },
+        {
+          "region": "r4",
+          "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+          "label": "第4段"
+        }
+      ],
+      "times": [
+        0,
+        72.05,
+        105.72,
+        136.15
+      ],
+      "returnIndices": []
+    },
+    "03-011因祂十架-领唱.mp3": {
+      "definitions": [
+        {
+          "region": "r1",
+          "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+          "label": "第1段"
+        },
+        {
+          "region": "r2",
+          "text": "他蒙羞耻，带来了荣耀。 因他忧愁，我得喜乐。 他受鞭打，使我得医治。 耶稣十架，换来冠冕。",
+          "label": "第2段"
+        },
+        {
+          "region": "r3",
+          "text": "神羔羊，你带来救赎。 你的恩典，充满我心。 主慈爱眼泪除去我的愁烦。 你眼看清我一切。",
+          "label": "第3段"
+        },
+        {
+          "region": "r4",
+          "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+          "label": "第4段"
+        }
+      ],
+      "times": [
+        0,
+        72.15,
+        105.8,
+        136.23
+      ],
+      "returnIndices": []
+    }
+  },
+  "performanceOrder": [
+    {
+      "region": "r1",
+      "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+      "label": "第1段"
+    },
+    {
+      "region": "r2",
+      "text": "他蒙羞耻，带来了荣耀。 因他忧愁，我得喜乐。 他受鞭打，使我得医治。 耶稣十架，换来冠冕。",
+      "label": "第2段"
+    },
+    {
+      "region": "r3",
+      "text": "神羔羊，你带来救赎。 你的恩典，充满我心。 主慈爱眼泪除去我的愁烦。 你眼看清我一切。",
+      "label": "第3段"
+    },
+    {
+      "region": "r4",
+      "text": "因他眼泪，我得到安慰。 因他受死，我得永生。 因他宝血，我得到赦免。 耶稣十架，换来冠冕。",
+      "label": "第4段"
+    }
+  ],
+  "initialReadingView": {
+    "version": 1,
+    "region": "r1",
+    "at": 0,
+    "policy": "initial reading position from playback start",
+    "lyricOnsetMeasured": false
+  },
+  "status": "ready",
+  "cueCount": 4,
+  "elapsedSeconds": 7.813
+}

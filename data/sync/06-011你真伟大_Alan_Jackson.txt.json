@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "songId": "06-011",
+  "status": "reviewed",
+  "source": {
+    "file": "06-011你真伟大_Alan_Jackson.txt",
+    "sha256": "5874089586422cb0d1235606ea7000d7b655069cae7359ed6f55134ffadddb1e",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-011你真伟大_Alan_Jackson.mp3",
+      "sha256": "39b96b75edba4a65c1b7171064667f87d94c9f12649c2ab41ab03369694e5870",
+      "duration": 212.92408163265307,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 21
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 25
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 29
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 38,
+      "endLine": 41
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 42,
+      "endLine": 45
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 46,
+      "endLine": 49
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 50,
+      "endLine": 53
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 54,
+      "endLine": 57
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 58,
+      "endLine": 61
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 62,
+      "endLine": 65
+    },
+    "r17": {
+      "kind": "text",
+      "startLine": 66,
+      "endLine": 69
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.97,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 31.54,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 44.21,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 53.36,
+      "region": "r5",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.04,
+      "region": "r6",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.3,
+      "region": "r7",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 87.44,
+      "region": "r8",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 97.98,
+      "region": "r9",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 109.15,
+      "region": "r10",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 119.1,
+      "region": "r11",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.2,
+      "region": "r12",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.94,
+      "region": "r13",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 154.13,
+      "region": "r14",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 164.7,
+      "region": "r15",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 176.52,
+      "region": "r16",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 187.1,
+      "region": "r17",
+      "label": "第1段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete reading order checked against two pinned original-audio transcripts; initial region shown from zero. Selected positions are previews, not measured sung onsets: two fixed prompt-free windows identify the complete adjacent original lyric lines, and the preview follows the latest previous-line end from both transcripts and both windows by 0.5 seconds. Other positions retain the original contextual acoustic checks. Original lyrics are preserved.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Oh Lord my God When I in awesome wonder",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Consider all the works Thy hands have made",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "I see the stars I hear the rolling thunder",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "Thy power throughout The universe displayed",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "Then sings my soul My Saviour, God, to Thee",
+        "label": "第1段"
+      },
+      {
+        "region": "r6",
+        "text": "How great thou art How great thou art",
+        "label": "第1段"
+      },
+      {
+        "region": "r7",
+        "text": "Then sings my soul My Saviour, God, to Thee",
+        "label": "第1段"
+      },
+      {
+        "region": "r8",
+        "text": "How great Thou art How great Thou art",
+        "label": "第1段"
+      },
+      {
+        "region": "r9",
+        "text": "When Christ shall come With shouts of adulation",
+        "label": "第1段"
+      },
+      {
+        "region": "r10",
+        "text": "And take me home What joy shall fill my heart",
+        "label": "第1段"
+      },
+      {
+        "region": "r11",
+        "text": "Then I shall bow In humble adoration",
+        "label": "第1段"
+      },
+      {
+        "region": "r12",
+        "text": "And there proclaim My God How great Thou art",
+        "label": "第1段"
+      },
+      {
+        "region": "r13",
+        "text": "Then sings my soul My Saviour, God, to Thee",
+        "label": "第1段"
+      },
+      {
+        "region": "r14",
+        "text": "How great Thou art How great Thou art",
+        "label": "第1段"
+      },
+      {
+        "region": "r15",
+        "text": "Then sings my soul My Saviour, God, to Thee",
+        "label": "第1段"
+      },
+      {
+        "region": "r16",
+        "text": "How great Thou art How great Thou art",
+        "label": "第1段"
+      },
+      {
+        "region": "r17",
+        "text": "How great Thou art How great Thou art",
+        "label": "第1段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-011你真伟大_Alan_Jackson.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 2,
+      "indices": [
+        6,
+        12,
+        14
+      ],
+      "reason": "前后相邻英文原文行在两组固定无提示窗口逐词对应，两份完整转写覆盖相邻阅读区域；上一句最晚结束估计加0.5秒，须早于两份转写下一句首词词尾0.5秒。唱词起点有歧义，不将阅读位置称为起唱时间；浏览器验证中英文行在移动前后可见。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "independentTranscriptHash": "fbfbbebebd1cb2f89a6c638a6df2cb4750167420879ca38a1784211c67382bf3"
+    }
+  }
+}

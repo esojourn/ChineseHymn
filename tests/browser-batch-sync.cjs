@@ -86,7 +86,8 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                         }
                         report.geometryChecks++;
                     }
-                    const indices = [...new Set([0, 1, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
+                    const recovered = data.provenance?.freeWholeReading?.indices || [];
+                    const indices = [...new Set([0, 1, ...recovered, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
                     for (const index of geometryOnly ? [] : indices) {
                         await page.locator('audio').evaluate((audio, time) => { audio.currentTime = time; }, cues[index].at + track.offset + .5);
                         await page.waitForFunction(() => !document.querySelector('audio').seeking);

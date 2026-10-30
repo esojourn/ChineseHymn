@@ -60,5 +60,57 @@
         }
       ]
     }
+  },
+  "06-006": {
+    "version": 1,
+    "sourceHash": "39323eb4c0a37d0eaac5eab0de44745a2770907f2723e786bf364f5192f9428f",
+    "tracks": [
+      {
+        "file": "06-006成为我异象.mp3",
+        "sha256": "639199e77346eafaa4cb8810da5c7c2d7ee1955f46711fd2725e2616f1d4a480"
+      }
+    ],
+    "audioFile": "06-006成为我异象.mp3",
+    "transcriptHash": "d9a1b199b1dec6e3c317f7f9823fa74f19b22c2841af232443dcb3a0d5227c34",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16",
+      "r17",
+      "r18"
+    ],
+    "review": "Audrey Assad完整英文原文18个既有阅读区域及末句反复由固定完整turbo转写覆盖；首屏从0显示，后续保留原始medium上下文窗口。第5个区域的两个标准窗口首词Be退化为已知词尾的零时长，额外窗口仅一组在严格转写起点范围内有效，采用两组无提示完整九词起句及该独立medium首词的起止范围交叉核对，不按字数或乐谱时长生成时间。",
+    "freeWholeReading": {
+      "version": 1,
+      "indices": [
+        4
+      ],
+      "reason": "完整原文单段Be thou my wisdom and thou my true word共九词31字母；两个固定原始窗口以无提示turbo解码逐词完全一致，所有词有实际时长及似然，首词起止与完整转写和有效medium补充窗口一致。早于严格转写首词范围的延音候选保留在证据中，不用词尾例外掩盖提前起点。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    }
   }
 }

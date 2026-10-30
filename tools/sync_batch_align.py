@@ -551,6 +551,16 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'two prompt-free ten-word opening transcriptions, pinned models, explicit inflection review, '
                               'and agreement with the complete transcript. Other changes pass original contextual acoustic checks; '
                               'other recordings retain chroma-DTW correspondence checks. Original source lyrics are preserved.')
+    whole_reading = evidence.get('transcriptMatching', {}).get('freeWholeReading')
+    if whole_reading:
+        method_description = ('Transcript-verified complete reading order; initial reading displayed from zero. A lost first word '
+                              'in both canonical contextual windows is recovered only when two prompt-free fixed windows exactly '
+                              'recognize every word of the same complete source reading (at least eight words and thirty letters), '
+                              'all words have positive spans and likelihood, first-word edges agree with the full transcript '
+                              'within 0.5 seconds, and an independent original medium contextual word agrees on both edges. '
+                              'Early held-word candidates outside strict transcript-onset bounds are documented; conflicting '
+                              'in-range contextual words reject recovery. Both models and tokenizers are pinned. Other boundaries '
+                              'retain original contextual checks and original lyrics are preserved.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:
@@ -593,6 +603,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
     if gap_review:
         data['provenance']['longGapFreePrefix'] = gap_review
+    if whole_reading:
+        data['provenance']['freeWholeReading'] = whole_reading
     if midi_boundaries:
         data['provenance']['midiVerseBoundaries'] = {key: midi_boundaries[key] for key in ['version', 'review', 'changedIndices']}
     if homophones:

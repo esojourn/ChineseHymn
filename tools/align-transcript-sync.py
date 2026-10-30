@@ -196,6 +196,7 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
                 'trackHashes': song['tracks'], 'transcriptMatching': {'algorithmVersion': 5 if ctc_model_dir else 4, 'model': 'medium/int8'}}
     try:
         whole_reading_review = None
+        preview_review = None
         if initial_view_profile and (free_initial_profile or ctc_model_dir):
             raise ValueError('首屏位置与首词实测应分别配置')
         if free_initial_profile:
@@ -221,6 +222,10 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
             evidence['transcriptMatching']['algorithmVersion'] = 7
             from sync_batch_whole_reading import validate_review
             whole_reading_review = validate_review(initial_view_profile, language, model_dir)
+            preview_review = initial_view_profile.get('previousLinePreview')
+            if preview_review is not None and (not isinstance(preview_review, dict) or not preview_review or
+                    whole_reading_review or 'longGapFreePrefix' in initial_view_profile or language != 'en'):
+                raise ValueError('上一行预读不能与其他特殊对齐模式混用')
             if whole_reading_review:
                 evidence['transcriptMatching'].update(algorithmVersion=9, freeWholeReading=whole_reading_review)
         evidence.update(performanceOrder=definitions, estimates=estimates)
@@ -229,7 +234,7 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
         anchor_words = [row['firstWord'] for row in diagnostics]
         evidence['transcriptMatching'].update(transcript=transcript, diagnostics=diagnostics, language=language)
         selected_model = str(Path(model_dir) / 'medium') if free_initial_profile or initial_view_profile else 'medium'
-        if _model is None or (free_initial_profile or initial_view_profile) and _model_path != selected_model or whole_reading_review:
+        if _model is None or (free_initial_profile or initial_view_profile) and _model_path != selected_model or whole_reading_review or preview_review:
             from faster_whisper import WhisperModel
             _model = WhisperModel(selected_model, device='cpu', compute_type='int8', cpu_threads=threads,
                                   download_root=model_dir, local_files_only=True)
@@ -244,6 +249,8 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
                       'windowVersion': 2, 'extraWindows': [(8, 18), (10, 16)]}
         if whole_reading_review:
             parameters.update(wholeReadingWindowVersion=1, contextModel=whole_reading_review['contextModel'])
+        if preview_review:
+            parameters.update(previousLinePreviewVersion=1, contextModel=preview_review['contextModel'])
         normal_parameters = dict(parameters)
         if initial_view_profile:
             parameters['initialReadingViewVersion'] = 1
@@ -251,11 +258,11 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
         signature = fingerprint(parameters)
         old = json.loads(checkpoint.read_text()) if checkpoint.exists() else {}
         resume = old.get('windows', []) if old.get('signature') == signature else []
-        if not resume and not whole_reading_review and initial_view_profile and old.get('signature') == fingerprint(normal_parameters):
+        if not resume and not whole_reading_review and not preview_review and initial_view_profile and old.get('signature') == fingerprint(normal_parameters):
             resume = [row for row in old.get('windows', []) if row['index'] > 0]
         # Retain only windows whose actual token context is unchanged by the
         # previous gap-handling rule; source/audio/sequence signatures still match.
-        if not resume and not whole_reading_review and old.get('windows'):
+        if not resume and not whole_reading_review and not preview_review and old.get('windows'):
             legacy_context = [definitions[index - 1]['text'] if index and estimate - diagnostics[index - 1]['end'] <= 3.5 else ''
                               for index, estimate in enumerate(estimates)]
             legacy = {**parameters, 'preceding': legacy_context, 'windowVersion': 1}
@@ -273,7 +280,7 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
                     language, preceding, anchor_ranges, anchor_words, resume, save_windows)
             except ValueError:
                 observations = evidence['windows']
-                if not whole_reading_review:
+                if not whole_reading_review and not preview_review:
                     review = initial_view_profile.get('longGapFreePrefix')
                     if not review:
                         raise
@@ -285,6 +292,12 @@ def generate(song, cache, model_dir, threads, ctc_model_dir=None, free_initial_p
                 from sync_batch_whole_reading import recover
                 times, decisions = recover(song, definitions, diagnostics, observations, transcript, audio,
                     whole_reading_review, model_dir, cache, confirm_transcript_windows, batch.save)
+            if preview_review:
+                from sync_batch_preview import recover
+                times, decisions, independent_transcript = recover(song, source, definitions, diagnostics, observations, transcript, audio,
+                    preview_review, model_dir, cache, confirm_transcript_windows, performed_order, batch.save)
+                evidence['transcriptMatching'].update(algorithmVersion=10, previousLinePreview=preview_review,
+                                                      independentTranscript=independent_transcript)
             save_windows(observations)
         else:
             try:

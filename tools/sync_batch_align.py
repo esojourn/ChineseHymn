@@ -561,6 +561,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'Early held-word candidates outside strict transcript-onset bounds are documented; conflicting '
                               'in-range contextual words reject recovery. Both models and tokenizers are pinned. Other boundaries '
                               'retain original contextual checks and original lyrics are preserved.')
+    previous_preview = evidence.get('transcriptMatching', {}).get('previousLinePreview')
+    if previous_preview:
+        method_description = ('Complete reading order checked against two pinned original-audio transcripts; initial region '
+                              'shown from zero. Selected positions are previews, not measured sung onsets: two fixed prompt-free '
+                              'windows identify the complete adjacent original lyric lines, and the preview follows the latest '
+                              'previous-line end from both transcripts and both windows by 0.5 seconds. Other positions retain '
+                              'the original contextual acoustic checks. Original lyrics are preserved.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:
@@ -605,6 +612,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         data['provenance']['longGapFreePrefix'] = gap_review
     if whole_reading:
         data['provenance']['freeWholeReading'] = whole_reading
+    if previous_preview:
+        data['provenance']['previousLinePreview'] = previous_preview
     if midi_boundaries:
         data['provenance']['midiVerseBoundaries'] = {key: midi_boundaries[key] for key in ['version', 'review', 'changedIndices']}
     if homophones:

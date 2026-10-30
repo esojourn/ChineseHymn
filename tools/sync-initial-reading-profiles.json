@@ -112,5 +112,53 @@
         "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
       }
     }
+  },
+  "06-023": {
+    "version": 1,
+    "sourceHash": "73ec8b3ed80821f567bf49097807ca78305e1b8a4c6dabd76b6c04123069817f",
+    "tracks": [
+      {
+        "file": "06-023-他必保守我.mp3",
+        "sha256": "ef6029ceaf304d267e631638a45cc0f694dcf80ac9e7c7515ea55b2ac120bead"
+      }
+    ],
+    "audioFile": "06-023-他必保守我.mp3",
+    "transcriptHash": "36c75fb9650d0ec19e9db298cf29e39f74c331172b6b9703c4da7ddb28bc26b6",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10"
+    ],
+    "review": "英文完整正文原样保留；首屏从零显示。四个换段在两份完整转写及两个无提示窗口核对前后完整歌词行，取所有上一行结束估计的最晚值再加0.5秒作为预读位置，不声称是下一行的实测起唱时间。",
+    "previousLinePreview": {
+      "version": 1,
+      "indices": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "reason": "前后完整原文行在两组固定无提示窗口逐词对应；两份完整转写独立覆盖，上一行的最晚结束估计加0.5秒且早于下一行的转写起点。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      "independentTranscriptHash": "92b6eabcd7fa2e0418b470e91043bf2652a5b5f5794ee32563c819d66e852b72"
+    }
   }
 }

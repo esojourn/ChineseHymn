@@ -86,8 +86,27 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                         }
                         report.geometryChecks++;
                     }
+                    for (const index of data.provenance?.previousLinePreview?.indices || []) {
+                        const visible = await page.evaluate(index => {
+                            const before = geometryProbe.data.regions[geometryProbe.data.cues[index - 1].region];
+                            const after = geometryProbe.data.regions[geometryProbe.data.cues[index].region];
+                            const last = document.querySelector('[data-line="' + before.endLine + '"]').getBoundingClientRect();
+                            const first = document.querySelector('[data-line="' + after.startLine + '"]').getBoundingClientRect();
+                            const prior = geometryProbe.positions[index - 1], next = geometryProbe.positions[index];
+                            return { lastAtPrior: [last.top + scrollY - prior, last.bottom + scrollY - prior],
+                                lastAtNext: [last.top + scrollY - next, last.bottom + scrollY - next],
+                                firstAtPrior: [first.top + scrollY - prior, first.bottom + scrollY - prior],
+                                firstAtNext: [first.top + scrollY - next, first.bottom + scrollY - next] };
+                        }, index);
+                        for (const line of Object.values(visible)) {
+                            assert.ok(line[0] >= -1 && line[1] <= viewport.height + 1,
+                                'previous last line and next first line remain visible: ' + data.songId + JSON.stringify(visible));
+                            report.previewChecks++;
+                        }
+                    }
                     const recovered = data.provenance?.freeWholeReading?.indices || [];
-                    const indices = [...new Set([0, 1, ...recovered, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
+                    const previews = data.provenance?.previousLinePreview?.indices || [];
+                    const indices = [...new Set([0, 1, ...recovered, ...previews, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
                     for (const index of geometryOnly ? [] : indices) {
                         await page.locator('audio').evaluate((audio, time) => { audio.currentTime = time; }, cues[index].at + track.offset + .5);
                         await page.waitForFunction(() => !document.querySelector('audio').seeking);

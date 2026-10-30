@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "songId": "06-006",
+  "status": "reviewed",
+  "source": {
+    "file": "06-006成为我异象.txt",
+    "sha256": "39323eb4c0a37d0eaac5eab0de44745a2770907f2723e786bf364f5192f9428f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-006成为我异象.mp3",
+      "sha256": "639199e77346eafaa4cb8810da5c7c2d7ee1955f46711fd2725e2616f1d4a480",
+      "duration": 213.7861224489796,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 2
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 4,
+      "endLine": 4
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 8
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 10
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 14
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 16
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 20
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 22,
+      "endLine": 22
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 24,
+      "endLine": 24
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 26
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 28,
+      "endLine": 28
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 30
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 32,
+      "endLine": 32
+    },
+    "r17": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 34
+    },
+    "r18": {
+      "kind": "text",
+      "startLine": 36,
+      "endLine": 36
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 38.17,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 46.32,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 55.12,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.26,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    },
+    {
+      "at": 77.98,
+      "region": "r6",
+      "label": "第6段",
+      "transition": "reading"
+    },
+    {
+      "at": 86.2,
+      "region": "r7",
+      "label": "第7段",
+      "transition": "reading"
+    },
+    {
+      "at": 94.5,
+      "region": "r8",
+      "label": "第8段",
+      "transition": "reading"
+    },
+    {
+      "at": 106.04,
+      "region": "r9",
+      "label": "第9段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.92,
+      "region": "r10",
+      "label": "第10段",
+      "transition": "reading"
+    },
+    {
+      "at": 122.34,
+      "region": "r11",
+      "label": "第11段",
+      "transition": "reading"
+    },
+    {
+      "at": 131.36,
+      "region": "r12",
+      "label": "第12段",
+      "transition": "reading"
+    },
+    {
+      "at": 141.92,
+      "region": "r13",
+      "label": "第13段",
+      "transition": "reading"
+    },
+    {
+      "at": 149.99,
+      "region": "r14",
+      "label": "第14段",
+      "transition": "reading"
+    },
+    {
+      "at": 157.75,
+      "region": "r15",
+      "label": "第15段",
+      "transition": "reading"
+    },
+    {
+      "at": 166.78,
+      "region": "r16",
+      "label": "第16段",
+      "transition": "reading"
+    },
+    {
+      "at": 175.76,
+      "region": "r17",
+      "label": "第17段",
+      "transition": "reading"
+    },
+    {
+      "at": 183.92,
+      "region": "r18",
+      "label": "第18段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Transcript-verified complete reading order; initial reading displayed from zero. A lost first word in both canonical contextual windows is recovered only when two prompt-free fixed windows exactly recognize every word of the same complete source reading (at least eight words and thirty letters), all words have positive spans and likelihood, first-word edges agree with the full transcript within 0.5 seconds, and an independent original medium contextual word agrees on both edges. Early held-word candidates outside strict transcript-onset bounds are documented; conflicting in-range contextual words reject recovery. Both models and tokenizers are pinned. Other boundaries retain original contextual checks and original lyrics are preserved.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Be thou my vision o lord of my heart",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "Naught be all else to me save that thou art",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "Thou my best thought by day or by night",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "Waking or sleeping thy presence my light",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "Be thou my wisdom and thou my true word",
+        "label": "第5段"
+      },
+      {
+        "region": "r6",
+        "text": "I ever with thee and thou with me lord",
+        "label": "第6段"
+      },
+      {
+        "region": "r7",
+        "text": "Thou my great father I thy true son",
+        "label": "第7段"
+      },
+      {
+        "region": "r8",
+        "text": "Thou in me dwelling and I with thee one",
+        "label": "第8段"
+      },
+      {
+        "region": "r9",
+        "text": "Riches I heed not nor man s empty praise",
+        "label": "第9段"
+      },
+      {
+        "region": "r10",
+        "text": "Thou mine inheritance now and always",
+        "label": "第10段"
+      },
+      {
+        "region": "r11",
+        "text": "Thou and thou only first in my heart",
+        "label": "第11段"
+      },
+      {
+        "region": "r12",
+        "text": "High king of heaven my treasure thou art",
+        "label": "第12段"
+      },
+      {
+        "region": "r13",
+        "text": "High king of heaven my victory won",
+        "label": "第13段"
+      },
+      {
+        "region": "r14",
+        "text": "May I reach heaven joys o bright heaven sun",
+        "label": "第14段"
+      },
+      {
+        "region": "r15",
+        "text": "Heart of my own heart what e er befall",
+        "label": "第15段"
+      },
+      {
+        "region": "r16",
+        "text": "Still be my vision o ruler of all",
+        "label": "第16段"
+      },
+      {
+        "region": "r17",
+        "text": "Heart of my own heart what e er befall",
+        "label": "第17段"
+      },
+      {
+        "region": "r18",
+        "text": "Still be my vision o ruler of all",
+        "label": "第18段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-006成为我异象.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "freeWholeReading": {
+      "version": 1,
+      "indices": [
+        4
+      ],
+      "reason": "完整原文单段Be thou my wisdom and thou my true word共九词31字母；两个固定原始窗口以无提示turbo解码逐词完全一致，所有词有实际时长及似然，首词起止与完整转写和有效medium补充窗口一致。早于严格转写首词范围的延音候选保留在证据中，不用词尾例外掩盖提前起点。",
+      "model": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "contextModel": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    }
+  }
+}

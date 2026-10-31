@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "songId": "02-234",
+  "status": "reviewed",
+  "source": {
+    "file": "02-234虔守主餐.txt",
+    "sha256": "557e78a6eae85b7fd489a7095366536546d39d4f6644d69ce8d016de08028785",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-234虔守主餐.mp3",
+      "sha256": "a9c7876ee2ef5e9ab3a2072729676757113b4f81a400be981c8b8f7c0cddde3c",
+      "duration": 115.43510204081633,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 8
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 43.6,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 78.52,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Each complete printed variant verse is compared with the recording using STFT and constant-Q features; the four shared opening notes of an independent original MIDI are checked with the same two features. All four onset estimates agree within 0.5 seconds. Printed notes are individually recognized, rhythm is manually reviewed, and the initial region is shown from zero. Neither a complete MIDI variant nor human listening is claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我们跪在主面前同掰饼， 我们跪在主面前同掰饼。当我双膝跪下， 举目仰望主光辉，上主啊，求怜悯我。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我们跪在主面前喝主杯， 我们跪在主面前喝主杯。当我双膝跪下， 举目仰望主光辉，上主啊，求怜悯我。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "我们跪在主面前赞美神， 我们跪在主面前赞美神。当我双膝跪下， 举目仰望主光辉，上主啊，求怜悯我。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-234虔守主餐.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "at": 0,
+      "region": "r1",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "songId": "06-010",
+  "status": "reviewed",
+  "source": {
+    "file": "06-010唯有基督.txt",
+    "sha256": "1c0c11233433b8836406f354d923283e31dd54fd943ab616ab09315897eed5da",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-010唯有基督.mp3",
+      "sha256": "57e6e1e12a8328464a60ccbb438074e68a7f34ff2e69018b49771563878c997d",
+      "duration": 249.36489795918368,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 23
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 29
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 30,
+      "endLine": 33
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 34,
+      "endLine": 37
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 38,
+      "endLine": 41
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 44,
+      "endLine": 47
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 48,
+      "endLine": 51
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 52,
+      "endLine": 55
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 56,
+      "endLine": 59
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 62,
+      "endLine": 65
+    },
+    "r14": {
+      "kind": "text",
+      "startLine": 66,
+      "endLine": 69
+    },
+    "r15": {
+      "kind": "text",
+      "startLine": 70,
+      "endLine": 73
+    },
+    "r16": {
+      "kind": "text",
+      "startLine": 74,
+      "endLine": 77
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 34.26,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 45.5,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 56.02,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 80.46,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 91.36,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 102.24,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 113.84,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 126.62,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 138.1,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 147.32,
+      "region": "r11",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 159.74,
+      "region": "r12",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 183.9,
+      "region": "r13",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 195.88,
+      "region": "r14",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 206.42,
+      "region": "r15",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 216.84,
+      "region": "r16",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Four complete original-score verses and every reading pass MIDI/optical audio checks. Two complete transcripts verify reading coverage. Later positions are early reading previews from independent unprompted audio decodes, not claimed sung onsets. One source word remains unverified between four identified words; another has an explicitly reviewed that/the difference. A clipped initial No uses the crop boundary only as a preview, with an independent word-end check. The final line is repeated while its original region remains visible. Five-screen browser checks require both languages of the previous last and next first lines to remain visible.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "In Christ alone my hope is found; He is my light, my strength, my song;",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "This cornerstone, this solid ground, Firm through the fiercest drought and storm.",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "What heights of love, what depths of peace, When fears are stilled, when strivings cease!",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "My comforter, my all in all— Here in the love of Christ I stand.",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "In Christ alone, Who took on flesh, Fullness of God in helpless babe!",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "This gift of love and righteousness, Scorned by the ones He came to save.",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "Till on that cross as Jesus died, The wrath of God was satisfied;",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "For ev'ry sin on Him was laid— Here in the death of Christ I live.",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "There in the ground His body lay, Light of the world by darkness slain;",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "Then bursting forth in glorious day, Up from the grave He rose again!",
+        "label": "第3段"
+      },
+      {
+        "region": "r11",
+        "text": "And as He stands in victory, Sin's curse has lost its grip on me;",
+        "label": "第3段"
+      },
+      {
+        "region": "r12",
+        "text": "For I am His and He is mine— Bought with the precious blood of Christ.",
+        "label": "第3段"
+      },
+      {
+        "region": "r13",
+        "text": "No guilt in life, no fear in death— This is the pow'r of Christ in me;",
+        "label": "第4段"
+      },
+      {
+        "region": "r14",
+        "text": "From life's first cry to final breath, Jesus commands my destiny.",
+        "label": "第4段"
+      },
+      {
+        "region": "r15",
+        "text": "No pow'r of hell, no scheme of man, Can ever pluck me from His hand;",
+        "label": "第4段"
+      },
+      {
+        "region": "r16",
+        "text": "Till He returns or calls me home— Here in the pow'r of Christ I'll stand.”",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-010唯有基督.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 4,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "policy": "earliest source-bound reading previews from independent original-audio decodes; sung onsets are not claimed",
+      "exceptions": "ev’ry/pow’r normalize to every/power. One gift is not recognized: both windows must identify This and the next three original words, while the uncertain word remains explicitly unverified. That/the requires an exact that witness. One clipped No uses the crop boundary only as an early preview and requires independent confirmation of its word end; no clipped onset is claimed."
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "songId": "06-021",
+  "status": "reviewed",
+  "source": {
+    "file": "06-021唯一最爱是你.txt",
+    "sha256": "b0e039911c9a73f5a6cd3cbbc6fbd88f5fa4cfae6386714fa2fa9c04bf34028f",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-021唯一最爱是你.mp3",
+      "sha256": "26c78d9e5eba24b5074b9bd1c99c34f55438d0d0417d617504d1e834ebad0e24",
+      "duration": 347.12525,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 9
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 10,
+      "endLine": 13
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 19,
+      "endLine": 22
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 26
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 27,
+      "endLine": 30
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 31,
+      "endLine": 34
+    },
+    "r9": {
+      "kind": "text",
+      "startLine": 36,
+      "endLine": 39
+    },
+    "r10": {
+      "kind": "text",
+      "startLine": 40,
+      "endLine": 43
+    },
+    "r11": {
+      "kind": "text",
+      "startLine": 44,
+      "endLine": 47
+    },
+    "r12": {
+      "kind": "text",
+      "startLine": 48,
+      "endLine": 49
+    },
+    "r13": {
+      "kind": "text",
+      "startLine": 51,
+      "endLine": 52
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 46.24,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 69.02,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 90.52,
+      "region": "r4",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 120.2,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 142.02,
+      "region": "r6",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 163.82,
+      "region": "r7",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 185.02,
+      "region": "r8",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 233.7,
+      "region": "r9",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 255.24,
+      "region": "r10",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 277.08,
+      "region": "r11",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 298.58,
+      "region": "r12",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 309.86,
+      "region": "r13",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Original score noteheads and ties match the pinned practice melody exactly. Three audio sections independently pass melody and chord checks; the score supports reading order and an approximate previous-line reference, not lyric onsets. Each subsequent reading is previewed at the earlier of two prompt-free source-prefix estimates, at least one second after that reference. One documented To Thee / Through the recognition difference also requires two contextual To Thee witnesses and four following original words. Browser checks require the previous last line and next first line to remain visible before and after every move. Initial reading is shown from zero; these positions are previews, not claimed sung onsets.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "Jesus Lord, my best love Thou art, Thou hast fully captured my heart; There is none in heav’n nor on earth like Thee, With thy beauty none can compete",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "When Thy voice first came to my ear, Whisp’ring in my heart words most dear, All past loves and aims lost their charm for me, All my boasts so vain now appear.",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "Throughout all the world, who compares with Thee? Who so full of worth, who so fair and sweet? Only Thou art worthy my love to win, Oh Lord Jesus , How I love Thee!",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "No more I who live, no more self-deceived, No more in the self’s, world indulged to be, Deep within I know you’re my only love, My best love in none else but Thee!",
+        "label": "第1段"
+      },
+      {
+        "region": "r5",
+        "text": "Jesus Lord, my best love Thou art, Rid all rocks that hide in my heart; Gladly I Thy bondslave of love would be, One heart, one will ever with Thee",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "Though my heart is oft not subdued, , Still Thy way alone it would choose; All I yearn for is what Thy heart desires, In Thy love alone peace I find.",
+        "label": "第2段"
+      },
+      {
+        "region": "r7",
+        "text": "Throughout all the world, who compares with Thee? Who so full of worth, who so fair and sweet? Only Thou art worthy my love to win, Oh Lord Jesus , How I love Thee!",
+        "label": "第2段"
+      },
+      {
+        "region": "r8",
+        "text": "No more I who live, no more self-deceived, No more in the self’s, world indulged to be, Deep within I know you’re my only love, My best love in none else but Thee!",
+        "label": "第2段"
+      },
+      {
+        "region": "r9",
+        "text": "Jesus Lord, my best love Thou art; Ne’er again from Thee I’d depart; Never hide Thy dear, smiling face from me. To none else I’d cling Lord, but Thee.",
+        "label": "第3段"
+      },
+      {
+        "region": "r10",
+        "text": "To Thee, Lord, my all I outpour, How Thy love my heart deeply fills, My eternal portion, mosr precious Lord, None but Thee I want evermore.",
+        "label": "第3段"
+      },
+      {
+        "region": "r11",
+        "text": "Throughout all the world, who compares with Thee? Who so full of worth, who so fair and sweet? Only Thou art worthy my love to win, Oh Lord Jesus , How I love Thee!",
+        "label": "第3段"
+      },
+      {
+        "region": "r12",
+        "text": "No more I who live, no more self-deceived, No more in the self’s, world indulged to be,",
+        "label": "第3段"
+      },
+      {
+        "region": "r13",
+        "text": "* Deep within I know you’re my only love, My best love in none else but Thee!",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-021唯一最爱是你.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "policy": "initial reading position from playback start",
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 3,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "policy": "source-bound score-supported previews from two prompt-free lyric openings",
+      "spellingReview": "To Thee is rendered as Through the in two free decodes; the following four original words match exactly."
+    }
+  }
+}

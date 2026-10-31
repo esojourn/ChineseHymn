@@ -73,6 +73,7 @@
             const maximum = Math.max(0, document.documentElement.scrollHeight - height);
             let previous = window.scrollY;
             this.origin = previous;
+            const regionBounds = [];
             this.positions = this.data.cues.map((cue, index) => {
                 const region = this.data.regions[cue.region];
                 let top, bottom, previewBottom;
@@ -93,12 +94,23 @@
                             (next.top + (next.bottom - next.top) * this.data.imageLayout.previewFraction);
                     }
                 }
+                regionBounds.push({ top, bottom });
                 previous = region.kind === 'text'
                     ? Core.textTarget(top, bottom, height, maximum)
                     : this.data.imageLayout ? Core.imageTarget(top, bottom, previewBottom, height, maximum)
                     : Core.regionTarget(top, bottom, height, previous, maximum);
                 return previous;
             });
+            if (this.data.provenance?.previousLinePreview?.version === 4) {
+                const edges = this.data.provenance.previousLinePreview.indices.map(index => {
+                    const before = this.data.regions[this.data.cues[index - 1].region];
+                    const after = this.data.regions[this.data.cues[index].region];
+                    const last = this.content.querySelector('[data-line="' + (before.endLine - 1) + '"]').getBoundingClientRect();
+                    const first = this.content.querySelector('[data-line="' + (after.startLine + 1) + '"]').getBoundingClientRect();
+                    return { index, top: last.top + window.scrollY, bottom: first.bottom + window.scrollY };
+                });
+                this.positions = Core.previewTargets(this.positions, regionBounds, edges, height, maximum);
+            }
         }
 
         setEnabled(enabled) {

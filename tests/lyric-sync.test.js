@@ -87,6 +87,32 @@ test('visible content stays still, oversized regions align at top and bottom is 
     assert.equal(Core.regionTarget(0, 100, 600, 100, 2200), 0);
 });
 
+test('bilingual preview keeps both neighbouring pairs visible at both stops', () => {
+    const regions = [{ top: 100, bottom: 180 }, { top: 200, bottom: 280 }, { top: 300, bottom: 380 }];
+    const edges = [{ index: 1, top: 140, bottom: 240 }, { index: 2, top: 240, bottom: 340 }];
+    const targets = Core.previewTargets([0, 180, 360], regions, edges, 320, 1000);
+    assert.deepEqual(targets, [0, 140, 240]);
+    for (const edge of edges) for (const index of [edge.index - 1, edge.index]) {
+        assert.ok(edge.top - targets[index] >= 0);
+        assert.ok(edge.bottom - targets[index] <= 320);
+    }
+});
+
+test('bilingual preview rejects missing, repeated or invalid line boundaries', () => {
+    const data = fixture();
+    data.source.type = 'text';
+    data.regions = { top: { kind: 'text', startLine: 0, endLine: 3 }, bottom: { kind: 'text', startLine: 4, endLine: 7 } };
+    data.provenance = { previousLinePreview: { version: 4, indices: [1] } };
+    assert.deepEqual(Core.validate(data), []);
+    for (const indices of [[0], [1, 1], [3], [1.5]]) {
+        data.provenance.previousLinePreview.indices = indices;
+        assert.ok(Core.validate(data).length);
+    }
+    data.provenance.previousLinePreview.indices = [1];
+    data.regions.top.endLine = 0;
+    assert.ok(Core.validate(data).length);
+});
+
 test('all transition samples stay in bounds and progress monotonically', () => {
     let previous = 0;
     for (let i = 0; i <= 100; i++) {

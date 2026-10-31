@@ -587,6 +587,14 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'recognition difference also requires two contextual To Thee witnesses and four following original words. Browser checks require the '
                               'previous last line and next first line to remain visible before and after every move. Initial reading '
                               'is shown from zero; these positions are previews, not claimed sung onsets.')
+    if previous_preview and previous_preview.get('version') == 4:
+        method_description = ('Four complete original-score verses and every reading pass MIDI/optical audio checks. '
+                              'Two complete transcripts verify reading coverage. Later positions are early reading previews '
+                              'from independent unprompted audio decodes, not claimed sung onsets. One source word remains '
+                              'unverified between four identified words; another has an explicitly reviewed that/the difference. '
+                              'A clipped initial No uses the crop boundary only as a preview, with an independent word-end check. '
+                              'The final line is repeated while its original region remains visible. Five-screen browser checks '
+                              'require both languages of the previous last and next first lines to remain visible.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:

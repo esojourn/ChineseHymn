@@ -50,6 +50,17 @@
                 region.top < 0 || region.bottom > 1 || region.bottom <= region.top)) errors.push('图片范围无效：' + id);
         }
         const cues = Array.isArray(data.cues) ? data.cues : [];
+        const preview = data.provenance?.previousLinePreview;
+        if (preview?.version === 4 && (data.source?.type !== 'text' || !Array.isArray(preview.indices) ||
+            !preview.indices.length || preview.indices.some((index, position) => {
+                if (!Number.isInteger(index) || index < 1 || index >= cues.length ||
+                    (position > 0 && index <= preview.indices[position - 1])) return true;
+                const invalid = [cues[index - 1], cues[index]].some(cue => {
+                    const region = regions?.[cue?.region];
+                    return !region || region.kind !== 'text' || region.endLine - region.startLine < 1;
+                });
+                return invalid || regions[cues[index - 1].region].endLine >= regions[cues[index].region].startLine;
+            }))) errors.push('双语预读设置无效');
         if (!cues.length && (options.reviewed || data.status === 'reviewed') && tracks.some(track => track && track.reviewed && !track.cues)) errors.push('没有时间点');
         let previous = -1;
         for (const cue of cues) {
@@ -116,6 +127,25 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
+    // Keep both sides of a bilingual preview visible throughout a movement.
+    function previewTargets(targets, regions, edges, viewport, maximum) {
+        const bounds = targets.map((_, index) => ({
+            min: regions[index].bottom - regions[index].top <= viewport * 0.8
+                ? Math.max(0, regions[index].bottom - viewport) : 0,
+            max: Math.min(maximum, regions[index].top)
+        }));
+        for (const edge of edges) {
+            const min = Math.max(0, edge.bottom - viewport);
+            const max = Math.min(maximum, edge.top);
+            for (const index of [edge.index - 1, edge.index]) {
+                bounds[index].min = Math.max(bounds[index].min, min);
+                bounds[index].max = Math.min(bounds[index].max, max);
+            }
+        }
+        return targets.map((target, index) => bounds[index].min <= bounds[index].max
+            ? Math.max(bounds[index].min, Math.min(bounds[index].max, target)) : target);
+    }
+
     function imageTarget(top, bottom, previewBottom, viewport, maximum) {
         const margin = Math.min(60, viewport * 0.1);
         // Center the current system. Reveal more of the following system if space permits,
@@ -126,5 +156,5 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
-    return { normalizeText, validate, ease, locate, regionTarget, textTarget, imageTarget };
+    return { normalizeText, validate, ease, locate, regionTarget, textTarget, previewTargets, imageTarget };
 });

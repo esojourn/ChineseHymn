@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "songId": "06-018",
+  "status": "reviewed",
+  "source": {
+    "file": "06-018谷中百合花.txt",
+    "sha256": "9067ffd216e039c32715a0e546dedc31887b27f737bbcf71d695024fd8e93b07",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-018谷中百合花.mp3",
+      "sha256": "f871e9742b8ea31e630dab32dab11978b2277220b0e98c980099915218aefec3",
+      "duration": 403.128,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 6
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 7,
+      "endLine": 10
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 15
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 19
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 21,
+      "endLine": 24
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 25,
+      "endLine": 28
+    },
+    "refrain": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.78,
+      "region": "refrain",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 74.46,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "return"
+    },
+    {
+      "at": 111.14,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 158.62,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 192.22,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 268.2,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 303.9,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete printed melody and original recording are checked with four musical paths. Independent Korean and Mandarin transcriptions verify language changes and source-bound reading previews. A repeated final reading stays visible; two independent transcriptions confirm its extended last sung line. Five-screen checks retain the previous last line and the next first line. Preview positions are not claimed as exact sung onsets.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "恩主耶稣是我良友，有主胜得万有， 万人中救主是我最好灵友， 主是谷中百合花，我唯一需要祂， 祂能洗净我，使我圣洁无瑕。",
+        "label": "第1段"
+      },
+      {
+        "region": "refrain",
+        "text": "主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱祂。",
+        "label": "第1段"
+      },
+      {
+        "region": "r1",
+        "text": "恩主耶稣是我良友，有主胜得万有， 万人中救主是我最好灵友， 主是谷中百合花，我唯一需要祂， 祂能洗净我，使我圣洁无瑕。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "悲伤时祂来解忧，患难时祂保佑， 一切忧虑全放在主肩头； 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱祂。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "主带走一切忧愁，将我悲伤担当， 当我受试探时祂是我力量， 我愿尽心尽力爱祂，毁掉一切偶像， 祂有能力保守我为祂而活。",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "纵然世界弃绝我，撒旦来试探我， 却靠耶稣能过得胜生活； 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱祂。",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "恩主永不把我舍弃，我主何等仁慈， 我要忠诚信靠遵行主意旨， 虽有烈火绕我身旁，任遭何事不慌， 主赐吗哪喂养我灵得健壮。",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "那日在天见主面，享受主爱甘甜， 有快乐江河长流至永年。 主是晨星灿烂光华，是谷中百合花， 万人中救主最美好，我爱祂。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-018谷中百合花.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 6,
+      "indices": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "policy": "early source-bound reading previews; sung onsets are not claimed"
+    }
+  }
+}

@@ -301,6 +301,22 @@ def previous_reading_context(profile):
     return True
 
 
+def neighboring_verse_context(profile):
+    review = profile.get('neighboringVerseContext')
+    if review is None:
+        return False
+    if (not isinstance(review, dict) or set(review) != {'version', 'reason'} or
+            type(review.get('version')) is not int or review['version'] != 1 or
+            not isinstance(review.get('reason'), str) or not review['reason'].strip() or
+            any(key in profile for key in ['previousReadingContext', 'sourceVerseContext',
+                'readingSectionReview', 'sourceVerseEdgeReview', 'musicalVerseEdges',
+                'initialVerseContext', 'shortFormReview', 'instrumentalOutroReview',
+                'instrumentalOutroAlternatives', 'vocalInterludes', 'sourceVerseMusicRange',
+                'referenceEndingSequence', 'repeatedSourceReadings', 'sourceChorusReuse'])):
+        raise ValueError('相邻诗节上下文须明确版本和原因，不能叠加其他乐段上下文')
+    return True
+
+
 def source_verse_context(source, profile):
     review = profile.get('sourceVerseContext')
     if review is None:
@@ -669,6 +685,8 @@ def vocal_interlude_material(source, profile, material):
 def measured_performance(profile, window, material, target, cache, prepare, detail, source_verses=None,
                          edge_verses=None, initial_verse_sections=None, short_form=False):
     melody, optical, reference = material
+    if neighboring_verse_context(profile) and reference['symbolicRows']['editCost'] != 0:
+        raise ValueError('相邻诗节上下文须与完整原谱逐音零编辑匹配')
     verify_local = local_matcher(profile)
     previous_context = previous_reading_context(profile)
     proof = detail['performance'] = {}
@@ -676,7 +694,7 @@ def measured_performance(profile, window, material, target, cache, prepare, deta
         reference['symbolicRows']['semitoneShift'], midi.match_template, proof, local_match=verify_local,
         reading_sections=profile.get('readingSectionReview'), previous_context=previous_context,
         source_verses=source_verses, edge_verses=edge_verses, initial_verse_sections=initial_verse_sections,
-        short_form=short_form)
+        short_form=short_form, neighboring_verses=neighboring_verse_context(profile))
     variants = outro_profiles(profile)
     if variants:
         checks = detail['instrumentalOutroChecks'] = []
@@ -749,6 +767,11 @@ def generate(song, profile, cache, prepare=False):
             measured = measured_performance(track_profile, window, track_material, target, cache, prepare,
                                            detail, source_verses=verses, edge_verses=edge_verses,
                                            initial_verse_sections=initial_sections, short_form=short_form is not None)
+            if neighboring_verse_context(track_profile):
+                if len(source['verses']) != len(measured) or any(len(verse) != 1 for verse in source['verses']):
+                    raise ValueError('相邻诗节上下文须逐节覆盖全部原文')
+                music = repeated_verses(audio, len(measured), cache)
+                detail['neighboringVerseMusic'] = verify_verse_music(measured, [[i] for i in range(len(measured))], music)
             if verses is not None:
                 music = (repeated_verses(audio, len(verses), cache) if music_section is None else
                          repeated_verses(audio, len(verses), cache,

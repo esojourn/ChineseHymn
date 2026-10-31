@@ -323,7 +323,7 @@ def verify_verse_music(times, verses, music):
 
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
                       local_match=None, reading_sections=None, previous_context=False, source_verses=None,
-                      edge_verses=None, initial_verse_sections=None, short_form=False):
+                      edge_verses=None, initial_verse_sections=None, short_form=False, neighboring_verses=False):
     if (type(short_form) is not bool or short_form and (
             len(melody_rows) != 2 or any(item is not None for item in
                 [reading_sections, source_verses, edge_verses, initial_verse_sections]))):
@@ -331,6 +331,14 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
     if len(melody_rows) != len(optical_rows) or len(melody_rows) < (2 if short_form else 3):
         raise ValueError('完整结构至少需要三个明确的正文阅读区域')
     groups = reading_section_groups(len(melody_rows), reading_sections)
+    if (type(neighboring_verses) is not bool or neighboring_verses and
+            (len(melody_rows) < 4 or any(item is not None for item in
+                [reading_sections, source_verses, edge_verses, initial_verse_sections]) or
+             previous_context or short_form or
+             any(row['notes'] != optical_rows[0]['notes'] or
+                 row['pitchOffsets'] != optical_rows[0]['pitchOffsets'] or
+                 row['rhythmWeights'] != optical_rows[0]['rhythmWeights'] for row in optical_rows[1:]))):
+        raise ValueError('相邻诗节上下文须使用至少四遍完整相同的原谱，且不能叠加其他分组策略')
     if initial_verse_sections is not None and (
             reading_sections is not None or source_verses is not None or
             not isinstance(initial_verse_sections, list) or
@@ -386,12 +394,21 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
             printed_rows = optical_rows[:count]
             query_span = (a['starts'][count] + b['starts'][count]) / 2 - start
         prefix = []
-        if previous_context and index:
+        if neighboring_verses and index:
+            prefix = list(range(groups[max(0, index - 2)][0], first))
+        elif previous_context and index:
             prefix = list(range(groups[index - 1][0], first))
         if source_verses is not None:
             verse_index = next(i for i, verse in enumerate(source_verses) if index in verse)
             context_first = source_verses[max(0, verse_index - 1)][0]
             prefix = list(range(groups[context_first][0], first))
+        if neighboring_verses and index == 0:
+            local_rows.append(joined(melody_rows, 'spatialWeights', groups[1]))
+            printed_rows.append(joined(optical_rows, 'rhythmWeights', groups[1]))
+            next_after = groups[1][-1] + 1
+            query_span = (a['starts'][next_after] + b['starts'][next_after]) / 2 - query_start
+            evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
+                                      'neighborContext': {'sections': groups[1], 'targetRow': 0}})
         if prefix:
             query_start = (a['starts'][prefix[0]] + b['starts'][prefix[0]]) / 2
             query_span = end - query_start
@@ -400,14 +417,17 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
             target_row = 1
         local = verify_local(local_rows, target[1], target[0], query_span, query_start, 'spatialWeights')
         optical = verify_local(printed_rows, target[1], target[0], query_span, query_start, 'rhythmWeights')
-        evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
-                                  'melody': local, 'optical': optical})
+        if neighboring_verses and index == 0:
+            evidence['local'][-1].update(melody=local, optical=optical)
+        else:
+            evidence['local'].append({'index': index, 'estimate': start, 'duration': span,
+                                      'melody': local, 'optical': optical})
         if index == 0 and initial_verse_sections is not None:
             evidence['local'][-1]['initialVerseContext'] = {
                 'sections': initial_verse_sections, 'queryStart': query_start,
                 'queryDuration': query_span, 'targetRow': 0}
         if prefix:
-            context = {'fromReading': index - 1,
+            context = {'fromReading': max(0, index - 2) if neighboring_verses else index - 1,
                 'sections': prefix, 'queryStart': query_start, 'queryDuration': query_span,
                 'targetRow': 1}
             if source_verses is None:

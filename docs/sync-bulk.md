@@ -1713,3 +1713,5 @@ python tools/variant-score-sync.py --cache sync-drafts/bulk --songs 02-234
 ```sh
 python tools/separate-verse-sync.py --cache sync-drafts/bulk --songs 01-171 --prepare
 ```
+
+四节完整相同的原谱遇到相近调性干扰时，可显式启用 `neighboringVerseContext`。首节的局部核对包含下一完整节，后续局部核对最多包含前两完整节；原谱与 MIDI 必须逐音零编辑、每节的原谱音符和节奏完全相同。每个位置仍须通过整曲 MIDI、整曲光学、局部 MIDI 和局部光学的原有成本、调性、跨度及半秒一致性门槛，还需独立音乐重复确认每节相位。此策略不能叠加其他乐段分组或上下文配置，也不改变默认曲目的检查方式。

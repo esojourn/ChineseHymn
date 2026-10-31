@@ -29064,5 +29064,323 @@
       ]
     },
     "formReview": "独立核对原有05-301歌谱及Timeless Truths原始Salvationist MIDI。原MIDI有三拍静默前置，完整旋律为3至67四分拍，共99个最高旋律音头；A为3至35，B为35至67，结尾整句T为59至67。原图六行简谱除最后括号阿们两音（录音未唱）均逐音保留，包括A末印刷休止；重组A B、器乐B、重唱B、A B、T T，全部318个发声音头与MIDI零编辑、唯一调性对应，不改音高、时值或截掉任何唱词。原图第四谱行小节线扫描有两像素断裂，显式版本7只对小节线判别做三像素垂直闭运算，OCR及节奏仍读原始像素。整曲及局部MIDI和印刷节奏四路径均须保留成本0.35、调性区分0.06、跨度75%至125%、所有正文起点互差不超过0.5秒及首尾容量检查。前一区域上下文包括间奏，解决相同结尾句的反复相位，未通过的传统和声模板及其他谱面实验不用于发布。11秒及132秒仅为整曲搜索范围估计，所有六个起点由音频路径计算。已有05-301数据、原始文本及媒体均不修改。"
+  },
+  "01-378": {
+    "version": 1,
+    "sourceHash": "c2938988e706a372ba8cf4c5a4fd0afd48ec9b17b20fb49cca50b081d2d4c279",
+    "tracks": [
+      {
+        "file": "01-378我是否要背负十架.mp3",
+        "sha256": "194c48dc73ad5783e20d88b262e86e0d76901935db38085f52cfee0db4a3992a"
+      }
+    ],
+    "audioFile": "01-378我是否要背负十架.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4"
+    ],
+    "regionOpenings": [
+      "我是否要背负十架，跟",
+      "别人苦战要得荣耀，血",
+      "岂可安逸如无仇敌？岂",
+      "若要得胜必须征战，胆"
+    ],
+    "sampling": {
+      "durationEstimate": 72,
+      "onsetEstimate": 6.56
+    },
+    "midiReference": {
+      "origin": {
+        "kind": "printed-numbered-score",
+        "file": "reference/external/soldier-arlington-reviewed-print.mid",
+        "sha256": "c51f4a1972628bff45394e336bd035cf897c87677689e3b0fd461ebd1a428cc2",
+        "printedRhythmReference": {
+          "sourceSha256": "edfc297bdbe2939482dcd350196a366f4366c077c35482f0a1c4bea54f2e8360",
+          "tonicMidi": 67,
+          "numberedRowsAndQuarterBeats": [
+            [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                1.5
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1.5
+              ],
+              [
+                1,
+                0.5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                1.5
+              ],
+              [
+                3,
+                0.5
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                5,
+                1.5
+              ],
+              [
+                5,
+                0.5
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      "file": "reference/external/soldier-arlington-printed-four-verses.mid",
+      "sha256": "a1e13c09d53e1524710b98723f9fa29197f6a03d5631dab2f9ede9d45c3a5c40",
+      "arrangement": {
+        "melodyTrack": 0,
+        "melodyTrackName": "Manual transcription of a printed numbered melody",
+        "quarterLength": 48,
+        "sections": [
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            48
+          ]
+        ]
+      }
+    },
+    "readingBoundaries": [
+      {
+        "onsetIndex": 0,
+        "pitches": [
+          7,
+          11,
+          11,
+          11,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 29,
+        "pitches": [
+          7,
+          11,
+          11,
+          11,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 58,
+        "pitches": [
+          7,
+          11,
+          11,
+          11,
+          9
+        ]
+      },
+      {
+        "onsetIndex": 87,
+        "pitches": [
+          7,
+          11,
+          11,
+          11,
+          9
+        ]
+      }
+    ],
+    "opticalReference": {
+      "image": {
+        "file": "modern-sectional-scores/data/soldier-arlington-xss.jpg",
+        "url": "https://www.xueshengshi.com/wp-content/uploads/2025/01/20250121_201058-scaled.jpg",
+        "sha256": "edfc297bdbe2939482dcd350196a366f4366c077c35482f0a1c4bea54f2e8360"
+      },
+      "pageUrl": "https://www.xueshengshi.com/?p=18439",
+      "recognitionFile": "modern-sectional-scores/ocr/soldier-arlington-xss.jpg.json",
+      "recognizerVersion": 5,
+      "noteExtractorVersion": 5,
+      "reviewedSystems": [
+        {
+          "notes": {
+            "recognitionBand": [
+              363,
+              413
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                539,
+                722
+              ]
+            }
+          ]
+        },
+        {
+          "notes": {
+            "recognitionBand": [
+              1092,
+              1145
+            ]
+          },
+          "lyrics": [
+            {
+              "recognitionBand": [
+                1285,
+                1456
+              ]
+            }
+          ]
+        }
+      ],
+      "rowsSha256": "f97ff3ce0fc465b04cc8b886ef047e138607c279acdada358207eec3853f41f6",
+      "ties": {},
+      "tuplets": [],
+      "parts": {
+        "V": [
+          [
+            0,
+            0,
+            15
+          ],
+          [
+            1,
+            0,
+            14
+          ]
+        ]
+      },
+      "order": [
+        "V",
+        "V",
+        "V",
+        "V"
+      ],
+      "readingStarts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "neighboringVerseContext": {
+      "version": 1,
+      "reason": "四节相同旋律；每次局部核对包含完整相邻诗节，以区分伴奏中的近似调性。首节含下一整节，其他节至多含前两整节；全部成本、调性、跨度和0.5秒一致性门槛不变。"
+    },
+    "formReview": "《我是否要背负十架》四节各一阅读区域；采用学圣诗原版教会圣诗143简谱，人工完整转录48拍旋律并以光学识别独立核对，四次共116个发声音头与MIDI零编辑一致。第一节局部上下文加入下一整节，其余至多加入前两整节，仍须分别通过完整 MIDI、完整光学、局部 MIDI、局部光学、调性区分、跨度和0.5秒一致性检查。四节再由独立音乐重复逐节验证，秒数全部从实际录音测得；不声称完成逐首人工听审。"
   }
 }

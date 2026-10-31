@@ -1476,6 +1476,41 @@ class SectionalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             performance_times(melody, optical, target, 30, 2, 2, expensive, {}, previous_context=True)
 
+    def test_neighboring_verses_use_complete_context_without_relaxing_checks(self):
+        review = {'version': 1, 'reason': 'Complete neighboring verses clarify the key.'}
+        self.assertFalse(self.cli.neighboring_verse_context({}))
+        self.assertTrue(self.cli.neighboring_verse_context({'neighboringVerseContext': review}))
+        for invalid in [{**review, 'version': True}, {**review, 'reason': ''}, {**review, 'offset': 1}]:
+            with self.assertRaises(ValueError):
+                self.cli.neighboring_verse_context({'neighboringVerseContext': invalid})
+        with self.assertRaises(ValueError):
+            self.cli.neighboring_verse_context({'neighboringVerseContext': review, 'previousReadingContext': {}})
+        rows = [{'notes': [1], 'pitchOffsets': [0], 'spatialWeights': [1], 'rhythmWeights': [1]}] * 4
+        target = (np.array([0., 50.]), None)
+        def matcher(query, chroma, times, duration, onset, weight):
+            if len(query) == 4:
+                starts = [5, 15, 25, 35]
+            else:
+                starts = [onset, onset + 10 * len(query[0]['notes'])]
+            return {'best': {'cost': .2, 'span': duration, 'key': 0, 'starts': starts},
+                    'runnerUp': {'cost': .4}}
+        evidence = {}
+        self.assertEqual(performance_times(rows, rows, target, 40, 5, 0, matcher, evidence,
+                                           neighboring_verses=True), [5, 15, 25, 35])
+        self.assertEqual(evidence['local'][0]['neighborContext']['sections'], [1])
+        self.assertEqual(evidence['local'][3]['previousReadingContext']['sections'], [1, 2])
+        changed = [copy.deepcopy(row) for row in rows]
+        changed[2]['notes'] = [2]
+        with self.assertRaisesRegex(ValueError, '完整相同'):
+            performance_times(rows, changed, target, 40, 5, 0, matcher, {}, neighboring_verses=True)
+        def ambiguous(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2:
+                result['runnerUp']['cost'] = .25
+            return result
+        with self.assertRaises(ValueError):
+            performance_times(rows, rows, target, 40, 5, 0, ambiguous, {}, neighboring_verses=True)
+
     def test_previous_context_includes_intervening_instrumental_sections_without_new_reading_cues(self):
         review = {'version': 1, 'groups': [[0], [2], [4]], 'instrumentalSections': [1, 3, 5],
                   'reason': 'reviewed instrumental interludes and outro'}

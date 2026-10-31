@@ -323,7 +323,8 @@ def verify_verse_music(times, verses, music):
 
 def performance_times(melody_rows, optical_rows, target, duration, onset, reference_key, match, evidence,
                       local_match=None, reading_sections=None, previous_context=False, source_verses=None,
-                      edge_verses=None, initial_verse_sections=None, short_form=False, neighboring_verses=False):
+                      edge_verses=None, initial_verse_sections=None, short_form=False, neighboring_verses=False,
+                      previous_context_depth=1):
     if (type(short_form) is not bool or short_form and (
             len(melody_rows) != 2 or any(item is not None for item in
                 [reading_sections, source_verses, edge_verses, initial_verse_sections]))):
@@ -355,6 +356,9 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         evidence['edgeVerseReadings'] = edge_verses
     if type(previous_context) is not bool:
         raise ValueError('前一区域上下文必须显式启用')
+    if (type(previous_context_depth) is not int or previous_context_depth not in (1, 2) or
+            previous_context_depth == 2 and (not previous_context or reading_sections is None)):
+        raise ValueError('两个前置阅读区域须显式绑定实际乐段分组')
     if source_verses is not None:
         source_verse_groups(len(groups), source_verses)
         if previous_context:
@@ -397,7 +401,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
         if neighboring_verses and index:
             prefix = list(range(groups[max(0, index - 2)][0], first))
         elif previous_context and index:
-            prefix = list(range(groups[index - 1][0], first))
+            prefix = list(range(groups[max(0, index - previous_context_depth)][0], first))
         if source_verses is not None:
             verse_index = next(i for i, verse in enumerate(source_verses) if index in verse)
             context_first = source_verses[max(0, verse_index - 1)][0]
@@ -427,7 +431,7 @@ def performance_times(melody_rows, optical_rows, target, duration, onset, refere
                 'sections': initial_verse_sections, 'queryStart': query_start,
                 'queryDuration': query_span, 'targetRow': 0}
         if prefix:
-            context = {'fromReading': max(0, index - 2) if neighboring_verses else index - 1,
+            context = {'fromReading': max(0, index - (2 if neighboring_verses else previous_context_depth)),
                 'sections': prefix, 'queryStart': query_start, 'queryDuration': query_span,
                 'targetRow': 1}
             if source_verses is None:

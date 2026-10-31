@@ -48,7 +48,7 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                         document.querySelector('.text-inner'), data, track);
                 }, { data, track });
                 const bilingualPreview = [2, 4].includes(data.provenance?.previousLinePreview?.version);
-                const extendedPreview = bilingualPreview || data.provenance?.previousLinePreview?.version === 3;
+                const extendedPreview = bilingualPreview || [3, 6].includes(data.provenance?.previousLinePreview?.version);
                 const viewports = [{ width: 1280, height: 800 }, { width: 390, height: 844 }, { width: 844, height: 390 }];
                 if (extendedPreview) viewports.push({ width: 320, height: 568 }, { width: 568, height: 320 });
                 for (const viewport of viewports) {

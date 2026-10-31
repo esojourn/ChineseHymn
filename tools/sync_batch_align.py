@@ -595,6 +595,12 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'A clipped initial No uses the crop boundary only as a preview, with an independent word-end check. '
                               'The final line is repeated while its original region remains visible. Five-screen browser checks '
                               'require both languages of the previous last and next first lines to remain visible.')
+    if previous_preview and previous_preview.get('version') == 6:
+        method_description = ('Complete printed melody and original recording are checked with four musical paths. '
+                              'Independent Korean and Mandarin transcriptions verify language changes and source-bound '
+                              'reading previews. A repeated final reading stays visible; two independent transcriptions '
+                              'confirm its extended last sung line. Five-screen checks retain the previous last line '
+                              'and the next first line. Preview positions are not claimed as exact sung onsets.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:

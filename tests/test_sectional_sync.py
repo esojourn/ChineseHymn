@@ -1528,6 +1528,34 @@ class SectionalTests(unittest.TestCase):
         self.assertEqual(queries[4:6], [[[1, 2], [3]], [[1, 2], [3]]])
         self.assertEqual(queries[6:8], [[[3, 4], [5]], [[3, 4], [5]]])
 
+    def test_two_previous_readings_include_all_intervening_sections_and_keep_checks(self):
+        review = {'version': 1, 'groups': [[0], [2], [4]], 'instrumentalSections': [1, 3, 5],
+                  'reason': 'Two prior readings provide additional original musical context.'}
+        rows = [{'notes': [i + 1], 'pitchOffsets': [0], 'spatialWeights': [1], 'rhythmWeights': [1]}
+                for i in range(6)]
+        def matcher(query, chroma, times, duration, onset, weight):
+            starts = [2, 8, 12, 18, 22, 28] if len(query) == 6 else (
+                [onset, onset + 5 * len(query[0]['notes'])] if len(query) == 2 else [onset])
+            return {'best': {'cost': .2, 'span': duration, 'key': 0, 'starts': starts},
+                    'runnerUp': {'cost': .4}}
+        evidence = {}
+        target = (np.arange(36), np.zeros((12, 36)))
+        self.assertEqual(performance_times(rows, rows, target, 30, 2, 0, matcher, evidence,
+                                          reading_sections=review, previous_context=True,
+                                          previous_context_depth=2), [2, 12, 22])
+        self.assertEqual(evidence['local'][2]['previousReadingContext']['sections'], [0, 1, 2, 3])
+        self.assertEqual(evidence['local'][2]['previousReadingContext']['fromReading'], 0)
+        with self.assertRaises(ValueError):
+            performance_times(rows, rows, target, 30, 2, 0, matcher, {}, previous_context_depth=2)
+        def disputed(*args):
+            result = matcher(*args)
+            if len(args[0]) == 2 and len(args[0][0]['notes']) == 4:
+                result['best']['starts'][-1] += .6
+            return result
+        with self.assertRaisesRegex(ValueError, '四条路径'):
+            performance_times(rows, rows, target, 30, 2, 0, disputed, {}, reading_sections=review,
+                              previous_context=True, previous_context_depth=2)
+
     def test_reading_groups_account_for_every_section_and_cannot_skip_undeclared_music(self):
         review = {'version': 1, 'groups': [[0, 1], [3], [4]],
                   'instrumentalSections': [2, 5], 'reason': 'reviewed instrumental interlude and outro'}

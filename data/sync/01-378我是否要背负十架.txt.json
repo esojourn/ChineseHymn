@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "songId": "01-378",
+  "status": "reviewed",
+  "source": {
+    "file": "01-378我是否要背负十架.txt",
+    "sha256": "c2938988e706a372ba8cf4c5a4fd0afd48ec9b17b20fb49cca50b081d2d4c279",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-378我是否要背负十架.mp3",
+      "sha256": "194c48dc73ad5783e20d88b262e86e0d76901935db38085f52cfee0db4a3992a",
+      "duration": 80.01306122448979,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    }
+  },
+  "cues": [
+    {
+      "at": 6.2,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 24.35,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 42.25,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 60.2,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我是否要背负十架，跟随羔羊前行？ 是否惧怕为主做工，羞于承认主名？",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "别人苦战要得荣耀，血汗满披沙场； 我岂可以安坐花轿，盼望抬进天堂？",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "岂可安逸如无仇敌？岂无洪波当堵？ 世俗岂与主恩为友？岂能助我向主？",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "若要得胜必须征战，胆量求主加添； 不辞劳苦，忍受心酸，靠主真道向前。",
+        "label": "第4段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-378我是否要背负十架.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  }
+}

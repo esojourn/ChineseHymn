@@ -1,0 +1,308 @@
+{
+  "06-021": {
+    "version": 1,
+    "sourceHash": "b0e039911c9a73f5a6cd3cbbc6fbd88f5fa4cfae6386714fa2fa9c04bf34028f",
+    "tracks": [
+      {
+        "file": "06-021唯一最爱是你.mp3",
+        "sha256": "26c78d9e5eba24b5074b9bd1c99c34f55438d0d0417d617504d1e834ebad0e24"
+      }
+    ],
+    "audioFile": "06-021唯一最爱是你.mp3",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13"
+    ],
+    "score": {
+      "svg": "reference/external/hymnal-ns351-p.svg",
+      "svgSha256": "9b7791a93e100d04c204ca66354b313a8dea65d475aae64a123e749bfeb7f514",
+      "practice": "reference/external/hymnal-ns351-learn.json",
+      "practiceSha256": "ea76ef2256a7a24b3a32a585435e76a7ba0e38da1b75cb051b386696fa05772f",
+      "ties": [
+        [
+          32,
+          33
+        ],
+        [
+          68,
+          69
+        ],
+        [
+          107,
+          108
+        ],
+        [
+          146,
+          147
+        ]
+      ],
+      "url": "https://www.hymnal.net/Hymns/NewSongs/svg/ns0351_p.svg",
+      "practiceUrl": "https://www.hymnal.net/en/learn-data/ns/351"
+    },
+    "transcripts": [
+      {
+        "file": "segmented-preview-inputs/medium-whole.json",
+        "sha256": "504062e0517cc0246110c159315196b77772ee00f7d4465afbea396a115a0d5a",
+        "kind": "medium-whole"
+      },
+      {
+        "file": "segmented-preview-inputs/turbo-whole.json",
+        "sha256": "f58264a0baabedc7aa8b8cab9ddc499b76b2e2d366b3b61faf67206a60756bf3",
+        "kind": "turbo-whole"
+      },
+      {
+        "file": "segmented-preview-inputs/medium-contiguous.json",
+        "sha256": "8c9d3c4c9575ff7ef7ad4655ebbd6a0f135d72127b44ea4e4974531c67add91c",
+        "kind": "medium-contiguous"
+      },
+      {
+        "file": "segmented-preview-inputs/turbo-contiguous.json",
+        "sha256": "65130f2ae63e3e6edf3a5ab2de371e63fc7cd4d7cc59adcb7990687a40603d20",
+        "kind": "turbo-contiguous"
+      }
+    ],
+    "models": {
+      "large-v3": {
+        "repository": "Systran/faster-whisper-large-v3",
+        "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+        "sha256": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+        "tokenizerSha256": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca"
+      },
+      "large-v3-turbo": {
+        "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+        "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "tokenizerSha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "medium": {
+        "repository": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      }
+    },
+    "readings": [
+      {
+        "index": 1,
+        "wordCount": 3,
+        "windows": [
+          {
+            "model": "turbo-whole"
+          },
+          {
+            "model": "large-v3",
+            "before": 6,
+            "after": 16
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 2,
+        "wordCount": 4,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 6,
+            "after": 16
+          },
+          {
+            "model": "large-v3",
+            "before": 4,
+            "after": 14
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 3,
+        "wordCount": 2,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 4,
+        "wordCount": 2,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 5,
+        "wordCount": 3,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 6,
+            "after": 16
+          },
+          {
+            "model": "large-v3",
+            "before": 4,
+            "after": 14
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 6,
+        "wordCount": 4,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 7,
+        "wordCount": 2,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 8,
+        "wordCount": 2,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 6,
+            "after": 16
+          },
+          {
+            "model": "large-v3",
+            "before": 4,
+            "after": 14
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 9,
+        "wordCount": 6,
+        "windows": [
+          {
+            "model": "large-v3-turbo",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3-turbo",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": [
+          "through",
+          "the",
+          "lord",
+          "my",
+          "all",
+          "i"
+        ]
+      },
+      {
+        "index": 10,
+        "wordCount": 4,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 6,
+            "after": 16
+          },
+          {
+            "model": "large-v3",
+            "before": 4,
+            "after": 14
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 11,
+        "wordCount": 2,
+        "windows": [
+          {
+            "model": "large-v3",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      },
+      {
+        "index": 12,
+        "wordCount": 4,
+        "windows": [
+          {
+            "model": "large-v3-turbo",
+            "before": 8,
+            "after": 14
+          },
+          {
+            "model": "large-v3-turbo",
+            "before": 10,
+            "after": 12
+          }
+        ],
+        "decodedPrefix": null
+      }
+    ],
+    "review": "三段录音各自核对原始谱面音符、旋律与和弦；谱面歌词为不同版本，不把小节头视为原文起唱。每个阅读区域以两组无提示原始录音窗口核对源文起句并提前显示；To Thee 在两窗口识别成 Through the，后续 Lord my all I 四词完全一致。五种屏幕均须保证前句末行和后句首行在移动前后可见。"
+  }
+}

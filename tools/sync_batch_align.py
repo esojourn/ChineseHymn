@@ -568,6 +568,14 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'windows identify the complete adjacent original lyric lines, and the preview follows the latest '
                               'previous-line end from both transcripts and both windows by 0.5 seconds. Other positions retain '
                               'the original contextual acoustic checks. Original lyrics are preserved.')
+    if previous_preview and previous_preview.get('version') == 3:
+        method_description = ('Original score noteheads and ties match the pinned practice melody exactly. Three audio sections '
+                              'independently pass melody and chord checks; the score supports reading order and an approximate '
+                              'previous-line reference, not lyric onsets. Each subsequent reading is previewed at the earlier of two '
+                              'prompt-free source-prefix estimates, at least one second after that reference. One documented To Thee / Through the '
+                              'recognition difference also requires two contextual To Thee witnesses and four following original words. Browser checks require the '
+                              'previous last line and next first line to remain visible before and after every move. Initial reading '
+                              'is shown from zero; these positions are previews, not claimed sung onsets.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:

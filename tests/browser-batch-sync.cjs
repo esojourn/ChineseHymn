@@ -48,8 +48,9 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                         document.querySelector('.text-inner'), data, track);
                 }, { data, track });
                 const bilingualPreview = data.provenance?.previousLinePreview?.version === 2;
+                const extendedPreview = bilingualPreview || data.provenance?.previousLinePreview?.version === 3;
                 const viewports = [{ width: 1280, height: 800 }, { width: 390, height: 844 }, { width: 844, height: 390 }];
-                if (bilingualPreview) viewports.push({ width: 320, height: 568 }, { width: 568, height: 320 });
+                if (extendedPreview) viewports.push({ width: 320, height: 568 }, { width: 568, height: 320 });
                 for (const viewport of viewports) {
                     await page.setViewportSize(viewport);
                     const geometry = await page.evaluate(() => {

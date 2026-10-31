@@ -550,6 +550,11 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'are checked with the same two features. All four onset estimates agree within 0.5 seconds. '
                               'Printed notes are individually recognized, rhythm is manually reviewed, and the initial '
                               'region is shown from zero. Neither a complete MIDI variant nor human listening is claimed.')
+    if evidence.get('midiMatching', {}).get('mode') == 'text-separate-verses':
+        method_description = ('Each recording is measured independently. Each complete verse and each reading region '
+                              'must match both the original MIDI and the independently recognized printed score; '
+                              'all four onset estimates agree within 0.5 seconds. Reviewed sampling ranges do not '
+                              'supply cue times, and the initial region is shown from zero. No human listening is claimed.')
     gap_review = evidence.get('transcriptMatching', {}).get('longGapFreePrefix')
     if gap_review:
         method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '

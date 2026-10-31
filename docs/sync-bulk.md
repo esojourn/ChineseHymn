@@ -1699,3 +1699,9 @@ PHP_BASE_URL=http://127.0.0.1:8080 \
 ```sh
 python tools/variant-score-sync.py --cache sync-drafts/bulk --songs 02-234
 ```
+
+《罪虽显如朱红》的伴奏在第二、三节之间有较长器乐间隔，而领唱版连续演唱。`tools/separate-verse-sync.py` 分别核对各录音的三次完整旋律：原始 MIDI 的 73 个演奏音头与[选本诗歌第 19 首原谱](https://www.zanmei.ai/tab/20828.html?songbook=1&index=19)光学结果零编辑对应，两个阅读区域的分界各自唯一；每节及每个阅读区域均独立通过 MIDI 和光学四条路径的成本、调性、跨度与半秒一致性检查。复核过的取样估计只限定搜索范围，不作为实际滚动秒数；如果间奏、开头或结尾足以容纳额外完整诗节，拒绝生成。两条录音的时间轴分别测量，首屏从 0 秒预先显示，不声称完成人工听审。
+
+```sh
+python tools/separate-verse-sync.py --cache sync-drafts/bulk --songs 01-171 --prepare
+```

@@ -544,6 +544,12 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '
                               '(sung onset not measured); every subsequent change retains contextual acoustic checks '
                               'and independent chroma-DTW recording correspondence.')
+    if evidence.get('midiMatching', {}).get('mode') == 'text-variant-score':
+        method_description = ('Each complete printed variant verse is compared with the recording using STFT and '
+                              'constant-Q features; the four shared opening notes of an independent original MIDI '
+                              'are checked with the same two features. All four onset estimates agree within 0.5 seconds. '
+                              'Printed notes are individually recognized, rhythm is manually reviewed, and the initial '
+                              'region is shown from zero. Neither a complete MIDI variant nor human listening is claimed.')
     gap_review = evidence.get('transcriptMatching', {}).get('longGapFreePrefix')
     if gap_review:
         method_description = ('Transcript-verified performed reading order; initial region shown from playback zero '

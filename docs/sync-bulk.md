@@ -1683,3 +1683,11 @@ PHP_BASE_URL=http://127.0.0.1:8080 \
 ```
 
 浏览器检查各已启用音轨的真实加载、每个时间点在桌面及手机横竖屏下的位置，并实际跳转到首屏、第二屏、回滚及末屏，等待动画完成后核对。`SYNC_SCREENSHOT_DIR` 可保存截图，`SYNC_AUDIT_FILE` 可保存检查汇总。如需指定已有 Chromium，使用 `CHROMIUM_PATH`。
+
+《虔守主餐》最后一节的旋律与前两节不同，不能把同一段 MIDI 平移三遍。`tools/variant-score-sync.py` 使用[台北怀恩堂公开周报原谱](https://www.gbc.org.tw/wp-content/uploads/2025/04/20250406.pdf)的第三节完整三行，以及[生命圣诗原始 MIDI](https://www.christianstudy.com/data/hymns/midi/lifehymns/234.mid)中各节共同的前四个起音。固定 PDF、渲染页、歌词和录音哈希；PDF 页以固定版本渲染，45 个数字音符逐一光学识别并与人工转录完全核对，节奏依据原谱人工复核。三段分别以完整印刷旋律和 MIDI 共同起音作 STFT、常 Q 两种分析，四条结果均须通过成本、调性、跨度和半秒一致性检查。两种频谱方法使用同一录音，不声称是两份独立录音；原始 MIDI 只提供四个共同起音，不声称它包含第三节变奏。首屏从 0 秒开始显示，其余位置来自录音实测；没有声称完成逐首人工听审。
+
+将上述原始 PDF 和 MIDI 分别放入缓存的 `reference/external/communion-gbc-20250406.pdf`、`midi/life234.mid` 后，可用以下命令重新生成候选：
+
+```sh
+python tools/variant-score-sync.py --cache sync-drafts/bulk --songs 02-234
+```

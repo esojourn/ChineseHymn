@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "songId": "01-171",
+  "status": "reviewed",
+  "source": {
+    "file": "01-171罪虽显如朱红.txt",
+    "sha256": "b464bc82e099e4068f4cec4f27ae445eba2bab827c5823b956b87b2e3ea8c4f7",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-171罪虽显如朱红.mp3",
+      "sha256": "038cea78f631c1706ceba2fee530b26487f4575f37939d144957536374fe05d2",
+      "duration": 221.448,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 49.33,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 62.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 100.95,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.38,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 182.77,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-171罪虽显如朱红-领唱.mp3",
+      "sha256": "ba200355dede1cc40c8e4a740414a1a78ea5dab58fc830e0ffe68e387c6e6666",
+      "duration": 159.26857142857142,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 11
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 12,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 18,
+      "endLine": 18
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 50.07,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 59.75,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 99.12,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 108.85,
+      "region": "r5",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 148.22,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Each recording is measured independently. Each complete verse and each reading region must match both the original MIDI and the independently recognized printed score; all four onset estimates agree within 0.5 seconds. Reviewed sampling ranges do not supply cue times, and the initial region is shown from zero. No human listening is claimed.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "你的罪虽像朱红，主必使它白如雪； 你的罪虽像朱红，主必使它白如雪。 你罪虽红如丹颜，必白如羊毛。 你的罪虽像朱红，你的罪虽像朱红，",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "主必使它白如雪，主必使它白如雪。",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "请听主慈爱呼声：“快回转归向真神” 请听主慈爱呼声：“快回转归向真神” 主的大爱何奇妙，怜悯何广大。 请听主慈爱呼声，请听主慈爱呼声：",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "“快回转归向真神!”，“快回转归向真神!”",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "你的罪，主必赦免，从今后不再记念， 你的罪，主必赦免，从今后不再记念； 主你神正在呼召： “来向我仰望。” 你的罪，主必赦免，你的罪，主必赦免：",
+        "label": "第3段"
+      },
+      {
+        "region": "r6",
+        "text": "从今后不再记念，从今后不再记念。",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-171罪虽显如朱红.txt.midi.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "at": 0,
+      "region": "r1",
+      "lyricOnsetMeasured": false
+    }
+  }
+}

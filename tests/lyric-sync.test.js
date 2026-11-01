@@ -23,6 +23,57 @@ test('a reviewed image can revisit an earlier region after an instrumental inter
     assert.equal(Core.locate(data.cues, 50).progress, 0);
 });
 
+test('image return hints use valid coordinates inside the referenced lyric region', () => {
+    const data = fixture();
+    data.imageLayout = { mode: 'center-preview', previewFraction: 1,
+        returnIndicator: { version: 1, anchors: { top: { x: 0.025, y: 0.2 } } } };
+    assert.deepEqual(Core.validate(data), []);
+    for (const mutate of [
+        d => { d.imageLayout.returnIndicator.version = 2; },
+        d => { d.imageLayout.returnIndicator.anchors = []; },
+        d => { d.imageLayout.returnIndicator.anchors = {}; },
+        d => { d.imageLayout.returnIndicator.anchors.unknown = { x: 0, y: 0.2 }; },
+        d => { d.imageLayout.returnIndicator.anchors.top.x = -0.1; },
+        d => { d.imageLayout.returnIndicator.anchors.top.y = 0.5; },
+        d => { d.imageLayout.returnIndicator.anchors.top.y = NaN; }
+    ]) {
+        const invalid = structuredClone(data);
+        mutate(invalid);
+        assert.ok(Core.validate(invalid).includes('图片回滚提示位置无效'));
+    }
+});
+
+test('numbered-score return hints work with original JSON and preserve the reading data', () => {
+    const fs = require('node:fs');
+    const data = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../data/sync/05-302恩友歌.jpg.json')));
+    const original = JSON.stringify(data);
+    assert.equal(data.imageLayout.returnIndicator, undefined);
+    const second = Core.imageReturnAnchor(data, data.cues.find(cue => cue.region === 's1_v2'));
+    const third = Core.imageReturnAnchor(data, data.cues.find(cue => cue.region === 's1_v3'));
+    assert.equal(second.x, 0.025);
+    assert.ok(Math.abs(second.y - 0.274513) < 0.000001);
+    assert.ok(Math.abs(third.y - 0.31189) < 0.000001);
+    assert.equal(Core.imageReturnAnchor(data, data.cues[1]), null);
+    assert.equal(JSON.stringify(data), original);
+    assert.equal(Core.imageReturnAnchor({ ...data, source: { type: 'text' } }, data.cues[4]), null);
+});
+
+test('legacy shared systems select the current stanza from equally spaced ink bands', () => {
+    const data = { source: { type: 'image' }, regions: { system1: { kind: 'image', top: 0.1, bottom: 0.6 } },
+        cues: [1, 2, 3].map(verse => ({ region: 'system1', label: `第${verse}段：第一谱行`, transition: 'return' })) };
+    const bands = [
+        { top: 0.11, bottom: 0.18, density: 0.1 }, // Staff and stems: too tall for a lyric row.
+        ...[0.24, 0.28, 0.32].map(top => ({ top, bottom: top + 0.03, left: 0.1, density: 0.15 })),
+        { top: 0.4, bottom: 0.48, density: 0.18 }
+    ];
+    assert.ok(Math.abs(Core.imageReturnAnchor(data, data.cues[1], bands).y - 0.295) < 0.000001);
+    assert.equal(Core.imageReturnAnchor(data, data.cues[1], bands).x, 0.085);
+    assert.ok(Math.abs(Core.imageReturnAnchor(data, data.cues[2], bands).y - 0.335) < 0.000001);
+    assert.equal(Core.imageReturnAnchor(data, data.cues[1]), null);
+    const ambiguous = bands.slice(1, 4).concat(bands.slice(1, 4).map(row => ({ ...row, top: row.top + 0.2, bottom: row.bottom + 0.2 })));
+    assert.equal(Core.imageReturnAnchor(data, data.cues[1], ambiguous), null);
+});
+
 test('seek and loop lookup is absolute, with no accumulated clock or forward-only cursor', () => {
     const cues = fixture().cues;
     assert.equal(Core.locate(cues, 100).to, 2);

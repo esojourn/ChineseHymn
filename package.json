@@ -8,6 +8,8 @@
     "test": "node --test tests/*.test.js",
     "test:browser": "node tests/browser-sync.cjs",
     "test:image-preview": "node tests/browser-image-preview.cjs",
+    "test:return-indicator": "node tests/browser-return-indicator.cjs",
+    "test:return-anchors": "node tests/browser-return-anchors.cjs",
     "test:batch-sync": "node tests/browser-batch-sync.cjs",
     "sync:validate": "node tools/validate-sync.js",
     "sync:prepare": "python3 tools/prepare-sync.py"

@@ -18,6 +18,27 @@ body {
   overflow-anchor: none;
 }
 
+.sync-return-dot {
+  position: absolute;
+  width: clamp(6px, 0.8vw, 10px);
+  height: clamp(6px, 0.8vw, 10px);
+  border-radius: 50%;
+  background: #2c77e4;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sync-return-dot.is-blinking {
+  animation: sync-return-blink 0.8s ease-in-out 3;
+}
+
+@keyframes sync-return-blink {
+  0%, 45% { opacity: 1; }
+  80%, 100% { opacity: 0; }
+}
+
 #auto-scroll-status {
   max-width: 210px;
   line-height: 1.5;

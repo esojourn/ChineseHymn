@@ -57,6 +57,18 @@
             if (region.kind === 'image' && (!finite(region.top) || !finite(region.bottom) ||
                 region.top < 0 || region.bottom > 1 || region.bottom <= region.top)) errors.push('图片范围无效：' + id);
         }
+        const indicator = data.imageLayout?.returnIndicator;
+        if (indicator !== undefined) {
+            const anchors = indicator?.anchors;
+            if (data.source?.type !== 'image' || indicator?.version !== 1 || !anchors ||
+                typeof anchors !== 'object' || Array.isArray(anchors) || !Object.keys(anchors).length ||
+                Object.entries(anchors).some(([id, anchor]) => {
+                    const region = regions?.[id];
+                    return !region || region.kind !== 'image' || !anchor ||
+                        !finite(anchor.x) || anchor.x < 0 || anchor.x > 1 ||
+                        !finite(anchor.y) || anchor.y < region.top || anchor.y > region.bottom;
+                })) errors.push('图片回滚提示位置无效');
+        }
         const cues = Array.isArray(data.cues) ? data.cues : [];
         const preview = data.provenance?.previousLinePreview;
         const scorePreview = data.provenance?.scoreReadingPreviews;
@@ -176,5 +188,49 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
-    return { normalizeText, validate, ease, locate, regionTarget, textTarget, previewTargets, imageTarget };
+    function imageReturnAnchor(data, cue, bands = []) {
+        if (data.source?.type !== 'image' || cue.transition !== 'return') return null;
+        const region = data.regions[cue.region];
+        if (!region || region.kind !== 'image') return null;
+        const explicit = data.imageLayout?.returnIndicator?.anchors[cue.region];
+        if (explicit) return explicit;
+        if (/^s\d+_v\d+$/.test(cue.region)) {
+            // Existing numbered-score regions pad each lyric row by 0.04 above
+            // and 0.012 below. Recover its centre without changing that region.
+            return { x: 0.025, y: Math.min(region.bottom, (region.top + region.bottom) / 2 + 0.014) };
+        }
+        if (!bands.length) return null;
+        const beside = row => ({ x: Math.max(0.005, (row.left ?? 0.04) - 0.015), y: (row.top + row.bottom) / 2 });
+        if (/^(?:v\d+|chorus(?:-alt-\d+)?)$/.test(cue.region)) {
+            return beside(bands[0]);
+        }
+        const verse = Number(/^第(\d+)段/.exec(cue.label || '')?.[1]);
+        const readings = [
+            ...data.cues, ...(data.provenance?.performanceOrder || []),
+            ...(data.tracks || []).flatMap(track => track.cues || [])
+        ].filter(item => item.region === cue.region);
+        const count = Math.max(0, ...readings.map(item => Number(/^第(\d+)段/.exec(item.label || '')?.[1]) || 0));
+        if (!verse || verse > count || bands.length < count) return null;
+        const candidates = [];
+        for (let start = 0; start + count <= bands.length; start++) {
+            const rows = bands.slice(start, start + count);
+            const heights = rows.map(row => row.bottom - row.top);
+            const gaps = rows.slice(1).map((row, i) =>
+                (row.top + row.bottom - rows[i].top - rows[i].bottom) / 2);
+            if (Math.min(...heights) <= 0 || Math.max(...heights) / Math.min(...heights) > 1.5 ||
+                (gaps.length && (Math.max(...gaps) / Math.min(...gaps) > 1.4 ||
+                    Math.min(...gaps) < Math.max(...heights) * 0.9 ||
+                    Math.max(...gaps) > Math.max(...heights) * 2.1))) continue;
+            // Equally spaced lyric rows have similar heights and more ink than
+            // isolated noteheads. Stems and staff blocks fail the spacing checks.
+            const score = Math.min(...heights) * rows.reduce((sum, row) => sum + row.density, 0) / count;
+            candidates.push({ rows, score });
+        }
+        candidates.sort((a, b) => b.score - a.score);
+        if (!candidates.length || (candidates[1] && candidates[0].score <= candidates[1].score * 1.03)) return null;
+        const row = candidates[0].rows[verse - 1];
+        return beside(row);
+    }
+
+    return { normalizeText, validate, ease, locate, regionTarget, textTarget, previewTargets, imageTarget, imageReturnAnchor };
 });

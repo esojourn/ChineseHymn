@@ -60,38 +60,38 @@
   },
   "cues": [
     {
-      "at": 14.59,
+      "at": 13.09,
       "region": "v1",
       "label": "原图第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 41.35,
+      "at": 39.85,
       "region": "chorus",
       "label": "副歌",
       "transition": "reading"
     },
     {
-      "at": 68.55,
+      "at": 67.05,
       "region": "v2",
       "label": "原图第2段",
       "transition": "reading"
     },
     {
-      "at": 95.19,
+      "at": 93.69,
       "region": "chorus",
       "label": "副歌",
       "transition": "return"
     },
     {
-      "at": 122.21,
+      "at": 120.71,
       "region": "v6",
       "label": "原图第6段",
       "transition": "reading"
     },
     {
-      "at": 147.87,
+      "at": 146.37,
       "region": "chorus",
       "label": "副歌",
       "transition": "return"
@@ -137,7 +137,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/06-002所有美善的力量.jpg.transcript.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "86e35a3e4e889e5c55b94cc45c5a9013910d14a14d02e1b9f2f81535392b6047",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

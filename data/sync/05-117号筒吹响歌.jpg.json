@@ -90,110 +90,110 @@
   },
   "cues": [
     {
-      "at": 23.1,
+      "at": 21.6,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.6,
+      "at": 27.1,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 33.7,
+      "at": 32.2,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 39.35,
+      "at": 37.85,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 45.05,
+      "at": 43.55,
       "region": "s5_chorus",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 56.0,
+      "at": 54.5,
       "region": "s6_chorus",
       "label": "第1段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 67.1,
+      "at": 65.6,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 72.6,
+      "at": 71.1,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 77.7,
+      "at": 76.2,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 83.35,
+      "at": 81.85,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 89.05,
+      "at": 87.55,
       "region": "s5_chorus",
       "label": "第2段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 100.0,
+      "at": 98.5,
       "region": "s6_chorus",
       "label": "第2段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 111.2,
+      "at": 109.7,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 116.7,
+      "at": 115.2,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 121.8,
+      "at": 120.3,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 127.45,
+      "at": 125.95,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 133.15,
+      "at": 131.65,
       "region": "s5_chorus",
       "label": "第3段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 144.1,
+      "at": 142.6,
       "region": "s6_chorus",
       "label": "第3段：第6谱行",
       "transition": "reading"
@@ -299,7 +299,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-117号筒吹响歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "bf45216e3ef189902721100b924ec350003682db22012ff66d6191ed9424a8e3",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

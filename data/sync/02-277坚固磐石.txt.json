@@ -45,32 +45,32 @@
   },
   "cues": [
     {
-      "at": 7.85,
+      "at": 6.35,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 36.9,
+      "at": 35.4,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 70.2,
+      "at": 68.7,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 99.85,
+      "at": 98.35,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 118.75,
+      "at": 117.25,
       "region": "r5",
       "label": "副歌",
       "transition": "return"
@@ -111,6 +111,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-277坚固磐石.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "17b99b38bf4bc2fed2bef96449d28f0d4348db5089a56164d02faeb53dfb65f4",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

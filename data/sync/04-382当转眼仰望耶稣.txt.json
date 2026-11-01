@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 12.05,
+          "at": 10.55,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 38.38,
+          "at": 36.88,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 63.43,
+          "at": 61.93,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 89.94,
+          "at": 88.44,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 114.97,
+          "at": 113.47,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 141.19,
+          "at": 139.69,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 12.45,
+      "at": 10.95,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 38.78,
+      "at": 37.28,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 63.83,
+      "at": 62.33,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 90.34,
+      "at": 88.84,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 115.37,
+      "at": 113.87,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 141.59,
+      "at": 140.09,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-382当转眼仰望耶稣.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "60ddb333f0c3defd70039c046c1853b4b2d332a3904c8ce56bd66bc3fe53584f",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

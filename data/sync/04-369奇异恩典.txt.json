@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 16.7,
+      "at": 15.2,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 48.98,
+      "at": 47.48,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 81.1,
+      "at": 79.6,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 112.92,
+      "at": 111.42,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-369奇异恩典.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "d62734185ed091fd0764a66321a9e7a4b6faf3010d41537ccea69bcb70418a12",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

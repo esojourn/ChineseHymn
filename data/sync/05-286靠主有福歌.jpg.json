@@ -80,146 +80,146 @@
   },
   "cues": [
     {
-      "at": 43.85,
+      "at": 42.35,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 54.7,
+      "at": 53.2,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 65.5,
+      "at": 64.0,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 76.55,
+      "at": 75.05,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 87.1,
+      "at": 85.6,
       "region": "s5_chorus",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 98.55,
+      "at": 97.05,
       "region": "s6_chorus",
       "label": "第1段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 109.75,
+      "at": 108.25,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 120.6,
+      "at": 119.1,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 131.4,
+      "at": 129.9,
       "region": "s3_chorus",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 142.45,
+      "at": 140.95,
       "region": "s4_chorus",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 153.0,
+      "at": 151.5,
       "region": "s5_chorus",
       "label": "第2段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 164.45,
+      "at": 162.95,
       "region": "s6_chorus",
       "label": "第2段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 175.75,
+      "at": 174.25,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 186.6,
+      "at": 185.1,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 197.4,
+      "at": 195.9,
       "region": "s3_chorus",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 208.45,
+      "at": 206.95,
       "region": "s4_chorus",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 219.0,
+      "at": 217.5,
       "region": "s5_chorus",
       "label": "第3段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 230.45,
+      "at": 228.95,
       "region": "s6_chorus",
       "label": "第3段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 241.65,
+      "at": 240.15,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 252.5,
+      "at": 251.0,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 263.3,
+      "at": 261.8,
       "region": "s3_chorus",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 274.35,
+      "at": 272.85,
       "region": "s4_chorus",
       "label": "第4段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 284.9,
+      "at": 283.4,
       "region": "s5_chorus",
       "label": "第4段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 296.35,
+      "at": 294.85,
       "region": "s6_chorus",
       "label": "第4段：第6谱行",
       "transition": "reading"
@@ -355,7 +355,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-286靠主有福歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "98482b4b6ae452ed4b83e76025234e8c0409615d765be69812e1310679c45253",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

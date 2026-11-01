@@ -60,50 +60,50 @@
   },
   "cues": [
     {
-      "at": 9.7,
+      "at": 8.2,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.2,
+      "at": 26.7,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 47.2,
+      "at": 45.7,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 65.8,
+      "at": 64.3,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 85.0,
+      "at": 83.5,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 103.5,
+      "at": 102.0,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 122.6,
+      "at": 121.1,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 141.1,
+      "at": 139.6,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-289主是磐石.txt.reference.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "2164cb2e20725e34565286a8965426618d7e503c200d027aa284e6b46643addc",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

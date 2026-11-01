@@ -90,122 +90,122 @@
   },
   "cues": [
     {
-      "at": 22.55,
+      "at": 21.05,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 30.7,
+      "at": 29.2,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 39.3,
+      "at": 37.8,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 50.6,
+      "at": 49.1,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 61.2,
+      "at": 59.7,
       "region": "s5_chorus",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 72.25,
+      "at": 70.75,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 80.4,
+      "at": 78.9,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 89.0,
+      "at": 87.5,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 100.3,
+      "at": 98.8,
       "region": "s4_chorus",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 110.9,
+      "at": 109.4,
       "region": "s5_chorus",
       "label": "第2段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 121.85,
+      "at": 120.35,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 130.0,
+      "at": 128.5,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 138.6,
+      "at": 137.1,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 149.9,
+      "at": 148.4,
       "region": "s4_chorus",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 160.5,
+      "at": 159.0,
       "region": "s5_chorus",
       "label": "第3段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 171.55,
+      "at": 170.05,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 179.7,
+      "at": 178.2,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 188.3,
+      "at": 186.8,
       "region": "s3_v4",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 199.6,
+      "at": 198.1,
       "region": "s4_chorus",
       "label": "第4段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 210.2,
+      "at": 208.7,
       "region": "s5_chorus",
       "label": "第4段：第5谱行",
       "transition": "reading"
@@ -321,7 +321,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-222妙爱找我歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "2170607cd31f4116591c43f506d6f60e05224756406c6e65d3f4654e133d4a11",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

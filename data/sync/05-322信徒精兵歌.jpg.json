@@ -110,146 +110,146 @@
   },
   "cues": [
     {
-      "at": 19.8,
+      "at": 18.3,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.2,
+      "at": 26.7,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 38.1,
+      "at": 36.6,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 47.45,
+      "at": 45.95,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 57.05,
+      "at": 55.55,
       "region": "s5_chorus",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 68.35,
+      "at": 66.85,
       "region": "s6_chorus",
       "label": "第1段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 75.6,
+      "at": 74.1,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 84.0,
+      "at": 82.5,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 93.9,
+      "at": 92.4,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 103.25,
+      "at": 101.75,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 112.85,
+      "at": 111.35,
       "region": "s5_chorus",
       "label": "第2段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 124.15,
+      "at": 122.65,
       "region": "s6_chorus",
       "label": "第2段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 131.5,
+      "at": 130.0,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 139.9,
+      "at": 138.4,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 149.8,
+      "at": 148.3,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 159.15,
+      "at": 157.65,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 168.75,
+      "at": 167.25,
       "region": "s5_chorus",
       "label": "第3段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 180.05,
+      "at": 178.55,
       "region": "s6_chorus",
       "label": "第3段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 187.3,
+      "at": 185.8,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 195.7,
+      "at": 194.2,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 205.6,
+      "at": 204.1,
       "region": "s3_v4",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 214.95,
+      "at": 213.45,
       "region": "s4_v4",
       "label": "第4段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 224.55,
+      "at": 223.05,
       "region": "s5_chorus",
       "label": "第4段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 235.85,
+      "at": 234.35,
       "region": "s6_chorus",
       "label": "第4段：第6谱行",
       "transition": "reading"
@@ -385,7 +385,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-322信徒精兵歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "3bd4e1abab5c1e3d4f50d020aec049435bff6698dfa134649e60b7902d408571",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

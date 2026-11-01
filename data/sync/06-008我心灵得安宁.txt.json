@@ -55,44 +55,44 @@
   },
   "cues": [
     {
-      "at": 0.3,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 46.8,
+      "at": 45.3,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 73.95,
+      "at": 72.45,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 119.15,
+      "at": 117.65,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 147.55,
+      "at": 146.05,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 192.8,
+      "at": 191.3,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 226.9,
+      "at": 225.4,
       "region": "r7",
       "label": "第3段",
       "transition": "reading"
@@ -143,6 +143,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/06-008我心灵得安宁.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "55200ab702bebc96acd7991d0e6f63d1de67444eebca7f853489995efd89ac45",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

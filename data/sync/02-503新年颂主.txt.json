@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 6.85,
+      "at": 5.35,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.3,
+      "at": 32.8,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 61.7,
+      "at": 60.2,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 89.15,
+      "at": 87.65,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-503新年颂主.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "2a28c1eeae89bea428acf1962f5baf3c6c2ce43101e08ce3c670b6a4394cd73e",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

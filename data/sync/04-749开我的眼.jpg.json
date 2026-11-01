@@ -23,74 +23,74 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 11.85,
+          "at": 10.35,
           "region": "system1",
           "label": "第1段：第一谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 23.85,
+          "at": 22.35,
           "region": "system2",
           "label": "第1段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 35.9,
+          "at": 34.4,
           "region": "chorus1",
           "label": "第1段：副歌上半",
           "transition": "reading"
         },
         {
-          "at": 48.0,
+          "at": 46.5,
           "region": "chorus2",
           "label": "第1段：副歌下半",
           "transition": "reading"
         },
         {
-          "at": 59.85,
+          "at": 58.35,
           "region": "system1",
           "label": "第2段：第一谱行",
           "transition": "return"
         },
         {
-          "at": 71.85,
+          "at": 70.35,
           "region": "system2",
           "label": "第2段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 83.9,
+          "at": 82.4,
           "region": "chorus1",
           "label": "第2段：副歌上半",
           "transition": "reading"
         },
         {
-          "at": 96.0,
+          "at": 94.5,
           "region": "chorus2",
           "label": "第2段：副歌下半",
           "transition": "reading"
         },
         {
-          "at": 107.85,
+          "at": 106.35,
           "region": "system1",
           "label": "第3段：第一谱行",
           "transition": "return"
         },
         {
-          "at": 119.85,
+          "at": 118.35,
           "region": "system2",
           "label": "第3段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 131.9,
+          "at": 130.4,
           "region": "chorus1",
           "label": "第3段：副歌上半",
           "transition": "reading"
         },
         {
-          "at": 144.0,
+          "at": 142.5,
           "region": "chorus2",
           "label": "第3段：副歌下半",
           "transition": "reading"
@@ -122,74 +122,74 @@
   },
   "cues": [
     {
-      "at": 12.15,
+      "at": 10.65,
       "region": "system1",
       "label": "第1段：第一谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 24.15,
+      "at": 22.65,
       "region": "system2",
       "label": "第1段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 36.2,
+      "at": 34.7,
       "region": "chorus1",
       "label": "第1段：副歌上半",
       "transition": "reading"
     },
     {
-      "at": 48.3,
+      "at": 46.8,
       "region": "chorus2",
       "label": "第1段：副歌下半",
       "transition": "reading"
     },
     {
-      "at": 60.15,
+      "at": 58.65,
       "region": "system1",
       "label": "第2段：第一谱行",
       "transition": "return"
     },
     {
-      "at": 72.15,
+      "at": 70.65,
       "region": "system2",
       "label": "第2段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 84.2,
+      "at": 82.7,
       "region": "chorus1",
       "label": "第2段：副歌上半",
       "transition": "reading"
     },
     {
-      "at": 96.3,
+      "at": 94.8,
       "region": "chorus2",
       "label": "第2段：副歌下半",
       "transition": "reading"
     },
     {
-      "at": 108.15,
+      "at": 106.65,
       "region": "system1",
       "label": "第3段：第一谱行",
       "transition": "return"
     },
     {
-      "at": 120.15,
+      "at": 118.65,
       "region": "system2",
       "label": "第3段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 132.2,
+      "at": 130.7,
       "region": "chorus1",
       "label": "第3段：副歌上半",
       "transition": "reading"
     },
     {
-      "at": 144.3,
+      "at": 142.8,
       "region": "chorus2",
       "label": "第3段：副歌下半",
       "transition": "reading"
@@ -274,7 +274,15 @@
         "text": "恳求圣灵开我眼睛光照引领",
         "label": "第3段：副歌下半"
       }
-    ]
+    ],
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "1c7c8bcf409c5939712be06e41f12f419b079fbdad0def9b891572dd398b0656",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "activation": {
     "policy": "automatic",

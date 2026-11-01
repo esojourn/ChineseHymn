@@ -16,50 +16,50 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 6.35,
+          "at": 4.85,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 17.2,
+          "at": 15.7,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 28.35,
+          "at": 26.85,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 39.2,
+          "at": 37.7,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 50.35,
+          "at": 48.85,
           "region": "s1_v3",
           "label": "第3段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 61.2,
+          "at": 59.7,
           "region": "s2_v3",
           "label": "第3段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 72.35,
+          "at": 70.85,
           "region": "s1_v4",
           "label": "第4段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 83.2,
+          "at": 81.7,
           "region": "s2_v4",
           "label": "第4段：第2谱行",
           "transition": "reading"
@@ -118,50 +118,50 @@
   },
   "cues": [
     {
-      "at": 5.95,
+      "at": 4.45,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 16.8,
+      "at": 15.3,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 27.95,
+      "at": 26.45,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 38.8,
+      "at": 37.3,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 49.95,
+      "at": 48.45,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 60.8,
+      "at": 59.3,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 71.95,
+      "at": 70.45,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 82.8,
+      "at": 81.3,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
@@ -217,7 +217,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-048道路真理生命歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "027e93b1b3c1147498147a84e2cdd5cbc27c8457ebda1d4c1f629fc0ed76901c",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

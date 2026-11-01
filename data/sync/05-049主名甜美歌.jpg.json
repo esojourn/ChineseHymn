@@ -70,62 +70,62 @@
   },
   "cues": [
     {
-      "at": 7.55,
+      "at": 6.05,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 20.7,
+      "at": 19.2,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 33.85,
+      "at": 32.35,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 47.0,
+      "at": 45.5,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 60.05,
+      "at": 58.55,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 73.2,
+      "at": 71.7,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 86.25,
+      "at": 84.75,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 99.4,
+      "at": 97.9,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 112.55,
+      "at": 111.05,
       "region": "s1_v5",
       "label": "第5段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 125.7,
+      "at": 124.2,
       "region": "s2_v5",
       "label": "第5段：第2谱行",
       "transition": "reading"
@@ -191,7 +191,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-049主名甜美歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "90b1fa1f40df980fa82dfeafdd1e099654eeac62d0a03189d13daa9968a84ac3",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

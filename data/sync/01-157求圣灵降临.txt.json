@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 6.75,
+      "at": 5.25,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 31.95,
+      "at": 30.45,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 57.15,
+      "at": 55.65,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 82.35,
+      "at": 80.85,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-157求圣灵降临.txt.reference.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f89d06d7c91cf139b8e83fd2a91896fa3219eacb21746fe031fd27c7abf524bd",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

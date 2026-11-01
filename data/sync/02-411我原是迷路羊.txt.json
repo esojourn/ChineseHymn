@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 9.35,
+      "at": 7.85,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 46.55,
+      "at": 45.05,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 83.65,
+      "at": 82.15,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 120.85,
+      "at": 119.35,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-411我原是迷路羊.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "ac88da88f8b027e1e8d87effb3b61f2452e9dd7354dd64cb565713a8a88fef76",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

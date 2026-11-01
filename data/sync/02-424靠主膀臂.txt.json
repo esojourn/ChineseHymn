@@ -50,38 +50,38 @@
   },
   "cues": [
     {
-      "at": 9.3,
+      "at": 7.8,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.6,
+      "at": 27.1,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 47.75,
+      "at": 46.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 67.1,
+      "at": 65.6,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 86.15,
+      "at": 84.65,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 105.5,
+      "at": 104.0,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -127,6 +127,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-424靠主膀臂.txt.reference.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "dae8257fb6c09ade6c6fd7ddd2f9c18b6fbabc72647bf493f769c58217eb4886",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

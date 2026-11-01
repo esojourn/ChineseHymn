@@ -16,26 +16,26 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 4.67,
+          "at": 3.17,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 39.5,
+          "at": 38.0,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 74.23,
+          "at": 72.73,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 109.3,
+          "at": 107.8,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
@@ -74,26 +74,26 @@
   },
   "cues": [
     {
-      "at": 5.57,
+      "at": 4.07,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 40.37,
+      "at": 38.87,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 75.03,
+      "at": 73.53,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 110.2,
+      "at": 108.7,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -129,6 +129,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-473你当让主带领你道路.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "c86364b6283ed3be06a80cc887d17c71a9f1c679e4052f0ab3e054f461dbf2c0",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

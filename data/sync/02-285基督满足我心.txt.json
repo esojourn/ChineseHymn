@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 11.3,
+      "at": 9.8,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 56.5,
+      "at": 55.0,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 101.6,
+      "at": 100.1,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 146.8,
+      "at": 145.3,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-285基督满足我心.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "236ccf45f4d5119c2ea3b8167aece85b4d9fe3b54b64edd6798f9a8d08d91735",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

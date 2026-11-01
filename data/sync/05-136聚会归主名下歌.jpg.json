@@ -100,98 +100,98 @@
   },
   "cues": [
     {
-      "at": 3.6,
+      "at": 2.1,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 13.55,
+      "at": 12.05,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 23.65,
+      "at": 22.15,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 33.65,
+      "at": 32.15,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 44.7,
+      "at": 43.2,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 54.65,
+      "at": 53.15,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 64.75,
+      "at": 63.25,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 74.75,
+      "at": 73.25,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 85.9,
+      "at": 84.4,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 95.85,
+      "at": 94.35,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 105.95,
+      "at": 104.45,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 115.95,
+      "at": 114.45,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 127.0,
+      "at": 125.5,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 136.95,
+      "at": 135.45,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 147.05,
+      "at": 145.55,
       "region": "s3_v4",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 157.05,
+      "at": 155.55,
       "region": "s4_v4",
       "label": "第4段：第4谱行",
       "transition": "reading"
@@ -287,7 +287,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-136聚会归主名下歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "11502ea144ac73c1c6228e3df56f523a635aeabc1d57589531ae11c377ddd019",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

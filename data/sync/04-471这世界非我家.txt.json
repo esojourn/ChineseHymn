@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 10.65,
+          "at": 9.15,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 32.0,
+          "at": 30.5,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 53.35,
+          "at": 51.85,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 74.7,
+          "at": 73.2,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 95.95,
+          "at": 94.45,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 117.35,
+          "at": 115.85,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 11.05,
+      "at": 9.55,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 32.4,
+      "at": 30.9,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 53.75,
+      "at": 52.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 75.1,
+      "at": 73.6,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 96.35,
+      "at": 94.85,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 117.75,
+      "at": 116.25,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "7466425416bb84082515c873c6587d44b08421b29a344d8c5d8e110ffde8841a",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

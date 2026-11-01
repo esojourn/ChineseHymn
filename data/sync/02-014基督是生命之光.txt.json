@@ -16,50 +16,50 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 5.77,
+          "at": 4.27,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 27.4,
+          "at": 25.9,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 48.97,
+          "at": 47.47,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 70.81,
+          "at": 69.31,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 92.05,
+          "at": 90.55,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 113.75,
+          "at": 112.25,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 135.18,
+          "at": 133.68,
           "region": "r7",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 156.74,
+          "at": 155.24,
           "region": "r8",
           "label": "第4段",
           "transition": "reading"
@@ -118,50 +118,50 @@
   },
   "cues": [
     {
-      "at": 6.47,
+      "at": 4.97,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.1,
+      "at": 26.6,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 49.57,
+      "at": 48.07,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 71.41,
+      "at": 69.91,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 92.65,
+      "at": 91.15,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 114.35,
+      "at": 112.85,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 135.88,
+      "at": 134.38,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 157.34,
+      "at": 155.84,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -217,6 +217,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-014基督是生命之光.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "4d6315467229cc59ace944e13c69296bc79217bb9527dc395c50b8de4971ced7",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

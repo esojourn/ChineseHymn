@@ -16,26 +16,26 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 2.18,
+          "at": 0.68,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 42.89,
+          "at": 41.39,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 80.38,
+          "at": 78.88,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 121.35,
+          "at": 119.85,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
@@ -74,26 +74,26 @@
   },
   "cues": [
     {
-      "at": 3.18,
+      "at": 1.68,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 43.79,
+      "at": 42.29,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 81.28,
+      "at": 79.78,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 122.35,
+      "at": 120.85,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
@@ -129,6 +129,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-017十架七言-第五言-我渴了.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "7640948c5d06ed20d6b1802039eb41797c3d24be07723d571abe48e6d9916586",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

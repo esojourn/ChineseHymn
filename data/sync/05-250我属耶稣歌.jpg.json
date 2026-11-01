@@ -70,50 +70,50 @@
   },
   "cues": [
     {
-      "at": 52.75,
+      "at": 51.25,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 64.1,
+      "at": 62.6,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 74.95,
+      "at": 73.45,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 85.7,
+      "at": 84.2,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 138.05,
+      "at": 136.55,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 149.4,
+      "at": 147.9,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 160.25,
+      "at": 158.75,
       "region": "s3_chorus",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 171.0,
+      "at": 169.5,
       "region": "s4_chorus",
       "label": "第2段：第4谱行",
       "transition": "reading"
@@ -169,7 +169,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-250我属耶稣歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "24ac5167bc58218a3eef55cf100afa12de04bfdd7ab9aa42db8042f1f1b660f9",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

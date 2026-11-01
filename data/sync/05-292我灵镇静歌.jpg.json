@@ -140,146 +140,146 @@
   },
   "cues": [
     {
-      "at": 6.65,
+      "at": 5.15,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 17.05,
+      "at": 15.55,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 26.3,
+      "at": 24.8,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 37.05,
+      "at": 35.55,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 46.8,
+      "at": 45.3,
       "region": "s5_v1",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 56.9,
+      "at": 55.4,
       "region": "s6_v1",
       "label": "第1段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 67.05,
+      "at": 65.55,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 77.45,
+      "at": 75.95,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 86.7,
+      "at": 85.2,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 97.45,
+      "at": 95.95,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 107.2,
+      "at": 105.7,
       "region": "s5_v2",
       "label": "第2段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 117.3,
+      "at": 115.8,
       "region": "s6_v2",
       "label": "第2段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 127.55,
+      "at": 126.05,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 137.95,
+      "at": 136.45,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 147.2,
+      "at": 145.7,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 157.95,
+      "at": 156.45,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 167.7,
+      "at": 166.2,
       "region": "s5_v3",
       "label": "第3段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 177.8,
+      "at": 176.3,
       "region": "s6_v3",
       "label": "第3段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 187.95,
+      "at": 186.45,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 198.35,
+      "at": 196.85,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 207.6,
+      "at": 206.1,
       "region": "s3_v4",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 218.35,
+      "at": 216.85,
       "region": "s4_v4",
       "label": "第4段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 228.1,
+      "at": 226.6,
       "region": "s5_v4",
       "label": "第4段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 238.2,
+      "at": 236.7,
       "region": "s6_v4",
       "label": "第4段：第6谱行",
       "transition": "reading"
@@ -415,7 +415,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-292我灵镇静歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "ff7e4c1884c842eb0e4a92404e6c9eef6591be6f1194eca324e94ace41aa067b",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

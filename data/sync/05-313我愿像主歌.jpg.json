@@ -60,74 +60,74 @@
   },
   "cues": [
     {
-      "at": 23.1,
+      "at": 21.6,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 35.15,
+      "at": 33.65,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 46.2,
+      "at": 44.7,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 58.55,
+      "at": 57.05,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 70.7,
+      "at": 69.2,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 82.75,
+      "at": 81.25,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 93.8,
+      "at": 92.3,
       "region": "s3_chorus",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 106.15,
+      "at": 104.65,
       "region": "s4_chorus",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 118.4,
+      "at": 116.9,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 130.45,
+      "at": 128.95,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 141.5,
+      "at": 140.0,
       "region": "s3_chorus",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 153.85,
+      "at": 152.35,
       "region": "s4_chorus",
       "label": "第3段：第4谱行",
       "transition": "reading"
@@ -203,7 +203,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-313我愿像主歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "dc20775cdfc79d27d1cb69040d7535a6917ec3446ae4af745da1b573a3067992",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

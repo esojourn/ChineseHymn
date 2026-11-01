@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 11.93,
+          "at": 10.43,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 37.09,
+          "at": 35.59,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 62.21,
+          "at": 60.71,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 87.56,
+          "at": 86.06,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 112.86,
+          "at": 111.36,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 12.33,
+      "at": 10.83,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.49,
+      "at": 35.99,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 62.61,
+      "at": 61.11,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 87.96,
+      "at": 86.46,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 113.26,
+      "at": 111.76,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-002耶和华是我的牧者.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "40742be8313779f8342a8a8a2b35b8b2d90fcaa88db8df2751f1174ef219c8a0",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

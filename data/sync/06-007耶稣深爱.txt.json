@@ -100,98 +100,98 @@
   },
   "cues": [
     {
-      "at": 1.5,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 10.6,
+      "at": 9.1,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 19.6,
+      "at": 18.1,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 28.65,
+      "at": 27.15,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 39.1,
+      "at": 37.6,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
     },
     {
-      "at": 48.1,
+      "at": 46.6,
       "region": "r6",
       "label": "第6段",
       "transition": "reading"
     },
     {
-      "at": 57.1,
+      "at": 55.6,
       "region": "r7",
       "label": "第7段",
       "transition": "reading"
     },
     {
-      "at": 66.1,
+      "at": 64.6,
       "region": "r8",
       "label": "第8段",
       "transition": "reading"
     },
     {
-      "at": 75.45,
+      "at": 73.95,
       "region": "r9",
       "label": "第9段",
       "transition": "reading"
     },
     {
-      "at": 85.55,
+      "at": 84.05,
       "region": "r10",
       "label": "第10段",
       "transition": "reading"
     },
     {
-      "at": 94.5,
+      "at": 93.0,
       "region": "r11",
       "label": "第11段",
       "transition": "reading"
     },
     {
-      "at": 103.5,
+      "at": 102.0,
       "region": "r12",
       "label": "第12段",
       "transition": "reading"
     },
     {
-      "at": 114.15,
+      "at": 112.65,
       "region": "r13",
       "label": "第13段",
       "transition": "reading"
     },
     {
-      "at": 123.05,
+      "at": 121.55,
       "region": "r14",
       "label": "第14段",
       "transition": "reading"
     },
     {
-      "at": 132.1,
+      "at": 130.6,
       "region": "r15",
       "label": "第15段",
       "transition": "reading"
     },
     {
-      "at": 141.1,
+      "at": 139.6,
       "region": "r16",
       "label": "第16段",
       "transition": "reading"
@@ -287,6 +287,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/06-007耶稣深爱.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "03aba64ad81121a2e319a73373348a69c31be90b875a826fc2c43997d8417774",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

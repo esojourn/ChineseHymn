@@ -16,98 +16,98 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 9.0,
+          "at": 7.5,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 26.85,
+          "at": 25.35,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 44.2,
+          "at": 42.7,
           "region": "r3",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 52.7,
+          "at": 51.2,
           "region": "r4",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 61.58,
+          "at": 60.08,
           "region": "r5",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 79.15,
+          "at": 77.65,
           "region": "r6",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 96.6,
+          "at": 95.1,
           "region": "r7",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 105.0,
+          "at": 103.5,
           "region": "r8",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 113.8,
+          "at": 112.3,
           "region": "r9",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 131.55,
+          "at": 130.05,
           "region": "r10",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 148.95,
+          "at": 147.45,
           "region": "r11",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 157.4,
+          "at": 155.9,
           "region": "r12",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 166.18,
+          "at": 164.68,
           "region": "r13",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 183.95,
+          "at": 182.45,
           "region": "r14",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 201.3,
+          "at": 199.8,
           "region": "r15",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 209.75,
+          "at": 208.25,
           "region": "r16",
           "label": "第4段",
           "transition": "reading"
@@ -206,98 +206,98 @@
   },
   "cues": [
     {
-      "at": 9.0,
+      "at": 7.5,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 26.85,
+      "at": 25.35,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 44.25,
+      "at": 42.75,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 52.73,
+      "at": 51.23,
       "region": "r4",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 61.5,
+      "at": 60.0,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 79.25,
+      "at": 77.75,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 96.65,
+      "at": 95.15,
       "region": "r7",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 105.1,
+      "at": 103.6,
       "region": "r8",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 113.82,
+      "at": 112.32,
       "region": "r9",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 131.6,
+      "at": 130.1,
       "region": "r10",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 149.0,
+      "at": 147.5,
       "region": "r11",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 157.45,
+      "at": 155.95,
       "region": "r12",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 166.2,
+      "at": 164.7,
       "region": "r13",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 183.95,
+      "at": 182.45,
       "region": "r14",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 201.35,
+      "at": 199.85,
       "region": "r15",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 209.8,
+      "at": 208.3,
       "region": "r16",
       "label": "第4段",
       "transition": "reading"
@@ -393,6 +393,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-396凭信而活.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "a78df6c1df250e3dee0d70f8baa57dd9f718a0f6892605709021234bb5f36bc3",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -30,14 +30,14 @@
   },
   "cues": [
     {
-      "at": 10.6,
+      "at": 9.1,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 23.95,
+      "at": 22.45,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
@@ -63,6 +63,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-517主耶稣真奇妙.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "24238f71d07e25c92146e1f62b90b02ccca729cf92a8d422f776eb7a8c1e240e",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

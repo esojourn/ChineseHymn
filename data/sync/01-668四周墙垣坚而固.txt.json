@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 14.2,
+      "at": 12.7,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 54.05,
+      "at": 52.55,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 94.95,
+      "at": 93.45,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 135.85,
+      "at": 134.35,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-668四周墙垣坚而固.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0f84504ebff92e8b9e0af5fd24d73789e14dc13f2aace15427c2fc74515b4ee3",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

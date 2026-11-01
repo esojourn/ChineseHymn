@@ -16,74 +16,74 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.8,
+          "at": 6.3,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 30.53,
+          "at": 29.03,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 52.52,
+          "at": 51.02,
           "region": "r3",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 75.93,
+          "at": 74.43,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 98.12,
+          "at": 96.62,
           "region": "r5",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 120.15,
+          "at": 118.65,
           "region": "r6",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 143.87,
+          "at": 142.37,
           "region": "r7",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 166.5,
+          "at": 165.0,
           "region": "r8",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 188.55,
+          "at": 187.05,
           "region": "r9",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 212.33,
+          "at": 210.83,
           "region": "r10",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 237.45,
+          "at": 235.95,
           "region": "r11",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 260.55,
+          "at": 259.05,
           "region": "r12",
           "label": "第4段",
           "transition": "reading"
@@ -162,74 +162,74 @@
   },
   "cues": [
     {
-      "at": 14.9,
+      "at": 13.4,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 40.57,
+      "at": 39.07,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 66.75,
+      "at": 65.25,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 92.88,
+      "at": 91.38,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 119.12,
+      "at": 117.62,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 145.27,
+      "at": 143.77,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 171.45,
+      "at": 169.95,
       "region": "r7",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 197.67,
+      "at": 196.17,
       "region": "r8",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 223.85,
+      "at": 222.35,
       "region": "r9",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 249.97,
+      "at": 248.47,
       "region": "r10",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 276.23,
+      "at": 274.73,
       "region": "r11",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 302.37,
+      "at": 300.87,
       "region": "r12",
       "label": "第4段",
       "transition": "reading"
@@ -305,6 +305,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-500加利利人耶稣.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "5e97e589b8bbd7f0c3857276dd581c5352b2cc326be831312c9a3e17745cf063",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

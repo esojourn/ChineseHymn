@@ -79,82 +79,82 @@
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 14.52,
+      "at": 13.02,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 28.47,
+      "at": 26.97,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 42.78,
+      "at": 41.28,
       "region": "r4",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 67.28,
+      "at": 65.78,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 80.17,
+      "at": 78.67,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 93.41,
+      "at": 91.91,
       "region": "r7",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 106.92,
+      "at": 105.42,
       "region": "r8",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 131.03,
+      "at": 129.53,
       "region": "r9",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 143.86,
+      "at": 142.36,
       "region": "r10",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 159.76,
+      "at": 158.26,
       "region": "r11",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 186.37,
+      "at": 184.87,
       "region": "r1",
       "label": "第1段",
       "transition": "return"
     },
     {
-      "at": 200.4,
+      "at": 198.9,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 215.4,
+      "at": 213.9,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
@@ -240,6 +240,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/06-001我虽软弱但你强壮.txt.transcript.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "034a4d22c6006bb93970ecf530f8258e8e346398393844b47a4d59bc71300888",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

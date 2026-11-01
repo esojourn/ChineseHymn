@@ -62,44 +62,44 @@
   },
   "cues": [
     {
-      "at": 11.6,
+      "at": 10.1,
       "region": "verse1",
       "label": "第1段，第1—4句",
       "transition": "intro",
-      "moveStart": 0.7
+      "moveStart": 0.0
     },
     {
-      "at": 33.76,
+      "at": 32.26,
       "region": "verse2",
       "label": "第2段，第1—4句",
       "transition": "reading"
     },
     {
-      "at": 55.84,
+      "at": 54.34,
       "region": "verse3",
       "label": "第3段，第1—4句",
       "transition": "reading"
     },
     {
-      "at": 78.18,
+      "at": 76.68,
       "region": "verse4",
       "label": "第4段，第1—4句",
       "transition": "reading"
     },
     {
-      "at": 100.32,
+      "at": 98.82,
       "region": "verse5",
       "label": "第5段，第1—4句",
       "transition": "reading"
     },
     {
-      "at": 122.06,
+      "at": 120.56,
       "region": "verse6",
       "label": "第6段，第1—4句",
       "transition": "reading"
     },
     {
-      "at": 144.3,
+      "at": 142.8,
       "region": "verse7",
       "label": "第7段，第1—4句",
       "transition": "reading"
@@ -113,7 +113,15 @@
       "Seven verses, one four-line reading region each. Hold position during each verse; use a 0.6 s smooth transition at the next verse boundary.",
       "Lead first onset 11.60 s is estimated from repeated melody and following syllables; prioritize listening review.",
       "Instrumental shares the lead timeline at offset -0.70 s. Chroma DTW body 5–164 s fits slope 1.000028 and intercept -0.701533 s; 95% residual about 0.003 s on a 0.1 s grid, not an acoustic boundary accuracy estimate."
-    ]
+    ],
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "6919df1cc65f7997091b6a3e54fd4c08dbd71e5d67f7ca4c002fafeb86ec84d8",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "activation": {
     "policy": "automatic",

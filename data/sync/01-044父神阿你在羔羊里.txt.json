@@ -23,32 +23,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 12.41,
+          "at": 10.91,
           "region": "r2",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 38.19,
+          "at": 36.69,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 64.78,
+          "at": 63.28,
           "region": "r4",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 90.94,
+          "at": 89.44,
           "region": "r5",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 117.25,
+          "at": 115.75,
           "region": "r6",
           "label": "第5段",
           "transition": "reading"
@@ -90,32 +90,32 @@
   },
   "cues": [
     {
-      "at": 13.11,
+      "at": 11.61,
       "region": "r2",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 38.89,
+      "at": 37.39,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 65.48,
+      "at": 63.98,
       "region": "r4",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 91.64,
+      "at": 90.14,
       "region": "r5",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 117.95,
+      "at": 116.45,
       "region": "r6",
       "label": "第5段",
       "transition": "reading"
@@ -165,7 +165,15 @@
         "text": "这叫我们永远欢欣，这叫黑夜变为光明；若有微息尚能称颂，必引弱声向天歌诵。",
         "label": "第5段"
       }
-    ]
+    ],
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "81e59a86fc3ef1a55781380d02f9b8000452a9b3266c965d8110f5b85d3e92b1",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "activation": {
     "policy": "automatic",

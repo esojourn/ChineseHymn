@@ -35,20 +35,20 @@
   },
   "cues": [
     {
-      "at": 12.4,
+      "at": 10.9,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 50.55,
+      "at": 49.05,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 88.8,
+      "at": 87.3,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -79,6 +79,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-009我对撒但总是说不.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "e0191daeafcc388b02f4f312b095cace0f7e445d9d8d8a494be452221e836872",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

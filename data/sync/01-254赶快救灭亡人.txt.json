@@ -60,50 +60,50 @@
   },
   "cues": [
     {
-      "at": 10.2,
+      "at": 8.7,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 30.3,
+      "at": 28.8,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 40.5,
+      "at": 39.0,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 60.6,
+      "at": 59.1,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 70.8,
+      "at": 69.3,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 90.9,
+      "at": 89.4,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 101.1,
+      "at": 99.6,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 121.3,
+      "at": 119.8,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-254赶快救灭亡人.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0fc291f0ac5278410fdb7f96c3e4b4be92f8ec578d8c6b04d7d164c1baaf6ae4",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

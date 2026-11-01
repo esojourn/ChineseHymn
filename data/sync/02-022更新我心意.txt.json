@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 11.9,
+          "at": 10.4,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 33.7,
+          "at": 32.2,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 53.95,
+          "at": 52.45,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 74.8,
+          "at": 73.3,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 94.73,
+          "at": 93.23,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 13.1,
+      "at": 11.6,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.9,
+      "at": 33.4,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 55.1,
+      "at": 53.6,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 76.0,
+      "at": 74.5,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 95.93,
+      "at": 94.43,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-022更新我心意.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "5b1a00b2b654fc654b8428d6a6fdacbbd1e50a850a0097ae5b7cf8c6d9f8c3d8",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

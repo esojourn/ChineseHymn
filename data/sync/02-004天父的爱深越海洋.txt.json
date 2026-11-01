@@ -16,44 +16,44 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 14.3,
+          "at": 12.8,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 35.63,
+          "at": 34.13,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 67.92,
+          "at": 66.42,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 88.95,
+          "at": 87.45,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 120.2,
+          "at": 118.7,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 141.37,
+          "at": 139.87,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 162.15,
+          "at": 160.65,
           "region": "r7",
           "label": "第3段",
           "transition": "reading"
@@ -107,44 +107,44 @@
   },
   "cues": [
     {
-      "at": 14.4,
+      "at": 12.9,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 35.73,
+      "at": 34.23,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 68.02,
+      "at": 66.52,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 89.05,
+      "at": 87.55,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 120.3,
+      "at": 118.8,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 141.47,
+      "at": 139.97,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 162.25,
+      "at": 160.75,
       "region": "r7",
       "label": "第3段",
       "transition": "reading"
@@ -195,6 +195,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-004天父的爱深越海洋.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "71de481a9379e50c475d06fbbee95f1ae8058ad33b08b2ff10ae108aba923c01",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

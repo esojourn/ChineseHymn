@@ -16,50 +16,50 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.96,
+          "at": 6.46,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 24.95,
+          "at": 23.45,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 47.1,
+          "at": 45.6,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 64.64,
+          "at": 63.14,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 86.46,
+          "at": 84.96,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 104.03,
+          "at": 102.53,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 125.64,
+          "at": 124.14,
           "region": "r7",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 143.47,
+          "at": 141.97,
           "region": "r8",
           "label": "第4段",
           "transition": "reading"
@@ -118,50 +118,50 @@
   },
   "cues": [
     {
-      "at": 9.56,
+      "at": 8.06,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.75,
+      "at": 27.25,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 48.0,
+      "at": 46.5,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 67.14,
+      "at": 65.64,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 86.36,
+      "at": 84.86,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 105.43,
+      "at": 103.93,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 124.74,
+      "at": 123.24,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 143.87,
+      "at": 142.37,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -217,6 +217,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-032让耶稣进入心中.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "8092aabaa2737d93732f5e8da56f42e22d281527bfc357a829380d49a8510953",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

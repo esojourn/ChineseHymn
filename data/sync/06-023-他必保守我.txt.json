@@ -70,62 +70,62 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 104.16,
+      "at": 102.66,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 123.14,
+      "at": 121.64,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 142.9,
+      "at": 141.4,
       "region": "r4",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 169.94,
+      "at": 168.44,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 188.18,
+      "at": 186.68,
       "region": "r6",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 207.12,
+      "at": 205.62,
       "region": "r7",
       "label": "第5段",
       "transition": "reading"
     },
     {
-      "at": 234.48,
+      "at": 232.98,
       "region": "r8",
       "label": "第5段",
       "transition": "reading"
     },
     {
-      "at": 254.43,
+      "at": 252.93,
       "region": "r9",
       "label": "第6段",
       "transition": "reading"
     },
     {
-      "at": 272.07,
+      "at": 270.57,
       "region": "r10",
       "label": "第7段",
       "transition": "reading"
@@ -221,6 +221,14 @@
         "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
       },
       "independentTranscriptHash": "92b6eabcd7fa2e0418b470e91043bf2652a5b5f5794ee32563c819d66e852b72"
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "b8a1ed689f07e0746bb4bd46cc1c5cf7f6e93000daf47cc7e5e8594e2736f7e1",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

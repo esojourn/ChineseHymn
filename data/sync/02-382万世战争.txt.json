@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.4,
+          "at": 5.9,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 37.15,
+          "at": 35.65,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 66.8,
+          "at": 65.3,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 96.5,
+          "at": 95.0,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 126.2,
+          "at": 124.7,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 155.9,
+          "at": 154.4,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 7.9,
+      "at": 6.4,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.65,
+      "at": 36.15,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 67.3,
+      "at": 65.8,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 97.0,
+      "at": 95.5,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 126.7,
+      "at": 125.2,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 156.4,
+      "at": 154.9,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-382万世战争.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "5e35cd1951e6601f41712da1e7e81728964a3a47cf89ae10ac1eca35a8ea6373",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

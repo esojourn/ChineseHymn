@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 0,
+          "at": 0.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 49.33,
+          "at": 47.83,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 62.0,
+          "at": 60.5,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 100.95,
+          "at": 99.45,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 143.38,
+          "at": 141.88,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 182.77,
+          "at": 181.27,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 50.07,
+      "at": 48.57,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 59.75,
+      "at": 58.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 99.12,
+      "at": 97.62,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 108.85,
+      "at": 107.35,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 148.22,
+      "at": 146.72,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -179,6 +179,14 @@
       "at": 0,
       "region": "r1",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "d02af3e53e0fb6c5c3f61c0702ebe98cb99f4eef3c49aca4a50c2b4eb50d9d7f",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

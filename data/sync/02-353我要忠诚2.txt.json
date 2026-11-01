@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 7.05,
+      "at": 5.55,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 42.35,
+      "at": 40.85,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 77.65,
+      "at": 76.15,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 112.95,
+      "at": 111.45,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-353我要忠诚2.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "4b0491c652797fb34cd1b7149a2dc97fc6a5878587c0e84a5e6d19e082f4be7a",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

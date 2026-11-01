@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 10.65,
+      "at": 9.15,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 53.2,
+      "at": 51.7,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 95.9,
+      "at": 94.4,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 138.65,
+      "at": 137.15,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-370更亲近恩主.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f883414f2bc646597e96b11f0ead57183ff5d73a3918c1f44409b2823b17eb89",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

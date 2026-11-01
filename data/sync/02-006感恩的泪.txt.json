@@ -30,14 +30,14 @@
   },
   "cues": [
     {
-      "at": 13.3,
+      "at": 11.8,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 60.35,
+      "at": 58.85,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
@@ -63,6 +63,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-006感恩的泪.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "442cb6c7fb13165fee68e2c01f241fec33c072b4d2e54a9720e0df560e69af94",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -16,74 +16,74 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 24.0,
+          "at": 22.5,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 34.05,
+          "at": 32.55,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 45.75,
+          "at": 44.25,
           "region": "s3_chorus",
           "label": "第1段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 56.55,
+          "at": 55.05,
           "region": "s4_chorus",
           "label": "第1段：第4谱行",
           "transition": "reading"
         },
         {
-          "at": 69.4,
+          "at": 67.9,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 79.45,
+          "at": 77.95,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 91.15,
+          "at": 89.65,
           "region": "s3_chorus",
           "label": "第2段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 101.95,
+          "at": 100.45,
           "region": "s4_chorus",
           "label": "第2段：第4谱行",
           "transition": "reading"
         },
         {
-          "at": 114.8,
+          "at": 113.3,
           "region": "s1_v3",
           "label": "第3段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 124.85,
+          "at": 123.35,
           "region": "s2_v3",
           "label": "第3段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 136.55,
+          "at": 135.05,
           "region": "s3_chorus",
           "label": "第3段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 147.35,
+          "at": 145.85,
           "region": "s4_chorus",
           "label": "第3段：第4谱行",
           "transition": "reading"
@@ -142,74 +142,74 @@
   },
   "cues": [
     {
-      "at": 24.9,
+      "at": 23.4,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.95,
+      "at": 33.45,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 46.65,
+      "at": 45.15,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 57.45,
+      "at": 55.95,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 70.3,
+      "at": 68.8,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 80.35,
+      "at": 78.85,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 92.05,
+      "at": 90.55,
       "region": "s3_chorus",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 102.85,
+      "at": 101.35,
       "region": "s4_chorus",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 115.7,
+      "at": 114.2,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 125.75,
+      "at": 124.25,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 137.45,
+      "at": 135.95,
       "region": "s3_chorus",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 148.25,
+      "at": 146.75,
       "region": "s4_chorus",
       "label": "第3段：第4谱行",
       "transition": "reading"
@@ -285,7 +285,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-264跟随我歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "858cf0783c8fbd5a4e2277f2fb36889c2ef4b792be6c29d85400c6e1f09ac9a3",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

@@ -64,34 +64,34 @@
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.02,
+      "at": 32.52,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 54.21,
+      "at": 52.71,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 86.94,
+      "at": 85.44,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 106.54,
+      "at": 105.04,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 140.26,
+      "at": 138.76,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -137,6 +137,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/06-020我灵镇静.txt.transcript.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "8628ffac4f797e68fd10a2538cc92cf251309bbbfdc05e6ef1ef21aa2274ef38",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

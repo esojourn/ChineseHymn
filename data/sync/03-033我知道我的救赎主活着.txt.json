@@ -16,26 +16,26 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.09,
+          "at": 5.59,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 35.31,
+          "at": 33.81,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 63.99,
+          "at": 62.49,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 92.54,
+          "at": 91.04,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
@@ -74,26 +74,26 @@
   },
   "cues": [
     {
-      "at": 7.59,
+      "at": 6.09,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.41,
+      "at": 35.91,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 67.59,
+      "at": 66.09,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 97.84,
+      "at": 96.34,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -129,6 +129,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-033我知道我的救赎主活着.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0e776856ba65b8c095c19378ada38e670442173953b26eeb19425360c8e6c141",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

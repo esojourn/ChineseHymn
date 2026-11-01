@@ -60,50 +60,50 @@
   },
   "cues": [
     {
-      "at": 10.05,
+      "at": 8.55,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 30.3,
+      "at": 28.8,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 50.5,
+      "at": 49.0,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 70.7,
+      "at": 69.2,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 90.9,
+      "at": 89.4,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 111.15,
+      "at": 109.65,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 131.35,
+      "at": 129.85,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 151.55,
+      "at": 150.05,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "9b1ad57170ae87b9ae86d6d8ee9a098e68c36b1cfe2678976b45322ad103ee97",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

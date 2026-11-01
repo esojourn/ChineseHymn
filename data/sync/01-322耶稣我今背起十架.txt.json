@@ -80,74 +80,74 @@
   },
   "cues": [
     {
-      "at": 9.7,
+      "at": 8.2,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 29.4,
+      "at": 27.9,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 48.93,
+      "at": 47.43,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 68.55,
+      "at": 67.05,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 88.12,
+      "at": 86.62,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 107.78,
+      "at": 106.28,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 127.33,
+      "at": 125.83,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 146.9,
+      "at": 145.4,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 166.53,
+      "at": 165.03,
       "region": "r9",
       "label": "第5段",
       "transition": "reading"
     },
     {
-      "at": 186.1,
+      "at": 184.6,
       "region": "r10",
       "label": "第5段",
       "transition": "reading"
     },
     {
-      "at": 205.7,
+      "at": 204.2,
       "region": "r11",
       "label": "第6段",
       "transition": "reading"
     },
     {
-      "at": 225.33,
+      "at": 223.83,
       "region": "r12",
       "label": "第6段",
       "transition": "reading"
@@ -223,6 +223,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-322耶稣我今背起十架.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "e79b7a04c4fa3620e485080d585ac72c3515989015387307ba6d1610af8eb276",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

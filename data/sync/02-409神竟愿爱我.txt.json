@@ -35,20 +35,20 @@
   },
   "cues": [
     {
-      "at": 13.35,
+      "at": 11.85,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 66.65,
+      "at": 65.15,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 120.0,
+      "at": 118.5,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -79,6 +79,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-409神竟愿爱我.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "6ccb7243aa55e5431ef012b73c52f47d665bcfebe5ec0fe50d6a1964b1fbc0eb",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

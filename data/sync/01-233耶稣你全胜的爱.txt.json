@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 20.32,
+          "at": 18.82,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 54.55,
+          "at": 53.05,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 88.91,
+          "at": 87.41,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 123.14,
+          "at": 121.64,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 157.29,
+          "at": 155.79,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 21.12,
+      "at": 19.62,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 55.45,
+      "at": 53.95,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 89.81,
+      "at": 88.31,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 123.96,
+      "at": 122.46,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 158.19,
+      "at": 156.69,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-233耶稣你全胜的爱.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0acd9b4ab4c817df900dd6513fa3884b47f2a5c8d5eb68858167f547d0cc315a",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

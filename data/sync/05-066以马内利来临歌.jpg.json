@@ -23,76 +23,76 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.8,
+          "at": 6.3,
           "region": "system1",
           "label": "第1段：第一谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 16.8,
+          "at": 15.3,
           "region": "system2",
           "label": "第1段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 28.66,
+          "at": 27.16,
           "region": "system3",
           "label": "第1段：第三谱行及副歌“欢欣”",
           "transition": "reading"
         },
         {
-          "at": 40.4,
+          "at": 38.9,
           "region": "chorus-end",
           "label": "第1段：副歌末行",
           "transition": "reading"
         },
         {
-          "at": 52.54,
+          "at": 51.04,
           "region": "system1",
           "label": "第2段：第一谱行",
           "transition": "return",
-          "moveStart": 51.28
+          "moveStart": 49.78
         },
         {
-          "at": 61.68,
+          "at": 60.18,
           "region": "system2",
           "label": "第2段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 73.32,
+          "at": 71.82,
           "region": "system3",
           "label": "第2段：第三谱行及副歌“欢欣”",
           "transition": "reading"
         },
         {
-          "at": 84.7,
+          "at": 83.2,
           "region": "chorus-end",
           "label": "第2段：副歌末行",
           "transition": "reading"
         },
         {
-          "at": 96.72,
+          "at": 95.22,
           "region": "system1",
           "label": "第3段：第一谱行",
           "transition": "return",
-          "moveStart": 95.64
+          "moveStart": 94.14
         },
         {
-          "at": 106.06,
+          "at": 104.56,
           "region": "system2",
           "label": "第3段：第二谱行",
           "transition": "reading"
         },
         {
-          "at": 117.62,
+          "at": 116.12,
           "region": "system3",
           "label": "第3段：第三谱行及副歌“欢欣”",
           "transition": "reading"
         },
         {
-          "at": 129.52,
+          "at": 128.02,
           "region": "chorus-end",
           "label": "第3段：副歌末行",
           "transition": "reading"
@@ -124,76 +124,76 @@
   },
   "cues": [
     {
-      "at": 18.6,
+      "at": 17.1,
       "region": "system1",
       "label": "第1段：第一谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.8,
+      "at": 27.3,
       "region": "system2",
       "label": "第1段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 41.96,
+      "at": 40.46,
       "region": "system3",
       "label": "第1段：第三谱行及副歌“欢欣”",
       "transition": "reading"
     },
     {
-      "at": 55.1,
+      "at": 53.6,
       "region": "chorus-end",
       "label": "第1段：副歌末行",
       "transition": "reading"
     },
     {
-      "at": 68.44,
+      "at": 66.94,
       "region": "system1",
       "label": "第2段：第一谱行",
       "transition": "return",
-      "moveStart": 67.18
+      "moveStart": 65.68
     },
     {
-      "at": 78.88,
+      "at": 77.38,
       "region": "system2",
       "label": "第2段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 91.92,
+      "at": 90.42,
       "region": "system3",
       "label": "第2段：第三谱行及副歌“欢欣”",
       "transition": "reading"
     },
     {
-      "at": 104.7,
+      "at": 103.2,
       "region": "chorus-end",
       "label": "第2段：副歌末行",
       "transition": "reading"
     },
     {
-      "at": 118.22,
+      "at": 116.72,
       "region": "system1",
       "label": "第3段：第一谱行",
       "transition": "return",
-      "moveStart": 117.04
+      "moveStart": 115.54
     },
     {
-      "at": 128.56,
+      "at": 127.06,
       "region": "system2",
       "label": "第3段：第二谱行",
       "transition": "reading"
     },
     {
-      "at": 141.42,
+      "at": 139.92,
       "region": "system3",
       "label": "第3段：第三谱行及副歌“欢欣”",
       "transition": "reading"
     },
     {
-      "at": 154.72,
+      "at": 153.22,
       "region": "chorus-end",
       "label": "第3段：副歌末行",
       "transition": "reading"
@@ -208,7 +208,15 @@
       "Verse return windows 67.18–68.44 s and 117.04–118.22 s are provisional: overlapping forced alignments disagree about the preceding sustained syllable ending. Listen before approval.",
       "Lead first onset 18.60 s is estimated; no separate sung Amen boundary is claimed. Hold final chorus region through the ending.",
       "Instrumental uses independent cue times from pitch-adjusted chroma DTW (instrumental chroma rolled +7 semitones). Body 18–166 s fits instrumental time ≈ 0.894558 × lead time − 8.959927; 95% mapping residual about 0.12 s, not lyric boundary error. Intro and tail are excluded from that fit."
-    ]
+    ],
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "e3bb39d82d63fa026ab76bda739ab466e3b9d3af00b503a6bf2cbe41324233a5",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "activation": {
     "policy": "automatic",

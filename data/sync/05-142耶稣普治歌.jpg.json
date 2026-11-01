@@ -120,122 +120,122 @@
   },
   "cues": [
     {
-      "at": 8.45,
+      "at": 6.95,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 16.65,
+      "at": 15.15,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 24.7,
+      "at": 23.2,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 33.15,
+      "at": 31.65,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 41.55,
+      "at": 40.05,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 49.75,
+      "at": 48.25,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 57.8,
+      "at": 56.3,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 66.25,
+      "at": 64.75,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 74.65,
+      "at": 73.15,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 82.85,
+      "at": 81.35,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 90.9,
+      "at": 89.4,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 99.35,
+      "at": 97.85,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 107.75,
+      "at": 106.25,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 115.95,
+      "at": 114.45,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 124.0,
+      "at": 122.5,
       "region": "s3_v4",
       "label": "第4段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 132.45,
+      "at": 130.95,
       "region": "s4_v4",
       "label": "第4段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 140.85,
+      "at": 139.35,
       "region": "s1_v5",
       "label": "第5段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 149.05,
+      "at": 147.55,
       "region": "s2_v5",
       "label": "第5段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 157.1,
+      "at": 155.6,
       "region": "s3_v5",
       "label": "第5段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 165.55,
+      "at": 164.05,
       "region": "s4_v5",
       "label": "第5段：第4谱行",
       "transition": "reading"
@@ -351,7 +351,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-142耶稣普治歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "8ba5f53a8460f2eebc1f317c48fa1842daee01167a6dc28a9cd3d6bad25f79a9",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

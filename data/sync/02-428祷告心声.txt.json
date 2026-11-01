@@ -16,20 +16,20 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 4.55,
+          "at": 3.05,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 43.02,
+          "at": 41.52,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 81.48,
+          "at": 79.98,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
@@ -63,20 +63,20 @@
   },
   "cues": [
     {
-      "at": 5.75,
+      "at": 4.25,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 44.12,
+      "at": 42.62,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 82.58,
+      "at": 81.08,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -107,6 +107,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-428祷告心声.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "31f8e0d6dba7a79fb70da41320647fa85d2f3dbf00493c4e4dd1f7642189b781",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

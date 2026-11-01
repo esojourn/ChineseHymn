@@ -60,50 +60,50 @@
   },
   "cues": [
     {
-      "at": 8.85,
+      "at": 7.35,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 29.45,
+      "at": 27.95,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 49.25,
+      "at": 47.75,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 69.85,
+      "at": 68.35,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 89.65,
+      "at": 88.15,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 110.25,
+      "at": 108.75,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 130.05,
+      "at": 128.55,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 150.65,
+      "at": 149.15,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-848闻主召我.txt.reference.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0b0830dec40cb31e19dded7b1b10343baebe9b45bb32c6eaf62b79f61a96b6e2",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

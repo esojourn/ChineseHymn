@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 5.8,
+          "at": 4.3,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 19.75,
+          "at": 18.25,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 31.4,
+          "at": 29.9,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 45.35,
+          "at": 43.85,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 57.0,
+          "at": 55.5,
           "region": "s1_v3",
           "label": "第3段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 70.95,
+          "at": 69.45,
           "region": "s2_v3",
           "label": "第3段：第2谱行",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 6.4,
+      "at": 4.9,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 20.35,
+      "at": 18.85,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 32.0,
+      "at": 30.5,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 45.95,
+      "at": 44.45,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 57.6,
+      "at": 56.1,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 71.55,
+      "at": 70.05,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
@@ -173,7 +173,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-417我当完全属主.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "8dc6aa3e16fc2f7672469de61de96dd8b1b19046616e137f08a8f92b24f4e3ca",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

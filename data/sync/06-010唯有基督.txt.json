@@ -100,98 +100,98 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.26,
+      "at": 32.76,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 45.5,
+      "at": 44.0,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 56.02,
+      "at": 54.52,
       "region": "r4",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 80.46,
+      "at": 78.96,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 91.36,
+      "at": 89.86,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 102.24,
+      "at": 100.74,
       "region": "r7",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 113.84,
+      "at": 112.34,
       "region": "r8",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 126.62,
+      "at": 125.12,
       "region": "r9",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 138.1,
+      "at": 136.6,
       "region": "r10",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 147.32,
+      "at": 145.82,
       "region": "r11",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 159.74,
+      "at": 158.24,
       "region": "r12",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 183.9,
+      "at": 182.4,
       "region": "r13",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 195.88,
+      "at": 194.38,
       "region": "r14",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 206.42,
+      "at": 204.92,
       "region": "r15",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 216.84,
+      "at": 215.34,
       "region": "r16",
       "label": "第4段",
       "transition": "reading"
@@ -315,6 +315,14 @@
       ],
       "policy": "earliest source-bound reading previews from independent original-audio decodes; sung onsets are not claimed",
       "exceptions": "ev’ry/pow’r normalize to every/power. One gift is not recognized: both windows must identify This and the next three original words, while the uncertain word remains explicitly unverified. That/the requires an exact that witness. One clipped No uses the crop boundary only as an early preview and requires independent confirmation of its word end; no clipped onset is claimed."
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f4e130dfdee582bcc2599262e43ee24bbbe75e68c33b4b101a19cb9d6478eb2c",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

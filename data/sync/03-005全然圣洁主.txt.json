@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 10.6,
+          "at": 9.1,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 63.25,
+          "at": 61.75,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 93.35,
+          "at": 91.85,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 140.65,
+          "at": 139.15,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 170.65,
+          "at": 169.15,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 221.35,
+          "at": 219.85,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 11.0,
+      "at": 9.5,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 63.65,
+      "at": 62.15,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 93.75,
+      "at": 92.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 141.05,
+      "at": 139.55,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 171.05,
+      "at": 169.55,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 221.75,
+      "at": 220.25,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-005全然圣洁主.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "89c1d84b7e5ee8d52ca7c3a11d0569be9c2199f43fe6675a01895807e7a280b9",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

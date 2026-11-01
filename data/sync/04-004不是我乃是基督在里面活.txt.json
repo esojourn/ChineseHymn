@@ -100,98 +100,98 @@
   },
   "cues": [
     {
-      "at": 3.88,
+      "at": 2.38,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 39.15,
+      "at": 37.65,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 57.75,
+      "at": 56.25,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 75.75,
+      "at": 74.25,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 102.35,
+      "at": 100.85,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 121.15,
+      "at": 119.65,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 139.28,
+      "at": 137.78,
       "region": "r7",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 165.6,
+      "at": 164.1,
       "region": "r8",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 184.58,
+      "at": 183.08,
       "region": "r9",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 202.85,
+      "at": 201.35,
       "region": "r10",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 229.1,
+      "at": 227.6,
       "region": "r11",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 247.87,
+      "at": 246.37,
       "region": "r12",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 256.05,
+      "at": 254.55,
       "region": "r13",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 274.45,
+      "at": 272.95,
       "region": "r14",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 282.92,
+      "at": 281.42,
       "region": "r15",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 296.3,
+      "at": 294.8,
       "region": "r16",
       "label": "第4段",
       "transition": "reading"
@@ -287,6 +287,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-004不是我乃是基督在里面活.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "2379b8d7267b160c21552548ef342c048becc5b899179d5a8b63e6de10b394e9",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

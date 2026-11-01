@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 6.2,
+      "at": 4.7,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 24.35,
+      "at": 22.85,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 42.25,
+      "at": 40.75,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 60.2,
+      "at": 58.7,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-378我是否要背负十架.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "1661832eb2f0a22273b6a3102e1dfd97d466cc38576354dd4b25751e8552541c",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

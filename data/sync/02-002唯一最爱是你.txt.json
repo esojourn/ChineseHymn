@@ -80,74 +80,74 @@
   },
   "cues": [
     {
-      "at": 12.66,
+      "at": 11.16,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 38.3,
+      "at": 36.8,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 63.79,
+      "at": 62.29,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 89.52,
+      "at": 88.02,
       "region": "r4",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 115.06,
+      "at": 113.56,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 140.43,
+      "at": 138.93,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 166.26,
+      "at": 164.76,
       "region": "r7",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 191.89,
+      "at": 190.39,
       "region": "r8",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 217.47,
+      "at": 215.97,
       "region": "r9",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 243.46,
+      "at": 241.96,
       "region": "r10",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 268.56,
+      "at": 267.06,
       "region": "r11",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 294.31,
+      "at": 292.81,
       "region": "r12",
       "label": "第3段",
       "transition": "reading"
@@ -223,6 +223,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-002唯一最爱是你.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f152d9e5cd5ba06518031f8284c79e2a90e744de65fd2630867009b7a403bc56",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

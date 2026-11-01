@@ -16,20 +16,20 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 5.3,
+          "at": 3.8,
           "region": "s1_chorus",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 20.7,
+          "at": 19.2,
           "region": "s2_chorus",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 33.8,
+          "at": 32.3,
           "region": "s3_chorus",
           "label": "第1段：第3谱行",
           "transition": "reading"
@@ -63,20 +63,20 @@
   },
   "cues": [
     {
-      "at": 4.8,
+      "at": 3.3,
       "region": "s1_chorus",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 20.2,
+      "at": 18.7,
       "region": "s2_chorus",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 33.3,
+      "at": 31.8,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
@@ -107,7 +107,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-416神啊求你鉴察我.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f16a2cbf3924c014570ba5082ea39508e408fb8656162628931b0feaf817efb1",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

@@ -50,38 +50,38 @@
   },
   "cues": [
     {
-      "at": 8.7,
+      "at": 7.2,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 43.4,
+      "at": 41.9,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 60.75,
+      "at": 59.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 95.4,
+      "at": 93.9,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 112.8,
+      "at": 111.3,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 147.5,
+      "at": 146.0,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -127,6 +127,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-384求主扶持.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "6b7ec23f9919907f6a466895a0dbab9e58cb1a7e53cae6f67f1e1f97f5abab7b",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

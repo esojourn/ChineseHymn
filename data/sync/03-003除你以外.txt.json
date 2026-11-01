@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 0,
+          "at": 0.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 36.83,
+          "at": 35.33,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 67.21,
+          "at": 65.71,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 96.9,
+          "at": 95.4,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 127.1,
+          "at": 125.6,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 36.93,
+      "at": 35.43,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 67.31,
+      "at": 65.81,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 97.0,
+      "at": 95.5,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 127.2,
+      "at": 125.7,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -158,6 +158,14 @@
       "at": 0,
       "policy": "initial reading position from playback start",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f44742c3f92bb26b6c1c441a20efe7380d67eab403cec4475cb14bd482dae94e",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

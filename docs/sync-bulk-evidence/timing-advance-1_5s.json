@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "baselineCommit": "ace71c55c4a09623f9aa47cc0f6ea6a124ea37a9",
+  "request": "advance every existing scroll time by an additional 1.5 seconds, except 05-099; no new recognition",
+  "advanceSeconds": 1.5,
+  "files": 391,
+  "sourceTypes": {
+    "text": 213,
+    "image": 178
+  },
+  "storedTimelines": 558,
+  "cuePoints": 5864,
+  "changedCuePoints": 5826,
+  "transitionStarts": 562,
+  "changedTransitionStarts": 5,
+  "cuePointsClampedToZero": 2,
+  "transitionStartsClampedToZero": 1,
+  "excluded": {
+    "file": "05-099宝架清影.jpg.json",
+    "sha256": "0f4ceaa9f8d0d7eecc7f9eda8807462df07f0d9bdd7385287acdcc5988139963"
+  },
+  "checks": {
+    "onlyCueTimesAndAdjustmentProvenanceChanged": true,
+    "excludedFileByteIdentical": true,
+    "allStoredTimeArraysChecked": true,
+    "readingOrderPreserved": true,
+    "all392SourceAndTrackHashValidationsPassed": true,
+    "repeatInvocationProposedNoChanges": true
+  },
+  "readingOrderChecks": 5864,
+  "browserEvidence": "docs/sync-bulk-evidence/timing-advance-1_5s-browser.json"
+}

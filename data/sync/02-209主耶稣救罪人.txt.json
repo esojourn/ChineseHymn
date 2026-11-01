@@ -16,20 +16,20 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.02,
+          "at": 5.52,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 35.78,
+          "at": 34.28,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 64.66,
+          "at": 63.16,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
@@ -63,20 +63,20 @@
   },
   "cues": [
     {
-      "at": 8.52,
+      "at": 7.02,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.28,
+      "at": 35.78,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 66.16,
+      "at": 64.66,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -107,6 +107,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-209主耶稣救罪人.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "308ff49043d14dff085668fcb15bd506faf87adbf7c7d0f3999ee3e7861b5e26",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

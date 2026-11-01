@@ -50,38 +50,38 @@
   },
   "cues": [
     {
-      "at": 10.1,
+      "at": 8.6,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 50.65,
+      "at": 49.15,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 70.75,
+      "at": 69.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 111.3,
+      "at": 109.8,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 131.35,
+      "at": 129.85,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 171.9,
+      "at": 170.4,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -127,6 +127,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-343安稳在耶稣手中.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "b141898fa590d6fcb4b54f01264c37c99c795289e15235fd5a611a7fb74902cf",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

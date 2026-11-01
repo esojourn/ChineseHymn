@@ -16,26 +16,26 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 7.1,
+          "at": 5.6,
           "region": "s1_chorus",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 18.7,
+          "at": 17.2,
           "region": "s2_chorus",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 29.6,
+          "at": 28.1,
           "region": "s3_chorus",
           "label": "第1段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 40.0,
+          "at": 38.5,
           "region": "s4_chorus",
           "label": "第1段：第4谱行",
           "transition": "reading"
@@ -74,26 +74,26 @@
   },
   "cues": [
     {
-      "at": 6.0,
+      "at": 4.5,
       "region": "s1_chorus",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 17.6,
+      "at": 16.1,
       "region": "s2_chorus",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 28.5,
+      "at": 27.0,
       "region": "s3_chorus",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 38.9,
+      "at": 37.4,
       "region": "s4_chorus",
       "label": "第1段：第4谱行",
       "transition": "reading"
@@ -129,7 +129,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-437信心加上德行.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "7a943f3397cbe82c8170f3be61ec9360bce914262aa772f754248e73fa50da50",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

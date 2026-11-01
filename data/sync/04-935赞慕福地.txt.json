@@ -50,38 +50,38 @@
   },
   "cues": [
     {
-      "at": 9.0,
+      "at": 7.5,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.25,
+      "at": 26.75,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 47.4,
+      "at": 45.9,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 66.65,
+      "at": 65.15,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 85.8,
+      "at": 84.3,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 105.05,
+      "at": 103.55,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -127,6 +127,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-935赞慕福地.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "7c20cedf3c53c7a05b6c58f310fa3065e11edf7373f93acb850dbcbd472bfec7",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 0,
+          "at": 0.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 68.2,
+          "at": 66.7,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 121.3,
+          "at": 119.8,
           "region": "r3",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 136.42,
+          "at": 134.92,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 197.05,
+          "at": 195.55,
           "region": "r5",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 250.1,
+          "at": 248.6,
           "region": "r6",
           "label": "第2段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 68.62,
+      "at": 67.12,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 121.72,
+      "at": 120.22,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 136.92,
+      "at": 135.42,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 197.53,
+      "at": 196.03,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 250.58,
+      "at": 249.08,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
@@ -180,6 +180,14 @@
       "at": 0,
       "policy": "initial reading position from playback start",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "a16a826ec80fc1bf5747c15623458d24841143109d72258b27e81eec1ebd7921",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

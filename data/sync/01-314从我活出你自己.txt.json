@@ -64,46 +64,46 @@
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 17.65,
+      "at": 16.15,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 35.1,
+      "at": 33.6,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 52.75,
+      "at": 51.25,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 70.2,
+      "at": 68.7,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 87.85,
+      "at": 86.35,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 105.4,
+      "at": 103.9,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 123.0,
+      "at": 121.5,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-314从我活出你自己.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f74c4235eb0bcfe80164d38093fe92da0bfc7c7ca180f2dd74f2eea95b80d1ac",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

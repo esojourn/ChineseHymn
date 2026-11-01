@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 3.57,
+          "at": 2.07,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 32.32,
+          "at": 30.82,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 61.22,
+          "at": 59.72,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 90.06,
+          "at": 88.56,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 118.68,
+          "at": 117.18,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 7.47,
+      "at": 5.97,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 36.22,
+      "at": 34.72,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 65.12,
+      "at": 63.62,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 93.96,
+      "at": 92.46,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 122.58,
+      "at": 121.08,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-122每逢思念奇妙十架.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "90cae280ecc463233206283b1db390f307990bb6e3d3b3c6c38ba1d2236fce23",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

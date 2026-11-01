@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 7.25,
+      "at": 5.75,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 36.35,
+      "at": 34.85,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 65.45,
+      "at": 63.95,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 94.55,
+      "at": 93.05,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-452更深认识耶穌.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "018d03e48995ad7c417b9471ef8312e04b8490255f091770a3c515273456e916",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

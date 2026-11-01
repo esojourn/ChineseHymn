@@ -40,38 +40,38 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 48.9,
+      "at": 47.4,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 101.9,
+      "at": 100.4,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 130.8,
+      "at": 129.3,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 182.1,
+      "at": 180.6,
       "region": "r3",
       "label": "第2段",
       "transition": "return"
     },
     {
-      "at": 206.0,
+      "at": 204.5,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
@@ -133,6 +133,14 @@
         5
       ],
       "policy": "complete printed sections and stable ending variation; early reading previews, no sung onsets"
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "0e4fa216dc8c02478802e0ef7f8810f8bfdec9ab2c7fa707d401184bb6173d20",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 9.4,
+          "at": 7.9,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 28.2,
+          "at": 26.7,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 42.35,
+          "at": 40.85,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 61.2,
+          "at": 59.7,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 75.25,
+          "at": 73.75,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 94.1,
+          "at": 92.6,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 9.7,
+      "at": 8.2,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 28.5,
+      "at": 27.0,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 42.65,
+      "at": 41.15,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 61.5,
+      "at": 60.0,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 75.55,
+      "at": 74.05,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 94.4,
+      "at": 92.9,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-323主耶和华求你领我.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "845a2fc31e817905fef608995fccd0c202b0caccc978a76e976651a8aafffecb",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 11.97,
+          "at": 10.47,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 37.0,
+          "at": 35.5,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 62.04,
+          "at": 60.54,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 87.1,
+          "at": 85.6,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 112.13,
+          "at": 110.63,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 12.37,
+      "at": 10.87,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.4,
+      "at": 35.9,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 62.44,
+      "at": 60.94,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 87.5,
+      "at": 86.0,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 112.53,
+      "at": 111.03,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-773虽然四面狂风大作.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "a95a8e903c9ca176eea9ffd8111d72ab96c1c6d51a38dd34ad8ba43a1fe2f097",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

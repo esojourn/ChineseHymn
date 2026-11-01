@@ -16,50 +16,50 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 10.15,
+          "at": 8.65,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 29.7,
+          "at": 28.2,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 50.55,
+          "at": 49.05,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 70.15,
+          "at": 68.65,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 90.95,
+          "at": 89.45,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 110.55,
+          "at": 109.05,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 131.35,
+          "at": 129.85,
           "region": "r7",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 151.1,
+          "at": 149.6,
           "region": "r8",
           "label": "第4段",
           "transition": "reading"
@@ -118,50 +118,50 @@
   },
   "cues": [
     {
-      "at": 10.35,
+      "at": 8.85,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 29.9,
+      "at": 28.4,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 50.75,
+      "at": 49.25,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 70.35,
+      "at": 68.85,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 91.15,
+      "at": 89.65,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 110.75,
+      "at": 109.25,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 131.55,
+      "at": 130.05,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 151.2,
+      "at": 149.7,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -217,6 +217,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-025宝血大权能.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "5e47d0e0795d6dc99f83b6aa50e613927945133efcc84b93176757393b32c209",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

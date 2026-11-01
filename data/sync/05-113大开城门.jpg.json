@@ -16,44 +16,44 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 65.2,
+          "at": 63.7,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 79.6,
+          "at": 78.1,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 89.75,
+          "at": 88.25,
           "region": "s3_v1",
           "label": "第1段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 102.35,
+          "at": 100.85,
           "region": "s4_v1",
           "label": "第1段：第4谱行",
           "transition": "reading"
         },
         {
-          "at": 113.1,
+          "at": 111.6,
           "region": "s5_v1",
           "label": "第1段：第5谱行",
           "transition": "reading"
         },
         {
-          "at": 124.65,
+          "at": 123.15,
           "region": "s6_chorus",
           "label": "第1段：第6谱行",
           "transition": "reading"
         },
         {
-          "at": 135.1,
+          "at": 133.6,
           "region": "s7_chorus",
           "label": "第1段：第7谱行",
           "transition": "reading"
@@ -132,44 +132,44 @@
   },
   "cues": [
     {
-      "at": 65.9,
+      "at": 64.4,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 80.3,
+      "at": 78.8,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 90.45,
+      "at": 88.95,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 103.05,
+      "at": 101.55,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 113.8,
+      "at": 112.3,
       "region": "s5_v1",
       "label": "第1段：第5谱行",
       "transition": "reading"
     },
     {
-      "at": 125.35,
+      "at": 123.85,
       "region": "s6_chorus",
       "label": "第1段：第6谱行",
       "transition": "reading"
     },
     {
-      "at": 135.8,
+      "at": 134.3,
       "region": "s7_chorus",
       "label": "第1段：第7谱行",
       "transition": "reading"
@@ -220,7 +220,15 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/05-113大开城门.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "aedd6ead1049fd2e8d72dbeff40dc3ab8fb1dc3c8e6641565623c6a30cdb91b0",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

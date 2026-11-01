@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 12.6,
+          "at": 11.1,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 34.5,
+          "at": 33.0,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 56.45,
+          "at": 54.95,
           "region": "r3",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 92.48,
+          "at": 90.98,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 115.1,
+          "at": 113.6,
           "region": "r5",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 138.05,
+          "at": 136.55,
           "region": "r6",
           "label": "第2段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 12.67,
+      "at": 11.17,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 34.6,
+      "at": 33.1,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 56.62,
+      "at": 55.12,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 92.57,
+      "at": 91.07,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 115.22,
+      "at": 113.72,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 138.15,
+      "at": 136.65,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/03-020主如明亮晨星.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "b9a0300cc58d92c8cac00e66188497411c29351bcfcda9bb317f2032fb51aefe",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

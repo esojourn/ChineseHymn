@@ -35,20 +35,20 @@
   },
   "cues": [
     {
-      "at": 5.3,
+      "at": 3.8,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.35,
+      "at": 35.85,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 69.35,
+      "at": 67.85,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -79,6 +79,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-426主祷文.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "9de0d16e914a6b806ea3e0ddc45b987d3c7977937fc260b22f96f13e16e01030",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

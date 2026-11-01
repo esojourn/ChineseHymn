@@ -60,50 +60,50 @@
   },
   "cues": [
     {
-      "at": 10.75,
+      "at": 9.25,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 32.05,
+      "at": 30.55,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 53.35,
+      "at": 51.85,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 74.7,
+      "at": 73.2,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 96.05,
+      "at": 94.55,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 117.4,
+      "at": 115.9,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 138.75,
+      "at": 137.25,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 160.05,
+      "at": 158.55,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -159,6 +159,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-473殷勤作工.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "f84e8b4e4f1895455dcf7f1a9ab4a87863088bb8a6f165b5305a37b9790be8cf",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

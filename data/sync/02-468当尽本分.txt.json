@@ -40,26 +40,26 @@
   },
   "cues": [
     {
-      "at": 5.8,
+      "at": 4.3,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 24.95,
+      "at": 23.45,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 44.15,
+      "at": 42.65,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 63.5,
+      "at": 62.0,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -95,6 +95,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-468当尽本分.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "6c827ff863da05f256bbb6d11321ad7edea3b4206c8b54eaa1720fc92a863223",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

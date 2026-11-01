@@ -16,26 +16,26 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 0,
+          "at": 0.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 72.05,
+          "at": 70.55,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 105.72,
+          "at": 104.22,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 136.15,
+          "at": 134.65,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
@@ -74,26 +74,26 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 72.15,
+      "at": 70.65,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 105.8,
+      "at": 104.3,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 136.23,
+      "at": 134.73,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
@@ -136,6 +136,14 @@
       "at": 0,
       "policy": "initial reading position from playback start",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "86305be32fe4a088c95a62ac9f6b0b35fe9c0275ba39ccc2149a40d32ca85911",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

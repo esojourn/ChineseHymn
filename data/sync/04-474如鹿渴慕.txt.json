@@ -16,20 +16,20 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 23.5,
+          "at": 22.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 85.2,
+          "at": 83.7,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 147.3,
+          "at": 145.8,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
@@ -63,20 +63,20 @@
   },
   "cues": [
     {
-      "at": 14.9,
+      "at": 13.4,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 76.6,
+      "at": 75.1,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 138.7,
+      "at": 137.2,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -107,6 +107,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/04-474如鹿渴慕.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "c6b89fadb88639e2bea0d5288a4a47dd92e2b7d0ddb38d48afcebada2a04438d",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

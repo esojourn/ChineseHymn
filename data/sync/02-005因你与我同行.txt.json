@@ -16,38 +16,38 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 10.17,
+          "at": 8.67,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 37.58,
+          "at": 36.08,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 55.91,
+          "at": 54.41,
           "region": "r3",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 73.27,
+          "at": 71.77,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 100.64,
+          "at": 99.14,
           "region": "r5",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 118.9,
+          "at": 117.4,
           "region": "r6",
           "label": "第2段",
           "transition": "reading"
@@ -96,38 +96,38 @@
   },
   "cues": [
     {
-      "at": 10.17,
+      "at": 8.67,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 37.58,
+      "at": 36.08,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 55.91,
+      "at": 54.41,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 73.27,
+      "at": 71.77,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 100.64,
+      "at": 99.14,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 118.9,
+      "at": 117.4,
       "region": "r6",
       "label": "第2段",
       "transition": "reading"
@@ -173,6 +173,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/02-005因你与我同行.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "1043a0301c6047e4e028d659e054d1ac7731f5696f3f118384211c4de32241d7",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -60,56 +60,56 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 30.34,
+      "at": 28.84,
       "region": "r1",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 46.9,
+      "at": 45.4,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 68.37,
+      "at": 66.87,
       "region": "r3",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 99.55,
+      "at": 98.05,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 120.72,
+      "at": 119.22,
       "region": "r5",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 152.0,
+      "at": 150.5,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 173.3,
+      "at": 171.8,
       "region": "r7",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 195.31,
+      "at": 193.81,
       "region": "r8",
       "label": "第3段",
       "transition": "reading"
@@ -217,6 +217,14 @@
         "pinyinVersion": "0.55.0",
         "method": "two literal-confirmed complete source refrains and tone-free syllable correspondence"
       }
-    ]
+    ],
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "1e0bafe8bcc4b6f6a5525d9e6bd68493329c087dd947c80dcf607e7927ababf8",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

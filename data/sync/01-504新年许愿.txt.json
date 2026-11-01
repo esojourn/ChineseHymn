@@ -45,32 +45,32 @@
   },
   "cues": [
     {
-      "at": 4.75,
+      "at": 3.25,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 23.95,
+      "at": 22.45,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 43.15,
+      "at": 41.65,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 62.35,
+      "at": 60.85,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 81.55,
+      "at": 80.05,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -111,6 +111,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-504新年许愿.txt.midi.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "2316a8281f113069ed926902aa8cec5af4d2aa6e11e0049a842708460aa9756f",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

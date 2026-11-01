@@ -16,32 +16,32 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 12.85,
+          "at": 11.35,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 39.7,
+          "at": 38.2,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 66.09,
+          "at": 64.59,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 93.61,
+          "at": 92.11,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 120.6,
+          "at": 119.1,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -85,32 +85,32 @@
   },
   "cues": [
     {
-      "at": 8.55,
+      "at": 7.05,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 33.2,
+      "at": 31.7,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 57.99,
+      "at": 56.49,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 82.71,
+      "at": 81.21,
       "region": "r4",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 107.26,
+      "at": 105.76,
       "region": "r5",
       "label": "第5段",
       "transition": "reading"
@@ -151,6 +151,14 @@
       }
     ],
     "evidence": "docs/sync-bulk-evidence/01-119哎呀！救主真曾流血.txt.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "ae0eefbcfd1456eda6662fd5e2f18dc0314c20d533e50185f5805fe0f3c8087a",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    }
   }
 }

@@ -16,14 +16,14 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 0,
+          "at": 0.0,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
-          "moveStart": 0
+          "moveStart": 0.0
         },
         {
-          "at": 62.28,
+          "at": 60.78,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
@@ -52,14 +52,14 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 62.38,
+      "at": 60.88,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
@@ -92,6 +92,14 @@
       "at": 0,
       "policy": "initial reading position from playback start",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "96779a6fb6a26da0f907cfd9136c62111ec31a7fc1e37d794981468a1aefff5c",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

@@ -35,20 +35,20 @@
   },
   "cues": [
     {
-      "at": 0,
+      "at": 0.0,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
-      "moveStart": 0
+      "moveStart": 0.0
     },
     {
-      "at": 43.6,
+      "at": 42.1,
       "region": "r2",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 78.52,
+      "at": 77.02,
       "region": "r3",
       "label": "第3段",
       "transition": "reading"
@@ -85,6 +85,14 @@
       "at": 0,
       "region": "r1",
       "lyricOnsetMeasured": false
+    },
+    "timingAdjustment": {
+      "version": 1,
+      "requestId": "user-preview-2026-11-01",
+      "advanceSeconds": 1.5,
+      "clampAtZero": true,
+      "baselineSha256": "fc04166caee4a647ee762533469c25d9396cfa0b68a169ba902784b4e205b410",
+      "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
     }
   }
 }

@@ -30,6 +30,67 @@
         return lines.length;
     }
 
+    function imageReturnBands(img, region) {
+        const width = Math.min(1024, img.naturalWidth);
+        if (!width || !img.naturalHeight) return [];
+        const height = Math.round(img.naturalHeight * width / img.naturalWidth);
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext('2d', { willReadFrequently: true });
+        if (!context) return [];
+        context.drawImage(img, 0, 0, width, height);
+        const first = Math.max(0, Math.round(region.top * height));
+        const last = Math.min(height, Math.round(region.bottom * height));
+        if (last <= first) return [];
+        let pixels;
+        try { pixels = context.getImageData(0, first, width, last - first).data; }
+        catch (_) { return []; } // A cross-origin image must still remain readable without a hint.
+        const bands = [];
+        const sums = [0];
+        let start = null, end = 0;
+        const dark = (x, y) => {
+            if (x < 0 || x >= width || y < 0 || y >= last - first) return false;
+            const i = (y * width + x) * 4;
+            return pixels[i + 3] > 128 && pixels[i] + pixels[i + 1] + pixels[i + 2] < 435;
+        };
+        const finish = () => {
+            if (start !== null && end - start + 1 >= 5) {
+                let left = 0;
+                for (let x = 0; x < width; x++) {
+                    let ink = 0, above = false, below = false;
+                    for (let y = start; y <= end; y++) if (dark(x, y)) ink++;
+                    for (let dx = -2; dx <= 2; dx++) {
+                        above ||= dark(x + dx, start - 3);
+                        below ||= dark(x + dx, end + 3);
+                    }
+                    // Ignore long staff braces, which continue past both sides of the lyric row.
+                    if (ink >= Math.max(2, (end - start + 1) * 0.12) && !(above && below)) {
+                        left = x / width;
+                        break;
+                    }
+                }
+                bands.push({ top: (first + start) / height, bottom: (first + end + 1) / height,
+                    left, density: (sums[end + 1] - sums[start]) / ((end - start + 1) * width) });
+            }
+            start = null;
+        };
+        for (let y = 0; y < last - first; y++) {
+            let ink = 0;
+            for (let x = Math.round(width * 0.08); x < Math.round(width * 0.95); x++) {
+                const i = (y * width + x) * 4;
+                if (pixels[i + 3] > 128 && pixels[i] + pixels[i + 1] + pixels[i + 2] < 435) ink++;
+            }
+            sums.push(sums[sums.length - 1] + ink);
+            if (ink > width * 0.025) {
+                if (start === null) start = y;
+                end = y;
+            } else if (start !== null && y - end > 2) finish();
+        }
+        finish();
+        return bands;
+    }
+
     class Controller {
         constructor(audio, content, data, track, onManual = () => {}) {
             this.audio = audio;
@@ -117,6 +178,25 @@
                 });
                 this.positions = Core.previewTargets(this.positions, regionBounds, edges, height, maximum);
             }
+            this.prepareReturnHints();
+        }
+
+        prepareReturnHints() {
+            if (this.data.source.type !== 'image') return;
+            const img = this.content.querySelector('img');
+            if (!img?.naturalWidth) return;
+            const key = `${img.currentSrc}:${img.naturalWidth}:${img.naturalHeight}`;
+            if (this.returnImage === img && this.returnImageKey === key) return;
+            const bands = new Map();
+            this.returnAnchors = this.data.cues.map(cue => {
+                if (cue.transition !== 'return') return null;
+                const anchor = Core.imageReturnAnchor(this.data, cue);
+                if (anchor) return anchor;
+                if (!bands.has(cue.region)) bands.set(cue.region, imageReturnBands(img, this.data.regions[cue.region]));
+                return Core.imageReturnAnchor(this.data, cue, bands.get(cue.region));
+            });
+            this.returnImage = img;
+            this.returnImageKey = key;
         }
 
         setEnabled(enabled) {
@@ -146,6 +226,38 @@
             cancelAnimationFrame(this.frame);
             this.frame = null;
             this.lastClock = null;
+            this.hideReturnDot();
+        }
+
+        hideReturnDot() {
+            if (!this.returnDot) return;
+            this.returnDot.hidden = true;
+            this.returnDot.classList.remove('is-blinking');
+        }
+
+        flashReturnDot(index) {
+            const anchor = this.returnAnchors?.[index];
+            const region = this.data.cues[index].region;
+            const img = this.content.querySelector('img');
+            if (!anchor || !img) return;
+            if (!this.returnDot) {
+                this.returnDot = document.createElement('span');
+                this.returnDot.className = 'sync-return-dot';
+                this.returnDot.setAttribute('aria-hidden', 'true');
+                this.returnDot.addEventListener('animationend', event => {
+                    if (event.animationName === 'sync-return-blink') this.hideReturnDot();
+                }, { signal: this.abort.signal });
+                document.body.appendChild(this.returnDot);
+            }
+            this.hideReturnDot();
+            const rect = img.getBoundingClientRect();
+            this.returnDot.style.left = `${rect.left + window.scrollX + rect.width * anchor.x}px`;
+            this.returnDot.style.top = `${rect.top + window.scrollY + rect.height * anchor.y}px`;
+            this.returnDot.dataset.region = region;
+            this.returnDot.hidden = false;
+            // Restart all three flashes when revisiting the same verse on a later pass.
+            void this.returnDot.offsetWidth;
+            this.returnDot.classList.add('is-blinking');
         }
 
         start() {
@@ -167,6 +279,12 @@
             this.lastTime = time;
             const state = Core.locate(this.data.cues, time - this.track.offset);
             if (!state) return;
+            if (this.data.source.type === 'image' && state.to !== this.indicatorCue) {
+                this.hideReturnDot();
+                this.indicatorCue = state.to;
+                const cue = this.data.cues[state.to];
+                this.pendingReturn = cue.transition === 'return' && this.returnAnchors?.[state.to] ? state.to : null;
+            }
             const key = state.from + ':' + state.to;
             if (!state.moving && this.lastKey !== null && key !== this.lastKey && !this.wasMoving) {
                 this.join = { from: window.scrollY, elapsed: 0 };
@@ -191,10 +309,16 @@
                 window.scrollTo({ top: this.expected, behavior: 'instant' });
                 this.expected = window.scrollY;
             }
+            // Wait until both an interlude movement and the final smooth scroll have arrived.
+            if (!state.moving && !this.join && this.pendingReturn === state.to &&
+                Math.abs(window.scrollY - this.positions[state.to]) <= 3) {
+                this.flashReturnDot(state.to);
+                this.pendingReturn = null;
+            }
             if (active || this.join) this.start();
         }
 
-        destroy() { this.stop(); this.abort.abort(); }
+        destroy() { this.stop(); this.abort.abort(); this.returnDot?.remove(); }
     }
 
     async function sha256(buffer) {
@@ -284,7 +408,7 @@
         }
     }
 
-    window.HymnSync = { Controller, renderText, sha256, mount };
+    window.HymnSync = { Controller, renderText, sha256, mount, imageReturnBands };
     const init = () => {
         if (window.hymnSyncConfig) mount(window.hymnSyncConfig);
         else {

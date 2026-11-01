@@ -461,7 +461,7 @@ function print_html_footer()
     $sync_js = asset_url('css/lyric-sync.js');
     echo <<<EOL
     <div class="footer">
-    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.5.1</a>
+    <a href="https://github.com/esojourn/ChineseHymn/releases" target="_blank">v1.5.2</a>
     </div>
     <script type="text/javascript" src="$scripts_js"></script>
     <script src="$sync_core_js"></script>

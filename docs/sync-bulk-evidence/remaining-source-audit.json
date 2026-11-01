@@ -1,0 +1,1453 @@
+{
+  "version": 1,
+  "date": "2026-11-01",
+  "baselineCommit": "ddfea1d",
+  "totalSources": 420,
+  "completedScrollSources": 392,
+  "authorizedMissingLyricsSkips": 23,
+  "pendingSources": [
+    {
+      "songId": "01-330",
+      "source": "01-330我舍一切而要耶稣.txt",
+      "sourceHash": "61ec9e9b59470e3d2fd9de00107726833f3136ce926aa2da74289b7c11e54a77",
+      "tracks": [],
+      "status": "missing-audio",
+      "reason": "没有同名或领唱 MP3，不能从现有原素材建立播放时间轴。"
+    },
+    {
+      "songId": "02-395",
+      "source": "02-395主前省察.txt",
+      "sourceHash": "a086b84584fc112ee797df97190025735ab076ff156d041966c76a25aa589f23",
+      "tracks": [
+        {
+          "file": "02-395主前省察.mp3",
+          "sha256": "739964770d62df2a724a54c1a807b63777ceaff7264a4a44186834df5d728ea4"
+        },
+        {
+          "file": "02-395主前省察-领唱.mp3",
+          "sha256": "4e1404cb8bf43eeee0ce6517029915cda7415bc53b4d897dc72bbf65b3e1833c"
+        }
+      ],
+      "status": "needs-source-review",
+      "reason": "正文重复了02-386《高举主旗》；伴奏旋律匹配《主前省察》参考而非重复正文对应曲调；领唱与02-394《求主监察》在全曲168个一秒窗口上高度对应。歌词及领唱均需修正或确认。",
+      "bodyComparison": {
+        "file": "02-386高举主旗.txt",
+        "sha256": "e25e0a7f9caff55ce127827c76ad655113bfdbcee84d4c8c63d937d4443a0e6a",
+        "equalAfterTitleAndBlankRemoval": true,
+        "normalizedUtf8BodySha256": "05692bc50b08ba64fe0648d750544c0d7b1370cd0e9928bbeb37c7e44dbb33a1"
+      },
+      "leadComparison": {
+        "files": [
+          "02-394求主监察-领唱.mp3",
+          "02-395主前省察-领唱.mp3"
+        ],
+        "samplingRate": 16000,
+        "samples": [
+          2696875,
+          2696875
+        ],
+        "pcmFloat32Sha256": [
+          "478ac023c5b20bb817fbef48b78a616356d7e6e123a50be0d6c644bdb3fd9e39",
+          "10ad76415900118a54f17ee80aad1a9442d816f41eb53bdbcf249311e7ea2f1e"
+        ],
+        "exactDecodedEquality": false,
+        "maximumDifference": 0.42254638671875,
+        "correlation": 0.9967258910100655,
+        "oneSecondWindows": [
+          {
+            "at": 0.0,
+            "correlation": 0.9996197022230616
+          },
+          {
+            "at": 1.0,
+            "correlation": 0.9996733327157267
+          },
+          {
+            "at": 2.0,
+            "correlation": 0.9991206091576811
+          },
+          {
+            "at": 3.0,
+            "correlation": 0.9976457988020676
+          },
+          {
+            "at": 4.0,
+            "correlation": 0.9950279317797964
+          },
+          {
+            "at": 5.0,
+            "correlation": 0.9982134683582541
+          },
+          {
+            "at": 6.0,
+            "correlation": 0.9962161534970057
+          },
+          {
+            "at": 7.0,
+            "correlation": 0.9978303802308589
+          },
+          {
+            "at": 8.0,
+            "correlation": 0.9932321383254403
+          },
+          {
+            "at": 9.0,
+            "correlation": 0.9983221850252361
+          },
+          {
+            "at": 10.0,
+            "correlation": 0.9943132093818619
+          },
+          {
+            "at": 11.0,
+            "correlation": 0.99688468492544
+          },
+          {
+            "at": 12.0,
+            "correlation": 0.9963670509758118
+          },
+          {
+            "at": 13.0,
+            "correlation": 0.9923490574089071
+          },
+          {
+            "at": 14.0,
+            "correlation": 0.9990975239774774
+          },
+          {
+            "at": 15.0,
+            "correlation": 0.9951340327389726
+          },
+          {
+            "at": 16.0,
+            "correlation": 0.9911844869725668
+          },
+          {
+            "at": 17.0,
+            "correlation": 0.9965815063096577
+          },
+          {
+            "at": 18.0,
+            "correlation": 0.9982926022846198
+          },
+          {
+            "at": 19.0,
+            "correlation": 0.9987899318195756
+          },
+          {
+            "at": 20.0,
+            "correlation": 0.9969770150672411
+          },
+          {
+            "at": 21.0,
+            "correlation": 0.9982710916230854
+          },
+          {
+            "at": 22.0,
+            "correlation": 0.9970316718669476
+          },
+          {
+            "at": 23.0,
+            "correlation": 0.9895770127369131
+          },
+          {
+            "at": 24.0,
+            "correlation": 0.9980398387692829
+          },
+          {
+            "at": 25.0,
+            "correlation": 0.9994555258242172
+          },
+          {
+            "at": 26.0,
+            "correlation": 0.9979896018635739
+          },
+          {
+            "at": 27.0,
+            "correlation": 0.997923259307928
+          },
+          {
+            "at": 28.0,
+            "correlation": 0.9981994974816427
+          },
+          {
+            "at": 29.0,
+            "correlation": 0.9974325885095073
+          },
+          {
+            "at": 30.0,
+            "correlation": 0.9943553738866164
+          },
+          {
+            "at": 31.0,
+            "correlation": 0.9897945287884373
+          },
+          {
+            "at": 32.0,
+            "correlation": 0.991840591092339
+          },
+          {
+            "at": 33.0,
+            "correlation": 0.9913344304642961
+          },
+          {
+            "at": 34.0,
+            "correlation": 0.9940863032220237
+          },
+          {
+            "at": 35.0,
+            "correlation": 0.9994100500071718
+          },
+          {
+            "at": 36.0,
+            "correlation": 0.9971339197309104
+          },
+          {
+            "at": 37.0,
+            "correlation": 0.9971542103428009
+          },
+          {
+            "at": 38.0,
+            "correlation": 0.9993275341494925
+          },
+          {
+            "at": 39.0,
+            "correlation": 0.9936804154704694
+          },
+          {
+            "at": 40.0,
+            "correlation": 0.998878559348995
+          },
+          {
+            "at": 41.0,
+            "correlation": 0.9944019685091494
+          },
+          {
+            "at": 42.0,
+            "correlation": 0.9955293179711713
+          },
+          {
+            "at": 43.0,
+            "correlation": 0.9987273832269081
+          },
+          {
+            "at": 44.0,
+            "correlation": 0.9946060840015873
+          },
+          {
+            "at": 45.0,
+            "correlation": 0.9946212446756466
+          },
+          {
+            "at": 46.0,
+            "correlation": 0.9979940976567674
+          },
+          {
+            "at": 47.0,
+            "correlation": 0.9960285498850359
+          },
+          {
+            "at": 48.0,
+            "correlation": 0.9986510544689582
+          },
+          {
+            "at": 49.0,
+            "correlation": 0.9969553854577738
+          },
+          {
+            "at": 50.0,
+            "correlation": 0.9971465257300866
+          },
+          {
+            "at": 51.0,
+            "correlation": 0.9990846814169252
+          },
+          {
+            "at": 52.0,
+            "correlation": 0.9976512607970047
+          },
+          {
+            "at": 53.0,
+            "correlation": 0.9978845377782349
+          },
+          {
+            "at": 54.0,
+            "correlation": 0.9980633743413262
+          },
+          {
+            "at": 55.0,
+            "correlation": 0.9937443199454167
+          },
+          {
+            "at": 56.0,
+            "correlation": 0.9977517605682213
+          },
+          {
+            "at": 57.0,
+            "correlation": 0.9984555473220562
+          },
+          {
+            "at": 58.0,
+            "correlation": 0.9988894384359867
+          },
+          {
+            "at": 59.0,
+            "correlation": 0.99709387714325
+          },
+          {
+            "at": 60.0,
+            "correlation": 0.998729728487435
+          },
+          {
+            "at": 61.0,
+            "correlation": 0.9960349862018865
+          },
+          {
+            "at": 62.0,
+            "correlation": 0.9930930578227625
+          },
+          {
+            "at": 63.0,
+            "correlation": 0.9926460205113428
+          },
+          {
+            "at": 64.0,
+            "correlation": 0.9886387528569346
+          },
+          {
+            "at": 65.0,
+            "correlation": 0.9970127158483018
+          },
+          {
+            "at": 66.0,
+            "correlation": 0.9954178161526542
+          },
+          {
+            "at": 67.0,
+            "correlation": 0.995254874293431
+          },
+          {
+            "at": 68.0,
+            "correlation": 0.9940390761797644
+          },
+          {
+            "at": 69.0,
+            "correlation": 0.9984392139797809
+          },
+          {
+            "at": 70.0,
+            "correlation": 0.999186812874368
+          },
+          {
+            "at": 71.0,
+            "correlation": 0.9917639706068145
+          },
+          {
+            "at": 72.0,
+            "correlation": 0.993628367579725
+          },
+          {
+            "at": 73.0,
+            "correlation": 0.9963242705456508
+          },
+          {
+            "at": 74.0,
+            "correlation": 0.991551332980988
+          },
+          {
+            "at": 75.0,
+            "correlation": 0.9898627072038845
+          },
+          {
+            "at": 76.0,
+            "correlation": 0.9971940417492748
+          },
+          {
+            "at": 77.0,
+            "correlation": 0.9989670989064182
+          },
+          {
+            "at": 78.0,
+            "correlation": 0.9993053434989715
+          },
+          {
+            "at": 79.0,
+            "correlation": 0.9968652895099516
+          },
+          {
+            "at": 80.0,
+            "correlation": 0.9935345361385186
+          },
+          {
+            "at": 81.0,
+            "correlation": 0.9963799463332444
+          },
+          {
+            "at": 82.0,
+            "correlation": 0.9978713247143551
+          },
+          {
+            "at": 83.0,
+            "correlation": 0.998329594026789
+          },
+          {
+            "at": 84.0,
+            "correlation": 0.9965766183903597
+          },
+          {
+            "at": 85.0,
+            "correlation": 0.9990925314283745
+          },
+          {
+            "at": 86.0,
+            "correlation": 0.9976452884539175
+          },
+          {
+            "at": 87.0,
+            "correlation": 0.9952094641570883
+          },
+          {
+            "at": 88.0,
+            "correlation": 0.9980125596998486
+          },
+          {
+            "at": 89.0,
+            "correlation": 0.9978461642376574
+          },
+          {
+            "at": 90.0,
+            "correlation": 0.9969719642592277
+          },
+          {
+            "at": 91.0,
+            "correlation": 0.9981865275167264
+          },
+          {
+            "at": 92.0,
+            "correlation": 0.9980441494903038
+          },
+          {
+            "at": 93.0,
+            "correlation": 0.9973040872377783
+          },
+          {
+            "at": 94.0,
+            "correlation": 0.9928558281654756
+          },
+          {
+            "at": 95.0,
+            "correlation": 0.9874342073059634
+          },
+          {
+            "at": 96.0,
+            "correlation": 0.9970448945604344
+          },
+          {
+            "at": 97.0,
+            "correlation": 0.9963449281125208
+          },
+          {
+            "at": 98.0,
+            "correlation": 0.9960562404117637
+          },
+          {
+            "at": 99.0,
+            "correlation": 0.9952625231668946
+          },
+          {
+            "at": 100.0,
+            "correlation": 0.9937087937616281
+          },
+          {
+            "at": 101.0,
+            "correlation": 0.9989233145161449
+          },
+          {
+            "at": 102.0,
+            "correlation": 0.9951252281049324
+          },
+          {
+            "at": 103.0,
+            "correlation": 0.9954787016058559
+          },
+          {
+            "at": 104.0,
+            "correlation": 0.9946708809954369
+          },
+          {
+            "at": 105.0,
+            "correlation": 0.9990073475486028
+          },
+          {
+            "at": 106.0,
+            "correlation": 0.9975416160340997
+          },
+          {
+            "at": 107.0,
+            "correlation": 0.9976820098352043
+          },
+          {
+            "at": 108.0,
+            "correlation": 0.9961096728835893
+          },
+          {
+            "at": 109.0,
+            "correlation": 0.9973533210327766
+          },
+          {
+            "at": 110.0,
+            "correlation": 0.9987509069921295
+          },
+          {
+            "at": 111.0,
+            "correlation": 0.9943371682818096
+          },
+          {
+            "at": 112.0,
+            "correlation": 0.9978077398526415
+          },
+          {
+            "at": 113.0,
+            "correlation": 0.9995503517588583
+          },
+          {
+            "at": 114.0,
+            "correlation": 0.9940333099478147
+          },
+          {
+            "at": 115.0,
+            "correlation": 0.9982968007379851
+          },
+          {
+            "at": 116.0,
+            "correlation": 0.9996431415722735
+          },
+          {
+            "at": 117.0,
+            "correlation": 0.9962872514878783
+          },
+          {
+            "at": 118.0,
+            "correlation": 0.99218567996875
+          },
+          {
+            "at": 119.0,
+            "correlation": 0.9958397522636943
+          },
+          {
+            "at": 120.0,
+            "correlation": 0.9963836472171412
+          },
+          {
+            "at": 121.0,
+            "correlation": 0.997808711152797
+          },
+          {
+            "at": 122.0,
+            "correlation": 0.9989688775206047
+          },
+          {
+            "at": 123.0,
+            "correlation": 0.9984605673480365
+          },
+          {
+            "at": 124.0,
+            "correlation": 0.9970752985677881
+          },
+          {
+            "at": 125.0,
+            "correlation": 0.9947760035857465
+          },
+          {
+            "at": 126.0,
+            "correlation": 0.9884024082486014
+          },
+          {
+            "at": 127.0,
+            "correlation": 0.990601966693433
+          },
+          {
+            "at": 128.0,
+            "correlation": 0.9934536443662872
+          },
+          {
+            "at": 129.0,
+            "correlation": 0.9972208865794489
+          },
+          {
+            "at": 130.0,
+            "correlation": 0.9987991750525809
+          },
+          {
+            "at": 131.0,
+            "correlation": 0.99744029871005
+          },
+          {
+            "at": 132.0,
+            "correlation": 0.9946710262775261
+          },
+          {
+            "at": 133.0,
+            "correlation": 0.9932827470653494
+          },
+          {
+            "at": 134.0,
+            "correlation": 0.99715610834608
+          },
+          {
+            "at": 135.0,
+            "correlation": 0.9894037670649605
+          },
+          {
+            "at": 136.0,
+            "correlation": 0.9976963937822294
+          },
+          {
+            "at": 137.0,
+            "correlation": 0.9994213317107641
+          },
+          {
+            "at": 138.0,
+            "correlation": 0.9972669472349356
+          },
+          {
+            "at": 139.0,
+            "correlation": 0.9973855114102232
+          },
+          {
+            "at": 140.0,
+            "correlation": 0.9993738037577652
+          },
+          {
+            "at": 141.0,
+            "correlation": 0.9910970341929053
+          },
+          {
+            "at": 142.0,
+            "correlation": 0.9969571575666164
+          },
+          {
+            "at": 143.0,
+            "correlation": 0.9975860201145444
+          },
+          {
+            "at": 144.0,
+            "correlation": 0.9986928280143792
+          },
+          {
+            "at": 145.0,
+            "correlation": 0.996475435316977
+          },
+          {
+            "at": 146.0,
+            "correlation": 0.9956516956078147
+          },
+          {
+            "at": 147.0,
+            "correlation": 0.9971900525996791
+          },
+          {
+            "at": 148.0,
+            "correlation": 0.9981187613790097
+          },
+          {
+            "at": 149.0,
+            "correlation": 0.993991980264325
+          },
+          {
+            "at": 150.0,
+            "correlation": 0.999128858172729
+          },
+          {
+            "at": 151.0,
+            "correlation": 0.9953409752795235
+          },
+          {
+            "at": 152.0,
+            "correlation": 0.9956004685579147
+          },
+          {
+            "at": 153.0,
+            "correlation": 0.9990071026531374
+          },
+          {
+            "at": 154.0,
+            "correlation": 0.9981792047385337
+          },
+          {
+            "at": 155.0,
+            "correlation": 0.998017685209049
+          },
+          {
+            "at": 156.0,
+            "correlation": 0.9984297316657322
+          },
+          {
+            "at": 157.0,
+            "correlation": 0.9992091902318488
+          },
+          {
+            "at": 158.0,
+            "correlation": 0.993884684088995
+          },
+          {
+            "at": 159.0,
+            "correlation": 0.9922909111023096
+          },
+          {
+            "at": 160.0,
+            "correlation": 0.9983105094386923
+          },
+          {
+            "at": 161.0,
+            "correlation": 0.9919787760289206
+          },
+          {
+            "at": 162.0,
+            "correlation": 0.9979635960517779
+          },
+          {
+            "at": 163.0,
+            "correlation": 0.9981755400817195
+          },
+          {
+            "at": 164.0,
+            "correlation": 0.9961588167844405
+          },
+          {
+            "at": 165.0,
+            "correlation": 0.9970003373933957
+          },
+          {
+            "at": 166.0,
+            "correlation": 0.9971079436948019
+          },
+          {
+            "at": 167.0,
+            "correlation": 0.9936392044619986
+          }
+        ],
+        "minimumOneSecondCorrelation": 0.9874342073059634,
+        "windowsAtLeast98Percent": 168,
+        "windowsCount": 168,
+        "fileHashes": {
+          "02-394求主监察-领唱.mp3": "20bd03bb4244c25bf9343c7089e7b3d584ebce6f09509360991b7e3a09ed963d",
+          "02-395主前省察-领唱.mp3": "4e1404cb8bf43eeee0ce6517029915cda7415bc53b4d897dc72bbf65b3e1833c"
+        },
+        "implementation": {
+          "decoder": "faster_whisper.audio.decode_audio",
+          "sampleFormat": "float32 mono at 16000 Hz",
+          "windowSamples": 16000,
+          "minimumNormToInclude": 0.01,
+          "metric": "numpy.corrcoef, no time adjustment or gain fitting",
+          "interpretation": "recordings strongly correspond across every second; decoded equality is not claimed"
+        }
+      },
+      "candidateTuneDiagnostics": {
+        "02-395主前省察.mp3": {
+          "395": {
+            "harmony": {
+              "best": {
+                "cost": 0.22638885180155435,
+                "key": 6,
+                "at": 6.6,
+                "span": 47.9,
+                "starts": [
+                  6.0
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.6245417912801107,
+                "key": 11,
+                "at": 26.1,
+                "span": 33.8,
+                "starts": [
+                  25.5
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.18413670857747397,
+                "key": 6,
+                "starts": [
+                  6.0
+                ],
+                "span": 47.900001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4270559628804525,
+                "key": 1,
+                "starts": [
+                  17.200000762939453
+                ],
+                "span": 37.5
+              }
+            },
+            "referenceSeconds": 32.0,
+            "onsetPitches": [
+              9,
+              4,
+              7,
+              5,
+              0,
+              2,
+              5,
+              4,
+              10,
+              6,
+              9,
+              7,
+              0,
+              0,
+              0,
+              9,
+              4,
+              7,
+              5,
+              0,
+              2,
+              4,
+              7,
+              7,
+              9,
+              7,
+              2,
+              7,
+              9,
+              0,
+              0,
+              0,
+              11,
+              2,
+              0,
+              5,
+              7,
+              9,
+              9,
+              0,
+              10,
+              9,
+              7,
+              6,
+              7,
+              9,
+              9,
+              0,
+              11,
+              2,
+              0,
+              5,
+              7,
+              9,
+              9,
+              0,
+              10,
+              9,
+              7,
+              10,
+              4,
+              5
+            ]
+          },
+          "386": {
+            "harmony": {
+              "best": {
+                "cost": 0.485845406850179,
+                "key": 1,
+                "at": 4.4,
+                "span": 43.4,
+                "starts": [
+                  3.8
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5417121887207031,
+                "key": 8,
+                "at": 14.5,
+                "span": 22.8,
+                "starts": [
+                  14.2
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.3857037862141927,
+                "key": 1,
+                "starts": [
+                  1.7000000476837158
+                ],
+                "span": 40.0
+              },
+              "runnerUp": {
+                "cost": 0.39306983947753904,
+                "key": 8,
+                "starts": [
+                  11.399999618530273
+                ],
+                "span": 35.19999694824219
+              }
+            },
+            "referenceSeconds": 32.375,
+            "onsetPitches": [
+              2,
+              3,
+              5,
+              5,
+              5,
+              10,
+              2,
+              3,
+              5,
+              7,
+              5,
+              10,
+              10,
+              9,
+              0,
+              7,
+              9,
+              10,
+              2,
+              3,
+              5,
+              5,
+              5,
+              10,
+              2,
+              3,
+              5,
+              7,
+              5,
+              10,
+              10,
+              9,
+              10,
+              7,
+              0,
+              5,
+              5,
+              9,
+              0,
+              0,
+              2,
+              0,
+              10,
+              10,
+              10,
+              3,
+              3,
+              2,
+              0,
+              10,
+              2,
+              0,
+              5,
+              5,
+              10,
+              2,
+              5,
+              7,
+              10,
+              3,
+              2,
+              2,
+              2,
+              10,
+              0,
+              0,
+              10
+            ]
+          }
+        },
+        "02-395主前省察-领唱.mp3": {
+          "395": {
+            "harmony": {
+              "best": {
+                "cost": 0.4963689804077148,
+                "key": 9,
+                "at": 24.0,
+                "span": 24.5,
+                "starts": [
+                  23.6
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5931064128875733,
+                "key": 2,
+                "at": 24.5,
+                "span": 25.9,
+                "starts": [
+                  24.1
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.39540987014770507,
+                "key": 9,
+                "starts": [
+                  22.100000381469727
+                ],
+                "span": 26.100000381469727
+              },
+              "runnerUp": {
+                "cost": 0.4354397773742676,
+                "key": 2,
+                "starts": [
+                  34.29999923706055
+                ],
+                "span": 25.400001525878906
+              }
+            },
+            "referenceSeconds": 32.0,
+            "onsetPitches": [
+              9,
+              4,
+              7,
+              5,
+              0,
+              2,
+              5,
+              4,
+              10,
+              6,
+              9,
+              7,
+              0,
+              0,
+              0,
+              9,
+              4,
+              7,
+              5,
+              0,
+              2,
+              4,
+              7,
+              7,
+              9,
+              7,
+              2,
+              7,
+              9,
+              0,
+              0,
+              0,
+              11,
+              2,
+              0,
+              5,
+              7,
+              9,
+              9,
+              0,
+              10,
+              9,
+              7,
+              6,
+              7,
+              9,
+              9,
+              0,
+              11,
+              2,
+              0,
+              5,
+              7,
+              9,
+              9,
+              0,
+              10,
+              9,
+              7,
+              10,
+              4,
+              5
+            ]
+          },
+          "386": {
+            "harmony": {
+              "best": {
+                "cost": 0.40381522178649903,
+                "key": 4,
+                "at": 24.5,
+                "span": 21.4,
+                "starts": [
+                  24.1
+                ]
+              },
+              "runnerUp": {
+                "cost": 0.5440189361572265,
+                "key": 11,
+                "at": 18.4,
+                "span": 13.9,
+                "starts": [
+                  18.1
+                ]
+              }
+            },
+            "melody": {
+              "best": {
+                "cost": 0.3364485025405884,
+                "key": 4,
+                "starts": [
+                  17.600000381469727
+                ],
+                "span": 30.19999885559082
+              },
+              "runnerUp": {
+                "cost": 0.39921271800994873,
+                "key": 11,
+                "starts": [
+                  17.100000381469727
+                ],
+                "span": 26.69999885559082
+              }
+            },
+            "referenceSeconds": 32.375,
+            "onsetPitches": [
+              2,
+              3,
+              5,
+              5,
+              5,
+              10,
+              2,
+              3,
+              5,
+              7,
+              5,
+              10,
+              10,
+              9,
+              0,
+              7,
+              9,
+              10,
+              2,
+              3,
+              5,
+              5,
+              5,
+              10,
+              2,
+              3,
+              5,
+              7,
+              5,
+              10,
+              10,
+              9,
+              10,
+              7,
+              0,
+              5,
+              5,
+              9,
+              0,
+              0,
+              2,
+              0,
+              10,
+              10,
+              10,
+              3,
+              3,
+              2,
+              0,
+              10,
+              2,
+              0,
+              5,
+              5,
+              10,
+              2,
+              5,
+              7,
+              10,
+              3,
+              2,
+              2,
+              2,
+              10,
+              0,
+              0,
+              10
+            ]
+          }
+        }
+      },
+      "candidateReferences": [
+        {
+          "file": "sync-drafts/bulk/reference/external/examine-life395.mid",
+          "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/395.mid",
+          "sha256": "4ecc18622e4ff0372d1f82dc7555f858c130778db1b00fafea26453c576b9b1c"
+        },
+        {
+          "file": "sync-drafts/bulk/reference/external/examine-life386.mid",
+          "url": "https://www.christianstudy.com/data/hymns/midi/lifehymns/386.mid",
+          "sha256": "c8e09468da8047bb5be6597781cb8a8c063ebbda9539dbece0e41fdbb363af34"
+        }
+      ],
+      "fullTranscriptDiagnostic": {
+        "file": "sync-drafts/bulk/experiments/large-v3-full-examine/asr/02-395主前省察-领唱.mp3.json",
+        "sha256": "cc3a482e6905be29ebfc6eb2f135c13e9801fa2202090bec04f0000d45e1c46f",
+        "parameters": {
+          "model": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+          "tokenizer": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+          "audio": "4e1404cb8bf43eeee0ce6517029915cda7415bc53b4d897dc72bbf65b3e1833c",
+          "language": "zh",
+          "beamSize": 5,
+          "temperature": 0,
+          "conditionOnPreviousText": false,
+          "vadFilter": false,
+          "prompt": null,
+          "wholeAudio": true
+        },
+        "limitations": "contains unsupported captions; not used as exact lyric or a timing witness; later text resembles existing 02-394 source"
+      }
+    },
+    {
+      "songId": "05-379",
+      "source": "05-379诗篇二十三.jpg",
+      "sourceHash": "a23aa868fddd3f6f1dde2f81e0e869eae8202c60c03e9921f0bbedf17fa497cd",
+      "tracks": [],
+      "status": "missing-audio",
+      "reason": "没有同名或领唱 MP3，不能从现有原素材建立播放时间轴。"
+    },
+    {
+      "songId": "06-014",
+      "source": "06-014你真伟大-HomeFree清唱.txt",
+      "sourceHash": "e73c6e562ebe181f317bac6c672d2cdb4eea592159b7411037416e8bd87a55df",
+      "tracks": [
+        {
+          "file": "06-014你真伟大-HomeFree清唱.mp3",
+          "sha256": "4ec5eebe8bb850a02d87c8f615cbdfa7d4ae8cf04a54a20b26d5dc377c29834b"
+        }
+      ],
+      "status": "needs-source-review",
+      "reason": "Home Free录音在约63秒起演唱林间漫步的一段，并在约134秒起加入It Is Well桥段；现有歌词缺少这两部分，且第一遍副歌只唱一次。需补齐并核对对应歌词后再制作完整滚动数据。",
+      "transcriptDiagnostic": {
+        "file": "sync-drafts/bulk/asr/06-014你真伟大-HomeFree清唱.mp3.json",
+        "sha256": "5b4118733d3af8cfcd2b83d68838445a1d1b43e451a929dd1a245c8eae375e47",
+        "audioHash": "4ec5eebe8bb850a02d87c8f615cbdfa7d4ae8cf04a54a20b26d5dc377c29834b",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 21.54,
+            "text": " O Lord, my God, when I in awesome wonder, Consider all the worlds I have made,"
+          },
+          {
+            "start": 21.54,
+            "end": 40.38,
+            "text": " I see the star, I hear the rolling thunder, Like power throughout the universe displayed."
+          },
+          {
+            "start": 40.38,
+            "end": 59.28,
+            "text": " Then sings my soul, my Saviour God, to Thee, How great Thou art! How great Thou art!"
+          },
+          {
+            "start": 62.76,
+            "end": 73.56,
+            "text": " When through the woods and forest glades I wander"
+          },
+          {
+            "start": 73.56,
+            "end": 82.12,
+            "text": " And hear the birds sing sweetly in the trees"
+          },
+          {
+            "start": 82.12,
+            "end": 91.42,
+            "text": " When I look down from lofty mountain grandeur"
+          },
+          {
+            "start": 91.42,
+            "end": 99.62,
+            "text": " And see the brook, and feel the gentle breeze"
+          },
+          {
+            "start": 99.62,
+            "end": 108.0,
+            "text": " Then sings my soul, my Saviour God, to Thee"
+          },
+          {
+            "start": 108.0,
+            "end": 116.28,
+            "text": " How great Thou art! How great Thou art!"
+          },
+          {
+            "start": 116.66,
+            "end": 124.74,
+            "text": " Then sings my soul, my Saviour God, to Thee."
+          },
+          {
+            "start": 124.76,
+            "end": 133.54,
+            "text": " How great Thou art! How great Thou art!"
+          },
+          {
+            "start": 133.54,
+            "end": 150.68,
+            "text": " It is well, it is well, with my soul, with my soul, it is well, it is well, with my soul."
+          },
+          {
+            "start": 150.74,
+            "end": 158.7,
+            "text": " When I shall come with shout of acclamation,"
+          },
+          {
+            "start": 158.7,
+            "end": 168.44,
+            "text": " And take me home, what joy shall fill my heart."
+          },
+          {
+            "start": 168.7,
+            "end": 175.68,
+            "text": " Then I shall bow in humble adoration,"
+          },
+          {
+            "start": 178.0,
+            "end": 185.38,
+            "text": " And then proclaim my God, I'll pray loud."
+          },
+          {
+            "start": 185.38,
+            "end": 194.56,
+            "text": " Then sings my soul, my Savior God, to Thee."
+          },
+          {
+            "start": 194.82,
+            "end": 203.0,
+            "text": " How great Thou art! How great Thou art!"
+          },
+          {
+            "start": 203.1,
+            "end": 210.38,
+            "text": " Then sings my soul, my Savior God, to Thee."
+          },
+          {
+            "start": 210.38,
+            "end": 223.7,
+            "text": " How great Thou art!"
+          }
+        ],
+        "limitations": "raw free transcription contains word errors; verifies missing blocks, not exact source text or cue times"
+      }
+    },
+    {
+      "songId": "06-022",
+      "source": "06-022-他眼看顾小麻雀.txt",
+      "sourceHash": "a757a9165a91555da3312d48c134d7dfafa433f79267f032f938e8d8e8d5b5fe",
+      "tracks": [
+        {
+          "file": "06-022-他眼看顾小麻雀.mp3",
+          "sha256": "584ed7054aae60c04a0231cd305188c4b6553900e5925587384c3a57d36d6b8f"
+        }
+      ],
+      "status": "needs-source-review",
+      "reason": "英文录音后半段约167秒起唱Whenever I am tempted、whenever clouds arise，对应原歌第三段；现有中文正文第二段为我听救主温柔声、除去你心忧情，与实际演唱段落不同，缺少对应译文。需核对并补齐实际演唱段落后再制作完整滚动数据。",
+      "transcriptDiagnostic": {
+        "file": "sync-drafts/bulk/asr/06-022-他眼看顾小麻雀.mp3.json",
+        "sha256": "c2ac13b84c8a27ef690103e691033eb6d4b72f4f77cc6b3c969b479a38678d4d",
+        "audioHash": "584ed7054aae60c04a0231cd305188c4b6553900e5925587384c3a57d36d6b8f",
+        "segments": [
+          {
+            "start": 10.639999999999999,
+            "end": 12.04,
+            "text": " Music"
+          },
+          {
+            "start": 16.28,
+            "end": 17.68,
+            "text": " Music"
+          },
+          {
+            "start": 17.68,
+            "end": 19.22,
+            "text": " Music"
+          },
+          {
+            "start": 20.0,
+            "end": 21.9,
+            "text": " Music"
+          },
+          {
+            "start": 58.32,
+            "end": 64.78,
+            "text": " Why should I feel discouraged?"
+          },
+          {
+            "start": 64.78,
+            "end": 72.76,
+            "text": " Why should the shadows come?"
+          },
+          {
+            "start": 74.38,
+            "end": 81.12,
+            "text": " Why should my heart be lonely?"
+          },
+          {
+            "start": 83.0,
+            "end": 89.9,
+            "text": " Among the heaven-born?"
+          },
+          {
+            "start": 89.9,
+            "end": 105.58,
+            "text": " When things are filled with my portion, My heart's unsung is here."
+          },
+          {
+            "start": 105.58,
+            "end": 134.57999999999998,
+            "text": " And I know He watches me, And I know He watches me."
+          },
+          {
+            "start": 137.54,
+            "end": 148.0,
+            "text": " I am living because I'm happy, And I'm living because I'm free,"
+          },
+          {
+            "start": 148.4,
+            "end": 160.78,
+            "text": " For even if I'm not alone, I might not be watching you."
+          },
+          {
+            "start": 167.51999999999998,
+            "end": 181.12,
+            "text": " Whenever I am tempted, whenever clouds arise,"
+          },
+          {
+            "start": 181.12,
+            "end": 197.12,
+            "text": " We don't give face to sight With hope within we fall"
+          },
+          {
+            "start": 197.12,
+            "end": 213.08,
+            "text": " I draw a monster to me, from very far deep deep."
+          },
+          {
+            "start": 213.08,
+            "end": 227.74,
+            "text": " His eye is on the sparrow, and I know he watches me."
+          },
+          {
+            "start": 227.74,
+            "end": 240.74,
+            "text": " Here I am on my own, and I know you'll watch me."
+          },
+          {
+            "start": 250.4,
+            "end": 262.36,
+            "text": " I sing the song of the King, I sing the song of the Queen."
+          }
+        ],
+        "limitations": "raw free transcription contains word errors; verifies missing blocks, not exact source text or cue times"
+      }
+    }
+  ]
+}

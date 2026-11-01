@@ -22,6 +22,25 @@ batch = repair.batch
 
 
 class ImageCoverageRepair(unittest.TestCase):
+    def test_reviewed_bands_preserve_four_verses_when_ocr_split_each_line(self):
+        systems = [
+            {
+                'notes': {'recognitionBand': [10, 20]},
+                'lyrics': [{'recognitionBand': [30 + i * 10, 38 + i * 10], 'text': '原图完整歌词'} for i in range(4)],
+            }
+        ]
+        profile = {
+            'printedVerses': 4,
+            'regions': {f's1_v{i + 1}': {} for i in range(4)},
+            'systemsReview': {'version': 1, 'reason': '原图有四段，识别将歌词拆行', 'systems': systems},
+        }
+        source = repair.source_readings({'height': 100, 'rows': []}, profile)
+        self.assertEqual([len(verse) for verse in source['verses']], [1, 1, 1, 1])
+        self.assertEqual(source['verses'][3][0]['region'], 's1_v4')
+        systems[0]['lyrics'].pop()
+        with self.assertRaisesRegex(ValueError, '全部印刷段落'):
+            repair.source_readings({'height': 100, 'rows': []}, profile)
+
     def test_optical_recovery_cannot_hide_other_row_disagreements(self):
         diagnostic = {
             'rejectedCounts': [

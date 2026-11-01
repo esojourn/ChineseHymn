@@ -13,7 +13,7 @@ from mutagen.mp3 import MP3
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from sync_batch_align import export_result
-from sync_batch_score import note_rows
+from sync_batch_score import note_rows, reviewed_score_systems
 from sync_batch_sources import image_source
 from sync_batch_wait_score import sha
 from sync_batch_audio import features, repeated_verses
@@ -25,6 +25,33 @@ spec = importlib.util.spec_from_file_location('complete_image', ROOT / 'tools/im
 complete = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(complete)
 batch = complete.batch
+
+
+def source_readings(recognition, profile):
+    review = profile.get('systemsReview')
+    if review is None:
+        return image_source(recognition)
+    if review.get('version') != 1 or not review.get('reason', '').strip():
+        raise ValueError('人工谱行复核缺少版本或说明')
+    systems = reviewed_score_systems(review['systems'], recognition['height'])
+    count = profile['printedVerses']
+    if any(len(system['lyrics']) != count for system in systems):
+        raise ValueError('人工谱行复核必须保留每行的全部印刷段落')
+    verses = [[] for _ in range(count)]
+    for index, system in enumerate(systems):
+        for verse, lyric in enumerate(system['lyrics']):
+            if not isinstance(lyric.get('text'), str) or len(lyric['text'].strip()) < 4:
+                raise ValueError('人工谱行复核缺少完整原文')
+            verses[verse].append(
+                {
+                    'region': f's{index + 1}_v{verse + 1}',
+                    'text': lyric['text'],
+                    'label': f'第{verse + 1}段：第{index + 1}谱行',
+                }
+            )
+    if {item['region'] for verse in verses for item in verse} != set(profile['regions']):
+        raise ValueError('人工谱行复核的阅读区域与原图不符')
+    return {'regions': profile['regions'], 'verses': verses, 'language': 'zh', 'systems': systems}
 
 
 def optical_cycles(audio, rows, count, cache, diagnostic):
@@ -193,11 +220,17 @@ def generate(song, profile, cache, prepare=False):
         digest = hashlib.sha256(json.dumps(normalized, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
         if recognition['recognizerVersion'] != 5 or digest != profile['recognitionSha256']:
             raise ValueError('完整谱面须由固定新版识别重新核对')
-        source = image_source(recognition)
+        source = source_readings(recognition, profile)
         if set(source['regions']) != set(profile['regions']) or len(source['verses']) != profile['printedVerses']:
             raise ValueError('完整印刷阅读区域与复核记录不符')
         source['regions'] = profile['regions']
-        raw = note_rows(ROOT / 'data' / song['source'], recognition, cache)
+        raw = note_rows(
+            ROOT / 'data' / song['source'],
+            recognition,
+            cache,
+            reviewed_systems=source['systems'] if profile.get('systemsReview') else None,
+            normalize_digits=bool(profile.get('systemsReview')),
+        )
         rows = reviewed_body(raw, profile)
         recordings = {}
         for track in song['tracks']:

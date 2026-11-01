@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "songId": "05-290",
+  "status": "reviewed",
+  "source": {
+    "file": "05-290平稳安静歌.jpg",
+    "sha256": "0f16955cb7f5959fb0c60871b443520409a369c0522c41aad94ef552d50e5650",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-290平稳安静歌.mp3",
+      "sha256": "eb368158a217a3cb7c3edf925456f00b02418aa8023f9a5ec12ea6c67a35361e",
+      "duration": 93.62285714285714,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 27.8,
+          "region": "s1_v1",
+          "label": "第1段：第1谱行",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 38.65,
+          "region": "s2_v1",
+          "label": "第1段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 49.8,
+          "region": "s1_v2",
+          "label": "第2段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 60.55,
+          "region": "s2_v2",
+          "label": "第2段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 71.9,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 82.72,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "05-290平稳安静歌-领唱.mp3",
+      "sha256": "56bcda43d6cabb437492449e4bbf16dad324e7a0acdba2f92bbcc17685342b75",
+      "duration": 94.008,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.254671,
+      "bottom": 0.362052
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.307962,
+      "bottom": 0.416389
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.362299,
+      "bottom": 0.470725
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.416635,
+      "bottom": 0.526107
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.58278,
+      "bottom": 0.691206
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.637116,
+      "bottom": 0.744497
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.690408,
+      "bottom": 0.799879
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.745789,
+      "bottom": 0.854215
+    }
+  },
+  "cues": [
+    {
+      "at": 27.9,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 38.75,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 49.9,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 60.75,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.0,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 82.85,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "我的心哪！平稳安静，专心等候基督。",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "我的救恩是从他而来，我的盼望在于主耶稣。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "我的心哪！平稳安静，专心等候基督。",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "如在旱地渴望天降雨，盼他来临，常与我同住。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "我的心哪！平稳安静，专心等候基督。",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "好象婴孩安卧慈母怀，举目仰望我亲爱救主。",
+        "label": "第3段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-290平稳安静歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

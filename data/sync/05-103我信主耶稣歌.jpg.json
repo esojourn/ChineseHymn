@@ -16,58 +16,100 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 38.95,
+          "at": 3.05,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
           "moveStart": 0
         },
         {
-          "at": 47.65,
+          "at": 11.65,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 56.5,
+          "at": 20.3,
           "region": "s3_v1",
           "label": "第1段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 73.45,
+          "at": 28.9,
+          "region": "s4_v1",
+          "label": "第1段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 37.55,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 82.15,
+          "at": 46.15,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 91.0,
+          "at": 54.8,
           "region": "s3_v2",
           "label": "第2段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 107.95,
+          "at": 63.4,
+          "region": "s4_v2",
+          "label": "第2段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 72.05,
           "region": "s1_v3",
           "label": "第3段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 116.65,
+          "at": 80.68,
           "region": "s2_v3",
           "label": "第3段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 125.5,
+          "at": 89.33,
           "region": "s3_v3",
           "label": "第3段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 97.9,
+          "region": "s4_v3",
+          "label": "第3段：第4谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 106.58,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 115.18,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 123.83,
+          "region": "s3_v4",
+          "label": "第4段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 132.4,
+          "region": "s4_v4",
+          "label": "第4段：第4谱行",
           "transition": "reading"
         }
       ]
@@ -140,62 +182,124 @@
       "kind": "image",
       "top": 0.90378,
       "bottom": 0.987478
+    },
+    "s4_v1": {
+      "kind": "image",
+      "top": 0.799713,
+      "bottom": 0.882215
+    },
+    "s4_v2": {
+      "kind": "image",
+      "top": 0.835598,
+      "bottom": 0.917502
+    },
+    "s4_v3": {
+      "kind": "image",
+      "top": 0.870287,
+      "bottom": 0.952191
+    },
+    "s4_v4": {
+      "kind": "image",
+      "top": 0.904976,
+      "bottom": 0.98688
     }
   },
   "cues": [
     {
-      "at": 39.15,
+      "at": 3.25,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
       "moveStart": 0
     },
     {
-      "at": 47.85,
+      "at": 11.85,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 56.7,
+      "at": 20.5,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 73.65,
+      "at": 29.15,
+      "region": "s4_v1",
+      "label": "第1段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 37.75,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 82.35,
+      "at": 46.35,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 91.2,
+      "at": 55.0,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 108.15,
+      "at": 63.62,
+      "region": "s4_v2",
+      "label": "第2段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 72.32,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 116.85,
+      "at": 80.88,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 125.7,
+      "at": 89.53,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 98.12,
+      "region": "s4_v3",
+      "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 106.82,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 115.42,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 124.03,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 132.62,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
       "transition": "reading"
     }
   ],
@@ -205,7 +309,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "method": "Every printed verse is retained. Each recording independently matches the complete performed cycles with spatial and optical rhythm templates; the opening cannot skip a complete cycle. First-verse full/local paths agree within 0.5 seconds; subsequent local paths also agree with independently measured musical repeat phases. Positions are early reading previews. Additional accompaniment cycles are measured and retain the final printed reading, without inventing additional lyric verses.",
     "performanceOrder": [
       {
         "region": "s1_v1",
@@ -214,13 +318,18 @@
       },
       {
         "region": "s2_v1",
-        "text": "十架，十架，神爱浩大！",
+        "text": "流血牺牲，使我得着救恩；",
         "label": "第1段：第2谱行"
       },
       {
         "region": "s3_v1",
-        "text": "我信，我信，尽我全生！",
+        "text": "十架，十架，神爱浩大！",
         "label": "第1段：第3谱行"
+      },
+      {
+        "region": "s4_v1",
+        "text": "我信，我信，尽我全生！",
+        "label": "第1段：第4谱行"
       },
       {
         "region": "s1_v2",
@@ -229,13 +338,18 @@
       },
       {
         "region": "s2_v2",
-        "text": "埋葬，埋葬，神子受苦！",
+        "text": "沉寂无声，为我经历死难；",
         "label": "第2段：第2谱行"
       },
       {
         "region": "s3_v2",
-        "text": "我信，我信，终必凯旋！",
+        "text": "埋葬，埋葬，神子受苦！",
         "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s4_v2",
+        "text": "我信，我信，终必凯旋！",
+        "label": "第2段：第4谱行"
       },
       {
         "region": "s1_v3",
@@ -244,17 +358,55 @@
       },
       {
         "region": "s2_v3",
-        "text": "得胜，得胜，神权掌握！",
+        "text": "冲破黑暗，赐我生命力量；",
         "label": "第3段：第2谱行"
       },
       {
         "region": "s3_v3",
-        "text": "我信，我信，靠主刚强！",
+        "text": "得胜，得胜，神权掌握！",
         "label": "第3段：第3谱行"
+      },
+      {
+        "region": "s4_v3",
+        "text": "我信，我信，靠主刚强！",
+        "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我主耶稣，为我赐下圣灵，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "启示光照，领我奔走前程；，",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "奇妙，奇妙，神恩无尽！",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "我信，我信，荣耀归神！（阿们）",
+        "label": "第4段：第4谱行"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/05-103我信主耶稣歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "evidence": "docs/sync-bulk-evidence/05-103我信主耶稣歌.jpg.complete.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "completeImageCycles": {
+      "version": 1,
+      "printedVerses": 4,
+      "systemsPerVerse": 4,
+      "previewSeconds": 1.5,
+      "bodyReview": {
+        "reason": "旧识别遗漏第四谱行，且首个匹配从第二次音乐反复开始；补齐四行四段全部原文。",
+        "rhythm": "按固定原图逐个检查点音符、减时线及延音线。空间模板保留原始位置，节奏模板使用人工复核的印刷时值。",
+        "trailingAmen": "最后两音是末尾阿们，不属于每段正文；只在重复模板中排除，原图和全部歌词区域保留。"
+      },
+      "matchingMethod": "spatial-and-printed-rhythm",
+      "instrumentalTailPolicy": "retain final printed reading"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

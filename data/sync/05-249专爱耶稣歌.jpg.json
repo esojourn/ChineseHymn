@@ -100,76 +100,100 @@
   },
   "cues": [
     {
-      "at": 37.35,
+      "at": 3.0,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
       "moveStart": 0
     },
     {
-      "at": 45.6,
+      "at": 11.1,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 53.95,
+      "at": 19.4,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 61.85,
+      "at": 27.45,
       "region": "s4_v1",
       "label": "第1段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 70.35,
+      "at": 36.03,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 78.6,
+      "at": 44.13,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 86.95,
+      "at": 52.43,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 94.85,
+      "at": 60.45,
       "region": "s4_v2",
       "label": "第2段：第4谱行",
       "transition": "reading"
     },
     {
-      "at": 103.35,
+      "at": 69.03,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 111.6,
+      "at": 77.13,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 119.95,
+      "at": 85.47,
       "region": "s3_v3",
       "label": "第3段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 127.85,
+      "at": 93.45,
       "region": "s4_v3",
       "label": "第3段：第4谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 102.03,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 110.13,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 118.47,
+      "region": "s3_v4",
+      "label": "第4段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 126.45,
+      "region": "s4_v4",
+      "label": "第4段：第4谱行",
       "transition": "reading"
     }
   ],
@@ -179,7 +203,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "method": "Every printed verse is retained. Each recording independently matches the complete performed cycles with spatial and optical rhythm templates; the opening cannot skip a complete cycle. First-verse full/local paths agree within 0.5 seconds; subsequent local paths also agree with independently measured musical repeat phases. Positions are early reading previews. Additional accompaniment cycles are measured and retain the final printed reading, without inventing additional lyric verses.",
     "performanceOrder": [
       {
         "region": "s1_v1",
@@ -213,7 +237,7 @@
       },
       {
         "region": "s3_v2",
-        "text": "虽爱己，也爱耶稣；虽爱己，也爱耶稣。”",
+        "text": "虽爱己，也爱耶稣；虽爱已，也爱耶稣。”",
         "label": "第2段：第3谱行"
       },
       {
@@ -233,17 +257,50 @@
       },
       {
         "region": "s3_v3",
-        "text": "少爱己，多爱耶稣；少爱已己，多爱耶稣。”",
+        "text": "少爱己，多爱耶稣；少爱已，多爱耶稣。”",
         "label": "第3段：第3谱行"
       },
       {
         "region": "s4_v3",
         "text": "使我谦逊，悔改言日：“少爱己，多爱耶稣。”",
         "label": "第3段：第4谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "高越天兮，深逾沧海，主之恩怜爱门徒；",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "我今感恩，醒悟言日：“不爱已，专爱耶稣；",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s3_v4",
+        "text": "不爱己，专爱耶稣；不爱已，专爱耶稣。”",
+        "label": "第4段：第3谱行"
+      },
+      {
+        "region": "s4_v4",
+        "text": "我今感恩醒悟言日：“不爱己，专爱耶稣。”",
+        "label": "第4段：第4谱行"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/05-249专爱耶稣歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "evidence": "docs/sync-bulk-evidence/05-249专爱耶稣歌.jpg.complete.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "completeImageCycles": {
+      "version": 1,
+      "printedVerses": 4,
+      "systemsPerVerse": 4,
+      "previewSeconds": 1.5,
+      "bodyReview": {
+        "reason": "旧起点晚于一整个音乐反复，遗漏第一段；全印刷歌词与实际完整反复重新核对。",
+        "rhythm": "按固定原图逐个检查点音符、减时线及延音线。空间模板保留原始位置，节奏模板使用人工复核的印刷时值。",
+        "trailingAmen": "阿们不包含在正文谱行识别中；原图保留。"
+      },
+      "matchingMethod": "spatial-and-printed-rhythm",
+      "instrumentalTailPolicy": "retain final printed reading"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

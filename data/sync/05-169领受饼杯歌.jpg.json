@@ -100,88 +100,100 @@
   },
   "cues": [
     {
-      "at": 26.25,
+      "at": 4.0,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
       "moveStart": 0
     },
     {
-      "at": 37.0,
+      "at": 14.5,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 47.25,
+      "at": 25.0,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 58.0,
+      "at": 35.5,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 68.35,
+      "at": 46.05,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 79.1,
+      "at": 56.55,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 89.35,
+      "at": 67.1,
       "region": "s1_v4",
       "label": "第4段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 100.1,
+      "at": 77.6,
       "region": "s2_v4",
       "label": "第4段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 110.35,
+      "at": 88.12,
       "region": "s1_v5",
       "label": "第5段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 121.1,
+      "at": 98.6,
       "region": "s2_v5",
       "label": "第5段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 131.45,
+      "at": 109.15,
       "region": "s1_v6",
       "label": "第6段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 142.2,
+      "at": 119.65,
       "region": "s2_v6",
       "label": "第6段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 152.45,
+      "at": 130.2,
       "region": "s1_v7",
       "label": "第7段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 163.2,
+      "at": 140.7,
       "region": "s2_v7",
       "label": "第7段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 151.22,
+      "region": "s1_v8",
+      "label": "第8段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 161.7,
+      "region": "s2_v8",
+      "label": "第8段：第2谱行",
       "transition": "reading"
     }
   ],
@@ -191,7 +203,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "method": "Every printed verse is retained. Repeated opening pitches make spatial timing ambiguous; the conflicting spatial paths remain documented. Individually reviewed printed rhythms pass complete and local STFT and constant-Q score checks, with all four row positions agreeing within 0.5 seconds and independently measured repeat phases. All original cost, key-margin and span gates remain required. Times are early reading previews, not sung onsets.",
     "performanceOrder": [
       {
         "region": "s1_v1",
@@ -262,10 +274,33 @@
         "region": "s2_v7",
         "text": "使我站在新地位，主，我们感谢你。",
         "label": "第7段：第2谱行"
+      },
+      {
+        "region": "s1_v8",
+        "text": "为着再来的嘱咐，为着那日快见主，",
+        "label": "第8段：第1谱行"
+      },
+      {
+        "region": "s2_v8",
+        "text": "为着荣耀和国度， 主，我们感谢你。",
+        "label": "第8段：第2谱行"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/05-169领受饼杯歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "evidence": "docs/sync-bulk-evidence/05-169领受饼杯歌.jpg.complete.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "completeImageCycles": {
+      "version": 1,
+      "printedVerses": 8,
+      "systemsPerVerse": 2,
+      "previewSeconds": 1.5,
+      "bodyReview": {
+        "reason": "旧起点晚于一整个音乐反复，遗漏第一段；全印刷歌词与实际完整反复重新核对。",
+        "rhythm": "按固定原图逐个检查点音符、减时线及延音线。空间模板保留原始位置，节奏模板使用人工复核的印刷时值。",
+        "trailingAmen": "阿们不包含在正文谱行识别中；原图保留。"
+      },
+      "matchingMethod": "dual-feature-optical",
+      "instrumentalTailPolicy": "retain final printed reading"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

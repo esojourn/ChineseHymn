@@ -51,6 +51,16 @@
         }
         const cues = Array.isArray(data.cues) ? data.cues : [];
         const preview = data.provenance?.previousLinePreview;
+        const scorePreview = data.provenance?.scoreReadingPreviews;
+        if (scorePreview && (scorePreview.version !== 1 || data.source?.type !== 'text' ||
+            !Array.isArray(scorePreview.indices) || !scorePreview.indices.length ||
+            scorePreview.indices.some((index, position) => {
+                if (!Number.isInteger(index) || index < 1 || index >= cues.length ||
+                    (position > 0 && index <= scorePreview.indices[position - 1])) return true;
+                const before = regions?.[cues[index - 1]?.region], after = regions?.[cues[index]?.region];
+                return !before || !after || before.kind !== 'text' || after.kind !== 'text' ||
+                    before.endLine >= after.startLine;
+            }))) errors.push('谱面预读设置无效');
         if (preview?.version === 4 && (data.source?.type !== 'text' || !Array.isArray(preview.indices) ||
             !preview.indices.length || preview.indices.some((index, position) => {
                 if (!Number.isInteger(index) || index < 1 || index >= cues.length ||
@@ -127,7 +137,7 @@
         return Math.max(0, Math.min(maximum, target));
     }
 
-    // Keep both sides of a bilingual preview visible throughout a movement.
+    // Keep the neighbouring lyric lines visible throughout a preview movement.
     function previewTargets(targets, regions, edges, viewport, maximum) {
         const bounds = targets.map((_, index) => ({
             min: regions[index].bottom - regions[index].top <= viewport * 0.8

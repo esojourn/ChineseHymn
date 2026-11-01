@@ -113,6 +113,23 @@ test('bilingual preview rejects missing, repeated or invalid line boundaries', (
     assert.ok(Core.validate(data).length);
 });
 
+test('score previews allow one-line readings and reject invalid or backward neighbours', () => {
+    const data = fixture();
+    data.source.type = 'text';
+    data.regions = { top: { kind: 'text', startLine: 0, endLine: 0 }, bottom: { kind: 'text', startLine: 2, endLine: 5 } };
+    data.provenance = { scoreReadingPreviews: { version: 1, indices: [1] } };
+    assert.deepEqual(Core.validate(data), []);
+    for (const indices of [[], [0], [1, 1], [3], [1.5]]) {
+        data.provenance.scoreReadingPreviews.indices = indices;
+        assert.ok(Core.validate(data).length);
+    }
+    data.provenance.scoreReadingPreviews.indices = [1];
+    data.regions.bottom.startLine = 0;
+    assert.ok(Core.validate(data).length);
+    delete data.provenance.scoreReadingPreviews;
+    assert.deepEqual(Core.validate(data), []);
+});
+
 test('all transition samples stay in bounds and progress monotonically', () => {
     let previous = 0;
     for (let i = 0; i <= 100; i++) {

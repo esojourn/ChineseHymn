@@ -101,12 +101,15 @@
                     : Core.regionTarget(top, bottom, height, previous, maximum);
                 return previous;
             });
-            if (this.data.provenance?.previousLinePreview?.version === 4) {
-                const edges = this.data.provenance.previousLinePreview.indices.map(index => {
+            const bilingualPreview = this.data.provenance?.previousLinePreview?.version === 4;
+            const scorePreview = this.data.provenance?.scoreReadingPreviews;
+            if (bilingualPreview || scorePreview?.version === 1) {
+                const indices = bilingualPreview ? this.data.provenance.previousLinePreview.indices : scorePreview.indices;
+                const edges = indices.map(index => {
                     const before = this.data.regions[this.data.cues[index - 1].region];
                     const after = this.data.regions[this.data.cues[index].region];
-                    const last = this.content.querySelector('[data-line="' + (before.endLine - 1) + '"]').getBoundingClientRect();
-                    const first = this.content.querySelector('[data-line="' + (after.startLine + 1) + '"]').getBoundingClientRect();
+                    const last = this.content.querySelector('[data-line="' + (before.endLine - (bilingualPreview ? 1 : 0)) + '"]').getBoundingClientRect();
+                    const first = this.content.querySelector('[data-line="' + (after.startLine + (bilingualPreview ? 1 : 0)) + '"]').getBoundingClientRect();
                     return { index, top: last.top + window.scrollY, bottom: first.bottom + window.scrollY };
                 });
                 this.positions = Core.previewTargets(this.positions, regionBounds, edges, height, maximum);

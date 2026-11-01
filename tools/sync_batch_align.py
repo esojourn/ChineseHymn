@@ -639,6 +639,15 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')
     complete_cycles = evidence.get('scoreMatching', {}).get('completeImageCycles')
+    score_previews = evidence.get('scoreMatching', {}).get('scoreReadingPreviews')
+    if score_previews:
+        method_description = ('Publisher vector noteheads and reviewed printed rhythms retain the complete final-verse '
+                              'variant and both coda phrases. Every complete performed section of the lead recording '
+                              'passes STFT and constant-Q score checks; their row positions agree within 0.5 seconds. '
+                              'Other recordings use two independent recording maps with the same position agreement. '
+                              'Times are early reading previews, not measured sung onsets; no complete vocal transcription '
+                              'or direct backing-score validation is claimed. Five-screen browser checks retain previous '
+                              'and following lyric lines.')
     if complete_cycles:
         method_description = ('Every printed verse is retained. Each recording independently matches the complete '
                               'performed cycles with spatial and optical rhythm templates; the opening cannot skip '
@@ -658,6 +667,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
     if complete_cycles:
         data['provenance']['completeImageCycles'] = complete_cycles
+    if score_previews:
+        data['provenance']['scoreReadingPreviews'] = score_previews
     if gap_review:
         data['provenance']['longGapFreePrefix'] = gap_review
     if whole_reading:

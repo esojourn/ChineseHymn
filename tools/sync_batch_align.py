@@ -655,6 +655,12 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'local paths also agree with independently measured musical repeat phases. '
                               'Positions are early reading previews. Additional accompaniment cycles are measured '
                               'and retain the final printed reading, without inventing additional lyric verses.')
+        if complete_cycles.get('matchingMethod') == 'dual-feature-optical':
+            method_description = ('Every printed verse is retained. Repeated opening pitches make spatial timing ambiguous; '
+                                  'the conflicting spatial paths remain documented. Individually reviewed printed rhythms '
+                                  'pass complete and local STFT and constant-Q score checks, with all four row positions '
+                                  'agreeing within 0.5 seconds and independently measured repeat phases. All original cost, '
+                                  'key-margin and span gates remain required. Times are early reading previews, not sung onsets.')
     evidence_suffix = '.complete.score.json' if complete_cycles else '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},

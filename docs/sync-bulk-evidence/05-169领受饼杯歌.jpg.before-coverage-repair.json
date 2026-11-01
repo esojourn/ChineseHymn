@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "songId": "05-169",
+  "status": "reviewed",
+  "source": {
+    "file": "05-169领受饼杯歌.jpg",
+    "sha256": "a08b8d56db3499b44b3cc6b6ada5b01f7664cf5091e49e2b2d175e9912d7b302",
+    "type": "image"
+  },
+  "tracks": [
+    {
+      "file": "05-169领受饼杯歌.mp3",
+      "sha256": "df8f02266cba13e95ecadd77a1c7a2dc0b6154df49c52da0046b7dcc7825aba2",
+      "duration": 173.76,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "s1_v1": {
+      "kind": "image",
+      "top": 0.17014,
+      "bottom": 0.255915
+    },
+    "s1_v2": {
+      "kind": "image",
+      "top": 0.209179,
+      "bottom": 0.294353
+    },
+    "s1_v3": {
+      "kind": "image",
+      "top": 0.247618,
+      "bottom": 0.332791
+    },
+    "s1_v4": {
+      "kind": "image",
+      "top": 0.286657,
+      "bottom": 0.37183
+    },
+    "s1_v5": {
+      "kind": "image",
+      "top": 0.325095,
+      "bottom": 0.410269
+    },
+    "s1_v6": {
+      "kind": "image",
+      "top": 0.363533,
+      "bottom": 0.448106
+    },
+    "s1_v7": {
+      "kind": "image",
+      "top": 0.401972,
+      "bottom": 0.486545
+    },
+    "s1_v8": {
+      "kind": "image",
+      "top": 0.43981,
+      "bottom": 0.524983
+    },
+    "s2_v1": {
+      "kind": "image",
+      "top": 0.547317,
+      "bottom": 0.632491
+    },
+    "s2_v2": {
+      "kind": "image",
+      "top": 0.585155,
+      "bottom": 0.670328
+    },
+    "s2_v3": {
+      "kind": "image",
+      "top": 0.623593,
+      "bottom": 0.709367
+    },
+    "s2_v4": {
+      "kind": "image",
+      "top": 0.662032,
+      "bottom": 0.747806
+    },
+    "s2_v5": {
+      "kind": "image",
+      "top": 0.70047,
+      "bottom": 0.785643
+    },
+    "s2_v6": {
+      "kind": "image",
+      "top": 0.738908,
+      "bottom": 0.824682
+    },
+    "s2_v7": {
+      "kind": "image",
+      "top": 0.777947,
+      "bottom": 0.863721
+    },
+    "s2_v8": {
+      "kind": "image",
+      "top": 0.816986,
+      "bottom": 0.90276
+    }
+  },
+  "cues": [
+    {
+      "at": 26.25,
+      "region": "s1_v1",
+      "label": "第1段：第1谱行",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 37.0,
+      "region": "s2_v1",
+      "label": "第1段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 47.25,
+      "region": "s1_v2",
+      "label": "第2段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 58.0,
+      "region": "s2_v2",
+      "label": "第2段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 68.35,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 79.1,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 89.35,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 100.1,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 110.35,
+      "region": "s1_v5",
+      "label": "第5段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 121.1,
+      "region": "s2_v5",
+      "label": "第5段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 131.45,
+      "region": "s1_v6",
+      "label": "第6段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 142.2,
+      "region": "s2_v6",
+      "label": "第6段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 152.45,
+      "region": "s1_v7",
+      "label": "第7段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 163.2,
+      "region": "s2_v7",
+      "label": "第7段：第2谱行",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "performanceOrder": [
+      {
+        "region": "s1_v1",
+        "text": "为着这饼和这杯，为着神子曾降卑，",
+        "label": "第1段：第1谱行"
+      },
+      {
+        "region": "s2_v1",
+        "text": "为着神恩如雨沛，主，我们感谢你。",
+        "label": "第1段：第2谱行"
+      },
+      {
+        "region": "s1_v2",
+        "text": "依然是酒依然饼，藉此信心却看明，",
+        "label": "第2段：第1谱行"
+      },
+      {
+        "region": "s2_v2",
+        "text": "爱心神圣的小影，主，我们感谢你。",
+        "label": "第2段：第2谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "为着你曾召我们，举目仰望你救恩，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "藉着信心近你身，主，我们感谢你。",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "为着你曾发命令，要我纪念你所行，",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "何等温柔何等贫，主，我们感谢你。",
+        "label": "第4段：第2谱行"
+      },
+      {
+        "region": "s1_v5",
+        "text": "为着你曾用慈爱，引我想家在天外，",
+        "label": "第5段：第1谱行"
+      },
+      {
+        "region": "s2_v5",
+        "text": "“行此直等到我来”，主，我们感谢你。",
+        "label": "第5段：第2谱行"
+      },
+      {
+        "region": "s1_v6",
+        "text": "直到他来我壁饼，表明他作我生命，",
+        "label": "第6段：第1谱行"
+      },
+      {
+        "region": "s2_v6",
+        "text": "为我睡了为我醒，主，我们感谢你。",
+        "label": "第6段：第2谱行"
+      },
+      {
+        "region": "s1_v7",
+        "text": "直到他来我饮杯，表明他赐福全备，",
+        "label": "第7段：第1谱行"
+      },
+      {
+        "region": "s2_v7",
+        "text": "使我站在新地位，主，我们感谢你。",
+        "label": "第7段：第2谱行"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/05-169领受饼杯歌.jpg.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+  },
+  "imageLayout": {
+    "mode": "center-preview",
+    "previewFraction": 1
+  }
+}

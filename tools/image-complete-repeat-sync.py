@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 from sync_batch_align import export_result
 from sync_batch_audio import features, repeated_verses
-from sync_batch_score import match_template, note_rows
+from sync_batch_score import ScoreMismatch, match_template, note_rows
 from sync_batch_sectional import check_match, four_path_time
 from sync_batch_sources import image_source
 
@@ -65,7 +65,7 @@ def measure(audio, rows, printed_count, allow_extra, cache):
             detail['reason'] = str(error)
             rejected.append(detail)
     if len(candidates) != 1:
-        raise ValueError('完整反复次数未能唯一确认')
+        raise ScoreMismatch('完整反复次数未能唯一确认', {'candidates': candidates, 'rejectedCounts': rejected})
     detail = candidates[0]
     detail['rejectedCounts'] = rejected
     count, music = detail['count'], detail['music']
@@ -170,6 +170,8 @@ def generate(song, profile, cache, prepare=False):
     except (ValueError, FileNotFoundError, KeyError, TypeError, IndexError, StopIteration) as error:
         (cache / 'ready' / (song['source'] + '.json')).unlink(missing_ok=True)
         evidence.update(status='needs-calibration', reason=str(error), elapsedSeconds=round(time.monotonic() - started, 3))
+        if hasattr(error, 'evidence'):
+            evidence['scoreMatchingFailure'] = error.evidence
         batch.save(dest, evidence)
         return song['songId'], 'needs-calibration: ' + str(error)
 

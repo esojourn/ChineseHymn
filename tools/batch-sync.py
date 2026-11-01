@@ -231,7 +231,7 @@ def recognize_image(job):
     destination = Path(cache) / 'ocr' / (song['source'] + '.json')
     if destination.exists():
         previous = json.loads(destination.read_text())
-        if not retry and previous.get('sha256') == song['sha256'] and previous.get('recognizerVersion', 0) >= 2:
+        if not retry and previous.get('sha256') == song['sha256'] and previous.get('recognizerVersion', 0) >= 5:
             return song['songId'], 'cached'
     if _ocr is None:
         from rapidocr_onnxruntime import RapidOCR

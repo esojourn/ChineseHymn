@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "songId": "06-016",
+  "status": "reviewed",
+  "source": {
+    "file": "06-016直到主耶稣再来时候-大提琴.txt",
+    "sha256": "5e86db945db3a043fd63ede8083f3c013b458bc2a887ce05896e89e6ba7950b9",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "06-016直到主耶稣再来时候-大提琴.mp3",
+      "sha256": "ec0d94b84597b9d9d06e0c34fc75ad767ae9ccf98df711658cee814232ad7b81",
+      "duration": 238.49216666666666,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 5
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 12
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 16
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 48.9,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 101.9,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 130.8,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 182.1,
+      "region": "r3",
+      "label": "第2段",
+      "transition": "return"
+    },
+    {
+      "at": 206.0,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Complete printed sections and a zero-edit print-derived MIDI verify the original instrumental recording. Opening sections pass STFT and constant-Q paths for both score representations. The final variation passes original and harmonic-separated constant-Q paths across at least three consecutive tempo estimates; all positions agree within 0.5 seconds and all original cost, key-margin and span gates remain required. Unfiltered STFT failures are retained. Unmatched instrumental intervals hold the prior reading. Times are early reading previews, not measured vocal onsets.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "直到主耶稣再来时候， 我要走事奉的道路 窄的门 窄的路 背起我的十字架 当我走完事奉的道路",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "我必看见主的荣光 荣耀的 主耶稣 祂必欢喜迎接我",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "直到主耶稣再来时候 我要被兴起 奔走主道路 主的荣耀遮盖全地时 我要站起来敬拜赞美",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我心所渴慕的主啊 祢是全地的救主 我心所渴慕的主啊 祢是荣耀的君王",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "直到主耶稣再来时候 我要被兴起 奔走主道路 主的荣耀遮盖全地时 我要站起来敬拜赞美",
+        "label": "第2段"
+      },
+      {
+        "region": "r4",
+        "text": "我心所渴慕的主啊 祢是全地的救主 我心所渴慕的主啊 祢是荣耀的君王",
+        "label": "第2段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/06-016直到主耶稣再来时候-大提琴.txt.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "lyricOnsetMeasured": false
+    },
+    "scoreReadingPreviews": {
+      "version": 1,
+      "indices": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "policy": "complete printed sections and stable ending variation; early reading previews, no sung onsets"
+    }
+  }
+}

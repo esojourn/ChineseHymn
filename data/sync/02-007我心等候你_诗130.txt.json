@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "songId": "02-007",
+  "status": "reviewed",
+  "source": {
+    "file": "02-007我心等候你_诗130.txt",
+    "sha256": "8d0eab5dcc79b71a5b7a9e3146ea22a1222bcb99a7ada2aa4be0cfcc7b396e2b",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "02-007我心等候你_诗130.mp3",
+      "sha256": "217c96599cb981fe2087cd7475b1178c0573a1e90a95acfcee2ce4ab9d5e69c6",
+      "duration": 273.15045833333335,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 39.3,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.5,
+          "region": "r3",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 116.6,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.0,
+          "region": "r5",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 170.7,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 204.1,
+          "region": "r7",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 223.9,
+          "region": "r8",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "02-007我心等候你_诗130-领唱.mp3",
+      "sha256": "c2511c3a97f80e1de928b2f4b8db3ce2c738baa169b7f4e6df4616f25ee6d497",
+      "duration": 235.481875,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 3,
+      "endLine": 4
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 6,
+      "endLine": 7
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 9,
+      "endLine": 10
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 13,
+      "endLine": 14
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 16,
+      "endLine": 17
+    },
+    "r6": {
+      "kind": "text",
+      "startLine": 20,
+      "endLine": 21
+    },
+    "r7": {
+      "kind": "text",
+      "startLine": 23,
+      "endLine": 24
+    },
+    "r8": {
+      "kind": "text",
+      "startLine": 26,
+      "endLine": 27
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 42.2,
+      "region": "r2",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 65.2,
+      "region": "r3",
+      "label": "第1段",
+      "transition": "reading"
+    },
+    {
+      "at": 92.7,
+      "region": "r4",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 115.6,
+      "region": "r5",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 143.3,
+      "region": "r6",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 166.4,
+      "region": "r7",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 186.2,
+      "region": "r8",
+      "label": "第3段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "Publisher score noteheads and source-bound audio transcripts verify the reading order. Original lead audio is checked against the score with STFT and constant-Q features; the first two verses are also checked together on each recording. Two independent recording maps agree at the other positions; a conflicting first repeated motif uses the directly checked two-verse score instead. Times are early reading previews, not claimed sung onsets. Five-screen checks retain previous and following lyric lines.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "我从深处 来求告你，在黑暗中 我恳求你 愿你侧耳 听我呼求，垂听祈祷 施恩拯救",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "你若究察 我的罪孽，我怎能在你前站立 你有丰富赦免恩典，要叫我俯伏敬畏你",
+        "label": "第1段"
+      },
+      {
+        "region": "r3",
+        "text": "我要等候你 我心等候你，我仰望你的话语 我要等候你 我心等候你，仰望你直到天明",
+        "label": "第1段"
+      },
+      {
+        "region": "r4",
+        "text": "你要专心唯仰望主，刚强壮胆祂能拯救 赖主洪恩完全得胜，因主已出坟墓复生",
+        "label": "第2段"
+      },
+      {
+        "region": "r5",
+        "text": "我要等候你 我心等候你，我仰望你的话语 我要等候你 我心等候你，仰望你直到天明",
+        "label": "第2段"
+      },
+      {
+        "region": "r6",
+        "text": "祂是道路真理生命，付上赎价为我舍己 因祂慈爱我灵安宁，必脱罪孽得胜有余",
+        "label": "第3段"
+      },
+      {
+        "region": "r7",
+        "text": "我要等候你 我心等候你，我仰望你的话语 我要等候你 我心等候你，仰望你直到天明",
+        "label": "第3段"
+      },
+      {
+        "region": "r8",
+        "text": "我要等候你 我心等候你，经风暴仰望晨星 我要等候你 我心等候你，你的爱我深信不疑",
+        "label": "第3段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/02-007我心等候你_诗130.txt.transcript.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "lyricOnsetMeasured": false
+    },
+    "previousLinePreview": {
+      "version": 7,
+      "indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "policy": "source-bound score-supported early reading previews; sung onsets are not claimed"
+    }
+  }
+}

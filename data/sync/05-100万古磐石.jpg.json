@@ -1,7 +1,7 @@
 {
   "version": 1,
   "songId": "05-100",
-  "status": "error",
+  "status": "reviewed",
   "source": {
     "file": "05-100万古磐石.jpg",
     "sha256": "b049d5d025c0bb6f1bd85482a8ac1b741853bf06473d93c3e3557974db25bb3e",
@@ -16,40 +16,58 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 30.6,
+          "at": 3.4,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
           "moveStart": 0
         },
         {
-          "at": 43.85,
+          "at": 12.0,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 74.4,
+          "at": 20.4,
           "region": "s3_v1",
           "label": "第1段：第3谱行",
           "transition": "reading"
         },
         {
-          "at": 83.0,
+          "at": 29.6,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 92.05,
+          "at": 38.23,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 100.5,
+          "at": 46.6,
           "region": "s3_v2",
           "label": "第2段：第3谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 55.8,
+          "region": "s1_v3",
+          "label": "第3段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 64.43,
+          "region": "s2_v3",
+          "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 72.8,
+          "region": "s3_v3",
+          "label": "第3段：第3谱行",
           "transition": "reading"
         }
       ]
@@ -111,40 +129,58 @@
   },
   "cues": [
     {
-      "at": 32.2,
+      "at": 3.5,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
       "moveStart": 0
     },
     {
-      "at": 41.15,
+      "at": 12.55,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 50.2,
+      "at": 21.5,
       "region": "s3_v1",
       "label": "第1段：第3谱行",
       "transition": "reading"
     },
     {
-      "at": 59.4,
+      "at": 30.7,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 68.35,
+      "at": 39.75,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 77.4,
+      "at": 48.73,
       "region": "s3_v2",
       "label": "第2段：第3谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 57.9,
+      "region": "s1_v3",
+      "label": "第3段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 66.98,
+      "region": "s2_v3",
+      "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 75.93,
+      "region": "s3_v3",
+      "label": "第3段：第3谱行",
       "transition": "reading"
     }
   ],
@@ -154,7 +190,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "method": "Every printed verse is retained. Each recording independently matches the complete performed cycles with spatial and optical rhythm templates; the opening cannot skip a complete cycle. First-verse full/local paths agree within 0.5 seconds; subsequent local paths also agree with independently measured musical repeat phases. Positions are early reading previews. Additional accompaniment cycles are measured and retain the final printed reading, without inventing additional lyric verses.",
     "performanceOrder": [
       {
         "region": "s1_v1",
@@ -185,10 +221,32 @@
         "region": "s3_v2",
         "text": "两手空空无代价，只靠救主十字架。",
         "label": "第2段：第3谱行"
+      },
+      {
+        "region": "s1_v3",
+        "text": "当我呼吸余一息，当我临终目垂闭，",
+        "label": "第3段：第1谱行"
+      },
+      {
+        "region": "s2_v3",
+        "text": "当我诞登新世界,到主座前恭敬拜；",
+        "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s3_v3",
+        "text": "万古磐石为我开，容我藏身在主怀。",
+        "label": "第3段：第3谱行"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/05-100万古磐石.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "evidence": "docs/sync-bulk-evidence/05-100万古磐石.jpg.complete.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "completeImageCycles": {
+      "version": 1,
+      "printedVerses": 3,
+      "systemsPerVerse": 3,
+      "previewSeconds": 1.5,
+      "instrumentalTailPolicy": "hold final printed reading after all printed verses"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

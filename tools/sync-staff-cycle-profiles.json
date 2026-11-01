@@ -1,0 +1,146 @@
+{
+  "01-270": {
+    "version": 1,
+    "sourceHash": "902ca73b3a5781306d7a14d2bd56e19618f12a64ed6cee9e6dc18b2d1c438b14",
+    "tracks": [
+      {
+        "file": "01-270佳美脚踪.mp3",
+        "sha256": "503c3f2b0580388e61d1ba04a9fad09f75ca0906f1e7a5aa9791cb0af6ff4442"
+      },
+      {
+        "file": "01-270佳美脚踪-领唱.mp3",
+        "sha256": "f4f487009cc212783397e4cae2f41e655b9ade405e6a1a49137aca49a1acdaf2"
+      }
+    ],
+    "audioFile": "01-270佳美脚踪-领唱.mp3",
+    "previewSeconds": 1.5,
+    "sourceOpenings": [
+      "那登锡安的人脚踪",
+      "何等悦耳声音何等",
+      "历代先知君王寻找",
+      "历代先知君王至终",
+      "上主伸出圣臂能力"
+    ],
+    "tuneAuthority": {
+      "url": "https://hymnary.org/hymn/HOLC1986/270",
+      "tune": "CAMBRIDGE",
+      "composer": "Ralph Harrison",
+      "review": "原歌本条目标注该中文首句及Cambridge曲调；前三次同名曲候选St Michael、St Thomas及Venice不是这份录音的参考曲。"
+    },
+    "midi": {
+      "file": "reference/external/beauteous-cambridge.mid",
+      "url": "https://ccel.org/cceh/0007/000790a.mid",
+      "sha256": "8c80840bd7c846a6d5d8c0785b4274d2c5e1ef86c8c4abe34c1cfc4f2a092e67"
+    },
+    "score": {
+      "file": "reference/external/beauteous-cambridge.pdf",
+      "url": "https://ccel.org/cceh/0007/000790a.pdf",
+      "sha256": "d31a07d9365414daa9efa71959db1a9c9e4427bb466467c79c17d7b326e10a18",
+      "pdfiumVersion": "5.14.0",
+      "keyPitchClasses": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "systems": [
+        {
+          "staffBottom": 472.411,
+          "halfStaffSpace": 2.04,
+          "xmin": 70,
+          "xmax": 358,
+          "lowerDisplacedSeconds": [],
+          "expectedPitches": [
+            7,
+            11,
+            9,
+            7,
+            9,
+            7,
+            6,
+            7,
+            9,
+            11,
+            2,
+            0,
+            11,
+            9,
+            2,
+            7,
+            7,
+            6,
+            4
+          ]
+        },
+        {
+          "staffBottom": 359.611,
+          "halfStaffSpace": 2.04,
+          "xmin": 60,
+          "xmax": 211,
+          "lowerDisplacedSeconds": [
+            71.805
+          ],
+          "expectedPitches": [
+            4,
+            9,
+            9,
+            7,
+            6,
+            2,
+            4,
+            0,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "weights": [
+            1,
+            1,
+            0.5,
+            0.5,
+            1,
+            0.5,
+            0.5,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0.5,
+            0.5,
+            1,
+            1,
+            1,
+            0.5,
+            0.5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3
+          ],
+          "rests": []
+        }
+      ],
+      "review": "逐音读取两行高声部。第二行首个D4为与E4同时发声而横向错开的低声部二度，保留高声部E4；其余同列取高音。连线为不同音高的连奏，无需删除高声部音符；三处附点二分音符各为三拍，其余四分及八分节奏按原谱人工复核。"
+    },
+    "harmonyDiagnostic": {
+      "file": "docs/sync-bulk-evidence/01-270佳美脚踪.before-cambridge-harmony.json",
+      "sha256": "43ee2790e5ba906c8f2f5b5254b84285b5e2d26ce50ca6c311e980530bdea195"
+    },
+    "review": "五段原词完整顺序显示；每条原录音分别用两种音频特征、原MIDI及独立原谱节奏做整曲和逐段八路径核对，全部起点在0.5秒内一致。和声编配不匹配的原诊断保留，不降低阈值；不声称已识别演唱词语或人工完整听审。"
+  }
+}

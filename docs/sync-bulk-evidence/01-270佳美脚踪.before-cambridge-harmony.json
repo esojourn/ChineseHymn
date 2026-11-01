@@ -1,0 +1,123 @@
+{
+  "songId": "01-270",
+  "source": "01-270佳美脚踪.txt",
+  "sourceHash": "902ca73b3a5781306d7a14d2bd56e19618f12a64ed6cee9e6dc18b2d1c438b14",
+  "trackHashes": [
+    {
+      "file": "01-270佳美脚踪.mp3",
+      "sha256": "503c3f2b0580388e61d1ba04a9fad09f75ca0906f1e7a5aa9791cb0af6ff4442"
+    },
+    {
+      "file": "01-270佳美脚踪-领唱.mp3",
+      "sha256": "f4f487009cc212783397e4cae2f41e655b9ade405e6a1a49137aca49a1acdaf2"
+    }
+  ],
+  "midiMatching": {
+    "algorithmVersion": 7,
+    "profile": {
+      "targetSha256": "902ca73b3a5781306d7a14d2bd56e19618f12a64ed6cee9e6dc18b2d1c438b14",
+      "file": "beauteous-cambridge.mid",
+      "sha256": "8c80840bd7c846a6d5d8c0785b4274d2c5e1ef86c8c4abe34c1cfc4f2a092e67",
+      "url": "https://ccel.org/cceh/0007/000790a.mid",
+      "scorePdfFile": "reference/external/beauteous-cambridge.pdf",
+      "scorePdfSha256": "d31a07d9365414daa9efa71959db1a9c9e4427bb466467c79c17d7b326e10a18",
+      "scorePdfUrl": "https://ccel.org/cceh/0007/000790a.pdf",
+      "verseCount": 5,
+      "regionOpenings": [
+        [
+          "那登锡安的人脚踪"
+        ],
+        [
+          "何等悦耳声音何等"
+        ],
+        [
+          "历代先知君王寻找"
+        ],
+        [
+          "历代先知君王至终"
+        ],
+        [
+          "上主伸出圣臂能力"
+        ]
+      ],
+      "readingBoundaries": [
+        {
+          "onsetIndex": 0,
+          "pitches": [
+            7,
+            11,
+            9,
+            7,
+            9
+          ]
+        }
+      ],
+      "fullPerformanceCheck": {
+        "version": 1
+      },
+      "formReview": "诊断已由原始歌本How beauteous are their feet明确使用的Cambridge Harrison曲调完整MIDI及配套原始PDF，而非先前St Michael或Venice变体。原文五段各一个完整阅读区域，保留全部原始素材，不调整任何阈值。"
+    },
+    "maximumCosts": {
+      "harmony": 0.35,
+      "melody": 0.35
+    },
+    "referencePeriod": 15.875,
+    "music": {
+      "period": 17.9,
+      "similarity": 0.943881094455719,
+      "initialOnsetEstimate": 5.368,
+      "shifts": [
+        0.0,
+        17.9,
+        35.9,
+        53.8,
+        71.8
+      ]
+    },
+    "matches": [
+      {
+        "harmony": {
+          "best": {
+            "cost": 0.3694335681766105,
+            "key": 8,
+            "at": 5.5,
+            "span": 17.6,
+            "starts": [
+              5.0
+            ]
+          },
+          "runnerUp": {
+            "cost": 0.5533453658972373,
+            "key": 3,
+            "at": 12.6,
+            "span": 6.6,
+            "starts": [
+              12.3
+            ]
+          }
+        },
+        "melody": {
+          "best": {
+            "cost": 0.14076849868177702,
+            "key": 8,
+            "starts": [
+              5.0
+            ],
+            "span": 17.600000381469727
+          },
+          "runnerUp": {
+            "cost": 0.3400334619277016,
+            "key": 3,
+            "starts": [
+              4.900000095367432
+            ],
+            "span": 17.80000114440918
+          }
+        }
+      }
+    ]
+  },
+  "status": "needs-calibration",
+  "reason": "MIDI 和声与旋律未能共同确认目标乐段的起点",
+  "elapsedSeconds": 0.343
+}

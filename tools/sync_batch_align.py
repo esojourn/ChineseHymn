@@ -660,6 +660,17 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                                   'Five-screen browser checks retain both languages of adjacent readings before and '
                                   'after each move and exercise every actual seek. Initial reading is shown from zero; '
                                   'these are reading previews, not claimed exact sung onsets.')
+        if evidence.get('scoreMatching', {}).get('mode') == 'text-staff-complete-cycles':
+            method_description = ('The original hymn-book tune attribution identifies the Cambridge melody. '
+                                  'Every upper-voice notehead of its pinned original vector score matches the '
+                                  'unmodified original MIDI with zero symbolic edits; printed rhythms are manually '
+                                  'reviewed. Both recordings independently pass complete and per-stanza MIDI/print '
+                                  'checks using STFT and constant-Q features. All eight onset paths agree within '
+                                  '0.5 seconds and retain original cost, key-margin, span and repeat-phase gates. '
+                                  'The failed independent harmonic-arrangement comparison is retained as diagnostic. '
+                                  'All five original stanzas are shown in order, with adjacent lyric previews. '
+                                  'These are score-based reading previews, not claimed vocal recognition or exact '
+                                  'sung onsets. Initial reading is shown from zero.')
         if evidence.get('scoreMatching', {}).get('mode') == 'instrumental-complete-sections':
             method_description = ('Complete printed sections and a zero-edit print-derived MIDI verify the original '
                                   'instrumental recording. Opening sections pass STFT and constant-Q paths for both '

@@ -16,40 +16,52 @@
       "reviewed": true,
       "cues": [
         {
-          "at": 27.8,
+          "at": 4.2,
           "region": "s1_v1",
           "label": "第1段：第1谱行",
           "transition": "intro",
           "moveStart": 0
         },
         {
-          "at": 38.65,
+          "at": 15.15,
           "region": "s2_v1",
           "label": "第1段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 49.8,
+          "at": 26.27,
           "region": "s1_v2",
           "label": "第2段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 60.55,
+          "at": 37.15,
           "region": "s2_v2",
           "label": "第2段：第2谱行",
           "transition": "reading"
         },
         {
-          "at": 71.9,
+          "at": 48.3,
           "region": "s1_v3",
           "label": "第3段：第1谱行",
           "transition": "return"
         },
         {
-          "at": 82.72,
+          "at": 59.25,
           "region": "s2_v3",
           "label": "第3段：第2谱行",
+          "transition": "reading"
+        },
+        {
+          "at": 70.33,
+          "region": "s1_v4",
+          "label": "第4段：第1谱行",
+          "transition": "return"
+        },
+        {
+          "at": 81.25,
+          "region": "s2_v4",
+          "label": "第4段：第2谱行",
           "transition": "reading"
         }
       ]
@@ -106,40 +118,52 @@
   },
   "cues": [
     {
-      "at": 27.9,
+      "at": 4.4,
       "region": "s1_v1",
       "label": "第1段：第1谱行",
       "transition": "intro",
       "moveStart": 0
     },
     {
-      "at": 38.75,
+      "at": 15.25,
       "region": "s2_v1",
       "label": "第1段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 49.9,
+      "at": 26.4,
       "region": "s1_v2",
       "label": "第2段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 60.75,
+      "at": 37.28,
       "region": "s2_v2",
       "label": "第2段：第2谱行",
       "transition": "reading"
     },
     {
-      "at": 72.0,
+      "at": 48.43,
       "region": "s1_v3",
       "label": "第3段：第1谱行",
       "transition": "return"
     },
     {
-      "at": 82.85,
+      "at": 59.35,
       "region": "s2_v3",
       "label": "第3段：第2谱行",
+      "transition": "reading"
+    },
+    {
+      "at": 70.5,
+      "region": "s1_v4",
+      "label": "第4段：第1谱行",
+      "transition": "return"
+    },
+    {
+      "at": 81.35,
+      "region": "s2_v4",
+      "label": "第4段：第2谱行",
       "transition": "reading"
     }
   ],
@@ -149,7 +173,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Numbered-score melody/chroma matching with two rhythm templates and measured repeats.",
+    "method": "Every printed verse is retained. Each recording independently matches the complete performed cycles with spatial and optical rhythm templates; the opening cannot skip a complete cycle. First-verse full/local paths agree within 0.5 seconds; subsequent local paths also agree with independently measured musical repeat phases. Positions are early reading previews. Additional accompaniment cycles are measured and retain the final printed reading, without inventing additional lyric verses.",
     "performanceOrder": [
       {
         "region": "s1_v1",
@@ -180,10 +204,33 @@
         "region": "s2_v3",
         "text": "好象婴孩安卧慈母怀，举目仰望我亲爱救主。",
         "label": "第3段：第2谱行"
+      },
+      {
+        "region": "s1_v4",
+        "text": "我的心哪！平稳安静，专心等候基督。",
+        "label": "第4段：第1谱行"
+      },
+      {
+        "region": "s2_v4",
+        "text": "只有他能安慰我的心，时刻靠他指引我道路。",
+        "label": "第4段：第2谱行"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/05-290平稳安静歌.jpg.score.json",
-    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed."
+    "evidence": "docs/sync-bulk-evidence/05-290平稳安静歌.jpg.complete.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "completeImageCycles": {
+      "version": 1,
+      "printedVerses": 4,
+      "systemsPerVerse": 2,
+      "previewSeconds": 1.5,
+      "bodyReview": {
+        "reason": "旧起点从第二次音乐反复开始，遗漏第一段。新版自动识别把每条歌词拆成两行且误读第四段编号；固定原图人工核对两谱行、全部四段歌词和像素范围，保留原识别结果作为诊断。",
+        "rhythm": "按原图逐音核对全部减时线、附点、延音及休止；正文音符未经增删。",
+        "trailingAmen": "阿们为独立末尾两音，不包含在正文两谱行中；原图保留。"
+      },
+      "matchingMethod": "spatial-and-printed-rhythm",
+      "instrumentalTailPolicy": "retain final printed reading"
+    }
   },
   "imageLayout": {
     "mode": "center-preview",

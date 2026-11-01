@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "songId": "01-270",
+  "status": "reviewed",
+  "source": {
+    "file": "01-270佳美脚踪.txt",
+    "sha256": "902ca73b3a5781306d7a14d2bd56e19618f12a64ed6cee9e6dc18b2d1c438b14",
+    "type": "text"
+  },
+  "tracks": [
+    {
+      "file": "01-270佳美脚踪.mp3",
+      "sha256": "503c3f2b0580388e61d1ba04a9fad09f75ca0906f1e7a5aa9791cb0af6ff4442",
+      "duration": 95.0595918367347,
+      "offset": 0,
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0
+        },
+        {
+          "at": 20.8,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 38.8,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 56.7,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 74.7,
+          "region": "r5",
+          "label": "第5段",
+          "transition": "reading"
+        }
+      ]
+    },
+    {
+      "file": "01-270佳美脚踪-领唱.mp3",
+      "sha256": "f4f487009cc212783397e4cae2f41e655b9ade405e6a1a49137aca49a1acdaf2",
+      "duration": 96.28734693877551,
+      "offset": 0,
+      "reviewed": true
+    }
+  ],
+  "regions": {
+    "r1": {
+      "kind": "text",
+      "startLine": 2,
+      "endLine": 3
+    },
+    "r2": {
+      "kind": "text",
+      "startLine": 5,
+      "endLine": 6
+    },
+    "r3": {
+      "kind": "text",
+      "startLine": 8,
+      "endLine": 9
+    },
+    "r4": {
+      "kind": "text",
+      "startLine": 11,
+      "endLine": 12
+    },
+    "r5": {
+      "kind": "text",
+      "startLine": 14,
+      "endLine": 15
+    }
+  },
+  "cues": [
+    {
+      "at": 0,
+      "region": "r1",
+      "label": "第1段",
+      "transition": "intro",
+      "moveStart": 0
+    },
+    {
+      "at": 21.4,
+      "region": "r2",
+      "label": "第2段",
+      "transition": "reading"
+    },
+    {
+      "at": 39.3,
+      "region": "r3",
+      "label": "第3段",
+      "transition": "reading"
+    },
+    {
+      "at": 57.3,
+      "region": "r4",
+      "label": "第4段",
+      "transition": "reading"
+    },
+    {
+      "at": 75.2,
+      "region": "r5",
+      "label": "第5段",
+      "transition": "reading"
+    }
+  ],
+  "activation": {
+    "policy": "automatic",
+    "listeningReviewRequired": false
+  },
+  "provenance": {
+    "batch": "bulk-2026-10",
+    "method": "The original hymn-book tune attribution identifies the Cambridge melody. Every upper-voice notehead of its pinned original vector score matches the unmodified original MIDI with zero symbolic edits; printed rhythms are manually reviewed. Both recordings independently pass complete and per-stanza MIDI/print checks using STFT and constant-Q features. All eight onset paths agree within 0.5 seconds and retain original cost, key-margin, span and repeat-phase gates. The failed independent harmonic-arrangement comparison is retained as diagnostic. All five original stanzas are shown in order, with adjacent lyric previews. These are score-based reading previews, not claimed vocal recognition or exact sung onsets. Initial reading is shown from zero.",
+    "performanceOrder": [
+      {
+        "region": "r1",
+        "text": "那登锡安的人，脚踪何等佳美， 宣告上主救恩喜讯，传扬平安佳音。",
+        "label": "第1段"
+      },
+      {
+        "region": "r2",
+        "text": "何等悦耳声音，何等美妙喜讯， 锡安看哪！你救赎主永远凯旋为君。",
+        "label": "第2段"
+      },
+      {
+        "region": "r3",
+        "text": "历代先知君王，寻找却未寻见， 我耳得闻喜乐佳音，无比快慰难言。",
+        "label": "第3段"
+      },
+      {
+        "region": "r4",
+        "text": "历代先知君王，至终未见所望， 我眼得见天上真光，蒙主恩福无量。",
+        "label": "第4段"
+      },
+      {
+        "region": "r5",
+        "text": "上主伸出圣臂，能力广庇全地， 今让天下万国万民，朝拜救主真神。",
+        "label": "第5段"
+      }
+    ],
+    "evidence": "docs/sync-bulk-evidence/01-270佳美脚踪.txt.score.json",
+    "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+    "initialReadingView": {
+      "version": 1,
+      "region": "r1",
+      "at": 0,
+      "lyricOnsetMeasured": false
+    },
+    "scoreReadingPreviews": {
+      "version": 1,
+      "indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "policy": "all original stanzas; score-based early reading previews, no sung onset claim"
+    }
+  }
+}

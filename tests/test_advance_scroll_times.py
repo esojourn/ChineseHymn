@@ -1,6 +1,11 @@
 import importlib.util
+from contextlib import redirect_stdout, redirect_stderr
+import io
+import json
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('advance_scroll', Path(__file__).resolve().parents[1] / 'tools/advance-scroll-times.py')
 advance = importlib.util.module_from_spec(spec)
@@ -41,6 +46,35 @@ class AdvanceScrollTimes(unittest.TestCase):
         data['cues'][1]['at'] = 1
         with self.assertRaises(ValueError):
             advance.advance(data, 'a' * 64)
+
+    def test_candidate_directory_and_song_filter_leave_other_files_untouched(self):
+        with tempfile.TemporaryDirectory() as directory:
+            selected = Path(directory) / 'selected.json'
+            untouched = Path(directory) / 'untouched.json'
+            selected.write_text(json.dumps(self.fixture()))
+            other = self.fixture()
+            other['songId'] = '05-101'
+            untouched.write_text(json.dumps(other))
+            original = untouched.read_bytes()
+            args = ['advance-scroll-times.py', '--directory', directory, '--songs', '05-100', '--write']
+            with patch('sys.argv', args), redirect_stdout(io.StringIO()):
+                advance.main()
+            self.assertEqual(json.loads(selected.read_text())['cues'][1]['at'], 8.5)
+            self.assertEqual(untouched.read_bytes(), original)
+            first_pass = selected.read_bytes()
+            with patch('sys.argv', args), redirect_stdout(io.StringIO()):
+                advance.main()
+            self.assertEqual(selected.read_bytes(), first_pass)
+
+    def test_missing_requested_song_rejects_the_whole_write(self):
+        with tempfile.TemporaryDirectory() as directory:
+            selected = Path(directory) / 'selected.json'
+            selected.write_text(json.dumps(self.fixture()))
+            original = selected.read_bytes()
+            args = ['advance-scroll-times.py', '--directory', directory, '--songs', '05-100', '05-101', '--write']
+            with patch('sys.argv', args), redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                advance.main()
+            self.assertEqual(selected.read_bytes(), original)
 
 
 if __name__ == '__main__':

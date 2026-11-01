@@ -45,17 +45,28 @@ def advance(data, baseline_hash):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true', help='write changes; otherwise only report proposed changes')
+    parser.add_argument('--directory', type=Path, default=ROOT / 'data/sync', help='candidate or published JSON directory')
+    parser.add_argument('--songs', nargs='+', help='only adjust these song IDs, e.g. 05-100 03-037')
     args = parser.parse_args()
+    if not args.directory.is_dir():
+        parser.error('同步文件目录不存在：' + str(args.directory))
     proposals, points, transitions = [], 0, 0
-    for path in sorted((ROOT / 'data/sync').glob('*.json')):
+    found = set()
+    for path in sorted(args.directory.glob('*.json')):
         raw = path.read_bytes()
-        result = advance(json.loads(raw), hashlib.sha256(raw).hexdigest())
+        data = json.loads(raw)
+        if args.songs and data['songId'] not in args.songs:
+            continue
+        found.add(data['songId'])
+        result = advance(data, hashlib.sha256(raw).hexdigest())
         if result is None:
             continue
         timelines = [result['cues']] + [track['cues'] for track in result['tracks'] if 'cues' in track]
         points += sum(len(cues) for cues in timelines)
         transitions += sum('moveStart' in cue for cues in timelines for cue in cues)
         proposals.append((path, result))
+    if args.songs and set(args.songs) - found:
+        parser.error('目录内没有这些曲目的同步文件：' + '、'.join(sorted(set(args.songs) - found)))
     if args.write:
         for path, result in proposals:
             path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')

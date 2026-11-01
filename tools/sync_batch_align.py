@@ -601,6 +601,13 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'reading previews. A repeated final reading stays visible; two independent transcriptions '
                               'confirm its extended last sung line. Five-screen checks retain the previous last line '
                               'and the next first line. Preview positions are not claimed as exact sung onsets.')
+    if previous_preview and previous_preview.get('version') == 7:
+        method_description = ('Publisher score noteheads and source-bound audio transcripts verify the reading order. '
+                              'Original lead audio is checked against the score with STFT and constant-Q features; '
+                              'the first two verses are also checked together on each recording. Two independent '
+                              'recording maps agree at the other positions; a conflicting first repeated motif uses '
+                              'the directly checked two-verse score instead. Times are early reading previews, '
+                              'not claimed sung onsets. Five-screen checks retain previous and following lyric lines.')
     midi_boundaries = evidence.get('transcriptMatching', {}).get('midiVerseBoundaries')
     homophones = evidence.get('transcriptMatching', {}).get('repeatHomophoneProof')
     if midi_boundaries:

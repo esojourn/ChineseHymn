@@ -128,9 +128,10 @@ def constrained_path(cost, lag, band):
     return np.array(path[::-1], dtype=np.int32)
 
 
-def map_recordings(reference, target, cue_times, cache):
-    ta, a = features(reference, cache)
-    tb, b = features(target, cache)
+def map_recordings(reference, target, cue_times, cache, feature_provider=None):
+    extract = feature_provider or features
+    ta, a = extract(reference, cache)
+    tb, b = extract(target, cache)
     n, m = a.shape[1], b.shape[1]
     candidates = []
     for shift in range(12):

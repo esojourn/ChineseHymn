@@ -4,7 +4,7 @@
     const Core = window.HymnSyncCore;
     const audio = $('audio');
     const content = $('content');
-    let data, source, files = [], urls = [], controller, lineCount;
+    let data, source, files = [], urls = [], controller, lineCount, originalText;
     const message = text => { $('message').textContent = text; };
     const track = () => data?.tracks.find(item => item.file === $('track').value);
     const activeCues = () => track()?.cues || data.cues;
@@ -67,12 +67,14 @@
         const type = /\.txt$/i.test(source.name) ? 'text' : 'image';
         content.replaceChildren();
         lineCount = undefined;
+        originalText = undefined;
         if (type === 'text') {
             const bytes = await source.arrayBuffer();
             let text;
             try { text = new TextDecoder('utf-8', { fatal: true }).decode(bytes); }
             catch (_) { text = new TextDecoder('gb18030').decode(bytes); }
             const pre = document.createElement('pre');
+            originalText = text;
             pre.textContent = text;
             content.append(pre);
             lineCount = window.HymnSync.renderText(pre);
@@ -141,6 +143,7 @@
             throw new Error('请同时选择同步文件关联的所有音频；文件更换后需重新制作草稿。');
         }
         data = imported;
+        if (data.textLayout) window.HymnSync.renderText(content.querySelector('pre'), data.textLayout, originalText);
         show();
     });
     $('track').onchange = switchTrack;

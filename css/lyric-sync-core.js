@@ -22,6 +22,14 @@
         if (!/^\d{2}-\d{1,3}$/.test(data.songId || '')) errors.push('歌曲编号无效');
         if (!data.source || !filename(data.source.file) || !hash(data.source.sha256) ||
             !['text', 'image'].includes(data.source.type)) errors.push('歌词素材信息无效');
+        const textLayout = data.textLayout;
+        if (textLayout !== undefined && (data.source?.type !== 'text' || textLayout?.version !== 1 ||
+            textLayout?.mode !== 'paired-verse-lines' || !Array.isArray(textLayout.lineOrder) ||
+            !textLayout.lineOrder.length || new Set(textLayout.lineOrder).size !== textLayout.lineOrder.length ||
+            textLayout.lineOrder.some(line => !Number.isInteger(line) || line < 0 || line >= textLayout.lineOrder.length) ||
+            (options.lineCount !== undefined && textLayout.lineOrder.length !== options.lineCount))) {
+            errors.push('双语行顺序必须完整保留全部原文行');
+        }
         if (data.imageLayout !== undefined && (data.source?.type !== 'image' ||
             data.imageLayout?.mode !== 'center-preview' || !finite(data.imageLayout.previewFraction) ||
             data.imageLayout.previewFraction < 0 || data.imageLayout.previewFraction > 1)) errors.push('图片预读设置无效');
@@ -52,13 +60,15 @@
         const cues = Array.isArray(data.cues) ? data.cues : [];
         const preview = data.provenance?.previousLinePreview;
         const scorePreview = data.provenance?.scoreReadingPreviews;
-        if (scorePreview && (scorePreview.version !== 1 || data.source?.type !== 'text' ||
+        if (scorePreview && (![1, 2].includes(scorePreview.version) || data.source?.type !== 'text' ||
+            (scorePreview.version === 2 && textLayout?.mode !== 'paired-verse-lines') ||
             !Array.isArray(scorePreview.indices) || !scorePreview.indices.length ||
             scorePreview.indices.some((index, position) => {
                 if (!Number.isInteger(index) || index < 1 || index >= cues.length ||
                     (position > 0 && index <= scorePreview.indices[position - 1])) return true;
                 const before = regions?.[cues[index - 1]?.region], after = regions?.[cues[index]?.region];
                 return !before || !after || before.kind !== 'text' || after.kind !== 'text' ||
+                    (scorePreview.version === 2 && (before.endLine - before.startLine !== 1 || after.endLine - after.startLine !== 1)) ||
                     before.endLine >= after.startLine;
             }))) errors.push('谱面预读设置无效');
         if (preview?.version === 4 && (data.source?.type !== 'text' || !Array.isArray(preview.indices) ||

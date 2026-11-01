@@ -14,15 +14,17 @@
             audio.currentTime + (event.key === 'ArrowRight' ? 10 : -10)));
     });
 
-    function renderText(pre) {
-        const lines = Core.normalizeText(pre.textContent).split('\n');
-        pre.replaceChildren(...lines.map((line, index) => {
+    function renderText(pre, layout, originalText = pre.textContent) {
+        const lines = Core.normalizeText(originalText).split('\n');
+        const order = layout?.lineOrder || lines.map((_, index) => index);
+        pre.replaceChildren(...order.map((sourceLine, index) => {
             const span = document.createElement('span');
             span.className = 'sync-line';
             // Preserve line breaks even if an older stylesheet is still cached.
             span.style.display = 'block';
             span.dataset.line = index;
-            span.textContent = line || '\u00a0';
+            span.dataset.sourceLine = sourceLine;
+            span.textContent = lines[sourceLine] || '\u00a0';
             return span;
         }));
         return lines.length;
@@ -101,10 +103,11 @@
                     : Core.regionTarget(top, bottom, height, previous, maximum);
                 return previous;
             });
-            const bilingualPreview = this.data.provenance?.previousLinePreview?.version === 4;
+            const legacyBilingual = this.data.provenance?.previousLinePreview?.version === 4;
             const scorePreview = this.data.provenance?.scoreReadingPreviews;
+            const bilingualPreview = legacyBilingual || scorePreview?.version === 2;
             if (bilingualPreview || scorePreview?.version === 1) {
-                const indices = bilingualPreview ? this.data.provenance.previousLinePreview.indices : scorePreview.indices;
+                const indices = legacyBilingual ? this.data.provenance.previousLinePreview.indices : scorePreview.indices;
                 const edges = indices.map(index => {
                     const before = this.data.regions[this.data.cues[index - 1].region];
                     const after = this.data.regions[this.data.cues[index].region];
@@ -213,7 +216,9 @@
         const status = document.getElementById('auto-scroll-status');
         if (!audio || !content || !toggle || !status || !config) return;
         document.body.classList.add('sync-player');
-        const lineCount = content.querySelector('pre') ? renderText(content.querySelector('pre')) : undefined;
+        const pre = content.querySelector('pre');
+        const originalText = pre?.textContent;
+        const lineCount = pre ? renderText(pre) : undefined;
         let controller;
         const resume = document.createElement('button');
         resume.type = 'button';
@@ -254,6 +259,7 @@
                 config.audioHash || fetchHash(config.audioUrl)
             ]);
             if (hashes[0] !== data.source.sha256 || hashes[1] !== track.sha256) throw new Error('素材已更新，自动滚动待重新校准');
+            if (pre && data.textLayout) renderText(pre, data.textLayout, originalText);
             const img = content.querySelector('img');
             if (img) await img.decode();
             if (document.fonts) await document.fonts.ready;

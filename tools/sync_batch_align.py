@@ -648,6 +648,18 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'Times are early reading previews, not measured sung onsets; no complete vocal transcription '
                               'or direct backing-score validation is claimed. Five-screen browser checks retain previous '
                               'and following lyric lines.')
+        if score_previews.get('version') == 2:
+            method_description = ('Every original English and Chinese line is retained in a display-only paired order. '
+                                  'Original publisher practice notes establish ordered audio sampling windows; '
+                                  'they do not establish exact lyric onsets or four-path musical agreement. '
+                                  'Two pinned canonical contextual windows supply early reading guides. Four explicitly '
+                                  'reviewed clipped prefixes use agreeing word ends and at least four following '
+                                  'contextual word edges; literal recognition of these words is not claimed. '
+                                  'Nonadjacent jumps additionally require unique original prefixes in two independent '
+                                  'prompt-free full-recording transcripts with agreeing first-word edges. '
+                                  'Five-screen browser checks retain both languages of adjacent readings before and '
+                                  'after each move and exercise every actual seek. Initial reading is shown from zero; '
+                                  'these are reading previews, not claimed exact sung onsets.')
         if evidence.get('scoreMatching', {}).get('mode') == 'instrumental-complete-sections':
             method_description = ('Complete printed sections and a zero-edit print-derived MIDI verify the original '
                                   'instrumental recording. Opening sections pass STFT and constant-Q paths for both '

@@ -47,8 +47,8 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                     window.geometryProbe = new HymnSync.Controller(document.querySelector('audio'),
                         document.querySelector('.text-inner'), data, track);
                 }, { data, track });
-                const bilingualPreview = [2, 4].includes(data.provenance?.previousLinePreview?.version);
                 const scorePreview = data.provenance?.scoreReadingPreviews;
+                const bilingualPreview = [2, 4].includes(data.provenance?.previousLinePreview?.version) || scorePreview?.version === 2;
                 const previewIndices = data.provenance?.previousLinePreview?.indices || scorePreview?.indices || [];
                 const extendedPreview = bilingualPreview || scorePreview || [3, 6, 7].includes(data.provenance?.previousLinePreview?.version);
                 const viewports = [{ width: 1280, height: 800 }, { width: 390, height: 844 }, { width: 844, height: 390 }];
@@ -114,7 +114,8 @@ const geometryOnly = process.env.SYNC_GEOMETRY_ONLY === '1';
                     }
                     const recovered = data.provenance?.freeWholeReading?.indices || [];
                     const previews = previewIndices;
-                    const indices = [...new Set([0, 1, ...recovered, ...previews, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
+                    const paired = scorePreview?.version === 2 ? cues.map((_, index) => index) : [];
+                    const indices = [...new Set([0, 1, ...recovered, ...previews, ...paired, cues.findIndex(cue => cue.transition === 'return'), cues.length - 1])].filter(index => index >= 0 && index < cues.length);
                     for (const index of geometryOnly ? [] : indices) {
                         await page.locator('audio').evaluate((audio, time) => { audio.currentTime = time; }, cues[index].at + track.offset + .5);
                         await page.waitForFunction(() => !document.querySelector('audio').seeking);

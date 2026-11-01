@@ -130,6 +130,25 @@ test('score previews allow one-line readings and reject invalid or backward neig
     assert.deepEqual(Core.validate(data), []);
 });
 
+test('paired text layout is a complete permutation of original source lines', () => {
+    const data = fixture();
+    data.source.type = 'text';
+    data.regions = { top: { kind: 'text', startLine: 0, endLine: 1 }, bottom: { kind: 'text', startLine: 2, endLine: 3 } };
+    data.textLayout = { version: 1, mode: 'paired-verse-lines', lineOrder: [0, 2, 1, 3] };
+    data.provenance = { scoreReadingPreviews: { version: 2, indices: [1] } };
+    assert.deepEqual(Core.validate(data, { lineCount: 4 }), []);
+    for (const order of [[0, 2, 1], [0, 2, 1, 1], [0, 2, 1, 4], [0, 2, 1, 3.5]]) {
+        data.textLayout.lineOrder = order;
+        assert.ok(Core.validate(data, { lineCount: 4 }).length);
+    }
+    data.textLayout.lineOrder = [0, 2, 1, 3];
+    data.regions.bottom.endLine = 4;
+    assert.ok(Core.validate(data, { lineCount: 5 }).length);
+    data.regions.bottom.endLine = 3;
+    data.source.type = 'image';
+    assert.ok(Core.validate(data).length);
+});
+
 test('all transition samples stay in bounds and progress monotonically', () => {
     let previous = 0;
     for (let i = 0; i <= 100; i++) {

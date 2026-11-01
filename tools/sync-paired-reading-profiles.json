@@ -1,0 +1,222 @@
+{
+  "06-004": {
+    "version": 1,
+    "sourceHash": "1de3159e3a27a263c8479eaa91d717bcebb8961d5836cdb3f5d886045db065a0",
+    "tracks": [
+      {
+        "file": "06-004我要跟从你.mp3",
+        "sha256": "b1b7cf58040f014655408d915099a7536264974fc2fcfad2e8a865612cb674ef"
+      }
+    ],
+    "audioFile": "06-004我要跟从你.mp3",
+    "blocks": [
+      {
+        "english": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "translations": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          17
+        ]
+      },
+      {
+        "english": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "translations": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      },
+      {
+        "english": [
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "translations": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ]
+      },
+      {
+        "english": [
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "translations": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69
+        ]
+      },
+      {
+        "english": [
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "translations": [
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86
+        ]
+      }
+    ],
+    "blockOrder": [
+      0,
+      1,
+      2,
+      1,
+      3,
+      4
+    ],
+    "previewSeconds": 1.0,
+    "practice": {
+      "file": "reference/external/hymnal-ns559-learn.json",
+      "url": "https://www.hymnal.net/en/learn-data/ns/559",
+      "sha256": "922be73e170e1f458d7a1b37fee88074117613f026363716859ae85757295fc3"
+    },
+    "verseBeats": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      66
+    ],
+    "chorusBeats": [
+      66,
+      75,
+      83,
+      91,
+      97,
+      103.5,
+      115.5,
+      123,
+      133
+    ],
+    "instrumentalBeats": [
+      66,
+      97
+    ],
+    "clippedPrefixReadings": [
+      5,
+      15,
+      18,
+      22
+    ],
+    "acousticRecord": {
+      "file": "docs/sync-bulk-evidence/06-004我要跟从你.acoustic-windows.json",
+      "sha256": "ba17d5378e97f59491d47788c3db5ea11fa2583a0f6c8bc389e2da6cc63d0aed"
+    },
+    "acousticParameters": {
+      "sourceHash": "1de3159e3a27a263c8479eaa91d717bcebb8961d5836cdb3f5d886045db065a0",
+      "audioHash": "b1b7cf58040f014655408d915099a7536264974fc2fcfad2e8a865612cb674ef",
+      "modelSha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+      "tokenizerSha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+      "model": "medium/int8",
+      "language": "en",
+      "device": "cpu",
+      "cpuThreads": 2,
+      "samplingRate": 16000,
+      "windowBounds": [
+        [
+          6,
+          16
+        ],
+        [
+          4,
+          14
+        ]
+      ],
+      "contextWords": 10,
+      "precedingWords": 4,
+      "boundaryBatch": 4,
+      "fasterWhisperVersion": "1.2.1",
+      "ctranslate2Version": "4.8.3"
+    },
+    "fullTranscripts": [
+      {
+        "file": "docs/sync-bulk-evidence/06-004我要跟从你.full-large-v3.json",
+        "sha256": "11fec513103c5a5d78c4a22adbda2e5cbd0af4d1ac26acbe7f3d8befc4b70294"
+      },
+      {
+        "file": "docs/sync-bulk-evidence/06-004我要跟从你.full-turbo.json",
+        "sha256": "b57f24f4196a080f562dc1fa298f49a71726948f1ac4df99ce9549bf5d639f7c"
+      }
+    ],
+    "discontinuousPrefixes": [
+      {
+        "index": 24,
+        "words": 5
+      },
+      {
+        "index": 32,
+        "words": 3
+      }
+    ],
+    "review": "原文件为八行英文后接八行中文，播放页逐句对照，全部原行完整保留。第一段中文末两句分别对应英文第八及第七句，按语义对照而不改文字。实际顺序为第一段、副歌、第二段、同一副歌、第三段、结尾副歌；长间奏保留已有阅读位置。原出版方练习旋律只提供窗口估计和顺序，不作为精确歌词起唱；CQT和和声诊断未通过，保留诊断而不声称通过。普通位置维持两组原文上下文检查；四处首词截短仅用一致词尾及后续字词建立阅读预览，首部未核实的文字原样显示。非相邻跳转另由两种独立完整转写的原文开头确认。所有相邻移动前后中英文都须可见，并在五种屏幕对每处实际跳转。"
+  }
+}

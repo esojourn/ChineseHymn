@@ -44,6 +44,20 @@ const server = http.createServer((req, res) => {
             'lyrics must retain line breaks with a cached pre-sync stylesheet');
         await page.unroute('**/css/styles.css');
         console.log('PASS: lyric line breaks survive stale stylesheets');
+        const paired = await page.evaluate(() => {
+            const pre = document.createElement('pre');
+            const original = 'One\nTwo\n\n一\n二';
+            pre.textContent = original;
+            HymnSync.renderText(pre);
+            const count = HymnSync.renderText(pre, { lineOrder: [0, 3, 1, 4, 2] }, original);
+            const displayed = Array.from(pre.children, line => [line.dataset.line, line.dataset.sourceLine, line.textContent]);
+            HymnSync.renderText(pre, undefined, original);
+            return { count, displayed, restored: Array.from(pre.children, line => line.textContent) };
+        });
+        assert.equal(paired.count, 5);
+        assert.deepEqual(paired.displayed, [['0', '0', 'One'], ['1', '3', '一'], ['2', '1', 'Two'], ['3', '4', '二'], ['4', '2', '\u00a0']]);
+        assert.deepEqual(paired.restored, ['One', 'Two', '\u00a0', '一', '二']);
+        console.log('PASS: paired display preserves every original source line');
         await page.goto(base + '/fixture');
         await page.bringToFront();
         // Complete the first paint before measuring animation progress in headless Chromium.

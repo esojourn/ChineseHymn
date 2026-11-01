@@ -1,0 +1,2474 @@
+{
+  "file": "06-004我要跟从你.mp3",
+  "sha256": "b1b7cf58040f014655408d915099a7536264974fc2fcfad2e8a865612cb674ef",
+  "model": "large-v3-turbo/int8",
+  "modelReview": {
+    "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+    "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "status": "downloaded",
+    "destination": "sync-drafts/models/large-v3-turbo",
+    "startedAt": "2026-10-24 03:57:35",
+    "files": {
+      "tokenizer.json": {
+        "size": 2710337,
+        "sha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd"
+      },
+      "preprocessor_config.json": {
+        "size": 340,
+        "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+      },
+      "vocabulary.json": {
+        "size": 1068114,
+        "sha256": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+      },
+      "model.bin": {
+        "size": 1617884929,
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da"
+      },
+      "config.json": {
+        "size": 2263,
+        "sha256": "b0253ea6c0d3bea6b1e19e91a02acfd3b53f4467362efcb5a3e6b16c9b3a9b7e"
+      }
+    },
+    "finishedAt": "2026-10-24 03:58:27"
+  },
+  "parameters": {
+    "model": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+    "tokenizer": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd",
+    "audio": "b1b7cf58040f014655408d915099a7536264974fc2fcfad2e8a865612cb674ef",
+    "language": "en",
+    "beamSize": 5,
+    "temperature": 0,
+    "conditionOnPreviousText": false,
+    "vadFilter": false,
+    "prompt": null,
+    "wholeAudio": true
+  },
+  "language": "en",
+  "duration": 312.37225,
+  "segments": [
+    {
+      "seek": 0,
+      "start": 22.419999999999998,
+      "end": 24.24,
+      "text": " Lamb of God",
+      "avgLogprob": -0.6414123943873814,
+      "noSpeechProbability": 2.39191843415254e-11,
+      "words": [
+        {
+          "word": " Lamb",
+          "start": 22.419999999999998,
+          "end": 23.22,
+          "probability": 0.3631584346294403
+        },
+        {
+          "word": " of",
+          "start": 23.22,
+          "end": 23.6,
+          "probability": 0.9984292387962341
+        },
+        {
+          "word": " God",
+          "start": 23.6,
+          "end": 24.24,
+          "probability": 0.9966921806335449
+        }
+      ]
+    },
+    {
+      "seek": 0,
+      "start": 24.94,
+      "end": 25.24,
+      "text": " Lamb of God",
+      "avgLogprob": -0.6414123943873814,
+      "noSpeechProbability": 2.39191843415254e-11,
+      "words": [
+        {
+          "word": " Lamb",
+          "start": 24.839999999999996,
+          "end": 25.24,
+          "probability": 0.00039786711568012834
+        },
+        {
+          "word": " of",
+          "start": 25.24,
+          "end": 25.24,
+          "probability": 0.9997020363807678
+        },
+        {
+          "word": " God",
+          "start": 25.24,
+          "end": 25.24,
+          "probability": 0.9982514977455139
+        }
+      ]
+    },
+    {
+      "seek": 0,
+      "start": 25.24,
+      "end": 27.8,
+      "text": " Our dear redeeming one is Christ",
+      "avgLogprob": -0.6414123943873814,
+      "noSpeechProbability": 2.39191843415254e-11,
+      "words": [
+        {
+          "word": " Our",
+          "start": 25.24,
+          "end": 25.52,
+          "probability": 0.1647697389125824
+        },
+        {
+          "word": " dear",
+          "start": 25.52,
+          "end": 25.9,
+          "probability": 0.6786500215530396
+        },
+        {
+          "word": " redeeming",
+          "start": 25.9,
+          "end": 26.76,
+          "probability": 0.5385573543608189
+        },
+        {
+          "word": " one",
+          "start": 26.76,
+          "end": 27.18,
+          "probability": 0.8688328266143799
+        },
+        {
+          "word": " is",
+          "start": 27.18,
+          "end": 27.44,
+          "probability": 0.9032889604568481
+        },
+        {
+          "word": " Christ",
+          "start": 27.44,
+          "end": 27.8,
+          "probability": 0.8760947585105896
+        }
+      ]
+    },
+    {
+      "seek": 2780,
+      "start": 27.8,
+      "end": 34.16,
+      "text": " For our sins, He paid the highest price to redeem",
+      "avgLogprob": -0.3740133558000837,
+      "noSpeechProbability": 5.033558639344626e-12,
+      "words": [
+        {
+          "word": " For",
+          "start": 27.8,
+          "end": 28.4,
+          "probability": 0.5406498312950134
+        },
+        {
+          "word": " our",
+          "start": 28.4,
+          "end": 28.74,
+          "probability": 0.9060803651809692
+        },
+        {
+          "word": " sins,",
+          "start": 28.74,
+          "end": 29.36,
+          "probability": 0.8914949297904968
+        },
+        {
+          "word": " He",
+          "start": 30.42,
+          "end": 30.58,
+          "probability": 0.8003912568092346
+        },
+        {
+          "word": " paid",
+          "start": 30.58,
+          "end": 30.98,
+          "probability": 0.9719266891479492
+        },
+        {
+          "word": " the",
+          "start": 30.98,
+          "end": 31.26,
+          "probability": 0.9958630800247192
+        },
+        {
+          "word": " highest",
+          "start": 31.26,
+          "end": 32.46,
+          "probability": 0.9993392825126648
+        },
+        {
+          "word": " price",
+          "start": 32.46,
+          "end": 32.92,
+          "probability": 0.9838514924049377
+        },
+        {
+          "word": " to",
+          "start": 32.92,
+          "end": 33.56,
+          "probability": 0.8103681206703186
+        },
+        {
+          "word": " redeem",
+          "start": 33.56,
+          "end": 34.16,
+          "probability": 0.9961517453193665
+        }
+      ]
+    },
+    {
+      "seek": 2780,
+      "start": 34.16,
+      "end": 42.5,
+      "text": " And to recover all who were lost and fallen far from God",
+      "avgLogprob": -0.3740133558000837,
+      "noSpeechProbability": 5.033558639344626e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 34.16,
+          "end": 35.78,
+          "probability": 0.2135486602783203
+        },
+        {
+          "word": " to",
+          "start": 35.78,
+          "end": 36.2,
+          "probability": 0.9992654919624329
+        },
+        {
+          "word": " recover",
+          "start": 36.2,
+          "end": 37.3,
+          "probability": 0.9904652833938599
+        },
+        {
+          "word": " all",
+          "start": 37.3,
+          "end": 38.08,
+          "probability": 0.4464286267757416
+        },
+        {
+          "word": " who",
+          "start": 38.08,
+          "end": 38.74,
+          "probability": 0.8711192011833191
+        },
+        {
+          "word": " were",
+          "start": 38.74,
+          "end": 39.1,
+          "probability": 0.9857361912727356
+        },
+        {
+          "word": " lost",
+          "start": 39.1,
+          "end": 40.1,
+          "probability": 0.9995798468589783
+        },
+        {
+          "word": " and",
+          "start": 40.1,
+          "end": 40.44,
+          "probability": 0.9193350672721863
+        },
+        {
+          "word": " fallen",
+          "start": 40.44,
+          "end": 40.9,
+          "probability": 0.9863131046295166
+        },
+        {
+          "word": " far",
+          "start": 40.9,
+          "end": 41.34,
+          "probability": 0.994644045829773
+        },
+        {
+          "word": " from",
+          "start": 41.34,
+          "end": 41.7,
+          "probability": 0.9995666146278381
+        },
+        {
+          "word": " God",
+          "start": 41.7,
+          "end": 42.5,
+          "probability": 0.9946509003639221
+        }
+      ]
+    },
+    {
+      "seek": 2780,
+      "start": 43.120000000000005,
+      "end": 47.6,
+      "text": " At the last, He had no punishment",
+      "avgLogprob": -0.3740133558000837,
+      "noSpeechProbability": 5.033558639344626e-12,
+      "words": [
+        {
+          "word": " At",
+          "start": 43.120000000000005,
+          "end": 44.06,
+          "probability": 0.7594523429870605
+        },
+        {
+          "word": " the",
+          "start": 44.06,
+          "end": 44.36,
+          "probability": 0.992911159992218
+        },
+        {
+          "word": " last,",
+          "start": 44.36,
+          "end": 45.08,
+          "probability": 0.6319447755813599
+        },
+        {
+          "word": " He",
+          "start": 45.9,
+          "end": 46.28,
+          "probability": 0.9974562525749207
+        },
+        {
+          "word": " had",
+          "start": 46.28,
+          "end": 46.64,
+          "probability": 0.9996066689491272
+        },
+        {
+          "word": " no",
+          "start": 46.64,
+          "end": 46.9,
+          "probability": 0.9992361068725586
+        },
+        {
+          "word": " punishment",
+          "start": 46.9,
+          "end": 47.6,
+          "probability": 0.11063685268163681
+        }
+      ]
+    },
+    {
+      "seek": 2780,
+      "start": 48.3,
+      "end": 52.6,
+      "text": " He was seen, He did some mistake",
+      "avgLogprob": -0.3740133558000837,
+      "noSpeechProbability": 5.033558639344626e-12,
+      "words": [
+        {
+          "word": " He",
+          "start": 48.3,
+          "end": 49.16,
+          "probability": 0.6219988465309143
+        },
+        {
+          "word": " was",
+          "start": 49.16,
+          "end": 49.56,
+          "probability": 0.8972393274307251
+        },
+        {
+          "word": " seen,",
+          "start": 49.56,
+          "end": 50.26,
+          "probability": 0.24053984880447388
+        },
+        {
+          "word": " He",
+          "start": 51.34,
+          "end": 51.52,
+          "probability": 0.9033762216567993
+        },
+        {
+          "word": " did",
+          "start": 51.52,
+          "end": 51.9,
+          "probability": 0.27159547805786133
+        },
+        {
+          "word": " some",
+          "start": 51.9,
+          "end": 52.24,
+          "probability": 0.7209760546684265
+        },
+        {
+          "word": " mistake",
+          "start": 52.24,
+          "end": 52.6,
+          "probability": 0.5743898153305054
+        }
+      ]
+    },
+    {
+      "seek": 5260,
+      "start": 52.6,
+      "end": 63.38,
+      "text": " How can we let him obediently understand that even of the cross?",
+      "avgLogprob": -0.5376506580246819,
+      "noSpeechProbability": 1.2327990191185467e-11,
+      "words": [
+        {
+          "word": " How",
+          "start": 52.6,
+          "end": 54.36,
+          "probability": 0.6094930171966553
+        },
+        {
+          "word": " can",
+          "start": 54.36,
+          "end": 54.76,
+          "probability": 0.9941089153289795
+        },
+        {
+          "word": " we",
+          "start": 54.76,
+          "end": 55.58,
+          "probability": 0.9908407926559448
+        },
+        {
+          "word": " let",
+          "start": 55.58,
+          "end": 56.8,
+          "probability": 0.7363988757133484
+        },
+        {
+          "word": " him",
+          "start": 56.8,
+          "end": 57.14,
+          "probability": 0.574158251285553
+        },
+        {
+          "word": " obediently",
+          "start": 57.14,
+          "end": 59.1,
+          "probability": 0.5687473565340042
+        },
+        {
+          "word": " understand",
+          "start": 59.1,
+          "end": 60.32,
+          "probability": 0.9306977987289429
+        },
+        {
+          "word": " that",
+          "start": 60.32,
+          "end": 61.4,
+          "probability": 0.8692828416824341
+        },
+        {
+          "word": " even",
+          "start": 61.4,
+          "end": 61.8,
+          "probability": 0.6653341054916382
+        },
+        {
+          "word": " of",
+          "start": 61.8,
+          "end": 62.34,
+          "probability": 0.9064934849739075
+        },
+        {
+          "word": " the",
+          "start": 62.34,
+          "end": 62.54,
+          "probability": 0.6906685829162598
+        },
+        {
+          "word": " cross?",
+          "start": 62.54,
+          "end": 63.38,
+          "probability": 0.9648342728614807
+        }
+      ]
+    },
+    {
+      "seek": 6338,
+      "start": 64.94,
+      "end": 69.9,
+      "text": " I want to follow Him",
+      "avgLogprob": -0.3747297051625374,
+      "noSpeechProbability": 1.0740689587729335e-11,
+      "words": [
+        {
+          "word": " I",
+          "start": 64.94,
+          "end": 66.26,
+          "probability": 0.7266372442245483
+        },
+        {
+          "word": " want",
+          "start": 66.26,
+          "end": 66.94,
+          "probability": 0.9550384879112244
+        },
+        {
+          "word": " to",
+          "start": 66.94,
+          "end": 67.58,
+          "probability": 0.558829665184021
+        },
+        {
+          "word": " follow",
+          "start": 67.58,
+          "end": 69.1,
+          "probability": 0.9877306818962097
+        },
+        {
+          "word": " Him",
+          "start": 69.1,
+          "end": 69.9,
+          "probability": 0.7485432028770447
+        }
+      ]
+    },
+    {
+      "seek": 6338,
+      "start": 70.60000000000001,
+      "end": 74.24,
+      "text": " And from all my laundry",
+      "avgLogprob": -0.3747297051625374,
+      "noSpeechProbability": 1.0740689587729335e-11,
+      "words": [
+        {
+          "word": " And",
+          "start": 70.60000000000001,
+          "end": 72.02,
+          "probability": 0.08347765356302261
+        },
+        {
+          "word": " from",
+          "start": 72.02,
+          "end": 72.46,
+          "probability": 0.4784650504589081
+        },
+        {
+          "word": " all",
+          "start": 72.46,
+          "end": 72.72,
+          "probability": 0.9964170455932617
+        },
+        {
+          "word": " my",
+          "start": 72.72,
+          "end": 73.1,
+          "probability": 0.9951567053794861
+        },
+        {
+          "word": " laundry",
+          "start": 73.1,
+          "end": 74.24,
+          "probability": 0.3898525834083557
+        }
+      ]
+    },
+    {
+      "seek": 6338,
+      "start": 75.96000000000001,
+      "end": 80.28,
+      "text": " And all my endeavoring",
+      "avgLogprob": -0.3747297051625374,
+      "noSpeechProbability": 1.0740689587729335e-11,
+      "words": [
+        {
+          "word": " And",
+          "start": 75.96000000000001,
+          "end": 77.28,
+          "probability": 0.944264829158783
+        },
+        {
+          "word": " all",
+          "start": 77.28,
+          "end": 77.66,
+          "probability": 0.8350057601928711
+        },
+        {
+          "word": " my",
+          "start": 77.66,
+          "end": 78.06,
+          "probability": 0.9979974627494812
+        },
+        {
+          "word": " endeavoring",
+          "start": 78.06,
+          "end": 80.28,
+          "probability": 0.7397519648075104
+        }
+      ]
+    },
+    {
+      "seek": 6338,
+      "start": 80.94,
+      "end": 86.62,
+      "text": " Even though I know not where or how",
+      "avgLogprob": -0.3747297051625374,
+      "noSpeechProbability": 1.0740689587729335e-11,
+      "words": [
+        {
+          "word": " Even",
+          "start": 80.94,
+          "end": 82.64,
+          "probability": 0.9803246855735779
+        },
+        {
+          "word": " though",
+          "start": 82.64,
+          "end": 83.16,
+          "probability": 0.9950714111328125
+        },
+        {
+          "word": " I",
+          "start": 83.16,
+          "end": 83.46,
+          "probability": 0.9999418258666992
+        },
+        {
+          "word": " know",
+          "start": 83.46,
+          "end": 84.0,
+          "probability": 0.9984038472175598
+        },
+        {
+          "word": " not",
+          "start": 84.0,
+          "end": 84.8,
+          "probability": 0.9458451271057129
+        },
+        {
+          "word": " where",
+          "start": 84.8,
+          "end": 85.26,
+          "probability": 0.9366113543510437
+        },
+        {
+          "word": " or",
+          "start": 85.26,
+          "end": 86.0,
+          "probability": 0.9963412880897522
+        },
+        {
+          "word": " how",
+          "start": 86.0,
+          "end": 86.62,
+          "probability": 0.9992364645004272
+        }
+      ]
+    },
+    {
+      "seek": 6338,
+      "start": 86.62,
+      "end": 89.96,
+      "text": " I know He cares",
+      "avgLogprob": -0.3747297051625374,
+      "noSpeechProbability": 1.0740689587729335e-11,
+      "words": [
+        {
+          "word": " I",
+          "start": 86.62,
+          "end": 87.4,
+          "probability": 0.9922024011611938
+        },
+        {
+          "word": " know",
+          "start": 87.4,
+          "end": 87.92,
+          "probability": 0.999646782875061
+        },
+        {
+          "word": " He",
+          "start": 87.92,
+          "end": 88.52,
+          "probability": 0.9924842715263367
+        },
+        {
+          "word": " cares",
+          "start": 88.52,
+          "end": 89.96,
+          "probability": 0.9791874885559082
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 89.96,
+      "end": 94.58,
+      "text": " I know He'll never, I know",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 89.96,
+          "end": 90.66,
+          "probability": 0.8609511852264404
+        },
+        {
+          "word": " know",
+          "start": 90.66,
+          "end": 90.98,
+          "probability": 0.9721323847770691
+        },
+        {
+          "word": " He'll",
+          "start": 90.98,
+          "end": 91.36,
+          "probability": 0.6414077430963516
+        },
+        {
+          "word": " never,",
+          "start": 91.36,
+          "end": 92.44,
+          "probability": 0.2270216941833496
+        },
+        {
+          "word": " I",
+          "start": 92.44,
+          "end": 93.78,
+          "probability": 0.7169121503829956
+        },
+        {
+          "word": " know",
+          "start": 93.78,
+          "end": 94.58,
+          "probability": 0.9798017740249634
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 95.22000000000001,
+      "end": 97.64,
+      "text": " He'll lead me well",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " He'll",
+          "start": 95.22000000000001,
+          "end": 95.92,
+          "probability": 0.7056703269481659
+        },
+        {
+          "word": " lead",
+          "start": 95.92,
+          "end": 96.2,
+          "probability": 0.8224276304244995
+        },
+        {
+          "word": " me",
+          "start": 96.2,
+          "end": 96.54,
+          "probability": 0.9992326498031616
+        },
+        {
+          "word": " well",
+          "start": 96.54,
+          "end": 97.64,
+          "probability": 0.8249250054359436
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 97.64,
+      "end": 100.32,
+      "text": " I know His glory",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 97.64,
+          "end": 98.46,
+          "probability": 0.33897876739501953
+        },
+        {
+          "word": " know",
+          "start": 98.46,
+          "end": 98.82,
+          "probability": 0.9970025420188904
+        },
+        {
+          "word": " His",
+          "start": 98.82,
+          "end": 99.24,
+          "probability": 0.8718411326408386
+        },
+        {
+          "word": " glory",
+          "start": 99.24,
+          "end": 100.32,
+          "probability": 0.4295671582221985
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 100.32,
+      "end": 102.42,
+      "text": " It's now my choice",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " It's",
+          "start": 100.32,
+          "end": 101.22,
+          "probability": 0.5168558657169342
+        },
+        {
+          "word": " now",
+          "start": 101.22,
+          "end": 101.42,
+          "probability": 0.627213180065155
+        },
+        {
+          "word": " my",
+          "start": 101.42,
+          "end": 101.76,
+          "probability": 0.9918665289878845
+        },
+        {
+          "word": " choice",
+          "start": 101.76,
+          "end": 102.42,
+          "probability": 0.9090399742126465
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 102.42,
+      "end": 106.44,
+      "text": " To follow where the man would lead",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " To",
+          "start": 102.42,
+          "end": 103.08,
+          "probability": 0.5869005918502808
+        },
+        {
+          "word": " follow",
+          "start": 103.08,
+          "end": 103.62,
+          "probability": 0.9891128540039062
+        },
+        {
+          "word": " where",
+          "start": 103.62,
+          "end": 104.08,
+          "probability": 0.9422752261161804
+        },
+        {
+          "word": " the",
+          "start": 104.08,
+          "end": 104.4,
+          "probability": 0.9817848205566406
+        },
+        {
+          "word": " man",
+          "start": 104.4,
+          "end": 105.34,
+          "probability": 0.6252807974815369
+        },
+        {
+          "word": " would",
+          "start": 105.34,
+          "end": 105.72,
+          "probability": 0.9165247082710266
+        },
+        {
+          "word": " lead",
+          "start": 105.72,
+          "end": 106.44,
+          "probability": 0.6456122398376465
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 108.2,
+      "end": 110.58,
+      "text": " When He came",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " When",
+          "start": 108.2,
+          "end": 109.28,
+          "probability": 0.9246031045913696
+        },
+        {
+          "word": " He",
+          "start": 109.28,
+          "end": 109.6,
+          "probability": 0.9628220200538635
+        },
+        {
+          "word": " came",
+          "start": 109.6,
+          "end": 110.58,
+          "probability": 0.9905765056610107
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 110.58,
+      "end": 113.92,
+      "text": " No man He followed in the way",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " No",
+          "start": 110.58,
+          "end": 111.5,
+          "probability": 0.20305010676383972
+        },
+        {
+          "word": " man",
+          "start": 111.5,
+          "end": 111.98,
+          "probability": 0.9688054323196411
+        },
+        {
+          "word": " He",
+          "start": 111.98,
+          "end": 112.12,
+          "probability": 0.9610535502433777
+        },
+        {
+          "word": " followed",
+          "start": 112.12,
+          "end": 112.66,
+          "probability": 0.9725528955459595
+        },
+        {
+          "word": " in",
+          "start": 112.66,
+          "end": 113.22,
+          "probability": 0.8490927219390869
+        },
+        {
+          "word": " the",
+          "start": 113.22,
+          "end": 113.48,
+          "probability": 0.9871934056282043
+        },
+        {
+          "word": " way",
+          "start": 113.48,
+          "end": 113.92,
+          "probability": 0.9858216643333435
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 113.92,
+      "end": 115.2,
+      "text": " He remained",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " He",
+          "start": 113.92,
+          "end": 114.44,
+          "probability": 0.6180278062820435
+        },
+        {
+          "word": " remained",
+          "start": 114.44,
+          "end": 115.2,
+          "probability": 0.34997960925102234
+        }
+      ]
+    },
+    {
+      "seek": 8996,
+      "start": 116.06,
+      "end": 119.14,
+      "text": " Who knew Him that He's way",
+      "avgLogprob": -0.48254770391127644,
+      "noSpeechProbability": 4.896638216428384e-12,
+      "words": [
+        {
+          "word": " Who",
+          "start": 116.06,
+          "end": 116.72,
+          "probability": 0.9588676691055298
+        },
+        {
+          "word": " knew",
+          "start": 116.72,
+          "end": 117.1,
+          "probability": 0.986481785774231
+        },
+        {
+          "word": " Him",
+          "start": 117.1,
+          "end": 117.42,
+          "probability": 0.5427055358886719
+        },
+        {
+          "word": " that",
+          "start": 117.42,
+          "end": 118.42,
+          "probability": 0.3550863265991211
+        },
+        {
+          "word": " He's",
+          "start": 118.42,
+          "end": 118.78,
+          "probability": 0.6176468282938004
+        },
+        {
+          "word": " way",
+          "start": 118.78,
+          "end": 119.14,
+          "probability": 0.12410169839859009
+        }
+      ]
+    },
+    {
+      "seek": 11914,
+      "start": 121.04,
+      "end": 128.44,
+      "text": " He took the narrow king, thousand saints in ways to life he trained.",
+      "avgLogprob": -0.5244612693786621,
+      "noSpeechProbability": 7.419942438247062e-11,
+      "words": [
+        {
+          "word": " He",
+          "start": 121.04,
+          "end": 121.9,
+          "probability": 0.0876704603433609
+        },
+        {
+          "word": " took",
+          "start": 121.9,
+          "end": 122.22,
+          "probability": 0.31133779883384705
+        },
+        {
+          "word": " the",
+          "start": 122.22,
+          "end": 122.64,
+          "probability": 0.8291338086128235
+        },
+        {
+          "word": " narrow",
+          "start": 122.64,
+          "end": 123.44,
+          "probability": 0.5573354959487915
+        },
+        {
+          "word": " king,",
+          "start": 123.44,
+          "end": 124.32,
+          "probability": 0.4617278575897217
+        },
+        {
+          "word": " thousand",
+          "start": 124.6,
+          "end": 125.0,
+          "probability": 0.1299053430557251
+        },
+        {
+          "word": " saints",
+          "start": 125.0,
+          "end": 125.62,
+          "probability": 0.09865376353263855
+        },
+        {
+          "word": " in",
+          "start": 125.62,
+          "end": 126.58,
+          "probability": 0.5082803964614868
+        },
+        {
+          "word": " ways",
+          "start": 126.58,
+          "end": 126.88,
+          "probability": 0.7352484464645386
+        },
+        {
+          "word": " to",
+          "start": 126.88,
+          "end": 127.18,
+          "probability": 0.8133437037467957
+        },
+        {
+          "word": " life",
+          "start": 127.18,
+          "end": 127.52,
+          "probability": 0.7957019209861755
+        },
+        {
+          "word": " he",
+          "start": 127.52,
+          "end": 127.9,
+          "probability": 0.35758358240127563
+        },
+        {
+          "word": " trained.",
+          "start": 127.9,
+          "end": 128.44,
+          "probability": 0.8664252758026123
+        }
+      ]
+    },
+    {
+      "seek": 11914,
+      "start": 129.74,
+      "end": 139.06,
+      "text": " Sacrifice, no man denied him, gave his life, no man forced from him.",
+      "avgLogprob": -0.5244612693786621,
+      "noSpeechProbability": 7.419942438247062e-11,
+      "words": [
+        {
+          "word": " Sacrifice,",
+          "start": 129.74,
+          "end": 130.6,
+          "probability": 0.9587345918019613
+        },
+        {
+          "word": " no",
+          "start": 131.82,
+          "end": 132.34,
+          "probability": 0.930662989616394
+        },
+        {
+          "word": " man",
+          "start": 132.34,
+          "end": 132.76,
+          "probability": 0.9001255035400391
+        },
+        {
+          "word": " denied",
+          "start": 132.76,
+          "end": 133.36,
+          "probability": 0.9955755472183228
+        },
+        {
+          "word": " him,",
+          "start": 133.36,
+          "end": 134.36,
+          "probability": 0.6556635499000549
+        },
+        {
+          "word": " gave",
+          "start": 135.04,
+          "end": 135.36,
+          "probability": 0.3774540424346924
+        },
+        {
+          "word": " his",
+          "start": 135.36,
+          "end": 135.7,
+          "probability": 0.9779564142227173
+        },
+        {
+          "word": " life,",
+          "start": 135.7,
+          "end": 136.68,
+          "probability": 0.8893751502037048
+        },
+        {
+          "word": " no",
+          "start": 137.28,
+          "end": 137.6,
+          "probability": 0.9936224818229675
+        },
+        {
+          "word": " man",
+          "start": 137.6,
+          "end": 137.92,
+          "probability": 0.9833577275276184
+        },
+        {
+          "word": " forced",
+          "start": 137.92,
+          "end": 138.24,
+          "probability": 0.23418349027633667
+        },
+        {
+          "word": " from",
+          "start": 138.24,
+          "end": 138.56,
+          "probability": 0.10644063353538513
+        },
+        {
+          "word": " him.",
+          "start": 138.56,
+          "end": 139.06,
+          "probability": 0.8879183530807495
+        }
+      ]
+    },
+    {
+      "seek": 11914,
+      "start": 140.1,
+      "end": 148.86,
+      "text": " How can we, for him still pardoned me, when to us he gave us selflessly?",
+      "avgLogprob": -0.5244612693786621,
+      "noSpeechProbability": 7.419942438247062e-11,
+      "words": [
+        {
+          "word": " How",
+          "start": 140.1,
+          "end": 140.54,
+          "probability": 0.9901607036590576
+        },
+        {
+          "word": " can",
+          "start": 140.54,
+          "end": 140.88,
+          "probability": 0.9969561100006104
+        },
+        {
+          "word": " we,",
+          "start": 140.88,
+          "end": 141.62,
+          "probability": 0.9937224984169006
+        },
+        {
+          "word": " for",
+          "start": 142.32,
+          "end": 142.84,
+          "probability": 0.9830325245857239
+        },
+        {
+          "word": " him",
+          "start": 142.84,
+          "end": 143.14,
+          "probability": 0.6651252508163452
+        },
+        {
+          "word": " still",
+          "start": 143.14,
+          "end": 143.44,
+          "probability": 0.8779023289680481
+        },
+        {
+          "word": " pardoned",
+          "start": 143.44,
+          "end": 144.86,
+          "probability": 0.7507069110870361
+        },
+        {
+          "word": " me,",
+          "start": 144.86,
+          "end": 145.18,
+          "probability": 0.8297587633132935
+        },
+        {
+          "word": " when",
+          "start": 145.42,
+          "end": 145.72,
+          "probability": 0.7350244522094727
+        },
+        {
+          "word": " to",
+          "start": 145.72,
+          "end": 146.04,
+          "probability": 0.9604900479316711
+        },
+        {
+          "word": " us",
+          "start": 146.04,
+          "end": 146.72,
+          "probability": 0.8603307008743286
+        },
+        {
+          "word": " he",
+          "start": 146.72,
+          "end": 147.34,
+          "probability": 0.9623616337776184
+        },
+        {
+          "word": " gave",
+          "start": 147.34,
+          "end": 147.76,
+          "probability": 0.992420494556427
+        },
+        {
+          "word": " us",
+          "start": 147.76,
+          "end": 148.06,
+          "probability": 0.35907524824142456
+        },
+        {
+          "word": " selflessly?",
+          "start": 148.06,
+          "end": 148.86,
+          "probability": 0.9180109798908234
+        }
+      ]
+    },
+    {
+      "seek": 14914,
+      "start": 151.20000000000002,
+      "end": 156.24,
+      "text": " I want to follow Him",
+      "avgLogprob": -0.4601297417753621,
+      "noSpeechProbability": 4.9266701829253634e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 151.20000000000002,
+          "end": 152.52,
+          "probability": 0.6081409454345703
+        },
+        {
+          "word": " want",
+          "start": 152.52,
+          "end": 153.28,
+          "probability": 0.7681824564933777
+        },
+        {
+          "word": " to",
+          "start": 153.28,
+          "end": 153.8,
+          "probability": 0.11958964914083481
+        },
+        {
+          "word": " follow",
+          "start": 153.8,
+          "end": 155.24,
+          "probability": 0.8134538531303406
+        },
+        {
+          "word": " Him",
+          "start": 155.24,
+          "end": 156.24,
+          "probability": 0.8925349116325378
+        }
+      ]
+    },
+    {
+      "seek": 14914,
+      "start": 157.20000000000002,
+      "end": 160.42,
+      "text": " And from all my wandering",
+      "avgLogprob": -0.4601297417753621,
+      "noSpeechProbability": 4.9266701829253634e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 157.20000000000002,
+          "end": 158.1,
+          "probability": 0.04796363040804863
+        },
+        {
+          "word": " from",
+          "start": 158.1,
+          "end": 158.44,
+          "probability": 0.9521737694740295
+        },
+        {
+          "word": " all",
+          "start": 158.44,
+          "end": 158.84,
+          "probability": 0.999327540397644
+        },
+        {
+          "word": " my",
+          "start": 158.84,
+          "end": 159.2,
+          "probability": 0.9063031673431396
+        },
+        {
+          "word": " wandering",
+          "start": 159.2,
+          "end": 160.42,
+          "probability": 0.5971384644508362
+        }
+      ]
+    },
+    {
+      "seek": 14914,
+      "start": 162.06,
+      "end": 165.48,
+      "text": " And all my endeavors",
+      "avgLogprob": -0.4601297417753621,
+      "noSpeechProbability": 4.9266701829253634e-12,
+      "words": [
+        {
+          "word": " And",
+          "start": 162.06,
+          "end": 163.38,
+          "probability": 0.9829119443893433
+        },
+        {
+          "word": " all",
+          "start": 163.38,
+          "end": 163.72,
+          "probability": 0.936163067817688
+        },
+        {
+          "word": " my",
+          "start": 163.72,
+          "end": 164.22,
+          "probability": 0.9986798167228699
+        },
+        {
+          "word": " endeavors",
+          "start": 164.22,
+          "end": 165.48,
+          "probability": 0.30151838064193726
+        }
+      ]
+    },
+    {
+      "seek": 14914,
+      "start": 167.4,
+      "end": 172.72,
+      "text": " Even though I know not there or doubt",
+      "avgLogprob": -0.4601297417753621,
+      "noSpeechProbability": 4.9266701829253634e-12,
+      "words": [
+        {
+          "word": " Even",
+          "start": 167.4,
+          "end": 168.72,
+          "probability": 0.9808740019798279
+        },
+        {
+          "word": " though",
+          "start": 168.72,
+          "end": 169.26,
+          "probability": 0.9998101592063904
+        },
+        {
+          "word": " I",
+          "start": 169.26,
+          "end": 169.56,
+          "probability": 0.9998846054077148
+        },
+        {
+          "word": " know",
+          "start": 169.56,
+          "end": 170.24,
+          "probability": 0.9452412724494934
+        },
+        {
+          "word": " not",
+          "start": 170.24,
+          "end": 170.86,
+          "probability": 0.39815884828567505
+        },
+        {
+          "word": " there",
+          "start": 170.86,
+          "end": 171.58,
+          "probability": 0.6478766202926636
+        },
+        {
+          "word": " or",
+          "start": 171.58,
+          "end": 172.08,
+          "probability": 0.8341389298439026
+        },
+        {
+          "word": " doubt",
+          "start": 172.08,
+          "end": 172.72,
+          "probability": 0.5045211911201477
+        }
+      ]
+    },
+    {
+      "seek": 14914,
+      "start": 172.72,
+      "end": 175.4,
+      "text": " I know He cares",
+      "avgLogprob": -0.4601297417753621,
+      "noSpeechProbability": 4.9266701829253634e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 172.72,
+          "end": 173.42,
+          "probability": 0.9740104079246521
+        },
+        {
+          "word": " know",
+          "start": 173.42,
+          "end": 173.98,
+          "probability": 0.9917045831680298
+        },
+        {
+          "word": " He",
+          "start": 173.98,
+          "end": 174.52,
+          "probability": 0.9591758847236633
+        },
+        {
+          "word": " cares",
+          "start": 174.52,
+          "end": 175.4,
+          "probability": 0.9864382743835449
+        }
+      ]
+    },
+    {
+      "seek": 17540,
+      "start": 175.4,
+      "end": 183.82,
+      "text": " I know He'll come, I know He'll lead me well",
+      "avgLogprob": -0.4570961449597333,
+      "noSpeechProbability": 9.015253821242908e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 175.4,
+          "end": 176.7,
+          "probability": 0.8367619514465332
+        },
+        {
+          "word": " know",
+          "start": 176.7,
+          "end": 177.06,
+          "probability": 0.9905656576156616
+        },
+        {
+          "word": " He'll",
+          "start": 177.06,
+          "end": 177.42,
+          "probability": 0.7971057891845703
+        },
+        {
+          "word": " come,",
+          "start": 177.42,
+          "end": 178.48,
+          "probability": 0.2874603271484375
+        },
+        {
+          "word": " I",
+          "start": 178.78,
+          "end": 179.24,
+          "probability": 0.37867337465286255
+        },
+        {
+          "word": " know",
+          "start": 179.24,
+          "end": 180.54,
+          "probability": 0.9983816146850586
+        },
+        {
+          "word": " He'll",
+          "start": 180.54,
+          "end": 182.06,
+          "probability": 0.8969841003417969
+        },
+        {
+          "word": " lead",
+          "start": 182.06,
+          "end": 182.34,
+          "probability": 0.7392803430557251
+        },
+        {
+          "word": " me",
+          "start": 182.34,
+          "end": 182.58,
+          "probability": 0.9993884563446045
+        },
+        {
+          "word": " well",
+          "start": 182.58,
+          "end": 183.82,
+          "probability": 0.9761039614677429
+        }
+      ]
+    },
+    {
+      "seek": 17540,
+      "start": 183.82,
+      "end": 188.5,
+      "text": " I know His voice, there's now my choice",
+      "avgLogprob": -0.4570961449597333,
+      "noSpeechProbability": 9.015253821242908e-12,
+      "words": [
+        {
+          "word": " I",
+          "start": 183.82,
+          "end": 184.52,
+          "probability": 0.13001520931720734
+        },
+        {
+          "word": " know",
+          "start": 184.52,
+          "end": 184.92,
+          "probability": 0.9980185031890869
+        },
+        {
+          "word": " His",
+          "start": 184.92,
+          "end": 185.28,
+          "probability": 0.6987004280090332
+        },
+        {
+          "word": " voice,",
+          "start": 185.28,
+          "end": 186.38,
+          "probability": 0.34044939279556274
+        },
+        {
+          "word": " there's",
+          "start": 186.76,
+          "end": 187.28,
+          "probability": 0.712012842297554
+        },
+        {
+          "word": " now",
+          "start": 187.28,
+          "end": 187.52,
+          "probability": 0.741948127746582
+        },
+        {
+          "word": " my",
+          "start": 187.52,
+          "end": 187.82,
+          "probability": 0.9917683601379395
+        },
+        {
+          "word": " choice",
+          "start": 187.82,
+          "end": 188.5,
+          "probability": 0.58617103099823
+        }
+      ]
+    },
+    {
+      "seek": 17540,
+      "start": 188.5,
+      "end": 192.3,
+      "text": " I'm aware the Lamb would be",
+      "avgLogprob": -0.4570961449597333,
+      "noSpeechProbability": 9.015253821242908e-12,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 188.5,
+          "end": 189.62,
+          "probability": 0.6067028790712357
+        },
+        {
+          "word": " aware",
+          "start": 189.62,
+          "end": 189.94,
+          "probability": 0.9505147337913513
+        },
+        {
+          "word": " the",
+          "start": 189.94,
+          "end": 190.44,
+          "probability": 0.7918944954872131
+        },
+        {
+          "word": " Lamb",
+          "start": 190.44,
+          "end": 191.48,
+          "probability": 0.5994696021080017
+        },
+        {
+          "word": " would",
+          "start": 191.48,
+          "end": 191.82,
+          "probability": 0.8463038802146912
+        },
+        {
+          "word": " be",
+          "start": 191.82,
+          "end": 192.3,
+          "probability": 0.943050742149353
+        }
+      ]
+    },
+    {
+      "seek": 20540,
+      "start": 215.26,
+      "end": 220.84,
+      "text": " Lord, we pray, preserve us faithful in the way.",
+      "avgLogprob": -0.42930605113506315,
+      "noSpeechProbability": 3.8578294205005026e-12,
+      "words": [
+        {
+          "word": " Lord,",
+          "start": 215.26,
+          "end": 216.2,
+          "probability": 0.2254365086555481
+        },
+        {
+          "word": " we",
+          "start": 216.4,
+          "end": 216.54,
+          "probability": 0.9561401009559631
+        },
+        {
+          "word": " pray,",
+          "start": 216.54,
+          "end": 217.72,
+          "probability": 0.9846205711364746
+        },
+        {
+          "word": " preserve",
+          "start": 218.12,
+          "end": 218.78,
+          "probability": 0.6759878993034363
+        },
+        {
+          "word": " us",
+          "start": 218.78,
+          "end": 219.2,
+          "probability": 0.8599839210510254
+        },
+        {
+          "word": " faithful",
+          "start": 219.2,
+          "end": 219.56,
+          "probability": 0.9131819605827332
+        },
+        {
+          "word": " in",
+          "start": 219.56,
+          "end": 220.18,
+          "probability": 0.9989185333251953
+        },
+        {
+          "word": " the",
+          "start": 220.18,
+          "end": 220.4,
+          "probability": 0.9896345734596252
+        },
+        {
+          "word": " way.",
+          "start": 220.4,
+          "end": 220.84,
+          "probability": 0.9529901146888733
+        }
+      ]
+    },
+    {
+      "seek": 20540,
+      "start": 221.08,
+      "end": 227.64,
+      "text": " All our days, never do fall away by your grace.",
+      "avgLogprob": -0.42930605113506315,
+      "noSpeechProbability": 3.8578294205005026e-12,
+      "words": [
+        {
+          "word": " All",
+          "start": 221.08,
+          "end": 221.46,
+          "probability": 0.4247870445251465
+        },
+        {
+          "word": " our",
+          "start": 221.46,
+          "end": 221.8,
+          "probability": 0.9814712405204773
+        },
+        {
+          "word": " days,",
+          "start": 221.8,
+          "end": 222.78,
+          "probability": 0.6768085956573486
+        },
+        {
+          "word": " never",
+          "start": 223.28,
+          "end": 223.9,
+          "probability": 0.7513662576675415
+        },
+        {
+          "word": " do",
+          "start": 223.9,
+          "end": 224.26,
+          "probability": 0.7412548661231995
+        },
+        {
+          "word": " fall",
+          "start": 224.26,
+          "end": 225.02,
+          "probability": 0.9908319115638733
+        },
+        {
+          "word": " away",
+          "start": 225.02,
+          "end": 225.98,
+          "probability": 0.9959832429885864
+        },
+        {
+          "word": " by",
+          "start": 225.98,
+          "end": 226.66,
+          "probability": 0.5392163395881653
+        },
+        {
+          "word": " your",
+          "start": 226.66,
+          "end": 226.98,
+          "probability": 0.663232147693634
+        },
+        {
+          "word": " grace.",
+          "start": 226.98,
+          "end": 227.64,
+          "probability": 0.6490124464035034
+        }
+      ]
+    },
+    {
+      "seek": 22764,
+      "start": 227.64,
+      "end": 235.56,
+      "text": " Keep us pursuing you, picking up the cross to follow you.",
+      "avgLogprob": -0.4915008357926911,
+      "noSpeechProbability": 3.832136864778679e-12,
+      "words": [
+        {
+          "word": " Keep",
+          "start": 227.64,
+          "end": 228.92,
+          "probability": 0.21043111383914948
+        },
+        {
+          "word": " us",
+          "start": 228.92,
+          "end": 229.26,
+          "probability": 0.9630138874053955
+        },
+        {
+          "word": " pursuing",
+          "start": 229.26,
+          "end": 230.3,
+          "probability": 0.9969514608383179
+        },
+        {
+          "word": " you,",
+          "start": 230.3,
+          "end": 231.2,
+          "probability": 0.789258599281311
+        },
+        {
+          "word": " picking",
+          "start": 231.58,
+          "end": 231.92,
+          "probability": 0.3306485116481781
+        },
+        {
+          "word": " up",
+          "start": 231.92,
+          "end": 233.16,
+          "probability": 0.9627886414527893
+        },
+        {
+          "word": " the",
+          "start": 233.16,
+          "end": 233.48,
+          "probability": 0.9797260165214539
+        },
+        {
+          "word": " cross",
+          "start": 233.48,
+          "end": 233.84,
+          "probability": 0.890753448009491
+        },
+        {
+          "word": " to",
+          "start": 233.84,
+          "end": 234.1,
+          "probability": 0.9953776597976685
+        },
+        {
+          "word": " follow",
+          "start": 234.1,
+          "end": 234.66,
+          "probability": 0.9994804263114929
+        },
+        {
+          "word": " you.",
+          "start": 234.66,
+          "end": 235.56,
+          "probability": 0.995471715927124
+        }
+      ]
+    },
+    {
+      "seek": 22764,
+      "start": 236.56,
+      "end": 249.08,
+      "text": " God's grace, we are eternally absolute, for you inspire me in our hearts.",
+      "avgLogprob": -0.4915008357926911,
+      "noSpeechProbability": 3.832136864778679e-12,
+      "words": [
+        {
+          "word": " God's",
+          "start": 236.56,
+          "end": 237.24,
+          "probability": 0.4052799791097641
+        },
+        {
+          "word": " grace,",
+          "start": 237.24,
+          "end": 237.8,
+          "probability": 0.4893035888671875
+        },
+        {
+          "word": " we",
+          "start": 239.04,
+          "end": 239.42,
+          "probability": 0.9494889974594116
+        },
+        {
+          "word": " are",
+          "start": 239.42,
+          "end": 239.74,
+          "probability": 0.9544593691825867
+        },
+        {
+          "word": " eternally",
+          "start": 239.74,
+          "end": 241.44,
+          "probability": 0.5441292859613895
+        },
+        {
+          "word": " absolute,",
+          "start": 241.44,
+          "end": 242.76,
+          "probability": 0.9111486673355103
+        },
+        {
+          "word": " for",
+          "start": 244.06,
+          "end": 244.56,
+          "probability": 0.9355713725090027
+        },
+        {
+          "word": " you",
+          "start": 244.56,
+          "end": 244.88,
+          "probability": 0.9940133690834045
+        },
+        {
+          "word": " inspire",
+          "start": 244.88,
+          "end": 246.3,
+          "probability": 0.5855838656425476
+        },
+        {
+          "word": " me",
+          "start": 246.3,
+          "end": 246.86,
+          "probability": 0.9965193271636963
+        },
+        {
+          "word": " in",
+          "start": 246.86,
+          "end": 247.6,
+          "probability": 0.9957064986228943
+        },
+        {
+          "word": " our",
+          "start": 247.6,
+          "end": 247.88,
+          "probability": 0.9975730776786804
+        },
+        {
+          "word": " hearts.",
+          "start": 247.88,
+          "end": 249.08,
+          "probability": 0.8567594289779663
+        }
+      ]
+    },
+    {
+      "seek": 22764,
+      "start": 249.34,
+      "end": 256.1,
+      "text": " For let the highways be unto thy a single heart in thee.",
+      "avgLogprob": -0.4915008357926911,
+      "noSpeechProbability": 3.832136864778679e-12,
+      "words": [
+        {
+          "word": " For",
+          "start": 249.34,
+          "end": 249.78,
+          "probability": 0.870427668094635
+        },
+        {
+          "word": " let",
+          "start": 249.78,
+          "end": 250.08,
+          "probability": 0.633978545665741
+        },
+        {
+          "word": " the",
+          "start": 250.08,
+          "end": 250.42,
+          "probability": 0.9876958131790161
+        },
+        {
+          "word": " highways",
+          "start": 250.42,
+          "end": 251.58,
+          "probability": 0.6418507099151611
+        },
+        {
+          "word": " be",
+          "start": 251.58,
+          "end": 252.1,
+          "probability": 0.8411020636558533
+        },
+        {
+          "word": " unto",
+          "start": 252.1,
+          "end": 252.84,
+          "probability": 0.7013465762138367
+        },
+        {
+          "word": " thy",
+          "start": 252.84,
+          "end": 253.72,
+          "probability": 0.2963525354862213
+        },
+        {
+          "word": " a",
+          "start": 253.72,
+          "end": 254.32,
+          "probability": 0.47214949131011963
+        },
+        {
+          "word": " single",
+          "start": 254.32,
+          "end": 254.86,
+          "probability": 0.9909694790840149
+        },
+        {
+          "word": " heart",
+          "start": 254.86,
+          "end": 255.38,
+          "probability": 0.9736673831939697
+        },
+        {
+          "word": " in",
+          "start": 255.38,
+          "end": 255.76,
+          "probability": 0.47642773389816284
+        },
+        {
+          "word": " thee.",
+          "start": 255.76,
+          "end": 256.1,
+          "probability": 0.7987772822380066
+        }
+      ]
+    },
+    {
+      "seek": 25764,
+      "start": 257.92,
+      "end": 272.9,
+      "text": " Now we will follow Him, till He's all we're answering, all we are we're offering.",
+      "avgLogprob": -0.49789953231811523,
+      "noSpeechProbability": 5.312525159367754e-12,
+      "words": [
+        {
+          "word": " Now",
+          "start": 257.92,
+          "end": 259.32,
+          "probability": 0.6402836441993713
+        },
+        {
+          "word": " we",
+          "start": 259.32,
+          "end": 260.06,
+          "probability": 0.9867061972618103
+        },
+        {
+          "word": " will",
+          "start": 260.06,
+          "end": 260.78,
+          "probability": 0.9393050074577332
+        },
+        {
+          "word": " follow",
+          "start": 260.78,
+          "end": 262.02,
+          "probability": 0.7069947123527527
+        },
+        {
+          "word": " Him,",
+          "start": 262.02,
+          "end": 263.62,
+          "probability": 0.7391339540481567
+        },
+        {
+          "word": " till",
+          "start": 264.74,
+          "end": 265.16,
+          "probability": 0.7143040895462036
+        },
+        {
+          "word": " He's",
+          "start": 265.16,
+          "end": 265.56,
+          "probability": 0.37951067090034485
+        },
+        {
+          "word": " all",
+          "start": 265.56,
+          "end": 265.84,
+          "probability": 0.6246052980422974
+        },
+        {
+          "word": " we're",
+          "start": 265.84,
+          "end": 266.2,
+          "probability": 0.9157285392284393
+        },
+        {
+          "word": " answering,",
+          "start": 266.2,
+          "end": 267.32,
+          "probability": 0.6929239630699158
+        },
+        {
+          "word": " all",
+          "start": 269.82,
+          "end": 270.42,
+          "probability": 0.8542293310165405
+        },
+        {
+          "word": " we",
+          "start": 270.42,
+          "end": 270.66,
+          "probability": 0.7454591393470764
+        },
+        {
+          "word": " are",
+          "start": 270.66,
+          "end": 271.02,
+          "probability": 0.7011904120445251
+        },
+        {
+          "word": " we're",
+          "start": 271.02,
+          "end": 271.48,
+          "probability": 0.9154590964317322
+        },
+        {
+          "word": " offering.",
+          "start": 271.48,
+          "end": 272.9,
+          "probability": 0.9742501974105835
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 274.2,
+      "end": 279.6,
+      "text": " To Jerusalem we seek a sound",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " To",
+          "start": 274.2,
+          "end": 275.44,
+          "probability": 0.3572111427783966
+        },
+        {
+          "word": " Jerusalem",
+          "start": 275.44,
+          "end": 276.3,
+          "probability": 0.9921756386756897
+        },
+        {
+          "word": " we",
+          "start": 276.3,
+          "end": 277.84,
+          "probability": 0.7097532153129578
+        },
+        {
+          "word": " seek",
+          "start": 277.84,
+          "end": 278.54,
+          "probability": 0.4619818925857544
+        },
+        {
+          "word": " a",
+          "start": 278.54,
+          "end": 279.0,
+          "probability": 0.12812243402004242
+        },
+        {
+          "word": " sound",
+          "start": 279.0,
+          "end": 279.6,
+          "probability": 0.08958818763494492
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 279.6,
+      "end": 282.9,
+      "text": " From man to earth",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " From",
+          "start": 279.6,
+          "end": 280.46,
+          "probability": 0.12821002304553986
+        },
+        {
+          "word": " man",
+          "start": 280.46,
+          "end": 280.92,
+          "probability": 0.13545885682106018
+        },
+        {
+          "word": " to",
+          "start": 280.92,
+          "end": 281.48,
+          "probability": 0.9792393445968628
+        },
+        {
+          "word": " earth",
+          "start": 281.48,
+          "end": 282.9,
+          "probability": 0.45457959175109863
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 282.9,
+      "end": 286.08,
+      "text": " Lord, as I need no doubt",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " Lord,",
+          "start": 282.9,
+          "end": 283.72,
+          "probability": 0.6399127244949341
+        },
+        {
+          "word": " as",
+          "start": 283.72,
+          "end": 284.1,
+          "probability": 0.3287111818790436
+        },
+        {
+          "word": " I",
+          "start": 284.1,
+          "end": 284.36,
+          "probability": 0.5768600106239319
+        },
+        {
+          "word": " need",
+          "start": 284.36,
+          "end": 284.98,
+          "probability": 0.2593390941619873
+        },
+        {
+          "word": " no",
+          "start": 284.98,
+          "end": 285.66,
+          "probability": 0.2818410098552704
+        },
+        {
+          "word": " doubt",
+          "start": 285.66,
+          "end": 286.08,
+          "probability": 0.41251498460769653
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 286.08,
+      "end": 290.76,
+      "text": " Our Lord is free of all",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " Our",
+          "start": 286.08,
+          "end": 287.04,
+          "probability": 0.17159712314605713
+        },
+        {
+          "word": " Lord",
+          "start": 287.04,
+          "end": 287.86,
+          "probability": 0.12102316319942474
+        },
+        {
+          "word": " is",
+          "start": 287.86,
+          "end": 288.96,
+          "probability": 0.8343254327774048
+        },
+        {
+          "word": " free",
+          "start": 288.96,
+          "end": 289.28,
+          "probability": 0.2435235232114792
+        },
+        {
+          "word": " of",
+          "start": 289.28,
+          "end": 289.68,
+          "probability": 0.8819834589958191
+        },
+        {
+          "word": " all",
+          "start": 289.68,
+          "end": 290.76,
+          "probability": 0.644011914730072
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 290.76,
+      "end": 295.32,
+      "text": " Eternally, oh boy and please",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " Eternally,",
+          "start": 290.76,
+          "end": 292.84,
+          "probability": 0.9388654232025146
+        },
+        {
+          "word": " oh",
+          "start": 293.82,
+          "end": 294.16,
+          "probability": 0.5565767288208008
+        },
+        {
+          "word": " boy",
+          "start": 294.16,
+          "end": 294.5,
+          "probability": 0.3135809600353241
+        },
+        {
+          "word": " and",
+          "start": 294.5,
+          "end": 294.84,
+          "probability": 0.7561975121498108
+        },
+        {
+          "word": " please",
+          "start": 294.84,
+          "end": 295.32,
+          "probability": 0.3687407076358795
+        }
+      ]
+    },
+    {
+      "seek": 27290,
+      "start": 295.32,
+      "end": 300.28,
+      "text": " This is where the Lamb would be",
+      "avgLogprob": -0.7286484333185049,
+      "noSpeechProbability": 6.050512521560414e-12,
+      "words": [
+        {
+          "word": " This",
+          "start": 295.32,
+          "end": 296.7,
+          "probability": 0.850220263004303
+        },
+        {
+          "word": " is",
+          "start": 296.7,
+          "end": 297.06,
+          "probability": 0.9947754144668579
+        },
+        {
+          "word": " where",
+          "start": 297.06,
+          "end": 297.54,
+          "probability": 0.9918836355209351
+        },
+        {
+          "word": " the",
+          "start": 297.54,
+          "end": 298.14,
+          "probability": 0.9984858632087708
+        },
+        {
+          "word": " Lamb",
+          "start": 298.14,
+          "end": 298.8,
+          "probability": 0.8724142909049988
+        },
+        {
+          "word": " would",
+          "start": 298.8,
+          "end": 299.86,
+          "probability": 0.40393730998039246
+        },
+        {
+          "word": " be",
+          "start": 299.86,
+          "end": 300.28,
+          "probability": 0.6166943907737732
+        }
+      ]
+    },
+    {
+      "seek": 30028,
+      "start": 309.06,
+      "end": 310.46,
+      "text": " Transcription by CastingWords",
+      "avgLogprob": -0.3878951668739319,
+      "noSpeechProbability": 8.226666570188002e-11,
+      "words": [
+        {
+          "word": " Transcription",
+          "start": 309.06,
+          "end": 310.46,
+          "probability": 0.37371618021279573
+        },
+        {
+          "word": " by",
+          "start": 310.46,
+          "end": 310.46,
+          "probability": 0.9833124279975891
+        },
+        {
+          "word": " CastingWords",
+          "start": 310.46,
+          "end": 310.46,
+          "probability": 0.9489201456308365
+        }
+      ]
+    }
+  ],
+  "elapsedSeconds": 281.65056648501195
+}

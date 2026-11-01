@@ -648,6 +648,14 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                               'Times are early reading previews, not measured sung onsets; no complete vocal transcription '
                               'or direct backing-score validation is claimed. Five-screen browser checks retain previous '
                               'and following lyric lines.')
+        if evidence.get('scoreMatching', {}).get('mode') == 'instrumental-complete-sections':
+            method_description = ('Complete printed sections and a zero-edit print-derived MIDI verify the original '
+                                  'instrumental recording. Opening sections pass STFT and constant-Q paths for both '
+                                  'score representations. The final variation passes original and harmonic-separated '
+                                  'constant-Q paths across at least three consecutive tempo estimates; all positions agree '
+                                  'within 0.5 seconds and all original cost, key-margin and span gates remain required. '
+                                  'Unfiltered STFT failures are retained. Unmatched instrumental intervals hold the prior '
+                                  'reading. Times are early reading previews, not measured vocal onsets.')
     if complete_cycles:
         method_description = ('Every printed verse is retained. Each recording independently matches the complete '
                               'performed cycles with spatial and optical rhythm templates; the opening cannot skip '
@@ -675,6 +683,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
         data['provenance']['completeImageCycles'] = complete_cycles
     if score_previews:
         data['provenance']['scoreReadingPreviews'] = score_previews
+    if source.get('textLayout'):
+        data['textLayout'] = source['textLayout']
     if gap_review:
         data['provenance']['longGapFreePrefix'] = gap_review
     if whole_reading:

@@ -638,7 +638,15 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
     if evidence.get('midiMatching', {}).get('mode') == 'text-sectional-score' and evidence.get('independentTimelines'):
         method_description = method_description.replace('other recordings retain normal chroma-DTW correspondence checks.',
             'explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.')
-    evidence_suffix = '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
+    complete_cycles = evidence.get('scoreMatching', {}).get('completeImageCycles')
+    if complete_cycles:
+        method_description = ('Every printed verse is retained. Each recording independently matches the complete '
+                              'performed cycles with spatial and optical rhythm templates; the opening cannot skip '
+                              'a complete cycle. First-verse full/local paths agree within 0.5 seconds; subsequent '
+                              'local paths also agree with independently measured musical repeat phases. '
+                              'Positions are early reading previews. Additional accompaniment cycles are measured '
+                              'and retain the final printed reading, without inventing additional lyric verses.')
+    evidence_suffix = '.complete.score.json' if complete_cycles else '.transcript.json' if 'transcriptMatching' in evidence else '.midi.json' if 'midiMatching' in evidence else '.reference.json' if 'referenceMatching' in evidence else '.score.json' if 'scoreMatching' in evidence else '.json'
     data = {'version': 1, 'songId': song['songId'], 'status': 'reviewed',
             'source': {'file': song['source'], 'sha256': song['sha256'], 'type': song['type']},
             'tracks': tracks, 'regions': source['regions'], 'cues': cues,
@@ -648,6 +656,8 @@ def export_result(song, root, cache, evidence_path, evidence, start_time, source
                            'review': 'Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.'}}
     if initial_view:
         data['provenance']['initialReadingView'] = {key: value for key, value in initial_view.items() if key != 'profile'}
+    if complete_cycles:
+        data['provenance']['completeImageCycles'] = complete_cycles
     if gap_review:
         data['provenance']['longGapFreePrefix'] = gap_review
     if whole_reading:

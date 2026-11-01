@@ -3,6 +3,7 @@
 import argparse
 import importlib.util
 import json
+import math
 from pathlib import Path
 import time
 import numpy as np
@@ -13,6 +14,20 @@ from sync_batch_align import export_result
 spec = importlib.util.spec_from_file_location('batch_io', Path(__file__).with_name('batch-sync.py'))
 batch = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(batch)
+
+
+def measured_reference_cues(reference, result, track):
+    cues = track.get('cues', reference['cues'])
+    complete = result.get('scoreMatching', {}).get('completeImageCycles')
+    if not complete:
+        return cues
+    # Early reading previews cannot serve as measured musical boundaries.
+    measured = result['scoreMatching']['recordings'][track['file']]['measuredTimes'][:len(cues)]
+    if (len(measured) != len(cues) or len(cues) != complete['printedVerses'] * complete['systemsPerVerse'] or
+            any(type(at) not in (int, float) or not math.isfinite(at) or at < 0 for at in measured) or
+            any(a + .5 >= b for a, b in zip(measured, measured[1:]))):
+        raise ValueError('完整图片参考缺少全部已测量的音乐位置')
+    return [{**cue, 'at': at} for cue, at in zip(cues, measured)]
 
 
 def consistent_phases(mapped, music, verse_count, slots):
@@ -151,7 +166,7 @@ def generate(song, profile, cache, songs):
             raise ValueError('参考音频已改变')
         source = text_source(batch.ROOT / 'data' / song['source'])
         slots, count, per_verse = profile['referenceSlots'], profile['verseCount'], profile['referenceCuesPerVerse']
-        cues = track.get('cues', reference['cues'])
+        cues = measured_reference_cues(reference, reference_result, track)
         reference_count = profile.get('referenceVerseCount', count)
         if (len(source['verses']) != count or any(len(verse) != len(slots) for verse in source['verses']) or
                 len(cues) != reference_count * per_verse or slots != sorted(set(slots)) or not slots or

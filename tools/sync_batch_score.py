@@ -286,7 +286,11 @@ def score_times(source, audio, recognition, cache):
             music = repeated_verses(audio, count, cache) if count > 1 else {
                 'period': float(times[-1]) * .85, 'initialOnsetEstimate': float(times[-1]) * .05,
                 'shifts': [0.0], 'similarity': None}
-            one = match_template(rows, chroma, times, music['period'], music['initialOnsetEstimate'], 'spatialWeights')
+            # Repeated verses can make a later cycle score slightly better. The
+            # opening search must not skip an entire cycle as a false prelude.
+            bounds = [0, min(float(times[-1]), music['period'] * .75)]
+            one = match_template(rows, chroma, times, music['period'], music['initialOnsetEstimate'],
+                                 'spatialWeights', onset_bounds=bounds)
             candidates.append((one['best']['cost'], count, music, one))
         except ValueError:
             continue
@@ -304,9 +308,10 @@ def score_times(source, audio, recognition, cache):
     else:
         music['shifts'] = [0.0]
     definition['verses'] = definition['verses'][:performed]
-    two = match_template(rows, chroma, times, music['period'], music['initialOnsetEstimate'], 'rhythmWeights')
+    two = match_template(rows, chroma, times, music['period'], music['initialOnsetEstimate'], 'rhythmWeights',
+                         onset_bounds=[0, min(float(times[-1]), music['period'] * .75)])
     starts_a, starts_b = one['best']['starts'], two['best']['starts']
-    evidence = {'algorithmVersion': 3, 'method': 'numbered-score melody/chroma matching; optical beams/dots/dashes and printed accidentals', 'music': music,
+    evidence = {'algorithmVersion': 4, 'method': 'numbered-score melody/chroma matching; optical beams/dots/dashes and printed accidentals; opening search cannot skip a complete repeated cycle', 'music': music,
                 'rows': rows, 'spatialTemplate': one, 'rhythmTemplate': two}
     if one['best']['key'] != two['best']['key'] or max(abs(a - b) for a, b in zip(starts_a, starts_b)) > 1:
         raise ScoreMismatch('两组谱面节奏模板的定位不一致', evidence)

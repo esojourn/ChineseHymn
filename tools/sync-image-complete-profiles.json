@@ -1,0 +1,127 @@
+{
+  "05-100": {
+    "version": 1,
+    "sourceHash": "b049d5d025c0bb6f1bd85482a8ac1b741853bf06473d93c3e3557974db25bb3e",
+    "tracks": [
+      {
+        "file": "05-100万古磐石.mp3",
+        "sha256": "26242dc16be95db5aaa12dccaf105e85d08be2039aae887721d3b836c21a361f"
+      },
+      {
+        "file": "05-100万古磐石-领唱.mp3",
+        "sha256": "0b3cac61d96f2a12ceb812a003ec09ef8578505908801699720365b00c1d52c4"
+      }
+    ],
+    "referenceFile": "05-100万古磐石-领唱.mp3",
+    "priorSidecar": {
+      "file": "docs/sync-bulk-evidence/05-100万古磐石.rejected.json",
+      "sha256": "0d274a7d7b9bc30455340b73c94c56921418d5ad99b4d33bf4915118147c5e40"
+    },
+    "regions": {
+      "s1_v1": {
+        "kind": "image",
+        "top": 0.226192,
+        "bottom": 0.32842
+      },
+      "s1_v2": {
+        "kind": "image",
+        "top": 0.27248,
+        "bottom": 0.374707
+      },
+      "s1_v3": {
+        "kind": "image",
+        "top": 0.319566,
+        "bottom": 0.421793
+      },
+      "s2_v1": {
+        "kind": "image",
+        "top": 0.454439,
+        "bottom": 0.55507
+      },
+      "s2_v2": {
+        "kind": "image",
+        "top": 0.500727,
+        "bottom": 0.602156
+      },
+      "s2_v3": {
+        "kind": "image",
+        "top": 0.547015,
+        "bottom": 0.649242
+      },
+      "s3_v1": {
+        "kind": "image",
+        "top": 0.680291,
+        "bottom": 0.781721
+      },
+      "s3_v2": {
+        "kind": "image",
+        "top": 0.726579,
+        "bottom": 0.828008
+      },
+      "s3_v3": {
+        "kind": "image",
+        "top": 0.772867,
+        "bottom": 0.874296
+      }
+    },
+    "recognitionSha256": "2d28f2c93ea8af84f51489ffcd5816e8b26c367b20cce275286eba6058cda6a7",
+    "recognizerVersion": 5,
+    "expectedNotes": [
+      [
+        5,
+        6,
+        5,
+        3,
+        1,
+        6,
+        5,
+        1,
+        2,
+        3,
+        2,
+        1,
+        7,
+        1
+      ],
+      [
+        7,
+        1,
+        2,
+        2,
+        7,
+        5,
+        1,
+        7,
+        1,
+        2,
+        2,
+        7,
+        5,
+        1
+      ],
+      [
+        5,
+        6,
+        5,
+        3,
+        1,
+        6,
+        5,
+        1,
+        2,
+        3,
+        2,
+        1,
+        7,
+        1
+      ]
+    ],
+    "printedVerses": 3,
+    "systemsPerVerse": 3,
+    "previewSeconds": 1.5,
+    "allowAdditionalInstrumentalCycle": [
+      "05-100万古磐石.mp3"
+    ],
+    "review": "修复用户提交09dbc95标记的缺少第一段。领唱完整三段，伴奏另有一遍完整器乐反复；所有印刷歌词按顺序保留，器乐多出的末遍保持末段阅读位置。整曲两节奏模板核对完整次数，首段四路径，后续逐段两节奏模板与独立音乐反复相位共同核对。"
+  }
+}

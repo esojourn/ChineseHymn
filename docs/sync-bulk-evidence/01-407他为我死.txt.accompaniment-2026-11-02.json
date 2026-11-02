@@ -1,0 +1,370 @@
+{
+  "songId": "01-407",
+  "source": "01-407他为我死.txt",
+  "sourceHash": "88bca3764d054a3c806a004020c1a32387e0f4b9963756d5f6565bd793f9c957",
+  "trackHashes": [
+    {
+      "file": "01-407他为我死.mp3",
+      "sha256": "7d0389d597a08a263a240a59822d86a979a49e59f8656d004051e1ef43cfb7c7"
+    },
+    {
+      "file": "01-407他为我死-领唱.mp3",
+      "sha256": "9c89427aedd1b862cbbcdda3d5b5153623e37510c7c638fffad5f97884e65814"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "01-407他为我死-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/01-407他为我死.txt.midi.json",
+      "sha256": "7103dbb5791d74bc0adb84a624b528a647e45f402088acbe542e36ae386b4a51"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "01-407",
+      "status": "reviewed",
+      "source": {
+        "file": "01-407他为我死.txt",
+        "sha256": "88bca3764d054a3c806a004020c1a32387e0f4b9963756d5f6565bd793f9c957",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "01-407他为我死.mp3",
+          "sha256": "243b93cacc486b3249ba1f8364e33cd2a5bae3c7c59a67771e3010227e52f423",
+          "duration": 190.53714285714287,
+          "offset": 0,
+          "reviewed": true,
+          "cues": [
+            {
+              "at": 9.65,
+              "region": "r1",
+              "label": "第1段",
+              "transition": "intro",
+              "moveStart": 0.0
+            },
+            {
+              "at": 31.7,
+              "region": "r2",
+              "label": "第1段",
+              "transition": "reading"
+            },
+            {
+              "at": 53.85,
+              "region": "r3",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 75.95,
+              "region": "r4",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 98.05,
+              "region": "r5",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 120.15,
+              "region": "r6",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 142.25,
+              "region": "r7",
+              "label": "第4段",
+              "transition": "reading"
+            },
+            {
+              "at": 164.35,
+              "region": "r8",
+              "label": "第4段",
+              "transition": "reading"
+            }
+          ]
+        },
+        {
+          "file": "01-407他为我死-领唱.mp3",
+          "sha256": "9c89427aedd1b862cbbcdda3d5b5153623e37510c7c638fffad5f97884e65814",
+          "duration": 190.0669387755102,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 3
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 7
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 9,
+          "endLine": 10
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 13,
+          "endLine": 14
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 16,
+          "endLine": 17
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 20,
+          "endLine": 21
+        },
+        "r7": {
+          "kind": "text",
+          "startLine": 24,
+          "endLine": 25
+        },
+        "r8": {
+          "kind": "text",
+          "startLine": 28,
+          "endLine": 29
+        }
+      },
+      "cues": [
+        {
+          "at": 10.75,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 32.85,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 54.95,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 77.15,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.1,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 121.15,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 143.3,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 165.45,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI melody and independently extracted printed reference rhythm; full symbolic pitch-sequence and reading-opening verification; every region independently located in every recording and performed verse. Harmony retained as diagnostic.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "祂为我死，我才能活，我今为祂活着； 我命、我爱，我都献给那为我钉死的。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "哦，耶稣我主，我救主，使我能专心跟从主； 祢怎样为我而死而活，让我照样为祢死活。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "祂为我死，我才能死，脱离罪、己、俗世； 哦，死何奥，哦，生何高，愿我联合倚靠！",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "哦，耶稣我主，我救主，使我能专心跟从主； 祢怎样为我而死而活，让我照样为祢死活。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "祂为我活，我才能活，像祂那样“无我”; 求主从我显祢性情，活出祢的生命。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "哦，耶稣我主，我救主，使我能专心跟从主； 祢怎样为我而死而活，让我照样为祢死活。",
+            "label": "第3段"
+          },
+          {
+            "region": "r7",
+            "text": "祂为我活，我愿一生把祂分给众人； 让我像主为人而活，跟随主的领率。",
+            "label": "第4段"
+          },
+          {
+            "region": "r8",
+            "text": "哦，耶稣我主，我救主，使我能专心跟从主； 祢怎样为我而死而活，让我照样为祢死活。",
+            "label": "第4段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/01-407他为我死.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "42d4cc6c5396cf56125ef8be3747ec8b55cbbc8883d835dca2e827803b7af0ef",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "e0b6b5dbf3869a80337d833078182f3b1ff9115a799bb92c904d2cf3b0c47492",
+    "changedTrack": "01-407他为我死.mp3",
+    "newTrackSha256": "7d0389d597a08a263a240a59822d86a979a49e59f8656d004051e1ef43cfb7c7",
+    "newTrackDuration": 188.44733333333335,
+    "calibration": {
+      "songId": "01-407",
+      "referenceTimes": [
+        11.15,
+        33.2,
+        55.35,
+        77.45,
+        99.55,
+        121.65,
+        143.75,
+        165.85
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        11.95,
+        34.2,
+        57.05,
+        79.05,
+        100.95,
+        122.15,
+        142.65,
+        164.0
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 10,
+        "initialSimilarity": 0.39405444264411926,
+        "meanPathCost": 0.3940921127796173,
+        "cueWindowCosts": [
+          0.34377288818359375,
+          0.4727625548839569,
+          0.31922969222068787,
+          0.427154004573822,
+          0.329685240983963,
+          0.42918816208839417,
+          0.4240604639053345,
+          0.4168466627597809
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 10.45,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 32.7,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 55.55,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 77.55,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 99.45,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 120.65,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 141.15,
+        "region": "r7",
+        "label": "第4段",
+        "transition": "reading"
+      },
+      {
+        "at": 162.5,
+        "region": "r8",
+        "label": "第4段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "01-407他为我死.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [
+      {
+        "file": "01-407他为我死-领唱.mp3",
+        "sha256": "9c89427aedd1b862cbbcdda3d5b5153623e37510c7c638fffad5f97884e65814",
+        "duration": 190.0669387755102,
+        "offset": 0,
+        "reviewed": true
+      }
+    ],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

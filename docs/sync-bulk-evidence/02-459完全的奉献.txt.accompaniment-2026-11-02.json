@@ -1,0 +1,200 @@
+{
+  "songId": "02-459",
+  "source": "02-459完全的奉献.txt",
+  "sourceHash": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+  "trackHashes": [
+    {
+      "file": "02-459完全的奉献.mp3",
+      "sha256": "ec6c0bff84ae9ce2bc26164b8fe79d324bec07530f32ca2bd7ca4292e6b3c6e7"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "02-459完全的奉献-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/02-459完全的奉献.txt.midi.json",
+      "sha256": "a945a08470acc11348c85fa0cd1e582c6e8379a22da269138f4e1e02649eb0e5"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "02-459",
+      "status": "reviewed",
+      "source": {
+        "file": "02-459完全的奉献.txt",
+        "sha256": "0e9d50a89cd849ec83d3c75b3ba5736b1eea298b69331514f1ff7bacf85707f0",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "02-459完全的奉献.mp3",
+          "sha256": "53f034cd8aa5e8a0fe7b5783342463e5973fc8c156702bfbc5ef9175657ffdfb",
+          "duration": 134.32163265306122,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 5
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 7,
+          "endLine": 10
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 12,
+          "endLine": 15
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 17,
+          "endLine": 20
+        }
+      },
+      "cues": [
+        {
+          "at": 6.3,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 37.4,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 68.6,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 99.7,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "完全的奉献，主我愿意， 完全的奉献，奉献与你； 一切摆上祭坛，向你完全皈依， 你为我付赎价，我今归你。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "完全的奉献光阴生命， 一切主所赐，愿遵主令， 一闻恩主慈声，我乐跟随主行， 从今直到永远，顺服忠诚。",
+            "label": "第2段"
+          },
+          {
+            "region": "r3",
+            "text": "完全的奉献金银财宝， 你所赐一切，丰盛美好； 一切皆属于你，因你将我买赎， 今后永归与你，耶稣我主。",
+            "label": "第3段"
+          },
+          {
+            "region": "r4",
+            "text": "完全的奉献，主我属你， 完全的奉献，神圣救主； 借我显你生命，表彰你的丰盛， 非我，乃是基督，你是一切。",
+            "label": "第4段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/02-459完全的奉献.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "140a2735601c950ff2ff2cef355046edd3eefd8a4d95d739466c35c18a74c2df",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "9568593ba5a3dfdb96af061b41ff5758ce0202a289368f49ad0eb84535f83b63",
+    "changedTrack": "02-459完全的奉献.mp3",
+    "newTrackSha256": "ec6c0bff84ae9ce2bc26164b8fe79d324bec07530f32ca2bd7ca4292e6b3c6e7",
+    "newTrackDuration": 165.096,
+    "calibration": {
+      "songId": "02-459",
+      "referenceTimes": [
+        7.8,
+        38.9,
+        70.1,
+        101.2
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        8.3,
+        47.8,
+        83.9,
+        120.1
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 8,
+        "initialSimilarity": 0.36858493089675903,
+        "meanPathCost": 0.3537159562110901,
+        "cueWindowCosts": [
+          0.31147903203964233,
+          0.25163954496383667,
+          0.21583719551563263,
+          0.2317895144224167
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 6.8,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 46.3,
+        "region": "r2",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 82.4,
+        "region": "r3",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 118.6,
+        "region": "r4",
+        "label": "第4段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "02-459完全的奉献.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

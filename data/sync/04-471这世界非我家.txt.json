@@ -10,44 +10,44 @@
   "tracks": [
     {
       "file": "04-471这世界非我家.mp3",
-      "sha256": "64b53157af9474f0b2375d962a0df891fa6b5c95e8b0ce7aeeafc8b84324cbda",
-      "duration": 140.61714285714285,
+      "sha256": "1b8f2be10c649f3db3af2fa5dc352dc5d5344f546e8244242a7cf3c10dd265fe",
+      "duration": 150.04733333333334,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 9.15,
+          "at": 11.15,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 30.5,
+          "at": 32.8,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 51.85,
+          "at": 53.65,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 73.2,
+          "at": 76.1,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 94.45,
+          "at": 97.85,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 115.85,
+          "at": 119.95,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -139,7 +139,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -172,7 +172,7 @@
         "label": "第3段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.midi.json",
+    "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -181,6 +181,13 @@
       "clampAtZero": true,
       "baselineSha256": "7466425416bb84082515c873c6587d44b08421b29a344d8c5d8e110ffde8841a",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "04-471这世界非我家.mp3",
+      "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

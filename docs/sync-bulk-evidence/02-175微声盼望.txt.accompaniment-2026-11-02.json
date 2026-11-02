@@ -1,0 +1,1191 @@
+{
+  "songId": "02-175",
+  "source": "02-175微声盼望.txt",
+  "sourceHash": "66aa69a39113f5a3333846097c3f569a962d3429a00db6d2f59aa64a8ea32063",
+  "trackHashes": [
+    {
+      "file": "02-175微声盼望.mp3",
+      "sha256": "9476127fc5c881d8c00e9cc2835c55374bad89d2867f22c73a3321d2f1094573"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "02-175微声盼望-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/02-175微声盼望.txt.json",
+      "sha256": "29c39ce2e6c889f04eecae251ca49ee5c8c93db26e314f345134357ae00ad82b"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "02-175",
+      "status": "reviewed",
+      "source": {
+        "file": "02-175微声盼望.txt",
+        "sha256": "66aa69a39113f5a3333846097c3f569a962d3429a00db6d2f59aa64a8ea32063",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "02-175微声盼望.mp3",
+          "sha256": "20c74c74f9c89b8cd8fb4977e28568de2e341fe8bb0b61dd6279c1200f491fde",
+          "duration": 214.9877551020408,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 3,
+          "endLine": 6
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 8,
+          "endLine": 9
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 12,
+          "endLine": 15
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 17,
+          "endLine": 18
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 21,
+          "endLine": 24
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 26,
+          "endLine": 27
+        }
+      },
+      "cues": [
+        {
+          "at": 4.57,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 53.08,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.72,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 122.22,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 142.71,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 191.32,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "烦忙人生的时光中，疲倦寂寞多感喟; 你心灵饥渴与虚空，却无法得着安慰; 听，这声音何等美妙，是真实温柔言词, 听，慈爱声向你呼召，带来好信息与你。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "世界一切浮华宴乐，全是欺骗与束缚; 真实与不变的珍宝，世间上永找不到; 来，你要向高山举目，你心灵必得满足, 来，饮于生命活水泉，必可享宁静平安。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "希望如锚抛牢稳妥，将心灵黑幕冲破; 主已进入我的内心，解除坟墓的幽禁; 来，盼望实现的欢欣，进入我愁苦的心, 来，有福荣耀的盼望，永不离开我心房。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "微声盼望，我喜听主慈爱声， 让我心灵痛苦中得安宁。",
+            "label": "第3段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/02-175微声盼望.txt.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "f970fca5702dcb7884347e9bebca0143e838c6bb1bf646057bf5bcaa9fb57e27",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "7cc18d620e380a2c6d845bfb1d5eadff8d96e198e16eda6cbf780cc3d2872eb6",
+    "changedTrack": "02-175微声盼望.mp3",
+    "newTrackSha256": "9476127fc5c881d8c00e9cc2835c55374bad89d2867f22c73a3321d2f1094573",
+    "newTrackDuration": 245.472625,
+    "calibration": {
+      "songId": "02-175",
+      "status": "ready",
+      "method": "Independently match every complete performed verse against the original MIDI melody (STFT) and the manually transcribed pinned printed soprano melody (STFT and fixed CQT); three measured paths agree within 0.5 seconds at every main-verse and chorus boundary. Harmony maps and uniform-repeat detection failed and are retained only as diagnostics. No ASR on accompaniment, no duration-scaled cue placement.",
+      "scorePage": "https://www.zanmei.ai/tab/36288.html",
+      "printedScore": {
+        "scoreRows": [
+          {
+            "notes": [
+              5,
+              5,
+              5,
+              1,
+              7,
+              6,
+              5,
+              3,
+              4,
+              4,
+              4,
+              6,
+              5,
+              4,
+              3
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "notes": [
+              3,
+              3,
+              3,
+              3,
+              4,
+              5,
+              6,
+              1,
+              5,
+              5,
+              5,
+              7,
+              6,
+              7,
+              1
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "notes": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              4,
+              3,
+              1,
+              7,
+              7,
+              7,
+              7,
+              1,
+              6,
+              5
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "notes": [
+              1,
+              1,
+              1,
+              1,
+              7,
+              6,
+              5,
+              1,
+              3,
+              3,
+              3,
+              5,
+              4,
+              2,
+              1
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              1.5,
+              0.5,
+              1,
+              1,
+              1,
+              1,
+              6
+            ]
+          },
+          {
+            "notes": [
+              5,
+              6,
+              7,
+              1,
+              7,
+              1,
+              2,
+              1,
+              2,
+              3,
+              5
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              4,
+              1,
+              1,
+              4,
+              1,
+              1,
+              4,
+              1,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "notes": [
+              6,
+              7,
+              1,
+              5,
+              5,
+              3,
+              4,
+              5,
+              4,
+              3
+            ],
+            "pitchOffsets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "rhythmWeights": [
+              4,
+              1,
+              1,
+              4,
+              1,
+              1,
+              4,
+              1,
+              1,
+              6
+            ]
+          }
+        ],
+        "scoreImages": [
+          {
+            "url": "https://file.izanm.org/store/2019/10/26/5db37e31d963437f2e4cac29.jpg",
+            "sha256": "0a68f31b36abe067acf52a7a7e45a01982db75a78f608ab51bf2605670763920"
+          },
+          {
+            "url": "https://file.izanm.org/store/2019/10/26/5db37e31d963437f2e4cac2a.jpg",
+            "sha256": "281b0625c8e83af03ab3078b82d18c33061c257eb31f94d7a150373ac607bf90"
+          }
+        ],
+        "matches": [
+          {
+            "kind": "stft",
+            "verse": 0,
+            "match": {
+              "best": {
+                "cost": 0.2371026611328125,
+                "key": 7,
+                "starts": [
+                  18.700000762939453,
+                  66.0999984741211
+                ],
+                "span": 64.5
+              },
+              "runnerUp": {
+                "cost": 0.4554846627371652,
+                "key": 2,
+                "starts": [
+                  50.0,
+                  74.19999694824219
+                ],
+                "span": 39.599998474121094
+              }
+            }
+          },
+          {
+            "kind": "stft",
+            "verse": 1,
+            "match": {
+              "best": {
+                "cost": 0.28245372227260046,
+                "key": 7,
+                "starts": [
+                  92.0,
+                  138.60000610351562
+                ],
+                "span": 62.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.4271858433314732,
+                "key": 2,
+                "starts": [
+                  108.30000305175781,
+                  146.8000030517578
+                ],
+                "span": 55.09999084472656
+              }
+            }
+          },
+          {
+            "kind": "stft",
+            "verse": 2,
+            "match": {
+              "best": {
+                "cost": 0.2078220912388393,
+                "key": 7,
+                "starts": [
+                  165.10000610351562,
+                  211.1999969482422
+                ],
+                "span": 68.79998779296875
+              },
+              "runnerUp": {
+                "cost": 0.446013924734933,
+                "key": 2,
+                "starts": [
+                  159.60000610351562,
+                  198.89999389648438
+                ],
+                "span": 58.69999694824219
+              }
+            }
+          },
+          {
+            "kind": "cqt",
+            "verse": 0,
+            "match": {
+              "best": {
+                "cost": 0.25820502144949775,
+                "key": 7,
+                "starts": [
+                  18.700000762939453,
+                  66.0999984741211
+                ],
+                "span": 64.5
+              },
+              "runnerUp": {
+                "cost": 0.4567037091936384,
+                "key": 0,
+                "starts": [
+                  30.0,
+                  63.10000228881836
+                ],
+                "span": 53.20000457763672
+              }
+            }
+          },
+          {
+            "kind": "cqt",
+            "verse": 1,
+            "match": {
+              "best": {
+                "cost": 0.3396551949637277,
+                "key": 7,
+                "starts": [
+                  92.0,
+                  138.60000610351562
+                ],
+                "span": 62.40000915527344
+              },
+              "runnerUp": {
+                "cost": 0.4646773420061384,
+                "key": 2,
+                "starts": [
+                  108.30000305175781,
+                  146.8000030517578
+                ],
+                "span": 55.100006103515625
+              }
+            }
+          },
+          {
+            "kind": "cqt",
+            "verse": 2,
+            "match": {
+              "best": {
+                "cost": 0.22712908063616072,
+                "key": 7,
+                "starts": [
+                  165.1999969482422,
+                  211.3000030517578
+                ],
+                "span": 63.0
+              },
+              "runnerUp": {
+                "cost": 0.44785086495535714,
+                "key": 0,
+                "starts": [
+                  151.40000915527344,
+                  186.90000915527344
+                ],
+                "span": 54.19999694824219
+              }
+            }
+          }
+        ]
+      },
+      "midiReference": {
+        "file": "midi/hymnary488.mid",
+        "url": "https://chinatownministry.org/Hymnal/Midi/hymnary488.mid",
+        "sha256": "cddb04a872acb5dbf4f7b284eefa53bb5910dd9a8929596d218dc8873a6b4d14",
+        "verseBoundarySeconds": 48,
+        "referencePeriodSeconds": 71.375,
+        "note": "Same tune with different Chinese translation. Use melody only; repository lyrics remain unchanged."
+      },
+      "sampling": {
+        "durationEstimate": 70,
+        "onsetEstimates": [
+          18.5,
+          91.9,
+          165
+        ],
+        "estimatesLocateSearchWindowsOnly": true
+      },
+      "maximumCost": 0.35,
+      "minimumKeyMargin": 0.06,
+      "maximumOnsetDifference": 0.5,
+      "spanRatio": [
+        0.75,
+        1.25
+      ],
+      "threePaths": [
+        [
+          {
+            "best": {
+              "cost": 0.271933485057256,
+              "key": 6,
+              "starts": [
+                18.5,
+                65.9000015258789
+              ],
+              "span": 69.0
+            },
+            "runnerUp": {
+              "cost": 0.46639989565496576,
+              "key": 1,
+              "starts": [
+                13.0,
+                53.20000076293945
+              ],
+              "span": 58.30000305175781
+            }
+          },
+          {
+            "best": {
+              "cost": 0.2371026611328125,
+              "key": 7,
+              "starts": [
+                18.700000762939453,
+                66.0999984741211
+              ],
+              "span": 64.5
+            },
+            "runnerUp": {
+              "cost": 0.4554846627371652,
+              "key": 2,
+              "starts": [
+                50.0,
+                74.19999694824219
+              ],
+              "span": 39.599998474121094
+            }
+          },
+          {
+            "best": {
+              "cost": 0.25820502144949775,
+              "key": 7,
+              "starts": [
+                18.700000762939453,
+                66.0999984741211
+              ],
+              "span": 64.5
+            },
+            "runnerUp": {
+              "cost": 0.4567037091936384,
+              "key": 0,
+              "starts": [
+                30.0,
+                63.10000228881836
+              ],
+              "span": 53.20000457763672
+            }
+          }
+        ],
+        [
+          {
+            "best": {
+              "cost": 0.33172513360846534,
+              "key": 6,
+              "starts": [
+                91.9000015258789,
+                138.60000610351562
+              ],
+              "span": 69.20000457763672
+            },
+            "runnerUp": {
+              "cost": 0.45099073436162246,
+              "key": 1,
+              "starts": [
+                108.30000305175781,
+                146.8000030517578
+              ],
+              "span": 55.09999084472656
+            }
+          },
+          {
+            "best": {
+              "cost": 0.28245372227260046,
+              "key": 7,
+              "starts": [
+                92.0,
+                138.60000610351562
+              ],
+              "span": 62.399993896484375
+            },
+            "runnerUp": {
+              "cost": 0.4271858433314732,
+              "key": 2,
+              "starts": [
+                108.30000305175781,
+                146.8000030517578
+              ],
+              "span": 55.09999084472656
+            }
+          },
+          {
+            "best": {
+              "cost": 0.3396551949637277,
+              "key": 7,
+              "starts": [
+                92.0,
+                138.60000610351562
+              ],
+              "span": 62.40000915527344
+            },
+            "runnerUp": {
+              "cost": 0.4646773420061384,
+              "key": 2,
+              "starts": [
+                108.30000305175781,
+                146.8000030517578
+              ],
+              "span": 55.100006103515625
+            }
+          }
+        ],
+        [
+          {
+            "best": {
+              "cost": 0.26114305470087756,
+              "key": 6,
+              "starts": [
+                165.0,
+                211.10000610351562
+              ],
+              "span": 68.69999694824219
+            },
+            "runnerUp": {
+              "cost": 0.464601616010274,
+              "key": 1,
+              "starts": [
+                159.60000610351562,
+                199.6999969482422
+              ],
+              "span": 58.69999694824219
+            }
+          },
+          {
+            "best": {
+              "cost": 0.2078220912388393,
+              "key": 7,
+              "starts": [
+                165.10000610351562,
+                211.1999969482422
+              ],
+              "span": 68.79998779296875
+            },
+            "runnerUp": {
+              "cost": 0.446013924734933,
+              "key": 2,
+              "starts": [
+                159.60000610351562,
+                198.89999389648438
+              ],
+              "span": 58.69999694824219
+            }
+          },
+          {
+            "best": {
+              "cost": 0.22712908063616072,
+              "key": 7,
+              "starts": [
+                165.1999969482422,
+                211.3000030517578
+              ],
+              "span": 63.0
+            },
+            "runnerUp": {
+              "cost": 0.44785086495535714,
+              "key": 0,
+              "starts": [
+                151.40000915527344,
+                186.90000915527344
+              ],
+              "span": 54.19999694824219
+            }
+          }
+        ]
+      ],
+      "mappedTimes": [
+        18.63,
+        66.03,
+        91.97,
+        138.6,
+        165.1,
+        211.2
+      ],
+      "extraCycleCheck": {
+        "performedVerses": 3,
+        "firstAt": 18.63,
+        "lastVerseAt": 165.1,
+        "duration": 245.47,
+        "headAndTailCannotFitAnotherCompleteVerse": true
+      },
+      "failedFullRecordingDiagnostics": {
+        "songId": "02-175",
+        "referenceTimes": [
+          6.07,
+          54.58,
+          75.22,
+          123.72,
+          144.21,
+          192.82
+        ],
+        "status": "needs-calibration",
+        "reason": "录音编排或音乐对应不可靠：{\"method\": \"chroma-DTW\", \"semitoneShift\": 1, \"initialSimilarity\": 0.2565929591655731, \"meanPathCost\": 0.49375608563423157, \"cueWindowCosts\": [0.5492453575134277, 0.4418722987174988, 0.5457645058631897, 0.522193431854248, 0.49528586864471436, 0.46260127425193787]}"
+      },
+      "diagnosticHarmonyMatching": [
+        {
+          "type": "old",
+          "verse": 0,
+          "melody": {
+            "best": {
+              "cost": 0.17847918498015783,
+              "key": 7,
+              "starts": [
+                6.0,
+                52.29999923706055
+              ],
+              "span": 68.5999984741211
+            },
+            "runnerUp": {
+              "cost": 0.43320227704413894,
+              "key": 2,
+              "starts": [
+                6.0,
+                48.900001525878906
+              ],
+              "span": 60.0
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.39810997704866136,
+              "key": 7,
+              "at": 6.5,
+              "span": 68.5,
+              "starts": [
+                6.1,
+                52.3
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.695642584484669,
+              "key": 0,
+              "at": 12.3,
+              "span": 59.4,
+              "starts": [
+                11.9,
+                49.9
+              ]
+            }
+          }
+        },
+        {
+          "type": "old",
+          "verse": 1,
+          "melody": {
+            "best": {
+              "cost": 0.17112472467933135,
+              "key": 7,
+              "starts": [
+                75.30000305175781,
+                121.4000015258789
+              ],
+              "span": 68.5
+            },
+            "runnerUp": {
+              "cost": 0.42293392904588006,
+              "key": 2,
+              "starts": [
+                75.0999984741211,
+                118.0
+              ],
+              "span": 60.099998474121094
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.3958679729191163,
+              "key": 7,
+              "at": 75.7,
+              "span": 68.4,
+              "starts": [
+                75.3,
+                121.4
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6915408188285772,
+              "key": 0,
+              "at": 88.8,
+              "span": 51.7,
+              "starts": [
+                88.7,
+                118.6
+              ]
+            }
+          }
+        },
+        {
+          "type": "old",
+          "verse": 2,
+          "melody": {
+            "best": {
+              "cost": 0.17098037344329436,
+              "key": 7,
+              "starts": [
+                144.39999389648438,
+                190.5
+              ],
+              "span": 68.5
+            },
+            "runnerUp": {
+              "cost": 0.43605308698331224,
+              "key": 2,
+              "starts": [
+                144.3000030517578,
+                187.10000610351562
+              ],
+              "span": 60.0
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.3938944439812093,
+              "key": 7,
+              "at": 144.8,
+              "span": 68.5,
+              "starts": [
+                144.4,
+                190.5
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6813668500842303,
+              "key": 0,
+              "at": 134.4,
+              "span": 27.3,
+              "starts": [
+                134.2,
+                152.2
+              ]
+            }
+          }
+        },
+        {
+          "type": "new",
+          "verse": 0,
+          "melody": {
+            "best": {
+              "cost": 0.271933485057256,
+              "key": 6,
+              "starts": [
+                18.5,
+                65.9000015258789
+              ],
+              "span": 69.0
+            },
+            "runnerUp": {
+              "cost": 0.46639989565496576,
+              "key": 1,
+              "starts": [
+                13.0,
+                53.20000076293945
+              ],
+              "span": 58.30000305175781
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.46462264387574914,
+              "key": 6,
+              "at": 19.0,
+              "span": 68.8,
+              "starts": [
+                18.6,
+                66.3
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6963048647527825,
+              "key": 1,
+              "at": 64.3,
+              "span": 36.7,
+              "starts": [
+                63.9,
+                85.9
+              ]
+            }
+          }
+        },
+        {
+          "type": "new",
+          "verse": 1,
+          "melody": {
+            "best": {
+              "cost": 0.33172513360846534,
+              "key": 6,
+              "starts": [
+                91.9000015258789,
+                138.60000610351562
+              ],
+              "span": 69.20000457763672
+            },
+            "runnerUp": {
+              "cost": 0.45099073436162246,
+              "key": 1,
+              "starts": [
+                108.30000305175781,
+                146.8000030517578
+              ],
+              "span": 55.09999084472656
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.4316410430490154,
+              "key": 6,
+              "at": 92.6,
+              "span": 67.4,
+              "starts": [
+                92.2,
+                138.7
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6544216626311001,
+              "key": 1,
+              "at": 109.8,
+              "span": 54.8,
+              "starts": [
+                109.4,
+                142.1
+              ]
+            }
+          }
+        },
+        {
+          "type": "new",
+          "verse": 2,
+          "melody": {
+            "best": {
+              "cost": 0.26114305470087756,
+              "key": 6,
+              "starts": [
+                165.0,
+                211.10000610351562
+              ],
+              "span": 68.69999694824219
+            },
+            "runnerUp": {
+              "cost": 0.464601616010274,
+              "key": 1,
+              "starts": [
+                159.60000610351562,
+                199.6999969482422
+              ],
+              "span": 58.69999694824219
+            }
+          },
+          "harmony": {
+            "best": {
+              "cost": 0.45710821282373715,
+              "key": 6,
+              "at": 165.5,
+              "span": 67.8,
+              "starts": [
+                165.1,
+                211.7
+              ]
+            },
+            "runnerUp": {
+              "cost": 0.6682947446222175,
+              "key": 1,
+              "at": 182.9,
+              "span": 47.0,
+              "starts": [
+                182.6,
+                213.8
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "finalCues": [
+      {
+        "at": 17.13,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 64.53,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 90.47,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 137.1,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 163.6,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 209.7,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "02-175微声盼望.mp3",
+      "referenceTimesUndoPreviousAdvance": false,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

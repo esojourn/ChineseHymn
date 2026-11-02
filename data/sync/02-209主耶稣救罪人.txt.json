@@ -10,26 +10,26 @@
   "tracks": [
     {
       "file": "02-209主耶稣救罪人.mp3",
-      "sha256": "288aa68c5adbec6e1528df6bf0c2f3e9ca6f5d5f391e35f742b5b10f8671b405",
-      "duration": 95.55591836734693,
+      "sha256": "f7790da0028d80a065290f55600ccfa7beec2612346680b6f7459b34204e5de2",
+      "duration": 111.85629166666666,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 5.52,
+          "at": 9.02,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 34.28,
+          "at": 40.18,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 63.16,
+          "at": 71.11,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
@@ -88,7 +88,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -106,7 +106,7 @@
         "label": "第3段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/02-209主耶稣救罪人.txt.json",
+    "evidence": "docs/sync-bulk-evidence/02-209主耶稣救罪人.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -115,6 +115,13 @@
       "clampAtZero": true,
       "baselineSha256": "308ff49043d14dff085668fcb15bd506faf87adbf7c7d0f3999ee3e7861b5e26",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "02-209主耶稣救罪人.mp3",
+      "evidence": "docs/sync-bulk-evidence/02-209主耶稣救罪人.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

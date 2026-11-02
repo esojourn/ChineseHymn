@@ -1,0 +1,308 @@
+{
+  "songId": "04-471",
+  "source": "04-471这世界非我家.txt",
+  "sourceHash": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+  "trackHashes": [
+    {
+      "file": "04-471这世界非我家.mp3",
+      "sha256": "1b8f2be10c649f3db3af2fa5dc352dc5d5344f546e8244242a7cf3c10dd265fe"
+    },
+    {
+      "file": "04-471这世界非我家-领唱.mp3",
+      "sha256": "57e941e221cfd3e926b73b6b42db3d580483066ff57ba9d8b765e4290d816375"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "04-471这世界非我家-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/04-471这世界非我家.txt.midi.json",
+      "sha256": "5cf6221a4240cc6203ffeb6fadf9e75e24006779a84a64b3dab284fade238959"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "04-471",
+      "status": "reviewed",
+      "source": {
+        "file": "04-471这世界非我家.txt",
+        "sha256": "29eb3ee10b2be04e0e7dd35d9f4da95bb295441ca971b93187cd361f029cb6fe",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "04-471这世界非我家.mp3",
+          "sha256": "64b53157af9474f0b2375d962a0df891fa6b5c95e8b0ce7aeeafc8b84324cbda",
+          "duration": 140.61714285714285,
+          "offset": 0,
+          "reviewed": true,
+          "cues": [
+            {
+              "at": 9.15,
+              "region": "r1",
+              "label": "第1段",
+              "transition": "intro",
+              "moveStart": 0.0
+            },
+            {
+              "at": 30.5,
+              "region": "r2",
+              "label": "第1段",
+              "transition": "reading"
+            },
+            {
+              "at": 51.85,
+              "region": "r3",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 73.2,
+              "region": "r4",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 94.45,
+              "region": "r5",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 115.85,
+              "region": "r6",
+              "label": "第3段",
+              "transition": "reading"
+            }
+          ]
+        },
+        {
+          "file": "04-471这世界非我家-领唱.mp3",
+          "sha256": "57e941e221cfd3e926b73b6b42db3d580483066ff57ba9d8b765e4290d816375",
+          "duration": 139.36326530612246,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 5
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 9
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 11,
+          "endLine": 14
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 15,
+          "endLine": 18
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 20,
+          "endLine": 23
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 24,
+          "endLine": 27
+        }
+      },
+      "cues": [
+        {
+          "at": 9.55,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 30.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 52.25,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 73.6,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 94.85,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 116.25,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "这世界非我家，我停留如客旅， 我积财宝在天，时刻仰望我主， 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "天上万众圣徒，望我快来相见， 我将前往欢聚，主已赦我罪愆， 我虽轻弱贫苦，主大能手搀扶， 故我不再贪爱，这世界非我家。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "我将永远居住，天上荣美福地， 千万得赎圣徒，一同欢呼胜利， 他们赞美歌声，在天各方回应， 故我不再贪爱，这世界非我家。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "主啊，你知我无良友像你， 天堂若非我家，我必流离无依； 天门为我大开，天使招呼迎接， 故我不再贪爱，这世界非我家。",
+            "label": "第3段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/04-471这世界非我家.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "7466425416bb84082515c873c6587d44b08421b29a344d8c5d8e110ffde8841a",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "b5a6d8e416cc48e9bc857ed2a7e6dc947e37b2579f03710f494e9af07253ed22",
+    "changedTrack": "04-471这世界非我家.mp3",
+    "newTrackSha256": "1b8f2be10c649f3db3af2fa5dc352dc5d5344f546e8244242a7cf3c10dd265fe",
+    "newTrackDuration": 150.04733333333334,
+    "calibration": {
+      "songId": "04-471",
+      "referenceTimes": [
+        10.65,
+        32.0,
+        53.35,
+        74.7,
+        95.95,
+        117.35
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        12.65,
+        34.3,
+        55.15,
+        77.6,
+        99.35,
+        121.45
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 0,
+        "initialSimilarity": 0.5200156569480896,
+        "meanPathCost": 0.27281618118286133,
+        "cueWindowCosts": [
+          0.24090512096881866,
+          0.2444285750389099,
+          0.25214502215385437,
+          0.23247575759887695,
+          0.23417551815509796,
+          0.1811167150735855
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 11.15,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 32.8,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 53.65,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 76.1,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 97.85,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 119.95,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "04-471这世界非我家.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [
+      {
+        "file": "04-471这世界非我家-领唱.mp3",
+        "sha256": "57e941e221cfd3e926b73b6b42db3d580483066ff57ba9d8b765e4290d816375",
+        "duration": 139.36326530612246,
+        "offset": 0,
+        "reviewed": true
+      }
+    ],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

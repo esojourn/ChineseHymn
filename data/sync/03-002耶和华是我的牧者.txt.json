@@ -10,38 +10,38 @@
   "tracks": [
     {
       "file": "03-002耶和华是我的牧者.mp3",
-      "sha256": "2a8e07c33d7f27bc1469d800fe625186134dde89ca452ea8cc08262eec54e7fb",
-      "duration": 140.06857142857143,
+      "sha256": "ca463776b54478282d24b71a5462d943c3682a8af34a168737e6c9a9fdb6c003",
+      "duration": 158.66775,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 10.43,
+          "at": 8.33,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 35.59,
+          "at": 35.27,
           "region": "r2",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 60.71,
+          "at": 62.95,
           "region": "r3",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 86.06,
+          "at": 92.26,
           "region": "r4",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 111.36,
+          "at": 121.02,
           "region": "r5",
           "label": "第5段",
           "transition": "reading"
@@ -122,7 +122,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence.",
+    "method": "Known lyrics; two contextual medium/int8 acoustic alignments; measured repeated-music checks; independent chroma-DTW recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -150,7 +150,7 @@
         "label": "第5段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/03-002耶和华是我的牧者.txt.json",
+    "evidence": "docs/sync-bulk-evidence/03-002耶和华是我的牧者.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -159,6 +159,13 @@
       "clampAtZero": true,
       "baselineSha256": "40742be8313779f8342a8a8a2b35b8b2d90fcaa88db8df2751f1174ef219c8a0",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "03-002耶和华是我的牧者.mp3",
+      "evidence": "docs/sync-bulk-evidence/03-002耶和华是我的牧者.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

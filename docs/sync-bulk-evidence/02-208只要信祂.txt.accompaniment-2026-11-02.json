@@ -1,0 +1,200 @@
+{
+  "songId": "02-208",
+  "source": "02-208只要信祂.txt",
+  "sourceHash": "9a8b2460339191f65f3d317d73dc220117d557ba0d9f279afe9bf01eeba020af",
+  "trackHashes": [
+    {
+      "file": "02-208只要信祂.mp3",
+      "sha256": "4a79187cd3c62f041a5f362adf9d3c5fe3ddaa7ad7dd62cad939a7892f5c8173"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 4,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "02-208只要信祂-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/02-208只要信祂.txt.midi.json",
+      "sha256": "cecf2842192d03afa76305a088526d211ec3fe88103eb7b90ddab385c3651445"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "02-208",
+      "status": "reviewed",
+      "source": {
+        "file": "02-208只要信祂.txt",
+        "sha256": "9a8b2460339191f65f3d317d73dc220117d557ba0d9f279afe9bf01eeba020af",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "02-208只要信祂.mp3",
+          "sha256": "797dcc97c17294a8a6bdbea6bed06fb61dbcf768b1310a92476feb69b23433a3",
+          "duration": 165.19836734693877,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 5
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 7,
+          "endLine": 10
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 12,
+          "endLine": 15
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 17,
+          "endLine": 20
+        }
+      },
+      "cues": [
+        {
+          "at": 8.15,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 46.55,
+          "region": "r2",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 84.95,
+          "region": "r3",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 123.35,
+          "region": "r4",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "被罪压伤的人，快来接受恩主爱怜， 祂要救你，安你心怀，只要信他恩言。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "耶稣为你曾流宝血，赐下恩典丰盛， 快来投入此宝血泉，必白如雪洁净。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+            "label": "第2段"
+          },
+          {
+            "region": "r3",
+            "text": "耶稣就是道路，真理，愿你进入安息， 快信靠祂勿再迟疑，必得永生福气。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+            "label": "第3段"
+          },
+          {
+            "region": "r4",
+            "text": "请来加入这圣洁队，同往荣耀天乡， 美丽天城无忧无泪，永享福乐无疆。 只要信祂，只要信祂，现在要信祂， 祂必救你，祂必救你，现在必救你。",
+            "label": "第4段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/02-208只要信祂.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "67d10b03df1097d9d3b378360cb12f75b204f68a31a98fea08e105cd68d2a359",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "928a2d970b54b46475ee256036c6c11768a86946b5dbb00c7268bfa68abac593",
+    "changedTrack": "02-208只要信祂.mp3",
+    "newTrackSha256": "4a79187cd3c62f041a5f362adf9d3c5fe3ddaa7ad7dd62cad939a7892f5c8173",
+    "newTrackDuration": 189.83183333333332,
+    "calibration": {
+      "songId": "02-208",
+      "referenceTimes": [
+        9.65,
+        48.05,
+        86.45,
+        124.85
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        10.55,
+        48.95,
+        87.25,
+        125.55
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 0,
+        "initialSimilarity": 0.7162753939628601,
+        "meanPathCost": 0.25971469283103943,
+        "cueWindowCosts": [
+          0.3090408146381378,
+          0.217823788523674,
+          0.2308174967765808,
+          0.24106952548027039
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 9.05,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 47.45,
+        "region": "r2",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 85.75,
+        "region": "r3",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 124.05,
+        "region": "r4",
+        "label": "第4段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "02-208只要信祂.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

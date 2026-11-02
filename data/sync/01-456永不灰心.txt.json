@@ -10,56 +10,56 @@
   "tracks": [
     {
       "file": "01-456永不灰心.mp3",
-      "sha256": "41c079299b4447a698af5af21aa1b23b789c2c62db42ccbd0d56e871f1cf58f8",
-      "duration": 191.3469387755102,
+      "sha256": "68844409ac2d9d7065b5425862bc6bf942d2272e48ea7d0c4699e38ef632c0f3",
+      "duration": 201.14283333333333,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 6.15,
+          "at": 3.85,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 21.25,
+          "at": 19.65,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 51.75,
+          "at": 52.1,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 66.65,
+          "at": 67.75,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 97.15,
+          "at": 98.9,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 112.15,
+          "at": 114.85,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 142.6,
+          "at": 146.3,
           "region": "r7",
           "label": "第4段",
           "transition": "reading"
         },
         {
-          "at": 157.55,
+          "at": 163.35,
           "region": "r8",
           "label": "第4段",
           "transition": "reading"
@@ -173,7 +173,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -216,7 +216,7 @@
         "label": "第4段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/01-456永不灰心.txt.midi.json",
+    "evidence": "docs/sync-bulk-evidence/01-456永不灰心.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -225,6 +225,13 @@
       "clampAtZero": true,
       "baselineSha256": "f5de05311057a25062949d9cc7a1a390eef4a05fcbc8e88b5830a5ef53f75359",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "01-456永不灰心.mp3",
+      "evidence": "docs/sync-bulk-evidence/01-456永不灰心.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

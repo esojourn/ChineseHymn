@@ -10,10 +10,61 @@
   "tracks": [
     {
       "file": "02-199仰望真神羔羊.mp3",
-      "sha256": "94b2ccb6ffdf1c76c2e55efc212aafa6cb315845dac5543a2a99915fb0a86a0c",
-      "duration": 173.0873469387755,
+      "sha256": "38d68be6e63c7b902613817b107fbf7d209fa0651936b6ca0513c3fe5b0d2b95",
+      "duration": 156.65629166666668,
       "offset": 0,
-      "reviewed": true
+      "reviewed": true,
+      "cues": [
+        {
+          "at": 8.15,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 26.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 45.2,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 63.0,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 81.1,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 98.85,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 117.0,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 134.65,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ]
     }
   ],
   "regions": {
@@ -60,50 +111,50 @@
   },
   "cues": [
     {
-      "at": 8.55,
+      "at": 8.15,
       "region": "r1",
       "label": "第1段",
       "transition": "intro",
       "moveStart": 0.0
     },
     {
-      "at": 28.8,
+      "at": 26.9,
       "region": "r2",
       "label": "第1段",
       "transition": "reading"
     },
     {
-      "at": 49.0,
+      "at": 45.2,
       "region": "r3",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 69.2,
+      "at": 63.0,
       "region": "r4",
       "label": "第2段",
       "transition": "reading"
     },
     {
-      "at": 89.4,
+      "at": 81.1,
       "region": "r5",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 109.65,
+      "at": 98.85,
       "region": "r6",
       "label": "第3段",
       "transition": "reading"
     },
     {
-      "at": 129.85,
+      "at": 117.0,
       "region": "r7",
       "label": "第4段",
       "transition": "reading"
     },
     {
-      "at": 150.05,
+      "at": 134.65,
       "region": "r8",
       "label": "第4段",
       "transition": "reading"
@@ -115,7 +166,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -158,7 +209,7 @@
         "label": "第4段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.midi.json",
+    "evidence": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -167,6 +218,13 @@
       "clampAtZero": true,
       "baselineSha256": "9b1ad57170ae87b9ae86d6d8ee9a098e68c36b1cfe2678976b45322ad103ee97",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "02-199仰望真神羔羊.mp3",
+      "evidence": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

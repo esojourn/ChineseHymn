@@ -1,0 +1,1532 @@
+{
+  "songId": "01-322",
+  "source": "01-322耶稣我今背起十架.txt",
+  "sourceHash": "4e3a47ed1bba5054acd0f3434c34b75e79aa00412ca1ca7432e97057c2a67b19",
+  "trackHashes": [
+    {
+      "file": "01-322耶稣我今背起十架.mp3",
+      "sha256": "1e77d6da2db4cb8e99e522be249f3301353c143462815b453ad6266a9e9ae8ed"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 12,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "01-322耶稣我今背起十架-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/01-322耶稣我今背起十架.txt.midi.json",
+      "sha256": "835119b89a5f36b3d53f346fece0708ee9721a5714b1f97eb7016b58cf0981b4"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "01-322",
+      "status": "reviewed",
+      "source": {
+        "file": "01-322耶稣我今背起十架.txt",
+        "sha256": "4e3a47ed1bba5054acd0f3434c34b75e79aa00412ca1ca7432e97057c2a67b19",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "01-322耶稣我今背起十架.mp3",
+          "sha256": "53799b76939455ac5bb2548d1571d4fcb0b3935527561f7a7daa6b83851f6a97",
+          "duration": 246.90938775510205,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 5
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 9
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 12,
+          "endLine": 15
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 16,
+          "endLine": 19
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 22,
+          "endLine": 25
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 26,
+          "endLine": 29
+        },
+        "r7": {
+          "kind": "text",
+          "startLine": 32,
+          "endLine": 35
+        },
+        "r8": {
+          "kind": "text",
+          "startLine": 36,
+          "endLine": 39
+        },
+        "r9": {
+          "kind": "text",
+          "startLine": 42,
+          "endLine": 45
+        },
+        "r10": {
+          "kind": "text",
+          "startLine": 46,
+          "endLine": 49
+        },
+        "r11": {
+          "kind": "text",
+          "startLine": 52,
+          "endLine": 55
+        },
+        "r12": {
+          "kind": "text",
+          "startLine": 56,
+          "endLine": 59
+        }
+      },
+      "cues": [
+        {
+          "at": 8.2,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 27.9,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 47.43,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 67.05,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 86.62,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 106.28,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 125.83,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 145.4,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 165.03,
+          "region": "r9",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 184.6,
+          "region": "r10",
+          "label": "第5段",
+          "transition": "reading"
+        },
+        {
+          "at": 204.2,
+          "region": "r11",
+          "label": "第6段",
+          "transition": "reading"
+        },
+        {
+          "at": 223.83,
+          "region": "r12",
+          "label": "第6段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; other recordings retain normal chroma-DTW correspondence checks.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "耶稣，我今撇下所有， 背起十架跟随祢； 甘受藐视、艰苦、耻羞， 心惟欢然作活祭。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "前所追求、爱慕、盼望， 一切雄心全败亡； 但我景况何等宽广， 仍然有神与天堂。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "任凭世界弃我嫌我， 主，祢也曾被弃嫌； 人面人心欺我骗我， 惟祢永远不欺骗。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "当祢向我显出笑脸， 友虽生疏敌虽险； 我心平安，处之泰然， 因我得见祢欢颜。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "去罢，罪的名利福乐， 来罢，艰难和讽嘲； 为祢生活，失即是得， 有祢喜悦，卑也高。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "我既称祂阿爸父亲， 我既靠祢定我心； 所有狂风，怒雨，厚云， 都成益我的器皿。",
+            "label": "第3段"
+          },
+          {
+            "region": "r7",
+            "text": "我所受的试炼苦痛， 不过驱我到祢前； 我的困难压我愈重， 天上平安愈甘甜。",
+            "label": "第4段"
+          },
+          {
+            "region": "r8",
+            "text": "有何忧愁能将我袭， 当祢荣面向我显？ 有何快乐能将我迷， 若祢不在它中间？",
+            "label": "第4段"
+          },
+          {
+            "region": "r9",
+            "text": "心哪，当脱恐惧、挂虑， 接受完全的救恩； 无论面临何种境遇， 欣然忍受或前行。",
+            "label": "第5段"
+          },
+          {
+            "region": "r10",
+            "text": "试想有主作你罪祭， 有父向你显慈颜， 有灵运行在你心里， 你是神子何可怨？",
+            "label": "第5段"
+          },
+          {
+            "region": "r11",
+            "text": "快由恩典进入荣耀， 信当藤牌，求当翼； 跟前天国就要破晓， 神必亲自领到底。",
+            "label": "第6段"
+          },
+          {
+            "region": "r12",
+            "text": "地上职事就要停止， 人生程途就要完； 盼望就要变成事实， 信变眼见，祷变赞。",
+            "label": "第6段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/01-322耶稣我今背起十架.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "e79b7a04c4fa3620e485080d585ac72c3515989015387307ba6d1610af8eb276",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "aeb10db7888cd3b706436cb9d2d0bc6f0b9d75722add81d9278db5a28503c6e5",
+    "changedTrack": "01-322耶稣我今背起十架.mp3",
+    "newTrackSha256": "1e77d6da2db4cb8e99e522be249f3301353c143462815b453ad6266a9e9ae8ed",
+    "newTrackDuration": 266.97141666666664,
+    "calibration": {
+      "songId": "01-322",
+      "status": "ready",
+      "method": "Each complete performed verse independently matched to pinned original MIDI and optical rhythm, using both repository STFT and fixed CQT audio features. Four measured paths agree within 0.5 seconds at every reading boundary; independently measured repeat phase agrees within 0.5 seconds. Full-recording failures retained as diagnostics, not treated as passed. No duration-scaled cue placement.",
+      "profile": {
+        "version": 1,
+        "sourceHash": "4e3a47ed1bba5054acd0f3434c34b75e79aa00412ca1ca7432e97057c2a67b19",
+        "tracks": [
+          {
+            "file": "01-322耶稣我今背起十架.mp3",
+            "sha256": "53799b76939455ac5bb2548d1571d4fcb0b3935527561f7a7daa6b83851f6a97"
+          }
+        ],
+        "audioFile": "01-322耶稣我今背起十架.mp3",
+        "regions": [
+          "r1",
+          "r2",
+          "r3",
+          "r4",
+          "r5",
+          "r6",
+          "r7",
+          "r8",
+          "r9",
+          "r10",
+          "r11",
+          "r12"
+        ],
+        "regionOpenings": [
+          "耶稣，我今撇下所有， 背",
+          "前所追求、爱慕、盼望， ",
+          "任凭世界弃我嫌我， 主，",
+          "当祢向我显出笑脸， 友虽",
+          "去罢，罪的名利福乐， 来",
+          "我既称祂阿爸父亲， 我既",
+          "我所受的试炼苦痛， 不过",
+          "有何忧愁能将我袭， 当祢",
+          "心哪，当脱恐惧、挂虑， ",
+          "试想有主作你罪祭， 有父",
+          "快由恩典进入荣耀， 信当",
+          "地上职事就要停止， 人生"
+        ],
+        "sampling": {
+          "durationEstimate": 235.20000000000002,
+          "onsetEstimate": 8.564
+        },
+        "previousReadingContext": {
+          "version": 1
+        },
+        "midiReference": {
+          "origin": {
+            "file": "midi/hymnary404.mid",
+            "sha256": "8a253c86415df23e9fe6e47784f01aec794ab5fca89625d1c7c976dd742d56de",
+            "url": "https://chinatownministry.org/Hymnal/Midi/hymnary404.mid"
+          },
+          "file": "reference/external/cross-six-verses.mid",
+          "sha256": "160a95c20634be625adb7a50868c7da04e951de3ab45261cf020659a33d84e37",
+          "arrangement": {
+            "melodyTrack": 1,
+            "melodyTrackName": "Staff",
+            "quarterLength": 64,
+            "sections": [
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                64
+              ]
+            ]
+          }
+        },
+        "readingBoundaries": [
+          {
+            "onsetIndex": 0,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 35,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "onsetIndex": 70,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 105,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "onsetIndex": 140,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 175,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "onsetIndex": 210,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 245,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "onsetIndex": 280,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 315,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          {
+            "onsetIndex": 350,
+            "pitches": [
+              9,
+              9,
+              9,
+              9,
+              1
+            ]
+          },
+          {
+            "onsetIndex": 385,
+            "pitches": [
+              11,
+              11,
+              11,
+              11,
+              11
+            ]
+          }
+        ],
+        "opticalReference": {
+          "image": {
+            "file": "modern-sectional-scores/data/cross-book172.jpg",
+            "sha256": "ad161d8f32fe907890c0646abdb6ff9943ba6119eed99e0d91a7d60f9573c804",
+            "url": "https://file.izanm.org/store/2014/06/24/53a9221400769e7c170002af.jpg"
+          },
+          "pageUrl": "https://www.zanmei.ai/tab/20981/full.html",
+          "recognitionFile": "modern-sectional-scores/ocr/cross-book172.jpg.json",
+          "recognizerVersion": 5,
+          "noteExtractorVersion": 5,
+          "reviewedSystems": [
+            {
+              "notes": {
+                "recognitionBand": [
+                  230,
+                  289
+                ]
+              },
+              "lyrics": [
+                {
+                  "recognitionBand": [
+                    308,
+                    373
+                  ]
+                }
+              ]
+            },
+            {
+              "notes": {
+                "recognitionBand": [
+                  453,
+                  518
+                ]
+              },
+              "lyrics": [
+                {
+                  "recognitionBand": [
+                    533,
+                    597
+                  ]
+                }
+              ]
+            },
+            {
+              "notes": {
+                "recognitionBand": [
+                  672,
+                  737
+                ]
+              },
+              "lyrics": [
+                {
+                  "recognitionBand": [
+                    753,
+                    818
+                  ]
+                }
+              ]
+            },
+            {
+              "notes": {
+                "recognitionBand": [
+                  910,
+                  968
+                ]
+              },
+              "lyrics": [
+                {
+                  "recognitionBand": [
+                    995,
+                    1045
+                  ]
+                }
+              ]
+            }
+          ],
+          "rowsSha256": "7249d3098ac061e0a95dd8b5696e284ee746248f8d993d39d11efccec56f61e5",
+          "ties": {},
+          "tuplets": [],
+          "parts": {
+            "A": [
+              [
+                0,
+                0,
+                17
+              ],
+              [
+                1,
+                0,
+                18
+              ]
+            ],
+            "B": [
+              [
+                2,
+                0,
+                17
+              ],
+              [
+                3,
+                0,
+                18
+              ]
+            ]
+          },
+          "order": [
+            "A",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B"
+          ],
+          "readingStarts": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              0
+            ]
+          ]
+        },
+        "formReview": "原文六段各由前四句及后四句两个阅读区域组成，完整实际顺序ABABABABABAB。独立原谱为选本诗歌805首第172首耶稣我今撇下所有，原始JPG逐像素绑定网址与SHA-256；不是同名HYFRYDOL曲调。目视核对四行单旋律谱及全部六段，前两谱行为A，后两谱行为B，B首音为第三行前所追求的第一个2。所有不同音圆滑线均保留每个音头，不合并同音重新起音，不手工修补数字。最后一谱行的下方横线与歌词范围逐项核对，识别区域在固定原图中保留全部音符及独立光学节奏。公开第404首原MIDI完整64拍重复六次，保留全部声部、原时值与速度；420个光学旋律起音与MIDI零编辑对应，十二个阅读起句至少五音均唯一。录音六次完整音乐反复已独立检索，全部阅读位置仍分别通过整曲MIDI、整曲光学、逐区域MIDI及光学四路径；局部只固定保留一个完整前阅读区域作上下文。成本0.35、调性区分0.06、跨度75%至125%、任意起点互差0.5秒、首尾及正文顺序检查全部保持。所有时间点从实际录音测得，不按行数、拍数或总时长推算；原始歌词、空行、图片、音频及已发布数据不改动。"
+      },
+      "music": {
+        "period": 40.7,
+        "similarity": 0.8940433263778687,
+        "initialOnsetEstimate": 19.544,
+        "shifts": [
+          0.0,
+          40.7,
+          81.4,
+          122.0,
+          162.8,
+          203.7
+        ]
+      },
+      "maximumCost": 0.35,
+      "minimumKeyMargin": 0.06,
+      "maximumOnsetDifference": 0.5,
+      "spanRatio": [
+        0.75,
+        1.25
+      ],
+      "fourPaths": [
+        [
+          {
+            "midi": {
+              "best": {
+                "cost": 0.182664257302624,
+                "key": 6,
+                "starts": [
+                  12.300000190734863,
+                  32.099998474121094
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.3965952730295992,
+                "key": 8,
+                "starts": [
+                  25.299999237060547,
+                  42.0
+                ],
+                "span": 33.79999923706055
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.16733376692788313,
+                "key": 3,
+                "starts": [
+                  12.199999809265137,
+                  32.099998474121094
+                ],
+                "span": 39.5
+              },
+              "runnerUp": {
+                "cost": 0.38250822399992324,
+                "key": 5,
+                "starts": [
+                  25.200000762939453,
+                  42.0
+                ],
+                "span": 33.89999771118164
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.18377246903553057,
+                "key": 6,
+                "starts": [
+                  52.900001525878906,
+                  72.80000305175781
+                ],
+                "span": 39.5
+              },
+              "runnerUp": {
+                "cost": 0.3949092705653985,
+                "key": 8,
+                "starts": [
+                  48.099998474121094,
+                  67.0
+                ],
+                "span": 34.400001525878906
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.16786268829420684,
+                "key": 3,
+                "starts": [
+                  52.900001525878906,
+                  72.80000305175781
+                ],
+                "span": 39.5
+              },
+              "runnerUp": {
+                "cost": 0.3801095573556511,
+                "key": 5,
+                "starts": [
+                  47.400001525878906,
+                  67.0
+                ],
+                "span": 35.099998474121094
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.18424241724412624,
+                "key": 6,
+                "starts": [
+                  93.5999984741211,
+                  113.4000015258789
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.39581310075389664,
+                "key": 8,
+                "starts": [
+                  88.80000305175781,
+                  107.69999694824219
+                ],
+                "span": 34.399993896484375
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.16885981454310312,
+                "key": 3,
+                "starts": [
+                  93.5999984741211,
+                  113.4000015258789
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.3823163081738521,
+                "key": 5,
+                "starts": [
+                  88.0999984741211,
+                  107.69999694824219
+                ],
+                "span": 35.099998474121094
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.1836197686722589,
+                "key": 6,
+                "starts": [
+                  134.3000030517578,
+                  154.10000610351562
+                ],
+                "span": 39.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.39643998579545453,
+                "key": 8,
+                "starts": [
+                  129.39999389648438,
+                  148.39999389648438
+                ],
+                "span": 34.5
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.1692816432043727,
+                "key": 3,
+                "starts": [
+                  134.3000030517578,
+                  154.10000610351562
+                ],
+                "span": 39.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.3830946938704507,
+                "key": 5,
+                "starts": [
+                  128.6999969482422,
+                  148.3000030517578
+                ],
+                "span": 35.19999694824219
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.17763020658375883,
+                "key": 6,
+                "starts": [
+                  174.89999389648438,
+                  194.89999389648438
+                ],
+                "span": 39.70001220703125
+              },
+              "runnerUp": {
+                "cost": 0.3866698993804707,
+                "key": 8,
+                "starts": [
+                  170.10000610351562,
+                  189.10000610351562
+                ],
+                "span": 34.59999084472656
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.1617777868922278,
+                "key": 3,
+                "starts": [
+                  174.89999389648438,
+                  194.89999389648438
+                ],
+                "span": 39.70001220703125
+              },
+              "runnerUp": {
+                "cost": 0.3738565280923679,
+                "key": 5,
+                "starts": [
+                  188.10000610351562,
+                  204.8000030517578
+                ],
+                "span": 33.69999694824219
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.19818428283241515,
+                "key": 6,
+                "starts": [
+                  215.6999969482422,
+                  235.6999969482422
+                ],
+                "span": 40.100006103515625
+              },
+              "runnerUp": {
+                "cost": 0.3924940329511863,
+                "key": 8,
+                "starts": [
+                  210.6999969482422,
+                  230.0
+                ],
+                "span": 34.90000915527344
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.18248043950711187,
+                "key": 3,
+                "starts": [
+                  215.6999969482422,
+                  235.6999969482422
+                ],
+                "span": 40.100006103515625
+              },
+              "runnerUp": {
+                "cost": 0.3776173134693642,
+                "key": 5,
+                "starts": [
+                  210.60000610351562,
+                  229.89999389648438
+                ],
+                "span": 34.899993896484375
+              }
+            }
+          }
+        ],
+        [
+          {
+            "midi": {
+              "best": {
+                "cost": 0.23947137931055168,
+                "key": 6,
+                "starts": [
+                  12.300000190734863,
+                  32.10000228881836
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.43850996687605576,
+                "key": 8,
+                "starts": [
+                  25.700000762939453,
+                  42.0
+                ],
+                "span": 33.5
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.22990321878719094,
+                "key": 3,
+                "starts": [
+                  12.300000190734863,
+                  32.10000228881836
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.42537169960265664,
+                "key": 5,
+                "starts": [
+                  27.200000762939453,
+                  42.0
+                ],
+                "span": 32.0
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.24160689745253955,
+                "key": 6,
+                "starts": [
+                  53.0,
+                  72.80000305175781
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4347819860209997,
+                "key": 8,
+                "starts": [
+                  48.10000228881836,
+                  67.30000305175781
+                ],
+                "span": 34.39999771118164
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.23121755539052902,
+                "key": 3,
+                "starts": [
+                  53.0,
+                  72.80000305175781
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4250402427129722,
+                "key": 5,
+                "starts": [
+                  48.10000228881836,
+                  67.0999984741211
+                ],
+                "span": 34.39999771118164
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.24395982522050638,
+                "key": 6,
+                "starts": [
+                  93.5999984741211,
+                  113.5
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4379732099153486,
+                "key": 8,
+                "starts": [
+                  88.80000305175781,
+                  107.80000305175781
+                ],
+                "span": 34.400001525878906
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.2312536028737811,
+                "key": 3,
+                "starts": [
+                  93.5999984741211,
+                  113.5
+                ],
+                "span": 39.400001525878906
+              },
+              "runnerUp": {
+                "cost": 0.4288123503363982,
+                "key": 5,
+                "starts": [
+                  108.5,
+                  123.30000305175781
+                ],
+                "span": 33.0
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.2425184695082156,
+                "key": 6,
+                "starts": [
+                  134.3000030517578,
+                  154.1999969482422
+                ],
+                "span": 39.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.44374249432538004,
+                "key": 8,
+                "starts": [
+                  129.5,
+                  148.5
+                ],
+                "span": 34.40000915527344
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.23008892987225507,
+                "key": 3,
+                "starts": [
+                  134.3000030517578,
+                  154.10000610351562
+                ],
+                "span": 39.399993896484375
+              },
+              "runnerUp": {
+                "cost": 0.4315060327328394,
+                "key": 5,
+                "starts": [
+                  149.1999969482422,
+                  164.0
+                ],
+                "span": 32.0
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.24593049595338415,
+                "key": 6,
+                "starts": [
+                  175.0,
+                  194.90000915527344
+                ],
+                "span": 39.600006103515625
+              },
+              "runnerUp": {
+                "cost": 0.42848501744375767,
+                "key": 8,
+                "starts": [
+                  188.40000915527344,
+                  204.8000030517578
+                ],
+                "span": 33.79998779296875
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.23451480349978884,
+                "key": 3,
+                "starts": [
+                  174.90000915527344,
+                  194.90000915527344
+                ],
+                "span": 39.69999694824219
+              },
+              "runnerUp": {
+                "cost": 0.41699829851380144,
+                "key": 5,
+                "starts": [
+                  188.40000915527344,
+                  204.8000030517578
+                ],
+                "span": 33.79998779296875
+              }
+            }
+          },
+          {
+            "midi": {
+              "best": {
+                "cost": 0.25049244273792615,
+                "key": 6,
+                "starts": [
+                  215.6999969482422,
+                  235.8000030517578
+                ],
+                "span": 40.20001220703125
+              },
+              "runnerUp": {
+                "cost": 0.41972785968452475,
+                "key": 8,
+                "starts": [
+                  210.90000915527344,
+                  230.0
+                ],
+                "span": 34.69999694824219
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.24044751066540618,
+                "key": 3,
+                "starts": [
+                  215.6999969482422,
+                  235.8000030517578
+                ],
+                "span": 40.100006103515625
+              },
+              "runnerUp": {
+                "cost": 0.4077884008609106,
+                "key": 5,
+                "starts": [
+                  210.90000915527344,
+                  229.90000915527344
+                ],
+                "span": 34.69999694824219
+              }
+            }
+          }
+        ]
+      ],
+      "mappedTimes": [
+        12.28,
+        32.1,
+        52.95,
+        72.8,
+        93.6,
+        113.45,
+        134.3,
+        154.13,
+        174.92,
+        194.9,
+        215.7,
+        235.75
+      ],
+      "extraCycleCheck": {
+        "performedVerses": 6,
+        "firstAt": 12.28,
+        "lastVerseAt": 215.7,
+        "duration": 266.97,
+        "headAndTailCannotFitAnotherCompleteVerse": true
+      },
+      "failedFullRecordingDiagnostics": [
+        {
+          "songId": "01-322",
+          "referenceTimes": [
+            9.7,
+            29.4,
+            48.93,
+            68.55,
+            88.12,
+            107.78,
+            127.33,
+            146.9,
+            166.53,
+            186.1,
+            205.7,
+            225.33
+          ],
+          "status": "needs-calibration",
+          "reason": "录音编排或音乐对应不可靠：{\"method\": \"chroma-DTW\", \"semitoneShift\": 1, \"initialSimilarity\": 0.33338454365730286, \"meanPathCost\": 0.4372071325778961, \"cueWindowCosts\": [0.21886007487773895, 0.3391991853713989, 0.1619630604982376, 0.32795166969299316, 0.166388601064682, 0.32965341210365295, 0.16190318763256073, 0.31284675002098083, 0.16833281517028809, 0.3544211983680725, 0.16284000873565674, 0.30128929018974304]}"
+        },
+        {
+          "music": {
+            "period": 40.7,
+            "similarity": 0.8940433263778687,
+            "initialOnsetEstimate": 19.544,
+            "shifts": [
+              0.0,
+              40.7,
+              81.4,
+              122.0,
+              162.8,
+              203.7
+            ]
+          },
+          "performance": {
+            "fullMelody": {
+              "best": {
+                "cost": 0.19440269626426854,
+                "key": 6,
+                "starts": [
+                  12.300000190734863,
+                  32.099998474121094,
+                  52.0,
+                  72.80000305175781,
+                  92.5999984741211,
+                  113.4000015258789,
+                  133.3000030517578,
+                  154.10000610351562,
+                  173.89999389648438,
+                  194.89999389648438,
+                  214.6999969482422,
+                  235.6999969482422
+                ],
+                "span": 243.5
+              },
+              "runnerUp": {
+                "cost": 0.41503633816255886,
+                "key": 8,
+                "starts": [
+                  48.099998474121094,
+                  67.0,
+                  80.9000015258789,
+                  98.0,
+                  113.5,
+                  132.0,
+                  148.0,
+                  164.0,
+                  180.5,
+                  193.6999969482422,
+                  210.6999969482422,
+                  230.0
+                ],
+                "span": 197.5
+              }
+            },
+            "fullOptical": {
+              "best": {
+                "cost": 0.1788281839856547,
+                "key": 3,
+                "starts": [
+                  12.199999809265137,
+                  32.099998474121094,
+                  52.599998474121094,
+                  72.80000305175781,
+                  93.19999694824219,
+                  113.4000015258789,
+                  133.89999389648438,
+                  154.10000610351562,
+                  174.6999969482422,
+                  194.89999389648438,
+                  215.3000030517578,
+                  235.6999969482422
+                ],
+                "span": 243.60000610351562
+              },
+              "runnerUp": {
+                "cost": 0.39816441641392813,
+                "key": 5,
+                "starts": [
+                  47.400001525878906,
+                  67.0,
+                  81.5,
+                  97.9000015258789,
+                  114.0999984741211,
+                  132.0,
+                  148.5,
+                  164.0,
+                  181.0,
+                  198.10000610351562,
+                  210.6999969482422,
+                  229.89999389648438
+                ],
+                "span": 198.10000610351562
+              }
+            },
+            "local": []
+          },
+          "status": "needs-calibration",
+          "reason": "两条整曲路径的阅读起点不一致"
+        },
+        {
+          "audioFeatures": {
+            "version": 1,
+            "kind": "constant-q",
+            "librosaVersion": "0.11.0",
+            "samplingRate": 16000,
+            "hopLength": 1600,
+            "minimumMidi": 36,
+            "octaves": 5,
+            "binsPerOctave": 36,
+            "tuning": 0,
+            "normalization": "square-root, centered, column L2",
+            "sourceSha256": "1e77d6da2db4cb8e99e522be249f3301353c143462815b453ad6266a9e9ae8ed",
+            "numpyVersion": "2.5.4",
+            "frames": 2670,
+            "featuresSha256": "9ca612e4edda6fb503af261503037668508d6825aa2a5576f5e997467cb64b38"
+          },
+          "music": {
+            "period": 40.7,
+            "similarity": 0.8940433263778687,
+            "initialOnsetEstimate": 19.544,
+            "shifts": [
+              0.0,
+              40.7,
+              81.4,
+              122.0,
+              162.8,
+              203.7
+            ]
+          },
+          "performance": {
+            "fullMelody": {
+              "best": {
+                "cost": 0.25334826070299704,
+                "key": 6,
+                "starts": [
+                  12.300000190734863,
+                  32.10000228881836,
+                  51.900001525878906,
+                  72.80000305175781,
+                  92.5999984741211,
+                  113.5,
+                  133.1999969482422,
+                  154.1999969482422,
+                  173.90000915527344,
+                  194.90000915527344,
+                  214.8000030517578,
+                  235.8000030517578
+                ],
+                "span": 243.60000610351562
+              },
+              "runnerUp": {
+                "cost": 0.4469401041666667,
+                "key": 8,
+                "starts": [
+                  58.0,
+                  75.5999984741211,
+                  88.80000305175781,
+                  107.80000305175781,
+                  121.5,
+                  134.60000610351562,
+                  149.1999969482422,
+                  164.0,
+                  180.8000030517578,
+                  198.10000610351562,
+                  210.8000030517578,
+                  230.0
+                ],
+                "span": 187.60000610351562
+              }
+            },
+            "fullOptical": {
+              "best": {
+                "cost": 0.24196632878883856,
+                "key": 3,
+                "starts": [
+                  12.300000190734863,
+                  32.10000228881836,
+                  52.900001525878906,
+                  72.80000305175781,
+                  93.5999984741211,
+                  113.5,
+                  133.60000610351562,
+                  154.10000610351562,
+                  174.40000915527344,
+                  194.90000915527344,
+                  215.3000030517578,
+                  235.8000030517578
+                ],
+                "span": 243.5
+              },
+              "runnerUp": {
+                "cost": 0.43349112495841013,
+                "key": 5,
+                "starts": [
+                  58.0,
+                  75.5,
+                  88.70000457763672,
+                  107.80000305175781,
+                  121.5,
+                  134.5,
+                  149.1999969482422,
+                  164.0,
+                  181.3000030517578,
+                  198.10000610351562,
+                  211.0,
+                  229.90000915527344
+                ],
+                "span": 187.60000610351562
+              }
+            },
+            "local": []
+          },
+          "status": "needs-calibration",
+          "reason": "两条整曲路径的阅读起点不一致"
+        }
+      ],
+      "sampling": {
+        "durationEstimate": 40.7,
+        "onsetEstimates": [
+          12.3,
+          53.0,
+          93.7,
+          134.3,
+          175.1,
+          216.0
+        ],
+        "estimatesLocateSearchWindowsOnly": true
+      }
+    },
+    "finalCues": [
+      {
+        "at": 10.78,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 30.6,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 51.45,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 71.3,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 92.1,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 111.95,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 132.8,
+        "region": "r7",
+        "label": "第4段",
+        "transition": "reading"
+      },
+      {
+        "at": 152.63,
+        "region": "r8",
+        "label": "第4段",
+        "transition": "reading"
+      },
+      {
+        "at": 173.42,
+        "region": "r9",
+        "label": "第5段",
+        "transition": "reading"
+      },
+      {
+        "at": 193.4,
+        "region": "r10",
+        "label": "第5段",
+        "transition": "reading"
+      },
+      {
+        "at": 214.2,
+        "region": "r11",
+        "label": "第6段",
+        "transition": "reading"
+      },
+      {
+        "at": 234.25,
+        "region": "r12",
+        "label": "第6段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "01-322耶稣我今背起十架.mp3",
+      "referenceTimesUndoPreviousAdvance": false,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

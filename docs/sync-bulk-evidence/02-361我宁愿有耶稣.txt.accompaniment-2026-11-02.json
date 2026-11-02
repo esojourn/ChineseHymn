@@ -1,0 +1,666 @@
+{
+  "songId": "02-361",
+  "source": "02-361我宁愿有耶稣.txt",
+  "sourceHash": "4b9ac5e534a9ff52688bc4397102ff1f997257fd9d33bdfe337eae8d6bfa58a8",
+  "trackHashes": [
+    {
+      "file": "02-361我宁愿有耶稣.mp3",
+      "sha256": "9cb730d9a5935ac1a84cc9adcb50412972704c73490c50fb5e2b13ad8cd9891c"
+    },
+    {
+      "file": "02-361我宁愿有耶稣-领唱.mp3",
+      "sha256": "79c2049775ff44b012890675ebe14b6cfc4b118236ab140c94f4b165fbdcb637"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 6,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "02-361我宁愿有耶稣-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.midi.json",
+      "sha256": "bf2a122235b3bda2b452063a8fab9bfe5d903e92aec5de20a24f33013ef0bd71"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "02-361",
+      "status": "reviewed",
+      "source": {
+        "file": "02-361我宁愿有耶稣.txt",
+        "sha256": "4b9ac5e534a9ff52688bc4397102ff1f997257fd9d33bdfe337eae8d6bfa58a8",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "02-361我宁愿有耶稣.mp3",
+          "sha256": "45f29500ffdc63d6c5c2a4c82dab0d1e9f48ac26df4c5c42ef80b7e96aa4ed45",
+          "duration": 191.42530612244897,
+          "offset": 0,
+          "reviewed": true,
+          "cues": [
+            {
+              "at": 6.4,
+              "region": "r1",
+              "label": "第1段",
+              "transition": "intro",
+              "moveStart": 0.0
+            },
+            {
+              "at": 36.4,
+              "region": "r2",
+              "label": "第1段",
+              "transition": "reading"
+            },
+            {
+              "at": 66.6,
+              "region": "r3",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 97.05,
+              "region": "r4",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 127.35,
+              "region": "r5",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 157.65,
+              "region": "r6",
+              "label": "第3段",
+              "transition": "reading"
+            }
+          ]
+        },
+        {
+          "file": "02-361我宁愿有耶稣-领唱.mp3",
+          "sha256": "79c2049775ff44b012890675ebe14b6cfc4b118236ab140c94f4b165fbdcb637",
+          "duration": 191.98258333333334,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 5
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 9
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 11,
+          "endLine": 14
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 15,
+          "endLine": 18
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 20,
+          "endLine": 23
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 24,
+          "endLine": 27
+        }
+      },
+      "cues": [
+        {
+          "at": 8.0,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 38.02,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 68.35,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 98.7,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 129.03,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 159.4,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "我宁愿有耶稣，胜得金钱， 我宁属耶稣，胜得财富无边； 我宁愿有耶稣，胜得华宇， 愿主钉痕手，引导我前途。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "我宁愿有耶稣，胜得称颂， 我宁忠于主，成全他的事工； 我宁愿有耶稣，胜得名声， 愿向主圣名，永赤胆忠诚。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "恩主比百合花更加美艳， 远比蜂房蜜更加可口甘甜； 惟主能满足我饥渴心灵， 我宁愿有主，跟随他引领。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "胜过做君王，虽统治万方， 却仍受罪恶捆绑； 我宁愿有耶稣， 胜得世界荣华，富贵，声望。",
+            "label": "第3段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "7d5bb19e1556c4143829f01dfc685efb5d1c20555f8aa9d8e917bd74994e501c",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "baba660c7600ad5da41975f306f5128d3fbf7ebc231cb7cba97866ba613d2b31",
+    "changedTrack": "02-361我宁愿有耶稣.mp3",
+    "newTrackSha256": "9cb730d9a5935ac1a84cc9adcb50412972704c73490c50fb5e2b13ad8cd9891c",
+    "newTrackDuration": 224.70529166666665,
+    "calibration": {
+      "music": {
+        "period": 62.8,
+        "similarity": 0.6876784563064575,
+        "initialOnsetEstimate": 32.4,
+        "shifts": [
+          0.0,
+          62.9,
+          125.7
+        ]
+      },
+      "performance": {
+        "fullMelody": {
+          "best": {
+            "cost": 0.21914552984217422,
+            "key": 9,
+            "starts": [
+              17.399999618530273,
+              48.29999923706055,
+              80.5999984741211,
+              111.69999694824219,
+              143.1999969482422,
+              174.10000610351562
+            ],
+            "span": 188.60000610351562
+          },
+          "runnerUp": {
+            "cost": 0.4381605014679538,
+            "key": 4,
+            "starts": [
+              48.20000076293945,
+              62.5,
+              91.0,
+              114.0,
+              137.6999969482422,
+              162.39999389648438
+            ],
+            "span": 135.90000915527344
+          }
+        },
+        "fullOptical": {
+          "best": {
+            "cost": 0.2183948686927747,
+            "key": 9,
+            "starts": [
+              17.399999618530273,
+              48.29999923706055,
+              80.5999984741211,
+              111.69999694824219,
+              143.1999969482422,
+              174.10000610351562
+            ],
+            "span": 188.60000610351562
+          },
+          "runnerUp": {
+            "cost": 0.4391611670232882,
+            "key": 4,
+            "starts": [
+              48.20000076293945,
+              62.5,
+              91.0,
+              114.0,
+              137.6999969482422,
+              162.39999389648438
+            ],
+            "span": 135.90000915527344
+          }
+        },
+        "local": [
+          {
+            "index": 0,
+            "estimate": 17.399999618530273,
+            "duration": 30.899999618530273,
+            "melody": {
+              "best": {
+                "cost": 0.17339243472201152,
+                "key": 9,
+                "starts": [
+                  17.0
+                ],
+                "span": 31.099998474121094
+              },
+              "runnerUp": {
+                "cost": 0.43549048167602145,
+                "key": 4,
+                "starts": [
+                  48.20000076293945
+                ],
+                "span": 12.0
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.17560037903029557,
+                "key": 9,
+                "starts": [
+                  17.0
+                ],
+                "span": 31.099998474121094
+              },
+              "runnerUp": {
+                "cost": 0.43590612318909283,
+                "key": 4,
+                "starts": [
+                  48.20000076293945
+                ],
+                "span": 12.0
+              }
+            }
+          },
+          {
+            "index": 1,
+            "estimate": 48.29999923706055,
+            "duration": 32.29999923706055,
+            "melody": {
+              "best": {
+                "cost": 0.21391390546967712,
+                "key": 9,
+                "starts": [
+                  16.899999618530273,
+                  48.29999923706055
+                ],
+                "span": 63.29999542236328
+              },
+              "runnerUp": {
+                "cost": 0.4311609871779816,
+                "key": 4,
+                "starts": [
+                  11.300000190734863,
+                  36.400001525878906
+                ],
+                "span": 47.20000076293945
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.21364385870438588,
+                "key": 9,
+                "starts": [
+                  16.899999618530273,
+                  48.29999923706055
+                ],
+                "span": 63.29999542236328
+              },
+              "runnerUp": {
+                "cost": 0.4345767829991594,
+                "key": 4,
+                "starts": [
+                  11.300000190734863,
+                  36.400001525878906
+                ],
+                "span": 47.20000076293945
+              }
+            },
+            "previousReadingContext": {
+              "fromReading": 0,
+              "sections": [
+                0
+              ],
+              "queryStart": 17.399999618530273,
+              "queryDuration": 63.19999885559082,
+              "targetRow": 1
+            }
+          },
+          {
+            "index": 2,
+            "estimate": 80.5999984741211,
+            "duration": 31.099998474121094,
+            "melody": {
+              "best": {
+                "cost": 0.22205145802783666,
+                "key": 9,
+                "starts": [
+                  48.400001525878906,
+                  80.4000015258789
+                ],
+                "span": 62.79999542236328
+              },
+              "runnerUp": {
+                "cost": 0.42967854689348384,
+                "key": 4,
+                "starts": [
+                  36.20000076293945,
+                  59.0
+                ],
+                "span": 44.999996185302734
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.22167018084119924,
+                "key": 9,
+                "starts": [
+                  48.400001525878906,
+                  80.4000015258789
+                ],
+                "span": 62.79999542236328
+              },
+              "runnerUp": {
+                "cost": 0.43047368864907826,
+                "key": 4,
+                "starts": [
+                  36.20000076293945,
+                  59.0
+                ],
+                "span": 44.999996185302734
+              }
+            },
+            "previousReadingContext": {
+              "fromReading": 1,
+              "sections": [
+                1
+              ],
+              "queryStart": 48.29999923706055,
+              "queryDuration": 63.39999771118164,
+              "targetRow": 1
+            }
+          },
+          {
+            "index": 3,
+            "estimate": 111.69999694824219,
+            "duration": 31.5,
+            "melody": {
+              "best": {
+                "cost": 0.21951915509403705,
+                "key": 9,
+                "starts": [
+                  81.19999694824219,
+                  111.69999694824219
+                ],
+                "span": 61.69999694824219
+              },
+              "runnerUp": {
+                "cost": 0.44028553338096543,
+                "key": 4,
+                "starts": [
+                  72.0999984741211,
+                  100.19999694824219
+                ],
+                "span": 56.50000762939453
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.2181574422330521,
+                "key": 9,
+                "starts": [
+                  81.19999694824219,
+                  111.69999694824219
+                ],
+                "span": 61.69999694824219
+              },
+              "runnerUp": {
+                "cost": 0.4413773899261182,
+                "key": 4,
+                "starts": [
+                  72.0999984741211,
+                  100.19999694824219
+                ],
+                "span": 56.50000762939453
+              }
+            },
+            "previousReadingContext": {
+              "fromReading": 2,
+              "sections": [
+                2
+              ],
+              "queryStart": 80.5999984741211,
+              "queryDuration": 62.599998474121094,
+              "targetRow": 1
+            }
+          },
+          {
+            "index": 4,
+            "estimate": 143.1999969482422,
+            "duration": 30.900009155273438,
+            "melody": {
+              "best": {
+                "cost": 0.22362775069016677,
+                "key": 9,
+                "starts": [
+                  111.69999694824219,
+                  143.3000030517578
+                ],
+                "span": 62.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.4302813701140575,
+                "key": 4,
+                "starts": [
+                  121.9000015258789,
+                  153.6999969482422
+                ],
+                "span": 58.900001525878906
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.22362775069016677,
+                "key": 9,
+                "starts": [
+                  111.69999694824219,
+                  143.3000030517578
+                ],
+                "span": 62.19999694824219
+              },
+              "runnerUp": {
+                "cost": 0.4302813701140575,
+                "key": 4,
+                "starts": [
+                  121.9000015258789,
+                  153.6999969482422
+                ],
+                "span": 58.900001525878906
+              }
+            },
+            "previousReadingContext": {
+              "fromReading": 3,
+              "sections": [
+                3
+              ],
+              "queryStart": 111.69999694824219,
+              "queryDuration": 62.40000915527344,
+              "targetRow": 1
+            }
+          },
+          {
+            "index": 5,
+            "estimate": 174.10000610351562,
+            "duration": 31.899999618530273,
+            "melody": {
+              "best": {
+                "cost": 0.2213460594225841,
+                "key": 9,
+                "starts": [
+                  143.39999389648438,
+                  174.10000610351562
+                ],
+                "span": 62.600006103515625
+              },
+              "runnerUp": {
+                "cost": 0.4147591074560858,
+                "key": 4,
+                "starts": [
+                  137.6999969482422,
+                  162.89999389648438
+                ],
+                "span": 46.40000915527344
+              }
+            },
+            "optical": {
+              "best": {
+                "cost": 0.2198486328125,
+                "key": 9,
+                "starts": [
+                  143.39999389648438,
+                  174.10000610351562
+                ],
+                "span": 62.600006103515625
+              },
+              "runnerUp": {
+                "cost": 0.41513134415741937,
+                "key": 4,
+                "starts": [
+                  137.6999969482422,
+                  162.89999389648438
+                ],
+                "span": 46.40000915527344
+              }
+            },
+            "previousReadingContext": {
+              "fromReading": 4,
+              "sections": [
+                4
+              ],
+              "queryStart": 143.1999969482422,
+              "queryDuration": 62.80000877380371,
+              "targetRow": 1
+            }
+          }
+        ]
+      },
+      "status": "ready",
+      "mappedTimes": [
+        17.2,
+        48.3,
+        80.5,
+        111.7,
+        143.25,
+        174.1
+      ]
+    },
+    "finalCues": [
+      {
+        "at": 15.7,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 46.8,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 79.0,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 110.2,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 141.75,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 172.6,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "02-361我宁愿有耶稣.mp3",
+      "referenceTimesUndoPreviousAdvance": false,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [
+      {
+        "file": "02-361我宁愿有耶稣-领唱.mp3",
+        "sha256": "79c2049775ff44b012890675ebe14b6cfc4b118236ab140c94f4b165fbdcb637",
+        "duration": 191.98258333333334,
+        "offset": 0,
+        "reviewed": true
+      }
+    ],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

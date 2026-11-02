@@ -10,44 +10,44 @@
   "tracks": [
     {
       "file": "02-361我宁愿有耶稣.mp3",
-      "sha256": "45f29500ffdc63d6c5c2a4c82dab0d1e9f48ac26df4c5c42ef80b7e96aa4ed45",
-      "duration": 191.42530612244897,
+      "sha256": "9cb730d9a5935ac1a84cc9adcb50412972704c73490c50fb5e2b13ad8cd9891c",
+      "duration": 224.70529166666665,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 6.4,
+          "at": 15.7,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 36.4,
+          "at": 46.8,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 66.6,
+          "at": 79.0,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 97.05,
+          "at": 110.2,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 127.35,
+          "at": 141.75,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 157.65,
+          "at": 172.6,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -139,7 +139,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks.",
+    "method": "Reviewed full MIDI arrangement and independently extracted printed rhythm; unique full pitch-sequence and reading-opening verification; complete and per-region paths independently confirm every reference-recording boundary; explicitly pinned additional recordings pass the same complete and local MIDI/optical checks; remaining recordings retain normal chroma-DTW correspondence checks. Updated accompaniment uses independently measured new-recording independent MIDI and printed-score melody paths. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -172,7 +172,7 @@
         "label": "第3段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.midi.json",
+    "evidence": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -181,6 +181,13 @@
       "clampAtZero": true,
       "baselineSha256": "7d5bb19e1556c4143829f01dfc685efb5d1c20555f8aa9d8e917bd74994e501c",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "02-361我宁愿有耶稣.mp3",
+      "evidence": "docs/sync-bulk-evidence/02-361我宁愿有耶稣.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

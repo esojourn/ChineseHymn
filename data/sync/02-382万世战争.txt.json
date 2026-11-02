@@ -10,44 +10,44 @@
   "tracks": [
     {
       "file": "02-382万世战争.mp3",
-      "sha256": "52f437630228d89031e7298c5f17a27179f95ebabd50d2cd2adea2fcd1097b2f",
-      "duration": 187.53306122448978,
+      "sha256": "36c799b4e028dfd399dbf8379c84ef0e9a9aba9546c1131f01f8e4527edd1de7",
+      "duration": 180.89795833333332,
       "offset": 0,
       "reviewed": true,
       "cues": [
         {
-          "at": 5.9,
+          "at": 6.3,
           "region": "r1",
           "label": "第1段",
           "transition": "intro",
           "moveStart": 0.0
         },
         {
-          "at": 35.65,
+          "at": 34.75,
           "region": "r2",
           "label": "第1段",
           "transition": "reading"
         },
         {
-          "at": 65.3,
+          "at": 62.9,
           "region": "r3",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 95.0,
+          "at": 90.6,
           "region": "r4",
           "label": "第2段",
           "transition": "reading"
         },
         {
-          "at": 124.7,
+          "at": 118.6,
           "region": "r5",
           "label": "第3段",
           "transition": "reading"
         },
         {
-          "at": 154.4,
+          "at": 147.1,
           "region": "r6",
           "label": "第3段",
           "transition": "reading"
@@ -139,7 +139,7 @@
   },
   "provenance": {
     "batch": "bulk-2026-10",
-    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+    "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence. Updated accompaniment uses independently measured new-recording chroma-DTW correspondence to the backed-up reviewed recording; no duration scaling. Unchanged lead recording and reading regions retain their final cues; only the new track receives the extra 1.5-second advance.",
     "performanceOrder": [
       {
         "region": "r1",
@@ -172,7 +172,7 @@
         "label": "第3段"
       }
     ],
-    "evidence": "docs/sync-bulk-evidence/02-382万世战争.txt.midi.json",
+    "evidence": "docs/sync-bulk-evidence/02-382万世战争.txt.accompaniment-2026-11-02.json",
     "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
     "timingAdjustment": {
       "version": 1,
@@ -181,6 +181,13 @@
       "clampAtZero": true,
       "baselineSha256": "5e35cd1951e6601f41712da1e7e81728964a3a47cf89ae10ac1eca35a8ea6373",
       "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+    },
+    "accompanimentUpdate": {
+      "date": "2026-11-02",
+      "track": "02-382万世战争.mp3",
+      "evidence": "docs/sync-bulk-evidence/02-382万世战争.txt.accompaniment-2026-11-02.json",
+      "advanceSeconds": 1.5,
+      "preservedLeadTiming": true
     }
   }
 }

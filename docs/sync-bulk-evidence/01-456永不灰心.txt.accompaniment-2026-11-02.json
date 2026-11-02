@@ -1,0 +1,370 @@
+{
+  "songId": "01-456",
+  "source": "01-456永不灰心.txt",
+  "sourceHash": "0ae5a314c61444175468b409c7fcf6eb3500871d314d27388fa70fee26f91f60",
+  "trackHashes": [
+    {
+      "file": "01-456永不灰心.mp3",
+      "sha256": "68844409ac2d9d7065b5425862bc6bf942d2272e48ea7d0c4699e38ef632c0f3"
+    },
+    {
+      "file": "01-456永不灰心-领唱.mp3",
+      "sha256": "d97080bfbaaf5f6c49176b012d5ee4d6086f70e555d8e14ee2c019e44218ead5"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "01-456永不灰心-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/01-456永不灰心.txt.midi.json",
+      "sha256": "3b7a8dacc8419c177d37105de1a17a52e1b285d9389e61d7209e7db8b13cd83a"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "01-456",
+      "status": "reviewed",
+      "source": {
+        "file": "01-456永不灰心.txt",
+        "sha256": "0ae5a314c61444175468b409c7fcf6eb3500871d314d27388fa70fee26f91f60",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "01-456永不灰心.mp3",
+          "sha256": "41c079299b4447a698af5af21aa1b23b789c2c62db42ccbd0d56e871f1cf58f8",
+          "duration": 191.3469387755102,
+          "offset": 0,
+          "reviewed": true,
+          "cues": [
+            {
+              "at": 6.15,
+              "region": "r1",
+              "label": "第1段",
+              "transition": "intro",
+              "moveStart": 0.0
+            },
+            {
+              "at": 21.25,
+              "region": "r2",
+              "label": "第1段",
+              "transition": "reading"
+            },
+            {
+              "at": 51.75,
+              "region": "r3",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 66.65,
+              "region": "r4",
+              "label": "第2段",
+              "transition": "reading"
+            },
+            {
+              "at": 97.15,
+              "region": "r5",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 112.15,
+              "region": "r6",
+              "label": "第3段",
+              "transition": "reading"
+            },
+            {
+              "at": 142.6,
+              "region": "r7",
+              "label": "第4段",
+              "transition": "reading"
+            },
+            {
+              "at": 157.55,
+              "region": "r8",
+              "label": "第4段",
+              "transition": "reading"
+            }
+          ]
+        },
+        {
+          "file": "01-456永不灰心-领唱.mp3",
+          "sha256": "d97080bfbaaf5f6c49176b012d5ee4d6086f70e555d8e14ee2c019e44218ead5",
+          "duration": 206.1061224489796,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 2,
+          "endLine": 3
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 9
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 11,
+          "endLine": 12
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 15,
+          "endLine": 18
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 20,
+          "endLine": 21
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 24,
+          "endLine": 27
+        },
+        "r7": {
+          "kind": "text",
+          "startLine": 30,
+          "endLine": 31
+        },
+        "r8": {
+          "kind": "text",
+          "startLine": 34,
+          "endLine": 37
+        }
+      },
+      "cues": [
+        {
+          "at": 6.95,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 23.45,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 56.35,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 72.75,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 105.75,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 122.15,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 155.1,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 171.55,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "永不灰心，永不沮丧，相信主是你盼望， 将所需求陈明祂前，必领受够用恩典。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "虽你有重担压心头，虽你生活满苦忧， 仰望主必得祂恩光，求主开路可前往。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "永不灰心，永不沮丧，黑夜过必露晨光， 不久在荣光照耀处，你要与主永同住。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+            "label": "第3段"
+          },
+          {
+            "region": "r7",
+            "text": "永不灰心，永不沮丧，主膀臂是你依傍， 常在主深恩中躲藏，直等那日得奖赏。",
+            "label": "第4段"
+          },
+          {
+            "region": "r8",
+            "text": "永不灰心，永不灰心， 永不因愁苦而灰心，主能使天光照临。 专心靠主，专心靠主， 试炼中仍歌唱不住，刚强壮胆信靠主。",
+            "label": "第4段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/01-456永不灰心.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "f5de05311057a25062949d9cc7a1a390eef4a05fcbc8e88b5830a5ef53f75359",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "aa47bd7b0df205246ce1c41a5ee025937cc61b67cea2758414509771b04cec2f",
+    "changedTrack": "01-456永不灰心.mp3",
+    "newTrackSha256": "68844409ac2d9d7065b5425862bc6bf942d2272e48ea7d0c4699e38ef632c0f3",
+    "newTrackDuration": 201.14283333333333,
+    "calibration": {
+      "songId": "01-456",
+      "referenceTimes": [
+        7.65,
+        22.75,
+        53.25,
+        68.15,
+        98.65,
+        113.65,
+        144.1,
+        159.05
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        5.35,
+        21.15,
+        53.6,
+        69.25,
+        100.4,
+        116.35,
+        147.8,
+        164.85
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 11,
+        "initialSimilarity": 0.36435407400131226,
+        "meanPathCost": 0.2808924615383148,
+        "cueWindowCosts": [
+          0.3304521143436432,
+          0.34770524501800537,
+          0.2928072512149811,
+          0.42758750915527344,
+          0.205880269408226,
+          0.41372212767601013,
+          0.2643362879753113,
+          0.3669942617416382
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 3.85,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 19.65,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 52.1,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 67.75,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 98.9,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 114.85,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 146.3,
+        "region": "r7",
+        "label": "第4段",
+        "transition": "reading"
+      },
+      {
+        "at": 163.35,
+        "region": "r8",
+        "label": "第4段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "01-456永不灰心.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [
+      {
+        "file": "01-456永不灰心-领唱.mp3",
+        "sha256": "d97080bfbaaf5f6c49176b012d5ee4d6086f70e555d8e14ee2c019e44218ead5",
+        "duration": 206.1061224489796,
+        "offset": 0,
+        "reviewed": true
+      }
+    ],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}

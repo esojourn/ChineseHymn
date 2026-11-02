@@ -1,0 +1,300 @@
+{
+  "songId": "02-199",
+  "source": "02-199仰望真神羔羊.txt",
+  "sourceHash": "f3bc7cca8514a79282f03cab36a4d2a1248218f85d9a93415e1992e1b7331370",
+  "trackHashes": [
+    {
+      "file": "02-199仰望真神羔羊.mp3",
+      "sha256": "38d68be6e63c7b902613817b107fbf7d209fa0651936b6ca0513c3fe5b0d2b95"
+    }
+  ],
+  "status": "ready",
+  "cueCount": 8,
+  "maintenance": {
+    "date": "2026-11-02",
+    "archive": "/tmp/更新伴奏02(1).zip",
+    "archiveSha256": "5bfdbf796a1735d250d5f7e12aa85156536f0730d7f710e48450a1c4f329a06d",
+    "archiveName": "02-199仰望真神羔羊-伴奏.mp3",
+    "titleMatchesExactly": true,
+    "previousEvidence": {
+      "file": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.midi.json",
+      "sha256": "e0e4454aeedce757ae8043e0a968d0f8fa6413467356d2b1e3aff9a948951fa6"
+    },
+    "previousSync": {
+      "version": 1,
+      "songId": "02-199",
+      "status": "reviewed",
+      "source": {
+        "file": "02-199仰望真神羔羊.txt",
+        "sha256": "f3bc7cca8514a79282f03cab36a4d2a1248218f85d9a93415e1992e1b7331370",
+        "type": "text"
+      },
+      "tracks": [
+        {
+          "file": "02-199仰望真神羔羊.mp3",
+          "sha256": "94b2ccb6ffdf1c76c2e55efc212aafa6cb315845dac5543a2a99915fb0a86a0c",
+          "duration": 173.0873469387755,
+          "offset": 0,
+          "reviewed": true
+        }
+      ],
+      "regions": {
+        "r1": {
+          "kind": "text",
+          "startLine": 3,
+          "endLine": 4
+        },
+        "r2": {
+          "kind": "text",
+          "startLine": 6,
+          "endLine": 6
+        },
+        "r3": {
+          "kind": "text",
+          "startLine": 9,
+          "endLine": 10
+        },
+        "r4": {
+          "kind": "text",
+          "startLine": 12,
+          "endLine": 12
+        },
+        "r5": {
+          "kind": "text",
+          "startLine": 15,
+          "endLine": 16
+        },
+        "r6": {
+          "kind": "text",
+          "startLine": 18,
+          "endLine": 18
+        },
+        "r7": {
+          "kind": "text",
+          "startLine": 21,
+          "endLine": 22
+        },
+        "r8": {
+          "kind": "text",
+          "startLine": 24,
+          "endLine": 24
+        }
+      },
+      "cues": [
+        {
+          "at": 8.55,
+          "region": "r1",
+          "label": "第1段",
+          "transition": "intro",
+          "moveStart": 0.0
+        },
+        {
+          "at": 28.8,
+          "region": "r2",
+          "label": "第1段",
+          "transition": "reading"
+        },
+        {
+          "at": 49.0,
+          "region": "r3",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 69.2,
+          "region": "r4",
+          "label": "第2段",
+          "transition": "reading"
+        },
+        {
+          "at": 89.4,
+          "region": "r5",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 109.65,
+          "region": "r6",
+          "label": "第3段",
+          "transition": "reading"
+        },
+        {
+          "at": 129.85,
+          "region": "r7",
+          "label": "第4段",
+          "transition": "reading"
+        },
+        {
+          "at": 150.05,
+          "region": "r8",
+          "label": "第4段",
+          "transition": "reading"
+        }
+      ],
+      "activation": {
+        "policy": "automatic",
+        "listeningReviewRequired": false
+      },
+      "provenance": {
+        "batch": "bulk-2026-10",
+        "method": "Documented MIDI score; independent harmonic and melodic templates; measured repeat-phase consistency and recording correspondence.",
+        "performanceOrder": [
+          {
+            "region": "r1",
+            "text": "你心若渴望从罪中释放，仰望真神羔羊！ 祂为救赎你，死在十架上，仰望真神羔羊。",
+            "label": "第1段"
+          },
+          {
+            "region": "r2",
+            "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+            "label": "第1段"
+          },
+          {
+            "region": "r3",
+            "text": "当撒旦试诱，恐惧疑虑多，仰望真神羔羊！ 靠赖主力量，你必能胜过，仰望真神羔羊。",
+            "label": "第2段"
+          },
+          {
+            "region": "r4",
+            "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+            "label": "第2段"
+          },
+          {
+            "region": "r5",
+            "text": "你是否困倦，路崎岖又长？仰望真神羔羊！ 祂以爱激励，使你心歌唱，仰望真神羔羊。",
+            "label": "第3段"
+          },
+          {
+            "region": "r6",
+            "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+            "label": "第3段"
+          },
+          {
+            "region": "r7",
+            "text": "黑影遮前路，你不用恐慌，仰望真神羔羊！ 不论悲或喜，祂是你一切，仰望真神羔羊。",
+            "label": "第4段"
+          },
+          {
+            "region": "r8",
+            "text": "仰望真神羔羊，仰望真神羔羊，除耶稣以外，无别法拯救，仰望真神羔羊。",
+            "label": "第4段"
+          }
+        ],
+        "evidence": "docs/sync-bulk-evidence/02-199仰望真神羔羊.txt.midi.json",
+        "review": "Machine checks passed. Full human listening review and measured lyric-boundary error are not claimed.",
+        "timingAdjustment": {
+          "version": 1,
+          "requestId": "user-preview-2026-11-01",
+          "advanceSeconds": 1.5,
+          "clampAtZero": true,
+          "baselineSha256": "9b1ad57170ae87b9ae86d6d8ee9a098e68c36b1cfe2678976b45322ad103ee97",
+          "reason": "用户试听后要求在现有时间点基础上统一提前1.5秒；不重新识别。"
+        }
+      }
+    },
+    "previousSyncSha256": "c8e4d50712fb79bdec158a00811481a869c22ba05ef02265f64f6da86b1563b8",
+    "changedTrack": "02-199仰望真神羔羊.mp3",
+    "newTrackSha256": "38d68be6e63c7b902613817b107fbf7d209fa0651936b6ca0513c3fe5b0d2b95",
+    "newTrackDuration": 156.65629166666668,
+    "calibration": {
+      "songId": "02-199",
+      "referenceTimes": [
+        10.05,
+        30.3,
+        50.5,
+        70.7,
+        90.9,
+        111.15,
+        131.35,
+        151.55
+      ],
+      "status": "ready",
+      "mappedTimes": [
+        9.65,
+        28.4,
+        46.7,
+        64.5,
+        82.6,
+        100.35,
+        118.5,
+        136.15
+      ],
+      "metrics": {
+        "method": "chroma-DTW",
+        "semitoneShift": 10,
+        "initialSimilarity": 0.47232890129089355,
+        "meanPathCost": 0.2600271701812744,
+        "cueWindowCosts": [
+          0.21365106105804443,
+          0.1976540982723236,
+          0.2063753604888916,
+          0.17222177982330322,
+          0.258200466632843,
+          0.23248429596424103,
+          0.3169320225715637,
+          0.2218063324689865
+        ]
+      }
+    },
+    "finalCues": [
+      {
+        "at": 8.15,
+        "region": "r1",
+        "label": "第1段",
+        "transition": "intro",
+        "moveStart": 0.0
+      },
+      {
+        "at": 26.9,
+        "region": "r2",
+        "label": "第1段",
+        "transition": "reading"
+      },
+      {
+        "at": 45.2,
+        "region": "r3",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 63.0,
+        "region": "r4",
+        "label": "第2段",
+        "transition": "reading"
+      },
+      {
+        "at": 81.1,
+        "region": "r5",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 98.85,
+        "region": "r6",
+        "label": "第3段",
+        "transition": "reading"
+      },
+      {
+        "at": 117.0,
+        "region": "r7",
+        "label": "第4段",
+        "transition": "reading"
+      },
+      {
+        "at": 134.65,
+        "region": "r8",
+        "label": "第4段",
+        "transition": "reading"
+      }
+    ],
+    "timingAdjustment": {
+      "advanceSeconds": 1.5,
+      "appliedOnlyTo": "02-199仰望真神羔羊.mp3",
+      "referenceTimesUndoPreviousAdvance": true,
+      "clampAtZero": true,
+      "preservedTrackTimesChanged": false
+    },
+    "preservedTracks": [],
+    "review": "Machine music-correspondence / score checks only; no human listening review is claimed."
+  }
+}
